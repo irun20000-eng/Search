@@ -2,6 +2,16 @@
   "generated": "2026-06-21",
   "reports": [
     {
+      "slug": "matrix-multivariable-intro",
+      "title": "행렬과 다변수 미적분 — 고등학생을 위한 쉬운 입문",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "행렬", "미적분", "다변수", "입문"],
+      "tldr": "미적분을 막 시작한 고등학생 눈높이 입문서. 행렬(숫자 표: 행·열·성분), 덧셈·실수배·곱셈(행×열, AB≠BA), 단위·역행렬, 2×2 행렬식(ad−bc, 역행렬 존재 판정)을 작은 숫자 예제로 익히고, 다변수 함수와 편미분('한 변수만 변화, 나머지는 상수 고정')을 그림으로 이해한다. 끝으로 '편미분을 모은 행렬'이 야코비안으로 이어짐을 연결. 11개 출처.",
+      "sources": { "kr": 6, "intl": 5 },
+      "path": "reports/matrix-multivariable-intro/report.md"
+    },
+    {
       "slug": "jacobian-transformation",
       "title": "야코비안 변환(Jacobian transformation) — 변수변환의 핵심 도구 심층 분석",
       "date": "2026-06-21",
