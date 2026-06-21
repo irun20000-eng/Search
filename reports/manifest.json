@@ -2,6 +2,16 @@
   "generated": "2026-06-21",
   "reports": [
     {
+      "slug": "jacobian-transformation",
+      "title": "야코비안 변환(Jacobian transformation) — 변수변환의 핵심 도구 심층 분석",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "미적분", "선형대수", "변수변환", "로보틱스", "확률"],
+      "tldr": "야코비 행렬은 다변수 벡터함수의 1차 편도함수 행렬, 그 행렬식(야코비안)은 '국소 넓이/부피 배율'이다. 이 한 직관으로 다중적분 변수변환(dxdy=|J|dudv, 극좌표 J=r), 확률밀도함수 변환(야코비안 보정), 로보틱스 미분기구학(관절↔말단 속도), 역함수 정리와 det J=0 특이점까지 관통한다. 행렬 vs 행렬식·정변환 vs 역변환·부호 vs 절댓값 혼동과 실전 체크리스트를 13개 출처로 정리.",
+      "sources": { "kr": 6, "intl": 7 },
+      "path": "reports/jacobian-transformation/report.md"
+    },
+    {
       "slug": "iran-us-conflict-timeline",
       "title": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
       "date": "2026-06-21",
