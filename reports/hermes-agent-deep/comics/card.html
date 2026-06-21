@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;font-family:"Nunito","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+  #card{width:900px;background:#FFF8F0;border:1.5px solid #EFE6DA;border-radius:28px;padding:34px 36px 30px}
+  .kicker{color:#E8743B;font-weight:700;font-size:15px;letter-spacing:.01em}
+  .title{color:#2B2622;font-weight:800;font-size:30px;margin-top:6px;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+  .q{background:#fff;border:1.5px solid #EFE6DA;border-radius:18px;padding:22px 22px 20px}
+  .qh{display:flex;align-items:center;gap:12px}
+  .num{width:36px;height:36px;border-radius:999px;background:#FCEDE1;color:#E8743B;font-weight:800;font-size:17px;display:flex;align-items:center;justify-content:center;flex:0 0 36px}
+  .qt{color:#2B2622;font-weight:700;font-size:18px}
+  .qb{color:#7A6E62;font-size:14.5px;line-height:1.6;margin-top:11px}
+  .qb code{background:#F4ECDD;color:#9c4a22;border-radius:6px;padding:1px 7px;font-size:13.5px;font-family:Consolas,monospace}
+  .foot{color:#9c8e80;font-size:13px;margin-top:22px}
+  .foot b{color:#E8743B;font-weight:700}
+</style>
+</head>
+<body>
+<div id="card">
+  <div class="kicker">학습 카드 · 4분할 요약</div>
+  <div class="title">헤르메스 에이전트 한눈에</div>
+  <div class="grid">
+    <div class="q">
+      <div class="qh"><div class="num">1</div><div class="qt">무엇인가</div></div>
+      <div class="qb">Nous Research의 <b>오픈소스(MIT) 자율 AI 에이전트</b>. 내 컴퓨터에 설치하고, 쓸수록 더 똑똑해진다(자가발전).</div>
+    </div>
+    <div class="q">
+      <div class="qh"><div class="num">2</div><div class="qt">설치</div></div>
+      <div class="qb">준비물은 <b>Git 하나</b>. 한 줄 명령 <code>curl …/install.sh | bash</code> 으로 끝. 윈도우도 네이티브 지원.</div>
+    </div>
+    <div class="q">
+      <div class="qh"><div class="num">3</div><div class="qt">핵심</div></div>
+      <div class="qb">작업이 끝나도 <b>기억</b>(영속 메모리). 경험에서 스킬을 스스로 만들고, 과거 대화를 검색해 맥락을 잇는다.</div>
+    </div>
+    <div class="q">
+      <div class="qh"><div class="num">4</div><div class="qt">활용·주의</div></div>
+      <div class="qb">모델 <b>수백 종</b> 교체 가능. 처음엔 <b>비용 한도 확인</b> + <b>테스트 폴더</b>에서만 시켜본다.</div>
+    </div>
+  </div>
+  <div class="foot">출처 기반 · 본문과 동일 사실만 담음 · <b>8 sources</b> (국내 4 · 해외 4)</div>
+</div>
+</body>
+</html>

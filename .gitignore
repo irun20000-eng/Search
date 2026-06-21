@@ -1,0 +1,12 @@
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+
+# local tooling
+.venv/
+node_modules/
+__pycache__/
+.omc/
+.playwright-mcp/

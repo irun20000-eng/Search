@@ -1,0 +1,26 @@
+{
+  "generated": "2026-06-21",
+  "reports": [
+    {
+      "slug": "hermes-agent-deep",
+      "title": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["AI에이전트", "오픈소스", "NousResearch", "자가발전", "로컬AI", "함수호출", "주권적AI"],
+      "tldr": "Nous Research의 오픈소스(MIT) 자율 AI 에이전트. '헤르메스 에이전트(하네스)'와 'Hermes 3(모델)' 구분부터 아키텍처 심층(SQLite 메모리·자율 스킬·서브에이전트·6종 실행 백엔드), 요구사항·플랫폼별 설치, 첫 실행 워크스루, Slack 연결, 오픈클로 비교표, 비용·보안까지 14개 출처로 정리.",
+      "sources": { "kr": 8, "intl": 6 },
+      "cover": "comics/card.png",
+      "path": "reports/hermes-agent-deep/report.md"
+    },
+    {
+      "slug": "hermes-agent-quick",
+      "title": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+      "date": "2026-06-21",
+      "depth": "quick",
+      "tags": ["AI에이전트", "오픈소스", "NousResearch", "자가발전", "로컬AI"],
+      "tldr": "Nous Research가 만든 오픈소스(MIT) 자율 AI 에이전트. 영속 메모리·자가발전(스킬 학습) 루프가 핵심이고, 한 줄 명령으로 설치해 터미널·메신저로 쓴다. 특정 모델에 묶이지 않고 수백 종 LLM을 갈아끼울 수 있으며, 2026년 오픈클로를 추월하며 주목받았다.",
+      "sources": { "kr": 3, "intl": 3 },
+      "path": "reports/hermes-agent-quick/report.md"
+    }
+  ]
+}
