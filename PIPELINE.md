@@ -1,0 +1,83 @@
+# PIPELINE.md — 주제 리서치 파이프라인 런북
+
+이 문서는 **Claude Code 세션이 그대로 따라 실행하는 절차서**다. 모바일/클라우드에서 이 `Search` 레포로 세션을 열고 아래 한 줄로 트리거하면, 이 런북대로 보고서 작성 → 갤러리 갱신 → 옵시디언 저장까지 수행한다.
+
+## 트리거 형식
+```
+주제: <조사할 주제>
+깊이: quick | deep
+카드모드: auto | manual | none   # 생략 시 manual(클라우드) / auto(로컬)
+```
+예) `주제: RAG 평가 방법, 깊이: deep, 카드모드: manual`
+
+## 환경별 가용성 (중요)
+| 단계 | 로컬 PC | 클라우드/모바일 |
+|---|---|---|
+| 수집: WebSearch/WebFetch | O | O |
+| 수집: 네이버/유튜브 MCP | O | △ (커넥터 붙어야 함 — §0 점검) |
+| 보고서 .md 합성 | O | O |
+| 학습 카드 auto 렌더(Playwright) | O | ✗ → **manual 사용** |
+| 갤러리 커밋·푸시(GitHub) | O | O |
+| 옵시디언 저장 | 로컬 G: 직접 쓰기 | **Google Drive MCP** (§5, 검증됨 2026-06-21) |
+| Slack 알림 | O(MCP) | O(MCP, 커넥터 붙으면) |
+
+## 0. 사전 점검 (클라우드에서 1회)
+- 네이버 MCP 가용 확인: `NaverSearch-get_current_korean_time` 호출 성공 여부. 실패 시 **국내 수집을 WebSearch(site:naver.com 등)로 대체**하고 그 사실을 보고서에 명시.
+- Drive MCP 가용 확인: `Google_Drive search_files (title='001-주제리서치')` 로 폴더 존재 확인.
+
+## 1. 수집 (C1/C2)
+- 국내: 네이버 MCP `search_webkr / search_news / search_encyc / search_blog`(주제 한국어).
+- 해외: `WebSearch`(영문 질의) → 핵심 소스 `WebFetch`로 정독.
+- **국내+해외 균형 필수.** 중복 제거, 신뢰도 낮은 출처 배제.
+- 산출: **fact-ledger**(주장 ↔ 출처 URL 표). 단일 자료 주장/충돌은 표시.
+
+## 2. 합성 (C3) — frontmatter 스펙 엄수
+```yaml
+---
+주제: <문자열>
+날짜: <YYYY-MM-DD>          # 클라우드: get_current_korean_time 로 확인
+깊이: quick | deep
+카드모드: auto | manual | none
+태그: [<주제태그>...]        # 첫 태그가 갤러리 카드 색을 정함
+소스수: { 국내: N, 해외: M }
+위키링크: ["[[연결노트]]", ...]
+갤러리URL: "#r=<slug>"
+---
+```
+본문 순서: `## TL;DR`(3~5줄) → `## 핵심 포인트` → `## 학습 카드` → `## 본문(섹션별)` → `## 출처(인용 링크)` → `## 후속 질문·연결([[위키링크]])`.
+- **무환각**: 모든 사실 주장에 인용 [n]. 출처 없는 단정 0건. 해외 인용엔 한글 설명.
+- **시작 전 [LESSONS.md](LESSONS.md)의 "방지 규칙 체크리스트"를 로드**하여 같은 실수 차단(복리 품질). DEEP는 개요+목록 금지 — why/how/비교/실전.
+
+## 3. 학습 카드 (C8) — 카드모드 분기
+- **auto (로컬만)**: `reports/<slug>/comics/card.html` 작성(retail 스타일: 웜화이트 #FFF8F0·Nunito·코랄·4분할) → 로컬 http 서버 → Playwright `browser_take_screenshot(#card)` → `comics/card.png`. 본문에 `![...](comics/card.png)` 임베드.
+- **manual (클라우드 기본)**: 카드 PNG를 못 만드는 환경 → 본문 `## 학습 카드`에 **4분할 텍스트 카드(표/불릿)** 로 대체하거나, 컷별 이미지 프롬프트만 출력해 사용자가 무료 웹툴로 생성 후 `comics/`에 투입.
+- **none**: 섹션 생략(quick 다이제스트).
+
+## 4. 검수 (C9) — 독립 패스, self-approve 금지
+별도 에이전트(또는 명시적 별도 단계)로 무환각·인용1:1·국내해외 균형·카드↔본문 일치·DEEP 깊이 게이트. 결함·수정·방지규칙을 **[LESSONS.md](LESSONS.md)** 에 append.
+
+## 5. 옵시디언 저장 (C5)
+### 로컬 PC
+`G:\내 드라이브\00_Obsidian_Second Brain\Insight Miner\000-수집\001-주제리서치\` 에 제목 기반 `.md` + `comics/card.png` 직접 복사.
+
+### 클라우드/모바일 — Google Drive MCP (검증됨)
+1. 폴더 ID 확보: `search_files(title='001-주제리서치')` → 폴더 id (2026-06-21 기준 `1nScRmPu8XhHElDEf2yjnmSHThGkacYVf`, 부모 000-수집 `1KmzoExv5bZLDOCJQSwrCabVw29gYUrIj`). 없으면 `create_file(mimeType folder)`.
+2. 노트 생성: `create_file(title='<보고서 제목>.md', parentId=<폴더id>, textContent=<.md 전문>, contentMimeType='text/markdown', disableConversionToGoogleType=true)`.
+   - **주의**: `disableConversionToGoogleType=true` 필수(안 하면 Google Doc로 변환됨).
+   - 이미지 임베드가 `comics/card.png`면 동일 폴더 안 `comics` 하위폴더 id를 찾아(`search_files title='comics' and parentId='<폴더id>'`, 없으면 create) `create_file(base64Content=<png base64>, contentMimeType='image/png', parentId=<comics id>)`.
+3. 파일명 = 보고서 제목(위키링크 해석용). 같은 .md 본문이 갤러리와 동일(단일 진실의 원천).
+
+## 6. 갤러리 갱신·배포 (C4/C7)
+1. `reports/<slug>/report.md` (+ auto면 `comics/card.png`) 추가.
+2. `reports/manifest.json` 에 항목 추가: `{slug,title,date,depth,tags,tldr,sources,cover?,path}`. DEEP+최신이면 `cover:"comics/card.png"`로 피처드 히어로.
+3. 커밋 → 푸시(`feature 브랜치 → PR → main` 권장) → GitHub Pages 자동 빌드.
+4. 라이브 확인: https://irun20000-eng.github.io/Search/
+
+## 7. (옵션) Slack 알림 (C7)
+Slack MCP `slack_send_message` 로 `{제목, TL;DR, 갤러리 URL}` 발송.
+
+## 8. 합격 기준 (배포 전 확인)
+① TL;DR 한눈 파악 ② 무환각(인용1:1) ③ 통찰·[[링크]] ④ 국내+해외 균형 ⑤ 카드 충실성 ⑥ LESSONS 갱신. 미달 시 반복.
+
+---
+스펙 정본: `.omc/specs/deep-interview-topic-research-pipeline.md` (로컬). 디자인 시스템: 라이트/웜화이트(#FFF8F0)+Nunito+코랄, 카드 토픽 색상바+기하 도형 커버.
