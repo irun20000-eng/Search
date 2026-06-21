@@ -10,6 +10,12 @@
 ```
 예) `주제: RAG 평가 방법, 깊이: deep, 카드모드: manual`
 
+## 기본 동작 (사용자 상시 지시, 2026-06-21)
+**보고서 요청이 오면 별도 언급이 없어도** 다음을 끝까지 자동 수행한다:
+1. 작업 브랜치에서 보고서 작성·커밋·푸시 → **PR 생성 → main에 머지** → GitHub Pages 자동 빌드로 **갤러리 최신화**.
+2. **옵시디언 노트 저장**(클라우드: Google Drive MCP, §5)까지 완료.
+즉, "작성만 하고 멈추지 말 것" — PR 머지·갤러리 반영·옵시디언 저장이 1건의 완료 정의다.
+
 ## 환경별 가용성 (중요)
 | 단계 | 로컬 PC | 클라우드/모바일 |
 |---|---|---|
@@ -70,7 +76,7 @@
 ## 6. 갤러리 갱신·배포 (C4/C7)
 1. `reports/<slug>/report.md` (+ auto면 `comics/card.png`) 추가.
 2. `reports/manifest.json` 에 항목 추가: `{slug,title,date,depth,tags,tldr,sources,cover?,path}`. DEEP+최신이면 `cover:"comics/card.png"`로 피처드 히어로.
-3. 커밋 → 푸시(`feature 브랜치 → PR → main` 권장) → GitHub Pages 자동 빌드.
+3. 커밋 → 푸시 → **PR 생성 → main 머지(기본 동작)** → GitHub Pages 자동 빌드. (별도 요청 없어도 머지까지 진행)
 4. 라이브 확인: https://irun20000-eng.github.io/Search/
 
 ## 7. (옵션) Slack 알림 (C7)
