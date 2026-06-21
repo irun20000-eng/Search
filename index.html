@@ -30,36 +30,41 @@
   .controls input[type=search]{flex:1 1 220px;min-width:160px;background:var(--card);border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:12px 16px;font-size:.98rem;font-family:var(--font);outline:none}
   .controls input[type=search]::placeholder{color:#b6a899}
   .controls input[type=search]:focus{border-color:var(--accent)}
-  .controls select{background:var(--card);border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:12px 14px;font-size:.92rem;font-family:var(--font);cursor:pointer}
+  .controls select{-webkit-appearance:none;appearance:none;background-color:var(--card);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A7E72' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:11px 36px 11px 15px;font-size:.92rem;font-family:var(--font);cursor:pointer}
   #tagbar{max-width:var(--maxw);margin:8px auto 0;padding:0 22px;display:flex;gap:8px;flex-wrap:wrap}
   .tag{font-size:.8rem;font-weight:600;color:var(--muted);background:var(--chip);border:1.5px solid transparent;border-radius:999px;padding:5px 12px;cursor:pointer;-webkit-user-select:none;user-select:none;transition:.12s}
   .tag.active{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
   main{max-width:var(--maxw);margin:0 auto;padding:20px 22px 90px}
   .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
-  .card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:20px 20px 18px;cursor:pointer;transition:transform .14s ease,box-shadow .14s ease,border-color .14s;display:flex;flex-direction:column;gap:11px;box-shadow:var(--shadow)}
-  .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 30px rgba(120,90,60,.14)}
-  /* topic color strip (rhythm) — stronger */
-  .card{border-top:6px solid var(--strip,var(--line))}
-  .card{background:color-mix(in srgb, var(--strip) 6%, var(--card))}
-  .card:hover{box-shadow:0 14px 34px rgba(120,90,60,.18)}
-  .foot .t.lead{color:var(--strip);border:1.5px solid var(--strip);background:#fff;font-weight:700}
+  .card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:0;overflow:hidden;cursor:pointer;transition:transform .14s ease,box-shadow .14s ease,border-color .14s;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 14px 34px rgba(120,90,60,.18)}
+  .cover-geo{height:120px;border-bottom:1.5px solid var(--line);overflow:hidden}
+  .cover-geo svg{display:block;width:100%;height:100%}
+  .card .body{display:flex;flex-direction:column;gap:11px;padding:18px 20px}
   .pill-feat{font-weight:800;border-radius:8px;padding:3px 11px;font-size:.72rem;background:var(--accent);color:#fff;letter-spacing:.04em}
-  /* featured hero — stronger */
-  .card.featured{grid-column:1/-1;flex-direction:row;align-items:stretch;gap:0;padding:0;overflow:hidden;border-top:9px solid var(--strip);background:linear-gradient(115deg, color-mix(in srgb, var(--strip) 22%, #fff), #fff 66%);box-shadow:0 16px 42px rgba(120,90,60,.18)}
-  .card.featured .cover{flex:0 0 300px;display:flex;align-items:center;justify-content:center;padding:22px;background:rgba(255,255,255,.45)}
+  /* featured hero */
+  .card.featured{grid-column:1/-1;flex-direction:row;align-items:stretch;background:linear-gradient(115deg, color-mix(in srgb, var(--strip) 18%, #fff), #fff 64%);box-shadow:0 16px 42px rgba(120,90,60,.18)}
+  .card.featured .cover{flex:0 0 300px;display:flex;align-items:center;justify-content:center;padding:22px;background:rgba(255,255,255,.4);border-right:1.5px solid var(--line)}
   .card.featured .cover img{width:100%;border-radius:12px;border:1.5px solid var(--line);box-shadow:0 8px 22px rgba(120,90,60,.16)}
-  .card.featured .body{flex:1;display:flex;flex-direction:column;gap:12px;padding:26px 30px}
+  .card.featured .body{flex:1;gap:12px;padding:26px 30px}
   .card.featured h2{font-size:1.7rem;line-height:1.28}
   .card.featured .tldr{font-size:1rem;-webkit-line-clamp:3}
-  @media(max-width:700px){.card.featured{flex-direction:column}.card.featured .cover{flex-basis:auto;padding:18px 18px 0}}
+  @media(max-width:700px){.card.featured{flex-direction:column}.card.featured .cover{flex-basis:auto;border-right:0;border-bottom:1.5px solid var(--line)}}
   .card .meta{display:flex;gap:8px;align-items:center;font-size:.78rem;color:var(--muted);flex-wrap:wrap}
   .depth{font-weight:700;border-radius:8px;padding:2px 10px;font-size:.74rem;letter-spacing:.02em}
   .depth.quick{background:var(--quick-bg);color:var(--quick-ink)}
   .depth.deep{background:var(--deep-bg);color:var(--deep-ink)}
   .card h2{font-size:1.16rem;font-weight:700;margin:0;letter-spacing:-.01em;line-height:1.38}
   .card .tldr{color:var(--muted);font-size:.92rem;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-  .card .foot{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+  .card .foot{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:2px}
   .card .foot .t{font-size:.74rem;font-weight:600;color:var(--muted);background:var(--chip);border-radius:999px;padding:3px 10px}
+  /* page geometric decoration */
+  .deco{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .deco i{position:absolute;display:block;border-radius:50%;opacity:.11;filter:blur(8px)}
+  .deco .a{width:360px;height:360px;background:var(--accent);top:-130px;right:-90px}
+  .deco .b{width:280px;height:280px;background:#2FA39B;top:170px;left:-130px;opacity:.09}
+  .deco .c{width:220px;height:220px;background:#8B6FD6;bottom:-90px;right:8%;opacity:.09}
+  header,.controls,#tagbar,main,footer{position:relative;z-index:1}
   .src{font-size:.74rem;color:var(--muted)}
   .empty{color:var(--muted);text-align:center;padding:60px 0}
   .overlay{position:fixed;inset:0;background:rgba(60,45,30,.34);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);display:none;z-index:40}
@@ -86,10 +91,9 @@
 </style>
 </head>
 <body>
+<div class="deco" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i></div>
 <header class="hero">
   <h1>Search · 주제 리서치 갤러리</h1>
-  <p class="sub">주제 하나 → 국내·해외 출처를 모아 <b>무환각·인용 기반</b> 보고서. 카드를 누르면 전문이 열립니다. 옵시디언 볼트와 동일한 .md.</p>
-  <span class="badge">단일 .md = 진실의 원천 · GitHub Pages</span>
 </header>
 
 <div class="controls">
@@ -104,7 +108,7 @@
   <div id="empty" class="empty" hidden>조건에 맞는 보고서가 없습니다.</div>
 </main>
 
-<footer>Search 갤러리 · 보고서는 <code>reports/&lt;slug&gt;/</code> 폴더의 .md 와 <code>comics/</code> 이미지를 그대로 렌더링합니다. 같은 파일이 옵시디언 볼트에도 저장됩니다.</footer>
+<footer>Search · 주제 리서치 갤러리</footer>
 
 <div class="overlay" id="overlay"></div>
 <section class="sheet" id="sheet" aria-modal="true" role="dialog">
@@ -140,9 +144,18 @@ const CAT={"AI에이전트":"#E8743B","오픈소스":"#2FA39B","로컬AI":"#8B6F
 const PALETTE=["#E8743B","#2FA39B","#8B6FD6","#D9A22E","#6BA368","#5BA3D9"];
 function colorFor(r){ const t=(r.tags||[])[0]; if(t&&CAT[t]) return CAT[t];
   let h=0; const s=(t||r.title||""); for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return PALETTE[h%PALETTE.length]; }
+function geoCover(color,v){
+  const S=[
+    `<circle cx="328" cy="34" r="74" fill="${color}" opacity=".16"/><circle cx="74" cy="120" r="48" fill="${color}" opacity=".28"/><circle cx="150" cy="26" r="11" fill="${color}" opacity=".5"/>`,
+    `<polygon points="30,132 116,28 202,132" fill="${color}" opacity=".18"/><polygon points="168,132 252,52 336,132" fill="${color}" opacity=".3"/><circle cx="356" cy="36" r="15" fill="${color}" opacity=".5"/>`,
+    `<g fill="none" stroke="${color}" stroke-width="11"><circle cx="322" cy="70" r="72" opacity=".15"/><circle cx="322" cy="70" r="44" opacity=".28"/><circle cx="322" cy="70" r="18" opacity=".46"/></g>`,
+    `<rect x="-20" y="86" width="460" height="20" transform="rotate(-9 200 96)" fill="${color}" opacity=".16"/><rect x="-20" y="116" width="460" height="20" transform="rotate(-9 200 126)" fill="${color}" opacity=".26"/><circle cx="300" cy="42" r="34" fill="${color}" opacity=".4"/>`
+  ];
+  return `<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="140" fill="${color}" opacity=".07"/>${S[v%S.length]}</svg>`;
+}
 function metaHTML(r){ const srcs=r.sources?`· 출처 국내 ${r.sources.kr||0}·해외 ${r.sources.intl||0}`:"";
   return `<span class="depth ${r.depth}">${(r.depth||"").toUpperCase()}</span><span>${r.date||""}</span><span class="src">${srcs}</span>`; }
-function tagsHTML(r){ return (r.tags||[]).slice(0,5).map((t,i)=>`<span class="t${i===0?' lead':''}">#${esc(t)}</span>`).join(""); }
+function tagsHTML(r){ return (r.tags||[]).slice(0,5).map(t=>`<span class="t">#${esc(t)}</span>`).join(""); }
 
 function render(){
   const q=$("#q").value.trim().toLowerCase(), depth=$("#depth").value, sort=$("#sort").value;
@@ -167,7 +180,7 @@ function render(){
       c.innerHTML=`${cover}<div class="body"><div class="meta">${metaHTML(r)}<span class="pill-feat">FEATURED</span></div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p><div class="foot">${tagsHTML(r)}</div></div>`;
     } else {
       c.className="card";
-      c.innerHTML=`<div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p><div class="foot">${tagsHTML(r)}</div>`;
+      c.innerHTML=`<div class="cover-geo">${geoCover(color,i)}</div><div class="body"><div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p><div class="foot">${tagsHTML(r)}</div></div>`;
     }
     grid.appendChild(c);
   });
