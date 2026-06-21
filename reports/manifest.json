@@ -3,23 +3,83 @@
   "reports": [
     {
       "slug": "matrix-multivariable-intro",
-      "title": "행렬과 다변수 미적분 — 입문에서 대학원까지 레벨업 개념지도",
+      "title": "행렬과 다변수 미적분 — 개념지도(레벨업 시리즈)",
       "date": "2026-06-21",
       "depth": "deep",
-      "tags": ["수학", "학습", "행렬", "미적분", "다변수", "레벨업"],
-      "tldr": "같은 개념을 🟢입문(중·고등)→🔵학부→🟣대학원 3계층으로 쌓아 올린 개념지도. Lv.1 행렬(표)·편미분, Lv.2 행렬=선형사상의 표현·야코비 행렬(전미분)·연쇄법칙, Lv.3 프레셰 미분·다양체 pushforward/pullback·미분형식까지. 레벨 사이마다 '다음 단계로 가는 다리'로 개념의 확장 한계를 보여준다. 15개 출처.",
-      "sources": { "kr": 8, "intl": 7 },
+      "tags": ["수학", "학습", "행렬", "미적분", "다변수", "개념지도"],
+      "tldr": "레벨업 시리즈의 '개념지도(인덱스)'. 같은 개념(행렬+다변수 미적분)을 🟢입문·🔵학부·🟣대학원 독립 보고서로 깊게 풀고, 사다리 표와 레벨 간 '다리'로 자기 수준의 문을 열어 준다. 학부·대학원 레벨은 야코비안 시리즈와 만난다.",
+      "sources": { "kr": 0, "intl": 0 },
       "path": "reports/matrix-multivariable-intro/report.md"
     },
     {
-      "slug": "jacobian-transformation",
-      "title": "야코비안 변환(Jacobian) — 입문에서 대학원까지 레벨업 개념지도",
+      "slug": "matrix-multivariable-l1",
+      "title": "행렬과 다변수 미적분 (입문) — 쉬운 첫걸음",
       "date": "2026-06-21",
       "depth": "deep",
-      "tags": ["수학", "학습", "변수변환", "선형대수", "로보틱스", "확률"],
-      "tldr": "'야코비안=국소 넓이/부피 배율'이라는 한 직관을 🟢입문→🔵학부→🟣대학원 3계층으로 확장. Lv.1 극좌표 r 배율, Lv.2 편미분 행렬식·변수변환·확률밀도 보정·역함수 정리, Lv.3 비정사각 √det(JᵀJ)·로봇 의사역행렬/manipulability·다양체 미분형식 당김·정규화 흐름까지. 레벨 사이 '다리'로 개념의 확장 한계를 보여준다. 16개 출처.",
-      "sources": { "kr": 6, "intl": 10 },
+      "tags": ["수학", "학습", "행렬", "미적분", "다변수", "입문"],
+      "tldr": "중·고등학생 눈높이. 행렬(표·행·열·성분), 덧셈/실수배, 곱셈(행×열, AB≠BA) 단계별 예제, 단위·역행렬, 2×2 행렬식(ad−bc) 계산, 다변수 함수와 편미분(예제 2개)을 그림과 작은 숫자로. 9개 출처.",
+      "sources": { "kr": 6, "intl": 3 },
+      "path": "reports/matrix-multivariable-l1/report.md"
+    },
+    {
+      "slug": "matrix-multivariable-l2",
+      "title": "행렬과 다변수 미적분 (학부) — 선형사상과 전미분",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "선형대수", "다변수미적분", "야코비", "학부"],
+      "tldr": "학부 눈높이. 행렬=선형사상의 표현(곱=합성), 계수(rank)와 가역의 삼위일체(det≠0⟺full rank⟺역행렬), 다변수 미분=전미분(야코비 행렬)·기울기·헤시안·연쇄법칙, 미분가능성 vs 편미분 존재. 9개 출처.",
+      "sources": { "kr": 5, "intl": 4 },
+      "path": "reports/matrix-multivariable-l2/report.md"
+    },
+    {
+      "slug": "matrix-multivariable-l3",
+      "title": "행렬과 다변수 미적분 (대학원) — 추상화와 다양체",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "선형대수", "미분기하", "함수해석", "대학원"],
+      "tldr": "대학원 눈높이. 좌표를 벗은 선형사상·닮음 불변량·텐서, 미분의 본질인 프레셰 미분(바나흐 일반화), 다양체의 pushforward/pullback·미분형식, 미분가능성 미세구조와 수치선형대수·자동미분 최전선. 7개 출처.",
+      "sources": { "kr": 3, "intl": 4 },
+      "path": "reports/matrix-multivariable-l3/report.md"
+    },
+    {
+      "slug": "jacobian-transformation",
+      "title": "야코비안 변환(Jacobian) — 개념지도(레벨업 시리즈)",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "변수변환", "선형대수", "로보틱스", "개념지도"],
+      "tldr": "레벨업 시리즈의 '개념지도(인덱스)'. '야코비안=국소 넓이/부피 배율'을 🟢입문·🔵학부·🟣대학원 독립 보고서로 깊게 풀고, 사다리·레벨 간 다리·det J=0의 일관된 의미를 제시. 선행은 행렬과 다변수 미적분 시리즈.",
+      "sources": { "kr": 0, "intl": 0 },
       "path": "reports/jacobian-transformation/report.md"
+    },
+    {
+      "slug": "jacobian-l1",
+      "title": "야코비안 변환 (입문) — '넓이 배율'로 이해하기",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "변수변환", "극좌표", "입문"],
+      "tldr": "고등학생 눈높이. 야코비안=변환이 작은 넓이를 몇 배로 바꾸는 배율, 확대하면 선형이라는 직관, 극좌표 dxdy=r dr dθ(배율 r)와 그 이유, 배율 0이면 못 되돌림(r=0). 6개 출처.",
+      "sources": { "kr": 4, "intl": 2 },
+      "path": "reports/jacobian-l1/report.md"
+    },
+    {
+      "slug": "jacobian-l2",
+      "title": "야코비안 변환 (학부) — 변수변환·확률·역함수",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "변수변환", "확률", "로보틱스", "학부"],
+      "tldr": "학부 눈높이. 야코비 행렬식 정의, 다중적분 변수변환(∬f|J|, 극좌표 검산), 확률밀도 변환(역변환 야코비안·방향 함정), 역함수 정리(det J≠0⟺국소가역), 로봇 ẋ=Jq̇·특이점, 실수 체크리스트. 10개 출처.",
+      "sources": { "kr": 4, "intl": 6 },
+      "path": "reports/jacobian-l2/report.md"
+    },
+    {
+      "slug": "jacobian-l3",
+      "title": "야코비안 변환 (대학원) — 일반화와 최전선",
+      "date": "2026-06-21",
+      "depth": "deep",
+      "tags": ["수학", "학습", "미분기하", "로보틱스", "머신러닝", "대학원"],
+      "tldr": "대학원 눈높이. 비정사각 √det(JᵀJ)(면적공식·manipulability), 의사역행렬 J⁺와 영공간 운동(여유자유도), 프레셰 미분·바나흐 역함수 정리, 변수변환=미분형식 당김, 정규화 흐름·자동미분·최적수송 최전선. 9개 출처.",
+      "sources": { "kr": 3, "intl": 6 },
+      "path": "reports/jacobian-l3/report.md"
     },
     {
       "slug": "iran-us-conflict-timeline",
