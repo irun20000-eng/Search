@@ -64,14 +64,14 @@
 
 ## 5. 옵시디언 저장 (C5)
 ### 로컬 PC
-`G:\내 드라이브\00_Obsidian_Second Brain\Insight Miner\000-수집\001-주제리서치\` 에 제목 기반 `.md` + `comics/card.png` 직접 복사.
+`G:\내 드라이브\00_Obsidian_Second Brain\Insight Miner\000-수집\001-주제리서치\` 에 `<YYYYMMDD>_<보고서 제목>.md` + `comics/card.png` 직접 복사.
 
 ### 클라우드/모바일 — Google Drive MCP (검증됨)
 1. 폴더 ID 확보: `search_files(title='001-주제리서치')` → 폴더 id (2026-06-21 기준 `1nScRmPu8XhHElDEf2yjnmSHThGkacYVf`, 부모 000-수집 `1KmzoExv5bZLDOCJQSwrCabVw29gYUrIj`). 없으면 `create_file(mimeType folder)`.
-2. 노트 생성: `create_file(title='<보고서 제목>.md', parentId=<폴더id>, textContent=<.md 전문>, contentMimeType='text/markdown', disableConversionToGoogleType=true)`.
+2. 노트 생성: `create_file(title='<YYYYMMDD>_<보고서 제목>.md', parentId=<폴더id>, textContent=<.md 전문>, contentMimeType='text/markdown', disableConversionToGoogleType=true)`.
    - **주의**: `disableConversionToGoogleType=true` 필수(안 하면 Google Doc로 변환됨).
    - 이미지 임베드가 `comics/card.png`면 동일 폴더 안 `comics` 하위폴더 id를 찾아(`search_files title='comics' and parentId='<폴더id>'`, 없으면 create) `create_file(base64Content=<png base64>, contentMimeType='image/png', parentId=<comics id>)`.
-3. 파일명 = 보고서 제목(위키링크 해석용). 같은 .md 본문이 갤러리와 동일(단일 진실의 원천).
+3. **파일명 = `<작성날짜 YYYYMMDD>_<보고서 제목>`** (날짜 접두사 필수, 사용자 지시 2026-06-21). 예: `20260621_이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석`. 날짜는 frontmatter `날짜` 값(클라우드는 `get_current_korean_time`)을 `YYYYMMDD`로. 본문은 갤러리 .md와 동일(단일 진실의 원천), 위키링크는 제목 부분으로 해석.
 
 ## 6. 갤러리 갱신·배포 (C4/C7)
 1. `reports/<slug>/report.md` (+ auto면 `comics/card.png`) 추가.
