@@ -2,6 +2,7 @@
 
 주제 하나를 입력하면 국내(네이버 MCP)+해외(WebSearch) 출처를 모아 **무환각·인용 기반**의 단일 `.md` 보고서를 만들고, 이를 옵시디언 볼트와 이 GitHub Pages 갤러리에 동일하게 렌더링한다. Claude Code 세션이 오케스트레이터이며 별도 백엔드/크론은 없다.
 
+- **실행 절차(모바일/클라우드 포함)**: [PIPELINE.md](PIPELINE.md) — 세션이 그대로 따라 도는 런북
 - 스펙 정본: `E:\AI_Project\.omc\specs\deep-interview-topic-research-pipeline.md`
 - 단일 `.md` = 진실의 원천 (볼트 전문 = 갤러리 렌더, 분리하지 않음)
 
