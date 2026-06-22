@@ -2,6 +2,16 @@
   "generated": "2026-06-22",
   "reports": [
     {
+      "slug": "claude-mcp-guide",
+      "title": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+      "date": "2026-06-23",
+      "depth": "deep",
+      "tags": ["AI", "MCP", "ModelContextProtocol", "ClaudeCode", "ClaudeDesktop", "자동화", "생산성", "도구연동", "보안"],
+      "tldr": "MCP(Model Context Protocol)는 AI와 외부 도구를 잇는 'AI용 USB-C'로 통합을 M×N→M+N으로 줄인다. 2024-11 공개·2026 사실상 표준(서버 500+). host–client–server·JSON-RPC·tools/resources/prompts·stdio/Streamable HTTP·OAuth 2.1 아키텍처부터, 추천 3층(공식 reference 7종 → 범용 베스트 GitHub·Playwright·Context7·Notion·Slack·Desktop Commander → 이 갤러리를 굴리는 내 스택 맞춤), Claude Code(claude mcp add·스코프·.mcp.json)와 Desktop(claude_desktop_config.json·DXT) 설치, 그리고 프롬프트 인젝션·도구 중독·최소권한 보안까지 14개 출처로 정리한 실무 DEEP 가이드.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/claude-mcp-guide/report.md"
+    },
+    {
       "slug": "vector",
       "title": "벡터(Vector) — 왜 배우고, 어디까지 가나 (이해편)",
       "date": "2026-06-22",
