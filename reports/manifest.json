@@ -1,6 +1,46 @@
 {
-  "generated": "2026-06-22",
+  "generated": "2026-06-23",
   "reports": [
+    {
+      "slug": "claude-plugins-guide",
+      "title": "클로드 플러그인 완전 가이드 — 분야별 추천과 활용예시 (시리즈 ①)",
+      "date": "2026-06-23",
+      "depth": "deep",
+      "tags": ["AI", "시리즈", "클로드플러그인", "ClaudeCode", "마켓플레이스", "자동화", "생산성", "디자인", "웹개발"],
+      "tldr": "「클로드 플러그인 마스터」 시리즈 ①편. 플러그인=슬래시명령+서브에이전트+훅+MCP를 묶어 한 번에 설치하는 워크플로우 단위. /plugin marketplace add → /plugin install 두 줄 설치, 공식 마켓플레이스 자동 로드, 2026-03 기준 101개(33+68). 업무(feature-dev·code-review·pr-review-toolkit)·자동화(Ralph Loop·Superpowers·commit-commands)·영상(YouTube/Fetch MCP)·노트(Notion·Obsidian·Drive)·디자인(frontend-design·Figma)·웹(Playwright·Vercel·Context7) 분야별 추천+활용예시, 그리고 '임의 코드 실행' 보안까지 14개 출처로.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/claude-plugins-guide/report.md"
+    },
+    {
+      "slug": "claude-plugins-build",
+      "title": "나만의 클로드 플러그인·마켓플레이스 만들기 (시리즈 ②)",
+      "date": "2026-06-23",
+      "depth": "deep",
+      "tags": ["AI", "시리즈", "클로드플러그인", "ClaudeCode", "마켓플레이스", "플러그인제작", "배포", "자동화"],
+      "tldr": "「클로드 플러그인 마스터」 ②편. 플러그인=특별한 디렉터리 구조+plugin.json을 가진 git repo. .claude-plugin/엔 매니페스트만·나머지는 루트, name이 유일 필수+네임스페이스. commands/agents/hooks/.mcp.json 작성, --plugin-dir·/reload-plugins 로컬 테스트, marketplace.json 카탈로그, 배포 3단계(로컬→git→공식 제출, '출처만 바뀐다'), 조직용 화이트리스트 중앙 마켓까지. '5분 플러그인' 워크스루 포함, 14개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/claude-plugins-build/report.md"
+    },
+    {
+      "slug": "claude-extension-ecosystem",
+      "title": "클로드 확장 생태계 총정리 — 플러그인·MCP·스킬·서브에이전트·훅 (시리즈 ③)",
+      "date": "2026-06-23",
+      "depth": "deep",
+      "tags": ["AI", "시리즈", "클로드플러그인", "ClaudeCode", "MCP", "스킬", "서브에이전트", "훅", "아키텍처"],
+      "tldr": "「클로드 플러그인 마스터」 ③편. 다섯 확장점(슬래시명령·스킬·서브에이전트·훅·MCP)+포장재 하나(플러그인)를 트리거·결정성·컨텍스트 비용 세 축으로 정리. '명령=내가 부르는 단축, 스킬=모델이 펴보는 매뉴얼, 서브에이전트=딴 방 직원, 훅=조건 자동 스위치, MCP=바깥 콘센트, 플러그인=온보딩 키트'. 한 장 비교표+결정 트리+'PR 리뷰를 다섯 방식으로' worked+컨텍스트 예산론까지 14개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/claude-extension-ecosystem/report.md"
+    },
+    {
+      "slug": "claude-plugins-workflows",
+      "title": "클로드 플러그인 실전 워크플로우 레시피 — 분야별 활용 사례집 (시리즈 ④)",
+      "date": "2026-06-23",
+      "depth": "deep",
+      "tags": ["AI", "시리즈", "클로드플러그인", "ClaudeCode", "워크플로우", "자동화", "디자인", "웹배포", "영상정리"],
+      "tldr": "「클로드 플러그인 마스터」 ④편(완결). 모든 워크플로우의 공통 6칸(수집→작성→검수→저장→배포→자동화)에 플러그인을 끼우는 법. 업무(커밋·리뷰 파이프라인)·영상→노트·노트/지식관리·디자인→코드(Figma)·웹 제작·배포(Vercel/Netlify)·이 갤러리(메타) 6개 레시피와 '유튜브 강의→블로그' 풀 워크스루, 승인 게이트 보안표까지. 국내 실사례 다수+14개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/claude-plugins-workflows/report.md"
+    },
     {
       "slug": "claude-mcp-guide",
       "title": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
