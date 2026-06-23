@@ -2,6 +2,16 @@
   "generated": "2026-06-24",
   "reports": [
     {
+      "slug": "slack-bot-build",
+      "title": "Slack 봇 직접 만들기 — Bolt·Socket Mode 실전 워크스루 (DEEP)",
+      "date": "2026-06-24",
+      "depth": "deep",
+      "tags": ["Slack", "봇개발", "Bolt", "SocketMode", "1인개발자", "자동화", "웹훅", "실전튜토리얼"],
+      "tldr": "Slack 1인 개발자편의 후속 실전편. Bolt(JS/Python)로 Events·슬래시명령·인터랙티브를 한 라이브러리로. 1인은 Socket Mode 추천(공개 URL 불필요) — 토큰 3종(xoxp/xoxb/xapp)과 connections:write·chat:write·app_mentions:read 스코프부터, 앱 생성→권한·이벤트 설정→.env→Bolt JS/Python 첫 봇→슬래시 명령(ack 3초)→버튼(Block Kit)→'운영 봇'(멘션 헬스체크+/rollback 버튼) worked까지 단계별 코드. 배포(로컬/홈서버/EC2/Lambda)·토큰 보안·FAQ 포함, 15개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/slack-bot-build/report.md"
+    },
+    {
       "slug": "slack-solo-developer",
       "title": "Slack 완전 해부 — 1인 개발자의 활용법과 활용가치 (DEEP)",
       "date": "2026-06-24",
