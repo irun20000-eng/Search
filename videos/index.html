@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>영상 노트 갤러리 — video2post</title>
+<meta name="description" content="유튜브 강의를 노트로 정리한 갤러리. video2post 파이프라인 산출물.">
+<style>
+:root{--bg:#0c0d12;--bg-soft:#13141c;--card:#161824;--line:#262a3a;--txt:#e9ebf2;--muted:#9aa0b4;--faint:#6b7186;--a1:#8b7bff;--a2:#36d6c3;--quote:#1a1c2b;--maxw:860px;--sans:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,sans-serif}
+[data-theme=light]{--bg:#fbfbfd;--bg-soft:#f2f3f7;--card:#fff;--line:#e6e8f0;--txt:#1a1c26;--muted:#5a6072;--faint:#8a90a4;--quote:#f4f3ff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased;letter-spacing:-.003em;padding-bottom:6rem}
+::selection{background:rgba(139,123,255,.3)}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:99;background:linear-gradient(90deg,var(--a1),var(--a2));transition:width .1s}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.util{display:flex;justify-content:flex-end;gap:.5rem;padding:14px 22px;max-width:1100px;margin:0 auto}
+.btn{background:var(--card);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.4rem .85rem;font-size:.82rem;cursor:pointer;font-family:var(--sans);transition:.2s}
+.btn:hover{color:var(--txt);border-color:var(--a1)}
+header.hero{padding:2.5rem 0 1rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--a2);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--a2);box-shadow:0 0 10px var(--a2)}
+h1.site{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;font-weight:800;letter-spacing:-.02em;background:linear-gradient(120deg,var(--txt) 30%,var(--a1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:.8rem}
+.count{color:var(--faint);font-size:.85rem;margin-top:.6rem}
+.filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.6rem 0 .5rem}
+.tagf{font-size:.78rem;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:.3rem .7rem;cursor:pointer;transition:.15s}
+.tagf:hover{color:var(--txt)}.tagf.on{background:var(--a1);color:#0c0d12;border-color:var(--a1);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin:1.5rem 0 2rem}
+.gcard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:.18s}
+.gcard:hover{transform:translateY(-3px);border-color:var(--a1);box-shadow:0 8px 26px rgba(0,0,0,.25)}
+.gcard .thumb{aspect-ratio:16/9;width:100%;object-fit:cover;background:var(--bg-soft);display:block}
+.gcard .body{padding:.9rem 1rem 1.1rem}
+.gcard .ttl{font-weight:700;font-size:.98rem;line-height:1.35;margin-bottom:.4rem}
+.gcard .mt{font-size:.74rem;color:var(--faint);display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem}
+.gcard .one{font-size:.85rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+article.post{border-top:1px solid var(--line);padding:2.4rem 0 1rem;scroll-margin-top:1rem}
+.phead{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.4rem}
+.phead img{width:160px;border-radius:10px;border:1px solid var(--line);flex:none}
+.phead h2.ptitle{font-size:1.5rem;font-weight:800;line-height:1.25}
+.pmeta{display:flex;flex-wrap:wrap;gap:.4rem;margin:.7rem 0}
+.chip{font-size:.74rem;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:7px;padding:.25rem .55rem}
+.watch{display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(120deg,var(--a1),var(--a2));color:#0c0d12;font-weight:700;padding:.45rem .9rem;border-radius:9px;text-decoration:none;font-size:.85rem;margin-top:.3rem}
+article.post h2.chap{font-size:1.2rem;font-weight:700;margin:1.8rem 0 .3rem;padding-top:.6rem;border-top:1px dashed var(--line)}
+article.post h4{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:1rem 0 .4rem}
+article.post ul{padding-left:1.2rem}article.post li{margin:.4rem 0}
+article.post li strong,article.post p strong{color:var(--a1)}
+article.post a{color:var(--a2)}
+blockquote{background:var(--quote);border-left:3px solid var(--a1);border-radius:0 10px 10px 0;padding:.7rem 1rem;margin:.5rem 0;font-style:italic;color:var(--txt);font-size:.96rem}
+article.post p{margin:.6rem 0}
+hr{border:none;border-top:1px solid var(--line);margin:1.5rem 0}
+.top{display:inline-block;margin:1rem 0;color:var(--a2);text-decoration:none;font-size:.85rem}
+footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--faint);font-size:.82rem}
+@media(max-width:520px){.phead img{width:96px}body{font-size:16px}}
+</style></head>
+<body data-theme="dark" id="top"><div id="bar"></div>
+<div class="util"><button class="btn" id="themeBtn">◐ 라이트</button></div>
+<div class="wrap">
+<header class="hero"><span class="eyebrow"><span class="dot"></span>video2post 갤러리</span>
+<h1 class="site">영상 노트 갤러리</h1>
+<p class="sub">유튜브 강의를 수집·검수해 정리한 학습 노트 모음. 카드를 누르면 해당 글로 이동합니다.</p>
+<div class="count">총 2개 · 최종 갱신 2026-06-24</div>
+<div class="filters"><button class="tagf on" data-tag="*">전체</button><button class="tagf" data-tag="AppsScript">#AppsScript</button><button class="tagf" data-tag="구글시트">#구글시트</button><button class="tagf" data-tag="노코드">#노코드</button><button class="tagf" data-tag="디자인시스템">#디자인시스템</button><button class="tagf" data-tag="멀티에이전트">#멀티에이전트</button><button class="tagf" data-tag="바이브코딩">#바이브코딩</button><button class="tagf" data-tag="안티그래비티">#안티그래비티</button><button class="tagf" data-tag="오케스트레이터">#오케스트레이터</button><button class="tagf" data-tag="제미나이">#제미나이</button><button class="tagf" data-tag="컨텍스트엔지니어링">#컨텍스트엔지니어링</button><button class="tagf" data-tag="코덱스">#코덱스</button><button class="tagf" data-tag="클로드데스크톱">#클로드데스크톱</button><button class="tagf" data-tag="클로드코드">#클로드코드</button><button class="tagf" data-tag="하네스">#하네스</button></div></header>
+<section class="grid"><a class="gcard" href="#post-y6HIrsG7pE8" data-tags="바이브코딩|클로드코드|클로드데스크톱|디자인시스템|구글시트|AppsScript|노코드">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" alt="">
+<div class="body"><div class="ttl">코딩 몰라도 OK — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지</div>
+<div class="mt"><span>AI 콘텐츠 마스터 세인투</span><span>2026-06-23</span><span>20:12</span></div>
+<div class="one">코드 한 줄 없이 클로드 코드(데스크톱 앱)로 &quot;진짜 작동하는&quot; 강사 섭외 사이트를 만든다. 핵심은 4가지 원칙 — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것.</div></div></a><a class="gcard" href="#post-HNlBFesXiW8" data-tags="하네스|멀티에이전트|오케스트레이터|클로드코드|코덱스|제미나이|안티그래비티|컨텍스트엔지니어링">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" alt="">
+<div class="body"><div class="ttl">클로드·코덱스·제미나이를 동시에 제어합니다 | 하네스 멀티 에이전트 2.0</div>
+<div class="mt"><span>AI 치트키</span><span>2026-06-07</span><span>22:44</span></div>
+<div class="one">클로드 코드·코덱스·안티그래비티 어느 환경에서 켜든 똑같이 도는 벤더 독립형 멀티 에이전트 시스템. &quot;켜는 곳&quot;이 지휘자(오케스트레이터)가 되고, 나머지 AI는 워커로 일하며 서로 만들고 서로 검수한다.</div></div></a></section>
+<main><article class="post" id="post-y6HIrsG7pE8">
+<div class="phead"><img src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 콘텐츠 마스터 세인투 · 바이브 코딩 마스터 시리즈 1편</span>
+<h2 class="ptitle">코딩 몰라도 OK — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지</h2>
+<div class="pmeta"><span class="chip">⏱ 20:12</span><span class="chip">📅 2026-06-23</span><span class="chip">바이브코딩</span><span class="chip">클로드코드</span><span class="chip">클로드데스크톱</span><span class="chip">디자인시스템</span><span class="chip">구글시트</span><span class="chip">AppsScript</span></div>
+<a class="watch" href="https://www.youtube.com/watch?v=y6HIrsG7pE8" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<blockquote><strong>한 줄 요약:</strong> 코드 한 줄 없이 클로드 코드(데스크톱 앱)로 "진짜 작동하는" 강사 섭외 사이트를 만든다. 핵심은 <strong>4가지 원칙</strong> — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것.</blockquote>
+<hr>
+<h2 class="chap">1. 인트로 및 결과물 공개 · <a href="https://youtu.be/y6HIrsG7pE8?t=0" target="_blank" rel="noopener">0:00</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>"AI가 만들면 촌스럽다"(보라색 그라데이션·이모지 버튼)는 통념을 깨고, 돈 주고 만든 듯한 사이트를 보여준다.</li><li>진짜 차이는 디자인이 아니라 <strong>작동 여부</strong> — 허접한 사이트는 보내기 버튼이 죽어 있지만, 발표자 사이트는 문의를 넣으면 구글 시트에 한 줄 쌓인다.</li><li>외주로는 50만~100만 원짜리 결과물을 직접 만든다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"그냥 장난감이냐, 진짜 사용할 수 있는 사이트냐의 차이입니다." — <a href="https://youtu.be/y6HIrsG7pE8?t=48" target="_blank" rel="noopener">0:48</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"작동하는 사이트"의 최소 조건은 무엇일까? → 이 영상에선 '문의 폼 + 데이터 저장(구글 시트)'으로 정의한다.</li></ul>
+<hr>
+<h2 class="chap">2. 바이브 코딩 시리즈 소개 · <a href="https://youtu.be/y6HIrsG7pE8?t=64" target="_blank" rel="noopener">1:04</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>누구나 쉽게 따라 하도록 시리즈로 진행: <strong>1편(오늘)</strong> 고객 문의가 쌓이는 사이트.</li><li>2편 관리자 페이지 → 3·4편 "돈 받고 사이트를 파는" 수익화까지.</li><li>전제 약속: 뒤에 나오는 <strong>4가지 원칙은 하나도 건너뛰지 말 것.</strong></li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"오늘 1편은 고객 문의가 쌓이는 사이트를 만들 거예요. … 100만 원짜리 사이트를 여러분이 직접 만들어서 파는 수준까지 갈 거예요." — <a href="https://youtu.be/y6HIrsG7pE8?t=64" target="_blank" rel="noopener">1:04</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>시리즈가 "노코드 수익화"를 표방하는데, 1편의 산출물만으로 실제 판매가 가능한 수준인가?</li></ul>
+<hr>
+<h2 class="chap">3. 클로드 데스크톱 앱 및 Git 설치 · <a href="https://youtu.be/y6HIrsG7pE8?t=96" target="_blank" rel="noopener">1:36</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>도구는 <strong>클로드 코드</strong> — 예전엔 까만 터미널이라 왕초보가 못 댔지만 <strong>데스크톱 앱</strong>이 그 장벽을 없앴다(말로 다 한다).</li><li>준비물 ①: 클로드 데스크톱 앱(공식 사이트에서 설치·로그인). <strong>단, 클로드 유료 요금제 필수</strong>(무료 불가).</li><li>준비물 ②: <strong>Git</strong>(작업 자동 저장·되돌리기 안전벨트). 맥은 기본 포함, 윈도우는 설치 파일 다운로드.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"예전엔 개발 도구가 까만 터미널 화면이라 왕초보는 손도 못 댔어요. 그런데 지금은 데스크톱 앱이 그 장벽을 없앴습니다. 말로 다 합니다." — <a href="https://youtu.be/y6HIrsG7pE8?t=111" target="_blank" rel="noopener">1:51</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>Git을 "안전벨트"로만 쓰는데, 비개발자가 되돌리기(버전 관리)를 실제로 어떻게 트리거하나? → 영상에선 깊이 다루지 않음.</li></ul>
+<hr>
+<h2 class="chap">4. 원칙 1 — 재료는 파일로 던져라 · <a href="https://youtu.be/y6HIrsG7pE8?t=157" target="_blank" rel="noopener">2:37</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>흔한 실수: 자기소개·이력을 매번 프롬프트에 길게 적는 것 → 프롬프트가 한없이 길어진다.</li><li>대신 내 정보를 <strong><code>about.md</code></strong> 파일 하나에 모아두고, AI에게 "이 파일 보고 알아서 가져다 써"라고 시킨다.</li><li>담을 내용: 강사 소개·한 줄 포지셔닝·프로필·숫자로 보는 실적·출강 이력·강의 프로그램·연락처. 나중엔 숫자 한 줄만 바꾸고 "다시 반영해 줘"면 끝.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"내 정보를 파일 하나에 싹 모아 두세요. 그리고 AI한테 이 파일 보고 알아서 가져다 써라고 시키세요." — <a href="https://youtu.be/y6HIrsG7pE8?t=177" target="_blank" rel="noopener">2:57</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li><code>about.md</code> 같은 "재료 파일" 분리는 [[하네스 멀티 에이전트]]의 context.md/brief.md 분리와 같은 컨텍스트 엔지니어링 발상 아닐까?</li></ul>
+<hr>
+<h2 class="chap">5. 원칙 2 — 결과를 그림 그리듯 요청하기 · <a href="https://youtu.be/y6HIrsG7pE8?t=221" target="_blank" rel="noopener">3:41</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>코드를 알 필요 없이, <strong>어떤 화면을 원하는지 디자이너에게 주문하듯</strong> 구체적으로 그려서 설명한다("위쪽을 좌우 두 칸으로 나눠줘" 등).</li><li>첫 프롬프트의 숨은 꿀팁 3가지: ①<strong>역할 부여</strong>("너는 실력 있는 웹 개발자이자 디자이너야")로 결과 수준↑ ②재료는 <code>about.md</code>에서 ③배치를 "예쁘게"가 아니라 구체적으로.</li><li>사전 팁: 파일 생성마다 묻는 허용창이 귀찮으면 <strong>권한 건너뛰기(스킵) 모드</strong>를 켜둔다. 클로드는 시키면 먼저 <code>about.md</code>부터 읽고 화면을 만든다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"코드 말고 결과를 그림 그리듯이 요청해라. 여러분이 코드를 알 필요가 없어요. 마치 디자이너에게 주문하듯이요." — <a href="https://youtu.be/y6HIrsG7pE8?t=225" target="_blank" rel="noopener">3:45</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"권한 건너뛰기"는 편하지만 위험할 수 있다 — 비개발자에게 안전한 범위는 어디까지일까?</li></ul>
+<hr>
+<h2 class="chap">6. 디자인 시스템 적용하기 (DESIGN.md) · <a href="https://youtu.be/y6HIrsG7pE8?t=382" target="_blank" rel="noopener">6:22</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>첫 결과물은 평범하다 — 여기서 끝내면 실패. <strong>디자인도 파일로 던질 수 있다.</strong></li><li><strong>getdesign.md</strong>(Stripe·Vercel·Linear·Notion·Apple 등 유명 기업의 디자인 시스템을 DESIGN.md로 역공학해 모아둔 무료 사이트)에서 <strong>Stripe(결제 회사, 깔끔한 디자인으로 유명)</strong>의 규칙을 받아 <code>design.md</code>로 저장 + 로고 이미지도 폴더에 넣고, "이 문서를 처음부터 끝까지 그대로 적용해 줘"라고 시킨다.</li><li>"앞으로 모든 페이지도 이 디자인으로"라고 한 줄 박아두면 이후 페이지가 통일된 톤으로 나온다. → 감각 없어도 고수처럼 보이는 가장 빠른 길.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"감각이 없는 사람이 고수처럼 보이는 가장 빠른 길입니다." — <a href="https://youtu.be/y6HIrsG7pE8?t=443" target="_blank" rel="noopener">7:23</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>getdesign.md의 디자인은 실제 기업을 "역공학"한 것이라는데, 상용 사이트에 그대로 쓸 때 저작권·트레이드드레스 문제는 없을까?</li></ul>
+<hr>
+<h2 class="chap">7. 원칙 3 — 완료된 기능은 두고 하나씩 누적하며 쌓기 · <a href="https://youtu.be/y6HIrsG7pE8?t=460" target="_blank" rel="noopener">7:40</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>초보의 최대 실수는 "한 방에 다 시키기"(메인+강의+문의+디자인 동시) → AI가 헷갈려 죄다 어설퍼진다.</li><li>고수는 <strong>"지금 건 그대로 두고 OO만 추가해 줘"</strong>로 하나씩 쌓는다. 메뉴만 시켜도 똑똑한 AI는 연결될 페이지까지 같은 디자인으로 자동 생성.</li><li>누적 예: 출강 이력 카드 → 숫자 카운트업(0→3,400) → 카드 클릭 펼침 → 상단 흐르는 띠 → 문의 폼 동작(빈칸이면 경고) → <strong>모바일 반응형</strong>. "디테일은 요청한 만큼 나온다."</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"지금 건 그대로 두고 하나씩 쌓아라. … 한 방에 다 시키면 AI가 헷갈려서 죄다 어설프게 나옵니다." — <a href="https://youtu.be/y6HIrsG7pE8?t=465" target="_blank" rel="noopener">7:45</a> "디테일은 우리가 요청한 만큼 나와요. 중요한 디테일은 꼭 잊지 마세요." — <a href="https://youtu.be/y6HIrsG7pE8?t=639" target="_blank" rel="noopener">10:39</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"하나씩 누적"은 [[하네스 멀티 에이전트]]의 "워커 결과를 검수 후 다음 단계로"와 같은 점진적 검증 철학과 통하지 않나?</li></ul>
+<hr>
+<h2 class="chap">8. 원칙 4 — 마음에 안 드는 부분 고치기 및 버그 수정 · <a href="https://youtu.be/y6HIrsG7pE8?t=670" target="_blank" rel="noopener">11:10</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>코드 몰라도 화면 보고 일상어로 "이거 이상해, 이렇게 해 줘"라고 하나씩 고치면 된다(간격 too far → 클로드가 직접 측정해 수정).</li><li><strong>추상적 표현도 통한다</strong>: "스트라이프 홈페이지처럼 더 고급스럽게" 한마디로 디자인이 확 좋아진다(처음에 디자인 시스템 파일을 줬기 때문).</li><li>AI도 실수한다(로고 사라짐·남색 박스 2개·카드 펼치면 내용 사라짐) → 당황 말고 <strong>증상을 하나씩</strong> 고쳐 달라 요청. 수정할 곳을 <strong>이미지 캡처</strong>로 보여주면 더 좋다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"스트라이프 홈페이지처럼 더 고급스럽게란 말에 디자인이 확 좋아졌어요. 추상적인 말도 통하는 거예요." — <a href="https://youtu.be/y6HIrsG7pE8?t=740" target="_blank" rel="noopener">12:20</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"증상을 일상어로"가 통하는 건 어디까지일까 — 기능 로직 버그도 일상어 설명만으로 고쳐질까?</li></ul>
+<hr>
+<h2 class="chap">9. 구글 시트 연동 — 고객 문의 자동 저장 · <a href="https://youtu.be/y6HIrsG7pE8?t=820" target="_blank" rel="noopener">13:40</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>문의를 볼 수 없으면 장난감 — 가장 쉽고 무료인 방법이 <strong>구글 시트 연동</strong>(서버 불필요).</li><li>방법: 클로드에게 "문의가 구글 시트에 한 줄씩 쌓이게 해 줘. 코딩 못 하니 구글 쪽 클릭 단계를 쉬운 말로 순서대로 알려줘"라고 시킴 → AI가 절차를 안내.</li><li>시트 생성 → <strong>Apps Script</strong>에 AI가 준 코드 붙여넣기 → <strong>배포 시 액세스 권한을 '모든 사용자'로 설정(여기서 제일 많이 막힘)</strong> → 배포 URL을 클로드에 던지면 폼과 연결 완료. 테스트 문의가 시트에 한 줄 쌓인다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"배포할 때 액세스 권한을 반드시 모든 사용자로 설정해야 돼요. 여기서 제일 많이 막히거든요." — <a href="https://youtu.be/y6HIrsG7pE8?t=928" target="_blank" rel="noopener">15:28</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>Apps Script 웹앱을 "모든 사용자" 공개로 두면 스팸·악용 위험은 없나? (문의 폼이 공개 엔드포인트가 됨)</li></ul>
+<hr>
+<h2 class="chap">10. 핵심 요약 및 왕초보 실행 계획 4단계 · <a href="https://youtu.be/y6HIrsG7pE8?t=1013" target="_blank" rel="noopener">16:53</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li><strong>4원칙 복습</strong>: ①재료는 파일로 ②결과를 그림 그리듯 ③지금 건 두고 하나씩 쌓기 ④마음에 안 들면 하나씩 고치기.</li><li>같은 사이트를 따라 만들 필요 없이 "내 것"을 만들면 된다.</li><li><strong>오늘 당장 할 일 4단계</strong>: ①클로드 데스크톱 앱+Git 설치(10분) ②뭘 만들지 정하기(모르면 AI에게 묻기) ③getdesign.md에서 <code>design.md</code> 받기 ④4원칙대로 바이브 코딩.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"①재료는 파일로 던져라 ②코드 말고 결과를 그림 그리듯이 요청해라 ③지금 건 그대로 두고 하나씩 쌓아라 ④마음에 안 들면 하나씩 고쳐라. 이 네 가지가 전부예요." — <a href="https://youtu.be/y6HIrsG7pE8?t=1021" target="_blank" rel="noopener">17:01</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>4원칙은 사실상 범용 바이브코딩 원칙 — 강사 사이트 외 다른 도메인(쇼핑몰·포트폴리오)에도 그대로 적용될까?</li></ul>
+<hr>
+<h2 class="chap">11. 아웃트로 및 세인투 크루 6기 안내 · <a href="https://youtu.be/y6HIrsG7pE8?t=1126" target="_blank" rel="noopener">18:46</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>"코드 한 줄 없이 외주 100만 원짜리 사이트를 직접 만들었다"로 마무리, 2편(구글 시트 데이터를 보는 <strong>관리자 페이지</strong>) 예고.</li><li>혼자 하다 막히면 멈추게 되니 함께 만드는 <strong>세인투 크루</strong>(네이버 카페, 6주 만에 게시글 600+)를 운영 — 6기는 왕초보 밀착 케어·매주 코칭·1:1 톡방 제공.</li><li><em>(유료 멤버십 홍보 구간 — 설명란 링크/할인 안내. 학습 내용과 분리해서 받아들일 것.)</em></li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"코드 한 줄 없이도 외주 100만 원짜리 사이트를 직접 만들었어요. 근데 이거 시작일 뿐입니다." — <a href="https://youtu.be/y6HIrsG7pE8?t=1111" target="_blank" rel="noopener">18:31</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>1편이 "혼자서도 된다"를 보여준 뒤 아웃트로에서 "혼자는 어렵다 → 크루 가입"으로 전환되는 구조 — 학습 가치와 마케팅을 어떻게 구분해서 볼까?</li></ul>
+<hr>
+<h2 class="chap">TL;DR (5줄)</h2>
+<p>1. <strong>코드 0줄로 "작동하는" 사이트</strong> — 클로드 코드 데스크톱 앱(유료 요금제 필수) + Git으로 강사 섭외 사이트를 만든다.</p>
+<p>2. <strong>4원칙이 핵심</strong> — ①재료는 파일(<code>about.md</code>)로 ②결과를 그림 그리듯 구체적으로(역할 부여 포함) ③완료분은 두고 하나씩 누적 ④마음에 안 들면 일상어로 하나씩 수정.</p>
+<p>3. <strong>디자인도 파일로</strong> — 디자인 시스템 사이트에서 Stripe 등의 규칙을 <code>design.md</code>로 받아 통째로 적용하면 감각 없어도 고수처럼.</p>
+<p>4. <strong>진짜 작동의 핵심은 데이터</strong> — 문의 폼을 <strong>구글 시트 + Apps Script</strong>로 연동(배포 권한 '모든 사용자' 주의)해 고객 문의를 자동 저장.</p>
+<p>5. <strong>시리즈 1편</strong> — 2편 관리자 페이지, 3·4편 수익화 예고. 아웃트로는 유료 크루 홍보.</p>
+<hr>
+<p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 만든 학습용 노트입니다. 원문 자막은 <a href="raw_transcript.txt" target="_blank" rel="noopener">raw_transcript.txt</a> 참고. ASR 인식 한계로 일부 고유명사(디자인 시스템 사이트명 등)는 검수 단계에서 별도 확인했습니다. 아웃트로의 유료 멤버십 안내는 학습 내용과 분리했습니다.</em></p>
+<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-HNlBFesXiW8">
+<div class="phead"><img src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 치트키</span>
+<h2 class="ptitle">클로드·코덱스·제미나이를 동시에 제어합니다 | 하네스 멀티 에이전트 2.0</h2>
+<div class="pmeta"><span class="chip">⏱ 22:44</span><span class="chip">📅 2026-06-07</span><span class="chip">하네스</span><span class="chip">멀티에이전트</span><span class="chip">오케스트레이터</span><span class="chip">클로드코드</span><span class="chip">코덱스</span><span class="chip">제미나이</span></div>
+<a class="watch" href="https://www.youtube.com/watch?v=HNlBFesXiW8" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<blockquote><strong>한 줄 요약:</strong> 클로드 코드·코덱스·안티그래비티 <strong>어느 환경에서 켜든</strong> 똑같이 도는 <strong>벤더 독립형</strong> 멀티 에이전트 시스템. "켜는 곳"이 지휘자(오케스트레이터)가 되고, 나머지 AI는 워커로 일하며 서로 만들고 서로 검수한다.</blockquote>
+<hr>
+<h2 class="chap">1. 오프닝 — 하네스 멀티 에이전트 2.0 소개 · <a href="https://youtu.be/HNlBFesXiW8?t=0" target="_blank" rel="noopener">0:00</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>이전 영상에서 선보인 하네스 멀티 에이전트 시스템의 업그레이드(2.0) 버전이며, 시청자 댓글 피드백을 반영해 만들었다.</li><li>처음 보는 사람도 이해할 수 있게 구성했다.</li><li>기존 1.0은 "클로드 코드의 오퍼스(Opus)가 오케스트레이터, 코덱스·제미나이가 워커"인 고정 구조였다 — 여기에 네 가지 문제가 있었다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"이전 버전의 하네스 멀티 에이전트 시스템은 클로드 코드의 오퍼스가 오케스트레이터가 돼서 코덱스·제미나이 같은 다른 AI들을 워커로 함께 작업하는 시스템이었습니다." — <a href="https://youtu.be/HNlBFesXiW8?t=21" target="_blank" rel="noopener">0:21</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"오케스트레이터 고정"이 왜 문제일까? → 2장에서 4가지 이유로 이어진다.</li></ul>
+<hr>
+<h2 class="chap">2. 기존 시스템의 4가지 문제 · <a href="https://youtu.be/HNlBFesXiW8?t=40" target="_blank" rel="noopener">0:40</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>① <strong>왜 클로드 코드가 오케스트레이터여야 하나</strong> — 여러 모델을 서로 비판시키면 클로드의 약점도 드러나고, <strong>딥SWE(DeepSWE) 벤치마크</strong>에서는 GPT-5.5가 오퍼스를 앞서기도 하며, 앤트로픽이 가격 정책을 바꾸면 위험하다 → 벤더에 종속되면 안 된다.</li><li>② <strong>비용</strong> — 클로드 코드·코덱스 기본 구독에 제미나이 구독까지 더하면 부담. 안티그래비티 CLI로 제미나이를 무료로 쓸 수 있어 해결, 모델 조합도 조절 가능하게 설계.</li><li>③ <strong>벤더 독립성</strong> — 시스템이 클로드 코드/코덱스/안티그래비티 "어디서든" 돌아야 한다. ④ <strong>설치</strong> — 1.0의 수동 파일 준비 방식은 환경 변화에 약함 → 2.0은 플러그인 한 번 설치로 끝.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"하네스 멀티 에이전트 시스템은 벤더에 종속되면 안 됩니다." — <a href="https://youtu.be/HNlBFesXiW8?t=74" target="_blank" rel="noopener">1:14</a> "어제 1등이 오늘 2등이 될 수도 있고… 멀티 에이전트 시스템은 어느 벤더에서나 자유롭게 작동해야 합니다." — <a href="https://youtu.be/HNlBFesXiW8?t=132" target="_blank" rel="noopener">2:12</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>벤더 독립성을 코드 레벨에서 어떻게 보장할까? → 8장 <code>backend.json</code> + 디스패처가 답.</li><li>"제미나이를 무료로"가 핵심 비용 절감 포인트인데, 안티그래비티 CLI 제공 정책이 바뀌면 다시 종속 문제가 생기지 않나?</li></ul>
+<hr>
+<h2 class="chap">3. 기본 용어 정리 — 하네스 · 오케스트레이터 · 워커 · 팬아웃/팬인 · 호출 방식 · <a href="https://youtu.be/HNlBFesXiW8?t=233" target="_blank" rel="noopener">3:53</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li><strong>하네스(harness)</strong> = 말의 고삐·안장(제어 장치). 제멋대로인 AI라는 "말"을 고삐로 묶어 통제하는 게 하네스 엔지니어링이고, 그 위에 세운 게 이 시스템.</li><li><strong>오케스트레이터(지휘자)</strong> = 작업을 쪼개고 누구에게 시킬지 정하고 결과를 합침. <strong>워커(실무 AI)</strong> = 클로드·코덱스·제미나이 등 실제 작업자. <strong>팬아웃</strong> = 한 작업을 여러 워커에 동시 분배 / <strong>팬인</strong> = 결과를 지휘자가 하나로 취합.</li><li><strong>워커 호출 3방식</strong>: 내장 호출(같은 벤더 내 서브에이전트), CLI 호출(터미널 명령어), MCP 호출(AI용 USB 포트 같은 표준 규격). 어느 방식인지는 환경마다 다르고 시스템이 알아서 처리. 지휘자는 "켜는 환경"에 따라 바뀐다(클로드 코드→클로드, 코덱스→GPT, 안티그래비티→제미나이).</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"이 강력한 말들을 고삐로 단단히 묶어 통제하는 것, 그게 바로 하네스 엔지니어링이고 그 원리 위에 세운 것이 하네스 멀티 에이전트 시스템입니다." — <a href="https://youtu.be/HNlBFesXiW8?t=250" target="_blank" rel="noopener">4:10</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>MCP가 "AI용 USB 포트"라면, 내장·CLI 호출 대비 어떤 상황에서 MCP를 선택하는 게 유리할까?</li></ul>
+<hr>
+<h2 class="chap">4. 시연 1 — 클로드 코드에서 MAT 기능 업그레이드 · <a href="https://youtu.be/HNlBFesXiW8?t=366" target="_blank" rel="noopener">6:06</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li><strong>MAT(Multi-Agent Tracking)</strong> = 이 시스템으로 처음 만든, 워커 호출 상태를 보여주는 모니터링 프로그램. 시스템 자체는 폴더·파일로만 구성돼 별도 관제 프로그램이 필요했다.</li><li>클로드 코드 환경에서 플러그인 설치 → "멀티 에이전트 시스템 구성해줘" 한 줄 → 오케스트레이터로 클로드 선택 → 설치 점검 전부 통과.</li><li>기능 추가 전에 클로드·코덱스·제미나이에게 동시에 의견을 받고(팬아웃/팬인), 클로드 메인이 구현 → 코덱스 크리틱이 검수해 버그 2개 발견 → 클로드 메인이 워커 2개 병렬로 수정. MAT에 "호출 방식(CLI/MCP/API)" 표시 기능을 추가했다.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"코덱스 크리틱이 클로드 메인이 구현한 기능을 검수하고 있습니다 … 버그 두 개를 발견했습니다." — <a href="https://youtu.be/HNlBFesXiW8?t=590" target="_blank" rel="noopener">9:50</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"만든 워커(클로드)와 검수 워커(코덱스)를 다른 벤더로" 분리하는 게 이 시연의 핵심 같은데, 검수 워커가 틀린 지적을 하면 누가 거르나?</li></ul>
+<hr>
+<h2 class="chap">5. 시연 2 — 코덱스 앱에서 PDF를 HWPX 한글 문서로 변환 · <a href="https://youtu.be/HNlBFesXiW8?t=628" target="_blank" rel="noopener">10:28</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>코덱스 앱에서 실행 → 오케스트레이터가 <strong>GPT-5.5</strong>가 된다. 플러그인 설치 → 시스템 구성까지 동일한 흐름.</li><li>작업: 수식이 가득한 PDF 한 페이지를 <strong>제미나이 비전</strong>이 읽어 분석하고, <strong>코덱스</strong>가 그 결과와 HWPX MCP를 이용해 수식까지 원본과 똑같이 한글(HWPX) 문서로 재현.</li><li>검증 결과 대부분 정확히 변환됐고, "조립제법" 부분만 한글 수식에 없거나 제미나이가 문법을 몰라 누락 — 문서 작성에 폭넓게 활용 가능하다고 정리.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"수식이 가득한 PDF 한 페이지를 제미나이 비전이 읽어서 분석하고, 코덱스가 그걸 한글 HWPX 문서로 수식까지 원본과 똑같이 재현합니다." — <a href="https://youtu.be/HNlBFesXiW8?t=703" target="_blank" rel="noopener">11:43</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>모델이 모르는 수식(조립제법)에서 깨지는 문제는 검수 워커로 잡을 수 있나, 아니면 HWPX 변환기 한계인가?</li></ul>
+<hr>
+<h2 class="chap">6. 시연 3 — 안티그래비티에서 AI 의견 종합하기 · <a href="https://youtu.be/HNlBFesXiW8?t=801" target="_blank" rel="noopener">13:21</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>안티그래비티(Antigravity) 환경에서 실행 → 오케스트레이터가 <strong>제미나이</strong>가 된다. 설치·구성 흐름은 앞 시연과 동일.</li><li>주제: "앞으로 10년 AI는 어디로 가는가". 클로드·코덱스 워커가 <strong>서로의 답을 안 보고</strong> 각자 의견 생성(팬아웃) → 지휘자 제미나이가 자기 관점을 더해 하나로 종합(팬인).</li><li>발표자는 "이 정도 작업은 굳이 멀티 에이전트가 필요 없지만, 팬아웃/팬인을 보여주기 위한 간단한 시연"이라고 솔직히 밝힘.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"클로드와 코덱스 워커가 서로의 답을 보지 않고 각자 의견을 냅니다. 이게 팬아웃. 그리고 지휘자인 제미나이가 자기 관점까지 더해 새 의견을 하나로 종합합니다. 이게 팬인입니다." — <a href="https://youtu.be/HNlBFesXiW8?t=865" target="_blank" rel="noopener">14:25</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>세 시연(클로드 코드/코덱스/안티그래비티)이 "지휘자만 바뀌고 시스템은 같다"를 증명하려는 구성인데, 결과 품질도 환경에 상관없이 동일할까?</li></ul>
+<hr>
+<h2 class="chap">7. 작동 원리 — 같은 시스템, 바뀌는 오케스트레이터 · <a href="https://youtu.be/HNlBFesXiW8?t=919" target="_blank" rel="noopener">15:19</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li>핵심 원리는 1.0과 동일: 상태를 파일로 저장 → 승인 → 검증 → 컨텍스트 관리. 목적은 모델별 강점(코딩·검수·비전·긴 문서 분석)을 살려 최상의 결과를 뽑는 것.</li><li><strong>이번 버전의 핵심</strong>: 지휘자가 특정 벤더에 고정되지 않는다. 같은 플러그인·같은 폴더·같은 명령인데 "켜는 환경"만 바뀌면 지휘자(클로드 오퍼스/GPT-5.5/제미나이)와 워커 구성이 그에 맞게 바뀐다.</li><li><strong>검수 원칙</strong>: 검수는 항상 지휘자와 <strong>다른 벤더</strong>가 맡는다(자기 검수 금지). 크리틱 워커는 평균 4~5개 문제를 찾고 원작 워커가 2~3개를 수정. 매 작업마다 모든 워커를 부르지 않고 필요한 워커만 사용자 승인하에 호출.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"같은 시스템, 지휘자만 바뀐다 — 이번 버전이 지난 버전과 가장 크게 달라진 점입니다." — <a href="https://youtu.be/HNlBFesXiW8?t=990" target="_blank" rel="noopener">16:30</a> "검수는 항상 지휘자와 다른 벤더가 맡습니다. 자기가 만든 걸 자기가 봐주지 않게 하려는 겁니다." — <a href="https://youtu.be/HNlBFesXiW8?t=1063" target="_blank" rel="noopener">17:43</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li>"다른 벤더가 검수"는 이 노트를 만드는 우리 워크플로우(작성 ≠ 검수 분리)와 똑같은 철학이다 — 어디까지 자동화하면 사람이 최종 판단만 해도 될까?</li></ul>
+<hr>
+<h2 class="chap">8. 워커 구성과 호출 방식 · 컨텍스트 엔지니어링 · 가드레일 · 마무리 · <a href="https://youtu.be/HNlBFesXiW8?t=1089" target="_blank" rel="noopener">18:09</a></h2>
+<p><strong>3줄 요약</strong></p>
+<ul><li><strong>벤더 독립의 비결</strong>: 워커 호출 방식(내장/MCP/CLI/API)의 차이를 <code>backend.json</code> 한 곳에 모으고, <strong>디스패처</strong>가 각 워커에 맞는 방식으로 알아서 호출 → 환경마다 최적 연결을 쓰면서 시스템은 동일하게 동작. (제미나이는 안티그래비티 CLI로 무료 사용.)</li><li><strong>컨텍스트 엔지니어링 3원칙</strong>: ① 컨텍스트 비대화 방지(<code>context.md</code> 1,500자·<code>brief.md</code> 1,200자 제한, 긴 코드는 파일 경로로만 전달) ② 필요할 때 필요한 만큼만 꺼내기 ③ 워커 결과는 다른 워커 검수 후 통과. + 브리프는 중요한 목표·제약을 앞, 금지사항을 뒤에(모델은 가운데를 잘 놓침).</li><li><strong>가드레일·자기개선</strong>: 모델 호출 전 사용자 명시 승인 강제(과거 코덱스가 무단으로 클로드를 호출해 사용량 소진된 경험), 전 과정 로그·검수 실패 시 재호출. 작업 후 교훈을 <code>learnings.md</code>에 적어 다음에 참고. 시스템 자체 수정용으로 <code>design-basis.md</code>(왜 이렇게 만들었나)·<code>system-invariants.md</code>(수정 시 지킬 규칙)를 분리.</li></ul>
+<p><strong>핵심 인용</strong></p>
+<blockquote>"작업 진행 내용은 context.md에 1,500자 제한으로, 워커 지시는 brief.md에 1,200자 제한으로 짧게 정리합니다." — <a href="https://youtu.be/HNlBFesXiW8?t=1134" target="_blank" rel="noopener">18:54</a> "매일 작업이 끝나면 오케스트레이터는 다시 쓸 교훈만 추려서 learnings.md에 기록합니다 … 같은 실수를 반복하지 않습니다." — <a href="https://youtu.be/HNlBFesXiW8?t=1243" target="_blank" rel="noopener">20:43</a></blockquote>
+<p><strong>내 질문</strong></p>
+<ul><li><code>context.md</code> 1,500자 / <code>brief.md</code> 1,200자 제한은 어떤 근거로 정한 수치일까(모델 컨텍스트 한계? 경험칙?).</li><li>"호출 전 사용자 승인 강제"는 안전하지만 자동화 효율을 떨어뜨린다 — 신뢰 구간을 두고 일부 자동 승인하는 절충안은 없을까?</li></ul>
+<hr>
+<h2 class="chap">TL;DR (5줄)</h2>
+<p>1. <strong>하네스 멀티 에이전트 2.0 = 벤더 독립형 멀티 에이전트 시스템</strong> — 클로드 코드/코덱스/안티그래비티 어디서 켜도 같은 플러그인·폴더·명령으로 동작.</p>
+<p>2. <strong>"켜는 환경"이 지휘자(오케스트레이터)가 된다</strong> — 클로드 코드→오퍼스, 코덱스→GPT-5.5, 안티그래비티→제미나이. 시스템은 그대로, 지휘자만 바뀐다.</p>
+<p>3. <strong>여러 모델이 서로 만들고 서로 검수</strong> — 검수는 항상 다른 벤더가 맡아 자기 검수를 막고, 팬아웃/팬인으로 의견을 분배·종합한다.</p>
+<p>4. <strong>상태는 전부 파일로</strong> — <code>task.md</code>/<code>brief.md</code>/<code>context.md</code>/<code>result.md</code>/<code>learnings.md</code> + <code>backend.json</code>·디스패처로 호출 방식을 추상화, 컨텍스트 엔지니어링 3원칙으로 품질 유지.</p>
+<p>5. <strong>안전장치</strong> — 모든 모델 호출은 사용자 승인 후, 결과는 검수 통과 후 진행, 전 과정 로그 기록, 교훈은 누적 학습.</p>
+<hr>
+<p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 작성한 학습용 노트입니다. 원문 자막은 <a href="raw_transcript.txt" target="_blank" rel="noopener">raw_transcript.txt</a> 참고. 모델명(GPT-5.5, 제미나이 3.1 등)·벤치마크 명칭은 영상 화자 발언 기준이며 일부는 자막 인식 한계로 확정이 어려워 검수 단계에서 별도 확인했습니다.</em></p>
+<a class="top" href="#top">↑ 갤러리로</a></article></main>
+<footer>video2post 파이프라인으로 생성된 단일 갤러리입니다. 새 영상을 <code>notes/</code>에 추가하고 <code>python build_gallery.py</code>를 다시 실행하면 누적·재생성됩니다.</footer>
+</div><script>
+var bar=document.getElementById('bar');
+function sc(){var h=document.documentElement;bar.style.width=((h.scrollTop)/(h.scrollHeight-h.clientHeight)*100)+'%'}
+document.addEventListener('scroll',sc,{passive:true});sc();
+var tb=document.getElementById('themeBtn'),b=document.body;
+tb.onclick=function(){var d=b.getAttribute('data-theme')==='dark';b.setAttribute('data-theme',d?'light':'dark');tb.textContent=d?'◑ 다크':'◐ 라이트'};
+document.querySelectorAll('.tagf').forEach(function(t){t.onclick=function(){
+  document.querySelectorAll('.tagf').forEach(x=>x.classList.remove('on'));t.classList.add('on');
+  var tag=t.dataset.tag;
+  document.querySelectorAll('.gcard').forEach(function(c){
+    c.style.display=(tag==='*'||(c.dataset.tags||'').split('|').includes(tag))?'':'none';
+  });
+}});
+</script></body></html>

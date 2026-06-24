@@ -88,12 +88,18 @@
   .article th,.article td{border:1.5px solid var(--line);padding:8px 11px;text-align:left}
   .article th{background:var(--chip)}
   footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px;color:var(--muted);font-size:.82rem;border-top:1.5px solid var(--line)}
+  .hero-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .navbtn{flex:none;text-decoration:none;font-weight:800;font-size:.9rem;color:#fff;background:var(--accent);border-radius:12px;padding:10px 16px;box-shadow:var(--shadow);transition:.14s;white-space:nowrap}
+  .navbtn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(232,116,59,.32)}
 </style>
 </head>
 <body>
 <div class="deco" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i></div>
 <header class="hero">
-  <h1>Search · 주제 리서치 갤러리</h1>
+  <div class="hero-row">
+    <h1>Search · 주제 리서치 갤러리</h1>
+    <a class="navbtn" href="videos/" target="_blank" rel="noopener">🎬 영상노트 ↗</a>
+  </div>
 </header>
 
 <div class="controls">
