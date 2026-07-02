@@ -30,26 +30,45 @@ h1.site{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;font-weight:800;lett
 .gcard .ttl{font-weight:700;font-size:.98rem;line-height:1.35;margin-bottom:.4rem}
 .gcard .mt{font-size:.74rem;color:var(--faint);display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem}
 .gcard .one{font-size:.85rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-article.post{border-top:1px solid var(--line);padding:2.4rem 0 1rem;scroll-margin-top:1rem}
+.post{border-top:1px solid var(--line);padding:2.4rem 0 1rem;scroll-margin-top:1rem}
 .phead{display:flex;gap:1rem;align-items:flex-start;margin-bottom:.4rem}
 .phead img{width:160px;border-radius:10px;border:1px solid var(--line);flex:none}
 .phead h2.ptitle{font-size:1.5rem;font-weight:800;line-height:1.25}
 .pmeta{display:flex;flex-wrap:wrap;gap:.4rem;margin:.7rem 0}
 .chip{font-size:.74rem;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:7px;padding:.25rem .55rem}
 .watch{display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(120deg,var(--a1),var(--a2));color:#0c0d12;font-weight:700;padding:.45rem .9rem;border-radius:9px;text-decoration:none;font-size:.85rem;margin-top:.3rem}
-article.post h2.chap{font-size:1.2rem;font-weight:700;margin:1.8rem 0 .3rem;padding-top:.6rem;border-top:1px dashed var(--line)}
-article.post h4{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:1rem 0 .4rem}
-article.post ul{padding-left:1.2rem}article.post li{margin:.4rem 0}
-article.post li strong,article.post p strong{color:var(--a1)}
-article.post a{color:var(--a2)}
+.post h2.chap{font-size:1.2rem;font-weight:700;margin:1.8rem 0 .3rem;padding-top:.6rem;border-top:1px dashed var(--line)}
+.post h4{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:1rem 0 .4rem}
+.post ul{padding-left:1.2rem}.post li{margin:.4rem 0}
+.post li strong,.post p strong{color:var(--a1)}
+.post a{color:var(--a2)}
 blockquote{background:var(--quote);border-left:3px solid var(--a1);border-radius:0 10px 10px 0;padding:.7rem 1rem;margin:.5rem 0;font-style:italic;color:var(--txt);font-size:.96rem}
-article.post p{margin:.6rem 0}
+.post p{margin:.6rem 0}
 hr{border:none;border-top:1px solid var(--line);margin:1.5rem 0}
 .top{display:inline-block;margin:1rem 0;color:var(--a2);text-decoration:none;font-size:.85rem}
 #fabTop{position:fixed;right:22px;bottom:22px;z-index:100;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--a2);font-size:1.15rem;line-height:1;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.32);opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s;font-family:var(--sans)}
 #fabTop.show{opacity:1;visibility:visible;transform:none}
 #fabTop:hover{color:var(--txt);border-color:var(--a1);background:var(--bg-soft)}
 @media(max-width:520px){#fabTop{right:14px;bottom:14px;width:42px;height:42px}}
+.controls{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0 .4rem}
+.search{flex:1;min-width:200px;display:flex;align-items:center;gap:.5rem;background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem}
+.search:focus-within{border-color:var(--a1)}
+.search svg{flex:none;opacity:.5}
+.search input{flex:1;background:none;border:none;outline:none;color:var(--txt);font-family:var(--sans);font-size:.9rem}
+.sel{background:var(--bg-soft);border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:.5rem .8rem;font-size:.82rem;font-family:var(--sans);cursor:pointer}
+.sel:hover{color:var(--txt);border-color:var(--a1)}
+.count b,.count #cnt{color:var(--a2)}
+details.post{border-top:1px solid var(--line);scroll-margin-top:.5rem}
+details.post>summary{list-style:none;cursor:pointer;display:flex;gap:1rem;align-items:flex-start;padding:1.6rem 0 1.4rem}
+details.post>summary::-webkit-details-marker{display:none}
+details.post>summary:hover .ptitle{color:var(--a1)}
+details.post>summary .caret{margin-left:auto;flex:none;color:var(--faint);transition:.2s;padding-top:.3rem}
+details.post[open]>summary .caret{transform:rotate(180deg);color:var(--a1)}
+details.post>summary .ptitle{transition:.15s}
+.pbody{padding:0 0 1.6rem}
+.pactions{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:0 0 1rem}
+.copyb{background:var(--card);color:var(--muted);border:1px solid var(--line);border-radius:9px;padding:.45rem .8rem;font-size:.82rem;cursor:pointer;font-family:var(--sans);transition:.15s}
+.copyb:hover{color:var(--txt);border-color:var(--a2)}
 footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--faint);font-size:.82rem}
 @media(max-width:520px){.phead img{width:96px}body{font-size:16px}}
 </style></head>
@@ -58,79 +77,83 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <div class="wrap">
 <header class="hero"><span class="eyebrow"><span class="dot"></span>video2post 갤러리</span>
 <h1 class="site">영상 노트 갤러리</h1>
-<p class="sub">유튜브 강의를 수집·검수해 정리한 학습 노트 모음. 카드를 누르면 해당 글로 이동합니다.</p>
-<div class="count">총 16개 · 최종 갱신 2026-07-02</div>
-<div class="filters"><button class="tagf on" data-tag="*">전체</button><button class="tagf" data-tag="AGENTS.md">#AGENTS.md</button><button class="tagf" data-tag="AI에이전트">#AI에이전트</button><button class="tagf" data-tag="AI자동화">#AI자동화</button><button class="tagf" data-tag="AI팀">#AI팀</button><button class="tagf" data-tag="Antigravity">#Antigravity</button><button class="tagf" data-tag="AppsScript">#AppsScript</button><button class="tagf" data-tag="CLAUDE.md">#CLAUDE.md</button><button class="tagf" data-tag="Canvas">#Canvas</button><button class="tagf" data-tag="ClaudeCowork">#ClaudeCowork</button><button class="tagf" data-tag="ClaudeSkills">#ClaudeSkills</button><button class="tagf" data-tag="Cowork">#Cowork</button><button class="tagf" data-tag="Excalidraw">#Excalidraw</button><button class="tagf" data-tag="Expo">#Expo</button><button class="tagf" data-tag="Figma">#Figma</button><button class="tagf" data-tag="Flutter">#Flutter</button><button class="tagf" data-tag="GSAP">#GSAP</button><button class="tagf" data-tag="GeminiFileSearch">#GeminiFileSearch</button><button class="tagf" data-tag="HermesAgent">#HermesAgent</button><button class="tagf" data-tag="JSON">#JSON</button><button class="tagf" data-tag="MCP">#MCP</button><button class="tagf" data-tag="MCP대안">#MCP대안</button><button class="tagf" data-tag="Material3">#Material3</button><button class="tagf" data-tag="Obsidian">#Obsidian</button><button class="tagf" data-tag="PPT">#PPT</button><button class="tagf" data-tag="PlayMCP">#PlayMCP</button><button class="tagf" data-tag="RAG">#RAG</button><button class="tagf" data-tag="SOUL.md">#SOUL.md</button><button class="tagf" data-tag="Skills">#Skills</button><button class="tagf" data-tag="SwiftUI">#SwiftUI</button><button class="tagf" data-tag="USER.md">#USER.md</button><button class="tagf" data-tag="VSCode">#VSCode</button><button class="tagf" data-tag="agent-reach">#agent-reach</button><button class="tagf" data-tag="getdesignmd">#getdesignmd</button><button class="tagf" data-tag="self-healing-router">#self-healing-router</button><button class="tagf" data-tag="shadcn">#shadcn</button><button class="tagf" data-tag="ui-ux-pro-max">#ui-ux-pro-max</button><button class="tagf" data-tag="개인지식시스템">#개인지식시스템</button><button class="tagf" data-tag="교무자동화">#교무자동화</button><button class="tagf" data-tag="교사AI">#교사AI</button><button class="tagf" data-tag="구글시트">#구글시트</button><button class="tagf" data-tag="그래프뷰">#그래프뷰</button><button class="tagf" data-tag="노코드">#노코드</button><button class="tagf" data-tag="다이어그램">#다이어그램</button><button class="tagf" data-tag="단축키">#단축키</button><button class="tagf" data-tag="디자인스킬">#디자인스킬</button><button class="tagf" data-tag="디자인시스템">#디자인시스템</button><button class="tagf" data-tag="디자인토큰">#디자인토큰</button><button class="tagf" data-tag="멀티에이전트">#멀티에이전트</button><button class="tagf" data-tag="메모리시스템">#메모리시스템</button><button class="tagf" data-tag="모노레포">#모노레포</button><button class="tagf" data-tag="모바일UI">#모바일UI</button><button class="tagf" data-tag="바이브코딩">#바이브코딩</button><button class="tagf" data-tag="변수">#변수</button><button class="tagf" data-tag="세컨드브레인">#세컨드브레인</button><button class="tagf" data-tag="세컨브레인">#세컨브레인</button><button class="tagf" data-tag="수업설계">#수업설계</button><button class="tagf" data-tag="스케줄">#스케줄</button><button class="tagf" data-tag="스케줄태스크">#스케줄태스크</button><button class="tagf" data-tag="시각화">#시각화</button><button class="tagf" data-tag="안티그래비티">#안티그래비티</button><button class="tagf" data-tag="앱개발">#앱개발</button><button class="tagf" data-tag="앱공장">#앱공장</button><button class="tagf" data-tag="업무자동화">#업무자동화</button><button class="tagf" data-tag="에이전트">#에이전트</button><button class="tagf" data-tag="오케스트레이터">#오케스트레이터</button><button class="tagf" data-tag="오픈소스플러그인">#오픈소스플러그인</button><button class="tagf" data-tag="옵시디언">#옵시디언</button><button class="tagf" data-tag="운영시스템">#운영시스템</button><button class="tagf" data-tag="원샷프롬프트">#원샷프롬프트</button><button class="tagf" data-tag="웹검색">#웹검색</button><button class="tagf" data-tag="자동화">#자동화</button><button class="tagf" data-tag="자율주행">#자율주행</button><button class="tagf" data-tag="제미나이">#제미나이</button><button class="tagf" data-tag="지식관리">#지식관리</button><button class="tagf" data-tag="지식위키">#지식위키</button><button class="tagf" data-tag="카카오톡">#카카오톡</button><button class="tagf" data-tag="캔버스">#캔버스</button><button class="tagf" data-tag="커넥터">#커넥터</button><button class="tagf" data-tag="컨텍스트엔지니어링">#컨텍스트엔지니어링</button><button class="tagf" data-tag="코덱스">#코덱스</button><button class="tagf" data-tag="코워크">#코워크</button><button class="tagf" data-tag="클로드">#클로드</button><button class="tagf" data-tag="클로드데스크톱">#클로드데스크톱</button><button class="tagf" data-tag="클로드디자인">#클로드디자인</button><button class="tagf" data-tag="클로드코드">#클로드코드</button><button class="tagf" data-tag="텔레그램">#텔레그램</button><button class="tagf" data-tag="파워포인트">#파워포인트</button><button class="tagf" data-tag="퍼미션">#퍼미션</button><button class="tagf" data-tag="폴더구조">#폴더구조</button><button class="tagf" data-tag="프런트엔드">#프런트엔드</button><button class="tagf" data-tag="프롬프트엔지니어링">#프롬프트엔지니어링</button><button class="tagf" data-tag="플러그인">#플러그인</button><button class="tagf" data-tag="플레이MCP">#플레이MCP</button><button class="tagf" data-tag="피그마스킬">#피그마스킬</button><button class="tagf" data-tag="하네스">#하네스</button><button class="tagf" data-tag="헤르메스">#헤르메스</button></div></header>
-<section class="grid"><a class="gcard" href="#post-4kAHzEQ4i0U" data-tags="옵시디언|Excalidraw|클로드코드|그래프뷰|다이어그램|플러그인|단축키|지식관리">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/4kAHzEQ4i0U/hqdefault.jpg" alt="">
+<p class="sub">유튜브 강의를 수집·검수해 정리한 학습 노트 모음. 카드를 누르면 해당 노트가 펼쳐집니다.</p>
+<div class="controls">
+<div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input id="q" type="search" placeholder="제목·채널·요약·태그 검색  ( / )" autocomplete="off"></div>
+<select class="sel" id="sortSel" title="정렬"><option value="new">최신순</option><option value="channel">채널별</option><option value="dur">길이순</option></select>
+<select class="sel" id="chSel" title="채널"><option value="*">채널 전체</option><option value="AI 치트키">AI 치트키</option><option value="AI 콘텐츠 마스터 세인투">AI 콘텐츠 마스터 세인투</option><option value="Tech Bridge">Tech Bridge</option><option value="교육티타임">교육티타임</option><option value="그랜트 | 마케팅 AX, AI 사업">그랜트 | 마케팅 AX, AI 사업</option><option value="길호의 실전 AI - 업무 자동화, 그 이상">길호의 실전 AI - 업무 자동화, 그 이상</option><option value="디자인하는AI">디자인하는AI</option><option value="로치의개발일기">로치의개발일기</option><option value="바이브랩스">바이브랩스</option><option value="배움의 달인 (AI·자동화)">배움의 달인 (AI·자동화)</option><option value="오후다섯씨">오후다섯씨</option><option value="일용직 개발자 임상진">일용직 개발자 임상진</option><option value="진한별의 AI 연구소">진한별의 AI 연구소</option></select></div>
+<div class="filters"><button class="tagf on" data-tag="*">전체</button><button class="tagf" data-tag="AGENTS.md">#AGENTS.md</button><button class="tagf" data-tag="AI에이전트">#AI에이전트</button><button class="tagf" data-tag="AI자동화">#AI자동화</button><button class="tagf" data-tag="AI팀">#AI팀</button><button class="tagf" data-tag="Antigravity">#Antigravity</button><button class="tagf" data-tag="AppsScript">#AppsScript</button><button class="tagf" data-tag="CLAUDE.md">#CLAUDE.md</button><button class="tagf" data-tag="Canvas">#Canvas</button><button class="tagf" data-tag="ClaudeCowork">#ClaudeCowork</button><button class="tagf" data-tag="ClaudeSkills">#ClaudeSkills</button><button class="tagf" data-tag="Cowork">#Cowork</button><button class="tagf" data-tag="Excalidraw">#Excalidraw</button><button class="tagf" data-tag="Expo">#Expo</button><button class="tagf" data-tag="Figma">#Figma</button><button class="tagf" data-tag="Flutter">#Flutter</button><button class="tagf" data-tag="GSAP">#GSAP</button><button class="tagf" data-tag="GeminiFileSearch">#GeminiFileSearch</button><button class="tagf" data-tag="HermesAgent">#HermesAgent</button><button class="tagf" data-tag="JSON">#JSON</button><button class="tagf" data-tag="MCP">#MCP</button><button class="tagf" data-tag="MCP대안">#MCP대안</button><button class="tagf" data-tag="Material3">#Material3</button><button class="tagf" data-tag="Obsidian">#Obsidian</button><button class="tagf" data-tag="PPT">#PPT</button><button class="tagf" data-tag="PlayMCP">#PlayMCP</button><button class="tagf" data-tag="RAG">#RAG</button><button class="tagf" data-tag="SOUL.md">#SOUL.md</button><button class="tagf" data-tag="Skills">#Skills</button><button class="tagf" data-tag="SwiftUI">#SwiftUI</button><button class="tagf" data-tag="USER.md">#USER.md</button><button class="tagf" data-tag="VSCode">#VSCode</button><button class="tagf" data-tag="agent-reach">#agent-reach</button><button class="tagf" data-tag="getdesignmd">#getdesignmd</button><button class="tagf" data-tag="self-healing-router">#self-healing-router</button><button class="tagf" data-tag="shadcn">#shadcn</button><button class="tagf" data-tag="ui-ux-pro-max">#ui-ux-pro-max</button><button class="tagf" data-tag="개인지식시스템">#개인지식시스템</button><button class="tagf" data-tag="교무자동화">#교무자동화</button><button class="tagf" data-tag="교사AI">#교사AI</button><button class="tagf" data-tag="구글시트">#구글시트</button><button class="tagf" data-tag="그래프뷰">#그래프뷰</button><button class="tagf" data-tag="노코드">#노코드</button><button class="tagf" data-tag="다이어그램">#다이어그램</button><button class="tagf" data-tag="단축키">#단축키</button><button class="tagf" data-tag="디자인스킬">#디자인스킬</button><button class="tagf" data-tag="디자인시스템">#디자인시스템</button><button class="tagf" data-tag="디자인토큰">#디자인토큰</button><button class="tagf" data-tag="멀티에이전트">#멀티에이전트</button><button class="tagf" data-tag="메모리시스템">#메모리시스템</button><button class="tagf" data-tag="모노레포">#모노레포</button><button class="tagf" data-tag="모바일UI">#모바일UI</button><button class="tagf" data-tag="바이브코딩">#바이브코딩</button><button class="tagf" data-tag="변수">#변수</button><button class="tagf" data-tag="세컨드브레인">#세컨드브레인</button><button class="tagf" data-tag="세컨브레인">#세컨브레인</button><button class="tagf" data-tag="수업설계">#수업설계</button><button class="tagf" data-tag="스케줄">#스케줄</button><button class="tagf" data-tag="스케줄태스크">#스케줄태스크</button><button class="tagf" data-tag="시각화">#시각화</button><button class="tagf" data-tag="안티그래비티">#안티그래비티</button><button class="tagf" data-tag="앱개발">#앱개발</button><button class="tagf" data-tag="앱공장">#앱공장</button><button class="tagf" data-tag="업무자동화">#업무자동화</button><button class="tagf" data-tag="에이전트">#에이전트</button><button class="tagf" data-tag="오케스트레이터">#오케스트레이터</button><button class="tagf" data-tag="오픈소스플러그인">#오픈소스플러그인</button><button class="tagf" data-tag="옵시디언">#옵시디언</button><button class="tagf" data-tag="운영시스템">#운영시스템</button><button class="tagf" data-tag="원샷프롬프트">#원샷프롬프트</button><button class="tagf" data-tag="웹검색">#웹검색</button><button class="tagf" data-tag="자동화">#자동화</button><button class="tagf" data-tag="자율주행">#자율주행</button><button class="tagf" data-tag="제미나이">#제미나이</button><button class="tagf" data-tag="지식관리">#지식관리</button><button class="tagf" data-tag="지식위키">#지식위키</button><button class="tagf" data-tag="카카오톡">#카카오톡</button><button class="tagf" data-tag="캔버스">#캔버스</button><button class="tagf" data-tag="커넥터">#커넥터</button><button class="tagf" data-tag="컨텍스트엔지니어링">#컨텍스트엔지니어링</button><button class="tagf" data-tag="코덱스">#코덱스</button><button class="tagf" data-tag="코워크">#코워크</button><button class="tagf" data-tag="클로드">#클로드</button><button class="tagf" data-tag="클로드데스크톱">#클로드데스크톱</button><button class="tagf" data-tag="클로드디자인">#클로드디자인</button><button class="tagf" data-tag="클로드코드">#클로드코드</button><button class="tagf" data-tag="텔레그램">#텔레그램</button><button class="tagf" data-tag="파워포인트">#파워포인트</button><button class="tagf" data-tag="퍼미션">#퍼미션</button><button class="tagf" data-tag="폴더구조">#폴더구조</button><button class="tagf" data-tag="프런트엔드">#프런트엔드</button><button class="tagf" data-tag="프롬프트엔지니어링">#프롬프트엔지니어링</button><button class="tagf" data-tag="플러그인">#플러그인</button><button class="tagf" data-tag="플레이MCP">#플레이MCP</button><button class="tagf" data-tag="피그마스킬">#피그마스킬</button><button class="tagf" data-tag="하네스">#하네스</button><button class="tagf" data-tag="헤르메스">#헤르메스</button></div>
+<div class="count">총 16개 · 최종 갱신 2026-07-02 · <span id="cnt">표시 16개</span></div></header>
+<section class="grid" id="grid"><a class="gcard" href="#post-4kAHzEQ4i0U" data-tags="옵시디언|Excalidraw|클로드코드|그래프뷰|다이어그램|플러그인|단축키|지식관리" data-channel="오후다섯씨" data-date="2026-07-02" data-dur="712" data-search="옵시디언 활용도 500%! obsidian excalidraw + claude code + graphview 완전 활용법 오후다섯씨 옵시디언 커뮤니티 플러그인 excalidraw는 그림 파일이 순수 텍스트라서 claude code가 직접 읽고 그린다. 기존 캔버스(canvas) 다이어그램을 excalidraw로 자동 변환하는 것까지 시연하고, 코어 플러그인 그래프 뷰로 태그 연결을 시각화한다. 마지막으로 ai에게 파일 경로를 빠르게 넘기는 단축키(파일경로 복사 / 시스템 절대경로 복사) 세팅으로 토큰·시간을 아끼는 실전 팁을 준다. 옵시디언 excalidraw 클로드코드 그래프뷰 다이어그램 플러그인 단축키 지식관리">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/4kAHzEQ4i0U/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/4kAHzEQ4i0U/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">옵시디언 활용도 500%! Obsidian Excalidraw + Claude Code + GraphView 완전 활용법</div>
-<div class="mt"><span>오후다섯씨</span><span>2026-06-27</span><span>11:52</span></div>
-<div class="one">옵시디언 커뮤니티 플러그인 Excalidraw는 그림 파일이 순수 텍스트라서 Claude Code가 직접 읽고 그린다. 기존 캔버스(Canvas) 다이어그램을 Excalidraw로 자동 변환하는 것까지 시연하고, 코어 플러그인 그래프 뷰로 태그 연결을 시각화한다. 마지막으로 AI에게 파일 경로를 빠르게 넘기는 단축키(파일경로 복사 / 시스템 절대경로 복사) 세팅으로 토큰·시간을 아끼는 실전 팁을 준다.</div></div></a><a class="gcard" href="#post-R2aSqw7S3Ws" data-tags="옵시디언|세컨드브레인|클로드코드|지식관리|AI팀|Obsidian|지식위키|자동화">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/R2aSqw7S3Ws/hqdefault.jpg" alt="">
+<div class="mt"><span>오후다섯씨</span><span>2026-06-27</span><span>⏱ 11:52</span></div>
+<div class="one">옵시디언 커뮤니티 플러그인 Excalidraw는 그림 파일이 순수 텍스트라서 Claude Code가 직접 읽고 그린다. 기존 캔버스(Canvas) 다이어그램을 Excalidraw로 자동 변환하는 것까지 시연하고, 코어 플러그인 그래프 뷰로 태그 연결을 시각화한다. 마지막으로 AI에게 파일 경로를 빠르게 넘기는 단축키(파일경로 복사 / 시스템 절대경로 복사) 세팅으로 토큰·시간을 아끼는 실전 팁을 준다.</div></div></a><a class="gcard" href="#post-R2aSqw7S3Ws" data-tags="옵시디언|세컨드브레인|클로드코드|지식관리|AI팀|Obsidian|지식위키|자동화" data-channel="그랜트 | 마케팅 AX, AI 사업" data-date="2026-07-02" data-dur="1403" data-search="(full ver) 옵시디언과 클로드코드로 진짜 ai 팀 만들기 | 세컨드 브레인 튜토리얼 그랜트 | 마케팅 ax, ai 사업 gpt·클로드는 새 대화창마다 나를 잊고, 모델을 갈아탈 때마다 데이터를 다시 옮겨야 한다. 그래서 내 지식을 100% 소유하는 세컨드 브레인을 옵시디언(텍스트+링크 연결)으로 만들고, claude code로 3층 지식 체계(1층 raw data · 2층 ai wiki · 3층 claude.md)를 구축한다. 이 구조 위에서 클로드가 회사 업무(유튜브 대본·카드뉴스 등)를 매뉴얼대로 스스로 처리하는 ai 팀이 된다. 발표자가 실제 교육 회사를 이 방식으로 굴리는 사례까지 공개. 옵시디언 세컨드브레인 클로드코드 지식관리 ai팀 obsidian 지식위키 자동화">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/R2aSqw7S3Ws/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/R2aSqw7S3Ws/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼</div>
-<div class="mt"><span>그랜트 | 마케팅 AX, AI 사업</span><span>2026-06-25</span><span>23:23</span></div>
-<div class="one">GPT·클로드는 새 대화창마다 나를 잊고, 모델을 갈아탈 때마다 데이터를 다시 옮겨야 한다. 그래서 내 지식을 100% 소유하는 세컨드 브레인을 옵시디언(텍스트+링크 연결)으로 만들고, Claude Code로 3층 지식 체계(1층 Raw Data · 2층 AI Wiki · 3층 CLAUDE.md)를 구축한다. 이 구조 위에서 클로드가 회사 업무(유튜브 대본·카드뉴스 등)를 매뉴얼대로 스스로 처리하는 AI 팀이 된다. 발표자가 실제 교육 회사를 이 방식으로 굴리는 사례까지 공개.</div></div></a><a class="gcard" href="#post-O2jCsdfceq0" data-tags="클로드|ClaudeCowork|MCP|PlayMCP|카카오톡|자동화|업무자동화|스케줄">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/O2jCsdfceq0/hqdefault.jpg" alt="">
+<div class="mt"><span>그랜트 | 마케팅 AX, AI 사업</span><span>2026-06-25</span><span>⏱ 23:23</span></div>
+<div class="one">GPT·클로드는 새 대화창마다 나를 잊고, 모델을 갈아탈 때마다 데이터를 다시 옮겨야 한다. 그래서 내 지식을 100% 소유하는 세컨드 브레인을 옵시디언(텍스트+링크 연결)으로 만들고, Claude Code로 3층 지식 체계(1층 Raw Data · 2층 AI Wiki · 3층 CLAUDE.md)를 구축한다. 이 구조 위에서 클로드가 회사 업무(유튜브 대본·카드뉴스 등)를 매뉴얼대로 스스로 처리하는 AI 팀이 된다. 발표자가 실제 교육 회사를 이 방식으로 굴리는 사례까지 공개.</div></div></a><a class="gcard" href="#post-O2jCsdfceq0" data-tags="클로드|ClaudeCowork|MCP|PlayMCP|카카오톡|자동화|업무자동화|스케줄" data-channel="길호의 실전 AI - 업무 자동화, 그 이상" data-date="2026-07-02" data-dur="475" data-search="클로드 연결했더니 카카오톡 자동으로 보내줍니다 | 클로드 실전 자동화 활용법 길호의 실전 ai - 업무 자동화, 그 이상 claude cowork의 스케줄 기능 + 카카오 playmcp를 연결하면, 매일 아침 클로드가 뉴스·일정·유튜브·멜론·기업공시를 알아서 정리해 카카오톡(&#x27;나에게 보내기&#x27; 방)으로 자동 브리핑을 쏴 준다. mcp로 클로드에 &#x27;손과 발&#x27;을 달아 외부 서비스를 조작하게 하고, new task로 프롬프트를 묶어 매일 아침 8시 자동 실행으로 저장하는 게 핵심. (컴퓨터+클로드 데스크탑 앱이 켜져 있어야 동작.) 클로드 claudecowork mcp playmcp 카카오톡 자동화 업무자동화 스케줄">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/O2jCsdfceq0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/O2jCsdfceq0/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">클로드 연결했더니 카카오톡 자동으로 보내줍니다 | 클로드 실전 자동화 활용법</div>
-<div class="mt"><span>길호의 실전 AI - 업무 자동화, 그 이상</span><span>2026-05-23</span><span>7:55</span></div>
-<div class="one">Claude Cowork의 스케줄 기능 + 카카오 PlayMCP를 연결하면, 매일 아침 클로드가 뉴스·일정·유튜브·멜론·기업공시를 알아서 정리해 카카오톡(&#x27;나에게 보내기&#x27; 방)으로 자동 브리핑을 쏴 준다. MCP로 클로드에 &#x27;손과 발&#x27;을 달아 외부 서비스를 조작하게 하고, New Task로 프롬프트를 묶어 매일 아침 8시 자동 실행으로 저장하는 게 핵심. (컴퓨터+클로드 데스크탑 앱이 켜져 있어야 동작.)</div></div></a><a class="gcard" href="#post-gkxv6PCaAhw" data-tags="클로드|디자인스킬|Skills|shadcn|GSAP|ui-ux-pro-max|모바일UI|Material3|SwiftUI|Expo|프런트엔드">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/gkxv6PCaAhw/hqdefault.jpg" alt="">
+<div class="mt"><span>길호의 실전 AI - 업무 자동화, 그 이상</span><span>2026-05-23</span><span>⏱ 7:55</span></div>
+<div class="one">Claude Cowork의 스케줄 기능 + 카카오 PlayMCP를 연결하면, 매일 아침 클로드가 뉴스·일정·유튜브·멜론·기업공시를 알아서 정리해 카카오톡(&#x27;나에게 보내기&#x27; 방)으로 자동 브리핑을 쏴 준다. MCP로 클로드에 &#x27;손과 발&#x27;을 달아 외부 서비스를 조작하게 하고, New Task로 프롬프트를 묶어 매일 아침 8시 자동 실행으로 저장하는 게 핵심. (컴퓨터+클로드 데스크탑 앱이 켜져 있어야 동작.)</div></div></a><a class="gcard" href="#post-gkxv6PCaAhw" data-tags="클로드|디자인스킬|Skills|shadcn|GSAP|ui-ux-pro-max|모바일UI|Material3|SwiftUI|Expo|프런트엔드" data-channel="Tech Bridge" data-date="2026-07-02" data-dur="854" data-search="아름다운 웹사이트를 만들기 위해 꼭 필요한 claude 디자인 스킬 (한글자막) tech bridge ai가 만든 사이트는 결국 다 비슷해 보인다. 이걸 벗어나는 열쇠는 재사용 가능한 &#x27;스킬(skill)&#x27;이다. 영상은 (1) 디자인 방향을 강제하는 anthropic 프런트엔드 디자인 스킬, (2) 실제 제품 ui를 위한 shadcn(스킬+mcp), (3) 대시보드 정보배치 스킬, (4) 산업별 디자인 시스템을 엔진으로 뽑는 ui-ux-pro-max, (5) 진짜 애니메이션 gsap 스킬, (6) 취향 프리셋, (7) 이미지·영상 생성 higgsfield, (8) 모바일 스킬(원칙·material 3·swiftui·expo)까지, 웹부터 모바일까지 디자인 스킬을 상황별로 총정리한다. (제작: ai labs, 한글자막: tech bridge) 클로드 디자인스킬 skills shadcn gsap ui-ux-pro-max 모바일ui material3 swiftui expo 프런트엔드">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/gkxv6PCaAhw/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gkxv6PCaAhw/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">아름다운 웹사이트를 만들기 위해 꼭 필요한 Claude 디자인 스킬 (한글자막)</div>
-<div class="mt"><span>Tech Bridge</span><span>2026-06-27</span><span>14:14</span></div>
-<div class="one">AI가 만든 사이트는 결국 다 비슷해 보인다. 이걸 벗어나는 열쇠는 재사용 가능한 &#x27;스킬(skill)&#x27;이다. 영상은 (1) 디자인 방향을 강제하는 Anthropic 프런트엔드 디자인 스킬, (2) 실제 제품 UI를 위한 shadcn(스킬+MCP), (3) 대시보드 정보배치 스킬, (4) 산업별 디자인 시스템을 엔진으로 뽑는 ui-ux-pro-max, (5) 진짜 애니메이션 GSAP 스킬, (6) 취향 프리셋, (7) 이미지·영상 생성 Higgsfield, (8) 모바일 스킬(원칙·Material 3·SwiftUI·Expo)까지, 웹부터 모바일까지 디자인 스킬을 상황별로 총정리한다. (제작: AI Labs, 한글자막: Tech Bridge)</div></div></a><a class="gcard" href="#post-Aaebz-Q0OYY" data-tags="클로드코드|Figma|디자인토큰|디자인시스템|변수|MCP|Skills|피그마스킬">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/Aaebz-Q0OYY/hqdefault.jpg" alt="">
+<div class="mt"><span>Tech Bridge</span><span>2026-06-27</span><span>⏱ 14:14</span></div>
+<div class="one">AI가 만든 사이트는 결국 다 비슷해 보인다. 이걸 벗어나는 열쇠는 재사용 가능한 &#x27;스킬(skill)&#x27;이다. 영상은 (1) 디자인 방향을 강제하는 Anthropic 프런트엔드 디자인 스킬, (2) 실제 제품 UI를 위한 shadcn(스킬+MCP), (3) 대시보드 정보배치 스킬, (4) 산업별 디자인 시스템을 엔진으로 뽑는 ui-ux-pro-max, (5) 진짜 애니메이션 GSAP 스킬, (6) 취향 프리셋, (7) 이미지·영상 생성 Higgsfield, (8) 모바일 스킬(원칙·Material 3·SwiftUI·Expo)까지, 웹부터 모바일까지 디자인 스킬을 상황별로 총정리한다. (제작: AI Labs, 한글자막: Tech Bridge)</div></div></a><a class="gcard" href="#post-Aaebz-Q0OYY" data-tags="클로드코드|Figma|디자인토큰|디자인시스템|변수|MCP|Skills|피그마스킬" data-channel="디자인하는AI" data-date="2026-07-02" data-dur="1153" data-search="ai가 figma 변수 200개를 혼자 만듦 — 디자인 토큰부터 변수 구조, 시스템까지 자동 완성 (feat. claude) 디자인하는ai 피그마 mcp + 공식 스킬을 claude code에 붙이면, 디자인 시안·design.md 문서를 입력받아 디자인 토큰 → 피그마 변수(primitive/semantic/component) → 파운데이션 문서 → ui 컴포넌트까지 자동 생성한다. 실제로 design.md 하나에서 변수 200개 가까이(프리미티브 135·시멘틱 29·컴포넌트 37)를 컬렉션까지 구분해 한 번에 등록하는 걸 시연. 다크/라이트 모드 전환되는 마스터 컴포넌트까지 만들지만, 텍스트 변수 누락 등 수정이 필요한 부분도 솔직히 짚는다. 클로드코드 figma 디자인토큰 디자인시스템 변수 mcp skills 피그마스킬">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/Aaebz-Q0OYY/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Aaebz-Q0OYY/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">AI가 Figma 변수 200개를 혼자 만듦 — 디자인 토큰부터 변수 구조, 시스템까지 자동 완성 (feat. Claude)</div>
-<div class="mt"><span>디자인하는AI</span><span>2026-04-24</span><span>19:13</span></div>
-<div class="one">피그마 MCP + 공식 스킬을 Claude Code에 붙이면, 디자인 시안·design.md 문서를 입력받아 디자인 토큰 → 피그마 변수(Primitive/Semantic/Component) → 파운데이션 문서 → UI 컴포넌트까지 자동 생성한다. 실제로 design.md 하나에서 변수 200개 가까이(프리미티브 135·시멘틱 29·컴포넌트 37)를 컬렉션까지 구분해 한 번에 등록하는 걸 시연. 다크/라이트 모드 전환되는 마스터 컴포넌트까지 만들지만, 텍스트 변수 누락 등 수정이 필요한 부분도 솔직히 짚는다.</div></div></a><a class="gcard" href="#post-VYXr0M7IYJk" data-tags="옵시디언|제미나이|GeminiFileSearch|세컨드브레인|지식관리|Antigravity|오픈소스플러그인|RAG">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/VYXr0M7IYJk/hqdefault.jpg" alt="">
+<div class="mt"><span>디자인하는AI</span><span>2026-04-24</span><span>⏱ 19:13</span></div>
+<div class="one">피그마 MCP + 공식 스킬을 Claude Code에 붙이면, 디자인 시안·design.md 문서를 입력받아 디자인 토큰 → 피그마 변수(Primitive/Semantic/Component) → 파운데이션 문서 → UI 컴포넌트까지 자동 생성한다. 실제로 design.md 하나에서 변수 200개 가까이(프리미티브 135·시멘틱 29·컴포넌트 37)를 컬렉션까지 구분해 한 번에 등록하는 걸 시연. 다크/라이트 모드 전환되는 마스터 컴포넌트까지 만들지만, 텍스트 변수 누락 등 수정이 필요한 부분도 솔직히 짚는다.</div></div></a><a class="gcard" href="#post-VYXr0M7IYJk" data-tags="옵시디언|제미나이|GeminiFileSearch|세컨드브레인|지식관리|Antigravity|오픈소스플러그인|RAG" data-channel="배움의 달인 (AI·자동화)" data-date="2026-07-02" data-dur="1659" data-search="옵시디언에 제미나이 붙이니 ai 세컨드 브레인이 진짜 됐다! | 무료 오픈소스 플러그인 배움의 달인 (ai·자동화) 제작자가 직접 만든 무료 오픈소스 옵시디언 플러그인 master of knowledge는 gemini file search로 내 노트(약 1,310개)를 동기화해, ① chat(내 노트 기반 답변+출처) ② agent(antigravity cli로 웹서치+리포트 자동 작성) ③ budget(월 $7 상한, 실사용 ~$0.0077) ④ graph(노트 구조 시각화)를 제공한다. 핵심은 &quot;대부분의 ai는 내 맥락을 모른다&quot;는 문제를 옵시디언 안에서 풀어, llm 요청 때마다 내 지식 db를 맥락으로 쓰는 나만의 맞춤형 지식 작업실을 만드는 것. 단순 저장이 아니라 &#x27;지식 가드닝&#x27;(가지치기·업데이트)에 방점. 옵시디언 제미나이 geminifilesearch 세컨드브레인 지식관리 antigravity 오픈소스플러그인 rag">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/VYXr0M7IYJk/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/VYXr0M7IYJk/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">옵시디언에 제미나이 붙이니 AI 세컨드 브레인이 진짜 됐다! | 무료 오픈소스 플러그인</div>
-<div class="mt"><span>배움의 달인 (AI·자동화)</span><span>2026-06-29</span><span>27:39</span></div>
-<div class="one">제작자가 직접 만든 무료 오픈소스 옵시디언 플러그인 Master of Knowledge는 Gemini File Search로 내 노트(약 1,310개)를 동기화해, ① Chat(내 노트 기반 답변+출처) ② Agent(Antigravity CLI로 웹서치+리포트 자동 작성) ③ Budget(월 $7 상한, 실사용 ~$0.0077) ④ Graph(노트 구조 시각화)를 제공한다. 핵심은 &quot;대부분의 AI는 내 맥락을 모른다&quot;는 문제를 옵시디언 안에서 풀어, LLM 요청 때마다 내 지식 DB를 맥락으로 쓰는 나만의 맞춤형 지식 작업실을 만드는 것. 단순 저장이 아니라 &#x27;지식 가드닝&#x27;(가지치기·업데이트)에 방점.</div></div></a><a class="gcard" href="#post-WL_qu7l3fgQ" data-tags="클로드코드|agent-reach|MCP대안|웹검색|바이브코딩|self-healing-router|자동화">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/WL_qu7l3fgQ/hqdefault.jpg" alt="">
+<div class="mt"><span>배움의 달인 (AI·자동화)</span><span>2026-06-29</span><span>⏱ 27:39</span></div>
+<div class="one">제작자가 직접 만든 무료 오픈소스 옵시디언 플러그인 Master of Knowledge는 Gemini File Search로 내 노트(약 1,310개)를 동기화해, ① Chat(내 노트 기반 답변+출처) ② Agent(Antigravity CLI로 웹서치+리포트 자동 작성) ③ Budget(월 $7 상한, 실사용 ~$0.0077) ④ Graph(노트 구조 시각화)를 제공한다. 핵심은 &quot;대부분의 AI는 내 맥락을 모른다&quot;는 문제를 옵시디언 안에서 풀어, LLM 요청 때마다 내 지식 DB를 맥락으로 쓰는 나만의 맞춤형 지식 작업실을 만드는 것. 단순 저장이 아니라 &#x27;지식 가드닝&#x27;(가지치기·업데이트)에 방점.</div></div></a><a class="gcard" href="#post-WL_qu7l3fgQ" data-tags="클로드코드|agent-reach|MCP대안|웹검색|바이브코딩|self-healing-router|자동화" data-channel="바이브랩스" data-date="2026-07-02" data-dur="813" data-search="클로드 코드는 이제 api 키 없이 래딧·x·유튜브·링크드인·깃허브·v2ex·rss 14개 채널을 읽을 수 있습니다 바이브랩스 클로드 코드는 기본적으로 인터넷(x·레딧·유튜브 등)에 못 나가서, 결국 사람이 브라우저를 열어 복붙 심부름을 하게 된다. agent-reach는 파이썬 패키지 하나(pip install)로 에이전트가 x·유튜브·레딧·github·일반 웹 등 14개+ 채널을 직접 읽고 검색하게 해준다 — api 키도 결제도 불필요. 핵심 개념은 셀프 힐링 라우터: 한 통로가 막히면 알아서 다음 통로로 우회한다. 설치·x 검색·유튜브 자막 요약·github 레포 분석까지 실제로 시연하며, &quot;ai를 세상에 연결해 세상을 재료로 쓰게 만드는&quot; 것이 요지. 클로드코드 agent-reach mcp대안 웹검색 바이브코딩 self-healing-router 자동화">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/WL_qu7l3fgQ/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/WL_qu7l3fgQ/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">클로드 코드는 이제 API 키 없이 래딧·X·유튜브·링크드인·깃허브·V2EX·RSS 14개 채널을 읽을 수 있습니다</div>
-<div class="mt"><span>바이브랩스</span><span>2026-06-29</span><span>13:33</span></div>
-<div class="one">클로드 코드는 기본적으로 인터넷(X·레딧·유튜브 등)에 못 나가서, 결국 사람이 브라우저를 열어 복붙 심부름을 하게 된다. agent-reach는 파이썬 패키지 하나(pip install)로 에이전트가 X·유튜브·레딧·GitHub·일반 웹 등 14개+ 채널을 직접 읽고 검색하게 해준다 — API 키도 결제도 불필요. 핵심 개념은 셀프 힐링 라우터: 한 통로가 막히면 알아서 다음 통로로 우회한다. 설치·X 검색·유튜브 자막 요약·GitHub 레포 분석까지 실제로 시연하며, &quot;AI를 세상에 연결해 세상을 재료로 쓰게 만드는&quot; 것이 요지.</div></div></a><a class="gcard" href="#post-93wC8kJJYjs" data-tags="앱공장|바이브코딩|코덱스|Flutter|모노레포|CLAUDE.md|AGENTS.md|자율주행|앱개발">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/93wC8kJJYjs/hqdefault.jpg" alt="">
+<div class="mt"><span>바이브랩스</span><span>2026-06-29</span><span>⏱ 13:33</span></div>
+<div class="one">클로드 코드는 기본적으로 인터넷(X·레딧·유튜브 등)에 못 나가서, 결국 사람이 브라우저를 열어 복붙 심부름을 하게 된다. agent-reach는 파이썬 패키지 하나(pip install)로 에이전트가 X·유튜브·레딧·GitHub·일반 웹 등 14개+ 채널을 직접 읽고 검색하게 해준다 — API 키도 결제도 불필요. 핵심 개념은 셀프 힐링 라우터: 한 통로가 막히면 알아서 다음 통로로 우회한다. 설치·X 검색·유튜브 자막 요약·GitHub 레포 분석까지 실제로 시연하며, &quot;AI를 세상에 연결해 세상을 재료로 쓰게 만드는&quot; 것이 요지.</div></div></a><a class="gcard" href="#post-93wC8kJJYjs" data-tags="앱공장|바이브코딩|코덱스|Flutter|모노레포|CLAUDE.md|AGENTS.md|자율주행|앱개발" data-channel="일용직 개발자 임상진" data-date="2026-07-02" data-dur="771" data-search="앱을 공장처럼 찍어내는 12가지 핵심 꿀팁 일용직 개발자 임상진 한 달에 앱 30개(하루 3개)를 만든 비결은 &quot;코딩을 빨리&quot;가 아니라 ai가 쉬지 않고 일할 환경(=앱 공장)을 먼저 만드는 것. 장비 투자(m5 맥북) → 개발자 계정 → 터미널+cmux로 3개 동시 빌드 → 코덱스 선택 + 권한 개방(자율주행) → flutter(ios·안드 한 코드) + 모노레포(부품 재사용) → claude.md/agents.md에 원칙 기록 → 로드맵 + /goal로 단계별 자율주행 → 토큰 절약(세션 리셋) → 개인정보처리방침·지원 페이지(netlify/vercel). 핵심은 반복 제거·재사용·위임의 시스템. 앱공장 바이브코딩 코덱스 flutter 모노레포 claude.md agents.md 자율주행 앱개발">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/93wC8kJJYjs/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/93wC8kJJYjs/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">앱을 공장처럼 찍어내는 12가지 핵심 꿀팁</div>
-<div class="mt"><span>일용직 개발자 임상진</span><span>2026-06-27</span><span>12:51</span></div>
-<div class="one">한 달에 앱 30개(하루 3개)를 만든 비결은 &quot;코딩을 빨리&quot;가 아니라 AI가 쉬지 않고 일할 환경(=앱 공장)을 먼저 만드는 것. 장비 투자(M5 맥북) → 개발자 계정 → 터미널+cmux로 3개 동시 빌드 → 코덱스 선택 + 권한 개방(자율주행) → Flutter(iOS·안드 한 코드) + 모노레포(부품 재사용) → CLAUDE.md/AGENTS.md에 원칙 기록 → 로드맵 + /goal로 단계별 자율주행 → 토큰 절약(세션 리셋) → 개인정보처리방침·지원 페이지(Netlify/Vercel). 핵심은 반복 제거·재사용·위임의 시스템.</div></div></a><a class="gcard" href="#post-j8UPHTc24H0" data-tags="헤르메스|HermesAgent|SOUL.md|AGENTS.md|USER.md|메모리시스템|프롬프트엔지니어링|AI에이전트">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/j8UPHTc24H0/hqdefault.jpg" alt="">
+<div class="mt"><span>일용직 개발자 임상진</span><span>2026-06-27</span><span>⏱ 12:51</span></div>
+<div class="one">한 달에 앱 30개(하루 3개)를 만든 비결은 &quot;코딩을 빨리&quot;가 아니라 AI가 쉬지 않고 일할 환경(=앱 공장)을 먼저 만드는 것. 장비 투자(M5 맥북) → 개발자 계정 → 터미널+cmux로 3개 동시 빌드 → 코덱스 선택 + 권한 개방(자율주행) → Flutter(iOS·안드 한 코드) + 모노레포(부품 재사용) → CLAUDE.md/AGENTS.md에 원칙 기록 → 로드맵 + /goal로 단계별 자율주행 → 토큰 절약(세션 리셋) → 개인정보처리방침·지원 페이지(Netlify/Vercel). 핵심은 반복 제거·재사용·위임의 시스템.</div></div></a><a class="gcard" href="#post-j8UPHTc24H0" data-tags="헤르메스|HermesAgent|SOUL.md|AGENTS.md|USER.md|메모리시스템|프롬프트엔지니어링|AI에이전트" data-channel="로치의개발일기" data-date="2026-07-02" data-dur="1328" data-search="[헤르메스 강의 1] 일 잘하는 헤르메스 만드는 법 (폴더 설정, 성격 설정) 로치의개발일기 헤르메스 에이전트가 실무에서 못 하는 이유는 메모리 시스템(soul.md·agents.md·user.md)을 안 잡아서다. 설정 없이 &quot;강남 삼겹살 맛집 10개 찾아줘&quot;를 시키면 llm 특성상 구글→다이닝코드에서 영어 파일명으로 대충 저장한다. 해법은 ① 기존 결과를 아카이브로 격리, ② agents.md에 파일명/폴더 규칙·검색 규칙(네이버·리뷰 감정분석·예약 컬럼)을 한글 강제·볼드 강조로 정의, ③ 프롬프트로 성격(꼼꼼한 맛집 조사관)을 설정해 user.md에 저장. 핵심 원리는 llm 어텐션 — soul.md/agents.md는 프롬프트 맨 앞에 항상 실려 강조되므로(lost in the middle의 반대) 앞단 프롬프트를 엔지니어링해야 한다. 헤르메스 hermesagent soul.md agents.md user.md 메모리시스템 프롬프트엔지니어링 ai에이전트">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/j8UPHTc24H0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/j8UPHTc24H0/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">[헤르메스 강의 1] 일 잘하는 헤르메스 만드는 법 (폴더 설정, 성격 설정)</div>
-<div class="mt"><span>로치의개발일기</span><span>2026-06-26</span><span>22:08</span></div>
-<div class="one">헤르메스 에이전트가 실무에서 못 하는 이유는 메모리 시스템(SOUL.md·AGENTS.md·USER.md)을 안 잡아서다. 설정 없이 &quot;강남 삼겹살 맛집 10개 찾아줘&quot;를 시키면 LLM 특성상 구글→다이닝코드에서 영어 파일명으로 대충 저장한다. 해법은 ① 기존 결과를 아카이브로 격리, ② AGENTS.md에 파일명/폴더 규칙·검색 규칙(네이버·리뷰 감정분석·예약 컬럼)을 한글 강제·볼드 강조로 정의, ③ 프롬프트로 성격(꼼꼼한 맛집 조사관)을 설정해 USER.md에 저장. 핵심 원리는 LLM 어텐션 — SOUL.md/AGENTS.md는 프롬프트 맨 앞에 항상 실려 강조되므로(Lost in the Middle의 반대) 앞단 프롬프트를 엔지니어링해야 한다.</div></div></a><a class="gcard" href="#post-HmBVZ_679Ko" data-tags="클로드|ClaudeSkills|코워크|Cowork|에이전트|교무자동화|수업설계|플레이MCP|커넥터|교사AI">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/HmBVZ_679Ko/hqdefault.jpg" alt="">
+<div class="mt"><span>로치의개발일기</span><span>2026-06-26</span><span>⏱ 22:08</span></div>
+<div class="one">헤르메스 에이전트가 실무에서 못 하는 이유는 메모리 시스템(SOUL.md·AGENTS.md·USER.md)을 안 잡아서다. 설정 없이 &quot;강남 삼겹살 맛집 10개 찾아줘&quot;를 시키면 LLM 특성상 구글→다이닝코드에서 영어 파일명으로 대충 저장한다. 해법은 ① 기존 결과를 아카이브로 격리, ② AGENTS.md에 파일명/폴더 규칙·검색 규칙(네이버·리뷰 감정분석·예약 컬럼)을 한글 강제·볼드 강조로 정의, ③ 프롬프트로 성격(꼼꼼한 맛집 조사관)을 설정해 USER.md에 저장. 핵심 원리는 LLM 어텐션 — SOUL.md/AGENTS.md는 프롬프트 맨 앞에 항상 실려 강조되므로(Lost in the Middle의 반대) 앞단 프롬프트를 엔지니어링해야 한다.</div></div></a><a class="gcard" href="#post-HmBVZ_679Ko" data-tags="클로드|ClaudeSkills|코워크|Cowork|에이전트|교무자동화|수업설계|플레이MCP|커넥터|교사AI" data-channel="교육티타임" data-date="2026-07-02" data-dur="4953" data-search="&quot;교무행정·수업 기획 끝판왕&quot; 교사를 위한 최신 클로드(claude) 활용법 완전 정복! (feat. 전정선 선생님) 교육티타임 교사 전정선 선생님이 실제 교무 현장에서 쓰는 클로드 스킬과 코워크(cowork, 에이전트)를 시연한 82분 라이브. 스킬은 클로드가 일 전에 읽는 나만의 업무 매뉴얼로, 한 마디면 만들어지고 한글·ppt·엑셀 양식을 100% 그대로 재현한다(공문→메시지, 가정통신문, 기안문 등). 코워크는 폴더 권한을 받아 계획→실행→자가검증하며 실제 파일을 만드는 에이전트로, 공문 정리·영수증 정산·수행평가 채점·세특 분석·로봇 뉴스 브리핑·일정 카톡 발송까지 자동화한다. 자동화는 입력→처리→출력→저장→트리거 5단계로 설계한다. (클로드가 핫한 이유: 글 잘 씀·코딩·양심적 / 코워크는 데스크탑 앱 + 프로 구독 필요.) 클로드 claudeskills 코워크 cowork 에이전트 교무자동화 수업설계 플레이mcp 커넥터 교사ai">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/HmBVZ_679Ko/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HmBVZ_679Ko/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">&quot;교무행정·수업 기획 끝판왕&quot; 교사를 위한 최신 클로드(Claude) 활용법 완전 정복! (feat. 전정선 선생님)</div>
-<div class="mt"><span>교육티타임</span><span>2026-07-01</span><span>1:22:33</span></div>
-<div class="one">교사 전정선 선생님이 실제 교무 현장에서 쓰는 클로드 스킬과 코워크(Cowork, 에이전트)를 시연한 82분 라이브. 스킬은 클로드가 일 전에 읽는 나만의 업무 매뉴얼로, 한 마디면 만들어지고 한글·PPT·엑셀 양식을 100% 그대로 재현한다(공문→메시지, 가정통신문, 기안문 등). 코워크는 폴더 권한을 받아 계획→실행→자가검증하며 실제 파일을 만드는 에이전트로, 공문 정리·영수증 정산·수행평가 채점·세특 분석·로봇 뉴스 브리핑·일정 카톡 발송까지 자동화한다. 자동화는 입력→처리→출력→저장→트리거 5단계로 설계한다. (클로드가 핫한 이유: 글 잘 씀·코딩·양심적 / 코워크는 데스크탑 앱 + 프로 구독 필요.)</div></div></a><a class="gcard" href="#post-uYZYS0J1zF8" data-tags="클로드코드|AI자동화|원샷프롬프트|스케줄태스크|퍼미션|텔레그램|구글시트|운영시스템">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/uYZYS0J1zF8/hqdefault.jpg" alt="">
+<div class="mt"><span>교육티타임</span><span>2026-07-01</span><span>⏱ 1:22:33</span></div>
+<div class="one">교사 전정선 선생님이 실제 교무 현장에서 쓰는 클로드 스킬과 코워크(Cowork, 에이전트)를 시연한 82분 라이브. 스킬은 클로드가 일 전에 읽는 나만의 업무 매뉴얼로, 한 마디면 만들어지고 한글·PPT·엑셀 양식을 100% 그대로 재현한다(공문→메시지, 가정통신문, 기안문 등). 코워크는 폴더 권한을 받아 계획→실행→자가검증하며 실제 파일을 만드는 에이전트로, 공문 정리·영수증 정산·수행평가 채점·세특 분석·로봇 뉴스 브리핑·일정 카톡 발송까지 자동화한다. 자동화는 입력→처리→출력→저장→트리거 5단계로 설계한다. (클로드가 핫한 이유: 글 잘 씀·코딩·양심적 / 코워크는 데스크탑 앱 + 프로 구독 필요.)</div></div></a><a class="gcard" href="#post-uYZYS0J1zF8" data-tags="클로드코드|AI자동화|원샷프롬프트|스케줄태스크|퍼미션|텔레그램|구글시트|운영시스템" data-channel="AI 콘텐츠 마스터 세인투" data-date="2026-06-25" data-dur="1025" data-search="클로드 코드 강의 이걸로 끝내세요 | 한 번에 자동으로 돌아가는 원샷 프롬프트 공개 ai 콘텐츠 마스터 세인투 &quot;프롬프트를 잘 쓰는 단계&quot;를 넘어, 클로드 코드로 내가 없어도 매일 스스로 일하는 운영 시스템을 만든다. 메모리·스케줄·태스크·채널·커넥터·퍼미션을 원샷 프롬프트 하나로 세팅(그 프롬프트조차 ai가 작성)하고, 결과는 마크다운·구글 시트·텔레그램으로 분리 저장. 예시는 투자 비서지만 구조는 어디든 복제 가능. 클로드코드 ai자동화 원샷프롬프트 스케줄태스크 퍼미션 텔레그램 구글시트 운영시스템">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/uYZYS0J1zF8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/uYZYS0J1zF8/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">클로드 코드 강의 이걸로 끝내세요 | 한 번에 자동으로 돌아가는 원샷 프롬프트 공개</div>
-<div class="mt"><span>AI 콘텐츠 마스터 세인투</span><span>2026-04-10</span><span>17:05</span></div>
-<div class="one">&quot;프롬프트를 잘 쓰는 단계&quot;를 넘어, 클로드 코드로 내가 없어도 매일 스스로 일하는 운영 시스템을 만든다. 메모리·스케줄·태스크·채널·커넥터·퍼미션을 원샷 프롬프트 하나로 세팅(그 프롬프트조차 AI가 작성)하고, 결과는 마크다운·구글 시트·텔레그램으로 분리 저장. 예시는 투자 비서지만 구조는 어디든 복제 가능.</div></div></a><a class="gcard" href="#post-A7QdKqJttu4" data-tags="옵시디언|캔버스|Canvas|클로드코드|다이어그램|JSON|지식관리|시각화">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/A7QdKqJttu4/hqdefault.jpg" alt="">
+<div class="mt"><span>AI 콘텐츠 마스터 세인투</span><span>2026-04-10</span><span>⏱ 17:05</span></div>
+<div class="one">&quot;프롬프트를 잘 쓰는 단계&quot;를 넘어, 클로드 코드로 내가 없어도 매일 스스로 일하는 운영 시스템을 만든다. 메모리·스케줄·태스크·채널·커넥터·퍼미션을 원샷 프롬프트 하나로 세팅(그 프롬프트조차 AI가 작성)하고, 결과는 마크다운·구글 시트·텔레그램으로 분리 저장. 예시는 투자 비서지만 구조는 어디든 복제 가능.</div></div></a><a class="gcard" href="#post-A7QdKqJttu4" data-tags="옵시디언|캔버스|Canvas|클로드코드|다이어그램|JSON|지식관리|시각화" data-channel="오후다섯씨" data-date="2026-06-25" data-dur="970" data-search="미쳤다! 옵시디언 캔버스에 ai 붙이면 생기는 일 (claude code x obsidian) 오후다섯씨 옵시디언 캔버스(canvas)는 카드·문서·이미지를 연결하는 다이어그램 도구인데, 그 파일이 순수 텍스트(json: 노드+엣지)라서 claude code가 직접 읽고 편집할 수 있다. 흩어진 카드 자동 정렬·색상, 내 아이디어 스케치를 ai가 완성, 100페이지 문서를 캔버스로 변환까지 — html/svg 대비 빠르고·편집 가능·검색되는 게 핵심. 옵시디언 캔버스 canvas 클로드코드 다이어그램 json 지식관리 시각화">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/A7QdKqJttu4/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/A7QdKqJttu4/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">미쳤다! 옵시디언 캔버스에 AI 붙이면 생기는 일 (Claude Code x Obsidian)</div>
-<div class="mt"><span>오후다섯씨</span><span>2026-06-24</span><span>16:10</span></div>
-<div class="one">옵시디언 캔버스(Canvas)는 카드·문서·이미지를 연결하는 다이어그램 도구인데, 그 파일이 순수 텍스트(JSON: 노드+엣지)라서 Claude Code가 직접 읽고 편집할 수 있다. 흩어진 카드 자동 정렬·색상, 내 아이디어 스케치를 AI가 완성, 100페이지 문서를 캔버스로 변환까지 — HTML/SVG 대비 빠르고·편집 가능·검색되는 게 핵심.</div></div></a><a class="gcard" href="#post-blnnF9ubEVo" data-tags="옵시디언|VSCode|클로드코드|개인지식시스템|RAG|세컨브레인|CLAUDE.md|폴더구조|지식관리">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/blnnF9ubEVo/hqdefault.jpg" alt="">
+<div class="mt"><span>오후다섯씨</span><span>2026-06-24</span><span>⏱ 16:10</span></div>
+<div class="one">옵시디언 캔버스(Canvas)는 카드·문서·이미지를 연결하는 다이어그램 도구인데, 그 파일이 순수 텍스트(JSON: 노드+엣지)라서 Claude Code가 직접 읽고 편집할 수 있다. 흩어진 카드 자동 정렬·색상, 내 아이디어 스케치를 AI가 완성, 100페이지 문서를 캔버스로 변환까지 — HTML/SVG 대비 빠르고·편집 가능·검색되는 게 핵심.</div></div></a><a class="gcard" href="#post-blnnF9ubEVo" data-tags="옵시디언|VSCode|클로드코드|개인지식시스템|RAG|세컨브레인|CLAUDE.md|폴더구조|지식관리" data-channel="오후다섯씨" data-date="2026-06-25" data-dur="872" data-search="무조건 이렇게 저장하세요! 옵시디언 + claude + vs code — 폴더 3개면 끝납니다 오후다섯씨 벡터 db 없이 폴더 3개(raw·docs·index.md)와 폴더별 claude.md만으로 값싸고 단순한 rag=개인 지식 시스템을 만든다. 같은 폴더를 vs code(클로드 작업용)와 옵시디언(읽기·관리용)이 동시에 바라보고, raw에 막 던지면 claude가 docs로 정리하고 index를 갱신 → 점점 자라는 세컨브레인. 옵시디언 vscode 클로드코드 개인지식시스템 rag 세컨브레인 claude.md 폴더구조 지식관리">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/blnnF9ubEVo/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/blnnF9ubEVo/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">무조건 이렇게 저장하세요! 옵시디언 + Claude + VS Code — 폴더 3개면 끝납니다</div>
-<div class="mt"><span>오후다섯씨</span><span>2026-04-24</span><span>14:32</span></div>
-<div class="one">벡터 DB 없이 폴더 3개(RAW·DOCS·index.md)와 폴더별 CLAUDE.md만으로 값싸고 단순한 RAG=개인 지식 시스템을 만든다. 같은 폴더를 VS Code(클로드 작업용)와 옵시디언(읽기·관리용)이 동시에 바라보고, RAW에 막 던지면 Claude가 DOCS로 정리하고 index를 갱신 → 점점 자라는 세컨브레인.</div></div></a><a class="gcard" href="#post-_6bBV09r58Y" data-tags="클로드|Skills|PPT|클로드디자인|getdesignmd|Cowork|파워포인트|디자인시스템|자동화">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/_6bBV09r58Y/hqdefault.jpg" alt="">
+<div class="mt"><span>오후다섯씨</span><span>2026-04-24</span><span>⏱ 14:32</span></div>
+<div class="one">벡터 DB 없이 폴더 3개(RAW·DOCS·index.md)와 폴더별 CLAUDE.md만으로 값싸고 단순한 RAG=개인 지식 시스템을 만든다. 같은 폴더를 VS Code(클로드 작업용)와 옵시디언(읽기·관리용)이 동시에 바라보고, RAW에 막 던지면 Claude가 DOCS로 정리하고 index를 갱신 → 점점 자라는 세컨브레인.</div></div></a><a class="gcard" href="#post-_6bBV09r58Y" data-tags="클로드|Skills|PPT|클로드디자인|getdesignmd|Cowork|파워포인트|디자인시스템|자동화" data-channel="진한별의 AI 연구소" data-date="2026-06-25" data-dur="765" data-search="(26년 6월 업데이트) 클로드 skills로 ai 티 안 나는 고퀄 ppt 만드는 방법 진한별의 ai 연구소 클로드로 실무용 ppt를 만든다. 단 &#x27;클로드 디자인&#x27;은 표·차트를 이미지로 박아 엑셀 편집 불가라 일반 클로드(데스크톱 앱)를 써야 한다. skills로 ①자료조사 전문가 ②ppt 제작 전문가를 만들고(skill-creator), 디자인은 getdesign.md에서 가져와 테스트 슬라이드를 반복 수정해 나만의 디자인 시스템 스킬을 완성 → 자료조사→ppt를 한 번에. 보너스로 cowork·파워포인트 애드인. 클로드 skills ppt 클로드디자인 getdesignmd cowork 파워포인트 디자인시스템 자동화">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/_6bBV09r58Y/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_6bBV09r58Y/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">(26년 6월 업데이트) 클로드 Skills로 AI 티 안 나는 고퀄 PPT 만드는 방법</div>
-<div class="mt"><span>진한별의 AI 연구소</span><span>2026-06-03</span><span>12:45</span></div>
-<div class="one">클로드로 실무용 PPT를 만든다. 단 &#x27;클로드 디자인&#x27;은 표·차트를 이미지로 박아 엑셀 편집 불가라 일반 클로드(데스크톱 앱)를 써야 한다. Skills로 ①자료조사 전문가 ②PPT 제작 전문가를 만들고(skill-creator), 디자인은 getdesign.md에서 가져와 테스트 슬라이드를 반복 수정해 나만의 디자인 시스템 스킬을 완성 → 자료조사→PPT를 한 번에. 보너스로 Cowork·파워포인트 애드인.</div></div></a><a class="gcard" href="#post-y6HIrsG7pE8" data-tags="바이브코딩|클로드코드|클로드데스크톱|디자인시스템|구글시트|AppsScript|노코드">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" alt="">
+<div class="mt"><span>진한별의 AI 연구소</span><span>2026-06-03</span><span>⏱ 12:45</span></div>
+<div class="one">클로드로 실무용 PPT를 만든다. 단 &#x27;클로드 디자인&#x27;은 표·차트를 이미지로 박아 엑셀 편집 불가라 일반 클로드(데스크톱 앱)를 써야 한다. Skills로 ①자료조사 전문가 ②PPT 제작 전문가를 만들고(skill-creator), 디자인은 getdesign.md에서 가져와 테스트 슬라이드를 반복 수정해 나만의 디자인 시스템 스킬을 완성 → 자료조사→PPT를 한 번에. 보너스로 Cowork·파워포인트 애드인.</div></div></a><a class="gcard" href="#post-y6HIrsG7pE8" data-tags="바이브코딩|클로드코드|클로드데스크톱|디자인시스템|구글시트|AppsScript|노코드" data-channel="AI 콘텐츠 마스터 세인투" data-date="2026-06-24" data-dur="1212" data-search="코딩 몰라도 ok — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지 ai 콘텐츠 마스터 세인투 코드 한 줄 없이 클로드 코드(데스크톱 앱)로 &quot;진짜 작동하는&quot; 강사 섭외 사이트를 만든다. 핵심은 4가지 원칙 — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것. 바이브코딩 클로드코드 클로드데스크톱 디자인시스템 구글시트 appsscript 노코드">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/y6HIrsG7pE8/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">코딩 몰라도 OK — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지</div>
-<div class="mt"><span>AI 콘텐츠 마스터 세인투</span><span>2026-06-23</span><span>20:12</span></div>
-<div class="one">코드 한 줄 없이 클로드 코드(데스크톱 앱)로 &quot;진짜 작동하는&quot; 강사 섭외 사이트를 만든다. 핵심은 4가지 원칙 — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것.</div></div></a><a class="gcard" href="#post-HNlBFesXiW8" data-tags="하네스|멀티에이전트|오케스트레이터|클로드코드|코덱스|제미나이|안티그래비티|컨텍스트엔지니어링">
-<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" alt="">
+<div class="mt"><span>AI 콘텐츠 마스터 세인투</span><span>2026-06-23</span><span>⏱ 20:12</span></div>
+<div class="one">코드 한 줄 없이 클로드 코드(데스크톱 앱)로 &quot;진짜 작동하는&quot; 강사 섭외 사이트를 만든다. 핵심은 4가지 원칙 — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것.</div></div></a><a class="gcard" href="#post-HNlBFesXiW8" data-tags="하네스|멀티에이전트|오케스트레이터|클로드코드|코덱스|제미나이|안티그래비티|컨텍스트엔지니어링" data-channel="AI 치트키" data-date="2026-06-23" data-dur="1364" data-search="클로드·코덱스·제미나이를 동시에 제어합니다 | 하네스 멀티 에이전트 2.0 ai 치트키 클로드 코드·코덱스·안티그래비티 어느 환경에서 켜든 똑같이 도는 벤더 독립형 멀티 에이전트 시스템. &quot;켜는 곳&quot;이 지휘자(오케스트레이터)가 되고, 나머지 ai는 워커로 일하며 서로 만들고 서로 검수한다. 하네스 멀티에이전트 오케스트레이터 클로드코드 코덱스 제미나이 안티그래비티 컨텍스트엔지니어링">
+<img class="thumb" loading="lazy" src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HNlBFesXiW8/mqdefault.jpg'" alt="">
 <div class="body"><div class="ttl">클로드·코덱스·제미나이를 동시에 제어합니다 | 하네스 멀티 에이전트 2.0</div>
-<div class="mt"><span>AI 치트키</span><span>2026-06-07</span><span>22:44</span></div>
+<div class="mt"><span>AI 치트키</span><span>2026-06-07</span><span>⏱ 22:44</span></div>
 <div class="one">클로드 코드·코덱스·안티그래비티 어느 환경에서 켜든 똑같이 도는 벤더 독립형 멀티 에이전트 시스템. &quot;켜는 곳&quot;이 지휘자(오케스트레이터)가 되고, 나머지 AI는 워커로 일하며 서로 만들고 서로 검수한다.</div></div></a></section>
-<main><article class="post" id="post-4kAHzEQ4i0U">
-<div class="phead"><img src="https://i.ytimg.com/vi/4kAHzEQ4i0U/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
+<main><details class="post" id="post-4kAHzEQ4i0U">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/4kAHzEQ4i0U/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/4kAHzEQ4i0U/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
 <h2 class="ptitle">옵시디언 활용도 500%! Obsidian Excalidraw + Claude Code + GraphView 완전 활용법</h2>
-<div class="pmeta"><span class="chip">⏱ 11:52</span><span class="chip">📅 2026-06-27</span><span class="chip">옵시디언</span><span class="chip">Excalidraw</span><span class="chip">클로드코드</span><span class="chip">그래프뷰</span><span class="chip">다이어그램</span><span class="chip">플러그인</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=4kAHzEQ4i0U" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 11:52</span><span class="chip">📅 2026-06-27</span><span class="chip">옵시디언</span><span class="chip">Excalidraw</span><span class="chip">클로드코드</span><span class="chip">그래프뷰</span><span class="chip">다이어그램</span><span class="chip">플러그인</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=4kAHzEQ4i0U" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-4kAHzEQ4i0U">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 옵시디언 커뮤니티 플러그인 <strong>Excalidraw</strong>는 그림 파일이 <strong>순수 텍스트</strong>라서 <strong>Claude Code가 직접 읽고 그린다</strong>. 기존 <strong>캔버스(Canvas) 다이어그램을 Excalidraw로 자동 변환</strong>하는 것까지 시연하고, <strong>코어 플러그인 그래프 뷰</strong>로 태그 연결을 시각화한다. 마지막으로 AI에게 파일 경로를 빠르게 넘기는 <strong>단축키(파일경로 복사 / 시스템 절대경로 복사)</strong> 세팅으로 토큰·시간을 아끼는 실전 팁을 준다.</blockquote>
 <hr>
 <h2 class="chap">1. 미리보기 — 그래프 뷰 태그 연결 + Excalidraw AI 생성 결과 · <a href="https://youtu.be/4kAHzEQ4i0U?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -211,11 +234,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 기존 <strong>캔버스 다이어그램을 Excalidraw로 자동 변환</strong>하는 것까지 AI가 해낸다(경로 복사 → "그려 줘").</p>
 <p>4. <strong>코어 플러그인 그래프 뷰</strong>는 노드=문서, <strong>태그로 연결</strong>해 지식 분포를 색상으로 시각화한다.</p>
 <p>5. AI에 파일을 넘길 땐 <strong>경로를 명시</strong>해 토큰을 아끼고, <strong>단축키</strong>(상대=파일경로 / 절대=시스템경로 복사)로 빠르게 전달한다.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-R2aSqw7S3Ws">
-<div class="phead"><img src="https://i.ytimg.com/vi/R2aSqw7S3Ws/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>그랜트 | 마케팅 AX, AI 사업</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-R2aSqw7S3Ws">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/R2aSqw7S3Ws/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/R2aSqw7S3Ws/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>그랜트 | 마케팅 AX, AI 사업</span>
 <h2 class="ptitle">(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼</h2>
-<div class="pmeta"><span class="chip">⏱ 23:23</span><span class="chip">📅 2026-06-25</span><span class="chip">옵시디언</span><span class="chip">세컨드브레인</span><span class="chip">클로드코드</span><span class="chip">지식관리</span><span class="chip">AI팀</span><span class="chip">Obsidian</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=R2aSqw7S3Ws" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 23:23</span><span class="chip">📅 2026-06-25</span><span class="chip">옵시디언</span><span class="chip">세컨드브레인</span><span class="chip">클로드코드</span><span class="chip">지식관리</span><span class="chip">AI팀</span><span class="chip">Obsidian</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=R2aSqw7S3Ws" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-R2aSqw7S3Ws">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> GPT·클로드는 새 대화창마다 나를 잊고, 모델을 갈아탈 때마다 데이터를 다시 옮겨야 한다. 그래서 <strong>내 지식을 100% 소유하는 세컨드 브레인</strong>을 <strong>옵시디언(텍스트+링크 연결)</strong>으로 만들고, <strong>Claude Code</strong>로 <strong>3층 지식 체계(1층 Raw Data · 2층 AI Wiki · 3층 CLAUDE.md)</strong>를 구축한다. 이 구조 위에서 클로드가 회사 업무(유튜브 대본·카드뉴스 등)를 매뉴얼대로 스스로 처리하는 <strong>AI 팀</strong>이 된다. 발표자가 실제 교육 회사를 이 방식으로 굴리는 사례까지 공개.</blockquote>
 <hr>
 <h2 class="chap">1. 인트로 — 왜 세컨드 브레인인가 · <a href="https://youtu.be/R2aSqw7S3Ws?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -288,11 +311,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. Claude Code로 <strong>3층 구조</strong>를 만든다: <strong>1층 Raw Data(원본) · 2층 AI Wiki(가공) · 3층 CLAUDE.md(규칙/SOP)</strong> — 주방(창고·밀키트·셰프)에 비유.</p>
 <p>4. 저장은 <strong>1단계 로컬 → 2 Obsidian Sync → 3 GitHub → 4 VPS</strong>. 초심자는 로컬만으로 충분.</p>
 <p>5. 회사 매뉴얼을 잘게 쪼개 넣을수록 AI가 스스로 산출물을 만든다(대본은 AI 초안 후 <strong>사람이 반드시 다듬기</strong>).</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-O2jCsdfceq0">
-<div class="phead"><img src="https://i.ytimg.com/vi/O2jCsdfceq0/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>길호의 실전 AI - 업무 자동화, 그 이상</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-O2jCsdfceq0">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/O2jCsdfceq0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/O2jCsdfceq0/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>길호의 실전 AI - 업무 자동화, 그 이상</span>
 <h2 class="ptitle">클로드 연결했더니 카카오톡 자동으로 보내줍니다 | 클로드 실전 자동화 활용법</h2>
-<div class="pmeta"><span class="chip">⏱ 7:55</span><span class="chip">📅 2026-05-23</span><span class="chip">클로드</span><span class="chip">ClaudeCowork</span><span class="chip">MCP</span><span class="chip">PlayMCP</span><span class="chip">카카오톡</span><span class="chip">자동화</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=O2jCsdfceq0" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 7:55</span><span class="chip">📅 2026-05-23</span><span class="chip">클로드</span><span class="chip">ClaudeCowork</span><span class="chip">MCP</span><span class="chip">PlayMCP</span><span class="chip">카카오톡</span><span class="chip">자동화</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=O2jCsdfceq0" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-O2jCsdfceq0">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> <strong>Claude Cowork의 스케줄 기능</strong> + <strong>카카오 PlayMCP</strong>를 연결하면, 매일 아침 클로드가 <strong>뉴스·일정·유튜브·멜론·기업공시</strong>를 알아서 정리해 <strong>카카오톡('나에게 보내기' 방)으로 자동 브리핑</strong>을 쏴 준다. MCP로 클로드에 '손과 발'을 달아 외부 서비스를 조작하게 하고, New Task로 프롬프트를 묶어 <strong>매일 아침 8시 자동 실행</strong>으로 저장하는 게 핵심. (컴퓨터+클로드 데스크탑 앱이 켜져 있어야 동작.)</blockquote>
 <hr>
 <h2 class="chap">1. 콜드오픈 — 아침에 카톡만 켰을 뿐인데 · <a href="https://youtu.be/O2jCsdfceq0?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -365,11 +388,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. PlayMCP <strong>도구함</strong>에서 MCP를 추가하고, Claude <strong>커넥터</strong>에서 PlayMCP를 연결(권한 동의)한다.</p>
 <p>4. 출력은 <strong>카카오톡 '나에게 보내기'(나채방)</strong>; 뉴스+일정+차트+유튜브+공시를 한 프롬프트로 묶는다.</p>
 <p>5. <strong>New Task로 매일 아침 8시</strong> 스케줄 저장 → 자동 실행(단, 컴퓨터+앱이 켜져 있어야 동작). 시간대만 바꾸면 다른 비서.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-gkxv6PCaAhw">
-<div class="phead"><img src="https://i.ytimg.com/vi/gkxv6PCaAhw/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>Tech Bridge</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-gkxv6PCaAhw">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/gkxv6PCaAhw/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gkxv6PCaAhw/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>Tech Bridge</span>
 <h2 class="ptitle">아름다운 웹사이트를 만들기 위해 꼭 필요한 Claude 디자인 스킬 (한글자막)</h2>
-<div class="pmeta"><span class="chip">⏱ 14:14</span><span class="chip">📅 2026-06-27</span><span class="chip">클로드</span><span class="chip">디자인스킬</span><span class="chip">Skills</span><span class="chip">shadcn</span><span class="chip">GSAP</span><span class="chip">ui-ux-pro-max</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=gkxv6PCaAhw" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 14:14</span><span class="chip">📅 2026-06-27</span><span class="chip">클로드</span><span class="chip">디자인스킬</span><span class="chip">Skills</span><span class="chip">shadcn</span><span class="chip">GSAP</span><span class="chip">ui-ux-pro-max</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=gkxv6PCaAhw" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-gkxv6PCaAhw">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> AI가 만든 사이트는 결국 다 비슷해 보인다. 이걸 벗어나는 열쇠는 <strong>재사용 가능한 '스킬(skill)'</strong>이다. 영상은 (1) 디자인 방향을 강제하는 <strong>Anthropic 프런트엔드 디자인 스킬</strong>, (2) 실제 제품 UI를 위한 <strong>shadcn</strong>(스킬+MCP), (3) 대시보드 정보배치 스킬, (4) 산업별 디자인 시스템을 엔진으로 뽑는 <strong>ui-ux-pro-max</strong>, (5) 진짜 애니메이션 <strong>GSAP 스킬</strong>, (6) 취향 프리셋, (7) 이미지·영상 생성 <strong>Higgsfield</strong>, (8) <strong>모바일 스킬</strong>(원칙·Material 3·SwiftUI·Expo)까지, 웹부터 모바일까지 디자인 스킬을 상황별로 총정리한다. (제작: AI Labs, 한글자막: Tech Bridge)</blockquote>
 <hr>
 <h2 class="chap">1. 왜 AI 디자인은 다 비슷해 보이나 — 스킬의 등장 · <a href="https://youtu.be/gkxv6PCaAhw?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -467,11 +490,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 실제 제품 UI는 <strong>shadcn</strong>(스킬=규칙+프로젝트 맥락, MCP=레지스트리 라이브 연결), 대시보드는 <strong>정보 배치 전용 스킬</strong>.</p>
 <p>4. <strong>ui-ux-pro-max</strong>는 코드 전 엔진으로 161개 산업에서 색·폰트·레이아웃을 골라 맞춤 디자인 시스템을 준다; 애니는 <strong>GSAP 스킬</strong>(성능=transform).</p>
 <p>5. 비주얼은 <strong>Higgsfield</strong>(영상=Seedance), 모바일은 <strong>원칙·Material 3(구글)·SwiftUI(애플 Liquid Glass)·Expo(크로스플랫폼)</strong> — 상황에 맞는 스킬을 골라 쓴다.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-Aaebz-Q0OYY">
-<div class="phead"><img src="https://i.ytimg.com/vi/Aaebz-Q0OYY/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>디자인하는AI</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-Aaebz-Q0OYY">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/Aaebz-Q0OYY/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Aaebz-Q0OYY/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>디자인하는AI</span>
 <h2 class="ptitle">AI가 Figma 변수 200개를 혼자 만듦 — 디자인 토큰부터 변수 구조, 시스템까지 자동 완성 (feat. Claude)</h2>
-<div class="pmeta"><span class="chip">⏱ 19:13</span><span class="chip">📅 2026-04-24</span><span class="chip">클로드코드</span><span class="chip">Figma</span><span class="chip">디자인토큰</span><span class="chip">디자인시스템</span><span class="chip">변수</span><span class="chip">MCP</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=Aaebz-Q0OYY" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 19:13</span><span class="chip">📅 2026-04-24</span><span class="chip">클로드코드</span><span class="chip">Figma</span><span class="chip">디자인토큰</span><span class="chip">디자인시스템</span><span class="chip">변수</span><span class="chip">MCP</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=Aaebz-Q0OYY" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-Aaebz-Q0OYY">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 피그마 <strong>MCP + 공식 스킬</strong>을 Claude Code에 붙이면, 디자인 시안·<code>design.md</code> 문서를 입력받아 <strong>디자인 토큰 → 피그마 변수(Primitive/Semantic/Component) → 파운데이션 문서 → UI 컴포넌트</strong>까지 자동 생성한다. 실제로 <code>design.md</code> 하나에서 <strong>변수 200개 가까이(프리미티브 135·시멘틱 29·컴포넌트 37)</strong>를 컬렉션까지 구분해 한 번에 등록하는 걸 시연. 다크/라이트 모드 전환되는 마스터 컴포넌트까지 만들지만, 텍스트 변수 누락 등 <strong>수정이 필요한 부분도 솔직히</strong> 짚는다.</blockquote>
 <hr>
 <h2 class="chap">1. 인트로 — 피그마 스킬로 디자인 시스템 자동화 · <a href="https://youtu.be/Aaebz-Q0OYY?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -560,11 +583,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 변수는 <strong>Primitive(원재료) → Semantic(의미 참조) → Component</strong> 3단계; <code>design.md</code> 하나로 <strong>약 200개</strong>를 컬렉션까지 자동 등록.</p>
 <p>4. 파운데이션 문서·스타일·마스터 컴포넌트(다크/라이트 전환)까지 만들지만, <strong>한 번에 다 시키면 품질↓ → 개별 생성 권장</strong>, 텍스트 변수는 명시 필요.</p>
 <p>5. 토큰=최소 단위(레고 블록), 변수=이름 붙인 참조 → 한 곳만 고치면 전체 반영. 단 <strong>가벼운 페이지엔 디자인 시스템이 불필요</strong>할 수 있다.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-VYXr0M7IYJk">
-<div class="phead"><img src="https://i.ytimg.com/vi/VYXr0M7IYJk/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>배움의 달인 (AI·자동화)</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-VYXr0M7IYJk">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/VYXr0M7IYJk/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/VYXr0M7IYJk/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>배움의 달인 (AI·자동화)</span>
 <h2 class="ptitle">옵시디언에 제미나이 붙이니 AI 세컨드 브레인이 진짜 됐다! | 무료 오픈소스 플러그인</h2>
-<div class="pmeta"><span class="chip">⏱ 27:39</span><span class="chip">📅 2026-06-29</span><span class="chip">옵시디언</span><span class="chip">제미나이</span><span class="chip">GeminiFileSearch</span><span class="chip">세컨드브레인</span><span class="chip">지식관리</span><span class="chip">Antigravity</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=VYXr0M7IYJk" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 27:39</span><span class="chip">📅 2026-06-29</span><span class="chip">옵시디언</span><span class="chip">제미나이</span><span class="chip">GeminiFileSearch</span><span class="chip">세컨드브레인</span><span class="chip">지식관리</span><span class="chip">Antigravity</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=VYXr0M7IYJk" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-VYXr0M7IYJk">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 제작자가 직접 만든 무료 오픈소스 옵시디언 플러그인 <strong>Master of Knowledge</strong>는 <strong>Gemini File Search</strong>로 내 노트(약 1,310개)를 동기화해, ① <strong>Chat</strong>(내 노트 기반 답변+출처) ② <strong>Agent</strong>(Antigravity CLI로 웹서치+리포트 자동 작성) ③ <strong>Budget</strong>(월 $7 상한, 실사용 ~$0.0077) ④ <strong>Graph</strong>(노트 구조 시각화)를 제공한다. 핵심은 "대부분의 AI는 <strong>내 맥락을 모른다</strong>"는 문제를 옵시디언 안에서 풀어, LLM 요청 때마다 <strong>내 지식 DB를 맥락으로</strong> 쓰는 <strong>나만의 맞춤형 지식 작업실</strong>을 만드는 것. 단순 저장이 아니라 <strong>'지식 가드닝'</strong>(가지치기·업데이트)에 방점.</blockquote>
 <hr>
 <h2 class="chap">1. 콜드오픈 — 내 노트로 인사이트 노트를 써준다 · <a href="https://youtu.be/VYXr0M7IYJk?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -653,11 +676,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 설치는 <strong>BRAT</strong>로, 설정은 <strong>Gemini API 키 + 모델(2.5/3.1 Flash) + 싱크 폴더 + 버짓 + Antigravity 경로</strong>.</p>
 <p>4. 로컬 LLM 인덱싱(느림) 대비 <strong>Gemini API 인덱싱은 빠르고 저렴</strong>; 결과물은 다시 노트로 저장돼 지식 DB가 <strong>순환·성장</strong>한다.</p>
 <p>5. 철학은 단순 저장이 아닌 <strong>'지식 가드닝'</strong> — LLM 요청마다 내 노트를 맥락으로 쓰는 <strong>맞춤형 지식 DB</strong>, 구축보다 <strong>활용</strong>이 핵심.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-WL_qu7l3fgQ">
-<div class="phead"><img src="https://i.ytimg.com/vi/WL_qu7l3fgQ/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>바이브랩스</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-WL_qu7l3fgQ">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/WL_qu7l3fgQ/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/WL_qu7l3fgQ/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>바이브랩스</span>
 <h2 class="ptitle">클로드 코드는 이제 API 키 없이 래딧·X·유튜브·링크드인·깃허브·V2EX·RSS 14개 채널을 읽을 수 있습니다</h2>
-<div class="pmeta"><span class="chip">⏱ 13:33</span><span class="chip">📅 2026-06-29</span><span class="chip">클로드코드</span><span class="chip">agent-reach</span><span class="chip">MCP대안</span><span class="chip">웹검색</span><span class="chip">바이브코딩</span><span class="chip">self-healing-router</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=WL_qu7l3fgQ" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 13:33</span><span class="chip">📅 2026-06-29</span><span class="chip">클로드코드</span><span class="chip">agent-reach</span><span class="chip">MCP대안</span><span class="chip">웹검색</span><span class="chip">바이브코딩</span><span class="chip">self-healing-router</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=WL_qu7l3fgQ" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-WL_qu7l3fgQ">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 클로드 코드는 기본적으로 인터넷(X·레딧·유튜브 등)에 못 나가서, 결국 사람이 브라우저를 열어 복붙 심부름을 하게 된다. <strong>agent-reach</strong>는 <strong>파이썬 패키지 하나(<code>pip install</code>)</strong>로 에이전트가 <strong>X·유튜브·레딧·GitHub·일반 웹 등 14개+ 채널을 직접 읽고 검색</strong>하게 해준다 — <strong>API 키도 결제도 불필요</strong>. 핵심 개념은 <strong>셀프 힐링 라우터</strong>: 한 통로가 막히면 알아서 다음 통로로 우회한다. 설치·X 검색·유튜브 자막 요약·GitHub 레포 분석까지 실제로 시연하며, "AI를 세상에 연결해 <strong>세상을 재료로 쓰게</strong> 만드는" 것이 요지.</blockquote>
 <hr>
 <h2 class="chap">1. 문제 — 세상에서 제일 똑똑한 녀석이 인터넷엔 못 나간다 · <a href="https://youtu.be/WL_qu7l3fgQ?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -738,11 +761,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. <strong>셀프 힐링 라우터</strong>: 한 경로(404 등)가 막히면 트위터 CLI→Open CLI 크롬 확장으로 <strong>자동 우회</strong>.</p>
 <p>4. 실제 시연: X 반응 수집, 유튜브 <strong>자막 추출→핵심 3요약</strong>, GitHub 레포 실질 분석(Pixel3D 등).</p>
 <p>5. 활용: 에러 해결·라이브러리 문서·웹 번역·트렌드 조사 — 요지는 에이전트가 <strong>'세상을 재료로'</strong> 쓰게 만드는 것.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-93wC8kJJYjs">
-<div class="phead"><img src="https://i.ytimg.com/vi/93wC8kJJYjs/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>일용직 개발자 임상진</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-93wC8kJJYjs">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/93wC8kJJYjs/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/93wC8kJJYjs/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>일용직 개발자 임상진</span>
 <h2 class="ptitle">앱을 공장처럼 찍어내는 12가지 핵심 꿀팁</h2>
-<div class="pmeta"><span class="chip">⏱ 12:51</span><span class="chip">📅 2026-06-27</span><span class="chip">앱공장</span><span class="chip">바이브코딩</span><span class="chip">코덱스</span><span class="chip">Flutter</span><span class="chip">모노레포</span><span class="chip">CLAUDE.md</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=93wC8kJJYjs" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 12:51</span><span class="chip">📅 2026-06-27</span><span class="chip">앱공장</span><span class="chip">바이브코딩</span><span class="chip">코덱스</span><span class="chip">Flutter</span><span class="chip">모노레포</span><span class="chip">CLAUDE.md</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=93wC8kJJYjs" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-93wC8kJJYjs">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 한 달에 앱 30개(하루 3개)를 만든 비결은 "코딩을 빨리"가 아니라 <strong>AI가 쉬지 않고 일할 환경(=앱 공장)</strong>을 먼저 만드는 것. <strong>장비 투자(M5 맥북)</strong> → <strong>개발자 계정</strong> → <strong>터미널+cmux로 3개 동시 빌드</strong> → <strong>코덱스 선택 + 권한 개방(자율주행)</strong> → <strong>Flutter(iOS·안드 한 코드)</strong> + <strong>모노레포(부품 재사용)</strong> → <strong>CLAUDE.md/AGENTS.md에 원칙 기록</strong> → <strong>로드맵 + <code>/goal</code>로 단계별 자율주행</strong> → <strong>토큰 절약(세션 리셋)</strong> → <strong>개인정보처리방침·지원 페이지(Netlify/Vercel)</strong>. 핵심은 <strong>반복 제거·재사용·위임</strong>의 시스템.</blockquote>
 <hr>
 <h2 class="chap">1. 개요 — 앱 공장이란 · <a href="https://youtu.be/93wC8kJJYjs?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -831,11 +854,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. <strong>코덱스 선택 + 권한 개방(Full Access)</strong> 로 자율주행, <strong>Flutter</strong>로 iOS·안드 한 코드, <strong>모노레포</strong>로 부품 재사용.</p>
 <p>4. <strong>CLAUDE.md/AGENTS.md</strong>에 원칙을 기록해 반복 지시 제거, <strong>로드맵 + <code>/goal</code></strong> 로 단계별 자율주행(자는 동안에도 개발), <strong>세션 리셋</strong>으로 토큰 절약.</p>
 <p>5. 출시엔 <strong>개인정보처리방침·지원 페이지</strong>(Netlify/Vercel)가 필수. 핵심은 <strong>반복 제거·재사용·위임</strong>의 시스템.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-j8UPHTc24H0">
-<div class="phead"><img src="https://i.ytimg.com/vi/j8UPHTc24H0/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>로치의개발일기</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-j8UPHTc24H0">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/j8UPHTc24H0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/j8UPHTc24H0/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>로치의개발일기</span>
 <h2 class="ptitle">[헤르메스 강의 1] 일 잘하는 헤르메스 만드는 법 (폴더 설정, 성격 설정)</h2>
-<div class="pmeta"><span class="chip">⏱ 22:08</span><span class="chip">📅 2026-06-26</span><span class="chip">헤르메스</span><span class="chip">HermesAgent</span><span class="chip">SOUL.md</span><span class="chip">AGENTS.md</span><span class="chip">USER.md</span><span class="chip">메모리시스템</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=j8UPHTc24H0" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 22:08</span><span class="chip">📅 2026-06-26</span><span class="chip">헤르메스</span><span class="chip">HermesAgent</span><span class="chip">SOUL.md</span><span class="chip">AGENTS.md</span><span class="chip">USER.md</span><span class="chip">메모리시스템</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=j8UPHTc24H0" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-j8UPHTc24H0">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 헤르메스 에이전트가 실무에서 못 하는 이유는 <strong>메모리 시스템(SOUL.md·AGENTS.md·USER.md)을 안 잡아서</strong>다. 설정 없이 "강남 삼겹살 맛집 10개 찾아줘"를 시키면 LLM 특성상 <strong>구글→다이닝코드에서 영어 파일명으로 대충 저장</strong>한다. 해법은 ① 기존 결과를 <strong>아카이브로 격리</strong>, ② <strong>AGENTS.md</strong>에 파일명/폴더 규칙·검색 규칙(네이버·리뷰 감정분석·예약 컬럼)을 <strong>한글 강제·볼드 강조</strong>로 정의, ③ 프롬프트로 <strong>성격(꼼꼼한 맛집 조사관)</strong>을 설정해 USER.md에 저장. 핵심 원리는 <strong>LLM 어텐션</strong> — SOUL.md/AGENTS.md는 프롬프트 <strong>맨 앞에 항상 실려 강조</strong>되므로(Lost in the Middle의 반대) 앞단 프롬프트를 엔지니어링해야 한다.</blockquote>
 <hr>
 <h2 class="chap">1. 오늘 할 것 &amp; '골(goal)' 개념 · <a href="https://youtu.be/j8UPHTc24H0?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -916,11 +939,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 원리는 <strong>LLM 어텐션</strong>: SOUL.md/AGENTS.md는 프롬프트 <strong>맨 앞에 항상 실려 강조</strong>(Lost in the Middle의 반대) → 앞단 프롬프트를 엔지니어링.</p>
 <p>4. <strong>AGENTS.md</strong>에 파일명/폴더 규칙 + 검색 규칙(네이버·리뷰 감정분석·예약 컬럼)을 <strong>한글 강제·볼드 강조</strong>로 정의, 옛 결과는 <strong>아카이브로 격리</strong>.</p>
 <p>5. 프롬프트로 <strong>성격(꼼꼼한 조사관)</strong>을 USER.md에 저장 → 재실행 시 네이버 시작·한글 폴더·리뷰 분석으로 확 달라짐. <strong>규칙은 에이전트가 아니라 사람이 직접</strong> 작성 권장.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-HmBVZ_679Ko">
-<div class="phead"><img src="https://i.ytimg.com/vi/HmBVZ_679Ko/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>교육티타임</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-HmBVZ_679Ko">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/HmBVZ_679Ko/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HmBVZ_679Ko/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>교육티타임</span>
 <h2 class="ptitle">&quot;교무행정·수업 기획 끝판왕&quot; 교사를 위한 최신 클로드(Claude) 활용법 완전 정복! (feat. 전정선 선생님)</h2>
-<div class="pmeta"><span class="chip">⏱ 1:22:33</span><span class="chip">📅 2026-07-01</span><span class="chip">클로드</span><span class="chip">ClaudeSkills</span><span class="chip">코워크</span><span class="chip">Cowork</span><span class="chip">에이전트</span><span class="chip">교무자동화</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=HmBVZ_679Ko" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 1:22:33</span><span class="chip">📅 2026-07-01</span><span class="chip">클로드</span><span class="chip">ClaudeSkills</span><span class="chip">코워크</span><span class="chip">Cowork</span><span class="chip">에이전트</span><span class="chip">교무자동화</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=HmBVZ_679Ko" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-HmBVZ_679Ko">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 교사 전정선 선생님이 실제 교무 현장에서 쓰는 <strong>클로드 스킬</strong>과 <strong>코워크(Cowork, 에이전트)</strong>를 시연한 82분 라이브. <strong>스킬</strong>은 클로드가 일 전에 읽는 <strong>나만의 업무 매뉴얼</strong>로, 한 마디면 만들어지고 <strong>한글·PPT·엑셀 양식을 100% 그대로 재현</strong>한다(공문→메시지, 가정통신문, 기안문 등). <strong>코워크</strong>는 폴더 권한을 받아 <strong>계획→실행→자가검증</strong>하며 실제 파일을 만드는 에이전트로, 공문 정리·영수증 정산·수행평가 채점·세특 분석·로봇 뉴스 브리핑·일정 카톡 발송까지 자동화한다. 자동화는 <strong>입력→처리→출력→저장→트리거 5단계</strong>로 설계한다. (클로드가 핫한 이유: 글 잘 씀·코딩·양심적 / 코워크는 데스크탑 앱 + 프로 구독 필요.)</blockquote>
 <blockquote>※ 라이브 중간의 행사·댓글 이벤트 안내 구간은 노트에서 생략했습니다.</blockquote>
 <hr>
@@ -1010,11 +1033,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>3. 기본 내장 스킬은 docx·xlsx·pptx·pdf, <strong>한글(HWP)은 커스텀</strong> 스킬로. 자동 트리거 또는 슬래시(/)로 사용.</p>
 <p>4. <strong>코워크</strong> = 계획→실행→자가검증하는 에이전트(데스크탑 앱+프로 구독 필수). 준비물: <strong>데스크탑 앱·클로드 for Chrome·커넥터/플레이 MCP</strong>. 사용은 <strong>폴더 지정→명령→확인</strong> 3단계.</p>
 <p>5. 사례: 공문 정리·영수증 정산·수행평가 채점(비교대조)·세특 분석·로봇 뉴스/일정 카톡 브리핑. 자동화는 <strong>입력→처리→출력→저장→트리거 5단계</strong>로 설계.</p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-uYZYS0J1zF8">
-<div class="phead"><img src="https://i.ytimg.com/vi/uYZYS0J1zF8/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 콘텐츠 마스터 세인투</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-uYZYS0J1zF8">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/uYZYS0J1zF8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/uYZYS0J1zF8/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 콘텐츠 마스터 세인투</span>
 <h2 class="ptitle">클로드 코드 강의 이걸로 끝내세요 | 한 번에 자동으로 돌아가는 원샷 프롬프트 공개</h2>
-<div class="pmeta"><span class="chip">⏱ 17:05</span><span class="chip">📅 2026-04-10</span><span class="chip">클로드코드</span><span class="chip">AI자동화</span><span class="chip">원샷프롬프트</span><span class="chip">스케줄태스크</span><span class="chip">퍼미션</span><span class="chip">텔레그램</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=uYZYS0J1zF8" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 17:05</span><span class="chip">📅 2026-04-10</span><span class="chip">클로드코드</span><span class="chip">AI자동화</span><span class="chip">원샷프롬프트</span><span class="chip">스케줄태스크</span><span class="chip">퍼미션</span><span class="chip">텔레그램</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=uYZYS0J1zF8" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-uYZYS0J1zF8">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> "프롬프트를 잘 쓰는 단계"를 넘어, 클로드 코드로 <strong>내가 없어도 매일 스스로 일하는 운영 시스템</strong>을 만든다. 메모리·스케줄·태스크·채널·커넥터·퍼미션을 <strong>원샷 프롬프트 하나</strong>로 세팅(그 프롬프트조차 AI가 작성)하고, 결과는 마크다운·구글 시트·텔레그램으로 분리 저장. 예시는 투자 비서지만 구조는 어디든 복제 가능.</blockquote>
 <hr>
 <h2 class="chap">1. 오프닝 — 내가 없어도 AI가 알아서 일하는 세상 · <a href="https://youtu.be/uYZYS0J1zF8?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1105,11 +1128,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>완전 자동의 조건</strong> — 스케줄만으론 반자동, 필요한 범위만 allow한 권한 설정까지 해야 사람 없이 돌아간다. 구조는 어떤 업종에도 복제 가능.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 만든 학습용 노트입니다. 원문 자막은 [assets/uYZYS0J1zF8/raw_transcript.txt]. ASR 오인식(주간↔주관, 런북↔럼북, settings↔세팅, 세인투↔세인티 등)은 문맥으로 교정했습니다. 후반 유료 패키지 안내는 학습 내용과 분리했습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-A7QdKqJttu4">
-<div class="phead"><img src="https://i.ytimg.com/vi/A7QdKqJttu4/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-A7QdKqJttu4">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/A7QdKqJttu4/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/A7QdKqJttu4/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
 <h2 class="ptitle">미쳤다! 옵시디언 캔버스에 AI 붙이면 생기는 일 (Claude Code x Obsidian)</h2>
-<div class="pmeta"><span class="chip">⏱ 16:10</span><span class="chip">📅 2026-06-24</span><span class="chip">옵시디언</span><span class="chip">캔버스</span><span class="chip">Canvas</span><span class="chip">클로드코드</span><span class="chip">다이어그램</span><span class="chip">JSON</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=A7QdKqJttu4" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 16:10</span><span class="chip">📅 2026-06-24</span><span class="chip">옵시디언</span><span class="chip">캔버스</span><span class="chip">Canvas</span><span class="chip">클로드코드</span><span class="chip">다이어그램</span><span class="chip">JSON</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=A7QdKqJttu4" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-A7QdKqJttu4">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 옵시디언 <strong>캔버스(Canvas)</strong>는 카드·문서·이미지를 연결하는 다이어그램 도구인데, 그 파일이 <strong>순수 텍스트(JSON: 노드+엣지)</strong>라서 <strong>Claude Code가 직접 읽고 편집</strong>할 수 있다. 흩어진 카드 자동 정렬·색상, 내 아이디어 스케치를 AI가 완성, 100페이지 문서를 캔버스로 변환까지 — HTML/SVG 대비 빠르고·편집 가능·검색되는 게 핵심.</blockquote>
 <hr>
 <h2 class="chap">1. 캔버스란? 마인드맵처럼 생각을 구조화하는 도구 · <a href="https://youtu.be/A7QdKqJttu4?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1176,11 +1199,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>왜 캔버스?</strong> 이미지/SVG/HTML은 편집·검색이 어렵지만 캔버스는 순수 텍스트라 빠르고 편집·검색 가능, 토큰도 절약.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 만든 학습용 노트입니다. 원문 자막은 [assets/A7QdKqJttu4/raw_transcript.txt]. ASR 오인식(캔버스↔캠버스, 기억↔기역, 골(Goal)↔고울, 훅↔후크, SVG↔SBG, 다이어그램↔다이아그램 등)은 문맥으로 교정했습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-blnnF9ubEVo">
-<div class="phead"><img src="https://i.ytimg.com/vi/blnnF9ubEVo/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-blnnF9ubEVo">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/blnnF9ubEVo/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/blnnF9ubEVo/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>오후다섯씨</span>
 <h2 class="ptitle">무조건 이렇게 저장하세요! 옵시디언 + Claude + VS Code — 폴더 3개면 끝납니다</h2>
-<div class="pmeta"><span class="chip">⏱ 14:32</span><span class="chip">📅 2026-04-24</span><span class="chip">옵시디언</span><span class="chip">VSCode</span><span class="chip">클로드코드</span><span class="chip">개인지식시스템</span><span class="chip">RAG</span><span class="chip">세컨브레인</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=blnnF9ubEVo" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 14:32</span><span class="chip">📅 2026-04-24</span><span class="chip">옵시디언</span><span class="chip">VSCode</span><span class="chip">클로드코드</span><span class="chip">개인지식시스템</span><span class="chip">RAG</span><span class="chip">세컨브레인</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=blnnF9ubEVo" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-blnnF9ubEVo">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 벡터 DB 없이 <strong>폴더 3개(RAW·DOCS·index.md)</strong>와 <strong>폴더별 CLAUDE.md</strong>만으로 값싸고 단순한 RAG=개인 지식 시스템을 만든다. <strong>같은 폴더</strong>를 VS Code(클로드 작업용)와 옵시디언(읽기·관리용)이 동시에 바라보고, RAW에 막 던지면 Claude가 DOCS로 정리하고 index를 갱신 → 점점 자라는 세컨브레인.</blockquote>
 <hr>
 <h2 class="chap">1. 당신의 메모 2,000개가 쓸모없는 이유 · <a href="https://youtu.be/blnnF9ubEVo?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1247,11 +1270,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>운영</strong> — RAW에 막 던지고 "정리해줘" → AI가 DOCS·index 자동 갱신. 위키링크·YAML 프론트매터로 옵시디언 그래프가 자라는 세컨브레인.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자막(수동, 품질 양호)을 수집·경미 교정해 만든 학습용 노트입니다. 원문 자막은 [assets/blnnF9ubEVo/raw_transcript.txt]. 이 영상의 구조(RAW·DOCS·index + 폴더별 CLAUDE.md)는 사용자의 옵시디언 세컨브레인 운영과 직접 맞닿아 있습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-_6bBV09r58Y">
-<div class="phead"><img src="https://i.ytimg.com/vi/_6bBV09r58Y/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>진한별의 AI 연구소</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-_6bBV09r58Y">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/_6bBV09r58Y/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_6bBV09r58Y/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>진한별의 AI 연구소</span>
 <h2 class="ptitle">(26년 6월 업데이트) 클로드 Skills로 AI 티 안 나는 고퀄 PPT 만드는 방법</h2>
-<div class="pmeta"><span class="chip">⏱ 12:45</span><span class="chip">📅 2026-06-03</span><span class="chip">클로드</span><span class="chip">Skills</span><span class="chip">PPT</span><span class="chip">클로드디자인</span><span class="chip">getdesignmd</span><span class="chip">Cowork</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=_6bBV09r58Y" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 12:45</span><span class="chip">📅 2026-06-03</span><span class="chip">클로드</span><span class="chip">Skills</span><span class="chip">PPT</span><span class="chip">클로드디자인</span><span class="chip">getdesignmd</span><span class="chip">Cowork</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=_6bBV09r58Y" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-_6bBV09r58Y">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 클로드로 실무용 PPT를 만든다. 단 <strong>'클로드 디자인'은 표·차트를 이미지로 박아 엑셀 편집 불가</strong>라 <strong>일반 클로드(데스크톱 앱)</strong>를 써야 한다. <strong>Skills</strong>로 ①자료조사 전문가 ②PPT 제작 전문가를 만들고(skill-creator), 디자인은 <strong>getdesign.md</strong>에서 가져와 테스트 슬라이드를 반복 수정해 나만의 디자인 시스템 스킬을 완성 → 자료조사→PPT를 한 번에. 보너스로 Cowork·파워포인트 애드인.</blockquote>
 <hr>
 <h2 class="chap">1. 오프닝 · <a href="https://youtu.be/_6bBV09r58Y?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1342,11 +1365,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>실행 &amp; 보너스</strong> — 자료조사(출처 포함)→PPT 생성. Cowork(폴더 직접 작업)·파워포인트 애드인(유료)으로 더 편하게.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 만든 학습용 노트입니다. 원문 자막은 [assets/_6bBV09r58Y/raw_transcript.txt]. ASR 오인식(진한별↔진난, getdesign.md↔겟디, Pretendard↔프리텐다더, 할루시네이션↔할루스네이션, Cowork↔코워크 등)은 문맥으로 교정했습니다. 프롬프트·스킬 무료 제공 안내는 학습 내용과 분리했습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-y6HIrsG7pE8">
-<div class="phead"><img src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 콘텐츠 마스터 세인투 · 바이브 코딩 마스터 시리즈 1편</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-y6HIrsG7pE8">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/y6HIrsG7pE8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/y6HIrsG7pE8/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 콘텐츠 마스터 세인투 · 바이브 코딩 마스터 시리즈 1편</span>
 <h2 class="ptitle">코딩 몰라도 OK — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지</h2>
-<div class="pmeta"><span class="chip">⏱ 20:12</span><span class="chip">📅 2026-06-23</span><span class="chip">바이브코딩</span><span class="chip">클로드코드</span><span class="chip">클로드데스크톱</span><span class="chip">디자인시스템</span><span class="chip">구글시트</span><span class="chip">AppsScript</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=y6HIrsG7pE8" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 20:12</span><span class="chip">📅 2026-06-23</span><span class="chip">바이브코딩</span><span class="chip">클로드코드</span><span class="chip">클로드데스크톱</span><span class="chip">디자인시스템</span><span class="chip">구글시트</span><span class="chip">AppsScript</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=y6HIrsG7pE8" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-y6HIrsG7pE8">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 코드 한 줄 없이 클로드 코드(데스크톱 앱)로 "진짜 작동하는" 강사 섭외 사이트를 만든다. 핵심은 <strong>4가지 원칙</strong> — ①재료는 파일로 ②결과를 그림 그리듯 ③하나씩 누적 ④하나씩 수정 — 과 구글 시트 연동으로 고객 문의를 자동 저장하는 것.</blockquote>
 <hr>
 <h2 class="chap">1. 인트로 및 결과물 공개 · <a href="https://youtu.be/y6HIrsG7pE8?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1445,11 +1468,11 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>시리즈 1편</strong> — 2편 관리자 페이지, 3·4편 수익화 예고. 아웃트로는 유료 크루 홍보.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 만든 학습용 노트입니다. 원문 자막은 <a href="raw_transcript.txt" target="_blank" rel="noopener">raw_transcript.txt</a> 참고. ASR 인식 한계로 일부 고유명사(디자인 시스템 사이트명 등)는 검수 단계에서 별도 확인했습니다. 아웃트로의 유료 멤버십 안내는 학습 내용과 분리했습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article><article class="post" id="post-HNlBFesXiW8">
-<div class="phead"><img src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 치트키</span>
+<a class="top" href="#top">↑ 갤러리로</a></div></details><details class="post" id="post-HNlBFesXiW8">
+<summary><div class="phead"><img src="https://i.ytimg.com/vi/HNlBFesXiW8/hqdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HNlBFesXiW8/mqdefault.jpg'" alt=""><div><span class="eyebrow"><span class="dot"></span>AI 치트키</span>
 <h2 class="ptitle">클로드·코덱스·제미나이를 동시에 제어합니다 | 하네스 멀티 에이전트 2.0</h2>
-<div class="pmeta"><span class="chip">⏱ 22:44</span><span class="chip">📅 2026-06-07</span><span class="chip">하네스</span><span class="chip">멀티에이전트</span><span class="chip">오케스트레이터</span><span class="chip">클로드코드</span><span class="chip">코덱스</span><span class="chip">제미나이</span></div>
-<a class="watch" href="https://www.youtube.com/watch?v=HNlBFesXiW8" target="_blank" rel="noopener">▶ 영상으로 보기</a></div></div>
+<div class="pmeta"><span class="chip">⏱ 22:44</span><span class="chip">📅 2026-06-07</span><span class="chip">하네스</span><span class="chip">멀티에이전트</span><span class="chip">오케스트레이터</span><span class="chip">클로드코드</span><span class="chip">코덱스</span><span class="chip">제미나이</span></div></div></div><span class="caret">▾</span></summary>
+<div class="pbody"><div class="pactions"><a class="watch" href="https://www.youtube.com/watch?v=HNlBFesXiW8" target="_blank" rel="noopener">▶ 영상으로 보기</a><button class="copyb" data-anchor="post-HNlBFesXiW8">🔗 링크 복사</button></div>
 <blockquote><strong>한 줄 요약:</strong> 클로드 코드·코덱스·안티그래비티 <strong>어느 환경에서 켜든</strong> 똑같이 도는 <strong>벤더 독립형</strong> 멀티 에이전트 시스템. "켜는 곳"이 지휘자(오케스트레이터)가 되고, 나머지 AI는 워커로 일하며 서로 만들고 서로 검수한다.</blockquote>
 <hr>
 <h2 class="chap">1. 오프닝 — 하네스 멀티 에이전트 2.0 소개 · <a href="https://youtu.be/HNlBFesXiW8?t=0" target="_blank" rel="noopener">0:00</a></h2>
@@ -1524,7 +1547,7 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 <p>5. <strong>안전장치</strong> — 모든 모델 호출은 사용자 승인 후, 결과는 검수 통과 후 진행, 전 과정 로그 기록, 교훈은 누적 학습.</p>
 <hr>
 <p><em>출처: 위 영상의 한국어 자동생성 자막을 수집·용어 교정해 작성한 학습용 노트입니다. 원문 자막은 <a href="raw_transcript.txt" target="_blank" rel="noopener">raw_transcript.txt</a> 참고. 모델명(GPT-5.5, 제미나이 3.1 등)·벤치마크 명칭은 영상 화자 발언 기준이며 일부는 자막 인식 한계로 확정이 어려워 검수 단계에서 별도 확인했습니다.</em></p>
-<a class="top" href="#top">↑ 갤러리로</a></article></main>
+<a class="top" href="#top">↑ 갤러리로</a></div></details></main>
 <footer>video2post 파이프라인으로 생성된 단일 갤러리입니다. 새 영상을 <code>notes/</code>에 추가하고 <code>python build_gallery.py</code>를 다시 실행하면 누적·재생성됩니다.</footer>
 </div><button id="fabTop" title="맨 위로" aria-label="맨 위로">↑</button><script>
 var bar=document.getElementById('bar'),fab=document.getElementById('fabTop');
@@ -1533,11 +1556,42 @@ document.addEventListener('scroll',sc,{passive:true});sc();
 if(fab){fab.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})}}
 var tb=document.getElementById('themeBtn'),b=document.body;
 tb.onclick=function(){var d=b.getAttribute('data-theme')==='dark';b.setAttribute('data-theme',d?'light':'dark');tb.textContent=d?'◑ 다크':'◐ 라이트'};
-document.querySelectorAll('.tagf').forEach(function(t){t.onclick=function(){
-  document.querySelectorAll('.tagf').forEach(x=>x.classList.remove('on'));t.classList.add('on');
-  var tag=t.dataset.tag;
-  document.querySelectorAll('.gcard').forEach(function(c){
-    c.style.display=(tag==='*'||(c.dataset.tags||'').split('|').includes(tag))?'':'none';
+var grid=document.getElementById('grid'),cnt=document.getElementById('cnt'),qEl=document.getElementById('q'),sortSel=document.getElementById('sortSel'),chSel=document.getElementById('chSel');
+var st={q:'',tag:'*',ch:'*',sort:'new'};
+var cmp={
+ 'new':function(a,b){return (b.dataset.date||'').localeCompare(a.dataset.date||'')},
+ 'channel':function(a,b){return (a.dataset.channel||'').localeCompare(b.dataset.channel||'','ko')||(b.dataset.date||'').localeCompare(a.dataset.date||'')},
+ 'dur':function(a,b){return (+b.dataset.dur||0)-(+a.dataset.dur||0)}
+};
+function apply(){
+  var cards=[].slice.call(grid.children);
+  cards.sort(cmp[st.sort]);
+  cards.forEach(function(c){grid.appendChild(c)});
+  var n=0;
+  cards.forEach(function(c){
+    var tags=(c.dataset.tags||'').split('|');
+    var show=(st.tag==='*'||tags.indexOf(st.tag)>=0)&&(st.ch==='*'||c.dataset.channel===st.ch)&&(st.q===''||(c.dataset.search||'').indexOf(st.q)>=0);
+    c.style.display=show?'':'none';if(show)n++;
   });
+  cnt.textContent='표시 '+n+'개';
+}
+qEl.addEventListener('input',function(){st.q=this.value.toLowerCase().trim();apply()});
+sortSel.addEventListener('change',function(){st.sort=this.value;apply()});
+chSel.addEventListener('change',function(){st.ch=this.value;apply()});
+document.querySelectorAll('.tagf').forEach(function(t){t.onclick=function(){
+  document.querySelectorAll('.tagf').forEach(function(x){x.classList.remove('on')});t.classList.add('on');
+  st.tag=t.dataset.tag;apply();
 }});
+document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement!==qEl){e.preventDefault();qEl.focus()}});
+document.querySelectorAll('.gcard').forEach(function(c){c.addEventListener('click',function(e){
+  e.preventDefault();var d=document.querySelector(c.getAttribute('href'));if(d){d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'})}
+})});
+document.querySelectorAll('.copyb').forEach(function(btn){btn.addEventListener('click',function(e){
+  e.preventDefault();var url=location.origin+location.pathname+'#'+btn.dataset.anchor;
+  var ok=function(){var o=btn.textContent;btn.textContent='✓ 복사됨';setTimeout(function(){btn.textContent=o},1400)};
+  if(navigator.clipboard){navigator.clipboard.writeText(url).then(ok).catch(function(){prompt('링크 복사:',url)})}else{prompt('링크 복사:',url)}
+})});
+function openHash(){if(location.hash){var d=document.querySelector(location.hash);if(d&&d.tagName==='DETAILS'){d.open=true}}}
+window.addEventListener('hashchange',openHash);openHash();
+apply();
 </script></body></html>
