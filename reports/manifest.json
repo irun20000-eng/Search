@@ -2,6 +2,16 @@
   "generated": "2026-07-09",
   "reports": [
     {
+      "slug": "google-flow-practice",
+      "title": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+      "date": "2026-07-09",
+      "depth": "deep",
+      "tags": ["AI영상", "GoogleFlow", "Veo", "실습가이드", "프롬프트", "Scenebuilder", "크리에이터", "따라하기"],
+      "tldr": "Google Flow 개요편의 후속 실습편. 네 생성 모드(Text/Frames/Ingredients/Shot Explorer)+Scenebuilder부터, 프롬프트 공식(Subject+Action+Style+Camera+Composition+Lens+Ambiance+Audio, 핵심 3~4개만), 복붙 가능한 예제로 실습 A~E(첫 8초 클립·캐릭터 고정·Extend/Jump To 이어붙이기·카메라 무빙·오디오/대사)와 30초 미니 광고 완주 체크리스트, 반복·트러블슈팅·3일 커리큘럼·프롬프트 템플릿까지. 영어 프롬프트·카메라 독립 문장·저해상도→4K 크레딧 절약 팁. 15개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/google-flow-practice/report.md"
+    },
+    {
       "slug": "google-flow",
       "title": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
       "date": "2026-07-09",
