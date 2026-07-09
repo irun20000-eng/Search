@@ -1,6 +1,16 @@
 {
-  "generated": "2026-06-24",
+  "generated": "2026-07-09",
   "reports": [
+    {
+      "slug": "google-flow",
+      "title": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+      "date": "2026-07-09",
+      "depth": "deep",
+      "tags": ["AI영상", "GoogleFlow", "Veo", "Imagen", "Gemini", "크리에이터", "콘텐츠제작", "AI도구", "요금비교"],
+      "tldr": "Google Flow는 Veo(영상)+Imagen(이미지)+Gemini(자연어 편집)를 묶은 AI 필름메이킹 스튜디오. 2025 I/O 공개, 2026-01 Veo 3.1로 4K·네이티브 오디오·립싱크·캐릭터 일관성(Ingredient)·Scenebuilder 완비. 활용 5종(시네마틱 릴·광고·소셜·프리비주얼·튜토리얼)과 결과물 7가지, 유사도구 4강 비교(Runway·Kling·Pika·Sora 종료), 요금(AI Plus $9.99/Pro $19.99/Ultra $100·$200, 크레딧 통화·이월 없음), 무료 하루 50 크레딧, 클립 길이·워터마크·정책 한계까지. 30초 광고 worked 셋업 포함, 15개 출처.",
+      "sources": { "kr": 5, "intl": 10 },
+      "path": "reports/google-flow/report.md"
+    },
     {
       "slug": "slack-ai-bot",
       "title": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
