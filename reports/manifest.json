@@ -1,6 +1,16 @@
 {
-  "generated": "2026-07-11",
+  "generated": "2026-07-12",
   "reports": [
+    {
+      "slug": "chrome-extensions-work",
+      "title": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+      "date": "2026-07-12",
+      "depth": "deep",
+      "tags": ["생산성", "크롬확장", "업무효율", "자동화", "도구추천", "브라우저", "보안"],
+      "tldr": "브라우저 병목을 없애는 크롬 확장을 7개 유형으로 정리: ①탭·세션(OneTab·Toby) ②글쓰기·번역(Grammarly·DeepL) ③캡처·녹화(GoFullPage·Loom) ④노트·수집(Notion Clipper·Raindrop) ⑤작업·시간(Todoist·Clockify) ⑥AI 사이드바(Monica·Simple Chat Hub) ⑦보안·집중(Bitwarden·uBlock Origin Lite·Dark Reader). 유형별 활용예시 표+조합법, 직군별 추천 스택(마케터·개발자·영업·크리에이터), 도입 4단계, 설치 전 3종 확인(사용자수·업데이트·권한)·Manifest V3·'3~5개 룰' 보안까지. '다 깔지 말고 병목부터' 원칙, 14개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/chrome-extensions-work/report.md"
+    },
     {
       "slug": "benford-law",
       "title": "벤포드 법칙(Benford's Law) — 이해편(입문·딥)",
