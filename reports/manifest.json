@@ -2,6 +2,16 @@
   "generated": "2026-07-12",
   "reports": [
     {
+      "slug": "higgsfield-mcp-claude",
+      "title": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+      "date": "2026-07-12",
+      "depth": "deep",
+      "tags": ["AI영상", "Higgsfield", "MCP", "ClaudeCode", "힉스필드", "콘텐츠자동화", "크레딧", "요금"],
+      "tldr": "힉스필드(이미지→시네마틱 영상 AI)가 공식 MCP 서버를 내놔 클로드 대화 안에서 이미지·영상을 생성. 호스티드 MCP(https://mcp.higgsfield.ai/mcp)라 OAuth 계정 로그인만·API 키 불필요(CLI만 키). Claude Code 설치 한 줄 'claude mcp add --transport http --scope user higgsfield <URL>'→/mcp 인증, 웹/Desktop은 Add→Connect. GPT Image 2·Soul·Veo 3.1·Kling 3.0·Sora로 4K 이미지·15초 영상·캐릭터 일관성. 30초 쇼츠 worked 예제, 무료 150크레딧/월·Starter $15·Plus $39·Ultra $99·크레딧 절약 전략·정책 급변 주의까지 14개 출처.",
+      "sources": { "kr": 5, "intl": 9 },
+      "path": "reports/higgsfield-mcp-claude/report.md"
+    },
+    {
       "slug": "chrome-extensions-work",
       "title": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
       "date": "2026-07-12",
