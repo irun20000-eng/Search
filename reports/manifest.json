@@ -2,6 +2,16 @@
   "generated": "2026-07-14",
   "reports": [
     {
+      "slug": "orca-agent-ide",
+      "title": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
+      "date": "2026-07-17",
+      "depth": "deep",
+      "tags": ["AI도구", "Orca", "ADE", "ClaudeCode", "코딩에이전트", "병렬개발", "gitworktree", "생산성"],
+      "tldr": "Orca는 IDE가 아니라 ADE(Agent Development Environment)—Claude Code·Codex·Grok·OpenCode 등 40+ CLI 코딩 에이전트를 격리된 git worktree에서 병렬 실행·비교·머지하는 오케스트레이션 도구. Stably AI 제작, MIT 오픈소스라 본체 무료(에이전트 구독·API는 내 계정 청구, BYO). 데스크톱(mac/Win/Linux)+모바일 컴패니언(iOS/Android)으로 에이전트 상태·rate limit 실시간 확인·계정 hot-swap—2026 상반기 요금 티어 조임의 통증 정조준. worktree 격리로 같은 문제 N개 경쟁 실행·여러 작업 분업, Design Mode·SSH 원격·GitHub/Linear·Orca CLI. 설치 brew install --cask stablyai/orca/orca. GitHub 20.7k stars·v1.4.143. 유사도구(cmux·Conductor) 비교·권한/리소스/신생 리스크·베스트프랙티스까지 13개 출처.",
+      "sources": { "kr": 5, "intl": 8 },
+      "path": "reports/orca-agent-ide/report.md"
+    },
+    {
       "slug": "spherical-geometry-curvature",
       "title": "구면기하학의 코사인법칙과 곡률 — 이해편(대원거리·곡률의 의미·가우스 곡률)",
       "date": "2026-07-14",
