@@ -1,6 +1,16 @@
 {
-  "generated": "2026-07-17",
+  "generated": "2026-07-18",
   "reports": [
+    {
+      "slug": "claude-cowork-mobile",
+      "title": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
+      "date": "2026-07-18",
+      "depth": "deep",
+      "tags": ["AI도구", "ClaudeCowork", "코워크", "모바일", "에이전트", "업무자동화", "예약작업", "생산성"],
+      "tldr": "코워크는 Claude Code의 에이전트 능력을 코딩 밖 지식노동으로 확장—대화창에서 Cowork를 켜면 Claude가 실제로 파일·폴더·앱·커넥터를 다뤄 결과물을 완성(Chat은 대화, Cowork는 실행). 데스크톱 전용에서 웹·모바일로 확장(베타, 2026-07-07 Max 우선 롤아웃). 모바일 핵심은 '어디서든 작업 배정'—외출 중 폰으로 지시하면 적절한 데스크톱 세션으로 라우팅하거나 클라우드에서 돌려 완성물을 같은 대화로 회수. 실행 두 갈래(Dispatch=로컬·데스크톱 켜둬야 vs 클라우드 세션=원격·컴퓨터 꺼도 됨) 구분이 모바일의 열쇠. 플러그인(스킬+커넥터+서브에이전트)·예약 반복작업(유료 전체)·글로벌/폴더별 지시·권한. 출근길 위임·아침 리포트 예약·원격 폴더정리 worked, Pro/Max 5x·20x 요금($100/$200)·Chat/Cowork/Claude Code 비교·보안 주의까지 13개 출처.",
+      "sources": { "kr": 5, "intl": 8 },
+      "path": "reports/claude-cowork-mobile/report.md"
+    },
     {
       "slug": "orca-agent-ide",
       "title": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
