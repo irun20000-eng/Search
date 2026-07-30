@@ -22,6 +22,7 @@ h1.site{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;font-weight:800;lett
 .filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.6rem 0 .5rem}
 .tagf{font-size:.78rem;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:.3rem .7rem;cursor:pointer;transition:.15s}
 .tagf:hover{color:var(--txt)}.tagf.on{background:var(--a1);color:#0c0d12;border-color:var(--a1);font-weight:600}
+.tagf.more{color:var(--a1);background:transparent;border-style:dashed;font-weight:700;font-family:var(--sans)}.tagf.more:hover{border-color:var(--a1)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin:1.5rem 0 2rem}
 .gcard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:.18s}
 .gcard:hover{transform:translateY(-3px);border-color:var(--a1);box-shadow:0 8px 26px rgba(0,0,0,.25)}
@@ -72,8 +73,8 @@ details.post>summary .ptitle{transition:.15s}
 footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--faint);font-size:.82rem}
 @media(max-width:520px){.phead img{width:96px}body{font-size:16px}}
 </style></head>
-<body data-theme="dark" id="top"><div id="bar"></div>
-<div class="util"><button class="btn" id="themeBtn">◐ 라이트</button></div>
+<body data-theme="light" id="top"><div id="bar"></div>
+<div class="util"><button class="btn" id="themeBtn">◑ 다크</button></div>
 <div class="wrap">
 <header class="hero"><span class="eyebrow"><span class="dot"></span>video2post 갤러리</span>
 <h1 class="site">영상 노트 갤러리</h1>
@@ -2153,7 +2154,10 @@ function sc(){var h=document.documentElement;bar.style.width=((h.scrollTop)/(h.s
 document.addEventListener('scroll',sc,{passive:true});sc();
 if(fab){fab.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})}}
 var tb=document.getElementById('themeBtn'),b=document.body;
-tb.onclick=function(){var d=b.getAttribute('data-theme')==='dark';b.setAttribute('data-theme',d?'light':'dark');tb.textContent=d?'◑ 다크':'◐ 라이트'};
+try{var sv=localStorage.getItem('vgTheme');if(sv){b.setAttribute('data-theme',sv);}}catch(e){}
+function syncTb(){tb.textContent=b.getAttribute('data-theme')==='dark'?'◐ 라이트':'◑ 다크';}
+syncTb();
+tb.onclick=function(){var d=b.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';b.setAttribute('data-theme',nt);try{localStorage.setItem('vgTheme',nt);}catch(e){}syncTb();};
 var grid=document.getElementById('grid'),cnt=document.getElementById('cnt'),qEl=document.getElementById('q'),sortSel=document.getElementById('sortSel'),chSel=document.getElementById('chSel');
 var st={q:'',tag:'*',ch:'*',sort:'new'};
 var cmp={
@@ -2191,5 +2195,13 @@ document.querySelectorAll('.copyb').forEach(function(btn){btn.addEventListener('
 })});
 function openHash(){if(location.hash){var d=document.querySelector(location.hash);if(d&&d.tagName==='DETAILS'){d.open=true}}}
 window.addEventListener('hashchange',openHash);openHash();
+// 태그 필터 접기/펼치기 (기본 접힘) — 반드시 .tagf onclick 바인딩 이후에 실행
+(function(){var f=document.querySelector('.filters');if(!f)return;var chips=[].slice.call(f.querySelectorAll('.tagf')),N=17,exp=false;
+  if(chips.length<=N)return;
+  var more=document.createElement('button');more.className='tagf more';more.type='button';
+  function apply(){chips.forEach(function(c,i){c.style.display=(i<N||exp||c.classList.contains('on'))?'':'none';});more.textContent=exp?'접기 ▲':('＋'+(chips.length-N)+'개 더보기 ▾');}
+  more.onclick=function(){exp=!exp;apply();};f.appendChild(more);apply();
+  f.addEventListener('click',function(e){if(e.target.classList.contains('tagf')&&!e.target.classList.contains('more'))setTimeout(apply,0);});
+})();
 apply();
 </script></body></html>
