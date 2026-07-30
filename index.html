@@ -33,7 +33,13 @@
   .controls select{-webkit-appearance:none;appearance:none;background-color:var(--card);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A7E72' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:11px 36px 11px 15px;font-size:.92rem;font-family:var(--font);cursor:pointer}
   #tagbar{max-width:var(--maxw);margin:8px auto 0;padding:0 22px;display:flex;gap:8px;flex-wrap:wrap}
   .tag{font-size:.8rem;font-weight:600;color:var(--muted);background:var(--chip);border:1.5px solid transparent;border-radius:999px;padding:5px 12px;cursor:pointer;-webkit-user-select:none;user-select:none;transition:.12s}
+  .tag:hover{color:var(--ink)}
   .tag.active{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+  .tag.more{color:var(--accent);background:transparent;border:1.5px dashed var(--line);font-weight:700}
+  .tag.more:hover{border-color:var(--accent)}
+  .countline{max-width:var(--maxw);margin:12px auto 0;padding:0 22px;color:var(--muted);font-size:.82rem}
+  .countline b{color:var(--ink);font-weight:700}
+  .countline .clear{color:var(--accent);cursor:pointer;font-weight:600;margin-left:8px}
   main{max-width:var(--maxw);margin:0 auto;padding:20px 22px 90px}
   .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
   .card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:0;overflow:hidden;cursor:pointer;transition:transform .14s ease,box-shadow .14s ease,border-color .14s;display:flex;flex-direction:column;box-shadow:var(--shadow)}
@@ -108,6 +114,7 @@
   <select id="sort" aria-label="정렬" title="정렬"><option value="date">최신순</option><option value="title">제목순</option></select>
 </div>
 <div id="tagbar"></div>
+<div class="countline" id="countline"></div>
 
 <main>
   <div id="grid" class="grid"></div>
@@ -125,7 +132,8 @@
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
 const MANIFEST="reports/manifest.json";
-let REPORTS=[], activeTag=null;
+let REPORTS=[], activeTag=null, tagsExpanded=false;
+const TAG_COLLAPSE=18;
 const $=s=>document.querySelector(s);
 const grid=$("#grid"), empty=$("#empty");
 
@@ -141,10 +149,22 @@ async function boot(){
   if(location.hash.startsWith("#r=")) openBySlug(decodeURIComponent(location.hash.slice(3)));
 }
 function buildTagbar(){
-  const tags=[...new Set(REPORTS.flatMap(r=>r.tags||[]))].sort();
+  // 빈도순 정렬 — 자주 쓰인 태그가 앞에(동률은 가나다순)
+  const freq={}; REPORTS.forEach(r=>(r.tags||[]).forEach(t=>freq[t]=(freq[t]||0)+1));
+  const tags=Object.keys(freq).sort((a,b)=> freq[b]-freq[a] || a.localeCompare(b,"ko"));
   const bar=$("#tagbar"); bar.innerHTML="";
-  tags.forEach(t=>{ const el=document.createElement("span"); el.className="tag"+(t===activeTag?" active":""); el.textContent="#"+t;
+  const total=tags.length;
+  let shown = tagsExpanded ? tags : tags.slice(0, TAG_COLLAPSE);
+  // 접힌 상태에서도 선택된 태그는 항상 보이게
+  if(activeTag && !shown.includes(activeTag)) shown=[activeTag, ...shown];
+  shown.forEach(t=>{ const el=document.createElement("span"); el.className="tag"+(t===activeTag?" active":""); el.textContent="#"+t;
     el.onclick=()=>{ activeTag=activeTag===t?null:t; buildTagbar(); render(); }; bar.appendChild(el); });
+  if(total>TAG_COLLAPSE){
+    const m=document.createElement("span"); m.className="tag more";
+    m.textContent = tagsExpanded ? "접기 ▲" : `＋${total-TAG_COLLAPSE}개 더보기 ▾`;
+    m.onclick=()=>{ tagsExpanded=!tagsExpanded; buildTagbar(); };
+    bar.appendChild(m);
+  }
 }
 const CAT={"AI에이전트":"#E8743B","오픈소스":"#2FA39B","로컬AI":"#8B6FD6","NousResearch":"#D9A22E","자가발전":"#5BA3D9","함수호출":"#C2582B","주권적AI":"#6BA368"};
 const PALETTE=["#E8743B","#2FA39B","#8B6FD6","#D9A22E","#6BA368","#5BA3D9"];
@@ -172,6 +192,13 @@ function render(){
     return true;
   });
   list.sort((a,b)=> sort==="title"?a.title.localeCompare(b.title,"ko"):(b.date||"").localeCompare(a.date||""));
+  const cl=$("#countline");
+  if(cl){ const filtered = q||depth||activeTag;
+    cl.innerHTML = `<b>${list.length}</b>개${filtered?` / 전체 ${REPORTS.length}개`:""}`
+      + (activeTag?` · 태그 <b>#${esc(activeTag)}</b>`:"")
+      + (filtered?`<span class="clear" id="clearBtn">필터 해제 ✕</span>`:"");
+    const cb=$("#clearBtn"); if(cb) cb.onclick=()=>{ activeTag=null; $("#q").value=""; $("#depth").value=""; tagsExpanded=false; buildTagbar(); render(); };
+  }
   grid.innerHTML=""; empty.hidden=list.length>0;
   const featuredOK = !q && !depth && !activeTag && sort==="date" && list.length>0;
   list.forEach((r,i)=>{
