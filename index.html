@@ -120,6 +120,18 @@
   .article table{border-collapse:collapse;width:100%;font-size:.9rem}
   .article th,.article td{border:1.5px solid var(--line);padding:8px 11px;text-align:left}
   .article th{background:var(--chip)}
+  /* ---- 용어 주석(각주) ---- */
+  .article sup.fnref{font-size:.72em;line-height:0;vertical-align:super;margin-left:1px}
+  .article sup.fnref a{color:var(--accent);font-weight:800;text-decoration:none;padding:0 2px;border-radius:4px;background:var(--accent-soft)}
+  .article sup.fnref a:hover{text-decoration:underline}
+  .article :target{background:var(--accent-soft);border-radius:6px}
+  .article hr.fnsep{border:0;border-top:1.5px dashed var(--line);margin:2.4em 0 1em}
+  .article .fntitle{font-size:1rem;font-weight:800;color:var(--muted);margin:.2em 0 .6em;letter-spacing:.02em}
+  .article ol.fnlist{padding-left:1.4em;margin:0;font-size:.9rem;color:var(--muted)}
+  .article ol.fnlist li{margin:.45em 0;line-height:1.6;scroll-margin-top:60px}
+  .article ol.fnlist .fnterm{font-weight:800;color:var(--ink)}
+  .article ol.fnlist .fnterm::after{content:" — ";color:var(--muted);font-weight:400}
+  .article a.fnback{margin-left:4px;text-decoration:none;color:var(--accent);font-weight:800}
   footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px;color:var(--muted);font-size:.82rem;border-top:1.5px solid var(--line)}
   .hero-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
   .navbtn{flex:none;text-decoration:none;font-weight:800;font-size:.9rem;color:#fff;background:var(--accent);border-radius:12px;padding:10px 16px;box-shadow:var(--shadow);transition:.14s;white-space:nowrap}
@@ -299,18 +311,47 @@ function buildTOC(){
     if(el){ const y=el.getBoundingClientRect().top - sh.getBoundingClientRect().top + sh.scrollTop - 56; sh.scrollTo({top:y,behavior:"smooth"}); }
   }));
 }
+// 마크다운 렌더 + 용어 주석(각주) 전처리. [^용어]=용어주석 / [n]=출처(별개).
+function renderMD(md){
+  const defs={};
+  // 1) 각주 정의 추출:  [^라벨]: 설명  (다음 줄 이어쓰기 허용)
+  md=md.replace(/^\[\^([^\]]+)\]:[ \t]*(.*(?:\n(?!\s*$)(?!\[\^).*)*)/gm,(m,id,txt)=>{
+    defs[id.trim()]=txt.replace(/\s*\n\s*/g," ").trim(); return "";
+  });
+  // 2) 본문 참조 [^라벨] → 위첨자 링크 (정의된 것만; 미정의는 원문 유지)
+  const num={}, order=[];
+  md=md.replace(/\[\^([^\]]+)\]/g,(m,id)=>{
+    id=id.trim(); if(!(id in defs)) return m;
+    if(!(id in num)){ order.push(id); num[id]=order.length; }
+    const n=num[id];
+    return `<sup class="fnref"><a id="fnref-${n}" href="#fn-${n}">${n}</a></sup>`;
+  });
+  let html=marked.parse(md);
+  // 3) 하단 "용어 주석" 섹션 append (참조된 것만, 등장 순)
+  if(order.length){
+    const items=order.map((id,i)=>`<li id="fn-${i+1}"><span class="fnterm">${esc(id)}</span>${marked.parseInline(defs[id])} <a href="#fnref-${i+1}" class="fnback" title="본문으로">↩</a></li>`).join("");
+    html+=`<hr class="fnsep"><section class="footnotes" aria-label="용어 주석"><h3 class="fntitle">용어 주석</h3><ol class="fnlist">${items}</ol></section>`;
+  }
+  return html;
+}
 async function openReport(r){
   const path=r.path, base=path.substring(0,path.lastIndexOf("/")+1);
   $("#rawlink").href=path;
   let md=""; try{ md=await (await fetch(path,{cache:"no-store"})).text(); }catch(e){ md="# 불러오기 실패\n\n`"+path+"`"; }
   md=md.replace(/^---[\s\S]*?---\s*/,"");
-  $("#article").innerHTML=marked.parse(md);
+  $("#article").innerHTML=renderMD(md);
   // resolve relative image paths against the report folder (idempotent, per-open)
   $("#article").querySelectorAll("img").forEach(im=>{
     const s=im.getAttribute("src")||"";
     if(!/^https?:|^\//.test(s)) im.setAttribute("src", base+s);
     im.addEventListener("click",()=>im.classList.toggle("zoom"));
   });
+  // in-article anchor jumps (각주 ↔ 본문) smooth-scroll within the sheet
+  const sh0=$("#sheet");
+  $("#article").querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",ev=>{
+    const el=document.getElementById(a.getAttribute("href").slice(1));
+    if(el){ ev.preventDefault(); const y=el.getBoundingClientRect().top - sh0.getBoundingClientRect().top + sh0.scrollTop - 56; sh0.scrollTo({top:y,behavior:"smooth"}); }
+  }));
   buildTOC();
   $("#totop").classList.remove("show");
   openSheet(); location.hash="r="+encodeURIComponent(r.slug);
