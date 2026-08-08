@@ -82,6 +82,9 @@ details.post>summary .ptitle{transition:.15s}
 .copyb:hover{color:var(--txt);border-color:var(--a2)}
 footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--faint);font-size:.82rem}
 @media(max-width:520px){.phead img{width:96px}body{font-size:16px}}
+
+html[data-pre="dark"] body{background:#1a1613;color:#EDE6DE}
+html[data-pre="light"] body{background:#FFF8F0;color:#2B2622}
 </style>
 <style>
 /* 데이터 주도 셸 추가분 — 기존 토큰만 사용, 기존 규칙 변경 없음 */
@@ -112,7 +115,12 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 .vidcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .vidcard .vt{font-size:.8rem;font-weight:700;color:var(--txt);padding:.5rem .6rem .15rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .vidcard .vm{font-size:.71rem;color:var(--faint);padding:0 .6rem .55rem;display:flex;gap:.4rem;flex-wrap:wrap}
-</style></head>
+</style><script>
+/* 테마를 페인트 전에 복원한다. 아래에서 복원하면 다크 사용자가 매 방문마다 라이트→다크 깜빡임을 본다.
+   키는 메인 갤러리(stTheme)와 공유해 갤러리 간 테마가 따로 놀지 않게 한다. */
+(function(){try{var t=localStorage.getItem('stTheme')||localStorage.getItem('vgTheme');
+if(t)document.documentElement.setAttribute('data-pre',t);}catch(e){}})();
+</script></head>
 <body data-theme="light" id="top"><div id="bar"></div>
 <div class="util"><button class="btn" id="themeBtn">◑ 다크</button></div>
 <div class="wrap">
@@ -138,7 +146,9 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 function mdEsc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function mdInline(s){
   s=mdEsc(s);
-  s=s.replace(/`([^`]+)`/g,'<code>$1</code>');
+  // 코드 스팬을 먼저 빼둔다. 안 그러면 `a*b*c` 안까지 강조가 먹는다.
+  var spans=[];
+  s=s.replace(/`([^`]+)`/g,function(m,c){spans.push(c);return '\u0000'+(spans.length-1)+'\u0000'});
   // URL은 괄호 1단계 중첩까지 허용 (예: .../wiki/함수_(수학) )
   // 스킴은 http/https/mailto/상대경로/앵커만 허용 — javascript: 등 실행 스킴 차단
   s=s.replace(/\[([^\]]+)\]\(((?:[^()\s]|\([^()]*\))+)\)/g,function(m0,txt,url){
@@ -149,7 +159,9 @@ function mdInline(s){
     return '<a href="'+u.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">'+txt+'</a>';
   });
   s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
-  s=s.replace(/\*([^*]+)\*/g,'<em>$1</em>');
+  // 여는 * 뒤에 공백이 오면 강조로 보지 않는다 ("5 * 3 회", "src/*.md" 같은 문장 보호)
+  s=s.replace(/\*([^*\s][^*]*?)\*/g,'<em>$1</em>');
+  s=s.replace(/\u0000(\d+)\u0000/g,function(m,i){return '<code>'+spans[+i]+'</code>'});
   return s;
 }
 function mdEmitList(items,i,level,out){
@@ -168,7 +180,9 @@ function mdEmitList(items,i,level,out){
 function mdRender(md){
   var lines=String(md).replace(/\r/g,'').split('\n'),out=[],buf=[],items=[];
   function flushPara(){if(buf.length){out.push('<p>'+mdInline(buf.join(' '))+'</p>');buf=[]}}
-  function flushList(){if(items.length){mdEmitList(items,0,items[0].lvl,out);items=[]}}
+  function flushList(){if(items.length){
+    var min=items[0].lvl; for(var k=1;k<items.length;k++) if(items[k].lvl<min) min=items[k].lvl;
+    mdEmitList(items,0,min,out); items=[]}}
   function flushAll(){flushPara();flushList()}
   for(var i=0;i<lines.length;i++){
     var ln=lines[i],t=ln.trim();
@@ -212,7 +226,8 @@ function mdRender(md){
 
 var MANIFEST="manifest.json", GUIDES=[];
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-function thumb(id){return 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}
+function thumb(id){return 'https://i.ytimg.com/vi/'+encodeURIComponent(id)+'/hqdefault.jpg'}
+function thumbFb(id){return 'https://i.ytimg.com/vi/'+encodeURIComponent(id)+'/mqdefault.jpg'}
 function fmtDur(s){s=+s||0;var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
   return h?(h+':'+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')):(String(m).padStart(2,'0')+':'+String(x).padStart(2,'0'))}
 function hay(g){return (g.title+' '+g.summary+' '+(g.tags||[]).join(' ')).toLowerCase()}
@@ -222,7 +237,7 @@ function vidCards(vs){
   if(!vs||!vs.length)return '';
   return '<div class="vidgrid">'+vs.map(function(v){
     return '<a class="vidcard" href="https://youtu.be/'+esc(v.id)+'" target="_blank" rel="noopener">'
-      +'<img loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/'+v.id+'/mqdefault.jpg\'" alt="">'
+      +'<img loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\''+thumbFb(v.id)+'\'" alt="">'
       +'<div class="vt">'+esc(v.title)+'</div>'
       +'<div class="vm"><span>'+esc(v.channel)+'</span><span>⏱ '+fmtDur(v.duration)+'</span></div></a>'}).join('')+'</div>';
 }
@@ -255,7 +270,7 @@ function buildPosts(){
   document.getElementById('posts').innerHTML=GUIDES.map(function(g){
     var chips=(g.tags||[]).slice(0,6).map(function(t){return '<span class="chip">'+esc(t)+'</span>'}).join('');
     return '<details class="post" id="g-'+esc(g.slug)+'" data-src="'+esc(g.path)+'" data-slug="'+esc(g.slug)+'">'
-      +'<summary><div class="phead">'+(cover(g)?'<img src="'+cover(g)+'" alt="">':'')+'<div>'
+      +'<summary><div class="phead">'+(cover(g)?'<img loading="lazy" src="'+cover(g)+'" alt="">':'')+'<div>'
       +'<span class="eyebrow"><span class="dot"></span>'+esc(g.level)+' · 약 '+esc(g.minutes)+'분</span>'
       +'<h2 class="ptitle">'+esc(g.title)+'</h2>'
       +'<div class="pmeta"><span class="chip">📅 '+esc(g.date)+'</span>'+chips+'</div>'
@@ -331,23 +346,26 @@ function wire(){
     more.onclick=function(){exp=!exp;ap()};f.appendChild(more);ap();
     f.addEventListener('click',function(e){if(e.target.classList.contains('tagf')&&!e.target.classList.contains('more'))setTimeout(ap,0)})})();
 }
-function openHash(){if(!location.hash)return;var d=document.querySelector(location.hash);
+function openHash(){if(!location.hash)return;
+  var d=null; try{ d=document.querySelector(location.hash); }catch(e){ return; }
   if(d&&d.tagName==='DETAILS'){d.open=true;loadGuide(d);d.scrollIntoView({block:'start'})}}
 var bar=document.getElementById('bar'),fab=document.getElementById('fabTop');
 function sc(){var h=document.documentElement;bar.style.width=((h.scrollTop)/(h.scrollHeight-h.clientHeight)*100)+'%';if(fab){fab.classList.toggle('show',h.scrollTop>400)}}
 document.addEventListener('scroll',sc,{passive:true});sc();
 if(fab){fab.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})}}
 var tb=document.getElementById('themeBtn'),bd=document.body;
-try{var sv=localStorage.getItem('vgTheme');if(sv){bd.setAttribute('data-theme',sv)}}catch(e){}
+try{var sv=localStorage.getItem('stTheme')||localStorage.getItem('vgTheme');if(sv){bd.setAttribute('data-theme',sv)}}catch(e){}
 function syncTb(){tb.textContent=bd.getAttribute('data-theme')==='dark'?'◐ 라이트':'◑ 다크'}
 syncTb();
-tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('vgTheme',nt)}catch(e){}syncTb()};
+tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('stTheme',nt);localStorage.setItem('vgTheme',nt)}catch(e){}syncTb()};
 fetch(MANIFEST,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
   GUIDES=d.guides||[];
   document.getElementById('countLine').innerHTML='총 '+GUIDES.length+'개 · 최종 갱신 '+esc(d.generated||'')+' · <span id="cnt">표시 '+GUIDES.length+'개</span>';
   buildTabs();buildTags();buildCards();buildPosts();wire();apply();openHash();
   window.addEventListener('hashchange',openHash);sc();
 }).catch(function(e){
-  document.getElementById('grid').innerHTML='<div class="err">가이드 데이터를 불러오지 못했습니다: '+esc(e.message)+'</div>'});
+  var g=document.getElementById('grid');
+  if(!GUIDES.length){ g.innerHTML='<div class="err">가이드 데이터를 불러오지 못했습니다: '+esc(e.message)+'</div>'; }
+  else { console.error('렌더 오류:',e); }});
 </script>
 </body></html>

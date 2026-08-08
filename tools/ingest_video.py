@@ -37,11 +37,17 @@ def die(msg, hint=None):
 
 
 def vid_from_url(u):
-    m = (re.search(r'youtu\.be/([A-Za-z0-9_-]{11})', u)
-         or re.search(r'[?&]v=([A-Za-z0-9_-]{11})', u)
-         or re.search(r'/(?:embed|shorts|live)/([A-Za-z0-9_-]{11})', u)
-         or re.search(r'\b([A-Za-z0-9_-]{11})\b', u))
-    return m.group(1) if m else None
+    # 경계를 명시한다. 경계가 없으면 12자 이상 토큰에서 조용히 앞 11자만 잘라 쓴다.
+    B = r'(?![A-Za-z0-9_-])'
+    m = (re.search(r'youtu\.be/([A-Za-z0-9_-]{11})' + B, u)
+         or re.search(r'[?&]v=([A-Za-z0-9_-]{11})' + B, u)
+         or re.search(r'/(?:embed|shorts|live)/([A-Za-z0-9_-]{11})' + B, u))
+    if m:
+        return m.group(1)
+    # 정규 URL 형태가 아니면 '아무 11자 토큰'을 ID로 삼지 않는다.
+    # 우연히 실재하는 다른 영상 ID였다면 엉뚱한 영상의 메타데이터로 노트가 저장된다.
+    bare = re.fullmatch(r'\s*([A-Za-z0-9_-]{11})\s*', u)
+    return bare.group(1) if bare else None
 
 
 def ts_to_sec(t):
@@ -84,7 +90,10 @@ def parse_gemini(raw):
 
     def head(key):
         mm = re.search(rf'^\s*{key}\s*[:：]\s*(.+)$', body, re.M | re.I)
-        return mm.group(1).strip() if mm else None
+        if not mm:
+            return None
+        # 모델이 값을 백틱·굵게로 감싸 내는 경우가 흔하다 (표에 `automation` 으로 제시했으므로)
+        return mm.group(1).strip().strip('`*_ ').strip()
 
     url = head('url') or head('영상') or head('link')
     if not url:
@@ -180,18 +189,35 @@ def main():
         "\n".join(fm) + f"# {title}\n\n" + g["note"].strip() + "\n", encoding='utf-8')
 
     man = json.loads(MAN.read_text(encoding='utf-8'))
+    man_before = json.loads(MAN.read_text(encoding='utf-8'))   # 게이트 미달 시 롤백용
     entry = {"id": g["id"], "title": title, "channel": channel, "published": published,
              "added": added, "duration": dur, "cat": g["cat"], "tags": g["tags"],
              "one": re.sub(r'\*\*|\*|`', '', g["one"]), "path": f"notes/{g['id']}.md"}
     man["videos"] = [v for v in man["videos"] if v["id"] != g["id"]]
     man["videos"].insert(0, entry)
-    man["generated"] = max(v["added"] for v in man["videos"])
+    man["generated"] = max((v.get("added", "") for v in man["videos"]), default="")
     MAN.write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding='utf-8')
+
+    # 품질 게이트를 파이프라인 안에서 강제한다.
+    # 사람의 기억에 맡기면 미달 노트가 그대로 갤러리에 올라간다.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from verify_video import check as gate_check
+    gfails, GM = gate_check(NOTES / f"{g['id']}.md")
+    if gfails:
+        # manifest 롤백 — 게이트를 통과하지 못한 노트는 갤러리에 넣지 않는다
+        MAN.write_text(json.dumps(man_before, ensure_ascii=False, indent=1) + "\n", encoding='utf-8')
+        (NOTES / f"{g['id']}.md").unlink(missing_ok=True)
+        print(f"❌ 품질 게이트 미달 — 갤러리에 넣지 않고 되돌렸다 ({g['id']})")
+        for f in gfails:
+            print(f"     · {f}")
+        print("   → 제미나이 출력을 보강해 다시 붙여넣어 달라.")
+        sys.exit(1)
 
     safe = re.sub(r'[\\/:*?"<>|]', '', title).replace(' ', '_')[:70]
     print(f"✅ 인제스트 완료  {g['id']}")
     print(f"   {title}")
     print(f"   {channel} · {fmt_dur(dur)} · {published} · {g['cat']} · 태그 {len(g['tags'])}개")
+    print(f"   게이트 통과 — 챕터 {GM['chapters']} · 인용 {GM['quotes']} · TL;DR {GM['tldr']} · 본문 {GM['body']}자")
     print(f"   노트: videos/notes/{g['id']}.md · 갤러리 총 {len(man['videos'])}편")
     print(f"   옵시디언 파일명: {added.replace('-','')}_{safe}.md")
 

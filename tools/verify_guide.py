@@ -48,10 +48,23 @@ def check(path):
 
     fails = []
     body_n  = len(re.sub(r'\s', '', body))
-    steps   = re.findall(r'^##\s+\d단계', body, re.M)
-    checks  = body.count('**화면에서 확인할 것**')
-    stucks  = body.count('**막히면**')
-    srcs    = len(re.findall(r'https?://', body))
+    steps   = re.findall(r'^##\s+\d+단계', body, re.M)      # 10단계 이상도 잡히도록 \d+
+
+    # 단계별로 잘라서 검사한다. 총량 비교로는 '한 단계에 2개, 다른 단계에 0개'가 통과한다.
+    blocks  = re.split(r'^##\s+(?=\d+단계)', body, flags=re.M)[1:]
+    per     = []
+    for i, blk in enumerate(blocks, 1):
+        blk = re.split(r'^##\s', blk, flags=re.M)[0]
+        per.append({"n": i,
+                    "c": blk.count('**화면에서 확인할 것**'),
+                    "s": blk.count('**막히면**')})
+    checks  = sum(x["c"] for x in per)
+    stucks  = sum(x["s"] for x in per)
+
+    # 출처는 URL 문자열 개수가 아니라 '출처 섹션의 [n] 항목 수'로 센다.
+    src_sec = body.split('## 출처')[1] if '## 출처' in body else ''
+    src_ids = set(re.findall(r'^- \[(\d+)\]', src_sec, re.M))
+    srcs    = len(src_ids)
     vids    = [v.strip() for v in meta.get('videos', '').strip('[]').split(',') if v.strip()]
     tags    = [t.strip() for t in meta.get('tags', '').strip('[]').split(',') if t.strip()]
     pit     = re.search(r'^##\s+흔히 막히는 지점(.*?)(?=^## |\Z)', body, re.S | re.M)
@@ -64,14 +77,30 @@ def check(path):
         fails.append(f"본문 {body_n}자 < {G['body_min']} (잠정 기준)")
     if len(steps) < G["steps_min"]:
         fails.append(f"단계 {len(steps)} < {G['steps_min']}")
-    if checks < len(steps):
-        fails.append(f"'화면에서 확인할 것' {checks}개 < 단계 {len(steps)}개")
-    if stucks < len(steps):
-        fails.append(f"'막히면' {stucks}개 < 단계 {len(steps)}개")
+    for x in per:
+        if x["c"] != 1:
+            fails.append(f"{x['n']}단계 '화면에서 확인할 것' {x['c']}개 (단계마다 정확히 1개)")
+        if x["s"] != 1:
+            fails.append(f"{x['n']}단계 '막히면' {x['s']}개 (단계마다 정확히 1개)")
+
+    # ★ 계약의 핵심 — [n] 인용 무결성 양방향 대조.
+    #   고아 출처(목록에만 있음)와 미정의 인용(본문에만 있음)을 둘 다 잡는다.
+    body_only = body.split('## 출처')[0]
+    used = set(re.findall(r'\[(\d+)\](?!\()', body_only))
+    orphan  = src_ids - used
+    dangling = used - src_ids
+    if orphan:
+        fails.append(f"고아 출처(본문에서 참조 안 됨): {sorted(orphan, key=int)}")
+    if dangling:
+        fails.append(f"미정의 인용(출처 목록에 없음): {sorted(dangling, key=int)}")
+    if not used:
+        fails.append("본문에 [n] 인용이 하나도 없다 (무환각 규칙 위반)")
     if pit_n < G["pitfalls_min"]:
         fails.append(f"'흔히 막히는 지점' {pit_n}개 < {G['pitfalls_min']}")
     if srcs < G["sources_min"]:
-        fails.append(f"출처 링크 {srcs} < {G['sources_min']}")
+        fails.append(f"출처 항목 {srcs} < {G['sources_min']}")
+    if not (7 <= len(tags) <= 14):
+        fails.append(f"태그 {len(tags)}개 (허용 7~14) — 영상 노트와 동일 기준")
     if len(vids) < G["videos_min"]:
         fails.append(f"관련 영상 {len(vids)} < {G['videos_min']}")
     if meta.get('level') not in LEVELS:
@@ -116,7 +145,7 @@ def main():
         else:
             print(f"✅ {Path(p).parent.name}")
             print(f"   본문 {M['body']}자 · 단계 {M['steps']} · 확인 {M['checks']} · 막히면 {M['stucks']} · "
-                  f"막히는지점 {M['pitfalls']} · 영상 {M['videos']} · 출처 {M['sources']} · 태그 {M['tags']}")
+                  f"막히는지점 {M['pitfalls']} · 영상 {M['videos']} · 출처 {M['sources']} · 태그 {M['tags']} · 인용 무결성 OK")
     print(f"\n{len(paths)}건 검사 · 통과 {len(paths)-bad} · 실패 {bad}")
     sys.exit(1 if bad else 0)
 

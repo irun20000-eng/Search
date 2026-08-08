@@ -57,14 +57,35 @@ def check(path):
     fails = []
     chaps = re.findall(r'^##\s+(\d+\..*)$', body, re.M)
     tldr_h = re.findall(r'^##\s+TL;DR.*$', body, re.M)
-    tldr_n = len(re.findall(r'^\d+\.\s', body, re.M))
+
+    # TL;DR 줄수는 반드시 'TL;DR 섹션 안에서만' 센다.
+    # 문서 전체에서 세면 다른 곳의 번호줄이 정족수를 채워 3줄짜리도 통과한다.
+    tl = re.search(r'^##\s+TL;DR.*?$(.*?)(?=^##\s|\Z)', body, re.S | re.M)
+    tldr_n = len(re.findall(r'^\d+\.\s', tl.group(1), re.M)) if tl else 0
+
     quotes = len(re.findall(r'\*\*핵심 인용\*\*', body))
     tips   = len(re.findall(r'\*\*(내 팁|내 질문)\*\*', body))
-    one_m  = re.search(r'^>\s*한 줄 요약:\s*(.*)$', body, re.M)
-    one    = one_m.group(1).strip() if one_m else ''
+
+    # 챕터별 분포 — 총량만 보면 '인용 2개 + 0개'가 통과한다.
+    blocks = re.split(r'^##\s+(?=\d+\.)', body, flags=re.M)[1:]
+    per = []
+    for i, blk in enumerate(blocks, 1):
+        blk = re.split(r'^##\s', blk, flags=re.M)[0]
+        per.append({
+            "n": i,
+            "q": len(re.findall(r'\*\*핵심 인용\*\*', blk)),
+            "t": len(re.findall(r'\*\*(?:내 팁|내 질문)\*\*', blk)),
+            "s": len(re.findall(r'\*\*3줄 요약\*\*', blk)),
+        })
+    # ingest 와 같은 다중행 캡처여야 한다. 첫 줄만 세면 줄바꿈된 요약이 오탈락한다.
+    one_m  = re.search(r'^>\s*한 줄 요약:\s*(.*(?:\n(?!\s*$)(?!##)(?!>\s*$).*)*)', body, re.M)
+    one    = re.sub(r'\s+', ' ', one_m.group(1)).strip() if one_m else ''
     tags   = [t.strip() for t in meta.get('tags', '').strip('[]').split(',') if t.strip()]
     body_n = len(re.sub(r'\s', '', body))
-    ts     = [int(x) for x in re.findall(r'\?t=(\d+)', body)]
+    # 타임스탬프는 챕터 헤딩 줄에서만 수집한다.
+    # 본문 중간에 다른 영상 타임스탬프를 인용하면 단조증가 검사가 깨져 정상 노트가 탈락한다.
+    ts     = [int(m) for line in re.findall(r'^##\s+\d+\..*$', body, re.M)
+              for m in re.findall(r'\?t=(\d+)', line)]
     total  = dur_sec(meta.get('duration'))
 
     M = {"chapters": len(chaps), "tldr": tldr_n, "quotes": quotes, "tips": tips,
@@ -80,6 +101,13 @@ def check(path):
         fails.append(f"핵심 인용 {quotes} ≠ 챕터 {len(chaps)}")
     if tips != len(chaps):
         fails.append(f"내 팁/질문 {tips} ≠ 챕터 {len(chaps)}")
+    for c in per:
+        if c["q"] != 1:
+            fails.append(f"{c['n']}번 챕터 핵심 인용 {c['q']}개 (챕터마다 정확히 1개)")
+        if c["t"] != 1:
+            fails.append(f"{c['n']}번 챕터 내 팁/질문 {c['t']}개 (챕터마다 정확히 1개)")
+        if c["s"] != 1:
+            fails.append(f"{c['n']}번 챕터 3줄 요약 라벨 {c['s']}개 (챕터마다 정확히 1개)")
     if len(one) < G["one_min"]:
         fails.append(f"한줄요약 {len(one)}자 < {G['one_min']}")
     if body_n < G["body_min"]:
@@ -92,7 +120,9 @@ def check(path):
         fails.append("타임스탬프 단조 증가 아님")
     if total and ts and max(ts) > total:
         fails.append(f"타임스탬프 {max(ts)}초 > 영상 길이 {total}초 (시간 창작 의심)")
-    for f in ("title", "channel", "video_url", "published"):
+    if total is None:
+        fails.append("duration 파싱 불가 — 타임스탬프 창작 검사가 무력화된다")
+    for f in ("title", "channel", "video_url", "published", "duration", "category"):
         if not meta.get(f):
             fails.append(f"프론트매터 '{f}' 누락")
 
