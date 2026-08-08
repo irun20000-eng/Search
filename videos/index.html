@@ -127,7 +127,15 @@ function mdEsc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').re
 function mdInline(s){
   s=mdEsc(s);
   s=s.replace(/`([^`]+)`/g,'<code>$1</code>');
-  s=s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // URL은 괄호 1단계 중첩까지 허용 (예: .../wiki/함수_(수학) )
+  // 스킴은 http/https/mailto/상대경로/앵커만 허용 — javascript: 등 실행 스킴 차단
+  s=s.replace(/\[([^\]]+)\]\(((?:[^()\s]|\([^()]*\))+)\)/g,function(m0,txt,url){
+    var u=url.trim();
+    var sch=u.match(/^([A-Za-z][A-Za-z0-9+.-]*):/);           // 스킴이 있을 때만 검사
+    if(sch&&!/^(https?|mailto)$/i.test(sch[1])) return mdEsc('['+txt+']('+url+')');
+    if(/[<>"]/.test(u)) return mdEsc('['+txt+']('+url+')');      // 속성 탈출 방지
+    return '<a href="'+u.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">'+txt+'</a>';
+  });
   s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
   s=s.replace(/\*([^*]+)\*/g,'<em>$1</em>');
   return s;
