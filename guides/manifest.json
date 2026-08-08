@@ -1,0 +1,54 @@
+{
+ "generated": "2026-08-08",
+ "guides": [
+  {
+   "slug": "n8n-first-workflow",
+   "title": "n8n으로 첫 자동화 워크플로우 만들기",
+   "date": "2026-08-08",
+   "level": "입문",
+   "minutes": 40,
+   "tags": [
+    "n8n",
+    "자동화",
+    "노코드",
+    "워크플로우",
+    "트리거",
+    "노드",
+    "JSON",
+    "스케줄"
+   ],
+   "summary": "n8n을 처음 쓰는 사람이 계정 만들기부터 실제로 돌아가는 워크플로우 하나를 완성하기까지. 트리거 고르기, 노드 사이를 흐르는 JSON 데이터 모양 읽기, 실행 기록으로 디버깅하기, 스케줄로 전환해 자동화 완성까지 6단계.",
+   "videos": [
+    {
+     "id": "JJTowW0N-fo",
+     "title": "초보자를 위한 n8n 튜토리얼 (2026) – 완전 가이드",
+     "channel": "Metics Media | 한국어",
+     "duration": 976,
+     "published": "2025-12-16"
+    },
+    {
+     "id": "4cQWJViybAQ",
+     "title": "n8n Quick Start Tutorial: Build Your First Workflow [2025]",
+     "channel": "n8n",
+     "duration": 887,
+     "published": "2025-06-20"
+    },
+    {
+     "id": "y9u1IdDYHZQ",
+     "title": "n8n 빨리 배우려면 가장 중요한데 다들 놓치는 기초만 눌러담았습니다",
+     "channel": "솔브잇",
+     "duration": 4987,
+     "published": "2025-11-19"
+    },
+    {
+     "id": "q6iuH_oxqHs",
+     "title": "초보자도 쉽게 배우는 n8n 뉴스피드 자동화 [n8n 자동화 1탄]",
+     "channel": "opencore AI",
+     "duration": 381,
+     "published": "2025-05-06"
+    }
+   ],
+   "path": "n8n-first-workflow/guide.md"
+  }
+ ]
+}
