@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>영상 노트 갤러리 — video2post</title>
-<meta name="description" content="유튜브 강의를 노트로 정리한 갤러리. video2post 파이프라인 산출물.">
+<title>따라하기 가이드 — Search</title>
+<meta name="description" content="주제를 입력하면 만들어지는 단계별 실행 가이드. 검증된 유튜브 영상 포함.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -99,23 +99,35 @@ footer{margin-top:2rem;padding:2rem 0;border-top:1px solid var(--line);color:var
 .pbody .note th{background:var(--bg-soft);font-weight:800;white-space:nowrap}
 .skel{color:var(--faint);font-size:.88rem;padding:.6rem 0}
 .err{color:var(--a1);font-size:.88rem;padding:.6rem 0}
+</style>
+<style>
+.gcard.gd .thumb{background:var(--bg-soft)}
+.gmeta{display:flex;gap:.4rem;flex-wrap:wrap;margin:.15rem 0 .3rem}
+.gmeta .lv{font-size:.7rem;font-weight:800;letter-spacing:.02em;padding:.1rem .45rem;border-radius:999px;border:1px solid var(--line);color:var(--a2)}
+.gmeta .lv[data-lv="입문"]{color:#6BA368}.gmeta .lv[data-lv="중급"]{color:var(--a1)}.gmeta .lv[data-lv="고급"]{color:#8B6FD6}
+.gmeta .tm{font-size:.72rem;color:var(--faint)}
+.vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.75rem;margin:.7rem 0 .3rem}
+.vidcard{display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);text-decoration:none;transition:.15s}
+.vidcard:hover{border-color:var(--a1);transform:translateY(-2px)}
+.vidcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.vidcard .vt{font-size:.8rem;font-weight:700;color:var(--txt);padding:.5rem .6rem .15rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vidcard .vm{font-size:.71rem;color:var(--faint);padding:0 .6rem .55rem;display:flex;gap:.4rem;flex-wrap:wrap}
 </style></head>
 <body data-theme="light" id="top"><div id="bar"></div>
 <div class="util"><button class="btn" id="themeBtn">◑ 다크</button></div>
 <div class="wrap">
-<header class="hero"><span class="eyebrow"><span class="dot"></span>video2post 갤러리</span>
-<h1 class="site">영상 노트 갤러리</h1>
-<p class="sub">유튜브 강의를 수집·검수해 정리한 학습 노트 모음. 카드를 누르면 해당 노트가 펼쳐집니다.</p>
+<header class="hero"><span class="eyebrow"><span class="dot"></span>따라하기 가이드</span>
+<h1 class="site">가이드</h1>
+<p class="sub">막히는 지점까지 적어 둔 단계별 실행 가이드. 관련 유튜브 영상은 전부 실재 확인을 거친 것만 싣는다.</p>
 <div class="tabs" id="tabs"></div>
 <div class="controls">
-<div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input id="q" type="search" placeholder="제목·채널·요약·태그 검색  ( / )" autocomplete="off"></div>
-<select class="sel" id="sortSel" title="정렬"><option value="new">최신순</option><option value="channel">채널별</option><option value="dur">길이순</option></select>
-<select class="sel" id="chSel" title="채널"><option value="*">채널 전체</option></select></div>
+<div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input id="q" type="search" placeholder="제목·요약·태그 검색  ( / )" autocomplete="off"></div>
+<select class="sel" id="sortSel" title="정렬"><option value="new">최신순</option><option value="time">소요시간순</option><option value="title">제목순</option></select></div>
 <div class="filters" id="filters"></div>
 <div class="count" id="countLine"></div></header>
 <section class="grid" id="grid"></section>
 <main id="posts"></main>
-<footer>영상 노트는 <code>videos/notes/&lt;영상ID&gt;.md</code>에 한 편씩 저장되고, 이 페이지는 <code>videos/manifest.json</code>을 읽어 카드·탭·채널·태그를 자동 산출합니다. 노트 파일이 곧 옵시디언 볼트 원본입니다.</footer>
+<footer>가이드는 <code>guides/&lt;슬러그&gt;/guide.md</code>에 한 편씩 저장되고, 이 페이지는 <code>guides/manifest.json</code>을 읽어 카드·난이도·태그를 자동 산출합니다. 관련 영상 메타데이터는 YouTube API로 실재를 확인한 시점의 값을 캐시한 것입니다.</footer>
 </div>
 <button id="fabTop" title="맨 위로">↑</button>
 <script>
@@ -190,167 +202,144 @@ function mdRender(md){
   return out.join('\n');
 }
 
-var MANIFEST="manifest.json", VIDEOS=[], CATS=[];
+var MANIFEST="manifest.json", GUIDES=[];
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-function fmtDur(s){s=+s||0;var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
-  return h?(h+':'+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0'))
-          :(String(m).padStart(2,'0')+':'+String(x).padStart(2,'0'))}
 function thumb(id){return 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}
-function haystack(v){return (v.title+' '+v.channel+' '+v.one+' '+(v.tags||[]).join(' ')).toLowerCase()}
+function fmtDur(s){s=+s||0;var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
+  return h?(h+':'+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')):(String(m).padStart(2,'0')+':'+String(x).padStart(2,'0'))}
+function hay(g){return (g.title+' '+g.summary+' '+(g.tags||[]).join(' ')).toLowerCase()}
+function cover(g){return (g.videos&&g.videos.length)?thumb(g.videos[0].id):''}
 
-/* ---------- 렌더 ---------- */
-function buildTabs(){
-  var t=document.getElementById('tabs'), n={};
-  VIDEOS.forEach(function(v){n[v.cat]=(n[v.cat]||0)+1});
-  var html='<button class="tab on" data-cat="*">전체 <span class="n">'+VIDEOS.length+'</span></button>';
-  CATS.forEach(function(c){ if(!n[c.key])return;
-    html+='<button class="tab" data-cat="'+esc(c.key)+'">'+esc(c.label)+' <span class="n">'+n[c.key]+'</span></button>'});
-  t.innerHTML=html;
+function vidCards(vs){
+  if(!vs||!vs.length)return '';
+  return '<div class="vidgrid">'+vs.map(function(v){
+    return '<a class="vidcard" href="https://youtu.be/'+esc(v.id)+'" target="_blank" rel="noopener">'
+      +'<img loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/'+v.id+'/mqdefault.jpg\'" alt="">'
+      +'<div class="vt">'+esc(v.title)+'</div>'
+      +'<div class="vm"><span>'+esc(v.channel)+'</span><span>⏱ '+fmtDur(v.duration)+'</span></div></a>'}).join('')+'</div>';
 }
-function buildChannels(){
-  var sel=document.getElementById('chSel'),seen={},list=[];
-  VIDEOS.forEach(function(v){if(!seen[v.channel]){seen[v.channel]=1;list.push(v.channel)}});
-  list.sort();
-  sel.innerHTML='<option value="*">채널 전체</option>'+list.map(function(c){
-    return '<option value="'+esc(c)+'">'+esc(c)+'</option>'}).join('');
+function buildTabs(){
+  var n={},order=['입문','중급','고급'];
+  GUIDES.forEach(function(g){n[g.level]=(n[g.level]||0)+1});
+  var h='<button class="tab on" data-lv="*">전체 <span class="n">'+GUIDES.length+'</span></button>';
+  order.forEach(function(l){if(n[l])h+='<button class="tab" data-lv="'+l+'">'+l+' <span class="n">'+n[l]+'</span></button>'});
+  document.getElementById('tabs').innerHTML=h;
 }
 function buildTags(){
-  var f=document.getElementById('filters'),seen={},list=[];
-  VIDEOS.forEach(function(v){(v.tags||[]).forEach(function(t){if(!seen[t]){seen[t]=1;list.push(t)}})});
+  var seen={},list=[];
+  GUIDES.forEach(function(g){(g.tags||[]).forEach(function(t){if(!seen[t]){seen[t]=1;list.push(t)}})});
   list.sort();
-  f.innerHTML='<button class="tagf on" data-tag="*">전체</button>'+list.map(function(t){
-    return '<button class="tagf" data-tag="'+esc(t)+'">#'+esc(t)+'</button>'}).join('');
+  document.getElementById('filters').innerHTML='<button class="tagf on" data-tag="*">전체</button>'
+    +list.map(function(t){return '<button class="tagf" data-tag="'+esc(t)+'">#'+esc(t)+'</button>'}).join('');
 }
 function buildCards(){
-  var g=document.getElementById('grid');
-  g.innerHTML=VIDEOS.map(function(v){
-    return '<a class="gcard" href="#post-'+esc(v.id)+'" data-cat="'+esc(v.cat)+'" data-tags="'+esc((v.tags||[]).join('|'))
-      +'" data-channel="'+esc(v.channel)+'" data-date="'+esc(v.added)+'" data-dur="'+(+v.duration||0)
-      +'" data-search="'+esc(haystack(v))+'">'
-      +'<img class="thumb" loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/'+v.id+'/mqdefault.jpg\'" alt="">'
-      +'<div class="body"><div class="ttl">'+esc(v.title)+'</div>'
-      +'<div class="mt"><span>'+esc(v.channel)+'</span><span>'+esc(v.published)+'</span><span>⏱ '+fmtDur(v.duration)+'</span></div>'
-      +'<div class="one">'+esc(v.one)+'</div></div></a>'}).join('');
+  document.getElementById('grid').innerHTML=GUIDES.map(function(g){
+    var c=cover(g);
+    return '<a class="gcard gd" href="#g-'+esc(g.slug)+'" data-lv="'+esc(g.level)+'" data-tags="'+esc((g.tags||[]).join('|'))
+      +'" data-date="'+esc(g.date)+'" data-min="'+(+g.minutes||0)+'" data-title="'+esc(g.title)+'" data-search="'+esc(hay(g))+'">'
+      +(c?'<img class="thumb" loading="lazy" src="'+c+'" alt="">':'<div class="thumb"></div>')
+      +'<div class="body"><div class="gmeta"><span class="lv" data-lv="'+esc(g.level)+'">'+esc(g.level)+'</span>'
+      +'<span class="tm">⏱ 약 '+esc(g.minutes)+'분 · 영상 '+((g.videos||[]).length)+'편</span></div>'
+      +'<div class="ttl">'+esc(g.title)+'</div>'
+      +'<div class="one">'+esc(g.summary)+'</div></div></a>'}).join('');
 }
 function buildPosts(){
-  var m=document.getElementById('posts');
-  m.innerHTML=VIDEOS.map(function(v){
-    var chips=(v.tags||[]).slice(0,6).map(function(t){return '<span class="chip">'+esc(t)+'</span>'}).join('');
-    return '<details class="post" id="post-'+esc(v.id)+'" data-src="'+esc(v.path)+'">'
-      +'<summary><div class="phead"><img src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/'+v.id+'/mqdefault.jpg\'" alt=""><div>'
-      +'<span class="eyebrow"><span class="dot"></span>'+esc(v.channel)+'</span>'
-      +'<h2 class="ptitle">'+esc(v.title)+'</h2>'
-      +'<div class="pmeta"><span class="chip">⏱ '+fmtDur(v.duration)+'</span><span class="chip">📅 '+esc(v.published)+'</span>'+chips+'</div>'
+  document.getElementById('posts').innerHTML=GUIDES.map(function(g){
+    var chips=(g.tags||[]).slice(0,6).map(function(t){return '<span class="chip">'+esc(t)+'</span>'}).join('');
+    return '<details class="post" id="g-'+esc(g.slug)+'" data-src="'+esc(g.path)+'" data-slug="'+esc(g.slug)+'">'
+      +'<summary><div class="phead">'+(cover(g)?'<img src="'+cover(g)+'" alt="">':'')+'<div>'
+      +'<span class="eyebrow"><span class="dot"></span>'+esc(g.level)+' · 약 '+esc(g.minutes)+'분</span>'
+      +'<h2 class="ptitle">'+esc(g.title)+'</h2>'
+      +'<div class="pmeta"><span class="chip">📅 '+esc(g.date)+'</span>'+chips+'</div>'
       +'</div></div><span class="caret">▾</span></summary>'
-      +'<div class="pbody"><div class="pactions">'
-      +'<a class="watch" href="https://youtu.be/'+esc(v.id)+'" target="_blank" rel="noopener">▶ 영상으로 보기</a>'
-      +'<button class="copyb" data-anchor="post-'+esc(v.id)+'">🔗 링크 복사</button></div>'
-      +'<div class="note"><div class="skel">노트를 불러오는 중…</div></div>'
+      +'<div class="pbody"><div class="pactions"><button class="copyb" data-anchor="g-'+esc(g.slug)+'">🔗 링크 복사</button>'
+      +'<a class="watch" href="'+esc(g.path)+'" target="_blank" rel="noopener">📄 원문 .md ↗</a></div>'
+      +'<div class="note"><div class="skel">가이드를 불러오는 중…</div></div>'
       +'<a class="top" href="#top">↑ 갤러리로</a></div></details>'}).join('');
 }
-
-/* ---------- 노트 지연 로딩 ---------- */
-function loadNote(d){
+function loadGuide(d){
   if(d.dataset.loaded)return; d.dataset.loaded='1';
-  var box=d.querySelector('.note');
-  fetch(d.dataset.src,{cache:'no-store'}).then(function(r){
-    if(!r.ok)throw new Error(r.status); return r.text();
-  }).then(function(md){
-    md=md.replace(/^---[\s\S]*?\n---\s*/,'');      // 프론트매터 제거
-    md=md.replace(/^#\s+.*\n/,'');                  // H1 제거(제목은 헤더에 이미 있음)
+  var box=d.querySelector('.note'), g=GUIDES.filter(function(x){return x.slug===d.dataset.slug})[0];
+  fetch(d.dataset.src,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.text()})
+  .then(function(md){
+    md=md.replace(/^---[\s\S]*?\n---\s*/,'').replace(/^#\s+.*\n/,'');
     box.innerHTML=mdRender(md);
+    // '## 관련 영상' 자리에 검증된 영상 카드 삽입
+    var hs=box.querySelectorAll('h2');
+    for(var i=0;i<hs.length;i++){
+      if(/관련 영상/.test(hs[i].textContent)){
+        var w=document.createElement('div'); w.innerHTML=vidCards(g&&g.videos);
+        hs[i].parentNode.insertBefore(w,hs[i].nextSibling); break;
+      }
+    }
   }).catch(function(e){
-    box.innerHTML='<div class="err">노트를 불러오지 못했습니다 ('+esc(e.message)+'). '
+    box.innerHTML='<div class="err">가이드를 불러오지 못했습니다 ('+esc(e.message)+'). '
       +'<a href="'+esc(d.dataset.src)+'" target="_blank" rel="noopener">원문 .md 열기 ↗</a></div>';
   });
 }
-
-/* ---------- 필터·정렬 ---------- */
-var st={q:'',tag:'*',ch:'*',sort:'new',cat:'*'};
-var cmp={
- 'new':function(a,b){return (b.dataset.date||'').localeCompare(a.dataset.date||'')},
- 'channel':function(a,b){return (a.dataset.channel||'').localeCompare(b.dataset.channel||'','ko')||(b.dataset.date||'').localeCompare(a.dataset.date||'')},
- 'dur':function(a,b){return (+b.dataset.dur||0)-(+a.dataset.dur||0)}
-};
+var st={q:'',tag:'*',lv:'*',sort:'new'};
+var cmp={'new':function(a,b){return (b.dataset.date||'').localeCompare(a.dataset.date||'')},
+ 'time':function(a,b){return (+a.dataset.min||0)-(+b.dataset.min||0)},
+ 'title':function(a,b){return (a.dataset.title||'').localeCompare(b.dataset.title||'','ko')}};
 function apply(){
   var grid=document.getElementById('grid'),cards=[].slice.call(grid.children);
-  cards.sort(cmp[st.sort]);
-  cards.forEach(function(c){grid.appendChild(c)});
+  cards.sort(cmp[st.sort]); cards.forEach(function(c){grid.appendChild(c)});
   var n=0;
   cards.forEach(function(c){
     var tags=(c.dataset.tags||'').split('|');
-    var show=(st.cat==='*'||c.dataset.cat===st.cat)&&(st.tag==='*'||tags.indexOf(st.tag)>=0)&&(st.ch==='*'||c.dataset.channel===st.ch)&&(st.q===''||(c.dataset.search||'').indexOf(st.q)>=0);
-    c.style.display=show?'':'none';if(show)n++;
+    var show=(st.lv==='*'||c.dataset.lv===st.lv)&&(st.tag==='*'||tags.indexOf(st.tag)>=0)
+      &&(st.q===''||(c.dataset.search||'').indexOf(st.q)>=0);
+    c.style.display=show?'':'none'; if(show)n++;
   });
   document.getElementById('cnt').textContent='표시 '+n+'개';
 }
-
-/* ---------- 이벤트 ---------- */
 function wire(){
   var qEl=document.getElementById('q');
   qEl.addEventListener('input',function(){st.q=this.value.toLowerCase().trim();apply()});
   document.getElementById('sortSel').addEventListener('change',function(){st.sort=this.value;apply()});
-  document.getElementById('chSel').addEventListener('change',function(){st.ch=this.value;apply()});
   document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){
     document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});t.classList.add('on');
-    st.cat=t.dataset.cat;apply();
-    var g=document.querySelector('.tabs');if(g&&window.scrollY>g.offsetTop+240){g.scrollIntoView({behavior:'smooth',block:'start'})}
-  }});
+    st.lv=t.dataset.lv;apply()}});
   document.querySelectorAll('.tagf').forEach(function(t){t.onclick=function(){
     document.querySelectorAll('.tagf').forEach(function(x){x.classList.remove('on')});t.classList.add('on');
-    st.tag=t.dataset.tag;apply();
-  }});
+    st.tag=t.dataset.tag;apply()}});
   document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement!==qEl){e.preventDefault();qEl.focus()}});
   document.querySelectorAll('.gcard').forEach(function(c){c.addEventListener('click',function(e){
     e.preventDefault();var d=document.querySelector(c.getAttribute('href'));
-    if(d){d.open=true;loadNote(d);d.scrollIntoView({behavior:'smooth',block:'start'})}
-  })});
+    if(d){d.open=true;loadGuide(d);d.scrollIntoView({behavior:'smooth',block:'start'})}})});
   document.querySelectorAll('details.post').forEach(function(d){
-    d.addEventListener('toggle',function(){if(d.open)loadNote(d)});
-  });
+    d.addEventListener('toggle',function(){if(d.open)loadGuide(d)})});
   document.querySelectorAll('.copyb').forEach(function(btn){btn.addEventListener('click',function(e){
     e.preventDefault();e.stopPropagation();var url=location.origin+location.pathname+'#'+btn.dataset.anchor;
     var ok=function(){var o=btn.textContent;btn.textContent='✓ 복사됨';setTimeout(function(){btn.textContent=o},1400)};
-    if(navigator.clipboard){navigator.clipboard.writeText(url).then(ok).catch(function(){prompt('링크 복사:',url)})}else{prompt('링크 복사:',url)}
-  })});
-  // 태그 필터 접기/펼치기 (기본 접힘) — .tagf 바인딩 이후
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(ok).catch(function(){prompt('링크 복사:',url)})}else{prompt('링크 복사:',url)}})});
   (function(){var f=document.querySelector('.filters');if(!f)return;
     var chips=[].slice.call(f.querySelectorAll('.tagf')),N=17,exp=false;
     if(chips.length<=N)return;
     var more=document.createElement('button');more.className='tagf more';more.type='button';
-    function ap(){f.classList.toggle('expanded',exp);chips.forEach(function(c,i){c.style.display=(i<N||exp||c.classList.contains('on'))?'':'none';});
-      if(exp){f.insertBefore(more,f.firstChild);}else{f.appendChild(more);}
-      more.textContent=exp?'접기 ▲':('＋'+(chips.length-N)+'개 더보기 ▾');if(exp)f.scrollTop=0;}
-    more.onclick=function(){exp=!exp;ap();};f.appendChild(more);ap();
-    f.addEventListener('click',function(e){if(e.target.classList.contains('tagf')&&!e.target.classList.contains('more'))setTimeout(ap,0);});
-  })();
+    function ap(){f.classList.toggle('expanded',exp);chips.forEach(function(c,i){c.style.display=(i<N||exp||c.classList.contains('on'))?'':'none'});
+      if(exp){f.insertBefore(more,f.firstChild)}else{f.appendChild(more)}
+      more.textContent=exp?'접기 ▲':('＋'+(chips.length-N)+'개 더보기 ▾');if(exp)f.scrollTop=0}
+    more.onclick=function(){exp=!exp;ap()};f.appendChild(more);ap();
+    f.addEventListener('click',function(e){if(e.target.classList.contains('tagf')&&!e.target.classList.contains('more'))setTimeout(ap,0)})})();
 }
-function openHash(){
-  if(!location.hash)return;
-  var d=document.querySelector(location.hash);
-  if(d&&d.tagName==='DETAILS'){d.open=true;loadNote(d);d.scrollIntoView({block:'start'})}
-}
-
-/* ---------- 스크롤바·테마 (원본 동작 유지) ---------- */
+function openHash(){if(!location.hash)return;var d=document.querySelector(location.hash);
+  if(d&&d.tagName==='DETAILS'){d.open=true;loadGuide(d);d.scrollIntoView({block:'start'})}}
 var bar=document.getElementById('bar'),fab=document.getElementById('fabTop');
 function sc(){var h=document.documentElement;bar.style.width=((h.scrollTop)/(h.scrollHeight-h.clientHeight)*100)+'%';if(fab){fab.classList.toggle('show',h.scrollTop>400)}}
 document.addEventListener('scroll',sc,{passive:true});sc();
 if(fab){fab.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})}}
 var tb=document.getElementById('themeBtn'),bd=document.body;
-try{var sv=localStorage.getItem('vgTheme');if(sv){bd.setAttribute('data-theme',sv);}}catch(e){}
-function syncTb(){tb.textContent=bd.getAttribute('data-theme')==='dark'?'◐ 라이트':'◑ 다크';}
+try{var sv=localStorage.getItem('vgTheme');if(sv){bd.setAttribute('data-theme',sv)}}catch(e){}
+function syncTb(){tb.textContent=bd.getAttribute('data-theme')==='dark'?'◐ 라이트':'◑ 다크'}
 syncTb();
-tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('vgTheme',nt);}catch(e){}syncTb();};
-
-/* ---------- 부팅 ---------- */
+tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('vgTheme',nt)}catch(e){}syncTb()};
 fetch(MANIFEST,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
-  VIDEOS=d.videos||[]; CATS=d.categories||[];
-  document.getElementById('countLine').innerHTML='총 '+VIDEOS.length+'개 · 최종 갱신 '+esc(d.generated||'')+' · <span id="cnt">표시 '+VIDEOS.length+'개</span>';
-  buildTabs();buildChannels();buildTags();buildCards();buildPosts();wire();apply();openHash();
-  window.addEventListener('hashchange',openHash);
-  sc();
+  GUIDES=d.guides||[];
+  document.getElementById('countLine').innerHTML='총 '+GUIDES.length+'개 · 최종 갱신 '+esc(d.generated||'')+' · <span id="cnt">표시 '+GUIDES.length+'개</span>';
+  buildTabs();buildTags();buildCards();buildPosts();wire();apply();openHash();
+  window.addEventListener('hashchange',openHash);sc();
 }).catch(function(e){
-  document.getElementById('grid').innerHTML='<div class="err">갤러리 데이터를 불러오지 못했습니다: '+esc(e.message)+'</div>';
-});
+  document.getElementById('grid').innerHTML='<div class="err">가이드 데이터를 불러오지 못했습니다: '+esc(e.message)+'</div>'});
 </script>
 </body></html>

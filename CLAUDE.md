@@ -15,6 +15,17 @@ Claude Code 세션이 **오케스트레이터**다. 백엔드·크론·서버 �
 ```
 "시리즈" 지시 → 메인 1편 + 내가 선정·사전보고하는 파생 3편 = 4편 DEEP, 각 편 독립 게이트 통과.
 
+### 영상 노트 · 가이드 (상세는 `VIDEO_PIPELINE.md`)
+```
+영상: <유튜브 URL>          # 다음 줄에 --- 를 두고 제미나이 분석 결과를 붙여넣는다
+가이드: <주제>               # 난이도: 입문|중급|고급 (생략 시 입문)
+영상 프롬프트                # 제미나이용 프롬프트 전문 출력
+```
+- **유튜브 자막 자동수집은 불가**(클라우드 IP 차단) → 영상 분석은 제미나이 수동. 이건 우회로가 아니라 정해진 설계다.
+- **영상 메타데이터(제목·채널·길이·게시일)는 절대 모델에게 묻지 않는다.** `get_video_details`가 정본이다. 응답에 ID가 없으면 존재하지 않는 영상 → 폐기(무환각 검증기).
+- 영상 노트·가이드의 옵시디언 폴더는 리서치와 **다르다**: `011-보고따라해` = `1eCkQ7HySXci0UOL_dZwM0yTnS1NioUlk`.
+- `videos/notes/<ID>.md` 파일이 곧 볼트 노트이자 갤러리 렌더 원본이다. 두 벌로 나누지 말 것.
+
 ## 절대 규칙 (어기기 쉬움 — 항상 적용)
 - **"작성만 하고 멈추지 말 것."** 보고서 요청 = 작성→커밋→푸시→PR→**main 머지**→갤러리 반영→**옵시디언 저장**까지가 완료 1건. 별도 언급 없어도 끝까지 수행.
 - **무환각**: 모든 사실 주장에 인용 `[n]`. 출처 없는 단정 0건. 해외 인용엔 한글 설명. 국내(네이버 MCP)+해외(WebSearch) 균형 필수.
@@ -38,6 +49,11 @@ Claude Code 세션이 **오케스트레이터**다. 백엔드·크론·서버 �
 # 로컬 갤러리 미리보기
 cd Search && python -m http.server 8080   # http://localhost:8080
 
+# 영상 노트·가이드 게이트
+python3 tools/verify_video.py videos/notes/<영상ID>.md
+python3 tools/verify_guide.py guides/<슬러그>/guide.md
+python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 동일성 대조
+
 # 커밋 전 분량 게이트 측정 (개념 설명서)
 wc -m reports/<slug>/report.md            # ★정본 글자수
 wc -l reports/<slug>/report.md            # 줄수
@@ -50,4 +66,8 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - `reports/<slug>/report.md` — 보고서 전문(frontmatter+본문). **단일 진실의 원천**(볼트 전문 = 갤러리 렌더, 분리 금지). ※ README의 `<slug>.md` 표기와 달리 실제 파일명은 `report.md`.
 - `reports/manifest.json` — 카드 메타 목록(`{slug,title,date,depth,tags,tldr,sources,cover?,path}`). 보고서 추가 시 갱신.
 - `reports/<slug>/comics/` — 학습카드 PNG(auto 모드 산출).
+- `videos/` — 영상 노트 갤러리. `manifest.json` + `notes/<영상ID>.md`. **1MB 단일 HTML이었던 것을 데이터 주도로 이관**(모바일에서 노트 1개 추가로 갱신 가능).
+- `guides/` — 따라하기 가이드 갤러리. `manifest.json` + `<슬러그>/guide.md`. 관련 영상은 검증된 것만 캐시.
+- `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
+- `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
 - `LESSONS.md` — 검수 학습 원장(방지규칙 누적). 라이브 갤러리: https://irun20000-eng.github.io/Search/
