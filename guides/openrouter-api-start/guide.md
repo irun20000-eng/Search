@@ -293,7 +293,7 @@ OpenRouter의 활동(Activity) 화면에서 내가 보낸 요청과 소모량이
 **공식 문서 (1차 출처)**
 - [1] What is the OpenRouter API base URL — OpenRouter 공식 헬프센터 · https://openrouter.zendesk.com/hc/en-us/articles/53571306246811-What-is-the-OpenRouter-API-base-URL-and-how-do-I-point-an-existing-SDK-at-it (base URL `https://openrouter.ai/api/v1`, `/chat/completions` 엔드포인트)
 - [2] OpenAI SDK Integration — OpenRouter Docs · https://openrouter.ai/docs/guides/community/openai-sdk (OpenAI SDK 호환, `HTTP-Referer`·`X-Title`는 선택 헤더)
-- [3] API Credit & Rate Limits — OpenRouter Docs · https://openrouter.ai/docs/api_reference/limits (`:free` 접미사 = 토큰 $0, 402/429 오류, 크레딧 최소 구매액 없음·무만료)
+- [3] API Credit & Rate Limits — OpenRouter Docs · https://openrouter.ai/docs/api_reference/limits (`:free` 접미사 = 토큰 $0, 402/429 오류. **크레딧 만료·최소 구매액은 이 문서가 다루지 않는다** — 그 내용은 [10] 약관 참조)
 - [4] OpenRouter Rate Limits — OpenRouter 공식 헬프센터 · https://openrouter.zendesk.com/hc/en-us/articles/39501163636379-OpenRouter-Rate-Limits-What-You-Need-to-Know (분당 20회, 일 50회 / 누적 $10 충전 시 1,000회)
 
 **국내 자료**
