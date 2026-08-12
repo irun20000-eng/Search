@@ -2,6 +2,62 @@
  "generated": "2026-08-08",
  "guides": [
   {
+   "slug": "openrouter-api-start",
+   "title": "OpenRouter API로 AI 활용하기 — 키 하나로 GPT·클로드·제미나이 다 쓰기",
+   "date": "2026-08-08",
+   "level": "입문",
+   "minutes": 45,
+   "tags": [
+    "OpenRouter",
+    "API",
+    "LLM",
+    "파이썬",
+    "OpenAI호환",
+    "무료모델",
+    "API키",
+    "비용관리"
+   ],
+   "summary": "모델마다 계정 만들고 카드 등록하는 일을 그만두기 위한 가이드. 키 하나·주소 하나로 GPT·클로드·제미나이를 같은 코드로 부른다. 무료 모델로 돈 안 쓰고 첫 호출을 성공시킨 뒤, 기존 OpenAI 코드를 두 줄만 고쳐 옮기고, 요청 한도와 키 안전까지 6단계로 다룬다.",
+   "videos": [
+    {
+     "id": "l-JZm60cpUU",
+     "title": "Accessing Multiple AI Models With the OpenRouter API: Getting Started & Using Intelligent Routing",
+     "channel": "Real Python",
+     "duration": 494,
+     "published": "2026-06-11"
+    },
+    {
+     "id": "hsQ-vjdlXJ0",
+     "title": "OpenRouter Quick Start (5–8 min): Free Models, API Key, open Web UI.",
+     "channel": "Richard Young",
+     "duration": 1112,
+     "published": "2026-01-26"
+    },
+    {
+     "id": "OkMep9yQICM",
+     "title": "How to Use OpenRouter AI 🔥 Free LLM Models, Pricing, API Key & Postman REST API Tutorial",
+     "channel": "BEENUM LEARNING",
+     "duration": 665,
+     "published": "2026-02-07"
+    },
+    {
+     "id": "EFUid56ggcw",
+     "title": "오픈라우터 API Key 발급 및 등록 방법 (How to Create a OpenRouter API Key)",
+     "channel": "모모캔버스",
+     "duration": 110,
+     "published": "2026-05-05"
+    },
+    {
+     "id": "lSwoy6ZHIWw",
+     "title": "How to use OpenRouter API with JavaScript Node JS Tutorial",
+     "channel": "United Top Tech",
+     "duration": 351,
+     "published": "2026-05-14"
+    }
+   ],
+   "path": "openrouter-api-start/guide.md"
+  },
+  {
    "slug": "n8n-first-workflow",
    "title": "n8n으로 첫 자동화 워크플로우 만들기",
    "date": "2026-08-08",

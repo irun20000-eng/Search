@@ -161,6 +161,16 @@ function mdInline(s){
   s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
   // 여는 * 뒤에 공백이 오면 강조로 보지 않는다 ("5 * 3 회", "src/*.md" 같은 문장 보호)
   s=s.replace(/\*([^*\s][^*]*?)\*/g,'<em>$1</em>');
+  // 맨 URL 자동 링크 — 출처 목록의 주소를 모바일에서 눌러 열 수 있게 한다.
+  // 이미 만들어진 <a> 태그는 자리표시자로 빼둬야 href 안의 URL이 중복 처리되지 않는다.
+  var anchors=[];
+  s=s.replace(/<a\s[^>]*>.*?<\/a>/g,function(m){anchors.push(m);return '\u0001'+(anchors.length-1)+'\u0001'});
+  s=s.replace(/(^|[\s(])(https?:\/\/[^\s<>"'`)\]]+)/g,function(m,pre,u){
+    var tail=''; 
+    while(/[.,;:]$/.test(u)){tail=u.slice(-1)+tail;u=u.slice(0,-1)}   // 문장부호는 링크에서 뺀다
+    return pre+'<a href="'+u+'" target="_blank" rel="noopener">'+u+'</a>'+tail;
+  });
+  s=s.replace(/\u0001(\d+)\u0001/g,function(m,i){return anchors[+i]});
   s=s.replace(/\u0000(\d+)\u0000/g,function(m,i){return '<code>'+spans[+i]+'</code>'});
   return s;
 }

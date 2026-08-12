@@ -85,7 +85,11 @@ def check(path):
 
     # ★ 계약의 핵심 — [n] 인용 무결성 양방향 대조.
     #   고아 출처(목록에만 있음)와 미정의 인용(본문에만 있음)을 둘 다 잡는다.
+    # 코드블록·코드스팬을 먼저 제거한다.
+    # 안 그러면 choices[0] 같은 배열 인덱스를 인용 [0] 으로 오인해 정상 가이드가 탈락한다.
     body_only = body.split('## 출처')[0]
+    body_only = re.sub(r'```.*?```', '', body_only, flags=re.S)
+    body_only = re.sub(r'`[^`]*`', '', body_only)
     used = set(re.findall(r'\[(\d+)\](?!\()', body_only))
     orphan  = src_ids - used
     dangling = used - src_ids
