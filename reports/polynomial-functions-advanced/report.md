@@ -43,7 +43,7 @@
 
 삼차함수 f(x)=ax³+bx²+cx+d의 **변곡점**[^변곡점]은 f″(x)=6ax+2b=0, 즉 **x = −b/3a**에 있다. 그리고 삼차함수는 **이 변곡점에 대해 180° 점대칭**이다 [8][9].
 
-증명 스케치: 변곡점을 원점으로 평행이동하면 이차항이 사라져 f(x)=ax³+cx 꼴(기함수)이 된다. 기함수는 f(−x)=−f(x), 즉 **원점 점대칭**이다. 따라서 원래 함수는 변곡점 대칭 □
+증명 스케치: 변곡점을 원점으로 평행이동하면 **이차항이 정확히 사라져** f(x)=ax³+c′x 꼴(1차·3차항만 남은 기함수, 새 1차계수 c′=c−b²/3a)이 된다. 기함수는 f(−x)=−f(x), 즉 **원점 점대칭**이다. 따라서 원래 함수는 변곡점 대칭 □
 
 이 대칭의 즉각적 따름정리:
 - **극대·극소는 변곡점을 사이에 두고 대칭** → 극대 x좌표와 극소 x좌표의 **중점 = 변곡점 x좌표** [9].
@@ -232,7 +232,7 @@ $$ S=\left|\int_\alpha^\beta a(x-\alpha)^2(x-\beta)^2\,dx\right| = |a|\cdot\frac
 - [7] Tsinghua Archive(Y. Nishiyama 외), "The relationship between the cubic function and their tangents and secants — 접선 재교점 성질" — https://archive.ymsc.tsinghua.edu.cn/pacm_download/21/114-2011The_relationship_between_the_cubic_function_and_their_tangents_and_secants.pdf
 - [8] amateurdatasci, "General Cubic Curve: Point of Inflection and Symmetry — 변곡점 x=−b/3a·점대칭" — https://amateurdatasci.rbind.io/post/general-cubic-curve-inflection-point-and-symmetry/
 - [9] Teaching Calculus, "Who'd a thunk it? — 삼차함수 극대·변곡·극소 대칭 비율" — https://teachingcalculus.com/2017/07/18/whod-a-thunk-it/
-- [10] Wikipedia, "Cubic function — 개형·변곡·대칭·판별식" — https://en.wikipedia.org/wiki/Cubic_function
+- [10] Wikipedia, "Quartic function — 사차함수 개형·대칭축·극값·이중접선" — https://en.wikipedia.org/wiki/Quartic_function
 - [11] Wikipedia, "Vieta's formulas — 근과 계수의 관계" — https://en.wikipedia.org/wiki/Vieta's_formulas
 - [12] Wikipedia, "Discriminant — 판별식과 근 간 거리곱" — https://en.wikipedia.org/wiki/Discriminant
 
