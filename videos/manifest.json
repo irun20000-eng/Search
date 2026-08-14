@@ -28,6 +28,75 @@
  ],
  "videos": [
   {
+   "id": "Fk-hGWWmYnw",
+   "title": "충격! 🔥 미친 기억력! 좌뇌 Gemini, 우뇌 Claude AI 에이전트 | Claude Code + Google Antigravity 동시에 쓰는 법 | 오후다섯씨",
+   "channel": "오후다섯씨",
+   "published": "2026-02-12",
+   "added": "2026-02-12",
+   "duration": 1176,
+   "cat": "agent",
+   "tags": [
+    "GoogleAntigravity",
+    "ClaudeCode",
+    "AI에이전트",
+    "Gemini",
+    "바이브코딩",
+    "클로드",
+    "심볼릭링크",
+    "컨텍스트메모리",
+    "에이전트매니저",
+    "멀티에이전트"
+   ],
+   "one": "구글 안티그래비티(Google Antigravity) 플랫폼 상에서 전체 문맥 파악에 뛰어난 제미나이(Gemini)와 정밀 조작에 우수한 클로드(Claude) 모델을 동시 결합하고, 클로드 코드(Claude Code) 독립 세션 병렬 가동 및 심볼릭 링크(.md) 기반 장기 기억 메모리 동기화 기법을 구축하여 대용량 파일 일괄 제어와 에이전트 매니저 기반 멀티 작업 처리 환경을 완성하는 실전 가이드를 제시한다.",
+   "path": "notes/Fk-hGWWmYnw.md"
+  },
+  {
+   "id": "itrJPsD4V6A",
+   "title": "AI 코딩을 10배 더 강력하게! Antigravity 특수 도구(MCP) 6종 완벽 가이드 (설명부터 설치 하는 방법, 사용법까지) [짱쉬운 바이브코딩, 10/16]",
+   "channel": "G-CREATOR",
+   "published": "2026-05-11",
+   "added": "2026-05-11",
+   "duration": 2813,
+   "cat": "agent",
+   "tags": [
+    "Antigravity",
+    "MCP",
+    "바이브코딩",
+    "HWPX자동화",
+    "노트북LM",
+    "파일시스템",
+    "에이전트",
+    "제이슨설정",
+    "플레이라이트",
+    "컨텍스트7"
+   ],
+   "one": "구글 안티그래비티(Antigravity) 환경에서 모델 컨텍스트 프로토콜(MCP)을 결합하여 고립된 AI 모델에 외부 데이터 연동용 손발을 달아주고, 실시간 문서 탐색(Context7), 단계별 사고(Sequential Thinking), HWPX 한글 문서 생성, 노트북LM 연동, 플레이라이트(Playwright), 로컬 파일 시스템 제어 등 핵심 MCP 6종의 설치부터 제이슨 설정 및 디버깅 실습까지 완벽히 마스터하는 가이드를 제시한다.",
+   "path": "notes/itrJPsD4V6A.md"
+  },
+  {
+   "id": "YTPfu1bVFW8",
+   "title": "\"이게 공짜라고?\" 쇼츠 자동화: 글만 넣으면 영상+목소리까지 완성 (클로드 코드)",
+   "channel": "백야 | AI 1인 기업",
+   "published": "2026-02-11",
+   "added": "2026-02-11",
+   "duration": 958,
+   "cat": "video",
+   "tags": [
+    "Remotion",
+    "쇼츠자동화",
+    "클로드코드",
+    "QN3TTS",
+    "보이스클로닝",
+    "AI영상편집",
+    "리모션",
+    "피노키오",
+    "위스퍼",
+    "숏폼제작"
+   ],
+   "one": "클로드 코드(Claude Code)와 코드로 조작하는 영상 편집기 리모션(Remotion)을 결합하고, 클리피(Klipy) API 기반 자막·움짤 자동 배치, 오픈AI 위스퍼(Whisper) 음성 동기화, 그리고 피노키오로 설치한 무료 로컬 QN3 TTS 보이스 클로닝을 통합하여 텍스트 대본 입력 한 줄만으로 영상, 목소리, 자막, 모션 그래픽이 일괄 완성되는 무인 숏폼 제작 파이프라인을 구축한다.",
+   "path": "notes/YTPfu1bVFW8.md"
+  },
+  {
    "id": "GUBZ1YsuVRQ",
    "title": "18만 AI 유튜버가 알려주는 일반인을 위한 클로드 활용법ㅣ클로드코워크 이렇게 사용해보세요",
    "channel": "신영선의 AI탐구",
