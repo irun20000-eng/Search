@@ -119,6 +119,28 @@ def parse_gemini(raw):
         hdr_end = max(hdr_end, mm.end())
     note = body[hdr_end:].strip('\n')
 
+    # 영문 프롬프트를 쓰면 모델이 구조 라벨까지 번역해 버리는 사고가 난다.
+    # 그대로 두면 "핵심 인용 0 ≠ 챕터 6" 같은 엉뚱한 게이트 오류로 나와 원인을 못 찾는다.
+    # 여기서 원인을 직접 짚는다.
+    TRANSLATED = [
+        (r'3\s*[-\s]?line\s+summary', '3줄 요약'),
+        (r'key\s+quot', '핵심 인용'),
+        (r'my\s+tip', '내 팁'),
+        (r'my\s+question', '내 질문'),
+        (r'one[-\s]?line\s+summary', '한 줄 요약'),
+        (r'TL;DR\s*\(\s*5\s*lines?\s*\)', 'TL;DR (5줄)'),
+    ]
+    hit = [(ko, en) for en, ko in TRANSLATED
+           if re.search(en, note, re.I) and ko not in note]
+    if hit:
+        print("❌ 구조 라벨이 영어로 번역됐다 — 파서가 한글 라벨을 그대로 찾는다.")
+        for ko, en in hit:
+            print(f"     · '{ko}' 가 없다 (영문 표기가 대신 들어 있음)")
+        print("   프롬프트의 Language rule 절대로, 라벨은 번역하지 말고 한글 그대로 써야 한다:")
+        print("     한 줄 요약 · 3줄 요약 · 핵심 인용 · 내 팁 · 내 질문 · TL;DR (5줄)")
+        print("   → 추측해서 채우지 않았다. 스파크가 다시 생성해야 한다.")
+        sys.exit(1)
+
     one = re.search(r'^>\s*한 줄 요약\s*[:：]\s*(.*(?:\n(?!\s*$)(?!##).*)*)', note, re.M)
     if not one:
         die("'> 한 줄 요약:' 줄을 찾지 못했다.")
