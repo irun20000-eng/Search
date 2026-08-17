@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-10",
+ "generated": "2026-08-17",
  "categories": [
   {
    "key": "knowledge",
@@ -27,6 +27,29 @@
   }
  ],
  "videos": [
+  {
+   "id": "kdt5J2bpchM",
+   "title": "평생 공짜인 Make, 재피어? 노코드 자동화 n8n 서버 무료 호스팅",
+   "channel": "솔브잇",
+   "published": "2024-09-07",
+   "added": "2026-08-17",
+   "duration": 904,
+   "cat": "automation",
+   "tags": [
+    "n8n",
+    "구글클라우드",
+    "GCP",
+    "무료호스팅",
+    "Docker",
+    "Nginx",
+    "Cloudflare",
+    "DDNS",
+    "SSL",
+    "업무자동화"
+   ],
+   "one": "매달 구독료가 발생하는 Make, Zapier 또는 고가의 클라우드 서비스 대신, 구글 클라우드(GCP) 평생 무료 e2-micro VM 인스턴스와 도커(Docker)를 활용하여 n8n 자동화 서버를 자체 구축하고, 클라우드플레어(Cloudflare) 무료 SSL 및 DDNS, 엔진엑스(Nginx) 리버스 프록시를 결합하여 연간 1,000원 안팎의 도메인 비용만으로 완벽한 보안과 편의성을 갖춘 24시간 가동 서버를 세팅하는 전 과정을 제시한다.",
+   "path": "notes/kdt5J2bpchM.md"
+  },
   {
    "id": "Fk-hGWWmYnw",
    "title": "충격! 🔥 미친 기억력! 좌뇌 Gemini, 우뇌 Claude AI 에이전트 | Claude Code + Google Antigravity 동시에 쓰는 법 | 오후다섯씨",
