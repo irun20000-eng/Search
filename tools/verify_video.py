@@ -22,6 +22,21 @@ G = {
     "body_min":   2050,      # 실측 min 2,091자(공백 제외) 기준
     "tags_min":      7,      # 실측 min 7
     "tags_max":     14,      # 실측 max 14
+    # 챕터 사이가 비정상적으로 벌어졌는지 — 노트가 영상 일부만 다뤘다는 신호.
+    # 실측(n=85): 중앙값 28.8% · p90 40.0% · p95 41.9% · 50% 초과 2편 · 60% 초과 1편.
+    # 그 1편(y9u1IdDYHZQ, 90.2%)은 83분 영상에서 75분이 통째로 비어 독립 리뷰어도
+    # 개연성 문제로 지적한 건이다. 60%로 잡으면 그 건만 걸리고 오탐이 없다.
+    "gap_max_ratio": 0.60,
+}
+
+
+# 이미 발행됐고 재분석 전까지 고칠 수 없는 건. 게이트에서 제외하되 매 실행마다 출력한다.
+# (render_parity.py 의 KNOWN_FIXES 와 같은 방식 — 조용히 넘어가지 않는다.)
+KNOWN_EXCEPTIONS = {
+    ("y9u1IdDYHZQ", "챕터 공백"): (
+        "83분 영상인데 3~5장이 마지막 87초에 몰려 있어 75분(90%)이 노트에 없다. "
+        "독립 리뷰어도 개연성 문제로 지적했다. 영상 재시청이 불가한 환경이라 "
+        "임의로 지어내지 않고 원본을 유지했다. → 스파크 재분석 필요."),
 }
 
 
@@ -118,6 +133,18 @@ def check(path):
         fails.append(f"분류 '{meta.get('category')}' 가 열거값 아님")
     if ts != sorted(ts):
         fails.append("타임스탬프 단조 증가 아님")
+
+    # 챕터 공백 검사 — 단조 증가·길이 이내를 통과해도 영상 대부분이 안 다뤄질 수 있다.
+    if total and len(ts) >= 2:
+        gaps = [ts[i + 1] - ts[i] for i in range(len(ts) - 1)] + [total - ts[-1]]
+        worst = max(gaps)
+        if worst / total > G["gap_max_ratio"] and (Path(path).stem, "챕터 공백") not in KNOWN_EXCEPTIONS:
+            at = gaps.index(worst)
+            where = f"{at+1}→{at+2}번 챕터 사이" if at < len(ts) - 1 else "마지막 챕터 이후"
+            fails.append(
+                f"챕터 공백 과다 — {where}가 {worst}초로 영상({total}초)의 "
+                f"{worst/total*100:.0f}% (허용 {G['gap_max_ratio']*100:.0f}%). "
+                f"영상 상당 부분이 노트에 없다는 신호")
     if total and ts and max(ts) > total:
         fails.append(f"타임스탬프 {max(ts)}초 > 영상 길이 {total}초 (시간 창작 의심)")
     if total is None:
@@ -143,7 +170,12 @@ def main():
             print(f"✅ {Path(p).name}")
             print(f"   챕터 {M['chapters']} · 인용 {M['quotes']} · 팁 {M['tips']} · "
                   f"TL;DR {M['tldr']} · 한줄요약 {M['one']}자 · 본문 {M['body']}자 · 태그 {M['tags']}")
-    print(f"\n{len(paths)}편 검사 · 통과 {len(paths)-bad} · 실패 {bad}")
+    if KNOWN_EXCEPTIONS:
+        print("\nℹ️  알려진 예외 (게이트 제외 · 재분석 대기):")
+        for (vid, kind), why in KNOWN_EXCEPTIONS.items():
+            print(f"   [{vid}] {kind}")
+            print(f"      {why}")
+    print(f"\n{len(paths)}편 검사 · 통과 {len(paths)-bad} · 실패 {bad} (예외 {len(KNOWN_EXCEPTIONS)}건 제외)")
     sys.exit(1 if bad else 0)
 
 
