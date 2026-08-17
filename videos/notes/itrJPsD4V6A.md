@@ -4,7 +4,7 @@ channel: G-CREATOR
 video_url: https://youtu.be/itrJPsD4V6A
 duration: 46:53
 published: 2026-05-11
-captured: 2026-05-11
+captured: 2026-08-14
 tags: [Antigravity, MCP, 바이브코딩, HWPX자동화, 노트북LM, 파일시스템, 에이전트, 제이슨설정, 플레이라이트, 컨텍스트7]
 category: agent
 ---

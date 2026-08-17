@@ -263,7 +263,7 @@ function buildCards(){
       +'<img class="thumb" loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\''+thumbFb(v.id)+'\'" alt="">'
       +'<div class="body"><div class="ttl">'+esc(v.title)+'</div>'
       +'<div class="mt"><span>'+esc(v.channel)+'</span><span>게시 '+esc(v.published)+'</span>'
-      +(v.added&&v.added!==v.published?'<span>기록 '+esc(v.added)+'</span>':'')
+      +(v.added?'<span>기록 '+esc(v.added)+'</span>':'')
       +'<span>⏱ '+fmtDur(v.duration)+'</span></div>'
       +'<div class="one">'+esc(v.one)+'</div></div></a>'}).join('');
 }

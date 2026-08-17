@@ -4,7 +4,7 @@ channel: 오후다섯씨
 video_url: https://youtu.be/Fk-hGWWmYnw
 duration: 19:36
 published: 2026-02-12
-captured: 2026-02-12
+captured: 2026-08-14
 tags: [GoogleAntigravity, ClaudeCode, AI에이전트, Gemini, 바이브코딩, 클로드, 심볼릭링크, 컨텍스트메모리, 에이전트매니저, 멀티에이전트]
 category: agent
 ---
