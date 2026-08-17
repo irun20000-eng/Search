@@ -185,6 +185,9 @@ def main():
           f"published: {published}", f"captured: {added}",
           f"tags: [{', '.join(g['tags'])}]", f"category: {g['cat']}", "---", ""]
     NOTES.mkdir(parents=True, exist_ok=True)
+    # 롤백 대비 스냅샷 — 반드시 쓰기 '이전'에. 쓰고 나서 뜨면 손상본을 보관하게 된다.
+    _np = NOTES / f"{g['id']}.md"
+    note_before = _np.read_text(encoding='utf-8') if _np.exists() else None
     (NOTES / f"{g['id']}.md").write_text(
         "\n".join(fm) + f"# {title}\n\n" + g["note"].strip() + "\n", encoding='utf-8')
 
@@ -201,12 +204,34 @@ def main():
     # 품질 게이트를 파이프라인 안에서 강제한다.
     # 사람의 기억에 맡기면 미달 노트가 그대로 갤러리에 올라간다.
     sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+    # 인코딩 손상 검사 — Drive→디스크 경로에서 한글이 다른 문자로 치환되는 사고가 있었다.
+    # 치환 결과도 유효한 UTF-8이고 챕터·인용 개수도 그대로라 품질 게이트가 못 잡는다.
+    # 실제로 U+AE30(기) → U+EE30(사설영역)이 갤러리까지 발행된 적이 있다.
+    from check_encoding import check as enc_check
+    enc_hits = enc_check(NOTES / f"{g['id']}.md")
+    if enc_hits:
+        MAN.write_text(json.dumps(man_before, ensure_ascii=False, indent=1) + "\n", encoding='utf-8')
+        if note_before is None:
+            _np.unlink(missing_ok=True)
+        else:
+            _np.write_text(note_before, encoding='utf-8')   # 기존 노트 원상복구
+        print(f"❌ 인코딩 손상 의심 — 갤러리에 넣지 않고 되돌렸다 ({g['id']})")
+        for pos, cp, why, ctx in enc_hits[:6]:
+            print(f"     · {cp} {why} @{pos}")
+            print(f"       {ctx}")
+        print("   → 본문이 옮겨지는 과정에서 깨진 것이다. 원본을 다시 받아 재시도할 것.")
+        sys.exit(1)
+
     from verify_video import check as gate_check
     gfails, GM = gate_check(NOTES / f"{g['id']}.md")
     if gfails:
         # manifest 롤백 — 게이트를 통과하지 못한 노트는 갤러리에 넣지 않는다
         MAN.write_text(json.dumps(man_before, ensure_ascii=False, indent=1) + "\n", encoding='utf-8')
-        (NOTES / f"{g['id']}.md").unlink(missing_ok=True)
+        if note_before is None:
+            _np.unlink(missing_ok=True)
+        else:
+            _np.write_text(note_before, encoding='utf-8')   # 기존 노트 원상복구
         print(f"❌ 품질 게이트 미달 — 갤러리에 넣지 않고 되돌렸다 ({g['id']})")
         for f in gfails:
             print(f"     · {f}")

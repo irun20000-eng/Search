@@ -262,7 +262,9 @@ function buildCards(){
       +'" data-search="'+esc(haystack(v))+'">'
       +'<img class="thumb" loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\''+thumbFb(v.id)+'\'" alt="">'
       +'<div class="body"><div class="ttl">'+esc(v.title)+'</div>'
-      +'<div class="mt"><span>'+esc(v.channel)+'</span><span>'+esc(v.published)+'</span><span>⏱ '+fmtDur(v.duration)+'</span></div>'
+      +'<div class="mt"><span>'+esc(v.channel)+'</span><span>게시 '+esc(v.published)+'</span>'
+      +(v.added&&v.added!==v.published?'<span>기록 '+esc(v.added)+'</span>':'')
+      +'<span>⏱ '+fmtDur(v.duration)+'</span></div>'
       +'<div class="one">'+esc(v.one)+'</div></div></a>'}).join('');
 }
 function buildPosts(){
@@ -273,7 +275,10 @@ function buildPosts(){
       +'<summary><div class="phead"><img loading="lazy" src="'+thumb(v.id)+'" onerror="this.onerror=null;this.src=\''+thumbFb(v.id)+'\'" alt=""><div>'
       +'<span class="eyebrow"><span class="dot"></span>'+esc(v.channel)+'</span>'
       +'<h2 class="ptitle">'+esc(v.title)+'</h2>'
-      +'<div class="pmeta"><span class="chip">⏱ '+fmtDur(v.duration)+'</span><span class="chip">📅 '+esc(v.published)+'</span>'+chips+'</div>'
+      +'<div class="pmeta"><span class="chip">⏱ '+fmtDur(v.duration)+'</span>'
+      +'<span class="chip">📅 게시 '+esc(v.published)+'</span>'
+      +(v.added?'<span class="chip">✍ 기록 '+esc(v.added)+'</span>':'')
+      +chips+'</div>'
       +'</div></div><span class="caret">▾</span></summary>'
       +'<div class="pbody"><div class="pactions">'
       +'<a class="watch" href="https://youtu.be/'+esc(v.id)+'" target="_blank" rel="noopener">▶ 영상으로 보기</a>'
