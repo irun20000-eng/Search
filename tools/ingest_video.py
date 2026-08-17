@@ -10,7 +10,7 @@
 
 파싱 실패 시 추측하지 않고 무엇이 왜 안 읽혔는지 출력하고 종료한다.
 """
-import re, json, sys, argparse
+import re, json, sys, argparse, datetime as _dt
 from pathlib import Path
 
 ROOT  = Path(__file__).resolve().parent.parent
@@ -176,7 +176,9 @@ def main():
             "제미나이가 시간을 지어냈을 가능성이 높다. 해당 챕터를 확인해 달라.")
 
     published = (meta.get('publishedAt') or '')[:10]
-    added = a.added or published
+    # 기록일(갤러리 등록일)의 기본값은 '오늘'이다.
+    # published 로 폴백하면 영상 게시일이 등록일로 둔갑한다 — 실제로 7건이 그렇게 들어갔다.
+    added = a.added or _dt.date.today().isoformat()
     title = (meta.get('title') or '').strip()
     channel = (meta.get('channelTitle') or '').strip()
 

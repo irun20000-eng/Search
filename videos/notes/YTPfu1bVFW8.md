@@ -4,7 +4,7 @@ channel: 백야 | AI 1인 기업
 video_url: https://youtu.be/YTPfu1bVFW8
 duration: 15:58
 published: 2026-02-11
-captured: 2026-02-11
+captured: 2026-08-14
 tags: [Remotion, 쇼츠자동화, 클로드코드, QN3TTS, 보이스클로닝, AI영상편집, 리모션, 피노키오, 위스퍼, 숏폼제작]
 category: video
 ---

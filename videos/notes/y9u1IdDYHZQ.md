@@ -4,7 +4,7 @@ channel: 솔브잇
 video_url: https://youtu.be/y9u1IdDYHZQ
 duration: 1:23:07
 published: 2025-11-19
-captured: 2025-11-19
+captured: 2026-08-17
 tags: [n8n, 노코드, 업무자동화, 구글폼연동, 데이터변환, 에디트노드, 디스코드봇, 워크플로우, 파이프라인, AI자동화]
 category: automation
 ---

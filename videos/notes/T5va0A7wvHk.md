@@ -4,7 +4,7 @@ channel: 솔브잇
 video_url: https://youtu.be/T5va0A7wvHk
 duration: 17:37
 published: 2024-09-20
-captured: 2024-09-20
+captured: 2026-08-17
 tags: [n8n, JinaAI, 웹스크레이핑, 뉴스레터자동화, LLM, 스트럭처드아웃풋, 디스코드연동, 파이토치, 크롤링, 정보큐레이션]
 category: automation
 ---

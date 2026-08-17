@@ -4,7 +4,7 @@ channel: 솔브잇
 video_url: https://youtu.be/_PdvWiuJF-M
 duration: 32:40
 published: 2024-08-24
-captured: 2024-08-24
+captured: 2026-08-17
 tags: [n8n, 유튜브요약, 프롬프트엔지니어링, 셀프디스커버, 노션연동, 크롬익스텐션, GPT, 지식관리, 업무자동화, 디스코드]
 category: knowledge
 ---

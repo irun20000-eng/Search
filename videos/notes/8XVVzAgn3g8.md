@@ -4,7 +4,7 @@ channel: 조팀장의 AI 공략집
 video_url: https://youtu.be/8XVVzAgn3g8
 duration: 43:28
 published: 2026-08-11
-captured: 2026-08-11
+captured: 2026-08-17
 tags: [Claude, ClaudeSkill, 픽스필드, MCP, AI영상제작, 시댄스, 쇼츠자동화, 프롬프트엔지니어링, 광고영상제작]
 category: video
 ---
