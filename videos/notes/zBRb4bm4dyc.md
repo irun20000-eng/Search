@@ -5,12 +5,12 @@ video_url: https://youtu.be/zBRb4bm4dyc
 duration: 08:13
 published: 2026-08-17
 captured: 2026-08-19
-tags: [구글안티그래비티, GoogleAntigravity, 제미나이3.7플래시, Gemini3.7Flash, SEO자동화, 에이전틱플랫폼, 노코드개발, 웹사이트감사, AI코딩, 워크스페이스]
+tags: [구글안티그래비티, GoogleAntigravity, 제미나이3.7플래시, Gemini3.7Flash, SEO자동화, 에이전틱플랫폼, 노코드개발, 웹사이트감사, AI코딩, 서브에이전트]
 category: agent
 ---
 # NEW Google Antigravity Update is WILD
 
-> 한 줄 요약: **구글 안티그래비티(Google Anti-Gravity)**에 탑재된 최신 **제미나이 3.7 플래시(Gemini 3.7 Flash)** 모델을 활용하여, 코딩 벤치마크 점수 대폭 상승(DeepSWE 65.3%, Automation Bench 30.4%)을 바탕으로 **웹사이트 속도 및 구조 진단**, **스크린샷 기반 랜딩 페이지 자동 빌드 및 테스트**, 그리고 **서브 에이전트 기반 SEO 감사 파이프라인**을 구축하는 실전 활용법을 제시한다.
+> 한 줄 요약: **구글 안티그래비티(Google Antigravity)**에 탑재된 최신 **제미나이 3.7 플래시(Gemini 3.7 Flash)** 모델을 활용하여, 코딩 벤치마크 점수 대폭 상승(DeepSWE 65.3%, Automation Bench 30.4%)을 바탕으로 **웹사이트 속도 및 구조 진단**, **스크린샷 기반 랜딩 페이지 자동 빌드 및 테스트**, 그리고 **서브 에이전트 기반 SEO 감사 파이프라인**을 구축하는 실전 활용법을 제시한다.
 
 ## 1. ★제미나이 3.7 플래시 출시와 안티그래비티 탑재★ · [00:00](https://youtu.be/zBRb4bm4dyc?t=0)
 - **3줄 요약**
@@ -46,7 +46,7 @@ category: agent
 
 ## 5. ★실전 SEO 감사 및 사이트 속도·구조 최적화 적용★ · [05:41](https://youtu.be/zBRb4bm4dyc?t=341)
 - **3줄 요약**
-  - "웹사이트의 사용자 경험과 로딩 속도를 해치는 문제를 찾아 수정하라"는 지시로 **SEO 자동 감사**를 수행한다.
+  - 사용자 경험과 페이지 속도를 해치는 문제를 찾아 수정하라는 지시로 **SEO 자동 감사**를 수행한다.
   - 에이전트가 문제 진단, 고영향 이슈 코드 수정, 브라우저 정상 작동 확인까지 원스톱으로 처리한다.
   - AI가 작업 속도를 획기적으로 높여주지만 **최종 전략 수립과 오디언스 분석은 여전히 인간의 영역**으로 남는다.
 - **핵심 인용**: "Imagine using an agent like this to audit a real website You could give it a prompt like this Audit this website find the biggest problems hurting the user experience and page speed fix the highest impact issues test the changes confirm everything works in the browser That's not a fantasy That's the exact kind of task Google says this model is built for."
