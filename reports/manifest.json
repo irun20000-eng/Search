@@ -4,7 +4,7 @@
     {
       "slug": "mean-value-theorem",
       "title": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-16",
       "depth": "deep",
       "tags": [
         "수학",
@@ -27,7 +27,7 @@
     {
       "slug": "mean-value-theorem-advanced",
       "title": "코시 평균값 정리 (확장편) — 두 함수로 확장한 다리, 로피탈·테일러의 뿌리 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-16",
       "depth": "deep",
       "tags": [
         "수학",
@@ -50,7 +50,7 @@
     {
       "slug": "shear-polynomial",
       "title": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-15",
       "depth": "deep",
       "tags": [
         "수학",
@@ -74,7 +74,7 @@
     {
       "slug": "shear-polynomial-advanced",
       "title": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-15",
       "depth": "deep",
       "tags": [
         "수학",
@@ -99,7 +99,7 @@
     {
       "slug": "polynomial-functions",
       "title": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-14",
       "depth": "deep",
       "tags": [
         "수학",
@@ -123,7 +123,7 @@
     {
       "slug": "polynomial-functions-advanced",
       "title": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-14",
       "depth": "deep",
       "tags": [
         "수학",
@@ -148,7 +148,7 @@
     {
       "slug": "lhopital-rule",
       "title": "로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법, 올바른 적용과 예시 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-13",
       "depth": "deep",
       "tags": [
         "수학",
@@ -170,7 +170,7 @@
     {
       "slug": "lhopital-rule-advanced",
       "title": "로피탈 정리 (확장편) — 진짜 가치와 함정, 왜 성립하고 언제 쓰면 안 되나 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-13",
       "depth": "deep",
       "tags": [
         "수학",
@@ -194,7 +194,7 @@
     {
       "slug": "milk-yogurt-history",
       "title": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-12",
       "depth": "deep",
       "tags": [
         "음식",
@@ -218,7 +218,7 @@
     {
       "slug": "math-function-terms",
       "title": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-12",
       "depth": "deep",
       "tags": [
         "수학",
@@ -242,7 +242,7 @@
     {
       "slug": "math-function-terms-advanced",
       "title": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-12",
       "depth": "deep",
       "tags": [
         "수학",
@@ -266,7 +266,7 @@
     {
       "slug": "ai-models-2026-comparison",
       "title": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-12",
       "depth": "deep",
       "tags": [
         "AI",
@@ -290,7 +290,7 @@
     {
       "slug": "video-editing-capcut-gom",
       "title": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-08",
       "depth": "deep",
       "tags": [
         "영상편집",
@@ -314,7 +314,7 @@
     {
       "slug": "n8n-automation-guide",
       "title": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-08",
       "depth": "deep",
       "tags": [
         "자동화",
@@ -338,7 +338,7 @@
     {
       "slug": "zapier-automation-guide",
       "title": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-08",
       "depth": "deep",
       "tags": [
         "자동화",
@@ -362,7 +362,7 @@
     {
       "slug": "infinity-set-theory",
       "title": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-06",
       "depth": "deep",
       "tags": [
         "수학",
@@ -386,7 +386,7 @@
     {
       "slug": "infinity-set-theory-advanced",
       "title": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-06",
       "depth": "deep",
       "tags": [
         "수학",
@@ -410,7 +410,7 @@
     {
       "slug": "hermes-agent-windows",
       "title": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "depth": "deep",
       "tags": [
         "AI",
@@ -434,7 +434,7 @@
     {
       "slug": "gemini-spark-agent",
       "title": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "depth": "deep",
       "tags": [
         "AI",
