@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18",
+ "generated": "2026-08-19",
  "categories": [
   {
    "key": "knowledge",
@@ -27,6 +27,52 @@
   }
  ],
  "videos": [
+  {
+   "id": "zkc7iDXjHUA",
+   "title": "Hermes Agent에 한국 AI를 붙이면 생기는 일!",
+   "channel": "배움의 달인 (AI·자동화)",
+   "published": "2026-08-07",
+   "added": "2026-08-19",
+   "duration": 985,
+   "cat": "agent",
+   "tags": [
+    "HermesAgent",
+    "업스테이지솔라",
+    "SolarPro",
+    "MOA",
+    "한글AI",
+    "독파모델",
+    "멀티에이전트",
+    "옵시디언연동",
+    "AI에이전트",
+    "에듀테크리포트"
+   ],
+   "one": "외산 AI 모델의 어색한 한국어 표현 한계를 극복하기 위해, 에르메스 에이전트(Hermes Agent)에 국산 독자 파운데이션 모델인 업스테이지 솔라 프로(Solar Pro) API를 프로바이더로 연동하고, GPT·Grok·DeepSeek을 결합한 MOA(Mixture of Agents) 믹스 파이프라인을 구축하여 자연스러운 고품질 한국어 에듀테크 분석 리포트를 작성하고 옵시디언(Obsidian) 인박스에 자동 저장하는 워크플로우를 제시한다.",
+   "path": "notes/zkc7iDXjHUA.md"
+  },
+  {
+   "id": "zBRb4bm4dyc",
+   "title": "NEW Google Antigravity Update is WILD",
+   "channel": "Julian Goldie SEO",
+   "published": "2026-08-17",
+   "added": "2026-08-19",
+   "duration": 493,
+   "cat": "agent",
+   "tags": [
+    "구글안티그래비티",
+    "GoogleAntigravity",
+    "제미나이3.7플래시",
+    "Gemini3.7Flash",
+    "SEO자동화",
+    "에이전틱플랫폼",
+    "노코드개발",
+    "웹사이트감사",
+    "AI코딩",
+    "워크스페이스"
+   ],
+   "one": "구글 안티그래비티(Google Anti-Gravity)에 탑재된 최신 제미나이 3.7 플래시(Gemini 3.7 Flash) 모델을 활용하여, 코딩 벤치마크 점수 대폭 상승(DeepSWE 65.3%, Automation Bench 30.4%)을 바탕으로 웹사이트 속도 및 구조 진단, 스크린샷 기반 랜딩 페이지 자동 빌드 및 테스트, 그리고 서브 에이전트 기반 SEO 감사 파이프라인을 구축하는 실전 활용법을 제시한다.",
+   "path": "notes/zBRb4bm4dyc.md"
+  },
   {
    "id": "K6Rsy-pHBi0",
    "title": "3시간 순삭) 55개 기술 의사결정, 소스코드 해설까지! 현존 바이브코딩 기본 강의 중 가장 실전적인 강의",
