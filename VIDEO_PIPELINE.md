@@ -197,6 +197,8 @@ guides/
   <슬러그>/guide.md
 prompts/
   gemini-video-analysis.md
+routines/
+  spark-video-curator.md  스파크 폴더 → 갤러리 발행 예약 루틴 지침
 tools/
   extract_videos.py   1회성 이관
   build_manifest.py   notes/ → manifest 재생성
@@ -204,6 +206,8 @@ tools/
   verify_video.py     영상 노트 게이트
   verify_guide.py     가이드 게이트
   render_parity.py    이관 동일성 대조
+  unescape_drive_text.py  Drive read_file_content 출력 → 스파크 원문 복원
+  check_encoding.py   인코딩 손상 검출(사설영역 차단 + 코퍼스 대조 자문)
 ```
 
 `videos/index.html`과 `guides/index.html`은 **외부 CDN에 의존하지 않는다.**

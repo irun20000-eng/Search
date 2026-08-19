@@ -70,4 +70,5 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - `guides/` — 따라하기 가이드 갤러리. `manifest.json` + `<슬러그>/guide.md`. 관련 영상은 검증된 것만 캐시.
 - `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
 - `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
+- `routines/` — 예약 루틴 지침. `spark-video-curator.md` = 스파크 영상 분석본 → 갤러리 발행(정본 절차는 `VIDEO_PIPELINE.md`).
 - `LESSONS.md` — 검수 학습 원장(방지규칙 누적). 라이브 갤러리: https://irun20000-eng.github.io/Search/
