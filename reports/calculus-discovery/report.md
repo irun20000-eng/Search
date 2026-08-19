@@ -394,7 +394,6 @@
 - [10] Agencia SINC, "1675: Leibniz writes the integral sign for the first time — 10월 29일 원고" — https://www.agenciasinc.es/en/Visual/Illustrations/1675-Leibniz-writes-the-integral-sign-for-the-first-time
 - [11] Wikipedia, "Leibniz's notation — d와 ∫의 유래, 표기가 가진 이점" — https://en.wikipedia.org/wiki/Leibniz%27s_notation
 - [12] Wikipedia, "Leibniz–Newton calculus controversy — 1712년 왕립학회 조사와 현대 학계의 독립 발견 결론" — https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy
-
 - [13] Britannica, "Bonaventura Cavalieri — 1635년 『불가분량의 기하학』, 적분법의 선구" — https://www.britannica.com/biography/Bonaventura-Cavalieri
 - [14] Mathematical Association of America, "The Arithmetic of Infinitesimals: John Wallis 1656 — 무한급수로 넓이를 구한 저작" — https://old.maa.org/press/maa-reviews/the-arithmetic-of-infinitesimals-john-wallis-1656
 - [15] Stanford Encyclopedia of Philosophy, "Isaac Newton — 1665~66 울즈소프 기적의 해와 유율법 발견 시점" — https://plato.stanford.edu/entries/newton/
