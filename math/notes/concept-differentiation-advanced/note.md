@@ -2,7 +2,7 @@
 유형: 개념
 제목: 미분법 (확장편)
 슬러그: concept-differentiation-advanced
-별칭: [미분법 엄밀화, 무한소 논쟁, 미분 확장편]
+별칭: [미분법 엄밀화, 무한소 논쟁, 미분 확장편, 미분법 확장편]
 볼트파일명: 개념_미분법 확장편
 트랙: 확장편
 짝문서: concept-differentiation

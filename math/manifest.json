@@ -13,6 +13,7 @@
    ],
    "볼트파일명": "개념_적분법",
    "트랙": "이해편",
+   "짝문서": "concept-integration-advanced",
    "세기": [
     17
    ],
@@ -793,7 +794,8 @@
    "별칭": [
     "미분법 엄밀화",
     "무한소 논쟁",
-    "미분 확장편"
+    "미분 확장편",
+    "미분법 확장편"
    ],
    "볼트파일명": "개념_미분법 확장편",
    "트랙": "확장편",
@@ -2191,6 +2193,194 @@
    ],
    "자수": 1200,
    "시각화": 1
+  },
+  {
+   "유형": "개념",
+   "제목": "적분법 (확장편)",
+   "슬러그": "concept-integration-advanced",
+   "별칭": [
+    "적분 엄밀화",
+    "리만 적분",
+    "르베그 적분",
+    "측도",
+    "적분 확장편"
+   ],
+   "볼트파일명": "개념_적분법 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-integration",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "측도론",
+    "확률론"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "심화",
+   "요약": "\"무엇을 더한다는 것인가\"에 대한 답이 세 번 바뀌었다. 리만이 정의를 세웠고, 그 정의가 깨지는 함수들이 나타났고, 르베그가 나누는 방향을 뒤집었다.",
+   "태그": [
+    "수학사",
+    "적분",
+    "리만",
+    "다르부",
+    "르베그",
+    "측도",
+    "볼테라",
+    "확률론",
+    "엄밀화"
+   ],
+   "발전단계": [
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "연속함수에 한해 적분을 합의 극한으로 정의했다(1823). 엄밀한 적분의 출발점이지만 연속이라는 울타리 안이었다.",
+     "출처": 3
+    },
+    {
+     "세기": 19,
+     "인물": "리만",
+     "변화": "1854년 교수자격 논문에서 연속 조건을 걷어내고, 구간을 임의로 나누고 임의의 점을 잡아도 같은 극한이 되는 것으로 적분을 정의했다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "다르부",
+     "변화": "1875년 상합·하합을 도입해 리만 적분 가능성의 필요충분조건을 세우고 증명을 다루기 쉽게 만들었다.",
+     "출처": 2
+    },
+    {
+     "세기": 19,
+     "인물": "볼테라",
+     "변화": "1881년 도함수가 유계인데도 리만 적분이 되지 않는 함수를 만들었다. 기본정리가 리만 적분 위에서 완전하지 않음을 보인 것이다.",
+     "출처": 6
+    },
+    {
+     "세기": 20,
+     "인물": "르베그",
+     "변화": "1902년 학위논문에서 정의역이 아니라 치역을 나누는 적분을 세웠다. 측도가 그 바탕이다.",
+     "출처": 4
+    },
+    {
+     "세기": 20,
+     "인물": "헨스톡·커즈와일",
+     "변화": "1960년대에 게이지 적분을 세워, 모든 도함수를 적분할 수 있게 했다. 기본정리가 조건 없이 성립한다.",
+     "출처": 7
+    }
+   ],
+   "선행개념": [
+    "concept-integration",
+    "concept-fundamental-theorem"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-newton",
+    "person-leibniz"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Toshikazu Sunada, Generalized Riemann Sums (arXiv) — 리만의 1854년 교수자격 논문과 코시 정의의 일반화",
+     "URL": "https://arxiv.org/pdf/1701.04699",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Darboux integral — 1875년 『Mémoire sur les fonctions discontinues』의 상합·하합과 적분가능 판정",
+     "URL": "https://en.wikipedia.org/wiki/Darboux_integral",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MAA Convergence, Teaching the Fundamental Theorem of Calculus — 코시(1823)가 연속함수에 한해 적분을 정의한 경위",
+     "URL": "https://old.maa.org/press/periodicals/convergence/teaching-the-fundamental-theorem-of-calculus-a-historical-reflection",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Henri Lebesgue, 『Intégrale, longueur, aire』(1902) 학위논문 — 인터넷 아카이브 원문",
+     "URL": "https://archive.org/details/integralelongueu00lebe",
+     "유형": "1차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 몽텔에게 보낸 편지의 동전 비유",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Volterra's function — 1881년, 유계 도함수가 리만 적분 불가능한 사례",
+     "URL": "https://en.wikipedia.org/wiki/Volterra%27s_function",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Resonance(Indian Academy of Sciences), Beyond Riemann With Volterra, Henstock, and Kurzweil — 게이지 적분과 완전한 기본정리",
+     "URL": "https://www.ias.ac.in/article/fulltext/reso/024/04/0477-0489",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 리만 적분 — 구간을 임의로 나누고 임의의 점을 잡는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338268&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과), 적분가능 — 넓이를 잘 정의할 수 있다는 것의 뜻",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338289&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과, 르베그 적분 — 리만은 정의역을, 르베그는 함숫값을 쪼갠다",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(수학백과), 측도 — 집합의 크기를 재는 함수",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405357&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학백과), 치환적분법 — 연쇄법칙의 역산",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338516&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과(수학백과), 적분 — 선적분·면적분을 포함한 적분의 갈래",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338145&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과, 리만 — 1854년 괴팅겐 강사, 1859년 디리클레의 후임",
+     "URL": "https://terms.naver.com/entry.naver?docId=880054&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "네이버 지식백과, 르베그 — 르베그 측도 개념의 확립",
+     "URL": "https://terms.naver.com/entry.naver?docId=880024&cid=43671&categoryId=43671",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-integration-advanced/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 10758,
+   "시각화": 4
   }
  ],
  "index": {
@@ -2232,11 +2422,13 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
-    "concept-integration"
+    "concept-integration",
+    "concept-integration-advanced"
    ],
    "20": [
     "concept-differentiation-advanced",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-integration-advanced"
    ]
   },
   "분야": {
@@ -2246,6 +2438,7 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-integration-advanced",
     "episode-priority-dispute",
     "person-barrow",
     "person-fermat",
@@ -2263,6 +2456,7 @@
    ],
    "확률론": [
     "century-17c",
+    "concept-integration-advanced",
     "episode-pascal-fermat-letters",
     "person-fermat",
     "person-pascal"
@@ -2275,6 +2469,9 @@
    ],
    "수학기초론": [
     "concept-differentiation-advanced"
+   ],
+   "측도론": [
+    "concept-integration-advanced"
    ],
    "역학": [
     "episode-newton-apple",
@@ -2323,6 +2520,7 @@
    "미적분Ⅱ": [
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-integration-advanced",
     "person-barrow",
     "person-gregory",
     "person-napier"
@@ -2344,7 +2542,8 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
-    "concept-integration"
+    "concept-integration",
+    "concept-integration-advanced"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -2371,6 +2570,7 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-integration-advanced",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -2489,7 +2689,8 @@
     "concept-differentiation-advanced"
    ],
    "엄밀화": [
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-integration-advanced"
    ],
    "기본정리": [
     "concept-fundamental-theorem",
@@ -2499,7 +2700,8 @@
    ],
    "적분": [
     "concept-fundamental-theorem",
-    "concept-integration"
+    "concept-integration",
+    "concept-integration-advanced"
    ],
    "배로": [
     "concept-fundamental-theorem",
@@ -2515,6 +2717,24 @@
    ],
    "카발리에리": [
     "concept-integration"
+   ],
+   "리만": [
+    "concept-integration-advanced"
+   ],
+   "다르부": [
+    "concept-integration-advanced"
+   ],
+   "르베그": [
+    "concept-integration-advanced"
+   ],
+   "측도": [
+    "concept-integration-advanced"
+   ],
+   "볼테라": [
+    "concept-integration-advanced"
+   ],
+   "확률론": [
+    "concept-integration-advanced"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -2621,6 +2841,7 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-integration-advanced",
     "episode-priority-dispute"
    ],
    "person-newton": [
@@ -2628,6 +2849,7 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-integration-advanced",
     "episode-newton-apple",
     "episode-priority-dispute",
     "person-barrow"
@@ -2639,7 +2861,8 @@
    "코시": [
     "concept-differentiation",
     "concept-differentiation-advanced",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-integration-advanced"
    ],
    "라그랑주": [
     "concept-differentiation-advanced"
@@ -2655,10 +2878,12 @@
     "person-barrow"
    ],
    "르베그": [
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-integration-advanced"
    ],
    "리만": [
-    "concept-integration"
+    "concept-integration",
+    "concept-integration-advanced"
    ],
    "아르키메데스": [
     "concept-integration"
@@ -2668,6 +2893,15 @@
    ],
    "카발리에리": [
     "concept-integration"
+   ],
+   "다르부": [
+    "concept-integration-advanced"
+   ],
+   "볼테라": [
+    "concept-integration-advanced"
+   ],
+   "헨스톡·커즈와일": [
+    "concept-integration-advanced"
    ],
    "person-pascal": [
     "episode-pascal-fermat-letters"
@@ -2870,6 +3104,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "episode-priority-dispute",
      "제목": "뉴턴–라이프니츠 우선권 논쟁",
      "유형": "일화",
@@ -3026,6 +3266,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "episode-newton-apple",
      "제목": "뉴턴의 사과",
      "유형": "일화",
@@ -3170,6 +3416,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "episode-newton-apple",
      "제목": "뉴턴의 사과",
      "유형": "일화",
@@ -3226,6 +3478,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -3272,6 +3530,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -3310,6 +3574,12 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -3340,6 +3610,12 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
     }
    ],
    "person-gregory": [
@@ -3354,6 +3630,14 @@
      "제목": "아이작 배로",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "concept-integration-advanced": [
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "짝문서"
     }
    ],
    "episode-newton-apple": [
@@ -3398,6 +3682,7 @@
   "미분법 (확장편) 확장편": "concept-differentiation-advanced",
   "미분법 (확장편)확장편": "concept-differentiation-advanced",
   "미분법 엄밀화": "concept-differentiation-advanced",
+  "미분법 확장편": "concept-differentiation-advanced",
   "concept-fundamental-theorem": "concept-fundamental-theorem",
   "개념_미적분학의 기본정리": "concept-fundamental-theorem",
   "기본정리": "concept-fundamental-theorem",
@@ -3418,6 +3703,16 @@
   "적분법 이해편": "concept-integration",
   "적분법이해편": "concept-integration",
   "정적분": "concept-integration",
+  "concept-integration-advanced": "concept-integration-advanced",
+  "개념_적분법 확장편": "concept-integration-advanced",
+  "르베그 적분": "concept-integration-advanced",
+  "리만 적분": "concept-integration-advanced",
+  "적분 엄밀화": "concept-integration-advanced",
+  "적분 확장편": "concept-integration-advanced",
+  "적분법 (확장편)": "concept-integration-advanced",
+  "적분법 (확장편) 확장편": "concept-integration-advanced",
+  "적분법 (확장편)확장편": "concept-integration-advanced",
+  "측도": "concept-integration-advanced",
   "episode-descartes-fly": "episode-descartes-fly",
   "데카르트 파리": "episode-descartes-fly",
   "데카르트와 천장의 파리": "episode-descartes-fly",
