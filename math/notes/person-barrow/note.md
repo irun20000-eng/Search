@@ -17,6 +17,7 @@
   출생지: 잉글랜드 런던
 
 기여개념: [concept-differentiation, concept-integration, concept-fundamental-theorem]
+관련인물: [person-gregory, person-newton]
 관련일화: [episode-priority-dispute]
 
 출처:

@@ -1062,6 +1062,7 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-gregory",
     "person-barrow",
     "person-newton",
     "person-leibniz"
@@ -1184,6 +1185,10 @@
    ],
    "관련일화": [
     "episode-priority-dispute"
+   ],
+   "관련인물": [
+    "person-gregory",
+    "person-newton"
    ],
    "출처": [
     {
@@ -1454,6 +1459,121 @@
    ],
    "자수": 5823,
    "시각화": 2
+  },
+  {
+   "유형": "인물",
+   "제목": "제임스 그레고리",
+   "슬러그": "person-gregory",
+   "별칭": [
+    "그레고리",
+    "James Gregory",
+    "제임스그레고리",
+    "그레고리식",
+    "그레고리 급수"
+   ],
+   "볼트파일명": "인물_제임스 그레고리",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "해석학",
+    "광학",
+    "천문학"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "미적분학의 기본정리를 처음 출판했고, 반사망원경을 처음 설계했고, 테일러보다 44년 먼저 테일러 급수를 얻었다. 그리고 서른여섯에 죽었다.",
+   "태그": [
+    "수학사",
+    "그레고리",
+    "기본정리",
+    "무한급수",
+    "원주율",
+    "반사망원경",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1638,
+    "사망": 1675,
+    "출생지": "스코틀랜드 애버딘 근교 드러모크"
+   },
+   "기여개념": [
+    "concept-fundamental-theorem",
+    "concept-integration"
+   ],
+   "관련일화": [
+    "episode-priority-dispute"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, James Gregory — 생몰·가족·학력·교수직·저작·급수 발견 시점·사인",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Gregory/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, James Gregory — 『Geometriae Pars Universalis』(1668)의 기본정리 최초 출판 서술과 증명, 배로의 인정",
+     "URL": "https://en.wikipedia.org/wiki/James_Gregory_(mathematician)",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Britannica, Vera Circuli et Hyperbolae Quadratura — 원·쌍곡선의 넓이를 수렴하는 무한급수로 얻는 방법",
+     "URL": "https://www.britannica.com/topic/Vera-Circuli-et-Hyperbolae-Quadratura",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MAA Reviews, The Impossibility of Squaring the Circle in the 17th Century — 원적문제 불가능성 논의와 그 수학사적 위치",
+     "URL": "https://old.maa.org/press/maa-reviews/the-impossibility-of-squaring-the-circle-in-the-17th-century",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 그레고리 급수 — 원주율을 무한급수로 구하는 방법",
+     "URL": "https://terms.naver.com/entry.naver?docId=3404985&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 원주율 — 무한급수를 이용한 근삿값 계산",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405254&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 아크탄젠트 — 역탄젠트 함수의 정의와 미적분",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405208&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(천문학백과), 그레고리식 망원경 — 오목 포물면 주경과 오목 타원면 부경",
+     "URL": "https://terms.naver.com/entry.naver?docId=6627810&cid=62801&categoryId=62801",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(두산백과), 그레고리식 망원경 — 1663년 제임스 그레고리가 처음 고안",
+     "URL": "https://terms.naver.com/entry.naver?docId=977952&cid=60248&categoryId=60248",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor History of Mathematics, The rise of calculus — 17세기 미적분 형성 과정에서 그레고리·배로의 위치",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-gregory/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 5842,
+   "시각화": 3
   },
   {
    "유형": "인물",
@@ -2095,6 +2215,7 @@
     "person-barrow",
     "person-descartes",
     "person-fermat",
+    "person-gregory",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -2128,6 +2249,7 @@
     "episode-priority-dispute",
     "person-barrow",
     "person-fermat",
+    "person-gregory",
     "person-leibniz",
     "person-newton"
    ],
@@ -2160,6 +2282,7 @@
    ],
    "광학": [
     "person-barrow",
+    "person-gregory",
     "person-newton"
    ],
    "신학": [
@@ -2171,6 +2294,9 @@
    ],
    "정수론": [
     "person-fermat"
+   ],
+   "천문학": [
+    "person-gregory"
    ],
    "논리학": [
     "person-leibniz"
@@ -2198,6 +2324,7 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "person-barrow",
+    "person-gregory",
     "person-napier"
    ],
    "확률과통계": [
@@ -2229,6 +2356,7 @@
     "person-barrow",
     "person-descartes",
     "person-fermat",
+    "person-gregory",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -2250,6 +2378,7 @@
     "person-barrow",
     "person-descartes",
     "person-fermat",
+    "person-gregory",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -2268,6 +2397,7 @@
     "person-barrow",
     "person-descartes",
     "person-fermat",
+    "person-gregory",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -2364,7 +2494,8 @@
    "기본정리": [
     "concept-fundamental-theorem",
     "concept-integration",
-    "person-barrow"
+    "person-barrow",
+    "person-gregory"
    ],
    "적분": [
     "concept-fundamental-theorem",
@@ -2376,7 +2507,8 @@
     "person-barrow"
    ],
    "그레고리": [
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "person-gregory"
    ],
    "구분구적법": [
     "concept-integration"
@@ -2422,6 +2554,15 @@
    ],
    "정수론": [
     "person-fermat"
+   ],
+   "무한급수": [
+    "person-gregory"
+   ],
+   "원주율": [
+    "person-gregory"
+   ],
+   "반사망원경": [
+    "person-gregory"
    ],
    "기호": [
     "person-leibniz"
@@ -2488,7 +2629,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "episode-newton-apple",
-    "episode-priority-dispute"
+    "episode-priority-dispute",
+    "person-barrow"
    ],
    "버클리": [
     "concept-differentiation",
@@ -2508,8 +2650,9 @@
    "바이어슈트라스": [
     "concept-differentiation-advanced"
    ],
-   "그레고리": [
-    "concept-fundamental-theorem"
+   "person-gregory": [
+    "concept-fundamental-theorem",
+    "person-barrow"
    ],
    "르베그": [
     "concept-fundamental-theorem"
@@ -2605,6 +2748,12 @@
      "제목": "피에르 드 페르마",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "관련일화"
     },
     {
      "슬러그": "person-leibniz",
@@ -2977,6 +3126,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-newton",
      "제목": "아이작 뉴턴",
      "유형": "인물",
@@ -3030,11 +3185,17 @@
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
-     "경로": "본문"
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-fermat",
      "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
      "유형": "인물",
      "경로": "본문"
     },
@@ -3067,6 +3228,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
      "유형": "인물",
      "경로": "본문"
     }
@@ -3111,6 +3278,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -3143,6 +3316,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -3161,6 +3340,20 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "짝문서"
+    }
+   ],
+   "person-gregory": [
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "episode-newton-apple": [
@@ -3267,6 +3460,14 @@
   "페르마": "person-fermat",
   "피에르 드 페르마": "person-fermat",
   "피에르페르마": "person-fermat",
+  "James Gregory": "person-gregory",
+  "person-gregory": "person-gregory",
+  "그레고리": "person-gregory",
+  "그레고리 급수": "person-gregory",
+  "그레고리식": "person-gregory",
+  "인물_제임스 그레고리": "person-gregory",
+  "제임스 그레고리": "person-gregory",
+  "제임스그레고리": "person-gregory",
   "Leibniz": "person-leibniz",
   "person-leibniz": "person-leibniz",
   "고트프리트 라이프니츠": "person-leibniz",
