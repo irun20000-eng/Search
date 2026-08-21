@@ -46,7 +46,9 @@ def build():
     collide = []
 
     def add(idx, names):
-        for a in names:
+        # 별칭은 집합으로 만들어지는데 파이썬 집합의 순회 순서는 실행마다 달라진다.
+        # 정렬해서 넣지 않으면 내용이 같아도 매번 수백 줄짜리 diff 가 난다.
+        for a in sorted(names):
             a = M.norm(a)
             if not a:
                 continue

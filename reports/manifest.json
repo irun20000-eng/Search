@@ -20,7 +20,11 @@
       ],
       "tldr": "교과서의 '미적분은 뉴턴과 라이프니츠가 만들었다'는 한 줄에는 세 가지가 빠져 있다. 첫째, 17세기에 케플러·카발리에리·페르마·데카르트·월리스가 넓이와 접선의 개별 기법을 이미 쌓아 두었고 두 사람이 한 일은 그것을 하나의 계산 체계로 통합한 것이다. 둘째, 뉴턴의 케임브리지 스승 아이작 배로가 1669년 『기하학 강의』 제10강 명제 11에서 미분과 적분이 역연산임(미적분학의 기본정리)을 기하학으로 이미 증명해 두었으나, 그것을 곡선에 관한 여러 정리 중 하나로 다뤘을 뿐 계산 도구로 승격시키지 못했다. 셋째, 두 사람의 아이디어가 서로 달랐다 — 뉴턴은 양이 시간에 따라 흐른다고 보아 유량·유율과 점 표기(ẋ)를 썼고, 라이프니츠는 무한소의 대수로 보아 1675년 10월 29일 적분 기호 ∫을 처음 쓰고 d를 만들었다. 발견은 뉴턴이 1665~66년으로 먼저, 출판은 라이프니츠가 1684년으로 먼저다. 이 어긋남이 1712년 왕립학회 조사(회장이 뉴턴 본인)로 이어졌고, 오늘날 학계 결론은 독립 발견이다. 그리고 우리가 쓰는 기호는 전부 라이프니츠의 것이다.",
       "sources": 19,
-      "path": "reports/calculus-discovery/report.md"
+      "path": "reports/calculus-discovery/report.md",
+      "cat": "math",
+      "pair": "calculus-discovery-advanced",
+      "track": "intro",
+      "chars": 16094
     },
     {
       "slug": "calculus-discovery-advanced",
@@ -43,7 +47,11 @@
       ],
       "tldr": "뉴턴도 라이프니츠도 자기 방법이 왜 옳은지 설명하지 못했다. 배로의 접선법(x→x+e, y→y+a로 치환하고 a·e의 고차항을 버린 뒤 a/e를 구하는 절차)을 x³+y³=r³에 실제로 적용하면 현대 음함수 미분과 결과가 완전히 일치한다 — 차이는 알고리즘이 아니라 결과를 부분접선이라는 기하량으로 돌려줬다는 점이다. 그런데 이 모든 계산은 'e≠0이어야 나누고 e≈0이어야 버린다'는 모순 위에 서 있었다. 1734년 버클리는 이를 '사라진 양의 유령'이라 부르며 옳은 답이 나오는 것은 오차가 상쇄되기 때문이라고 지적했고, 그 비판은 정당했다. 뉴턴의 방어(『프린키피아』의 '처음과 마지막 비')는 근대적 극한 서술에 가까웠으나 부등식으로 정의되지 않아 증명 도구가 되지 못했다. 봉합은 코시(1821)가 극한을 원시 개념으로 삼고 무한소를 '극한이 0인 변수'로 재정의하면서, 바이어슈트라스가 ε–δ로 부등식화하면서 완성된다. 그리고 1966년 로빈슨의 비표준 해석학이 초실수로 무한소를 정당한 대상으로 되살렸다 — 라이프니츠의 직관은 틀린 게 아니라 300년 이른 것이었다.",
       "sources": 23,
-      "path": "reports/calculus-discovery-advanced/report.md"
+      "path": "reports/calculus-discovery-advanced/report.md",
+      "cat": "math",
+      "pair": "calculus-discovery",
+      "track": "advanced",
+      "chars": 16287
     },
     {
       "slug": "aerodynamic-lift",
@@ -67,7 +75,11 @@
         "kr": 4,
         "intl": 5
       },
-      "path": "reports/aerodynamic-lift/report.md"
+      "path": "reports/aerodynamic-lift/report.md",
+      "cat": "science",
+      "pair": "aerodynamic-lift-advanced",
+      "track": "intro",
+      "chars": 11524
     },
     {
       "slug": "aerodynamic-lift-advanced",
@@ -92,7 +104,11 @@
         "kr": 5,
         "intl": 8
       },
-      "path": "reports/aerodynamic-lift-advanced/report.md"
+      "path": "reports/aerodynamic-lift-advanced/report.md",
+      "cat": "science",
+      "pair": "aerodynamic-lift",
+      "track": "advanced",
+      "chars": 12203
     },
     {
       "slug": "semiconductor-communication",
@@ -117,7 +133,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/semiconductor-communication/report.md"
+      "path": "reports/semiconductor-communication/report.md",
+      "cat": "science",
+      "pair": "semiconductor-communication-advanced",
+      "track": "intro",
+      "chars": 12927
     },
     {
       "slug": "semiconductor-communication-advanced",
@@ -143,7 +163,11 @@
         "kr": 5,
         "intl": 8
       },
-      "path": "reports/semiconductor-communication-advanced/report.md"
+      "path": "reports/semiconductor-communication-advanced/report.md",
+      "cat": "science",
+      "pair": "semiconductor-communication",
+      "track": "advanced",
+      "chars": 15920
     },
     {
       "slug": "mean-value-theorem",
@@ -166,7 +190,11 @@
         "kr": 4,
         "intl": 4
       },
-      "path": "reports/mean-value-theorem/report.md"
+      "path": "reports/mean-value-theorem/report.md",
+      "cat": "math",
+      "pair": "mean-value-theorem-advanced",
+      "track": "intro",
+      "chars": 10999
     },
     {
       "slug": "mean-value-theorem-advanced",
@@ -189,7 +217,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/mean-value-theorem-advanced/report.md"
+      "path": "reports/mean-value-theorem-advanced/report.md",
+      "cat": "math",
+      "pair": "mean-value-theorem",
+      "track": "advanced",
+      "chars": 12427
     },
     {
       "slug": "shear-polynomial",
@@ -213,7 +245,11 @@
         "kr": 4,
         "intl": 6
       },
-      "path": "reports/shear-polynomial/report.md"
+      "path": "reports/shear-polynomial/report.md",
+      "cat": "math",
+      "pair": "shear-polynomial-advanced",
+      "track": "intro",
+      "chars": 11694
     },
     {
       "slug": "shear-polynomial-advanced",
@@ -238,7 +274,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/shear-polynomial-advanced/report.md"
+      "path": "reports/shear-polynomial-advanced/report.md",
+      "cat": "math",
+      "pair": "shear-polynomial",
+      "track": "advanced",
+      "chars": 12407
     },
     {
       "slug": "polynomial-functions",
@@ -262,7 +302,11 @@
         "kr": 4,
         "intl": 3
       },
-      "path": "reports/polynomial-functions/report.md"
+      "path": "reports/polynomial-functions/report.md",
+      "cat": "math",
+      "pair": "polynomial-functions-advanced",
+      "track": "intro",
+      "chars": 7859
     },
     {
       "slug": "polynomial-functions-advanced",
@@ -287,7 +331,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/polynomial-functions-advanced/report.md"
+      "path": "reports/polynomial-functions-advanced/report.md",
+      "cat": "math",
+      "pair": "polynomial-functions",
+      "track": "advanced",
+      "chars": 10759
     },
     {
       "slug": "lhopital-rule",
@@ -309,7 +357,11 @@
         "kr": 4,
         "intl": 4
       },
-      "path": "reports/lhopital-rule/report.md"
+      "path": "reports/lhopital-rule/report.md",
+      "cat": "math",
+      "pair": "lhopital-rule-advanced",
+      "track": "intro",
+      "chars": 8450
     },
     {
       "slug": "lhopital-rule-advanced",
@@ -333,7 +385,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/lhopital-rule-advanced/report.md"
+      "path": "reports/lhopital-rule-advanced/report.md",
+      "cat": "math",
+      "pair": "lhopital-rule",
+      "track": "advanced",
+      "chars": 12276
     },
     {
       "slug": "milk-yogurt-history",
@@ -357,7 +413,10 @@
         "kr": 7,
         "intl": 8
       },
-      "path": "reports/milk-yogurt-history/report.md"
+      "path": "reports/milk-yogurt-history/report.md",
+      "cat": "science",
+      "track": "intro",
+      "chars": 11952
     },
     {
       "slug": "math-function-terms",
@@ -381,7 +440,11 @@
         "kr": 4,
         "intl": 4
       },
-      "path": "reports/math-function-terms/report.md"
+      "path": "reports/math-function-terms/report.md",
+      "cat": "math",
+      "pair": "math-function-terms-advanced",
+      "track": "intro",
+      "chars": 9092
     },
     {
       "slug": "math-function-terms-advanced",
@@ -405,7 +468,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/math-function-terms-advanced/report.md"
+      "path": "reports/math-function-terms-advanced/report.md",
+      "cat": "math",
+      "pair": "math-function-terms",
+      "track": "advanced",
+      "chars": 10625
     },
     {
       "slug": "ai-models-2026-comparison",
@@ -429,7 +496,10 @@
         "kr": 5,
         "intl": 11
       },
-      "path": "reports/ai-models-2026-comparison/report.md"
+      "path": "reports/ai-models-2026-comparison/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 13754
     },
     {
       "slug": "video-editing-capcut-gom",
@@ -453,7 +523,10 @@
         "kr": 10,
         "intl": 4
       },
-      "path": "reports/video-editing-capcut-gom/report.md"
+      "path": "reports/video-editing-capcut-gom/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 10858
     },
     {
       "slug": "n8n-automation-guide",
@@ -477,7 +550,10 @@
         "kr": 7,
         "intl": 9
       },
-      "path": "reports/n8n-automation-guide/report.md"
+      "path": "reports/n8n-automation-guide/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 13543
     },
     {
       "slug": "zapier-automation-guide",
@@ -501,7 +577,10 @@
         "kr": 6,
         "intl": 8
       },
-      "path": "reports/zapier-automation-guide/report.md"
+      "path": "reports/zapier-automation-guide/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 12390
     },
     {
       "slug": "infinity-set-theory",
@@ -525,7 +604,11 @@
         "kr": 4,
         "intl": 4
       },
-      "path": "reports/infinity-set-theory/report.md"
+      "path": "reports/infinity-set-theory/report.md",
+      "cat": "math",
+      "pair": "infinity-set-theory-advanced",
+      "track": "intro",
+      "chars": 10048
     },
     {
       "slug": "infinity-set-theory-advanced",
@@ -549,7 +632,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/infinity-set-theory-advanced/report.md"
+      "path": "reports/infinity-set-theory-advanced/report.md",
+      "cat": "math",
+      "pair": "infinity-set-theory",
+      "track": "advanced",
+      "chars": 12164
     },
     {
       "slug": "hermes-agent-windows",
@@ -573,7 +660,10 @@
         "kr": 7,
         "intl": 11
       },
-      "path": "reports/hermes-agent-windows/report.md"
+      "path": "reports/hermes-agent-windows/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 16010
     },
     {
       "slug": "gemini-spark-agent",
@@ -597,7 +687,10 @@
         "kr": 9,
         "intl": 9
       },
-      "path": "reports/gemini-spark-agent/report.md"
+      "path": "reports/gemini-spark-agent/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 16284
     },
     {
       "slug": "domain-literacy-ai-era",
@@ -619,7 +712,10 @@
         "kr": 7,
         "intl": 6
       },
-      "path": "reports/domain-literacy-ai-era/report.md"
+      "path": "reports/domain-literacy-ai-era/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 10063
     },
     {
       "slug": "ai-engineering-evolution-graph",
@@ -640,7 +736,10 @@
         "kr": 2,
         "intl": 8
       },
-      "path": "reports/ai-engineering-evolution-graph/report.md"
+      "path": "reports/ai-engineering-evolution-graph/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 10338
     },
     {
       "slug": "korea-college-admission-2032",
@@ -662,7 +761,10 @@
         "kr": 10,
         "intl": 1
       },
-      "path": "reports/korea-college-admission-2032/report.md"
+      "path": "reports/korea-college-admission-2032/report.md",
+      "cat": "society",
+      "track": "intro",
+      "chars": 8493
     },
     {
       "slug": "prosecution-reform-2026",
@@ -683,7 +785,10 @@
         "kr": 13,
         "intl": 1
       },
-      "path": "reports/prosecution-reform-2026/report.md"
+      "path": "reports/prosecution-reform-2026/report.md",
+      "cat": "society",
+      "track": "intro",
+      "chars": 10993
     },
     {
       "slug": "hesse-siddhartha",
@@ -704,7 +809,10 @@
         "kr": 4,
         "intl": 5
       },
-      "path": "reports/hesse-siddhartha/report.md"
+      "path": "reports/hesse-siddhartha/report.md",
+      "cat": "culture",
+      "track": "intro",
+      "chars": 8328
     },
     {
       "slug": "hesse-demian",
@@ -725,7 +833,10 @@
         "kr": 4,
         "intl": 5
       },
-      "path": "reports/hesse-demian/report.md"
+      "path": "reports/hesse-demian/report.md",
+      "cat": "culture",
+      "track": "intro",
+      "chars": 8266
     },
     {
       "slug": "claude-cowork-mobile",
@@ -747,7 +858,10 @@
         "kr": 5,
         "intl": 8
       },
-      "path": "reports/claude-cowork-mobile/report.md"
+      "path": "reports/claude-cowork-mobile/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 10944
     },
     {
       "slug": "orca-agent-ide",
@@ -769,7 +883,10 @@
         "kr": 5,
         "intl": 8
       },
-      "path": "reports/orca-agent-ide/report.md"
+      "path": "reports/orca-agent-ide/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 12232
     },
     {
       "slug": "spherical-geometry-curvature",
@@ -790,7 +907,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/spherical-geometry-curvature/report.md"
+      "path": "reports/spherical-geometry-curvature/report.md",
+      "cat": "math",
+      "pair": "spherical-geometry-curvature-advanced",
+      "track": "intro",
+      "chars": 9796
     },
     {
       "slug": "spherical-geometry-curvature-advanced",
@@ -811,7 +932,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/spherical-geometry-curvature-advanced/report.md"
+      "path": "reports/spherical-geometry-curvature-advanced/report.md",
+      "cat": "math",
+      "pair": "spherical-geometry-curvature",
+      "track": "advanced",
+      "chars": 10741
     },
     {
       "slug": "matrix-diagonalization",
@@ -832,7 +957,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/matrix-diagonalization/report.md"
+      "path": "reports/matrix-diagonalization/report.md",
+      "cat": "math",
+      "pair": "matrix-diagonalization-advanced",
+      "track": "intro",
+      "chars": 8440
     },
     {
       "slug": "matrix-diagonalization-advanced",
@@ -853,7 +982,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/matrix-diagonalization-advanced/report.md"
+      "path": "reports/matrix-diagonalization-advanced/report.md",
+      "cat": "math",
+      "pair": "matrix-diagonalization",
+      "track": "advanced",
+      "chars": 10670
     },
     {
       "slug": "higgsfield-mcp-claude",
@@ -875,7 +1008,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/higgsfield-mcp-claude/report.md"
+      "path": "reports/higgsfield-mcp-claude/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 11245
     },
     {
       "slug": "chrome-extensions-work",
@@ -896,7 +1032,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/chrome-extensions-work/report.md"
+      "path": "reports/chrome-extensions-work/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 10866
     },
     {
       "slug": "benford-law",
@@ -917,7 +1056,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/benford-law/report.md"
+      "path": "reports/benford-law/report.md",
+      "cat": "math",
+      "pair": "benford-law-advanced",
+      "track": "intro",
+      "chars": 7775
     },
     {
       "slug": "benford-law-advanced",
@@ -938,7 +1081,11 @@
         "kr": 5,
         "intl": 8
       },
-      "path": "reports/benford-law-advanced/report.md"
+      "path": "reports/benford-law-advanced/report.md",
+      "cat": "math",
+      "pair": "benford-law",
+      "track": "advanced",
+      "chars": 10575
     },
     {
       "slug": "leslie-matrix",
@@ -959,7 +1106,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/leslie-matrix/report.md"
+      "path": "reports/leslie-matrix/report.md",
+      "cat": "math",
+      "pair": "leslie-matrix-advanced",
+      "track": "intro",
+      "chars": 7827
     },
     {
       "slug": "leslie-matrix-advanced",
@@ -980,7 +1131,11 @@
         "kr": 5,
         "intl": 7
       },
-      "path": "reports/leslie-matrix-advanced/report.md"
+      "path": "reports/leslie-matrix-advanced/report.md",
+      "cat": "math",
+      "pair": "leslie-matrix",
+      "track": "advanced",
+      "chars": 10262
     },
     {
       "slug": "google-flow-practice",
@@ -1002,7 +1157,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/google-flow-practice/report.md"
+      "path": "reports/google-flow-practice/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 12541
     },
     {
       "slug": "google-flow",
@@ -1025,7 +1183,10 @@
         "kr": 5,
         "intl": 10
       },
-      "path": "reports/google-flow/report.md"
+      "path": "reports/google-flow/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 11707
     },
     {
       "slug": "slack-ai-bot",
@@ -1048,7 +1209,10 @@
         "kr": 5,
         "intl": 10
       },
-      "path": "reports/slack-ai-bot/report.md"
+      "path": "reports/slack-ai-bot/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 11510
     },
     {
       "slug": "slack-bot-build",
@@ -1070,7 +1234,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/slack-bot-build/report.md"
+      "path": "reports/slack-bot-build/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 13242
     },
     {
       "slug": "slack-solo-developer",
@@ -1093,7 +1260,10 @@
         "kr": 5,
         "intl": 11
       },
-      "path": "reports/slack-solo-developer/report.md"
+      "path": "reports/slack-solo-developer/report.md",
+      "cat": "auto",
+      "track": "intro",
+      "chars": 12600
     },
     {
       "slug": "claude-plugins-guide",
@@ -1116,7 +1286,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/claude-plugins-guide/report.md"
+      "path": "reports/claude-plugins-guide/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 11499
     },
     {
       "slug": "claude-plugins-build",
@@ -1138,7 +1311,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/claude-plugins-build/report.md"
+      "path": "reports/claude-plugins-build/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 12117
     },
     {
       "slug": "claude-extension-ecosystem",
@@ -1161,7 +1337,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/claude-extension-ecosystem/report.md"
+      "path": "reports/claude-extension-ecosystem/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 10282
     },
     {
       "slug": "claude-plugins-workflows",
@@ -1184,7 +1363,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/claude-plugins-workflows/report.md"
+      "path": "reports/claude-plugins-workflows/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 10830
     },
     {
       "slug": "claude-mcp-guide",
@@ -1207,7 +1389,10 @@
         "kr": 5,
         "intl": 9
       },
-      "path": "reports/claude-mcp-guide/report.md"
+      "path": "reports/claude-mcp-guide/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 14108
     },
     {
       "slug": "vector",
@@ -1227,7 +1412,11 @@
         "kr": 5,
         "intl": 4
       },
-      "path": "reports/vector/report.md"
+      "path": "reports/vector/report.md",
+      "cat": "math",
+      "pair": "vector-advanced",
+      "track": "intro",
+      "chars": 9126
     },
     {
       "slug": "vector-advanced",
@@ -1247,7 +1436,11 @@
         "kr": 8,
         "intl": 8
       },
-      "path": "reports/vector-advanced/report.md"
+      "path": "reports/vector-advanced/report.md",
+      "cat": "math",
+      "pair": "vector",
+      "track": "advanced",
+      "chars": 11511
     },
     {
       "slug": "matrix-multivariable-intro",
@@ -1267,7 +1460,11 @@
         "kr": 6,
         "intl": 3
       },
-      "path": "reports/matrix-multivariable-intro/report.md"
+      "path": "reports/matrix-multivariable-intro/report.md",
+      "cat": "math",
+      "pair": "matrix-multivariable-advanced",
+      "track": "intro",
+      "chars": 4172
     },
     {
       "slug": "matrix-multivariable-advanced",
@@ -1287,7 +1484,11 @@
         "kr": 8,
         "intl": 7
       },
-      "path": "reports/matrix-multivariable-advanced/report.md"
+      "path": "reports/matrix-multivariable-advanced/report.md",
+      "cat": "math",
+      "pair": "matrix-multivariable-intro",
+      "track": "advanced",
+      "chars": 6191
     },
     {
       "slug": "jacobian-transformation",
@@ -1306,7 +1507,11 @@
         "kr": 4,
         "intl": 3
       },
-      "path": "reports/jacobian-transformation/report.md"
+      "path": "reports/jacobian-transformation/report.md",
+      "cat": "math",
+      "pair": "jacobian-advanced",
+      "track": "intro",
+      "chars": 3995
     },
     {
       "slug": "jacobian-advanced",
@@ -1326,7 +1531,11 @@
         "kr": 5,
         "intl": 10
       },
-      "path": "reports/jacobian-advanced/report.md"
+      "path": "reports/jacobian-advanced/report.md",
+      "cat": "math",
+      "pair": "jacobian-transformation",
+      "track": "advanced",
+      "chars": 7942
     },
     {
       "slug": "iran-us-conflict-timeline",
@@ -1346,7 +1555,10 @@
         "kr": 10,
         "intl": 15
       },
-      "path": "reports/iran-us-conflict-timeline/report.md"
+      "path": "reports/iran-us-conflict-timeline/report.md",
+      "cat": "society",
+      "track": "intro",
+      "chars": 13287
     },
     {
       "slug": "hermes-agent-deep",
@@ -1368,7 +1580,10 @@
         "intl": 6
       },
       "cover": "comics/card.png",
-      "path": "reports/hermes-agent-deep/report.md"
+      "path": "reports/hermes-agent-deep/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 7893
     },
     {
       "slug": "hermes-agent-quick",
@@ -1387,7 +1602,36 @@
         "kr": 3,
         "intl": 3
       },
-      "path": "reports/hermes-agent-quick/report.md"
+      "path": "reports/hermes-agent-quick/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 2822
+    }
+  ],
+  "categories": [
+    {
+      "key": "math",
+      "label": "수학"
+    },
+    {
+      "key": "ai",
+      "label": "AI·에이전트"
+    },
+    {
+      "key": "auto",
+      "label": "자동화·생산성"
+    },
+    {
+      "key": "science",
+      "label": "과학·공학"
+    },
+    {
+      "key": "society",
+      "label": "사회·시사"
+    },
+    {
+      "key": "culture",
+      "label": "인문"
     }
   ]
 }

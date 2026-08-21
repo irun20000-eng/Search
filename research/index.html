@@ -152,6 +152,21 @@
   #tip.show{display:block}
   #tip .t-title{font-weight:600;margin-bottom:4px;color:#fff}
   #tip .t-host{color:#B5A899;font-size:.76rem}
+  /* 분류 탭 — 태그 333종은 분류로 못 쓴다. 명시적 카테고리를 위에 얹는다. */
+  .catbar{max-width:var(--maxw);margin:0 auto;padding:2px 22px 10px;display:flex;gap:6px;flex-wrap:wrap}
+  .catb{font-size:.84rem;font-weight:700;color:var(--muted);background:transparent;border:1.5px solid var(--line);
+    border-radius:999px;padding:.34rem .85rem;cursor:pointer;font-family:var(--font);transition:.15s;
+    display:inline-flex;gap:.35rem;align-items:center}
+  .catb:hover{color:var(--ink);border-color:var(--accent)}
+  .catb.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .catb .n{font-size:.74rem;opacity:.75;font-weight:600}
+  .cat-chip{font-weight:700;border-radius:8px;padding:2px 10px;font-size:.74rem;background:var(--chip);color:var(--muted)}
+  /* 이해편/확장편 — 한 카드 안에서 전환 */
+  .tracks{display:flex;gap:6px;margin-top:11px}
+  .tracks .tr{font-size:.75rem;font-weight:700;border:1.5px solid var(--line);border-radius:8px;
+    padding:3px 10px;color:var(--muted);cursor:pointer;background:var(--card);font-family:var(--font)}
+  .tracks .tr.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+  .tracks .tr:hover{border-color:var(--accent);color:var(--accent)}
 </style>
 <link rel="stylesheet" href="../assets/topbar.css">
 </head>
@@ -171,9 +186,9 @@
 <div class="stickybar" id="stickybar">
   <div class="controls">
     <input id="q" type="search" placeholder="주제·키워드 검색…  ( / )" autocomplete="off" />
-    <select id="depth" aria-label="깊이 필터" title="깊이 필터"><option value="">전체 깊이</option><option value="quick">QUICK</option><option value="deep">DEEP</option></select>
     <select id="sort" aria-label="정렬" title="정렬"><option value="date">최신순</option><option value="title">제목순</option></select>
   </div>
+  <div class="catbar" id="catbar" role="tablist" aria-label="분류"></div>
 </div>
 <div id="tagbar"></div>
 <div class="countline" id="countline"></div>
@@ -183,7 +198,7 @@
   <div id="empty" class="empty" hidden>조건에 맞는 보고서가 없습니다.</div>
 </main>
 
-<footer>Search · 주제 리서치 갤러리</footer>
+<footer>이룬 서재 · 리서치</footer>
 
 <div class="overlay" id="overlay"></div>
 <section class="sheet" id="sheet" aria-modal="true" role="dialog">
@@ -196,6 +211,9 @@
 <script>
 /* 갤러리는 research/ 에 있고 데이터(reports/*, link-index.json)는 루트에 남는다 */
 const ROOT="../";
+let CATS=[], activeCat=null;
+function catLabel(k){ const c=CATS.find(x=>x.key===k); return c?c.label:""; }
+function readMin(r){ const n=r.chars||0; return n?Math.max(1,Math.round(n/600)):0; }
 const MANIFEST=ROOT+"reports/manifest.json";
 /* ── 상호 링크 ──────────────────────────────────────────────
    LINKIDX: 별칭 → LINKENT 인덱스.  tools/build_link_index.py 가 만든다.
@@ -321,23 +339,23 @@ function toggleTheme(){ const cur=document.documentElement.getAttribute("data-th
   const nt=cur==="dark"?"light":"dark"; try{ localStorage.setItem("stTheme",nt); }catch(e){} applyTheme(nt); }
 // ---- 필터 상태 URL 저장/복원 ----
 function restoreFromURL(){ const p=new URLSearchParams(location.search);
-  $("#q").value=p.get("q")||""; $("#depth").value=p.get("depth")||"";
+  $("#q").value=p.get("q")||""; activeCat=p.get("cat")||null;
   const s=p.get("sort"); if(s==="date"||s==="title") $("#sort").value=s;
   activeTag=p.get("tag")||null; }
 function syncURL(){ const p=new URLSearchParams();
-  const q=$("#q").value.trim(), depth=$("#depth").value, sort=$("#sort").value;
-  if(q)p.set("q",q); if(activeTag)p.set("tag",activeTag); if(depth)p.set("depth",depth); if(sort&&sort!=="date")p.set("sort",sort);
+  const q=$("#q").value.trim(), sort=$("#sort").value;
+  if(q)p.set("q",q); if(activeTag)p.set("tag",activeTag); if(activeCat)p.set("cat",activeCat); if(sort&&sort!=="date")p.set("sort",sort);
   const qs=p.toString(); const keepHash=location.hash.startsWith("#r=")?location.hash:"";
   history.replaceState(null,"",location.pathname+(qs?"?"+qs:"")+keepHash); }
 async function boot(){
   initTheme();
-  try{ REPORTS=(await (await fetch(MANIFEST,{cache:"no-store"})).json()).reports||[]; }catch(e){ REPORTS=[]; }
+  try{ const m=await (await fetch(MANIFEST,{cache:"no-store"})).json();
+       REPORTS=m.reports||[]; CATS=m.categories||[]; }catch(e){ REPORTS=[]; CATS=[]; }
   try{ const li=await (await fetch(ROOT+"link-index.json",{cache:"no-store"})).json();
        LINKENT=li.entries||[]; LINKIDX=li.alias||{}; }catch(e){ LINKENT=[]; LINKIDX={}; }
   restoreFromURL();
-  buildTagbar(); render();
+  buildTagbar(); buildCatbar(); render();
   $("#q").addEventListener("input",render);
-  $("#depth").addEventListener("change",render);
   $("#sort").addEventListener("change",render);
   $("#closeBtn").addEventListener("click",closeSheet);
   $("#overlay").addEventListener("click",closeSheet);
@@ -387,28 +405,82 @@ function geoCover(color,v){
   ];
   return `<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="140" fill="${color}" opacity=".07"/>${S[v%S.length]}</svg>`;
 }
-function metaHTML(r){ const srcs=r.sources?`· 출처 국내 ${r.sources.kr||0}·해외 ${r.sources.intl||0}`:"";
-  return `<span class="depth ${r.depth}">${(r.depth||"").toUpperCase()}</span><span>${r.date||""}</span><span class="src">${srcs}</span>`; }
+/* manifest 의 sources 는 숫자(19)인데 예전 코드가 객체로 다뤄 늘 "국내 0·해외 0"이 찍혔다.
+   두 형태를 모두 받는다. */
+function srcText(r){ const s=r.sources;
+  if(s==null) return "";
+  if(typeof s==="number") return `· 출처 ${s}`;
+  return `· 출처 국내 ${s.kr||0}·해외 ${s.intl||0}`; }
+function metaHTML(r){ const m=readMin(r);
+  return `<span class="cat-chip">${esc(catLabel(r.cat))}</span><span>${r.date||""}</span>`
+    + (m?`<span>· 읽기 ${m}분</span>`:"") + `<span class="src">${srcText(r)}</span>`; }
 function tagsHTML(r){ return (r.tags||[]).slice(0,5).map(t=>`<span class="t">#${esc(t)}</span>`).join(""); }
 
+/* 이해편/확장편을 한 장으로 묶는다. 앞면은 이해편, 뒷면은 확장편.
+   검색은 양쪽 텍스트를 모두 훑는다. */
+/* 이해편/확장편 토글 — 일반 카드와 FEATURED 카드가 함께 쓴다 */
+function trackHTML(r){
+  return r._pair
+    ? `<div class="tracks"><span class="tr on">이해편</span><span class="tr" data-go="${esc(r._pair.slug)}">확장편</span></div>`
+    : "";
+}
+function wireTrack(c,r){
+  const go=c.querySelector("[data-go]");
+  if(go) go.onclick=(ev)=>{ ev.stopPropagation(); openReport(r._pair); };
+}
+function displayList(){
+  const bySlug={}; REPORTS.forEach(r=>bySlug[r.slug]=r);
+  const seen={}, out=[];
+  REPORTS.forEach(r=>{
+    if(seen[r.slug]) return;
+    const back = r.pair ? bySlug[r.pair] : null;
+    if(back){
+      const face = (r.track==="advanced") ? back : r;
+      const other = (face===r) ? back : r;
+      seen[face.slug]=1; seen[other.slug]=1;
+      out.push(Object.assign({}, face, {_pair:other}));
+    } else {
+      seen[r.slug]=1;
+      out.push(Object.assign({}, r, {_pair:null}));
+    }
+  });
+  return out;
+}
+function buildCatbar(){
+  const bar=$("#catbar"); if(!bar) return;
+  const list=displayList();
+  const n={}; list.forEach(r=>{ n[r.cat]=(n[r.cat]||0)+1; });
+  bar.innerHTML=[{key:null,label:"전체"}].concat(CATS).map(c=>{
+    const cnt = c.key===null ? list.length : (n[c.key]||0);
+    if(!cnt) return "";
+    return `<button type="button" class="catb${activeCat===c.key?" on":""}" data-cat="${c.key===null?"":c.key}" role="tab" aria-selected="${activeCat===c.key}">${esc(c.label)}<span class="n">${cnt}</span></button>`;
+  }).join("");
+  bar.querySelectorAll(".catb").forEach(b=>b.onclick=()=>{
+    activeCat = b.dataset.cat || null; buildCatbar(); render();
+  });
+}
 function render(){
-  const q=$("#q").value.trim().toLowerCase(), depth=$("#depth").value, sort=$("#sort").value;
-  let list=REPORTS.filter(r=>{
-    if(depth&&r.depth!==depth) return false;
-    if(activeTag&&!(r.tags||[]).includes(activeTag)) return false;
-    if(q){ const hay=(r.title+" "+(r.tldr||"")+" "+(r.tags||[]).join(" ")).toLowerCase(); if(!hay.includes(q)) return false; }
+  const q=$("#q").value.trim().toLowerCase(), sort=$("#sort").value;
+  let list=displayList().filter(r=>{
+    if(activeCat&&r.cat!==activeCat) return false;
+    const p=r._pair;
+    if(activeTag&&!(r.tags||[]).includes(activeTag)&&!(p&&(p.tags||[]).includes(activeTag))) return false;
+    if(q){
+      const one=x=>x?(x.title+" "+(x.tldr||"")+" "+(x.tags||[]).join(" ")):"";
+      if(!(one(r)+" "+one(p)).toLowerCase().includes(q)) return false;
+    }
     return true;
   });
   list.sort((a,b)=> sort==="title"?a.title.localeCompare(b.title,"ko"):(b.date||"").localeCompare(a.date||""));
   const cl=$("#countline");
-  if(cl){ const filtered = q||depth||activeTag;
-    cl.innerHTML = `<b>${list.length}</b>개${filtered?` / 전체 ${REPORTS.length}개`:""}`
+  if(cl){ const total=displayList().length, filtered = q||activeCat||activeTag;
+    cl.innerHTML = `<b>${list.length}</b>개${filtered?` / 전체 ${total}개`:""}`
       + (activeTag?` · 태그 <b>#${esc(activeTag)}</b>`:"")
       + (filtered?`<span class="clear" id="clearBtn">필터 해제 ✕</span>`:"");
-    const cb=$("#clearBtn"); if(cb) cb.onclick=()=>{ activeTag=null; $("#q").value=""; $("#depth").value=""; tagsExpanded=false; buildTagbar(); render(); };
+    const cb=$("#clearBtn"); if(cb) cb.onclick=()=>{ activeTag=null; activeCat=null; $("#q").value=""; tagsExpanded=false; buildTagbar(); buildCatbar(); render(); };
   }
   grid.innerHTML=""; empty.hidden=list.length>0;
-  const featuredOK = !q && !depth && !activeTag && sort==="date" && list.length>0;
+  const featuredOK = !q && !activeCat && !activeTag && sort==="date" && list.length>0;
   list.forEach((r,i)=>{
     const color=colorFor(r);
     const c=document.createElement("div");
@@ -418,10 +490,12 @@ function render(){
       c.className="card featured";
       const base=ROOT+r.path.substring(0,r.path.lastIndexOf("/")+1);
       const cover=r.cover?`<div class="cover"><img src="${base+r.cover}" alt="미리보기" loading="lazy"></div>`:"";
-      c.innerHTML=`${cover}<div class="body"><div class="meta">${metaHTML(r)}<span class="pill-feat">FEATURED</span></div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p><div class="foot">${tagsHTML(r)}</div></div>`;
+      c.innerHTML=`${cover}<div class="body"><div class="meta">${metaHTML(r)}<span class="pill-feat">FEATURED</span></div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div></div>`;
+      wireTrack(c,r);
     } else {
       c.className="card";
-      c.innerHTML=`<div class="cover-geo">${geoCover(color,i)}</div><div class="body"><div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p><div class="foot">${tagsHTML(r)}</div></div>`;
+      c.innerHTML=`<div class="cover-geo">${geoCover(color,i)}</div><div class="body"><div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div></div>`;
+      wireTrack(c,r);
     }
     grid.appendChild(c);
   });
