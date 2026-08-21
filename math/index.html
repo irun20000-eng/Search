@@ -574,7 +574,7 @@ function related(slug){
   function push(s,why){ if(!s||seen[s]||!BY[s])return; seen[s]=1; out.push({s:s,why:why}); }
   if(n["짝문서"]) push(n["짝문서"],"짝문서");
   (n["세기전체"]||[]).forEach(function(c){
-    ((IDX["세기"]&&IDX["세기"][String(c)])||[]).forEach(function(s){ push(s,c+"세기"); });
+    ((IDX["세기"]&&IDX["세기"][String(c)])||[]).forEach(function(s){ push(s,centChip(c)); });
   });
   (n["분야"]||[]).forEach(function(f){
     ((IDX["분야"]&&IDX["분야"][f])||[]).forEach(function(s){ push(s,f); });
@@ -851,7 +851,7 @@ function card(n){
     '<button class="cardadd'+(inCart(n["슬러그"])?" in":"")+'" data-add="'+esc(n["슬러그"])+'" title="담기">'+
       (inCart(n["슬러그"])?"✓":"＋")+'</button>'+
     '<div class="row1">'+typeBadge(n)+
-      (cents.length?'<span class="badge bg-muted">'+cents[0]+'세기'+(cents.length>1?"+":"")+'</span>':'')+
+      (cents.length?'<span class="badge bg-muted">'+centChip(cents[0])+(cents.length>1?"+":"")+'</span>':'')+
       extra+(READ[n["슬러그"]]?'<span class="read-dot" title="읽음"></span>':'')+'</div>'+
     '<h3>'+esc(n["제목"])+'</h3>'+
     '<p>'+esc(n["요약"]||"")+'</p>'+
@@ -861,6 +861,15 @@ function card(n){
       ((n["교과"]||[]).length?'<span>'+esc(n["교과"].join(" · "))+'</span>':'')+
     '</div></article>';
 }
+/* 세기 표기. 음수는 기원전을 뜻한다 (-3 → 기원전 3세기, 300~201 BC).
+   개념의 발전단계가 고대까지 거슬러 올라가면 음수 세기가 생긴다. */
+function centName(c){ return c>0 ? c : "기원전 "+Math.abs(c); }
+function centRange(c){
+  if(c>0) return ((c-1)*100+1)+"–"+(c*100);
+  var a=Math.abs(c);
+  return (a*100)+"–"+((a-1)*100+1)+" BC";
+}
+function centChip(c){ return c>0 ? c+"세기" : "기원전 "+Math.abs(c)+"세기"; }
 function renderTimeline(){
   var present=Object.keys(IDX["세기"]||{}).map(Number);
   var spine={}; present.forEach(function(c){spine[c]=1;});
@@ -872,13 +881,13 @@ function renderTimeline(){
     var list=((IDX["세기"]||{})[String(c)])||[];
     var ov=list.map(function(s){return BY[s];}).filter(function(n){return n&&n["유형"]==="세기";})[0];
     if(!list.length){
-      html+='<div class="band dim"><div class="band-head"><div class="band-cent">'+c+
-        '<small>'+((c-1)*100+1)+'–'+(c*100)+'</small></div>'+
+      html+='<div class="band dim"><div class="band-head"><div class="band-cent">'+centName(c)+
+        '<small>'+centRange(c)+'</small></div>'+
         '<div class="band-title">—</div><div class="band-count">아직 작성되지 않음</div></div></div>';
       return;
     }
     html+='<div class="band"><div class="band-head">'+
-      '<div class="band-cent">'+c+'<small>'+((c-1)*100+1)+'–'+(c*100)+'</small></div>'+
+      '<div class="band-cent">'+centName(c)+'<small>'+centRange(c)+'</small></div>'+
       '<div class="band-title'+(ov?' link" data-go="'+esc(ov["슬러그"])+'"':'"')+'>'+
         esc(ov?ov["요약"]:"세기 개관 미작성")+'</div>'+
       '<div class="band-count">문서 '+list.length+'편</div></div>'+

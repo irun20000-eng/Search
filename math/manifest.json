@@ -2,6 +2,169 @@
  "generated": "2026-08-21",
  "notes": [
   {
+   "유형": "개념",
+   "제목": "적분법",
+   "슬러그": "concept-integration",
+   "별칭": [
+    "적분",
+    "정적분",
+    "구분구적법",
+    "구적법"
+   ],
+   "볼트파일명": "개념_적분법",
+   "트랙": "이해편",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "해석학"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "넓이를 구하는 2천 년 된 문제가 17세기에 미분의 역연산이라는 것이 드러나면서, 계산의 문제가 되었다.",
+   "태그": [
+    "수학사",
+    "적분",
+    "구분구적법",
+    "카발리에리",
+    "배로",
+    "기본정리",
+    "17세기"
+   ],
+   "발전단계": [
+    {
+     "세기": -3,
+     "인물": "아르키메데스",
+     "변화": "도형을 잘게 나누어 넓이에 접근하는 소진법으로 포물선 활꼴의 넓이를 구했다. 극한 개념 없이 극한의 답을 얻었다.",
+     "출처": 2
+    },
+    {
+     "세기": 17,
+     "인물": "카발리에리",
+     "변화": "도형을 무수히 많은 선분(불가분량)의 모임으로 보고 넓이를 다루는 방법을 제시했다(1635).",
+     "출처": 5
+    },
+    {
+     "세기": 17,
+     "인물": "월리스",
+     "변화": "무한급수로 넓이를 구하는 계산을 정리해 대수적 처리의 길을 열었다(1656).",
+     "출처": 6
+    },
+    {
+     "세기": 17,
+     "인물": "배로",
+     "변화": "넓이를 구하는 일과 접선을 구하는 일이 서로 역연산임을 기하학으로 증명했다(1670).",
+     "출처": 7
+    },
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "합(summa)의 s를 늘인 ∫ 기호를 도입해 적분을 규칙 있는 계산으로 바꿨다(1675).",
+     "출처": 8
+    },
+    {
+     "세기": 19,
+     "인물": "리만",
+     "변화": "잘게 나눈 합의 극한으로 정적분을 엄밀하게 정의했다.",
+     "출처": 11
+    }
+   ],
+   "선행개념": [
+    "concept-differentiation"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-newton",
+    "person-leibniz"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 정적분 — 잘게 나누어 더하는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338295&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 구분구적법 — 구분하여 구적하는 방법",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338242&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 도형의 넓이와 정적분",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073846&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 정적분의 기본정리 — 정적분과 미분의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073840&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Britannica, Bonaventura Cavalieri — 1635년 『불가분량의 기하학』",
+     "URL": "https://www.britannica.com/biography/Bonaventura-Cavalieri",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Mathematical Association of America, The Arithmetic of Infinitesimals — John Wallis 1656",
+     "URL": "https://old.maa.org/press/maa-reviews/the-arithmetic-of-infinitesimals-john-wallis-1656",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "arXiv:1111.6145 — Barrow and Leibniz on the fundamental theorem of the calculus",
+     "URL": "https://arxiv.org/pdf/1111.6145",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Leibniz's notation — ∫ 와 d 의 유래",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%27s_notation",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor History of Mathematics, The rise of calculus",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학백과), 미적분의 기본정리 — 미분과 적분은 서로 역작용",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338338&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Calculus — 코시·리만·바이어슈트라스에 의한 엄밀화",
+     "URL": "https://en.wikipedia.org/wiki/Differential_and_integral_calculus",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, Method of Fluxions — 뉴턴의 유율법",
+     "URL": "https://en.wikipedia.org/wiki/Method_of_Fluxions",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-integration/note.md",
+   "세기전체": [
+    -3,
+    17,
+    19
+   ],
+   "자수": 7786,
+   "시각화": 5
+  },
+  {
    "유형": "인물",
    "제목": "존 네이피어",
    "슬러그": "person-napier",
@@ -619,6 +782,199 @@
    ],
    "자수": 7731,
    "시각화": 5
+  },
+  {
+   "유형": "개념",
+   "제목": "미분법 (확장편)",
+   "슬러그": "concept-differentiation-advanced",
+   "별칭": [
+    "미분법 엄밀화",
+    "무한소 논쟁",
+    "미분 확장편"
+   ],
+   "볼트파일명": "개념_미분법 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-differentiation",
+   "세기": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "심화",
+   "요약": "답은 맞는데 이유를 대지 못한 계산이 150년을 갔다. 버클리가 그 결함을 정확히 짚었고, 코시와 바이어슈트라스가 극한으로 다시 세웠으며, 로빈슨이 무한소를 되살렸다.",
+   "태그": [
+    "수학사",
+    "미분",
+    "무한소",
+    "버클리",
+    "코시",
+    "바이어슈트라스",
+    "비표준해석학",
+    "엄밀화"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "dx를 0은 아니지만 어떤 양수보다도 작은 양으로 다뤘다. 계산은 맞았으나 그 대상의 논리적 지위는 정의되지 않았다.",
+     "출처": 3
+    },
+    {
+     "세기": 18,
+     "인물": "버클리",
+     "변화": "『해석학자』(1734)에서 증분으로 나눈 뒤 그것을 버리는 절차의 모순을 지적하고 무한소를 \"떠나간 양의 유령\"이라 불렀다.",
+     "출처": 4
+    },
+    {
+     "세기": 18,
+     "인물": "라그랑주",
+     "변화": "무한소도 극한도 쓰지 않고 멱급수 전개만으로 미분학을 세우려 시도했다. 수렴 문제를 다루지 못해 실패했다.",
+     "출처": 8
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "『해석학 강의』(1821)에서 극한을 먼저 정의하고 도함수를 차분몫의 극한으로 재정의했다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "바이어슈트라스",
+     "변화": "극한 자체를 부등식으로 재서술(엡실론–델타)해 기하적 직관과 무한소를 해석학의 기초에서 완전히 몰아냈다.",
+     "출처": 8
+    },
+    {
+     "세기": 19,
+     "인물": "바이어슈트라스",
+     "변화": "모든 점에서 연속이면서 어느 점에서도 미분불가능한 함수를 제시해(1872) 직관에 의존한 논증을 무너뜨렸다.",
+     "출처": 7
+    },
+    {
+     "세기": 20,
+     "인물": "로빈슨",
+     "변화": "초실수 체계를 구성해 무한소를 논리적으로 정당화했다(1960년대). 라이프니츠의 계산이 사후에 복권됐다.",
+     "출처": 5
+    }
+   ],
+   "선행개념": [
+    "concept-differentiation"
+   ],
+   "후속개념": [
+    "concept-real-analysis"
+   ],
+   "기여인물": [
+    "person-leibniz",
+    "person-newton"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Cauchy, 『Cours d'analyse de l'École royale polytechnique』 1re partie (1821) — 원본 스캔",
+     "URL": "https://archive.org/details/coursdanalysedel00cauc",
+     "유형": "1차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Cours d'Analyse — 1821년판의 구성과 의의",
+     "URL": "https://en.wikipedia.org/wiki/Cours_d%27Analyse",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Leibniz's notation — dx의 지위와 표기의 이점",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%27s_notation",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, The Analyst (1734) — 버클리의 비판 구조",
+     "URL": "https://en.wikipedia.org/wiki/The_Analyst",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Nonstandard analysis — 로빈슨의 무한소 정당화",
+     "URL": "https://en.wikipedia.org/wiki/Nonstandard_analysis",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Hyperreal number — 초실수 체계",
+     "URL": "https://en.wikipedia.org/wiki/Hyperreal_number",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Stanford Encyclopedia of Philosophy, Continuity and Infinitesimals",
+     "URL": "https://plato.stanford.edu/entries/continuity/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Calculus — 볼차노·코시·바이어슈트라스에 의한 엄밀화",
+     "URL": "https://en.wikipedia.org/wiki/Differential_and_integral_calculus",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor History of Mathematics, Cauchy's Calculus — 코시의 정의 발췌",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Cauchy_Calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "arXiv:1712.00226 — Cauchy, infinitesimals and ghosts of departed quantifiers",
+     "URL": "https://arxiv.org/pdf/1712.00226",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Adequality — 페르마의 근사등식 절차",
+     "URL": "https://en.wikipedia.org/wiki/Adequality",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Katz·Schaps·Shnider, Almost Equal — Method of Adequality from Diophantus to Fermat and Beyond (arXiv:1210.7750)",
+     "URL": "https://arxiv.org/abs/1210.7750",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor History of Mathematics, The rise of calculus",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과(수학백과), 도함수 — 순간변화율과 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338255&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "네이버 지식백과(수학백과), 미분법 — 순간변화율과 적분의 역",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338336&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-differentiation-advanced/note.md",
+   "세기전체": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "자수": 10909,
+   "시각화": 6
   },
   {
    "유형": "인물",
@@ -1439,6 +1795,9 @@
  ],
  "index": {
   "세기": {
+   "-3": [
+    "concept-integration"
+   ],
    "16": [
     "person-napier"
    ],
@@ -1446,6 +1805,8 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -1459,18 +1820,26 @@
    ],
    "18": [
     "concept-differentiation",
+    "concept-differentiation-advanced",
     "episode-priority-dispute",
     "person-leibniz",
     "person-newton"
    ],
    "19": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration"
+   ],
+   "20": [
+    "concept-differentiation-advanced"
    ]
   },
   "분야": {
    "해석학": [
     "century-17c",
     "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration",
     "episode-priority-dispute",
     "person-fermat",
     "person-leibniz",
@@ -1494,6 +1863,9 @@
     "concept-analytic-geometry",
     "person-descartes",
     "person-napier"
+   ],
+   "수학기초론": [
+    "concept-differentiation-advanced"
    ],
    "역학": [
     "episode-newton-apple",
@@ -1526,18 +1898,20 @@
    ],
    "미적분Ⅰ": [
     "concept-differentiation",
+    "concept-differentiation-advanced",
     "person-fermat",
     "person-leibniz",
     "person-newton"
+   ],
+   "미적분Ⅱ": [
+    "concept-integration",
+    "person-napier"
    ],
    "확률과통계": [
     "person-fermat",
     "person-pascal"
    ],
    "공통수학1": [
-    "person-napier"
-   ],
-   "미적분Ⅱ": [
     "person-napier"
    ]
   },
@@ -1547,7 +1921,9 @@
    ],
    "개념": [
     "concept-analytic-geometry",
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -1569,6 +1945,8 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -1584,6 +1962,7 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-differentiation",
+    "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -1640,14 +2019,16 @@
     "concept-analytic-geometry"
    ],
    "미분": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced"
    ],
    "접선": [
     "concept-differentiation",
     "person-fermat"
    ],
    "무한소": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced"
    ],
    "뉴턴": [
     "concept-differentiation",
@@ -1661,7 +2042,35 @@
     "person-leibniz"
    ],
    "코시": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced"
+   ],
+   "버클리": [
+    "concept-differentiation-advanced"
+   ],
+   "바이어슈트라스": [
+    "concept-differentiation-advanced"
+   ],
+   "비표준해석학": [
+    "concept-differentiation-advanced"
+   ],
+   "엄밀화": [
+    "concept-differentiation-advanced"
+   ],
+   "적분": [
+    "concept-integration"
+   ],
+   "구분구적법": [
+    "concept-integration"
+   ],
+   "카발리에리": [
+    "concept-integration"
+   ],
+   "배로": [
+    "concept-integration"
+   ],
+   "기본정리": [
+    "concept-integration"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -1735,34 +2144,62 @@
     "concept-analytic-geometry",
     "episode-descartes-fly"
    ],
-   "후대 편집자들": [
-    "concept-analytic-geometry"
-   ],
    "person-fermat": [
     "concept-analytic-geometry",
     "concept-differentiation",
     "episode-pascal-fermat-letters"
    ],
-   "person-leibniz": [
-    "concept-differentiation",
-    "episode-priority-dispute"
-   ],
-   "배로": [
-    "concept-differentiation"
-   ],
-   "코시": [
-    "concept-differentiation"
+   "후대 편집자들": [
+    "concept-analytic-geometry"
    ],
    "person-newton": [
     "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration",
     "episode-newton-apple",
     "episode-priority-dispute"
    ],
+   "person-leibniz": [
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-integration",
+    "episode-priority-dispute"
+   ],
+   "코시": [
+    "concept-differentiation",
+    "concept-differentiation-advanced"
+   ],
    "버클리": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-differentiation-advanced"
+   ],
+   "배로": [
+    "concept-differentiation",
+    "concept-integration"
    ],
    "person-barrow": [
     "concept-differentiation"
+   ],
+   "바이어슈트라스": [
+    "concept-differentiation-advanced"
+   ],
+   "라그랑주": [
+    "concept-differentiation-advanced"
+   ],
+   "로빈슨": [
+    "concept-differentiation-advanced"
+   ],
+   "리만": [
+    "concept-integration"
+   ],
+   "월리스": [
+    "concept-integration"
+   ],
+   "아르키메데스": [
+    "concept-integration"
+   ],
+   "카발리에리": [
+    "concept-integration"
    ],
    "person-pascal": [
     "episode-pascal-fermat-letters"
@@ -1923,6 +2360,18 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "episode-priority-dispute",
      "제목": "뉴턴–라이프니츠 우선권 논쟁",
      "유형": "일화",
@@ -1971,6 +2420,12 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "episode-pascal-fermat-letters",
@@ -2029,6 +2484,18 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "episode-newton-apple",
@@ -2107,6 +2574,18 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "episode-newton-apple",
      "제목": "뉴턴의 사과",
      "유형": "일화",
@@ -2137,6 +2616,12 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "본문"
     }
    ],
    "episode-descartes-fly": [
@@ -2153,6 +2638,40 @@
      "경로": "관련일화"
     }
    ],
+   "concept-integration": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-differentiation-advanced": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "짝문서"
+    }
+   ],
    "episode-newton-apple": [
     {
      "슬러그": "person-newton",
@@ -2164,87 +2683,104 @@
   }
  },
  "별칭": {
+  "십칠세기": "century-17c",
   "century-17c": "century-17c",
   "17세기": "century-17c",
-  "십칠세기": "century-17c",
   "세기_17세기": "century-17c",
   "과학혁명의 세기": "century-17c",
   "해석기하": "concept-analytic-geometry",
   "해석기하학": "concept-analytic-geometry",
+  "좌표평면": "concept-analytic-geometry",
   "좌표기하": "concept-analytic-geometry",
+  "개념_해석기하": "concept-analytic-geometry",
   "데카르트 기하학": "concept-analytic-geometry",
   "해석기하 이해편": "concept-analytic-geometry",
-  "concept-analytic-geometry": "concept-analytic-geometry",
-  "좌표평면": "concept-analytic-geometry",
-  "개념_해석기하": "concept-analytic-geometry",
   "해석기하이해편": "concept-analytic-geometry",
-  "미분법": "concept-differentiation",
-  "유율법": "concept-differentiation",
-  "미분계수": "concept-differentiation",
-  "concept-differentiation": "concept-differentiation",
-  "미분법이해편": "concept-differentiation",
+  "concept-analytic-geometry": "concept-analytic-geometry",
   "개념_미분법": "concept-differentiation",
+  "유율법": "concept-differentiation",
+  "미분법이해편": "concept-differentiation",
+  "미분계수": "concept-differentiation",
+  "미분법": "concept-differentiation",
+  "미분법 이해편": "concept-differentiation",
   "미분": "concept-differentiation",
   "도함수": "concept-differentiation",
-  "미분법 이해편": "concept-differentiation",
-  "episode-descartes-fly": "episode-descartes-fly",
-  "일화_데카르트와 천장의 파리": "episode-descartes-fly",
+  "concept-differentiation": "concept-differentiation",
+  "개념_미분법 확장편": "concept-differentiation-advanced",
+  "무한소 논쟁": "concept-differentiation-advanced",
+  "미분 확장편": "concept-differentiation-advanced",
+  "미분법 (확장편) 확장편": "concept-differentiation-advanced",
+  "미분법 (확장편)": "concept-differentiation-advanced",
+  "미분법 (확장편)확장편": "concept-differentiation-advanced",
+  "concept-differentiation-advanced": "concept-differentiation-advanced",
+  "미분법 엄밀화": "concept-differentiation-advanced",
+  "구분구적법": "concept-integration",
+  "개념_적분법": "concept-integration",
+  "구적법": "concept-integration",
+  "적분법이해편": "concept-integration",
+  "적분법": "concept-integration",
+  "정적분": "concept-integration",
+  "concept-integration": "concept-integration",
+  "적분": "concept-integration",
+  "적분법 이해편": "concept-integration",
   "천장의 파리": "episode-descartes-fly",
   "데카르트와 천장의 파리": "episode-descartes-fly",
+  "episode-descartes-fly": "episode-descartes-fly",
+  "일화_데카르트와 천장의 파리": "episode-descartes-fly",
   "데카르트 파리": "episode-descartes-fly",
   "만유인력 사과": "episode-newton-apple",
   "사과나무": "episode-newton-apple",
+  "뉴턴의 사과": "episode-newton-apple",
   "일화_뉴턴의 사과": "episode-newton-apple",
   "episode-newton-apple": "episode-newton-apple",
-  "뉴턴의 사과": "episode-newton-apple",
+  "episode-pascal-fermat-letters": "episode-pascal-fermat-letters",
+  "분배 문제": "episode-pascal-fermat-letters",
+  "일화_파스칼-페르마 서신": "episode-pascal-fermat-letters",
   "점수 문제": "episode-pascal-fermat-letters",
   "파스칼–페르마 서신": "episode-pascal-fermat-letters",
   "도박 문제": "episode-pascal-fermat-letters",
-  "episode-pascal-fermat-letters": "episode-pascal-fermat-letters",
-  "일화_파스칼-페르마 서신": "episode-pascal-fermat-letters",
-  "분배 문제": "episode-pascal-fermat-letters",
+  "미적분 논쟁": "episode-priority-dispute",
   "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
+  "우선권 논쟁": "episode-priority-dispute",
+  "표절 시비": "episode-priority-dispute",
   "뉴턴–라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "episode-priority-dispute": "episode-priority-dispute",
-  "표절 시비": "episode-priority-dispute",
-  "우선권 논쟁": "episode-priority-dispute",
-  "미적분 논쟁": "episode-priority-dispute",
-  "르네데카르트": "person-descartes",
-  "르네 데카르트": "person-descartes",
   "person-descartes": "person-descartes",
-  "데카르트": "person-descartes",
+  "르네 데카르트": "person-descartes",
+  "르네데카르트": "person-descartes",
   "인물_르네 데카르트": "person-descartes",
   "Descartes": "person-descartes",
+  "데카르트": "person-descartes",
   "피에르 드 페르마": "person-fermat",
   "피에르페르마": "person-fermat",
   "Fermat": "person-fermat",
-  "person-fermat": "person-fermat",
-  "페르마": "person-fermat",
   "인물_피에르 드 페르마": "person-fermat",
+  "페르마": "person-fermat",
+  "person-fermat": "person-fermat",
+  "고트프리트 빌헬름 라이프니츠": "person-leibniz",
   "인물_고트프리트 라이프니츠": "person-leibniz",
   "Leibniz": "person-leibniz",
-  "고트프리트 라이프니츠": "person-leibniz",
-  "고트프리트 빌헬름 라이프니츠": "person-leibniz",
-  "person-leibniz": "person-leibniz",
   "라이프니츠": "person-leibniz",
-  "존네이피어": "person-napier",
-  "person-napier": "person-napier",
+  "person-leibniz": "person-leibniz",
+  "고트프리트 라이프니츠": "person-leibniz",
   "Napier": "person-napier",
+  "존네이피어": "person-napier",
   "존 네이피어": "person-napier",
+  "네이피어": "person-napier",
+  "person-napier": "person-napier",
   "네피어": "person-napier",
   "인물_존 네이피어": "person-napier",
-  "네이피어": "person-napier",
-  "인물_아이작 뉴턴": "person-newton",
-  "아이작뉴턴": "person-newton",
+  "person-newton": "person-newton",
   "아이작 뉴턴": "person-newton",
+  "인물_아이작 뉴턴": "person-newton",
   "Isaac Newton": "person-newton",
   "뉴턴": "person-newton",
-  "person-newton": "person-newton",
+  "아이작뉴턴": "person-newton",
   "인물_블레즈 파스칼": "person-pascal",
-  "블레즈파스칼": "person-pascal",
-  "person-pascal": "person-pascal",
-  "파스칼": "person-pascal",
   "Pascal": "person-pascal",
-  "블레즈 파스칼": "person-pascal"
+  "person-pascal": "person-pascal",
+  "블레즈파스칼": "person-pascal",
+  "블레즈 파스칼": "person-pascal",
+  "파스칼": "person-pascal"
  }
 }
