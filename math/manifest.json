@@ -2374,6 +2374,129 @@
    "시각화": 1
   },
   {
+   "유형": "인물",
+   "제목": "레온하르트 오일러",
+   "슬러그": "person-euler",
+   "별칭": [
+    "오일러",
+    "Leonhard Euler",
+    "레온하르트오일러",
+    "오일러 공식",
+    "오일러 항등식"
+   ],
+   "볼트파일명": "인물_레온하르트 오일러",
+   "세기": [
+    18
+   ],
+   "분야": [
+    "해석학",
+    "정수론",
+    "그래프이론",
+    "역학",
+    "천문학"
+   ],
+   "교과": [
+    "미적분Ⅱ",
+    "기하"
+   ],
+   "난이도": "표준",
+   "요약": "눈이 멀고 나서 평생 저작의 절반을 썼다. 오늘날 우리가 쓰는 수학 기호의 상당수가 이 사람 손에서 나왔고, 그래서 우리는 오일러의 문법으로 수학을 배운다.",
+   "태그": [
+    "수학사",
+    "오일러",
+    "오일러항등식",
+    "바젤문제",
+    "쾨니히스베르크",
+    "그래프이론",
+    "기호",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1707,
+    "사망": 1783,
+    "출생지": "스위스 바젤"
+   },
+   "기여개념": [
+    "concept-fundamental-theorem",
+    "concept-integration"
+   ],
+   "관련일화": [],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 생몰·경력·실명 시점·저작량·사망 정황",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 오일러 — 18세기 유럽 수학에서 오일러의 위치",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582448&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 오일러 공식 — 복소수 체계에서 삼각함수와 지수함수가 한가족임을 보이는 항등식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405237&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 오일러 항등식 — π·e·i·0·1이 어우러진 식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405238&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학달력), 오일러의 항등식 — 가장 아름다운 공식 설문",
+     "URL": "https://terms.naver.com/entry.naver?docId=5138669&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 쾨니히스베르크 다리건너기 문제 — 프레겔강의 일곱 다리",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338204&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 오일러 회로 — 모든 변을 한 번씩 지나는 회로",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338422&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 오일러 행로 — 1736년 쾨니히스베르크 문제 해결",
+     "URL": "https://terms.naver.com/entry.naver?docId=851675&cid=50373&categoryId=50373",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Contributions of Leonhard Euler to mathematics — 도입·보급한 기호(e·i·f(x)·Σ·π)",
+     "URL": "https://en.wikipedia.org/wiki/Contributions_of_Leonhard_Euler_to_mathematics",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Britannica, Leonhard Euler — 생애와 업적 개관",
+     "URL": "https://www.britannica.com/biography/Leonhard-Euler",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikiquote, Pierre-Simon Laplace — \"Lisez Euler…\" 의 출처가 리브리의 1846년 『Journal des Savants』 전언이라는 기록",
+     "URL": "https://en.wikiquote.org/wiki/Pierre-Simon_Laplace",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-euler/note.md",
+   "세기전체": [
+    18
+   ],
+   "자수": 6514,
+   "시각화": 3
+  },
+  {
    "유형": "개념",
    "제목": "적분법 (확장편)",
    "슬러그": "concept-integration-advanced",
@@ -2596,6 +2719,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "episode-priority-dispute",
+    "person-euler",
     "person-leibniz",
     "person-newton"
    ],
@@ -2624,6 +2748,7 @@
     "concept-integration-advanced",
     "episode-priority-dispute",
     "person-barrow",
+    "person-euler",
     "person-fermat",
     "person-gregory",
     "person-leibniz",
@@ -2663,6 +2788,7 @@
    ],
    "역학": [
     "episode-newton-apple",
+    "person-euler",
     "person-newton"
    ],
    "광학": [
@@ -2678,9 +2804,14 @@
     "person-leibniz"
    ],
    "정수론": [
+    "person-euler",
     "person-fermat"
    ],
+   "그래프이론": [
+    "person-euler"
+   ],
    "천문학": [
+    "person-euler",
     "person-gregory"
    ],
    "논리학": [
@@ -2699,7 +2830,8 @@
     "person-descartes"
    ],
    "기하": [
-    "concept-analytic-geometry-advanced"
+    "concept-analytic-geometry-advanced",
+    "person-euler"
    ],
    "미적분Ⅰ": [
     "concept-differentiation",
@@ -2713,6 +2845,7 @@
     "concept-integration",
     "concept-integration-advanced",
     "person-barrow",
+    "person-euler",
     "person-gregory",
     "person-napier"
    ],
@@ -2746,6 +2879,7 @@
    "인물": [
     "person-barrow",
     "person-descartes",
+    "person-euler",
     "person-fermat",
     "person-gregory",
     "person-leibniz",
@@ -2770,6 +2904,7 @@
     "episode-priority-dispute",
     "person-barrow",
     "person-descartes",
+    "person-euler",
     "person-fermat",
     "person-gregory",
     "person-leibniz",
@@ -2968,6 +3103,7 @@
    ],
    "18세기": [
     "episode-priority-dispute",
+    "person-euler",
     "person-leibniz",
     "person-newton"
    ],
@@ -2979,6 +3115,25 @@
    ],
    "방법서설": [
     "person-descartes"
+   ],
+   "오일러": [
+    "person-euler"
+   ],
+   "오일러항등식": [
+    "person-euler"
+   ],
+   "바젤문제": [
+    "person-euler"
+   ],
+   "쾨니히스베르크": [
+    "person-euler"
+   ],
+   "그래프이론": [
+    "person-euler"
+   ],
+   "기호": [
+    "person-euler",
+    "person-leibniz"
    ],
    "극대극소": [
     "person-fermat"
@@ -2994,9 +3149,6 @@
    ],
    "반사망원경": [
     "person-gregory"
-   ],
-   "기호": [
-    "person-leibniz"
    ],
    "dy/dx": [
     "person-leibniz"
@@ -3363,6 +3515,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-napier",
      "제목": "존 네이피어",
      "유형": "인물",
@@ -3479,6 +3637,12 @@
      "제목": "르네 데카르트",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-differentiation": [
@@ -3539,6 +3703,12 @@
     {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "본문"
     },
@@ -3693,6 +3863,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-fermat",
      "제목": "피에르 드 페르마",
      "유형": "인물",
@@ -3757,6 +3933,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-gregory",
      "제목": "제임스 그레고리",
      "유형": "인물",
@@ -3805,6 +3987,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -3869,6 +4057,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -4040,6 +4234,14 @@
   "르네 데카르트": "person-descartes",
   "르네데카르트": "person-descartes",
   "인물_르네 데카르트": "person-descartes",
+  "Leonhard Euler": "person-euler",
+  "person-euler": "person-euler",
+  "레온하르트 오일러": "person-euler",
+  "레온하르트오일러": "person-euler",
+  "오일러": "person-euler",
+  "오일러 공식": "person-euler",
+  "오일러 항등식": "person-euler",
+  "인물_레온하르트 오일러": "person-euler",
   "Fermat": "person-fermat",
   "person-fermat": "person-fermat",
   "인물_피에르 드 페르마": "person-fermat",

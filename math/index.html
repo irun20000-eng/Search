@@ -137,7 +137,9 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
   padding-bottom:6px;margin-bottom:12px}
 .lifeaxis span{flex:1}
 .liferow{display:flex;align-items:center;gap:12px;margin-bottom:9px}
-.lifename{width:110px;font-size:13.5px;text-align:right;color:var(--ink2);flex:none;cursor:pointer}
+/* 폭은 렌더 뒤 fitLifeNames() 가 가장 긴 이름에 맞춰 넣는다. 고정값은 폴백. */
+.lifename{width:var(--lifename-w,110px);font-size:13.5px;text-align:right;color:var(--ink2);
+  flex:none;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lifename:hover{color:var(--accent)}
 .lifetrack{flex:1;height:15px;position:relative}
 .lifebar{position:absolute;height:15px;border-radius:1px;background:var(--c-인물);opacity:.78;
@@ -929,6 +931,26 @@ function renderConcepts(){
   });
   return html;
 }
+/* 이름 열 폭을 가장 긴 이름에 맞춘다.
+   고정 폭으로 두면 이름이 길어질 때마다 두 줄로 접힌다(라이프니츠에서 실제로 그랬다).
+   좁은 화면에서는 생몰 막대가 뭉개지지 않도록 컨테이너의 40% 로 상한을 건다. */
+function fitLifeNames(){
+  var names=$$(".lifename");
+  if(!names.length) return;
+  /* 사람 이름은 자르지 않는다 — 말줄임표가 붙은 인명은 읽히지 않는다.
+     생몰 막대 영역은 좁은 화면에서 자체적으로 가로 스크롤되므로 잘라 넣을 이유가 없다.
+     비정상적으로 긴 이름만 막기 위해 절대 상한만 둔다. */
+  var cap=220;
+  var w=0;
+  names.forEach(function(el){
+    var prev=el.style.width;
+    el.style.width="auto";           // 실제 글자 폭을 재려면 폭 제한을 잠시 푼다
+    w=Math.max(w, el.scrollWidth);
+    el.style.width=prev;
+  });
+  document.documentElement.style.setProperty("--lifename-w", Math.min(Math.ceil(w)+2, cap)+"px");
+}
+
 function renderPeople(){
   var list=((IDX["유형"]||{})["인물"]||[]).map(function(s){return BY[s];})
     .filter(function(n){return n&&n["생몰"];});
@@ -1004,6 +1026,8 @@ function renderView(){
   wireView();
 }
 function wireView(){
+  fitLifeNames();
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitLifeNames);
   $$("[data-go]").forEach(function(el){
     if(el.closest("#sheet")) return;
     el.addEventListener("click",function(e){
@@ -1117,6 +1141,7 @@ async function boot(){
         $("#article").style.fontSize=PREFS.fs+"px"; break;
     }
   });
+  window.addEventListener("resize", fitLifeNames);
   window.addEventListener("hashchange",applyHash);
   $("#sheet").addEventListener("scroll",function(){
     var art=$("#article"); if(!art) return;
