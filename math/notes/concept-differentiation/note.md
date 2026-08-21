@@ -40,7 +40,7 @@
     출처: 13
 
 선행개념: [concept-analytic-geometry]
-후속개념: [concept-integration]
+후속개념: [concept-integration, concept-fundamental-theorem]
 기여인물: [person-fermat, person-barrow, person-newton, person-leibniz]
 
 이미지:

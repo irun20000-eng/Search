@@ -16,7 +16,7 @@
   사망: 1727
   출생지: 잉글랜드 링컨셔 울즈소프
 
-기여개념: [concept-differentiation, concept-integration]
+기여개념: [concept-differentiation, concept-integration, concept-fundamental-theorem]
 관련일화: [episode-newton-apple, episode-priority-dispute]
 
 출처:
