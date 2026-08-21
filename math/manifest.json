@@ -2152,9 +2152,14 @@
    "후대 편집자들": [
     "concept-analytic-geometry"
    ],
-   "버클리": [
+   "person-barrow": [
+    "concept-differentiation"
+   ],
+   "person-leibniz": [
     "concept-differentiation",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-integration",
+    "episode-priority-dispute"
    ],
    "person-newton": [
     "concept-differentiation",
@@ -2167,20 +2172,12 @@
     "concept-differentiation",
     "concept-integration"
    ],
-   "person-leibniz": [
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-integration",
-    "episode-priority-dispute"
-   ],
-   "코시": [
+   "버클리": [
     "concept-differentiation",
     "concept-differentiation-advanced"
    ],
-   "person-barrow": [
-    "concept-differentiation"
-   ],
-   "바이어슈트라스": [
+   "코시": [
+    "concept-differentiation",
     "concept-differentiation-advanced"
    ],
    "라그랑주": [
@@ -2189,16 +2186,19 @@
    "로빈슨": [
     "concept-differentiation-advanced"
    ],
-   "카발리에리": [
+   "바이어슈트라스": [
+    "concept-differentiation-advanced"
+   ],
+   "리만": [
     "concept-integration"
    ],
    "아르키메데스": [
     "concept-integration"
    ],
-   "리만": [
+   "월리스": [
     "concept-integration"
    ],
-   "월리스": [
+   "카발리에리": [
     "concept-integration"
    ],
    "person-pascal": [

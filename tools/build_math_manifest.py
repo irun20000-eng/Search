@@ -129,7 +129,9 @@ def main():
         names = list(n.get("기여인물") or []) + list(n.get("관련인물") or [])
         names += [st.get("인물") for st in (n.get("발전단계") or [])
                   if isinstance(st, dict) and st.get("인물")]
-        for nm in {M.norm(x) for x in names if isinstance(x, str)}:
+        # 집합 순회 순서는 실행마다 달라진다(문자열 해시가 프로세스마다 다르다).
+        # 정렬하지 않으면 내용이 같아도 인물 인덱스 순서가 매번 바뀐다.
+        for nm in sorted({M.norm(x) for x in names if isinstance(x, str)}):
             p = alias2slug.get(nm, nm)
             if n["슬러그"] not in by_person[p]:
                 by_person[p].append(n["슬러그"])

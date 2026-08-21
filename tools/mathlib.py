@@ -259,6 +259,10 @@ def load_link_index(path=None):
 
 
 def dump_json(path, obj):
+    # newline="\n" 이 없으면 윈도우에서 \n 이 \r\n 으로 바뀐다.
+    # 그러면 내용이 같아도 빌드를 돌릴 때마다 파일 전체가 바뀐 것으로 잡힌다
+    # (블롭은 .gitattributes 가 LF 로 정규화하므로 작업본만 어긋난다).
     Path(path).write_text(
-        json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+        json.dumps(obj, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8", newline="\n"
     )
