@@ -17,7 +17,7 @@
   출생지: 사르데냐피에몬테 토리노
 
 기여개념: [concept-differentiation, concept-differentiation-advanced]
-관련일화: []
+관련인물: [person-laplace, person-euler]
 
 출처:
   - 번호: 1
