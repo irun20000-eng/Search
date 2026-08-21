@@ -2227,7 +2227,8 @@
    "별칭": [
     "점수 문제",
     "분배 문제",
-    "도박 문제"
+    "도박 문제",
+    "파스칼-페르마 서신"
    ],
    "볼트파일명": "일화_파스칼-페르마 서신",
    "세기": [
@@ -2372,6 +2373,174 @@
    ],
    "자수": 1200,
    "시각화": 1
+  },
+  {
+   "유형": "세기",
+   "제목": "18세기",
+   "슬러그": "century-18c",
+   "별칭": [
+    "18세기",
+    "십팔세기",
+    "계몽의 세기",
+    "해석학의 세기"
+   ],
+   "볼트파일명": "세기_18세기",
+   "세기": [
+    18
+   ],
+   "분야": [
+    "해석학",
+    "역학",
+    "확률론",
+    "정수론"
+   ],
+   "난이도": "개관",
+   "요약": "앞 세기가 만든 도구를 능숙하게 쓴 세기. 그림을 지우고 식만 남긴 자리에서 역학이 해석학이 되었고, 근거를 대지 못한 채로도 계산은 끝없이 뻗어 나갔다.",
+   "태그": [
+    "수학사",
+    "18세기",
+    "계몽주의",
+    "오일러",
+    "라그랑주",
+    "라플라스",
+    "해석학",
+    "프랑스혁명"
+   ],
+   "연대": {
+    "시작": 1701,
+    "끝": 1800
+   },
+   "시대이슈": [
+    "계몽주의 — 이성으로 세계를 설명하려는 기획이 학문 전반을 재편함",
+    "왕립 아카데미 체제 — 상트페테르부르크·베를린·파리가 수학자를 고용하고 경쟁시킴",
+    "프랑스 혁명(1789)과 그 여파 — 학제와 교육이 근본부터 다시 짜임",
+    "산업혁명의 시작 — 기계와 계산에 대한 실용적 수요",
+    "해석학의 근거 문제 — 버클리가 짚은 무한소의 결함이 세기 내내 미해결로 남음"
+   ],
+   "세계사사건": [
+    {
+     "연도": 1751,
+     "사건": "『백과전서』 간행 시작",
+     "수학과의연결": "달랑베르가 수학 항목을 맡아, 수학이 계몽의 공용 지식으로 편입되었다"
+    },
+    {
+     "연도": 1756,
+     "사건": "7년 전쟁 발발",
+     "수학과의연결": "탄도학·측량 수요가 늘고, 수학자들의 후원처가 전쟁의 향방에 따라 흔들렸다"
+    },
+    {
+     "연도": 1776,
+     "사건": "미국 독립선언",
+     "수학과의연결": "계몽의 정치적 실현으로 읽히며, 이성에 기초한 사회 설계 담론을 키웠다"
+    },
+    {
+     "연도": 1789,
+     "사건": "프랑스 혁명",
+     "수학과의연결": "아카데미가 해체되고 새 교육기관이 세워지며 수학자의 자리가 바뀌었다"
+    },
+    {
+     "연도": 1794,
+     "사건": "에콜 폴리테크니크 설립",
+     "수학과의연결": "수학이 소수의 후원 학문에서 국가가 대량으로 가르치는 과목이 되었다"
+    },
+    {
+     "연도": 1795,
+     "사건": "미터법 도입",
+     "수학과의연결": "십진법에 기초한 단위계가 국가 표준이 되며 측량과 계산이 재편되었다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 18세기 수학의 중심 인물과 아카데미 체제",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 오일러 — 18세기 유럽 수학이 고대·동양의 성취를 앞지른 시기라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582448&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Mécanique analytique — 1788년 라그랑주의 서문(\"이 책에는 그림이 없다\")과 해석적 방법",
+     "URL": "https://en.wikipedia.org/wiki/M%C3%A9canique_analytique",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 오일러 공식 — 지수함수와 삼각함수를 잇는 항등식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405237&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 쾨니히스베르크 다리건너기 문제 — 1736년, 그래프이론의 출발",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338204&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(한국민족문화대백과), 수리정온 — 1723년 청 매곡성 등이 서양수학을 해석해 편찬, 강희제의 명",
+     "URL": "https://terms.naver.com/entry.naver?docId=558816&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(한국민족문화대백과), 구일집 — 1724년 홍정하가 천원술을 정리·응용해 저술",
+     "URL": "https://terms.naver.com/entry.naver?docId=524958&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(한국민족문화대백과), 주해수용 — 홍대용이 영조 연간에 저술한 수학서, 2권 1책 필사본",
+     "URL": "https://terms.naver.com/entry.naver?docId=550064&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 주해수용 — 가감승제·다원일차연립방정식·삼각법 등의 계산 수단을 실었다",
+     "URL": "https://terms.naver.com/entry.naver?docId=1622562&cid=50316&categoryId=50316",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과, 홍대용 — 1731년 충청도 천안 출생, 북학파 실학자, 지전설",
+     "URL": "https://terms.naver.com/entry.naver?docId=3560772&cid=47306&categoryId=47306",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과, 서양 문물의 수용 — 사신과 선교사를 통한 유입, 성호학파와 북학파의 태도",
+     "URL": "https://terms.naver.com/entry.naver?docId=2060261&cid=47322&categoryId=47322",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과, 조선시대 천문학의 발전 — 규장각 문헌으로 본 조선의 과학 수준",
+     "URL": "https://terms.naver.com/entry.naver?docId=3580076&cid=59020&categoryId=59026",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, Contributions of Leonhard Euler to mathematics — 18세기에 표준이 된 기호들",
+     "URL": "https://en.wikipedia.org/wiki/Contributions_of_Leonhard_Euler_to_mathematics",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Britannica, Leonhard Euler — 18세기 수학의 지형",
+     "URL": "https://www.britannica.com/biography/Leonhard-Euler",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/century-18c/note.md",
+   "세기전체": [
+    18
+   ],
+   "자수": 7730,
+   "시각화": 5
   },
   {
    "유형": "인물",
@@ -2716,6 +2885,7 @@
     "person-pascal"
    ],
    "18": [
+    "century-18c",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "episode-priority-dispute",
@@ -2741,6 +2911,7 @@
   "분야": {
    "해석학": [
     "century-17c",
+    "century-18c",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -2765,6 +2936,7 @@
    ],
    "확률론": [
     "century-17c",
+    "century-18c",
     "concept-integration-advanced",
     "episode-pascal-fermat-letters",
     "person-fermat",
@@ -2777,6 +2949,17 @@
     "person-descartes",
     "person-napier"
    ],
+   "역학": [
+    "century-18c",
+    "episode-newton-apple",
+    "person-euler",
+    "person-newton"
+   ],
+   "정수론": [
+    "century-18c",
+    "person-euler",
+    "person-fermat"
+   ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
    ],
@@ -2785,11 +2968,6 @@
    ],
    "측도론": [
     "concept-integration-advanced"
-   ],
-   "역학": [
-    "episode-newton-apple",
-    "person-euler",
-    "person-newton"
    ],
    "광학": [
     "person-barrow",
@@ -2802,10 +2980,6 @@
    "철학": [
     "person-descartes",
     "person-leibniz"
-   ],
-   "정수론": [
-    "person-euler",
-    "person-fermat"
    ],
    "그래프이론": [
     "person-euler"
@@ -2859,7 +3033,8 @@
   },
   "유형": {
    "세기": [
-    "century-17c"
+    "century-17c",
+    "century-18c"
    ],
    "개념": [
     "concept-analytic-geometry",
@@ -2891,6 +3066,7 @@
   "태그": {
    "수학사": [
     "century-17c",
+    "century-18c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "concept-differentiation",
@@ -2956,6 +3132,32 @@
    "로그": [
     "century-17c",
     "person-napier"
+   ],
+   "18세기": [
+    "century-18c",
+    "episode-priority-dispute",
+    "person-euler",
+    "person-leibniz",
+    "person-newton"
+   ],
+   "계몽주의": [
+    "century-18c"
+   ],
+   "오일러": [
+    "century-18c",
+    "person-euler"
+   ],
+   "라그랑주": [
+    "century-18c"
+   ],
+   "라플라스": [
+    "century-18c"
+   ],
+   "해석학": [
+    "century-18c"
+   ],
+   "프랑스혁명": [
+    "century-18c"
    ],
    "좌표": [
     "concept-analytic-geometry",
@@ -3101,12 +3303,6 @@
    "우선권": [
     "episode-priority-dispute"
    ],
-   "18세기": [
-    "episode-priority-dispute",
-    "person-euler",
-    "person-leibniz",
-    "person-newton"
-   ],
    "루카스석좌": [
     "person-barrow"
    ],
@@ -3115,9 +3311,6 @@
    ],
    "방법서설": [
     "person-descartes"
-   ],
-   "오일러": [
-    "person-euler"
    ],
    "오일러항등식": [
     "person-euler"
@@ -3403,6 +3596,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -3609,6 +3808,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analytic-geometry-advanced",
      "제목": "해석기하 (확장편)",
      "유형": "개념",
@@ -3649,6 +3854,12 @@
     {
      "슬러그": "century-17c",
      "제목": "17세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
     },
@@ -3741,6 +3952,12 @@
     {
      "슬러그": "century-17c",
      "제목": "17세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
     },
@@ -3887,15 +4104,13 @@
      "경로": "본문"
     }
    ],
-   "concept-analytic-geometry-advanced": [
-    {
-     "슬러그": "concept-analytic-geometry",
-     "제목": "해석기하",
-     "유형": "개념",
-     "경로": "짝문서"
-    }
-   ],
    "century-17c": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
@@ -3945,91 +4160,21 @@
      "경로": "본문"
     }
    ],
-   "episode-descartes-fly": [
+   "person-euler": [
     {
-     "슬러그": "concept-analytic-geometry",
-     "제목": "해석기하",
-     "유형": "개념",
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
      "경로": "본문"
-    },
-    {
-     "슬러그": "person-descartes",
-     "제목": "르네 데카르트",
-     "유형": "인물",
-     "경로": "관련일화"
-    }
-   ],
-   "concept-fundamental-theorem": [
-    {
-     "슬러그": "concept-analytic-geometry-advanced",
-     "제목": "해석기하 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-differentiation",
-     "제목": "미분법",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-integration-advanced",
-     "제목": "적분법 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "person-barrow",
-     "제목": "아이작 배로",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-gregory",
-     "제목": "제임스 그레고리",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-leibniz",
-     "제목": "고트프리트 라이프니츠",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-newton",
-     "제목": "아이작 뉴턴",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
-   "concept-integration-advanced": [
-    {
-     "슬러그": "concept-analytic-geometry-advanced",
-     "제목": "해석기하 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "짝문서"
     }
    ],
    "concept-integration": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
@@ -4085,7 +4230,75 @@
      "경로": "기여개념"
     }
    ],
+   "concept-fundamental-theorem": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
    "concept-differentiation-advanced": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
@@ -4097,6 +4310,54 @@
      "제목": "적분법 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    }
+   ],
+   "concept-integration-advanced": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "짝문서"
+    }
+   ],
+   "concept-analytic-geometry-advanced": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "짝문서"
+    }
+   ],
+   "episode-descartes-fly": [
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "관련일화"
     }
    ],
    "person-gregory": [
@@ -4129,6 +4390,12 @@
   "과학혁명의 세기": "century-17c",
   "세기_17세기": "century-17c",
   "십칠세기": "century-17c",
+  "18세기": "century-18c",
+  "century-18c": "century-18c",
+  "계몽의 세기": "century-18c",
+  "세기_18세기": "century-18c",
+  "십팔세기": "century-18c",
+  "해석학의 세기": "century-18c",
   "concept-analytic-geometry": "concept-analytic-geometry",
   "개념_해석기하": "concept-analytic-geometry",
   "데카르트 기하학": "concept-analytic-geometry",
@@ -4213,6 +4480,7 @@
   "분배 문제": "episode-pascal-fermat-letters",
   "일화_파스칼-페르마 서신": "episode-pascal-fermat-letters",
   "점수 문제": "episode-pascal-fermat-letters",
+  "파스칼-페르마 서신": "episode-pascal-fermat-letters",
   "파스칼–페르마 서신": "episode-pascal-fermat-letters",
   "episode-priority-dispute": "episode-priority-dispute",
   "뉴턴–라이프니츠 우선권 논쟁": "episode-priority-dispute",
