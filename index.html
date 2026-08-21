@@ -136,6 +136,22 @@
   .hero-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
   .navbtn{flex:none;text-decoration:none;font-weight:800;font-size:.9rem;color:#fff;background:var(--accent);border-radius:12px;padding:10px 16px;box-shadow:var(--shadow);transition:.14s;white-space:nowrap}
   .navbtn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(232,116,59,.32)}
+
+  /* ── 상호 링크 (수학사 섹션과 공용 규약) ──────────────────
+     본문 [[위키링크]]와 인용 [n] 을 실제 링크로 만든다.
+     대상 조회표는 루트 link-index.json (tools/build_link_index.py 산출). */
+  .wl{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 42%,transparent)}
+  .wl:hover{background:var(--accent-soft);border-bottom-color:var(--accent)}
+  .wl-pending{color:var(--muted);border-bottom:1px dashed var(--line);cursor:help}
+  .wl-pending:hover{color:var(--ink);border-bottom-color:var(--muted)}
+  .cite{color:var(--accent);text-decoration:none;font-size:.78em;vertical-align:super;line-height:0;padding:0 1px;cursor:pointer}
+  .cite:hover{text-decoration:underline}
+  .srclist li{scroll-margin-top:60px;border-radius:3px}
+  .srclist li.flash{background:var(--accent-soft)}
+  #tip{position:fixed;z-index:99;max-width:340px;background:#2B2622;color:#F5EDE4;padding:10px 13px;border-radius:6px;font-size:.84rem;line-height:1.5;box-shadow:0 8px 28px rgba(0,0,0,.3);display:none}
+  #tip.show{display:block}
+  #tip .t-title{font-weight:600;margin-bottom:4px;color:#fff}
+  #tip .t-host{color:#B5A899;font-size:.76rem}
 </style>
 </head>
 <body>
@@ -145,7 +161,7 @@
     <h1>Search · 주제 리서치 갤러리</h1>
     <div style="display:flex;gap:8px;align-items:center">
       <button type="button" class="iconbtn" id="themeBtn" title="테마 전환" aria-label="테마 전환">◑ 다크</button>
-      <a class="navbtn" href="videos/" target="_blank" rel="noopener">🎬 영상노트 ↗</a><a class="navbtn" href="guides/" target="_blank" rel="noopener">📘 가이드 ↗</a>
+      <a class="navbtn" href="videos/" target="_blank" rel="noopener">🎬 영상노트 ↗</a><a class="navbtn" href="guides/" target="_blank" rel="noopener">📘 가이드 ↗</a><a class="navbtn" href="math/" target="_blank" rel="noopener">📐 수학사 ↗</a>
     </div>
   </div>
 </header>
@@ -177,6 +193,116 @@
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
 const MANIFEST="reports/manifest.json";
+/* ── 상호 링크 ──────────────────────────────────────────────
+   LINKIDX: 별칭 → LINKENT 인덱스.  tools/build_link_index.py 가 만든다.
+   추측 매칭은 하지 않는다 — 해석되지 않으면 흐린 표시로 남긴다
+   (그 목록이 곧 콘텐츠 백로그다). */
+let LINKIDX={}, LINKENT=[], CURSRC={};
+function nrm(x){ return String(x==null?"":x).replace(/\s+/g," ").trim(); }
+function linkHref(e){
+  if(e["섹션"]==="reports") return "#r="+encodeURIComponent(e["슬러그"]);
+  return String(e.url||"").replace(/^\.\//,"");
+}
+function renderWikilinks(md){
+  return md.replace(/\[\[([^\]\[|]+?)(?:\|([^\]\[]*))?\]\]/g,(m,t,l)=>{
+    const key=nrm(t), disp=esc(l?nrm(l):key);
+    const i=LINKIDX[key], e=(typeof i==="number")?LINKENT[i]:null;
+    if(e) return '<a class="wl" href="'+esc(linkHref(e))+'">'+disp+'</a>';
+    return '<span class="wl-pending" title="아직 작성되지 않은 문서">'+disp+'</span>';
+  });
+}
+function parseBodySources(md){
+  /* 62편이 출처 형식을 세 가지로 섞어 쓴다. 셋 다 받는다.
+       - [1] 제목 — URL         (calculus-discovery)
+       - [K1] 제목 — URL        (vector-advanced: 국내 K*, 해외 E*)
+       1. (국내) 제목 … URL      (hesse-demian, claude-plugins-guide)
+     정규식 한 방으로 섹션을 떼면 m 플래그의 $ 가 모든 줄 끝에 걸리므로 줄 순회로 읽는다. */
+  const out={}, lines=md.split("\n");
+  let i=srcHeadingIndex(lines);
+  if(i<0) return out;
+  for(i=i+1;i<lines.length;i++){
+    if(/^#{1,2}\s/.test(lines[i])) break;              // 다음 대절에서 멈춘다
+    let key=null,text=null,m;
+    if((m=/^\s*(?:[-*]\s*)?\[([A-Za-z]{0,2}\d{1,3})\]\s*(.+)$/.exec(lines[i]))){ key=m[1]; text=m[2]; }
+    else if((m=/^\s*(\d{1,3})[.)]\s+(.+)$/.exec(lines[i]))){ key=m[1]; text=m[2]; }
+    if(!key) continue;
+    const u=/(https?:\/\/\S+)/.exec(text);
+    out[key]={n:key,
+      text:text.replace(/\s*[—–-]?\s*https?:\/\/\S+\s*$/,"").trim(),
+      url:u?u[1]:""};
+  }
+  return out;
+}
+function srcHeadingIndex(lines){
+  for(let i=0;i<lines.length;i++) if(/^#{2,}\s*출처/.test(lines[i].trim())) return i;
+  return -1;
+}
+function renderCites(md,srcs){
+  if(!Object.keys(srcs).length) return md;
+  const lines=md.split("\n");
+  const a=srcHeadingIndex(lines);
+  let b=lines.length;
+  if(a>=0) for(let i=a+1;i<lines.length;i++) if(/^#{1,2}\s/.test(lines[i])){ b=i; break; }
+  return lines.map((line,i)=>{
+    if(a>=0 && i>=a && i<b) return line;              // 출처 목록 자체는 손대지 않는다
+    return line.replace(/\[([A-Za-z]{0,2}\d{1,3})\](?!\()/g,(m,k)=> srcs[k]
+      ? '<a class="cite" href="#src-'+k+'" data-s="'+k+'">['+k+']</a>' : m);
+  }).join("\n");
+}
+function tagSources(root){
+  /* '**국내**' / '**해외**' 소제목이 목록을 둘로 쪼개므로 다음 대절까지 전부 훑는다.
+     번호 목록(1. 2. …)은 ol 의 start + 인덱스로 번호를 복원한다. */
+  Array.from(root.querySelectorAll("h1,h2,h3"))
+    .filter(h=>/^출처/.test(h.textContent.trim()))
+    .forEach(h=>{
+      let el=h.nextElementSibling;
+      while(el && !/^H[12]$/.test(el.tagName)){
+        if(/^(UL|OL)$/.test(el.tagName)){
+          el.classList.add("srclist");
+          const start=parseInt(el.getAttribute("start")||"1",10);
+          Array.from(el.children).forEach((li,idx)=>{
+            const mm=/^\s*\[([A-Za-z]{0,2}\d{1,3})\]/.exec(li.textContent||"");
+            const key=mm?mm[1]:(el.tagName==="OL"?String(start+idx):null);
+            if(key && !li.id) li.id="src-"+key;
+          });
+        }
+        el=el.nextElementSibling;
+      }
+    });
+}
+function showTip(el,s){
+  if(!s) return;
+  const t=$("#tip"); let host="";
+  try{ host=new URL(s.url).hostname.replace(/^www\./,""); }catch(e){}
+  t.innerHTML='<div class="t-title">'+esc(s.text)+'</div>'+(host?'<div class="t-host">'+esc(host)+'</div>':'');
+  t.classList.add("show");
+  const r=el.getBoundingClientRect();
+  let top=r.bottom+8, left=Math.min(r.left, window.innerWidth-355);
+  if(top+t.offsetHeight>window.innerHeight-10) top=Math.max(10,r.top-t.offsetHeight-8);
+  t.style.top=top+"px"; t.style.left=Math.max(10,left)+"px";
+}
+function hideTip(){ $("#tip").classList.remove("show"); }
+function wireLinks(root){
+  tagSources(root);
+  const sh=$("#sheet");
+  root.querySelectorAll("a.wl").forEach(a=>{
+    const h=a.getAttribute("href")||"";
+    if(h.indexOf("#r=")!==0) return;
+    a.addEventListener("click",ev=>{ ev.preventDefault(); openBySlug(decodeURIComponent(h.slice(3))); });
+  });
+  root.querySelectorAll("a.cite").forEach(c=>{
+    c.addEventListener("mouseenter",()=>showTip(c,CURSRC[c.dataset.s]));
+    c.addEventListener("mouseleave",hideTip);
+    c.addEventListener("click",ev=>{
+      ev.preventDefault();
+      const el=root.querySelector("#src-"+c.dataset.s);
+      if(!el) return;
+      const y=el.getBoundingClientRect().top - sh.getBoundingClientRect().top + sh.scrollTop - 56;
+      sh.scrollTo({top:y,behavior:"smooth"});
+      el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),1500);
+    });
+  });
+}
 let REPORTS=[], activeTag=null, tagsExpanded=false;
 const TAG_COLLAPSE=18;
 const $=s=>document.querySelector(s);
@@ -202,6 +328,8 @@ function syncURL(){ const p=new URLSearchParams();
 async function boot(){
   initTheme();
   try{ REPORTS=(await (await fetch(MANIFEST,{cache:"no-store"})).json()).reports||[]; }catch(e){ REPORTS=[]; }
+  try{ const li=await (await fetch("link-index.json",{cache:"no-store"})).json();
+       LINKENT=li.entries||[]; LINKIDX=li.alias||{}; }catch(e){ LINKENT=[]; LINKIDX={}; }
   restoreFromURL();
   buildTagbar(); render();
   $("#q").addEventListener("input",render);
@@ -313,6 +441,7 @@ function buildTOC(){
 }
 // 마크다운 렌더 + 용어 주석(각주) 전처리. [^용어]=용어주석 / [n]=출처(별개).
 function renderMD(md){
+  md=md.replace(/\r\n/g,"\n");   // CRLF 정규화 — JS 정규식에서 . 은 \r 을 매칭하지 않는다
   const defs={};
   // 1) 각주 정의 추출:  [^라벨]: 설명  (다음 줄 이어쓰기 허용)
   md=md.replace(/^\[\^([^\]]+)\]:[ \t]*(.*(?:\n(?!\s*$)(?!\[\^).*)*)/gm,(m,id,txt)=>{
@@ -326,6 +455,9 @@ function renderMD(md){
     const n=num[id];
     return `<sup class="fnref"><a id="fnref-${n}" href="#fn-${n}">${n}</a></sup>`;
   });
+  CURSRC=parseBodySources(md);
+  md=renderWikilinks(md);
+  md=renderCites(md,CURSRC);
   let html=marked.parse(md);
   // 3) 하단 "용어 주석" 섹션 append (참조된 것만, 등장 순)
   if(order.length){
@@ -340,6 +472,7 @@ async function openReport(r){
   let md=""; try{ md=await (await fetch(path,{cache:"no-store"})).text(); }catch(e){ md="# 불러오기 실패\n\n`"+path+"`"; }
   md=md.replace(/^---[\s\S]*?---\s*/,"");
   $("#article").innerHTML=renderMD(md);
+  wireLinks($("#article"));
   // resolve relative image paths against the report folder (idempotent, per-open)
   $("#article").querySelectorAll("img").forEach(im=>{
     const s=im.getAttribute("src")||"";
@@ -362,5 +495,6 @@ function closeSheet(){ $("#overlay").classList.remove("open"); $("#sheet").class
 function esc(s){ return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c])); }
 boot();
 </script>
+<div id="tip"></div>
 </body>
 </html>

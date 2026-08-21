@@ -37,6 +37,8 @@ Claude Code 세션이 **오케스트레이터**다. 백엔드·크론·서버 �
   - **PR 본문에 측정값 표 첨부 의무.** 지표 보정은 가능하나 gold standard 비교 근거를 남길 것 — 게이트를 몰래 낮추지 말 것.
 - **개념 설명형은 투트랙**(이해편 `<concept>` + 확장편 `<concept>-advanced`), 둘 다 DEEP, 역할 분담으로 중복 금지, 문체 평어.
 - **비주얼 톤 = 라이트/웜화이트(#FFF8F0)+Nunito+코랄.** 다크 기본 가정 금지. 큰 시각 변경 전 Figma 시안 확인. 학습카드 임베드는 작게(기본 1장 4분할 요약).
+  - **예외 — `math/` 수학사 섹션(2026-08-21 사용자 승인).** 고문서·아카이브 톤: 세리프 본문, 미색 지면(#FAF6EC), 잉크빛 텍스트, 시에나 강조(#9C5A2C), 유형 4색만 절제 사용. **라이트 전용**(다크는 미승인). 사용자가 "기존 Search 톤 유지" 선택지를 보고 이쪽을 고른 의도적 예외이니 되돌리지 말 것. 목업 승인 절차는 그대로 지켰다(`mockup/v1.html`).
+  - **예외 — `math/` 에서만 KaTeX 허용.** LaTeX 금지 규칙의 근본 원인은 *갤러리에 수식 렌더러가 없어 옵시디언과 웹이 달라 보이는 것*이었다. 옵시디언은 `$…$`를 원래 렌더하므로, `math/index.html`에 KaTeX를 넣으면 패리티가 오히려 회복된다. `reports/`·`videos/`·`guides/`는 기존대로 유니코드 평문을 쓴다.
 
 ## 환경 차이 (중요)
 - **클라우드/모바일은 WebFetch 403을 전제** — WebSearch 요약 + 네이버 MCP 스니펫 다중 교차검증으로 사실 확정(단일 스니펫 단정 금지).
@@ -54,6 +56,13 @@ python3 tools/verify_video.py videos/notes/<영상ID>.md
 python3 tools/verify_guide.py guides/<슬러그>/guide.md
 python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 동일성 대조
 
+# 수학사(math/) — 정본 절차는 MATH_PIPELINE.md
+python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게이트
+python3 tools/verify_math.py --backlog       # 미해결 위키링크 = 콘텐츠 백로그
+python3 tools/build_math_manifest.py         # math/manifest.json
+python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
+python3 tools/sync_math_obsidian.py --dry-run  # 볼트 002-수학사/ 동기화
+
 # 커밋 전 분량 게이트 측정 (개념 설명서)
 LC_ALL=C.UTF-8 wc -m reports/<slug>/report.md   # ★정본 글자수(로케일 필수! 없으면 바이트)
 wc -l reports/<slug>/report.md            # 줄수
@@ -68,6 +77,8 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - `reports/<slug>/comics/` — 학습카드 PNG(auto 모드 산출).
 - `videos/` — 영상 노트 갤러리. `manifest.json` + `notes/<영상ID>.md`. **1MB 단일 HTML이었던 것을 데이터 주도로 이관**(모바일에서 노트 1개 추가로 갱신 가능).
 - `guides/` — 따라하기 가이드 갤러리. `manifest.json` + `<슬러그>/guide.md`. 관련 영상은 검증된 것만 캐시.
+- `math/` — **수학사 아카이브**(2026-08-21 신설). `manifest.json` + `notes/<슬러그>/note.md` + `assets/`. 원자 4종(세기·개념·인물·일화)이 세기×개념×인물로 교차 참조되는 관계형 구조라 평면 갤러리와 데이터 모델이 다르다. 정본 런북은 **`MATH_PIPELINE.md`**.
+- `link-index.json`(루트) — 4개 갤러리 통합 링크 조회표. 본문 `[[위키링크]]`가 갤러리 경계를 넘게 한다. `tools/build_link_index.py` 산출물이며 **직접 편집 금지**. 자동 정규화로 안 잡히는 별칭만 `link-aliases.json`에 손으로 적는다.
 - `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
 - `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
 - `routines/` — 예약 루틴 지침. `spark-video-curator.md` = 스파크 영상 분석본 → 갤러리 발행(정본 절차는 `VIDEO_PIPELINE.md`).

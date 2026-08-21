@@ -1,0 +1,300 @@
+{
+ "generated": "2026-08-21",
+ "notes": [
+  {
+   "유형": "개념",
+   "제목": "미분법",
+   "슬러그": "concept-differentiation",
+   "별칭": [
+    "미분",
+    "도함수",
+    "유율법",
+    "미분계수"
+   ],
+   "볼트파일명": "개념_미분법",
+   "트랙": "이해편",
+   "짝문서": "concept-differentiation-advanced",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "해석학"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "접선을 긋는 기하 문제와 순간속도를 구하는 물리 문제가 같은 계산이라는 것을 알아채기까지 반세기, 그 계산을 논리적으로 정당화하기까지 다시 150년이 걸렸다.",
+   "태그": [
+    "수학사",
+    "미분",
+    "접선",
+    "무한소",
+    "페르마",
+    "뉴턴",
+    "라이프니츠",
+    "코시",
+    "17세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "페르마",
+     "변화": "미소량 e를 더했다 빼는 절차(adequality)로 극대·극소와 접선을 함께 처리했다. 극한 개념 없이 극한의 답을 얻은 셈이다.",
+     "출처": 5
+    },
+    {
+     "세기": 17,
+     "인물": "배로",
+     "변화": "접선 구하기와 넓이 구하기가 서로 역연산임을 기하학의 언어로 증명했다. 다만 계산 도구로 승격시키지는 못했다.",
+     "출처": 8
+    },
+    {
+     "세기": 17,
+     "인물": "뉴턴",
+     "변화": "양이 시간에 따라 흐른다고 보고, 흐르는 속도를 유율(fluxion)로 정의했다. 미분을 운동학과 묶은 것이 결정적이었다.",
+     "출처": 9
+    },
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "dy/dx와 ∫ 기호를 도입해 미분을 '계산 규칙을 따르는 대수'로 바꿨다. 오늘날 쓰는 표기는 전부 이쪽 계보다.",
+     "출처": 10
+    },
+    {
+     "세기": 18,
+     "인물": "버클리",
+     "변화": "0으로 나눈 뒤 0으로 취급하는 무한소를 \"사라진 양의 유령\"이라 부르며 논리적 결함을 공격했다.",
+     "출처": 12
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "무한소 대신 극한을 출발점으로 삼아 도함수를 재정의했다. 지금 교과서의 정의가 여기서 나온다.",
+     "출처": 13
+    }
+   ],
+   "선행개념": [
+    "concept-analytic-geometry"
+   ],
+   "후속개념": [
+    "concept-integration"
+   ],
+   "기여인물": [
+    "person-fermat",
+    "person-barrow",
+    "person-newton",
+    "person-leibniz"
+   ],
+   "이미지": [
+    {
+     "파일": "assets/figures/fermat-secant-tangent.svg",
+     "출처": "직접 제작",
+     "라이선스": "CC0",
+     "설명": "할선 PQ에서 Q를 P에 붙여 접선을 얻는 페르마의 절차"
+    },
+    {
+     "파일": "assets/figures/leibniz-characteristic-triangle.svg",
+     "출처": "직접 제작",
+     "라이선스": "CC0",
+     "설명": "라이프니츠의 특성삼각형 — dx, dy, ds"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학산책), \"접선의 기울기와 도함수\"",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582446&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), \"미분법\"",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338336&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), \"도함수\"",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338255&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), \"미적분 — 라이프니츠의 미분법과 뉴턴의 유율법\"",
+     "URL": "https://terms.naver.com/entry.naver?docId=419705&cid=60277&categoryId=60277",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, \"Adequality — 페르마의 근사등식 절차\"",
+     "URL": "https://en.wikipedia.org/wiki/Adequality",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Katz·Schaps·Shnider, \"Almost Equal — Method of Adequality from Diophantus to Fermat and Beyond\" (arXiv:1210.7750)",
+     "URL": "https://arxiv.org/abs/1210.7750",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, \"The rise of calculus\"",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "arXiv:1111.6145 — \"Barrow and Leibniz on the fundamental theorem of the calculus\", 『기하학 강의』 제10강 명제 11",
+     "URL": "https://arxiv.org/pdf/1111.6145",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, \"Method of Fluxions — 1671년 집필, 1736년 사후 출판\"",
+     "URL": "https://en.wikipedia.org/wiki/Method_of_Fluxions",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Wikipedia, \"Leibniz's notation — d와 ∫의 유래\"",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%27s_notation",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, \"Nova Methodus pro Maximis et Minimis (1684) — 미분법 최초 출판\"",
+     "URL": "https://en.wikipedia.org/wiki/Nova_Methodus_pro_Maximis_et_Minimis",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, \"History of calculus — 버클리의 비판과 무한소 논쟁\"",
+     "URL": "https://en.wikipedia.org/wiki/History_of_calculus",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Cauchy, 『Cours d'analyse de l'École royale polytechnique』 1re partie (1821) — 원본 스캔",
+     "URL": "https://archive.org/details/coursdanalysedel00cauc",
+     "유형": "1차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과, \"미분의 응용\"",
+     "URL": "https://terms.naver.com/entry.naver?docId=3570884&cid=58944&categoryId=58970",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-differentiation/note.md",
+   "세기전체": [
+    17,
+    18,
+    19
+   ],
+   "자수": 7731,
+   "시각화": 5
+  }
+ ],
+ "index": {
+  "세기": {
+   "17": [
+    "concept-differentiation"
+   ],
+   "18": [
+    "concept-differentiation"
+   ],
+   "19": [
+    "concept-differentiation"
+   ]
+  },
+  "분야": {
+   "해석학": [
+    "concept-differentiation"
+   ]
+  },
+  "교과": {
+   "미적분Ⅰ": [
+    "concept-differentiation"
+   ]
+  },
+  "유형": {
+   "개념": [
+    "concept-differentiation"
+   ]
+  },
+  "태그": {
+   "수학사": [
+    "concept-differentiation"
+   ],
+   "미분": [
+    "concept-differentiation"
+   ],
+   "접선": [
+    "concept-differentiation"
+   ],
+   "무한소": [
+    "concept-differentiation"
+   ],
+   "페르마": [
+    "concept-differentiation"
+   ],
+   "뉴턴": [
+    "concept-differentiation"
+   ],
+   "라이프니츠": [
+    "concept-differentiation"
+   ],
+   "코시": [
+    "concept-differentiation"
+   ],
+   "17세기": [
+    "concept-differentiation"
+   ]
+  },
+  "인물": {
+   "배로": [
+    "concept-differentiation"
+   ],
+   "버클리": [
+    "concept-differentiation"
+   ],
+   "person-fermat": [
+    "concept-differentiation"
+   ],
+   "라이프니츠": [
+    "concept-differentiation"
+   ],
+   "코시": [
+    "concept-differentiation"
+   ],
+   "person-leibniz": [
+    "concept-differentiation"
+   ],
+   "뉴턴": [
+    "concept-differentiation"
+   ],
+   "페르마": [
+    "concept-differentiation"
+   ],
+   "person-barrow": [
+    "concept-differentiation"
+   ],
+   "person-newton": [
+    "concept-differentiation"
+   ]
+  },
+  "역링크": {}
+ },
+ "별칭": {
+  "미분계수": "concept-differentiation",
+  "개념_미분법": "concept-differentiation",
+  "미분": "concept-differentiation",
+  "미분법": "concept-differentiation",
+  "미분법 이해편": "concept-differentiation",
+  "도함수": "concept-differentiation",
+  "concept-differentiation": "concept-differentiation",
+  "유율법": "concept-differentiation",
+  "미분법이해편": "concept-differentiation"
+ }
+}
