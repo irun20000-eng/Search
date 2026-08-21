@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>이룬 서재 — 허브 목업 v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF8F0; --card:#FFFFFF; --line:#EFE6DA; --line2:#F1E9DD;
+  --ink:#2B2622; --muted:#8A7E72; --accent:#E8743B; --accent-soft:#FCEDE1;
+  --chip:#F7F1E8;
+  --c-research:#C2582B; --c-video:#4A7C86; --c-guide:#6B7A3F; --c-math:#6A4870;
+  --shadow:0 6px 22px rgba(120,90,60,.08);
+  --shadow-lg:0 14px 34px rgba(120,90,60,.16);
+  --barbg:rgba(255,248,240,.92);
+  --font:"Nunito","Apple SD Gothic Neo","Malgun Gothic",-apple-system,sans-serif;
+  --serif:"Noto Serif KR",Georgia,serif;
+  --maxw:1080px;
+}
+:root[data-theme=dark]{
+  --bg:#1a1613; --card:#241f1a; --line:#3a322a; --line2:#332c25;
+  --ink:#f0e8de; --muted:#a99d8e; --accent:#F2894C; --accent-soft:#3a2a1e;
+  --chip:#2c251f;
+  --c-research:#f0a06a; --c-video:#7FB4BE; --c-guide:#A3B36E; --c-math:#B08CB8;
+  --shadow:0 6px 22px rgba(0,0,0,.35);
+  --shadow-lg:0 14px 34px rgba(0,0,0,.45);
+  --barbg:rgba(26,22,19,.92);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--font)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* 목업 안내 */
+.mockbar{background:#2C2620;color:#F3EADA;font-size:13px;padding:8px 0}
+.mockbar .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.mockbar b{color:#E8B27A}
+.mockbar span{color:#B9AC98}
+
+/* 상단바 — 네 페이지 공통 */
+.topbar{position:sticky;top:0;z-index:20;background:var(--barbg);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .15s}
+.topbar.stuck{border-bottom-color:var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:8px;padding-top:12px;padding-bottom:12px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.06rem;letter-spacing:-.01em;white-space:nowrap;margin-right:12px}
+.brand span{color:var(--accent)}
+.tabs{display:flex;gap:2px;flex:1;flex-wrap:wrap}
+.tab{font-size:.9rem;font-weight:600;color:var(--muted);padding:7px 13px;border-radius:9px}
+.tab:hover{background:var(--chip);color:var(--ink)}
+.tab.on{background:var(--ink);color:var(--bg)}
+.iconbtn{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;
+  padding:7px 11px;cursor:pointer;font-size:.86rem;font-weight:700;white-space:nowrap}
+.iconbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* 히어로 */
+.hero{padding:52px 0 8px;text-align:center}
+.hero h1{font-family:var(--serif);font-size:2.5rem;font-weight:700;margin:0 0 12px;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:1.02rem;margin:0 auto 26px;max-width:600px}
+.hero .stat{display:inline-flex;gap:7px;align-items:center;background:var(--chip);border-radius:999px;
+  padding:5px 15px;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:22px}
+.hero .stat b{color:var(--ink)}
+
+/* 통합 검색 */
+.searchbox{position:relative;max-width:620px;margin:0 auto}
+.searchbox input{width:100%;background:var(--card);border:2px solid var(--line);color:var(--ink);
+  border-radius:16px;padding:16px 20px 16px 50px;font-size:1.02rem;font-family:var(--font);outline:none;
+  box-shadow:var(--shadow);transition:border-color .15s}
+.searchbox input:focus{border-color:var(--accent)}
+.searchbox input::placeholder{color:#b6a899}
+.searchbox svg{position:absolute;left:19px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.hint{font-size:.8rem;color:var(--muted);margin-top:10px}
+.hint b{color:var(--accent);font-weight:700}
+.results{max-width:620px;margin:14px auto 0;background:var(--card);border:1.5px solid var(--line);
+  border-radius:14px;box-shadow:var(--shadow-lg);overflow:hidden;display:none;text-align:left}
+.results.open{display:block}
+.rhead{padding:9px 16px;font-size:.76rem;color:var(--muted);background:var(--chip);font-weight:700;letter-spacing:.03em}
+.ritem{display:flex;align-items:center;gap:11px;padding:11px 16px;border-top:1px solid var(--line2);cursor:pointer}
+.ritem:hover{background:var(--chip)}
+.ritem .sec{font-size:.68rem;font-weight:800;padding:3px 8px;border-radius:6px;flex:none;letter-spacing:.02em}
+.s-research{background:var(--accent-soft);color:var(--c-research)}
+.s-video{background:#E6F0F2;color:var(--c-video)}
+.s-guide{background:#EDF1E2;color:var(--c-guide)}
+.s-math{background:#F0E9F2;color:var(--c-math)}
+:root[data-theme=dark] .s-video{background:#22322f}
+:root[data-theme=dark] .s-guide{background:#28301f}
+:root[data-theme=dark] .s-math{background:#2e2333}
+.ritem .t{flex:1;font-size:.92rem;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ritem mark{background:var(--accent-soft);color:var(--accent);font-weight:700;padding:0 1px;border-radius:3px}
+.nores{padding:22px 16px;text-align:center;color:var(--muted);font-size:.9rem}
+
+/* 섹션 카드 */
+h2.sec-h{font-size:1.15rem;font-weight:800;margin:56px 0 4px;letter-spacing:-.01em}
+p.sec-p{color:var(--muted);font-size:.9rem;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.scard{background:var(--card);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:var(--shadow);cursor:pointer;transition:transform .14s,box-shadow .14s,border-color .14s;
+  display:flex;flex-direction:column}
+.scard:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--strip)}
+.scard .cover{height:88px;border-bottom:1.5px solid var(--line);position:relative;overflow:hidden}
+.scard .cover svg{width:100%;height:100%;display:block}
+.scard .body{padding:16px 18px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+.scard h3{margin:0;font-size:1.12rem;font-weight:800;letter-spacing:-.01em}
+.scard .desc{font-size:.86rem;color:var(--muted);line-height:1.55;flex:1}
+.scard .foot{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--muted);margin-top:3px}
+.scard .n{font-weight:800;color:var(--strip);font-size:.95rem}
+.scard .topics{display:flex;gap:5px;flex-wrap:wrap;margin-top:2px}
+.scard .topics span{font-size:.72rem;background:var(--chip);color:var(--muted);padding:2px 8px;border-radius:999px}
+
+/* 최근 */
+.recent{background:var(--card);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.rrow{display:flex;align-items:center;gap:12px;padding:13px 18px;border-top:1px solid var(--line2);cursor:pointer}
+.rrow:first-child{border-top:none}
+.rrow:hover{background:var(--chip)}
+.rrow .d{font-size:.76rem;color:var(--muted);flex:none;width:74px;font-variant-numeric:tabular-nums}
+.rrow .t{flex:1;font-size:.94rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rrow .arrow{color:var(--muted);flex:none;font-size:.9rem}
+
+/* 컬렉션 */
+.colls{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.coll{background:var(--card);border:1.5px dashed var(--line);border-radius:16px;padding:16px 18px;cursor:pointer}
+.coll:hover{border-color:var(--accent);border-style:solid}
+.coll h4{margin:0 0 5px;font-size:1rem;font-weight:800}
+.coll p{margin:0 0 10px;font-size:.84rem;color:var(--muted);line-height:1.5}
+.coll .mix{display:flex;gap:5px;flex-wrap:wrap}
+.coll .mix span{font-size:.7rem;font-weight:700;padding:2px 7px;border-radius:6px}
+
+footer.site{border-top:1px solid var(--line);margin-top:64px;padding:28px 0 80px;color:var(--muted);font-size:.84rem}
+footer.site a{color:var(--accent);font-weight:600}
+
+@media(max-width:720px){
+  .hero{padding:34px 0 4px}
+  .hero h1{font-size:1.9rem}
+  /* 탭을 다음 줄로 내린다 — flex-wrap 이 없으면 width:100% 로도 줄바꿈이 안 된다 */
+  .topbar .wrap{flex-wrap:wrap;row-gap:8px}
+  .brand{margin-right:auto}
+  /* flex:1 이 width:100% 를 이기므로 flex-basis 로 줄을 차지하게 한다 */
+  .tabs{order:3;flex:0 0 100%;overflow-x:auto;flex-wrap:nowrap;
+    scrollbar-width:none;-ms-overflow-style:none;padding-bottom:2px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{white-space:nowrap;padding:7px 10px;font-size:.86rem}
+  .rrow .d{width:auto;font-size:.72rem}
+  .rrow .t{font-size:.88rem}
+}
+</style>
+</head>
+<body>
+
+<div class="mockbar"><div class="wrap">
+  <b>허브 목업 v1</b>
+  <span>이룬 서재 · 검색·탭·다크모드 실제 동작 · 데이터는 실제 173편 중 발췌</span>
+</div></div>
+
+<div class="topbar" id="topbar"><div class="wrap">
+  <a class="brand" href="#">이룬 <span>서재</span></a>
+  <nav class="tabs">
+    <a class="tab on" href="#">홈</a>
+    <a class="tab" href="#">리서치</a>
+    <a class="tab" href="#">영상노트</a>
+    <a class="tab" href="#">가이드</a>
+    <a class="tab" href="#">수학사</a>
+  </nav>
+  <button class="iconbtn" id="themeBtn">🌙 다크</button>
+</div></div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <h1>이룬 서재</h1>
+    <p>직접 조사하고, 보고 따라 하고, 정리해 둔 것들. 검색 결과가 아니라 소화한 자료입니다.</p>
+    <div class="stat">📚 <b>173편</b> · 마지막 갱신 2026-08-21</div>
+
+    <div class="searchbox">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="q" type="search" placeholder="네 서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off">
+    </div>
+    <div class="hint">한 번의 검색으로 <b>리서치 · 영상노트 · 가이드 · 수학사</b>를 모두 훑습니다</div>
+    <div class="results" id="res"></div>
+  </section>
+
+  <h2 class="sec-h">서가</h2>
+  <p class="sec-p">네 갈래로 쌓여 있습니다.</p>
+  <div class="grid">
+
+    <article class="scard" style="--strip:var(--c-research)">
+      <div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none">
+        <rect width="300" height="88" fill="#FCEDE1"/>
+        <g stroke="#E8743B" stroke-width="2" fill="none" opacity=".55">
+          <path d="M20 70 L58 26 L96 58 L134 18 L172 48 L210 22 L248 54 L286 30"/></g>
+        <g fill="#E8743B" opacity=".8">
+          <circle cx="58" cy="26" r="4"/><circle cx="134" cy="18" r="4"/><circle cx="210" cy="22" r="4"/></g>
+      </svg></div>
+      <div class="body">
+        <h3>리서치</h3>
+        <div class="desc">관심 주제를 국내·해외 출처로 파고들어 만든 심층 보고서. 모든 주장에 인용이 붙습니다.</div>
+        <div class="topics"><span>미적분</span><span>선형대수</span><span>AI 에이전트</span><span>자동화</span></div>
+        <div class="foot"><span class="n">62편</span><span>· 2026-08-20 갱신</span></div>
+      </div>
+    </article>
+
+    <article class="scard" style="--strip:var(--c-video)">
+      <div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none">
+        <rect width="300" height="88" fill="#E6F0F2"/>
+        <g fill="#4A7C86" opacity=".22">
+          <rect x="24" y="24" width="52" height="40" rx="5"/><rect x="90" y="18" width="52" height="52" rx="5"/>
+          <rect x="156" y="28" width="52" height="34" rx="5"/><rect x="222" y="20" width="52" height="48" rx="5"/></g>
+        <g fill="#4A7C86" opacity=".85">
+          <path d="M44 36 L60 44 L44 52 Z"/><path d="M110 34 L128 44 L110 54 Z"/>
+          <path d="M176 37 L191 45 L176 53 Z"/><path d="M242 34 L259 44 L242 54 Z"/></g>
+      </svg></div>
+      <div class="body">
+        <h3>영상노트</h3>
+        <div class="desc">유튜브 강의를 보고 따라 하며 정리한 학습 노트. 타임스탬프와 막힌 지점까지 적혀 있습니다.</div>
+        <div class="topics"><span>클로드코드</span><span>업무 자동화</span><span>영상 제작</span><span>디자인</span></div>
+        <div class="foot"><span class="n">94편</span><span>· 2026-08-21 갱신</span></div>
+      </div>
+    </article>
+
+    <article class="scard" style="--strip:var(--c-guide)">
+      <div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none">
+        <rect width="300" height="88" fill="#EDF1E2"/>
+        <g stroke="#6B7A3F" stroke-width="2.4" fill="none" opacity=".5">
+          <path d="M40 62 L100 62 L100 30 L200 30 L200 58 L262 58"/></g>
+        <g fill="#6B7A3F" opacity=".85">
+          <circle cx="40" cy="62" r="6"/><circle cx="100" cy="30" r="6"/><circle cx="200" cy="58" r="6"/><circle cx="262" cy="58" r="6"/></g>
+      </svg></div>
+      <div class="body">
+        <h3>가이드</h3>
+        <div class="desc">막히는 지점까지 적어 둔 단계별 실행 안내. 관련 영상은 실재 확인을 거친 것만 싣습니다.</div>
+        <div class="topics"><span>API 시작하기</span><span>워크플로우</span></div>
+        <div class="foot"><span class="n">2편</span><span>· 2026-08-08 갱신</span></div>
+      </div>
+    </article>
+
+    <article class="scard" style="--strip:var(--c-math)">
+      <div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none">
+        <rect width="300" height="88" fill="#F0E9F2"/>
+        <line x1="20" y1="66" x2="280" y2="66" stroke="#6A4870" stroke-width="1.6" opacity=".5"/>
+        <g fill="#6A4870" opacity=".8">
+          <circle cx="52" cy="66" r="5"/><circle cx="112" cy="66" r="7"/><circle cx="172" cy="66" r="5"/><circle cx="232" cy="66" r="5"/></g>
+        <g fill="#6A4870" opacity=".45" font-family="Georgia,serif" font-size="12">
+          <text x="40" y="34">16</text><text x="100" y="26">17</text><text x="162" y="34">18</text><text x="222" y="34">19</text></g>
+      </svg></div>
+      <div class="body">
+        <h3>수학사</h3>
+        <div class="desc">세기 · 개념 · 인물 · 일화로 엮은 아카이브. 일화에는 사실성 판정이 붙습니다.</div>
+        <div class="topics"><span>17세기</span><span>미적분</span><span>뉴턴</span><span>라이프니츠</span></div>
+        <div class="foot"><span class="n">15편</span><span>· 2026-08-21 갱신</span></div>
+      </div>
+    </article>
+  </div>
+
+  <h2 class="sec-h">최근에 올린 것</h2>
+  <p class="sec-p">네 서가를 합쳐 최신순으로.</p>
+  <div class="recent" id="recent"></div>
+
+  <h2 class="sec-h">묶어 읽기</h2>
+  <p class="sec-p">서가 경계를 넘어 한 주제로 이어지는 것들. 이 사이트의 강점인데 지금은 드러나지 않습니다.</p>
+  <div class="colls">
+    <div class="coll">
+      <h4>미적분, 처음부터 끝까지</h4>
+      <p>17세기 탄생 배경 → 개념 정리 → 엄밀화 → 수능 문제 풀이까지 한 줄로.</p>
+      <div class="mix"><span class="s-math">수학사 5</span><span class="s-research">리서치 6</span></div>
+    </div>
+    <div class="coll">
+      <h4>클로드 코드 전부</h4>
+      <p>플러그인·MCP·스킬 리서치와 따라 하기 영상, 실행 가이드를 한자리에.</p>
+      <div class="mix"><span class="s-research">리서치 5</span><span class="s-video">영상 12</span><span class="s-guide">가이드 1</span></div>
+    </div>
+    <div class="coll">
+      <h4>수업에 바로 쓰는 것</h4>
+      <p>교육과정에 걸리는 개념과 수업 도입용 일화만 골라서.</p>
+      <div class="mix"><span class="s-math">수학사 9</span><span class="s-research">리서치 8</span></div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  이룬 서재 — 원문은 마크다운이며 옵시디언 볼트와 같은 파일입니다.
+  <a href="#">GitHub</a>
+</div></footer>
+
+<script>
+"use strict";
+var $=function(s){return document.querySelector(s)};
+
+/* ── 다크모드 ── */
+var themeBtn=$("#themeBtn");
+themeBtn.addEventListener("click",function(){
+  var d=document.documentElement.getAttribute("data-theme")==="dark";
+  document.documentElement.setAttribute("data-theme", d?"light":"dark");
+  themeBtn.textContent = d?"🌙 다크":"☀️ 라이트";
+});
+
+/* ── 스티키 그림자 ── */
+var tb=$("#topbar");
+window.addEventListener("scroll",function(){ tb.classList.toggle("stuck", window.scrollY>4); },{passive:true});
+
+/* ── 통합 검색 (실제 link-index.json 형태를 그대로 흉내) ── */
+var DOCS=[
+ ["research","미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈"],
+ ["research","미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합"],
+ ["research","벡터(Vector) — 왜 배우고, 어디까지 가나"],
+ ["research","행렬의 대각화 — 이해편(피보나치 일반항·정의·의미·방법)"],
+ ["research","야코비안 변환(Jacobian) — 이해편(입문·딥)"],
+ ["research","평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장"],
+ ["research","로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법"],
+ ["research","다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리"],
+ ["research","무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지"],
+ ["research","벤포드 법칙(Benford's Law) — 이해편(입문·딥)"],
+ ["research","클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지"],
+ ["research","클로드 플러그인 완전 가이드 — 분야별 추천과 활용예시 (시리즈 ①)"],
+ ["research","Slack 완전 해부 — 1인 개발자의 활용법과 활용가치"],
+ ["research","n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화"],
+ ["research","양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리"],
+ ["research","헤르만 헤세 『데미안』 — 줄거리·내용 요약·해설"],
+ ["video","제미나이 Spark(스파크) 사용법 총정리｜컴퓨터가 꺼져 있어도 일하는 AI 에이전트"],
+ ["video","구글 Flow 완전정복! Flow 에이전트 활용 꿀팁 - 모듈4"],
+ ["video","제미나이 노트북 역대급 신기능 3가지 (핵심압축)"],
+ ["guide","OpenRouter API로 AI 활용하기 — 키 하나로 GPT·클로드·제미나이"],
+ ["guide","n8n 첫 워크플로우 만들기"],
+ ["math","미분법"],["math","미분법 (확장편)"],["math","적분법"],["math","해석기하"],
+ ["math","17세기 — 자연을 수로 쓰기로 한 세기"],
+ ["math","아이작 뉴턴"],["math","고트프리트 라이프니츠"],["math","피에르 드 페르마"],
+ ["math","블레즈 파스칼"],["math","르네 데카르트"],["math","존 네이피어"],
+ ["math","뉴턴의 사과"],["math","뉴턴–라이프니츠 우선권 논쟁"],["math","파스칼–페르마 서신"],
+ ["math","데카르트와 천장의 파리"]
+];
+var LABEL={research:"리서치",video:"영상노트",guide:"가이드",math:"수학사"};
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+var q=$("#q"), res=$("#res");
+q.addEventListener("input",function(){
+  var v=q.value.trim();
+  if(!v){ res.classList.remove("open"); return; }
+  var lv=v.toLowerCase();
+  var hits=DOCS.filter(function(d){ return d[1].toLowerCase().indexOf(lv)>=0; });
+  var by={research:0,video:0,guide:0,math:0};
+  hits.forEach(function(h){ by[h[0]]++; });
+  if(!hits.length){
+    res.innerHTML='<div class="nores">"'+esc(v)+'" — 결과가 없습니다</div>';
+  } else {
+    var head='<div class="rhead">'+hits.length+'편 — '+
+      Object.keys(by).filter(function(k){return by[k]}).map(function(k){return LABEL[k]+' '+by[k]}).join(' · ')+'</div>';
+    res.innerHTML=head+hits.slice(0,9).map(function(h){
+      var t=esc(h[1]);
+      var i=h[1].toLowerCase().indexOf(lv);
+      if(i>=0) t=esc(h[1].slice(0,i))+'<mark>'+esc(h[1].substr(i,v.length))+'</mark>'+esc(h[1].slice(i+v.length));
+      return '<div class="ritem"><span class="sec s-'+h[0]+'">'+LABEL[h[0]]+'</span><span class="t">'+t+'</span></div>';
+    }).join("")+(hits.length>9?'<div class="nores" style="padding:9px">외 '+(hits.length-9)+'편</div>':'');
+  }
+  res.classList.add("open");
+});
+document.addEventListener("click",function(e){ if(!e.target.closest(".searchbox")&&!e.target.closest("#res")) res.classList.remove("open"); });
+
+/* ── 최근 목록 ── */
+var RECENT=[
+ ["2026-08-21","video","제미나이 노트북 역대급 신기능 3가지 (핵심압축)"],
+ ["2026-08-21","math","17세기 — 자연을 수로 쓰기로 한 세기"],
+ ["2026-08-21","math","미분법 (확장편)"],
+ ["2026-08-21","video","제미나이 Spark(스파크) 사용법 총정리"],
+ ["2026-08-21","math","적분법"],
+ ["2026-08-21","math","아이작 뉴턴"],
+ ["2026-08-20","research","미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠"],
+ ["2026-08-20","research","미적분의 엄밀화 (확장편) — 150년 만의 봉합"],
+ ["2026-08-18","research","클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심"],
+ ["2026-08-17","research","Orca(오르카) — 병렬 AI 코딩 에이전트 IDE 완전 가이드"]
+];
+$("#recent").innerHTML=RECENT.map(function(r){
+  return '<div class="rrow"><span class="d">'+r[0].slice(5)+'</span>'+
+    '<span class="sec s-'+r[1]+'">'+LABEL[r[1]]+'</span>'+
+    '<span class="t">'+esc(r[2])+'</span><span class="arrow">→</span></div>';
+}).join("");
+</script>
+</body>
+</html>

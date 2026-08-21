@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>따라하기 가이드 — Search</title>
+<title>가이드 — 이룬 서재</title>
 <meta name="description" content="주제를 입력하면 만들어지는 단계별 실행 가이드. 검증된 유튜브 영상 포함.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -120,14 +120,16 @@ html[data-pre="light"] body{background:#FFF8F0;color:#2B2622}
    키는 메인 갤러리(stTheme)와 공유해 갤러리 간 테마가 따로 놀지 않게 한다. */
 (function(){try{var t=localStorage.getItem('stTheme')||localStorage.getItem('vgTheme');
 if(t)document.documentElement.setAttribute('data-pre',t);}catch(e){}})();
-</script></head>
-<body data-theme="light" id="top"><div id="bar"></div>
+</script><link rel="stylesheet" href="../assets/topbar.css">
+</head>
+<body data-theme="light" id="top">
+<script src="../assets/topbar.js" data-section="guides" data-root="../"></script><div id="bar"></div>
 <div class="util"><button class="btn" id="themeBtn">◑ 다크</button></div>
 <div class="wrap">
 <header class="hero"><span class="eyebrow"><span class="dot"></span>따라하기 가이드</span>
 <h1 class="site">가이드</h1>
 <p class="sub">막히는 지점까지 적어 둔 단계별 실행 가이드. 관련 유튜브 영상은 전부 실재 확인을 거친 것만 싣는다.</p>
-<p class="sub" style="margin-top:6px"><a href="../">📄 보고서</a> · <a href="../videos/">🎬 영상노트</a> · 📘 가이드 · <a href="../math/">📐 수학사</a></p>
+
 <div class="tabs" id="tabs"></div>
 <div class="controls">
 <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input id="q" type="search" placeholder="제목·요약·태그 검색  ( / )" autocomplete="off"></div>
