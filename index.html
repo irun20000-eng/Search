@@ -19,10 +19,10 @@
   /* 이미 허브에 머무는 중 해시만 바뀌면 같은 문서 내 이동이라 위 코드가 다시 돌지 않는다 */
   window.addEventListener("hashchange", bounce);
 })();
-/* 테마 — 다른 갤러리와 같은 키를 써서 사이트 전체가 한 설정을 공유한다 */
+/* 테마 — 사이트 공통 키 stTheme. 다섯 페이지가 한 설정을 공유한다. */
 (function(){
   try{
-    var t = localStorage.getItem("theme");
+    var t = localStorage.getItem("stTheme");
     if (t === "dark") document.documentElement.setAttribute("data-theme","dark");
   }catch(e){}
 })();
@@ -266,7 +266,7 @@ themeBtn.addEventListener("click",function(){
   var d=document.documentElement.getAttribute("data-theme")==="dark";
   if(d) document.documentElement.removeAttribute("data-theme");
   else document.documentElement.setAttribute("data-theme","dark");
-  try{ localStorage.setItem("theme", d?"light":"dark"); }catch(e){}
+  try{ localStorage.setItem("stTheme", d?"light":"dark"); }catch(e){}
   paintTheme();
 });
 paintTheme();

@@ -382,7 +382,7 @@ var tb=document.getElementById('themeBtn'),bd=document.body;
 try{var sv=localStorage.getItem('stTheme')||localStorage.getItem('vgTheme');if(sv){bd.setAttribute('data-theme',sv);}}catch(e){}
 function syncTb(){tb.textContent=bd.getAttribute('data-theme')==='dark'?'◐ 라이트':'◑ 다크';}
 syncTb();
-tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('stTheme',nt);localStorage.setItem('vgTheme',nt);}catch(e){}syncTb();};
+tb.onclick=function(){var d=bd.getAttribute('data-theme')==='dark';var nt=d?'light':'dark';bd.setAttribute('data-theme',nt);try{localStorage.setItem('stTheme',nt);}catch(e){}syncTb();};
 
 /* ---------- 부팅 ---------- */
 fetch(MANIFEST,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
