@@ -40,7 +40,7 @@
 
 선행개념: [concept-differentiation, concept-integration]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-barrow, person-newton, person-leibniz]
+기여인물: [person-gregory, person-barrow, person-newton, person-leibniz]
 
 출처:
   - 번호: 1
