@@ -470,6 +470,7 @@
    ],
    "볼트파일명": "개념_해석기하",
    "트랙": "이해편",
+   "짝문서": "concept-analytic-geometry-advanced",
    "세기": [
     17
    ],
@@ -591,6 +592,184 @@
    ],
    "자수": 7673,
    "시각화": 7
+  },
+  {
+   "유형": "개념",
+   "제목": "해석기하 (확장편)",
+   "슬러그": "concept-analytic-geometry-advanced",
+   "별칭": [
+    "해석기하 확장편",
+    "비유클리드 기하",
+    "사영기하",
+    "리만 기하학",
+    "에를랑겐 프로그램",
+    "좌표와 불변량"
+   ],
+   "볼트파일명": "개념_해석기하 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-analytic-geometry",
+   "세기": [
+    17,
+    19,
+    20
+   ],
+   "분야": [
+    "기하학",
+    "미분기하학",
+    "대수학"
+   ],
+   "교과": [
+    "기하"
+   ],
+   "난이도": "심화",
+   "요약": "데카르트가 도형에 좌표를 붙인 뒤 200년 동안, 수학은 좌표에 기대었다가 다시 좌표를 벗어나려 했다. 그 왕복이 현대 기하학을 만들었다.",
+   "태그": [
+    "수학사",
+    "해석기하",
+    "좌표",
+    "비유클리드",
+    "사영기하",
+    "리만",
+    "클라인",
+    "힐베르트",
+    "19세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "데자르그",
+     "변화": "1639년 사영기하를 세웠으나 데카르트 좌표의 성공에 밀려 거의 잊혔다.",
+     "출처": 9
+    },
+    {
+     "세기": 19,
+     "인물": "퐁슬레",
+     "변화": "1822년 사영기하를 되살려, 좌표를 쓰지 않는 기하가 독자적 분야로 자리 잡았다.",
+     "출처": 9
+    },
+    {
+     "세기": 19,
+     "인물": "로바쳅스키·보여이",
+     "변화": "1820~30년대에 평행선 공준을 부정해도 모순이 생기지 않는 기하를 세웠다. 유클리드 공간이 유일하지 않다는 뜻이었다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "리만",
+     "변화": "1854년 6월 10일 가우스 앞에서 한 교수자격 강연에서 공간을 다양체로 다루고, 곡률로 기하를 구분했다.",
+     "출처": 3
+    },
+    {
+     "세기": 19,
+     "인물": "클라인",
+     "변화": "1872년 에를랑겐 프로그램에서 기하학을 '변환군 아래 변하지 않는 성질의 연구'로 정의해, 흩어진 기하들을 한 틀에 넣었다.",
+     "출처": 5
+    },
+    {
+     "세기": 20,
+     "인물": "미분기하학",
+     "변화": "다양체 위에서 좌표를 국소적 장치로만 쓰고, 텐서·미분형식으로 좌표에 무관한 서술을 얻었다.",
+     "출처": 6
+    }
+   ],
+   "선행개념": [
+    "concept-analytic-geometry"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-descartes",
+    "person-fermat"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학산책), 비유클리드 기하학의 발견 — 평행선 공준을 바꾸면 어떻게 되는가",
+     "URL": "https://terms.naver.com/entry.naver?docId=3573113&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 비유클리드 기하 — 평행선 공준을 다른 것으로 바꾼 기하",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405126&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 리만 기하학 — 1854년 6월 10일 괴팅겐, 가우스가 지켜보는 가운데 한 교수자격 강연",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668464&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(두산백과), 리만 기하학 — 리만계량이 주어진 미분가능다양체의 미분기하학",
+     "URL": "https://terms.naver.com/entry.naver?docId=978703&cid=60248&categoryId=60248",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 기하학 — 공간·데카르트의 해석기하학·클라인의 프로그램·선형대수학",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125189&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 미분기하학 — 다양체·벡터장·미분형식",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125287&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 구면기하학 — 구면 위에서 직선에 해당하는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3404973&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학산책), 택시기하학 — 거리를 다르게 재면 도형이 달라진다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3567439&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Erlangen program — 19세기 중반 유클리드·해석·비유클리드·사영 기하가 통일 틀 없이 경쟁하던 상황과 클라인의 해법",
+     "URL": "https://en.wikipedia.org/wiki/Erlangen_program",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor History of Mathematics, Bernhard Riemann — 생애와 1854년 교수자격 과정",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Toshikazu Sunada, Generalized Riemann Sums (arXiv) — 리만의 교수자격이 논문(삼각급수·적분)과 강연(기하학의 가설) 두 부분이었다는 서술",
+     "URL": "https://arxiv.org/pdf/1701.04699",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Encyclopedia.com, Bernhard Riemann — 가우스가 세 번째 주제를 골랐다는 경위",
+     "URL": "https://www.encyclopedia.com/people/science-and-technology/mathematics-biographies/bernhard-riemann",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Springer, Bernhard Riemann — Über die Hypothesen, welche der Geometrie zu Grunde liegen (원전 편집본)",
+     "URL": "https://link.springer.com/book/10.1007/978-3-662-70872-9",
+     "유형": "1차"
+    }
+   ],
+   "path": "notes/concept-analytic-geometry-advanced/note.md",
+   "세기전체": [
+    17,
+    19,
+    20
+   ],
+   "자수": 10686,
+   "시각화": 3
   },
   {
    "유형": "개념",
@@ -2203,7 +2382,8 @@
     "리만 적분",
     "르베그 적분",
     "측도",
-    "적분 확장편"
+    "적분 확장편",
+    "적분법 확장편"
    ],
    "볼트파일명": "개념_적분법 확장편",
    "트랙": "확장편",
@@ -2394,6 +2574,7 @@
    "17": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -2419,6 +2600,7 @@
     "person-newton"
    ],
    "19": [
+    "concept-analytic-geometry-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -2426,6 +2608,7 @@
     "concept-integration-advanced"
    ],
    "20": [
+    "concept-analytic-geometry-advanced",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration-advanced"
@@ -2449,6 +2632,7 @@
    "기하학": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "episode-descartes-fly",
     "person-barrow",
     "person-descartes",
@@ -2464,8 +2648,12 @@
    "대수학": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "person-descartes",
     "person-napier"
+   ],
+   "미분기하학": [
+    "concept-analytic-geometry-advanced"
    ],
    "수학기초론": [
     "concept-differentiation-advanced"
@@ -2510,6 +2698,9 @@
     "concept-analytic-geometry",
     "person-descartes"
    ],
+   "기하": [
+    "concept-analytic-geometry-advanced"
+   ],
    "미적분Ⅰ": [
     "concept-differentiation",
     "concept-differentiation-advanced",
@@ -2539,6 +2730,7 @@
    ],
    "개념": [
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -2566,6 +2758,7 @@
    "수학사": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -2615,6 +2808,7 @@
    "해석기하": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "episode-descartes-fly",
     "person-descartes"
    ],
@@ -2630,6 +2824,7 @@
    ],
    "좌표": [
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "episode-descartes-fly",
     "person-descartes"
    ],
@@ -2646,6 +2841,25 @@
    ],
    "방정식": [
     "concept-analytic-geometry"
+   ],
+   "비유클리드": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "사영기하": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "리만": [
+    "concept-analytic-geometry-advanced",
+    "concept-integration-advanced"
+   ],
+   "클라인": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "힐베르트": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "19세기": [
+    "concept-analytic-geometry-advanced"
    ],
    "미분": [
     "concept-differentiation",
@@ -2717,9 +2931,6 @@
    ],
    "카발리에리": [
     "concept-integration"
-   ],
-   "리만": [
-    "concept-integration-advanced"
    ],
    "다르부": [
     "concept-integration-advanced"
@@ -2821,15 +3032,37 @@
   "인물": {
    "person-descartes": [
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "episode-descartes-fly"
    ],
    "person-fermat": [
     "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
     "concept-differentiation",
     "episode-pascal-fermat-letters"
    ],
    "후대 편집자들": [
     "concept-analytic-geometry"
+   ],
+   "데자르그": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "로바쳅스키·보여이": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "리만": [
+    "concept-analytic-geometry-advanced",
+    "concept-integration",
+    "concept-integration-advanced"
+   ],
+   "미분기하학": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "클라인": [
+    "concept-analytic-geometry-advanced"
+   ],
+   "퐁슬레": [
+    "concept-analytic-geometry-advanced"
    ],
    "person-barrow": [
     "concept-differentiation",
@@ -2881,10 +3114,6 @@
     "concept-fundamental-theorem",
     "concept-integration-advanced"
    ],
-   "리만": [
-    "concept-integration",
-    "concept-integration-advanced"
-   ],
    "아르키메데스": [
     "concept-integration"
    ],
@@ -2918,6 +3147,12 @@
     {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -3160,6 +3395,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -3208,6 +3449,12 @@
      "제목": "17세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-differentiation",
@@ -3354,6 +3601,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -3458,10 +3711,24 @@
      "경로": "본문"
     }
    ],
+   "concept-analytic-geometry-advanced": [
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "짝문서"
+    }
+   ],
    "century-17c": [
     {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
      "유형": "개념",
      "경로": "본문"
     },
@@ -3510,7 +3777,13 @@
      "경로": "관련일화"
     }
    ],
-   "concept-integration": [
+   "concept-fundamental-theorem": [
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
@@ -3518,16 +3791,10 @@
      "경로": "후속개념"
     },
     {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
+     "슬러그": "concept-integration",
+     "제목": "적분법",
      "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "선행개념"
+     "경로": "후속개념"
     },
     {
      "슬러그": "concept-integration-advanced",
@@ -3560,7 +3827,21 @@
      "경로": "기여개념"
     }
    ],
-   "concept-fundamental-theorem": [
+   "concept-integration-advanced": [
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "짝문서"
+    }
+   ],
+   "concept-integration": [
     {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
@@ -3568,10 +3849,16 @@
      "경로": "후속개념"
     },
     {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
      "유형": "개념",
-     "경로": "후속개념"
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-integration-advanced",
@@ -3632,14 +3919,6 @@
      "경로": "관련인물"
     }
    ],
-   "concept-integration-advanced": [
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "짝문서"
-    }
-   ],
    "episode-newton-apple": [
     {
      "슬러그": "person-newton",
@@ -3665,6 +3944,17 @@
   "해석기하 이해편": "concept-analytic-geometry",
   "해석기하이해편": "concept-analytic-geometry",
   "해석기하학": "concept-analytic-geometry",
+  "concept-analytic-geometry-advanced": "concept-analytic-geometry-advanced",
+  "개념_해석기하 확장편": "concept-analytic-geometry-advanced",
+  "리만 기하학": "concept-analytic-geometry-advanced",
+  "비유클리드 기하": "concept-analytic-geometry-advanced",
+  "사영기하": "concept-analytic-geometry-advanced",
+  "에를랑겐 프로그램": "concept-analytic-geometry-advanced",
+  "좌표와 불변량": "concept-analytic-geometry-advanced",
+  "해석기하 (확장편)": "concept-analytic-geometry-advanced",
+  "해석기하 (확장편) 확장편": "concept-analytic-geometry-advanced",
+  "해석기하 (확장편)확장편": "concept-analytic-geometry-advanced",
+  "해석기하 확장편": "concept-analytic-geometry-advanced",
   "concept-differentiation": "concept-differentiation",
   "개념_미분법": "concept-differentiation",
   "도함수": "concept-differentiation",
@@ -3712,6 +4002,7 @@
   "적분법 (확장편)": "concept-integration-advanced",
   "적분법 (확장편) 확장편": "concept-integration-advanced",
   "적분법 (확장편)확장편": "concept-integration-advanced",
+  "적분법 확장편": "concept-integration-advanced",
   "측도": "concept-integration-advanced",
   "episode-descartes-fly": "episode-descartes-fly",
   "데카르트 파리": "episode-descartes-fly",
