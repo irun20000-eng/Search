@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 270" role="img" aria-label="같은 원을 작도로 다루는 방식과 방정식으로 다루는 방식의 비교">
+  <title>도형을 방정식으로 — 같은 원, 두 가지 다루는 법</title>
+  <rect width="620" height="270" fill="#FFFDF7"/>
+
+  <!-- 구분선 -->
+  <line x1="310" y1="30" x2="310" y2="235" stroke="#DED3C0" stroke-width="1.2" stroke-dasharray="5 4"/>
+
+  <!-- 왼쪽: 작도 -->
+  <text x="30" y="28" font-family="EB Garamond, Georgia, serif" font-size="14" fill="#8A7F6E">1637년 이전 — 자와 컴퍼스</text>
+  <circle cx="150" cy="135" r="70" fill="none" stroke="#221E18" stroke-width="2.2"/>
+  <circle cx="150" cy="135" r="3.5" fill="#221E18"/>
+  <line x1="150" y1="135" x2="220" y2="135" stroke="#8A7F6E" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <text x="178" y="128" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#5B5245">r</text>
+  <!-- 컴퍼스 표시 -->
+  <path d="M150 135 L128 62 M150 135 L172 62" fill="none" stroke="#9C5A2C" stroke-width="1.5"/>
+  <circle cx="150" cy="58" r="4" fill="none" stroke="#9C5A2C" stroke-width="1.5"/>
+  <text x="30" y="232" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#5B5245">
+    “한 점에서 같은 거리에 있는 점들”
+  </text>
+  <text x="30" y="250" font-family="EB Garamond, Georgia, serif" font-size="12.5" fill="#8A7F6E">
+    도형마다 성질을 따로 다뤄야 한다
+  </text>
+
+  <!-- 오른쪽: 좌표 -->
+  <text x="340" y="28" font-family="EB Garamond, Georgia, serif" font-size="14" fill="#8A7F6E">1637년 이후 — 좌표와 방정식</text>
+  <!-- 격자 -->
+  <g stroke="#EDE4D4" stroke-width="1">
+    <line x1="360" y1="75" x2="360" y2="200"/><line x1="400" y1="75" x2="400" y2="200"/>
+    <line x1="480" y1="75" x2="480" y2="200"/><line x1="520" y1="75" x2="520" y2="200"/>
+    <line x1="360" y1="95" x2="565" y2="95"/><line x1="360" y1="175" x2="565" y2="175"/>
+  </g>
+  <!-- 축 -->
+  <line x1="345" y1="135" x2="570" y2="135" stroke="#8A7F6E" stroke-width="1.3"/>
+  <line x1="440" y1="65" x2="440" y2="205" stroke="#8A7F6E" stroke-width="1.3"/>
+  <text x="574" y="139" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#8A7F6E">x</text>
+  <text x="432" y="62" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#8A7F6E">y</text>
+  <!-- 원 -->
+  <circle cx="440" cy="135" r="60" fill="none" stroke="#221E18" stroke-width="2.2"/>
+  <!-- 한 점 -->
+  <circle cx="488" cy="99" r="4" fill="#3A5C77"/>
+  <line x1="440" y1="99" x2="488" y2="99" stroke="#3A5C77" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="488" y1="99" x2="488" y2="135" stroke="#3A5C77" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="494" y="94" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#3A5C77">(x, y)</text>
+
+  <text x="340" y="232" font-family="EB Garamond, Georgia, serif" font-size="15" fill="#9C5A2C" font-style="italic">
+    x² + y² = r²
+  </text>
+  <text x="340" y="250" font-family="EB Garamond, Georgia, serif" font-size="12.5" fill="#8A7F6E">
+    도형이 식이 되면 계산으로 다룰 수 있다
+  </text>
+</svg>
