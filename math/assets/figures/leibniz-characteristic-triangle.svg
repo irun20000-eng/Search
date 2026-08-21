@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" role="img" aria-label="라이프니츠의 특성삼각형">
+  <title>라이프니츠의 특성삼각형 — dx, dy, ds</title>
+  <rect width="600" height="260" fill="#FFFDF7"/>
+
+  <!-- 축 -->
+  <line x1="55" y1="220" x2="565" y2="220" stroke="#8A7F6E" stroke-width="1.2"/>
+  <line x1="55" y1="220" x2="55" y2="30" stroke="#8A7F6E" stroke-width="1.2"/>
+
+  <!-- 곡선 -->
+  <path d="M65 212 C185 203 275 163 355 122 C435 81 505 58 558 44"
+        fill="none" stroke="#221E18" stroke-width="2.2"/>
+
+  <!-- 곡선 위 미소 삼각형 (실제 크기) -->
+  <path d="M355 122 L385 122 L385 106 Z" fill="#9C5A2C" fill-opacity="0.18" stroke="#9C5A2C" stroke-width="1.4"/>
+  <circle cx="355" cy="122" r="3.6" fill="#221E18"/>
+
+  <!-- 확대 지시선 -->
+  <line x1="352" y1="118" x2="252" y2="88" stroke="#8A7F6E" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="388" y1="112" x2="288" y2="82" stroke="#8A7F6E" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- 확대도 -->
+  <g transform="translate(140,40)">
+    <rect x="0" y="0" width="160" height="118" fill="#FFFFFF" stroke="#DED3C0" stroke-width="1.2" rx="2"/>
+    <!-- 삼각형 -->
+    <path d="M28 92 L124 92 L124 30 Z" fill="#9C5A2C" fill-opacity="0.14" stroke="#9C5A2C" stroke-width="1.8"/>
+    <!-- 직각 표시 -->
+    <path d="M114 92 L114 82 L124 82" fill="none" stroke="#9C5A2C" stroke-width="1.1"/>
+    <!-- 라벨 -->
+    <text x="70" y="107" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18" text-anchor="middle">dx</text>
+    <text x="134" y="65" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">dy</text>
+    <text x="62" y="55" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#9C5A2C">ds</text>
+  </g>
+
+  <!-- 설명 -->
+  <text x="330" y="176" font-family="EB Garamond, Georgia, serif" font-size="14" fill="#5B5245">기울기 =</text>
+  <text x="398" y="170" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">dy</text>
+  <line x1="396" y1="175" x2="426" y2="175" stroke="#221E18" stroke-width="1.2"/>
+  <text x="398" y="192" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">dx</text>
+
+  <text x="55" y="245" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E">
+    삼각형의 모양은 아무리 작아져도 변하지 않는다 — 라이프니츠가 기호를 분수처럼 다룰 수 있었던 근거.
+  </text>
+</svg>

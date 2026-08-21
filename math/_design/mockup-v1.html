@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>수학사 아카이브 — 디자인 목업 v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF6EC; --card:#FFFDF7; --card-2:#F6F0E2;
+  --ink:#221E18; --ink2:#5B5245; --ink3:#8A7F6E;
+  --rule:#DED3C0; --rule2:#EDE4D4;
+  --accent:#9C5A2C;
+  --c-concept:#3A5C77; --c-person:#8A4636; --c-episode:#5F6B39; --c-century:#6A4870;
+  --serif:'Noto Serif KR','EB Garamond',ui-serif,Georgia,serif;
+  --shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--serif); font-size:16px; line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ── 목업 안내 ─────────────────────────── */
+.mockbar{background:#2C2620;color:#F3EADA;font-size:13px;letter-spacing:.02em;padding:8px 0}
+.mockbar .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.mockbar b{color:#E8B27A;font-weight:600}
+.mockbar span{color:#B9AC98}
+
+/* ── 사이트 헤더 ───────────────────────── */
+header.site{border-bottom:1px solid var(--rule);background:var(--card)}
+header.site .wrap{display:flex;align-items:baseline;gap:26px;padding-top:18px;padding-bottom:14px;flex-wrap:wrap}
+.brand{font-size:19px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand em{font-style:normal;color:var(--accent)}
+nav.site-nav{display:flex;gap:18px;font-size:14.5px;color:var(--ink2);flex-wrap:wrap}
+nav.site-nav a{text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent}
+nav.site-nav a:hover{color:var(--ink)}
+nav.site-nav a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent)}
+
+/* ── 뷰 탭 ─────────────────────────────── */
+.viewbar{border-bottom:1px solid var(--rule);background:var(--paper);position:sticky;top:0;z-index:40}
+.viewbar .wrap{display:flex;align-items:center;gap:8px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.vtab{
+  border:1px solid var(--rule);background:transparent;color:var(--ink2);
+  font-family:var(--serif);font-size:14px;padding:6px 15px;border-radius:2px;cursor:pointer;
+}
+.vtab:hover{background:var(--card-2)}
+.vtab.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.spacer{flex:1}
+.search{
+  border:1px solid var(--rule);background:var(--card);border-radius:2px;
+  padding:6px 12px;font-family:var(--serif);font-size:14px;color:var(--ink);width:230px;
+}
+.search::placeholder{color:var(--ink3)}
+
+/* ── 공통 ──────────────────────────────── */
+.sect-note{
+  font-size:12.5px;color:var(--ink3);letter-spacing:.03em;text-transform:none;
+  border-left:2px solid var(--accent);padding-left:10px;margin:34px 0 16px;
+}
+h2.vh{font-size:26px;margin:26px 0 6px;letter-spacing:-.01em;font-weight:600}
+p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
+
+/* 유형 배지 */
+.badge{
+  display:inline-flex;align-items:center;gap:5px;font-size:11.5px;letter-spacing:.04em;
+  padding:2px 8px;border-radius:2px;border:1px solid currentColor;white-space:nowrap;
+}
+.b-concept{color:var(--c-concept)} .b-person{color:var(--c-person)}
+.b-episode{color:var(--c-episode)} .b-century{color:var(--c-century)}
+/* 사실성 배지 */
+.fact{font-size:11px;letter-spacing:.04em;padding:2px 7px;border-radius:2px;border:1px solid}
+.f-sure{color:#3E6B45;border-color:#B7CDB9;background:#EEF5EE}
+.f-lore{color:#8A6A24;border-color:#DFCC9C;background:#FBF4E4}
+.f-doubt{color:#8A3B34;border-color:#DFB3AE;background:#FBEDEB}
+
+/* ── 연표 ──────────────────────────────── */
+.band{border-top:1px solid var(--rule);padding:22px 0}
+.band.dim{opacity:.5}
+.band-head{display:flex;align-items:baseline;gap:14px;cursor:pointer;flex-wrap:wrap}
+.band-cent{font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1;min-width:108px}
+.band-cent small{font-size:14px;font-weight:400;color:var(--ink3);display:block;letter-spacing:0;margin-top:5px}
+.band-title{font-size:16.5px;color:var(--ink2);flex:1;min-width:220px}
+.band-count{font-size:13px;color:var(--ink3);white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{
+  position:relative;background:var(--card);border:1px solid var(--rule);border-radius:2px;
+  padding:7px 12px;font-size:14px;cursor:pointer;display:flex;align-items:center;gap:8px;
+  transition:border-color .15s, box-shadow .15s;
+}
+.chip:hover{border-color:var(--ink3);box-shadow:var(--shadow)}
+.chip .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.chip .yr{color:var(--ink3);font-size:12.5px}
+.chip .add{
+  opacity:0;border:none;background:transparent;font-size:14px;cursor:pointer;color:var(--ink3);
+  padding:0 0 0 3px;line-height:1;transition:opacity .15s;
+}
+.chip:hover .add{opacity:1}
+.chip .add:hover{color:var(--accent)}
+.band-cta{margin-top:14px}
+.btn{
+  font-family:var(--serif);font-size:13.5px;border:1px solid var(--rule);background:var(--card);
+  color:var(--ink2);padding:6px 13px;border-radius:2px;cursor:pointer;
+}
+.btn:hover{border-color:var(--ink3);color:var(--ink)}
+.btn-primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-primary:hover{background:#000;color:#fff}
+
+/* ── 카드 그리드 ───────────────────────── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:16px;margin-top:8px}
+.card{
+  background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:16px 16px 13px;
+  position:relative;cursor:pointer;transition:border-color .15s, box-shadow .15s;
+}
+.card:hover{border-color:var(--ink3);box-shadow:var(--shadow)}
+.card .row1{display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap}
+.card h3{font-size:17px;margin:0 0 7px;line-height:1.45;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:14px;color:var(--ink2);margin:0;line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .meta{font-size:12.5px;color:var(--ink3);margin-top:11px;display:flex;gap:10px;flex-wrap:wrap}
+.card .cardadd{
+  position:absolute;right:11px;top:11px;opacity:0;border:1px solid var(--rule);background:var(--card);
+  border-radius:2px;width:27px;height:27px;cursor:pointer;font-size:14px;color:var(--ink2);
+  transition:opacity .15s;line-height:1;
+}
+.card:hover .cardadd{opacity:1}
+.card .cardadd:hover{border-color:var(--accent);color:var(--accent)}
+.read-dot{width:6px;height:6px;border-radius:50%;background:var(--ink3);opacity:.45;display:inline-block}
+
+/* ── 생애 겹침 ─────────────────────────── */
+.lifewrap{background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:20px 18px 12px;margin-top:8px;overflow-x:auto}
+.lifegrid{min-width:640px}
+.lifeaxis{display:flex;font-size:12px;color:var(--ink3);border-bottom:1px solid var(--rule2);padding-bottom:6px;margin-bottom:12px}
+.lifeaxis span{flex:1;text-align:left}
+.liferow{display:flex;align-items:center;gap:12px;margin-bottom:9px}
+.lifename{width:104px;font-size:13.5px;text-align:right;color:var(--ink2);flex:none}
+.lifetrack{flex:1;height:15px;position:relative;background:linear-gradient(90deg,var(--rule2) 1px,transparent 1px);background-size:calc(100%/6) 100%}
+.lifebar{position:absolute;height:15px;border-radius:1px;background:var(--c-person);opacity:.78;display:flex;align-items:center}
+.lifebar span{font-size:10.5px;color:#fff;padding-left:6px;white-space:nowrap;letter-spacing:.02em}
+
+/* ── 읽기 화면 ─────────────────────────── */
+.reader{background:var(--card);border:1px solid var(--rule);border-radius:2px;margin-top:8px;box-shadow:var(--shadow)}
+.rtop{
+  position:sticky;top:53px;z-index:30;background:var(--card);border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;gap:6px;padding:9px 14px;flex-wrap:wrap;
+}
+.ricon{
+  border:1px solid transparent;background:transparent;font-family:var(--serif);font-size:13.5px;
+  color:var(--ink2);padding:5px 9px;border-radius:2px;cursor:pointer;white-space:nowrap;
+}
+.ricon:hover{background:var(--card-2);color:var(--ink)}
+.ricon.on{background:var(--ink);color:var(--paper)}
+.rdiv{width:1px;height:19px;background:var(--rule);margin:0 3px}
+.rbody{display:grid;grid-template-columns:1fr 208px;gap:34px;padding:30px 34px 40px}
+.article{max-width:68ch;font-size:17px;line-height:1.85}
+.article h1{font-size:31px;line-height:1.3;margin:0 0 6px;letter-spacing:-.015em;font-weight:700}
+.article .subtitle{color:var(--ink2);font-size:16px;margin:0 0 20px}
+.article h2{font-size:21px;margin:34px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--rule2);font-weight:600}
+.article p{margin:0 0 17px}
+.docmeta{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--rule2)}
+
+/* 위키링크 */
+.wl{
+  color:var(--c-concept);text-decoration:none;
+  border-bottom:1px solid rgba(58,92,119,.42);
+}
+.wl:hover{background:rgba(58,92,119,.09);border-bottom-color:var(--c-concept)}
+.wl-pending{
+  color:var(--ink3);border-bottom:1px dashed var(--rule);cursor:help;
+}
+.wl-pending:hover{color:var(--ink2);border-bottom-color:var(--ink3)}
+/* 자동 감지 개념 */
+.auto-concept{border-bottom:1px dotted var(--ink3);cursor:pointer}
+body:not(.hl) .auto-concept{border-bottom:none;cursor:auto}
+
+/* 인용 */
+.cite{
+  color:var(--accent);text-decoration:none;font-size:.82em;vertical-align:super;line-height:0;
+  padding:0 1px;cursor:pointer;position:relative;
+}
+.cite:hover{text-decoration:underline}
+.tip{
+  position:fixed;z-index:90;max-width:330px;background:#2C2620;color:#F3EADA;
+  padding:11px 13px;border-radius:3px;font-size:13px;line-height:1.55;
+  box-shadow:0 8px 28px rgba(0,0,0,.3);display:none;
+}
+.tip.show{display:block}
+.tip .t-title{font-weight:600;margin-bottom:5px;color:#fff}
+.tip .t-meta{display:flex;gap:8px;align-items:center;color:#B9AC98;font-size:11.5px}
+.tip .t-kind{border:1px solid #6E6355;padding:1px 6px;border-radius:2px}
+.tip .t-kind.p1{color:#E8B27A;border-color:#8A6A44}
+
+/* 수식 */
+.mathline{
+  background:var(--card-2);border-left:2px solid var(--rule);padding:11px 16px;
+  margin:0 0 17px;font-size:16.5px;font-family:'EB Garamond',var(--serif);
+}
+figure{margin:0 0 20px}
+figure svg{width:100%;height:auto;border:1px solid var(--rule);background:#fff;border-radius:2px}
+figcaption{font-size:13px;color:var(--ink3);margin-top:7px;line-height:1.5}
+figcaption b{color:var(--ink2);font-weight:500}
+
+/* 사이드 목차 */
+.rtoc{position:sticky;top:110px;align-self:start;font-size:13.5px;line-height:1.9}
+.rtoc div.h{font-size:11.5px;letter-spacing:.08em;color:var(--ink3);margin-bottom:9px}
+.rtoc a{display:block;color:var(--ink2);text-decoration:none;padding-left:9px;border-left:2px solid var(--rule2)}
+.rtoc a:hover{color:var(--ink);border-left-color:var(--ink3)}
+.rtoc a.on{color:var(--accent);border-left-color:var(--accent)}
+
+/* 출처 */
+.srcs{margin-top:36px;padding-top:22px;border-top:1px solid var(--rule)}
+.srcs h2{margin-top:0;border:none;padding:0}
+.srcs ol{padding-left:22px;margin:0;font-size:14.5px;line-height:1.72;color:var(--ink2)}
+.srcs li{margin-bottom:7px}
+.srcs .kind{font-size:11px;border:1px solid var(--rule);padding:1px 6px;border-radius:2px;color:var(--ink3);margin-right:6px}
+.srcs .kind.p1{color:var(--accent);border-color:#D9B893;background:#FBF2E7}
+.srcs .back{color:var(--ink3);text-decoration:none;margin-left:5px}
+.srcs .back:hover{color:var(--accent)}
+
+/* 역링크 / 관련 */
+.panel{margin-top:32px;padding:19px 20px;background:var(--card-2);border:1px solid var(--rule2);border-radius:2px}
+.panel h3{margin:0 0 12px;font-size:14px;letter-spacing:.03em;color:var(--ink2);font-weight:600}
+.panel ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.panel li{font-size:14.5px;display:flex;gap:9px;align-items:baseline}
+.panel a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.panel a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.panel .who{font-size:12px;color:var(--ink3);flex:none}
+
+/* ── 담기함 ────────────────────────────── */
+.cartfab{
+  position:fixed;right:24px;bottom:24px;z-index:60;background:var(--ink);color:var(--paper);
+  border:none;border-radius:2px;padding:12px 18px;font-family:var(--serif);font-size:14.5px;
+  cursor:pointer;box-shadow:0 6px 20px rgba(60,45,25,.26);display:flex;align-items:center;gap:9px;
+}
+.cartfab .n{background:var(--accent);border-radius:2px;padding:0 7px;font-size:12.5px}
+.cartpanel{
+  position:fixed;right:24px;bottom:78px;z-index:60;width:352px;max-width:calc(100vw - 40px);
+  background:var(--card);border:1px solid var(--rule);border-radius:2px;
+  box-shadow:0 14px 44px rgba(60,45,25,.24);display:none;
+}
+.cartpanel.open{display:block}
+.cartpanel .ch{padding:15px 17px 11px;border-bottom:1px solid var(--rule2);display:flex;align-items:baseline;gap:9px}
+.cartpanel .ch b{font-size:15.5px;font-weight:600}
+.cartpanel .ch span{font-size:12.5px;color:var(--ink3)}
+.cartlist{max-height:270px;overflow-y:auto;padding:9px 0}
+.citem{display:flex;align-items:center;gap:10px;padding:8px 17px;font-size:14px}
+.citem:hover{background:var(--card-2)}
+.citem .drag{color:var(--ink3);cursor:grab;font-size:13px;flex:none;letter-spacing:-2px}
+.citem .nm{flex:1;line-height:1.4}
+.citem .len{font-size:11.5px;color:var(--ink3);flex:none}
+.citem .tg{font-size:11px;border:1px solid var(--rule);border-radius:2px;padding:1px 5px;color:var(--ink3);cursor:pointer;flex:none}
+.citem .tg.on{color:var(--accent);border-color:#D9B893}
+.citem .rm{border:none;background:transparent;color:var(--ink3);cursor:pointer;font-size:14px;flex:none;padding:0}
+.citem .rm:hover{color:#8A3B34}
+.cartfoot{border-top:1px solid var(--rule2);padding:13px 17px 15px}
+.cartsum{font-size:12.5px;color:var(--ink3);margin-bottom:11px;display:flex;justify-content:space-between}
+.cartbtns{display:flex;gap:7px;flex-wrap:wrap}
+.cartbtns .btn{flex:1;min-width:82px;text-align:center}
+.coursebox{margin-top:11px;padding-top:11px;border-top:1px dashed var(--rule2);display:flex;gap:7px}
+.coursebox input{flex:1;border:1px solid var(--rule);background:var(--paper);border-radius:2px;padding:6px 10px;font-family:var(--serif);font-size:13px;color:var(--ink);min-width:0}
+.coursebox input::placeholder{color:var(--ink3)}
+
+/* 빈 상태 */
+.empty{text-align:center;padding:56px 20px;color:var(--ink3)}
+.empty p{margin:0 0 16px;font-size:15px}
+
+footer.site{border-top:1px solid var(--rule);margin-top:60px;padding:26px 0 70px;color:var(--ink3);font-size:13.5px}
+
+@media(max-width:860px){
+  .rbody{grid-template-columns:1fr;padding:24px 20px 34px;gap:20px}
+  .rtoc{position:static;order:-1;border-bottom:1px solid var(--rule2);padding-bottom:14px}
+  .rtop{top:0}
+  .article{font-size:16.5px}
+  .article h1{font-size:26px}
+  .cartpanel{right:12px;left:12px;width:auto;bottom:72px}
+  .cartfab{right:14px;bottom:14px}
+}
+</style>
+</head>
+<body class="">
+
+<div class="mockbar"><div class="wrap">
+  <b>디자인 목업 v1</b>
+  <span>고문서·아카이브 톤 · 라이트 전용 · 데이터는 17세기 실제 예시</span>
+  <span style="margin-left:auto">탭·담기·호버 툴팁은 실제로 작동합니다</span>
+</div></div>
+
+<header class="site"><div class="wrap">
+  <div class="brand">Search · <em>수학사 아카이브</em></div>
+  <nav class="site-nav">
+    <a href="#">📄 보고서</a>
+    <a href="#">🎬 영상노트</a>
+    <a href="#">📘 가이드</a>
+    <a href="#" class="on">📐 수학사</a>
+  </nav>
+</div></header>
+
+<div class="viewbar"><div class="wrap">
+  <button class="vtab on" data-v="tl">연표</button>
+  <button class="vtab" data-v="cc">개념</button>
+  <button class="vtab" data-v="pp">인물</button>
+  <button class="vtab" data-v="rd">읽기 화면</button>
+  <div class="spacer"></div>
+  <input class="search" placeholder="개념 · 인물 · 키워드 검색">
+</div></div>
+
+<div class="wrap">
+
+<!-- ════════ 연표 ════════ -->
+<section id="v-tl">
+  <div class="sect-note">화면 1 — 연표 뷰 (기본 진입 화면)</div>
+  <h2 class="vh">세기로 보는 수학사</h2>
+  <p class="vsub">세기 밴드를 눌러 개관으로 들어가거나, 칩을 눌러 개별 문서로 갑니다. 칩에 마우스를 올리면 담기 버튼이 나타납니다.</p>
+
+  <div class="band dim">
+    <div class="band-head">
+      <div class="band-cent">16<small>1501–1600</small></div>
+      <div class="band-title">대수의 부활과 기호의 태동</div>
+      <div class="band-count">아직 작성되지 않음</div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="band-head">
+      <div class="band-cent">17<small>1601–1700</small></div>
+      <div class="band-title">과학혁명과 미적분의 탄생 — 운동을 계산하려는 시도가 새로운 수학을 요구했다</div>
+      <div class="band-count">문서 14편</div>
+    </div>
+    <div class="chips">
+      <span class="chip"><i class="dot" style="background:var(--c-concept)"></i>해석기하<button class="add" title="담기">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-concept)"></i>미분<button class="add" title="담기">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-concept)"></i>적분<button class="add" title="담기">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-person)"></i>데카르트<span class="yr">1596–1650</span><button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-person)"></i>페르마<span class="yr">1607–1665</span><button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-person)"></i>파스칼<span class="yr">1623–1662</span><button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-person)"></i>뉴턴<span class="yr">1643–1727</span><button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-person)"></i>라이프니츠<span class="yr">1646–1716</span><button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-episode)"></i>뉴턴의 사과<button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-episode)"></i>파스칼–페르마 서신<button class="add">＋</button></span>
+      <span class="chip"><i class="dot" style="background:var(--c-episode)"></i>우선권 논쟁<button class="add">＋</button></span>
+    </div>
+    <div class="band-cta">
+      <button class="btn">이 세기 개관 읽기</button>
+      <button class="btn">이 세기 전체 담기 (14편)</button>
+    </div>
+  </div>
+
+  <div class="band dim">
+    <div class="band-head">
+      <div class="band-cent">18<small>1701–1800</small></div>
+      <div class="band-title">해석학의 확장 — 오일러의 세기</div>
+      <div class="band-count">아직 작성되지 않음</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 개념 ════════ -->
+<section id="v-cc" style="display:none">
+  <div class="sect-note">화면 2 — 개념 뷰 · 카드에 담기 버튼과 유형 배지</div>
+  <h2 class="vh">개념</h2>
+  <p class="vsub">개념을 고르면 <b>발전단계</b>가 세로 타임라인으로 펼쳐집니다. 여러 세기에 걸친 개념은 각 세기 밴드에 자동으로 나타납니다.</p>
+  <div class="grid">
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-concept">개념</span><span class="badge" style="color:var(--ink3)">17세기</span><span class="read-dot" title="읽음"></span></div>
+      <h3>미분법</h3>
+      <p>접선을 구하는 기하 문제와 순간속도를 구하는 물리 문제가 같은 계산이라는 인식이 자리 잡기까지 반세기가 걸렸다.</p>
+      <div class="meta"><span>이해편 · 확장편</span><span>출처 14</span><span>미적분Ⅰ</span></div>
+    </article>
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-concept">개념</span><span class="badge" style="color:var(--ink3)">17세기</span></div>
+      <h3>적분법</h3>
+      <p>넓이를 구하는 고대의 소진법이 카발리에리의 불가분량을 거쳐 합의 극한이라는 형태로 정리되는 과정.</p>
+      <div class="meta"><span>이해편</span><span>출처 11</span><span>미적분Ⅱ</span></div>
+    </article>
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-concept">개념</span><span class="badge" style="color:var(--ink3)">17세기</span></div>
+      <h3>해석기하</h3>
+      <p>도형을 방정식으로 바꾸어 놓은 데카르트의 착상. 좌표는 기하와 대수를 잇는 다리가 되었다.</p>
+      <div class="meta"><span>이해편</span><span>출처 9</span><span>공통수학2</span></div>
+    </article>
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-episode">일화</span><span class="fact f-lore">전승</span></div>
+      <h3>뉴턴의 사과</h3>
+      <p>스터클리가 1752년에 남긴 회고에 근거가 있으나, 머리에 맞았다는 대목은 후대의 각색이다.</p>
+      <div class="meta"><span>1,400자</span><span>출처 4</span></div>
+    </article>
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-episode">일화</span><span class="fact f-doubt">창작의심</span></div>
+      <h3>데카르트와 천장의 파리</h3>
+      <p>좌표 착상의 계기로 널리 인용되지만 동시대 기록이 없다. 19세기 이후 문헌에서 처음 확인된다.</p>
+      <div class="meta"><span>1,100자</span><span>출처 3</span></div>
+    </article>
+    <article class="card">
+      <button class="cardadd" title="담기">＋</button>
+      <div class="row1"><span class="badge b-episode">일화</span><span class="fact f-sure">확실</span></div>
+      <h3>파스칼–페르마 서신</h3>
+      <p>1654년 도박 문제를 두고 오간 편지가 확률론의 출발점이 되었다. 원본 서한이 남아 있다.</p>
+      <div class="meta"><span>2,100자</span><span>출처 6</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ════════ 인물 ════════ -->
+<section id="v-pp" style="display:none">
+  <div class="sect-note">화면 3 — 인물 뷰 · 생애 겹침</div>
+  <h2 class="vh">인물</h2>
+  <p class="vsub">생몰 막대를 겹쳐 놓으면 누가 누구와 동시대였는지가 한눈에 보입니다. 뉴턴과 라이프니츠는 <b>70년</b>을 겹쳐 살았습니다.</p>
+  <div class="lifewrap"><div class="lifegrid">
+    <div class="lifeaxis"><span>1550</span><span>1575</span><span>1600</span><span>1625</span><span>1650</span><span>1675</span><span>1700</span><span style="flex:0">1725</span></div>
+    <div class="liferow"><div class="lifename">네이피어</div><div class="lifetrack"><div class="lifebar" style="left:0%;width:19.1%"><span>1550–1617</span></div></div></div>
+    <div class="liferow"><div class="lifename">데카르트</div><div class="lifetrack"><div class="lifebar" style="left:26.3%;width:30.9%"><span>1596–1650</span></div></div></div>
+    <div class="liferow"><div class="lifename">페르마</div><div class="lifetrack"><div class="lifebar" style="left:32.6%;width:33.1%"><span>1607–1665</span></div></div></div>
+    <div class="liferow"><div class="lifename">파스칼</div><div class="lifetrack"><div class="lifebar" style="left:41.7%;width:22.3%"><span>1623–1662</span></div></div></div>
+    <div class="liferow"><div class="lifename">뉴턴</div><div class="lifetrack"><div class="lifebar" style="left:53.1%;width:48%"><span>1643–1727</span></div></div></div>
+    <div class="liferow"><div class="lifename">라이프니츠</div><div class="lifetrack"><div class="lifebar" style="left:54.9%;width:40%"><span>1646–1716</span></div></div></div>
+  </div></div>
+</section>
+
+<!-- ════════ 읽기 ════════ -->
+<section id="v-rd" style="display:none">
+  <div class="sect-note">화면 4 — 읽기 화면 · 상호 링크와 출처가 실제로 작동합니다</div>
+  <div class="reader">
+    <div class="rtop">
+      <button class="ricon">⬅ 해석기하</button>
+      <button class="ricon">적분법 ➡</button>
+      <div class="rdiv"></div>
+      <button class="ricon" id="btnAdd">🧺 담기</button>
+      <button class="ricon">🔗 링크 복사</button>
+      <button class="ricon">🖨 인쇄</button>
+      <button class="ricon">📄 원문 .md</button>
+      <div class="rdiv"></div>
+      <button class="ricon" id="btnHl" title="본문의 개념어를 점선으로 표시">🔆 개념 하이라이트</button>
+      <div class="rdiv"></div>
+      <button class="ricon" id="fMinus">A−</button>
+      <button class="ricon" id="fPlus">A＋</button>
+      <div class="spacer"></div>
+      <button class="ricon">닫기 ✕</button>
+    </div>
+
+    <div class="rbody">
+      <div class="article" id="art">
+        <h1>미분법</h1>
+        <p class="subtitle">접선과 순간속도가 같은 계산이라는 것을 알아채기까지</p>
+        <div class="docmeta">
+          <span class="badge b-concept">개념 · 이해편</span>
+          <span class="badge" style="color:var(--ink3)">17세기</span>
+          <span class="badge" style="color:var(--ink3)">해석학</span>
+          <span class="badge" style="color:var(--ink3)">미적분Ⅰ</span>
+          <span style="font-size:13px;color:var(--ink3)">9,140자 · 출처 14</span>
+        </div>
+
+        <h2 id="s1">1. 두 개의 문제, 하나의 답</h2>
+        <p>17세기 중반의 수학자들은 겉으로는 무관해 보이는 두 문제를 각각 붙들고 있었다. 하나는 곡선 위 한 점에서 <span class="auto-concept">접선</span>을 긋는 기하 문제였고, 다른 하나는 시시각각 변하는 물체의 순간속도를 구하는 물리 문제였다<a class="cite" data-s="1">[1]</a>. 두 문제가 같은 계산이라는 사실이 분명해지기까지는 다시 반세기가 걸린다.</p>
+        <p><a class="wl" href="#">페르마</a>는 1636년 무렵 극대·극소를 판정하는 방법을 고안했다. 그는 변수에 미소량 <i>e</i>를 더한 뒤 두 값을 <span class="wl-pending" title="아직 작성되지 않은 문서 — 클릭할 수 없습니다">의사등식</span>으로 놓고, 정리한 다음 <i>e</i>를 0으로 만들었다<a class="cite" data-s="3">[3]</a>. 극한 개념 없이 극한의 결과를 얻어낸 셈이다.</p>
+
+        <div class="mathline">(x + e)² − x² = 2xe + e² &nbsp;→&nbsp; 2x + e &nbsp;→&nbsp; 2x</div>
+
+        <p>이 절차는 오늘날의 도함수 정의와 결과가 같지만, 페르마 자신은 <span class="wl-pending" title="아직 작성되지 않은 문서">무한소</span>가 무엇인지 정의하지 않았다. 이 미정의 상태는 <a class="wl" href="#">코시</a>가 극한을 엄밀하게 규정하는 19세기까지 이어진다<a class="cite" data-s="7">[7]</a>.</p>
+
+        <figure>
+          <svg viewBox="0 0 560 210" xmlns="http://www.w3.org/2000/svg">
+            <rect width="560" height="210" fill="#FFFDF7"/>
+            <line x1="60" y1="175" x2="520" y2="175" stroke="#8A7F6E" stroke-width="1.2"/>
+            <line x1="60" y1="175" x2="60" y2="25" stroke="#8A7F6E" stroke-width="1.2"/>
+            <path d="M60 175 Q 200 168 300 120 T 505 35" fill="none" stroke="#221E18" stroke-width="2"/>
+            <line x1="180" y1="185" x2="420" y2="60" stroke="#9C5A2C" stroke-width="1.6"/>
+            <line x1="255" y1="140" x2="345" y2="140" stroke="#3A5C77" stroke-width="1.2" stroke-dasharray="4 3"/>
+            <line x1="345" y1="140" x2="345" y2="98" stroke="#3A5C77" stroke-width="1.2" stroke-dasharray="4 3"/>
+            <circle cx="255" cy="140" r="4" fill="#221E18"/>
+            <circle cx="345" cy="98" r="4" fill="#221E18"/>
+            <text x="238" y="133" font-family="EB Garamond,serif" font-style="italic" font-size="15" fill="#221E18">P</text>
+            <text x="352" y="92" font-family="EB Garamond,serif" font-style="italic" font-size="15" fill="#221E18">Q</text>
+            <text x="292" y="157" font-family="EB Garamond,serif" font-style="italic" font-size="14" fill="#3A5C77">e</text>
+            <text x="425" y="55" font-family="EB Garamond,serif" font-size="13.5" fill="#9C5A2C">할선 → 접선</text>
+          </svg>
+          <figcaption><b>그림 1.</b> 페르마의 절차. 점 Q를 P에 붙일수록 할선의 기울기가 접선의 기울기에 가까워진다. <span style="color:var(--ink3)">직접 제작 · CC0</span></figcaption>
+        </figure>
+
+        <h2 id="s2">2. 뉴턴 — 세상은 흐른다</h2>
+        <p><a class="wl" href="#">아이작 뉴턴</a>은 같은 계산을 전혀 다른 그림으로 이해했다. 그에게 양은 시간에 따라 흐르는 것이었고, 그 흐르는 속도를 <span class="auto-concept">유율</span>이라 불렀다<a class="cite" data-s="9">[9]</a>. 표기도 점을 찍는 방식이었다.</p>
+        <p>다만 뉴턴은 이 방법을 오래 출판하지 않았다. 그 사이 <a class="wl" href="#">라이프니츠</a>가 독자적으로 도달해 1684년에 먼저 발표하게 되고, 이것이 훗날 <a class="wl" href="#">우선권 논쟁</a>으로 이어진다<a class="cite" data-s="12">[12]</a>.</p>
+
+        <section class="srcs">
+          <h2 id="s3">출처</h2>
+          <ol>
+            <li id="src-1"><span class="kind">2차</span>Katz, <i>A History of Mathematics</i>, 3rd ed., ch. 12 <a class="back" href="#">↩</a></li>
+            <li id="src-3"><span class="kind p1">1차</span>Fermat, <i>Methodus ad disquirendam maximam et minimam</i> (1636) — 영역본 <a class="back" href="#">↩</a></li>
+            <li id="src-7"><span class="kind">2차</span>Stanford Encyclopedia of Philosophy, "Continuity and Infinitesimals" <a class="back" href="#">↩</a></li>
+            <li id="src-9"><span class="kind p1">1차</span>Newton, <i>Method of Fluxions</i> (집필 1671, 출판 1736) <a class="back" href="#">↩</a></li>
+            <li id="src-12"><span class="kind">2차</span>MacTutor, "The Newton–Leibniz controversy" <a class="back" href="#">↩</a></li>
+          </ol>
+        </section>
+
+        <div class="panel">
+          <h3>이 문서를 참조하는 곳 · 5</h3>
+          <ul>
+            <li><span class="who">개념</span><a href="#">적분법</a></li>
+            <li><span class="who">개념</span><a href="#">미분법 (확장편)</a></li>
+            <li><span class="who">인물</span><a href="#">아이작 뉴턴</a></li>
+            <li><span class="who">인물</span><a href="#">고트프리트 라이프니츠</a></li>
+            <li><span class="who">보고서</span><a href="#">미적분의 발견 (이해편)</a></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>이어서 읽을 것</h3>
+          <ul>
+            <li><span class="who">확장편</span><a href="#">미분법 — 엄밀화까지의 150년</a></li>
+            <li><span class="who">같은 세기</span><a href="#">17세기 개관 — 과학혁명과 미적분의 탄생</a></li>
+            <li><span class="who">일화</span><a href="#">우선권 논쟁</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="rtoc">
+        <div class="h">목차</div>
+        <a href="#s1" class="on">1. 두 개의 문제, 하나의 답</a>
+        <a href="#s2">2. 뉴턴 — 세상은 흐른다</a>
+        <a href="#s3">출처</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer class="site"><div class="wrap">수학사 아카이브 — 디자인 목업 v1 · 승인 후 구현에 들어갑니다</div></footer>
+
+<!-- 담기함 -->
+<button class="cartfab" id="fab">🧺 담기함 <span class="n" id="fabn">4</span></button>
+<div class="cartpanel" id="cart">
+  <div class="ch"><b>담기함</b><span>드래그로 순서를 바꿉니다</span></div>
+  <div class="cartlist">
+    <div class="citem"><span class="drag">⋮⋮</span><span class="nm">17세기 개관</span><span class="tg on">전문</span><span class="len">8.2천자</span><button class="rm">✕</button></div>
+    <div class="citem"><span class="drag">⋮⋮</span><span class="nm">해석기하</span><span class="tg on">전문</span><span class="len">8.6천자</span><button class="rm">✕</button></div>
+    <div class="citem"><span class="drag">⋮⋮</span><span class="nm">미분법</span><span class="tg">요약</span><span class="len">0.4천자</span><button class="rm">✕</button></div>
+    <div class="citem"><span class="drag">⋮⋮</span><span class="nm">뉴턴의 사과</span><span class="tg on">전문</span><span class="len">1.4천자</span><button class="rm">✕</button></div>
+  </div>
+  <div class="cartfoot">
+    <div class="cartsum"><span>4편 · 약 18,600자</span><span>인쇄 시 약 12쪽</span></div>
+    <div class="cartbtns">
+      <button class="btn btn-primary">합본 .md</button>
+      <button class="btn">인쇄</button>
+      <button class="btn">복사</button>
+    </div>
+    <div class="coursebox">
+      <input placeholder="코스 이름 — 예: 미적분 도입 3차시">
+      <button class="btn">저장</button>
+    </div>
+  </div>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+// 뷰 전환
+var views={tl:'v-tl',cc:'v-cc',pp:'v-pp',rd:'v-rd'};
+document.querySelectorAll('.vtab').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.vtab').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    for(var k in views){ document.getElementById(views[k]).style.display = (k===b.dataset.v)?'':'none'; }
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+
+// 담기함
+var cart=document.getElementById('cart');
+document.getElementById('fab').addEventListener('click',function(){ cart.classList.toggle('open'); });
+document.querySelectorAll('.cartpanel .rm').forEach(function(b){
+  b.addEventListener('click',function(){
+    b.closest('.citem').remove();
+    document.getElementById('fabn').textContent=document.querySelectorAll('.citem').length;
+  });
+});
+document.querySelectorAll('.cartpanel .tg').forEach(function(t){
+  t.addEventListener('click',function(){ t.classList.toggle('on'); t.textContent=t.classList.contains('on')?'전문':'요약'; });
+});
+// 담기 버튼
+function bump(){ var n=document.getElementById('fabn'); n.textContent=(+n.textContent)+1; }
+document.querySelectorAll('.add,.cardadd').forEach(function(b){
+  b.addEventListener('click',function(e){ e.stopPropagation(); bump(); b.textContent='✓'; b.style.opacity=1; });
+});
+document.getElementById('btnAdd').addEventListener('click',function(){
+  this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'🧺 담김':'🧺 담기';
+  if(this.classList.contains('on')) bump();
+});
+
+// 개념 하이라이트 토글
+document.getElementById('btnHl').addEventListener('click',function(){
+  document.body.classList.toggle('hl'); this.classList.toggle('on');
+});
+
+// 글자 크기
+var art=document.getElementById('art'), fs=17;
+document.getElementById('fPlus').addEventListener('click',function(){ fs=Math.min(fs+1,22); art.style.fontSize=fs+'px'; });
+document.getElementById('fMinus').addEventListener('click',function(){ fs=Math.max(fs-1,14); art.style.fontSize=fs+'px'; });
+
+// 인용 호버 툴팁
+var SRC={
+  '1':{t:'Katz, A History of Mathematics, 3rd ed., ch. 12',d:'단행본',k:'2차'},
+  '3':{t:'Fermat, Methodus ad disquirendam maximam et minimam (1636)',d:'원전 영역본',k:'1차'},
+  '7':{t:'Continuity and Infinitesimals',d:'plato.stanford.edu',k:'2차'},
+  '9':{t:'Newton, Method of Fluxions (집필 1671, 출판 1736)',d:'원전',k:'1차'},
+  '12':{t:'The Newton–Leibniz controversy',d:'mathshistory.st-andrews.ac.uk',k:'2차'}
+};
+var tip=document.getElementById('tip');
+document.querySelectorAll('.cite').forEach(function(c){
+  c.addEventListener('mouseenter',function(e){
+    var s=SRC[c.dataset.s]; if(!s) return;
+    tip.innerHTML='<div class="t-title">'+s.t+'</div><div class="t-meta"><span class="t-kind'+(s.k==='1차'?' p1':'')+'">'+s.k+' 사료</span><span>'+s.d+'</span></div>';
+    tip.classList.add('show');
+    var r=c.getBoundingClientRect();
+    var top=r.bottom+9, left=Math.min(r.left, window.innerWidth-350);
+    if(top+120>window.innerHeight) top=r.top-tip.offsetHeight-9;
+    tip.style.top=top+'px'; tip.style.left=Math.max(12,left)+'px';
+  });
+  c.addEventListener('mouseleave',function(){ tip.classList.remove('show'); });
+  c.addEventListener('click',function(e){
+    e.preventDefault();
+    var el=document.getElementById('src-'+c.dataset.s);
+    if(el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.style.background='#FBF2E7'; setTimeout(function(){el.style.background='';},1400); }
+  });
+});
+
+// 목차 활성
+document.querySelectorAll('.rtoc a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    document.querySelectorAll('.rtoc a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+    var el=document.querySelector(a.getAttribute('href'));
+    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>

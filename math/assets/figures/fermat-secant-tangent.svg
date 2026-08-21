@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" role="img" aria-label="할선이 접선으로 수렴하는 과정">
+  <title>페르마의 절차 — 할선에서 접선으로</title>
+  <rect width="600" height="250" fill="#FFFDF7"/>
+
+  <!-- 축 -->
+  <line x1="60" y1="215" x2="565" y2="215" stroke="#8A7F6E" stroke-width="1.2"/>
+  <line x1="60" y1="215" x2="60" y2="25" stroke="#8A7F6E" stroke-width="1.2"/>
+  <text x="570" y="219" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E">x</text>
+  <text x="52" y="24" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E">y</text>
+
+  <!-- 곡선 -->
+  <path d="M70 208 C170 201 205 183 220 165 C250 131 295 117 330 105 C400 81 490 52 555 34"
+        fill="none" stroke="#221E18" stroke-width="2.2"/>
+
+  <!-- 할선 PQ (연장) -->
+  <line x1="170" y1="192" x2="410" y2="61" stroke="#9C5A2C" stroke-width="1.7"/>
+  <!-- 접선 at P -->
+  <line x1="150" y1="194" x2="345" y2="112" stroke="#3A5C77" stroke-width="1.7" stroke-dasharray="7 4"/>
+
+  <!-- 증분 보조선 -->
+  <line x1="220" y1="165" x2="330" y2="165" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="330" y1="165" x2="330" y2="105" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
+
+  <!-- 점 -->
+  <circle cx="220" cy="165" r="4.5" fill="#221E18"/>
+  <circle cx="330" cy="105" r="4.5" fill="#221E18"/>
+
+  <!-- 라벨 -->
+  <text x="203" y="158" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">P</text>
+  <text x="337" y="99" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">Q</text>
+  <text x="269" y="181" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#5B5245">e</text>
+  <text x="338" y="140" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#5B5245">f(x+e) − f(x)</text>
+
+  <text x="415" y="58" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C">할선 PQ</text>
+  <text x="350" y="118" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#3A5C77">접선</text>
+
+  <!-- 하단 주석 -->
+  <text x="60" y="240" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E">
+    Q를 P에 붙일수록(e → 0) 할선의 기울기가 접선의 기울기에 가까워진다.
+  </text>
+</svg>
