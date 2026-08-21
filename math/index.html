@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>수학사 아카이브 · Search</title>
+<title>수학사 — 이룬 서재</title>
 <meta name="description" content="세기·개념·인물로 훑어보는 수학사 아카이브">
+<script>
+/* 렌더 전에 테마를 적용해야 흰 화면이 번쩍이지 않는다. 키는 사이트 공통 stTheme. */
+(function(){try{if(localStorage.getItem("stTheme")==="dark")
+  document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -17,7 +22,16 @@
   --accent:#9C5A2C;
   --c-개념:#3A5C77; --c-인물:#8A4636; --c-일화:#5F6B39; --c-세기:#6A4870;
   --serif:'Noto Serif KR','EB Garamond',ui-serif,Georgia,serif;
-  --shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07);
+  --shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07);}
+/* 다크 — 양피지에서 황혼으로. 단순 반전이 아니라 색상 관계를 유지한 채 명도를 뒤집는다.
+   유형 4색(개념·인물·일화·세기)은 어두운 지면에서 읽히도록 밝기를 올렸다. */
+:root[data-theme=dark]{
+  --paper:#1B1713; --card:#221D18; --card2:#2A241D;
+  --ink:#EDE3D2; --ink2:#B9AC97; --ink3:#8F8474;
+  --rule:#3C352B; --rule2:#332D25;
+  --accent:#C88A52;
+  --c-개념:#7FA6C4; --c-인물:#D08975; --c-일화:#A4B47B; --c-세기:#B18DC5;
+  --shadow:0 1px 2px rgba(0,0,0,.32),0 8px 24px rgba(0,0,0,.38);
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -37,7 +51,7 @@ nav.site-nav a{text-decoration:none;padding-bottom:3px;border-bottom:2px solid t
 nav.site-nav a:hover{color:var(--ink)}
 nav.site-nav a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent)}
 
-.viewbar{border-bottom:1px solid var(--rule);background:var(--paper);position:sticky;top:0;z-index:40}
+.viewbar{border-bottom:1px solid var(--rule);background:var(--paper);position:sticky;top:var(--itb-h,0px);z-index:25}
 .viewbar .wrap{display:flex;align-items:center;gap:8px;padding:10px 20px;flex-wrap:wrap}
 .vtab{border:1px solid var(--rule);background:transparent;color:var(--ink2);font-size:14px;
   padding:6px 15px;border-radius:2px;cursor:pointer}
@@ -58,6 +72,9 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
 .f-확실{color:#3E6B45;border-color:#B7CDB9;background:#EEF5EE}
 .f-전승{color:#8A6A24;border-color:#DFCC9C;background:#FBF4E4}
 .f-창작의심{color:#8A3B34;border-color:#DFB3AE;background:#FBEDEB}
+:root[data-theme=dark] .f-확실{color:#8FC49A;border-color:#3E5C45;background:#1F2B22}
+:root[data-theme=dark] .f-전승{color:#DFC07A;border-color:#5C4E28;background:#2B2618}
+:root[data-theme=dark] .f-창작의심{color:#DFA096;border-color:#5C3A34;background:#2B1E1B}
 
 /* 연표 */
 .band{border-top:1px solid var(--rule);padding:22px 0}
@@ -159,6 +176,8 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
   color:var(--ink2);font-size:16.5px}
 .article img{max-width:100%;height:auto;display:block;border:1px solid var(--rule);
   background:#fff;border-radius:2px;margin:0 0 8px}
+/* SVG 도해는 지면색을 파일 안에 갖고 있다. 다크에서 흰 판이 되지 않도록 눌러 앉힌다. */
+:root[data-theme=dark] .article img{filter:brightness(.84) contrast(1.04)}
 .article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 20px}
 .article th,.article td{border:1px solid var(--rule2);padding:8px 11px;text-align:left;vertical-align:top}
 .article th{background:var(--card2);font-weight:600}
@@ -265,6 +284,7 @@ sup.fnref a{color:var(--accent);text-decoration:none}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:96px;z-index:95;background:#2C2620;
   color:#F3EADA;padding:9px 16px;border-radius:3px;font-size:13.5px;display:none}
 #toast.show{display:block}
+:root[data-theme=dark] #tip,:root[data-theme=dark] #toast{background:#3B332A;color:#F3EADA}
 
 footer.site{border-top:1px solid var(--rule);margin-top:56px;padding:26px 0 90px;
   color:var(--ink3);font-size:13.5px}
@@ -296,18 +316,10 @@ footer.site{border-top:1px solid var(--rule);margin-top:56px;padding:26px 0 90px
   .srcs{page-break-before:auto}
 }
 </style>
+<link rel="stylesheet" href="../assets/topbar.css">
 </head>
 <body>
-
-<header class="site"><div class="wrap">
-  <div class="brand">Search · <em>수학사 아카이브</em></div>
-  <nav class="site-nav">
-    <a href="../">📄 보고서</a>
-    <a href="../videos/">🎬 영상노트</a>
-    <a href="../guides/">📘 가이드</a>
-    <a href="./" class="on">📐 수학사</a>
-  </nav>
-</div></header>
+<script src="../assets/topbar.js" data-section="math" data-root="../"></script>
 
 <div class="viewbar"><div class="wrap">
   <button class="vtab on" data-v="tl">연표</button>
@@ -316,6 +328,7 @@ footer.site{border-top:1px solid var(--rule);margin-top:56px;padding:26px 0 90px
   <button class="vtab" data-v="ep">일화</button>
   <div class="spacer"></div>
   <input id="q" class="search" placeholder="개념 · 인물 · 키워드 검색">
+  <button class="vtab" id="themeBtn" type="button" title="테마 전환" aria-label="테마 전환">◑ 다크</button>
 </div></div>
 
 <div class="wrap">
@@ -1051,7 +1064,19 @@ async function boot(){
   CART=CART.filter(function(s){return BY[s];});
   save("math.cart",CART);
 
-  $$(".vtab").forEach(function(t){ t.addEventListener("click",function(){ setView(t.dataset.v); }); });
+  $$(".vtab[data-v]").forEach(function(t){ t.addEventListener("click",function(){ setView(t.dataset.v); }); });
+  var themeBtn=$("#themeBtn");
+  function paintTheme(){
+    themeBtn.textContent = document.documentElement.getAttribute("data-theme")==="dark" ? "◐ 라이트" : "◑ 다크";
+  }
+  themeBtn.addEventListener("click",function(){
+    var d=document.documentElement.getAttribute("data-theme")==="dark";
+    if(d) document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("stTheme", d?"light":"dark"); }catch(e){}
+    paintTheme();
+  });
+  paintTheme();
   $("#q").addEventListener("input",renderView);
   $("#fab").addEventListener("click",function(){ $("#cart").classList.toggle("open"); });
   $("#overlay").addEventListener("click",closeSheet);

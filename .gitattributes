@@ -1,0 +1,21 @@
+# 줄바꿈을 LF 로 고정한다.
+#
+# 이 저장소의 블롭은 전부 LF 인데, 윈도우의 core.autocrlf=true 가 체크아웃 때
+# 작업본을 CRLF 로 바꾼다. 거기에 편집이 섞이면 혼합 줄바꿈이 되고,
+# git 이 파일 전체를 바뀐 것으로 본다 — 실제로 두 줄만 고친 videos/index.html 이
+# 797줄 변경으로 잡혔고, LESSONS.md 는 CRLF 로 커밋될 뻔했다.
+#
+# eol=lf 를 두면 작업본도 LF 로 유지되어 이 문제가 사라진다.
+# 블롭은 이미 LF 라 이 파일을 추가해도 내용 diff 는 생기지 않는다.
+
+* text=auto eol=lf
+
+# 이진 파일은 손대지 않는다
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.pdf  binary
+*.woff  binary
+*.woff2 binary

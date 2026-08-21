@@ -66,7 +66,8 @@ def main():
         card["시각화"] = M.count_visuals(body)
         notes.append(card)
 
-        for a in M.aliases_for_math(fm):
+        # 집합 순회 순서는 실행마다 달라지므로 정렬해 넣는다 (재현 가능한 산출물)
+        for a in sorted(M.aliases_for_math(fm)):
             alias2slug.setdefault(a, slug)
 
     if errors:

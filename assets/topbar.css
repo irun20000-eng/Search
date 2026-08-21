@@ -1,0 +1,53 @@
+/* 이룬 서재 — 다섯 페이지 공통 상단바
+ *
+ * 페이지마다 CSS 변수 이름이 다르다(리서치·영상·가이드는 --bg/--line/--chip,
+ * 수학사는 --paper/--rule/--card2). 그래서 여기서는 자체 변수를 두고
+ * 각 페이지 변수를 순서대로 폴백시킨다. 어느 페이지에 얹어도 그 페이지 톤을 따른다.
+ */
+.itb{
+  --tb-bg:    var(--barbg, var(--bg, var(--paper, #FFF8F0)));
+  --tb-ink:   var(--ink, var(--txt, #2B2622));
+  --tb-muted: var(--muted, var(--ink3, #8A7E72));
+  --tb-line:  var(--line, var(--rule, #EFE6DA));
+  --tb-chip:  var(--chip, var(--bg-soft, var(--card2, #F7F1E8)));
+  --tb-accent:var(--accent, var(--a1, #E8743B));
+  --tb-font:  var(--font, var(--sans, var(--serif, -apple-system, sans-serif)));
+
+  /* 모달(리서치 40/41 · 수학사 50/51)보다 아래, 페이지 스티키 바보다 위 */
+  position:sticky; top:0; z-index:30;
+  background:var(--tb-bg);
+  -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  border-bottom:1px solid transparent;
+  transition:border-color .15s;
+  font-family:var(--tb-font);
+}
+.itb.stuck{ border-bottom-color:var(--tb-line) }
+
+.itb-in{
+  max-width:1080px; margin:0 auto; padding:11px 22px;
+  display:flex; align-items:center; gap:8px;
+}
+.itb-brand{
+  font-weight:800; font-size:1.02rem; letter-spacing:-.01em;
+  color:var(--tb-ink); text-decoration:none; white-space:nowrap; margin-right:10px;
+}
+.itb-brand span{ color:var(--tb-accent) }
+.itb-tabs{ display:flex; gap:2px; flex:1; align-items:center }
+.itb-tabs a{
+  font-size:.88rem; font-weight:600; color:var(--tb-muted);
+  padding:6px 12px; border-radius:9px; text-decoration:none; white-space:nowrap;
+}
+.itb-tabs a:hover{ background:var(--tb-chip); color:var(--tb-ink) }
+.itb-tabs a.on{ background:var(--tb-ink); color:var(--tb-bg) }
+
+@media(max-width:720px){
+  .itb-in{ flex-wrap:wrap; row-gap:8px; padding:10px 16px }
+  .itb-brand{ margin-right:auto }
+  /* flex:1 이 width:100% 를 이기므로 flex-basis 로 줄을 차지하게 한다 */
+  .itb-tabs{ order:3; flex:0 0 100%; overflow-x:auto; flex-wrap:nowrap;
+             scrollbar-width:none; -ms-overflow-style:none }
+  .itb-tabs::-webkit-scrollbar{ display:none }
+  .itb-tabs a{ padding:6px 10px; font-size:.85rem }
+}
+
+@media print{ .itb{ display:none !important } }
