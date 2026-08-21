@@ -75,9 +75,11 @@
     "concept-differentiation"
    ],
    "후속개념": [
+    "concept-fundamental-theorem",
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-barrow",
     "person-newton",
     "person-leibniz"
    ],
@@ -666,7 +668,8 @@
     "concept-analytic-geometry"
    ],
    "후속개념": [
-    "concept-integration"
+    "concept-integration",
+    "concept-fundamental-theorem"
    ],
    "기여인물": [
     "person-fermat",
@@ -977,6 +980,281 @@
    "시각화": 6
   },
   {
+   "유형": "개념",
+   "제목": "미적분학의 기본정리",
+   "슬러그": "concept-fundamental-theorem",
+   "별칭": [
+    "기본정리",
+    "미적분의 기본정리",
+    "미적분학 기본정리",
+    "정적분의 기본정리",
+    "제1기본정리",
+    "제2기본정리"
+   ],
+   "볼트파일명": "개념_미적분학의 기본정리",
+   "트랙": "이해편",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "해석학"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "접선을 구하는 일과 넓이를 구하는 일은 서로 반대 방향의 같은 연산이다. 이 한 문장이 2천 년 묵은 넓이 문제를 뺄셈 한 번으로 바꿨다.",
+   "태그": [
+    "수학사",
+    "기본정리",
+    "미분",
+    "적분",
+    "배로",
+    "그레고리",
+    "뉴턴",
+    "라이프니츠",
+    "코시",
+    "17세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "그레고리",
+     "변화": "『Geometriae Pars Universalis』(1668)에서 이 정리의 최초 출판 서술과 증명을 내놓았다. 기하학적 형태였고 특정 곡선 부류에 한정됐다.",
+     "출처": 5
+    },
+    {
+     "세기": 17,
+     "인물": "배로",
+     "변화": "『기하학 강의』(1670)에서 접선 문제와 넓이 문제가 서로 역연산임을 종합기하학으로 증명했다.",
+     "출처": 6
+    },
+    {
+     "세기": 17,
+     "인물": "뉴턴",
+     "변화": "유율(속도)에서 유량(거리)을 되찾는 일로 다뤄, 정리를 운동의 언어 안에 넣었다.",
+     "출처": 7
+    },
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "∫와 d라는 기호를 도입해, 정리를 아무 함수에나 적용되는 계산 규칙으로 바꿨다.",
+     "출처": 7
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "연속함수의 적분을 합의 극한으로 처음 제대로 정의하고, 그 정의 위에서 기본정리를 증명했다(1823).",
+     "출처": 8
+    },
+    {
+     "세기": 20,
+     "인물": "르베그",
+     "변화": "적분을 확장해, 유계인 도함수를 모두 적분할 수 있게 했다. 리만 적분이 놓치던 경우가 메워졌다.",
+     "출처": 9
+    }
+   ],
+   "선행개념": [
+    "concept-differentiation",
+    "concept-integration"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-barrow",
+    "person-newton",
+    "person-leibniz"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학산책), 미적분의 기본정리 — 넓이를 구하는 적분과 변화율을 구하는 미분의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=3571211&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 미적분의 기본정리 — 미분과 적분은 서로 역작용",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338338&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학공식), 미적분학의 제1기본정리 — 미분과 적분이 서로 역이라는 정리",
+     "URL": "https://terms.naver.com/entry.naver?docId=3350195&cid=60210&categoryId=60210",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학공식), 미적분학의 제2기본정리 — 정적분을 부정적분의 차로 나타내는 정리",
+     "URL": "https://terms.naver.com/entry.naver?docId=3350196&cid=60210&categoryId=60210",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, James Gregory — 『Geometriae Pars Universalis』(1668)의 최초 출판 서술과 증명, 배로의 인정",
+     "URL": "https://en.wikipedia.org/wiki/James_Gregory_(mathematician)",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Isaac Barrow — 『기하학 강의』(1670)",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Barrow/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, The rise of calculus — 뉴턴의 유율법과 라이프니츠의 기호, 미분삼각형",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MAA Convergence, Teaching the Fundamental Theorem of Calculus, A Historical Reflection — 코시(1823)의 적분 정의와 기본정리 증명",
+     "URL": "https://old.maa.org/press/periodicals/convergence/teaching-the-fundamental-theorem-of-calculus-a-historical-reflection",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MAA Convergence, Integration from Cavalieri to Darboux — 코시의 극한합 정의가 다르부·르베그 적분으로 이어지는 과정",
+     "URL": "https://old.maa.org/press/periodicals/convergence/teaching-the-fundamental-theorem-of-calculus-a-historical-reflection-integration-from-cavalieri-to",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(교과서 개념), 정적분의 기본정리 — 교과서에서의 정적분 정의와 넓이의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073840&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-fundamental-theorem/note.md",
+   "세기전체": [
+    17,
+    19,
+    20
+   ],
+   "자수": 7848,
+   "시각화": 4
+  },
+  {
+   "유형": "인물",
+   "제목": "아이작 배로",
+   "슬러그": "person-barrow",
+   "별칭": [
+    "배로",
+    "배로우",
+    "Isaac Barrow",
+    "아이작배로",
+    "아이작 배로우"
+   ],
+   "볼트파일명": "인물_아이작 배로",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "해석학",
+    "기하학",
+    "광학",
+    "신학"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "미적분학의 기본정리를 기하학으로 증명해 놓고 수학을 그만두고 신학으로 갔다. 뉴턴에게 자리를 물려준 사람으로만 기억되지만, 그 통설부터가 사실이 아니다.",
+   "태그": [
+    "수학사",
+    "배로",
+    "기본정리",
+    "루카스석좌",
+    "트리니티",
+    "뉴턴",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1630,
+    "사망": 1677,
+    "출생지": "잉글랜드 런던"
+   },
+   "기여개념": [
+    "concept-differentiation",
+    "concept-integration",
+    "concept-fundamental-theorem"
+   ],
+   "관련일화": [
+    "episode-priority-dispute"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Isaac Barrow — 생몰·학력·여행·루카스 석좌·저작 연도",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Barrow/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Mordechai Feingold (ed.), 『Before Newton, The Life and Times of Isaac Barrow』(Cambridge University Press, 1990) — 배로 연구의 정본. 왕립학회 서평",
+     "URL": "https://royalsocietypublishing.org/rsnr/article-abstract/45/2/277/55877/Book-reviews-Before-Newton-the-life-and-times-of",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Trinity College Cambridge, Brief history of the College — 1673년 트리니티 학장 임명과 렌 도서관",
+     "URL": "https://www.trin.cam.ac.uk/about/historical-overview/in-brief/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Trinity College Library Cambridge, Building the Wren Library — 도서관 건립 발의와 크리스토퍼 렌의 무보수 설계",
+     "URL": "https://trinitycollegelibrarycambridge.wordpress.com/2019/03/15/building-the-wren-library/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Dictionary of National Biography(1885~1900), Barrow, Isaac (1630-1677) — 설교자로서의 평판과 존 오브리의 기록",
+     "URL": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Barrow,_Isaac_(1630-1677)",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, James Gregory — 『Geometriae Pars Universalis』(1668)의 최초 출판 증명과 배로의 인정",
+     "URL": "https://en.wikipedia.org/wiki/James_Gregory_(mathematician)",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Encyclopedia.com, Isaac Barrow — 생애 개관과 『기하학 강의』의 종합기하학적 방법",
+     "URL": "https://www.encyclopedia.com/people/science-and-technology/mathematics-biographies/isaac-barrow",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 케임브리지 트리니티 칼리지 — 1546년 설립, 케임브리지 최대 칼리지",
+     "URL": "https://terms.naver.com/entry.naver?docId=6633703&cid=63855&categoryId=63855",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 뉴턴 — 1661년 트리니티 칼리지 입학과 케임브리지 수학",
+     "URL": "https://terms.naver.com/entry.naver?docId=631796&cid=50766&categoryId=50794",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor History of Mathematics, The rise of calculus — 배로의 미분삼각형과 라이프니츠의 특성삼각형",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-barrow/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 6034,
+   "시각화": 4
+  },
+  {
    "유형": "인물",
    "제목": "르네 데카르트",
    "슬러그": "person-descartes",
@@ -1217,7 +1495,8 @@
    },
    "기여개념": [
     "concept-differentiation",
-    "concept-integration"
+    "concept-integration",
+    "concept-fundamental-theorem"
    ],
    "관련일화": [
     "episode-priority-dispute"
@@ -1326,7 +1605,8 @@
    },
    "기여개념": [
     "concept-differentiation",
-    "concept-integration"
+    "concept-integration",
+    "concept-fundamental-theorem"
    ],
    "관련일화": [
     "episode-newton-apple",
@@ -1806,11 +2086,13 @@
     "concept-analytic-geometry",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
+    "person-barrow",
     "person-descartes",
     "person-fermat",
     "person-leibniz",
@@ -1828,10 +2110,12 @@
    "19": [
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration"
    ],
    "20": [
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem"
    ]
   },
   "분야": {
@@ -1839,8 +2123,10 @@
     "century-17c",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-priority-dispute",
+    "person-barrow",
     "person-fermat",
     "person-leibniz",
     "person-newton"
@@ -1849,6 +2135,7 @@
     "century-17c",
     "concept-analytic-geometry",
     "episode-descartes-fly",
+    "person-barrow",
     "person-descartes",
     "person-pascal"
    ],
@@ -1871,6 +2158,13 @@
     "episode-newton-apple",
     "person-newton"
    ],
+   "광학": [
+    "person-barrow",
+    "person-newton"
+   ],
+   "신학": [
+    "person-barrow"
+   ],
    "철학": [
     "person-descartes",
     "person-leibniz"
@@ -1883,9 +2177,6 @@
    ],
    "계산법": [
     "person-napier"
-   ],
-   "광학": [
-    "person-newton"
    ],
    "유체역학": [
     "person-pascal"
@@ -1904,7 +2195,9 @@
     "person-newton"
    ],
    "미적분Ⅱ": [
+    "concept-fundamental-theorem",
     "concept-integration",
+    "person-barrow",
     "person-napier"
    ],
    "확률과통계": [
@@ -1923,6 +2216,7 @@
     "concept-analytic-geometry",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration"
    ],
    "일화": [
@@ -1932,6 +2226,7 @@
     "episode-priority-dispute"
    ],
    "인물": [
+    "person-barrow",
     "person-descartes",
     "person-fermat",
     "person-leibniz",
@@ -1946,11 +2241,13 @@
     "concept-analytic-geometry",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
+    "person-barrow",
     "person-descartes",
     "person-fermat",
     "person-leibniz",
@@ -1962,11 +2259,13 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-differentiation",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
+    "person-barrow",
     "person-descartes",
     "person-fermat",
     "person-leibniz",
@@ -2020,7 +2319,8 @@
    ],
    "미분": [
     "concept-differentiation",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem"
    ],
    "접선": [
     "concept-differentiation",
@@ -2032,18 +2332,22 @@
    ],
    "뉴턴": [
     "concept-differentiation",
+    "concept-fundamental-theorem",
     "episode-newton-apple",
     "episode-priority-dispute",
+    "person-barrow",
     "person-newton"
    ],
    "라이프니츠": [
     "concept-differentiation",
+    "concept-fundamental-theorem",
     "episode-priority-dispute",
     "person-leibniz"
    ],
    "코시": [
     "concept-differentiation",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem"
    ],
    "버클리": [
     "concept-differentiation-advanced"
@@ -2057,19 +2361,27 @@
    "엄밀화": [
     "concept-differentiation-advanced"
    ],
+   "기본정리": [
+    "concept-fundamental-theorem",
+    "concept-integration",
+    "person-barrow"
+   ],
    "적분": [
+    "concept-fundamental-theorem",
     "concept-integration"
+   ],
+   "배로": [
+    "concept-fundamental-theorem",
+    "concept-integration",
+    "person-barrow"
+   ],
+   "그레고리": [
+    "concept-fundamental-theorem"
    ],
    "구분구적법": [
     "concept-integration"
    ],
    "카발리에리": [
-    "concept-integration"
-   ],
-   "배로": [
-    "concept-integration"
-   ],
-   "기본정리": [
     "concept-integration"
    ],
    "일화": [
@@ -2095,6 +2407,12 @@
     "episode-priority-dispute",
     "person-leibniz",
     "person-newton"
+   ],
+   "루카스석좌": [
+    "person-barrow"
+   ],
+   "트리니티": [
+    "person-barrow"
    ],
    "방법서설": [
     "person-descartes"
@@ -2153,24 +2471,24 @@
     "concept-analytic-geometry"
    ],
    "person-barrow": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "concept-fundamental-theorem",
+    "concept-integration"
    ],
    "person-leibniz": [
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-priority-dispute"
    ],
    "person-newton": [
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
     "concept-integration",
     "episode-newton-apple",
     "episode-priority-dispute"
-   ],
-   "배로": [
-    "concept-differentiation",
-    "concept-integration"
    ],
    "버클리": [
     "concept-differentiation",
@@ -2178,7 +2496,8 @@
    ],
    "코시": [
     "concept-differentiation",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem"
    ],
    "라그랑주": [
     "concept-differentiation-advanced"
@@ -2188,6 +2507,12 @@
    ],
    "바이어슈트라스": [
     "concept-differentiation-advanced"
+   ],
+   "그레고리": [
+    "concept-fundamental-theorem"
+   ],
+   "르베그": [
+    "concept-fundamental-theorem"
    ],
    "리만": [
     "concept-integration"
@@ -2220,6 +2545,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "episode-descartes-fly",
      "제목": "데카르트와 천장의 파리",
      "유형": "일화",
@@ -2250,6 +2581,18 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "관련일화"
     },
     {
      "슬러그": "person-descartes",
@@ -2366,6 +2709,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
@@ -2376,6 +2725,12 @@
      "제목": "뉴턴–라이프니츠 우선권 논쟁",
      "유형": "일화",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-descartes",
@@ -2428,10 +2783,22 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "episode-pascal-fermat-letters",
      "제목": "파스칼–페르마 서신",
      "유형": "일화",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-descartes",
@@ -2458,6 +2825,12 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "episode-descartes-fly",
@@ -2492,6 +2865,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
@@ -2508,6 +2887,12 @@
      "제목": "뉴턴–라이프니츠 우선권 논쟁",
      "유형": "일화",
      "경로": "관련개념"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-descartes",
@@ -2560,6 +2945,44 @@
      "경로": "관련일화"
     }
    ],
+   "person-barrow": [
+    {
+     "슬러그": "century-17c",
+     "제목": "17세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-newton": [
     {
      "슬러그": "century-17c",
@@ -2576,6 +2999,12 @@
     {
      "슬러그": "concept-differentiation-advanced",
      "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -2598,6 +3027,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-fermat",
      "제목": "피에르 드 페르마",
      "유형": "인물",
@@ -2618,9 +3053,21 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
      "경로": "본문"
     }
    ],
@@ -2650,6 +3097,50 @@
      "제목": "미분법 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-fundamental-theorem": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-leibniz",
@@ -2714,6 +3205,17 @@
   "미분법 (확장편) 확장편": "concept-differentiation-advanced",
   "미분법 (확장편)확장편": "concept-differentiation-advanced",
   "미분법 엄밀화": "concept-differentiation-advanced",
+  "concept-fundamental-theorem": "concept-fundamental-theorem",
+  "개념_미적분학의 기본정리": "concept-fundamental-theorem",
+  "기본정리": "concept-fundamental-theorem",
+  "미적분의 기본정리": "concept-fundamental-theorem",
+  "미적분학 기본정리": "concept-fundamental-theorem",
+  "미적분학의 기본정리": "concept-fundamental-theorem",
+  "미적분학의 기본정리 이해편": "concept-fundamental-theorem",
+  "미적분학의 기본정리이해편": "concept-fundamental-theorem",
+  "정적분의 기본정리": "concept-fundamental-theorem",
+  "제1기본정리": "concept-fundamental-theorem",
+  "제2기본정리": "concept-fundamental-theorem",
   "concept-integration": "concept-integration",
   "개념_적분법": "concept-integration",
   "구분구적법": "concept-integration",
@@ -2745,6 +3247,14 @@
   "우선권 논쟁": "episode-priority-dispute",
   "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "표절 시비": "episode-priority-dispute",
+  "Isaac Barrow": "person-barrow",
+  "person-barrow": "person-barrow",
+  "배로": "person-barrow",
+  "배로우": "person-barrow",
+  "아이작 배로": "person-barrow",
+  "아이작 배로우": "person-barrow",
+  "아이작배로": "person-barrow",
+  "인물_아이작 배로": "person-barrow",
   "Descartes": "person-descartes",
   "person-descartes": "person-descartes",
   "데카르트": "person-descartes",
