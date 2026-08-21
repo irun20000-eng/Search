@@ -2539,7 +2539,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7730,
+   "자수": 7740,
    "시각화": 5
   },
   {
@@ -2589,7 +2589,9 @@
     "concept-fundamental-theorem",
     "concept-integration"
    ],
-   "관련일화": [],
+   "관련인물": [
+    "person-lagrange"
+   ],
    "출처": [
     {
      "번호": 1,
@@ -2663,6 +2665,118 @@
     18
    ],
    "자수": 6514,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "조제프루이 라그랑주",
+   "슬러그": "person-lagrange",
+   "별칭": [
+    "라그랑주",
+    "Lagrange",
+    "Joseph-Louis Lagrange",
+    "조제프 루이 라그랑주",
+    "라그랑지아",
+    "해석 역학"
+   ],
+   "볼트파일명": "인물_조제프루이 라그랑주",
+   "세기": [
+    18,
+    19
+   ],
+   "분야": [
+    "해석학",
+    "역학",
+    "변분법",
+    "정수론"
+   ],
+   "교과": [
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "아버지가 재산을 날린 덕에 수학자가 되었다고 스스로 말했다. 열아홉에 오일러를 놀라게 했고, 쉰둘에 그림 한 장 없는 역학책을 냈으며, 공포정치를 살아남아 미터법을 만들었다.",
+   "태그": [
+    "수학사",
+    "라그랑주",
+    "해석역학",
+    "변분법",
+    "미터법",
+    "에콜폴리테크니크",
+    "프랑스혁명",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1736,
+    "사망": 1813,
+    "출생지": "사르데냐피에몬테 토리노"
+   },
+   "기여개념": [
+    "concept-differentiation",
+    "concept-differentiation-advanced"
+   ],
+   "관련일화": [],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Joseph-Louis Lagrange — 생몰·가족·경력·저작·발언·서훈",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Mécanique analytique — 1788년 서문(\"이 책에는 그림이 없다\")과 뉴턴과의 대비",
+     "URL": "https://en.wikipedia.org/wiki/M%C3%A9canique_analytique",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 라그랑주 — 17세까지 수학에 흥미가 없었고 핼리의 논문을 접한 뒤 독학했다",
+     "URL": "https://terms.naver.com/entry.naver?docId=879553&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 라그랑주 — 토리노에서 시작해 베를린 20년을 거쳐 혁명 직전 파리로",
+     "URL": "https://terms.naver.com/entry.naver?docId=1621425&cid=42469&categoryId=42469",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 라그랑주 — 등주문제에서 시작한 변분법과 그 역학 응용",
+     "URL": "https://terms.naver.com/entry.naver?docId=597759&cid=42340&categoryId=42340",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 라그랑주 승수법 — 제한 조건 아래 다변수함수의 극값을 찾는 방법",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125258&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 라그랑주 정리 — 부분군의 위수가 군의 위수를 나눈다",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125259&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기를 지나며 해석학이 갖춘 성격",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 오일러가 베를린을 떠나 상트페테르부르크로 돌아간 경위",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-lagrange/note.md",
+   "세기전체": [
+    18,
+    19
+   ],
+   "자수": 6186,
    "시각화": 3
   },
   {
@@ -2890,6 +3004,7 @@
     "concept-differentiation-advanced",
     "episode-priority-dispute",
     "person-euler",
+    "person-lagrange",
     "person-leibniz",
     "person-newton"
    ],
@@ -2899,7 +3014,8 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "person-lagrange"
    ],
    "20": [
     "concept-analytic-geometry-advanced",
@@ -2922,6 +3038,7 @@
     "person-euler",
     "person-fermat",
     "person-gregory",
+    "person-lagrange",
     "person-leibniz",
     "person-newton"
    ],
@@ -2953,12 +3070,14 @@
     "century-18c",
     "episode-newton-apple",
     "person-euler",
+    "person-lagrange",
     "person-newton"
    ],
    "정수론": [
     "century-18c",
     "person-euler",
-    "person-fermat"
+    "person-fermat",
+    "person-lagrange"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -2987,6 +3106,9 @@
    "천문학": [
     "person-euler",
     "person-gregory"
+   ],
+   "변분법": [
+    "person-lagrange"
    ],
    "논리학": [
     "person-leibniz"
@@ -3021,6 +3143,7 @@
     "person-barrow",
     "person-euler",
     "person-gregory",
+    "person-lagrange",
     "person-napier"
    ],
    "확률과통계": [
@@ -3057,6 +3180,7 @@
     "person-euler",
     "person-fermat",
     "person-gregory",
+    "person-lagrange",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -3083,6 +3207,7 @@
     "person-euler",
     "person-fermat",
     "person-gregory",
+    "person-lagrange",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -3137,6 +3262,7 @@
     "century-18c",
     "episode-priority-dispute",
     "person-euler",
+    "person-lagrange",
     "person-leibniz",
     "person-newton"
    ],
@@ -3148,7 +3274,8 @@
     "person-euler"
    ],
    "라그랑주": [
-    "century-18c"
+    "century-18c",
+    "person-lagrange"
    ],
    "라플라스": [
     "century-18c"
@@ -3157,7 +3284,8 @@
     "century-18c"
    ],
    "프랑스혁명": [
-    "century-18c"
+    "century-18c",
+    "person-lagrange"
    ],
    "좌표": [
     "concept-analytic-geometry",
@@ -3343,6 +3471,18 @@
    "반사망원경": [
     "person-gregory"
    ],
+   "해석역학": [
+    "person-lagrange"
+   ],
+   "변분법": [
+    "person-lagrange"
+   ],
+   "미터법": [
+    "person-lagrange"
+   ],
+   "에콜폴리테크니크": [
+    "person-lagrange"
+   ],
    "dy/dx": [
     "person-leibniz"
    ],
@@ -3442,8 +3582,9 @@
     "concept-fundamental-theorem",
     "concept-integration-advanced"
    ],
-   "라그랑주": [
-    "concept-differentiation-advanced"
+   "person-lagrange": [
+    "concept-differentiation-advanced",
+    "person-euler"
    ],
    "로빈슨": [
     "concept-differentiation-advanced"
@@ -3848,6 +3989,12 @@
      "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-differentiation": [
@@ -3926,6 +4073,12 @@
     {
      "슬러그": "person-fermat",
      "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -4014,6 +4167,12 @@
     {
      "슬러그": "person-gregory",
      "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "본문"
     },
@@ -4166,6 +4325,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-integration": [
@@ -4216,6 +4381,12 @@
      "제목": "제임스 그레고리",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-leibniz",
@@ -4310,6 +4481,26 @@
      "제목": "적분법 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "person-lagrange": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "concept-integration-advanced": [
@@ -4372,6 +4563,14 @@
      "제목": "아이작 배로",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "century-18c": [
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "episode-newton-apple": [
@@ -4524,6 +4723,15 @@
   "인물_제임스 그레고리": "person-gregory",
   "제임스 그레고리": "person-gregory",
   "제임스그레고리": "person-gregory",
+  "Joseph-Louis Lagrange": "person-lagrange",
+  "Lagrange": "person-lagrange",
+  "person-lagrange": "person-lagrange",
+  "라그랑주": "person-lagrange",
+  "라그랑지아": "person-lagrange",
+  "인물_조제프루이 라그랑주": "person-lagrange",
+  "조제프 루이 라그랑주": "person-lagrange",
+  "조제프루이 라그랑주": "person-lagrange",
+  "해석 역학": "person-lagrange",
   "Leibniz": "person-leibniz",
   "person-leibniz": "person-leibniz",
   "고트프리트 라이프니츠": "person-leibniz",

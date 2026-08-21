@@ -17,7 +17,7 @@
   출생지: 스위스 바젤
 
 기여개념: [concept-fundamental-theorem, concept-integration]
-관련일화: []
+관련인물: [person-lagrange]
 
 출처:
   - 번호: 1
