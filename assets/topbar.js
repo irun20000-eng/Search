@@ -54,6 +54,18 @@
     });
     inner.appendChild(nav);
 
+    /* 오른쪽 끝 '만든 사람' 마크. 서재 이름(왼쪽)과 역할이 다르므로
+       색 계열도 일부러 다르다 — 자세한 규칙은 assets/brand.css 머리말. */
+    var sig = document.createElement("a");
+    sig.className = "itb-sig";
+    sig.href = "https://github.com/irun20000-eng";
+    sig.target = "_blank";
+    sig.rel = "noopener";
+    sig.title = "aftermath — 만든 사람";
+    sig.innerHTML = '<span class="sig"><span class="af">after</span>'
+                  + '<span class="m">math</span><span class="q"></span></span>';
+    inner.appendChild(sig);
+
     bar.appendChild(inner);
     document.body.insertBefore(bar, document.body.firstChild);
 

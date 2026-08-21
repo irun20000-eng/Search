@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="aftermath">
+  <!-- aftermath 모노그램 타일: a + ∎ (브랜드키트 §3, 수학 필라 = 딥그린 + 골드) -->
+  <rect width="64" height="64" rx="14" fill="#103a27"/>
+  <text x="13" y="46" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="36" fill="#F2EDE2">a</text>
+  <rect x="39" y="29" width="13" height="17" rx="1.5" fill="#ffcf8a"/>
+</svg>

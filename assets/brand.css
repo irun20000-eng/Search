@@ -1,0 +1,57 @@
+/* aftermath — 브랜드 워드마크 컴포넌트
+ *
+ * 정본: G:\내 드라이브\Claude_Project\aftermath-브랜드키트.md
+ * 워드마크 aftermath (= after + math, "만들기 다음의 검증") · 핸들 @irun20000 · 심볼 ∎(Q.E.D.)
+ *
+ * 규칙 세 가지만 지키면 된다.
+ *   after 는 항상 흐리게 · math 는 항상 세리프+강조색 · ∎ 는 항상 끝에.
+ *   강조색은 한 개만 쓴다(math 와 ∎ 가 같은 색). 색을 셋 이상 쓰지 않는다.
+ *
+ * 이 사이트는 수학 필라라 그린(#1f7a4d)을 쓰고, 어두운 배경에서는
+ * 브랜드키트가 지정한 골드(#ffcf8a)로 바꾼다. 페이지 강조색(코랄)과 일부러
+ * 다른 계열이다 — 서재의 UI 색이 아니라 '만든 사람의 마크'로 읽혀야 한다.
+ */
+.sig{
+  --sig-after:#99a1b0;
+  --sig-accent:#1f7a4d;
+  font-family:"Nunito","Pretendard","Noto Sans KR",-apple-system,sans-serif;
+  font-weight:700; letter-spacing:-.02em;
+  white-space:nowrap; display:inline-block; line-height:1;
+}
+.sig .af{ font-weight:500; color:var(--sig-after) }
+.sig .m {
+  font-family:Georgia,"Times New Roman","Noto Serif KR",serif;
+  font-weight:700; color:var(--sig-accent); margin-left:.03em;
+}
+/* ∎ 툼스톤 — Q.E.D. 기호. 폰트에 기대지 않고 사각형으로 그린다. */
+.sig .q{
+  display:inline-block; width:.34em; height:.46em;
+  background:var(--sig-accent); margin-left:.13em;
+  border-radius:1px; vertical-align:baseline;
+}
+
+/* 어두운 배경. 페이지마다 다크를 거는 위치가 다르다 —
+   허브·리서치·가이드·수학사는 html[data-theme], 영상노트는 body[data-theme],
+   그리고 첫 페인트 직전에는 html[data-pre] 를 쓴다. 셋 다 덮는다. */
+:root[data-theme=dark] .sig,
+html[data-pre=dark] .sig,
+body[data-theme=dark] .sig{
+  --sig-after:rgba(255,255,255,.62);
+  --sig-accent:#ffcf8a;
+}
+
+/* 상단바 오른쪽 — 다섯 페이지 공통 '만든 사람' 마크 */
+.itb-sig{
+  margin-left:auto; padding:4px 2px; font-size:.82rem;
+  text-decoration:none; opacity:.75; transition:opacity .15s;
+}
+.itb-sig:hover{ opacity:1 }
+@media (max-width:720px){ .itb-sig{ display:none } }
+
+/* 푸터 서명 — 마크 + 핸들 */
+.sig-block{ display:flex; align-items:center; gap:10px; flex-wrap:wrap }
+.sig-block .sig{ font-size:1.05rem }
+.sig-block .handle{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.8rem; opacity:.7;
+}
