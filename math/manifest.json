@@ -2,6 +2,112 @@
  "generated": "2026-08-21",
  "notes": [
   {
+   "유형": "인물",
+   "제목": "존 네이피어",
+   "슬러그": "person-napier",
+   "별칭": [
+    "네이피어",
+    "Napier",
+    "존네이피어",
+    "네피어"
+   ],
+   "볼트파일명": "인물_존 네이피어",
+   "세기": [
+    16,
+    17
+   ],
+   "분야": [
+    "대수학",
+    "계산법"
+   ],
+   "교과": [
+    "공통수학1",
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "스코틀랜드의 영주였고 본업은 영지 경영과 신학 논쟁이었다. 취미로 20년을 들여 만든 로그표가 천문학자의 수명을 두 배로 늘렸다는 말을 들었다.",
+   "태그": [
+    "수학사",
+    "네이피어",
+    "로그",
+    "계산",
+    "브리그스",
+    "16세기",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1550,
+    "사망": 1617,
+    "출생지": "스코틀랜드 에든버러 머치스턴 성"
+   },
+   "기여개념": [
+    "concept-logarithm"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, John Napier — 생애·영지·저작",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Napier/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, History of logarithms — 곱셈을 덧셈으로 바꾸는 대응의 역사",
+     "URL": "https://en.wikipedia.org/wiki/History_of_logarithms",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Mirifici Logarithmorum Canonis Descriptio (1614) — 구성과 분량",
+     "URL": "https://en.wikipedia.org/wiki/Mirifici_Logarithmorum_Canonis_Descriptio",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Britannica, John Napier — 생애와 발명",
+     "URL": "https://www.britannica.com/biography/John-Napier",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 상용로그 — 로그의 발견과 브리그스의 로그표",
+     "URL": "https://terms.naver.com/entry.naver?docId=3569280&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과, 자연로그 — 로그표는 어떻게 만들어졌나",
+     "URL": "https://terms.naver.com/entry.naver?docId=3569535&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 로그 — 정의와 성질",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338260&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 네이피어 막대 — 곱셈을 돕는 계산 도구",
+     "URL": "https://terms.naver.com/entry.naver?docId=3386459&cid=58371&categoryId=58371",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 계산기 — 17세기의 계산 도구들",
+     "URL": "https://terms.naver.com/entry.naver?docId=2843010&cid=55589&categoryId=55589",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-napier/note.md",
+   "세기전체": [
+    16,
+    17
+   ],
+   "자수": 5766,
+   "시각화": 2
+  },
+  {
    "유형": "개념",
    "제목": "미분법",
    "슬러그": "concept-differentiation",
@@ -194,15 +300,847 @@
    ],
    "자수": 7731,
    "시각화": 5
+  },
+  {
+   "유형": "인물",
+   "제목": "르네 데카르트",
+   "슬러그": "person-descartes",
+   "별칭": [
+    "데카르트",
+    "Descartes",
+    "르네데카르트"
+   ],
+   "볼트파일명": "인물_르네 데카르트",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "기하학",
+    "대수학",
+    "철학"
+   ],
+   "교과": [
+    "공통수학2"
+   ],
+   "난이도": "표준",
+   "요약": "도형을 방정식으로 바꿔 놓았다. 기하와 대수를 잇는 다리를 놓은 그 발상이 없었다면 미적분도 나올 수 없었다.",
+   "태그": [
+    "수학사",
+    "데카르트",
+    "해석기하",
+    "좌표",
+    "방법서설",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1596,
+    "사망": 1650,
+    "출생지": "프랑스 투렌 라에"
+   },
+   "기여개념": [
+    "concept-analytic-geometry"
+   ],
+   "관련일화": [
+    "episode-descartes-fly"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, René Descartes — 생애·연도·저작",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 과학자 데카르트 — 생애와 합리주의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3575285&cid=58939&categoryId=58951",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 데카르트의 좌표계 — 측량에서 좌표까지",
+     "URL": "https://terms.naver.com/entry.naver?docId=3569546&cid=59056&categoryId=59056",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Britannica, La Géométrie — 『방법서설』(1637)의 부록",
+     "URL": "https://www.britannica.com/topic/La-Geometrie",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Britannica, Cartesian coordinates — 좌표계의 정의와 역사",
+     "URL": "https://www.britannica.com/science/Cartesian-coordinates",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Stanford Encyclopedia of Philosophy, Descartes' Mathematics",
+     "URL": "https://plato.stanford.edu/entries/descartes-mathematics/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Stanford Encyclopedia of Philosophy, Descartes' Life and Works",
+     "URL": "https://plato.stanford.edu/entries/descartes-works/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, René Descartes",
+     "URL": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-descartes/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 5861,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "피에르 드 페르마",
+   "슬러그": "person-fermat",
+   "별칭": [
+    "페르마",
+    "Fermat",
+    "피에르페르마"
+   ],
+   "볼트파일명": "인물_피에르 드 페르마",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "정수론",
+    "해석학",
+    "확률론"
+   ],
+   "교과": [
+    "미적분Ⅰ",
+    "확률과통계"
+   ],
+   "난이도": "표준",
+   "요약": "본업은 툴루즈의 법관이었다. 논문을 거의 쓰지 않고 편지로만 결과를 알렸는데, 그 편지들이 미적분과 확률론과 정수론을 동시에 열었다.",
+   "태그": [
+    "수학사",
+    "페르마",
+    "접선",
+    "극대극소",
+    "확률",
+    "정수론",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1601,
+    "사망": 1665,
+    "출생지": "프랑스 보몽드로마뉴"
+   },
+   "기여개념": [
+    "concept-differentiation",
+    "concept-probability"
+   ],
+   "관련일화": [
+    "episode-pascal-fermat-letters"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Pierre de Fermat — 생애·직업·업적",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 수학사 최대의 미스터리 — 페르마",
+     "URL": "https://terms.naver.com/entry.naver?docId=3409471&cid=60335&categoryId=60335",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Adequality — 근사등식 절차",
+     "URL": "https://en.wikipedia.org/wiki/Adequality",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Katz·Schaps·Shnider, Almost Equal — Method of Adequality from Diophantus to Fermat and Beyond (arXiv:1210.7750)",
+     "URL": "https://arxiv.org/abs/1210.7750",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Pierre de Fermat — 생애와 저작 출판 경위",
+     "URL": "https://en.wikipedia.org/wiki/Pierre_de_Fermat",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Problem of points — 1654년 파스칼과의 서신",
+     "URL": "https://en.wikipedia.org/wiki/Problem_of_points",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, The rise of calculus",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, History of probability — 1654년을 근대 확률론의 시작으로 보는 근거",
+     "URL": "https://en.wikipedia.org/wiki/History_of_probability",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-fermat/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 5823,
+   "시각화": 2
+  },
+  {
+   "유형": "인물",
+   "제목": "고트프리트 라이프니츠",
+   "슬러그": "person-leibniz",
+   "별칭": [
+    "라이프니츠",
+    "Leibniz",
+    "고트프리트 빌헬름 라이프니츠"
+   ],
+   "볼트파일명": "인물_고트프리트 라이프니츠",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학",
+    "논리학",
+    "철학"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "수학자이자 철학자이자 외교관이자 사서였다. 미적분을 만든 것보다 중요한 것은 좋은 기호를 만든 것이었고, 오늘날 우리가 쓰는 표기는 전부 그의 것이다.",
+   "태그": [
+    "수학사",
+    "라이프니츠",
+    "미적분",
+    "기호",
+    "dy/dx",
+    "17세기",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1646,
+    "사망": 1716,
+    "출생지": "작센 라이프치히"
+   },
+   "기여개념": [
+    "concept-differentiation",
+    "concept-integration"
+   ],
+   "관련일화": [
+    "episode-priority-dispute"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Gottfried Wilhelm Leibniz — 생애·연도·직책",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Leibniz/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(두산백과), 고트프리트 라이프니츠 — 독자적 미적분법 창시",
+     "URL": "https://terms.naver.com/entry.naver?docId=937586&cid=43667&categoryId=43667",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 라이프니츠의 생애 — 1646년 라이프치히 출생, 법률가 집안",
+     "URL": "https://terms.naver.com/entry.naver?docId=996295&cid=41908&categoryId=41921",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Leibniz's notation — d와 ∫의 유래, 표기가 가진 이점",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%27s_notation",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Nova Methodus pro Maximis et Minimis (1684) — 미분법 최초 출판",
+     "URL": "https://en.wikipedia.org/wiki/Nova_Methodus_pro_Maximis_et_Minimis",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Leibniz–Newton calculus controversy — 1712년 조사와 독립 발견 결론",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과, 계산기 — 17세기의 기계식 계산 도구",
+     "URL": "https://terms.naver.com/entry.naver?docId=2843010&cid=55589&categoryId=55589",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 라이프니츠 정리 — 곱의 미분법",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338259&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Agencia SINC, 1675 — Leibniz writes the integral sign for the first time",
+     "URL": "https://www.agenciasinc.es/en/Visual/Illustrations/1675-Leibniz-writes-the-integral-sign-for-the-first-time",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-leibniz/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 5840,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "아이작 뉴턴",
+   "슬러그": "person-newton",
+   "별칭": [
+    "뉴턴",
+    "Isaac Newton",
+    "아이작뉴턴"
+   ],
+   "볼트파일명": "인물_아이작 뉴턴",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학",
+    "역학",
+    "광학"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "스물세 살에 미적분·광학·중력을 한꺼번에 열어젖혔고, 그것을 20년 넘게 출판하지 않았다. 발견의 속도와 공개의 속도가 이토록 어긋난 사람은 드물다.",
+   "태그": [
+    "수학사",
+    "뉴턴",
+    "미적분",
+    "유율법",
+    "프린키피아",
+    "17세기",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1643,
+    "사망": 1727,
+    "출생지": "잉글랜드 링컨셔 울즈소프"
+   },
+   "기여개념": [
+    "concept-differentiation",
+    "concept-integration"
+   ],
+   "관련일화": [
+    "episode-newton-apple",
+    "episode-priority-dispute"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Isaac Newton — 생애·연도·성격",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Newton/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Stanford Encyclopedia of Philosophy, Isaac Newton — 1665~66년 울즈소프 체류와 유율법 발견 시점",
+     "URL": "https://plato.stanford.edu/entries/newton/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 아이작 뉴턴 — 1687년 『자연철학의 수학적 원리』 발표",
+     "URL": "https://terms.naver.com/entry.naver?docId=3567199&cid=59014&categoryId=59014",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Method of Fluxions — 1671년 집필, 1736년 사후 출판",
+     "URL": "https://en.wikipedia.org/wiki/Method_of_Fluxions",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Leibniz–Newton calculus controversy — 1712년 조사와 독립 발견 결론",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "William Stukeley, 『Memoirs of Sir Isaac Newton's Life』(1752) 원고 — 왕립학회 디지털판",
+     "URL": "https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&type=book",
+     "유형": "1차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, The rise of calculus",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 미적분 — 뉴턴의 유율법",
+     "URL": "https://terms.naver.com/entry.naver?docId=419705&cid=60277&categoryId=60277",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-newton/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 5850,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "블레즈 파스칼",
+   "슬러그": "person-pascal",
+   "별칭": [
+    "파스칼",
+    "Pascal",
+    "블레즈파스칼"
+   ],
+   "볼트파일명": "인물_블레즈 파스칼",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "확률론",
+    "기하학",
+    "유체역학"
+   ],
+   "교과": [
+    "확률과통계"
+   ],
+   "난이도": "표준",
+   "요약": "열여섯에 사영기하학 정리를 내놓고 열아홉에 계산기를 만들었으며 서른하나에 확률론을 열었다. 그리고 그 뒤로는 수학을 거의 놓았다.",
+   "태그": [
+    "수학사",
+    "파스칼",
+    "확률",
+    "파스칼의삼각형",
+    "계산기",
+    "팡세",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1623,
+    "사망": 1662,
+    "출생지": "프랑스 클레르몽"
+   },
+   "기여개념": [
+    "concept-probability"
+   ],
+   "관련일화": [
+    "episode-pascal-fermat-letters"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Blaise Pascal — 생애·연도·저작",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 파스칼 — 12세 유클리드, 16세 『원추곡선론』",
+     "URL": "https://terms.naver.com/entry.naver?docId=389678&cid=41978&categoryId=41985",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 파스칼 블레즈 — 생애 요약",
+     "URL": "https://terms.naver.com/entry.naver?docId=2267951&cid=44546&categoryId=44546",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 파스칼의 원리 — 계산기와 유체 압력",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699325&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 파스칼과 파스칼의 삼각형",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582444&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과, 팡세 — 사후에 엮인 단상집",
+     "URL": "https://terms.naver.com/entry.naver?docId=3571988&cid=58814&categoryId=58831",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, Problem of points — 1654년 페르마와의 서신",
+     "URL": "https://en.wikipedia.org/wiki/Problem_of_points",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, History of probability — 1654년을 근대 확률론의 시작으로 보는 근거",
+     "URL": "https://en.wikipedia.org/wiki/History_of_probability",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 계산기 — 17세기의 기계식 계산 도구",
+     "URL": "https://terms.naver.com/entry.naver?docId=2843010&cid=55589&categoryId=55589",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-pascal/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 5876,
+   "시각화": 2
+  },
+  {
+   "유형": "일화",
+   "제목": "데카르트와 천장의 파리",
+   "슬러그": "episode-descartes-fly",
+   "별칭": [
+    "천장의 파리",
+    "데카르트 파리"
+   ],
+   "볼트파일명": "일화_데카르트와 천장의 파리",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "기하학"
+   ],
+   "난이도": "개관",
+   "요약": "침대에 누워 천장을 기어가는 파리의 위치를 타일 수로 나타내다 좌표를 떠올렸다는 이야기. 동시대 기록에서 확인되지 않는다.",
+   "태그": [
+    "수학사",
+    "데카르트",
+    "좌표",
+    "해석기하",
+    "일화",
+    "17세기"
+   ],
+   "사실성": "창작의심",
+   "사실성근거": "동시대 기록에서 확인되지 않는다. 브리태니커도 \"전설에 따르면(according to legend)\"이라는 단서를 달아 소개할 뿐이며[2], 데카르트 자신이 좌표 착상의 경위를 서술한 기록은 알려져 있지 않다. 『기하학』(1637)은 착상 과정이 아니라 방법 자체를 제시하는 책이다[3].",
+   "관련인물": [
+    "person-descartes"
+   ],
+   "관련개념": [
+    "concept-analytic-geometry"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과, 데카르트의 좌표계 — 좌표 개념의 배경",
+     "URL": "https://terms.naver.com/entry.naver?docId=3569546&cid=59056&categoryId=59056",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Britannica, Cartesian coordinates — 파리 이야기를 \"전설에 따르면\"으로 소개",
+     "URL": "https://www.britannica.com/science/Cartesian-coordinates",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Britannica, La Géométrie (1637) — 『방법서설』의 부록으로 실린 저작",
+     "URL": "https://www.britannica.com/topic/La-Geometrie",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Stanford Encyclopedia of Philosophy, Descartes' Mathematics",
+     "URL": "https://plato.stanford.edu/entries/descartes-mathematics/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 과학자 데카르트 — 생애와 저작",
+     "URL": "https://terms.naver.com/entry.naver?docId=3575285&cid=58939&categoryId=58951",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-descartes-fly/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 1098,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "뉴턴의 사과",
+   "슬러그": "episode-newton-apple",
+   "별칭": [
+    "사과나무",
+    "만유인력 사과"
+   ],
+   "볼트파일명": "일화_뉴턴의 사과",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "역학"
+   ],
+   "난이도": "개관",
+   "요약": "사과가 떨어지는 것을 보고 만유인력을 떠올렸다는 이야기. 원전은 있으나 사건 60여 년 뒤의 회고이고, 머리에 맞았다는 대목은 어느 기록에도 없다.",
+   "태그": [
+    "수학사",
+    "뉴턴",
+    "만유인력",
+    "일화",
+    "17세기"
+   ],
+   "사실성": "전승",
+   "사실성근거": "뉴턴 본인이 만년에 스터클리에게 직접 말한 것을 스터클리가 1752년 회고록에 적었고 그 원고가 왕립학회에 남아 있다[1]. 다만 사건(1665~66년)으로부터 60여 년 뒤의 회고이며 동시대 기록이 아니다. \"사과가 머리에 맞았다\"는 대목은 원전에 없고 후대에 덧붙은 것이다[2].",
+   "관련인물": [
+    "person-newton"
+   ],
+   "관련개념": [
+    "concept-differentiation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "William Stukeley, 『Memoirs of Sir Isaac Newton's Life』(1752) 원고 — 왕립학회 디지털판",
+     "URL": "https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&type=book",
+     "유형": "1차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Isaac Newton's apple tree — 전승 경로와 후대의 각색",
+     "URL": "https://en.wikipedia.org/wiki/Isaac_Newton%27s_apple_tree",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "The Royal Society, Newton's apple tree — 원고의 소장 경위",
+     "URL": "https://royalsociety.org/blog/2012/02/newtons-apple-tree/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Stanford Encyclopedia of Philosophy, Isaac Newton — 1665~66년 울즈소프 체류",
+     "URL": "https://plato.stanford.edu/entries/newton/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 아이작 뉴턴 — 1687년 『자연철학의 수학적 원리』 발표",
+     "URL": "https://terms.naver.com/entry.naver?docId=3567199&cid=59014&categoryId=59014",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-newton-apple/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 1101,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "파스칼–페르마 서신",
+   "슬러그": "episode-pascal-fermat-letters",
+   "별칭": [
+    "점수 문제",
+    "분배 문제",
+    "도박 문제"
+   ],
+   "볼트파일명": "일화_파스칼-페르마 서신",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "확률론"
+   ],
+   "난이도": "개관",
+   "요약": "1654년 여름 도박꾼의 질문 하나에서 시작된 다섯 통의 편지가 확률론의 출발점이 되었다. 서신이 실물로 남아 있는 드문 경우다.",
+   "태그": [
+    "수학사",
+    "파스칼",
+    "페르마",
+    "확률",
+    "점수문제",
+    "일화",
+    "17세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "1654년 여름에 오간 서신 자체가 남아 있고 내용이 학술적으로 확인된다[2][3]. 발단이 된 인물(앙투안 공보)과 문제(점수 문제)도 특정된다[2]. 전언이나 회고가 아니라 당사자들의 문서가 근거다.",
+   "관련인물": [
+    "person-pascal",
+    "person-fermat"
+   ],
+   "관련개념": [
+    "concept-probability"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Blaise Pascal — 1654년 페르마와의 서신",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Problem of points — 앙투안 공보의 질문과 다섯 통의 편지",
+     "URL": "https://en.wikipedia.org/wiki/Problem_of_points",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, History of probability — 1654년을 근대 확률론의 시작으로 보는 근거",
+     "URL": "https://en.wikipedia.org/wiki/History_of_probability",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Pierre de Fermat — 파스칼과의 공동 창시자 평가",
+     "URL": "https://en.wikipedia.org/wiki/Pierre_de_Fermat",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Ars Conjectandi (1713) — 베르누이가 이어받은 뒤의 체계화",
+     "URL": "https://en.wikipedia.org/wiki/Ars_Conjectandi",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-pascal-fermat-letters/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 1072,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "뉴턴–라이프니츠 우선권 논쟁",
+   "슬러그": "episode-priority-dispute",
+   "별칭": [
+    "우선권 논쟁",
+    "미적분 논쟁",
+    "표절 시비"
+   ],
+   "볼트파일명": "일화_뉴턴-라이프니츠 우선권 논쟁",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학"
+   ],
+   "난이도": "개관",
+   "요약": "발견은 뉴턴이 먼저, 출판은 라이프니츠가 먼저였다. 그 어긋남이 왕립학회 조사로 번졌고, 조사위원회를 꾸린 사람은 학회장 뉴턴 본인이었다.",
+   "태그": [
+    "수학사",
+    "뉴턴",
+    "라이프니츠",
+    "미적분",
+    "우선권",
+    "일화",
+    "17세기",
+    "18세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "1712년 왕립학회 조사와 1713년 보고서 『서한 왕래』가 문서로 남아 있고, 뉴턴이 학회장으로서 조사에 관여한 사실도 기록으로 확인된다[1]. 오늘날 학계의 결론은 독립 발견이다[1][2].",
+   "관련인물": [
+    "person-newton",
+    "person-leibniz"
+   ],
+   "관련개념": [
+    "concept-differentiation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Wikipedia, Leibniz–Newton calculus controversy — 1712년 조사와 현대 학계의 독립 발견 결론",
+     "URL": "https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, The rise of calculus",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Method of Fluxions — 1671년 집필, 1736년 사후 출판",
+     "URL": "https://en.wikipedia.org/wiki/Method_of_Fluxions",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Nova Methodus pro Maximis et Minimis (1684) — 미분법 최초 출판",
+     "URL": "https://en.wikipedia.org/wiki/Nova_Methodus_pro_Maximis_et_Minimis",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 미적분 — 라이프니츠의 미분법과 뉴턴의 유율법",
+     "URL": "https://terms.naver.com/entry.naver?docId=419705&cid=60277&categoryId=60277",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-priority-dispute/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 1200,
+   "시각화": 1
   }
  ],
  "index": {
   "세기": {
+   "16": [
+    "person-napier"
+   ],
    "17": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-descartes-fly",
+    "episode-newton-apple",
+    "episode-pascal-fermat-letters",
+    "episode-priority-dispute",
+    "person-descartes",
+    "person-fermat",
+    "person-leibniz",
+    "person-napier",
+    "person-newton",
+    "person-pascal"
    ],
    "18": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-priority-dispute",
+    "person-leibniz",
+    "person-newton"
    ],
    "19": [
     "concept-differentiation"
@@ -210,91 +1148,610 @@
   },
   "분야": {
    "해석학": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-priority-dispute",
+    "person-fermat",
+    "person-leibniz",
+    "person-newton"
+   ],
+   "기하학": [
+    "episode-descartes-fly",
+    "person-descartes",
+    "person-pascal"
+   ],
+   "역학": [
+    "episode-newton-apple",
+    "person-newton"
+   ],
+   "확률론": [
+    "episode-pascal-fermat-letters",
+    "person-fermat",
+    "person-pascal"
+   ],
+   "대수학": [
+    "person-descartes",
+    "person-napier"
+   ],
+   "철학": [
+    "person-descartes",
+    "person-leibniz"
+   ],
+   "정수론": [
+    "person-fermat"
+   ],
+   "논리학": [
+    "person-leibniz"
+   ],
+   "계산법": [
+    "person-napier"
+   ],
+   "광학": [
+    "person-newton"
+   ],
+   "유체역학": [
+    "person-pascal"
    ]
   },
   "교과": {
    "미적분Ⅰ": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "person-fermat",
+    "person-leibniz",
+    "person-newton"
+   ],
+   "공통수학2": [
+    "person-descartes"
+   ],
+   "확률과통계": [
+    "person-fermat",
+    "person-pascal"
+   ],
+   "공통수학1": [
+    "person-napier"
+   ],
+   "미적분Ⅱ": [
+    "person-napier"
    ]
   },
   "유형": {
    "개념": [
     "concept-differentiation"
+   ],
+   "일화": [
+    "episode-descartes-fly",
+    "episode-newton-apple",
+    "episode-pascal-fermat-letters",
+    "episode-priority-dispute"
+   ],
+   "인물": [
+    "person-descartes",
+    "person-fermat",
+    "person-leibniz",
+    "person-napier",
+    "person-newton",
+    "person-pascal"
    ]
   },
   "태그": {
    "수학사": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-descartes-fly",
+    "episode-newton-apple",
+    "episode-pascal-fermat-letters",
+    "episode-priority-dispute",
+    "person-descartes",
+    "person-fermat",
+    "person-leibniz",
+    "person-napier",
+    "person-newton",
+    "person-pascal"
    ],
    "미분": [
     "concept-differentiation"
    ],
    "접선": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "person-fermat"
    ],
    "무한소": [
     "concept-differentiation"
    ],
    "페르마": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-pascal-fermat-letters",
+    "person-fermat"
    ],
    "뉴턴": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-newton-apple",
+    "episode-priority-dispute",
+    "person-newton"
    ],
    "라이프니츠": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-priority-dispute",
+    "person-leibniz"
    ],
    "코시": [
     "concept-differentiation"
    ],
    "17세기": [
-    "concept-differentiation"
+    "concept-differentiation",
+    "episode-descartes-fly",
+    "episode-newton-apple",
+    "episode-pascal-fermat-letters",
+    "episode-priority-dispute",
+    "person-descartes",
+    "person-fermat",
+    "person-leibniz",
+    "person-napier",
+    "person-newton",
+    "person-pascal"
+   ],
+   "데카르트": [
+    "episode-descartes-fly",
+    "person-descartes"
+   ],
+   "좌표": [
+    "episode-descartes-fly",
+    "person-descartes"
+   ],
+   "해석기하": [
+    "episode-descartes-fly",
+    "person-descartes"
+   ],
+   "일화": [
+    "episode-descartes-fly",
+    "episode-newton-apple",
+    "episode-pascal-fermat-letters",
+    "episode-priority-dispute"
+   ],
+   "만유인력": [
+    "episode-newton-apple"
+   ],
+   "파스칼": [
+    "episode-pascal-fermat-letters",
+    "person-pascal"
+   ],
+   "확률": [
+    "episode-pascal-fermat-letters",
+    "person-fermat",
+    "person-pascal"
+   ],
+   "점수문제": [
+    "episode-pascal-fermat-letters"
+   ],
+   "미적분": [
+    "episode-priority-dispute",
+    "person-leibniz",
+    "person-newton"
+   ],
+   "우선권": [
+    "episode-priority-dispute"
+   ],
+   "18세기": [
+    "episode-priority-dispute",
+    "person-leibniz",
+    "person-newton"
+   ],
+   "방법서설": [
+    "person-descartes"
+   ],
+   "극대극소": [
+    "person-fermat"
+   ],
+   "정수론": [
+    "person-fermat"
+   ],
+   "기호": [
+    "person-leibniz"
+   ],
+   "dy/dx": [
+    "person-leibniz"
+   ],
+   "네이피어": [
+    "person-napier"
+   ],
+   "로그": [
+    "person-napier"
+   ],
+   "계산": [
+    "person-napier"
+   ],
+   "브리그스": [
+    "person-napier"
+   ],
+   "16세기": [
+    "person-napier"
+   ],
+   "유율법": [
+    "person-newton"
+   ],
+   "프린키피아": [
+    "person-newton"
+   ],
+   "파스칼의삼각형": [
+    "person-pascal"
+   ],
+   "계산기": [
+    "person-pascal"
+   ],
+   "팡세": [
+    "person-pascal"
    ]
   },
   "인물": {
-   "배로": [
-    "concept-differentiation"
+   "person-newton": [
+    "concept-differentiation",
+    "episode-newton-apple",
+    "episode-priority-dispute"
+   ],
+   "person-fermat": [
+    "concept-differentiation",
+    "episode-pascal-fermat-letters"
+   ],
+   "person-leibniz": [
+    "concept-differentiation",
+    "episode-priority-dispute"
    ],
    "버클리": [
     "concept-differentiation"
    ],
-   "person-fermat": [
-    "concept-differentiation"
-   ],
-   "라이프니츠": [
+   "배로": [
     "concept-differentiation"
    ],
    "코시": [
     "concept-differentiation"
    ],
-   "person-leibniz": [
-    "concept-differentiation"
-   ],
-   "뉴턴": [
-    "concept-differentiation"
-   ],
-   "페르마": [
-    "concept-differentiation"
-   ],
    "person-barrow": [
     "concept-differentiation"
    ],
-   "person-newton": [
-    "concept-differentiation"
+   "person-descartes": [
+    "episode-descartes-fly"
+   ],
+   "person-pascal": [
+    "episode-pascal-fermat-letters"
    ]
   },
-  "역링크": {}
+  "역링크": {
+   "person-fermat": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-pascal-fermat-letters",
+     "제목": "파스칼–페르마 서신",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-newton": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-newton-apple",
+     "제목": "뉴턴의 사과",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "episode-priority-dispute",
+     "제목": "뉴턴–라이프니츠 우선권 논쟁",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-leibniz": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-priority-dispute",
+     "제목": "뉴턴–라이프니츠 우선권 논쟁",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "episode-priority-dispute": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ],
+   "person-descartes": [
+    {
+     "슬러그": "episode-descartes-fly",
+     "제목": "데카르트와 천장의 파리",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "concept-differentiation": [
+    {
+     "슬러그": "episode-newton-apple",
+     "제목": "뉴턴의 사과",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "episode-priority-dispute",
+     "제목": "뉴턴–라이프니츠 우선권 논쟁",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "person-pascal": [
+    {
+     "슬러그": "episode-pascal-fermat-letters",
+     "제목": "파스칼–페르마 서신",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "episode-descartes-fly": [
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ],
+   "episode-pascal-fermat-letters": [
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ],
+   "person-napier": [
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "episode-newton-apple": [
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ]
+  }
  },
  "별칭": {
-  "미분계수": "concept-differentiation",
-  "개념_미분법": "concept-differentiation",
+  "미분법이해편": "concept-differentiation",
   "미분": "concept-differentiation",
   "미분법": "concept-differentiation",
-  "미분법 이해편": "concept-differentiation",
-  "도함수": "concept-differentiation",
   "concept-differentiation": "concept-differentiation",
+  "미분법 이해편": "concept-differentiation",
+  "개념_미분법": "concept-differentiation",
+  "도함수": "concept-differentiation",
+  "미분계수": "concept-differentiation",
   "유율법": "concept-differentiation",
-  "미분법이해편": "concept-differentiation"
+  "데카르트와 천장의 파리": "episode-descartes-fly",
+  "일화_데카르트와 천장의 파리": "episode-descartes-fly",
+  "데카르트 파리": "episode-descartes-fly",
+  "episode-descartes-fly": "episode-descartes-fly",
+  "천장의 파리": "episode-descartes-fly",
+  "일화_뉴턴의 사과": "episode-newton-apple",
+  "뉴턴의 사과": "episode-newton-apple",
+  "만유인력 사과": "episode-newton-apple",
+  "episode-newton-apple": "episode-newton-apple",
+  "사과나무": "episode-newton-apple",
+  "일화_파스칼-페르마 서신": "episode-pascal-fermat-letters",
+  "파스칼–페르마 서신": "episode-pascal-fermat-letters",
+  "episode-pascal-fermat-letters": "episode-pascal-fermat-letters",
+  "분배 문제": "episode-pascal-fermat-letters",
+  "도박 문제": "episode-pascal-fermat-letters",
+  "점수 문제": "episode-pascal-fermat-letters",
+  "표절 시비": "episode-priority-dispute",
+  "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
+  "우선권 논쟁": "episode-priority-dispute",
+  "뉴턴–라이프니츠 우선권 논쟁": "episode-priority-dispute",
+  "미적분 논쟁": "episode-priority-dispute",
+  "episode-priority-dispute": "episode-priority-dispute",
+  "르네데카르트": "person-descartes",
+  "데카르트": "person-descartes",
+  "Descartes": "person-descartes",
+  "르네 데카르트": "person-descartes",
+  "인물_르네 데카르트": "person-descartes",
+  "person-descartes": "person-descartes",
+  "피에르페르마": "person-fermat",
+  "person-fermat": "person-fermat",
+  "Fermat": "person-fermat",
+  "인물_피에르 드 페르마": "person-fermat",
+  "피에르 드 페르마": "person-fermat",
+  "페르마": "person-fermat",
+  "인물_고트프리트 라이프니츠": "person-leibniz",
+  "person-leibniz": "person-leibniz",
+  "고트프리트 라이프니츠": "person-leibniz",
+  "라이프니츠": "person-leibniz",
+  "고트프리트 빌헬름 라이프니츠": "person-leibniz",
+  "Leibniz": "person-leibniz",
+  "네이피어": "person-napier",
+  "인물_존 네이피어": "person-napier",
+  "존 네이피어": "person-napier",
+  "Napier": "person-napier",
+  "person-napier": "person-napier",
+  "존네이피어": "person-napier",
+  "네피어": "person-napier",
+  "뉴턴": "person-newton",
+  "인물_아이작 뉴턴": "person-newton",
+  "아이작뉴턴": "person-newton",
+  "아이작 뉴턴": "person-newton",
+  "Isaac Newton": "person-newton",
+  "person-newton": "person-newton",
+  "파스칼": "person-pascal",
+  "인물_블레즈 파스칼": "person-pascal",
+  "블레즈 파스칼": "person-pascal",
+  "person-pascal": "person-pascal",
+  "Pascal": "person-pascal",
+  "블레즈파스칼": "person-pascal"
  }
 }
