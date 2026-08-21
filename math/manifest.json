@@ -2539,7 +2539,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7740,
+   "자수": 7750,
    "시각화": 5
   },
   {
@@ -2714,7 +2714,10 @@
     "concept-differentiation",
     "concept-differentiation-advanced"
    ],
-   "관련일화": [],
+   "관련인물": [
+    "person-laplace",
+    "person-euler"
+   ],
    "출처": [
     {
      "번호": 1,
@@ -2777,6 +2780,126 @@
     19
    ],
    "자수": 6186,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "피에르시몽 라플라스",
+   "슬러그": "person-laplace",
+   "별칭": [
+    "라플라스",
+    "Laplace",
+    "Pierre-Simon Laplace",
+    "피에르 시몽 라플라스",
+    "라플라스의 악마",
+    "천체역학"
+   ],
+   "볼트파일명": "인물_피에르시몽 라플라스",
+   "세기": [
+    18,
+    19
+   ],
+   "분야": [
+    "확률론",
+    "천체역학",
+    "해석학"
+   ],
+   "교과": [
+    "확률과 통계"
+   ],
+   "난이도": "표준",
+   "요약": "확률을 도박의 기술에서 지식을 다루는 이론으로 바꿨고, 태양계가 스스로 안정하다는 것을 계산으로 보였다. 정권이 바뀔 때마다 입장을 바꾼 것으로도 유명하다.",
+   "태그": [
+    "수학사",
+    "라플라스",
+    "확률론",
+    "천체역학",
+    "성운설",
+    "결정론",
+    "나폴레옹",
+    "18세기",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1749,
+    "사망": 1827,
+    "출생지": "프랑스 노르망디 보몽앙오주"
+   },
+   "기여개념": [
+    "concept-integration"
+   ],
+   "관련일화": [],
+   "관련인물": [
+    "person-lagrange"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Pierre-Simon Laplace — 생몰·가족의 실제 형편·달랑베르·저작·내무장관·정치적 처신·작위",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Quotations by Pierre-Simon Laplace — 나폴레옹과의 대화가 드모르간 『역설의 예산』에 실린 것이라는 출처 표시",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/quotations/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 라플라스 — 1799년 내상, 백작. 다만 \"노르망디의 빈농 출신\"이라 서술한다",
+     "URL": "https://terms.naver.com/entry.naver?docId=389115&cid=41978&categoryId=41985",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 라플라스 — 1767년 파리에서 달랑베르에게 인정받아 육군학교 수학 교관이 됨. \"빈농의 아들\"로 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=879652&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 라플라스 — 1773년 태양계 안정성 발표, 목성·토성 상호섭동 문제 해결",
+     "URL": "https://terms.naver.com/entry.naver?docId=612050&cid=42420&categoryId=42420",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과, 라플라스 — 라플라스 방정식·확률론과 『천체역학』의 위치",
+     "URL": "https://terms.naver.com/entry.naver?docId=1621432&cid=42469&categoryId=42469",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과, 라플라스 — 칸트–라플라스 성운설과 『천체역학』",
+     "URL": "https://terms.naver.com/entry.naver?docId=2284275&cid=60227&categoryId=60227",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 라플라스 변환 — 선형 상미분방정식을 대수방정식으로 바꾸는 변환",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405053&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 수학적 결정론의 절정 — '라플라스의 악마'",
+     "URL": "https://terms.naver.com/entry.naver?docId=4348010&cid=60336&categoryId=60336",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor History of Mathematics, Joseph-Louis Lagrange — 같은 시기 파리의 동료",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-laplace/note.md",
+   "세기전체": [
+    18,
+    19
+   ],
+   "자수": 6599,
    "시각화": 3
   },
   {
@@ -3005,6 +3128,7 @@
     "episode-priority-dispute",
     "person-euler",
     "person-lagrange",
+    "person-laplace",
     "person-leibniz",
     "person-newton"
    ],
@@ -3015,7 +3139,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
-    "person-lagrange"
+    "person-lagrange",
+    "person-laplace"
    ],
    "20": [
     "concept-analytic-geometry-advanced",
@@ -3039,6 +3164,7 @@
     "person-fermat",
     "person-gregory",
     "person-lagrange",
+    "person-laplace",
     "person-leibniz",
     "person-newton"
    ],
@@ -3057,6 +3183,7 @@
     "concept-integration-advanced",
     "episode-pascal-fermat-letters",
     "person-fermat",
+    "person-laplace",
     "person-pascal"
    ],
    "대수학": [
@@ -3110,6 +3237,9 @@
    "변분법": [
     "person-lagrange"
    ],
+   "천체역학": [
+    "person-laplace"
+   ],
    "논리학": [
     "person-leibniz"
    ],
@@ -3150,6 +3280,9 @@
     "person-fermat",
     "person-pascal"
    ],
+   "확률과 통계": [
+    "person-laplace"
+   ],
    "공통수학1": [
     "person-napier"
    ]
@@ -3181,6 +3314,7 @@
     "person-fermat",
     "person-gregory",
     "person-lagrange",
+    "person-laplace",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -3208,6 +3342,7 @@
     "person-fermat",
     "person-gregory",
     "person-lagrange",
+    "person-laplace",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -3263,6 +3398,7 @@
     "episode-priority-dispute",
     "person-euler",
     "person-lagrange",
+    "person-laplace",
     "person-leibniz",
     "person-newton"
    ],
@@ -3278,7 +3414,8 @@
     "person-lagrange"
    ],
    "라플라스": [
-    "century-18c"
+    "century-18c",
+    "person-laplace"
    ],
    "해석학": [
     "century-18c"
@@ -3324,7 +3461,8 @@
     "concept-analytic-geometry-advanced"
    ],
    "19세기": [
-    "concept-analytic-geometry-advanced"
+    "concept-analytic-geometry-advanced",
+    "person-laplace"
    ],
    "미분": [
     "concept-differentiation",
@@ -3410,7 +3548,8 @@
     "concept-integration-advanced"
    ],
    "확률론": [
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "person-laplace"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -3482,6 +3621,18 @@
    ],
    "에콜폴리테크니크": [
     "person-lagrange"
+   ],
+   "천체역학": [
+    "person-laplace"
+   ],
+   "성운설": [
+    "person-laplace"
+   ],
+   "결정론": [
+    "person-laplace"
+   ],
+   "나폴레옹": [
+    "person-laplace"
    ],
    "dy/dx": [
     "person-leibniz"
@@ -3584,7 +3735,8 @@
    ],
    "person-lagrange": [
     "concept-differentiation-advanced",
-    "person-euler"
+    "person-euler",
+    "person-laplace"
    ],
    "로빈슨": [
     "concept-differentiation-advanced"
@@ -3620,6 +3772,12 @@
    ],
    "person-pascal": [
     "episode-pascal-fermat-letters"
+   ],
+   "person-euler": [
+    "person-lagrange"
+   ],
+   "person-laplace": [
+    "person-lagrange"
    ]
   },
   "역링크": {
@@ -4121,6 +4279,12 @@
      "경로": "관련일화"
     },
     {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-pascal",
      "제목": "블레즈 파스칼",
      "유형": "인물",
@@ -4257,6 +4421,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -4317,6 +4487,12 @@
      "제목": "제임스 그레고리",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-euler": [
@@ -4329,6 +4505,12 @@
     {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
     }
@@ -4387,6 +4569,12 @@
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-leibniz",
@@ -4501,6 +4689,26 @@
      "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-laplace": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "concept-integration-advanced": [
@@ -4521,6 +4729,12 @@
      "제목": "적분법",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-analytic-geometry-advanced": [
@@ -4569,6 +4783,12 @@
     {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
     }
@@ -4732,6 +4952,15 @@
   "조제프 루이 라그랑주": "person-lagrange",
   "조제프루이 라그랑주": "person-lagrange",
   "해석 역학": "person-lagrange",
+  "Laplace": "person-laplace",
+  "Pierre-Simon Laplace": "person-laplace",
+  "person-laplace": "person-laplace",
+  "라플라스": "person-laplace",
+  "라플라스의 악마": "person-laplace",
+  "인물_피에르시몽 라플라스": "person-laplace",
+  "천체역학": "person-laplace",
+  "피에르 시몽 라플라스": "person-laplace",
+  "피에르시몽 라플라스": "person-laplace",
   "Leibniz": "person-leibniz",
   "person-leibniz": "person-leibniz",
   "고트프리트 라이프니츠": "person-leibniz",
