@@ -77,14 +77,18 @@
    "열심히 하는데 왜 제자리일까" 같은 조언형은 핵이 없다 → 만들지 않는다.
 3. **웹으로 확인할 수 있다.** 확인 못 하면 **안 만드는 것이 정답**이다(추측 금지).
 
-### 어디에 쓰나
+### 어디에 쓰나 — 전부 리포다
 | 파일 | 넣는 것 |
 |---|---|
-| 볼트 `학습자료/<YYYYMMDD>_<주제>(영문) — 이해편.md` | 프론트매터 + 본문 |
+| `concept/notes/<슬러그>.md` | **프론트매터 + 본문.** 정본이다 |
 | `studio/concepts/<슬러그>.py` | 개념 한 장 스펙 (`SPEC`) |
+
+`concept/manifest.json` 은 손대지 않는다 — 워크플로가 `build_concept_manifest.py` 로 만든다.
+옵시디언 볼트(`003-카드뉴스학습자료`)는 **사본**이며 `sync_obsidian.py` 가 없을 때만 내려보낸다.
 
 슬러그는 제목의 괄호 안 영문에서 나온다 — `평균이라는 착시(Size Bias)` → `size-bias`.
 그림은 **러너가 그린다**(`concept-sheet-render.yml`). 로컬에서 렌더하지 말 것.
+그 워크플로가 그림 · manifest · 링크 인덱스 · 게이트를 한 번에 처리한다.
 
 ### 필수 골격
 `# 제목 — 이해편` → `> 목표:` → `## TL;DR` → `## 핵심 포인트` → 본문 `## 1.`~ →
@@ -158,8 +162,9 @@ python tools/verify_concept.py --vault <학습자료 폴더>
                           → webp 변환 → cardnews/assets/ + manifest
                           → link-index 재생성 → 커밋 → PR 열기
   → 사람이 PR 에서 모아보기 확인 → 머지        ★ 유일한 사람 게이트
-  → concept-sheet-render.yml (스펙을 올린 경우) 개념 한 장을 러너에서 렌더 →
-                             concept/assets/<슬러그>.png 커밋
+  → concept-sheet-render.yml (스펙·본문을 올린 경우) 개념 한 장 렌더 →
+                             manifest · 링크 인덱스 · 게이트 → concept/ 커밋
+                             ★ 갤러리에 바로 반영된다 (반입 단계 없음)
   → cardnews-sync.yml        main 반영 확인 → 개념노트 연결 검사 → Pages 배포
 ```
 

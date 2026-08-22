@@ -184,6 +184,9 @@ function renderWikilinks(md){
 
 /* 마크다운 + 용어 주석([^라벨]). [n]·[국내1] 같은 출처 표기는 건드리지 않는다. */
 function renderMD(md){
+  /* 원고가 프론트매터를 갖는다 — 정본이 리포로 옮겨 오면서(2026-08-22) 볼트에서
+     떼던 것을 여기서 뗀다. 화면에는 본문만 보인다. */
+  md=md.replace(/^---\n[\s\S]*?\n---\n?/, "");
   md=md.replace(/\r\n/g,"\n");
   var defs={};
   md=md.replace(/^\[\^([^\]]+)\]:[ \t]*(.*(?:\n(?!\s*$)(?!\[\^).*)*)/gm, function(m,id,txt){

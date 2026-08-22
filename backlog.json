@@ -1,8 +1,8 @@
 {
  "generated": "2026-08-22",
  "scanned": 189,
- "resolved": 504,
- "pending": 513,
+ "resolved": 516,
+ "pending": 522,
  "counts": {
   "new": 238,
   "companion": 5,
@@ -703,6 +703,21 @@
    ]
   },
   {
+   "name": "심슨의 역설 확장편",
+   "count": 4,
+   "kind": "companion",
+   "target": null,
+   "base": "심슨의 역설",
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 4
+    }
+   ]
+  },
+  {
    "name": "극한",
    "count": 3,
    "kind": "new",
@@ -1129,11 +1144,71 @@
    ]
   },
   {
-   "name": "심슨의 역설 확장편",
+   "name": "비서 문제",
    "count": 3,
-   "kind": "companion",
+   "kind": "new",
    "target": null,
-   "base": "심슨의 역설",
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "자연상수 e",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "탐색과 활용",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "교란변수",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "인과추론",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
    "refs": [
     {
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
@@ -2749,6 +2824,21 @@
    ]
   },
   {
+   "name": "선택 편향",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
+     "u": "concept/#n=survivorship-bias",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "생존자 편향 확장편",
    "count": 2,
    "kind": "companion",
@@ -2758,6 +2848,21 @@
     {
      "t": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
      "u": "concept/#n=survivorship-bias",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "차원해석",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "스퀘어-큐브 법칙(Square-Cube Law) — 이해편(입문·딥)",
+     "u": "concept/#n=square-cube-law",
      "s": "concept",
      "n": 2
     }
@@ -2779,75 +2884,15 @@
    ]
   },
   {
-   "name": "비서 문제",
+   "name": "최적 정지 확장편",
    "count": 2,
-   "kind": "new",
+   "kind": "companion",
    "target": null,
-   "base": null,
+   "base": "최적 정지",
    "refs": [
     {
      "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
      "u": "concept/#n=optimal-stopping",
-     "s": "concept",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "자연상수 e",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
-     "u": "concept/#n=optimal-stopping",
-     "s": "concept",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "탐색과 활용",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
-     "u": "concept/#n=optimal-stopping",
-     "s": "concept",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "교란변수",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
-     "u": "concept/#n=simpsons-paradox",
-     "s": "concept",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "인과추론",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
-     "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 2
     }
@@ -4205,51 +4250,6 @@
      "t": "(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼",
      "u": "videos/#post-R2aSqw7S3Ws",
      "s": "videos",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "선택 편향",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
-     "u": "concept/#n=survivorship-bias",
-     "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "차원해석",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "스퀘어-큐브 법칙(Square-Cube Law) — 이해편(입문·딥)",
-     "u": "concept/#n=square-cube-law",
-     "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "최적 정지 확장편",
-   "count": 1,
-   "kind": "companion",
-   "target": null,
-   "base": "최적 정지",
-   "refs": [
-    {
-     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
-     "u": "concept/#n=optimal-stopping",
-     "s": "concept",
      "n": 1
     }
    ]
