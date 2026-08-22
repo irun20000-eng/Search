@@ -39,7 +39,9 @@
   --ink:#2B2622; --muted:#8A7E72; --accent:#E8743B; --accent-soft:#FCEDE1;
   --chip:#F7F1E8;
   --c-research:#C2582B; --c-videos:#4A7C86; --c-guides:#6B7A3F; --c-math:#6A4870;
+  --c-learn:#2F6F5E; --c-cardnews:#B8563F; --c-blog:#4B5C8A;
   --sb-research:#FCEDE1; --sb-videos:#E6F0F2; --sb-guides:#EDF1E2; --sb-math:#F0E9F2;
+  --sb-learn:#E3F0EB; --sb-cardnews:#FBE9E3; --sb-blog:#E9ECF6;
   --shadow:0 6px 22px rgba(120,90,60,.08);
   --shadow-lg:0 14px 34px rgba(120,90,60,.16);
   --barbg:rgba(255,248,240,.92);
@@ -52,7 +54,9 @@
   --ink:#f0e8de; --muted:#a99d8e; --accent:#F2894C; --accent-soft:#3a2a1e;
   --chip:#2c251f;
   --c-research:#f0a06a; --c-videos:#7FB4BE; --c-guides:#A3B36E; --c-math:#B08CB8;
+  --c-learn:#79BCA6; --c-cardnews:#E29078; --c-blog:#95A4D4;
   --sb-research:#3a2a1e; --sb-videos:#22322f; --sb-guides:#28301f; --sb-math:#2e2333;
+  --sb-learn:#1c2f29; --sb-cardnews:#332320; --sb-blog:#232838;
   --shadow:0 6px 22px rgba(0,0,0,.35);
   --shadow-lg:0 14px 34px rgba(0,0,0,.45);
   --barbg:rgba(26,22,19,.92);
@@ -107,6 +111,7 @@ button{font-family:var(--font)}
 .nores{padding:22px 16px;text-align:center;color:var(--muted);font-size:.9rem}
 
 h2.sec-h{font-size:1.15rem;font-weight:800;margin:56px 0 4px;letter-spacing:-.01em}
+.sec-note{margin:-6px 0 14px;font-size:.86rem;color:var(--muted);line-height:1.55}
 p.sec-p{color:var(--muted);font-size:.9rem;margin:0 0 20px}
 
 /* 서가 카드 */
@@ -120,6 +125,8 @@ p.sec-p{color:var(--muted);font-size:.9rem;margin:0 0 20px}
 .scard .body{padding:16px 18px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
 .scard h3{margin:0;font-size:1.12rem;font-weight:800;letter-spacing:-.01em}
 .scard .desc{font-size:.86rem;color:var(--muted);line-height:1.55;flex:1}
+.scard .ext{font-size:.72rem;font-weight:700;color:var(--strip);border:1.2px solid var(--strip);
+  border-radius:999px;padding:1px 7px;margin-left:6px;vertical-align:2px;opacity:.85}
 .scard .foot{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--muted);margin-top:3px}
 .scard .n{font-weight:800;color:var(--strip);font-size:.95rem}
 
@@ -176,6 +183,10 @@ footer.site a{color:var(--accent);font-weight:600}
   <p class="sec-p">네 갈래로 쌓여 있습니다.</p>
   <div class="grid" id="shelves"></div>
 
+  <h2 class="sec-h">바깥 서가</h2>
+  <p class="sec-note">다른 저장소에서 따로 굴러가는 갤러리입니다. 링크로 이어 둡니다.</p>
+  <div class="grid" id="shelves-ext"></div>
+
   <h2 class="sec-h">최근에 올린 것</h2>
   <p class="sec-p">네 서가를 합쳐 최신순으로.</p>
   <div class="recent" id="recent"></div>
@@ -218,6 +229,25 @@ var SHELF={
   math:{desc:"세기 · 개념 · 인물 · 일화로 엮은 아카이브. 일화에는 사실성 판정이 붙습니다.",
     cover:'<rect width="300" height="88" fill="var(--sb-math)"/><line x1="20" y1="66" x2="280" y2="66" stroke="var(--c-math)" stroke-width="1.6" opacity=".5"/><g fill="var(--c-math)" opacity=".8"><circle cx="52" cy="66" r="5"/><circle cx="112" cy="66" r="7"/><circle cx="172" cy="66" r="5"/><circle cx="232" cy="66" r="5"/></g><g fill="var(--c-math)" opacity=".45" font-family="Georgia,serif" font-size="12"><text x="40" y="34">16</text><text x="100" y="26">17</text><text x="162" y="34">18</text><text x="222" y="34">19</text></g>'}
 };
+
+/* ── 바깥 서가 — 다른 저장소의 갤러리 ──
+   link-index.json 에 없으므로 검색·통계에는 잡히지 않는다.
+   편수는 각 갤러리가 manifest.json 을 내놓으면 런타임에 읽어 채운다(없으면 생략).
+   셋 다 같은 오리진(irun20000-eng.github.io)이라 루트 기준 경로로 닿는다. */
+var EXTRA=[
+  {k:"learn", label:"학습자료",
+   url:"/youtube-math-skill/", manifest:"/youtube-math-skill/manifest.json",
+   desc:"유튜브 수학 강의를 학년·단원별 학습자료로 만든 갤러리. 단계별 풀이와 문항이 함께 있습니다.",
+   cover:'<rect width="300" height="88" fill="var(--sb-learn)"/><g stroke="var(--c-learn)" stroke-width="2" fill="none" opacity=".5"><path d="M26 64 Q 76 20 126 52 T 226 34"/></g><g fill="var(--c-learn)" opacity=".8"><rect x="238" y="26" width="40" height="30" rx="4"/></g><g fill="var(--sb-learn)"><path d="M252 34 L266 41 L252 48 Z"/></g><g fill="var(--c-learn)" opacity=".55" font-family="Georgia,serif" font-size="13"><text x="30" y="30">f(x)</text></g>'},
+  {k:"cardnews", label:"카드뉴스",
+   url:"/Main/gallery/cardnews.html", manifest:"/Main/gallery/cardnews.manifest.json",
+   desc:"한 장씩 넘겨 보는 짧은 노트. 부모 노트 · 숫자 노트 · 일머리 노트 같은 묶음으로 나뉩니다.",
+   cover:'<rect width="300" height="88" fill="var(--sb-cardnews)"/><g fill="none" stroke="var(--c-cardnews)" stroke-width="2" opacity=".55"><rect x="46" y="20" width="60" height="50" rx="6"/><rect x="120" y="14" width="60" height="60" rx="6"/><rect x="194" y="20" width="60" height="50" rx="6"/></g><g fill="var(--c-cardnews)" opacity=".7"><rect x="132" y="28" width="36" height="4" rx="2"/><rect x="132" y="40" width="28" height="4" rx="2"/><rect x="132" y="52" width="32" height="4" rx="2"/></g>'},
+  {k:"blog", label:"블로그",
+   url:"/Main/gallery/blog.html", manifest:"/Main/gallery/blog.manifest.json",
+   desc:"바깥에 발행한 글을 모아 둔 곳. 수학 개념 · AI 활용 · 입시를 다룹니다.",
+   cover:'<rect width="300" height="88" fill="var(--sb-blog)"/><g fill="var(--c-blog)" opacity=".7"><rect x="40" y="24" width="120" height="5" rx="2.5"/><rect x="40" y="40" width="170" height="4" rx="2"/><rect x="40" y="52" width="150" height="4" rx="2"/><rect x="40" y="64" width="96" height="4" rx="2"/></g><g fill="none" stroke="var(--c-blog)" stroke-width="2" opacity=".5"><path d="M232 60 L232 26 L262 26"/><path d="M246 42 L268 42"/></g>'}
+];
 /* 묶어 읽기 — 서가 경계를 넘는 주제. 편수는 색인에서 실시간으로 센다. */
 var COLLS=[
   {t:"미적분, 처음부터 끝까지", q:"미적분", d:"17세기 탄생 배경부터 개념 정리와 엄밀화까지 한 줄로."},
@@ -314,6 +344,29 @@ paintTheme();
       '<div class="foot"><span class="n">'+by[k]+'편</span>'+(last?'<span>· '+esc(last)+' 갱신</span>':'')+'</div>'+
       '</div></a>';
   }).join("");
+
+  /* 바깥 서가 — 링크는 항상, 편수는 manifest 가 있을 때만 */
+  $("#shelves-ext").innerHTML=EXTRA.map(function(x){
+    return '<a class="scard" href="'+esc(x.url)+'" style="--strip:var(--c-'+x.k+')">'+
+      '<div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none" aria-hidden="true">'+x.cover+'</svg></div>'+
+      '<div class="body"><h3>'+esc(x.label)+'<span class="ext">바깥 ↗</span></h3>'+
+      '<div class="desc">'+esc(x.desc)+'</div>'+
+      '<div class="foot"><span class="n" id="ext-n-'+x.k+'">바로가기</span></div>'+
+      '</div></a>';
+  }).join("");
+
+  /* 편수 채우기 — 실패하면 '바로가기' 그대로 둔다(갤러리마다 manifest 가 아직 없을 수 있다) */
+  EXTRA.forEach(function(x){
+    fetch(x.manifest,{cache:"no-store"}).then(function(r){
+      if(!r.ok) throw 0; return r.json();
+    }).then(function(j){
+      var n = Array.isArray(j) ? j.length
+            : (j.items||j.entries||j.posts||j.lessons||j.notes||j.reports||[]).length;
+      if(!n) return;
+      var el=document.getElementById("ext-n-"+x.k);
+      if(el) el.textContent=n+"편";
+    }).catch(function(){});
+  });
 
   /* 최근 */
   var recent=DOCS.filter(function(d){return d.d}).sort(function(a,b){
