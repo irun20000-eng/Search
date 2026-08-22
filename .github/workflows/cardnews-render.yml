@@ -1,0 +1,149 @@
+# 카드뉴스 렌더 → PR 에 모아보기 붙이기
+#
+# 왜: 카드뉴스 렌더에는 한글 폰트(Noto CJK)와 크로미움이 필요하다. 로컬 PC 의 폰트가
+#     기존 20편을 렌더한 것과 달라(지침: "21편부터 카드 질감이 갈린다") 사람 PC 에
+#     의존하면 결과가 갈린다. 러너에서 매번 같은 환경을 깔아 쓴다.
+#
+# 사람 게이트: 지침이 "모아보기 PNG 를 반드시 눈으로 확인한다. 자동검사는 지저분한
+#     줄바꿈을 못 잡는다" 고 못 박고 있다. 그래서 이 워크플로는 배포하지 않고
+#     PR 만 만든다. 사람이 모아보기를 보고 머지해야 서가에 올라간다.
+#
+# 흐름: 루틴이 카피(studio/contents/**)와 편 메타(cardnews/cardnews.yaml)를 브랜치에
+#     push → 이 워크플로가 렌더·반입해 같은 브랜치에 커밋하고 PR 을 연다
+#     → 사람이 모아보기 확인 후 머지 → cardnews-sync 가 배포한다.
+name: 카드뉴스 렌더
+
+on:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - 'studio/contents/**'
+      - 'cardnews/cardnews.yaml'
+  workflow_dispatch:
+    inputs:
+      series:
+        description: '시리즈 (예: 숫자노트)'
+        required: true
+      episode:
+        description: '편 (예: EP4)'
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: cardnews-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 한글 폰트 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+          fc-cache -f
+          echo "설치된 Noto CJK:"; fc-list | grep -i "noto.*cjk" | head -5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 의존성
+        run: |
+          python -m pip install -q --upgrade pip
+          pip install -q -r studio/requirements.txt
+          pip install -q pyyaml
+          python -m playwright install --with-deps chromium
+
+      - name: 환경 점검
+        run: python studio/cardnews.py doctor
+
+      - name: 렌더할 편 결정
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.series }}" ]; then
+            echo "series=${{ github.event.inputs.series }}" >> $GITHUB_OUTPUT
+            echo "episode=${{ github.event.inputs.episode }}" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # push 로 들어온 경우: 이번 커밋에서 바뀐 contents 파일에서 시리즈를 읽고
+          # 그 파일의 마지막 EP 를 대상으로 잡는다.
+          CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- studio/contents/ | head -1)
+          if [ -z "$CHANGED" ]; then echo "대상 없음"; echo "skip=1" >> $GITHUB_OUTPUT; exit 0; fi
+          SERIES=$(basename "$CHANGED" .py | sed 's/^contents_//')
+          EP=$(grep -oE '^EP[0-9]+' "$CHANGED" | tail -1)
+          echo "series=$SERIES" >> $GITHUB_OUTPUT
+          echo "episode=$EP" >> $GITHUB_OUTPUT
+          echo "대상: $SERIES $EP"
+
+      - name: 렌더 + 자동검사 + 모아보기
+        if: steps.pick.outputs.skip != '1'
+        run: python studio/cardnews.py render "${{ steps.pick.outputs.series }}" "${{ steps.pick.outputs.episode }}"
+
+      - name: 갤러리로 반입 (webp 변환 포함)
+        if: steps.pick.outputs.skip != '1'
+        run: |
+          sudo apt-get install -y -qq webp
+          python tools/ingest_cardnews_from_studio.py "${{ steps.pick.outputs.series }}" "${{ steps.pick.outputs.episode }}"
+          python tools/build_link_index.py
+
+      - name: 커밋
+        if: steps.pick.outputs.skip != '1'
+        run: |
+          if git diff --quiet -- cardnews/ link-index.json; then
+            echo "산출물 변화 없음 — 커밋 생략"; exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cardnews/ link-index.json
+          git commit -m "chore(cardnews): ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }} 렌더 반입 [skip ci]"
+          git push
+
+      - name: 모아보기를 아티팩트로
+        if: steps.pick.outputs.skip != '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: 모아보기-${{ steps.pick.outputs.series }}-${{ steps.pick.outputs.episode }}
+          path: studio/out/**/*모아보기*
+          if-no-files-found: warn
+
+      - name: PR 본문 준비
+        if: steps.pick.outputs.skip != '1'
+        run: |
+          {
+            echo "자동 렌더 결과입니다. **모아보기를 눈으로 확인한 뒤 머지**해 주세요."
+            echo ""
+            echo "- 자동검사는 규격·세로 넘침·안전여백만 봅니다. **지저분한 줄바꿈은 못 잡습니다.**"
+            echo "- 이상하면 머지하지 말고 코멘트만 남겨 주세요 → 카피를 줄여 다시 렌더합니다."
+            echo "- 머지하면 서가(cardnews/)에 반영되고 Pages 가 배포합니다."
+            echo ""
+            echo "모아보기는 이 실행의 Artifacts 에서 받을 수 있고, Files changed 에서 컷 10장을 바로 볼 수 있습니다."
+          } > /tmp/pr-body.md
+
+      - name: PR 열기 (없으면)
+        if: steps.pick.outputs.skip != '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BR="${GITHUB_REF#refs/heads/}"
+          if gh pr view "$BR" >/dev/null 2>&1; then
+            echo "PR 이미 있음 — 갱신됨"
+          else
+            TITLE="카드뉴스 ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }}"
+            gh pr create --base main --head "$BR" --title "$TITLE" --body-file /tmp/pr-body.md
+          fi
+
+      - name: 실패 알림용 요약
+        if: always()
+        run: |
+          {
+            echo "### 카드뉴스 렌더"
+            echo "- 대상: ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }}"
+            echo "- 결과: ${{ job.status }}"
+          } >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,94 @@
+# 카드뉴스 머지 후 정합성 확인
+#
+# 왜: 렌더 워크플로가 브랜치에서 만든 산출물이 main 에 들어왔을 때, 실제로 셋이
+#     맞물려 있는지 확인한다 — cardnews.yaml 의 편 항목 · assets 의 실제 이미지 ·
+#     manifest 의 카드. 하나라도 어긋나면 갤러리에 빈 카드나 깨진 그림이 뜬다.
+#
+#     사람은 모아보기(그림)를 보고 머지하지, 파일 정합성을 보고 머지하지 않는다.
+#     그 빈틈을 여기서 기계적으로 막는다.
+name: 카드뉴스 정합성
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cardnews/**'
+      - 'concept/**'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -q pyyaml
+
+      - name: yaml ↔ assets ↔ manifest 3자 대조
+        run: |
+          python - <<'PY'
+          import json, io, os, sys, yaml
+
+          bad = []
+          data = yaml.safe_load(io.open('cardnews/cardnews.yaml', encoding='utf-8')) or {}
+          man = json.load(io.open('cardnews/manifest.json', encoding='utf-8'))
+          by_folder = {e['folder']: e for e in man['episodes']}
+
+          for e in data.get('episodes', []):
+              f, imgs = e['folder'], (e.get('images') or [])
+              d = os.path.join('cardnews/assets', f)
+              if not os.path.isdir(d):
+                  continue                      # 아직 반입 전인 편은 건너뛴다
+              if f not in by_folder:
+                  bad.append('%s — assets 는 있는데 manifest 에 없다' % f); continue
+              gone = [i for i in imgs if not os.path.exists(os.path.join(d, i))]
+              if gone:
+                  bad.append('%s — 이미지 %d장 없음: %s' % (f, len(gone), gone[:3]))
+              n = len(by_folder[f].get('images') or [])
+              if n != len(imgs):
+                  bad.append('%s — 컷 수 불일치 yaml %d vs manifest %d' % (f, len(imgs), n))
+
+          for f in os.listdir('cardnews/assets'):
+              if os.path.isdir(os.path.join('cardnews/assets', f)) and f not in by_folder:
+                  bad.append('%s — assets 만 있고 yaml·manifest 에 없다' % f)
+
+          print('편 %d · manifest %d' % (len(data.get('episodes', [])), man['count']))
+          if bad:
+              print('\n정합성 문제 %d건:' % len(bad))
+              for b in bad: print('  -', b)
+              sys.exit(1)
+          print('정합성 OK')
+          PY
+
+      - name: 개념노트 ↔ 카드뉴스 연결 확인
+        run: |
+          python - <<'PY'
+          import json, io, os
+          if not os.path.exists('concept/manifest.json'):
+              print('개념노트 없음 — 건너뜀'); raise SystemExit(0)
+          c = json.load(io.open('concept/manifest.json', encoding='utf-8'))
+          man = json.load(io.open('cardnews/manifest.json', encoding='utf-8'))
+          slugs = {n['slug'] for n in c['notes']}
+          dangling = [e['folder'] for e in man['episodes']
+                      if e.get('study') and e['study'] not in slugs]
+          missing_note = [n['slug'] for n in c['notes']
+                          if not os.path.exists('concept/notes/%s.md' % n['slug'])]
+          print('개념노트 %d편 · 연결된 카드뉴스 %d편'
+                % (len(slugs), sum(1 for e in man['episodes'] if e.get('study'))))
+          if dangling: print('끊긴 study 링크:', dangling)
+          if missing_note: print('본문 없는 개념노트:', missing_note)
+          raise SystemExit(1 if (dangling or missing_note) else 0)
+          PY
+
+      - name: 요약
+        if: always()
+        run: |
+          {
+            echo "### 카드뉴스 정합성"
+            echo "- 결과: ${{ job.status }}"
+            echo "- 갤러리: https://irun20000-eng.github.io/Search/cardnews/"
+          } >> $GITHUB_STEP_SUMMARY
