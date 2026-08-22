@@ -20,7 +20,11 @@
       ],
       "tldr": "\"『일리아스』는 트로이 전쟁 이야기이고 그 안에 목마가 나온다\"는 통념은 틀렸다. 『일리아스』는 10년 전쟁 중 마지막 해의 약 50일만, 그것도 '아킬레우스의 분노'를 다루며 헥토르의 장례로 끝난다 — 목마도 함락도 없다. 우리가 아는 트로이 이야기는 최소 8편의 서사시가 이어 붙은 묶음이고, 목마 대목을 담당한 『소일리아스』·『일리온의 함락』은 소실돼 요약으로만 전한다. 현존하는 것은 양 끝의 두 편뿐이다. 『오디세이아』도 구조가 특이하다. 이야기 한복판에서 시작하고(in medias res), 주인공은 5권에 가서야 나오며, 폴리페모스·키르케·세이렌 같은 가장 유명한 모험은 9~12권에서 오디세우스가 잔치 자리에서 직접 들려주는 회상이다. 핵심 낱말은 노스토스(귀향)·크세니아(환대)·메티스(지략). 무사히 도착하고도 집에서 살해당한 아가멤논이 반례로 계속 소환되며, 그래서 오디세우스는 거지로 변장해 몰래 들어간다 — 귀향은 도착이 아니라 회복이다. 칼립소가 제안한 불사를 거절하고 늙어 가는 아내가 있는 바위섬을 택한 대목이 이 작품의 결론이다.",
       "sources": 15,
-      "path": "reports/odyssey-troy/report.md"
+      "path": "reports/odyssey-troy/report.md",
+      "cat": "culture",
+      "pair": "odyssey-troy-advanced",
+      "track": "intro",
+      "chars": 13130
     },
     {
       "slug": "odyssey-troy-advanced",
@@ -42,7 +46,11 @@
       ],
       "tldr": "'무엇이 실제인가'는 두 개의 물음이다. 트로이는 삽으로 파는 문제이고, 호메로스는 그렇지 않다. 1795년 볼프가 두 서사시를 '구전되던 짧은 노래들의 후대 편집'이라 주장한 뒤 분석파와 단일파가 150년을 다퉜으나 결판이 나지 않았다. 판을 바꾼 것은 밀먼 패리다 — 1928년 학위논문에서 호메로스 문체가 '같은 운율 자리에서 같은 뜻을 표현하는 고정 표현(정형구)'으로 짜여 있음을 보였고, 1933~35년 유고슬라비아에서 문맹 가인들이 장편 서사시를 매번 다르게, 그러나 엉성해지지 않게 즉석 작시하는 것을 녹음했다. 답은 '한 명이냐 여럿이냐'가 아니라 '공연하며 다시 지어냈다'였다. 트로이는 실재한다 — 튀르키예 히사를리크. 다만 슐리만은 1870년대 발굴에서 엉뚱한 층(트로이 II, 전쟁보다 약 1,250년 이르다)을 지목했고 그 과정에서 유력 층을 훼손했다. 유력 후보는 거대 성벽의 트로이 VI(약 1700~1250 BCE)와, 기원전 1190~1180년경 불탄 잔해·흩어진 인골과 함께 파괴된 VIIa다. 히타이트 점토판의 '윌루사'와 '아히야와'가 각각 일리오스·아카이오이와 이어진다는 것이 다수설이다. 그러나 증명된 것은 도시의 실재와 파괴이지, 헬레네도 목마도 10년이라는 기간도 아니다.",
       "sources": 18,
-      "path": "reports/odyssey-troy-advanced/report.md"
+      "path": "reports/odyssey-troy-advanced/report.md",
+      "cat": "culture",
+      "pair": "odyssey-troy",
+      "track": "advanced",
+      "chars": 13346
     },
     {
       "slug": "calculus-discovery",
@@ -67,7 +75,7 @@
       "cat": "math",
       "pair": "calculus-discovery-advanced",
       "track": "intro",
-      "chars": 16094
+      "chars": 16176
     },
     {
       "slug": "calculus-discovery-advanced",
@@ -94,7 +102,7 @@
       "cat": "math",
       "pair": "calculus-discovery",
       "track": "advanced",
-      "chars": 16287
+      "chars": 16751
     },
     {
       "slug": "aerodynamic-lift",
@@ -432,7 +440,7 @@
       "cat": "math",
       "pair": "lhopital-rule",
       "track": "advanced",
-      "chars": 12276
+      "chars": 12365
     },
     {
       "slug": "milk-yogurt-history",
@@ -651,7 +659,7 @@
       "cat": "math",
       "pair": "infinity-set-theory-advanced",
       "track": "intro",
-      "chars": 10048
+      "chars": 10155
     },
     {
       "slug": "infinity-set-theory-advanced",
