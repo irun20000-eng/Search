@@ -40,12 +40,13 @@ body[data-theme=dark] .sig{
   --sig-accent:#ffcf8a;
 }
 
-/* 상단바 오른쪽 — 다섯 페이지 공통 '만든 사람' 마크 */
+/* 상단바 오른쪽 — 일곱 서가 공통 '만든 사람' 마크.
+   누를 수 있는 것이 아니다(2026-08-22 지시로 링크를 뗐다). 그래서 hover 반응도 두지 않는다 —
+   마우스를 올렸을 때 밝아지면 눌러도 되는 것처럼 보인다. */
 .itb-sig{
   margin-left:auto; padding:4px 2px; font-size:.82rem;
-  text-decoration:none; opacity:.75; transition:opacity .15s;
+  text-decoration:none; opacity:.75; cursor:default; user-select:none;
 }
-.itb-sig:hover{ opacity:1 }
 @media (max-width:720px){ .itb-sig{ display:none } }
 
 /* 푸터 서명 — 마크 + 핸들 */
