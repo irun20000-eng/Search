@@ -194,6 +194,7 @@ P(A) = { ∅, {a}, {b}, {a,b} }    (원소 2개 → 부분집합 4개)
 - 애플·아마존급 고전: 데이비드 포스터 월리스 『무한의 이야기(Everything and More)』 — 칸토어 평전형 대중서
 - 강의: 유튜브 Veritasium "How An Infinite Hotel Ran Out Of Room"(힐베르트 호텔·대각선 논법)
 - 짝문서: **무한의 지반과 균열(확장편)**
+- 갤러리 안의 이웃 글: **미적분의 엄밀화(`calculus-discovery-advanced`)** — 칸토어가 실수를 '센' 이야기 이전에, 실수를 '구성'해야 했던 1872년의 사정
 
 ## 출처
 - [1] 네이버 지식백과(수학백과), "가산집합" — https://terms.naver.com/entry.naver?docId=3338047&cid=47324&categoryId=47324
