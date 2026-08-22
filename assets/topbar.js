@@ -62,12 +62,10 @@
     inner.appendChild(nav);
 
     /* 오른쪽 끝 '만든 사람' 마크. 서재 이름(왼쪽)과 역할이 다르므로
-       색 계열도 일부러 다르다 — 자세한 규칙은 assets/brand.css 머리말. */
-    var sig = document.createElement("a");
+       색 계열도 일부러 다르다 — 자세한 규칙은 assets/brand.css 머리말.
+       2026-08-22 사용자 지시: 낙관은 표시일 뿐이므로 어디로도 이동시키지 않는다. */
+    var sig = document.createElement("span");
     sig.className = "itb-sig";
-    sig.href = "https://github.com/irun20000-eng";
-    sig.target = "_blank";
-    sig.rel = "noopener";
     sig.title = "aftermath — 만든 사람";
     sig.innerHTML = '<span class="sig"><span class="af">after</span>'
                   + '<span class="m">math</span><span class="q"></span></span>';
