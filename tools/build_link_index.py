@@ -156,4 +156,14 @@ def build():
 
 
 if __name__ == "__main__":
-    sys.exit(build())
+    rc = build()
+    # 백로그는 별칭이 정해진 뒤라야 뜻이 생긴다 - 따로 돌리게 두면 반드시 잊는다.
+    # (--no-backlog 로 끌 수 있다. 백로그가 깨져도 링크 인덱스는 이미 나온 뒤다.)
+    if rc == 0 and "--no-backlog" not in sys.argv:
+        try:
+            import build_backlog
+            print()
+            build_backlog.build()
+        except Exception as e:
+            print("! 백로그 갱신 실패(링크 인덱스는 정상): %s" % e)
+    sys.exit(rc)

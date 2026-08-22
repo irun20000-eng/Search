@@ -1,0 +1,4288 @@
+{
+ "generated": "2026-08-22",
+ "scanned": 189,
+ "resolved": 504,
+ "pending": 513,
+ "counts": {
+  "new": 238,
+  "companion": 5,
+  "gap": 0
+ },
+ "items": [
+  {
+   "name": "MCP(Model Context Protocol)",
+   "count": 25,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 5
+    },
+    {
+     "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
+     "u": "research/#r=slack-ai-bot",
+     "s": "research",
+     "n": 4
+    },
+    {
+     "t": "Slack 봇 직접 만들기 — Bolt·Socket Mode 실전 워크스루 (DEEP)",
+     "u": "research/#r=slack-bot-build",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "Slack 완전 해부 — 1인 개발자의 활용법과 활용가치 (DEEP)",
+     "u": "research/#r=slack-solo-developer",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "클로드 확장 생태계 총정리 — 플러그인·MCP·스킬·서브에이전트·훅 (시리즈 ③)",
+     "u": "research/#r=claude-extension-ecosystem",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "클로드 플러그인 완전 가이드 — 분야별 추천과 활용예시 (시리즈 ①)",
+     "u": "research/#r=claude-plugins-guide",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "나만의 클로드 플러그인·마켓플레이스 만들기 (시리즈 ②)",
+     "u": "research/#r=claude-plugins-build",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "클로드 플러그인 실전 워크플로우 레시피 — 분야별 활용 사례집 (시리즈 ④)",
+     "u": "research/#r=claude-plugins-workflows",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "업무 자동화",
+   "count": 11,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+     "u": "research/#r=chrome-extensions-work",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
+     "u": "research/#r=slack-ai-bot",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Slack 봇 직접 만들기 — Bolt·Socket Mode 실전 워크스루 (DEEP)",
+     "u": "research/#r=slack-bot-build",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Slack 완전 해부 — 1인 개발자의 활용법과 활용가치 (DEEP)",
+     "u": "research/#r=slack-solo-developer",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
+     "u": "research/#r=zapier-automation-guide",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
+     "u": "research/#r=claude-cowork-mobile",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "AI 에이전트",
+   "count": 8,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+     "u": "research/#r=hermes-agent-quick",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
+     "u": "research/#r=n8n-automation-guide",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "클로드 코드",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
+     "u": "research/#r=claude-cowork-mobile",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
+     "u": "research/#r=orca-agent-ide",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "고유값",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬의 대각화 — 이해편(피보나치 일반항·정의·의미·방법)",
+     "u": "research/#r=matrix-diagonalization",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 이해편(입문·딥)",
+     "u": "research/#r=leslie-matrix",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "행렬의 대각화 — 확장편(가능 조건·스펙트럼 정리·조던형·응용)",
+     "u": "research/#r=matrix-diagonalization-advanced",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 확장편(고유값 해석·확장)",
+     "u": "research/#r=leslie-matrix-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "콘텐츠 크리에이터",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "1인 개발자",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
+     "u": "research/#r=slack-ai-bot",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Slack 봇 직접 만들기 — Bolt·Socket Mode 실전 워크스루 (DEEP)",
+     "u": "research/#r=slack-bot-build",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Slack 완전 해부 — 1인 개발자의 활용법과 활용가치 (DEEP)",
+     "u": "research/#r=slack-solo-developer",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "주제 리서치 파이프라인",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 플러그인 실전 워크플로우 레시피 — 분야별 활용 사례집 (시리즈 ④)",
+     "u": "research/#r=claude-plugins-workflows",
+     "s": "research",
+     "n": 4
+    },
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "미분형식",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬과 다변수 미적분 — 확장편(학부·대학원)",
+     "u": "research/#r=matrix-multivariable-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "야코비안 변환(Jacobian) — 확장편(학부·대학원)",
+     "u": "research/#r=jacobian-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Claude Code",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "클로드 플러그인 완전 가이드 — 분야별 추천과 활용예시 (시리즈 ①)",
+     "u": "research/#r=claude-plugins-guide",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "나만의 클로드 플러그인·마켓플레이스 만들기 (시리즈 ②)",
+     "u": "research/#r=claude-plugins-build",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "AI 영상 생성",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "프롬프트 엔지니어링",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "웹훅(Webhook)",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Slack 봇 직접 만들기 — Bolt·Socket Mode 실전 워크스루 (DEEP)",
+     "u": "research/#r=slack-bot-build",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Slack 완전 해부 — 1인 개발자의 활용법과 활용가치 (DEEP)",
+     "u": "research/#r=slack-solo-developer",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
+     "u": "research/#r=slack-ai-bot",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "무한소",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈 (DEEP)",
+     "u": "research/#r=calculus-discovery",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "미분법",
+     "u": "math/#n=concept-differentiation",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "테일러 정리",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "로피탈 정리 (확장편) — 진짜 가치와 함정, 왜 성립하고 언제 쓰면 안 되나 (DEEP)",
+     "u": "research/#r=lhopital-rule-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "코시 평균값 정리 (확장편) — 두 함수로 확장한 다리, 로피탈·테일러의 뿌리 (DEEP)",
+     "u": "research/#r=mean-value-theorem-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "변곡점",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
+     "u": "research/#r=polynomial-functions-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "소버린 AI",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "헤르만 헤세",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르만 헤세 『싯다르타』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-siddhartha",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르만 헤세 『데미안』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-demian",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "자아실현",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르만 헤세 『싯다르타』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-siddhartha",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르만 헤세 『데미안』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-demian",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "가우스 곡률",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 이해편(대원거리·곡률의 의미·가우스 곡률)",
+     "u": "research/#r=spherical-geometry-curvature",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 확장편(기본형식·테오레마 에그레기움·가우스-보네)",
+     "u": "research/#r=spherical-geometry-curvature-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "비유클리드 기하학",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 이해편(대원거리·곡률의 의미·가우스 곡률)",
+     "u": "research/#r=spherical-geometry-curvature",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 확장편(기본형식·테오레마 에그레기움·가우스-보네)",
+     "u": "research/#r=spherical-geometry-curvature-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Veo",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "프레셰 미분",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬과 다변수 미적분 — 확장편(학부·대학원)",
+     "u": "research/#r=matrix-multivariable-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "야코비안 변환(Jacobian) — 확장편(학부·대학원)",
+     "u": "research/#r=jacobian-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "오픈소스 LLM",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+     "u": "research/#r=hermes-agent-quick",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "로컬 AI",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+     "u": "research/#r=hermes-agent-quick",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "극한",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈 (DEEP)",
+     "u": "research/#r=calculus-discovery",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법, 올바른 적용과 예시 (DEEP)",
+     "u": "research/#r=lhopital-rule",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "비표준 해석학",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈 (DEEP)",
+     "u": "research/#r=calculus-discovery",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "전단변환",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "코시 평균값 정리 (확장편) — 두 함수로 확장한 다리, 로피탈·테일러의 뿌리 (DEEP)",
+     "u": "research/#r=mean-value-theorem-advanced",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "행렬식",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬과 다변수 미적분 — 확장편(학부·대학원)",
+     "u": "research/#r=matrix-multivariable-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "근과 계수의 관계",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
+     "u": "research/#r=polynomial-functions-advanced",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "RAG",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
+     "u": "research/#r=n8n-automation-guide",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "셀프호스팅",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
+     "u": "research/#r=n8n-automation-guide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Hermes Agent",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
+     "u": "research/#r=n8n-automation-guide",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
+     "u": "research/#r=zapier-automation-guide",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "프롬프트 인젝션",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "컨텍스트 엔지니어링",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 활용 엔지니어링의 진화 — 프롬프트에서 그래프 엔지니어링까지 (DEEP)",
+     "u": "research/#r=ai-engineering-evolution-graph",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "LangGraph",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 활용 엔지니어링의 진화 — 프롬프트에서 그래프 엔지니어링까지 (DEEP)",
+     "u": "research/#r=ai-engineering-evolution-graph",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "고교학점제",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "국가교육위원회",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "보완수사권",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대한민국 검찰개혁 논쟁 (2026년 7월) — 쟁점·추진방향·한계·진영별 입장 (DEEP)",
+     "u": "research/#r=prosecution-reform-2026",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "공소청 중수청",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대한민국 검찰개혁 논쟁 (2026년 7월) — 쟁점·추진방향·한계·진영별 입장 (DEEP)",
+     "u": "research/#r=prosecution-reform-2026",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "공수처",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대한민국 검찰개혁 논쟁 (2026년 7월) — 쟁점·추진방향·한계·진영별 입장 (DEEP)",
+     "u": "research/#r=prosecution-reform-2026",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "git worktree",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
+     "u": "research/#r=orca-agent-ide",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "행렬 곱",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 이해편(입문·딥)",
+     "u": "research/#r=leslie-matrix",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "행렬의 대각화 — 이해편(피보나치 일반항·정의·의미·방법)",
+     "u": "research/#r=matrix-diagonalization",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Runway",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Hermes 3",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+     "u": "research/#r=hermes-agent-quick",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "오픈클로(OpenClaw)",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용",
+     "u": "research/#r=hermes-agent-quick",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "스퀘어-큐브 법칙 확장편",
+   "count": 3,
+   "kind": "companion",
+   "target": null,
+   "base": "스퀘어-큐브 법칙",
+   "refs": [
+    {
+     "t": "스퀘어-큐브 법칙(Square-Cube Law) — 이해편(입문·딥)",
+     "u": "concept/#n=square-cube-law",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "심슨의 역설 확장편",
+   "count": 3,
+   "kind": "companion",
+   "target": null,
+   "base": "심슨의 역설",
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "서사시 순환",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "호메로스 문제",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "구전 서사시",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "히사를리크",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "슐리만",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "윌루사",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "엡실론-델타 논법",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈 (DEEP)",
+     "u": "research/#r=calculus-discovery",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "쿠타-주코프스키 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "쿠타 조건",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "시작 와류",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "실속",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "유도항력",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "변조",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에너지 밴드",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "pn 접합",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "MOSFET",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "표본화 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "섀넌 한계",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (확장편) — 고등·심화 (DEEP)",
+     "u": "research/#r=semiconductor-communication-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "롤의 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "로피탈 정리 (확장편) — 진짜 가치와 함정, 왜 성립하고 언제 쓰면 안 되나 (DEEP)",
+     "u": "research/#r=lhopital-rule-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "적분 평균값 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "코시 평균값 정리 (확장편) — 두 함수로 확장한 다리, 로피탈·테일러의 뿌리 (DEEP)",
+     "u": "research/#r=mean-value-theorem-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "삼차함수",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "삼차함수 비율관계",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
+     "u": "research/#r=polynomial-functions-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "넓이 공식",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
+     "u": "research/#r=polynomial-functions-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "거리곱",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "다항함수 실전 (확장편) — 계산량을 줄이는 구조: 비율관계·넓이 공식·거리곱 (DEEP)",
+     "u": "research/#r=polynomial-functions-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "삼각함수의 극한",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "로피탈 정리 (확장편) — 진짜 가치와 함정, 왜 성립하고 언제 쓰면 안 되나 (DEEP)",
+     "u": "research/#r=lhopital-rule-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "모피즘",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
+     "u": "research/#r=math-function-terms-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "준동형",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
+     "u": "research/#r=math-function-terms-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "함자",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
+     "u": "research/#r=math-function-terms-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Vrew",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "노코드 자동화",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
+     "u": "research/#r=zapier-automation-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Zapier Agents",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
+     "u": "research/#r=zapier-automation-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "연속체 가설",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
+     "u": "research/#r=infinity-set-theory-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "선택공리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
+     "u": "research/#r=infinity-set-theory-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "바나흐-타르스키 역설",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
+     "u": "research/#r=infinity-set-theory-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "괴델 불완전성 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
+     "u": "research/#r=infinity-set-theory-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "MCP",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에이전틱 AI",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "도메인 리터러시",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "AI 리터러시",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "도메인 전문성",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "판단력과 검증",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "클로드 코워크",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
+     "u": "research/#r=claude-cowork-mobile",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "그래프 엔지니어링",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 활용 엔지니어링의 진화 — 프롬프트에서 그래프 엔지니어링까지 (DEEP)",
+     "u": "research/#r=ai-engineering-evolution-graph",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "대입제도 개편",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "서논술형 수능",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "절대평가",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "수사기소 분리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대한민국 검찰개혁 논쟁 (2026년 7월) — 쟁점·추진방향·한계·진영별 입장 (DEEP)",
+     "u": "research/#r=prosecution-reform-2026",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "동양사상",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르만 헤세 『싯다르타』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-siddhartha",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "융 개성화",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르만 헤세 『데미안』 — 줄거리·내용 요약·해설 (DEEP)",
+     "u": "research/#r=hesse-demian",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "대원거리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 이해편(대원거리·곡률의 의미·가우스 곡률)",
+     "u": "research/#r=spherical-geometry-curvature",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "테오레마 에그레기움",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 확장편(기본형식·테오레마 에그레기움·가우스-보네)",
+     "u": "research/#r=spherical-geometry-curvature-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "가우스-보네 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "구면기하학의 코사인법칙과 곡률 — 확장편(기본형식·테오레마 에그레기움·가우스-보네)",
+     "u": "research/#r=spherical-geometry-curvature-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "피보나치 수열",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬의 대각화 — 이해편(피보나치 일반항·정의·의미·방법)",
+     "u": "research/#r=matrix-diagonalization",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "스펙트럼 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬의 대각화 — 확장편(가능 조건·스펙트럼 정리·조던형·응용)",
+     "u": "research/#r=matrix-diagonalization-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "조던 표준형",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬의 대각화 — 확장편(가능 조건·스펙트럼 정리·조던형·응용)",
+     "u": "research/#r=matrix-diagonalization-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "힉스필드 MCP",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드 (DEEP)",
+     "u": "research/#r=higgsfield-mcp-claude",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "크롬 확장프로그램",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+     "u": "research/#r=chrome-extensions-work",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "생산성 도구",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+     "u": "research/#r=chrome-extensions-work",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "비밀번호 관리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+     "u": "research/#r=chrome-extensions-work",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Manifest V3",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "업무 생산성 크롬 확장프로그램 완전 활용 가이드 — 유형별 활용예시·추천법 (DEEP)",
+     "u": "research/#r=chrome-extensions-work",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "상용로그",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 이해편(입문·딥)",
+     "u": "research/#r=benford-law",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "확률분포",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 이해편(입문·딥)",
+     "u": "research/#r=benford-law",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "회계부정 탐지",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 이해편(입문·딥)",
+     "u": "research/#r=benford-law",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "유효숫자",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 확장편(유도·검정·응용)",
+     "u": "research/#r=benford-law-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "카이제곱 검정",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 확장편(유도·검정·응용)",
+     "u": "research/#r=benford-law-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "측도론",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 확장편(유도·검정·응용)",
+     "u": "research/#r=benford-law-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "포렌식 회계",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벤포드 법칙(Benford's Law) — 확장편(유도·검정·응용)",
+     "u": "research/#r=benford-law-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "개체군 생태학",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 이해편(입문·딥)",
+     "u": "research/#r=leslie-matrix",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "페론-프로베니우스 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 확장편(고유값 해석·확장)",
+     "u": "research/#r=leslie-matrix-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "민감도 분석",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 확장편(고유값 해석·확장)",
+     "u": "research/#r=leslie-matrix-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "레프코비치 행렬",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루이스-레슬리 행렬(Leslie Matrix) — 확장편(고유값 해석·확장)",
+     "u": "research/#r=leslie-matrix-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Scenebuilder",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Kling",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드 (DEEP)",
+     "u": "research/#r=google-flow-practice",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Sora",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금 (DEEP)",
+     "u": "research/#r=google-flow",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "Claude Desktop",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "OAuth 2.1",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "내적공간",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벡터(Vector) — 확장편: 벡터공간에서 벡터해석·함수공간·AI까지",
+     "u": "research/#r=vector-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "벡터해석",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벡터(Vector) — 확장편: 벡터공간에서 벡터해석·함수공간·AI까지",
+     "u": "research/#r=vector-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "힐베르트 공간",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "벡터(Vector) — 확장편: 벡터공간에서 벡터해석·함수공간·AI까지",
+     "u": "research/#r=vector-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "선형사상",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬과 다변수 미적분 — 확장편(학부·대학원)",
+     "u": "research/#r=matrix-multivariable-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "미분기구학",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "야코비안 변환(Jacobian) — 확장편(학부·대학원)",
+     "u": "research/#r=jacobian-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "정규화 흐름",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "야코비안 변환(Jacobian) — 확장편(학부·대학원)",
+     "u": "research/#r=jacobian-advanced",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "중동 정세",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "이란 핵 프로그램",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "JCPOA",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "호르무즈 해협",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "석유와 지정학",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "미국 외교사",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석",
+     "u": "research/#r=iran-us-conflict-timeline",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "하네스 최적화",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "헤르메스 에이전트(Hermes Agent) — 심층 리서치",
+     "u": "research/#r=hermes-agent-deep",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "백링크",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "내가 본 걸 전부 기억하고 답까지 해주는 노트 — 옵시디언 + NotebookLM 세컨드 브레인",
+     "u": "videos/#post-ZKJz6QNDPU0",
+     "s": "videos",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "20260708_루프_엔지니어링_완벽_가이드_1",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "루프 엔지니어링 바로 구축하는 법 — ralph-loop 플러그인으로 캘린더 할일앱 자동 개발",
+     "u": "videos/#post-nzOMsGpckoY",
+     "s": "videos",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "링크",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼",
+     "u": "videos/#post-R2aSqw7S3Ws",
+     "s": "videos",
+     "n": 1
+    },
+    {
+     "t": "옵시디언에 제미나이 붙이니 AI 세컨드 브레인이 진짜 됐다! | 무료 오픈소스 플러그인",
+     "u": "videos/#post-VYXr0M7IYJk",
+     "s": "videos",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "하네스 멀티 에이전트",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "코딩 몰라도 OK — 클로드 코드로 100만 원짜리 사이트 만들기 | 구글시트 자동 저장까지",
+     "u": "videos/#post-y6HIrsG7pE8",
+     "s": "videos",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "생존자 편향 확장편",
+   "count": 2,
+   "kind": "companion",
+   "target": null,
+   "base": "생존자 편향",
+   "refs": [
+    {
+     "t": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
+     "u": "concept/#n=survivorship-bias",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "평균이라는 착시 확장편",
+   "count": 2,
+   "kind": "companion",
+   "target": null,
+   "base": "평균이라는 착시",
+   "refs": [
+    {
+     "t": "평균이라는 착시(Size Bias) — 이해편(입문·딥)",
+     "u": "concept/#n=size-bias",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "비서 문제",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "자연상수 e",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "탐색과 활용",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "교란변수",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "인과추론",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "미분의 응용",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분법",
+     "u": "math/#n=concept-differentiation",
+     "s": "math",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "부분적분",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "적분법",
+     "u": "math/#n=concept-integration",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "적분법 (확장편)",
+     "u": "math/#n=concept-integration-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "호메로스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "일리아스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "오디세이아",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "트로이 전쟁",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "오디세우스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP)",
+     "u": "research/#r=odyssey-troy",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "미케네 문명",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "후기 청동기 붕괴",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "구전 전통의 비교 연구",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "사료 비판",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "트로이의 실재와 호메로스 문제 (확장편) — 지층·점토판·구전 정형구 (DEEP)",
+     "u": "research/#r=odyssey-troy-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "버클리의 비판",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 발견 (이해편) — 배로·뉴턴·라이프니츠, 세 사람의 서로 다른 눈 (DEEP)",
+     "u": "research/#r=calculus-discovery",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "해석학",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "균등수렴",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "실수의 구성",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
+     "u": "research/#r=calculus-discovery-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "양력",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "베르누이 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "뉴턴의 운동법칙",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "받음각",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에어포일",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "순환 이론",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력은 어떻게 생기나 (이해편) — 흔한 설명이 틀린 이유와 진짜 원리 (DEEP)",
+     "u": "research/#r=aerodynamic-lift",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "순환",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "양력의 정량 이론 (확장편) — 순환·쿠타 조건·유한날개 (DEEP)",
+     "u": "research/#r=aerodynamic-lift-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "반도체",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "트랜지스터",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "다이오드",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "전자회로",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "디지털 신호",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
+     "u": "research/#r=semiconductor-communication",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "미분가능",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "부등식",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "일차변환",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "불변량 전략",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "교점 무게중심",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "전단 면역",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환으로 다항함수 보기 (이해편) — 자유도·선형변환·삼차함수의 진짜 정체 (DEEP)",
+     "u": "research/#r=shear-polynomial",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "불변량",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "사차함수",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "전단변환 실전 (확장편) — 불변량으로 심화문제를 부수는 법 (DEEP)",
+     "u": "research/#r=shear-polynomial-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "극대극소",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "그래프 개형",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "넓이",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "다항함수의 구조 (이해편) — 미분·그래프 개형·적분을 관통하는 하나의 원리 (DEEP)",
+     "u": "research/#r=polynomial-functions",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "부정형",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법, 올바른 적용과 예시 (DEEP)",
+     "u": "research/#r=lhopital-rule",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "순환논리 함정",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법, 올바른 적용과 예시 (DEEP)",
+     "u": "research/#r=lhopital-rule",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "테일러 전개",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "로피탈 정리 (이해편) — 0/0·∞/∞을 미분으로 뚫는 법, 올바른 적용과 예시 (DEEP)",
+     "u": "research/#r=lhopital-rule",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "우유",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "그릭요거트",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "유청",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "유당",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "카제인",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "유당불내증",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "발효",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "단백질과 근육",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
+     "u": "research/#r=milk-yogurt-history",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "함수",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "사상",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "변환",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "연산자",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "범함수",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
+     "u": "research/#r=math-function-terms",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "범주론",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
+     "u": "research/#r=math-function-terms-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "동형사상",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "사상으로 통합하기 (확장편) — 범주론이 함수·준동형·연속함수를 '화살표'로 묶는 법 (DEEP)",
+     "u": "research/#r=math-function-terms-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "AI 모델 비교",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "LLM",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "벤치마크",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "국산 AI 모델",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 모델 완전 비교 (2026) — 이름·국가·회사·특징·비용·강점·순위·활용법 종합 (DEEP)",
+     "u": "research/#r=ai-models-2026-comparison",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "캡컷",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "곰믹스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "영상 편집",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "숏폼",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "숏폼 제작",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "색보정",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "영상 편집 완전 가이드 — 캡컷·곰믹스(곰랩)로 시작하는 편집, 툴 선택부터 실전까지 (DEEP)",
+     "u": "research/#r=video-editing-capcut-gom",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "워크플로우 자동화",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "n8n 완전 활용 가이드 — 오픈소스·셀프호스팅 워크플로우 자동화와 AI 에이전트 (DEEP)",
+     "u": "research/#r=n8n-automation-guide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "워크플로우",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Zapier 완전 활용 가이드 — 코딩 없이 앱과 앱을 잇는 업무 자동화, 방법과 예시 (DEEP)",
+     "u": "research/#r=zapier-automation-guide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "무한",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "칸토어",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "가산집합",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "대각선 논법",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "알레프 제로",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
+     "u": "research/#r=infinity-set-theory",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "ZFC",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
+     "u": "research/#r=infinity-set-theory-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "Nous Research",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "로컬 AI 에이전트",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Hermes Agent 윈도우 데스크톱 설치 및 활용 — 내 PC에서 사는 오픈소스 AI 에이전트 (DEEP)",
+     "u": "research/#r=hermes-agent-windows",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "구글 워크스페이스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "AI 에이전트 비교",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Gemini Spark 완전 활용 가이드 — 24시간 나 대신 일하는 개인 AI 에이전트 (DEEP)",
+     "u": "research/#r=gemini-spark-agent",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "미래 역량",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "AI 엔지니어링의 진화 그래프 엔지니어링",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 시대에 요구되는 '도메인 리터러시' — 전문성×AI역량, 판단·검증의 힘 (DEEP)",
+     "u": "research/#r=domain-literacy-ai-era",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에이전트 오케스트레이션",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "AI 활용 엔지니어링의 진화 — 프롬프트에서 그래프 엔지니어링까지 (DEEP)",
+     "u": "research/#r=ai-engineering-evolution-graph",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "검찰개혁 2026",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대한민국 검찰개혁 논쟁 (2026년 7월) — 쟁점·추진방향·한계·진영별 입장 (DEEP)",
+     "u": "research/#r=prosecution-reform-2026",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "코딩 에이전트",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
+     "u": "research/#r=orca-agent-ide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "PIPELINE",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Orca(오르카) — 병렬 AI 코딩 에이전트 IDE(ADE) 완전 가이드 (DEEP)",
+     "u": "research/#r=orca-agent-ide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "MCP 서버 개발",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
+     "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "편미분",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "행렬과 다변수 미적분 — 확장편(학부·대학원)",
+     "u": "research/#r=matrix-multivariable-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "변수변환",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "야코비안 변환(Jacobian) — 확장편(학부·대학원)",
+     "u": "research/#r=jacobian-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "...",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "Hermes Agent에 한국 AI를 붙이면 생기는 일!",
+     "u": "videos/#post-zkc7iDXjHUA",
+     "s": "videos",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "대괄호",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "내가 본 걸 전부 기억하고 답까지 해주는 노트 — 옵시디언 + NotebookLM 세컨드 브레인",
+     "u": "videos/#post-ZKJz6QNDPU0",
+     "s": "videos",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "위키링크",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼",
+     "u": "videos/#post-R2aSqw7S3Ws",
+     "s": "videos",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "선택 편향",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
+     "u": "concept/#n=survivorship-bias",
+     "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "차원해석",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "스퀘어-큐브 법칙(Square-Cube Law) — 이해편(입문·딥)",
+     "u": "concept/#n=square-cube-law",
+     "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "최적 정지 확장편",
+   "count": 1,
+   "kind": "companion",
+   "target": null,
+   "base": "최적 정지",
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "발견 노트 2편 · 언제까지 둘러보고 언제 정할까",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+     "u": "concept/#n=optimal-stopping",
+     "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "_MOC_001-주제리서치",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=simpsons-paradox",
+     "s": "concept",
+     "n": 1
+    }
+   ]
+  }
+ ]
+}
