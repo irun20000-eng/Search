@@ -48,6 +48,28 @@ def parse_frontmatter(text: str):
     return out, m.group(2)
 
 
+def clean_vault_markup(body: str) -> str:
+    """옵시디언 전용 마크업을 갤러리용으로 다듬는다.
+
+    %% ... %% 는 옵시디언에서 '주석'이라 미리보기에 안 보인다. 볼트에서는 관리용
+    블록이지만 갤러리에서는 그대로 글자로 노출된다.
+
+    다만 LINKS 블록의 '내용'은 버리지 않는다. 이룬 서재는 link-index 로 위키링크가
+    실제로 이동하므로, 볼트에서 숨겨져 있던 관련 개념 목록이 여기서는 오히려
+    쓸모가 있다. 주석 껍데기만 벗기고 '관련 개념' 절로 승격시킨다.
+    """
+    m = re.search(r"%%\s*LINKS:START\s*%%(.*?)%%\s*LINKS:END\s*%%", body, re.S)
+    if m:
+        inner = m.group(1).strip()
+        repl = (chr(10) + "## 관련 개념" + chr(10) * 2 + inner + chr(10)) if inner else ""
+        body = body[:m.start()] + repl + body[m.end():]
+
+    # 남은 %% ... %% 주석은 통째로 걷어낸다(옵시디언 전용)
+    body = re.sub(r"%%.*?%%", "", body, flags=re.S)
+    body = re.sub(r"\n{3,}", chr(10) * 2, body)
+    return body
+
+
 def slugify(title: str) -> str:
     """제목 → 파일명 안전한 슬러그. 영문 병기가 있으면 그쪽을 쓴다."""
     en = re.search(r"\(([A-Za-z][A-Za-z' \-]+)\)", title)
@@ -89,6 +111,7 @@ def main() -> int:
         if pic:
             shutil.copy2(pic, OUT_ASSETS / (slug + ".png"))
 
+        body = clean_vault_markup(body)
         (OUT_NOTES / (slug + ".md")).write_text(body.strip() + "\n", encoding="utf-8")
 
         items.append({

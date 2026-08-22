@@ -41,7 +41,11 @@ def main() -> int:
         print("사용: python tools/ingest_cardnews.py <카드뉴스 원천 경로>", file=sys.stderr)
         return 1
     src = Path(sys.argv[1]).resolve()
-    yml = src / "data" / "galleries" / "cardnews.yaml"
+    # 메타 정본은 레포 안의 cardnews/cardnews.yaml 이다. 외부 원천에서는 이미지만 가져온다.
+    # (이관 초기에는 Main 의 yaml 이 정본이었으나, 이제 이쪽이 정본이다.)
+    yml = ROOT / "cardnews" / "cardnews.yaml"
+    if not yml.exists():
+        yml = src / "data" / "galleries" / "cardnews.yaml"
     imgdir = src / "gallery_src" / "cardnews" / "images"
     if not yml.exists():
         print("[ERR] cardnews.yaml 없음: %s" % yml, file=sys.stderr)

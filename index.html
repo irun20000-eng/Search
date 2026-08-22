@@ -119,6 +119,8 @@ p.sec-p{color:var(--muted);font-size:.9rem;margin:0 0 20px}
 
 /* 서가 카드 */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+/* 바깥 서가는 한두 장뿐이라 auto-fit 이 늘려 버린다. 안쪽 카드와 같은 폭으로 묶는다. */
+.grid-ext{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
 .scard{background:var(--card);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;
   box-shadow:var(--shadow);transition:transform .14s,box-shadow .14s,border-color .14s;
   display:flex;flex-direction:column}
@@ -188,10 +190,10 @@ footer.site a{color:var(--accent);font-weight:600}
 
   <h2 class="sec-h">바깥 서가</h2>
   <p class="sec-note">다른 저장소에서 따로 굴러가는 갤러리입니다. 링크로 이어 둡니다.</p>
-  <div class="grid" id="shelves-ext"></div>
+  <div class="grid grid-ext" id="shelves-ext"></div>
 
   <h2 class="sec-h">최근에 올린 것</h2>
-  <p class="sec-p">일곱 서가를 합쳐 최신순으로.</p>
+  <p class="sec-p">일곱 서가를 합쳐 최신순으로. 서가마다 최신 한 편은 반드시 보입니다.</p>
   <div class="recent" id="recent"></div>
 
   <h2 class="sec-h">묶어 읽기</h2>
@@ -364,16 +366,38 @@ paintTheme();
   });
 
   /* 최근 */
-  var recent=DOCS.filter(function(d){return d.d}).sort(function(a,b){
+  /* 날짜순 상위 N 만 뽑으면 오래된 서가(블로그·카드뉴스)가 통째로 밀린다.
+     서가마다 최신 1편을 먼저 확보하고, 남는 자리를 전체 최신순으로 채운다. */
+  var dated=DOCS.filter(function(d){return d.d}).sort(function(a,b){
     return a.d<b.d?1:a.d>b.d?-1:0;
-  }).slice(0,10);
+  });
+  var recent=[], seen={};
+  ORDER.forEach(function(k){
+    var top=dated.filter(function(d){return d.s===k})[0];
+    if(top){ recent.push(top); seen[top.t+top.u]=1; }
+  });
+  dated.forEach(function(d){
+    if(recent.length>=12) return;
+    if(seen[d.t+d.u]) return;
+    recent.push(d); seen[d.t+d.u]=1;
+  });
+  recent.sort(function(a,b){ return a.d<b.d?1:a.d>b.d?-1:0; });
   $("#recent").innerHTML=recent.map(function(d){
     return '<a class="rrow" href="'+esc(d.u)+'"><span class="d">'+esc(d.d.slice(5))+'</span>'+
       '<span class="sec sec-'+d.s+'">'+LABEL[d.s]+'</span>'+
       '<span class="t">'+esc(d.t)+'</span><span class="arrow">→</span></a>';
   }).join("");
 
-  /* 묶어 읽기 — 편수를 실제로 세서 보여준다 */
+  var COLLS=[
+  {t:"미적분, 처음부터 끝까지", q:"미적분", d:"17세기 탄생 배경부터 개념 정리와 엄밀화까지 한 줄로."},
+  {t:"클로드 코드 전부",       q:"클로드", d:"플러그인·MCP·스킬 리서치와 따라 하기 영상, 실행 가이드."},
+  {t:"업무 자동화",            q:"자동화", d:"n8n·Zapier·Slack — 조사한 것과 따라 해 본 것."},
+  {t:"수학 공부법",            q:"수학",   d:"개념 보고서와 블로그 글, 카드뉴스가 한 주제에서 만나는 지점."},
+  {t:"AI 활용",               q:"AI",     d:"리서치·영상노트·블로그가 함께 다룬 AI 사용법."},
+  {t:"입시·진학",             q:"수시",   d:"수시·모의고사·면접 — 블로그와 리서치에 흩어진 것."}
+];
+
+/* 묶어 읽기 — 편수를 실제로 세서 보여준다 */
   $("#colls").innerHTML=COLLS.map(function(c){
     var h=hits(c.q), cb=countBy(h);
     if(!h.length) return "";
