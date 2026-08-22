@@ -41,6 +41,11 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:32px 20px 60px}
   h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.02em}
   .lead{color:var(--muted);margin:0 0 22px;font-size:.95rem}
+  .sbar{display:flex;gap:8px;align-items:center;margin:0 0 14px}
+  .sbar input{flex:1;min-width:0;border:1.4px solid var(--line);background:var(--card);
+    color:var(--ink);border-radius:999px;padding:9px 16px;font:inherit;font-size:.9rem}
+  .sbar input:focus{outline:none;border-color:var(--accent)}
+  .sbar .cnt{font-size:.82rem;color:var(--muted);white-space:nowrap}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
   .nc{background:var(--card);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;
     cursor:pointer;text-align:left;font:inherit;color:inherit;padding:0;display:flex;flex-direction:column;
@@ -129,6 +134,7 @@
 <div class="wrap">
   <h1>개념노트</h1>
   <p class="lead">카드뉴스로 다 담지 못한 개념을 한 장 그림과 한 편의 글로 정리했습니다. 이름과 정의가 있고, 출처로 확인되는 개념만 다룹니다.</p>
+  <div class="sbar"><input id="sq" type="search" placeholder="이 서가에서 찾기 — 제목·태그" aria-label="개념노트 검색"><span class="cnt" id="scnt"></span></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none">아직 글이 없습니다.</div>
 </div>
@@ -223,9 +229,19 @@ function cardHTML(n){
     '</div></button>';
 }
 
+function matches(n, q){
+  if(!q) return true;
+  var hay=(n.title+" "+(n.tags||[]).join(" ")+" "+(n.cardnews||"")).toLowerCase();
+  return hay.indexOf(q)>=0;
+}
 function paint(){
-  document.getElementById("grid").innerHTML=NOTES.map(cardHTML).join("");
-  document.getElementById("empty").style.display=NOTES.length?"none":"";
+  var q=(document.getElementById("sq").value||"").trim().toLowerCase();
+  var list=NOTES.filter(function(n){ return matches(n,q); });
+  document.getElementById("scnt").textContent = q ? list.length+"편" : "";
+  document.getElementById("grid").innerHTML=list.map(cardHTML).join("");
+  var em=document.getElementById("empty");
+  em.textContent = q ? '"'+q+'" — 찾는 글이 없습니다' : "아직 글이 없습니다.";
+  em.style.display=list.length?"none":"";
   Array.prototype.forEach.call(document.querySelectorAll(".nc"),function(b){
     b.addEventListener("click",function(){ openNote(b.dataset.slug); });
   });
@@ -279,6 +295,13 @@ window.addEventListener("hashchange",function(){
     document.getElementById("ov").classList.remove("on");
     document.body.style.overflow="";
   }
+});
+
+document.getElementById("sq").addEventListener("input", paint);
+/* / 를 누르면 검색창으로 — 허브와 같은 규약 */
+document.addEventListener("keydown", function(e){
+  if(e.key!=="/" || e.target.tagName==="INPUT" || e.target.tagName==="TEXTAREA") return;
+  e.preventDefault(); document.getElementById("sq").focus();
 });
 
 Promise.all([
