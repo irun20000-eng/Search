@@ -33,7 +33,14 @@ import shutil
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 ROOT = Path(__file__).resolve().parent.parent
+# 볼트에 이미 넣은 것을 적어 두는 장부.
+# 금요일 볼트 동기화 루틴(클라우드)은 구글드라이브 MCP 로 볼트에 쓰는데, 볼트 197편을
+# 매번 읽어 대조하기엔 무겁다. 이 장부를 보면 "무엇이 아직 안 갔는지" 를 바로 안다.
+# 로컬 실행도 같은 장부를 갱신하므로 두 경로가 한 장부를 본다.
+LEDGER = ROOT / ".obsidian-synced.json"
 VAULT = Path(r"G:\내 드라이브\00_Obsidian_Second Brain\Insight Miner\000-수집")
 
 # ■ 이미 있는지는 파일 이름으로 판정하지 않는다
@@ -161,6 +168,7 @@ def main():
 
     names = [a.only] if a.only else sorted(PLANS)
     total_new = total_skip = 0
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8")) if LEDGER.exists() else {}
 
     for shelf in names:
         items = PLANS[shelf]()
@@ -182,6 +190,11 @@ def main():
         for src, dest, head, key in items:
             already = key and key in seen.get(dest.parent, "")
             if (already or dest.exists()) and not a.force:
+                # 건너뛰는 것도 장부에 남긴다 — 처음 돌릴 때 볼트에 있는 것이 한꺼번에 기록된다.
+                # 손으로 만든 옛 파일은 식별자가 없어 dest.exists() 로만 걸리는데,
+                # 그때도 기록해야 클라우드 루틴이 "이미 갔다" 를 안다.
+                if key:
+                    ledger.setdefault(shelf, {}).setdefault(key, dest.name)
                 skip += 1
                 continue
             body = strip_fm(src.read_text(encoding="utf-8"))
@@ -197,6 +210,8 @@ def main():
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 dest.write_text(fmb + body, encoding="utf-8")
             new.append(dest.name)
+            if key:
+                ledger.setdefault(shelf, {})[key] = dest.name
 
         # 개념노트는 그림도 함께 (볼트에서 바로 보이게)
         if shelf == "concept":
@@ -216,6 +231,12 @@ def main():
             print("    + %s" % n)
         if len(new) > 12:
             print("    … 외 %d편" % (len(new) - 12))
+
+    if not a.dry_run:
+        import mathlib as M
+        M.dump_json(LEDGER, ledger)
+        print("장부 %s — %d편 기록"
+              % (LEDGER.name, sum(len(v) for v in ledger.values())))
 
     print()
     if a.dry_run:
