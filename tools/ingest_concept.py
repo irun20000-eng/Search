@@ -108,8 +108,14 @@ def main() -> int:
             if key and key in title.replace(" ", ""):
                 pic = p
                 break
-        if pic:
+        # 스펙이 있으면 그 그림의 주인은 러너다(concept-sheet-render.yml).
+        # 볼트의 PNG 로 덮으면 러너가 그린 판이 로컬 렌더로 되돌아간다 —
+        # 2026-08-22 에 실제로 한 번 덮을 뻔했다.
+        owned_by_runner = (ROOT / "studio" / "concepts" / (slug + ".py")).exists()
+        if pic and not owned_by_runner:
             shutil.copy2(pic, OUT_ASSETS / (slug + ".png"))
+        elif pic:
+            print("  그림 유지 %s — 스펙이 있어 러너가 그린다" % slug)
 
         body = clean_vault_markup(body)
         (OUT_NOTES / (slug + ".md")).write_text(body.strip() + "\n", encoding="utf-8")
