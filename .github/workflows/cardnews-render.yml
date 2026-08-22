@@ -49,6 +49,9 @@ jobs:
           sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
           fc-cache -f
           echo "설치된 Noto CJK:"; fc-list | grep -i "noto.*cjk" | head -5
+          # 설치가 조용히 실패하면 폴백으로 그려진 카드가 그대로 자동 커밋된다.
+          # 발행본과 글자가 통째로 달라지므로 여기서 끊는다.
+          fc-list | grep -qi "noto.*cjk" || { echo "::error::Noto CJK 폰트 설치 실패"; exit 1; }
 
       - uses: actions/setup-python@v5
         with:
@@ -58,6 +61,11 @@ jobs:
         run: |
           python -m pip install -q --upgrade pip
           pip install -q -r studio/requirements.txt
+
+      - name: 크로미움이 CJK 폰트를 잡는지 확인
+        run: |
+          cd studio
+          python cardnews.py doctor
           pip install -q pyyaml
           python -m playwright install --with-deps chromium
 

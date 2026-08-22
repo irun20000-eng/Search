@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """렌더 + 자동 품질검사(audit) + 모아보기 이미지."""
-import pathlib, sys
+import pathlib, sys, tempfile
 from PIL import Image
 import carousel_engine as base
 import layout_archive as L
 
 SAFE_X, SAFE_Y = 96, 104
+
+# "/tmp/..." 는 윈도우에서 드라이브가 없는 경로가 되어 as_uri() 가 터진다.
+# 이 리포는 윈도우에서도 돌아가야 하므로 표준 임시폴더를 쓴다.
+TMP = pathlib.Path(tempfile.gettempdir())
 W, H = 1080, 1350
 
 
@@ -13,7 +17,7 @@ def audit(C, theme, plan):
     """페이지를 띄워 슬라이드별 규격·넘침·안전여백을 검사한다."""
     from playwright.sync_api import sync_playwright
     html = L.build_html_v2(C, theme, plan)
-    p = pathlib.Path("/tmp/_audit.html"); p.write_text(html, encoding="utf-8")
+    p = TMP / "_audit.html"; p.write_text(html, encoding="utf-8")
     js = """
     (i) => {
       const s = document.querySelector('#s'+i);
@@ -57,7 +61,7 @@ def linecount(C, theme, plan, selector):
     """지정 셀렉터 요소들의 줄 수를 센다 (줄바꿈 지저분함 점검용)."""
     from playwright.sync_api import sync_playwright
     html = L.build_html_v2(C, theme, plan)
-    p = pathlib.Path("/tmp/_lines.html"); p.write_text(html, encoding="utf-8")
+    p = TMP / "_lines.html"; p.write_text(html, encoding="utf-8")
     js = """
     (sel) => Array.from(document.querySelectorAll(sel)).map(el => {
       const cs = getComputedStyle(el);

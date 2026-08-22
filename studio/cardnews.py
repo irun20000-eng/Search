@@ -83,21 +83,34 @@ def cmd_doctor(_):
             pg.set_content("<div id='t' style=\"font-family:'Noto Sans CJK KR';"
                            "font-size:100px;white-space:nowrap\">부모노트</div>")
             pg.wait_for_timeout(200)
-            fonts = pg.evaluate("""() => ({
-                sans:  document.fonts.check('16px "Noto Sans CJK KR"'),
-                serif: document.fonts.check('16px "Noto Serif CJK KR"'),
-                mono:  document.fonts.check('16px "Noto Sans Mono CJK KR"'),
-                w: Math.round(document.getElementById('t').getBoundingClientRect().width)
-            })""")
+            fonts = pg.evaluate("""() => {
+                // document.fonts.check() 는 없는 패밀리에도 true 를 준다(폴백을 쓸 수 있으니).
+                // 2026-08-22 에 이것 때문에 '있음' 을 믿고 렌더했다가, 실제로는 맑은 고딕으로
+                // 그려진 카드를 만들었다. 그래서 '없는 이름' 과 폭을 견줘 판정한다.
+                const c = document.createElement('canvas').getContext('2d');
+                const S = '평균은 대표가';
+                const w = f => { c.font = '100px "' + f + '"'; return Math.round(c.measureText(S).width); };
+                const base = w('ZZ존재하지않는패밀리ZZ');
+                return {
+                  sans:  w('Noto Sans CJK KR')      !== base,
+                  serif: w('Noto Serif CJK KR')     !== base,
+                  mono:  w('Noto Sans Mono CJK KR') !== base,
+                  base: base,
+                  w: Math.round(document.getElementById('t').getBoundingClientRect().width)
+                };
+            }""")
             b.close()
         print("크로미움        실행됨")
         for k, label in (("sans", "Noto Sans CJK KR"), ("serif", "Noto Serif CJK KR"),
                          ("mono", "Noto Sans Mono CJK KR")):
-            mark = "있음" if fonts[k] else "✗ 없음"
+            mark = "있음" if fonts[k] else "X 없음 - 폴백으로 그려진다"
             print(f"  {label:22s} {mark}")
             if not fonts[k]:
                 ok = False
-        print(f"  한글 4자 폭(100px) {fonts['w']}px  ← 기준 환경과 다르면 폰트가 다른 것")
+        print(f"  한글 4자 폭(100px) {fonts['w']}px  (폴백 기준폭 {fonts['base']}px)")
+        if not all(fonts[k] for k in ("sans", "serif", "mono")):
+            print("  → 이 환경에서 렌더하면 발행본과 글자가 달라진다. "
+                  "렌더는 GitHub Actions(fonts-noto-cjk)에 맡길 것.")
     except Exception as e:
         print(f"크로미움        ✗ 실패: {e}\n                → playwright install chromium"); ok = False
 
@@ -134,10 +147,56 @@ def _report_audit(a):
     return not bad
 
 
+# --- 폰트 게이트 -----------------------------------------------------------
+# 발행본은 Noto Sans CJK KR 로 그려졌다. 그 폰트가 없는 환경에서 렌더하면 폴백으로
+# 그려져 글자가 통째로 달라진다 - 2026-08-22 에 이 PC 에서 재렌더한 카드가 발행본과
+# 픽셀의 6%가 달랐다(맑은 고딕으로 그려졌다). 규칙을 문서에만 두면 매번 놓치므로
+# 렌더 앞에서 막는다.
+def _cjk_fonts_present():
+    """(있는가, 판정표) - 없는 패밀리도 true 를 주는 document.fonts.check() 는 쓰지 않는다."""
+    from playwright.sync_api import sync_playwright
+    js = """() => {
+      const c = document.createElement('canvas').getContext('2d');
+      const S = '평균은 대표가';
+      const w = f => { c.font = '100px "' + f + '"'; return Math.round(c.measureText(S).width); };
+      const base = w('ZZ존재하지않는패밀리ZZ');
+      const out = {};
+      for (const f of ['Noto Sans CJK KR','Noto Serif CJK KR','Noto Sans Mono CJK KR'])
+        out[f] = w(f) !== base;
+      return out;
+    }"""
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
+        pg = b.new_page()
+        pg.set_content("<body></body>")
+        pg.wait_for_timeout(150)
+        r = pg.evaluate(js)
+        b.close()
+    return all(r.values()), r
+
+
+def _font_gate(force=False):
+    ok, table = _cjk_fonts_present()
+    if ok:
+        return
+    missing = ", ".join(k for k, v in table.items() if not v)
+    if force:
+        print("! 폰트 없음(%s) - --force-fallback 이라 그대로 진행한다." % missing)
+        print("  이 결과로 발행본을 갈아 끼우지 말 것.")
+        return
+    sys.exit(
+        "폰트가 없다: %s\n"
+        "이 환경에서 렌더하면 폴백으로 그려져 발행본과 글자가 달라진다.\n"
+        "  - 정식 경로: 브랜치에 카피만 올리면 GitHub Actions(fonts-noto-cjk)가 렌더한다\n"
+        "  - 확인용으로 지금 그려만 보려면 --force-fallback\n"
+        "  - 대조하려면 python tools/cardnews_parity.py <재렌더> <발행본>" % missing)
+
+
 def cmd_render(args):
     import build as B
     import carousel_engine as base
     import layout_archive as L
+    _font_gate(getattr(args, "force_fallback", False))
     ep = _load_ep(args.series, args.episode)
     print(f"렌더 {ep['title']} · {ep['theme']} × 레이아웃 {ep['layout']}")
     d = B.build(ep)
@@ -206,6 +265,9 @@ def main():
         p = sub.add_parser(name)
         p.add_argument("series", choices=list(SERIES))
         p.add_argument("episode", nargs="?", help="예: EP13 (생략 시 마지막 편)")
+        if name == "render":
+            p.add_argument("--force-fallback", action="store_true",
+                           help="CJK 폰트가 없어도 렌더한다 (확인용. 발행본 교체 금지)")
         p.set_defaults(fn=fn)
     sub.add_parser("gallery").set_defaults(fn=cmd_gallery)
     sub.add_parser("web").set_defaults(fn=cmd_web)
