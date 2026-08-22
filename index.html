@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>이룬 서재</title>
-<meta name="description" content="직접 조사하고, 보고 따라 하고, 정리해 둔 것들. 리서치·영상노트·가이드·수학사를 한자리에서.">
+<meta name="description" content="직접 조사하고, 보고 따라 하고, 정리해 둔 것들. 리서치·영상노트·가이드·수학사·블로그·카드뉴스·개념노트를 한자리에서.">
 <script>
 /* 옛 링크 보존 — 리서치 갤러리가 루트에서 research/ 로 옮겨졌다.
    지금까지 공유한 https://…/Search/#r=<슬러그> 가 그대로 열리게 한다.
@@ -178,14 +178,14 @@ footer.site a{color:var(--accent);font-weight:600}
 
     <div class="searchbox">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
-      <input id="q" type="search" placeholder="일곱 서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off" aria-label="통합 검색">
+      <input id="q" type="search" placeholder="서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off" aria-label="통합 검색">
     </div>
-    <div class="hint">한 번의 검색으로 <b>일곱 서가</b>를 한 번에 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
+    <div class="hint">한 번의 검색으로 <b id="hint-n">모든 서가</b>를 한 번에 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
     <div class="results" id="res" role="listbox"></div>
   </section>
 
   <h2 class="sec-h">서가</h2>
-  <p class="sec-p">네 갈래로 쌓여 있습니다.</p>
+  <p class="sec-p" id="shelf-note">성격이 다른 갈래로 나뉘어 쌓여 있습니다.</p>
   <div class="grid" id="shelves"></div>
 
   <h2 class="sec-h">바깥 서가</h2>
@@ -193,7 +193,7 @@ footer.site a{color:var(--accent);font-weight:600}
   <div class="grid grid-ext" id="shelves-ext"></div>
 
   <h2 class="sec-h">최근에 올린 것</h2>
-  <p class="sec-p">일곱 서가를 합쳐 최신순으로. 서가마다 최신 한 편은 반드시 보입니다.</p>
+  <p class="sec-p" id="recent-note">서가를 합쳐 최신순으로. 서가마다 최신 한 편은 반드시 보입니다.</p>
   <div class="recent" id="recent"></div>
 
   <h2 class="sec-h">묶어 읽기</h2>
@@ -328,6 +328,19 @@ paintTheme();
   var by=countBy(DOCS);
   var latest=DOCS.map(function(d){return d.d}).filter(Boolean).sort().pop()||"";
   $("#stat").innerHTML='📚 <b>'+DOCS.length+'편</b>'+(latest?' · 마지막 갱신 '+latest:"");
+
+  /* 서가 소개 문구의 개수는 코드가 센다 — 손으로 적어 두면 서가가 늘 때마다 낡는다.
+     '네 갈래'가 일곱 서가가 된 뒤에도 남아 있던 것이 그 예다. */
+  var KO_NUM=["","한","두","세","네","다섯","여섯","일곱","여덟","아홉","열"];
+  (function(){
+    var el=$("#shelf-note"); if(!el) return;
+    var k=ORDER.length;
+    el.textContent=(KO_NUM[k]||k)+" 갈래로 쌓여 있습니다.";
+    var nm=(KO_NUM[k]||k)+" 서가";
+    var h=$("#hint-n"); if(h) h.textContent=nm;
+    var q=$("#q"); if(q) q.placeholder=nm+"를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…";
+    var r=$("#recent-note"); if(r) r.textContent=nm+"를 합쳐 최신순으로. 서가마다 최신 한 편은 반드시 보입니다.";
+  })();
 
   /* 서가 카드 */
   $("#shelves").innerHTML=ORDER.map(function(k){
