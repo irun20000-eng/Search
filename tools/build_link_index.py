@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-4개 갤러리 manifest → 루트 link-index.json
+5개 갤러리 manifest → 루트 link-index.json
 
 본문의 [[위키링크]]를 실제 링크로 바꾸려면 갤러리 경계를 넘는 조회표가 필요하다.
 ([[미적분의 발견]] 은 math/ 문서에서 reports/ 문서를 가리킨다.)
@@ -16,6 +16,7 @@
   guides    guides/#g-<slug>
   videos    videos/#post-<id>
   math      math/#n=<slug>
+  blog      blog/#b=<slug>
 
 ■ 허브도 이 파일을 쓴다
   루트 index.html(허브)의 통합 검색과 '최근' 목록이 entries 를 그대로 읽는다.
@@ -84,6 +85,12 @@ def build():
                             슬러그=v["id"], 날짜=v.get("added") or v.get("published", ""),
                             url="videos/#post-" + v["id"]))
         add(len(entries) - 1, {M.norm(v["title"]), v["id"]})
+
+    # ── blog ──
+    for b in load("blog/manifest.json").get("posts", []):
+        entries.append(dict(제목=b["title"], 섹션="blog", 유형=None,
+                            슬러그=b["slug"], 날짜=b.get("date", ""),
+                            url="blog/#b=" + b["slug"]))
 
     # ── math ──
     math_man = load("math/manifest.json")
