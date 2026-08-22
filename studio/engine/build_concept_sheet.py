@@ -1,0 +1,211 @@
+# -*- coding: utf-8 -*-
+"""개념 한 장 v2 — 1536×1024 가로 인포그래픽 빌더.
+
+v1(2026-08-04) 대비 바뀐 것 — 2026-08-22 사용자 지시로 확정한 규격:
+  · 단계 카드에 **설명 2단**(요지 + 구분선 아래 상세)을 둔다. v1은 요지 한 덩어리라
+    카드 아래 절반이 비었다.
+  · **정리부를 확대**한다. v1의 얇은 띠 대신 좌(세 줄 정리 3칸 + 흐름 칩) /
+    우(다크 패널: 한 줄 정리 + 부연 + 실전 질문) 2단 구성.
+  · 우측 하단에 **aftermath 낙관**을 고정으로 넣는다 (`brand_signature.py`).
+  · device_scale_factor=2 로 렌더 → 실제 파일은 3072×2048, 논리 규격은 1536×1024.
+
+이미지 생성 모델은 한글을 정확히 못 쓴다. 카드뉴스 엔진과 같은
+HTML → Playwright 스크린샷 경로를 쓰면 한글이 100% 정확하게 나온다.
+
+--- spec 스키마 ---------------------------------------------------------
+{
+ "title","en","tag",
+ "hook","hooksub",
+ "data": {"label", "head":[4칸], "rows":[[셀×4, ...]], "note"},
+ "steps": [ {"c":색, "t":제목, "d":요지, "kv":상세, "extra":하단블록HTML} × 4 ],
+ "points": [ (라벨, 색, 문장) × 3 ],
+ "flow": [ (칩글자, 색) × 4 ],
+ "take": {"big","sub","ask"},
+ "foot": 출처 한 줄,
+ "h_r1": 1행 높이(기본 250) · 표 행 수에 맞춰 조정,
+ "h_r2": 2행 높이(기본 330) · 단계 카드 분량에 맞춰 조정,
+}
+"""
+import pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import brand_signature as bs
+
+# 개념 한 장 공통 팔레트 (심슨·최적정지 공용)
+INK = "#1E2430"; RED = "#D6452C"; BLU = "#2F6BE0"
+ORG = "#E0871F"; GRN = "#2E9E6B"; YEL = "#FFD24A"
+STEP_COLORS = [BLU, ORG, GRN, RED]
+
+CSS = bs.CSS + r"""
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1536px;height:1024px;background:#EFEDE8;--h1:250px;--h2:330px;
+  font-family:'Noto Sans CJK KR',sans-serif;color:#1E2430;
+  word-break:keep-all;-webkit-font-smoothing:antialiased}
+.sheet{padding:28px 34px;height:100%;display:flex;flex-direction:column;gap:12px}
+.hd{display:flex;align-items:baseline;gap:13px;flex:0 0 46px}
+.hd h1{font-size:37px;font-weight:900;letter-spacing:-.02em}
+.hd .en{font-size:16px;color:#7A8394;font-weight:600}
+.hd .tag{margin-left:auto;font-size:13px;font-weight:700;color:#fff;
+  background:#1E2430;padding:6px 14px;border-radius:99px}
+.row{display:flex;gap:12px}
+.r1{flex:0 0 var(--h1)}
+.r2{flex:0 0 var(--h2)}
+.r3{flex:1;min-height:0}
+.card{background:#fff;border:2px solid #1E2430;border-radius:13px;padding:15px 18px;
+  box-shadow:0 2px 0 rgba(30,36,48,.10)}
+/* 1행 */
+.intro{background:#1E2430;color:#fff;flex:0 0 520px;display:flex;flex-direction:column;
+  justify-content:center}
+.intro .q{font-size:29px;font-weight:900;line-height:1.3}
+.intro .q b{color:#FFD24A}
+.intro .s{font-size:14.5px;color:#B9C0CE;margin-top:10px;line-height:1.6}
+.datacard{flex:1;display:flex;flex-direction:column}
+.dt{font-size:14px;font-weight:800;color:#7A8394;margin-bottom:7px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{font-size:12.5px;color:#7A8394;font-weight:700;text-align:right;padding:0 0 5px}
+th:first-child{text-align:left}
+td{padding:3.6px 0;border-top:1px solid #E2E0DA;text-align:right;font-weight:700;
+  font-variant-numeric:tabular-nums}
+td:first-child{text-align:left;font-weight:800}
+.win{color:#D6452C}
+.dim{color:#9AA2B0;font-weight:600}
+.note{margin-top:auto;padding-top:7px;font-size:12.5px;color:#4A5262;line-height:1.52}
+.note b{color:#D6452C}
+/* 2행 단계 카드 */
+.step{flex:1;position:relative;padding-top:21px;display:flex;flex-direction:column}
+.num{position:absolute;top:-15px;left:18px;width:36px;height:36px;border-radius:50%;
+  color:#fff;font-weight:900;font-size:18px;display:flex;align-items:center;
+  justify-content:center;border:2px solid #1E2430}
+.st{font-size:19px;font-weight:900;margin-bottom:6px;line-height:1.26}
+.sd{font-size:13.5px;color:#3D4553;line-height:1.6}
+.sd b{color:#1E2430;font-weight:800}
+.sd .r{color:#D6452C;font-weight:800}
+.hr{height:1px;background:#E2E0DA;margin:8px 0}
+.kv{font-size:12.5px;color:#4A5262;line-height:1.52}
+.kv b{color:#1E2430}
+.bars{margin-top:auto;padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700}
+.bar i{display:block;height:14px;border-radius:3px}
+.bar span.l{width:48px;color:#4A5262}
+.box{margin-top:auto;background:#F6F5F2;border-radius:9px;padding:9px 10px;
+  font-size:12.5px;font-weight:700;line-height:1.7;color:#4A5262;text-align:center}
+.box .k{color:#D6452C;font-weight:900}
+.box.lft{text-align:left}
+.calc{margin-top:auto;background:#F6F5F2;border-radius:9px;padding:9px 12px;
+  font-size:12px;line-height:1.75;color:#4A5262;font-weight:700;
+  font-variant-numeric:tabular-nums}
+.calc b{color:#1E2430}
+.calc .r{color:#D6452C;font-weight:900}
+/* 3행 정리부 */
+.sumL{flex:1;display:flex;flex-direction:column}
+.lb{font-size:12.5px;font-weight:800;color:#7A8394;letter-spacing:.06em;margin-bottom:9px}
+.pts{display:flex;gap:11px;flex:1}
+.pt{flex:1;background:#F6F5F2;border-radius:10px;padding:12px 13px;display:flex;
+  flex-direction:column;justify-content:center}
+.pt .h{font-size:13px;font-weight:900;color:#fff;padding:2px 9px;border-radius:6px;
+  align-self:flex-start;margin-bottom:7px}
+.pt .b{font-size:13px;line-height:1.58;color:#3D4553;font-weight:600}
+.pt .b b{color:#1E2430;font-weight:800}
+.flow{display:flex;align-items:center;gap:7px;margin-top:auto;padding-top:13px}
+.chip{font-size:13px;font-weight:800;color:#fff;padding:7px 13px;border-radius:8px;
+  border:2px solid #1E2430}
+.arw{font-size:15px;color:#7A8394;font-weight:900}
+.sumR{flex:0 0 494px;background:#1E2430;color:#fff;display:flex;flex-direction:column;
+  justify-content:center}
+.sumR .t{font-size:12.5px;font-weight:800;color:#8B93A2;letter-spacing:.08em}
+.sumR .big{font-size:29px;font-weight:900;line-height:1.33;margin-top:8px}
+.sumR .big b{color:#FFD24A}
+.sumR .sub{font-size:13.5px;color:#B9C0CE;line-height:1.58;margin-top:10px;
+  border-top:1px solid #39414F;padding-top:10px}
+.sumR .ask{margin-top:9px;background:#D6452C;border-radius:9px;padding:9px 14px;
+  font-size:18px;font-weight:900;text-align:center}
+.ft{flex:0 0 24px;font-size:12px;color:#8B93A2;display:flex;align-items:center;
+  justify-content:space-between;gap:20px}
+.ft .src{flex:1;min-width:0}
+"""
+
+
+def table(head, rows):
+    th = "".join(f"<th>{h}</th>" for h in head)
+    tr = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
+    return f"<table><tr>{th}</tr>{tr}</table>"
+
+
+def build(spec, out_png, scale=2):
+    steps = "".join(f'''<div class="card step">
+      <div class="num" style="background:{s.get('c', STEP_COLORS[i])}">{i+1}</div>
+      <div class="st">{s['t']}</div>
+      <div class="sd">{s['d']}</div>
+      <div class="hr"></div>
+      <div class="kv">{s['kv']}</div>
+      {s.get('extra','')}
+    </div>''' for i, s in enumerate(spec["steps"]))
+
+    pts = "".join(f'<div class="pt"><div class="h" style="background:{c}">{h}</div>'
+                  f'<div class="b">{b}</div></div>' for h, c, b in spec["points"])
+
+    chips = '<span class="arw">→</span>'.join(
+        f'<span class="chip" style="background:{c}">{t}</span>' for t, c in spec["flow"])
+
+    d = spec["data"]
+    tk = spec["take"]
+    sig = bs.signature(h=19, tone="light")
+
+    hvar = f"body{{--h1:{spec.get('h_r1',250)}px;--h2:{spec.get('h_r2',330)}px}}"
+
+    html = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<style>{CSS}
+{hvar}</style></head><body><div class="sheet">
+ <div class="hd"><h1>{spec['title']}</h1><span class="en">{spec['en']}</span>
+  <span class="tag">{spec['tag']}</span></div>
+
+ <div class="row r1">
+  <div class="card intro">
+   <div class="q">{spec['hook']}</div>
+   <div class="s">{spec['hooksub']}</div>
+  </div>
+  <div class="card datacard">
+   <div class="dt">{d['label']}</div>
+   {table(d['head'], d['rows'])}
+   <div class="note">{d['note']}</div>
+  </div>
+ </div>
+
+ <div class="row r2">{steps}</div>
+
+ <div class="row r3">
+  <div class="card sumL">
+   <div class="lb">세 줄 정리</div>
+   <div class="pts">{pts}</div>
+   <div class="flow">{chips}</div>
+  </div>
+  <div class="card sumR">
+   <div class="t">한 줄 정리</div>
+   <div class="big">{tk['big']}</div>
+   <div class="sub">{tk['sub']}</div>
+   <div class="ask">{tk['ask']}</div>
+  </div>
+ </div>
+
+ <div class="ft"><span class="src">{spec['foot']}</span>{sig}</div>
+</div></body></html>"""
+
+    p = pathlib.Path(out_png)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    h = p.with_suffix(".html")
+    h.write_text(html, encoding="utf-8")
+
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
+        pg = b.new_page(viewport={"width": 1536, "height": 1024}, device_scale_factor=scale)
+        pg.goto(h.as_uri()); pg.wait_for_timeout(500)
+        over = pg.evaluate("()=>document.body.scrollHeight - 1024")
+        clip = pg.evaluate("""()=>[...document.querySelectorAll('.card,.step,.pt')]
+            .filter(e=>e.scrollHeight>e.clientHeight+1)
+            .map(e=>(e.className+' +'+(e.scrollHeight-e.clientHeight)))""")
+        pg.screenshot(path=str(p))
+        b.close()
+    if over > 0 or clip:
+        raise SystemExit(f"[개념 한 장] 넘침 감지 — 지면 +{over}px, 잘린 블록 {clip}\n"
+                         f"카피를 줄이거나 행 높이(.r1/.r2)를 조정할 것.")
+    return p
