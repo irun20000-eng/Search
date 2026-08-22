@@ -38,7 +38,10 @@ STEP_COLORS = [BLU, ORG, GRN, RED]
 CSS = bs.CSS + r"""
 *{box-sizing:border-box;margin:0;padding:0}
 body{width:1536px;height:1024px;background:#EFEDE8;--h1:250px;--h2:330px;
-  font-family:'Noto Sans CJK KR',sans-serif;color:#1E2430;
+  /* 지금 있는 다섯 장은 전부 이 폰트 순서로, 같은 PC 에서 그려졌다.
+     Noto Sans CJK KR 이 있는 환경(예: GitHub Actions)에서 그리면 글자가 달라진다.
+     아래 FONT_FINGERPRINT 가 그 경우를 막는다. */
+  font-family:'Noto Sans CJK KR','Malgun Gothic',sans-serif;color:#1E2430;
   word-break:keep-all;-webkit-font-smoothing:antialiased}
 .sheet{padding:28px 34px;height:100%;display:flex;flex-direction:column;gap:12px}
 .hd{display:flex;align-items:baseline;gap:13px;flex:0 0 46px}
@@ -130,6 +133,42 @@ def table(head, rows):
     return f"<table><tr>{th}</tr>{tr}</table>"
 
 
+# --- 환경 지문 -------------------------------------------------------------
+# 2026-08-22 결정: 개념 한 장 다섯 장은 모두 같은 환경(윈도우 · Noto CJK 없음 →
+# 맑은 고딕 폴백)에서 그려졌고, 그대로 두기로 했다. 기존 두 장(심슨·최적정지)은
+# 스펙이 남아 있지 않아 다시 그릴 수 없으므로, 환경을 바꾸면 다섯 장이 갈린다.
+#
+# 그래서 폰트가 "있는지" 가 아니라 **그때와 같은지**를 본다. 탐침 문자열의 폭을
+# 재서 아래 값과 다르면 멈춘다. 카드뉴스와 방향이 반대인 규칙이라(그쪽은 CJK 가
+# 있어야 한다) 헷갈리기 쉬워 여기 적어 둔다.
+FONT_FINGERPRINT = {"h900": 635, "b800": 470, "r400": 700, "lat": 820}
+
+FP_JS = """() => {
+  const c = document.createElement('canvas').getContext('2d');
+  const m = (w, s) => { c.font = w + " 100px 'Noto Sans CJK KR','Malgun Gothic',sans-serif";
+                        return Math.round(c.measureText(s).width); };
+  return { h900: m(900, '평균은 대표가'), b800: m(800, '개념 한 장'),
+           r400: m(400, '가나다라마바사'), lat: m(700, 'Survivorship Bias') };
+}"""
+
+
+def check_font_env(pg, force=False):
+    got = pg.evaluate(FP_JS)
+    if got == FONT_FINGERPRINT:
+        return
+    diff = ", ".join("%s %s→%s" % (k, FONT_FINGERPRINT[k], got[k])
+                     for k in FONT_FINGERPRINT if got.get(k) != FONT_FINGERPRINT[k])
+    msg = ("[개념 한 장] 폰트 환경이 기존 다섯 장과 다르다 - " + diff + "\n"
+           "  여기서 그리면 글자가 기존 장들과 갈린다. 기존 두 장은 스펙이 없어\n"
+           "  다시 그릴 수 없으므로 되돌릴 방법이 없다.\n"
+           "  같은 PC(윈도우)에서 그리거나, 정말 환경을 바꾸려면 다섯 장을 모두\n"
+           "  다시 그린 뒤 FONT_FINGERPRINT 를 갱신할 것.")
+    if force:
+        print("! " + msg)
+        return
+    raise SystemExit(msg)
+
+
 def build(spec, out_png, scale=2):
     steps = "".join(f'''<div class="card step">
       <div class="num" style="background:{s.get('c', STEP_COLORS[i])}">{i+1}</div>
@@ -189,7 +228,8 @@ def build(spec, out_png, scale=2):
  <div class="ft"><span class="src">{spec['foot']}</span>{sig}</div>
 </div></body></html>"""
 
-    p = pathlib.Path(out_png)
+    # 상대경로를 그대로 두면 아래 as_uri() 가 터진다(윈도우에서 드라이브가 없다).
+    p = pathlib.Path(out_png).resolve()
     p.parent.mkdir(parents=True, exist_ok=True)
     h = p.with_suffix(".html")
     h.write_text(html, encoding="utf-8")
@@ -199,6 +239,7 @@ def build(spec, out_png, scale=2):
         b = pw.chromium.launch()
         pg = b.new_page(viewport={"width": 1536, "height": 1024}, device_scale_factor=scale)
         pg.goto(h.as_uri()); pg.wait_for_timeout(500)
+        check_font_env(pg)
         over = pg.evaluate("()=>document.body.scrollHeight - 1024")
         clip = pg.evaluate("""()=>[...document.querySelectorAll('.card,.step,.pt')]
             .filter(e=>e.scrollHeight>e.clientHeight+1)
