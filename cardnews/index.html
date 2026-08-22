@@ -40,6 +40,11 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:32px 20px 60px}
   h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.02em}
   .lead{color:var(--muted);margin:0 0 20px;font-size:.95rem}
+  .sbar{display:flex;gap:8px;align-items:center;margin:0 0 14px}
+  .sbar input{flex:1;min-width:0;border:1.4px solid var(--line);background:var(--card);
+    color:var(--ink);border-radius:999px;padding:9px 16px;font:inherit;font-size:.9rem}
+  .sbar input:focus{outline:none;border-color:var(--accent)}
+  .sbar .cnt{font-size:.82rem;color:var(--muted);white-space:nowrap}
   .filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
   .f{border:1.4px solid var(--line);background:var(--card);color:var(--muted);
     border-radius:999px;padding:6px 14px;font:inherit;font-size:.84rem;font-weight:700;cursor:pointer}
@@ -116,6 +121,7 @@
 <div class="wrap">
   <h1>카드뉴스</h1>
   <p class="lead">한 장씩 넘겨 보는 짧은 노트. 한 편은 10장으로 끝납니다.</p>
+  <div class="sbar"><input id="sq" type="search" placeholder="이 서가에서 찾기 — 제목·앵글" aria-label="카드뉴스 검색"><span class="cnt" id="scnt"></span></div>
   <div class="filters" id="filters"></div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty" style="display:none">해당하는 편이 없습니다.</div>
@@ -180,10 +186,22 @@ function cardHTML(e){
     '</div></button>';
 }
 
+function matches(e, q){
+  if(!q) return true;
+  var s=SMAP[e.series]||{};
+  var hay=(e.title+" "+e.angle+" "+(s.label||"")).toLowerCase();
+  return hay.indexOf(q)>=0;
+}
 function paint(){
-  var list = filt==="all" ? EPS : EPS.filter(function(e){return e.series===filt});
+  var q=(document.getElementById("sq").value||"").trim().toLowerCase();
+  var list = (filt==="all" ? EPS : EPS.filter(function(e){return e.series===filt}))
+             .filter(function(e){ return matches(e,q); });
+  var c=document.getElementById("scnt");
+  c.textContent = q ? list.length+"편" : "";
   document.getElementById("grid").innerHTML=list.map(cardHTML).join("");
-  document.getElementById("empty").style.display=list.length?"none":"";
+  var em=document.getElementById("empty");
+  em.textContent = q ? '"'+q+'" — 찾는 편이 없습니다' : "해당하는 편이 없습니다.";
+  em.style.display=list.length?"none":"";
   Array.prototype.forEach.call(document.querySelectorAll(".ec"),function(b){
     b.addEventListener("click",function(){ openEp(b.dataset.f); });
   });
@@ -269,6 +287,13 @@ window.addEventListener("hashchange",function(){
     document.getElementById("ov").classList.remove("on");
     document.body.style.overflow=""; cur=null;
   }
+});
+
+document.getElementById("sq").addEventListener("input", paint);
+/* / 를 누르면 검색창으로 — 허브와 같은 규약 */
+document.addEventListener("keydown", function(e){
+  if(e.key!=="/" || e.target.tagName==="INPUT" || e.target.tagName==="TEXTAREA") return;
+  e.preventDefault(); document.getElementById("sq").focus();
 });
 
 fetch("manifest.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
