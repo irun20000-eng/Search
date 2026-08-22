@@ -203,9 +203,92 @@ def build(spec, out_png, scale=2):
         clip = pg.evaluate("""()=>[...document.querySelectorAll('.card,.step,.pt')]
             .filter(e=>e.scrollHeight>e.clientHeight+1)
             .map(e=>(e.className+' +'+(e.scrollHeight-e.clientHeight)))""")
+        gaps = pg.evaluate(MEASURE_JS)
         pg.screenshot(path=str(p))
         b.close()
     if over > 0 or clip:
         raise SystemExit(f"[개념 한 장] 넘침 감지 — 지면 +{over}px, 잘린 블록 {clip}\n"
                          f"카피를 줄이거나 행 높이(.r1/.r2)를 조정할 것.")
+    report_balance(gaps)
     return p
+
+
+# --- 카드 내 균형 ---------------------------------------------------------
+# v1 의 결함이 "요지 한 덩어리라 카드 아래 절반이 비었다" 였다. v2 에서 2단 설명을
+# 넣어 완화했지만, 하단 블록(.box/.calc/.bars)이 margin-top:auto 로 바닥에 붙는 구조라
+# 본문이 짧은 카드는 여전히 가운데가 텅 빈다. 렌더를 눈으로 봐야만 보이는 결함이라
+# 매번 놓친다. 그래서 그 빈 공간을 픽셀로 재서 보고한다.
+#
+# 재는 것 - 단계 카드마다 '본문이 끝난 자리'와 '하단 블록이 시작하는 자리' 사이 간격.
+# 이 값이 카드마다 크게 다르면 한 줄이 들쭉날쭉해 보인다.
+BALANCE_SPREAD_MAX = 26      # 카드 사이 여백 차이 상한(px) - 대략 두 줄
+BALANCE_GAP_MAX = 52         # 한 카드가 혼자 비어 보이기 시작하는 여백(px)
+POINT_FILL_MIN = 0.55        # 세 줄 정리 칸이 이보다 덜 차면 허전해 보인다
+
+MEASURE_JS = """()=>{
+  const gapOf = (card) => {
+    const t = [...card.querySelectorAll('.kv, .sd')].pop();
+    if (!t) return null;
+    const foot = card.querySelector('.box,.calc,.bars');
+    const cb = card.getBoundingClientRect();
+    const end = foot ? foot.getBoundingClientRect().top
+                     : cb.bottom - parseFloat(getComputedStyle(card).paddingBottom);
+    return Math.round(end - t.getBoundingClientRect().bottom);
+  };
+  return {
+    steps: [...document.querySelectorAll('.step')].map((c,i)=>({
+      n: i+1,
+      title: (c.querySelector('.st') || {}).textContent || '',
+      gap: gapOf(c),
+      foot: !!c.querySelector('.box,.calc,.bars')
+    })),
+    points: [...document.querySelectorAll('.pt')].map((c)=>{
+      const st = getComputedStyle(c);
+      const inner = c.getBoundingClientRect().height
+                  - parseFloat(st.paddingTop) - parseFloat(st.paddingBottom);
+      const used = [...c.children].reduce((a,e)=>a + e.getBoundingClientRect().height, 0)
+                 + (c.children.length > 1 ? 7 : 0);
+      return { box: Math.round(inner), used: Math.round(used) };
+    })
+  };
+}"""
+
+
+def report_balance(m):
+    """카드 내 균형을 픽셀로 보고한다.
+
+    넘침처럼 실패시키지는 않는다 - 빈 곳은 '줄이면 되는 문제'가 아니라
+    '채워야 하는 문제'라 카피 판단이 필요하기 때문이다. 대신 어느 카드를
+    얼마나 늘려야 하는지까지 짚어 준다.
+    """
+    steps = [s for s in m["steps"] if s["gap"] is not None]
+    if not steps:
+        return True
+    gaps = [s["gap"] for s in steps]
+    spread = max(gaps) - min(gaps)
+    print("[개념 한 장] 카드 내 균형 - 본문 끝과 하단 블록 사이 여백")
+    for s in steps:
+        mark = "" if s["gap"] <= BALANCE_GAP_MAX else "   <- 비어 보임"
+        print("  %d. %-20s %4dpx%s" % (s["n"], s["title"][:20], s["gap"], mark))
+    pts = m.get("points") or []
+    pt_thin = []
+    if pts:
+        fills = [p["used"] / p["box"] if p["box"] else 1.0 for p in pts]
+        print("  세 줄 정리 칸 채움 %s"
+              % " · ".join("%d%%" % round(f * 100) for f in fills))
+        pt_thin = [i + 1 for i, f in enumerate(fills) if f < POINT_FILL_MIN]
+    ok = (spread <= BALANCE_SPREAD_MAX and max(gaps) <= BALANCE_GAP_MAX
+          and not pt_thin)
+    if ok:
+        print("  [OK] 균형 통과 - 여백 차이 %dpx" % spread)
+        return True
+    if spread > BALANCE_SPREAD_MAX or max(gaps) > BALANCE_GAP_MAX:
+        worst = max(steps, key=lambda s: s["gap"])
+        print("  [X] 단계 카드 - 여백 차이 %dpx (상한 %d), 최대 여백 %dpx (상한 %d)"
+              % (spread, BALANCE_SPREAD_MAX, max(gaps), BALANCE_GAP_MAX))
+        print("      가장 빈 카드는 %d번 '%s'. 그 카드의 상세(kv)를 %d줄쯤 늘릴 것."
+              % (worst["n"], worst["title"][:20], max(1, round(worst["gap"] / 21))))
+    if pt_thin:
+        print("  [X] 세 줄 정리 - %s번 칸이 %d%% 미만으로 비었다. 문장을 한 줄씩 늘릴 것."
+              % (", ".join(str(i) for i in pt_thin), round(POINT_FILL_MIN * 100)))
+    return ok
