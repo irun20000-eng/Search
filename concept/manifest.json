@@ -1,0 +1,44 @@
+{
+ "count": 2,
+ "notes": [
+  {
+   "slug": "optimal-stopping",
+   "title": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",
+   "date": "2026-08-13",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "확률",
+    "의사결정",
+    "최적정지",
+    "비서문제",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 2편 · 언제까지 둘러보고 언제 정할까",
+   "chars": 5450,
+   "pic": "optimal-stopping.png",
+   "path": "concept/notes/optimal-stopping.md"
+  },
+  {
+   "slug": "simpsons-paradox",
+   "title": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
+   "date": "2026-08-04",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "통계",
+    "심슨의역설",
+    "교란변수",
+    "인과추론",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 3편 · 쪼개면 이기는데 합치면 진다",
+   "chars": 6329,
+   "pic": "simpsons-paradox.png",
+   "path": "concept/notes/simpsons-paradox.md"
+  }
+ ]
+}
