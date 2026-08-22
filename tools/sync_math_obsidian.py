@@ -47,7 +47,9 @@ def transform(fm, body, slug):
     body = re.sub(r"!\[([^\]]*)\]\((?:\.\./)+assets/([^)]+)\)",
                   lambda m: "![%s](../_assets/%s)" % (m.group(1), Path(m.group(2)).name),
                   body)
-    head = "> [!info] 수학사 아카이브\n> 갤러리에서 보기 — %s%s\n\n" % (GALLERY, slug)
+    head = ("> [!info] 수학사 아카이브\n> 갤러리에서 보기 — %s%s\n"
+            "> 이 노트는 리포에서 왔습니다. 여기에 링크·메모를 더해도 동기화가 덮지 않습니다.\n"
+            "> 본문을 고치려면 math/notes/%s/note.md\n\n") % (GALLERY, slug, slug)
     # 첫 H1 바로 뒤에 넣는다
     m = re.match(r"(\s*#\s+[^\n]*\n)", body)
     if m:
@@ -65,6 +67,8 @@ def fm_block(fm):
 def main():
     args = sys.argv[1:]
     dry = "--dry-run" in args
+    force = "--force" in args
+    skipped = []
     vault = DEFAULT_VAULT
     if "--vault" in args:
         vault = Path(args[args.index("--vault") + 1])
@@ -93,6 +97,12 @@ def main():
         dest = root / SUBDIR.get(typ, "99-기타") / (name + ".md")
         text = fm_block(fm) + transform(fm, body, slug)
 
+        # 이미 있으면 건드리지 않는다. 토요일마다 옵시디언에서 이 노트들에 위키링크를
+        # 거는 작업이 있어, 덮으면 매주 사라진다. 리포 노트는 발행 이후 수정된 적이
+        # 없으므로(24편 실측 0건) 잃는 것이 없다. 정말 밀어야 하면 --force.
+        if dest.exists() and not force:
+            skipped.append(dest.name)
+            continue
         if not dry:
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(text, encoding="utf-8")
@@ -138,6 +148,8 @@ def main():
 
     tag = "[미리보기] " if dry else ""
     print("%s볼트 동기화: %d편" % (tag, len(made)))
+    if skipped:
+        print("   이미 있어 건드리지 않음 %d편 (--force 로 덮을 수 있다)" % len(skipped))
     for typ, dest, n in made:
         print("   %-4s %-46s %6d자" % (typ, dest.name, n))
     print("%s자산 %d개 → %s" % (tag, len(copied), assets))
