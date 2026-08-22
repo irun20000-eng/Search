@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="../assets/basket.css" />
 <style>
   :root{
     --bg:#FFF8F0; --card:#FFFFFF; --line:#EFE6DA; --line2:#F1E9DD;
@@ -167,6 +168,12 @@
     padding:3px 10px;color:var(--muted);cursor:pointer;background:var(--card);font-family:var(--font)}
   .tracks .tr.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
   .tracks .tr:hover{border-color:var(--accent);color:var(--accent)}
+  /* 담기는 카드 내용과 무관하게 늘 카드 오른쪽 아래 같은 자리.
+     본문이 카드 높이를 다 채워야 margin-top:auto 가 바닥을 잡는다. */
+  .card .body{flex:1}
+  .cardfoot{display:flex;justify-content:flex-end;align-items:center;
+    margin-top:auto;padding-top:10px}
+  .bar .bskt-add{margin-left:auto}
 </style>
 <link rel="icon" href="../assets/favicon.svg">
 <link rel="stylesheet" href="../assets/brand.css">
@@ -204,15 +211,17 @@
 
 <div class="overlay" id="overlay"></div>
 <section class="sheet" id="sheet" aria-modal="true" role="dialog">
-  <div class="bar"><a id="rawlink" href="#" target="_blank" rel="noopener">원문 .md ↗</a><button type="button" class="close" id="closeBtn">닫기 ✕</button></div>
+  <div class="bar"><a id="rawlink" href="#" target="_blank" rel="noopener">원문 .md ↗</a><span id="sheetbskt"></span><button type="button" class="close" id="closeBtn">닫기 ✕</button></div>
   <article class="article" id="article"></article>
   <button type="button" class="totop" id="totop" title="맨 위로" aria-label="맨 위로">↑</button>
 </section>
 
+<script src="../assets/basket.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
 /* 갤러리는 research/ 에 있고 데이터(reports/*, link-index.json)는 루트에 남는다 */
 const ROOT="../";
+Basket.init({section:"research", root:"../"});
 let CATS=[], activeCat=null;
 function catLabel(k){ const c=CATS.find(x=>x.key===k); return c?c.label:""; }
 function readMin(r){ const n=r.chars||0; return n?Math.max(1,Math.round(n/600)):0; }
@@ -492,16 +501,25 @@ function render(){
       c.className="card featured";
       const base=ROOT+r.path.substring(0,r.path.lastIndexOf("/")+1);
       const cover=r.cover?`<div class="cover"><img src="${base+r.cover}" alt="미리보기" loading="lazy"></div>`:"";
-      c.innerHTML=`${cover}<div class="body"><div class="meta">${metaHTML(r)}<span class="pill-feat">FEATURED</span></div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div></div>`;
+      c.innerHTML=`${cover}<div class="body"><div class="meta">${metaHTML(r)}<span class="pill-feat">FEATURED</span></div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div><div class="cardfoot">${Basket.button({k:r.slug})}</div></div>`;
       wireTrack(c,r);
     } else {
       c.className="card";
-      c.innerHTML=`<div class="cover-geo">${geoCover(color,i)}</div><div class="body"><div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div></div>`;
+      c.innerHTML=`<div class="cover-geo">${geoCover(color,i)}</div><div class="body"><div class="meta">${metaHTML(r)}</div><h2>${esc(r.title)}</h2><p class="tldr">${esc(r.tldr||"")}</p>${trackHTML(r)}<div class="foot">${tagsHTML(r)}</div><div class="cardfoot">${Basket.button({k:r.slug})}</div></div>`;
       wireTrack(c,r);
     }
     grid.appendChild(c);
   });
+  Basket.wire(grid, bkMeta);
   syncURL();
+}
+
+/* 담기함에 넣을 정보. 카드와 시트가 같은 함수를 쓴다. */
+function bkMeta(slug){
+  const r = REPORTS.filter(x=>x.slug===slug)[0];
+  if(!r) return null;
+  return { t:r.title, m:catLabel(r.cat)+(r.date?" · "+r.date:""),
+           u:"research/#r="+slug, p:r.path, kind:"md" };
 }
 function buildTOC(){
   const art=$("#article"); const old=art.querySelector(".toc"); if(old) old.remove();
@@ -549,6 +567,8 @@ function renderMD(md){
 async function openReport(r){
   const path=ROOT+r.path, base=path.substring(0,path.lastIndexOf("/")+1);
   $("#rawlink").href=path;
+  $("#sheetbskt").innerHTML=Basket.button({k:r.slug});
+  Basket.wire($("#sheetbskt"), bkMeta);
   let md=""; try{ md=await (await fetch(path,{cache:"no-store"})).text(); }catch(e){ md="# 불러오기 실패\n\n`"+path+"`"; }
   md=md.replace(/^---[\s\S]*?---\s*/,"");
   $("#article").innerHTML=renderMD(md);

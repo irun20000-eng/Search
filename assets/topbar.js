@@ -4,7 +4,11 @@
  *   <link rel="stylesheet" href="../assets/topbar.css">
  *   <script src="../assets/topbar.js" data-section="research" data-root="../"></script>
  *
- *   data-section : home | research | videos | guides | math   (현재 위치 표시)
+ *   data-section : home | research | videos | guides | math | blog | cardnews | concept
+ *                  (현재 위치 표시)
+ *
+ * ⚠ 서가를 새로 만들면 아래 TABS 에 반드시 한 줄 더한다. blog/ cardnews/ concept/ 은
+ *   아직 자기 페이지에 상단바를 직접 적어 두었으므로 그쪽도 함께 고쳐야 한다.
  *   data-root    : 이 페이지에서 저장소 루트까지의 상대경로 ("./" 또는 "../")
  *
  * 스크립트는 자기 자신의 data-* 를 읽으므로 페이지마다 설정을 따로 두지 않는다.
@@ -23,7 +27,10 @@
     { key: "research", label: "리서치",   href: "research/" },
     { key: "videos",   label: "영상노트", href: "videos/" },
     { key: "guides",   label: "가이드",   href: "guides/" },
-    { key: "math",     label: "수학사",   href: "math/" }
+    { key: "math",     label: "수학사",   href: "math/" },
+    { key: "blog",     label: "블로그",   href: "blog/" },
+    { key: "cardnews", label: "카드뉴스", href: "cardnews/" },
+    { key: "concept",  label: "개념노트", href: "concept/" }
   ];
 
   function build() {

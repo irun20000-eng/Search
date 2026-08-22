@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+<link rel="stylesheet" href="../assets/basket.css" />
 <style>
   :root{
     --bg:#FFF8F0; --card:#FFFFFF; --line:#EFE6DA; --line2:#F1E9DD;
@@ -102,6 +103,11 @@
     padding:22px 20px 40px;text-align:center}
   footer code{background:var(--chip);border-radius:5px;padding:1px 5px}
   @media(max-width:640px){.wrap{padding:24px 15px 50px}.sheet{padding:24px 18px 36px}h1{font-size:1.6rem}}
+  /* 담기는 카드 내용 길이와 무관하게 늘 카드 오른쪽 아래 같은 자리에 온다.
+     grid 는 같은 행의 카드 높이를 맞춰 주므로 margin-top:auto 면 눈높이가 맞는다. */
+  .cardfoot{display:flex;justify-content:flex-end;align-items:center;
+    margin-top:auto;padding-top:10px}
+  .fspacer{flex:1}
 </style>
 </head>
 <body>
@@ -113,6 +119,8 @@
     <a href="../guides/">가이드</a>
     <a href="../math/">수학사</a>
     <a href="./" class="on">블로그</a>
+    <a href="../cardnews/">카드뉴스</a>
+    <a href="../concept/">개념노트</a>
   </nav>
   <span class="sp"></span>
   <button class="tbtn" id="tbtn" onclick="toggleTheme()">🌙 다크</button>
@@ -139,6 +147,7 @@
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../assets/basket.js"></script>
 <script>
 /* 테마 저장 키는 이룬 서재 전체가 stTheme 하나로 통일돼 있다(CLAUDE.md). */
 function applyTheme(t){
@@ -154,6 +163,7 @@ function toggleTheme(){
   applyTheme(nt);
 }
 initTheme();
+Basket.init({section:"blog", root:"../"});
 
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
@@ -161,13 +171,14 @@ function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
 var POSTS=[], PILLARS=[], filt="all";
 
 function cardHTML(p){
-  return '<button class="pc" data-slug="'+esc(p.slug)+'">'+
+  return '<div class="pc" role="button" tabindex="0" data-slug="'+esc(p.slug)+'">'+
     '<div class="top"><span class="pill '+esc(p.pillar)+'">'+esc(p.pillar_ko)+'</span>'+
     '<span class="d">'+esc(p.date)+'</span></div>'+
     '<h3>'+esc(p.title)+'</h3>'+
     '<div class="tags">'+(p.tags||[]).slice(0,3).map(function(t){
       return '<span class="tag">'+esc(t)+'</span>';}).join("")+'</div>'+
-    '</button>';
+    '<div class="cardfoot">'+Basket.button({k:p.slug})+'</div>'+
+    '</div>';
 }
 
 function matches(p, q){
@@ -187,6 +198,13 @@ function paint(){
   em.style.display = list.length ? "none" : "";
   Array.prototype.forEach.call(document.querySelectorAll(".pc"), function(b){
     b.addEventListener("click", function(){ openPost(b.dataset.slug); });
+  });
+  Basket.keyable(document, ".pc");
+  Basket.wire(document, function(k){
+    var p=POSTS.filter(function(x){return x.slug===k})[0];
+    if(!p) return null;
+    return { t:p.title, m:p.pillar_ko+" · "+p.date,
+             u:"blog/#b="+k, p:"blog/notes/"+k+".md", b:"blog/", kind:"html" };
   });
   Array.prototype.forEach.call(document.querySelectorAll(".f"), function(b){
     b.classList.toggle("on", b.dataset.k===filt);
