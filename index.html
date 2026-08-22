@@ -176,7 +176,7 @@ footer.site a{color:var(--accent);font-weight:600}
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
       <input id="q" type="search" placeholder="다섯 서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off" aria-label="통합 검색">
     </div>
-    <div class="hint">한 번의 검색으로 <b>리서치 · 영상노트 · 가이드 · 수학사</b>를 모두 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
+    <div class="hint">한 번의 검색으로 <b>리서치 · 영상노트 · 가이드 · 수학사 · 블로그</b>를 모두 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
     <div class="results" id="res" role="listbox"></div>
   </section>
 
@@ -345,7 +345,8 @@ paintTheme();
 
   /* 바깥 서가 — 링크는 항상, 편수는 manifest 가 있을 때만 */
   $("#shelves-ext").innerHTML=EXTRA.map(function(x){
-    return '<a class="scard" href="'+esc(x.url)+'" style="--strip:var(--c-'+x.k+')">'+
+    return '<a class="scard" href="'+esc(x.url)+'" target="_blank" rel="noopener"'+
+      ' style="--strip:var(--c-'+x.k+')">'+
       '<div class="cover"><svg viewBox="0 0 300 88" preserveAspectRatio="none" aria-hidden="true">'+x.cover+'</svg></div>'+
       '<div class="body"><h3>'+esc(x.label)+'<span class="ext">바깥 ↗</span></h3>'+
       '<div class="desc">'+esc(x.desc)+'</div>'+
