@@ -1,0 +1,115 @@
+/* 담기함 — 공용 스타일
+ * 각 갤러리가 이미 정의한 토큰(--card --line --ink --muted --accent …)을 그대로 쓴다.
+ * 토큰이 없는 페이지를 대비해 fallback 을 함께 적는다. */
+
+.bskt-add{
+  border:1.3px solid var(--line,#e5ded4);
+  background:var(--card,#fff);
+  color:var(--muted,#8A7E72);
+  border-radius:999px;padding:3px 11px;
+  font:inherit;font-size:.75rem;font-weight:700;cursor:pointer;
+  line-height:1.5;white-space:nowrap;
+  transition:border-color .12s,color .12s,background .12s;
+}
+.bskt-add:hover{border-color:var(--accent,#E8743B);color:var(--accent,#E8743B)}
+.bskt-add.on{
+  border-color:var(--accent,#E8743B);
+  color:var(--accent,#E8743B);
+  background:var(--accent-soft,#FCEDE1);
+}
+
+/* 카드가 <button> 에서 div[role=button] 으로 바뀌면서 브라우저 기본 포커스 링을
+   잃는다. 키보드로 서가를 훑을 때 어디에 있는지 보여야 한다. */
+[role="button"]:focus-visible{
+  outline:2px solid var(--accent,#E8743B);
+  outline-offset:2px;
+}
+
+.bskt-fab{
+  position:fixed;right:22px;bottom:22px;z-index:70;
+  background:var(--ink,#2B2622);color:var(--bg,#FFF8F0);
+  border:none;border-radius:999px;padding:11px 17px;
+  font:inherit;font-size:.86rem;font-weight:700;cursor:pointer;
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+  display:flex;align-items:center;gap:8px;
+  opacity:.55;transition:opacity .16s,transform .16s;
+}
+.bskt-fab:hover,.bskt-fab.has{opacity:1}
+.bskt-fab.has{transform:translateY(-1px)}
+.bskt-fab .n{
+  background:var(--accent,#E8743B);color:#fff;
+  border-radius:999px;padding:1px 8px;font-size:.78rem;
+}
+
+.bskt-panel{
+  position:fixed;right:22px;bottom:74px;z-index:71;
+  width:340px;max-width:calc(100vw - 32px);
+  background:var(--card,#fff);
+  border:1.5px solid var(--line,#e5ded4);
+  border-radius:16px;
+  box-shadow:0 18px 50px rgba(0,0,0,.24);
+  display:none;overflow:hidden;
+}
+.bskt-panel.open{display:block}
+.bskt-h{
+  padding:14px 16px 10px;border-bottom:1px solid var(--line,#e5ded4);
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+}
+.bskt-h b{font-size:.98rem}
+.bskt-h span{font-size:.76rem;color:var(--muted,#8A7E72);text-align:right}
+.bskt-list{max-height:260px;overflow-y:auto;padding:6px 0}
+.bskt-row{
+  display:flex;align-items:center;gap:9px;
+  padding:7px 16px;font-size:.86rem;
+}
+.bskt-row:hover{background:var(--chip,#F7F1E8)}
+.bskt-row .sec{
+  font-size:.7rem;font-weight:800;color:var(--muted,#8A7E72);
+  white-space:nowrap;flex:none;
+}
+.bskt-row .t{
+  flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  color:var(--ink,#2B2622);
+}
+.bskt-row .rm{
+  border:none;background:none;color:var(--muted,#8A7E72);
+  cursor:pointer;font-size:.9rem;padding:2px 4px;flex:none;line-height:1;
+}
+.bskt-row .rm:hover{color:var(--accent,#E8743B)}
+.bskt-empty{
+  margin:0;padding:22px 18px;text-align:center;
+  font-size:.83rem;color:var(--muted,#8A7E72);line-height:1.7;
+}
+.bskt-foot{
+  border-top:1px solid var(--line,#e5ded4);
+  padding:11px 14px;display:flex;gap:7px;
+}
+.bskt-btn{
+  flex:1;border:1.3px solid var(--accent,#E8743B);
+  background:var(--accent,#E8743B);color:#fff;
+  border-radius:999px;padding:8px 12px;
+  font:inherit;font-size:.83rem;font-weight:700;cursor:pointer;
+}
+.bskt-btn.ghost{
+  background:transparent;color:var(--muted,#8A7E72);
+  border-color:var(--line,#e5ded4);flex:0 0 auto;
+}
+.bskt-btn:hover{filter:brightness(1.05)}
+
+.bskt-toast{
+  position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(8px);
+  z-index:80;background:var(--ink,#2B2622);color:var(--bg,#FFF8F0);
+  border-radius:999px;padding:8px 18px;font-size:.84rem;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;
+}
+.bskt-toast.on{opacity:.95;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:640px){
+  .bskt-panel{right:12px;left:12px;width:auto;bottom:70px}
+  .bskt-fab{right:14px;bottom:14px;padding:10px 15px}
+}
+
+/* 인쇄할 때 담기함 자체는 나오지 않는다 */
+@media print{
+  .bskt-fab,.bskt-panel,.bskt-toast,.bskt-add{display:none !important}
+}

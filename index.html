@@ -33,6 +33,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/brand.css">
 <link rel="stylesheet" href="assets/topbar.css">
+<link rel="stylesheet" href="assets/basket.css" />
 <style>
 :root{
   --bg:#FFF8F0; --card:#FFFFFF; --line:#EFE6DA; --line2:#F1E9DD;
@@ -216,9 +217,12 @@ footer.site a{color:var(--accent);font-weight:600}
   </div>
 </div></footer>
 
+<script src="assets/basket.js"></script>
 <script>
 "use strict";
 var $=function(s){return document.querySelector(s)};
+/* 허브에는 담기 버튼이 없다 — 다른 서가에서 담은 것을 여기서 꺼내 볼 수 있게만 한다 */
+Basket.init({root:"./"});
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 

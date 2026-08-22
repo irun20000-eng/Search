@@ -126,7 +126,16 @@ html[data-pre="light"] body{background:#FFF8F0;color:#2B2622}
 .vidcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .vidcard .vt{font-size:.8rem;font-weight:700;color:var(--txt);padding:.5rem .6rem .15rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .vidcard .vm{font-size:.71rem;color:var(--faint);padding:0 .6rem .55rem;display:flex;gap:.4rem;flex-wrap:wrap}
-</style><script>
+.gcard .body{flex:1;display:flex;flex-direction:column}
+/* 담기는 카드 길이와 무관하게 늘 오른쪽 아래 같은 자리.
+   카드가 <a> 라 담기 버튼이 앵커 안에 들어간다 — 파서가 그대로 두고,
+   Basket 이 클릭에서 preventDefault 하므로 카드 이동과 섞이지 않는다.
+   바깥으로 빼면 .gcard 를 직접 여닫는 필터(apply)를 함께 고쳐야 한다. */
+.cardfoot{display:flex;justify-content:flex-end;align-items:center;
+  margin-top:auto;padding-top:.7rem}
+</style>
+<link rel="stylesheet" href="../assets/basket.css" />
+<script>
 /* 테마를 페인트 전에 복원한다. 아래에서 복원하면 다크 사용자가 매 방문마다 라이트→다크 깜빡임을 본다.
    키는 메인 갤러리(stTheme)와 공유해 갤러리 간 테마가 따로 놀지 않게 한다. */
 (function(){try{var t=localStorage.getItem('stTheme')||localStorage.getItem('vgTheme');
@@ -136,6 +145,7 @@ if(t)document.documentElement.setAttribute('data-pre',t);}catch(e){}})();
 <link rel="stylesheet" href="../assets/topbar.css">
 </head>
 <body data-theme="light" id="top">
+<script src="../assets/basket.js"></script>
 <script src="../assets/topbar.js" data-section="guides" data-root="../"></script><div id="bar"></div>
 <div class="util"><button class="btn" id="themeBtn">◑ 다크</button></div>
 <div class="wrap">
@@ -333,6 +343,7 @@ function mdRender(md){
   return out.join('\n');
 }
 
+Basket.init({section:"guides", root:"../"});
 var MANIFEST="manifest.json", GUIDES=[];
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function thumb(id){return 'https://i.ytimg.com/vi/'+encodeURIComponent(id)+'/hqdefault.jpg'}
@@ -373,7 +384,14 @@ function buildCards(){
       +'<div class="body"><div class="gmeta"><span class="lv" data-lv="'+esc(g.level)+'">'+esc(g.level)+'</span>'
       +'<span class="tm">⏱ 약 '+esc(g.minutes)+'분 · 영상 '+((g.videos||[]).length)+'편</span></div>'
       +'<div class="ttl">'+esc(g.title)+'</div>'
-      +'<div class="one">'+esc(g.summary)+'</div></div></a>'}).join('');
+      +'<div class="one">'+esc(g.summary)+'</div>'
+      +'<div class="cardfoot">'+Basket.button({k:g.slug})+'</div></div></a>'}).join('');
+  Basket.wire(document.getElementById('grid'), function(k){
+    var g=GUIDES.filter(function(x){return x.slug===k})[0];
+    if(!g) return null;
+    return { t:g.title, m:g.level+(g.date?" · "+g.date:""),
+             u:"guides/#g="+k, p:"guides/"+g.path, kind:"md" };
+  });
 }
 function buildPosts(){
   document.getElementById('posts').innerHTML=GUIDES.map(function(g){

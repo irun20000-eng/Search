@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/basket.css" />
 <style>
   :root{
     --bg:#FFF8F0; --card:#FFFFFF; --line:#EFE6DA; --line2:#F1E9DD;
@@ -100,6 +101,11 @@
     padding:22px 20px 40px;text-align:center}
   footer code{background:var(--chip);border-radius:5px;padding:1px 5px}
   @media(max-width:640px){.wrap{padding:24px 15px 50px}h1{font-size:1.6rem}}
+  /* 담기는 카드 내용 길이와 무관하게 늘 카드 오른쪽 아래 같은 자리에 온다.
+     grid 는 같은 행의 카드 높이를 맞춰 주므로 margin-top:auto 면 눈높이가 맞는다. */
+  .cardfoot{display:flex;justify-content:flex-end;align-items:center;
+    margin-top:auto;padding-top:10px}
+  .fspacer{flex:1}
 </style>
 </head>
 <body>
@@ -154,6 +160,7 @@
   </div>
 </div>
 
+<script src="../assets/basket.js"></script>
 <script>
 /* 테마 저장 키는 이룬 서재 전체가 stTheme 하나로 통일돼 있다(CLAUDE.md). */
 function applyTheme(t){
@@ -169,6 +176,7 @@ function toggleTheme(){
   applyTheme(nt);
 }
 initTheme();
+Basket.init({section:"cardnews", root:"../"});
 
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
@@ -177,13 +185,14 @@ var EPS=[], SERIES=[], SMAP={}, filt="all", cur=null, at=0;
 
 function cardHTML(e){
   var s=SMAP[e.series]||{label:e.series,c1:"#888"};
-  return '<button class="ec" data-f="'+esc(e.folder)+'">'+
+  return '<div class="ec" role="button" tabindex="0" data-f="'+esc(e.folder)+'">'+
     '<div class="thumb"><img loading="lazy" src="assets/'+esc(e.folder)+'/'+esc(e.images[0])+'" alt=""></div>'+
     '<div class="body"><span class="sbadge" style="background:'+esc(s.c1)+'">'+esc(s.label)+'</span>'+
     '<h3>'+esc(e.title)+'</h3>'+
     '<div class="ang">'+esc(e.angle)+'</div>'+
     '<div class="n">'+e.images.length+'장'+(e.study?' · 이해편 있음':'')+'</div>'+
-    '</div></button>';
+    '<div class="cardfoot">'+Basket.button({k:e.folder})+'</div>'+
+    '</div></div>';
 }
 
 function matches(e, q){
@@ -204,6 +213,15 @@ function paint(){
   em.style.display=list.length?"none":"";
   Array.prototype.forEach.call(document.querySelectorAll(".ec"),function(b){
     b.addEventListener("click",function(){ openEp(b.dataset.f); });
+  });
+  Basket.keyable(document, ".ec");
+  Basket.wire(document, function(k){
+    var e=EPS.filter(function(x){return x.folder===k})[0];
+    if(!e) return null;
+    var s=SMAP[e.series]||{};
+    return { t:e.title, m:(s.label||"")+(e.date?" · "+e.date:""),
+             u:"cardnews/#c="+k, kind:"cuts", cap:e.caption,
+             imgs:e.images.map(function(i){ return "cardnews/assets/"+k+"/"+i; }) };
   });
   Array.prototype.forEach.call(document.querySelectorAll(".f"),function(b){
     b.classList.toggle("on", b.dataset.k===filt);
