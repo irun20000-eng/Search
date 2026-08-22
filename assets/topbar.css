@@ -40,6 +40,9 @@
 .itb-tabs a:hover{ background:var(--tb-chip); color:var(--tb-ink) }
 .itb-tabs a.on{ background:var(--tb-ink); color:var(--tb-bg) }
 
+/* 페이지가 얹는 컨트롤(테마 버튼 등). 모양은 페이지가 정하고 자리만 여기서 준다. */
+.itb-slot{ display:flex; align-items:center; gap:6px; margin-left:6px }
+
 @media(max-width:720px){
   .itb-in{ flex-wrap:wrap; row-gap:8px; padding:10px 16px }
   .itb-brand{ margin-right:auto }
