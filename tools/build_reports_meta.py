@@ -92,6 +92,7 @@ CATS = {
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
+    "odyssey-troy": "culture", "odyssey-troy-advanced": "culture",
 }
 
 # 슬러그로 유추할 수 없는 짝
