@@ -1,0 +1,121 @@
+# 개념 한 장 렌더 — 러너를 기준 환경으로 삼는다
+#
+# 왜: 개념 한 장은 처음 다섯 장이 윈도우 PC 에서 폴백 폰트(맑은 고딕)로 그려졌다.
+#     의도한 폰트는 Noto Sans CJK KR 이었는데 그 PC 에 없었을 뿐이다.
+#     2026-08-22 사용자 판단 — 앞으로는 한 기준으로만 나오면 되고, 처음 두 장
+#     (스펙이 남지 않은 심슨·최적정지)은 테스트분으로 둔다.
+#     그래서 기준 환경을 **러너**로 옮긴다. 카드뉴스와 같은 환경이 된다.
+#
+# 무엇을: studio/concepts/<슬러그>.py 의 SPEC 을 렌더해 concept/assets/<슬러그>.png 로 넣는다.
+#     본문(concept/notes/*.md)과 manifest 는 건드리지 않는다 — 그림만 다시 그린다.
+#
+# 언제: 스펙이나 빌더가 바뀐 push, 또는 손으로 실행(workflow_dispatch).
+name: 개념 한 장 렌더
+
+on:
+  push:
+    branches-ignore: [main]
+    paths:
+      - 'studio/concepts/**'
+      - 'studio/engine/build_concept_sheet.py'
+      - 'studio/engine/brand_signature.py'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: '한 장만 그릴 슬러그 (비우면 전부)'
+        required: false
+
+concurrency:
+  group: concept-sheet-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 한글 폰트 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+          fc-cache -f
+          # 설치가 조용히 실패하면 글자가 두부(네모)로 그려진 그림이 그대로 커밋된다.
+          fc-list | grep -qi "noto.*cjk" || { echo "::error::Noto CJK 폰트 설치 실패"; exit 1; }
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 의존성
+        run: |
+          python -m pip install -q --upgrade pip
+          pip install -q -r studio/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: 렌더
+        id: render
+        run: |
+          cd studio
+          if [ -n "${{ inputs.slug }}" ]; then
+            python concept_sheet.py build "${{ inputs.slug }}"
+          else
+            python concept_sheet.py build --all
+          fi
+
+      # 스펙 파일 이름이 곧 개념노트 슬러그다(survivorship-bias.py → survivorship-bias.png).
+      # 본문이 없는 슬러그는 넣지 않는다 — 그림만 떠도는 것을 막는다.
+      - name: 서가 그림 교체
+        run: |
+          python - <<'PY'
+          import pathlib, shutil, sys, importlib.util
+          specs = sorted(pathlib.Path('studio/concepts').glob('*.py'))
+          out = pathlib.Path('studio/out')
+          moved, skipped = [], []
+          for s in specs:
+              slug = s.stem
+              if not pathlib.Path('concept/notes/%s.md' % slug).exists():
+                  skipped.append((slug, '본문 없음')); continue
+              spec = importlib.util.spec_from_file_location('s_' + slug, s)
+              m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+              png = out / ('개념한장_%s.png' % m.SPEC['file_key'])
+              if not png.exists():
+                  skipped.append((slug, '렌더 결과 없음')); continue
+              shutil.copy2(png, 'concept/assets/%s.png' % slug)
+              moved.append(slug)
+          print('교체 %d장: %s' % (len(moved), ', '.join(moved)))
+          for s, why in skipped:
+              print('  건너뜀 %s — %s' % (s, why))
+          if not moved:
+              print('::error::교체된 그림이 없다'); sys.exit(1)
+          PY
+
+      - name: 바뀌었으면 커밋
+        id: commit
+        run: |
+          if git diff --quiet -- concept/assets/; then
+            echo "변경 없음 — 커밋 생략"
+            echo "changed=0" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add concept/assets/
+          git commit -m "chore(concept): 개념 한 장 러너 렌더"
+          git push
+          echo "changed=1" >> $GITHUB_OUTPUT
+
+      - name: 요약
+        if: always()
+        run: |
+          echo "### 개념 한 장 렌더" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          fc-list | grep -oiP "Noto Sans CJK KR" | head -1 >> $GITHUB_STEP_SUMMARY || true
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "바뀐 그림: \`${{ steps.commit.outputs.changed }}\` (1이면 커밋됨)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "★ 그림을 눈으로 확인할 것. 자동검사는 넘침과 여백만 본다." >> $GITHUB_STEP_SUMMARY
