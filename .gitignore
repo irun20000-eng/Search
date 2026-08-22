@@ -10,3 +10,7 @@ node_modules/
 __pycache__/
 .omc/
 .playwright-mcp/
+
+# 카드뉴스 스튜디오 산출물 (렌더 결과는 cardnews/ 로만 반입한다)
+studio/out/
+studio/dist/
