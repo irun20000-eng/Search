@@ -45,7 +45,12 @@
 | 파일 | 넣는 것 |
 |---|---|
 | `studio/contents/contents_<시리즈>.py` | `EPn = {...}` 카피 본문 + `EPISODES` 에 등록 |
-| `cardnews/cardnews.yaml` 의 `episodes` | `folder` · `series` · `title` · `angle` · `layout` · `date` · `images[]` · `caption` |
+| `cardnews/cardnews.yaml` 의 `episodes` | `folder` · `series` · `title` · `angle` · `layout` · **`date`** · `images[]` · `caption` |
+
+> ⚠️ **`date` 는 필수다. 오늘 날짜(`YYYY-MM-DD`)를 넣는다.**
+> 허브의 '최근에 올린 것' 과 갤러리 정렬이 이 값으로 돈다. 비워 두면 새 편이
+> 목록에 아예 안 뜬다. `cardnews-sync` 워크플로가 date 없는 새 편을 발견하면
+> 실패시킨다(옛 백필 16편만 `backfilled_no_date` 로 면제).
 
 `folder` 는 `<시리즈>_<두자리>_<키워드>` (한글 그대로).
 `images` 는 `<prefix><NN>.webp` 10개 — prefix 는 같은 시리즈의 직전 편을 따른다.

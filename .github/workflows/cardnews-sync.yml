@@ -64,6 +64,24 @@ jobs:
           print('정합성 OK')
           PY
 
+      - name: 새 편에 date 가 있는지
+        run: |
+          python - <<'PY'
+          import io, yaml, sys
+          d = yaml.safe_load(io.open('cardnews/cardnews.yaml', encoding='utf-8')) or {}
+          grand = set(d.get('backfilled_no_date') or [])
+          bad = [e['folder'] for e in d.get('episodes', [])
+                 if not e.get('date') and e['folder'] not in grand]
+          if bad:
+              print('date 가 빠진 편 %d개:' % len(bad))
+              for b in bad: print('  -', b)
+              print()
+              print("앞으로 만드는 편은 date 가 필수다. 최근 목록·정렬이 이 값으로 돈다.")
+              print("실제 제작일을 모르는 옛 편이라면 backfilled_no_date 에 넣을 것.")
+              sys.exit(1)
+          print('date 검사 OK — 백필 %d편 제외, 나머지 전부 보유' % len(grand))
+          PY
+
       - name: 개념노트 ↔ 카드뉴스 연결 확인
         run: |
           python - <<'PY'

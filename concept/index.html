@@ -64,7 +64,20 @@
   .sheet .close{float:right;border:1px solid var(--line);background:var(--bg);color:var(--muted);
     border-radius:999px;width:34px;height:34px;font-size:1.1rem;cursor:pointer;line-height:1}
   .meta{color:var(--muted);font-size:.85rem;margin:0 0 10px}
-  .hero{width:100%;border-radius:14px;border:1px solid var(--line);margin:0 0 22px;display:block}
+  .hero{width:100%;border-radius:14px;border:1px solid var(--line);margin:0 0 6px;display:block;cursor:zoom-in}
+  .herocap{font-size:.79rem;color:var(--muted);margin:0 0 22px;text-align:center}
+  /* 개념한장 확대 — 원본 1536x1024 를 화면 가득 */
+  .zoom{position:fixed;inset:0;z-index:80;background:rgba(12,8,4,.88);display:none;
+    align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+  .zoom.on{display:flex}
+  .zoom img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;
+    box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .zoom .zclose{position:absolute;top:16px;right:18px;border:1px solid rgba(255,255,255,.4);
+    background:rgba(0,0,0,.4);color:#fff;border-radius:999px;width:38px;height:38px;
+    font-size:1.15rem;cursor:pointer;line-height:1}
+  .zoom .zdl{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);
+    color:#fff;font-size:.85rem;text-decoration:none;border:1px solid rgba(255,255,255,.4);
+    border-radius:999px;padding:7px 16px;background:rgba(0,0,0,.4)}
   .post h1{font-size:1.66rem;line-height:1.35;margin:4px 0 12px}
   .post h2{font-size:1.2rem;margin:30px 0 10px;padding-top:16px;border-top:1px solid var(--line2)}
   .post h3{font-size:1.03rem;margin:22px 0 8px}
@@ -122,11 +135,18 @@
 
 <footer>글은 <code>concept/notes/&lt;슬러그&gt;.md</code>에 한 편씩 저장되고, 이 페이지는 <code>concept/manifest.json</code>을 읽어 카드를 산출합니다. 정본은 옵시디언 볼트이며 <code>tools/ingest_concept.py</code>로 반입합니다.</footer>
 
+<div class="zoom" id="zoom" onclick="if(event.target===this||event.target.tagName==='IMG')closeZoom()">
+  <button class="zclose" onclick="closeZoom()" aria-label="닫기">✕</button>
+  <img id="zimg" alt="개념 한 장 확대" />
+  <a class="zdl" id="zdl" download>원본 내려받기</a>
+</div>
+
 <div class="ov" id="ov" onclick="if(event.target===this)closeNote()">
   <div class="sheet">
     <button class="close" onclick="closeNote()">✕</button>
     <div class="meta" id="nmeta"></div>
-    <img class="hero" id="nhero" alt="" style="display:none" />
+    <img class="hero" id="nhero" alt="개념 한 장" style="display:none" onclick="openZoom()" />
+    <p class="herocap" id="nherocap" style="display:none">그림을 누르면 크게 볼 수 있습니다</p>
     <div class="post" id="nbody"></div>
   </div>
 </div>
@@ -217,7 +237,12 @@ function openNote(slug){
   var ov=document.getElementById("ov"), body=document.getElementById("nbody");
   document.getElementById("nmeta").textContent=(n.level||n.depth)+" · "+n.date+(n.cardnews?" · "+n.cardnews:"");
   var hero=document.getElementById("nhero");
-  if(n.pic){ hero.src="assets/"+n.pic; hero.style.display=""; } else { hero.style.display="none"; }
+  var hcap=document.getElementById("nherocap");
+  if(n.pic){
+    hero.src="assets/"+n.pic; hero.style.display=""; hcap.style.display="";
+    document.getElementById("zimg").src="assets/"+n.pic;
+    document.getElementById("zdl").href="assets/"+n.pic;
+  } else { hero.style.display="none"; hcap.style.display="none"; }
   body.innerHTML='<p class="meta">불러오는 중…</p>';
   ov.classList.add("on"); document.body.style.overflow="hidden";
   location.hash="n="+slug;
@@ -235,7 +260,18 @@ function closeNote(){
   document.body.style.overflow="";
   if(location.hash.indexOf("#n=")===0) history.replaceState(null,"",location.pathname);
 }
-document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeNote(); });
+function openZoom(){
+  var z=document.getElementById("zoom");
+  if(!document.getElementById("zimg").src) return;
+  z.classList.add("on");
+}
+function closeZoom(){ document.getElementById("zoom").classList.remove("on"); }
+/* Esc 는 확대가 열려 있으면 확대부터 닫는다 — 글까지 함께 닫히면 성가시다 */
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Escape") return;
+  if(document.getElementById("zoom").classList.contains("on")) closeZoom();
+  else closeNote();
+});
 window.addEventListener("hashchange",function(){
   var h=location.hash;
   if(h.indexOf("#n=")===0){ openNote(decodeURIComponent(h.slice(3))); }
