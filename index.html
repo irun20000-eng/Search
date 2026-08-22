@@ -39,9 +39,9 @@
   --ink:#2B2622; --muted:#8A7E72; --accent:#E8743B; --accent-soft:#FCEDE1;
   --chip:#F7F1E8;
   --c-research:#C2582B; --c-videos:#4A7C86; --c-guides:#6B7A3F; --c-math:#6A4870;
-  --c-learn:#2F6F5E; --c-cardnews:#B8563F; --c-blog:#4B5C8A;
+  --c-learn:#2F6F5E; --c-cardnews:#B8563F; --c-blog:#4B5C8A; --c-concept:#7A5A9E;
   --sb-research:#FCEDE1; --sb-videos:#E6F0F2; --sb-guides:#EDF1E2; --sb-math:#F0E9F2;
-  --sb-learn:#E3F0EB; --sb-cardnews:#FBE9E3; --sb-blog:#E9ECF6;
+  --sb-learn:#E3F0EB; --sb-cardnews:#FBE9E3; --sb-blog:#E9ECF6; --sb-concept:#EFE9F5;
   --shadow:0 6px 22px rgba(120,90,60,.08);
   --shadow-lg:0 14px 34px rgba(120,90,60,.16);
   --barbg:rgba(255,248,240,.92);
@@ -54,9 +54,9 @@
   --ink:#f0e8de; --muted:#a99d8e; --accent:#F2894C; --accent-soft:#3a2a1e;
   --chip:#2c251f;
   --c-research:#f0a06a; --c-videos:#7FB4BE; --c-guides:#A3B36E; --c-math:#B08CB8;
-  --c-learn:#79BCA6; --c-cardnews:#E29078; --c-blog:#95A4D4;
+  --c-learn:#79BCA6; --c-cardnews:#E29078; --c-blog:#95A4D4; --c-concept:#B49BD6;
   --sb-research:#3a2a1e; --sb-videos:#22322f; --sb-guides:#28301f; --sb-math:#2e2333;
-  --sb-learn:#1c2f29; --sb-cardnews:#332320; --sb-blog:#232838;
+  --sb-learn:#1c2f29; --sb-cardnews:#332320; --sb-blog:#232838; --sb-concept:#2a2436;
   --shadow:0 6px 22px rgba(0,0,0,.35);
   --shadow-lg:0 14px 34px rgba(0,0,0,.45);
   --barbg:rgba(26,22,19,.92);
@@ -107,6 +107,8 @@ button{font-family:var(--font)}
 .sec-guides{background:var(--sb-guides);color:var(--c-guides)}
 .sec-math{background:var(--sb-math);color:var(--c-math)}
 .sec-blog{background:var(--sb-blog);color:var(--c-blog)}
+.sec-cardnews{background:var(--sb-cardnews);color:var(--c-cardnews)}
+.sec-concept{background:var(--sb-concept);color:var(--c-concept)}
 .ritem .t{flex:1;font-size:.92rem;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ritem mark{background:var(--accent-soft);color:var(--accent);font-weight:700;padding:0 1px;border-radius:3px}
 .nores{padding:22px 16px;text-align:center;color:var(--muted);font-size:.9rem}
@@ -174,9 +176,9 @@ footer.site a{color:var(--accent);font-weight:600}
 
     <div class="searchbox">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
-      <input id="q" type="search" placeholder="다섯 서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off" aria-label="통합 검색">
+      <input id="q" type="search" placeholder="일곱 서가를 한 번에 찾기 —  미적분, 뉴턴, 클로드, 자동화…" autocomplete="off" aria-label="통합 검색">
     </div>
-    <div class="hint">한 번의 검색으로 <b>리서치 · 영상노트 · 가이드 · 수학사 · 블로그</b>를 모두 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
+    <div class="hint">한 번의 검색으로 <b>일곱 서가</b>를 한 번에 훑습니다<span class="kbdhint"> · 어디서든 <kbd>/</kbd> 를 누르면 검색창으로 갑니다</span></div>
     <div class="results" id="res" role="listbox"></div>
   </section>
 
@@ -189,7 +191,7 @@ footer.site a{color:var(--accent);font-weight:600}
   <div class="grid" id="shelves-ext"></div>
 
   <h2 class="sec-h">최근에 올린 것</h2>
-  <p class="sec-p">다섯 서가를 합쳐 최신순으로.</p>
+  <p class="sec-p">일곱 서가를 합쳐 최신순으로.</p>
   <div class="recent" id="recent"></div>
 
   <h2 class="sec-h">묶어 읽기</h2>
@@ -218,8 +220,8 @@ var $=function(s){return document.querySelector(s)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 
-var LABEL={research:"리서치",videos:"영상노트",guides:"가이드",math:"수학사",blog:"블로그"};
-var ORDER=["research","videos","guides","math","blog"];
+var LABEL={research:"리서치",videos:"영상노트",guides:"가이드",math:"수학사",blog:"블로그",cardnews:"카드뉴스",concept:"개념노트"};
+var ORDER=["research","videos","guides","math","blog","cardnews","concept"];
 var SHELF={
   research:{desc:"관심 주제를 국내·해외 출처로 파고들어 만든 심층 보고서. 모든 주장에 인용이 붙습니다.",
     cover:'<rect width="300" height="88" fill="var(--sb-research)"/><g stroke="var(--c-research)" stroke-width="2" fill="none" opacity=".55"><path d="M20 70 L58 26 L96 58 L134 18 L172 48 L210 22 L248 54 L286 30"/></g><g fill="var(--c-research)" opacity=".8"><circle cx="58" cy="26" r="4"/><circle cx="134" cy="18" r="4"/><circle cx="210" cy="22" r="4"/></g>'},
@@ -230,7 +232,11 @@ var SHELF={
   math:{desc:"세기 · 개념 · 인물 · 일화로 엮은 아카이브. 일화에는 사실성 판정이 붙습니다.",
     cover:'<rect width="300" height="88" fill="var(--sb-math)"/><line x1="20" y1="66" x2="280" y2="66" stroke="var(--c-math)" stroke-width="1.6" opacity=".5"/><g fill="var(--c-math)" opacity=".8"><circle cx="52" cy="66" r="5"/><circle cx="112" cy="66" r="7"/><circle cx="172" cy="66" r="5"/><circle cx="232" cy="66" r="5"/></g><g fill="var(--c-math)" opacity=".45" font-family="Georgia,serif" font-size="12"><text x="40" y="34">16</text><text x="100" y="26">17</text><text x="162" y="34">18</text><text x="222" y="34">19</text></g>'},
   blog:{desc:"바깥에 발행한 글을 전문으로 읽습니다. 수학 개념 · AI 활용 · 입시를 다룹니다.",
-    cover:'<rect width="300" height="88" fill="var(--sb-blog)"/><g fill="var(--c-blog)" opacity=".7"><rect x="40" y="24" width="120" height="5" rx="2.5"/><rect x="40" y="40" width="170" height="4" rx="2"/><rect x="40" y="52" width="150" height="4" rx="2"/><rect x="40" y="64" width="96" height="4" rx="2"/></g><g fill="none" stroke="var(--c-blog)" stroke-width="2" opacity=".5"><path d="M232 60 L232 26 L262 26"/><path d="M246 42 L268 42"/></g>'}
+    cover:'<rect width="300" height="88" fill="var(--sb-blog)"/><g fill="var(--c-blog)" opacity=".7"><rect x="40" y="24" width="120" height="5" rx="2.5"/><rect x="40" y="40" width="170" height="4" rx="2"/><rect x="40" y="52" width="150" height="4" rx="2"/><rect x="40" y="64" width="96" height="4" rx="2"/></g><g fill="none" stroke="var(--c-blog)" stroke-width="2" opacity=".5"><path d="M232 60 L232 26 L262 26"/><path d="M246 42 L268 42"/></g>'},
+  cardnews:{desc:"한 장씩 넘겨 보는 짧은 노트. 부모 · 일머리 · 숫자 · 발견 네 갈래로 이어집니다.",
+    cover:'<rect width="300" height="88" fill="var(--sb-cardnews)"/><g fill="none" stroke="var(--c-cardnews)" stroke-width="2" opacity=".55"><rect x="46" y="20" width="60" height="50" rx="6"/><rect x="120" y="14" width="60" height="60" rx="6"/><rect x="194" y="20" width="60" height="50" rx="6"/></g><g fill="var(--c-cardnews)" opacity=".7"><rect x="132" y="28" width="36" height="4" rx="2"/><rect x="132" y="40" width="28" height="4" rx="2"/><rect x="132" y="52" width="32" height="4" rx="2"/></g>'},
+  concept:{desc:"카드뉴스로 다 담지 못한 개념을 한 장 그림과 한 편의 글로. 이름과 출처가 있는 것만 다룹니다.",
+    cover:'<rect width="300" height="88" fill="var(--sb-concept)"/><circle cx="86" cy="44" r="26" fill="none" stroke="var(--c-concept)" stroke-width="2" opacity=".55"/><circle cx="86" cy="44" r="7" fill="var(--c-concept)" opacity=".8"/><g fill="var(--c-concept)" opacity=".65"><rect x="140" y="26" width="118" height="5" rx="2.5"/><rect x="140" y="40" width="140" height="4" rx="2"/><rect x="140" y="52" width="126" height="4" rx="2"/><rect x="140" y="64" width="80" height="4" rx="2"/></g>'}
 };
 
 /* ── 바깥 서가 — 다른 저장소의 갤러리 ──
@@ -241,17 +247,7 @@ var EXTRA=[
   {k:"learn", label:"학습자료",
    url:"/youtube-math-skill/", manifest:"/youtube-math-skill/manifest.json",
    desc:"유튜브 수학 강의를 학년·단원별 학습자료로 만든 갤러리. 단계별 풀이와 문항이 함께 있습니다.",
-   cover:'<rect width="300" height="88" fill="var(--sb-learn)"/><g stroke="var(--c-learn)" stroke-width="2" fill="none" opacity=".5"><path d="M26 64 Q 76 20 126 52 T 226 34"/></g><g fill="var(--c-learn)" opacity=".8"><rect x="238" y="26" width="40" height="30" rx="4"/></g><g fill="var(--sb-learn)"><path d="M252 34 L266 41 L252 48 Z"/></g><g fill="var(--c-learn)" opacity=".55" font-family="Georgia,serif" font-size="13"><text x="30" y="30">f(x)</text></g>'},
-  {k:"cardnews", label:"카드뉴스",
-   url:"/Main/gallery/cardnews.html", manifest:"/Main/gallery/cardnews.manifest.json",
-   desc:"한 장씩 넘겨 보는 짧은 노트. 부모 노트 · 숫자 노트 · 일머리 노트 같은 묶음으로 나뉩니다.",
-   cover:'<rect width="300" height="88" fill="var(--sb-cardnews)"/><g fill="none" stroke="var(--c-cardnews)" stroke-width="2" opacity=".55"><rect x="46" y="20" width="60" height="50" rx="6"/><rect x="120" y="14" width="60" height="60" rx="6"/><rect x="194" y="20" width="60" height="50" rx="6"/></g><g fill="var(--c-cardnews)" opacity=".7"><rect x="132" y="28" width="36" height="4" rx="2"/><rect x="132" y="40" width="28" height="4" rx="2"/><rect x="132" y="52" width="32" height="4" rx="2"/></g>'}];
-/* 묶어 읽기 — 서가 경계를 넘는 주제. 편수는 색인에서 실시간으로 센다. */
-var COLLS=[
-  {t:"미적분, 처음부터 끝까지", q:"미적분", d:"17세기 탄생 배경부터 개념 정리와 엄밀화까지 한 줄로."},
-  {t:"클로드 코드 전부",       q:"클로드", d:"플러그인·MCP·스킬 리서치와 따라 하기 영상, 실행 가이드."},
-  {t:"업무 자동화",            q:"자동화", d:"n8n·Zapier·Slack — 조사한 것과 따라 해 본 것."}
-];
+   cover:'<rect width="300" height="88" fill="var(--sb-learn)"/><g stroke="var(--c-learn)" stroke-width="2" fill="none" opacity=".5"><path d="M26 64 Q 76 20 126 52 T 226 34"/></g><g fill="var(--c-learn)" opacity=".8"><rect x="238" y="26" width="40" height="30" rx="4"/></g><g fill="var(--sb-learn)"><path d="M252 34 L266 41 L252 48 Z"/></g><g fill="var(--c-learn)" opacity=".55" font-family="Georgia,serif" font-size="13"><text x="30" y="30">f(x)</text></g>'}];
 
 var DOCS=[];
 

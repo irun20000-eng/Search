@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-5개 갤러리 manifest → 루트 link-index.json
+7개 갤러리 manifest → 루트 link-index.json
 
 본문의 [[위키링크]]를 실제 링크로 바꾸려면 갤러리 경계를 넘는 조회표가 필요하다.
 ([[미적분의 발견]] 은 math/ 문서에서 reports/ 문서를 가리킨다.)
@@ -17,6 +17,8 @@
   videos    videos/#post-<id>
   math      math/#n=<slug>
   blog      blog/#b=<slug>
+  cardnews  cardnews/#c=<folder>
+  concept   concept/#n=<slug>
 
 ■ 허브도 이 파일을 쓴다
   루트 index.html(허브)의 통합 검색과 '최근' 목록이 entries 를 그대로 읽는다.
@@ -91,6 +93,25 @@ def build():
         entries.append(dict(제목=b["title"], 섹션="blog", 유형=None,
                             슬러그=b["slug"], 날짜=b.get("date", ""),
                             url="blog/#b=" + b["slug"]))
+        add(len(entries) - 1, {M.norm(b["title"]), b["slug"]})
+
+    # ── cardnews ──
+    for c in load("cardnews/manifest.json").get("episodes", []):
+        entries.append(dict(제목=c["title"], 섹션="cardnews", 유형=None,
+                            슬러그=c["folder"], 날짜=c.get("date", ""),
+                            url="cardnews/#c=" + c["folder"]))
+        add(len(entries) - 1, {M.norm(c["title"]), c["folder"]})
+
+    # ── concept (개념노트) ──
+    for n in load("concept/manifest.json").get("notes", []):
+        entries.append(dict(제목=n["title"], 섹션="concept", 유형=None,
+                            슬러그=n["slug"], 날짜=n.get("date", ""),
+                            url="concept/#n=" + n["slug"]))
+        # 제목이 '최적 정지(Optimal Stopping) — 이해편(입문·딥)' 꼴이라
+        # 본문의 [[최적 정지]] 가 안 잡힌다. 짧은 이름을 별칭으로 함께 넣는다.
+        short = n["title"].split(" — ")[0]
+        base = short.split("(")[0].strip()
+        add(len(entries) - 1, {M.norm(n["title"]), M.norm(short), M.norm(base), n["slug"]})
 
     # ── math ──
     math_man = load("math/manifest.json")

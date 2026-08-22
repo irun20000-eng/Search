@@ -1,0 +1,471 @@
+{
+ "count": 20,
+ "series": [
+  {
+   "key": "parent",
+   "label": "부모 노트",
+   "desc": "아이를 키우며 매일 부딪히는 순간들",
+   "c1": "#2D7CF5"
+  },
+  {
+   "key": "work",
+   "label": "일머리 노트",
+   "desc": "열심히가 아니라 제대로 일하는 법",
+   "c1": "#2742E0"
+  },
+  {
+   "key": "number",
+   "label": "숫자 노트",
+   "desc": "숫자에 속지 않고 읽는 법",
+   "c1": "#9A7B3F"
+  },
+  {
+   "key": "discovery",
+   "label": "발견 노트",
+   "desc": "개념 하나로 세상을 다시 보기",
+   "c1": "#3DE0C2"
+  }
+ ],
+ "episodes": [
+  {
+   "folder": "부모노트_12_실수한아이",
+   "series": "parent",
+   "title": "실수한 아이에게 하는 말",
+   "angle": "실수를 덮으면 다음에 숨긴다",
+   "layout": "C",
+   "date": "",
+   "caption": "깨진 컵도 구겨진 시험지도 늘 나중에야 알게 됩니다.\n\n아이는 실수가 아니라 그때의 반응을 기억합니다.\n\"왜 그랬어\"는 묻는 말처럼 들리지만 아이에게는 판정으로 닿습니다.\n확인 · 분리 · 복구. 덮을 이유가 줄어야 다음 실수를 먼저 말하게 됩니다.\n\n저장해두고 말이 먼저 나오려 할 때 다시 꺼내 보세요.\n\n#부모노트 #실수 #훈육 #육아 #신뢰",
+   "images": [
+    "parent12_01.webp",
+    "parent12_02.webp",
+    "parent12_03.webp",
+    "parent12_04.webp",
+    "parent12_05.webp",
+    "parent12_06.webp",
+    "parent12_07.webp",
+    "parent12_08.webp",
+    "parent12_09.webp",
+    "parent12_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_11_부모먼저가라앉기",
+   "series": "parent",
+   "title": "부모가 먼저 가라앉는 법",
+   "angle": "먼저 진정해야 할 사람은 아이가 아니다",
+   "layout": "B",
+   "date": "",
+   "caption": "아이를 진정시키려는 순간, 먼저 올라오는 건 아이가 아니라 나였습니다.\n\n가라앉지 않은 상태에서 한 말은 내용과 상관없이 크기로 먼저 닿습니다.\n멈춤 · 호흡 · 예고. 순서는 언제나 어른이 먼저입니다.\n\n저장해두고 말이 앞서려 할 때 다시 꺼내 보세요.\n\n#부모노트 #감정조절 #육아 #훈육 #부모마음",
+   "images": [
+    "parent11_01.webp",
+    "parent11_02.webp",
+    "parent11_03.webp",
+    "parent11_04.webp",
+    "parent11_05.webp",
+    "parent11_06.webp",
+    "parent11_07.webp",
+    "parent11_08.webp",
+    "parent11_09.webp",
+    "parent11_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_10_떼쓰는아이진정",
+   "series": "parent",
+   "title": "떼쓰는 아이 진정시키는 법",
+   "angle": "떼는 고집이 아니라 신호다",
+   "layout": "A",
+   "date": "",
+   "caption": "떼쓰는 순간 아이는 말을 들을 상태가 아닙니다.\n\n멈추게 하는 것보다 가라앉게 두는 것이 먼저입니다.\n\n저장해두고 떼가 시작될 때 다시 꺼내 보세요.\n\n#부모노트 #떼쓰기 #감정조절 #육아 #훈육",
+   "images": [
+    "parent10_01.webp",
+    "parent10_02.webp",
+    "parent10_03.webp",
+    "parent10_04.webp",
+    "parent10_05.webp",
+    "parent10_06.webp",
+    "parent10_07.webp",
+    "parent10_08.webp",
+    "parent10_09.webp",
+    "parent10_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_09_형제자매싸움중재",
+   "series": "parent",
+   "title": "형제자매 싸움 중재하기",
+   "angle": "심판이 아니라 통역",
+   "layout": "C",
+   "date": "",
+   "caption": "\"누가 먼저야?\"\n\n그 질문부터가 틀렸습니다. 부모는 심판이 아니라 통역이어야 합니다.\n\n저장해두고 싸움이 붙을 때 다시 꺼내 보세요.\n\n#부모노트 #형제자매 #남매싸움 #육아 #갈등중재",
+   "images": [
+    "parent09_01.webp",
+    "parent09_02.webp",
+    "parent09_03.webp",
+    "parent09_04.webp",
+    "parent09_05.webp",
+    "parent09_06.webp",
+    "parent09_07.webp",
+    "parent09_08.webp",
+    "parent09_09.webp",
+    "parent09_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_08_형제비교",
+   "series": "parent",
+   "title": "형제 비교, 무심코 주는 상처",
+   "angle": "비교는 기억에 남는다",
+   "layout": "B",
+   "date": "",
+   "caption": "\"형은 안 그랬는데\"\n\n지나가듯 한 말이 아이에게는 오래 남습니다.\n비교는 동기가 되지 않고 자리만 만듭니다.\n\n저장해두고 말이 나오려 할 때 다시 꺼내 보세요.\n\n#부모노트 #형제자매 #비교 #육아 #자존감",
+   "images": [
+    "parent08_01.webp",
+    "parent08_02.webp",
+    "parent08_03.webp",
+    "parent08_04.webp",
+    "parent08_05.webp",
+    "parent08_06.webp",
+    "parent08_07.webp",
+    "parent08_08.webp",
+    "parent08_09.webp",
+    "parent08_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_07_칭찬기술",
+   "series": "parent",
+   "title": "자존감을 키우는 칭찬의 기술",
+   "angle": "'잘했어'보다 '어떻게 했어'",
+   "layout": "A",
+   "date": "",
+   "caption": "\"잘했어\"는 짧습니다. 그리고 다음이 없습니다.\n\n과정을 묻는 칭찬이 아이를 계속 움직이게 합니다.\n\n저장해두고 칭찬할 일이 생길 때 다시 꺼내 보세요.\n\n#부모노트 #칭찬 #자존감 #육아 #성장마인드셋",
+   "images": [
+    "parent07_01.webp",
+    "parent07_02.webp",
+    "parent07_03.webp",
+    "parent07_04.webp",
+    "parent07_05.webp",
+    "parent07_06.webp",
+    "parent07_07.webp",
+    "parent07_08.webp",
+    "parent07_09.webp",
+    "parent07_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_06_거짓말반응",
+   "series": "parent",
+   "title": "거짓말하는 아이에게 반응하는 법",
+   "angle": "겁먹은 아이의 신호",
+   "layout": "C",
+   "date": "",
+   "caption": "아이의 거짓말은 나쁜 마음이 아니라 겁의 신호인 경우가 많습니다.\n\n혼내기 전에 무엇이 무서웠는지를 먼저 봐야 합니다.\n\n저장해두고 그런 순간에 다시 꺼내 보세요.\n\n#부모노트 #거짓말 #아동심리 #육아 #훈육",
+   "images": [
+    "parent06_01.webp",
+    "parent06_02.webp",
+    "parent06_03.webp",
+    "parent06_04.webp",
+    "parent06_05.webp",
+    "parent06_06.webp",
+    "parent06_07.webp",
+    "parent06_08.webp",
+    "parent06_09.webp",
+    "parent06_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_05_공부말대신",
+   "series": "parent",
+   "title": "공부하라는 말 대신 하는 말",
+   "angle": "동기는 잔소리로 생기지 않는다",
+   "layout": "B",
+   "date": "",
+   "caption": "\"공부 좀 해\"라는 말은 동기를 만들지 않습니다. 오히려 지웁니다.\n\n같은 상황에서 다르게 건넬 수 있는 말들이 있습니다.\n\n저장해두고 잔소리가 나오려 할 때 다시 꺼내 보세요.\n\n#부모노트 #공부습관 #동기부여 #육아 #자기주도학습",
+   "images": [
+    "parent05_01.webp",
+    "parent05_02.webp",
+    "parent05_03.webp",
+    "parent05_04.webp",
+    "parent05_05.webp",
+    "parent05_06.webp",
+    "parent05_07.webp",
+    "parent05_08.webp",
+    "parent05_09.webp",
+    "parent05_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_04_스마트폰규칙",
+   "series": "parent",
+   "title": "스마트폰 규칙",
+   "angle": "뺏을수록 더 몰래 한다",
+   "layout": "A",
+   "date": "",
+   "caption": "뺏을수록 아이는 더 몰래 합니다.\n\n규칙이 통보로 내려오면 지킬 이유가 생기지 않습니다.\n같이 정한 규칙만 살아남습니다.\n\n저장해두고 규칙을 다시 짤 때 꺼내 보세요.\n\n#부모노트 #스마트폰 #미디어교육 #육아 #디지털습관",
+   "images": [
+    "parent04_01.webp",
+    "parent04_02.webp",
+    "parent04_03.webp",
+    "parent04_04.webp",
+    "parent04_05.webp",
+    "parent04_06.webp",
+    "parent04_07.webp",
+    "parent04_08.webp",
+    "parent04_09.webp",
+    "parent04_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_03_경계세우기",
+   "series": "parent",
+   "title": "경계 세우기",
+   "angle": "화를 낼수록 경계는 무너진다",
+   "layout": "C",
+   "date": "",
+   "caption": "화를 낼수록 경계는 오히려 무너집니다.\n\n큰 목소리는 그 순간만 통하고, 다음엔 더 큰 목소리가 필요해집니다.\n경계는 세게 세우는 게 아니라 일관되게 세우는 것입니다.\n\n저장해두고 화가 올라올 때 다시 꺼내 보세요.\n\n#부모노트 #훈육 #경계세우기 #육아 #양육태도",
+   "images": [
+    "parent03_01.webp",
+    "parent03_02.webp",
+    "parent03_03.webp",
+    "parent03_04.webp",
+    "parent03_05.webp",
+    "parent03_06.webp",
+    "parent03_07.webp",
+    "parent03_08.webp",
+    "parent03_09.webp",
+    "parent03_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_02_사춘기대화법",
+   "series": "parent",
+   "title": "사춘기 대화법",
+   "angle": "말이 많을수록 아이는 입을 닫는다",
+   "layout": "B",
+   "date": "",
+   "caption": "말이 많을수록 아이는 입을 닫습니다.\n\n설득하려 할수록 멀어지고, 조언할수록 방어합니다.\n사춘기 대화는 말을 늘리는 게 아니라 줄이는 데서 시작합니다.\n\n저장해두고 대화가 막힐 때 다시 꺼내 보세요.\n\n#부모노트 #사춘기 #대화법 #중학생 #육아",
+   "images": [
+    "parent02_01.webp",
+    "parent02_02.webp",
+    "parent02_03.webp",
+    "parent02_04.webp",
+    "parent02_05.webp",
+    "parent02_06.webp",
+    "parent02_07.webp",
+    "parent02_08.webp",
+    "parent02_09.webp",
+    "parent02_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "부모노트_01_초6훈육",
+   "series": "parent",
+   "title": "초등 6학년 훈육",
+   "angle": "안 듣는 게 아니라 방식이 안 통하는 것",
+   "layout": "A",
+   "date": "",
+   "caption": "아이가 안 듣는 게 아닙니다.\n\n지금까지 통하던 방식이 더 이상 안 통하는 겁니다.\n초등 6학년은 훈육의 방식 자체를 바꿔야 하는 시기입니다.\n\n저장해두고 부딪히는 날 다시 꺼내 보세요.\n\n#부모노트 #초등고학년 #훈육 #사춘기 #육아",
+   "images": [
+    "parent01_01.webp",
+    "parent01_02.webp",
+    "parent01_03.webp",
+    "parent01_04.webp",
+    "parent01_05.webp",
+    "parent01_06.webp",
+    "parent01_07.webp",
+    "parent01_08.webp",
+    "parent01_09.webp",
+    "parent01_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "일머리노트_03_집중력",
+   "series": "work",
+   "title": "집중력을 관리하는 법",
+   "angle": "의지가 아니라 환경을 설계한다",
+   "layout": "C",
+   "date": "",
+   "caption": "붙잡을수록 흩어지는 이유가 있습니다.\n\n집중은 의지의 문제가 아니라 환경의 문제입니다. 매번 다잡는 대신, 주의를 끄는 것을 먼저 치우고 방해 없는 시간을 한 덩어리로 묶어 두면 됩니다.\n치우기 · 묶기 · 신호 — 한 번 설계해 두면 다음엔 저절로 굴러갑니다.\n\n저장해두고 주의가 자꾸 샐 때 다시 꺼내 보세요.\n\n#일머리노트 #집중력 #환경설계 #생산성 #직장인",
+   "images": [
+    "work03_01.webp",
+    "work03_02.webp",
+    "work03_03.webp",
+    "work03_04.webp",
+    "work03_05.webp",
+    "work03_06.webp",
+    "work03_07.webp",
+    "work03_08.webp",
+    "work03_09.webp",
+    "work03_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "일머리노트_02_우선순위",
+   "series": "work",
+   "title": "우선순위를 정하는 법",
+   "angle": "다 중요하면 아무것도 안 중요하다",
+   "layout": "B",
+   "date": "",
+   "caption": "할 일 목록은 왜 줄지 않을까요.\n\n적는 것은 정리지 선택이 아니기 때문입니다.\n우선순위는 일을 배열하는 기술이 아니라, 목록에서 무엇을 내릴지 정하는 일입니다.\n꺼내기 · 줄이기 · 고정하기 — 고르지 않으면 먼저 온 요청 순으로 하루가 채워집니다.\n\n저장해두고 목록이 다시 길어질 때 꺼내 보세요.\n\n#일머리노트 #우선순위 #생산성 #직장인 #업무관리",
+   "images": [
+    "work02_01.webp",
+    "work02_02.webp",
+    "work02_03.webp",
+    "work02_04.webp",
+    "work02_05.webp",
+    "work02_06.webp",
+    "work02_07.webp",
+    "work02_08.webp",
+    "work02_09.webp",
+    "work02_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "일머리노트_01_왜제자리",
+   "series": "work",
+   "title": "열심히 하는데 왜 제자리일까",
+   "angle": "문제는 노력의 양이 아니라 방향이다",
+   "layout": "A",
+   "date": "",
+   "caption": "야근도 하고 주말에도 일하는데 성과는 그대로.\n\n양을 늘려도 방향이 어긋나면 제자리입니다.\n일머리는 더 애쓰는 게 아니라 무엇에 애쓸지 먼저 고르는 것입니다.\n\n저장해두고 방향이 흔들릴 때 다시 꺼내 보세요.\n\n#일머리노트 #생산성 #우선순위 #직장인 #일잘러",
+   "images": [
+    "work01_01.webp",
+    "work01_02.webp",
+    "work01_03.webp",
+    "work01_04.webp",
+    "work01_05.webp",
+    "work01_06.webp",
+    "work01_07.webp",
+    "work01_08.webp",
+    "work01_09.webp",
+    "work01_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "숫자노트_03_심슨의역설",
+   "series": "number",
+   "title": "심슨의 역설",
+   "angle": "쪼개면 이기는데 합치면 진다",
+   "layout": "C",
+   "date": "",
+   "caption": "모든 집단에서 이겼는데, 합치니 졌습니다.\n\n계산이 틀린 게 아닙니다. 집단마다 인원이 다르면 합계의 비율은 얼마든지 뒤집힙니다.\n빠진 것은 비교한 두 열이 아니라, 집단을 나누는 세 번째 열입니다.\n나누기 · 비교하기 · 묻기 — 합계를 볼 때 확인할 셋입니다.\n\n저장해두고 '전체 비율'이라는 말을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #심슨의역설 #통계 #데이터리터러시 #비판적사고",
+   "images": [
+    "number03_01.webp",
+    "number03_02.webp",
+    "number03_03.webp",
+    "number03_04.webp",
+    "number03_05.webp",
+    "number03_06.webp",
+    "number03_07.webp",
+    "number03_08.webp",
+    "number03_09.webp",
+    "number03_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "숫자노트_02_생존자편향",
+   "series": "number",
+   "title": "생존자 편향",
+   "angle": "남은 것만 보면 틀린다",
+   "layout": "B",
+   "date": "",
+   "caption": "성공담은 왜 늘 비슷할까요.\n\n같은 말을 하고 사라진 사람도 많기 때문입니다.\n기록은 남은 쪽이 쓰고, 사라진 쪽은 말이 없습니다.\n\n저장해두고 성공담을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #생존자편향 #통계 #비판적사고 #데이터리터러시",
+   "images": [
+    "number02_01.webp",
+    "number02_02.webp",
+    "number02_03.webp",
+    "number02_04.webp",
+    "number02_05.webp",
+    "number02_06.webp",
+    "number02_07.webp",
+    "number02_08.webp",
+    "number02_09.webp",
+    "number02_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "숫자노트_01_평균착시",
+   "series": "number",
+   "title": "평균이라는 착시",
+   "angle": "평균은 대표값이 아니다",
+   "layout": "A",
+   "date": "",
+   "caption": "평균 연봉도 평균 자산도 늘 내 얘기 같지 않습니다.\n\n내가 이상한 게 아니라 평균이 그렇습니다.\n한쪽 끝의 큰 값 하나가 전체를 끌어올리기 때문입니다.\n\n저장해두고 '평균'이라는 말을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #통계 #평균 #중앙값 #데이터리터러시",
+   "images": [
+    "number01_01.webp",
+    "number01_02.webp",
+    "number01_03.webp",
+    "number01_04.webp",
+    "number01_05.webp",
+    "number01_06.webp",
+    "number01_07.webp",
+    "number01_08.webp",
+    "number01_09.webp",
+    "number01_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "발견노트_02_최적정지",
+   "series": "discovery",
+   "title": "최적 정지 (37% 법칙)",
+   "angle": "언제까지 둘러보고 언제 정할까",
+   "layout": "B",
+   "date": "",
+   "caption": "집을 열 곳쯤 보고 나면, 첫 집이 제일 나았던 것 같을 때가 있습니다.\n\n되돌릴 수 없는 선택이 순서대로 올 때는 무엇을 고를지보다 언제부터 고를지가 먼저입니다.\n앞의 37%는 기준을 만드는 데만 쓰고, 그 기준을 넘는 첫 번째에서 멈춥니다.\n성공 확률도 37% 근처입니다. 대신 같은 조건에서 이보다 나은 방법이 없습니다.\n\n저장해두고 무언가를 고르게 될 때 다시 꺼내 보세요.\n\n#발견노트 #최적정지 #37퍼센트법칙 #의사결정 #교양",
+   "images": [
+    "discovery02_01.webp",
+    "discovery02_02.webp",
+    "discovery02_03.webp",
+    "discovery02_04.webp",
+    "discovery02_05.webp",
+    "discovery02_06.webp",
+    "discovery02_07.webp",
+    "discovery02_08.webp",
+    "discovery02_09.webp",
+    "discovery02_10.webp"
+   ],
+   "study": null
+  },
+  {
+   "folder": "발견노트_01_스퀘어큐브",
+   "series": "discovery",
+   "title": "스퀘어-큐브 법칙",
+   "angle": "왜 거인은 존재할 수 없나",
+   "layout": "A",
+   "date": "",
+   "caption": "키를 두 배로 키우면 뼈의 단면은 네 배가 되지만 몸무게는 여덟 배가 됩니다.\n\n그래서 거인은 서 있지도 못합니다.\n크기가 바뀌면 형태도, 한계도, 규칙도 바뀝니다.\n\n저장해두고 무언가를 키우려 할 때 다시 꺼내 보세요.\n\n#발견노트 #과학 #스퀘어큐브법칙 #교양 #지식",
+   "images": [
+    "discovery01_01.webp",
+    "discovery01_02.webp",
+    "discovery01_03.webp",
+    "discovery01_04.webp",
+    "discovery01_05.webp",
+    "discovery01_06.webp",
+    "discovery01_07.webp",
+    "discovery01_08.webp",
+    "discovery01_09.webp",
+    "discovery01_10.webp"
+   ],
+   "study": null
+  }
+ ]
+}
