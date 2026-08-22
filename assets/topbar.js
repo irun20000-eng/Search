@@ -71,6 +71,15 @@
     sig.title = "aftermath — 만든 사람";
     sig.innerHTML = '<span class="sig"><span class="af">after</span>'
                   + '<span class="m">math</span><span class="q"></span></span>';
+    /* 페이지 고유 컨트롤 자리. 테마 버튼처럼 페이지마다 구현이 다른 것은
+       여기로 옮겨 담는다 - 탭 목록만 한곳에서 관리하고 나머지는 페이지가 갖는다.
+       쓰는 쪽: <span data-itb-slot><button …>🌙 다크</button></span> */
+    var slot = document.querySelector("[data-itb-slot]");
+    if (slot) {
+      slot.classList.add("itb-slot");
+      inner.appendChild(slot);
+    }
+
     inner.appendChild(sig);
 
     bar.appendChild(inner);
