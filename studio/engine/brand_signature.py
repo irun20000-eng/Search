@@ -11,7 +11,14 @@
 """
 import pathlib, re
 
-_SRC = pathlib.Path(__file__).with_name("wordmark-primary-green.svg")
+# 자산은 engine/assets/ 로 옮겨졌는데 참조가 형제 파일 그대로 남아 있었다.
+# 낙관이 통째로 실패하면 그림에 서명이 안 들어가므로, 두 자리를 다 보고
+# 없으면 무엇을 찾았는지 밝히며 멈춘다.
+_CANDIDATES = [
+    pathlib.Path(__file__).with_name("assets") / "wordmark-primary-green.svg",
+    pathlib.Path(__file__).with_name("wordmark-primary-green.svg"),
+]
+_SRC = next((c for c in _CANDIDATES if c.exists()), _CANDIDATES[0])
 _VIEWBOX = "56.4 65.9 471.61 74.25"      # 잉크 tight bbox
 _RATIO = 471.61 / 74.25                   # 가로/세로 ≈ 6.35
 
@@ -19,6 +26,9 @@ GREEN, GRAY, LIME = "#1F7A4D", "#99A1B0", "#D6FF3F"
 
 
 def _inner():
+    if not _SRC.exists():
+        raise SystemExit("[낙관] 워드마크 SVG 를 찾지 못했다. 찾아본 자리:\n  "
+                         + "\n  ".join(str(c) for c in _CANDIDATES))
     s = _SRC.read_text(encoding="utf-8")
     return s[s.index(">", s.index("<svg")) + 1: s.rindex("</svg>")]
 

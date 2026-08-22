@@ -1,6 +1,65 @@
 {
- "count": 2,
+ "count": 5,
  "notes": [
+  {
+   "slug": "survivorship-bias",
+   "title": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",
+   "date": "2026-08-22",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "생존자편향",
+    "선택편향",
+    "표본",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 2편 · 남은 것만 보면 틀린다",
+   "chars": 5797,
+   "pic": "survivorship-bias.png",
+   "path": "concept/notes/survivorship-bias.md"
+  },
+  {
+   "slug": "square-cube-law",
+   "title": "스퀘어-큐브 법칙(Square-Cube Law) — 이해편(입문·딥)",
+   "date": "2026-08-22",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "물리",
+    "생물",
+    "스케일링",
+    "갈릴레오",
+    "차원해석",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 1편 · 커지면 왜 부러지나",
+   "chars": 5804,
+   "pic": "square-cube-law.png",
+   "path": "concept/notes/square-cube-law.md"
+  },
+  {
+   "slug": "size-bias",
+   "title": "평균이라는 착시(Size Bias) — 이해편(입문·딥)",
+   "date": "2026-08-22",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "통계",
+    "평균",
+    "중앙값",
+    "크기편향",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 1편 · 평균은 대표가 아니다",
+   "chars": 6362,
+   "pic": "size-bias.png",
+   "path": "concept/notes/size-bias.md"
+  },
   {
    "slug": "optimal-stopping",
    "title": "최적 정지(Optimal Stopping) — 이해편(입문·딥)",

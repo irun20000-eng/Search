@@ -95,13 +95,10 @@ def build():
                             url="blog/#b=" + b["slug"]))
         add(len(entries) - 1, {M.norm(b["title"]), b["slug"]})
 
-    # ── cardnews ──
-    for c in load("cardnews/manifest.json").get("episodes", []):
-        entries.append(dict(제목=c["title"], 섹션="cardnews", 유형=None,
-                            슬러그=c["folder"], 날짜=c.get("date", ""),
-                            url="cardnews/#c=" + c["folder"]))
-        add(len(entries) - 1, {M.norm(c["title"]), c["folder"]})
-
+    # 개념노트를 카드뉴스보다 먼저 등록한다 — 이름이 같으면 먼저 등록된 쪽이 이긴다.
+    # 카드뉴스 '생존자 편향'(그림 10장)과 개념노트 '생존자 편향'(이해편 5,800자)이
+    # 같은 이름을 갖는데, 글 속의 [[생존자 편향]] 은 설명이 있는 쪽을 가리켜야 한다.
+    # 카드뉴스는 폴더명 별칭(숫자노트_02_생존자편향)으로 그대로 닿는다.
     # ── concept (개념노트) ──
     for n in load("concept/manifest.json").get("notes", []):
         entries.append(dict(제목=n["title"], 섹션="concept", 유형=None,
@@ -112,6 +109,13 @@ def build():
         short = n["title"].split(" — ")[0]
         base = short.split("(")[0].strip()
         add(len(entries) - 1, {M.norm(n["title"]), M.norm(short), M.norm(base), n["slug"]})
+
+    # ── cardnews ──
+    for c in load("cardnews/manifest.json").get("episodes", []):
+        entries.append(dict(제목=c["title"], 섹션="cardnews", 유형=None,
+                            슬러그=c["folder"], 날짜=c.get("date", ""),
+                            url="cardnews/#c=" + c["folder"]))
+        add(len(entries) - 1, {M.norm(c["title"]), c["folder"]})
 
     # ── math ──
     math_man = load("math/manifest.json")
