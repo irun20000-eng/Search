@@ -16,7 +16,7 @@
   사망: 1813
   출생지: 사르데냐피에몬테 토리노
 
-기여개념: [concept-differentiation, concept-differentiation-advanced]
+기여개념: [concept-differential-equation, concept-differential-equation-advanced, concept-differentiation, concept-differentiation-advanced]
 관련인물: [person-laplace, person-euler]
 
 출처:
@@ -146,7 +146,7 @@ MacTutor는 이에 대해 **그런 증거가 없다**고 적는다[1].
 
 > **"이 저작에서는 그림을 찾을 수 없을 것이다. 내가 설명하는 방법은 작도도, 기하학적·역학적 논증도 요구하지 않으며, 오직 대수적 연산만을 요구한다."**[2]
 
-뉴턴의 『프린키피아』가 나온 지 101년 뒤다[2]. 뉴턴은 대부분을 기하로 다뤘고, 라그랑주는 **전부 미분방정식으로** 했다[2].
+뉴턴의 『프린키피아』가 나온 지 101년 뒤다[2]. 뉴턴은 대부분을 기하로 다뤘고, 라그랑주는 **전부 [[미분방정식]]으로** 했다[2].
 
 **역학이 물리학의 한 갈래에서 수학적 해석학의 한 갈래가 된 순간이다.** 그가 변분법을 역학의 여러 문제에 응용한 결과이기도 하다[5].
 

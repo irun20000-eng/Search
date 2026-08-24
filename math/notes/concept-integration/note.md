@@ -40,7 +40,7 @@
     출처: 11
 
 선행개념: [concept-differentiation]
-후속개념: [concept-fundamental-theorem, concept-series, concept-analysis-rigor]
+후속개념: [concept-fundamental-theorem, concept-series, concept-differential-equation, concept-analysis-rigor]
 기여인물: [person-barrow, person-newton, person-leibniz]
 
 출처:

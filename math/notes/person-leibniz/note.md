@@ -16,7 +16,7 @@
   사망: 1716
   출생지: 작센 라이프치히
 
-기여개념: [concept-differentiation, concept-integration, concept-fundamental-theorem, concept-series]
+기여개념: [concept-differentiation, concept-integration, concept-fundamental-theorem, concept-series, concept-differential-equation]
 관련일화: [episode-priority-dispute]
 
 출처:

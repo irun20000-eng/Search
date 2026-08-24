@@ -78,6 +78,7 @@
    "후속개념": [
     "concept-fundamental-theorem",
     "concept-series",
+    "concept-differential-equation",
     "concept-analysis-rigor"
    ],
    "기여인물": [
@@ -950,6 +951,144 @@
   },
   {
    "유형": "개념",
+   "제목": "미분방정식",
+   "슬러그": "concept-differential-equation",
+   "별칭": [
+    "미분방정식",
+    "상미분방정식",
+    "편미분방정식",
+    "변수분리법",
+    "현수선"
+   ],
+   "볼트파일명": "개념_미분방정식",
+   "트랙": "이해편",
+   "짝문서": "concept-differential-equation-advanced",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학",
+    "역학"
+   ],
+   "교과": [],
+   "난이도": "심화",
+   "요약": "답이 수가 아니라 함수인 방정식. 17세기에 늘어진 사슬의 모양을 묻는 문제로 시작해, 자연을 쓰는 기본 문법이 되었다.",
+   "태그": [
+    "수학사",
+    "미분방정식",
+    "현수선",
+    "변수분리",
+    "베르누이",
+    "뉴턴",
+    "라이프니츠",
+    "17세기",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "뉴턴",
+     "변화": "1671년 저작에서 미분방정식을 세 종류로 나누고 무한급수로 풀었다. 해가 유일하지 않을 수 있다는 것도 이때 논의했다.",
+     "출처": 6
+    },
+    {
+     "세기": 17,
+     "인물": "융기우스",
+     "변화": "늘어진 사슬이 그리는 곡선이 포물선이 아님을 증명했다. 그의 사후인 1669년에 출간됐다.",
+     "출처": 7
+    },
+    {
+     "세기": 17,
+     "인물": "라이프니츠·하위헌스·요한 베르누이",
+     "변화": "야코프 베르누이가 낸 과제에 답해 늘어진 사슬의 식을 각각 유도했고, 세 사람의 풀이가 1691년 6월 『학술기요』에 함께 실렸다.",
+     "출처": 7
+    },
+    {
+     "세기": 17,
+     "인물": "야코프 베르누이",
+     "변화": "1695년 오늘날 베르누이 미분방정식이라 부르는 형태를 제시했고, 이듬해 라이프니츠가 그것을 간단히 만들어 해를 얻었다.",
+     "출처": 6
+    },
+    {
+     "세기": 18,
+     "인물": "달랑베르",
+     "변화": "1746년 1차원 파동방정식을 발견했다. 진동하는 현의 운동이 미분방정식으로 쓰이기 시작한 자리이며, 10년 안에 오일러가 3차원 파동방정식에 이른다.",
+     "출처": 6
+    },
+    {
+     "세기": 19,
+     "인물": "푸리에",
+     "변화": "1822년 열의 흐름에 관한 저작을 내며 뉴턴의 냉각 법칙에 기대어 열방정식을 제시했다. 미분방정식이 역학 바깥으로 나간 사례다.",
+     "출처": 6
+    }
+   ],
+   "선행개념": [
+    "concept-differentiation",
+    "concept-integration"
+   ],
+   "후속개념": [],
+   "기여인물": [
+    "person-newton",
+    "person-leibniz",
+    "person-euler",
+    "person-lagrange"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 미분방정식 — 자연 현상을 식으로 표현해 모델링하는 방법의 하나라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405084&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 변수분리형 미분방정식",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668845&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 선형미분방정식 — 미분방정식이 크게 상미분방정식(ODE)과 편미분방정식(PDE)으로 구분된다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125341&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 편미분방정식 — 편미분을 포함하는 미분방정식이며 물·공기의 흐름, 전자의 흐름, 열의 흐름, 초전도체, 옵션 가격 등이 이것으로 서술된다는 설명",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125485&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 미분 — 어떤 운동이나 함수의 순간적인 움직임을 서술하는 방법이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338334&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Differential equation — 미지 함수와 그 도함수를 관계짓는 방정식이라는 정의, 뉴턴이 1671년 저작에서 세 종류로 나누고 무한급수로 풀며 해의 비유일성을 논했다는 것, 야코프 베르누이의 1695년 방정식과 이듬해 라이프니츠의 해, 진동하는 현을 달랑베르·오일러·다니엘 베르누이·라그랑주가 연구했다는 것, 1746년 달랑베르의 1차원 파동방정식과 10년 안의 오일러 3차원 파동방정식, 1822년 푸리에의 열 저작과 열방정식, 가장 단순한 미분방정식만이 명시적 공식으로 풀린다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Differential_equation",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, Catenary — 갈릴레오가 사슬을 포물선으로 여겼다고 흔히 말하지만 1638년 『새로운 두 과학』에서 그는 \"매달린 줄은 근사적인 포물선일 뿐\"이라고 적었다는 것, 사슬이 포물선이 아님을 요아힘 융기우스가 증명해 1669년 사후 출간됐다는 것, 야코프 베르누이의 과제에 답해 라이프니츠·하위헌스·요한 베르누이가 1691년에 식을 유도했고 그 풀이들이 1691년 6월 『학술기요』에 실렸다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Catenary",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-differential-equation/note.md",
+   "세기전체": [
+    17,
+    18,
+    19
+   ],
+   "자수": 8623,
+   "시각화": 5
+  },
+  {
+   "유형": "개념",
    "제목": "미분법",
    "슬러그": "concept-differentiation",
    "별칭": [
@@ -1026,7 +1165,8 @@
    ],
    "후속개념": [
     "concept-integration",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-differential-equation"
    ],
    "기여인물": [
     "person-fermat",
@@ -1140,7 +1280,7 @@
     18,
     19
    ],
-   "자수": 7731,
+   "자수": 7770,
    "시각화": 5
   },
   {
@@ -2332,7 +2472,8 @@
     "concept-differentiation",
     "concept-integration",
     "concept-fundamental-theorem",
-    "concept-series"
+    "concept-series",
+    "concept-differential-equation"
    ],
    "관련일화": [
     "episode-priority-dispute"
@@ -2442,7 +2583,8 @@
    "기여개념": [
     "concept-differentiation",
     "concept-integration",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-differential-equation"
    ],
    "관련일화": [
     "episode-newton-apple",
@@ -3074,8 +3216,200 @@
    "세기전체": [
     18
    ],
-   "자수": 7830,
+   "자수": 7885,
    "시각화": 5
+  },
+  {
+   "유형": "개념",
+   "제목": "미분방정식 확장편",
+   "슬러그": "concept-differential-equation-advanced",
+   "별칭": [
+    "미분방정식 확장편",
+    "파동방정식",
+    "오일러-라그랑주 방정식",
+    "라플라스 변환",
+    "존재와 유일성"
+   ],
+   "볼트파일명": "개념_미분방정식_확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-differential-equation",
+   "세기": [
+    18,
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "역학"
+   ],
+   "교과": [],
+   "난이도": "심화",
+   "요약": "진동하는 현의 해가 무엇이어야 하는가를 두고 벌어진 다툼이 함수라는 개념 자체를 바꿨다. 미분방정식이 해석학의 기초를 흔든 자리다.",
+   "태그": [
+    "수학사",
+    "미분방정식",
+    "파동방정식",
+    "함수개념",
+    "달랑베르",
+    "오일러",
+    "푸리에",
+    "디리클레",
+    "라플라스변환",
+    "푸앵카레"
+   ],
+   "발전단계": [
+    {
+     "세기": 18,
+     "인물": "달랑베르",
+     "변화": "1746년 1차원 파동방정식을 얻어 진동하는 현을 미분방정식으로 다뤘다. 그 해가 어떤 함수여야 하는가를 두고 오일러와의 다툼이 시작된다.",
+     "출처": 9
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1748년 『무한해석 입문』에서 함수를 \"변수와 수 또는 상수로 어떻게든 구성된 해석적 표현\"으로 정의했다. 식으로 쓸 수 있어야 함수라는 뜻이었다.",
+     "출처": 10
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1755년 저작에서 정의를 넓혔다 — 어떤 양들이 다른 양들에 의존해 함께 변하면 앞의 것을 뒤의 것의 함수라 부른다. 해석적 표현을 요구하지 않는 쪽으로 물러선 것이다.",
+     "출처": 10
+    },
+    {
+     "세기": 18,
+     "인물": "오일러·라그랑주",
+     "변화": "1750년대에 오일러-라그랑주 방정식에 이르렀다. 라그랑주가 1755년 등시곡선 문제를 풀어 오일러에게 보냈고, 두 사람이 이를 역학으로 확장했다. '변분법'이라는 이름은 1766년 오일러가 붙였다.",
+     "출처": 11
+    },
+    {
+     "세기": 19,
+     "인물": "푸리에",
+     "변화": "1822년 『열의 해석적 이론』에서 임의의 함수를 삼각급수로 나타낼 수 있다고 주장했다. 연속이지도 않고 해석적 표현으로 주어지지도 않은 함수를 포함하는 함수관이었다.",
+     "출처": 10
+    },
+    {
+     "세기": 19,
+     "인물": "디리클레",
+     "변화": "1837년에 해석적 표현을 요구하지 않고 대응 관계만으로 함수를 정의한 것으로 전통적으로 알려져 있다. 같은 정의를 로바쳅스키가 1834년에 독립적으로 냈다는 서술과, 디리클레에게 그 개념이 없었다는 라카토시의 반박이 함께 실려 있다.",
+     "출처": 10
+    },
+    {
+     "세기": 19,
+     "인물": "푸앵카레",
+     "변화": "1889년 제한 3체 문제에 야코비 적분 말고는 해석적 보존량이 없음을 보였다. 대부분의 초기조건에서 계가 혼돈적으로 행동하며, 운동을 예측하는 유일한 길이 수치적 추정이 된다.",
+     "출처": 13
+    }
+   ],
+   "선행개념": [
+    "concept-differential-equation"
+   ],
+   "후속개념": [],
+   "기여인물": [
+    "person-euler",
+    "person-lagrange",
+    "person-laplace"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 미분방정식 — 자연 현상을 식으로 표현해 모델링하는 방법의 하나라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405084&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 변수분리형 미분방정식",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668845&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 선형미분방정식 — 상미분방정식(ODE)과 편미분방정식(PDE)의 구분, 함수와 그 미분들에 대해 선형인 형태",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125341&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 편미분방정식 — 물·공기의 흐름, 전자의 흐름, 열의 흐름, 초전도체, 옵션 가격 등이 편미분방정식으로 서술된다는 설명",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125485&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 라플라스 변환 — 선형 상미분방정식을 대수방정식으로 바꾸고, 풀기 쉬운 대수방정식의 해를 구한 뒤 역변환으로 되돌려 미분방정식의 해를 얻는다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405053&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과, 푸리에 — 열전도론을 연구해 1807년 『열의 해석적 이론』을 제출하고 1822년에 완성했으며 푸리에 급수의 전개가 이후 수리물리학에 영향을 주었다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=612186&cid=42420&categoryId=42420",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과, 카오스 이론 — 초기조건이 조금만 달라져도 결과가 크게 바뀌어 예측이 어렵다는 기본 전제",
+     "URL": "https://terms.naver.com/entry.naver?docId=2074953&cid=42107&categoryId=42107",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 카오스 이론(혼돈 이론) — 기상학자 로렌츠가 제안한 나비효과",
+     "URL": "https://terms.naver.com/entry.naver?docId=3474139&cid=58439&categoryId=58439",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Differential equation — 뉴턴이 1671년 저작에서 세 종류로 나누고 무한급수로 풀며 해의 비유일성을 논했다는 것, 진동하는 현을 달랑베르·오일러·다니엘 베르누이·라그랑주가 연구했다는 것, 1746년 달랑베르의 1차원 파동방정식과 10년 안의 오일러 3차원 파동방정식, 1822년 푸리에의 열 저작과 열방정식, 가장 단순한 미분방정식만이 명시적 공식으로 풀리며 해를 정확히 계산하지 않고도 많은 성질을 알 수 있다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Differential_equation",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Wikipedia, History of the function concept — 진동하는 현의 파동방정식 해에서 나온 함수의 본성·표현 문제가 달랑베르와 오일러 사이의 다툼거리였다는 것, 오일러의 1748년 정의와 1755년의 확장된 정의 원문, 푸리에가 1822년 저작에서 임의의 함수를 급수로 나타낼 수 있다고 주장하며 연속도 해석적 표현도 요구하지 않는 함수관을 가졌다는 것, 함수와 그 해석적 표현을 혼동한 데서 오해가 비롯했다는 루진의 평, 디리클레의 1837년 정의",
+     "URL": "https://en.wikipedia.org/wiki/History_of_the_function_concept",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Euler–Lagrange equation — 주어진 작용 범함수의 정류점을 해로 갖는 2계 상미분방정식계라는 정의, 1750년대에 오일러와 라그랑주가 등시곡선 문제에서 발견했고 라그랑주가 1755년 풀이를 오일러에게 보냈다는 것, '변분법'이라는 용어를 1766년 오일러가 만들었다는 것, 해밀턴의 정류작용 원리와의 관계",
+     "URL": "https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, Picard–Lindelöf theorem — 초기값 문제의 해가 존재하고 유일하기 위한 조건(y에 대한 립시츠 연속), 피카르·린델뢰프·립시츠·코시의 이름이 붙는다는 것, 립시츠 조건이 깨지면 유일성이 무너지는 반례",
+     "URL": "https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, Three-body problem — 3체 문제에 일반적인 닫힌 꼴 해석적 해가 없다는 것, 브룬스가 대수적 보존량이 더 없음을, 푸앵카레가 1889년에 해석적 보존량이 더 없음을 보였다는 것, 대부분의 초기조건에서 혼돈적으로 행동해 수치적 추정이 유일한 예측 수단이라는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Three-body_problem",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과(수학백과), 미분 — 어떤 운동이나 함수의 순간적인 움직임을 서술하는 방법이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338334&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "Wikipedia, Fourier series — 푸리에에 앞서 오일러·달랑베르·다니엘 베르누이가 예비적 연구를 했고, 비슷한 삼각급수를 오일러·달랑베르·다니엘 베르누이·가우스가 이미 썼다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Fourier_series",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-differential-equation-advanced/note.md",
+   "세기전체": [
+    18,
+    19,
+    20
+   ],
+   "자수": 11985,
+   "시각화": 8
   },
   {
    "유형": "개념",
@@ -3351,6 +3685,8 @@
    "기여개념": [
     "concept-series",
     "concept-series-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-fundamental-theorem",
     "concept-integration"
    ],
@@ -3476,6 +3812,8 @@
     "출생지": "사르데냐피에몬테 토리노"
    },
    "기여개념": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced"
    ],
@@ -3544,7 +3882,7 @@
     18,
     19
    ],
-   "자수": 6186,
+   "자수": 6190,
    "시각화": 3
   },
   {
@@ -3593,6 +3931,7 @@
    "기여개념": [
     "concept-probability-advanced",
     "concept-probability",
+    "concept-differential-equation-advanced",
     "concept-integration"
    ],
    "관련일화": [],
@@ -3874,6 +4213,7 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -3896,6 +4236,8 @@
    ],
    "18": [
     "century-18c",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-probability",
@@ -3911,6 +4253,8 @@
    ],
    "19": [
     "concept-analytic-geometry-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -3924,6 +4268,7 @@
    ],
    "20": [
     "concept-analytic-geometry-advanced",
+    "concept-differential-equation-advanced",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration-advanced",
@@ -3935,6 +4280,8 @@
    "해석학": [
     "century-17c",
     "century-18c",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -3981,6 +4328,8 @@
    ],
    "역학": [
     "century-18c",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "episode-newton-apple",
     "person-euler",
     "person-lagrange",
@@ -4089,6 +4438,8 @@
    "개념": [
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -4125,6 +4476,8 @@
     "century-18c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -4153,6 +4506,7 @@
    "17세기": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-differential-equation",
     "concept-differentiation",
     "concept-fundamental-theorem",
     "concept-integration",
@@ -4199,6 +4553,7 @@
    ],
    "18세기": [
     "century-18c",
+    "concept-differential-equation",
     "concept-series",
     "episode-priority-dispute",
     "person-euler",
@@ -4212,6 +4567,7 @@
    ],
    "오일러": [
     "century-18c",
+    "concept-differential-equation-advanced",
     "concept-series",
     "concept-series-advanced",
     "person-euler"
@@ -4274,6 +4630,57 @@
     "concept-analytic-geometry-advanced",
     "person-laplace"
    ],
+   "미분방정식": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced"
+   ],
+   "현수선": [
+    "concept-differential-equation"
+   ],
+   "변수분리": [
+    "concept-differential-equation"
+   ],
+   "베르누이": [
+    "concept-differential-equation",
+    "concept-probability"
+   ],
+   "뉴턴": [
+    "concept-differential-equation",
+    "concept-differentiation",
+    "concept-fundamental-theorem",
+    "episode-newton-apple",
+    "episode-priority-dispute",
+    "person-barrow",
+    "person-newton"
+   ],
+   "라이프니츠": [
+    "concept-differential-equation",
+    "concept-differentiation",
+    "concept-fundamental-theorem",
+    "episode-priority-dispute",
+    "person-leibniz"
+   ],
+   "파동방정식": [
+    "concept-differential-equation-advanced"
+   ],
+   "함수개념": [
+    "concept-differential-equation-advanced"
+   ],
+   "달랑베르": [
+    "concept-differential-equation-advanced"
+   ],
+   "푸리에": [
+    "concept-differential-equation-advanced"
+   ],
+   "디리클레": [
+    "concept-differential-equation-advanced"
+   ],
+   "라플라스변환": [
+    "concept-differential-equation-advanced"
+   ],
+   "푸앵카레": [
+    "concept-differential-equation-advanced"
+   ],
    "미분": [
     "concept-differentiation",
     "concept-differentiation-advanced",
@@ -4286,20 +4693,6 @@
    "무한소": [
     "concept-differentiation",
     "concept-differentiation-advanced"
-   ],
-   "뉴턴": [
-    "concept-differentiation",
-    "concept-fundamental-theorem",
-    "episode-newton-apple",
-    "episode-priority-dispute",
-    "person-barrow",
-    "person-newton"
-   ],
-   "라이프니츠": [
-    "concept-differentiation",
-    "concept-fundamental-theorem",
-    "episode-priority-dispute",
-    "person-leibniz"
    ],
    "코시": [
     "concept-differentiation",
@@ -4378,9 +4771,6 @@
     "person-pascal"
    ],
    "하위헌스": [
-    "concept-probability"
-   ],
-   "베르누이": [
     "concept-probability"
    ],
    "역확률": [
@@ -4571,12 +4961,22 @@
    "퐁슬레": [
     "concept-analytic-geometry-advanced"
    ],
-   "person-barrow": [
-    "concept-differentiation",
-    "concept-fundamental-theorem",
-    "concept-integration"
+   "person-euler": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-series",
+    "concept-series-advanced",
+    "person-lagrange"
+   ],
+   "person-lagrange": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-differentiation-advanced",
+    "person-euler",
+    "person-laplace"
    ],
    "person-leibniz": [
+    "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -4586,6 +4986,7 @@
     "episode-priority-dispute"
    ],
    "person-newton": [
+    "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -4594,6 +4995,43 @@
     "episode-newton-apple",
     "episode-priority-dispute",
     "person-barrow"
+   ],
+   "달랑베르": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced"
+   ],
+   "라이프니츠·하위헌스·요한 베르누이": [
+    "concept-differential-equation"
+   ],
+   "야코프 베르누이": [
+    "concept-differential-equation",
+    "concept-probability"
+   ],
+   "융기우스": [
+    "concept-differential-equation"
+   ],
+   "푸리에": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced"
+   ],
+   "person-laplace": [
+    "concept-differential-equation-advanced",
+    "concept-probability-advanced",
+    "person-lagrange"
+   ],
+   "디리클레": [
+    "concept-differential-equation-advanced"
+   ],
+   "오일러·라그랑주": [
+    "concept-differential-equation-advanced"
+   ],
+   "푸앵카레": [
+    "concept-differential-equation-advanced"
+   ],
+   "person-barrow": [
+    "concept-differentiation",
+    "concept-fundamental-theorem",
+    "concept-integration"
    ],
    "버클리": [
     "concept-differentiation",
@@ -4605,11 +5043,6 @@
     "concept-fundamental-theorem",
     "concept-integration-advanced",
     "concept-series-advanced"
-   ],
-   "person-lagrange": [
-    "concept-differentiation-advanced",
-    "person-euler",
-    "person-laplace"
    ],
    "로빈슨": [
     "concept-differentiation-advanced"
@@ -4658,18 +5091,11 @@
    "니콜라우스 베르누이": [
     "concept-probability"
    ],
-   "야코프 베르누이": [
-    "concept-probability"
-   ],
    "파스칼·페르마": [
     "concept-probability"
    ],
    "하위헌스": [
     "concept-probability"
-   ],
-   "person-laplace": [
-    "concept-probability-advanced",
-    "person-lagrange"
    ],
    "가우스": [
     "concept-probability-advanced"
@@ -4691,11 +5117,6 @@
    ],
    "핼리": [
     "concept-probability-advanced"
-   ],
-   "person-euler": [
-    "concept-series",
-    "concept-series-advanced",
-    "person-lagrange"
    ],
    "그란디": [
     "concept-series"
@@ -4899,6 +5320,12 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "concept-differentiation",
@@ -5123,6 +5550,12 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "concept-differentiation-advanced",
      "제목": "미분법 (확장편)",
      "유형": "개념",
@@ -5315,6 +5748,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -5463,6 +5902,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-series",
      "제목": "무한급수",
      "유형": "개념",
@@ -5493,6 +5944,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-differentiation",
@@ -5681,6 +6138,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
@@ -5719,6 +6182,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-probability-advanced",
      "제목": "확률론 확장편",
      "유형": "개념",
@@ -5733,6 +6202,56 @@
     {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-differential-equation": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -5783,6 +6302,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-probability",
      "제목": "확률론",
      "유형": "개념",
@@ -5801,6 +6326,18 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "person-euler",
@@ -5823,6 +6360,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-probability",
      "제목": "확률론",
      "유형": "개념",
@@ -5839,6 +6382,38 @@
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "concept-differential-equation-advanced": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "concept-integration-advanced": [
@@ -5901,27 +6476,19 @@
      "경로": "관련일화"
     }
    ],
-   "person-gregory": [
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-series",
-     "제목": "무한급수",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "person-barrow",
-     "제목": "아이작 배로",
-     "유형": "인물",
-     "경로": "관련인물"
-    }
-   ],
    "century-18c": [
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-probability",
      "제목": "확률론",
@@ -5957,6 +6524,26 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
+    }
+   ],
+   "person-gregory": [
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "episode-newton-apple": [
@@ -6001,6 +6588,24 @@
   "해석기하 (확장편) 확장편": "concept-analytic-geometry-advanced",
   "해석기하 (확장편)확장편": "concept-analytic-geometry-advanced",
   "해석기하 확장편": "concept-analytic-geometry-advanced",
+  "concept-differential-equation": "concept-differential-equation",
+  "개념_미분방정식": "concept-differential-equation",
+  "미분방정식": "concept-differential-equation",
+  "미분방정식 이해편": "concept-differential-equation",
+  "미분방정식이해편": "concept-differential-equation",
+  "변수분리법": "concept-differential-equation",
+  "상미분방정식": "concept-differential-equation",
+  "편미분방정식": "concept-differential-equation",
+  "현수선": "concept-differential-equation",
+  "concept-differential-equation-advanced": "concept-differential-equation-advanced",
+  "개념_미분방정식_확장편": "concept-differential-equation-advanced",
+  "라플라스 변환": "concept-differential-equation-advanced",
+  "미분방정식 확장편": "concept-differential-equation-advanced",
+  "미분방정식 확장편 확장편": "concept-differential-equation-advanced",
+  "미분방정식 확장편확장편": "concept-differential-equation-advanced",
+  "오일러-라그랑주 방정식": "concept-differential-equation-advanced",
+  "존재와 유일성": "concept-differential-equation-advanced",
+  "파동방정식": "concept-differential-equation-advanced",
   "concept-differentiation": "concept-differentiation",
   "개념_미분법": "concept-differentiation",
   "도함수": "concept-differentiation",

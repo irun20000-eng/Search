@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-24",
- "scanned": 193,
- "resolved": 564,
- "pending": 532,
+ "scanned": 195,
+ "resolved": 599,
+ "pending": 540,
  "counts": {
-  "new": 247,
+  "new": 252,
   "companion": 5,
   "gap": 0
  },
@@ -1215,6 +1215,27 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "야코프 베르누이",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
+     "s": "math",
+     "n": 2
+    },
+    {
+     "t": "확률론",
+     "u": "math/#n=concept-probability",
+     "s": "math",
+     "n": 1
     }
    ]
   },
@@ -2899,17 +2920,44 @@
    ]
   },
   {
-   "name": "미분의 응용",
+   "name": "크리스티안 하위헌스",
    "count": 2,
    "kind": "new",
    "target": null,
    "base": null,
    "refs": [
     {
-     "t": "미분법",
-     "u": "math/#n=concept-differentiation",
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
      "s": "math",
-     "n": 2
+     "n": 1
+    },
+    {
+     "t": "확률론",
+     "u": "math/#n=concept-probability",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "조제프 푸리에",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "미분방정식 확장편",
+     "u": "math/#n=concept-differential-equation-advanced",
+     "s": "math",
+     "n": 1
     }
    ]
   },
@@ -4306,30 +4354,75 @@
    ]
   },
   {
-   "name": "크리스티안 하위헌스",
+   "name": "요아힘 융기우스",
    "count": 1,
    "kind": "new",
    "target": null,
    "base": null,
    "refs": [
     {
-     "t": "확률론",
-     "u": "math/#n=concept-probability",
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
      "s": "math",
      "n": 1
     }
    ]
   },
   {
-   "name": "야코프 베르누이",
+   "name": "요한 베르누이",
    "count": 1,
    "kind": "new",
    "target": null,
    "base": null,
    "refs": [
     {
-     "t": "확률론",
-     "u": "math/#n=concept-probability",
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "장 르 롱 달랑베르",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식 확장편",
+     "u": "math/#n=concept-differential-equation-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "페터 구스타프 르죈 디리클레",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식 확장편",
+     "u": "math/#n=concept-differential-equation-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "앙리 푸앵카레",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식 확장편",
+     "u": "math/#n=concept-differential-equation-advanced",
      "s": "math",
      "n": 1
     }
