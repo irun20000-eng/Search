@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-24",
- "scanned": 191,
- "resolved": 539,
- "pending": 524,
+ "scanned": 193,
+ "resolved": 564,
+ "pending": 532,
  "counts": {
-  "new": 239,
+  "new": 247,
   "companion": 5,
   "gap": 0
  },
@@ -4301,6 +4301,126 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "크리스티안 하위헌스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론",
+     "u": "math/#n=concept-probability",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "야코프 베르누이",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론",
+     "u": "math/#n=concept-probability",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에드먼드 핼리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "아드리앵마리 르장드르",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "카를 프리드리히 가우스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "아브라암 드무아브르",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "토마스 베이즈",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "안드레이 콜모고로프",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
      "n": 1
     }
    ]
