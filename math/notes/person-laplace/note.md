@@ -16,7 +16,7 @@
   사망: 1827
   출생지: 프랑스 노르망디 보몽앙오주
 
-기여개념: [concept-integration]
+기여개념: [concept-probability-advanced, concept-probability, concept-integration]
 관련인물: [person-lagrange]
 관련일화: []
 
