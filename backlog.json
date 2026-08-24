@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-22",
- "scanned": 189,
- "resolved": 516,
- "pending": 522,
+ "generated": "2026-08-24",
+ "scanned": 191,
+ "resolved": 539,
+ "pending": 524,
  "counts": {
-  "new": 238,
+  "new": 239,
   "companion": 5,
   "gap": 0
  },
@@ -2929,6 +2929,27 @@
     {
      "t": "적분법 (확장편)",
      "u": "math/#n=concept-integration-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "해석학의 엄밀화",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "무한급수",
+     "u": "math/#n=concept-series",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "무한급수 확장편",
+     "u": "math/#n=concept-series-advanced",
      "s": "math",
      "n": 1
     }
