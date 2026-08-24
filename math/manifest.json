@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21",
+ "generated": "2026-08-24",
  "notes": [
   {
    "유형": "개념",
@@ -77,6 +77,7 @@
    ],
    "후속개념": [
     "concept-fundamental-theorem",
+    "concept-series",
     "concept-analysis-rigor"
    ],
    "기여인물": [
@@ -166,6 +167,182 @@
    ],
    "자수": 7786,
    "시각화": 5
+  },
+  {
+   "유형": "개념",
+   "제목": "무한급수",
+   "슬러그": "concept-series",
+   "별칭": [
+    "급수",
+    "무한급수",
+    "무한합",
+    "기하급수",
+    "등비급수"
+   ],
+   "볼트파일명": "개념_무한급수",
+   "트랙": "이해편",
+   "짝문서": "concept-series-advanced",
+   "세기": [
+    14,
+    17,
+    18,
+    19
+   ],
+   "분야": [
+    "해석학"
+   ],
+   "교과": [
+    "미적분"
+   ],
+   "난이도": "표준",
+   "요약": "끝없이 더하는 일이 어떤 때는 유한한 값이 되고 어떤 때는 되지 않는다. 18세기는 그 자격을 따지지 않고 밀고 나가 옳은 답을 잔뜩 얻었다.",
+   "태그": [
+    "수학사",
+    "무한급수",
+    "급수",
+    "바젤 문제",
+    "오일러",
+    "조화급수",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 14,
+     "인물": "오렘",
+     "변화": "조화급수의 항을 2, 4, 8개씩 묶어 각 묶음이 1/2을 넘는다는 것을 보여, 항이 0으로 가는데도 합이 무한대가 될 수 있음을 증명했다(1350년경).",
+     "출처": 9
+    },
+    {
+     "세기": 14,
+     "인물": "마다바",
+     "변화": "아크탄젠트 급수의 특수한 경우로 π를 무한히 더해 얻는 식이 케랄라 학파에서 나왔다. 다만 마다바의 현존 저작에는 이 식들의 명시적 서술이 없어, 후대 저작의 전언에 기대고 있다.",
+     "출처": 10
+    },
+    {
+     "세기": 17,
+     "인물": "그레고리",
+     "변화": "같은 아크탄젠트 급수를 유럽에서 독립적으로 다시 발견했다(1671).",
+     "출처": 10
+    },
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "π/4를 홀수의 역수를 번갈아 더하고 빼서 얻는 식으로 다시 발견했다(1673).",
+     "출처": 10
+    },
+    {
+     "세기": 18,
+     "인물": "그란디",
+     "변화": "1 − 1 + 1 − 1 + … 을 다루며, 부분합이 한 값에 다가가지 않는 급수에도 값을 매길 수 있는가라는 논쟁을 열었다(1703).",
+     "출처": 11
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "한 세기 가까이 버틴 바젤 문제를 풀어 제곱의 역수를 모두 더하면 π²/6 이 된다는 것을 얻었다(1735). 원과 무관해 보이는 합에서 π가 나왔다.",
+     "출처": 6
+    }
+   ],
+   "선행개념": [
+    "concept-integration"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-gregory",
+    "person-leibniz",
+    "person-euler"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 급수 — 유한급수와 무한급수",
+     "URL": "https://terms.naver.com/entry.naver?docId=3404993&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 무한등비급수 — 등비급수는 기하급수라고도 한다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405080&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과, 무한등비급수 — 교과서 속 주개념과 수렴 조건",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073795&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 순환소수와 무한등비급수",
+     "URL": "https://terms.naver.com/entry.naver?docId=945519&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 조화급수 — 정의·역사·발산성",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125442&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 바젤 문제 — 제곱의 역수를 모두 더하면 얼마인가",
+     "URL": "https://terms.naver.com/entry.naver?docId=5669179&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 테일러 급수 — 함수를 무한차 다항식으로 쓴다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405365&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Basel problem (바젤 문제) — 멩골리가 1650년에 제기했다는 서술, 오일러가 1734년 해결해 1735년 12월 5일 상트페테르부르크 아카데미에서 낭독, 1741년 받아들여지는 증명",
+     "URL": "https://en.wikipedia.org/wiki/Basel_problem",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Nicole Oresme (니콜 오렘) — 1350년경 조화급수 발산을 최초 증명, 증명이 유실돼 17세기까지 다시 증명되지 않았고 멩골리 1647·요한 베르누이 1687이 재증명",
+     "URL": "https://en.wikipedia.org/wiki/Nicole_Oresme",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "HandWiki, Madhava series (마다바 급수) — 사인·코사인·아크탄젠트 세 급수의 총칭, 그레고리 1671·라이프니츠 1673의 재발견, 마다바의 현존 저작에는 이 식들의 명시적 서술이 없다는 유보",
+     "URL": "https://handwiki.org/wiki/Madhava_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Grandi's series (그란디 급수) — 1703년 그란디의 취급과 18세기에 값 1/2을 지지한 논거들",
+     "URL": "https://en.wikipedia.org/wiki/Grandi%27s_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학백과), 오일러-마스케로니 수 — 조화급수 부분합과 로그의 차이가 수렴하는 상수",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668882&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Amber Emmell, Leonhard Euler and The Basel Problem (Williams College) — 멩골리가 1644년에 처음 다루고 1650년 『Novae quadraturae arithmetica』에 실었다는 서술, 문제에 도전한 수학자 명단",
+     "URL": "https://web.williams.edu/Mathematics/sjmiller/public_html/hudson/Emmell,%20Amber_Euler%20&%20The%20Basel%20Problem.pdf",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-series/note.md",
+   "세기전체": [
+    14,
+    17,
+    18,
+    19
+   ],
+   "자수": 8568,
+   "시각화": 4
   },
   {
    "유형": "인물",
@@ -1681,6 +1858,7 @@
     "출생지": "스코틀랜드 애버딘 근교 드러모크"
    },
    "기여개념": [
+    "concept-series",
     "concept-fundamental-theorem",
     "concept-integration"
    ],
@@ -1797,7 +1975,8 @@
    "기여개념": [
     "concept-differentiation",
     "concept-integration",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-series"
    ],
    "관련일화": [
     "episode-priority-dispute"
@@ -2539,7 +2718,235 @@
    "세기전체": [
     18
    ],
-   "자수": 7750,
+   "자수": 7797,
+   "시각화": 5
+  },
+  {
+   "유형": "개념",
+   "제목": "무한급수 확장편",
+   "슬러그": "concept-series-advanced",
+   "별칭": [
+    "무한급수 확장편",
+    "급수 확장편",
+    "발산급수",
+    "오일러 곱셈공식",
+    "총합법"
+   ],
+   "볼트파일명": "개념_무한급수_확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-series",
+   "세기": [
+    18,
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "정수론"
+   ],
+   "교과": [],
+   "난이도": "심화",
+   "요약": "18세기는 자격을 따지지 않고 급수를 조작해 옳은 답을 잔뜩 얻었다. 19세기가 그 계산서를 받아 수렴을 정의했고, 20세기는 발산급수에 값을 매기는 일을 다시 정당한 것으로 만들었다.",
+   "태그": [
+    "수학사",
+    "무한급수",
+    "발산급수",
+    "오일러",
+    "코시",
+    "아벨",
+    "리만",
+    "제타함수",
+    "해석적정수론"
+   ],
+   "발전단계": [
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "유한 다항식의 인수분해를 무한차로 옮겨 바젤 문제를 풀었다(1735). 정당화되지 않은 조작이었고 그 자신도 알고 있어 1741년에 받아들여지는 증명을 다시 냈다.",
+     "출처": 8
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "제곱 역수 급수를 소수에 대한 무한곱으로 바꿔 썼다(1737, E72). 급수와 소수를 잇는 다리가 생겼고 해석적 정수론이 시작됐다.",
+     "출처": 11
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "수렴을 부분합의 극한으로 정의하고, 발산급수에는 합이 없다는 것을 받아들일 수밖에 없다고 적었다(1821).",
+     "출처": 15
+    },
+    {
+     "세기": 19,
+     "인물": "아벨",
+     "변화": "발산급수에 논증을 얹는 관행을 정면으로 비판했고, 코시가 세운 정리의 반례를 알고 있었다(1826).",
+     "출처": 18
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "1853년에 앞서의 오류를 인정하고 옳은 정리를 세웠다. 다만 '균등수렴'이라는 용어는 쓰지 않았다 — 개념에 도달했으나 이름이 없었다.",
+     "출처": 16
+    },
+    {
+     "세기": 19,
+     "인물": "리만",
+     "변화": "조건수렴하는 급수는 항의 순서를 바꿔 어떤 실수로도 수렴시킬 수 있음을 보였다. 무한합에서 덧셈의 교환법칙이 무너지는 자리다.",
+     "출처": 12
+    },
+    {
+     "세기": 19,
+     "인물": "바이어슈트라스",
+     "변화": "1870년대에 균등수렴을 비롯한 개념과 표기를 통일해 안정시켰다.",
+     "출처": 16
+    },
+    {
+     "세기": 19,
+     "인물": "바이어슈트라스",
+     "변화": "오일러가 100년 전에 쓴 사인 무한곱 표현이 그의 인수분해 정리로 정당화된다.",
+     "출처": 8
+    }
+   ],
+   "선행개념": [
+    "concept-series",
+    "concept-integration"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-euler"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 바젤 문제 — 제곱의 역수 급수와 그 값",
+     "URL": "https://terms.naver.com/entry.naver?docId=5669179&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과, 리만 제타 함수 — 급수로 정의되고 해석적 접속으로 확장되는 함수",
+     "URL": "https://terms.naver.com/entry.naver?docId=3576120&cid=58944&categoryId=58967",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 매클로린 급수 — 원점 근처의 다항식 근사",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405062&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 거듭제곱급수 — 끝나지 않는 다항식 꼴의 급수",
+     "URL": "https://terms.naver.com/entry.naver?docId=3404944&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 절대수렴 — 절댓값 급수가 수렴하는 경우",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405294&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 조건수렴 — 수렴하지만 절대수렴하지 않는 급수",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405316&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 양항급수 — 덧셈 순서를 바꿔도 합이 변하지 않는 성질",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405212&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Basel problem — 멩골리가 1650년에 제기했다는 서술, 오일러의 1735년 논증과 1741년 재증명, 사인 무한곱 표현이 100년 뒤 바이어슈트라스의 인수분해 정리로 정당화된다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Basel_problem",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Amber Emmell, Leonhard Euler and The Basel Problem (Williams College) — 멩골리 1644·1650 병기, 문제에 도전한 수학자 명단, 짝수 지수 제타값 4종, 홀수 지수는 못 구했고 아페리가 1978년에 ζ(3)의 무리수성을 증명했다는 서술",
+     "URL": "https://web.williams.edu/Mathematics/sjmiller/public_html/hudson/Emmell,%20Amber_Euler%20&%20The%20Basel%20Problem.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Wikipedia, Introductio in analysin infinitorum — 1748년 저작. 1장이 변수와 함수를 다루고 4장이 유리함수를 통해 무한급수를 도입한다",
+     "URL": "https://en.wikipedia.org/wiki/Introductio_in_analysin_infinitorum",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Euler Archive E72, Variae observationes circa series infinitas (1737) — 오일러 곱셈공식이 처음 등장한 논문의 서지",
+     "URL": "http://eulerarchive.maa.org/backup/E072.html",
+     "유형": "1차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, Riemann series theorem — 조건수렴 급수의 재배열로 임의의 실수를 만들 수 있다",
+     "URL": "https://en.wikipedia.org/wiki/Riemann_series_theorem",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, Grandi's series — 1 − 1 + 1 − 1 + … 에 값을 부여한 18세기의 논거들",
+     "URL": "https://en.wikipedia.org/wiki/Grandi%27s_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Krishnaswami Alladi, Niels Henrik Abel — Norwegian mathematical genius. 아벨의 말을 '악마의 발명(invention of the devil)' 판본으로 그대로 싣는 2차 문헌의 실례",
+     "URL": "http://krishnaswami-alladi.com/wp-content/uploads/pdfdocs/abel.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "I. Grattan-Guinness, A.-L. Cauchy, Cours d'analyse (1821) and Résumé of the calculus (1823), in Landmark Writings in Western Mathematics",
+     "URL": "https://www.sciencedirect.com/science/article/pii/B9780444508713501066",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "APMEP, Cauchy, Abel, Seidel, Stokes et la convergence uniforme — 균등수렴 개념이 갈라져 나온 경위",
+     "URL": "https://www.apmep.fr/Cauchy-Abel-Seidel-Stokes-et-la",
+     "유형": "2차"
+    },
+    {
+     "번호": 17,
+     "제목": "arXiv:1108.2885, Who gave you the Cauchy–Weierstrass tale? The dual history of rigorous calculus — 코시가 실제로 틀렸는가에 대한 이견",
+     "URL": "https://arxiv.org/pdf/1108.2885",
+     "유형": "2차"
+    },
+    {
+     "번호": 18,
+     "제목": "Wikipedia, Divergent series — 아벨이 1826년 1월 홈보에게 보낸 편지의 프랑스어 원문과 \"Often translated as 'Divergent series are an invention of the devil…'\"라는 판본 관계 명시",
+     "URL": "https://en.wikipedia.org/wiki/Divergent_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 19,
+     "제목": "Wikipedia, Proof of the Euler product formula for the Riemann zeta function — 1737년 「Variae observationes circa series infinitas」로 상트페테르부르크 아카데미에서 발표, 산술의 기본정리로 부분곱이 전개되는 구조, 소수 역수 급수의 이중로그적 발산",
+     "URL": "https://en.wikipedia.org/wiki/Proof_of_the_Euler_product_formula_for_the_Riemann_zeta_function",
+     "유형": "2차"
+    },
+    {
+     "번호": 20,
+     "제목": "Christiane Rousseau, Divergent series - past, present, future (arXiv:1312.5712) — 아벨이 1826년 1월 16일 홈보에게 보낸 편지의 프랑스어 전문과 영역을 함께 수록",
+     "URL": "https://arxiv.org/pdf/1312.5712",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-series-advanced/note.md",
+   "세기전체": [
+    18,
+    19,
+    20
+   ],
+   "자수": 12359,
    "시각화": 5
   },
   {
@@ -2586,6 +2993,8 @@
     "출생지": "스위스 바젤"
    },
    "기여개념": [
+    "concept-series",
+    "concept-series-advanced",
     "concept-fundamental-theorem",
     "concept-integration"
    ],
@@ -3097,6 +3506,9 @@
    "-3": [
     "concept-integration"
    ],
+   "14": [
+    "concept-series"
+   ],
    "16": [
     "person-napier"
    ],
@@ -3108,6 +3520,7 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-series",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -3125,6 +3538,8 @@
     "century-18c",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-series",
+    "concept-series-advanced",
     "episode-priority-dispute",
     "person-euler",
     "person-lagrange",
@@ -3139,6 +3554,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-series",
+    "concept-series-advanced",
     "person-lagrange",
     "person-laplace"
    ],
@@ -3146,7 +3563,8 @@
     "concept-analytic-geometry-advanced",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "concept-series-advanced"
    ]
   },
   "분야": {
@@ -3158,6 +3576,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-series",
+    "concept-series-advanced",
     "episode-priority-dispute",
     "person-barrow",
     "person-euler",
@@ -3202,6 +3622,7 @@
    ],
    "정수론": [
     "century-18c",
+    "concept-series-advanced",
     "person-euler",
     "person-fermat",
     "person-lagrange"
@@ -3276,6 +3697,9 @@
     "person-lagrange",
     "person-napier"
    ],
+   "미적분": [
+    "concept-series"
+   ],
    "확률과통계": [
     "person-fermat",
     "person-pascal"
@@ -3299,7 +3723,9 @@
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
     "concept-integration",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "concept-series",
+    "concept-series-advanced"
    ],
    "일화": [
     "episode-descartes-fly",
@@ -3332,6 +3758,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-series",
+    "concept-series-advanced",
     "episode-descartes-fly",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
@@ -3395,6 +3823,7 @@
    ],
    "18세기": [
     "century-18c",
+    "concept-series",
     "episode-priority-dispute",
     "person-euler",
     "person-lagrange",
@@ -3407,6 +3836,8 @@
    ],
    "오일러": [
     "century-18c",
+    "concept-series",
+    "concept-series-advanced",
     "person-euler"
    ],
    "라그랑주": [
@@ -3452,7 +3883,8 @@
    ],
    "리만": [
     "concept-analytic-geometry-advanced",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "concept-series-advanced"
    ],
    "클라인": [
     "concept-analytic-geometry-advanced"
@@ -3494,7 +3926,8 @@
    "코시": [
     "concept-differentiation",
     "concept-differentiation-advanced",
-    "concept-fundamental-theorem"
+    "concept-fundamental-theorem",
+    "concept-series-advanced"
    ],
    "버클리": [
     "concept-differentiation-advanced"
@@ -3551,6 +3984,32 @@
     "concept-integration-advanced",
     "person-laplace"
    ],
+   "무한급수": [
+    "concept-series",
+    "concept-series-advanced",
+    "person-gregory"
+   ],
+   "급수": [
+    "concept-series"
+   ],
+   "바젤 문제": [
+    "concept-series"
+   ],
+   "조화급수": [
+    "concept-series"
+   ],
+   "발산급수": [
+    "concept-series-advanced"
+   ],
+   "아벨": [
+    "concept-series-advanced"
+   ],
+   "제타함수": [
+    "concept-series-advanced"
+   ],
+   "해석적정수론": [
+    "concept-series-advanced"
+   ],
    "일화": [
     "episode-descartes-fly",
     "episode-newton-apple",
@@ -3600,9 +4059,6 @@
    ],
    "정수론": [
     "person-fermat"
-   ],
-   "무한급수": [
-    "person-gregory"
    ],
    "원주율": [
     "person-gregory"
@@ -3689,7 +4145,8 @@
    "리만": [
     "concept-analytic-geometry-advanced",
     "concept-integration",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "concept-series-advanced"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -3711,6 +4168,7 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-series",
     "episode-priority-dispute"
    ],
    "person-newton": [
@@ -3731,7 +4189,8 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "concept-series-advanced"
    ],
    "person-lagrange": [
     "concept-differentiation-advanced",
@@ -3742,10 +4201,12 @@
     "concept-differentiation-advanced"
    ],
    "바이어슈트라스": [
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "concept-series-advanced"
    ],
    "person-gregory": [
     "concept-fundamental-theorem",
+    "concept-series",
     "person-barrow"
    ],
    "르베그": [
@@ -3770,11 +4231,25 @@
    "헨스톡·커즈와일": [
     "concept-integration-advanced"
    ],
+   "person-euler": [
+    "concept-series",
+    "concept-series-advanced",
+    "person-lagrange"
+   ],
+   "그란디": [
+    "concept-series"
+   ],
+   "마다바": [
+    "concept-series"
+   ],
+   "오렘": [
+    "concept-series"
+   ],
+   "아벨": [
+    "concept-series-advanced"
+   ],
    "person-pascal": [
     "episode-pascal-fermat-letters"
-   ],
-   "person-euler": [
-    "person-lagrange"
    ],
    "person-laplace": [
     "person-lagrange"
@@ -3991,6 +4466,12 @@
     {
      "슬러그": "concept-integration-advanced",
      "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -4503,6 +4984,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
@@ -4543,6 +5036,18 @@
     {
      "슬러그": "concept-integration-advanced",
      "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
      "유형": "개념",
      "경로": "선행개념"
     },
@@ -4671,8 +5176,78 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-series": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-series-advanced": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -4731,6 +5306,12 @@
      "경로": "짝문서"
     },
     {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
@@ -4773,6 +5354,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -4780,6 +5367,18 @@
     }
    ],
    "century-18c": [
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
@@ -4884,6 +5483,24 @@
   "적분법 (확장편)확장편": "concept-integration-advanced",
   "적분법 확장편": "concept-integration-advanced",
   "측도": "concept-integration-advanced",
+  "concept-series": "concept-series",
+  "개념_무한급수": "concept-series",
+  "급수": "concept-series",
+  "기하급수": "concept-series",
+  "등비급수": "concept-series",
+  "무한급수": "concept-series",
+  "무한급수 이해편": "concept-series",
+  "무한급수이해편": "concept-series",
+  "무한합": "concept-series",
+  "concept-series-advanced": "concept-series-advanced",
+  "개념_무한급수_확장편": "concept-series-advanced",
+  "급수 확장편": "concept-series-advanced",
+  "무한급수 확장편": "concept-series-advanced",
+  "무한급수 확장편 확장편": "concept-series-advanced",
+  "무한급수 확장편확장편": "concept-series-advanced",
+  "발산급수": "concept-series-advanced",
+  "오일러 곱셈공식": "concept-series-advanced",
+  "총합법": "concept-series-advanced",
   "episode-descartes-fly": "episode-descartes-fly",
   "데카르트 파리": "episode-descartes-fly",
   "데카르트와 천장의 파리": "episode-descartes-fly",
