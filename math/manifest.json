@@ -76,6 +76,7 @@
     "concept-differentiation"
    ],
    "후속개념": [
+    "concept-calculus-of-variations",
     "concept-fundamental-theorem",
     "concept-series",
     "concept-differential-equation",
@@ -1092,6 +1093,137 @@
   },
   {
    "유형": "개념",
+   "제목": "변분법",
+   "슬러그": "concept-calculus-of-variations",
+   "별칭": [
+    "변분법",
+    "최속강하선",
+    "최단강하선",
+    "브라키스토크론",
+    "등주문제",
+    "최소작용"
+   ],
+   "볼트파일명": "개념_변분법",
+   "트랙": "이해편",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학",
+    "역학"
+   ],
+   "난이도": "심화",
+   "요약": "답이 수가 아니라 곡선인 최적화 문제. 1696년의 공개 도전장에서 시작해, 자연이 최선을 고른다는 원리로까지 갔다.",
+   "태그": [
+    "수학사",
+    "변분법",
+    "최속강하선",
+    "사이클로이드",
+    "베르누이",
+    "오일러",
+    "라그랑주",
+    "최소작용",
+    "17세기",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "갈릴레오",
+     "변화": "1638년 가장 빨리 내려오는 경로를 원호라고 추측했다. 틀린 답이었지만 문제를 제기한 것은 맞다.",
+     "출처": 1
+    },
+    {
+     "세기": 17,
+     "인물": "요한 베르누이",
+     "변화": "1696년 6월 『학술기요』에 최속강하선 문제를 공개 도전으로 냈다. 다섯 사람이 풀었고 답은 사이클로이드였다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1744년 저작에서 이런 문제들을 다루는 일반적 방법을 세웠다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "라그랑주",
+     "변화": "1760년 무렵 기하학적 논증 없이 순수하게 해석적인 방법을 세웠다.",
+     "출처": 1
+    }
+   ],
+   "선행개념": [
+    "concept-differentiation",
+    "concept-integration"
+   ],
+   "후속개념": [
+    "concept-differential-equation"
+   ],
+   "기여인물": [
+    "person-euler",
+    "person-lagrange"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, The brachistochrone problem — 1696년 6월 도전, 갈릴레오의 1638년 오답, 다섯 명의 해결자, 뉴턴의 하룻밤, 오일러(1744)·라그랑주(1760)",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Brachistochrone/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 변분법 — 적분으로 표현된 양을 최소·최대로 만드는 곡선을 찾는 방법이며 무한차원 공간의 문제라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405106&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 최속강하곡선 — 요한 베르누이가 학술지에 낸 문제와 그 현대적 서술. 다만 출제 연도를 1689년으로 적고 있다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3340694&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과, 요한 베르누이 — 미적분학·미분방정식·최속강하선에 남긴 업적",
+     "URL": "https://terms.naver.com/entry.naver?docId=881439&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과, 신기한 곡선 사이클로이드 — 사이클로이드의 성질과 그 매력",
+     "URL": "https://terms.naver.com/entry.naver?docId=3409330&cid=60335&categoryId=60335",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "A Brief Survey of the History of the Calculus of Variations and its Applications (arXiv math/0402357) — 분야의 형성 과정 개관",
+     "URL": "https://arxiv.org/pdf/math/0402357",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 1744년 저작과 변분법에서의 위치",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Joseph-Louis Lagrange — 1755년 오일러에게 보낸 편지와 해석적 방법",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-calculus-of-variations/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 7678,
+   "시각화": 4
+  },
+  {
+   "유형": "개념",
    "제목": "미분방정식",
    "슬러그": "concept-differential-equation",
    "별칭": [
@@ -1305,6 +1437,7 @@
     "concept-analytic-geometry"
    ],
    "후속개념": [
+    "concept-calculus-of-variations",
     "concept-integration",
     "concept-fundamental-theorem",
     "concept-differential-equation"
@@ -3357,7 +3490,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7889,
+   "자수": 7893,
    "시각화": 5
   },
   {
@@ -4001,6 +4134,7 @@
     "출생지": "스위스 바젤"
    },
    "기여개념": [
+    "concept-calculus-of-variations",
     "concept-series",
     "concept-series-advanced",
     "concept-complex-number",
@@ -4132,6 +4266,7 @@
     "출생지": "사르데냐피에몬테 토리노"
    },
    "기여개념": [
+    "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4534,6 +4669,7 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
@@ -4557,6 +4693,7 @@
    ],
    "18": [
     "century-18c",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
@@ -4606,6 +4743,7 @@
    "해석학": [
     "century-17c",
     "century-18c",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
@@ -4657,6 +4795,7 @@
    ],
    "역학": [
     "century-18c",
+    "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "episode-newton-apple",
@@ -4772,6 +4911,7 @@
    "개념": [
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
@@ -4812,6 +4952,7 @@
     "century-18c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
@@ -4844,6 +4985,7 @@
    "17세기": [
     "century-17c",
     "concept-analytic-geometry",
+    "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differentiation",
     "concept-fundamental-theorem",
@@ -4891,6 +5033,7 @@
    ],
    "18세기": [
     "century-18c",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
@@ -4907,6 +5050,7 @@
    ],
    "오일러": [
     "century-18c",
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-differential-equation-advanced",
     "concept-series",
@@ -4915,6 +5059,7 @@
    ],
    "라그랑주": [
     "century-18c",
+    "concept-calculus-of-variations",
     "person-lagrange"
    ],
    "라플라스": [
@@ -4973,6 +5118,24 @@
     "concept-complex-number-advanced",
     "person-laplace"
    ],
+   "변분법": [
+    "concept-calculus-of-variations",
+    "person-lagrange"
+   ],
+   "최속강하선": [
+    "concept-calculus-of-variations"
+   ],
+   "사이클로이드": [
+    "concept-calculus-of-variations"
+   ],
+   "베르누이": [
+    "concept-calculus-of-variations",
+    "concept-differential-equation",
+    "concept-probability"
+   ],
+   "최소작용": [
+    "concept-calculus-of-variations"
+   ],
    "복소수": [
     "concept-complex-number",
     "concept-complex-number-advanced"
@@ -5020,10 +5183,6 @@
    ],
    "변수분리": [
     "concept-differential-equation"
-   ],
-   "베르누이": [
-    "concept-differential-equation",
-    "concept-probability"
    ],
    "뉴턴": [
     "concept-differential-equation",
@@ -5244,9 +5403,6 @@
    "해석역학": [
     "person-lagrange"
    ],
-   "변분법": [
-    "person-lagrange"
-   ],
    "미터법": [
     "person-lagrange"
    ],
@@ -5331,6 +5487,7 @@
     "concept-analytic-geometry-advanced"
    ],
    "person-euler": [
+    "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
@@ -5338,6 +5495,21 @@
     "concept-series",
     "concept-series-advanced",
     "person-lagrange"
+   ],
+   "person-lagrange": [
+    "concept-calculus-of-variations",
+    "concept-complex-number-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-differentiation-advanced",
+    "person-euler",
+    "person-laplace"
+   ],
+   "갈릴레오": [
+    "concept-calculus-of-variations"
+   ],
+   "요한 베르누이": [
+    "concept-calculus-of-variations"
    ],
    "가우스": [
     "concept-complex-number",
@@ -5349,14 +5521,6 @@
    ],
    "카르다노": [
     "concept-complex-number"
-   ],
-   "person-lagrange": [
-    "concept-complex-number-advanced",
-    "concept-differential-equation",
-    "concept-differential-equation-advanced",
-    "concept-differentiation-advanced",
-    "person-euler",
-    "person-laplace"
    ],
    "달랑베르": [
     "concept-complex-number-advanced",
@@ -5572,6 +5736,12 @@
      "슬러그": "century-17c",
      "제목": "17세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -5823,6 +5993,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -5951,6 +6127,12 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-differential-equation",
@@ -6157,6 +6339,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differential-equation",
      "제목": "미분방정식",
      "유형": "개념",
@@ -6311,6 +6499,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-complex-number",
      "제목": "복소수",
      "유형": "개념",
@@ -6365,6 +6559,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-differential-equation",
@@ -6465,6 +6665,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -6518,6 +6724,12 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -6685,6 +6897,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
      "슬러그": "concept-differential-equation-advanced",
      "제목": "미분방정식 확장편",
      "유형": "개념",
@@ -6723,6 +6941,38 @@
     {
      "슬러그": "person-newton",
      "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-calculus-of-variations": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -6799,6 +7049,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-complex-number-advanced",
      "제목": "복소수 (확장편)",
      "유형": "개념",
@@ -6872,6 +7128,12 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -6971,21 +7233,13 @@
      "경로": "관련일화"
     }
    ],
-   "concept-complex-number-advanced": [
-    {
-     "슬러그": "concept-complex-number",
-     "제목": "복소수",
-     "유형": "개념",
-     "경로": "짝문서"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
    "century-18c": [
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-complex-number",
      "제목": "복소수",
@@ -7045,6 +7299,20 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
+    }
+   ],
+   "concept-complex-number-advanced": [
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "person-gregory": [
@@ -7115,6 +7383,16 @@
   "해석기하 (확장편) 확장편": "concept-analytic-geometry-advanced",
   "해석기하 (확장편)확장편": "concept-analytic-geometry-advanced",
   "해석기하 확장편": "concept-analytic-geometry-advanced",
+  "concept-calculus-of-variations": "concept-calculus-of-variations",
+  "개념_변분법": "concept-calculus-of-variations",
+  "등주문제": "concept-calculus-of-variations",
+  "변분법": "concept-calculus-of-variations",
+  "변분법 이해편": "concept-calculus-of-variations",
+  "변분법이해편": "concept-calculus-of-variations",
+  "브라키스토크론": "concept-calculus-of-variations",
+  "최단강하선": "concept-calculus-of-variations",
+  "최소작용": "concept-calculus-of-variations",
+  "최속강하선": "concept-calculus-of-variations",
   "concept-complex-number": "concept-complex-number",
   "가우스평면": "concept-complex-number",
   "개념_복소수": "concept-complex-number",
