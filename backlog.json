@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-25",
- "scanned": 206,
- "resolved": 735,
- "pending": 573,
+ "scanned": 208,
+ "resolved": 762,
+ "pending": 566,
  "counts": {
-  "new": 274,
+  "new": 270,
   "companion": 5,
   "gap": 0
  },
@@ -1972,27 +1972,6 @@
    ]
   },
   {
-   "name": "연속체 가설",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
-     "u": "research/#r=infinity-set-theory",
-     "s": "research",
-     "n": 1
-    },
-    {
-     "t": "무한의 지반과 균열 (확장편) — 연속체가설·ZFC·선택공리·바나흐타르스키·괴델 (DEEP)",
-     "u": "research/#r=infinity-set-theory-advanced",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
    "name": "선택공리",
    "count": 2,
    "kind": "new",
@@ -3047,48 +3026,6 @@
   },
   {
    "name": "베른하르트 볼차노",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "리하르트 데데킨트",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "게오르크 칸토어",
    "count": 2,
    "kind": "new",
    "target": null,
@@ -4340,21 +4277,6 @@
   },
   {
    "name": "무한",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "무한을 세다 (이해편) — 갈릴레오의 역설부터 칸토어 대각선 논법까지, 무한에도 크기가 있다 (DEEP)",
-     "u": "research/#r=infinity-set-theory",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "칸토어",
    "count": 1,
    "kind": "new",
    "target": null,

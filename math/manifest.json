@@ -1442,7 +1442,7 @@
     19,
     20
    ],
-   "자수": 10686,
+   "자수": 10695,
    "시각화": 3
   },
   {
@@ -2105,7 +2105,7 @@
     19,
     20
    ],
-   "자수": 10928,
+   "자수": 10961,
    "시각화": 6
   },
   {
@@ -5276,6 +5276,217 @@
    ],
    "자수": 10758,
    "시각화": 4
+  },
+  {
+   "유형": "인물",
+   "제목": "게오르크 칸토어",
+   "슬러그": "person-cantor",
+   "별칭": [
+    "칸토어",
+    "칸토르",
+    "Georg Cantor",
+    "게오르크칸토어",
+    "집합론의 창시자",
+    "연속체 가설"
+   ],
+   "볼트파일명": "인물_게오르크 칸토어",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "집합론",
+    "해석학",
+    "수학기초론"
+   ],
+   "교과": [
+    "공통수학2"
+   ],
+   "난이도": "표준",
+   "요약": "실수를 정의하다 무한의 크기를 세게 됐다. 그 결과를 편지로 데데킨트에게 보냈고, 자기 이론이 낳은 첫 역설도 스스로 찾아냈다.",
+   "생몰": {
+    "출생": 1845,
+    "사망": 1918,
+    "출생지": "러시아 상트페테르부르크"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-dedekind"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 생몰·가족·학력, 아버지가 공학자를 원했다는 것, 베를린에서 바이어슈트라스·쿠머·크로네커의 강의, 하이네의 삼각급수 문제와 1870년 해결, 1872년 실수 정의, 1884년 첫 우울증과 그 원인에 대한 최근 이해, 크로네커와의 화해 시도, 미타그레플레르의 논문 철회 요청, 독일수학회 창립, 역설의 발견, 1911년 세인트앤드루스 방문, 1918년 사망",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 칸토어–데데킨트 서신의 날짜(1873년 9월 29일·12월 7일, 1877년 7월 20일)와 \"보고 있지만 믿을 수가 없어요\", 1873년 12월 7일을 집합론의 진정한 생일로 보는 서술, 연속체 가설과 힐베르트의 1900년 제시, 가장 큰 무한집합은 없다는 것과 러셀의 사과",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(인명사전), 칸토어 — 러시아 출생, 취리히(1862)·베를린에서 바이어슈트라스에게 배움, 할레 강사(1869)·교수(1879), 베를린 대학 초빙이 크로네커의 반대로 실현되지 않았다는 서술, 1884년경부터의 신경 계통 질환, 1872년 무리수론",
+     "URL": "https://terms.naver.com/entry.naver?docId=885567&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(철학사전), 유한과 무한 — 무한이 엄밀한 과학적 분석을 받게 된 것이 칸토어의 집합론에서 비롯한다는 서술, 가무한(생성적 무한)과 실무한(존재적 무한)의 구분",
+     "URL": "https://terms.naver.com/entry.naver?docId=388439&cid=41978&categoryId=41985",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 1872년 게르자우에서 칸토어를 만나 무한을 논한 것, 1874년 인터라켄에서 집합론을 논한 것, 데데킨트의 기여가 칸토어의 발표에서 밝혀지지 않았다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 칸토어가 1872년에 수렴하는 유리수열로 실수를 정의했고 하이네의 방법과 비슷했다는 것, 직선과의 연결을 위해 공리를 도입해야 했다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Richard Dedekind, Continuity and Irrational Numbers (1872), in Essays on the Theory of Numbers, tr. W. W. Beman, Open Court 1901 — 서문(1872년 3월 20일)에서 칸토어의 삼각급수 논문을 받았다고 적고, 그 논문 제2절의 공리가 자신이 말한 연속성의 본질과 일치한다고 평한 대목",
+     "URL": "https://www.gutenberg.org/files/21016/21016-pdf.pdf",
+     "유형": "1차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 실수의 구성 — 칸토어가 유리수열의 극한을 이용해 실수를 정의했다는 것, 유리수만으로 수렴성을 설명해야 하는 어려움, 생몰년 표기(1845~1918)",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-cantor/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 8657,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "리하르트 데데킨트",
+   "슬러그": "person-dedekind",
+   "별칭": [
+    "데데킨트",
+    "Richard Dedekind",
+    "리하르트데데킨트",
+    "데데킨트 절단",
+    "데데킨트 무한",
+    "데데킨트 수"
+   ],
+   "볼트파일명": "인물_리하르트 데데킨트",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "대수학",
+    "정수론",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "가우스의 마지막 제자였는데 자기 수학 교육에 구멍이 있다는 것을 알고 있었다. 강의를 준비하다 실수의 바닥을 찾아냈고, 그것을 14년 동안 서랍에 두었다.",
+   "생몰": {
+    "출생": 1831,
+    "사망": 1916,
+    "출생지": "독일 브라운슈바이크"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-cantor"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 생몰·가문·학력, 물리학에서 수학으로 옮긴 이유, 가우스의 마지막 제자, 디리클레와의 교유, 1858년 취리히 부임과 절단의 착상, 1862년 브라운슈바이크 귀향, 이데알 도입, 칸토어와의 만남(1872 게르자우·1874 인터라켄), 학회 선출과 명예박사",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Richard Dedekind, Continuity and Irrational Numbers (1872), in Essays on the Theory of Numbers, tr. W. W. Beman, Open Court 1901 — 1858년 가을 취리히에서 미적분을 처음 강의하며 산술의 과학적 기초가 없음을 절감했다는 자술, 기하 직관에 의존했다는 고백, 1858년 11월 24일, 출판을 미룬 이유, 1872년 3월 14일 하이네 논문과 3월 20일 칸토어 논문",
+     "URL": "https://www.gutenberg.org/files/21016/21016-pdf.pdf",
+     "유형": "1차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 데데킨트 절단 — 절단의 정의와 √2 예, 사잇값 정리·최대최소 정리를 증명하려면 실수가 무엇인지 먼저 규명해야 한다는 서술, 에우독소스 비례론과의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125241&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 실수의 구성 — 데데킨트가 직선을 모델로 실수를 정의하고 칸토어는 유리수열로 정의했다는 것, 두 방법이 본질적으로 같음, 생몰년 표기(1831~1916)",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 데데킨트가 1888년에 진부분집합과 일대일대응이 있는 집합을 무한집합으로 정의했다는 것, 페아노 무한과의 동치에 선택공리가 쓰인다는 것, 칸토어–데데킨트 서신의 날짜(1873년 9월 29일·12월 7일, 1877년 7월 20일)",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(철학사전), 유한과 무한 — 데데킨트의 무한집합 정의와 자연수·짝수의 대응 예, 가무한(생성적 무한)과 실무한(존재적 무한)의 구분",
+     "URL": "https://terms.naver.com/entry.naver?docId=388439&cid=41978&categoryId=41985",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 아이디얼 — 환론에서 아이디얼의 정의(부분환 I에 환의 원소를 곱해도 I 안에 남는 것)",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125363&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학달력), 20은 세 번째 데데킨트 수이다 — 단조 불 함수의 개수로 정의되는 데데킨트 수, n=1~4 에 대한 값 3·6·20·168 을 데데킨트 본인이 계산했다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=5685434&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 데데킨트가 1858년에 절단을 착상하고 1872년까지 출판하지 않았다는 것, 남들이 곧 발표하려는 것을 알고 출판을 결심했다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor History of Mathematics, Bernhard Riemann — 1855~56년 세 사람에게만 한 아벨함수 강의를 데데킨트가 리만 사후에 출판했다는 서술, 『기하학의 기초에 놓인 가설들』이 1854년에 쓰였으나 1868년까지 출판되지 않았다는 서술, 리만 전집을 베버와 데데킨트가 편집했다는 서지",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 칸토어와 데데킨트의 풍성한 수학 서신이 1882년에 끝났다는 것, 1897년 취리히 국제수학자대회에서 다시 만나 우정을 회복했다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-dedekind/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 8261,
+   "시각화": 3
   }
  ],
  "index": {
@@ -5360,6 +5571,8 @@
     "concept-probability-advanced",
     "concept-series",
     "concept-series-advanced",
+    "person-cantor",
+    "person-dedekind",
     "person-lagrange",
     "person-laplace"
    ],
@@ -5372,7 +5585,8 @@
     "concept-fundamental-theorem",
     "concept-integration-advanced",
     "concept-probability-advanced",
-    "concept-series-advanced"
+    "concept-series-advanced",
+    "person-cantor"
    ]
   },
   "분야": {
@@ -5395,6 +5609,8 @@
     "concept-series-advanced",
     "episode-priority-dispute",
     "person-barrow",
+    "person-cantor",
+    "person-dedekind",
     "person-euler",
     "person-fermat",
     "person-gregory",
@@ -5429,6 +5645,7 @@
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
     "concept-complex-number-advanced",
+    "person-dedekind",
     "person-descartes",
     "person-napier"
    ],
@@ -5445,6 +5662,7 @@
    "정수론": [
     "century-18c",
     "concept-series-advanced",
+    "person-dedekind",
     "person-euler",
     "person-fermat",
     "person-lagrange"
@@ -5452,7 +5670,9 @@
    "수학기초론": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "person-cantor",
+    "person-dedekind"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -5461,7 +5681,8 @@
     "concept-complex-number-advanced"
    ],
    "집합론": [
-    "concept-function"
+    "concept-function",
+    "person-cantor"
    ],
    "그래프이론": [
     "concept-graph-theory",
@@ -5514,12 +5735,14 @@
     "concept-analysis-rigor-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "person-dedekind",
     "person-fermat",
     "person-leibniz",
     "person-newton"
    ],
    "공통수학2": [
     "concept-analytic-geometry",
+    "person-cantor",
     "person-descartes"
    ],
    "기하": [
@@ -5589,6 +5812,8 @@
    ],
    "인물": [
     "person-barrow",
+    "person-cantor",
+    "person-dedekind",
     "person-descartes",
     "person-euler",
     "person-fermat",
@@ -6178,7 +6403,8 @@
   "인물": {
    "person-cantor": [
     "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
+    "concept-analysis-rigor-advanced",
+    "person-dedekind"
    ],
    "person-cauchy": [
     "concept-analysis-rigor",
@@ -6186,7 +6412,8 @@
    ],
    "person-dedekind": [
     "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
+    "concept-analysis-rigor-advanced",
+    "person-cantor"
    ],
    "person-weierstrass": [
     "concept-analysis-rigor",
@@ -6195,16 +6422,8 @@
    "뉴턴·라이프니츠": [
     "concept-analysis-rigor"
    ],
-   "데데킨트": [
-    "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
-   ],
    "볼차노": [
     "concept-analysis-rigor"
-   ],
-   "칸토어": [
-    "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
    ],
    "코시": [
     "concept-analysis-rigor",
@@ -7347,6 +7566,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
@@ -7775,6 +8000,12 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -7865,6 +8096,18 @@
      "제목": "무한급수 확장편",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "concept-differential-equation": [
@@ -8227,6 +8470,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
@@ -8263,6 +8512,70 @@
      "제목": "그래프이론의 탄생",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-dedekind": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-cantor": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "concept-analysis-rigor-advanced": [
@@ -8271,6 +8584,18 @@
      "제목": "해석학의 엄밀화",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "century-18c": [
@@ -8676,6 +9001,23 @@
   "아이작 배로우": "person-barrow",
   "아이작배로": "person-barrow",
   "인물_아이작 배로": "person-barrow",
+  "Georg Cantor": "person-cantor",
+  "person-cantor": "person-cantor",
+  "게오르크 칸토어": "person-cantor",
+  "게오르크칸토어": "person-cantor",
+  "연속체 가설": "person-cantor",
+  "인물_게오르크 칸토어": "person-cantor",
+  "집합론의 창시자": "person-cantor",
+  "칸토르": "person-cantor",
+  "칸토어": "person-cantor",
+  "Richard Dedekind": "person-dedekind",
+  "person-dedekind": "person-dedekind",
+  "데데킨트": "person-dedekind",
+  "데데킨트 무한": "person-dedekind",
+  "데데킨트 수": "person-dedekind",
+  "리하르트 데데킨트": "person-dedekind",
+  "리하르트데데킨트": "person-dedekind",
+  "인물_리하르트 데데킨트": "person-dedekind",
   "Descartes": "person-descartes",
   "person-descartes": "person-descartes",
   "데카르트": "person-descartes",
