@@ -780,6 +780,347 @@
   },
   {
    "유형": "개념",
+   "제목": "해석학의 엄밀화",
+   "슬러그": "concept-analysis-rigor",
+   "별칭": [
+    "해석학의 엄밀화",
+    "엄밀화",
+    "실수의 구성",
+    "데데킨트 절단",
+    "절단",
+    "해석학의 산술화",
+    "산술화",
+    "실수의 정의"
+   ],
+   "볼트파일명": "개념_해석학의 엄밀화",
+   "트랙": "이해편",
+   "짝문서": "concept-analysis-rigor-advanced",
+   "세기": [
+    17,
+    19
+   ],
+   "분야": [
+    "해석학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "실수가 무엇인지 정하지 않은 채 200년 동안 미적분을 했다. 극한을 정확히 쓰려 하자 그 아래가 비어 있다는 것이 드러났고, 바닥을 놓는 데 1817년부터 1872년까지 55년이 걸렸다.",
+   "태그": [
+    "수학사",
+    "해석학",
+    "엄밀화",
+    "실수",
+    "완비성",
+    "데데킨트",
+    "칸토어",
+    "볼차노",
+    "코시",
+    "극한",
+    "19세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "뉴턴·라이프니츠",
+     "변화": "자연을 관찰하는 데서 출발해 '연속성의 원리'를 근본에 놓고 미적분을 세웠다. 논리적 정당화의 요구는 나중 일로 미뤄졌다.",
+     "출처": 9
+    },
+    {
+     "세기": 19,
+     "인물": "볼차노",
+     "변화": "1817년 『순수 해석적 증명』에서 무한소를 쓰지 않고 중간값 정리를 증명하려 했다. 오늘날 코시 수열이라 부르는 것을 이 논문에서 정의했다.",
+     "출처": 7
+    },
+    {
+     "세기": 19,
+     "인물": "코시",
+     "변화": "1821년 『해석학 강의』에서 극한을 앞세웠으나, 실수가 무엇인지는 이미 알려진 것으로 전제했다.",
+     "출처": 5
+    },
+    {
+     "세기": 19,
+     "인물": "데데킨트",
+     "변화": "1858년 11월 24일, 취리히에서 미적분을 처음 가르칠 준비를 하다가 절단을 착상했다. 출판은 1872년이다.",
+     "출처": 6
+    },
+    {
+     "세기": 19,
+     "인물": "칸토어",
+     "변화": "1872년 삼각급수 논문에서 무리수를 수렴하는 유리수열로 정의했다. 데데킨트의 같은 해 논문이 이 논문을 인용한다.",
+     "출처": 8
+    }
+   ],
+   "선행개념": [
+    "concept-function",
+    "concept-series",
+    "concept-differentiation"
+   ],
+   "후속개념": [
+    "concept-real-analysis"
+   ],
+   "기여인물": [
+    "person-cauchy",
+    "person-dedekind",
+    "person-cantor",
+    "person-weierstrass"
+   ],
+   "이미지": [
+    {
+     "파일": "assets/figures/dedekind-cut-three-cases.svg",
+     "출처": "직접 제작",
+     "라이선스": "CC0",
+     "설명": "유리수를 자르면 생기는 세 경우. 셋째 경우에만 자른 자리에 유리수가 없고, 데데킨트는 그 분할 자체를 새로운 수로 삼았다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 실수 — 유리수와 무리수의 합집합으로 정의하면 \"실수가 무엇인지 알 수 없게 된다\"는 순환 지적, 소수전개에 극한 개념이 들어 있다는 서술, 엄밀한 정의는 19세기 말 데데킨트·칸토어",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125359&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 실수의 구성 — 실수를 정의해야 극한을 정의할 수 있다는 서술, 대수적 확장으로는 실수를 정의할 수 없는 이유(가산성), 데데킨트 절단의 세 가지 분할과 덧셈 정의, 칸토어 방식의 어려움",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 데데킨트 절단 — 절단의 정의와 √2 예, 사잇값 정리·최대최소 정리를 증명하려면 실수가 무엇인지 먼저 규명해야 한다는 서술, 에우독소스 비례론과의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125241&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 실수계 — 체·순서체·완비성 공리의 세 층, 완비성이 실수체를 유리수체와 갈라놓는다는 서술, 1870년대 칸토어와 데데킨트의 구성",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405191&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 코시가 실수를 이미 알려진 것으로 전제했다는 서술, 볼차노 1817, 데데킨트 1858년 착상과 1872년 출판, 바이어슈트라스의 1865년 베를린 강의",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 1858년 가을 취리히 부임, 미적분을 처음 가르칠 준비를 하다 절단을 착상, 1858년 11월 24일이라는 본인의 회고, 1872년 『연속성과 무리수』",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 1817년 『순수 해석적 증명』이 미적분에서 무한소를 몰아내려는 시도였다는 것, 중간값 정리 증명과 코시 수열의 정의, 1819년 정직·가택연금·출판 금지",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 하이네가 낸 삼각급수 표현의 유일성 문제, 1872년 논문에서 무리수를 수렴하는 유리수열로 정의, 데데킨트가 같은 해 논문에서 칸토어의 논문을 인용",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Felix Klein, The arithmetizing of mathematics, Bulletin of the American Mathematical Society 2(8) (1896) 241-249 — 1895년 11월 2일 괴팅겐 강연의 영역. 뉴턴·라이프니츠와 18세기가 연속성의 원리를 근본에 놓았다는 서술, 예전에는 그림이 증명 노릇을 했다는 서술",
+     "URL": "https://projecteuclid.org/euclid.bams/1183414645",
+     "유형": "1차"
+    }
+   ],
+   "path": "notes/concept-analysis-rigor/note.md",
+   "세기전체": [
+    17,
+    19
+   ],
+   "자수": 9699,
+   "시각화": 8
+  },
+  {
+   "유형": "개념",
+   "제목": "해석학의 엄밀화 (확장편)",
+   "슬러그": "concept-analysis-rigor-advanced",
+   "별칭": [
+    "해석학의 엄밀화 확장편",
+    "엄밀화 확장편",
+    "실수의 구성 확장편",
+    "완비성",
+    "완비성 공리",
+    "코시 완비성",
+    "산술화",
+    "해석학의 산술화"
+   ],
+   "볼트파일명": "개념_해석학의 엄밀화 (확장편)",
+   "트랙": "확장편",
+   "짝문서": "concept-analysis-rigor",
+   "세기": [
+    17,
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "심화",
+   "요약": "데데킨트는 직선의 연속성을 증명하지 않았다. 증명할 수 없다고 스스로 못박고 공리로 놓았다. 실수를 만드는 두 방법과, 산술화가 직관을 몰아내며 치른 값.",
+   "태그": [
+    "수학사",
+    "해석학",
+    "엄밀화",
+    "실수의 구성",
+    "완비성",
+    "데데킨트 절단",
+    "코시 수열",
+    "칸토어",
+    "힐베르트",
+    "클라인",
+    "산술화",
+    "19세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 19,
+     "인물": "데데킨트",
+     "변화": "1858년 취리히에서 미적분을 처음 강의하며 \"산술의 진정으로 과학적인 기초가 없다\"고 절감했고, 그해 11월 24일 연속성의 정의를 찾아냈다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "데데킨트",
+     "변화": "직선의 연속성은 증명할 수 없고 공리로 놓을 수밖에 없다고 스스로 밝혔다. 그 위에서 절단으로 무리수를 '창조'했다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "칸토어",
+     "변화": "1872년 삼각급수 논문에서 수렴하는 유리수열로 실수를 정의했다. 데데킨트는 서문에서 이 논문의 공리가 자기 연속성 원리와 일치한다고 적었다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "바이어슈트라스",
+     "변화": "강의에서 무리수를 수렴급수의 극한으로 정의하는 엄밀성의 표준을 세웠으나 출판하지 않았다.",
+     "출처": 7
+    },
+    {
+     "세기": 20,
+     "인물": "힐베르트",
+     "변화": "1900년에 유리수에서 쌓아 올리는 대신 18개의 공리로 실수를 규정했다. 존재성 증명이 없다는 문제가 남았다.",
+     "출처": 3
+    },
+    {
+     "세기": 19,
+     "인물": "클라인",
+     "변화": "1895년 강연에서 산술화를 \"긍정과 부정 양쪽\"으로 평가했다. 논리적 연역만으로 수학을 다 다룰 수는 없다는 것이다.",
+     "출처": 2
+    }
+   ],
+   "선행개념": [
+    "concept-analysis-rigor",
+    "concept-function",
+    "concept-series-advanced"
+   ],
+   "후속개념": [
+    "concept-real-analysis"
+   ],
+   "기여인물": [
+    "person-dedekind",
+    "person-cantor",
+    "person-weierstrass",
+    "person-cauchy"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Richard Dedekind, Continuity and Irrational Numbers (1872), in Essays on the Theory of Numbers, tr. W. W. Beman, Open Court 1901 — 1858년 가을 취리히 강의와 11월 24일, 기하 직관에 의존했다는 자술, 연속성 원리와 그것이 공리라는 언명, 절단으로 무리수를 창조한다는 서술, 1872년 3월 14일 하이네 논문과 3월 20일 칸토어 논문",
+     "URL": "https://www.gutenberg.org/files/21016/21016-pdf.pdf",
+     "유형": "1차"
+    },
+    {
+     "번호": 2,
+     "제목": "Felix Klein, The arithmetizing of mathematics, Bulletin of the American Mathematical Society 2(8) (1896) 241-249 — 1895년 11월 2일 괴팅겐 강연의 영역. 바이어슈트라스가 주창자라는 것, 그림이 증명 노릇을 했다는 서술, 크로네커의 무리수 거부, 산술화에 대한 긍정과 부정 양면 평가, 교육에서 직관이 필요하다는 주장",
+     "URL": "https://projecteuclid.org/euclid.bams/1183414645",
+     "유형": "1차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 코시가 실수를 전제했다는 것, 볼차노의 미출판 실수 이론에 대한 상반된 평가, 한켈 1867·메레 1869·하이네 1872·칸토어 1872, 해밀턴이 절단에 근접했으나 정의로 삼지 못한 것, 힐베르트 1900년 18개 공리",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 1858년 취리히 부임과 절단의 착상, 1872년 『연속성과 무리수』 출판",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 1817년 논문의 코시 수열 정의, 미출판 저작이 영향을 주지 못한 사정, 어디서도 미분되지 않는 연속함수의 예를 그가 제시했다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 하이네가 낸 삼각급수 유일성 문제와 1870년 4월 해결, 1872년 실수 정의, 1873년 12월 실수의 비가산성 증명과 1874년 발표",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Karl Weierstrass — 1863/64년 해석함수론 강의에서 실수 이론을 세우기 시작했다는 것, 1872년 연속이면서 어디서도 미분불가능한 함수, 무리수를 수렴급수의 극한으로 정의한 엄밀성 표준",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 실수의 구성 — 대수적 확장으로 실수를 정의할 수 없는 이유(대수적 수는 가산, 실수는 비가산), 절단의 세 분할과 연산 정의, 칸토어 방식이 유리수만으로 수렴성을 말해야 하는 어려움",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과), 데데킨트 절단 — 절단의 형식적 정의(아래로 닫힘·최댓값 없음), 두 구성이 결과적으로 같다는 서술, 에우독소스 비례론과의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125241&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학백과), 실수계 — 체·순서체·완비성의 세 층, 완비성 공리를 만족하는 순서체가 둘이면 본질적으로 같다는 유일성 서술, 존재성이 어려운 문제였다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405191&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(수학백과), 실수의 완비성 — 완비성과 동치인 다섯 성질(단조수렴·최소상계·코시 완비성·줄어드는 구간·볼차노–바이어슈트라스)과 각각의 유리수 반례, 코시 완비성이 거리 개념만 요구한다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학백과), 실수 — 수직선이 실수의 모델이라는 것, 소수전개에 극한 개념이 들어 있다는 서술, 실수가 엄밀히 정의되면서 미분·적분의 이론적 근거가 확립되었다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125359&cid=60207&categoryId=60207",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-analysis-rigor-advanced/note.md",
+   "세기전체": [
+    17,
+    19,
+    20
+   ],
+   "자수": 12976,
+   "시각화": 7
+  },
+  {
+   "유형": "개념",
    "제목": "해석기하",
    "슬러그": "concept-analytic-geometry",
    "별칭": [
@@ -1443,7 +1784,8 @@
     "concept-calculus-of-variations",
     "concept-integration",
     "concept-fundamental-theorem",
-    "concept-differential-equation"
+    "concept-differential-equation",
+    "concept-analysis-rigor"
    ],
    "기여인물": [
     "person-fermat",
@@ -1886,7 +2228,7 @@
     18,
     19
    ],
-   "자수": 7819,
+   "자수": 7831,
    "시각화": 5
   },
   {
@@ -3759,7 +4101,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7920,
+   "자수": 7997,
    "시각화": 5
   },
   {
@@ -3936,7 +4278,7 @@
     19,
     20
    ],
-   "자수": 10701,
+   "자수": 10705,
    "시각화": 5
   },
   {
@@ -4938,6 +5280,8 @@
    ],
    "17": [
     "century-17c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "concept-calculus-of-variations",
@@ -4987,6 +5331,8 @@
     "person-newton"
    ],
    "19": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
     "concept-complex-number-advanced",
@@ -5006,6 +5352,7 @@
     "person-laplace"
    ],
    "20": [
+    "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced",
     "concept-complex-number-advanced",
     "concept-differential-equation-advanced",
@@ -5020,6 +5367,8 @@
    "해석학": [
     "century-17c",
     "century-18c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
     "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-differential-equation",
@@ -5088,14 +5437,16 @@
     "person-fermat",
     "person-lagrange"
    ],
+   "수학기초론": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation-advanced"
+   ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
    ],
    "복소해석학": [
     "concept-complex-number-advanced"
-   ],
-   "수학기초론": [
-    "concept-differentiation-advanced"
    ],
    "집합론": [
     "concept-function"
@@ -5146,6 +5497,15 @@
    ]
   },
   "교과": {
+   "미적분Ⅰ": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "person-fermat",
+    "person-leibniz",
+    "person-newton"
+   ],
    "공통수학2": [
     "concept-analytic-geometry",
     "person-descartes"
@@ -5159,13 +5519,6 @@
     "concept-complex-number-advanced",
     "concept-function",
     "person-napier"
-   ],
-   "미적분Ⅰ": [
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "person-fermat",
-    "person-leibniz",
-    "person-newton"
    ],
    "미적분Ⅱ": [
     "concept-fundamental-theorem",
@@ -5195,6 +5548,8 @@
     "century-18c"
    ],
    "개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "concept-calculus-of-variations",
@@ -5238,6 +5593,8 @@
    "수학사": [
     "century-17c",
     "century-18c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "concept-calculus-of-variations",
@@ -5363,11 +5720,75 @@
     "person-laplace"
    ],
    "해석학": [
-    "century-18c"
+    "century-18c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
    ],
    "프랑스혁명": [
     "century-18c",
     "person-lagrange"
+   ],
+   "엄밀화": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation-advanced",
+    "concept-integration-advanced"
+   ],
+   "실수": [
+    "concept-analysis-rigor"
+   ],
+   "완비성": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "데데킨트": [
+    "concept-analysis-rigor"
+   ],
+   "칸토어": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "볼차노": [
+    "concept-analysis-rigor"
+   ],
+   "코시": [
+    "concept-analysis-rigor",
+    "concept-complex-number-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
+    "concept-series-advanced"
+   ],
+   "극한": [
+    "concept-analysis-rigor"
+   ],
+   "19세기": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
+    "concept-function",
+    "person-laplace"
+   ],
+   "실수의 구성": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "데데킨트 절단": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "코시 수열": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "힐베르트": [
+    "concept-analysis-rigor-advanced",
+    "concept-analytic-geometry-advanced"
+   ],
+   "클라인": [
+    "concept-analysis-rigor-advanced",
+    "concept-analytic-geometry-advanced"
+   ],
+   "산술화": [
+    "concept-analysis-rigor-advanced"
    ],
    "좌표": [
     "concept-analytic-geometry",
@@ -5401,18 +5822,6 @@
     "concept-complex-number-advanced",
     "concept-integration-advanced",
     "concept-series-advanced"
-   ],
-   "클라인": [
-    "concept-analytic-geometry-advanced"
-   ],
-   "힐베르트": [
-    "concept-analytic-geometry-advanced"
-   ],
-   "19세기": [
-    "concept-analytic-geometry-advanced",
-    "concept-complex-number-advanced",
-    "concept-function",
-    "person-laplace"
    ],
    "변분법": [
     "concept-calculus-of-variations",
@@ -5462,13 +5871,6 @@
    ],
    "복소해석": [
     "concept-complex-number-advanced"
-   ],
-   "코시": [
-    "concept-complex-number-advanced",
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-fundamental-theorem",
-    "concept-series-advanced"
    ],
    "미분방정식": [
     "concept-differential-equation",
@@ -5541,10 +5943,6 @@
    ],
    "비표준해석학": [
     "concept-differentiation-advanced"
-   ],
-   "엄밀화": [
-    "concept-differentiation-advanced",
-    "concept-integration-advanced"
    ],
    "함수": [
     "concept-function"
@@ -5766,6 +6164,56 @@
    ]
   },
   "인물": {
+   "person-cantor": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "person-cauchy": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "person-dedekind": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "person-weierstrass": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "뉴턴·라이프니츠": [
+    "concept-analysis-rigor"
+   ],
+   "데데킨트": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "볼차노": [
+    "concept-analysis-rigor"
+   ],
+   "칸토어": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "코시": [
+    "concept-analysis-rigor",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
+    "concept-integration-advanced",
+    "concept-series-advanced"
+   ],
+   "바이어슈트라스": [
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation-advanced",
+    "concept-series-advanced"
+   ],
+   "클라인": [
+    "concept-analysis-rigor-advanced",
+    "concept-analytic-geometry-advanced"
+   ],
+   "힐베르트": [
+    "concept-analysis-rigor-advanced"
+   ],
    "person-descartes": [
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
@@ -5794,9 +6242,6 @@
     "concept-series-advanced"
    ],
    "미분기하학": [
-    "concept-analytic-geometry-advanced"
-   ],
-   "클라인": [
     "concept-analytic-geometry-advanced"
    ],
    "퐁슬레": [
@@ -5916,19 +6361,8 @@
     "concept-differentiation",
     "concept-differentiation-advanced"
    ],
-   "코시": [
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-fundamental-theorem",
-    "concept-integration-advanced",
-    "concept-series-advanced"
-   ],
    "로빈슨": [
     "concept-differentiation-advanced"
-   ],
-   "바이어슈트라스": [
-    "concept-differentiation-advanced",
-    "concept-series-advanced"
    ],
    "person-gregory": [
     "concept-fundamental-theorem",
@@ -6463,6 +6897,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-analytic-geometry",
@@ -7081,6 +7521,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-calculus-of-variations",
      "제목": "변분법",
      "유형": "개념",
@@ -7110,6 +7556,18 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -7161,6 +7619,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-complex-number",
@@ -7219,6 +7683,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "concept-complex-number-advanced",
      "제목": "복소수 (확장편)",
      "유형": "개념",
@@ -7263,6 +7739,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
      "유형": "개념",
@@ -7285,6 +7773,80 @@
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
      "경로": "기여개념"
+    }
+   ],
+   "concept-analysis-rigor": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "후속개념"
     }
    ],
    "concept-differential-equation": [
@@ -7605,6 +8167,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analytic-geometry-advanced",
      "제목": "해석기하 (확장편)",
      "유형": "개념",
@@ -7673,21 +8247,21 @@
      "경로": "본문"
     }
    ],
-   "episode-descartes-fly": [
+   "concept-analysis-rigor-advanced": [
     {
-     "슬러그": "concept-analytic-geometry",
-     "제목": "해석기하",
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
      "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-descartes",
-     "제목": "르네 데카르트",
-     "유형": "인물",
-     "경로": "관련일화"
+     "경로": "짝문서"
     }
    ],
    "century-18c": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-calculus-of-variations",
      "제목": "변분법",
@@ -7767,6 +8341,20 @@
      "경로": "본문"
     }
    ],
+   "episode-descartes-fly": [
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ],
    "concept-complex-number-advanced": [
     {
      "슬러그": "concept-complex-number",
@@ -7841,6 +8429,29 @@
   "세기_18세기": "century-18c",
   "십팔세기": "century-18c",
   "해석학의 세기": "century-18c",
+  "concept-analysis-rigor": "concept-analysis-rigor",
+  "개념_해석학의 엄밀화": "concept-analysis-rigor",
+  "데데킨트 절단": "concept-analysis-rigor",
+  "산술화": "concept-analysis-rigor",
+  "실수의 구성": "concept-analysis-rigor",
+  "실수의 정의": "concept-analysis-rigor",
+  "엄밀화": "concept-analysis-rigor",
+  "절단": "concept-analysis-rigor",
+  "해석학의 산술화": "concept-analysis-rigor",
+  "해석학의 엄밀화": "concept-analysis-rigor",
+  "해석학의 엄밀화 이해편": "concept-analysis-rigor",
+  "해석학의 엄밀화이해편": "concept-analysis-rigor",
+  "concept-analysis-rigor-advanced": "concept-analysis-rigor-advanced",
+  "개념_해석학의 엄밀화 (확장편)": "concept-analysis-rigor-advanced",
+  "실수의 구성 확장편": "concept-analysis-rigor-advanced",
+  "엄밀화 확장편": "concept-analysis-rigor-advanced",
+  "완비성": "concept-analysis-rigor-advanced",
+  "완비성 공리": "concept-analysis-rigor-advanced",
+  "코시 완비성": "concept-analysis-rigor-advanced",
+  "해석학의 엄밀화 (확장편)": "concept-analysis-rigor-advanced",
+  "해석학의 엄밀화 (확장편) 확장편": "concept-analysis-rigor-advanced",
+  "해석학의 엄밀화 (확장편)확장편": "concept-analysis-rigor-advanced",
+  "해석학의 엄밀화 확장편": "concept-analysis-rigor-advanced",
   "concept-analytic-geometry": "concept-analytic-geometry",
   "개념_해석기하": "concept-analytic-geometry",
   "데카르트 기하학": "concept-analytic-geometry",

@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-25",
- "scanned": 204,
- "resolved": 696,
- "pending": 561,
+ "scanned": 206,
+ "resolved": 734,
+ "pending": 573,
  "counts": {
-  "new": 267,
+  "new": 274,
   "companion": 5,
   "gap": 0
  },
@@ -3025,6 +3025,132 @@
    ]
   },
   {
+   "name": "오귀스탱루이 코시",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "베른하르트 볼차노",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "리하르트 데데킨트",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "게오르크 칸토어",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "에두아르트 하이네",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "카를 바이어슈트라스",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화",
+     "u": "math/#n=concept-analysis-rigor",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "크리스티안 하위헌스",
    "count": 2,
    "kind": "new",
@@ -3082,27 +3208,6 @@
     {
      "t": "적분법 (확장편)",
      "u": "math/#n=concept-integration-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "해석학의 엄밀화",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "무한급수",
-     "u": "math/#n=concept-series",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "무한급수 확장편",
-     "u": "math/#n=concept-series-advanced",
      "s": "math",
      "n": 1
     }
@@ -3440,21 +3545,6 @@
   },
   {
    "name": "균등수렴",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미적분의 엄밀화 (확장편) — 배로의 알고리즘, 무한소의 결함, 150년 만의 봉합 (DEEP)",
-     "u": "research/#r=calculus-discovery-advanced",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "실수의 구성",
    "count": 1,
    "kind": "new",
    "target": null,
@@ -4604,6 +4694,51 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "다비트 힐베르트",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "고틀로프 프레게",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "펠릭스 클라인",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "해석학의 엄밀화 (확장편)",
+     "u": "math/#n=concept-analysis-rigor-advanced",
+     "s": "math",
      "n": 1
     }
    ]

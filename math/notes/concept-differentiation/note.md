@@ -40,7 +40,7 @@
     출처: 13
 
 선행개념: [concept-analytic-geometry]
-후속개념: [concept-calculus-of-variations, concept-integration, concept-fundamental-theorem, concept-differential-equation]
+후속개념: [concept-calculus-of-variations, concept-integration, concept-fundamental-theorem, concept-differential-equation, concept-analysis-rigor]
 기여인물: [person-fermat, person-barrow, person-newton, person-leibniz]
 
 이미지:
