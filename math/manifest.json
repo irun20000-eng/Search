@@ -1912,6 +1912,136 @@
   },
   {
    "유형": "개념",
+   "제목": "그래프이론의 탄생",
+   "슬러그": "concept-graph-theory",
+   "별칭": [
+    "그래프이론",
+    "그래프 이론",
+    "한붓그리기",
+    "오일러 회로",
+    "쾨니히스베르크 다리",
+    "위치의 기하학"
+   ],
+   "볼트파일명": "개념_그래프이론의 탄생",
+   "트랙": "이해편",
+   "세기": [
+    18,
+    19
+   ],
+   "분야": [
+    "그래프이론",
+    "위상수학"
+   ],
+   "난이도": "개관",
+   "요약": "재는 것을 그만두자 새 수학이 나왔다. 라이프니츠가 이름만 지어 두고 실물이 없던 분야를, 오일러가 다리 일곱 개로 열었다.",
+   "태그": [
+    "수학사",
+    "그래프이론",
+    "위상수학",
+    "쾨니히스베르크",
+    "한붓그리기",
+    "오일러",
+    "라이프니츠",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "크기가 아니라 위치 관계만 다루는 기하학이 있어야 한다고 짐작했다. 이름만 있고 실물이 없는 분야였다.",
+     "출처": 3
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1735년 8월 26일 상트페테르부르크 학술원에서 쾨니히스베르크 다리 문제의 풀이를 발표하고 1736년에 출판했다. 논문 제목에 '위치의 기하학'이 들어간다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "히어홀처",
+     "변화": "1873년에 오일러가 남긴 충분조건을 증명해 정리를 완성했다. 137년 만이다.",
+     "출처": 4
+    }
+   ],
+   "선행개념": [],
+   "후속개념": [],
+   "기여인물": [
+    "person-euler"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "History of Information, Leonhard Euler Publishes the Problem of the Königsberg Bridges — 1735년 8월 26일 발표, 1736년 『Solutio problematis ad geometriam situs pertinentis』 출판, 위상수학과 그래프이론의 최초 논문으로 인용된다는 사실",
+     "URL": "https://historyofinformation.com/detail.php?id=3406",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MAA Convergence, Leonard Euler's Solution to the Konigsberg Bridge Problem — 오일러의 논증과 차수 조건",
+     "URL": "https://old.maa.org/press/periodicals/convergence/leonard-eulers-solution-to-the-konigsberg-bridge-problem",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "History of Knot Theory (arXiv math/0703096) — 라이프니츠가 크기를 무시하고 위치만 다루는 '위치의 기하학'을 짐작했고, 오일러의 쾨니히스베르크가 그 최초의 설득력 있는 예였다는 서술",
+     "URL": "https://arxiv.org/pdf/math/0703096",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Hugo Soller, The Seven Bridges of Königsberg (George Mason University) — 오일러는 필요조건만 증명했고 충분조건은 1873년 히어홀처가 증명했다는 사실",
+     "URL": "http://physics.gmu.edu/~isatija/phys301/Hugo.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 쾨니히스베르크 다리건너기 문제 — 프레겔강의 두 섬을 잇는 일곱 다리",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338204&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 오일러 회로 — 모든 변을 단 한 번씩 통과하는 회로이며 펜을 떼지 않고 그리는 것과 같다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338422&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 오일러의 한붓그리기 정리 — 연결 그래프에서 한붓그리기가 가능한 필요충분조건",
+     "URL": "https://terms.naver.com/entry.naver?docId=3340655&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학달력), 3-정규 성냥개비 그래프 — 그래프이론은 점과 선으로만 이루어진 도형의 성질을 연구하는 학문",
+     "URL": "https://terms.naver.com/entry.naver?docId=5145696&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과, 노드 — 그래프를 이루는 점(정점·결절)과 변",
+     "URL": "https://terms.naver.com/entry.naver?docId=830672&cid=42344&categoryId=42344",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과, 한붓그리기 — 쾨니히스베르크 문제를 현대적 상황으로 옮긴 교과 자료",
+     "URL": "https://terms.naver.com/entry.naver?docId=2039066&cid=47308&categoryId=47308",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-graph-theory/note.md",
+   "세기전체": [
+    17,
+    18,
+    19
+   ],
+   "자수": 7738,
+   "시각화": 5
+  },
+  {
+   "유형": "개념",
    "제목": "확률론",
    "슬러그": "concept-probability",
    "별칭": [
@@ -3490,7 +3620,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7893,
+   "자수": 7916,
    "시각화": 5
   },
   {
@@ -4134,6 +4264,7 @@
     "출생지": "스위스 바젤"
    },
    "기여개념": [
+    "concept-graph-theory",
     "concept-calculus-of-variations",
     "concept-series",
     "concept-series-advanced",
@@ -4674,6 +4805,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "concept-integration",
     "concept-probability",
     "concept-probability-advanced",
@@ -4700,6 +4832,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-graph-theory",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -4720,6 +4853,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
     "concept-probability-advanced",
@@ -4819,6 +4953,13 @@
    "수학기초론": [
     "concept-differentiation-advanced"
    ],
+   "그래프이론": [
+    "concept-graph-theory",
+    "person-euler"
+   ],
+   "위상수학": [
+    "concept-graph-theory"
+   ],
    "측도론": [
     "concept-integration-advanced"
    ],
@@ -4836,9 +4977,6 @@
    "철학": [
     "person-descartes",
     "person-leibniz"
-   ],
-   "그래프이론": [
-    "person-euler"
    ],
    "천문학": [
     "person-euler",
@@ -4919,6 +5057,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
     "concept-probability",
@@ -4960,6 +5099,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
     "concept-probability",
@@ -5037,6 +5177,7 @@
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
+    "concept-graph-theory",
     "concept-series",
     "episode-priority-dispute",
     "person-euler",
@@ -5053,6 +5194,7 @@
     "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-differential-equation-advanced",
+    "concept-graph-theory",
     "concept-series",
     "concept-series-advanced",
     "person-euler"
@@ -5197,6 +5339,7 @@
     "concept-differential-equation",
     "concept-differentiation",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "episode-priority-dispute",
     "person-leibniz"
    ],
@@ -5266,6 +5409,20 @@
    "그레고리": [
     "concept-fundamental-theorem",
     "person-gregory"
+   ],
+   "그래프이론": [
+    "concept-graph-theory",
+    "person-euler"
+   ],
+   "위상수학": [
+    "concept-graph-theory"
+   ],
+   "쾨니히스베르크": [
+    "concept-graph-theory",
+    "person-euler"
+   ],
+   "한붓그리기": [
+    "concept-graph-theory"
    ],
    "구분구적법": [
     "concept-integration"
@@ -5378,12 +5535,6 @@
    "바젤문제": [
     "person-euler"
    ],
-   "쾨니히스베르크": [
-    "person-euler"
-   ],
-   "그래프이론": [
-    "person-euler"
-   ],
    "기호": [
     "person-euler",
     "person-leibniz"
@@ -5492,6 +5643,7 @@
     "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
+    "concept-graph-theory",
     "concept-series",
     "concept-series-advanced",
     "person-lagrange"
@@ -5545,6 +5697,7 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
+    "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
     "concept-series",
@@ -5617,6 +5770,9 @@
    "르베그": [
     "concept-fundamental-theorem",
     "concept-integration-advanced"
+   ],
+   "히어홀처": [
+    "concept-graph-theory"
    ],
    "아르키메데스": [
     "concept-integration"
@@ -5911,6 +6067,12 @@
      "제목": "미적분학의 기본정리",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "concept-integration",
@@ -6529,6 +6691,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-series",
      "제목": "무한급수",
      "유형": "개념",
@@ -6945,6 +7113,20 @@
      "경로": "기여개념"
     }
    ],
+   "concept-graph-theory": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
    "concept-calculus-of-variations": [
     {
      "슬러그": "century-18c",
@@ -6957,6 +7139,12 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "concept-integration",
@@ -7217,6 +7405,12 @@
      "제목": "복소수 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "본문"
     }
    ],
    "episode-descartes-fly": [
@@ -7265,6 +7459,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-probability",
      "제목": "확률론",
      "유형": "개념",
@@ -7307,6 +7507,12 @@
      "제목": "복소수",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "concept-graph-theory",
+     "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "person-euler",
@@ -7460,6 +7666,17 @@
   "정적분의 기본정리": "concept-fundamental-theorem",
   "제1기본정리": "concept-fundamental-theorem",
   "제2기본정리": "concept-fundamental-theorem",
+  "concept-graph-theory": "concept-graph-theory",
+  "개념_그래프이론의 탄생": "concept-graph-theory",
+  "그래프 이론": "concept-graph-theory",
+  "그래프이론": "concept-graph-theory",
+  "그래프이론의 탄생": "concept-graph-theory",
+  "그래프이론의 탄생 이해편": "concept-graph-theory",
+  "그래프이론의 탄생이해편": "concept-graph-theory",
+  "오일러 회로": "concept-graph-theory",
+  "위치의 기하학": "concept-graph-theory",
+  "쾨니히스베르크 다리": "concept-graph-theory",
+  "한붓그리기": "concept-graph-theory",
   "concept-integration": "concept-integration",
   "개념_적분법": "concept-integration",
   "구분구적법": "concept-integration",
