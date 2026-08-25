@@ -178,6 +178,11 @@ EP4 = {
         "foot":"놀랐던 검사 결과는 댓글로 →"},
 }
 
+# ⚠️ 이 시리즈만 EPISODES 가 래퍼 dict 다 — 다른 세 시리즈는 EPISODES = [EP11, EP12] 처럼
+# EPn 을 그대로 담는다. 그래서 cardnews.py 의 _episodes 가 쓰는 동일성 대조(v is ep)로는
+# 여기서 EPn 이라는 이름이 잡히지 않고 '#n' 으로 떨어진다. 지침과 렌더 워크플로는 둘 다
+# EPn 으로 편을 부르므로 _load_ep 가 n 에서 EPn 키를 만들어 받도록 고쳤다(2026-08-25).
+# 이 관례를 바꾸려거든 네 시리즈를 모두 EPn 직접 담기로 통일할 것 — 반만 고치면 또 갈린다.
 EPISODES = [
     {"n":1, "theme":"magazine_noir", "layout":"A",
      "folder":"숫자노트_01_평균착시", "prefix":"평균착시",

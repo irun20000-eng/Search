@@ -54,6 +54,11 @@ def _load_ep(series, sel=None):
     for var, ep in eps:
         keys = {var.lower(), str(ep.get("n", "")), ep.get("folder", "").lower(),
                 ep.get("prefix", "").lower(), ep.get("title", "").lower()}
+        # 숫자노트는 EPISODES 가 래퍼 dict 라 EPn 이라는 이름에 묶이지 않는다
+        # (var 가 '#4' 로 떨어진다). 그래서 'EP4' 로는 못 찾았다 — 지침(studio/CLAUDE.md)과
+        # 렌더 워크플로는 둘 다 EPn 으로 부르므로 n 에서 EPn 을 만들어 함께 받는다.
+        if ep.get("n"):
+            keys.add("ep%s" % ep["n"])
         if s in keys or s in ep.get("folder", "").lower():
             return ep
     sys.exit(f"{series} 에서 '{sel}' 를 못 찾았다. `list` 로 확인할 것.")
