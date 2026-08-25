@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-24",
- "scanned": 195,
+ "generated": "2026-08-25",
+ "scanned": 197,
  "resolved": 599,
- "pending": 540,
+ "pending": 562,
  "counts": {
-  "new": 252,
+  "new": 268,
   "companion": 5,
   "gap": 0
  },
@@ -718,6 +718,27 @@
    ]
   },
   {
+   "name": "실수의 완비성",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "극한",
    "count": 3,
    "kind": "new",
@@ -1235,6 +1256,90 @@
      "t": "확률론",
      "u": "math/#n=concept-probability",
      "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "상한",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "볼차노-바이어슈트라스 정리",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "컴팩트성",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "균등연속",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
      "n": 1
     }
    ]
@@ -2999,6 +3104,171 @@
      "t": "무한급수 확장편",
      "u": "math/#n=concept-series-advanced",
      "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "중간값 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "최대·최소 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "연속함수",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "이분법",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "중간값 정리의 증명",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "최대·최소 정리의 증명",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "연속함수의 두 정리 (이해편) — 중간값 정리와 최대·최소 정리는 무엇을 보장하나 (DEEP)",
+     "u": "research/#r=continuous-function-theorems",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "하이네-칸토어 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "하이네-보렐 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "구성적 수학",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "다르부 정리",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "리만 적분가능성",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "중간값 정리와 최대·최소 정리의 증명 (확장편) — 완비성에서 컴팩트성까지 (DEEP)",
+     "u": "research/#r=continuous-function-theorems-advanced",
+     "s": "research",
      "n": 1
     }
    ]
