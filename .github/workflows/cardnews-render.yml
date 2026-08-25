@@ -62,15 +62,19 @@ jobs:
           python -m pip install -q --upgrade pip
           pip install -q -r studio/requirements.txt
 
-      - name: 크로미움이 CJK 폰트를 잡는지 확인
+      # doctor 는 크로미움을 실제로 띄워 한글 폭을 재기 때문에 브라우저가 먼저 있어야 한다.
+      # #110 에서 이 검사를 넣으면서 doctor 를 install 앞에 두는 바람에
+      # "Executable doesn't exist ... chrome-headless-shell" 로 매번 여기서 끊겼다
+      # (32568229306 · 32791931044 · 32793565614 — 3회 연속 실패, 2026-08-25 확인).
+      - name: 크로미움 설치
         run: |
-          cd studio
-          python cardnews.py doctor
           pip install -q pyyaml
           python -m playwright install --with-deps chromium
 
-      - name: 환경 점검
-        run: python studio/cardnews.py doctor
+      - name: 환경 점검 (크로미움이 CJK 폰트를 잡는지)
+        run: |
+          cd studio
+          python cardnews.py doctor
 
       - name: 렌더할 편 결정
         id: pick
