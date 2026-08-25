@@ -28,7 +28,7 @@
     출처: 2
 
 선행개념: [concept-algebra-notation]
-후속개념: [concept-differentiation]
+후속개념: [concept-function, concept-differentiation]
 기여인물: [person-descartes, person-fermat]
 
 이미지:

@@ -836,6 +836,7 @@
     "concept-algebra-notation"
    ],
    "후속개념": [
+    "concept-function",
     "concept-differentiation"
    ],
    "기여인물": [
@@ -1300,7 +1301,9 @@
     "concept-differentiation",
     "concept-integration"
    ],
-   "후속개념": [],
+   "후속개념": [
+    "concept-function"
+   ],
    "기여인물": [
     "person-newton",
     "person-leibniz",
@@ -1750,6 +1753,141 @@
    ],
    "자수": 10909,
    "시각화": 6
+  },
+  {
+   "유형": "개념",
+   "제목": "함수 개념",
+   "슬러그": "concept-function",
+   "별칭": [
+    "함수",
+    "함수의 정의",
+    "대응",
+    "디리클레 함수",
+    "함수 개념의 역사"
+   ],
+   "볼트파일명": "개념_함수 개념",
+   "트랙": "이해편",
+   "세기": [
+    17,
+    18,
+    19
+   ],
+   "분야": [
+    "해석학",
+    "집합론"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "교과서 첫 장의 그 한 줄 정의에 2백 년이 걸렸다. 18세기가 '식'이라 했던 것을 19세기가 '대응'으로 바꾸면서 수학이 다루는 대상 자체가 달라졌다.",
+   "태그": [
+    "수학사",
+    "함수",
+    "함수의 정의",
+    "라이프니츠",
+    "오일러",
+    "디리클레",
+    "대응",
+    "17세기",
+    "18세기",
+    "19세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "라이프니츠",
+     "변화": "1673년에 '함수'라는 말을 처음 썼다. 곡선의 모양에 따라 정해지는 기하학적 양들을 가리키는, 아주 느슨한 뜻이었다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1748년 『무한해석 입문』에서 함수를 해석적 표현, 곧 '식'으로 정의하고 해석학의 중심에 놓았다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1755년에 스스로 그 정의의 한계를 알고 더 넓은 정의를 내놓았다. 당시에는 주목받지 못했다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "디리클레",
+     "변화": "1837년에 해석적 표현을 요구하지 않고, 한 변수가 다른 변수에 임의의 방식으로 의존하는 것으로 정의했다.",
+     "출처": 1
+    }
+   ],
+   "선행개념": [
+    "concept-analytic-geometry",
+    "concept-differential-equation"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-euler",
+    "person-leibniz"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, The function concept — 라이프니츠의 1673년 용어 사용, 오일러의 1748년 정의와 1755년 대안 정의, 디리클레의 1837년 정의",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Functions/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 함수 — 정의역의 원소마다 공역의 원소가 오직 하나씩 대응되는 관계. 함수가 무엇인지 설명하는 데 매우 오랜 세월이 걸렸고 용어는 라이프니츠에게서 왔다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338316&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(교과서 개념), 함수 — 대응의 정의와 교과서에서의 도입 순서",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073734&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학산책), 함수 — 사다리타기로 설명하는 대응",
+     "URL": "https://terms.naver.com/entry.naver?docId=3570603&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Rose-Hulman Undergraduate Mathematics Journal, Demystifying Functions — 함수 개념의 역사적·교육적 전개",
+     "URL": "https://scholar.rose-hulman.edu/cgi/viewcontent.cgi?article=1240&context=rhumj",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "University of Kentucky, Functions — How they have changed through History — 정의의 변천 개관",
+     "URL": "https://www.ms.uky.edu/~droyster/courses/fall06/PDFs/Chapter05.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, History of the function concept — 진동하는 현 논쟁이 함수 정의에 미친 영향",
+     "URL": "https://en.wikipedia.org/wiki/History_of_the_function_concept",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Contributions of Leonhard Euler to mathematics — f(x) 표기의 도입",
+     "URL": "https://en.wikipedia.org/wiki/Contributions_of_Leonhard_Euler_to_mathematics",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-function/note.md",
+   "세기전체": [
+    17,
+    18,
+    19
+   ],
+   "자수": 7819,
+   "시각화": 5
   },
   {
    "유형": "개념",
@@ -2873,6 +3011,7 @@
     "출생지": "작센 라이프치히"
    },
    "기여개념": [
+    "concept-function",
     "concept-differentiation",
     "concept-integration",
     "concept-fundamental-theorem",
@@ -3620,7 +3759,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7916,
+   "자수": 7920,
    "시각화": 5
   },
   {
@@ -4264,6 +4403,7 @@
     "출생지": "스위스 바젤"
    },
    "기여개념": [
+    "concept-function",
     "concept-graph-theory",
     "concept-calculus-of-variations",
     "concept-series",
@@ -4804,6 +4944,7 @@
     "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
@@ -4832,6 +4973,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-graph-theory",
     "concept-probability",
     "concept-probability-advanced",
@@ -4852,6 +4994,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
@@ -4883,6 +5026,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
@@ -4953,6 +5097,9 @@
    "수학기초론": [
     "concept-differentiation-advanced"
    ],
+   "집합론": [
+    "concept-function"
+   ],
    "그래프이론": [
     "concept-graph-theory",
     "person-euler"
@@ -5010,6 +5157,7 @@
    "공통수학1": [
     "concept-complex-number",
     "concept-complex-number-advanced",
+    "concept-function",
     "person-napier"
    ],
    "미적분Ⅰ": [
@@ -5056,6 +5204,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
@@ -5098,6 +5247,7 @@
     "concept-differential-equation-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
@@ -5128,6 +5278,7 @@
     "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differentiation",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-probability",
@@ -5177,6 +5328,7 @@
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-differential-equation",
+    "concept-function",
     "concept-graph-theory",
     "concept-series",
     "episode-priority-dispute",
@@ -5194,6 +5346,7 @@
     "concept-calculus-of-variations",
     "concept-complex-number",
     "concept-differential-equation-advanced",
+    "concept-function",
     "concept-graph-theory",
     "concept-series",
     "concept-series-advanced",
@@ -5258,6 +5411,7 @@
    "19세기": [
     "concept-analytic-geometry-advanced",
     "concept-complex-number-advanced",
+    "concept-function",
     "person-laplace"
    ],
    "변분법": [
@@ -5338,6 +5492,7 @@
    "라이프니츠": [
     "concept-differential-equation",
     "concept-differentiation",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "episode-priority-dispute",
@@ -5356,7 +5511,8 @@
     "concept-differential-equation-advanced"
    ],
    "디리클레": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "concept-function"
    ],
    "라플라스변환": [
     "concept-differential-equation-advanced"
@@ -5389,6 +5545,15 @@
    "엄밀화": [
     "concept-differentiation-advanced",
     "concept-integration-advanced"
+   ],
+   "함수": [
+    "concept-function"
+   ],
+   "함수의 정의": [
+    "concept-function"
+   ],
+   "대응": [
+    "concept-function"
    ],
    "기본정리": [
     "concept-fundamental-theorem",
@@ -5643,6 +5808,7 @@
     "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
+    "concept-function",
     "concept-graph-theory",
     "concept-series",
     "concept-series-advanced",
@@ -5696,6 +5862,7 @@
     "concept-differential-equation",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
@@ -5734,7 +5901,8 @@
     "person-lagrange"
    ],
    "디리클레": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "concept-function"
    ],
    "푸앵카레": [
     "concept-differential-equation-advanced"
@@ -6063,6 +6231,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-fundamental-theorem",
      "제목": "미적분학의 기본정리",
      "유형": "개념",
@@ -6237,6 +6411,12 @@
     {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
      "유형": "개념",
      "경로": "선행개념"
     },
@@ -6691,6 +6871,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-graph-theory",
      "제목": "그래프이론의 탄생",
      "유형": "개념",
@@ -6939,6 +7125,12 @@
      "경로": "짝문서"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-integration-advanced",
      "제목": "적분법 (확장편)",
      "유형": "개념",
@@ -7039,6 +7231,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-probability-advanced",
      "제목": "확률론 확장편",
      "유형": "개념",
@@ -7053,6 +7251,38 @@
     {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-function": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -7081,6 +7311,12 @@
      "제목": "미분법",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-integration",
@@ -7118,6 +7354,12 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -7331,6 +7573,12 @@
      "경로": "짝문서"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -7369,6 +7617,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
@@ -7403,6 +7657,12 @@
     {
      "슬러그": "concept-complex-number-advanced",
      "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
      "유형": "개념",
      "경로": "본문"
     },
@@ -7459,6 +7719,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-graph-theory",
      "제목": "그래프이론의 탄생",
      "유형": "개념",
@@ -7507,6 +7773,12 @@
      "제목": "복소수",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "concept-graph-theory",
@@ -7655,6 +7927,16 @@
   "미분법 (확장편)확장편": "concept-differentiation-advanced",
   "미분법 엄밀화": "concept-differentiation-advanced",
   "미분법 확장편": "concept-differentiation-advanced",
+  "concept-function": "concept-function",
+  "개념_함수 개념": "concept-function",
+  "대응": "concept-function",
+  "디리클레 함수": "concept-function",
+  "함수": "concept-function",
+  "함수 개념": "concept-function",
+  "함수 개념 이해편": "concept-function",
+  "함수 개념의 역사": "concept-function",
+  "함수 개념이해편": "concept-function",
+  "함수의 정의": "concept-function",
   "concept-fundamental-theorem": "concept-fundamental-theorem",
   "개념_미적분학의 기본정리": "concept-fundamental-theorem",
   "기본정리": "concept-fundamental-theorem",
