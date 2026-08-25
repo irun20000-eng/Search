@@ -40,7 +40,7 @@
     출처: 6
 
 선행개념: [concept-integration]
-후속개념: [concept-analysis-rigor]
+후속개념: [concept-complex-number, concept-analysis-rigor]
 기여인물: [person-gregory, person-leibniz, person-euler]
 
 출처:

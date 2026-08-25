@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24",
+ "generated": "2026-08-25",
  "notes": [
   {
    "유형": "개념",
@@ -248,6 +248,7 @@
     "concept-integration"
    ],
    "후속개념": [
+    "concept-complex-number",
     "concept-analysis-rigor"
    ],
    "기여인물": [
@@ -343,6 +344,146 @@
     19
    ],
    "자수": 8568,
+   "시각화": 4
+  },
+  {
+   "유형": "개념",
+   "제목": "복소수",
+   "슬러그": "concept-complex-number",
+   "별칭": [
+    "허수",
+    "복소평면",
+    "가우스평면",
+    "허수단위",
+    "오일러 공식"
+   ],
+   "볼트파일명": "개념_복소수",
+   "트랙": "이해편",
+   "짝문서": "concept-complex-number-advanced",
+   "세기": [
+    16,
+    18,
+    19
+   ],
+   "분야": [
+    "대수학",
+    "해석학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "이차방정식이 아니라 삼차방정식에서 나왔다. 답이 셋 다 실수인데 계산 도중에만 음수의 제곱근이 나타나는 자리 — 피할 수 없는 우회로였다.",
+   "태그": [
+    "수학사",
+    "복소수",
+    "허수",
+    "복소평면",
+    "카르다노",
+    "봄벨리",
+    "오일러",
+    "가우스",
+    "16세기",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 16,
+     "인물": "카르다노",
+     "변화": "『아르스 마그나』(1545)에서 삼차방정식 풀이 중 음수의 제곱근이 나타나는 경우를 기록했다. 계산 끝에는 사라지지만 도중에는 피할 수 없었다.",
+     "출처": 1
+    },
+    {
+     "세기": 16,
+     "인물": "봄벨리",
+     "변화": "『대수학』(1572)에서 이 대상들의 곱셈 규칙을 세워, 정식 수로 취급하면 삼차 풀이 전체가 앞뒤가 맞는다는 것을 보였다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "허수단위 기호 i 를 도입하고, 지수함수와 삼각함수를 잇는 공식으로 복소수를 해석학 안에 넣었다.",
+     "출처": 5
+    },
+    {
+     "세기": 19,
+     "인물": "가우스",
+     "변화": "복소수를 평면의 점으로 보는 관점이 자리 잡아, 계산의 부산물이던 것이 기하학적 대상이 되었다.",
+     "출처": 3
+    }
+   ],
+   "선행개념": [
+    "concept-series"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-euler"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Orlando Merino, A Short History of Complex Numbers — 카르다노(1545)·봄벨리(1572)와 삼차방정식에서의 등장",
+     "URL": "https://kleinex.mit.edu/~dunkel/Teach/18.S996_2022S/history/Merino_ComplexNumbers_History.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Casus irreducibilis — 세 근이 모두 실수이고 서로 다를 때 카르다노 공식이 음수의 제곱근을 지나며, 이를 피할 수 없다는 사실",
+     "URL": "https://en.wikipedia.org/wiki/Casus_irreducibilis",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 복소평면 — 복소수가 평면의 한 점에 대응된다. 가우스평면이라고도 한다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338136&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 복소수 — a+bi 꼴의 정의와 대수학의 기본정리에 의한 대수적 닫힘",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338143&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 오일러 공식 — 복소수 체계에서 삼각함수와 지수함수가 한가족임을 보이는 항등식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405237&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 허수 — 제곱하여 -1이 되는 수를 허수단위 i 로 쓴다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338355&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학산책), 허수·복소수 — 이름부터 \"가짜 수\"인 허수는 왜 만들어졌나",
+     "URL": "https://terms.naver.com/entry.naver?docId=3570142&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 복소평면 — 실수축과 허수축으로 이루어진 좌표평면",
+     "URL": "https://terms.naver.com/entry.naver?docId=3534053&cid=60209&categoryId=60209",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과), 오일러 항등식 — π·e·i·0·1이 어우러진 식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405238&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-complex-number/note.md",
+   "세기전체": [
+    16,
+    18,
+    19
+   ],
+   "자수": 7972,
    "시각화": 4
   },
   {
@@ -3216,7 +3357,184 @@
    "세기전체": [
     18
    ],
-   "자수": 7885,
+   "자수": 7889,
+   "시각화": 5
+  },
+  {
+   "유형": "개념",
+   "제목": "복소수 (확장편)",
+   "슬러그": "concept-complex-number-advanced",
+   "별칭": [
+    "복소수 확장편",
+    "대수학의 기본정리",
+    "복소해석",
+    "해석함수",
+    "코시-리만"
+   ],
+   "볼트파일명": "개념_복소수 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-complex-number",
+   "세기": [
+    18,
+    19,
+    20
+   ],
+   "분야": [
+    "대수학",
+    "복소해석학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "심화",
+   "요약": "대수학의 기본정리는 대수학이 아니라 해석학으로 증명된다. 그리고 복소수로 넓히면 미분이 훨씬 강한 조건이 되어, 실수에서는 없던 일들이 일어난다.",
+   "태그": [
+    "수학사",
+    "복소수",
+    "대수학의 기본정리",
+    "가우스",
+    "복소해석",
+    "코시",
+    "리만",
+    "18세기",
+    "19세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 18,
+     "인물": "달랑베르",
+     "변화": "1746년 대수학의 기본정리의 첫 출판된 증명 시도를 내놓았다. 틈이 있었다.",
+     "출처": 3
+    },
+    {
+     "세기": 18,
+     "인물": "오일러·라그랑주",
+     "변화": "각자 증명을 시도했으나 모두 틈을 남겼다. 복소수의 존재 자체를 전제하고 있었다는 것이 공통된 결함이었다.",
+     "출처": 3
+    },
+    {
+     "세기": 18,
+     "인물": "가우스",
+     "변화": "1799년 학위논문에서 증명을 내놓았고 오래 최초의 엄밀한 증명으로 여겨졌다. 다만 '고등 기하학에서 알려진' 사실에 기댄 큰 틈이 있었고 1920년에야 메워졌다.",
+     "출처": 1
+    },
+    {
+     "세기": 19,
+     "인물": "아르강",
+     "변화": "1806년에 엄밀한 증명을 내놓았다. 코시가 1821년 『해석학 강의』에 실으면서 교과서에 올랐다.",
+     "출처": 3
+    },
+    {
+     "세기": 19,
+     "인물": "코시·리만",
+     "변화": "복소함수의 미분가능성이 두 편미분 방정식으로 특징지어진다는 것이 밝혀지며 복소해석이 독립 분야가 되었다.",
+     "출처": 6
+    },
+    {
+     "세기": 20,
+     "인물": "알렉산더",
+     "변화": "1920년 가우스의 첫 증명에 남아 있던 위상수학적 틈이 메워졌다.",
+     "출처": 1
+    }
+   ],
+   "선행개념": [
+    "concept-complex-number",
+    "concept-series"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-euler",
+    "person-lagrange"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "On Gauss's first proof of the fundamental theorem of algebra (arXiv 1704.06585) — 1799년 증명에 남은 틈과 1920년의 보완",
+     "URL": "https://arxiv.org/abs/1704.06585",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Ursinus College TRIUMPHS, Gauss and the First \"Rigorous\" Proof of the Fundamental Theorem of Algebra — 제목의 따옴표가 뜻하는 것",
+     "URL": "https://digitalcommons.ursinus.edu/cgi/viewcontent.cgi?article=1007&context=triumphs_complex",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "R. Gardner (ETSU), The Fundamental Theorem of Algebra — History — 달랑베르(1746)·오일러·라그랑주의 시도와 아르강(1806)·코시(1821)",
+     "URL": "http://faculty.etsu.edu/gardnerr/5410/notes/fta-history.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 복소수 — 대수학의 기본정리에 의해 대수적으로 닫혀 있다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338143&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 복소평면 — 복소수와 평면의 점의 대응",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338136&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 오일러 공식 — 지수함수와 삼각함수를 잇는 항등식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405237&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 허수 — 허수단위와 복소수의 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338355&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과, 복소평면 — 실수축·허수축으로 이루어진 좌표평면",
+     "URL": "https://terms.naver.com/entry.naver?docId=3534053&cid=60209&categoryId=60209",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 극한을 다루는 분야로서의 성격",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학백과), 미분기하학 — 다양체·미분형식 등 좌표에 무관한 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125287&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(수학백과), 라플라스 변환 — 미분방정식을 대수방정식으로 바꾸는 변환",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405053&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor History of Mathematics, Bernhard Riemann — 리만 곡면과 복소함수론에서의 기여",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과(수학백과), 오일러 항등식 — 다섯 수가 한 줄에 모이는 식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405238&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-complex-number-advanced/note.md",
+   "세기전체": [
+    18,
+    19,
+    20
+   ],
+   "자수": 10701,
    "시각화": 5
   },
   {
@@ -3685,6 +4003,8 @@
    "기여개념": [
     "concept-series",
     "concept-series-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-fundamental-theorem",
@@ -4207,6 +4527,7 @@
     "concept-series"
    ],
    "16": [
+    "concept-complex-number",
     "person-napier"
    ],
    "17": [
@@ -4236,6 +4557,8 @@
    ],
    "18": [
     "century-18c",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4253,6 +4576,8 @@
    ],
    "19": [
     "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4268,6 +4593,7 @@
    ],
    "20": [
     "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
     "concept-differential-equation-advanced",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
@@ -4280,6 +4606,7 @@
    "해석학": [
     "century-17c",
     "century-18c",
+    "concept-complex-number",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4323,6 +4650,8 @@
     "century-17c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "person-descartes",
     "person-napier"
    ],
@@ -4344,6 +4673,9 @@
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
+   ],
+   "복소해석학": [
+    "concept-complex-number-advanced"
    ],
    "수학기초론": [
     "concept-differentiation-advanced"
@@ -4398,6 +4730,11 @@
     "concept-analytic-geometry-advanced",
     "person-euler"
    ],
+   "공통수학1": [
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "person-napier"
+   ],
    "미적분Ⅰ": [
     "concept-differentiation",
     "concept-differentiation-advanced",
@@ -4425,9 +4762,6 @@
    "확률과통계": [
     "person-fermat",
     "person-pascal"
-   ],
-   "공통수학1": [
-    "person-napier"
    ]
   },
   "유형": {
@@ -4438,6 +4772,8 @@
    "개념": [
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4476,6 +4812,8 @@
     "century-18c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation",
@@ -4553,6 +4891,8 @@
    ],
    "18세기": [
     "century-18c",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-series",
     "episode-priority-dispute",
@@ -4567,6 +4907,7 @@
    ],
    "오일러": [
     "century-18c",
+    "concept-complex-number",
     "concept-differential-equation-advanced",
     "concept-series",
     "concept-series-advanced",
@@ -4617,6 +4958,7 @@
    ],
    "리만": [
     "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
     "concept-integration-advanced",
     "concept-series-advanced"
    ],
@@ -4628,7 +4970,46 @@
    ],
    "19세기": [
     "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
     "person-laplace"
+   ],
+   "복소수": [
+    "concept-complex-number",
+    "concept-complex-number-advanced"
+   ],
+   "허수": [
+    "concept-complex-number"
+   ],
+   "복소평면": [
+    "concept-complex-number"
+   ],
+   "카르다노": [
+    "concept-complex-number"
+   ],
+   "봄벨리": [
+    "concept-complex-number"
+   ],
+   "가우스": [
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "concept-probability-advanced"
+   ],
+   "16세기": [
+    "concept-complex-number",
+    "person-napier"
+   ],
+   "대수학의 기본정리": [
+    "concept-complex-number-advanced"
+   ],
+   "복소해석": [
+    "concept-complex-number-advanced"
+   ],
+   "코시": [
+    "concept-complex-number-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
+    "concept-series-advanced"
    ],
    "미분방정식": [
     "concept-differential-equation",
@@ -4693,12 +5074,6 @@
    "무한소": [
     "concept-differentiation",
     "concept-differentiation-advanced"
-   ],
-   "코시": [
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-fundamental-theorem",
-    "concept-series-advanced"
    ],
    "버클리": [
     "concept-differentiation-advanced"
@@ -4777,9 +5152,6 @@
     "concept-probability-advanced"
    ],
    "베이즈": [
-    "concept-probability-advanced"
-   ],
-   "가우스": [
     "concept-probability-advanced"
    ],
    "최소제곱": [
@@ -4905,9 +5277,6 @@
    "브리그스": [
     "person-napier"
    ],
-   "16세기": [
-    "person-napier"
-   ],
    "유율법": [
     "person-newton"
    ],
@@ -4962,18 +5331,50 @@
     "concept-analytic-geometry-advanced"
    ],
    "person-euler": [
+    "concept-complex-number",
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-series",
     "concept-series-advanced",
     "person-lagrange"
    ],
+   "가우스": [
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "concept-probability-advanced"
+   ],
+   "봄벨리": [
+    "concept-complex-number"
+   ],
+   "카르다노": [
+    "concept-complex-number"
+   ],
    "person-lagrange": [
+    "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation-advanced",
     "person-euler",
     "person-laplace"
+   ],
+   "달랑베르": [
+    "concept-complex-number-advanced",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced"
+   ],
+   "아르강": [
+    "concept-complex-number-advanced"
+   ],
+   "알렉산더": [
+    "concept-complex-number-advanced"
+   ],
+   "오일러·라그랑주": [
+    "concept-complex-number-advanced",
+    "concept-differential-equation-advanced"
+   ],
+   "코시·리만": [
+    "concept-complex-number-advanced"
    ],
    "person-leibniz": [
     "concept-differential-equation",
@@ -4996,10 +5397,6 @@
     "episode-priority-dispute",
     "person-barrow"
    ],
-   "달랑베르": [
-    "concept-differential-equation",
-    "concept-differential-equation-advanced"
-   ],
    "라이프니츠·하위헌스·요한 베르누이": [
     "concept-differential-equation"
    ],
@@ -5020,9 +5417,6 @@
     "person-lagrange"
    ],
    "디리클레": [
-    "concept-differential-equation-advanced"
-   ],
-   "오일러·라그랑주": [
     "concept-differential-equation-advanced"
    ],
    "푸앵카레": [
@@ -5096,9 +5490,6 @@
    ],
    "하위헌스": [
     "concept-probability"
-   ],
-   "가우스": [
-    "concept-probability-advanced"
    ],
    "드무아브르": [
     "concept-probability-advanced"
@@ -5181,6 +5572,12 @@
      "슬러그": "century-17c",
      "제목": "17세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -5494,6 +5891,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -5704,6 +6107,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-differentiation",
      "제목": "미분법",
      "유형": "개념",
@@ -5902,6 +6311,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-differential-equation",
      "제목": "미분방정식",
      "유형": "개념",
@@ -6092,11 +6513,43 @@
      "경로": "기여개념"
     }
    ],
+   "concept-complex-number": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
    "concept-differentiation-advanced": [
     {
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -6136,6 +6589,18 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
     },
     {
      "슬러그": "concept-differential-equation",
@@ -6179,6 +6644,12 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -6328,6 +6799,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-differential-equation",
      "제목": "미분방정식",
      "유형": "개념",
@@ -6357,6 +6834,12 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -6430,6 +6913,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
@@ -6460,6 +6949,12 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
     }
    ],
    "episode-descartes-fly": [
@@ -6476,7 +6971,33 @@
      "경로": "관련일화"
     }
    ],
+   "concept-complex-number-advanced": [
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
    "century-18c": [
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-differential-equation",
      "제목": "미분방정식",
@@ -6527,6 +7048,12 @@
     }
    ],
    "person-gregory": [
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-fundamental-theorem",
      "제목": "미적분학의 기본정리",
@@ -6588,6 +7115,26 @@
   "해석기하 (확장편) 확장편": "concept-analytic-geometry-advanced",
   "해석기하 (확장편)확장편": "concept-analytic-geometry-advanced",
   "해석기하 확장편": "concept-analytic-geometry-advanced",
+  "concept-complex-number": "concept-complex-number",
+  "가우스평면": "concept-complex-number",
+  "개념_복소수": "concept-complex-number",
+  "복소수": "concept-complex-number",
+  "복소수 이해편": "concept-complex-number",
+  "복소수이해편": "concept-complex-number",
+  "복소평면": "concept-complex-number",
+  "오일러 공식": "concept-complex-number",
+  "허수": "concept-complex-number",
+  "허수단위": "concept-complex-number",
+  "concept-complex-number-advanced": "concept-complex-number-advanced",
+  "개념_복소수 확장편": "concept-complex-number-advanced",
+  "대수학의 기본정리": "concept-complex-number-advanced",
+  "복소수 (확장편)": "concept-complex-number-advanced",
+  "복소수 (확장편) 확장편": "concept-complex-number-advanced",
+  "복소수 (확장편)확장편": "concept-complex-number-advanced",
+  "복소수 확장편": "concept-complex-number-advanced",
+  "복소해석": "concept-complex-number-advanced",
+  "코시-리만": "concept-complex-number-advanced",
+  "해석함수": "concept-complex-number-advanced",
   "concept-differential-equation": "concept-differential-equation",
   "개념_미분방정식": "concept-differential-equation",
   "미분방정식": "concept-differential-equation",
@@ -6734,7 +7281,6 @@
   "레온하르트 오일러": "person-euler",
   "레온하르트오일러": "person-euler",
   "오일러": "person-euler",
-  "오일러 공식": "person-euler",
   "오일러 항등식": "person-euler",
   "인물_레온하르트 오일러": "person-euler",
   "Fermat": "person-fermat",
