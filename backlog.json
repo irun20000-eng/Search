@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-25",
- "scanned": 203,
- "resolved": 674,
- "pending": 562,
+ "scanned": 204,
+ "resolved": 696,
+ "pending": 561,
  "counts": {
-  "new": 268,
+  "new": 267,
   "companion": 5,
   "gap": 0
  },
@@ -3973,21 +3973,6 @@
     {
      "t": "우유 완전 해부 — 그릭요거트·다이어트, 유청·유당·카제인, 그리고 우유의 역사 (DEEP)",
      "u": "research/#r=milk-yogurt-history",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "함수",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "함수·사상·매핑·변환·연산자·범함수 (이해편) — 같은 개념을 왜 다르게 부를까 (DEEP)",
-     "u": "research/#r=math-function-terms",
      "s": "research",
      "n": 1
     }
