@@ -55,6 +55,7 @@ CATS = {
     "shear-polynomial": "math", "shear-polynomial-advanced": "math",
     "spherical-geometry-curvature": "math", "spherical-geometry-curvature-advanced": "math",
     "vector": "math", "vector-advanced": "math",
+    "continuous-function-theorems": "math", "continuous-function-theorems-advanced": "math",
     # ── AI·에이전트 ──
     "ai-engineering-evolution-graph": "ai",
     "ai-models-2026-comparison": "ai",
