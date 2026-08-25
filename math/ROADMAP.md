@@ -183,7 +183,7 @@
 
 ### 1 — 해석학의 엄밀화 `concept-analysis-rigor` · 투트랙
 
-- **세기** 17, 19, 20 · **교과** 수학Ⅱ(함수의 극한·연속) · **난이도** 표준(이해편) / 심화(확장편)
+- **세기** 이해편 17·19 / 확장편 17·19·20 · **교과** 미적분Ⅰ(함수의 극한·연속) · **난이도** 표준(이해편) / 심화(확장편)
 - **기여인물** `person-cauchy`, `person-dedekind`, `person-cantor`, `person-weierstrass` — **넷 다 인물 노트가 없다**
 - **선행** `concept-function`, `concept-series`, `concept-differentiation-advanced`
 - **후속** `concept-real-analysis`
@@ -201,7 +201,7 @@
 | `reports/continuous-function-theorems-advanced` | **완비성 공리** · IVT·EVT 증명 · 볼차노–바이어슈트라스 | 보고서 서가 |
 | `reports/infinity-set-theory` | 대각선 논법 · 가산무한 | 보고서 서가 |
 
-그런데 **첫 번째 조건("교과 접점이 얇다")에서 걸리지 않는다.** 극한과 연속은 수학Ⅱ의 중심
+그런데 **첫 번째 조건("교과 접점이 얇다")에서 걸리지 않는다.** 극한과 연속은 미적분Ⅰ의 중심
 단원이고, "고등학교에서는 사잇값 정리를 증명하지 않는다"는 사실 자체가 이 문서의 소재다.
 세 조건을 **모두** 만족해야 단일이므로 **투트랙으로 간다.**
 
