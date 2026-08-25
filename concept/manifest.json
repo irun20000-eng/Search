@@ -1,6 +1,27 @@
 {
- "count": 5,
+ "count": 6,
  "notes": [
+  {
+   "slug": "base-rate-fallacy",
+   "title": "기저율의 함정(Base Rate Fallacy) — 이해편(입문·딥)",
+   "date": "2026-08-25",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "확률",
+    "기저율",
+    "베이즈정리",
+    "양성예측도",
+    "조건부확률",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 4편 · 99% 정확한 검사도 대부분 틀릴 수 있다",
+   "chars": 9591,
+   "pic": "base-rate-fallacy.png",
+   "path": "concept/notes/base-rate-fallacy.md"
+  },
   {
    "slug": "survivorship-bias",
    "title": "생존자 편향(Survivorship Bias) — 이해편(입문·딥)",

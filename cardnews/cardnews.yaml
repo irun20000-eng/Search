@@ -168,6 +168,15 @@ episodes:
     images: [work03_01.webp, work03_02.webp, work03_03.webp, work03_04.webp, work03_05.webp, work03_06.webp, work03_07.webp, work03_08.webp, work03_09.webp, work03_10.webp]
     caption: "붙잡을수록 흩어지는 이유가 있습니다.\n\n집중은 의지의 문제가 아니라 환경의 문제입니다. 매번 다잡는 대신, 주의를 끄는 것을 먼저 치우고 방해 없는 시간을 한 덩어리로 묶어 두면 됩니다.\n치우기 · 묶기 · 신호 — 한 번 설계해 두면 다음엔 저절로 굴러갑니다.\n\n저장해두고 주의가 자꾸 샐 때 다시 꺼내 보세요.\n\n#일머리노트 #집중력 #환경설계 #생산성 #직장인"
 
+  - folder: 숫자노트_04_기저율
+    date: 2026-08-25
+    series: number
+    title: "기저율의 함정"
+    angle: "99% 정확한 검사도 대부분 틀릴 수 있다"
+    layout: A
+    images: [number04_01.webp, number04_02.webp, number04_03.webp, number04_04.webp, number04_05.webp, number04_06.webp, number04_07.webp, number04_08.webp, number04_09.webp, number04_10.webp]
+    caption: "'정확도 99%'라는 말은 내 확률이 아닙니다.\n\n1000명 중 환자가 1명인 병을 오류율 5%짜리 검사로 걸러 보면, 양성은 51명쯤 나오는데 그중 진짜 환자는 1명입니다. 계산은 틀리지 않았습니다. 틀릴 사람이 999명이라서 그렇습니다.\n기저율 · 사람 수로 세기 · 나란히 두기 — 양성을 만났을 때 확인할 셋입니다.\n\n저장해두고 '정확도 99%'라는 말을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #기저율 #베이즈정리 #양성예측도 #데이터리터러시"
+
 # ── 반입 대기: 없음 (2026-08-22 신규 2편 반입 완료 · 총 20편) ──────
 pending_episodes: []
 
