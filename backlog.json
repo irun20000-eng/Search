@@ -1,8 +1,8 @@
 {
  "generated": "2026-08-26",
- "scanned": 216,
- "resolved": 878,
- "pending": 555,
+ "scanned": 217,
+ "resolved": 908,
+ "pending": 556,
  "counts": {
   "new": 265,
   "companion": 5,
@@ -2983,6 +2983,27 @@
    ]
   },
   {
+   "name": "안드레이 콜모고로프",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "20세기",
+     "u": "math/#n=century-20c",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "확률론 확장편",
+     "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "에두아르트 하이네",
    "count": 2,
    "kind": "new",
@@ -4697,21 +4718,6 @@
   },
   {
    "name": "토마스 베이즈",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "확률론 확장편",
-     "u": "math/#n=concept-probability-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "안드레이 콜모고로프",
    "count": 1,
    "kind": "new",
    "target": null,
