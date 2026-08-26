@@ -950,7 +950,7 @@
     17,
     19
    ],
-   "자수": 9742,
+   "자수": 9773,
    "시각화": 8
   },
   {
@@ -1131,7 +1131,7 @@
     19,
     20
    ],
-   "자수": 13210,
+   "자수": 13242,
    "시각화": 7
   },
   {
@@ -2246,7 +2246,7 @@
     18,
     19
    ],
-   "자수": 7831,
+   "자수": 7858,
    "시각화": 5
   },
   {
@@ -4413,7 +4413,7 @@
    "세기전체": [
     18
    ],
-   "자수": 7997,
+   "자수": 8005,
    "시각화": 5
   },
   {
@@ -5467,6 +5467,188 @@
    "시각화": 1
   },
   {
+   "유형": "세기",
+   "제목": "19세기",
+   "슬러그": "century-19c",
+   "별칭": [
+    "19세기",
+    "십구세기",
+    "엄밀화의 세기",
+    "산술화의 세기"
+   ],
+   "볼트파일명": "세기_19세기",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "기하학",
+    "집합론",
+    "수학기초론"
+   ],
+   "난이도": "개관",
+   "요약": "앞 세기가 근거 없이 밀고 나간 것을 되묻는 세기. 정의를 다시 쓰자 다룰 수 있는 대상이 넓어졌고, 넓어진 만큼 직관이 무너졌다.",
+   "태그": [
+    "수학사",
+    "19세기",
+    "엄밀화",
+    "산술화",
+    "코시",
+    "바이어슈트라스",
+    "데데킨트",
+    "칸토어",
+    "리만",
+    "조선산학"
+   ],
+   "연대": {
+    "시작": 1801,
+    "끝": 1900
+   },
+   "시대이슈": [
+    "연구하는 대학의 등장 — 강의만 하던 대학이 연구 기관이 되고, 독일이 그 중심이 됨",
+    "전문 학술지의 제도화 — 크렐레 학술지 같은 지면이 발표의 표준 경로가 됨",
+    "엄밀화 요구 — 18세기가 미룬 \"왜 참인가\"를 세기 내내 청구함",
+    "산술화 — 그림과 운동의 직관을 몰아내고 부등식과 수로 옮기는 기획",
+    "수학자라는 직업의 성립 — 후원자의 궁정에서 대학의 강좌로 자리가 옮겨감",
+    "조선의 서세동점 — 서양 수학이 청을 거쳐 들어오며 전통 산학이 끝나감"
+   ],
+   "세계사사건": [
+    {
+     "연도": 1810,
+     "사건": "베를린 대학 설립",
+     "수학과의연결": "연구와 교육을 한 기관에서 하는 모델이 자리 잡고, 세기 후반 베를린이 수학의 중심이 된다"
+    },
+    {
+     "연도": "1830년대~",
+     "사건": "전문 학술지의 정착",
+     "수학과의연결": "크렐레 학술지 같은 지면이 생기면서, 시골 교사가 쓴 논문도 읽히는 경로가 열린다"
+    },
+    {
+     "연도": 1848,
+     "사건": "유럽 각지의 혁명",
+     "수학과의연결": "볼차노가 죽은 해다. 그는 정직과 출판 금지 속에 살다 이해에 죽었고, 저작 대부분은 뒤에야 나온다"
+    },
+    {
+     "연도": 1866,
+     "사건": "리만 사망",
+     "수학과의연결": "1854년 교수자격 강연 원고가 그의 사후 1868년에야 인쇄된다"
+    },
+    {
+     "연도": 1867,
+     "사건": "조선에서 『산학정의』·『산학습유』가 나옴",
+     "수학과의연결": "앞의 것은 여러 산서의 오류를 바로잡았고, 뒤의 것은 동양 산학과 서양 수학을 나란히 놓고 견주었다"
+    },
+    {
+     "연도": 1890,
+     "사건": "독일수학회 창립",
+     "수학과의연결": "칸토어가 주도했고, 수학자들이 국가 단위 학회로 조직되는 흐름의 표본이다"
+    },
+    {
+     "연도": 1900,
+     "사건": "파리 국제수학자대회",
+     "수학과의연결": "힐베르트가 수학자들이 먼저 풀어야 할 문제들을 제시하며 20세기의 의제를 정한다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 코시가 실수를 전제했다는 것, 볼차노 1817, 바이어슈트라스의 강의, 한켈 1867·메레 1869·하이네 1872·칸토어 1872·데데킨트 1872, 힐베르트 1900년 18개 공리, 20세기 초에 이르러 실수 개념이 측정·양이라는 옛 관념에서 완전히 떠났다는 결론",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Felix Klein, The arithmetizing of mathematics, Bulletin of the American Mathematical Society 2(8) (1896) 241-249 — 1895년 11월 2일 괴팅겐 강연의 영역. 18세기가 연속성의 원리를 근본에 놓았다는 것, 가우스·아벨·코시·디리클레의 시대에 비판 정신이 일어났다는 것, 예전에는 그림이 증명 노릇을 했다는 서술, 산술화의 주창자가 바이어슈트라스라는 지목, 산술화에 대한 긍정과 부정 양면 평가",
+     "URL": "https://projecteuclid.org/euclid.bams/1183414645",
+     "유형": "1차"
+    },
+    {
+     "번호": 3,
+     "제목": "Richard Dedekind, Continuity and Irrational Numbers (1872), in Essays on the Theory of Numbers, tr. W. W. Beman, Open Court 1901 — 1858년 취리히에서 미적분을 처음 강의하며 산술의 과학적 기초가 없음을 절감했다는 자술, 미분학이 연속성을 설명하지 않은 채 기하학적 관념에 호소한다는 진단, 직선의 연속성이 공리라는 언명",
+     "URL": "https://www.gutenberg.org/files/21016/21016-pdf.pdf",
+     "유형": "1차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor History of Mathematics, Augustin-Louis Cauchy — 1821년 『해석학 강의』가 미적분의 기본 정리를 가능한 한 엄밀하게 전개하려 했다는 것, 무한급수의 수렴 조건을 엄밀히 연구한 최초라는 것, 1830년 7월 혁명 뒤 파리를 떠났고 선서하러 돌아오지 않아 모든 자리를 잃었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Karl Weierstrass — 1854년 크렐레 학술지 논문으로 무명에서 나온 것, 베를린 강의가 전 세계에서 학생을 끌어모은 것, 1872년 연속이면서 어디서도 미분되지 않는 함수와 해석학자들의 당혹, 그의 접근이 오늘날에도 해석학 교육을 지배한다는 평가",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 하이네가 낸 삼각급수 문제, 1872년 실수 정의, 1873년 12월 비가산성 증명과 1874년 발표, 1890년 독일수학회 창립, 1896년 힐베르트에게 역설을 알린 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Bernhard Riemann — 교수자격 강연으로 셋을 준비했고 가우스가 기하학을 골랐다는 것, 1854년 6월 10일 「기하학의 기초에 놓인 가설들」 강연, 그 원고가 1868년까지 출판되지 않았다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성으로 엄밀함을 추구하게 됐다는 것, 달랑베르가 극한 이론의 필요를 먼저 제시했으나 1821년에야 진정한 발달이 시작됐다는 것, 엄밀화가 이후 100년의 대부분을 차지할 만큼 어려운 일이었다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 칸토어–데데킨트 서신의 날짜와 1873년 12월 7일을 집합론의 진정한 생일로 보는 서술, 데데킨트의 1888년 무한 정의, 연속체 가설과 힐베르트의 1900년 제시",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(한국민족문화대백과), 이상혁 — 1810년생 중인 산학 가문 출신, 5대조부터 8대에 걸쳐 59명이 주학 취재에 합격했다는 것, 남병길과 서문을 주고받으며 공동 연구를 했다는 것, 『규일고』(1850)·『차근방몽구』(1854)·『산술관견』(1855)·『익산』",
+     "URL": "https://terms.naver.com/entry.naver?docId=542237&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(한국민족문화대백과), 익산 — 이상혁이 동·서양의 방정식론과 급수론을 연구해 저술한 수학서, 송·원대의 결과가 『수리정온』보다 앞서 있음을 보였다는 것, 그의 방정식론은 문자 대수학에 자리를 내줄 수밖에 없었으나 퇴타술은 현대에도 쓸 수 있다는 평가",
+     "URL": "https://terms.naver.com/entry.naver?docId=536770&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(한국민족문화대백과), 산학정의 — 남병길이 수학 서적의 오류를 바로잡아 1867년에 간행한 3권의 수학서, 이상혁이 교정을 봤다는 것, 저자 서문의 취지",
+     "URL": "https://terms.naver.com/entry.naver?docId=572999&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과(한국민족문화대백과), 산학습유 — 조의순이 서양수학과 동양산학을 비교해 1867년에 저술한 수학서, 천원술과 차근법을 견준 대목, 전통수학에서 서구수학으로 옮겨가는 과도기를 대변하며 이후 한국수학의 주류가 전통 산학에서 완전히 벗어난다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=572996&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 1817년 『순수 해석적 증명』이 미적분에서 무한소를 몰아내려는 시도였다는 것, 그 논문의 중간값 정리 증명과 코시 수열 정의, 1819년 정직과 출판 금지, 1848년 사망, 프라하 카를 대학의 종교철학 강좌",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "MacTutor History of Mathematics, The function concept — 디리클레가 1837년에 해석적 표현을 요구하지 않는 함수 정의를 냈다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Functions/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/century-19c/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 9740,
+   "시각화": 7
+  },
+  {
    "유형": "개념",
    "제목": "적분법 (확장편)",
    "슬러그": "concept-integration-advanced",
@@ -6218,6 +6400,7 @@
     "person-newton"
    ],
    "19": [
+    "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced",
@@ -6260,6 +6443,7 @@
    "해석학": [
     "century-17c",
     "century-18c",
+    "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-calculus-of-variations",
@@ -6292,6 +6476,7 @@
    ],
    "기하학": [
     "century-17c",
+    "century-19c",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "episode-bernoulli-tomb",
@@ -6346,7 +6531,13 @@
     "person-fermat",
     "person-lagrange"
    ],
+   "집합론": [
+    "century-19c",
+    "concept-function",
+    "person-cantor"
+   ],
    "수학기초론": [
+    "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
@@ -6362,10 +6553,6 @@
     "concept-complex-number-advanced",
     "person-cauchy",
     "person-weierstrass"
-   ],
-   "집합론": [
-    "concept-function",
-    "person-cantor"
    ],
    "그래프이론": [
     "concept-graph-theory",
@@ -6474,7 +6661,8 @@
   "유형": {
    "세기": [
     "century-17c",
-    "century-18c"
+    "century-18c",
+    "century-19c"
    ],
    "개념": [
     "concept-analysis-rigor",
@@ -6531,6 +6719,7 @@
    "수학사": [
     "century-17c",
     "century-18c",
+    "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
@@ -6670,11 +6859,57 @@
     "century-18c",
     "person-lagrange"
    ],
+   "19세기": [
+    "century-19c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
+    "concept-function",
+    "person-laplace"
+   ],
    "엄밀화": [
+    "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
     "concept-integration-advanced"
+   ],
+   "산술화": [
+    "century-19c",
+    "concept-analysis-rigor-advanced"
+   ],
+   "코시": [
+    "century-19c",
+    "concept-analysis-rigor",
+    "concept-complex-number-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
+    "concept-series-advanced"
+   ],
+   "바이어슈트라스": [
+    "century-19c",
+    "concept-differentiation-advanced"
+   ],
+   "데데킨트": [
+    "century-19c",
+    "concept-analysis-rigor"
+   ],
+   "칸토어": [
+    "century-19c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "리만": [
+    "century-19c",
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
+    "concept-integration-advanced",
+    "concept-series-advanced"
+   ],
+   "조선산학": [
+    "century-19c"
    ],
    "실수": [
     "concept-analysis-rigor"
@@ -6683,34 +6918,11 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced"
    ],
-   "데데킨트": [
-    "concept-analysis-rigor"
-   ],
-   "칸토어": [
-    "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
-   ],
    "볼차노": [
     "concept-analysis-rigor"
    ],
-   "코시": [
-    "concept-analysis-rigor",
-    "concept-complex-number-advanced",
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-fundamental-theorem",
-    "concept-series-advanced"
-   ],
    "극한": [
     "concept-analysis-rigor"
-   ],
-   "19세기": [
-    "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced",
-    "concept-analytic-geometry-advanced",
-    "concept-complex-number-advanced",
-    "concept-function",
-    "person-laplace"
    ],
    "실수의 구성": [
     "concept-analysis-rigor-advanced"
@@ -6728,9 +6940,6 @@
    "클라인": [
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced"
-   ],
-   "산술화": [
-    "concept-analysis-rigor-advanced"
    ],
    "좌표": [
     "concept-analytic-geometry",
@@ -6758,12 +6967,6 @@
    ],
    "사영기하": [
     "concept-analytic-geometry-advanced"
-   ],
-   "리만": [
-    "concept-analytic-geometry-advanced",
-    "concept-complex-number-advanced",
-    "concept-integration-advanced",
-    "concept-series-advanced"
    ],
    "변분법": [
     "concept-calculus-of-variations",
@@ -6879,9 +7082,6 @@
     "concept-differentiation-advanced"
    ],
    "버클리": [
-    "concept-differentiation-advanced"
-   ],
-   "바이어슈트라스": [
     "concept-differentiation-advanced"
    ],
    "비표준해석학": [
@@ -8606,6 +8806,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analysis-rigor",
      "제목": "해석학의 엄밀화",
      "유형": "개념",
@@ -8810,6 +9016,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analysis-rigor",
      "제목": "해석학의 엄밀화",
      "유형": "개념",
@@ -8856,6 +9068,12 @@
     {
      "슬러그": "century-18c",
      "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
      "유형": "세기",
      "경로": "본문"
     },
@@ -9276,6 +9494,32 @@
      "경로": "관련인물"
     }
    ],
+   "century-19c": [
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "본문"
+    }
+   ],
    "concept-differential-equation-advanced": [
     {
      "슬러그": "century-18c",
@@ -9324,6 +9568,12 @@
     {
      "슬러그": "century-18c",
      "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
      "유형": "세기",
      "경로": "본문"
     },
@@ -9390,6 +9640,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
      "유형": "개념",
@@ -9420,259 +9676,13 @@
      "경로": "본문"
     }
    ],
-   "person-cauchy": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-differentiation",
-     "제목": "미분법",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-series-advanced",
-     "제목": "무한급수 확장편",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-bolzano",
-     "제목": "베른하르트 볼차노",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-lagrange",
-     "제목": "조제프루이 라그랑주",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-laplace",
-     "제목": "피에르시몽 라플라스",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-weierstrass",
-     "제목": "카를 바이어슈트라스",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-bolzano": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cauchy",
-     "제목": "오귀스탱루이 코시",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-weierstrass",
-     "제목": "카를 바이어슈트라스",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-dedekind": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analytic-geometry-advanced",
-     "제목": "해석기하 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-bolzano",
-     "제목": "베른하르트 볼차노",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cantor",
-     "제목": "게오르크 칸토어",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-cauchy",
-     "제목": "오귀스탱루이 코시",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-cantor": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cauchy",
-     "제목": "오귀스탱루이 코시",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-dedekind",
-     "제목": "리하르트 데데킨트",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-weierstrass",
-     "제목": "카를 바이어슈트라스",
-     "유형": "인물",
-     "경로": "관련인물"
-    }
-   ],
-   "person-weierstrass": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-differentiation-advanced",
-     "제목": "미분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-bolzano",
-     "제목": "베른하르트 볼차노",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cantor",
-     "제목": "게오르크 칸토어",
-     "유형": "인물",
-     "경로": "관련인물"
-    },
-    {
-     "슬러그": "person-cauchy",
-     "제목": "오귀스탱루이 코시",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "concept-analysis-rigor-advanced": [
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "짝문서"
-    },
-    {
-     "슬러그": "person-bolzano",
-     "제목": "베른하르트 볼차노",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-cantor",
-     "제목": "게오르크 칸토어",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-cauchy",
-     "제목": "오귀스탱루이 코시",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-dedekind",
-     "제목": "리하르트 데데킨트",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-weierstrass",
-     "제목": "카를 바이어슈트라스",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
    "century-18c": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-analysis-rigor",
      "제목": "해석학의 엄밀화",
@@ -9756,6 +9766,294 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
+    }
+   ],
+   "person-dedekind": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-bolzano": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-cauchy": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-weierstrass": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-cantor": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "concept-analysis-rigor-advanced": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "episode-descartes-fly": [
@@ -9974,6 +10272,12 @@
   "세기_18세기": "century-18c",
   "십팔세기": "century-18c",
   "해석학의 세기": "century-18c",
+  "19세기": "century-19c",
+  "century-19c": "century-19c",
+  "산술화의 세기": "century-19c",
+  "세기_19세기": "century-19c",
+  "십구세기": "century-19c",
+  "엄밀화의 세기": "century-19c",
   "concept-analysis-rigor": "concept-analysis-rigor",
   "개념_해석학의 엄밀화": "concept-analysis-rigor",
   "데데킨트 절단": "concept-analysis-rigor",
