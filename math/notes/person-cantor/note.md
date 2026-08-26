@@ -16,7 +16,7 @@
   출생지: 러시아 상트페테르부르크
 
 기여개념: [concept-analysis-rigor, concept-analysis-rigor-advanced]
-관련인물: [person-dedekind]
+관련인물: [person-dedekind, person-weierstrass]
 
 출처:
   - 번호: 1

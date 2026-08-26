@@ -863,6 +863,7 @@
    ],
    "기여인물": [
     "person-cauchy",
+    "person-bolzano",
     "person-dedekind",
     "person-cantor",
     "person-weierstrass"
@@ -1046,7 +1047,8 @@
     "person-dedekind",
     "person-cantor",
     "person-weierstrass",
-    "person-cauchy"
+    "person-cauchy",
+    "person-bolzano"
    ],
    "출처": [
     {
@@ -1911,7 +1913,7 @@
     18,
     19
    ],
-   "자수": 7770,
+   "자수": 7781,
    "시각화": 5
   },
   {
@@ -2105,7 +2107,7 @@
     19,
     20
    ],
-   "자수": 10961,
+   "자수": 10989,
    "시각화": 6
   },
   {
@@ -2399,7 +2401,7 @@
     19,
     20
    ],
-   "자수": 7848,
+   "자수": 7859,
    "시각화": 4
   },
   {
@@ -4710,7 +4712,7 @@
     19,
     20
    ],
-   "자수": 12359,
+   "자수": 12370,
    "시각화": 5
   },
   {
@@ -4899,7 +4901,8 @@
    ],
    "관련인물": [
     "person-laplace",
-    "person-euler"
+    "person-euler",
+    "person-cauchy"
    ],
    "출처": [
     {
@@ -5016,7 +5019,8 @@
    ],
    "관련일화": [],
    "관련인물": [
-    "person-lagrange"
+    "person-lagrange",
+    "person-cauchy"
    ],
    "출처": [
     {
@@ -5279,6 +5283,101 @@
   },
   {
    "유형": "인물",
+   "제목": "베른하르트 볼차노",
+   "슬러그": "person-bolzano",
+   "별칭": [
+    "볼차노",
+    "Bernard Bolzano",
+    "베른하르트볼차노",
+    "볼차노 정리",
+    "볼차노-바이어슈트라스"
+   ],
+   "볼트파일명": "인물_베른하르트 볼차노",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "논리학",
+    "철학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "수학 교수직 공모에 1등을 하고도 종교철학 교수가 됐다. 사제이자 사회비판가였고, 정직·가택연금·출판 금지를 당했다. 저작 대부분이 원고로 남아, 그가 1817년에 쓴 것이 옳았다는 것은 대부분 그가 죽은 뒤에야 알려졌다.",
+   "생몰": {
+    "출생": 1781,
+    "사망": 1848,
+    "출생지": "보헤미아 프라하"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-cauchy"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 생몰·가정·1804년 박사와 서품, 두 교수직 공모에서 모두 1위였으나 종교철학 강좌를 받은 경위, 설교의 내용, 1819년 정직과 가택연금·검열·출판 금지, 1821~25년 교회 재판과 사임, 1810년과 1816·1817년 저작, 1817년 논문이 중간값 정리를 증명하고 코시 수열을 정의했다는 것, 1851년 『무한의 역설』과 '집합'이라는 말, 어디서도 미분되지 않는 연속함수, 저작 대부분이 원고로 남아 1862년 이후에야 출판됐다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, Augustin-Louis Cauchy — 1834년 프라하에서 볼차노의 요청으로 두 사람이 한 번 만났다는 것, 코시의 연속 정의가 볼차노에게 얼마나 빚졌는지에 대한 논의와 프로이덴탈의 견해",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 볼차노가 1817년에 유계인 코시 수열의 최소상계 존재를 보였다는 것, 그가 자기 실수 이론을 만들고 출판하지 않았다는 것, 리흘리크·판 로첼라르·베르크의 엇갈린 평가",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 사잇값 정리 — 사잇값 정리의 서술과 기하학적 뜻, 그 특별한 경우를 볼차노 정리라 부른다는 것(연속함수가 부호가 다른 두 값을 가지면 그 사이에 근이 있다)",
+     "URL": "https://terms.naver.com/entry.naver?docId=4389502&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 볼차노-바이어슈트라스 정리 — 실수에서 정의된 유계수열은 수렴하는 부분수열을 가진다는 정리",
+     "URL": "https://terms.naver.com/entry.naver?docId=6512717&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 실수의 완비성 — 완비성과 동치인 다섯 성질(단조수렴·최소상계·코시 완비성·줄어드는 구간·볼차노–바이어슈트라스)과 각각의 유리수 반례",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 최대최소 정리 — 닫힌 구간의 연속함수가 최댓값과 최솟값을 가진다는 정리, 이 정리가 사잇값 정리와 함께 연속함수의 당연한 성질로 오랫동안 다루어져 왔다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338504&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 데데킨트가 1888년에 진부분집합과의 일대일대응으로 무한집합을 정의했다는 것과 그것이 유클리드의 부분·전체 관념에 도전한다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-bolzano/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 8614,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
    "제목": "게오르크 칸토어",
    "슬러그": "person-cantor",
    "별칭": [
@@ -5314,7 +5413,8 @@
     "concept-analysis-rigor-advanced"
    ],
    "관련인물": [
-    "person-dedekind"
+    "person-dedekind",
+    "person-weierstrass"
    ],
    "출처": [
     {
@@ -5373,6 +5473,97 @@
    ],
    "자수": 8657,
    "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "오귀스탱루이 코시",
+   "슬러그": "person-cauchy",
+   "별칭": [
+    "코시",
+    "Augustin-Louis Cauchy",
+    "오귀스탱루이코시",
+    "코시 수열",
+    "코시 완비성"
+   ],
+   "볼트파일명": "인물_오귀스탱루이 코시",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "복소해석학",
+    "대수학",
+    "역학"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "논문 789편을 쓰고 극한을 해석학의 기초로 세웠다. 그런데 동료들에게는 상대하기 힘든 사람이었고, 아벨과 갈루아의 원고를 다룬 방식이 두고두고 이야기된다.",
+   "생몰": {
+    "출생": 1789,
+    "사망": 1857,
+    "출생지": "프랑스 파리"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-bolzano",
+    "person-lagrange",
+    "person-laplace"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Augustin-Louis Cauchy — 생몰·혁명기 유년·라그랑주와 라플라스의 방문, 에콜 폴리테크니크 입학과 토목기사 경력, 1814년 선거에서 53표 중 0표, 1821년 『해석학 강의』, 종교와 동료 관계, 아벨·갈루아 원고 처리, 1830년 망명과 선서 거부, 1834년 볼차노와의 만남, 1843년 리브리 사건, 사망과 논문 789편",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(인명사전), 코시 — 파리 출생, 에콜 폴리테크니크 수학과 토목기사 경력, 1816년 모교 교수와 1848~52년 파리 대학 교수, 해석학에서 극한 개념을 분명히 해 연속성의 이해를 확실히 했다는 평가, 적분 개념과 복소함수론·행렬식·군론",
+     "URL": "https://terms.naver.com/entry.naver?docId=885669&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성, 달랑베르가 극한 이론의 필요를 처음 제시했으나 1821년에야 진정한 발달이 시작됐다는 서술, 라그랑주가 엄밀화를 실질적으로 처음 시도했다는 것, 엄밀화가 이후 100년의 대부분을 차지했다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 코시 수열 — 임의의 양수에 대해 어느 항을 넘어서면 항들 사이의 차가 그 양수 이내가 되는 수열, 기본열이라고도 한다는 것, 일반적인 거리공간으로의 확장",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405362&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 극한 — 수열과 함수의 극한 정의, 극한이 연속성·미분가능성을 정의하는 토대가 된다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338249&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 실수의 완비성 — 코시 완비성의 서술과 유리수 반례, 코시 완비성은 거리 개념만 있으면 말할 수 있어 완비성이라 하면 대개 이것을 가리킨다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 1817년 『순수 해석적 증명』에서 오늘날 코시 수열이라 부르는 것을 정의했고 같은 개념이 4년 뒤 코시의 저작에 나타나지만 코시가 볼차노의 논문을 읽었을 가능성은 낮다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-cauchy/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 8283,
+   "시각화": 2
   },
   {
    "유형": "인물",
@@ -5487,6 +5678,100 @@
    ],
    "자수": 8261,
    "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "카를 바이어슈트라스",
+   "슬러그": "person-weierstrass",
+   "별칭": [
+    "바이어슈트라스",
+    "Karl Weierstrass",
+    "카를바이어슈트라스",
+    "현대 해석학의 아버지",
+    "바이어슈트라스 함수"
+   ],
+   "볼트파일명": "인물_카를 바이어슈트라스",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "복소해석학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅰ"
+   ],
+   "난이도": "표준",
+   "요약": "대학에서 4년을 펜싱과 술로 보내고 시험도 치지 않은 채 떠났다. 십수 년을 시골 중등학교 교사로 지내다 서른여덟에 논문 한 편으로 무명에서 튀어나왔고, 그가 세운 엄밀함의 표준이 오늘날 해석학 강의를 지배한다.",
+   "생몰": {
+    "출생": 1815,
+    "사망": 1897,
+    "출생지": "독일 오스텐펠데"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-cantor"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Karl Weierstrass — 생몰·가정·본 대학의 4년, 구더만과 1840년 교원시험, 1842~55년 중등교사 시절과 건강, 1854년 크렐레 논문과 명예박사, 1856년 베를린, 1861년 12월의 붕괴와 앉아서 하는 강의, 1863/64년 실수 이론, 1872년 병리적 함수, 크로네커와의 결별, 코발렙스카야, 만년과 사망",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Felix Klein, The arithmetizing of mathematics, Bulletin of the American Mathematical Society 2(8) (1896) 241-249 — 1895년 11월 2일 괴팅겐 강연의 영역. 산술화 경향의 주된 대변자가 바이어슈트라스라는 지목, 얼마 전 그의 80세 생일을 기념했다는 언급, 예전에는 그림이 증명 노릇을 했으나 이제는 어떤 작은 양보다 작아지는 양에 대한 논의가 이어진다는 서술",
+     "URL": "https://projecteuclid.org/euclid.bams/1183414645",
+     "유형": "1차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 바이어슈트라스가 1865년부터의 베를린 강의에서 자기 실수 이론을 폈으나 출판하지 않았다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성으로 엄밀함을 추구하게 됐다는 서술, 엄밀화가 이후 100년의 대부분을 차지할 만큼 어려운 일이었다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 볼차노-바이어슈트라스 정리 — 실수에서 정의된 유계수열은 수렴하는 부분수열을 가진다는 정리",
+     "URL": "https://terms.naver.com/entry.naver?docId=6512717&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 바이어슈트라스 근사정리 — 1885년에 발표한 결과로 닫힌 유계 구간의 연속함수를 다항식으로 임의의 정밀도까지 근사할 수 있다는 것, 스톤이 확장해 스톤-바이어슈트라스 정리가 됐다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=5669307&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 실수의 완비성 — 완비성과 동치인 다섯 성질 가운데 볼차노–바이어슈트라스 정리, 그리고 각각에 대한 유리수 반례",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 칸토어가 베를린에서 바이어슈트라스의 강의를 들었다는 것, 1870~72년 삼각급수 논문들이 바이어슈트라스의 가르침의 영향을 보인다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-weierstrass/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 8589,
+   "시각화": 3
   }
  ],
  "index": {
@@ -5571,10 +5856,13 @@
     "concept-probability-advanced",
     "concept-series",
     "concept-series-advanced",
+    "person-bolzano",
     "person-cantor",
+    "person-cauchy",
     "person-dedekind",
     "person-lagrange",
-    "person-laplace"
+    "person-laplace",
+    "person-weierstrass"
    ],
    "20": [
     "concept-analysis-rigor-advanced",
@@ -5609,7 +5897,9 @@
     "concept-series-advanced",
     "episode-priority-dispute",
     "person-barrow",
+    "person-bolzano",
     "person-cantor",
+    "person-cauchy",
     "person-dedekind",
     "person-euler",
     "person-fermat",
@@ -5617,7 +5907,8 @@
     "person-lagrange",
     "person-laplace",
     "person-leibniz",
-    "person-newton"
+    "person-newton",
+    "person-weierstrass"
    ],
    "기하학": [
     "century-17c",
@@ -5645,6 +5936,7 @@
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
     "concept-complex-number-advanced",
+    "person-cauchy",
     "person-dedekind",
     "person-descartes",
     "person-napier"
@@ -5655,6 +5947,7 @@
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "episode-newton-apple",
+    "person-cauchy",
     "person-euler",
     "person-lagrange",
     "person-newton"
@@ -5671,14 +5964,18 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
+    "person-bolzano",
     "person-cantor",
-    "person-dedekind"
+    "person-dedekind",
+    "person-weierstrass"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
    ],
    "복소해석학": [
-    "concept-complex-number-advanced"
+    "concept-complex-number-advanced",
+    "person-cauchy",
+    "person-weierstrass"
    ],
    "집합론": [
     "concept-function",
@@ -5705,7 +6002,12 @@
    "신학": [
     "person-barrow"
    ],
+   "논리학": [
+    "person-bolzano",
+    "person-leibniz"
+   ],
    "철학": [
+    "person-bolzano",
     "person-descartes",
     "person-leibniz"
    ],
@@ -5718,9 +6020,6 @@
    ],
    "천체역학": [
     "person-laplace"
-   ],
-   "논리학": [
-    "person-leibniz"
    ],
    "계산법": [
     "person-napier"
@@ -5735,10 +6034,13 @@
     "concept-analysis-rigor-advanced",
     "concept-differentiation",
     "concept-differentiation-advanced",
+    "person-bolzano",
+    "person-cauchy",
     "person-dedekind",
     "person-fermat",
     "person-leibniz",
-    "person-newton"
+    "person-newton",
+    "person-weierstrass"
    ],
    "공통수학2": [
     "concept-analytic-geometry",
@@ -5812,7 +6114,9 @@
    ],
    "인물": [
     "person-barrow",
+    "person-bolzano",
     "person-cantor",
+    "person-cauchy",
     "person-dedekind",
     "person-descartes",
     "person-euler",
@@ -5823,7 +6127,8 @@
     "person-leibniz",
     "person-napier",
     "person-newton",
-    "person-pascal"
+    "person-pascal",
+    "person-weierstrass"
    ]
   },
   "태그": {
@@ -6401,14 +6706,28 @@
    ]
   },
   "인물": {
+   "person-bolzano": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "person-cauchy"
+   ],
    "person-cantor": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
-    "person-dedekind"
+    "person-dedekind",
+    "person-weierstrass"
    ],
    "person-cauchy": [
     "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-fundamental-theorem",
+    "concept-integration-advanced",
+    "concept-series-advanced",
+    "person-bolzano",
+    "person-lagrange",
+    "person-laplace"
    ],
    "person-dedekind": [
     "concept-analysis-rigor",
@@ -6417,26 +6736,13 @@
    ],
    "person-weierstrass": [
     "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
+    "concept-analysis-rigor-advanced",
+    "concept-differentiation-advanced",
+    "concept-series-advanced",
+    "person-cantor"
    ],
    "뉴턴·라이프니츠": [
     "concept-analysis-rigor"
-   ],
-   "볼차노": [
-    "concept-analysis-rigor"
-   ],
-   "코시": [
-    "concept-analysis-rigor",
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-fundamental-theorem",
-    "concept-integration-advanced",
-    "concept-series-advanced"
-   ],
-   "바이어슈트라스": [
-    "concept-analysis-rigor-advanced",
-    "concept-differentiation-advanced",
-    "concept-series-advanced"
    ],
    "클라인": [
     "concept-analysis-rigor-advanced",
@@ -6496,6 +6802,7 @@
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-differentiation-advanced",
+    "person-cauchy",
     "person-euler",
     "person-laplace"
    ],
@@ -6574,6 +6881,7 @@
    "person-laplace": [
     "concept-differential-equation-advanced",
     "concept-probability-advanced",
+    "person-cauchy",
     "person-lagrange"
    ],
    "디리클레": [
@@ -7844,10 +8152,22 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-series": [
@@ -7960,6 +8280,12 @@
      "제목": "무한급수",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-euler",
@@ -8098,14 +8424,32 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-cantor",
      "제목": "게오르크 칸토어",
      "유형": "인물",
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-dedekind",
      "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -8326,6 +8670,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -8368,6 +8718,12 @@
      "제목": "확률론 확장편",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-lagrange",
@@ -8520,6 +8876,100 @@
      "경로": "본문"
     }
    ],
+   "person-cauchy": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-bolzano": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-dedekind": [
     {
      "슬러그": "concept-analysis-rigor",
@@ -8546,10 +8996,22 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-cantor",
      "제목": "게오르크 칸토어",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-cantor": [
@@ -8572,10 +9034,60 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-dedekind",
      "제목": "리하르트 데데킨트",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-weierstrass": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cantor",
+     "제목": "게오르크 칸토어",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-analysis-rigor-advanced": [
@@ -8586,14 +9098,32 @@
      "경로": "짝문서"
     },
     {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-cantor",
      "제목": "게오르크 칸토어",
      "유형": "인물",
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-cauchy",
+     "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-dedekind",
      "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-weierstrass",
+     "제목": "카를 바이어슈트라스",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -9001,6 +9531,14 @@
   "아이작 배로우": "person-barrow",
   "아이작배로": "person-barrow",
   "인물_아이작 배로": "person-barrow",
+  "Bernard Bolzano": "person-bolzano",
+  "person-bolzano": "person-bolzano",
+  "베른하르트 볼차노": "person-bolzano",
+  "베른하르트볼차노": "person-bolzano",
+  "볼차노": "person-bolzano",
+  "볼차노 정리": "person-bolzano",
+  "볼차노-바이어슈트라스": "person-bolzano",
+  "인물_베른하르트 볼차노": "person-bolzano",
   "Georg Cantor": "person-cantor",
   "person-cantor": "person-cantor",
   "게오르크 칸토어": "person-cantor",
@@ -9010,6 +9548,13 @@
   "집합론의 창시자": "person-cantor",
   "칸토르": "person-cantor",
   "칸토어": "person-cantor",
+  "Augustin-Louis Cauchy": "person-cauchy",
+  "person-cauchy": "person-cauchy",
+  "오귀스탱루이 코시": "person-cauchy",
+  "오귀스탱루이코시": "person-cauchy",
+  "인물_오귀스탱루이 코시": "person-cauchy",
+  "코시": "person-cauchy",
+  "코시 수열": "person-cauchy",
   "Richard Dedekind": "person-dedekind",
   "person-dedekind": "person-dedekind",
   "데데킨트": "person-dedekind",
@@ -9087,6 +9632,14 @@
   "블레즈 파스칼": "person-pascal",
   "블레즈파스칼": "person-pascal",
   "인물_블레즈 파스칼": "person-pascal",
-  "파스칼": "person-pascal"
+  "파스칼": "person-pascal",
+  "Karl Weierstrass": "person-weierstrass",
+  "person-weierstrass": "person-weierstrass",
+  "바이어슈트라스": "person-weierstrass",
+  "바이어슈트라스 함수": "person-weierstrass",
+  "인물_카를 바이어슈트라스": "person-weierstrass",
+  "카를 바이어슈트라스": "person-weierstrass",
+  "카를바이어슈트라스": "person-weierstrass",
+  "현대 해석학의 아버지": "person-weierstrass"
  }
 }
