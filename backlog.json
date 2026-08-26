@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-26",
- "scanned": 211,
- "resolved": 809,
- "pending": 560,
+ "scanned": 215,
+ "resolved": 846,
+ "pending": 555,
  "counts": {
-  "new": 267,
+  "new": 265,
   "companion": 5,
   "gap": 0
  },
@@ -1236,27 +1236,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
-    }
-   ]
-  },
-  {
-   "name": "야코프 베르누이",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식",
-     "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 2
-    },
-    {
-     "t": "확률론",
-     "u": "math/#n=concept-probability",
-     "s": "math",
-     "n": 1
     }
    ]
   },
@@ -3019,27 +2998,6 @@
     {
      "t": "해석학의 엄밀화 (확장편)",
      "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "크리스티안 하위헌스",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식",
-     "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "확률론",
-     "u": "math/#n=concept-probability",
      "s": "math",
      "n": 1
     }

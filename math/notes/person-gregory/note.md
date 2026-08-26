@@ -17,6 +17,7 @@
   출생지: 스코틀랜드 애버딘 근교 드러모크
 
 기여개념: [concept-series, concept-fundamental-theorem, concept-integration]
+관련인물: [person-barrow]
 관련일화: [episode-priority-dispute]
 
 출처:
