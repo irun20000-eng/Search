@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-25",
- "scanned": 208,
- "resolved": 762,
- "pending": 566,
+ "generated": "2026-08-26",
+ "scanned": 211,
+ "resolved": 809,
+ "pending": 560,
  "counts": {
-  "new": 270,
+  "new": 267,
   "companion": 5,
   "gap": 0
  },
@@ -3004,70 +3004,7 @@
    ]
   },
   {
-   "name": "오귀스탱루이 코시",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "베른하르트 볼차노",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
    "name": "에두아르트 하이네",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "카를 바이어슈트라스",
    "count": 2,
    "kind": "new",
    "target": null,

@@ -17,7 +17,7 @@
   출생지: 사르데냐피에몬테 토리노
 
 기여개념: [concept-calculus-of-variations, concept-differential-equation, concept-differential-equation-advanced, concept-differentiation, concept-differentiation-advanced]
-관련인물: [person-laplace, person-euler]
+관련인물: [person-laplace, person-euler, person-cauchy]
 
 출처:
   - 번호: 1

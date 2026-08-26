@@ -37,7 +37,7 @@
 
 선행개념: [concept-function, concept-series, concept-differentiation]
 후속개념: [concept-real-analysis]
-기여인물: [person-cauchy, person-dedekind, person-cantor, person-weierstrass]
+기여인물: [person-cauchy, person-bolzano, person-dedekind, person-cantor, person-weierstrass]
 
 이미지:
   - 파일: assets/figures/dedekind-cut-three-cases.svg
