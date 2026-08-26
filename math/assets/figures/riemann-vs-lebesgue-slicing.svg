@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330" role="img" aria-label="같은 함수를 리만은 정의역으로, 르베그는 치역으로 자른다">
+  <title>리만과 르베그 — 자르는 방향이 다르다</title>
+  <rect width="620" height="330" fill="#FFFDF7"/>
+
+  <!-- ─────────── 왼쪽: 리만 ─────────── -->
+  <text x="34" y="40" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">리만 — 정의역을 자른다</text>
+  <text x="34" y="60" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">가로축을 잘게 나누고 세로 막대를 쌓는다</text>
+
+  <!-- 세로 띠 -->
+  <g fill="#9C5A2C" fill-opacity="0.16" stroke="#9C5A2C" stroke-width="1">
+    <rect x="60"  y="196" width="26" height="54"/>
+    <rect x="86"  y="170" width="26" height="80"/>
+    <rect x="112" y="146" width="26" height="104"/>
+    <rect x="138" y="132" width="26" height="118"/>
+    <rect x="164" y="140" width="26" height="110"/>
+    <rect x="190" y="162" width="26" height="88"/>
+    <rect x="216" y="188" width="26" height="62"/>
+  </g>
+
+  <!-- 곡선 -->
+  <path d="M60 198 C 100 150, 130 126, 152 130 C 178 135, 208 176, 242 200"
+        fill="none" stroke="#221E18" stroke-width="2.4"/>
+
+  <!-- 축 -->
+  <line x1="52" y1="250" x2="256" y2="250" stroke="#221E18" stroke-width="1.8"/>
+  <line x1="52" y1="250" x2="52" y2="118" stroke="#221E18" stroke-width="1.8"/>
+
+  <!-- 정의역 분할 눈금 -->
+  <g stroke="#9C5A2C" stroke-width="1.8">
+    <line x1="60"  y1="250" x2="60"  y2="258"/>
+    <line x1="86"  y1="250" x2="86"  y2="258"/>
+    <line x1="112" y1="250" x2="112" y2="258"/>
+    <line x1="138" y1="250" x2="138" y2="258"/>
+    <line x1="164" y1="250" x2="164" y2="258"/>
+    <line x1="190" y1="250" x2="190" y2="258"/>
+    <line x1="216" y1="250" x2="216" y2="258"/>
+    <line x1="242" y1="250" x2="242" y2="258"/>
+  </g>
+  <text x="132" y="278" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#9C5A2C">여기를 나눈다</text>
+
+  <text x="150" y="304" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">손에 잡히는 순서대로 꺼내 센다</text>
+
+  <!-- ─────────── 가운데 구분선 ─────────── -->
+  <line x1="310" y1="30" x2="310" y2="300" stroke="#E2DACB" stroke-width="1.4"/>
+
+  <!-- ─────────── 오른쪽: 르베그 ─────────── -->
+  <text x="356" y="40" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">르베그 — 치역을 자른다</text>
+  <text x="356" y="60" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">세로축을 나누고, 그 값을 갖는 곳의 크기를 잰다</text>
+
+  <!-- 가로 띠 -->
+  <g fill="#9C5A2C" fill-opacity="0.16" stroke="#9C5A2C" stroke-width="1">
+    <rect x="382" y="226" width="182" height="24"/>
+    <rect x="386" y="202" width="172" height="24"/>
+    <rect x="392" y="178" width="158" height="24"/>
+    <rect x="404" y="154" width="130" height="24"/>
+    <rect x="440" y="130" width="58"  height="24"/>
+  </g>
+
+  <!-- 곡선 -->
+  <path d="M382 198 C 422 150, 452 126, 474 130 C 500 135, 530 176, 564 200"
+        fill="none" stroke="#221E18" stroke-width="2.4"/>
+
+  <!-- 축 -->
+  <line x1="374" y1="250" x2="578" y2="250" stroke="#221E18" stroke-width="1.8"/>
+  <line x1="374" y1="250" x2="374" y2="118" stroke="#221E18" stroke-width="1.8"/>
+
+  <!-- 치역 분할 눈금 -->
+  <g stroke="#9C5A2C" stroke-width="1.8">
+    <line x1="366" y1="250" x2="374" y2="250"/>
+    <line x1="366" y1="226" x2="374" y2="226"/>
+    <line x1="366" y1="202" x2="374" y2="202"/>
+    <line x1="366" y1="178" x2="374" y2="178"/>
+    <line x1="366" y1="154" x2="374" y2="154"/>
+    <line x1="366" y1="130" x2="374" y2="130"/>
+  </g>
+  <text x="352" y="196" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#9C5A2C" transform="rotate(-90 352 196)">여기를 나눈다</text>
+
+  <text x="470" y="304" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">같은 액면끼리 모아 센다</text>
+</svg>

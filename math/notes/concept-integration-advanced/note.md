@@ -61,7 +61,7 @@
     URL: https://archive.org/details/integralelongueu00lebe
     유형: 1차
   - 번호: 5
-    제목: MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 몽텔에게 보낸 편지의 동전 비유
+    제목: MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 함께 쓴 1957년 논문의 영역. 르베그 본인의 말로 인용된 동전 비유
     URL: https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/
     유형: 2차
   - 번호: 6
@@ -239,7 +239,7 @@ $$\int_a^b F'(x)\,dx = F(b)-F(a)$$
 
 ## 7. 르베그 — 나누는 방향을 뒤집다 (1902)
 
-앙리 르베그가 1902년 학위논문 『적분·길이·넓이』에서 답을 낸다[4]. 그는 **측도**를 길이·넓이·부피 개념의 일반화로 세우고, 그 위에 적분을 다시 지었다.
+앙리 르베그가 1902년 학위논문 『적분·길이·넓이』에서 답을 낸다[4]([[20세기]]). 그는 **측도**를 길이·넓이·부피 개념의 일반화로 세우고, 그 위에 적분을 다시 지었다.
 
 발상의 전환은 한 줄로 말할 수 있다.
 
@@ -251,7 +251,7 @@ $$\int f \approx \sum_k y_k \cdot m\big(\{x : f(x) \approx y_k\}\big)$$
 
 ### 르베그 자신의 비유
 
-르베그는 폴 몽텔에게 보낸 편지에서 이렇게 설명했다[5].
+르베그가 이 비유로 자기 적분을 설명했다고, 당주아·펠릭스·**폴 몽텔**이 함께 쓴 회고 논문이 그의 말을 인용해 전한다[5].
 
 > **"갚아야 할 돈이 있고, 주머니에 지폐와 동전이 섞여 있다. 손에 잡히는 순서대로 꺼내 채권자에게 준다 — 이것이 리만 적분이다. 돈을 전부 꺼내 같은 액면끼리 쌓아 놓고 그 무더기를 차례로 건넨다 — 이것이 내 적분이다."**[5]
 
