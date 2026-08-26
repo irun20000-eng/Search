@@ -17,6 +17,7 @@
   출생지: 프랑스 투렌 라에
 
 기여개념: [concept-analytic-geometry]
+관련인물: [person-huygens]
 관련일화: [episode-descartes-fly]
 
 출처:

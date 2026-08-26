@@ -41,7 +41,7 @@
 
 선행개념: [concept-integration]
 후속개념: [concept-complex-number, concept-analysis-rigor]
-기여인물: [person-gregory, person-leibniz, person-euler]
+기여인물: [person-gregory, person-leibniz, person-euler, person-jakob-bernoulli]
 
 출처:
   - 번호: 1

@@ -49,7 +49,7 @@
 
 선행개념: [concept-probability]
 후속개념: [concept-real-analysis]
-기여인물: [person-laplace]
+기여인물: [person-laplace, person-jakob-bernoulli]
 
 출처:
   - 번호: 1

@@ -18,6 +18,7 @@
 
 기여개념: [concept-probability]
 관련일화: [episode-pascal-fermat-letters]
+관련인물: [person-fermat, person-huygens]
 
 출처:
   - 번호: 1

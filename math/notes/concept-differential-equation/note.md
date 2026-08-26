@@ -41,7 +41,7 @@
 
 선행개념: [concept-differentiation, concept-integration]
 후속개념: [concept-function, ]
-기여인물: [person-newton, person-leibniz, person-euler, person-lagrange]
+기여인물: [person-newton, person-leibniz, person-euler, person-lagrange, person-jakob-bernoulli, person-huygens]
 
 출처:
   - 번호: 1
