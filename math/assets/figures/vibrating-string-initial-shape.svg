@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330" role="img" aria-label="손가락으로 집어 올려 꺾인 현의 초기 모양과 하나의 식으로 쓸 수 있는 매끈한 모양">
+  <title>진동하는 현 — 꺾인 초기 모양은 함수인가</title>
+  <rect width="620" height="330" fill="#FFFDF7"/>
+
+  <text x="34" y="32" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">양쪽 끝이 고정된 줄을 튕겼을 때의 초기 모양</text>
+  <text x="34" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">걸린 것은 물리가 아니라 "무엇을 함수로 인정하는가"였다</text>
+
+  <!-- ══════ 왼쪽 — 손가락으로 집어 올린 꺾인 모양 ══════ -->
+  <text x="44" y="78" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" font-weight="600" fill="#221E18">손가락으로 집어 올리면</text>
+
+  <!-- 꺾인 점 확대 (줄보다 위쪽에 둔다) -->
+  <g transform="translate(178,88)">
+    <rect x="0" y="0" width="86" height="56" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="1"/>
+    <polyline fill="none" stroke="#221E18" stroke-width="2.2" points="8,44 43,12 78,32"/>
+    <circle cx="43" cy="12" r="3.4" fill="#9C5A2C"/>
+  </g>
+  <line x1="178" y1="132" x2="132" y2="146" stroke="#9C5A2C" stroke-width="1"/>
+  <text x="292" y="166" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11.5" fill="#9C5A2C">좌우 기울기가</text>
+  <text x="292" y="182" text-anchor="end" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11.5" fill="#9C5A2C">다르다</text>
+
+  <!-- 고정단 -->
+  <line x1="44" y1="178" x2="44" y2="214" stroke="#8A7F6E" stroke-width="2.4"/>
+  <line x1="264" y1="178" x2="264" y2="214" stroke="#8A7F6E" stroke-width="2.4"/>
+  <!-- 평형 위치 -->
+  <line x1="44" y1="196" x2="264" y2="196" stroke="#B9B0A0" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- 꺾인 현 : 왼끝 → 집어 올린 점 → 오른끝 -->
+  <polyline fill="none" stroke="#221E18" stroke-width="2.6" stroke-linejoin="miter"
+    points="44,196 114.4,150 264,196"/>
+  <circle cx="114.4" cy="150" r="4.5" fill="#9C5A2C"/>
+  <circle cx="114.4" cy="150" r="19" fill="none" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <text x="154" y="246" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12.5" fill="#5C5346">왼쪽 절반과 오른쪽 절반이</text>
+  <text x="154" y="264" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12.5" fill="#5C5346">서로 다른 식으로 쓰인다</text>
+
+  <!-- 가운데 구분선 -->
+  <line x1="310" y1="60" x2="310" y2="278" stroke="#E2DACB" stroke-width="1.4"/>
+
+  <!-- ══════ 오른쪽 — 하나의 식으로 쓸 수 있는 모양 ══════ -->
+  <text x="350" y="78" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" font-weight="600" fill="#221E18">하나의 식으로 쓸 수 있는 모양</text>
+
+  <line x1="350" y1="178" x2="350" y2="214" stroke="#8A7F6E" stroke-width="2.4"/>
+  <line x1="570" y1="178" x2="570" y2="214" stroke="#8A7F6E" stroke-width="2.4"/>
+  <line x1="350" y1="196" x2="570" y2="196" stroke="#B9B0A0" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- sin 반주기, 진폭 46 -->
+  <polyline fill="none" stroke="#221E18" stroke-width="2.6" stroke-linejoin="round"
+    points="350.00,196.00 355.00,192.72 360.00,189.45 365.00,186.22 370.00,183.04 375.00,179.92 380.00,176.89 385.00,173.95 390.00,171.13 395.00,168.43 400.00,165.88 405.00,163.47 410.00,161.24 415.00,159.18 420.00,157.30 425.00,155.63 430.00,154.16 435.00,152.90 440.00,151.86 445.00,151.05 450.00,150.47 455.00,150.12 460.00,150.00 465.00,150.12 470.00,150.47 475.00,151.05 480.00,151.86 485.00,152.90 490.00,154.16 495.00,155.63 500.00,157.30 505.00,159.18 510.00,161.24 515.00,163.47 520.00,165.88 525.00,168.43 530.00,171.13 535.00,173.95 540.00,176.89 545.00,179.92 550.00,183.04 555.00,186.22 560.00,189.45 565.00,192.72 570.00,196.00"/>
+
+  <text x="460" y="246" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#221E18">u(x, <tspan font-family="Pretendard, 'Malgun Gothic', sans-serif" font-style="normal" font-size="13">0</tspan>) = a · sin(πx / L)</text>
+  <text x="460" y="264" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12.5" fill="#5C5346">전 구간이 한 식으로 쓰인다</text>
+
+  <!-- 아래 물음 -->
+  <line x1="44" y1="288" x2="576" y2="288" stroke="#E2DACB" stroke-width="1.2"/>
+  <text x="310" y="312" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#221E18">줄은 실제로 꺾인 채 튕겨진다. 그러면 왼쪽 모양도 해로 인정해야 하는가?</text>
+</svg>

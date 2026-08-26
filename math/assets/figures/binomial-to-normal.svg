@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" role="img" aria-label="동전던지기의 이항분포 막대가 n이 커질수록 연속적인 정규곡선에 가까워진다">
+  <title>이항분포의 정규 근사 — 띄엄띄엄한 것을 세는데 답이 연속 곡선이다</title>
+  <rect width="620" height="300" fill="#FFFDF7"/>
+
+  <text x="34" y="34" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">동전을 n번 던져 앞면이 k번 나올 확률</text>
+  <text x="34" y="54" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">막대는 하나하나 셀 수 있는 값이다. 그런데 n이 커지면 그 위에 끊긴 데 없는 곡선이 얹힌다.</text>
+
+  <!-- ══════ 왼쪽 — n = 8 ══════ -->
+  <text x="44" y="80" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#221E18">n = 8</text>
+  <g fill="#9C5A2C" fill-opacity="0.20" stroke="#9C5A2C" stroke-width="1">
+    <rect x="44.6" y="212.2" width="18.8" height="1.8"/>
+    <rect x="64.6" y="199.4" width="18.8" height="14.6"/>
+    <rect x="84.6" y="162.8" width="18.8" height="51.2"/>
+    <rect x="104.6" y="111.6" width="18.8" height="102.4"/>
+    <rect x="124.6" y="86.0" width="18.8" height="128.0"/>
+    <rect x="144.6" y="111.6" width="18.8" height="102.4"/>
+    <rect x="164.6" y="162.8" width="18.8" height="51.2"/>
+    <rect x="184.6" y="199.4" width="18.8" height="14.6"/>
+    <rect x="204.6" y="212.2" width="18.8" height="1.8"/>
+  </g>
+  <line x1="36" y1="214" x2="232" y2="214" stroke="#221E18" stroke-width="1.6"/>
+  <text x="134" y="234" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#5C5346">k</text>
+  <text x="134" y="258" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">막대 9개 — 아직 계단이 보인다</text>
+
+  <!-- ══════ 오른쪽 — n = 32 ══════ -->
+  <g transform="translate(296,0)">
+    <text x="44" y="80" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#221E18">n = 32</text>
+    <g fill="#9C5A2C" fill-opacity="0.20" stroke="#9C5A2C" stroke-width="1">
+      <rect x="44.60" y="211.76" width="13.86" height="2.24"/>
+      <rect x="59.66" y="208.03" width="13.86" height="5.97"/>
+      <rect x="74.72" y="200.26" width="13.86" height="13.74"/>
+      <rect x="89.78" y="186.52" width="13.86" height="27.48"/>
+      <rect x="104.84" y="165.92" width="13.86" height="48.08"/>
+      <rect x="119.89" y="140.03" width="13.86" height="73.97"/>
+      <rect x="134.95" y="113.61" width="13.86" height="100.39"/>
+      <rect x="150.01" y="93.53" width="13.86" height="120.47"/>
+      <rect x="165.07" y="86.00" width="13.86" height="128.00"/>
+      <rect x="180.13" y="93.53" width="13.86" height="120.47"/>
+      <rect x="195.19" y="113.61" width="13.86" height="100.39"/>
+      <rect x="210.25" y="140.03" width="13.86" height="73.97"/>
+      <rect x="225.31" y="165.92" width="13.86" height="48.08"/>
+      <rect x="240.36" y="186.52" width="13.86" height="27.48"/>
+      <rect x="255.42" y="200.26" width="13.86" height="13.74"/>
+      <rect x="270.48" y="208.03" width="13.86" height="5.97"/>
+      <rect x="285.54" y="211.76" width="13.86" height="2.24"/>
+    </g>
+
+    <polyline fill="none" stroke="#221E18" stroke-width="2.4" stroke-linejoin="round"
+      points="51.53,211.64 55.55,210.93 59.56,210.04 63.58,208.95 67.59,207.61 71.61,205.98 75.62,204.03 79.64,201.71 83.65,198.99 87.67,195.83 91.69,192.20 95.70,188.07 99.72,183.44 103.73,178.29 107.75,172.65 111.76,166.54 115.78,160.01 119.80,153.13 123.81,145.98 127.83,138.66 131.84,131.29 135.86,124.00 139.87,116.93 143.89,110.24 147.91,104.07 151.92,98.56 155.94,93.85 159.95,90.05 163.97,87.27 167.98,85.57 172.00,85.00 176.02,85.57 180.03,87.27 184.05,90.05 188.06,93.85 192.08,98.56 196.09,104.07 200.11,110.24 204.13,116.93 208.14,124.00 212.16,131.29 216.17,138.66 220.19,145.98 224.20,153.13 228.22,160.01 232.24,166.54 236.25,172.65 240.27,178.29 244.28,183.44 248.30,188.07 252.31,192.20 256.33,195.83 260.35,198.99 264.36,201.71 268.38,204.03 272.39,205.98 276.41,207.61 280.42,208.95 284.44,210.04 288.45,210.93 292.47,211.64"/>
+
+    <line x1="36" y1="214" x2="308" y2="214" stroke="#221E18" stroke-width="1.6"/>
+    <text x="172" y="234" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="13" fill="#5C5346">k</text>
+  </g>
+
+  <text x="468" y="258" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">막대 위에 곡선이 얹힌다</text>
+
+  <!-- 곡선 라벨 -->
+  <line x1="466" y1="78" x2="466" y2="83" stroke="#221E18" stroke-width="1.2"/>
+  <text x="466" y="72" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">정규곡선</text>
+
+  <text x="310" y="278" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="11" fill="#8A7F6E">세로 축척은 두 그림이 각각 가장 높은 막대에 맞춘 것이라 패널끼리 높이를 견줄 수 없다</text>
+  <text x="310" y="296" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12.5" fill="#221E18">세는 문제의 답이 재는 문제의 언어로 나왔다.</text>
+</svg>

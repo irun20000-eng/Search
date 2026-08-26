@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330" role="img" aria-label="관측점과 직선 사이의 잔차를 한 변으로 하는 정사각형들, 그 넓이의 합이 가장 작아지는 직선">
+  <title>최소제곱법 — 잔차를 한 변으로 하는 정사각형의 넓이 합</title>
+  <rect width="620" height="330" fill="#FFFDF7"/>
+
+  <text x="34" y="32" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">잔차를 한 변으로 하는 정사각형</text>
+  <text x="34" y="52" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">넓이의 합이 가장 작아지도록 직선을 고른다</text>
+
+  <!-- ══════ 왼쪽 — 산점도와 잔차 정사각형 ══════ -->
+  <line x1="52" y1="288" x2="316" y2="288" stroke="#221E18" stroke-width="1.6"/>
+  <line x1="52" y1="288" x2="52" y2="66" stroke="#221E18" stroke-width="1.6"/>
+
+  <!-- 최소제곱 직선  y = 0.8543x + 1.3933 (관측 6개로 직접 푼 값) -->
+  <line x1="70" y1="258.10" x2="270" y2="87.24" stroke="#221E18" stroke-width="2.2"/>
+
+  <!-- 잔차 정사각형 (한 변 = |잔차|, 축척 40px = 1단위) -->
+  <g fill="#9C5A2C" fill-opacity="0.18" stroke="#9C5A2C" stroke-width="1.1">
+    <rect x="70" y="248.00" width="10.10" height="10.10"/>
+    <rect x="110" y="223.92" width="20.08" height="20.08"/>
+    <rect x="150" y="176.00" width="13.75" height="13.75"/>
+    <rect x="190" y="155.58" width="16.42" height="16.42"/>
+    <rect x="230" y="100.00" width="21.41" height="21.41"/>
+    <rect x="270" y="87.24" width="8.76" height="8.76"/>
+  </g>
+
+  <!-- 잔차 선분 (관측점 → 직선) -->
+  <g stroke="#9C5A2C" stroke-width="1.8">
+    <line x1="70" y1="248.00" x2="70" y2="258.10"/>
+    <line x1="110" y1="244.00" x2="110" y2="223.92"/>
+    <line x1="150" y1="176.00" x2="150" y2="189.75"/>
+    <line x1="190" y1="172.00" x2="190" y2="155.58"/>
+    <line x1="230" y1="100.00" x2="230" y2="121.41"/>
+    <line x1="270" y1="96.00" x2="270" y2="87.24"/>
+  </g>
+
+  <!-- 관측점 -->
+  <g fill="#221E18">
+    <circle cx="70" cy="248.00" r="4"/>
+    <circle cx="110" cy="244.00" r="4"/>
+    <circle cx="150" cy="176.00" r="4"/>
+    <circle cx="190" cy="172.00" r="4"/>
+    <circle cx="230" cy="100.00" r="4"/>
+    <circle cx="270" cy="96.00" r="4"/>
+  </g>
+
+  <text x="184" y="312" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">관측값 6개와 최소제곱 직선</text>
+
+  <!-- 가운데 구분선 -->
+  <line x1="336" y1="40" x2="336" y2="296" stroke="#E2DACB" stroke-width="1.4"/>
+
+  <!-- ══════ 오른쪽 — 왜 하필 제곱인가 ══════ -->
+  <text x="356" y="32" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#221E18">제곱하면 큰 오차가 무거워진다</text>
+
+  <text x="356" y="78" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">오차 10짜리 하나</text>
+  <rect x="356" y="90" width="60" height="60" fill="#9C5A2C" fill-opacity="0.18" stroke="#9C5A2C" stroke-width="1.2"/>
+  <text x="386" y="126" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="14" fill="#221E18">100</text>
+
+  <text x="474" y="78" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#8A7F6E">오차 5짜리 둘</text>
+  <rect x="474" y="120" width="30" height="30" fill="#9C5A2C" fill-opacity="0.18" stroke="#9C5A2C" stroke-width="1.2"/>
+  <rect x="512" y="120" width="30" height="30" fill="#9C5A2C" fill-opacity="0.18" stroke="#9C5A2C" stroke-width="1.2"/>
+  <text x="489" y="141" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">25</text>
+  <text x="527" y="141" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">25</text>
+  <text x="508" y="168" text-anchor="middle" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#5C5346">합 50</text>
+
+  <text x="356" y="204" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">절댓값으로 재면 둘 다 10이라</text>
+  <text x="356" y="222" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">같은 취급을 받는다.</text>
+  <text x="356" y="244" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#221E18">제곱하면 100 대 50으로 갈린다.</text>
+
+  <line x1="356" y1="262" x2="580" y2="262" stroke="#E2DACB" stroke-width="1.2"/>
+
+  <text x="356" y="284" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">그리고 제곱은 꺾이는 데가 없어</text>
+  <text x="356" y="302" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="12" fill="#5C5346">미분이 된다 — 손으로 풀린다.</text>
+</svg>
