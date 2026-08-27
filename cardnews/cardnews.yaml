@@ -177,6 +177,15 @@ episodes:
     images: [number04_01.webp, number04_02.webp, number04_03.webp, number04_04.webp, number04_05.webp, number04_06.webp, number04_07.webp, number04_08.webp, number04_09.webp, number04_10.webp]
     caption: "'정확도 99%'라는 말은 내 확률이 아닙니다.\n\n1000명 중 환자가 1명인 병을 오류율 5%짜리 검사로 걸러 보면, 양성은 51명쯤 나오는데 그중 진짜 환자는 1명입니다. 계산은 틀리지 않았습니다. 틀릴 사람이 999명이라서 그렇습니다.\n기저율 · 사람 수로 세기 · 나란히 두기 — 양성을 만났을 때 확인할 셋입니다.\n\n저장해두고 '정확도 99%'라는 말을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #기저율 #베이즈정리 #양성예측도 #데이터리터러시"
 
+  - folder: 발견노트_03_브라에스역설
+    date: 2026-08-27
+    series: discovery
+    title: "브라에스의 역설"
+    angle: "길을 늘렸는데 더 막힌다"
+    layout: C
+    images: [discovery03_01.webp, discovery03_02.webp, discovery03_03.webp, discovery03_04.webp, discovery03_05.webp, discovery03_06.webp, discovery03_07.webp, discovery03_08.webp, discovery03_09.webp, discovery03_10.webp]
+    caption: "길을 하나 더 놓았더니 모두가 늦어졌습니다.\n\n4,000대가 두 갈래로 나뉘어 65분에 가던 길에, 두 길을 잇는 짧은 샛길을 냈습니다. 처음 그 길을 탄 사람은 25분을 벌었지만, 결국 모두가 그리로 옮겨 타 전원이 80분이 됐습니다. 혼자 빠져나오면 85분이라 되돌아갈 수도 없습니다.\n1968년 수학자 브라에스가 논문 한 편으로 보인 이야기입니다. 아무도 잘못 고르지 않았는데 전체는 나빠집니다.\n\n저장해두고 무언가를 늘리려 할 때 다시 꺼내 보세요.\n\n#발견노트 #브라에스의역설 #내시균형 #네트워크 #교양"
+
 # ── 반입 대기: 없음 (2026-08-22 신규 2편 반입 완료 · 총 20편) ──────
 pending_episodes: []
 
