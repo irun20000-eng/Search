@@ -258,9 +258,20 @@ var EXTRA=[
 
 var DOCS=[];
 
+/* 제목만 보면 서가를 가로지르지 못한다.
+   '수학'으로 찾으면 블로그 7편만 나오던 때가 있었다 — 수학사 노트 제목이
+   '적분법'·'무한급수'라 '수학'이라는 글자가 없기 때문이다. 서가를 합쳐 놓고도
+   교차점을 못 찾는 셈이었다. link-index 가 실어 주는 `검색어`(각 갤러리의 태그를
+   모은 것)를 제목과 함께 본다. 제목에 걸린 것을 위로 올려 정렬은 유지한다. */
 function hits(v){
-  var lv=v.toLowerCase();
-  return DOCS.filter(function(d){ return d.t.toLowerCase().indexOf(lv)>=0; });
+  var lv=v.toLowerCase().trim();
+  if(!lv) return [];
+  var inT=[], inK=[];
+  DOCS.forEach(function(d){
+    if(d.t.toLowerCase().indexOf(lv)>=0) inT.push(d);
+    else if(d.k.indexOf(lv)>=0) inK.push(d);
+  });
+  return inT.concat(inK);
 }
 function countBy(list){
   var by={}; ORDER.forEach(function(k){by[k]=0});
@@ -327,7 +338,8 @@ paintTheme();
   var entries=(li.entries||[]);
 
   DOCS=entries.map(function(e){
-    return { t:e["제목"]||"", s:e["섹션"]||"", u:e.url||"", d:e["날짜"]||"" };
+    return { t:e["제목"]||"", s:e["섹션"]||"", u:e.url||"", d:e["날짜"]||"",
+             k:(e["검색어"]||"").toLowerCase() };
   }).filter(function(d){ return d.t && LABEL[d.s]; });
 
   var by=countBy(DOCS);
@@ -410,9 +422,9 @@ paintTheme();
   {t:"미적분, 처음부터 끝까지", q:"미적분", d:"17세기 탄생 배경부터 개념 정리와 엄밀화까지 한 줄로."},
   {t:"클로드 코드 전부",       q:"클로드", d:"플러그인·MCP·스킬 리서치와 따라 하기 영상, 실행 가이드."},
   {t:"업무 자동화",            q:"자동화", d:"n8n·Zapier·Slack — 조사한 것과 따라 해 본 것."},
-  {t:"수학 공부법",            q:"수학",   d:"개념 보고서와 블로그 글, 카드뉴스가 한 주제에서 만나는 지점."},
-  {t:"AI 활용",               q:"AI",     d:"리서치·영상노트·블로그가 함께 다룬 AI 사용법."},
-  {t:"입시·진학",             q:"수시",   d:"수시·모의고사·면접 — 블로그와 리서치에 흩어진 것."}
+  {t:"수학, 서가를 가로질러", q:"수학",   d:"보고서의 증명, 수학사의 내력, 개념 한 장, 블로그의 공부법이 같은 말 아래 모입니다."},
+  {t:"AI 활용",               q:"AI",     d:"리서치·영상노트·가이드·블로그가 함께 다룬 AI 사용법."},
+  {t:"입시·진학",             q:"수시",   d:"수시·모의고사·정시 병행 — 블로그에 쌓인 것."}
 ];
 
 /* 묶어 읽기 — 편수를 실제로 세서 보여준다 */
