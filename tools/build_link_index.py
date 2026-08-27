@@ -24,6 +24,16 @@
   루트 index.html(허브)의 통합 검색과 '최근' 목록이 entries 를 그대로 읽는다.
   그래서 각 항목에 날짜를 함께 싣는다. alias 맵은 허브가 쓰지 않는다.
 
+■ 검색어 — 제목만으로는 서가를 가로지르지 못한다
+  허브 검색이 제목 문자열만 보던 때, '수학'으로 찾으면 블로그 7편만 나왔다.
+  수학사 노트 제목이 '적분법'·'무한급수'라 '수학'이 들어 있지 않기 때문이다.
+  서가를 합쳐 놓고도 교차점을 못 찾는 셈이라, 각 항목에 서가별 태그를 모아
+  `검색어` 한 줄로 싣는다. 태그 정본은 각 갤러리 manifest 이고 이건 사본이다.
+  ★ 리스트가 아니라 공백으로 이은 문자열인 이유: 이 파일은 모든 페이지가 받아 가는데
+  indent=1 로 덤프하면 태그 하나가 한 줄씩 차지해 파일이 배로 부푼다.
+  검색은 부분일치라 문자열이면 충분하다.
+  카드뉴스는 태그가 없어 시리즈 이름과 앵글 문구를 대신 쓴다.
+
 사용: python3 tools/build_link_index.py
 """
 import sys
@@ -41,6 +51,20 @@ MANUAL = ROOT / "link-aliases.json"
 def load(p):
     p = ROOT / p
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def hay(*parts):
+    """태그·문구를 공백으로 이어 검색용 한 줄로. 중복은 순서를 지키며 지운다."""
+    out, seen = [], set()
+    for part in parts:
+        if not part:
+            continue
+        for w in (part if isinstance(part, (list, tuple)) else [part]):
+            w = str(w).strip()
+            if w and w.lower() not in seen:
+                seen.add(w.lower())
+                out.append(w)
+    return " ".join(out)
 
 
 def build():
@@ -71,6 +95,7 @@ def build():
     for r in load("reports/manifest.json").get("reports", []):
         entries.append(dict(제목=r["title"], 섹션="research", 유형=None,
                             슬러그=r["slug"], 날짜=r.get("date", ""),
+                            검색어=hay(r.get("tags"), r.get("cat")),
                             url="research/#r=" + r["slug"]))
         add(len(entries) - 1, M.aliases_for_report(r["title"], r["slug"]))
 
@@ -78,6 +103,7 @@ def build():
     for g in load("guides/manifest.json").get("guides", []):
         entries.append(dict(제목=g["title"], 섹션="guides", 유형=None,
                             슬러그=g["slug"], 날짜=g.get("date", ""),
+                            검색어=hay(g.get("tags"), g.get("level")),
                             url="guides/#g-" + g["slug"]))
         add(len(entries) - 1, M.aliases_for_report(g["title"], g["slug"]))
 
@@ -85,6 +111,7 @@ def build():
     for v in load("videos/manifest.json").get("videos", []):
         entries.append(dict(제목=v["title"], 섹션="videos", 유형=None,
                             슬러그=v["id"], 날짜=v.get("added") or v.get("published", ""),
+                            검색어=hay(v.get("tags"), v.get("cat"), v.get("channel")),
                             url="videos/#post-" + v["id"]))
         add(len(entries) - 1, {M.norm(v["title"]), v["id"]})
 
@@ -92,6 +119,7 @@ def build():
     for b in load("blog/manifest.json").get("posts", []):
         entries.append(dict(제목=b["title"], 섹션="blog", 유형=None,
                             슬러그=b["slug"], 날짜=b.get("date", ""),
+                            검색어=hay(b.get("tags"), b.get("pillar_ko")),
                             url="blog/#b=" + b["slug"]))
         add(len(entries) - 1, {M.norm(b["title"]), b["slug"]})
 
@@ -103,6 +131,7 @@ def build():
     for n in load("concept/manifest.json").get("notes", []):
         entries.append(dict(제목=n["title"], 섹션="concept", 유형=None,
                             슬러그=n["slug"], 날짜=n.get("date", ""),
+                            검색어=hay(n.get("tags"), n.get("level")),
                             url="concept/#n=" + n["slug"]))
         # 제목이 '최적 정지(Optimal Stopping) — 이해편(입문·딥)' 꼴이라
         # 본문의 [[최적 정지]] 가 안 잡힌다. 짧은 이름을 별칭으로 함께 넣는다.
@@ -111,9 +140,14 @@ def build():
         add(len(entries) - 1, {M.norm(n["title"]), M.norm(short), M.norm(base), n["slug"]})
 
     # ── cardnews ──
-    for c in load("cardnews/manifest.json").get("episodes", []):
+    # 카드뉴스만 태그가 없다. 시리즈 키(discovery)는 검색어로 쓸모가 없으니
+    # 사람이 부르는 이름('발견 노트')으로 바꿔 앵글 문구와 함께 싣는다.
+    cardnews_man = load("cardnews/manifest.json")
+    series_label = {s["key"]: s.get("label", "") for s in cardnews_man.get("series", [])}
+    for c in cardnews_man.get("episodes", []):
         entries.append(dict(제목=c["title"], 섹션="cardnews", 유형=None,
                             슬러그=c["folder"], 날짜=c.get("date", ""),
+                            검색어=hay(series_label.get(c.get("series")), c.get("angle")),
                             url="cardnews/#c=" + c["folder"]))
         add(len(entries) - 1, {M.norm(c["title"]), c["folder"]})
 
@@ -123,6 +157,7 @@ def build():
     for n in math_man.get("notes", []):
         entries.append(dict(제목=n["제목"], 섹션="math", 유형=n.get("유형"),
                             슬러그=n["슬러그"], 날짜=math_gen,
+                            검색어=hay(n.get("태그"), n.get("분야"), n.get("교과")),
                             url="math/#n=" + n["슬러그"]))
         add(len(entries) - 1, M.aliases_for_math(n))
 

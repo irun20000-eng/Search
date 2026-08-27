@@ -7,6 +7,7 @@
    "유형": null,
    "슬러그": "continuous-function-theorems",
    "날짜": "2026-08-25",
+   "검색어": "수학 해석학 연속함수 중간값정리 사잇값정리 최대최소정리 극값정리 IVT EVT 반례 math",
    "url": "research/#r=continuous-function-theorems"
   },
   {
@@ -15,6 +16,7 @@
    "유형": null,
    "슬러그": "continuous-function-theorems-advanced",
    "날짜": "2026-08-25",
+   "검색어": "수학 해석학 증명 실수의완비성 최소상계 중간값정리 최대최소정리 볼차노 바이어슈트라스 컴팩트성 균등연속 math",
    "url": "research/#r=continuous-function-theorems-advanced"
   },
   {
@@ -23,6 +25,7 @@
    "유형": null,
    "슬러그": "odyssey-troy",
    "날짜": "2026-08-22",
+   "검색어": "인문 고전 그리스신화 호메로스 일리아스 오디세이아 트로이전쟁 오디세우스 서사시 노스토스 culture",
    "url": "research/#r=odyssey-troy"
   },
   {
@@ -31,6 +34,7 @@
    "유형": null,
    "슬러그": "odyssey-troy-advanced",
    "날짜": "2026-08-22",
+   "검색어": "인문 고전 고고학 호메로스문제 구전서사시 패리로드 슐리만 히사를리크 트로이 윌루사 미케네 culture",
    "url": "research/#r=odyssey-troy-advanced"
   },
   {
@@ -39,6 +43,7 @@
    "유형": null,
    "슬러그": "calculus-discovery",
    "날짜": "2026-08-20",
+   "검색어": "수학 수학사 미적분 뉴턴 라이프니츠 배로 유율법 무한소 미적분학의기본정리 우선권논쟁 math",
    "url": "research/#r=calculus-discovery"
   },
   {
@@ -47,6 +52,7 @@
    "유형": null,
    "슬러그": "calculus-discovery-advanced",
    "날짜": "2026-08-20",
+   "검색어": "수학 수학사 미적분 무한소 유율법 버클리 극한 엡실론델타 코시 바이어슈트라스 비표준해석학 해석학 math",
    "url": "research/#r=calculus-discovery-advanced"
   },
   {
@@ -55,6 +61,7 @@
    "유형": null,
    "슬러그": "aerodynamic-lift",
    "날짜": "2026-08-19",
+   "검색어": "과학 물리 양력 항공 베르누이 뉴턴제3법칙 받음각 유체역학 비행원리 오개념 science",
    "url": "research/#r=aerodynamic-lift"
   },
   {
@@ -63,6 +70,7 @@
    "유형": null,
    "슬러그": "aerodynamic-lift-advanced",
    "날짜": "2026-08-19",
+   "검색어": "과학 물리 양력 순환 쿠타주코프스키 쿠타조건 시작와류 실속 유도항력 유체역학 항공공학 science",
    "url": "research/#r=aerodynamic-lift-advanced"
   },
   {
@@ -71,6 +79,7 @@
    "유형": null,
    "슬러그": "semiconductor-communication",
    "날짜": "2026-08-19",
+   "검색어": "과학 반도체 전자회로 통신 트랜지스터 다이오드 디지털 전파 변조 초등과학 중등과학 science",
    "url": "research/#r=semiconductor-communication"
   },
   {
@@ -79,6 +88,7 @@
    "유형": null,
    "슬러그": "semiconductor-communication-advanced",
    "날짜": "2026-08-19",
+   "검색어": "과학 반도체 에너지밴드 pn접합 MOSFET CMOS 변조 QAM 표본화정리 섀넌한계 통신공학 고등과학 science",
    "url": "research/#r=semiconductor-communication-advanced"
   },
   {
@@ -87,6 +97,7 @@
    "유형": null,
    "슬러그": "mean-value-theorem",
    "날짜": "2026-08-16",
+   "검색어": "수학 평균값정리 롤의정리 미분 도함수 증가감소 부등식증명 미적분 수능수학 math",
    "url": "research/#r=mean-value-theorem"
   },
   {
@@ -95,6 +106,7 @@
    "유형": null,
    "슬러그": "mean-value-theorem-advanced",
    "날짜": "2026-08-16",
+   "검색어": "수학 코시평균값정리 평균값정리 로피탈정리 테일러정리 적분평균값정리 해석학 증명 미적분 math",
    "url": "research/#r=mean-value-theorem-advanced"
   },
   {
@@ -103,6 +115,7 @@
    "유형": null,
    "슬러그": "shear-polynomial",
    "날짜": "2026-08-15",
+   "검색어": "수학 전단변환 선형변환 일차변환 행렬식 다항함수 삼차함수 자유도 변곡점 수능수학 math",
    "url": "research/#r=shear-polynomial"
   },
   {
@@ -111,6 +124,7 @@
    "유형": null,
    "슬러그": "shear-polynomial-advanced",
    "날짜": "2026-08-15",
+   "검색어": "수학 전단변환 불변량 삼차함수 사차함수 교점대칭 넓이공식 근과계수 수능수학 심화문제 선형변환 math",
    "url": "research/#r=shear-polynomial-advanced"
   },
   {
@@ -119,6 +133,7 @@
    "유형": null,
    "슬러그": "polynomial-functions",
    "날짜": "2026-08-14",
+   "검색어": "수학 다항함수 미분 도함수 그래프개형 극대극소 정적분 넓이 수능수학 미적분 math",
    "url": "research/#r=polynomial-functions"
   },
   {
@@ -127,6 +142,7 @@
    "유형": null,
    "슬러그": "polynomial-functions-advanced",
    "날짜": "2026-08-14",
+   "검색어": "수학 다항함수 삼차함수 비율관계 넓이공식 거리곱 근과계수 정적분 수능수학 계산꿀팁 변곡점 math",
    "url": "research/#r=polynomial-functions-advanced"
   },
   {
@@ -135,6 +151,7 @@
    "유형": null,
    "슬러그": "lhopital-rule",
    "날짜": "2026-08-13",
+   "검색어": "수학 로피탈정리 극한 부정형 미분 미적분 활용예시 개념이해 math",
    "url": "research/#r=lhopital-rule"
   },
   {
@@ -143,6 +160,7 @@
    "유형": null,
    "슬러그": "lhopital-rule-advanced",
    "날짜": "2026-08-13",
+   "검색어": "수학 로피탈정리 코시평균값정리 테일러전개 순환논리 극한 반례 증명 성장속도 완비성 math",
    "url": "research/#r=lhopital-rule-advanced"
   },
   {
@@ -151,6 +169,7 @@
    "유형": null,
    "슬러그": "milk-yogurt-history",
    "날짜": "2026-08-12",
+   "검색어": "음식 우유 그릭요거트 다이어트 유청 유당 카제인 단백질 유당불내증 우유역사 science",
    "url": "research/#r=milk-yogurt-history"
   },
   {
@@ -159,6 +178,7 @@
    "유형": null,
    "슬러그": "math-function-terms",
    "날짜": "2026-08-12",
+   "검색어": "수학 함수 사상 매핑 변환 연산자 범함수 용어구분 수학용어 개념이해 math",
    "url": "research/#r=math-function-terms"
   },
   {
@@ -167,6 +187,7 @@
    "유형": null,
    "슬러그": "math-function-terms-advanced",
    "날짜": "2026-08-12",
+   "검색어": "수학 사상 모피즘 범주론 준동형 함자 구조보존 동형사상 함수 추상대수 math",
    "url": "research/#r=math-function-terms-advanced"
   },
   {
@@ -175,6 +196,7 @@
    "유형": null,
    "슬러그": "ai-models-2026-comparison",
    "날짜": "2026-08-12",
+   "검색어": "AI LLM AI모델비교 ChatGPT Claude Gemini DeepSeek 엑사원 솔라 하이퍼클로바X",
    "url": "research/#r=ai-models-2026-comparison"
   },
   {
@@ -183,6 +205,7 @@
    "유형": null,
    "슬러그": "video-editing-capcut-gom",
    "날짜": "2026-08-08",
+   "검색어": "영상편집 캡컷 CapCut 곰믹스 곰랩 Vrew 유튜브 숏폼 초보편집 편집프로그램 auto",
    "url": "research/#r=video-editing-capcut-gom"
   },
   {
@@ -191,6 +214,7 @@
    "유형": null,
    "슬러그": "n8n-automation-guide",
    "날짜": "2026-08-08",
+   "검색어": "자동화 n8n 노코드 오픈소스 셀프호스팅 AI에이전트 RAG 워크플로우 업무자동화 Zapier대안 auto",
    "url": "research/#r=n8n-automation-guide"
   },
   {
@@ -199,6 +223,7 @@
    "유형": null,
    "슬러그": "zapier-automation-guide",
    "날짜": "2026-08-08",
+   "검색어": "자동화 Zapier 재피어 노코드 업무자동화 생산성 워크플로우 ZapierAgents SaaS연동 AI자동화 auto",
    "url": "research/#r=zapier-automation-guide"
   },
   {
@@ -207,6 +232,7 @@
    "유형": null,
    "슬러그": "infinity-set-theory",
    "날짜": "2026-08-06",
+   "검색어": "수학 무한 집합론 칸토어 가산집합 비가산집합 알레프제로 대각선논법 무한의크기 개념이해 math",
    "url": "research/#r=infinity-set-theory"
   },
   {
@@ -215,6 +241,7 @@
    "유형": null,
    "슬러그": "infinity-set-theory-advanced",
    "날짜": "2026-08-06",
+   "검색어": "수학 무한 집합론 연속체가설 선택공리 ZFC 바나흐타르스키 괴델불완전성 독립성 강제법 math",
    "url": "research/#r=infinity-set-theory-advanced"
   },
   {
@@ -223,6 +250,7 @@
    "유형": null,
    "슬러그": "hermes-agent-windows",
    "날짜": "2026-08-02",
+   "검색어": "AI HermesAgent 헤르메스에이전트 NousResearch 오픈소스 AI에이전트 로컬AI 윈도우 셀프호스팅 소버린AI",
    "url": "research/#r=hermes-agent-windows"
   },
   {
@@ -231,6 +259,7 @@
    "유형": null,
    "슬러그": "gemini-spark-agent",
    "날짜": "2026-08-02",
+   "검색어": "AI 제미나이 GeminiSpark AI에이전트 에이전틱AI 구글 업무자동화 생산성 워크스페이스 프롬프트인젝션",
    "url": "research/#r=gemini-spark-agent"
   },
   {
@@ -239,6 +268,7 @@
    "유형": null,
    "슬러그": "domain-literacy-ai-era",
    "날짜": "2026-08-01",
+   "검색어": "AI 도메인리터러시 AI리터러시 도메인전문성 판단력 검증 문제정의 미래역량",
    "url": "research/#r=domain-literacy-ai-era"
   },
   {
@@ -247,6 +277,7 @@
    "유형": null,
    "슬러그": "ai-engineering-evolution-graph",
    "날짜": "2026-07-31",
+   "검색어": "AI 에이전트 프롬프트엔지니어링 컨텍스트엔지니어링 루프엔지니어링 그래프엔지니어링 LangGraph",
    "url": "research/#r=ai-engineering-evolution-graph"
   },
   {
@@ -255,6 +286,7 @@
    "유형": null,
    "슬러그": "korea-college-admission-2032",
    "날짜": "2026-07-31",
+   "검색어": "교육 대입제도 수능개편 서논술형 절대평가 고교학점제 2028 2032 society",
    "url": "research/#r=korea-college-admission-2032"
   },
   {
@@ -263,6 +295,7 @@
    "유형": null,
    "슬러그": "prosecution-reform-2026",
    "날짜": "2026-07-26",
+   "검색어": "시사 정치 검찰개혁 보완수사권 공소청 중수청 수사기소분리 society",
    "url": "research/#r=prosecution-reform-2026"
   },
   {
@@ -271,6 +304,7 @@
    "유형": null,
    "슬러그": "hesse-siddhartha",
    "날짜": "2026-07-20",
+   "검색어": "문학 헤르만헤세 싯다르타 성장소설 동양철학 자아실현 해설 culture",
    "url": "research/#r=hesse-siddhartha"
   },
   {
@@ -279,6 +313,7 @@
    "유형": null,
    "슬러그": "hesse-demian",
    "날짜": "2026-07-20",
+   "검색어": "문학 헤르만헤세 데미안 성장소설 융심리학 자아실현 해설 culture",
    "url": "research/#r=hesse-demian"
   },
   {
@@ -287,6 +322,7 @@
    "유형": null,
    "슬러그": "claude-cowork-mobile",
    "날짜": "2026-07-18",
+   "검색어": "AI도구 ClaudeCowork 코워크 모바일 에이전트 업무자동화 예약작업 생산성 ai",
    "url": "research/#r=claude-cowork-mobile"
   },
   {
@@ -295,6 +331,7 @@
    "유형": null,
    "슬러그": "orca-agent-ide",
    "날짜": "2026-07-17",
+   "검색어": "AI도구 Orca ADE ClaudeCode 코딩에이전트 병렬개발 gitworktree 생산성 ai",
    "url": "research/#r=orca-agent-ide"
   },
   {
@@ -303,6 +340,7 @@
    "유형": null,
    "슬러그": "spherical-geometry-curvature",
    "날짜": "2026-07-14",
+   "검색어": "수학 미분기하학 구면삼각법 코사인법칙 곡률 가우스곡률 이해편 math",
    "url": "research/#r=spherical-geometry-curvature"
   },
   {
@@ -311,6 +349,7 @@
    "유형": null,
    "슬러그": "spherical-geometry-curvature-advanced",
    "날짜": "2026-07-14",
+   "검색어": "수학 미분기하학 구면삼각법 가우스곡률 테오레마에그레기움 가우스보네 확장편 math",
    "url": "research/#r=spherical-geometry-curvature-advanced"
   },
   {
@@ -319,6 +358,7 @@
    "유형": null,
    "슬러그": "matrix-diagonalization",
    "날짜": "2026-07-14",
+   "검색어": "수학 선형대수 대각화 고유값 고유벡터 피보나치 이해편 math",
    "url": "research/#r=matrix-diagonalization"
   },
   {
@@ -327,6 +367,7 @@
    "유형": null,
    "슬러그": "matrix-diagonalization-advanced",
    "날짜": "2026-07-14",
+   "검색어": "수학 선형대수 대각화 고유분해 스펙트럼정리 조던표준형 확장편 math",
    "url": "research/#r=matrix-diagonalization-advanced"
   },
   {
@@ -335,6 +376,7 @@
    "유형": null,
    "슬러그": "higgsfield-mcp-claude",
    "날짜": "2026-07-12",
+   "검색어": "AI영상 Higgsfield MCP ClaudeCode 힉스필드 콘텐츠자동화 크레딧 요금 ai",
    "url": "research/#r=higgsfield-mcp-claude"
   },
   {
@@ -343,6 +385,7 @@
    "유형": null,
    "슬러그": "chrome-extensions-work",
    "날짜": "2026-07-12",
+   "검색어": "생산성 크롬확장 업무효율 자동화 도구추천 브라우저 보안 auto",
    "url": "research/#r=chrome-extensions-work"
   },
   {
@@ -351,6 +394,7 @@
    "유형": null,
    "슬러그": "benford-law",
    "날짜": "2026-07-11",
+   "검색어": "수학 통계 벤포드법칙 첫자리숫자 로그 부정탐지 이해편 math",
    "url": "research/#r=benford-law"
   },
   {
@@ -359,6 +403,7 @@
    "유형": null,
    "슬러그": "benford-law-advanced",
    "날짜": "2026-07-11",
+   "검색어": "수학 통계 벤포드법칙 로그균등분포 적합도검정 포렌식회계 확장편 math",
    "url": "research/#r=benford-law-advanced"
   },
   {
@@ -367,6 +412,7 @@
    "유형": null,
    "슬러그": "leslie-matrix",
    "날짜": "2026-07-11",
+   "검색어": "수학 생태학 레슬리행렬 개체군 행렬 고유값 이해편 math",
    "url": "research/#r=leslie-matrix"
   },
   {
@@ -375,6 +421,7 @@
    "유형": null,
    "슬러그": "leslie-matrix-advanced",
    "날짜": "2026-07-11",
+   "검색어": "수학 선형대수 레슬리행렬 페론프로베니우스 개체군동태 민감도분석 확장편 math",
    "url": "research/#r=leslie-matrix-advanced"
   },
   {
@@ -383,6 +430,7 @@
    "유형": null,
    "슬러그": "google-flow-practice",
    "날짜": "2026-07-09",
+   "검색어": "AI영상 GoogleFlow Veo 실습가이드 프롬프트 Scenebuilder 크리에이터 따라하기 ai",
    "url": "research/#r=google-flow-practice"
   },
   {
@@ -391,6 +439,7 @@
    "유형": null,
    "슬러그": "google-flow",
    "날짜": "2026-07-09",
+   "검색어": "AI영상 GoogleFlow Veo Imagen Gemini 크리에이터 콘텐츠제작 AI도구 요금비교 ai",
    "url": "research/#r=google-flow"
   },
   {
@@ -399,6 +448,7 @@
    "유형": null,
    "슬러그": "slack-ai-bot",
    "날짜": "2026-06-24",
+   "검색어": "Slack AI봇 LLM ClaudeAPI Bolt 1인개발자 자동화 에이전트 생산성 auto",
    "url": "research/#r=slack-ai-bot"
   },
   {
@@ -407,6 +457,7 @@
    "유형": null,
    "슬러그": "slack-bot-build",
    "날짜": "2026-06-24",
+   "검색어": "Slack 봇개발 Bolt SocketMode 1인개발자 자동화 웹훅 실전튜토리얼 auto",
    "url": "research/#r=slack-bot-build"
   },
   {
@@ -415,6 +466,7 @@
    "유형": null,
    "슬러그": "slack-solo-developer",
    "날짜": "2026-06-24",
+   "검색어": "Slack 협업툴 1인개발자 인디해커 자동화 알림 봇개발 생산성 워크플로우 auto",
    "url": "research/#r=slack-solo-developer"
   },
   {
@@ -423,6 +475,7 @@
    "유형": null,
    "슬러그": "claude-plugins-guide",
    "날짜": "2026-06-23",
+   "검색어": "AI 시리즈 클로드플러그인 ClaudeCode 마켓플레이스 자동화 생산성 디자인 웹개발",
    "url": "research/#r=claude-plugins-guide"
   },
   {
@@ -431,6 +484,7 @@
    "유형": null,
    "슬러그": "claude-plugins-build",
    "날짜": "2026-06-23",
+   "검색어": "AI 시리즈 클로드플러그인 ClaudeCode 마켓플레이스 플러그인제작 배포 자동화",
    "url": "research/#r=claude-plugins-build"
   },
   {
@@ -439,6 +493,7 @@
    "유형": null,
    "슬러그": "claude-extension-ecosystem",
    "날짜": "2026-06-23",
+   "검색어": "AI 시리즈 클로드플러그인 ClaudeCode MCP 스킬 서브에이전트 훅 아키텍처",
    "url": "research/#r=claude-extension-ecosystem"
   },
   {
@@ -447,6 +502,7 @@
    "유형": null,
    "슬러그": "claude-plugins-workflows",
    "날짜": "2026-06-23",
+   "검색어": "AI 시리즈 클로드플러그인 ClaudeCode 워크플로우 자동화 디자인 웹배포 영상정리",
    "url": "research/#r=claude-plugins-workflows"
   },
   {
@@ -455,6 +511,7 @@
    "유형": null,
    "슬러그": "claude-mcp-guide",
    "날짜": "2026-06-23",
+   "검색어": "AI MCP ModelContextProtocol ClaudeCode ClaudeDesktop 자동화 생산성 도구연동 보안",
    "url": "research/#r=claude-mcp-guide"
   },
   {
@@ -463,6 +520,7 @@
    "유형": null,
    "슬러그": "vector",
    "날짜": "2026-06-22",
+   "검색어": "수학 학습 벡터 선형대수 다변수 이해편 math",
    "url": "research/#r=vector"
   },
   {
@@ -471,6 +529,7 @@
    "유형": null,
    "슬러그": "vector-advanced",
    "날짜": "2026-06-22",
+   "검색어": "수학 선형대수 벡터해석 다변수미적분 함수해석 머신러닝 math",
    "url": "research/#r=vector-advanced"
   },
   {
@@ -479,6 +538,7 @@
    "유형": null,
    "슬러그": "matrix-multivariable-intro",
    "날짜": "2026-06-21",
+   "검색어": "수학 학습 행렬 미적분 다변수 이해편 math",
    "url": "research/#r=matrix-multivariable-intro"
   },
   {
@@ -487,6 +547,7 @@
    "유형": null,
    "슬러그": "matrix-multivariable-advanced",
    "날짜": "2026-06-21",
+   "검색어": "수학 선형대수 다변수미적분 선형사상 미분기하 함수해석 math",
    "url": "research/#r=matrix-multivariable-advanced"
   },
   {
@@ -495,6 +556,7 @@
    "유형": null,
    "슬러그": "jacobian-transformation",
    "날짜": "2026-06-21",
+   "검색어": "수학 학습 변수변환 극좌표 이해편 math",
    "url": "research/#r=jacobian-transformation"
   },
   {
@@ -503,6 +565,7 @@
    "유형": null,
    "슬러그": "jacobian-advanced",
    "날짜": "2026-06-21",
+   "검색어": "수학 변수변환 선형대수 미분기하 로보틱스 머신러닝 math",
    "url": "research/#r=jacobian-advanced"
   },
   {
@@ -511,6 +574,7 @@
    "유형": null,
    "슬러그": "iran-us-conflict-timeline",
    "날짜": "2026-06-21",
+   "검색어": "국제정세 이란 미국 중동 핵협상 외교사 society",
    "url": "research/#r=iran-us-conflict-timeline"
   },
   {
@@ -519,6 +583,7 @@
    "유형": null,
    "슬러그": "hermes-agent-deep",
    "날짜": "2026-06-21",
+   "검색어": "AI에이전트 오픈소스 NousResearch 자가발전 로컬AI 함수호출 주권적AI ai",
    "url": "research/#r=hermes-agent-deep"
   },
   {
@@ -527,6 +592,7 @@
    "유형": null,
    "슬러그": "hermes-agent-quick",
    "날짜": "2026-06-21",
+   "검색어": "AI에이전트 오픈소스 NousResearch 자가발전 로컬AI ai",
    "url": "research/#r=hermes-agent-quick"
   },
   {
@@ -535,6 +601,7 @@
    "유형": null,
    "슬러그": "openrouter-api-start",
    "날짜": "2026-08-08",
+   "검색어": "OpenRouter API LLM 파이썬 OpenAI호환 무료모델 API키 비용관리 입문",
    "url": "guides/#g-openrouter-api-start"
   },
   {
@@ -543,6 +610,7 @@
    "유형": null,
    "슬러그": "n8n-first-workflow",
    "날짜": "2026-08-08",
+   "검색어": "n8n 자동화 노코드 워크플로우 트리거 노드 JSON 스케줄 입문",
    "url": "guides/#g-n8n-first-workflow"
   },
   {
@@ -551,6 +619,7 @@
    "유형": null,
    "슬러그": "6BGIfYbzWz4",
    "날짜": "2026-08-27",
+   "검색어": "캔바 캔바대량제작 제미나이 제미나이잼스 카드뉴스 구글시트연동 CSV추출 매직미디어 AI이미지생성 디자인자동화 design 캔바 치트키 민쌤",
    "url": "videos/#post-6BGIfYbzWz4"
   },
   {
@@ -559,6 +628,7 @@
    "유형": null,
    "슬러그": "xxUbF6EPyfU",
    "날짜": "2026-08-25",
+   "검색어": "클로드코드 서브에이전트 멀티에이전트 컨텍스트분리 병렬처리 순차파이프라인 바이브코딩 BTW명령어 코드체커 팀에이전트 agent G-CREATOR",
    "url": "videos/#post-xxUbF6EPyfU"
   },
   {
@@ -567,6 +637,7 @@
    "유형": null,
    "슬러그": "XgWJWuz6Dmw",
    "날짜": "2026-08-21",
+   "검색어": "제미나이스파크 GeminiSpark AI에이전트 구글워크스페이스 업무자동화 구글시트연동 뉴스레터자동화 스케줄러 맞춤형스킬 구글AI agent 디꿀방",
    "url": "videos/#post-XgWJWuz6Dmw"
   },
   {
@@ -575,6 +646,7 @@
    "유형": null,
    "슬러그": "iwDB0C9LLoU",
    "날짜": "2026-08-21",
+   "검색어": "구글Flow AI영상제작 Flow에이전트 스토리보드 비주얼그리드 동영상생성 컬렉션정리 클립편집 크리에이티브AI 프롬프트엔지니어링 video 구분스터디",
    "url": "videos/#post-iwDB0C9LLoU"
   },
   {
@@ -583,6 +655,7 @@
    "유형": null,
    "슬러그": "HP8YODI7HhY",
    "날짜": "2026-08-21",
+   "검색어": "제미나이노트북 NotebookLM AI자료분석 차트생성 웹검색연동 소스자동정리 확장된사고 엑셀변환 지식관리 데이터시각화 knowledge 그린코끼리 AI",
    "url": "videos/#post-HP8YODI7HhY"
   },
   {
@@ -591,6 +664,7 @@
    "유형": null,
    "슬러그": "Lk44MMqpmkY",
    "날짜": "2026-08-20",
+   "검색어": "ClaudeCode CLAUDEmd 프롬프트엔지니어링 컨텍스트관리 AI실수방지 바이브코딩 보리스팁 세팅파일 앤트로픽 개발자동화 agent 방구석컴퍼니",
    "url": "videos/#post-Lk44MMqpmkY"
   },
   {
@@ -599,6 +673,7 @@
    "유형": null,
    "슬러그": "-NZX_CzrFzw",
    "날짜": "2026-08-20",
+   "검색어": "AI디자인 Impeccable 클로드코드 클로드디자인 KimiCode 오픈디자인 UIUX 디자인시스템 프론트엔드 바이브코딩 design 바이브랩스",
    "url": "videos/#post--NZX_CzrFzw"
   },
   {
@@ -607,6 +682,7 @@
    "유형": null,
    "슬러그": "XSsKjS1z7Yg",
    "날짜": "2026-08-20",
+   "검색어": "구글시트 GeminiAPI 구글앱스스크립트 대시보드제작 영수증인식 재고관리앱 웹앱배포 GoogleAIStudio 노코드앱 업무자동화 automation 오빠두엑셀 l 엑셀 강의 대표채널",
    "url": "videos/#post-XSsKjS1z7Yg"
   },
   {
@@ -615,6 +691,7 @@
    "유형": null,
    "슬러그": "zkc7iDXjHUA",
    "날짜": "2026-08-19",
+   "검색어": "HermesAgent 업스테이지솔라 SolarPro MOA 한글AI 독파모델 멀티에이전트 옵시디언연동 AI에이전트 에듀테크리포트 agent 배움의 달인 (AI·자동화)",
    "url": "videos/#post-zkc7iDXjHUA"
   },
   {
@@ -623,6 +700,7 @@
    "유형": null,
    "슬러그": "zBRb4bm4dyc",
    "날짜": "2026-08-19",
+   "검색어": "구글안티그래비티 GoogleAntigravity 제미나이3.7플래시 Gemini3.7Flash SEO자동화 에이전틱플랫폼 노코드개발 웹사이트감사 AI코딩 서브에이전트 agent Julian Goldie SEO",
    "url": "videos/#post-zBRb4bm4dyc"
   },
   {
@@ -631,6 +709,7 @@
    "유형": null,
    "슬러그": "K6Rsy-pHBi0",
    "날짜": "2026-08-18",
+   "검색어": "바이브코딩 Nextjs Vercel Supabase TailwindCSS shadcn pnpm 토스페이먼츠 PRD 기술스택 VSCode 비개발자 build 양실장의 바이브코딩대학",
    "url": "videos/#post-K6Rsy-pHBi0"
   },
   {
@@ -639,6 +718,7 @@
    "유형": null,
    "슬러그": "YTPfu1bVFW8",
    "날짜": "2026-08-14",
+   "검색어": "Remotion 쇼츠자동화 클로드코드 QN3TTS 보이스클로닝 AI영상편집 리모션 피노키오 위스퍼 숏폼제작 video 백야 | AI 1인 기업",
    "url": "videos/#post-YTPfu1bVFW8"
   },
   {
@@ -647,6 +727,7 @@
    "유형": null,
    "슬러그": "8XVVzAgn3g8",
    "날짜": "2026-08-17",
+   "검색어": "Claude ClaudeSkill 픽스필드 MCP AI영상제작 시댄스 쇼츠자동화 프롬프트엔지니어링 광고영상제작 video 조팀장의 AI 공략집",
    "url": "videos/#post-8XVVzAgn3g8"
   },
   {
@@ -655,6 +736,7 @@
    "유형": null,
    "슬러그": "y9u1IdDYHZQ",
    "날짜": "2026-08-17",
+   "검색어": "n8n 노코드 업무자동화 구글폼연동 데이터변환 에디트노드 디스코드봇 워크플로우 파이프라인 AI자동화 automation 솔브잇",
    "url": "videos/#post-y9u1IdDYHZQ"
   },
   {
@@ -663,6 +745,7 @@
    "유형": null,
    "슬러그": "T5va0A7wvHk",
    "날짜": "2026-08-17",
+   "검색어": "n8n JinaAI 웹스크레이핑 뉴스레터자동화 LLM 스트럭처드아웃풋 디스코드연동 파이토치 크롤링 정보큐레이션 automation 솔브잇",
    "url": "videos/#post-T5va0A7wvHk"
   },
   {
@@ -671,6 +754,7 @@
    "유형": null,
    "슬러그": "_PdvWiuJF-M",
    "날짜": "2026-08-17",
+   "검색어": "n8n 유튜브요약 프롬프트엔지니어링 셀프디스커버 노션연동 크롬익스텐션 GPT 지식관리 업무자동화 디스코드 knowledge 솔브잇",
    "url": "videos/#post-_PdvWiuJF-M"
   },
   {
@@ -679,6 +763,7 @@
    "유형": null,
    "슬러그": "kdt5J2bpchM",
    "날짜": "2026-08-17",
+   "검색어": "n8n 구글클라우드 GCP 무료호스팅 Docker Nginx Cloudflare DDNS SSL 업무자동화 automation 솔브잇",
    "url": "videos/#post-kdt5J2bpchM"
   },
   {
@@ -687,6 +772,7 @@
    "유형": null,
    "슬러그": "Fk-hGWWmYnw",
    "날짜": "2026-08-14",
+   "검색어": "GoogleAntigravity ClaudeCode AI에이전트 Gemini 바이브코딩 클로드 심볼릭링크 컨텍스트메모리 에이전트매니저 멀티에이전트 agent 오후다섯씨",
    "url": "videos/#post-Fk-hGWWmYnw"
   },
   {
@@ -695,6 +781,7 @@
    "유형": null,
    "슬러그": "itrJPsD4V6A",
    "날짜": "2026-08-14",
+   "검색어": "Antigravity MCP 바이브코딩 HWPX자동화 노트북LM 파일시스템 에이전트 제이슨설정 플레이라이트 컨텍스트7 agent G-CREATOR",
    "url": "videos/#post-itrJPsD4V6A"
   },
   {
@@ -703,6 +790,7 @@
    "유형": null,
    "슬러그": "GUBZ1YsuVRQ",
    "날짜": "2026-08-10",
+   "검색어": "Claude ClaudeCowork 프롬프트엔지니어링 업무자동화 AI생산성 토큰절약 대시보드 컨텍스트관리 AI비서 프로젝트지침 agent 신영선의 AI탐구",
    "url": "videos/#post-GUBZ1YsuVRQ"
   },
   {
@@ -711,6 +799,7 @@
    "유형": null,
    "슬러그": "qaGbNkFXiP8",
    "날짜": "2026-08-10",
+   "검색어": "Hermes AI에이전트 칸반보드 에이전트리치 멀티에이전트 업무자동화 크론스케줄러 오케스트레이터 디스패처 바이브코딩 agent 후츠릿 - AI 자동화로 삽질 줄여주는 개발자",
    "url": "videos/#post-qaGbNkFXiP8"
   },
   {
@@ -719,6 +808,7 @@
    "유형": null,
    "슬러그": "CmhzT5v-NYY",
    "날짜": "2026-08-10",
+   "검색어": "ClaudeCowork 레코더스킬 업무자동화 AI직원 이커머스 노코드 피팅컷제작 상품등록자동화 CS처리 마우스자동화 automation 온라인 사업 전략, 온크트리",
    "url": "videos/#post-CmhzT5v-NYY"
   },
   {
@@ -727,6 +817,7 @@
    "유형": null,
    "슬러그": "Evtf5KB7gpI",
    "날짜": "2026-08-08",
+   "검색어": "캡컷자동화 유튜브편집 클로드코드 구글클라우드API Vrew 자막생성 영상제작무료 쇼츠자동화 유튜브수익화 크레딧활용 video AI 돈나",
    "url": "videos/#post-Evtf5KB7gpI"
   },
   {
@@ -735,6 +826,7 @@
    "유형": null,
    "슬러그": "a_1xAWM5yUI",
    "날짜": "2026-08-08",
+   "검색어": "헤르메스에이전트 HermesAgent VPS 호스팅어 Hostinger 24시간운영 마케팅팀 칸반보드 슬랙연동 크론잡 소울MD 루프엔지니어링 그래프엔지니어링 도커컨테이너 agent AI 겸임교수 이종범",
    "url": "videos/#post-a_1xAWM5yUI"
   },
   {
@@ -743,6 +835,7 @@
    "유형": null,
    "슬러그": "wCT7kJSFLyk",
    "날짜": "2026-08-06",
+   "검색어": "구글Flow VeoOmni 영상생성 멀티모달 인페인팅 AI크리에이티브스튜디오 에이전트 아바타 캐릭터시트 텍스트애니메이션 전환편집 나노바나나 video 원카AI Wonka",
    "url": "videos/#post-wCT7kJSFLyk"
   },
   {
@@ -751,6 +844,7 @@
    "유형": null,
    "슬러그": "ZAxrmoPm8AI",
    "날짜": "2026-08-06",
+   "검색어": "피그마메이크 FigmaMake 피그마AI 오토레이아웃 프롬프트설계 쪼개서개선 포인트앤에디트 인라인프롬프트 가이드라인파일 카피디자인 UIUX 디자인기본기 design 피그마리온",
    "url": "videos/#post-ZAxrmoPm8AI"
   },
   {
@@ -759,6 +853,7 @@
    "유형": null,
    "슬러그": "wLY0rDVONf4",
    "날짜": "2026-08-06",
+   "검색어": "피그마 Figma 입문 기초 프레임 도형 펜툴 텍스트 패스파인더 아웃라인스트로크 스케일툴 단축키 UIUX design 디자이너 가든",
    "url": "videos/#post-wLY0rDVONf4"
   },
   {
@@ -767,6 +862,7 @@
    "유형": null,
    "슬러그": "24IV_DA5Yh4",
    "날짜": "2026-08-06",
+   "검색어": "클로드디자인 ClaudeDesign 디자인시스템 프로토타입 슬라이드 도큐먼트 와이어프레임 애니메이션 트윅 토큰공유 MP4추출 캔바연동 design 에디스",
    "url": "videos/#post-24IV_DA5Yh4"
   },
   {
@@ -775,6 +871,7 @@
    "유형": null,
    "슬러그": "WZ4HEwm6Xss",
    "날짜": "2026-08-06",
+   "검색어": "바이브디자인 클로드코드 클로드데스크탑앱 브라우저셀렉트 디자인폴리싱 네오브루탈리즘 랜딩페이지 소넷5 깃브랜치 워크플로우 코드레이어 디자이너생존 design 디자이너 DK",
    "url": "videos/#post-WZ4HEwm6Xss"
   },
   {
@@ -783,6 +880,7 @@
    "유형": null,
    "슬러그": "w5XO8zYGJ2Y",
    "날짜": "2026-08-06",
+   "검색어": "바이브코딩 기획력 매니페스트 Manifest PRD 유저플로우 와이어프레임 MCP연동 이중검토 디자인MD 재설계지옥 페이블5 build 투쏠ㅣAI 에이전트",
    "url": "videos/#post-w5XO8zYGJ2Y"
   },
   {
@@ -791,6 +889,7 @@
    "유형": null,
    "슬러그": "hmWSM6HMyZU",
    "날짜": "2026-08-06",
+   "검색어": "바이브코딩 클로드코드 VS코드 슈퍼베이스 버셀 배포 MCP 깃허브 데이터베이스 회의자동화 실시간공유 매직링크 build 바이브코딩 레인 RaiN",
    "url": "videos/#post-hmWSM6HMyZU"
   },
   {
@@ -799,6 +898,7 @@
    "유형": null,
    "슬러그": "u_o-wrU7g-Y",
    "날짜": "2026-08-06",
+   "검색어": "카드뉴스 클로드디자인 인스타그램 디자인가이드 디자인MD 세션템플릿 트윅 에디트 커멘트 모빈MCP 회사자산화 콘텐츠자동화 design 스티브의 파도타기 | AI 시대 일하는 법",
    "url": "videos/#post-u_o-wrU7g-Y"
   },
   {
@@ -807,6 +907,7 @@
    "유형": null,
    "슬러그": "bQ5XN9ECBmA",
    "날짜": "2026-08-06",
+   "검색어": "구글스티치 Stitch 바이브디자인 무한캔버스 디자인에이전트 보이스캔버스 인스턴트프로토타입 디자인MD MCP 아이디에이트모드 리디자인모드 피그마보완 design 이동훈의 루트AI",
    "url": "videos/#post-bQ5XN9ECBmA"
   },
   {
@@ -815,6 +916,7 @@
    "유형": null,
    "슬러그": "2l4s9yS_q6k",
    "날짜": "2026-08-06",
+   "검색어": "클로드코드 영상자동화 캡컷 리모션 Remotion SRT카운팅 형광펜하이라이트 박스애니메이션 노드JS 모션그래픽 편집자동화 video 홍아린 AI",
    "url": "videos/#post-2l4s9yS_q6k"
   },
   {
@@ -823,6 +925,7 @@
    "유형": null,
    "슬러그": "brjG7hQgm1I",
    "날짜": "2026-08-06",
+   "검색어": "세컨드브레인 OKF 오픈지식프레임워크 LLM위키 카파시 옵시디언그래프뷰 마크다운 정규화 지식그래프 채널2KB 클로드스킬 YT-DLP 서프API knowledge PATHY",
    "url": "videos/#post-brjG7hQgm1I"
   },
   {
@@ -831,6 +934,7 @@
    "유형": null,
    "슬러그": "rDLJswILbe4",
    "날짜": "2026-08-06",
+   "검색어": "디자인레퍼런스 레퍼런스사이트 핀터레스트대안 Awwwards 랜드북 모빈 WorldBrandDesignSociety BrandNew 폰츠인유즈 인스퍼레이션 리서치 타이포그래피 design 레이디러너 디자인 리서치 스튜디오",
    "url": "videos/#post-rDLJswILbe4"
   },
   {
@@ -839,6 +943,7 @@
    "유형": null,
    "슬러그": "3W8hJr3DUzI",
    "날짜": "2026-08-06",
+   "검색어": "모빈 Mobbin MCP 레퍼런스리서치 온보딩UX 평균값의함정 근거기반디자인 아티팩트 엠티스테이트 클로드코드 프롬프트역추적 디자인MD design Eric Park | 빌더 + 디자이너",
    "url": "videos/#post-3W8hJr3DUzI"
   },
   {
@@ -847,6 +952,7 @@
    "유형": null,
    "슬러그": "3Q9Gg75Ob4o",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 바이브코딩 VSCode 에이전트 네이버API 대시보드 하네스 디자인스킬 자동화 build 바이브코딩 레인 RaiN",
    "url": "videos/#post-3Q9Gg75Ob4o"
   },
   {
@@ -855,6 +961,7 @@
    "유형": null,
    "슬러그": "ttrnbB_9LZI",
    "날짜": "2026-07-31",
+   "검색어": "옵시디언 클로드코드 LLM위키 카파시 세컨드브레인 지식관리 SOP 에이전트 자동화 knowledge 신영선의 AI탐구",
    "url": "videos/#post-ttrnbB_9LZI"
   },
   {
@@ -863,6 +970,7 @@
    "유형": null,
    "슬러그": "ZKJz6QNDPU0",
    "날짜": "2026-07-31",
+   "검색어": "NotebookLM 옵시디언 세컨드브레인 PARA 티아고포르테 지식관리 백링크 출처인용 집중력 knowledge Aiden의 친절한 AI",
    "url": "videos/#post-ZKJz6QNDPU0"
   },
   {
@@ -871,6 +979,7 @@
    "유형": null,
    "슬러그": "Qf9mjJRh0AM",
    "날짜": "2026-07-31",
+   "검색어": "클로드 페이블5 앤트로픽 ConstitutionalAI ASL 모델티어 에이전틱루프 AX AI디자인 UXUI design 유훈식 교수 : AI4UX",
    "url": "videos/#post-Qf9mjJRh0AM"
   },
   {
@@ -879,6 +988,7 @@
    "유형": null,
    "슬러그": "rQ62oYOo2Ag",
    "날짜": "2026-07-31",
+   "검색어": "클로드 CoWork 실무자동화 스킬MD 플러그인 커넥터 디자인MD AX 데이터 크레딧최적화 automation Vice Versa design studio",
    "url": "videos/#post-rQ62oYOo2Ag"
   },
   {
@@ -887,6 +997,7 @@
    "유형": null,
    "슬러그": "oItGfwosKLw",
    "날짜": "2026-07-31",
+   "검색어": "NotebookLM 크롬확장 자료수집 오디오오버뷰 GoFullPage 웹임포터 폴더관리 생산성 knowledge 어나더 AI",
    "url": "videos/#post-oItGfwosKLw"
   },
   {
@@ -895,6 +1006,7 @@
    "유형": null,
    "슬러그": "Lkk2ubF1AZ8",
    "날짜": "2026-07-31",
+   "검색어": "헤르메스 HermesAgent 데스크톱앱 VPS 호스팅어 테일스케일 도커 리모트게이트웨이 AI직원 24시간 agent 시민개발자 구씨",
    "url": "videos/#post-Lkk2ubF1AZ8"
   },
   {
@@ -903,6 +1015,7 @@
    "유형": null,
    "슬러그": "AFVEpW0-X8U",
    "날짜": "2026-07-31",
+   "검색어": "클로드코워크 교사 생기부 교과세특 스킬 서브에이전트 플러그인 휴머나이저 NotebookLM 구글시트AI함수 automation 교육티타임",
    "url": "videos/#post-AFVEpW0-X8U"
   },
   {
@@ -911,6 +1024,7 @@
    "유형": null,
    "슬러그": "nzOMsGpckoY",
    "날짜": "2026-07-31",
+   "검색어": "루프엔지니어링 ralph-loop 하네스 서브에이전트 PRD 완료조건 무한루프방지 교차검증 바이브코딩 agent 코딩알려주는누나",
    "url": "videos/#post-nzOMsGpckoY"
   },
   {
@@ -919,6 +1033,7 @@
    "유형": null,
    "슬러그": "WxQpKSvZFkw",
    "날짜": "2026-07-31",
+   "검색어": "NotebookLM Gemini 프롬프트관리 RAG 구글시트 업무자동화 역질문 메모리설정 knowledge 디꿀방",
    "url": "videos/#post-WxQpKSvZFkw"
   },
   {
@@ -927,6 +1042,7 @@
    "유형": null,
    "슬러그": "z32KPC0LbHw",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 페이블5 프롬프트 맹점 blind-pass CLAUDE.md 바이브코딩 AI판단 앤트로픽 agent 미드나잇 로그 Midnight Log",
    "url": "videos/#post-z32KPC0LbHw"
   },
   {
@@ -935,6 +1051,7 @@
    "유형": null,
    "슬러그": "Nk5TTif1cDQ",
    "날짜": "2026-07-31",
+   "검색어": "Gemini 멘션 Gmail 구글Docs 구글드라이브 캘린더 할루시네이션 멀티멘션 슈퍼워크플로우 생산성 knowledge AI놀자",
    "url": "videos/#post-Nk5TTif1cDQ"
   },
   {
@@ -943,6 +1060,7 @@
    "유형": null,
    "슬러그": "REGLr2rGvgs",
    "날짜": "2026-07-31",
+   "검색어": "모션그래픽 구글Flow 나노바나나 Seedance 핀터레스트 스타일시트 TTS 구글AI스튜디오 Vox스타일 무료제작 video 원카AI Wonka",
    "url": "videos/#post-REGLr2rGvgs"
   },
   {
@@ -951,6 +1069,7 @@
    "유형": null,
    "슬러그": "0ELc1pcfcQk",
    "날짜": "2026-07-31",
+   "검색어": "Orca ADE 워크트리 git-worktree 에이전트관리 병렬작업 엘리먼트그랩 오르카모바일 바이브코딩 헤르메스 agent 로치의개발일기",
    "url": "videos/#post-0ELc1pcfcQk"
   },
   {
@@ -959,6 +1078,7 @@
    "유형": null,
    "슬러그": "XzU81FfDXLs",
    "날짜": "2026-07-31",
+   "검색어": "노션 Notion 데이터베이스 템플릿 반복자동화 버튼 노션AI 에이전트 클로드커넥터 MTS knowledge 시간기획자 최민정",
    "url": "videos/#post-XzU81FfDXLs"
   },
   {
@@ -967,6 +1087,7 @@
    "유형": null,
    "슬러그": "zv0gHwKQT8M",
    "날짜": "2026-07-31",
+   "검색어": "클로드 힉스필드 Higgsfield MCP AI영상 스킬 캐릭터등록 나레이션 광고제작 웹페이지 video 오빠두엑셀 l 엑셀 강의 대표채널",
    "url": "videos/#post-zv0gHwKQT8M"
   },
   {
@@ -975,6 +1096,7 @@
    "유형": null,
    "슬러그": "uepJ7wDJOnE",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 블로그자동화 네이버블로그 카피라이팅 하네스엔지니어링 나노바나 오픈소스 마케팅 저품질방지 automation 신영선의 AI탐구",
    "url": "videos/#post-uepJ7wDJOnE"
   },
   {
@@ -983,6 +1105,7 @@
    "유형": null,
    "슬러그": "RaIjKG_ENIU",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 웹사이트제작 디자인스킬 frontend-design UIUX프로맥스 프리텐다드 21stdev 넥스트JS Vercel배포 의료광고법 build 잭피디의 바이브코딩 아카데미",
    "url": "videos/#post-RaIjKG_ENIU"
   },
   {
@@ -991,6 +1114,7 @@
    "유형": null,
    "슬러그": "BtM2JZCMtL8",
    "날짜": "2026-07-31",
+   "검색어": "그래프엔지니어링 루프엔지니어링 랭그래프 LangGraph 에이전트 상태관리 체크포인트 하네스엔지니어링 버즈워드 agent ZeroCho TV",
    "url": "videos/#post-BtM2JZCMtL8"
   },
   {
@@ -999,6 +1123,7 @@
    "유형": null,
    "슬러그": "OPFMs1-WoKE",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 모션그래픽 Remotion 리모션 영상자동화 병렬에이전트 차트레이스 웨이브폼 스킬화 video 데키랩",
    "url": "videos/#post-OPFMs1-WoKE"
   },
   {
@@ -1007,6 +1132,7 @@
    "유형": null,
    "슬러그": "sQC33G2t-b8",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 스펙주도개발 SDD GSD TDD 스펙 검증 컨텍스트관리 바이브코딩 AI코딩 agent 큰돌의터전",
    "url": "videos/#post-sQC33G2t-b8"
   },
   {
@@ -1015,6 +1141,7 @@
    "유형": null,
    "슬러그": "Y-muzHl_-bU",
    "날짜": "2026-07-31",
+   "검색어": "노트북LM GeminiNotebook 제미나이노트북 등급별기능 PPTX생성 데이터연산 컬렉션 소스검색 환각 무료Pro Ultra knowledge 꿘샘AI",
    "url": "videos/#post-Y-muzHl_-bU"
   },
   {
@@ -1023,6 +1150,7 @@
    "유형": null,
    "슬러그": "c-ny7pegVHI",
    "날짜": "2026-07-31",
+   "검색어": "클로드디자인 ClaudeDesign2.0 캔버스편집 디자인시스템 Firecrawl 레퍼런스 스킬 taste스킬 클로드코드양방향 design Jay Choi | 인디해커 라이프",
    "url": "videos/#post-c-ny7pegVHI"
   },
   {
@@ -1031,6 +1159,7 @@
    "유형": null,
    "슬러그": "VLdlf8qPwdo",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 인스타자동화 카드뉴스 메타개발자콘솔 액세스토큰 자동발행 HTML캡처 스킬크리에이터 프로페셔널계정 automation 방구석컴퍼니",
    "url": "videos/#post-VLdlf8qPwdo"
   },
   {
@@ -1039,6 +1168,7 @@
    "유형": null,
    "슬러그": "sfCmEf_D-8o",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 웹사이트제작 frontend-design스킬 구글Flow 포토리얼이미지 오토모드 21stdev Netlify배포 AI티제거 build 데키랩",
    "url": "videos/#post-sfCmEf_D-8o"
   },
   {
@@ -1047,6 +1177,7 @@
    "유형": null,
    "슬러그": "MJiQFNp-k10",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 유튜브요약 워크플로우자동화 YT-DLP 스크립트화 CLAUDEmd 노션커넥터 스케줄링 로컬루틴 knowledge 데키랩",
    "url": "videos/#post-MJiQFNp-k10"
   },
   {
@@ -1055,6 +1186,7 @@
    "유형": null,
    "슬러그": "JQRr7xhr4OM",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 롱폼영상자동화 서브에이전트 스킬 제미나이API TTS Whisper FFmpeg Veo3 API비용 video 빌더 조쉬 Builder Josh",
    "url": "videos/#post-JQRr7xhr4OM"
   },
   {
@@ -1063,6 +1195,7 @@
    "유형": null,
    "슬러그": "S99_UhOQjNw",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 구글워크스페이스 GWSCLI MCP내장 OAuth 이메일자동분류 구글독스 구글슬라이드 1인기업 automation 태오의 실행 비즈니스 | AI 에이전트",
    "url": "videos/#post-S99_UhOQjNw"
   },
   {
@@ -1071,6 +1204,7 @@
    "유형": null,
    "슬러그": "vjSZIyYd0NI",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 Insane-search 크롤링 봇탐지우회 플러그인 내부API 유튜브자막 네이버쇼핑 쿠팡 알리익스프레스 automation 편집자P",
    "url": "videos/#post-vjSZIyYd0NI"
   },
   {
@@ -1079,6 +1213,7 @@
    "유형": null,
    "슬러그": "zCxUyclc_So",
    "날짜": "2026-07-31",
+   "검색어": "클로드 오팔 Opal 광고영상 에이전트 인터랙티브 클로드스킬 이미지생성 영상변환 자동화 video 갓띵님의 초보여도 괜찮아",
    "url": "videos/#post-zCxUyclc_So"
   },
   {
@@ -1087,6 +1222,7 @@
    "유형": null,
    "슬러그": "KT-Nhi8lzKo",
    "날짜": "2026-07-31",
+   "검색어": "클로드 코워크 CoWork 스킬 피그마MCP 커넥터 카드뉴스자동화 스케줄예약 토큰관리 라이브아티팩트 design 갓띵님의 초보여도 괜찮아",
    "url": "videos/#post-KT-Nhi8lzKo"
   },
   {
@@ -1095,6 +1231,7 @@
    "유형": null,
    "슬러그": "CDqhN1sOVUw",
    "날짜": "2026-07-31",
+   "검색어": "스레드 Threads 메타공식API 자동답글 액세스토큰 무료 권한설정 스레드테스터 SNS자동화 오픈소스 automation 방구석컴퍼니",
    "url": "videos/#post-CDqhN1sOVUw"
   },
   {
@@ -1103,6 +1240,7 @@
    "유형": null,
    "슬러그": "36enLhyg9ZU",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 쓰레드 Threads 자동발행 안티그래비티 계획먼저 액세스토큰 앱시크릿 리플라이체인 슬래시루프 automation 투쏠ㅣAI 에이전트",
    "url": "videos/#post-36enLhyg9ZU"
   },
   {
@@ -1111,6 +1249,7 @@
    "유형": null,
    "슬러그": "ext9w2dL3b8",
    "날짜": "2026-07-31",
+   "검색어": "클로드 힉스필드 Higgsfield MCP 상세페이지 GIF모션 GPTImage 나노바나 클링 Seedance design 갓띵님의 초보여도 괜찮아",
    "url": "videos/#post-ext9w2dL3b8"
   },
   {
@@ -1119,6 +1258,7 @@
    "유형": null,
    "슬러그": "vjT43Qy0M4k",
    "날짜": "2026-07-31",
+   "검색어": "노트북LM NotebookLM 슬라이드 제미나이3.1 나노바나2 기업템플릿 JSON코드 소스정제 이미지인식 웹기 knowledge 오빠두엑셀 l 엑셀 강의 대표채널",
    "url": "videos/#post-vjT43Qy0M4k"
   },
   {
@@ -1127,6 +1267,7 @@
    "유형": null,
    "슬러그": "XiZO5ehF758",
    "날짜": "2026-07-31",
+   "검색어": "클로드코드 노트북LM NLM_CLI 스킬 MCP vs CLI 딥리서치 역할분담 PDF스킬 리서치자동화 오디오브리핑 knowledge 시민개발자 구씨",
    "url": "videos/#post-XiZO5ehF758"
   },
   {
@@ -1135,6 +1276,7 @@
    "유형": null,
    "슬러그": "-pk2umNC-18",
    "날짜": "2026-07-31",
+   "검색어": "그래프엔지니어링 오르카 Orca 멀티에이전트 오케스트레이션 워커 루프엔지니어링 랭그래프 코덱스 분기처리 agent 찐AI",
    "url": "videos/#post--pk2umNC-18"
   },
   {
@@ -1143,6 +1285,7 @@
    "유형": null,
    "슬러그": "VnMAgSd0BUg",
    "날짜": "2026-07-31",
+   "검색어": "클로드디자인 ClaudeDesign PPT자동화 웹사이트 상세페이지 카드뉴스 디자인시스템 프로토타입 스킬 네틀리파이 토큰절약 포트폴리오 design 오빠두엑셀 l 엑셀 강의 대표채널",
    "url": "videos/#post-VnMAgSd0BUg"
   },
   {
@@ -1151,6 +1294,7 @@
    "유형": null,
    "슬러그": "xkSY_A-Y1Mc",
    "날짜": "2026-07-10",
+   "검색어": "구글 Gemini NotebookLM 구글Vids AI아바타 쇼츠 캔버스 자동화 knowledge 배움의 달인 (AI·자동화)",
    "url": "videos/#post-xkSY_A-Y1Mc"
   },
   {
@@ -1159,6 +1303,7 @@
    "유형": null,
    "슬러그": "B_n38HKtBF4",
    "날짜": "2026-07-10",
+   "검색어": "클로드코드 자동화 Electron Playwright GPT-API OpenAI 네이버블로그 웹자동화 모델선택 automation 편집자P",
    "url": "videos/#post-B_n38HKtBF4"
   },
   {
@@ -1167,6 +1312,7 @@
    "유형": null,
    "슬러그": "vPR4eVtTqvo",
    "날짜": "2026-07-10",
+   "검색어": "엑셀 자동화 Cloudflare R2 Workers 대시보드 파워쿼리 VBA Gemini ZeroTrust 무료배포 automation 오빠두엑셀 l 엑셀 강의 대표채널",
    "url": "videos/#post-vPR4eVtTqvo"
   },
   {
@@ -1175,6 +1321,7 @@
    "유형": null,
    "슬러그": "VH22y1NMBz4",
    "날짜": "2026-07-10",
+   "검색어": "루프엔지니어링 에이전트 클로드코드 하네스 서브에이전트 검증조건 토큰관리 자동화 agent 로치의개발일기",
    "url": "videos/#post-VH22y1NMBz4"
   },
   {
@@ -1183,6 +1330,7 @@
    "유형": null,
    "슬러그": "e5ZoCPkoxEs",
    "날짜": "2026-07-10",
+   "검색어": "NotebookLM 노트북LM Gemini 소스기반AI 환각방지 딥리서치 글쓰기첨삭 프롬프트 라이브 knowledge 바이브랩스",
    "url": "videos/#post-e5ZoCPkoxEs"
   },
   {
@@ -1191,6 +1339,7 @@
    "유형": null,
    "슬러그": "4kAHzEQ4i0U",
    "날짜": "2026-07-02",
+   "검색어": "옵시디언 Excalidraw 클로드코드 그래프뷰 다이어그램 플러그인 단축키 지식관리 knowledge 오후다섯씨",
    "url": "videos/#post-4kAHzEQ4i0U"
   },
   {
@@ -1199,6 +1348,7 @@
    "유형": null,
    "슬러그": "R2aSqw7S3Ws",
    "날짜": "2026-07-02",
+   "검색어": "옵시디언 세컨드브레인 클로드코드 지식관리 AI팀 Obsidian 지식위키 자동화 knowledge 그랜트 | 마케팅 AX, AI 사업",
    "url": "videos/#post-R2aSqw7S3Ws"
   },
   {
@@ -1207,6 +1357,7 @@
    "유형": null,
    "슬러그": "O2jCsdfceq0",
    "날짜": "2026-07-02",
+   "검색어": "클로드 ClaudeCowork MCP PlayMCP 카카오톡 자동화 업무자동화 스케줄 automation 길호의 실전 AI - 업무 자동화, 그 이상",
    "url": "videos/#post-O2jCsdfceq0"
   },
   {
@@ -1215,6 +1366,7 @@
    "유형": null,
    "슬러그": "gkxv6PCaAhw",
    "날짜": "2026-07-02",
+   "검색어": "클로드 디자인스킬 Skills shadcn GSAP ui-ux-pro-max 모바일UI Material3 SwiftUI Expo 프런트엔드 design Tech Bridge",
    "url": "videos/#post-gkxv6PCaAhw"
   },
   {
@@ -1223,6 +1375,7 @@
    "유형": null,
    "슬러그": "Aaebz-Q0OYY",
    "날짜": "2026-07-02",
+   "검색어": "클로드코드 Figma 디자인토큰 디자인시스템 변수 MCP Skills 피그마스킬 design 디자인하는AI",
    "url": "videos/#post-Aaebz-Q0OYY"
   },
   {
@@ -1231,6 +1384,7 @@
    "유형": null,
    "슬러그": "VYXr0M7IYJk",
    "날짜": "2026-07-02",
+   "검색어": "옵시디언 제미나이 GeminiFileSearch 세컨드브레인 지식관리 Antigravity 오픈소스플러그인 RAG knowledge 배움의 달인 (AI·자동화)",
    "url": "videos/#post-VYXr0M7IYJk"
   },
   {
@@ -1239,6 +1393,7 @@
    "유형": null,
    "슬러그": "WL_qu7l3fgQ",
    "날짜": "2026-07-02",
+   "검색어": "클로드코드 agent-reach MCP대안 웹검색 바이브코딩 self-healing-router 자동화 agent 바이브랩스",
    "url": "videos/#post-WL_qu7l3fgQ"
   },
   {
@@ -1247,6 +1402,7 @@
    "유형": null,
    "슬러그": "93wC8kJJYjs",
    "날짜": "2026-07-02",
+   "검색어": "앱공장 바이브코딩 코덱스 Flutter 모노레포 CLAUDE.md AGENTS.md 자율주행 앱개발 build 일용직 개발자 임상진",
    "url": "videos/#post-93wC8kJJYjs"
   },
   {
@@ -1255,6 +1411,7 @@
    "유형": null,
    "슬러그": "j8UPHTc24H0",
    "날짜": "2026-07-02",
+   "검색어": "헤르메스 HermesAgent SOUL.md AGENTS.md USER.md 메모리시스템 프롬프트엔지니어링 AI에이전트 agent 로치의개발일기",
    "url": "videos/#post-j8UPHTc24H0"
   },
   {
@@ -1263,6 +1420,7 @@
    "유형": null,
    "슬러그": "HmBVZ_679Ko",
    "날짜": "2026-07-02",
+   "검색어": "클로드 ClaudeSkills 코워크 Cowork 에이전트 교무자동화 수업설계 플레이MCP 커넥터 교사AI automation 교육티타임",
    "url": "videos/#post-HmBVZ_679Ko"
   },
   {
@@ -1271,6 +1429,7 @@
    "유형": null,
    "슬러그": "uYZYS0J1zF8",
    "날짜": "2026-06-25",
+   "검색어": "클로드코드 AI자동화 원샷프롬프트 스케줄태스크 퍼미션 텔레그램 구글시트 운영시스템 agent AI 콘텐츠 마스터 세인투",
    "url": "videos/#post-uYZYS0J1zF8"
   },
   {
@@ -1279,6 +1438,7 @@
    "유형": null,
    "슬러그": "A7QdKqJttu4",
    "날짜": "2026-06-25",
+   "검색어": "옵시디언 캔버스 Canvas 클로드코드 다이어그램 JSON 지식관리 시각화 knowledge 오후다섯씨",
    "url": "videos/#post-A7QdKqJttu4"
   },
   {
@@ -1287,6 +1447,7 @@
    "유형": null,
    "슬러그": "blnnF9ubEVo",
    "날짜": "2026-06-25",
+   "검색어": "옵시디언 VSCode 클로드코드 개인지식시스템 RAG 세컨브레인 CLAUDE.md 폴더구조 지식관리 knowledge 오후다섯씨",
    "url": "videos/#post-blnnF9ubEVo"
   },
   {
@@ -1295,6 +1456,7 @@
    "유형": null,
    "슬러그": "_6bBV09r58Y",
    "날짜": "2026-06-25",
+   "검색어": "클로드 Skills PPT 클로드디자인 getdesignmd Cowork 파워포인트 디자인시스템 자동화 design 진한별의 AI 연구소",
    "url": "videos/#post-_6bBV09r58Y"
   },
   {
@@ -1303,6 +1465,7 @@
    "유형": null,
    "슬러그": "y6HIrsG7pE8",
    "날짜": "2026-06-24",
+   "검색어": "바이브코딩 클로드코드 클로드데스크톱 디자인시스템 구글시트 AppsScript 노코드 build AI 콘텐츠 마스터 세인투",
    "url": "videos/#post-y6HIrsG7pE8"
   },
   {
@@ -1311,6 +1474,7 @@
    "유형": null,
    "슬러그": "HNlBFesXiW8",
    "날짜": "2026-06-23",
+   "검색어": "하네스 멀티에이전트 오케스트레이터 클로드코드 코덱스 제미나이 안티그래비티 컨텍스트엔지니어링 agent AI 치트키",
    "url": "videos/#post-HNlBFesXiW8"
   },
   {
@@ -1319,6 +1483,7 @@
    "유형": null,
    "슬러그": "09-susi-jeongsi-parallel",
    "날짜": "2026-08-27",
+   "검색어": "수시 원서 접수 후 정시 준비 수시 납치 수능 최저학력기준 대학별고사 9월 모의고사 입시·진학",
    "url": "blog/#b=09-susi-jeongsi-parallel"
   },
   {
@@ -1327,6 +1492,7 @@
    "유형": null,
    "슬러그": "08-sep-mock-eve",
    "날짜": "2026-08-27",
+   "검색어": "9월 모의고사 직전 수학 계산 실수 시간 배분 마킹 실수 검산 수학 개념",
    "url": "blog/#b=08-sep-mock-eve"
   },
   {
@@ -1335,6 +1501,7 @@
    "유형": null,
    "슬러그": "09-susi-minimum-standard",
    "날짜": "2026-08-20",
+   "검색어": "수시 최저학력기준 수능 최저 등급 합산 탐구 반영 수능최저 계산 입시·진학",
    "url": "blog/#b=09-susi-minimum-standard"
   },
   {
@@ -1343,6 +1510,7 @@
    "유형": null,
    "슬러그": "09-ai-interview-questions",
    "날짜": "2026-08-20",
+   "검색어": "학종 면접 챗GPT 면접 AI 예상질문 면접 예상질문 생기부 면접 AI 활용",
    "url": "blog/#b=09-ai-interview-questions"
   },
   {
@@ -1351,6 +1519,7 @@
    "유형": null,
    "슬러그": "09-susi-interview-prep",
    "날짜": "2026-08-13",
+   "검색어": "학종 면접 준비 자소서 폐지 생기부 면접 학생부종합전형 면접 면접 예상질문 입시·진학",
    "url": "blog/#b=09-susi-interview-prep"
   },
   {
@@ -1359,6 +1528,7 @@
    "유형": null,
    "슬러그": "09-hs1-midterm-prep",
    "날짜": "2026-08-13",
+   "검색어": "고1 2학기 중간고사 수학 고1 수학 공부법 공통수학2 도형의 방정식 중간고사 준비 수학 개념",
    "url": "blog/#b=09-hs1-midterm-prep"
   },
   {
@@ -1367,6 +1537,7 @@
    "유형": null,
    "슬러그": "09-sep-mock-grade-reading",
    "날짜": "2026-08-06",
+   "검색어": "9월 모의고사 성적표 표준점수 백분위 등급 성적표 읽는 법 수학 개념",
    "url": "blog/#b=09-sep-mock-grade-reading"
   },
   {
@@ -1375,6 +1546,7 @@
    "유형": null,
    "슬러그": "09-ai-error-notes",
    "날짜": "2026-08-06",
+   "검색어": "챗GPT 오답노트 오답노트 정리 프롬프트 3가지 AI 답 검증 9월 모의고사 AI 활용",
    "url": "blog/#b=09-ai-error-notes"
   },
   {
@@ -1383,6 +1555,7 @@
    "유형": null,
    "슬러그": "09-ai-domain-literacy",
    "날짜": "2026-08-06",
+   "검색어": "챗GPT 활용법 AI 리터러시 도메인 전문성 AI 답 검증 판단력 AI 활용",
    "url": "blog/#b=09-ai-domain-literacy"
   },
   {
@@ -1391,6 +1564,7 @@
    "유형": null,
    "슬러그": "08-hs2-explog-trig",
    "날짜": "2026-07-31",
+   "검색어": "고2 9월 모의고사 지수로그 삼각함수 그래프 개형 대수 수학 개념",
    "url": "blog/#b=08-hs2-explog-trig"
   },
   {
@@ -1399,6 +1573,7 @@
    "유형": null,
    "슬러그": "08-susi-final-decision",
    "날짜": "2026-07-27",
+   "검색어": "9월 모평 수시 수시 6장 결정 수능 최저 재계산 수시 정시 유불리 원서접수 입시·진학",
    "url": "blog/#b=08-susi-final-decision"
   },
   {
@@ -1407,6 +1582,7 @@
    "유형": null,
    "슬러그": "08-suneung-d100-math",
    "날짜": "2026-07-27",
+   "검색어": "수능 D-100 수학 수능 수학 마무리 버릴 단원 잡을 단원 선택과 집중 오답 회귀 수학 개념",
    "url": "blog/#b=08-suneung-d100-math"
   },
   {
@@ -1415,6 +1591,7 @@
    "유형": null,
    "슬러그": "08-parent-ai-study-guide",
    "날짜": "2026-07-27",
+   "검색어": "AI 공부 지도 챗GPT 공부 학부모 AI 과정 질문 AI 검산 습관 AI 활용",
    "url": "blog/#b=08-parent-ai-study-guide"
   },
   {
@@ -1423,6 +1600,7 @@
    "유형": null,
    "슬러그": "07-susi-august-checklist",
    "날짜": "2026-07-18",
+   "검색어": "고3 8월 체크리스트 수시 원서 준비 수능 최저학력기준 학생부 세특 점검 수시 6회 지원 입시·진학",
    "url": "blog/#b=07-susi-august-checklist"
   },
   {
@@ -1431,6 +1609,7 @@
    "유형": null,
    "슬러그": "07-summer-40day-plan",
    "날짜": "2026-07-13",
+   "검색어": "여름방학 수학 계획 40일 플랜 주차별 스케줄 복습 주기 고1 고2 수학 수학 개념",
    "url": "blog/#b=07-summer-40day-plan"
   },
   {
@@ -1439,6 +1618,7 @@
    "유형": null,
    "슬러그": "07-hs1-summer-diagnosis",
    "날짜": "2026-07-13",
+   "검색어": "고1 여름방학 수학 수학 선행 수학 진단 선수개념 중학수학 구멍 수학 개념",
    "url": "blog/#b=07-hs1-summer-diagnosis"
   },
   {
@@ -1447,6 +1627,7 @@
    "유형": null,
    "슬러그": "07-college-vs-university",
    "날짜": "2026-07-13",
+   "검색어": "전문대 수시 전문대 4년제 차이 전문대 지원 횟수 전문대 수시 1차 2차 전문대 취업률 입시·진학",
    "url": "blog/#b=07-college-vs-university"
   },
   {
@@ -1455,6 +1636,7 @@
    "유형": null,
    "슬러그": "07-calc-vs-stats",
    "날짜": "2026-07-13",
+   "검색어": "미적분 확률과통계 선택 예비 고2 수학 선택과목 미적분 확통 기준 2028 통합수능 진로선택 미적분2 수학 개념",
    "url": "blog/#b=07-calc-vs-stats"
   },
   {
@@ -1463,6 +1645,7 @@
    "유형": null,
    "슬러그": "07-ai-teaching-materials",
    "날짜": "2026-07-13",
+   "검색어": "챗GPT 수업자료 AI 수업자료 생성형 AI 교육 저작권 교사 AI 활용 AI 활용",
    "url": "blog/#b=07-ai-teaching-materials"
   },
   {
@@ -1471,6 +1654,7 @@
    "유형": null,
    "슬러그": "07-ai-math-errors",
    "날짜": "2026-07-10",
+   "검색어": "챗gpt 수학 오류 AI 수학 풀이 생성형 AI 챗gpt 오답 AI 수학 검증 AI 활용",
    "url": "blog/#b=07-ai-math-errors"
   },
   {
@@ -1479,6 +1663,7 @@
    "유형": null,
    "슬러그": "07-quadratic-max-min",
    "날짜": "2026-07-09",
+   "검색어": "이차함수 최댓값 최솟값 고1 수학 완전제곱식 이차함수 표준형 수학 개념",
    "url": "blog/#b=07-quadratic-max-min"
   },
   {
@@ -1487,6 +1672,7 @@
    "유형": null,
    "슬러그": "07-ai-math-problems",
    "날짜": "2026-07-09",
+   "검색어": "챗GPT 수학 문제 만들기 AI 활용 교육 생성형 AI 챗GPT 오류 AI 활용",
    "url": "blog/#b=07-ai-math-problems"
   },
   {
@@ -1495,6 +1681,7 @@
    "유형": null,
    "슬러그": "braess-paradox",
    "날짜": "2026-08-27",
+   "검색어": "수학 네트워크 교통 게임이론 내시균형 브라에스 이해편 이해편(입문·딥)",
    "url": "concept/#n=braess-paradox"
   },
   {
@@ -1503,6 +1690,7 @@
    "유형": null,
    "슬러그": "base-rate-fallacy",
    "날짜": "2026-08-25",
+   "검색어": "통계 확률 기저율 베이즈정리 양성예측도 조건부확률 데이터리터러시 이해편 이해편(입문·딥)",
    "url": "concept/#n=base-rate-fallacy"
   },
   {
@@ -1511,6 +1699,7 @@
    "유형": null,
    "슬러그": "survivorship-bias",
    "날짜": "2026-08-22",
+   "검색어": "통계 생존자편향 선택편향 표본 데이터리터러시 이해편 이해편(입문·딥)",
    "url": "concept/#n=survivorship-bias"
   },
   {
@@ -1519,6 +1708,7 @@
    "유형": null,
    "슬러그": "square-cube-law",
    "날짜": "2026-08-22",
+   "검색어": "수학 물리 생물 스케일링 갈릴레오 차원해석 이해편 이해편(입문·딥)",
    "url": "concept/#n=square-cube-law"
   },
   {
@@ -1527,6 +1717,7 @@
    "유형": null,
    "슬러그": "size-bias",
    "날짜": "2026-08-22",
+   "검색어": "수학 통계 평균 중앙값 크기편향 데이터리터러시 이해편 이해편(입문·딥)",
    "url": "concept/#n=size-bias"
   },
   {
@@ -1535,6 +1726,7 @@
    "유형": null,
    "슬러그": "optimal-stopping",
    "날짜": "2026-08-13",
+   "검색어": "수학 확률 의사결정 최적정지 비서문제 이해편 이해편(입문·딥)",
    "url": "concept/#n=optimal-stopping"
   },
   {
@@ -1543,6 +1735,7 @@
    "유형": null,
    "슬러그": "simpsons-paradox",
    "날짜": "2026-08-04",
+   "검색어": "수학 통계 심슨의역설 교란변수 인과추론 데이터리터러시 이해편 이해편(입문·딥)",
    "url": "concept/#n=simpsons-paradox"
   },
   {
@@ -1551,6 +1744,7 @@
    "유형": null,
    "슬러그": "부모노트_12_실수한아이",
    "날짜": "2026-08-18",
+   "검색어": "부모 노트 실수를 덮으면 다음에 숨긴다",
    "url": "cardnews/#c=부모노트_12_실수한아이"
   },
   {
@@ -1559,6 +1753,7 @@
    "유형": null,
    "슬러그": "부모노트_11_부모먼저가라앉기",
    "날짜": "",
+   "검색어": "부모 노트 먼저 진정해야 할 사람은 아이가 아니다",
    "url": "cardnews/#c=부모노트_11_부모먼저가라앉기"
   },
   {
@@ -1567,6 +1762,7 @@
    "유형": null,
    "슬러그": "부모노트_10_떼쓰는아이진정",
    "날짜": "",
+   "검색어": "부모 노트 떼는 고집이 아니라 신호다",
    "url": "cardnews/#c=부모노트_10_떼쓰는아이진정"
   },
   {
@@ -1575,6 +1771,7 @@
    "유형": null,
    "슬러그": "부모노트_09_형제자매싸움중재",
    "날짜": "",
+   "검색어": "부모 노트 심판이 아니라 통역",
    "url": "cardnews/#c=부모노트_09_형제자매싸움중재"
   },
   {
@@ -1583,6 +1780,7 @@
    "유형": null,
    "슬러그": "부모노트_08_형제비교",
    "날짜": "",
+   "검색어": "부모 노트 비교는 기억에 남는다",
    "url": "cardnews/#c=부모노트_08_형제비교"
   },
   {
@@ -1591,6 +1789,7 @@
    "유형": null,
    "슬러그": "부모노트_07_칭찬기술",
    "날짜": "",
+   "검색어": "부모 노트 '잘했어'보다 '어떻게 했어'",
    "url": "cardnews/#c=부모노트_07_칭찬기술"
   },
   {
@@ -1599,6 +1798,7 @@
    "유형": null,
    "슬러그": "부모노트_06_거짓말반응",
    "날짜": "",
+   "검색어": "부모 노트 겁먹은 아이의 신호",
    "url": "cardnews/#c=부모노트_06_거짓말반응"
   },
   {
@@ -1607,6 +1807,7 @@
    "유형": null,
    "슬러그": "부모노트_05_공부말대신",
    "날짜": "",
+   "검색어": "부모 노트 동기는 잔소리로 생기지 않는다",
    "url": "cardnews/#c=부모노트_05_공부말대신"
   },
   {
@@ -1615,6 +1816,7 @@
    "유형": null,
    "슬러그": "부모노트_04_스마트폰규칙",
    "날짜": "",
+   "검색어": "부모 노트 뺏을수록 더 몰래 한다",
    "url": "cardnews/#c=부모노트_04_스마트폰규칙"
   },
   {
@@ -1623,6 +1825,7 @@
    "유형": null,
    "슬러그": "부모노트_03_경계세우기",
    "날짜": "",
+   "검색어": "부모 노트 화를 낼수록 경계는 무너진다",
    "url": "cardnews/#c=부모노트_03_경계세우기"
   },
   {
@@ -1631,6 +1834,7 @@
    "유형": null,
    "슬러그": "부모노트_02_사춘기대화법",
    "날짜": "",
+   "검색어": "부모 노트 말이 많을수록 아이는 입을 닫는다",
    "url": "cardnews/#c=부모노트_02_사춘기대화법"
   },
   {
@@ -1639,6 +1843,7 @@
    "유형": null,
    "슬러그": "부모노트_01_초6훈육",
    "날짜": "",
+   "검색어": "부모 노트 안 듣는 게 아니라 방식이 안 통하는 것",
    "url": "cardnews/#c=부모노트_01_초6훈육"
   },
   {
@@ -1647,6 +1852,7 @@
    "유형": null,
    "슬러그": "일머리노트_03_집중력",
    "날짜": "2026-08-20",
+   "검색어": "일머리 노트 의지가 아니라 환경을 설계한다",
    "url": "cardnews/#c=일머리노트_03_집중력"
   },
   {
@@ -1655,6 +1861,7 @@
    "유형": null,
    "슬러그": "일머리노트_02_우선순위",
    "날짜": "",
+   "검색어": "일머리 노트 다 중요하면 아무것도 안 중요하다",
    "url": "cardnews/#c=일머리노트_02_우선순위"
   },
   {
@@ -1663,6 +1870,7 @@
    "유형": null,
    "슬러그": "일머리노트_01_왜제자리",
    "날짜": "",
+   "검색어": "일머리 노트 문제는 노력의 양이 아니라 방향이다",
    "url": "cardnews/#c=일머리노트_01_왜제자리"
   },
   {
@@ -1671,6 +1879,7 @@
    "유형": null,
    "슬러그": "숫자노트_04_기저율",
    "날짜": "2026-08-25",
+   "검색어": "숫자 노트 99% 정확한 검사도 대부분 틀릴 수 있다",
    "url": "cardnews/#c=숫자노트_04_기저율"
   },
   {
@@ -1679,6 +1888,7 @@
    "유형": null,
    "슬러그": "숫자노트_03_심슨의역설",
    "날짜": "2026-08-11",
+   "검색어": "숫자 노트 쪼개면 이기는데 합치면 진다",
    "url": "cardnews/#c=숫자노트_03_심슨의역설"
   },
   {
@@ -1687,6 +1897,7 @@
    "유형": null,
    "슬러그": "숫자노트_02_생존자편향",
    "날짜": "",
+   "검색어": "숫자 노트 남은 것만 보면 틀린다",
    "url": "cardnews/#c=숫자노트_02_생존자편향"
   },
   {
@@ -1695,6 +1906,7 @@
    "유형": null,
    "슬러그": "숫자노트_01_평균착시",
    "날짜": "",
+   "검색어": "숫자 노트 평균은 대표값이 아니다",
    "url": "cardnews/#c=숫자노트_01_평균착시"
   },
   {
@@ -1703,6 +1915,7 @@
    "유형": null,
    "슬러그": "발견노트_03_브라에스역설",
    "날짜": "2026-08-27",
+   "검색어": "발견 노트 길을 늘렸는데 더 막힌다",
    "url": "cardnews/#c=발견노트_03_브라에스역설"
   },
   {
@@ -1711,6 +1924,7 @@
    "유형": null,
    "슬러그": "발견노트_02_최적정지",
    "날짜": "2026-08-13",
+   "검색어": "발견 노트 언제까지 둘러보고 언제 정할까",
    "url": "cardnews/#c=발견노트_02_최적정지"
   },
   {
@@ -1719,6 +1933,7 @@
    "유형": null,
    "슬러그": "발견노트_01_스퀘어큐브",
    "날짜": "",
+   "검색어": "발견 노트 왜 거인은 존재할 수 없나",
    "url": "cardnews/#c=발견노트_01_스퀘어큐브"
   },
   {
@@ -1727,6 +1942,7 @@
    "유형": "개념",
    "슬러그": "concept-integration",
    "날짜": "2026-08-27",
+   "검색어": "수학사 적분 구분구적법 카발리에리 배로 기본정리 17세기 해석학 미적분Ⅱ",
    "url": "math/#n=concept-integration"
   },
   {
@@ -1735,6 +1951,7 @@
    "유형": "개념",
    "슬러그": "concept-series",
    "날짜": "2026-08-27",
+   "검색어": "수학사 무한급수 급수 바젤 문제 오일러 조화급수 18세기 해석학 미적분",
    "url": "math/#n=concept-series"
   },
   {
@@ -1743,6 +1960,7 @@
    "유형": "개념",
    "슬러그": "concept-complex-number",
    "날짜": "2026-08-27",
+   "검색어": "수학사 복소수 허수 복소평면 카르다노 봄벨리 오일러 가우스 16세기 18세기 대수학 해석학 공통수학1",
    "url": "math/#n=concept-complex-number"
   },
   {
@@ -1751,6 +1969,7 @@
    "유형": "인물",
    "슬러그": "person-napier",
    "날짜": "2026-08-27",
+   "검색어": "수학사 네이피어 로그 계산 브리그스 16세기 17세기 대수학 계산법 공통수학1 미적분Ⅱ",
    "url": "math/#n=person-napier"
   },
   {
@@ -1759,6 +1978,7 @@
    "유형": "세기",
    "슬러그": "century-17c",
    "날짜": "2026-08-27",
+   "검색어": "수학사 17세기 과학혁명 미적분 해석기하 확률 로그 해석학 기하학 확률론 대수학",
    "url": "math/#n=century-17c"
   },
   {
@@ -1767,6 +1987,7 @@
    "유형": "개념",
    "슬러그": "concept-analysis-rigor",
    "날짜": "2026-08-27",
+   "검색어": "수학사 해석학 엄밀화 실수 완비성 데데킨트 칸토어 볼차노 코시 극한 19세기 수학기초론 미적분Ⅰ",
    "url": "math/#n=concept-analysis-rigor"
   },
   {
@@ -1775,6 +1996,7 @@
    "유형": "개념",
    "슬러그": "concept-analysis-rigor-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 해석학 엄밀화 실수의 구성 완비성 데데킨트 절단 코시 수열 칸토어 힐베르트 클라인 산술화 19세기 수학기초론 미적분Ⅰ",
    "url": "math/#n=concept-analysis-rigor-advanced"
   },
   {
@@ -1783,6 +2005,7 @@
    "유형": "개념",
    "슬러그": "concept-analytic-geometry",
    "날짜": "2026-08-27",
+   "검색어": "수학사 해석기하 좌표 데카르트 페르마 방정식 17세기 기하학 대수학 공통수학2",
    "url": "math/#n=concept-analytic-geometry"
   },
   {
@@ -1791,6 +2014,7 @@
    "유형": "개념",
    "슬러그": "concept-analytic-geometry-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 해석기하 좌표 비유클리드 사영기하 리만 클라인 힐베르트 19세기 기하학 미분기하학 대수학 기하",
    "url": "math/#n=concept-analytic-geometry-advanced"
   },
   {
@@ -1799,6 +2023,7 @@
    "유형": "개념",
    "슬러그": "concept-calculus-of-variations",
    "날짜": "2026-08-27",
+   "검색어": "수학사 변분법 최속강하선 사이클로이드 베르누이 오일러 라그랑주 최소작용 17세기 18세기 해석학 역학",
    "url": "math/#n=concept-calculus-of-variations"
   },
   {
@@ -1807,6 +2032,7 @@
    "유형": "개념",
    "슬러그": "concept-differential-equation",
    "날짜": "2026-08-27",
+   "검색어": "수학사 미분방정식 현수선 변수분리 베르누이 뉴턴 라이프니츠 17세기 18세기 해석학 역학",
    "url": "math/#n=concept-differential-equation"
   },
   {
@@ -1815,6 +2041,7 @@
    "유형": "개념",
    "슬러그": "concept-differentiation",
    "날짜": "2026-08-27",
+   "검색어": "수학사 미분 접선 무한소 페르마 뉴턴 라이프니츠 코시 17세기 해석학 미적분Ⅰ",
    "url": "math/#n=concept-differentiation"
   },
   {
@@ -1823,6 +2050,7 @@
    "유형": "개념",
    "슬러그": "concept-differentiation-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 미분 무한소 버클리 코시 바이어슈트라스 비표준해석학 엄밀화 해석학 수학기초론 미적분Ⅰ",
    "url": "math/#n=concept-differentiation-advanced"
   },
   {
@@ -1831,6 +2059,7 @@
    "유형": "개념",
    "슬러그": "concept-function",
    "날짜": "2026-08-27",
+   "검색어": "수학사 함수 함수의 정의 라이프니츠 오일러 디리클레 대응 17세기 18세기 19세기 해석학 집합론 공통수학1",
    "url": "math/#n=concept-function"
   },
   {
@@ -1839,6 +2068,7 @@
    "유형": "개념",
    "슬러그": "concept-fundamental-theorem",
    "날짜": "2026-08-27",
+   "검색어": "수학사 기본정리 미분 적분 배로 그레고리 뉴턴 라이프니츠 코시 17세기 해석학 미적분Ⅱ",
    "url": "math/#n=concept-fundamental-theorem"
   },
   {
@@ -1847,6 +2077,7 @@
    "유형": "개념",
    "슬러그": "concept-graph-theory",
    "날짜": "2026-08-27",
+   "검색어": "수학사 그래프이론 위상수학 쾨니히스베르크 한붓그리기 오일러 라이프니츠 18세기",
    "url": "math/#n=concept-graph-theory"
   },
   {
@@ -1855,6 +2086,7 @@
    "유형": "개념",
    "슬러그": "concept-probability",
    "날짜": "2026-08-27",
+   "검색어": "수학사 확률 기댓값 큰 수의 법칙 조건부확률 파스칼 페르마 하위헌스 베르누이 17세기 확률론 확률과 통계",
    "url": "math/#n=concept-probability"
   },
   {
@@ -1863,6 +2095,7 @@
    "유형": "개념",
    "슬러그": "concept-probability-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 확률론 역확률 베이즈 라플라스 가우스 최소제곱 콜모고로프 정규분포 통계학",
    "url": "math/#n=concept-probability-advanced"
   },
   {
@@ -1871,6 +2104,7 @@
    "유형": "인물",
    "슬러그": "person-barrow",
    "날짜": "2026-08-27",
+   "검색어": "수학사 배로 기본정리 루카스석좌 트리니티 뉴턴 17세기 해석학 기하학 광학 신학 미적분Ⅱ",
    "url": "math/#n=person-barrow"
   },
   {
@@ -1879,6 +2113,7 @@
    "유형": "인물",
    "슬러그": "person-descartes",
    "날짜": "2026-08-27",
+   "검색어": "수학사 데카르트 해석기하 좌표 방법서설 17세기 기하학 대수학 철학 공통수학2",
    "url": "math/#n=person-descartes"
   },
   {
@@ -1887,6 +2122,7 @@
    "유형": "인물",
    "슬러그": "person-fermat",
    "날짜": "2026-08-27",
+   "검색어": "수학사 페르마 접선 극대극소 확률 정수론 17세기 해석학 확률론 미적분Ⅰ 확률과통계",
    "url": "math/#n=person-fermat"
   },
   {
@@ -1895,6 +2131,7 @@
    "유형": "인물",
    "슬러그": "person-gregory",
    "날짜": "2026-08-27",
+   "검색어": "수학사 그레고리 기본정리 무한급수 원주율 반사망원경 17세기 해석학 광학 천문학 미적분Ⅱ",
    "url": "math/#n=person-gregory"
   },
   {
@@ -1903,6 +2140,7 @@
    "유형": "인물",
    "슬러그": "person-huygens",
    "날짜": "2026-08-27",
+   "검색어": "확률론 기하학 역학 광학 천문학 확률과 통계",
    "url": "math/#n=person-huygens"
   },
   {
@@ -1911,6 +2149,7 @@
    "유형": "인물",
    "슬러그": "person-jakob-bernoulli",
    "날짜": "2026-08-27",
+   "검색어": "확률론 해석학 변분법 대수학 확률과 통계",
    "url": "math/#n=person-jakob-bernoulli"
   },
   {
@@ -1919,6 +2158,7 @@
    "유형": "인물",
    "슬러그": "person-leibniz",
    "날짜": "2026-08-27",
+   "검색어": "수학사 라이프니츠 미적분 기호 dy/dx 17세기 18세기 해석학 논리학 철학 미적분Ⅰ",
    "url": "math/#n=person-leibniz"
   },
   {
@@ -1927,6 +2167,7 @@
    "유형": "인물",
    "슬러그": "person-newton",
    "날짜": "2026-08-27",
+   "검색어": "수학사 뉴턴 미적분 유율법 프린키피아 17세기 18세기 해석학 역학 광학 미적분Ⅰ",
    "url": "math/#n=person-newton"
   },
   {
@@ -1935,6 +2176,7 @@
    "유형": "인물",
    "슬러그": "person-pascal",
    "날짜": "2026-08-27",
+   "검색어": "수학사 파스칼 확률 파스칼의삼각형 계산기 팡세 17세기 확률론 기하학 유체역학 확률과통계",
    "url": "math/#n=person-pascal"
   },
   {
@@ -1943,6 +2185,7 @@
    "유형": "일화",
    "슬러그": "episode-descartes-fly",
    "날짜": "2026-08-27",
+   "검색어": "수학사 데카르트 좌표 해석기하 일화 17세기 기하학",
    "url": "math/#n=episode-descartes-fly"
   },
   {
@@ -1951,6 +2194,7 @@
    "유형": "일화",
    "슬러그": "episode-huygens-anagram",
    "날짜": "2026-08-27",
+   "검색어": "수학사 하위헌스 토성 아나그램 우선권 갈릴레이 일화 17세기 천문학",
    "url": "math/#n=episode-huygens-anagram"
   },
   {
@@ -1959,6 +2203,7 @@
    "유형": "일화",
    "슬러그": "episode-newton-apple",
    "날짜": "2026-08-27",
+   "검색어": "수학사 뉴턴 만유인력 일화 17세기 역학",
    "url": "math/#n=episode-newton-apple"
   },
   {
@@ -1967,6 +2212,7 @@
    "유형": "일화",
    "슬러그": "episode-pascal-fermat-letters",
    "날짜": "2026-08-27",
+   "검색어": "수학사 파스칼 페르마 확률 점수문제 일화 17세기 확률론",
    "url": "math/#n=episode-pascal-fermat-letters"
   },
   {
@@ -1975,6 +2221,7 @@
    "유형": "일화",
    "슬러그": "episode-priority-dispute",
    "날짜": "2026-08-27",
+   "검색어": "수학사 뉴턴 라이프니츠 미적분 우선권 일화 17세기 18세기 해석학",
    "url": "math/#n=episode-priority-dispute"
   },
   {
@@ -1983,6 +2230,7 @@
    "유형": "세기",
    "슬러그": "century-18c",
    "날짜": "2026-08-27",
+   "검색어": "수학사 18세기 계몽주의 오일러 라그랑주 라플라스 해석학 프랑스혁명 역학 확률론 정수론",
    "url": "math/#n=century-18c"
   },
   {
@@ -1991,6 +2239,7 @@
    "유형": "개념",
    "슬러그": "concept-complex-number-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 복소수 대수학의 기본정리 가우스 복소해석 코시 리만 18세기 19세기 대수학 복소해석학 공통수학1",
    "url": "math/#n=concept-complex-number-advanced"
   },
   {
@@ -1999,6 +2248,7 @@
    "유형": "개념",
    "슬러그": "concept-differential-equation-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 미분방정식 파동방정식 함수개념 달랑베르 오일러 푸리에 디리클레 라플라스변환 푸앵카레 해석학 역학",
    "url": "math/#n=concept-differential-equation-advanced"
   },
   {
@@ -2007,6 +2257,7 @@
    "유형": "개념",
    "슬러그": "concept-series-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 무한급수 발산급수 오일러 코시 아벨 리만 제타함수 해석적정수론 해석학 정수론",
    "url": "math/#n=concept-series-advanced"
   },
   {
@@ -2015,6 +2266,7 @@
    "유형": "인물",
    "슬러그": "person-euler",
    "날짜": "2026-08-27",
+   "검색어": "수학사 오일러 오일러항등식 바젤문제 쾨니히스베르크 그래프이론 기호 18세기 해석학 정수론 역학 천문학 미적분Ⅱ 기하",
    "url": "math/#n=person-euler"
   },
   {
@@ -2023,6 +2275,7 @@
    "유형": "인물",
    "슬러그": "person-lagrange",
    "날짜": "2026-08-27",
+   "검색어": "수학사 라그랑주 해석역학 변분법 미터법 에콜폴리테크니크 프랑스혁명 18세기 해석학 역학 정수론 미적분Ⅱ",
    "url": "math/#n=person-lagrange"
   },
   {
@@ -2031,6 +2284,7 @@
    "유형": "인물",
    "슬러그": "person-laplace",
    "날짜": "2026-08-27",
+   "검색어": "수학사 라플라스 확률론 천체역학 성운설 결정론 나폴레옹 18세기 19세기 해석학 확률과 통계",
    "url": "math/#n=person-laplace"
   },
   {
@@ -2039,6 +2293,7 @@
    "유형": "일화",
    "슬러그": "episode-bernoulli-tomb",
    "날짜": "2026-08-27",
+   "검색어": "수학사 베르누이 로그나선 등각나선 아르키메데스 묘비 일화 18세기 기하학",
    "url": "math/#n=episode-bernoulli-tomb"
   },
   {
@@ -2047,6 +2302,7 @@
    "유형": "세기",
    "슬러그": "century-19c",
    "날짜": "2026-08-27",
+   "검색어": "수학사 19세기 엄밀화 산술화 코시 바이어슈트라스 데데킨트 칸토어 리만 조선산학 해석학 기하학 집합론 수학기초론",
    "url": "math/#n=century-19c"
   },
   {
@@ -2055,6 +2311,7 @@
    "유형": "개념",
    "슬러그": "concept-integration-advanced",
    "날짜": "2026-08-27",
+   "검색어": "수학사 적분 리만 다르부 르베그 측도 볼테라 확률론 엄밀화 해석학 측도론 미적분Ⅱ",
    "url": "math/#n=concept-integration-advanced"
   },
   {
@@ -2063,6 +2320,7 @@
    "유형": "인물",
    "슬러그": "person-bolzano",
    "날짜": "2026-08-27",
+   "검색어": "해석학 논리학 철학 수학기초론 미적분Ⅰ",
    "url": "math/#n=person-bolzano"
   },
   {
@@ -2071,6 +2329,7 @@
    "유형": "인물",
    "슬러그": "person-cantor",
    "날짜": "2026-08-27",
+   "검색어": "집합론 해석학 수학기초론 공통수학2",
    "url": "math/#n=person-cantor"
   },
   {
@@ -2079,6 +2338,7 @@
    "유형": "인물",
    "슬러그": "person-cauchy",
    "날짜": "2026-08-27",
+   "검색어": "해석학 복소해석학 대수학 역학 미적분Ⅰ",
    "url": "math/#n=person-cauchy"
   },
   {
@@ -2087,6 +2347,7 @@
    "유형": "인물",
    "슬러그": "person-dedekind",
    "날짜": "2026-08-27",
+   "검색어": "해석학 대수학 정수론 수학기초론 미적분Ⅰ",
    "url": "math/#n=person-dedekind"
   },
   {
@@ -2095,6 +2356,7 @@
    "유형": "인물",
    "슬러그": "person-weierstrass",
    "날짜": "2026-08-27",
+   "검색어": "해석학 복소해석학 수학기초론 미적분Ⅰ",
    "url": "math/#n=person-weierstrass"
   },
   {
@@ -2103,6 +2365,7 @@
    "유형": "일화",
    "슬러그": "episode-cantor-letter-1877",
    "날짜": "2026-08-27",
+   "검색어": "수학사 칸토어 데데킨트 무한 집합론 일대일대응 일화 19세기 해석학",
    "url": "math/#n=episode-cantor-letter-1877"
   },
   {
@@ -2111,6 +2374,7 @@
    "유형": "일화",
    "슬러그": "episode-dedekind-nov24",
    "날짜": "2026-08-27",
+   "검색어": "수학사 데데킨트 절단 실수 엄밀화 일화 19세기 교육 해석학 수학기초론",
    "url": "math/#n=episode-dedekind-nov24"
   },
   {
@@ -2119,6 +2383,7 @@
    "유형": "일화",
    "슬러그": "episode-prague-1834",
    "날짜": "2026-08-27",
+   "검색어": "수학사 코시 볼차노 코시수열 연속 엄밀화 우선권 일화 19세기 해석학 수학기초론",
    "url": "math/#n=episode-prague-1834"
   },
   {
@@ -2127,6 +2392,7 @@
    "유형": "세기",
    "슬러그": "century-20c",
    "날짜": "2026-08-27",
+   "검색어": "수학사 20세기 공리주의 힐베르트 괴델 콜모고로프 르베그 로빈슨 이임학 한국수학 수학기초론 논리학 해석학 측도론 확률론 대수학",
    "url": "math/#n=century-20c"
   }
  ],
