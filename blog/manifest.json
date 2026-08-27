@@ -1,5 +1,5 @@
 {
- "count": 21,
+ "count": 22,
  "pillars": [
   {
    "key": "math",
@@ -31,6 +31,23 @@
    ],
    "chars": 4844,
    "path": "blog/notes/09-susi-jeongsi-parallel.md"
+  },
+  {
+   "slug": "08-sep-mock-eve",
+   "title": "9월 모의고사 직전 수학, 새 문제집 말고 실수부터",
+   "date": "2026-08-27",
+   "pillar": "math",
+   "pillar_ko": "수학 개념",
+   "series": "",
+   "tags": [
+    "9월 모의고사 직전 수학",
+    "계산 실수",
+    "시간 배분",
+    "마킹 실수",
+    "검산"
+   ],
+   "chars": 3732,
+   "path": "blog/notes/08-sep-mock-eve.md"
   },
   {
    "slug": "09-susi-minimum-standard",
