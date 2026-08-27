@@ -118,8 +118,20 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add concept/ link-index.json backlog.json
           git commit -m "chore(concept): 개념 한 장 렌더 · manifest 갱신"
-          git push
-          echo "changed=1" >> $GITHUB_OUTPUT
+          # 같은 push 가 cardnews-render 도 깨우고, 그쪽도 같은 브랜치에 커밋한다.
+          # 둘이 동시에 끝나면 늦은 쪽이 `! [rejected] (fetch first)` 로 죽고 **그 커밋은
+          # 사라진다** — 러너에만 있었으므로 그림이 렌더됐는데도 브랜치에 없다.
+          # (2026-08-27 발견노트 EP3, run 33026612891. 그림은 그려졌고 push 만 졌다.)
+          # 재시도는 rebase 로 한다. 산출물끼리는 겹치지 않으므로 충돌하지 않는다.
+          for i in 1 2 3; do
+            if git push; then
+              echo "changed=1" >> $GITHUB_OUTPUT; exit 0
+            fi
+            echo "::notice::push 거절($i/3) — 다른 워크플로가 같은 브랜치에 밀어 넣었다. rebase 후 재시도"
+            git pull --rebase origin "${GITHUB_REF#refs/heads/}"
+          done
+          echo "::error::3회 시도했는데도 push 하지 못했다 — 그림이 브랜치에 없다"
+          exit 1
 
       - name: 요약
         if: always()

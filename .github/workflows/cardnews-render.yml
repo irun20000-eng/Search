@@ -145,7 +145,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cardnews/ link-index.json backlog.json
           git commit -m "chore(cardnews): ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }} 렌더 반입 [skip ci]"
-          git push
+          # concept-sheet-render 가 같은 push 로 깨어나 같은 브랜치에 커밋한다.
+          # 늦게 끝난 쪽은 `! [rejected] (fetch first)` 로 죽고 그 커밋은 러너와 함께 사라진다
+          # (2026-08-27 발견노트 EP3 에서 개념 한 장이 이렇게 유실됐다).
+          # 산출물 경로가 겹치지 않으므로 rebase 재시도로 안전하게 붙일 수 있다.
+          for i in 1 2 3; do
+            git push && exit 0
+            echo "::notice::push 거절($i/3) — 다른 워크플로가 같은 브랜치에 밀어 넣었다. rebase 후 재시도"
+            git pull --rebase origin "${GITHUB_REF#refs/heads/}"
+          done
+          echo "::error::3회 시도했는데도 push 하지 못했다 — 컷이 브랜치에 없다"
+          exit 1
 
       - name: 모아보기를 아티팩트로
         if: steps.pick.outputs.skip != '1'
@@ -178,7 +188,15 @@ jobs:
             echo "PR 이미 있음 — 갱신됨"
           else
             TITLE="카드뉴스 ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }}"
-            gh pr create --base main --head "$BR" --title "$TITLE" --body-file /tmp/pr-body.md
+            # 조직/리포 설정에서 "Allow GitHub Actions to create and approve pull requests"
+            # 가 꺼져 있으면 여기서 createPullRequest 가 거부된다. 렌더·커밋은 이미 끝난
+            # 뒤라 컷은 브랜치에 있고 PR 만 없다 — 무엇이 막았는지 로그에 남긴다
+            # (2026-08-27 발견노트 EP3, run 33026612885).
+            if ! gh pr create --base main --head "$BR" --title "$TITLE" --body-file /tmp/pr-body.md; then
+              echo "::error::PR 을 열지 못했다. 컷은 '$BR' 에 이미 커밋돼 있다."
+              echo "::error::Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests' 를 켜거나, 손으로 PR 을 열 것."
+              exit 1
+            fi
           fi
 
       - name: main 에서 돌린 경우 안내
