@@ -1,6 +1,26 @@
 {
- "count": 6,
+ "count": 7,
  "notes": [
+  {
+   "slug": "braess-paradox",
+   "title": "브라에스의 역설(Braess's Paradox) — 이해편(입문·딥)",
+   "date": "2026-08-27",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "네트워크",
+    "교통",
+    "게임이론",
+    "내시균형",
+    "브라에스",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 3편 · 길을 늘렸는데 더 막힌다",
+   "chars": 8309,
+   "pic": "braess-paradox.png",
+   "path": "concept/notes/braess-paradox.md"
+  },
   {
    "slug": "base-rate-fallacy",
    "title": "기저율의 함정(Base Rate Fallacy) — 이해편(입문·딥)",
