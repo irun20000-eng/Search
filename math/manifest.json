@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-27",
+ "generated": "2026-08-28",
  "notes": [
   {
    "유형": "개념",
@@ -6671,7 +6671,7 @@
    "출처": [
     {
      "번호": 1,
-     "제목": "MacTutor History of Mathematics, Kurt Gödel — 생몰(1906년 브륀 출생, 1978년 프린스턴 사망), 1929년 한 지도 아래 1차 술어논리의 완전성 학위논문, 1931년 어떤 공리 체계에도 증명도 반증도 되지 않는 명제가 있다는 결과, 그것이 공리적 기초를 세우려는 100년의 시도를 끝냈다는 서술, 힐베르트 형식주의에 심대한 타격이었으나 형식주의의 근본 착상을 파괴하지는 않았다는 서술, 1940년 미국 도착과 1948년 시민권, 1940년 선택공리·일반연속체가설의 무모순성 결과, 1978년 1월 14일 병실 의자에서의 죽음",
+     "제목": "MacTutor History of Mathematics, Kurt Gödel — 생몰(1906년 브륀 출생, 1978년 프린스턴 사망), 1929년 하안(Hahn)의 지도 아래 1차 술어논리의 완전성 학위논문, 1931년 어떤 공리 체계에도 증명도 반증도 되지 않는 명제가 있다는 결과, 그것이 공리적 기초를 세우려는 100년의 시도를 끝냈다는 서술, 힐베르트 형식주의에 심대한 타격이었으나 형식주의의 근본 착상을 파괴하지는 않았다는 서술, 1940년 미국 도착과 1948년 시민권, 1940년 선택공리·일반연속체가설의 무모순성 결과, 1978년 1월 14일 병실 의자에서의 죽음",
      "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/",
      "유형": "2차"
     },
@@ -6764,8 +6764,201 @@
    "세기전체": [
     20
    ],
-   "자수": 12174,
+   "자수": 12184,
    "시각화": 9
+  },
+  {
+   "유형": "일화",
+   "제목": "1930년 쾨니히스베르크",
+   "슬러그": "episode-koenigsberg-1930",
+   "별칭": [
+    "1930년 쾨니히스베르크",
+    "우리는 알아야 한다",
+    "지나가는 말",
+    "힐베르트와 괴델"
+   ],
+   "볼트파일명": "일화_1930년 쾨니히스베르크",
+   "세기": [
+    20
+   ],
+   "분야": [
+    "수학기초론",
+    "논리학"
+   ],
+   "난이도": "개관",
+   "요약": "힐베르트가 \"우리는 알아야 한다\"로 연설을 맺은 해, 같은 도시에서 스물넷의 괴델이 그것이 불가능하다는 결과를 토론 중 지나가는 말로 내놓았다.",
+   "태그": [
+    "수학사",
+    "힐베르트",
+    "괴델",
+    "폰노이만",
+    "불완전성정리",
+    "힐베르트프로그램",
+    "일화",
+    "20세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "괴델이 1930년 9월 7일 쾨니히스베르크 학회에서 제1정리를 \"토론 중 지나가는 말\"로 발표했다는 것, 폰 노이만이 청중에 있었고 즉시 중요성을 알아봤다는 것은 스탠퍼드 철학백과가 날짜까지 적는다[1]. 힐베르트가 1930년에 은퇴하고 쾨니히스베르크가 명예시민증을 주었으며 그 연설이 여섯 단어로 끝났다는 것은 MacTutor 가 적는다[3]. **다만 두 행사의 날짜 선후는 이 문서의 출처가 못박지 않는다** — MacTutor 는 힐베르트 연설에 날짜를 붙이지 않는다[3]. 흔히 \"연설 다음 날\"이라고 이야기되지만 이 문서는 그렇게 적지 않고 **같은 해 같은 도시**까지만 적는다. 폰 노이만의 편지 문구는 스탠퍼드 철학백과가 인용한 것이다[2].",
+   "관련인물": [],
+   "관련개념": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Stanford Encyclopedia of Philosophy, Gödel's Incompleteness Theorems — 괴델이 1930년 8월 26일 빈에서 카르나프에게 결과를 알린 것, 1930년 9월 7일 유명한 쾨니히스베르크 학회에서 제1정리를 \"토론 중 지나가는 말(a casual discussion remark)\"로 발표한 것, 당시 힐베르트 프로그램의 맥락에서 일하던 폰 노이만이 청중에 있었고 그 결과의 큰 중요성을 즉시 이해한 것, 11월 20일 폰 노이만이 무모순성의 증명 불가능성이라는 따름정리를 편지로 알린 것, 결과의 수용이 엇갈렸고 오해와 저항도 상당했다는 것",
+     "URL": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Stanford Encyclopedia of Philosophy, Kurt Gödel — 두 불완전성 정리가 무모순성과 완전성이라는 목표로 규정된 힐베르트 프로그램의 실현 불가능성을 보였다는 것, 폰 노이만이 괴델 자신보다 먼저 그렇게 이해했다는 서술, 1931년 6월 폰 노이만이 카르나프에게 보낸 편지(\"괴델이 힐베르트 프로그램의 실현 불가능성을 보였다\" · \"쾨니히스베르크의 기초론 논의는 이제 낡은 것이라 본다\"), 그 전해 가을 폰 노이만이 괴델에게 보낸 더 강한 표현의 편지, 괴델 본인이 그 함의를 보기까지 몇 해가 걸렸다는 것",
+     "URL": "https://plato.stanford.edu/entries/goedel/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, David Hilbert — 생몰(1862년 1월 23일 쾨니히스베르크 인근 벨라우 출생, 1943년 괴팅겐 사망), 1930년에 은퇴했고 쾨니히스베르크시가 명예시민증을 주었다는 것, 그 자리에서 한 연설이 수학에 대한 열정을 보여 주는 여섯 단어로 끝났다는 것(\"Wir müssen wissen, wir werden wissen\"), 『수학의 기초』 두 권이 1934년과 1939년에 나왔고 그것이 겨냥한 직접적 무모순성 증명이라는 목표를 1931년 괴델의 논문이 불가능하게 만들었다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor History of Mathematics, Kurt Gödel — 1906년 브륀 출생, 1929년 하안(Hahn)의 지도 아래 1차 술어논리의 완전성으로 학위, 1931년 결과가 공리적 기초를 세우려는 100년의 시도를 끝냈다는 서술, 형식주의의 근본 착상을 파괴하지는 않았고 다만 어떤 체계든 힐베르트가 구상한 것보다 포괄적이어야 함을 보였다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-koenigsberg-1930/note.md",
+   "세기전체": [
+    20
+   ],
+   "자수": 2355,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "르베그의 동전",
+   "슬러그": "episode-lebesgue-coins",
+   "별칭": [
+    "르베그의 동전",
+    "동전 비유",
+    "함수의 기형학",
+    "르베그 적분 비유"
+   ],
+   "볼트파일명": "일화_르베그의 동전",
+   "세기": [
+    20
+   ],
+   "분야": [
+    "해석학",
+    "측도론"
+   ],
+   "난이도": "개관",
+   "요약": "르베그는 자기 적분을 빚 갚는 방식에 빗대 설명했다. 그런데 당대 대가들은 그 이론이 함수의 기형학을 불러들일까 두려워했다.",
+   "태그": [
+    "수학사",
+    "르베그",
+    "적분",
+    "측도",
+    "다르부",
+    "피카르",
+    "일화",
+    "20세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "동전 비유는 당주아·펠릭스·몽텔이 1957년에 쓴 회고 논문이 **르베그의 말을 직접 인용해** 전한다[1]. 같은 글이 당대의 반응도 적는다 — 대가들의 반응이 유보적이었고 많은 이가 \"함수의 기형학\"이 자리 잡는 것을 두려워했으며, 다르부가 적대적이었고 피카르만이 옹호했다는 것이다[1]. **다만 부시네스크의 말은 그 글 자체가 전언으로 적는다** — \"…라고 말했다고 한다\"이므로 이 문서도 전언으로 옮긴다[1]. MacTutor 전기도 그의 연구가 고전 해석학자들, 특히 프랑스에서 적대적인 반응을 받았다고 적어 정황이 겹친다[2].",
+   "관련인물": [],
+   "관련개념": [
+    "concept-integration",
+    "concept-integration-advanced"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 쓴 1957년 논문(L'Enseignement Mathématique)의 영역. 르베그가 자기 적분을 \"갚을 돈이 있고 주머니에서 여러 액면의 지폐와 동전을 꺼낸다\"는 비유로 설명했다며 그의 말을 직접 인용한 것, 오늘날 세계의 모든 대학에서 측도와 적분 두 이론이 가르쳐진다는 서두, 당대 대가들의 반응이 유보적이었고 많은 이가 \"함수의 기형학(teratology of functions)\"이 자리 잡는 것을 두려워했다는 것, 1875년 불연속 함수 논문을 쓴 다르부가 오히려 적대적이었다는 것, 부시네스크가 \"함수는 도함수를 가질 때에만 흥미롭다\"고 말했다고 전해진다는 것, 피카르만이 르베그의 연구를 옹호하고 그 자질을 인정했다는 것, 이 개념이 첫 번째 것보다 단순하지만 어느 정도의 성숙과 함수가 같은 값을 갖는 점들에 대한 익숙함을 요구한다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, Henri Lebesgue — 1901년 측도론을 세우고 같은 해 4월 29일 『콩트 랑뒤』 논문에서 적분의 정의를 준 것과 그 성과가 1902년 학위논문에 실렸다는 것, 1904·1906년 두 저작이 그의 착상을 널리 알린 뒤 그의 연구가 고전 해석학자들 특히 프랑스에서 적대적인 반응을 받았다는 것, 1902년 학위논문 『적분·길이·넓이』가 측도론과 적분에 관한 것이며 푸리에 해석의 범위를 크게 넓혔다는 것, 그의 적분이 곡선 아래 넓이 개념을 불연속 함수를 다수 포함하도록 확장해 리만 적분을 일반화한다는 것, 그의 연구가 고전 해석학자들 특히 프랑스에서 적대적인 반응을 받았다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 르베그 적분 — 리만은 정의역을, 르베그는 함숫값을 쪼갠다는 대비",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-lebesgue-coins/note.md",
+   "세기전체": [
+    20
+   ],
+   "자수": 1800,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "남대문 시장의 학술지",
+   "슬러그": "episode-namdaemun-1947",
+   "별칭": [
+    "남대문 시장의 학술지",
+    "이임학과 초른",
+    "쓰레기 더미에서 주운 학술지",
+    "한국인 최초의 국제 수학 논문"
+   ],
+   "볼트파일명": "일화_남대문 시장의 학술지",
+   "세기": [
+    20
+   ],
+   "분야": [
+    "대수학"
+   ],
+   "난이도": "개관",
+   "요약": "1947년 이임학이 남대문 시장 쓰레기 더미에서 주운 학술지에서 미해결 문제를 읽고 풀었다. 그 답을 문제 낸 사람에게 보냈다.",
+   "태그": [
+    "수학사",
+    "이임학",
+    "초른",
+    "한국수학",
+    "유한단순군",
+    "이임학군",
+    "일화",
+    "20세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "1947년 남대문 시장 쓰레기 더미에서 『Bulletin of AMS』를 발견했다는 것, 초른의 미완의 문제를 풀어 해답을 본인에게 보냈고 초른이 대신 투고해 주었다는 것은 한국민족문화대백과가 그대로 적는다[1]. 1949년에 실린 그 논문이 수학 분야 국제 학술지에 한국인이 실은 최초의 논문이라는 것은 수학백과가 적는다[2]. **논문 자체가 확인된다** — 『미국수학회 회보』 55권 575~576쪽에 저자 Rimhak Ree 로 실려 있다[3]. 다만 **같은 사실을 두 자료가 다르게 적는 대목이 있다** — 학술지를 어떻게 구했는지를 수학백과는 \"우연히 구한\"으로만 적고[2], 시장·쓰레기 더미라는 구체는 한국민족문화대백과 쪽에 있다[1]. 여권 건도 표현이 갈려 본문에 병기했다.",
+   "관련인물": [],
+   "관련개념": [],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "한국민족문화대백과(한국학중앙연구원), 이임학 — 1922년 12월 18일 함경남도 함흥 출생, 1939년 경성제국대학 예과 입학과 \"경성제국대학교에는 수학과가 없었기 때문에\" 물리학을 전공하고 수학을 거의 독학한 것, 1944년 물리학과 제2회 졸업, 1947년 남대문 시장 쓰레기 더미에서 발견한 『Bulletin of American Mathematical Society』에서 막스 초른의 논문을 읽고 미완의 문제를 푼 것과 초른에게 보낸 해답 및 초른의 대리 투고, 그 논문이 프린스턴대 보크너 교수의 호평을 받은 것, 1955년 브라운대 교수직 제안 후 샌프란시스코 영사관이 여권을 없애 버려 무국적자의 삶을 택한 것, 2018년 아벨상 수상자 랭글랜즈가 학부 시절 그의 지도를 받은 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=6745592&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 이임학군 — 우연히 미국수학회 학술지 Bulletin of AMS 를 구한 이임학이 초른의 논문에서 제시된 문제를 해결해 1949년 게재했고 그것이 수학 분야 국제 학술지에 한국인이 실은 최초의 논문이라는 것, 이승만 정권에서 여권을 압수했기 때문에 이후 캐나다 국적으로 활동했다는 것, 1950년대부터 시작된 유한 단순군 분류 문제에 크게 공헌하고 새로운 종류의 단순군을 발견한 것, 참고문헌의 논문 서지(Ree, Rimhak, On a problem of Max A. Zorn, Bull. Amer. Math. Soc. 55 (1949), 575–576)",
+     "URL": "https://terms.naver.com/entry.naver?docId=6117904&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Rimhak Ree, On a problem of Max A. Zorn, Bulletin of the American Mathematical Society 55 (1949), 575-576 — 1949년 미국수학회 회보 55권 6호에 실린 논문 자체. 저자 표기 Rimhak Ree, 쪽수 575~576, DOI 10.1090/S0002-9904-1949-09249-2",
+     "URL": "https://www.ams.org/journals/bull/1949-55-06/S0002-9904-1949-09249-2/",
+     "유형": "1차"
+    }
+   ],
+   "path": "notes/episode-namdaemun-1947/note.md",
+   "세기전체": [
+    20
+   ],
+   "자수": 1639,
+   "시각화": 1
   }
  ],
  "index": {
@@ -6878,6 +7071,9 @@
     "concept-integration-advanced",
     "concept-probability-advanced",
     "concept-series-advanced",
+    "episode-koenigsberg-1930",
+    "episode-lebesgue-coins",
+    "episode-namdaemun-1947",
     "person-cantor"
    ]
   },
@@ -6903,6 +7099,7 @@
     "concept-series-advanced",
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
+    "episode-lebesgue-coins",
     "episode-prague-1834",
     "episode-priority-dispute",
     "person-barrow",
@@ -6953,6 +7150,7 @@
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
     "concept-complex-number-advanced",
+    "episode-namdaemun-1947",
     "person-cauchy",
     "person-dedekind",
     "person-descartes",
@@ -6992,6 +7190,7 @@
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
     "episode-dedekind-nov24",
+    "episode-koenigsberg-1930",
     "episode-prague-1834",
     "person-bolzano",
     "person-cantor",
@@ -7000,12 +7199,14 @@
    ],
    "논리학": [
     "century-20c",
+    "episode-koenigsberg-1930",
     "person-bolzano",
     "person-leibniz"
    ],
    "측도론": [
     "century-20c",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-lebesgue-coins"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -7147,6 +7348,9 @@
     "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
+    "episode-koenigsberg-1930",
+    "episode-lebesgue-coins",
+    "episode-namdaemun-1947",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
@@ -7204,6 +7408,9 @@
     "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
+    "episode-koenigsberg-1930",
+    "episode-lebesgue-coins",
+    "episode-namdaemun-1947",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
@@ -7383,7 +7590,10 @@
     "century-19c"
    ],
    "20세기": [
-    "century-20c"
+    "century-20c",
+    "episode-koenigsberg-1930",
+    "episode-lebesgue-coins",
+    "episode-namdaemun-1947"
    ],
    "공리주의": [
     "century-20c"
@@ -7391,10 +7601,12 @@
    "힐베르트": [
     "century-20c",
     "concept-analysis-rigor-advanced",
-    "concept-analytic-geometry-advanced"
+    "concept-analytic-geometry-advanced",
+    "episode-koenigsberg-1930"
    ],
    "괴델": [
-    "century-20c"
+    "century-20c",
+    "episode-koenigsberg-1930"
    ],
    "콜모고로프": [
     "century-20c",
@@ -7402,16 +7614,19 @@
    ],
    "르베그": [
     "century-20c",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-lebesgue-coins"
    ],
    "로빈슨": [
     "century-20c"
    ],
    "이임학": [
-    "century-20c"
+    "century-20c",
+    "episode-namdaemun-1947"
    ],
    "한국수학": [
-    "century-20c"
+    "century-20c",
+    "episode-namdaemun-1947"
    ],
    "실수": [
     "concept-analysis-rigor",
@@ -7605,7 +7820,8 @@
    "적분": [
     "concept-fundamental-theorem",
     "concept-integration",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-lebesgue-coins"
    ],
    "배로": [
     "concept-fundamental-theorem",
@@ -7637,10 +7853,12 @@
     "concept-integration"
    ],
    "다르부": [
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-lebesgue-coins"
    ],
    "측도": [
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-lebesgue-coins"
    ],
    "볼테라": [
     "concept-integration-advanced"
@@ -7724,6 +7942,9 @@
     "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
+    "episode-koenigsberg-1930",
+    "episode-lebesgue-coins",
+    "episode-namdaemun-1947",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
@@ -7757,6 +7978,27 @@
    ],
    "갈릴레이": [
     "episode-huygens-anagram"
+   ],
+   "폰노이만": [
+    "episode-koenigsberg-1930"
+   ],
+   "불완전성정리": [
+    "episode-koenigsberg-1930"
+   ],
+   "힐베르트프로그램": [
+    "episode-koenigsberg-1930"
+   ],
+   "피카르": [
+    "episode-lebesgue-coins"
+   ],
+   "초른": [
+    "episode-namdaemun-1947"
+   ],
+   "유한단순군": [
+    "episode-namdaemun-1947"
+   ],
+   "이임학군": [
+    "episode-namdaemun-1947"
    ],
    "만유인력": [
     "episode-newton-apple"
@@ -9174,6 +9416,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "episode-lebesgue-coins",
+     "제목": "르베그의 동전",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -10204,6 +10452,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "episode-lebesgue-coins",
+     "제목": "르베그의 동전",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
      "슬러그": "person-cantor",
      "제목": "게오르크 칸토어",
      "유형": "인물",
@@ -10662,6 +10916,24 @@
      "제목": "확률론 확장편",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "episode-koenigsberg-1930",
+     "제목": "1930년 쾨니히스베르크",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-lebesgue-coins",
+     "제목": "르베그의 동전",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-namdaemun-1947",
+     "제목": "남대문 시장의 학술지",
+     "유형": "일화",
+     "경로": "본문"
     }
    ],
    "concept-analysis-rigor-advanced": [
@@ -10692,6 +10964,12 @@
     {
      "슬러그": "episode-dedekind-nov24",
      "제목": "1858년 11월 24일",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "episode-koenigsberg-1930",
+     "제목": "1930년 쾨니히스베르크",
      "유형": "일화",
      "경로": "관련개념"
     },
@@ -11182,6 +11460,24 @@
   "일화_하위헌스의 아나그램": "episode-huygens-anagram",
   "토성 고리 아나그램": "episode-huygens-anagram",
   "하위헌스의 아나그램": "episode-huygens-anagram",
+  "1930년 쾨니히스베르크": "episode-koenigsberg-1930",
+  "episode-koenigsberg-1930": "episode-koenigsberg-1930",
+  "우리는 알아야 한다": "episode-koenigsberg-1930",
+  "일화_1930년 쾨니히스베르크": "episode-koenigsberg-1930",
+  "지나가는 말": "episode-koenigsberg-1930",
+  "힐베르트와 괴델": "episode-koenigsberg-1930",
+  "episode-lebesgue-coins": "episode-lebesgue-coins",
+  "동전 비유": "episode-lebesgue-coins",
+  "르베그 적분 비유": "episode-lebesgue-coins",
+  "르베그의 동전": "episode-lebesgue-coins",
+  "일화_르베그의 동전": "episode-lebesgue-coins",
+  "함수의 기형학": "episode-lebesgue-coins",
+  "episode-namdaemun-1947": "episode-namdaemun-1947",
+  "남대문 시장의 학술지": "episode-namdaemun-1947",
+  "쓰레기 더미에서 주운 학술지": "episode-namdaemun-1947",
+  "이임학과 초른": "episode-namdaemun-1947",
+  "일화_남대문 시장의 학술지": "episode-namdaemun-1947",
+  "한국인 최초의 국제 수학 논문": "episode-namdaemun-1947",
   "episode-newton-apple": "episode-newton-apple",
   "뉴턴의 사과": "episode-newton-apple",
   "만유인력 사과": "episode-newton-apple",
