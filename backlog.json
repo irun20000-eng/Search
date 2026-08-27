@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-27",
- "scanned": 217,
- "resolved": 909,
- "pending": 556,
+ "scanned": 218,
+ "resolved": 917,
+ "pending": 559,
  "counts": {
-  "new": 265,
+  "new": 266,
   "companion": 5,
   "gap": 0
  },
@@ -1146,6 +1146,21 @@
      "u": "research/#r=hermes-agent-quick",
      "s": "research",
      "n": 1
+    }
+   ]
+  },
+  {
+   "name": "내시균형",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "브라에스의 역설(Braess's Paradox) — 이해편(입문·딥)",
+     "u": "concept/#n=braess-paradox",
+     "s": "concept",
+     "n": 3
     }
    ]
   },
