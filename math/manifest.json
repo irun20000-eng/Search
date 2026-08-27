@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-26",
+ "generated": "2026-08-27",
  "notes": [
   {
    "유형": "개념",
@@ -6352,6 +6352,217 @@
    "시각화": 3
   },
   {
+   "유형": "일화",
+   "제목": "보고 있지만 믿을 수가 없어요",
+   "슬러그": "episode-cantor-letter-1877",
+   "별칭": [
+    "보고 있지만 믿을 수가 없어요",
+    "칸토어의 편지",
+    "1877년 7월 20일",
+    "평면과 직선의 크기"
+   ],
+   "볼트파일명": "일화_보고 있지만 믿을 수가 없어요",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "집합론",
+    "해석학"
+   ],
+   "난이도": "개관",
+   "요약": "정사각형의 점을 선분에 다 늘어놓을 수 있는가. 3년 뒤 답을 얻은 칸토어는 데데킨트에게 자기 증명을 믿을 수 없다고 썼다.",
+   "태그": [
+    "수학사",
+    "칸토어",
+    "데데킨트",
+    "무한",
+    "집합론",
+    "일대일대응",
+    "일화",
+    "19세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "1877년 편지와 그가 자기 발견에 놀라 그렇게 썼다는 것은 MacTutor 가 적고[2], 날짜(7월 20일)와 한국어 문구는 국내 수학백과가 서신 날짜를 열거하며 함께 적는다[1]. 1874년 1월의 물음과 1월 5일 편지 원문도 MacTutor 에 실려 있다[2]. 두 사람이 휴가지에서 만나 무한을 논한 것도 MacTutor 가 적는다[3]. 다만 **결과의 진술은 자료마다 범위가 다르다** — MacTutor 는 $[0,1]$ 과 $p$ 차원 공간의 대응으로 적고[2], 국내 수학백과는 같은 편지의 내용을 **\"평면과 직선은 같은 크기를 가진다\"**로 적는다[1]. 범위가 다르므로 이 문서는 둘을 병기한다. 편지 원문의 한국어 번역은 자료마다 다를 수 있어 국내 수학백과의 표현을 따랐다[1].",
+   "관련인물": [
+    "person-cantor",
+    "person-dedekind"
+   ],
+   "관련개념": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 칸토어–데데킨트 서신의 날짜(1873년 9월 29일·12월 7일, 1877년 7월 20일)와 \"보고 있지만 믿을 수가 없어요\", 1873년 12월 7일을 집합론의 진정한 생일로 보는 서술, 칸토어가 평면에 직선보다 점이 더 많으리라는 생각을 오래 증명하려다 성공하지 못했다는 것, 1877년 편지가 \"평면과 직선은 같은 크기를 가진다\"는 것을 밝혔다는 서술, 이 발견이 1890년 이탈리아 페아노의 공간 채우는 곡선과 브라우어르의 차원 개념 발전으로 이어졌다는 것, 가장 큰 무한집합은 없다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, Georg Cantor — 1874년 1월에 단위 정사각형을 단위 길이의 선분에 일대일 대응시킬 수 있는지 스스로 물었다는 것과 1874년 1월 5일 데데킨트에게 보낸 편지의 원문, 1877년 데데킨트에게 [0,1] 구간의 점과 p 차원 공간의 점 사이에 일대일 대응이 있음을 증명해 보냈다는 것, 자기 발견에 놀라 \"보고 있지만 믿을 수가 없다\"고 썼다는 것, 그것이 기하와 차원 개념에 함의를 가졌다는 것과 그 대응이 연속사상이 아니라는 점을 칸토어가 강조했다는 것, 1877년 크렐레 학술지에 낸 차원 논문이 크로네커에게 의심받아 데데킨트가 나선 뒤에야 실렸다는 것, 칸토어와 데데킨트의 수학 서신이 1882년에 끝났다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 1872년 게르자우에서 칸토어를 만나 무한을 논한 것, 1874년 인터라켄에서 집합론을 논한 것, 데데킨트가 칸토어의 이론에 상당히 기여했으나 칸토어가 발표할 때 그것이 밝혀지지 않았다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-cantor-letter-1877/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 2151,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "1858년 11월 24일",
+   "슬러그": "episode-dedekind-nov24",
+   "별칭": [
+    "1858년 11월 24일",
+    "데데킨트의 그날",
+    "절단을 착상한 날",
+    "강의 준비하다가"
+   ],
+   "볼트파일명": "일화_1858년 11월 24일",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "수학기초론"
+   ],
+   "난이도": "개관",
+   "요약": "데데킨트가 실수의 정의를 착상한 것은 첫 미적분 강의를 준비하던 자리였다. 그림에 기대고 있다는 것을 거기서 보았고, 날짜까지 적어 두었다.",
+   "태그": [
+    "수학사",
+    "데데킨트",
+    "절단",
+    "실수",
+    "엄밀화",
+    "일화",
+    "19세기",
+    "교육"
+   ],
+   "사실성": "확실",
+   "사실성근거": "착상의 날짜(1858년 11월 24일)와 그것이 첫 미적분 강의 준비 중이었다는 것은 MacTutor 전기[1]와 데데킨트 본인의 1872년 서문[2]이 함께 적는다. 본인이 남긴 1차 기록이 있는 드문 경우다. 다만 \"그날 하루에 완성했다\"는 식으로 읽으면 과장이다 — 본인은 착상한 날을 적었을 뿐이고 출판까지는 14년이 걸렸다[1][4]. 디리클레의 추천서 문구도 MacTutor 가 적는다[1].",
+   "관련인물": [
+    "person-dedekind"
+   ],
+   "관련개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Richard Dedekind — 취리히 공과대학 지원 때 디리클레가 추천서에 \"뛰어난 교육자\"라 썼다는 것, 1858년 가을 부임해 미분적분학을 처음 가르치게 된 것, 그 준비 과정에서 절단을 착상하고 1858년 11월 24일이라는 날짜를 남긴 것, 1872년까지 출판하지 않은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Richard Dedekind, Continuity and Irrational Numbers (1872), in Essays on the Theory of Numbers, tr. W. W. Beman, Open Court 1901 — 서문에서 1858년 가을 취리히에서 미분학의 기초를 처음으로 강의해야 하는 처지에 놓였고 그때 산술의 진정으로 과학적인 기초가 없다는 것을 그 어느 때보다 절실히 느꼈다고 적은 것, 증가하지만 무한히 커지지 않는 양이 극한에 다가간다는 정리를 증명하며 기하학적 명증에 의존했다고 적은 것, 1858년 11월 24일이라는 날짜",
+     "URL": "https://www.gutenberg.org/files/21016/21016-pdf.pdf",
+     "유형": "1차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 데데킨트 절단 — 절단의 정의, 사잇값 정리·최대최소 정리를 증명하려면 실수가 무엇인지 먼저 규명해야 한다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125241&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 데데킨트가 1858년에 절단을 착상하고 1872년까지 출판하지 않았다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-dedekind-nov24/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 1972,
+   "시각화": 1
+  },
+  {
+   "유형": "일화",
+   "제목": "1834년 프라하",
+   "슬러그": "episode-prague-1834",
+   "별칭": [
+    "1834년 프라하",
+    "코시와 볼차노의 만남",
+    "코시가 볼차노를 표절했는가",
+    "프라하의 한 번의 만남"
+   ],
+   "볼트파일명": "일화_1834년 프라하",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "수학기초론"
+   ],
+   "난이도": "개관",
+   "요약": "코시와 볼차노는 프라하에서 딱 한 번 만났다. 정작 수학사가 궁금해하는 것은 그 만남이 아니라 그보다 17년 앞선 일이다.",
+   "태그": [
+    "수학사",
+    "코시",
+    "볼차노",
+    "코시수열",
+    "연속",
+    "엄밀화",
+    "우선권",
+    "일화",
+    "19세기"
+   ],
+   "사실성": "확실",
+   "사실성근거": "1834년 프라하에서 볼차노의 요청으로 한 번 만났다는 것은 MacTutor 가 그대로 적는다[1]. 볼차노가 1817년 논문에서 오늘날 코시 수열이라 부르는 것을 정의했고 같은 개념이 4년 뒤 코시의 저작에 나타난다는 것, 그리고 코시가 볼차노의 글을 읽었을 가능성이 낮다는 판단도 MacTutor 의 서술이다[2]. 다만 영향 관계는 확정된 사실이 아니라 논쟁 대상이며, MacTutor 자신이 두 문헌의 논의를 언급한 뒤 프로이덴탈의 견해가 \"더 설득력 있어 보인다\"는 유보된 표현을 쓴다[1]. 이 문서는 그 유보를 그대로 옮긴다. 만남에서 무슨 이야기가 오갔는지는 어느 자료도 전하지 않는다. 볼차노 쪽 사정을 \"출판 금지 때문에 이름이 남지 않았다\"로 설명하지 않는다 — 금지는 1819년 12월 이후이고 1817년 논문은 그전에 나왔다[2]. 저장소도 이 점을 이미 교정해 두었다.",
+   "관련인물": [
+    "person-cauchy",
+    "person-bolzano"
+   ],
+   "관련개념": [
+    "concept-analysis-rigor"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Augustin-Louis Cauchy — 1830년 7월 혁명 뒤 9월에 파리를 떠났고 선서하러 돌아가지 않아 자리를 모두 잃은 것, 1821년 『해석학 강의』가 에콜폴리테크니크 학생용 교재였다는 것, 프라하에서 부르봉 왕세손의 교육을 맡은 것과 왕비가 \"너무 크게, 그렇게 크게는 마세요\"라고 달랬다는 일화, 프라하에 있는 동안 1834년 볼차노의 요청으로 한 번 만났다는 것, 코시의 연속 정의가 볼차노에게 얼마나 빚졌는지를 두고 두 문헌에 논의가 있으며 코시의 정의가 볼차노의 것보다 먼저 형성됐다는 프로이덴탈의 견해가 더 설득력 있어 보인다는 서술, 참고문헌에 실린 프로이덴탈의 논문 제목 「코시가 볼차노를 표절했는가」, 1838년 파리로 돌아왔으나 선서를 거부해 교직은 되찾지 못한 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, Bernard Bolzano — 1817년 『순수 해석적 증명』이 미적분에서 무한소 개념을 몰아내려는 시도였다는 것, 그 논문이 중간값 정리를 새 방식으로 증명하고 오늘날 코시 수열이라 부르는 것을 정의했다는 것, 같은 개념이 4년 뒤 코시의 저작에 나타나지만 코시가 볼차노의 글을 읽었을 가능성은 낮다는 서술, 1817년 이후 여러 해 동안 수학 저작을 내지 않았다는 것, 1819년 12월 정직과 가택연금·우편 검열·출판 금지, 1821~25년 교회 재판과 사임",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 코시 수열 — 임의의 양수에 대해 어느 항을 넘어서면 항들 사이의 차가 그 양수 이내가 되는 수열, 기본열이라고도 한다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405362&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성, 극한 이론의 진정한 발달이 1821년에 가서야 시작됐다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/episode-prague-1834/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 2130,
+   "시각화": 1
+  },
+  {
    "유형": "세기",
    "제목": "20세기",
    "슬러그": "century-20c",
@@ -6645,6 +6856,9 @@
     "concept-probability-advanced",
     "concept-series",
     "concept-series-advanced",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
+    "episode-prague-1834",
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
@@ -6687,6 +6901,9 @@
     "concept-integration-advanced",
     "concept-series",
     "concept-series-advanced",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
+    "episode-prague-1834",
     "episode-priority-dispute",
     "person-barrow",
     "person-bolzano",
@@ -6765,6 +6982,7 @@
    "집합론": [
     "century-19c",
     "concept-function",
+    "episode-cantor-letter-1877",
     "person-cantor"
    ],
    "수학기초론": [
@@ -6773,6 +6991,8 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
+    "episode-dedekind-nov24",
+    "episode-prague-1834",
     "person-bolzano",
     "person-cantor",
     "person-dedekind",
@@ -6923,10 +7143,13 @@
    ],
    "일화": [
     "episode-bernoulli-tomb",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
+    "episode-prague-1834",
     "episode-priority-dispute"
    ],
    "인물": [
@@ -6977,10 +7200,13 @@
     "concept-series",
     "concept-series-advanced",
     "episode-bernoulli-tomb",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
+    "episode-prague-1834",
     "episode-priority-dispute",
     "person-barrow",
     "person-descartes",
@@ -7102,6 +7328,9 @@
     "concept-analytic-geometry-advanced",
     "concept-complex-number-advanced",
     "concept-function",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
+    "episode-prague-1834",
     "person-laplace"
    ],
    "엄밀화": [
@@ -7109,7 +7338,9 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
-    "concept-integration-advanced"
+    "concept-integration-advanced",
+    "episode-dedekind-nov24",
+    "episode-prague-1834"
    ],
    "산술화": [
     "century-19c",
@@ -7122,7 +7353,8 @@
     "concept-differentiation",
     "concept-differentiation-advanced",
     "concept-fundamental-theorem",
-    "concept-series-advanced"
+    "concept-series-advanced",
+    "episode-prague-1834"
    ],
    "바이어슈트라스": [
     "century-19c",
@@ -7130,12 +7362,15 @@
    ],
    "데데킨트": [
     "century-19c",
-    "concept-analysis-rigor"
+    "concept-analysis-rigor",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24"
    ],
    "칸토어": [
     "century-19c",
     "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced"
+    "concept-analysis-rigor-advanced",
+    "episode-cantor-letter-1877"
    ],
    "리만": [
     "century-19c",
@@ -7179,14 +7414,16 @@
     "century-20c"
    ],
    "실수": [
-    "concept-analysis-rigor"
+    "concept-analysis-rigor",
+    "episode-dedekind-nov24"
    ],
    "완비성": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced"
    ],
    "볼차노": [
-    "concept-analysis-rigor"
+    "concept-analysis-rigor",
+    "episode-prague-1834"
    ],
    "극한": [
     "concept-analysis-rigor"
@@ -7483,11 +7720,29 @@
    ],
    "일화": [
     "episode-bernoulli-tomb",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
     "episode-descartes-fly",
     "episode-huygens-anagram",
     "episode-newton-apple",
     "episode-pascal-fermat-letters",
+    "episode-prague-1834",
     "episode-priority-dispute"
+   ],
+   "무한": [
+    "episode-cantor-letter-1877"
+   ],
+   "집합론": [
+    "episode-cantor-letter-1877"
+   ],
+   "일대일대응": [
+    "episode-cantor-letter-1877"
+   ],
+   "절단": [
+    "episode-dedekind-nov24"
+   ],
+   "교육": [
+    "episode-dedekind-nov24"
    ],
    "토성": [
     "episode-huygens-anagram"
@@ -7497,6 +7752,7 @@
    ],
    "우선권": [
     "episode-huygens-anagram",
+    "episode-prague-1834",
     "episode-priority-dispute"
    ],
    "갈릴레이": [
@@ -7507,6 +7763,12 @@
    ],
    "점수문제": [
     "episode-pascal-fermat-letters"
+   ],
+   "코시수열": [
+    "episode-prague-1834"
+   ],
+   "연속": [
+    "episode-prague-1834"
    ],
    "루카스석좌": [
     "person-barrow"
@@ -7592,11 +7854,13 @@
    "person-bolzano": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
+    "episode-prague-1834",
     "person-cauchy"
    ],
    "person-cantor": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
+    "episode-cantor-letter-1877",
     "person-dedekind",
     "person-weierstrass"
    ],
@@ -7608,6 +7872,7 @@
     "concept-fundamental-theorem",
     "concept-integration-advanced",
     "concept-series-advanced",
+    "episode-prague-1834",
     "person-bolzano",
     "person-lagrange",
     "person-laplace"
@@ -7615,6 +7880,8 @@
    "person-dedekind": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
     "person-cantor"
    ],
    "person-weierstrass": [
@@ -9419,6 +9686,18 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "episode-dedekind-nov24",
+     "제목": "1858년 11월 24일",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "episode-prague-1834",
+     "제목": "1834년 프라하",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
      "슬러그": "person-bolzano",
      "제목": "베른하르트 볼차노",
      "유형": "인물",
@@ -9799,6 +10078,24 @@
      "제목": "함수 개념",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "episode-cantor-letter-1877",
+     "제목": "보고 있지만 믿을 수가 없어요",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-dedekind-nov24",
+     "제목": "1858년 11월 24일",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-prague-1834",
+     "제목": "1834년 프라하",
+     "유형": "일화",
+     "경로": "본문"
     }
    ],
    "concept-differential-equation-advanced": [
@@ -10087,6 +10384,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "episode-cantor-letter-1877",
+     "제목": "보고 있지만 믿을 수가 없어요",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "episode-dedekind-nov24",
+     "제목": "1858년 11월 24일",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-bolzano",
      "제목": "베른하르트 볼차노",
      "유형": "인물",
@@ -10129,6 +10438,12 @@
      "제목": "미분법 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "episode-prague-1834",
+     "제목": "1834년 프라하",
+     "유형": "일화",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-cauchy",
@@ -10185,6 +10500,12 @@
      "제목": "무한급수 확장편",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "episode-prague-1834",
+     "제목": "1834년 프라하",
+     "유형": "일화",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-bolzano",
@@ -10287,6 +10608,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "episode-cantor-letter-1877",
+     "제목": "보고 있지만 믿을 수가 없어요",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-cauchy",
      "제목": "오귀스탱루이 코시",
      "유형": "인물",
@@ -10355,6 +10682,18 @@
      "제목": "해석학의 엄밀화",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "episode-cantor-letter-1877",
+     "제목": "보고 있지만 믿을 수가 없어요",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "episode-dedekind-nov24",
+     "제목": "1858년 11월 24일",
+     "유형": "일화",
+     "경로": "관련개념"
     },
     {
      "슬러그": "person-bolzano",
@@ -10820,6 +11159,18 @@
   "베르누이의 묘비": "episode-bernoulli-tomb",
   "에아뎀 무타타 레수르고": "episode-bernoulli-tomb",
   "일화_베르누이의 묘비": "episode-bernoulli-tomb",
+  "1877년 7월 20일": "episode-cantor-letter-1877",
+  "episode-cantor-letter-1877": "episode-cantor-letter-1877",
+  "보고 있지만 믿을 수가 없어요": "episode-cantor-letter-1877",
+  "일화_보고 있지만 믿을 수가 없어요": "episode-cantor-letter-1877",
+  "칸토어의 편지": "episode-cantor-letter-1877",
+  "평면과 직선의 크기": "episode-cantor-letter-1877",
+  "1858년 11월 24일": "episode-dedekind-nov24",
+  "episode-dedekind-nov24": "episode-dedekind-nov24",
+  "강의 준비하다가": "episode-dedekind-nov24",
+  "데데킨트의 그날": "episode-dedekind-nov24",
+  "일화_1858년 11월 24일": "episode-dedekind-nov24",
+  "절단을 착상한 날": "episode-dedekind-nov24",
   "episode-descartes-fly": "episode-descartes-fly",
   "데카르트 파리": "episode-descartes-fly",
   "데카르트와 천장의 파리": "episode-descartes-fly",
@@ -10843,6 +11194,12 @@
   "점수 문제": "episode-pascal-fermat-letters",
   "파스칼-페르마 서신": "episode-pascal-fermat-letters",
   "파스칼–페르마 서신": "episode-pascal-fermat-letters",
+  "1834년 프라하": "episode-prague-1834",
+  "episode-prague-1834": "episode-prague-1834",
+  "일화_1834년 프라하": "episode-prague-1834",
+  "코시가 볼차노를 표절했는가": "episode-prague-1834",
+  "코시와 볼차노의 만남": "episode-prague-1834",
+  "프라하의 한 번의 만남": "episode-prague-1834",
   "episode-priority-dispute": "episode-priority-dispute",
   "뉴턴–라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "미적분 논쟁": "episode-priority-dispute",
