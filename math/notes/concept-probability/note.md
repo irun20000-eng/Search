@@ -33,7 +33,7 @@
 
 선행개념: []
 후속개념: [concept-probability-advanced]
-기여인물: [person-pascal, person-fermat, person-huygens, person-jakob-bernoulli]
+기여인물: [person-pascal, person-fermat, person-huygens, person-jakob-bernoulli, person-kolmogorov]
 
 출처:
   - 번호: 1
