@@ -4,7 +4,9 @@
   "#n=square-cube-law": "[2026-08-22] 스퀘어-큐브 법칙 — 이해편.md",
   "#n=size-bias": "[2026-08-22] 평균이라는 착시 — 이해편.md",
   "#n=optimal-stopping": "[2026-08-13] 최적 정지 — 이해편.md",
-  "#n=simpsons-paradox": "[2026-08-04] 심슨의 역설 — 이해편.md"
+  "#n=simpsons-paradox": "[2026-08-04] 심슨의 역설 — 이해편.md",
+  "#n=braess-paradox": "[2026-08-27] 브라에스의 역설 — 이해편.md",
+  "#n=base-rate-fallacy": "[2026-08-25] 기저율의 함정 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
@@ -74,7 +76,9 @@
   "#r=jacobian-advanced": "20260621_야코비안 변환(Jacobian) — 확장편(학부·대학원).md",
   "#r=iran-us-conflict-timeline": "20260621_이란–미국 분쟁의 역사 — 20세기부터의 갈등 타임라인 심층 분석.md",
   "#r=hermes-agent-deep": "20260621_헤르메스 에이전트(Hermes Agent) — 심층 리서치.md",
-  "#r=hermes-agent-quick": "20260621_헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용.md"
+  "#r=hermes-agent-quick": "20260621_헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용.md",
+  "#r=continuous-function-theorems": "20260825_연속함수의 두 정리 (이해편) — IVT·EVT.md",
+  "#r=continuous-function-theorems-advanced": "20260825_IVT·EVT의 증명 (확장편) — 완비성에서 컴팩트성까지.md"
  },
  "videos": {
   "XgWJWuz6Dmw": "20260821_제미나이_Spark(스파크)_사용법_총정리｜컴퓨터가_꺼져_있어도_일하는_AI_에이전트.md",
@@ -170,6 +174,8 @@
   "blnnF9ubEVo": "20260625_무조건_이렇게_저장하세요!_옵시디언_+_Claude_+_VS_Code_—_폴더_3개면_끝납니다.md",
   "_6bBV09r58Y": "20260625_(26년_6월_업데이트)_클로드_Skills로_AI_티_안_나는_고퀄_PPT_만드는_방법.md",
   "y6HIrsG7pE8": "20260624_코딩_몰라도_OK_—_클로드_코드로_100만_원짜리_사이트_만들기__구글시트_자동_저장까지.md",
-  "HNlBFesXiW8": "20260623_클로드·코덱스·제미나이를_동시에_제어합니다__하네스_멀티_에이전트_2.0.md"
+  "HNlBFesXiW8": "20260623_클로드·코덱스·제미나이를_동시에_제어합니다__하네스_멀티_에이전트_2.0.md",
+  "6BGIfYbzWz4": "20260827_카드뉴스_한_땀_한_땀_만드시나요_자동화로_대량_제작하세요!_제미나이_잼스(Gems)_+_캔바_대량_제작!_구글_시트_연동부터.md",
+  "xxUbF6EPyfU": "20260825_Claude_Code(클로드_코드)_서브에이전트_1초컷!_순식간에_전문_비서_만든다!.md"
  }
 }
