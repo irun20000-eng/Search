@@ -56,6 +56,8 @@
     제목: MacTutor History of Mathematics, Andrey Nikolaevich Kolmogorov — 콜모고로프가 힐베르트의 여섯 번째 문제에 큰 기여를 했고, 1957년에는 열세 번째 문제를 완전히 풀면서 세 변수 연속함수 가운데 두 변수 연속함수로 표현할 수 없는 것이 존재한다는 증명을 요구한 힐베르트가 틀렸음을 보였다는 서술
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/
     유형: 2차
+
+갤러리URL: "#n=person-hilbert"
 ---
 
 ## 한눈에

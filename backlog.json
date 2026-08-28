@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 231,
- "resolved": 993,
- "pending": 550,
+ "scanned": 232,
+ "resolved": 1008,
+ "pending": 549,
  "counts": {
-  "new": 260,
+  "new": 259,
   "companion": 5,
   "gap": 0
  },
@@ -4616,21 +4616,6 @@
   },
   {
    "name": "아브라암 드무아브르",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "확률론 확장편",
-     "u": "math/#n=concept-probability-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "토마스 베이즈",
    "count": 1,
    "kind": "new",
    "target": null,

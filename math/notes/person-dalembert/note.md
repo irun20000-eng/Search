@@ -48,6 +48,8 @@
     제목: 네이버 지식백과(수학백과), 극한 — 수열과 함수의 극한 정의, 극한이 연속성·미분가능성을 정의하는 토대가 된다는 서술
     URL: https://terms.naver.com/entry.naver?docId=3338249&cid=47324&categoryId=47324
     유형: 2차
+
+갤러리URL: "#n=person-dalembert"
 ---
 
 ## 한눈에

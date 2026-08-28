@@ -115,6 +115,8 @@
     제목: MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 함께 쓴 1957년 논문의 영역. 르베그 본인의 말로 인용된 동전 비유, 당시 대가들의 유보적 반응과 다르부의 적대, 부시네스크의 "함수는 도함수를 가질 때에만 흥미롭다", 피카르만이 르베그의 연구를 옹호했다는 서술
     URL: https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/
     유형: 2차
+
+갤러리URL: "#n=century-20c"
 ---
 
 ## TL;DR

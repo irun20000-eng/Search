@@ -48,6 +48,8 @@
     제목: MacTutor History of Mathematics, David Hilbert — 1900년 파리 제2회 국제수학자대회 「수학의 문제들」 강연과 파리 문제들이 오늘까지도 도전 과제로 남았다는 것
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
     유형: 2차
+
+갤러리URL: "#n=person-kolmogorov"
 ---
 
 ## 한눈에

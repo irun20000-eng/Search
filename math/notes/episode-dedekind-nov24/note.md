@@ -33,6 +33,8 @@
     제목: MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 데데킨트가 1858년에 절단을 착상하고 1872년까지 출판하지 않았다는 것
     URL: https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/
     유형: 2차
+
+갤러리URL: "#n=episode-dedekind-nov24"
 ---
 
 ## 추천서가 예언이 되다
