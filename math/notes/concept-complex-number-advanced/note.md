@@ -41,7 +41,7 @@
 
 선행개념: [concept-complex-number, concept-series]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-euler, person-lagrange, person-de-moivre]
+기여인물: [person-gauss, person-euler, person-lagrange, person-de-moivre]
 
 출처:
   - 번호: 1

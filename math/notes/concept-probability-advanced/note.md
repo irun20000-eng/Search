@@ -49,7 +49,7 @@
 
 선행개념: [concept-probability]
 후속개념: [concept-real-analysis]
-기여인물: [person-de-moivre, person-bayes, person-laplace, person-jakob-bernoulli, person-kolmogorov]
+기여인물: [person-de-moivre, person-bayes, person-laplace, person-gauss, person-jakob-bernoulli, person-kolmogorov]
 
 이미지:
   - 파일: assets/figures/least-squares-residuals.svg

@@ -16,7 +16,7 @@
   출생지: 독일 브라운슈바이크
 
 기여개념: [concept-analysis-rigor, concept-analysis-rigor-advanced]
-관련인물: [person-cantor, person-dirichlet]
+관련인물: [person-cantor, person-dirichlet, person-gauss]
 
 출처:
   - 번호: 1
