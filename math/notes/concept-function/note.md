@@ -32,7 +32,7 @@
 
 선행개념: [concept-analytic-geometry, concept-differential-equation]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-euler, person-leibniz]
+기여인물: [person-euler, person-leibniz, person-fourier]
 
 출처:
   - 번호: 1

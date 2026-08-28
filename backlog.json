@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 228,
- "resolved": 963,
- "pending": 554,
+ "scanned": 231,
+ "resolved": 993,
+ "pending": 550,
  "counts": {
-  "new": 263,
+  "new": 260,
   "companion": 5,
   "gap": 0
  },
@@ -3004,27 +3004,6 @@
    ]
   },
   {
-   "name": "조제프 푸리에",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식",
-     "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "미분방정식 확장편",
-     "u": "math/#n=concept-differential-equation-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
    "name": "부분적분",
    "count": 2,
    "kind": "new",
@@ -4555,36 +4534,6 @@
     {
      "t": "미분방정식",
      "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "요한 베르누이",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식",
-     "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "장 르 롱 달랑베르",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식 확장편",
-     "u": "math/#n=concept-differential-equation-advanced",
      "s": "math",
      "n": 1
     }
