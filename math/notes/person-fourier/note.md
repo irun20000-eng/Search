@@ -17,7 +17,7 @@
   출생지: 프랑스 오세르
 
 기여개념: [concept-differential-equation, concept-differential-equation-advanced, concept-function]
-관련인물: [person-dalembert]
+관련인물: [person-dalembert, person-dirichlet]
 
 출처:
   - 번호: 1

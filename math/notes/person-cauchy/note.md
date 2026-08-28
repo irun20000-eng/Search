@@ -16,7 +16,7 @@
   출생지: 프랑스 파리
 
 기여개념: [concept-analysis-rigor, concept-analysis-rigor-advanced]
-관련인물: [person-bolzano, person-lagrange, person-laplace]
+관련인물: [person-bolzano, person-lagrange, person-laplace, person-dirichlet]
 
 출처:
   - 번호: 1
