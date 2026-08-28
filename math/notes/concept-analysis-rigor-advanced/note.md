@@ -41,7 +41,7 @@
 
 선행개념: [concept-analysis-rigor, concept-function, concept-series-advanced]
 후속개념: [concept-real-analysis]
-기여인물: [person-dedekind, person-cantor, person-weierstrass, person-cauchy, person-bolzano, person-hilbert]
+기여인물: [person-dedekind, person-cantor, person-weierstrass, person-cauchy, person-bolzano, person-hilbert, person-frege]
 
 출처:
   - 번호: 1

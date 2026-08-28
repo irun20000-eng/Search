@@ -17,7 +17,7 @@
   출생지: 프랑스 낭시
 
 기여개념: [concept-differential-equation-advanced, concept-analytic-geometry-advanced]
-관련인물: [person-hilbert, person-godel, person-laplace]
+관련인물: [person-hilbert, person-godel, person-laplace, person-frege]
 관련일화: []
 
 출처:

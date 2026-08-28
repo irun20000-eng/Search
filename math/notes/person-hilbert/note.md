@@ -17,7 +17,7 @@
   출생지: 프로이센 벨라우(쾨니히스베르크 인근, 지금의 러시아 칼리닌그라드 주)
 
 기여개념: [concept-analysis-rigor-advanced]
-관련인물: [person-godel, person-kolmogorov, person-poincare]
+관련인물: [person-godel, person-kolmogorov, person-poincare, person-frege]
 
 출처:
   - 번호: 1
