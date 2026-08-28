@@ -31,7 +31,7 @@
 
 선행개념: [concept-differentiation, concept-integration]
 후속개념: [concept-differential-equation]
-기여인물: [person-euler, person-lagrange, person-jakob-bernoulli]
+기여인물: [person-euler, person-lagrange, person-jakob-bernoulli, person-johann-bernoulli]
 
 출처:
   - 번호: 1

@@ -1521,7 +1521,8 @@
    "기여인물": [
     "person-euler",
     "person-lagrange",
-    "person-jakob-bernoulli"
+    "person-jakob-bernoulli",
+    "person-johann-bernoulli"
    ],
    "출처": [
     {
@@ -1668,7 +1669,10 @@
     "person-euler",
     "person-lagrange",
     "person-jakob-bernoulli",
-    "person-huygens"
+    "person-huygens",
+    "person-dalembert",
+    "person-fourier",
+    "person-johann-bernoulli"
    ],
    "출처": [
     {
@@ -2189,7 +2193,8 @@
    ],
    "기여인물": [
     "person-euler",
-    "person-leibniz"
+    "person-leibniz",
+    "person-fourier"
    ],
    "출처": [
     {
@@ -3507,7 +3512,8 @@
    "관련인물": [
     "person-huygens",
     "person-leibniz",
-    "person-euler"
+    "person-euler",
+    "person-johann-bernoulli"
    ],
    "출처": [
     {
@@ -3566,6 +3572,109 @@
    ],
    "자수": 6756,
    "시각화": 2
+  },
+  {
+   "유형": "인물",
+   "제목": "요한 베르누이",
+   "슬러그": "person-johann-bernoulli",
+   "별칭": [
+    "요한 베르누이",
+    "Johann Bernoulli",
+    "요한베르누이",
+    "로피탈의 스승",
+    "최속강하선",
+    "오일러의 스승"
+   ],
+   "볼트파일명": "인물_요한 베르누이",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "미적분학",
+    "미분방정식",
+    "변분법"
+   ],
+   "교과": [],
+   "난이도": "표준",
+   "요약": "향신료 장사를 1년 하고 그만뒀다. 미적분 최초의 교과서는 그가 편지로 가르친 내용인데 남의 이름으로 나왔다. 형과 싸웠고, 나중에는 자기 아들과도 싸웠다.",
+   "태그": [
+    "수학사",
+    "요한베르누이",
+    "로피탈",
+    "최속강하선",
+    "변분법",
+    "오일러",
+    "야코프베르누이",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1667,
+    "사망": 1748,
+    "출생지": "스위스 바젤"
+   },
+   "기여개념": [
+    "concept-calculus-of-variations",
+    "concept-differential-equation"
+   ],
+   "관련일화": [
+    "episode-priority-dispute",
+    "episode-bernoulli-tomb"
+   ],
+   "관련인물": [
+    "person-jakob-bernoulli"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Johann Bernoulli — 생몰(1667년 7월 27일 바젤 출생, 1748년 1월 1일 바젤 사망), 니콜라우스와 마르가레타의 열째 아이이자 야코프의 동생이며 야코프보다 열두 살 아래여서 요한이 아이일 때 야코프는 이미 청년이었다는 것, 아버지가 향신료 사업을 물려주려 했고 1682년 15세에 1년간 향신료 거래에서 일했으나 그 일을 좋아하지 않아 잘하지 못했다는 것, 1683년 아버지가 마지못해 바젤 대학 입학에 동의했고 전공이 의학이었다는 것, 1690년 첫 출판이 발효 과정에 관한 것이었고 1691년 제네바에서 미분법을 강의한 것, 파리 말브랑슈 서클에서 로피탈을 만난 것과 \"흔히 말하는 것과 달리 로피탈은 훌륭한 수학자였고 당시 파리 최고의 수학자였을 것이나 요한 베르누이와 같은 급은 아니었다\"는 서술, 로피탈이 우크의 시골집에서 수업을 받고 후한 보수를 지불한 것과 바젤로 돌아간 뒤에도 편지로 수업을 이어 가며 교수 봉급의 절반을 지불한 것, 그 수업을 바탕으로 로피탈이 최초의 미적분 교과서 『무한소 해석』(1696)을 냈고 그것이 자기 강의에 기반했다는 사실을 밝히지 않아 요한이 크게 언짢아했다는 것과 서문에 \"베르누이 씨들의 여러 빛나는 착상에 빚졌다 — 특히 지금 흐로닝언 교수인 젊은 베르누이 씨에게\"라는 말만 있었다는 것, 하위헌스의 조언으로 흐로닝언 수학 교수직을 제안받아 기쁘게 수락했고 그것이 형 야코프와 대등한 지위가 되는 일이기도 했다는 것, 야코프가 요한의 진전에 몹시 질투하게 되던 참이었으나 잘못이 야코프 쪽에만 있던 것은 아니고 관계 악화에 요한도 똑같이 책임이 있다는 서술, 흐로닝언 임용장이 수학 교수직이면서도 그의 의술을 언급하며 진료 기회를 제안했다는 것, 운동에너지에 관한 역학 기여, 『수력학』의 날짜가 1732로 적혀 있으나 그것이 틀렸으며 자기 아들 다니엘보다 우선권을 얻으려는 시도였다는 것과 다니엘이 1734년 『유체역학』을 완성해 1738년에 냈다는 것, 형과 겨루었듯 이제 자기 아들과 겨루었다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, The brachistochrone problem — 1696년 6월 요한 베르누이가 낸 도전과 갈릴레오의 1638년 오답, 요한 자신을 포함해 다섯 개의 풀이가 나온 것(뉴턴·야코프·라이프니츠·로피탈), 오일러가 1744년 저작으로 이를 일반적 틀에 놓은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Brachistochrone/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(수학백과), 최속강하곡선 — 요한 베르누이가 학술지에 낸 문제와 그 현대적 서술. 다만 출제 연도를 1689년으로 적고 있다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3340694&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(인명사전), 요한 베르누이 — 미적분학·미분방정식·최속강하선에 남긴 업적",
+     "URL": "https://terms.naver.com/entry.naver?docId=881439&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Jacob Bernoulli — 요한이 아버지에게서 의학을 공부하라는 말을 듣고 그것을 공부하면서 형 야코프에게 수학을 가르쳐 달라 청한 것, 두 사람이 라이프니츠의 미적분을 처음으로 이해하고 응용하려 한 사람들이 됐다는 것, 협력이 경쟁으로 바뀌며 야코프가 요한을 \"자기 제자이며 그의 유일한 업적은 스승이 가르친 것을 되풀이한 것뿐\"이라 인쇄물에 쓴 것과 그것이 몹시 부당한 말이라는 평가, 잘못이 양쪽에 똑같이 있었다는 판단, 1705년 야코프가 죽자 바젤의 수학 강좌를 요한이 이어받은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 오일러가 바젤에서 요한 베르누이에게 일요일마다 질문할 수 있었고 요한이 아버지를 설득해 전공을 수학으로 바꾸게 한 것, 변분법을 본격적으로 연 저작의 출판 연도를 1740년으로 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 변분법 — 적분으로 표현된 양을 최소·최대로 만드는 곡선을 찾는 방법이며 무한차원 공간의 문제라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405106&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-johann-bernoulli/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 6242,
+   "시각화": 3
   },
   {
    "유형": "인물",
@@ -4699,7 +4808,9 @@
    "기여인물": [
     "person-euler",
     "person-lagrange",
-    "person-laplace"
+    "person-laplace",
+    "person-dalembert",
+    "person-fourier"
    ],
    "이미지": [
     {
@@ -5040,6 +5151,103 @@
   },
   {
    "유형": "인물",
+   "제목": "장 르 롱 달랑베르",
+   "슬러그": "person-dalembert",
+   "별칭": [
+    "달랑베르",
+    "Jean le Rond d'Alembert",
+    "장르롱달랑베르",
+    "백과전서",
+    "달랑베르 원리",
+    "파동방정식"
+   ],
+   "볼트파일명": "인물_장 르 롱 달랑베르",
+   "세기": [
+    18
+   ],
+   "분야": [
+    "미분방정식",
+    "해석학",
+    "역학"
+   ],
+   "교과": [],
+   "난이도": "표준",
+   "요약": "교회 계단에 버려진 아이가 그 교회 이름을 받았다. 그는 파동방정식을 인쇄물에 처음 실었고, 해석학에 극한이 필요하다는 것을 처음 말했다. 다만 두 가지 다 남이 완성했다.",
+   "태그": [
+    "수학사",
+    "달랑베르",
+    "파동방정식",
+    "백과전서",
+    "극한",
+    "오일러",
+    "진동하는 현",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1717,
+    "사망": 1783,
+    "출생지": "프랑스 파리"
+   },
+   "기여개념": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced"
+   ],
+   "관련인물": [
+    "person-fourier"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Jean Le Rond d'Alembert — 생몰(1717년 11월 17일 파리 출생, 1783년 10월 29일 파리 사망), 아버지가 포병 장교 루이카뮈 데투슈이고 어머니 탕생 부인이 본래 수녀였다가 1714년 교황의 면제를 받아 사교 생활을 시작했다는 것, 그가 사생아였고 아버지가 국외에 있는 동안 어머니가 갓난아이를 생장르롱 교회 계단에 두고 갔으며 그 교회 이름을 따 세례받았다는 것, 아버지가 돌아와 유리장이의 아내 루소 부인에게 맡겼고 친어머니가 끝내 그를 아들로 인정하지 않아 그녀가 늘 그의 어머니였으며 중년까지 그 집에 살았다는 것, 1747년 베를린 아카데미 상을 받은 「바람의 일반적 원인에 관한 고찰」과 오일러가 그 방법의 힘을 알아보고 훨씬 더 발전시켰다는 것, 그의 모든 작업에 전형적인 결함이 수학적으로는 매우 탄탄하나 빈약한 물리적 근거에 기댄 것이라는 서술과 바람이 대기의 조석 효과로 생긴다고 본 예, 진동하는 현 논문이 수학적으로 보기 좋은 단순화를 경계조건에 써서 관측과 어긋나는 결과를 냈다는 별도의 서술, 1747년 진동하는 현에 관한 논문이 파동방정식이 인쇄물에 처음 나타난 것이라는 서술, 클레로와의 다툼이 당시 학술지 지면에서 서로 모욕을 주고받는 데까지 갔다는 것, 다니엘 베르누이가 그를 몹시 비판하게 됐다는 것, 디드로와 『백과전서』를 편집하며 수학과 물리천문학을 맡기로 계약했으나 실제로는 더 넓은 분야를 다뤘고 28권 저작의 수학 항목 대부분을 썼다는 것, 1751년 1권의 서문이 천재적 저작으로 널리 상찬받았고 뷔퐁이 \"인간 지식의 정수\"라 했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/DAlembert/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기 대부분의 수학자들이 미적분학의 응용성에 매료돼 기초가 매우 불충분함에도 수많은 논문을 양산했고 그에 대한 반성이 18세기 말에 나타났으며 엄밀함을 세우는 일이 그 후 100년의 대부분을 차지할 만큼 어려웠다는 서술, 달랑베르가 만족스럽지 못한 상태의 해석학의 기초에 대한 실제적인 구제책을 처음으로 제시했고 그것이 극한 이론이 필요하다는 내용이었으나 그 이론은 1821년에 가서야 진정한 발달이 시작됐다는 것, 미적분학을 엄밀하게 만들려는 실질적 시도를 한 최초의 수학자가 라그랑주라는 것, 1821년 코시가 극한 이론을 발전시켜 달랑베르의 제안을 실행에 옮겼다는 서술, 달랑베르의 생몰을 1717~1785로 적는다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, History of the function concept — 진동하는 현의 파동방정식 해에서 나온 함수의 본성·표현 문제가 달랑베르와 오일러 사이의 다툼거리가 됐다는 것, 오일러가 1748년에 함수를 해석적 표현으로 정의했다가 1755년에 스스로 넓혔다는 것",
+     "URL": "https://en.wikipedia.org/wiki/History_of_the_function_concept",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Differential equation — 진동하는 현을 달랑베르·오일러·다니엘 베르누이·라그랑주가 연구했고 1746년 달랑베르가 1차원 파동방정식을 발견했으며 10년 안에 오일러가 3차원 파동방정식을 발견했다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Differential_equation",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Leonhard Euler — 오일러의 활동 범위와 18세기 해석학에서의 위치",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Augustin-Louis Cauchy — 1821년 『해석학 강의』가 미적분의 기본 정리를 가능한 한 엄밀하게 전개하려 했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 극한 — 수열과 함수의 극한 정의, 극한이 연속성·미분가능성을 정의하는 토대가 된다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338249&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-dalembert/note.md",
+   "세기전체": [
+    18
+   ],
+   "자수": 6551,
+   "시각화": 4
+  },
+  {
+   "유형": "인물",
    "제목": "레온하르트 오일러",
    "슬러그": "person-euler",
    "별칭": [
@@ -5171,6 +5379,106 @@
     18
    ],
    "자수": 6514,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "조제프 푸리에",
+   "슬러그": "person-fourier",
+   "별칭": [
+    "푸리에",
+    "Joseph Fourier",
+    "조제프푸리에",
+    "푸리에 급수",
+    "열방정식",
+    "열의 해석적 이론"
+   ],
+   "볼트파일명": "인물_조제프 푸리에",
+   "세기": [
+    18,
+    19
+   ],
+   "분야": [
+    "해석학",
+    "미분방정식",
+    "수리물리학"
+   ],
+   "교과": [],
+   "난이도": "표준",
+   "요약": "단두대에 갈 뻔했고, 나폴레옹을 따라 이집트에 갔다. 그가 낸 열 이론은 상을 받고도 출판되지 못했다 — 라그랑주와 라플라스를 끝내 설득하지 못했기 때문이다.",
+   "태그": [
+    "수학사",
+    "푸리에",
+    "푸리에급수",
+    "열방정식",
+    "라그랑주",
+    "라플라스",
+    "함수 개념",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1768,
+    "사망": 1830,
+    "출생지": "프랑스 오세르"
+   },
+   "기여개념": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-function"
+   ],
+   "관련인물": [
+    "person-dalembert"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Jean Baptiste Joseph Fourier — 생몰(1768년 3월 21일 오세르 출생, 1830년 5월 16일 파리 사망), 아버지가 오세르의 재단사였고 그가 재혼에서 난 열두 아이 중 아홉째라는 것, 어머니가 그의 아홉 살 때 죽고 아버지가 그 이듬해 죽었다는 것, 1780년 오세르 왕립 군사학교에서 처음에는 문학에 재능을 보였으나 열세 살 무렵 수학이 진짜 관심사가 됐고 열네 살에 베주의 『수학 강의』 여섯 권을 다 뗐다는 것, 1794년 7월 오를레앙 사건 관련 혐의로 체포·투옥돼 단두대를 두려워했으나 로베스피에르가 단두대에 가면서 풀려난 것, 1794년 말 에콜 노르말에 지명돼 1795년 1월 개교 당시 가장 뛰어난 학생이었고 라그랑주를 \"유럽 과학자 중 으뜸\"이라 평하고 라플라스는 덜 높이 평가했으며 몽주를 \"목소리가 크고 활동적이고 독창적이며 매우 박식하다\"고 적은 것, 1797년 라그랑주의 뒤를 이어 해석·역학 강좌 교수가 된 것, 1798년 나폴레옹의 이집트 원정에 과학 고문으로 몽주·말뤼스와 함께 참여한 것, 그르노블 시절 1804년 무렵 시작한 열 이론 연구가 1807년 「고체 내 열의 전파에 관하여」로 완성돼 12월 21일 파리 연구원에서 낭독됐고 라그랑주·라플라스·몽주·라크루아 위원회가 구성된 것, 이 논문이 지금은 매우 높이 평가받지만 당시에는 논란을 일으켰다는 것, 첫 반대가 1808년 라그랑주와 라플라스가 삼각급수 전개에 대해 제기한 것이며 푸리에가 더 설명해도 그들을 설득하지 못했다는 것과 그 설득 실패가 오히려 푸리에 견해의 독창성을 보여 주는 좋은 지표라는 인용, 둘째 반대가 비오의 것이며 비오의 1804년 논문이 분명히 틀렸다는 것과 라플라스·푸아송도 비슷한 반대를 했다는 것, 1811년 수학상에 다른 응모가 하나뿐이었고 라그랑주·라플라스·말뤼스·아위·르장드르 위원회가 상을 주었으나 보고서가 완전히 우호적이지는 않아 \"저자가 이 방정식들에 이르는 방식에 어려움이 없지 않고 그것들을 적분하는 해석은 일반성과 심지어 엄밀성의 측면에서 여전히 아쉬운 점을 남긴다\"고 적었다는 것, 그 어정쩡한 보고서 때문에 파리에서 그의 작업을 출판하려는 움직임이 없었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(인명사전), 푸리에 — 8세에 고아가 되어 수도원의 사제에게 양육됐고 향리의 군학교에 들어가 수학에 비범한 재능을 보였으나 신분상 진학하지 못해 성 부노아 수도원에서 수학을 연구했다는 것, 1789년 혁명으로 신분이 자유로워져 군학교 수학교수가 되고 1795년 파리 사범학교 교수와 에콜폴리테크니크 교수를 역임한 것, 1798년 나폴레옹의 이집트 원정에 종군해 행정에서도 활약했고 1810년 귀국 후 이제르 현 지사를 거쳐 론 현 지사가 된 것, 그 기간에 열전도 이론을 대성하고 푸리에 급수를 설파한 것, 나폴레옹이 엘바로 유배되자 루이 18세에게 충성을 맹세하고 나폴레옹이 탈출해 진군하자 재차 나폴레옹에게 전향하는 등 절조가 굳지 못했으나 처세술에는 능숙했다는 평, 1816년 과학 학사원 일원과 1826년 프랑스 학사원 회원, 『열전도의 이론』이 근세 수리물리학에 일대 혁명을 가져왔다는 평가",
+     "URL": "https://terms.naver.com/entry.naver?docId=886445&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, History of the function concept — 1822년 푸리에가 연속도 아니고 식으로 주어지지도 않은 함수를 급수로 쓸 수 있다고 주장해 판을 뒤집었다는 것, 진동하는 현의 파동방정식 해에서 나온 함수의 본성·표현 문제가 달랑베르와 오일러 사이의 다툼거리가 됐다는 것, 루진이 오해의 근원을 함수와 그 해석적 표현을 같은 것으로 혼동한 데 있다고 진단한 것",
+     "URL": "https://en.wikipedia.org/wiki/History_of_the_function_concept",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Differential equation — 1822년 푸리에가 열의 흐름에 관한 저작을 내며 열방정식을 제시했다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Differential_equation",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Joseph-Louis Lagrange — 라그랑주의 활동과 그가 파리에서 가진 위치",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Pierre-Simon Laplace — 라플라스의 활동과 그가 파리에서 가진 위치",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성과 엄밀함을 세우는 일이 그 후 100년의 대부분을 차지할 만큼 어려웠다는 서술, 1874년 바이어슈트라스가 어느 점에서도 미분가능하지 않은 연속함수의 존재를 보였다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-fourier/note.md",
+   "세기전체": [
+    18,
+    19
+   ],
+   "자수": 6906,
    "시각화": 3
   },
   {
@@ -7317,6 +7625,7 @@
     "person-gregory",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-johann-bernoulli",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -7339,8 +7648,11 @@
     "concept-series-advanced",
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
+    "person-dalembert",
     "person-euler",
+    "person-fourier",
     "person-jakob-bernoulli",
+    "person-johann-bernoulli",
     "person-lagrange",
     "person-laplace",
     "person-leibniz",
@@ -7372,6 +7684,7 @@
     "person-cantor",
     "person-cauchy",
     "person-dedekind",
+    "person-fourier",
     "person-hilbert",
     "person-lagrange",
     "person-laplace",
@@ -7426,9 +7739,11 @@
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
+    "person-dalembert",
     "person-dedekind",
     "person-euler",
     "person-fermat",
+    "person-fourier",
     "person-gregory",
     "person-jakob-bernoulli",
     "person-lagrange",
@@ -7487,6 +7802,7 @@
     "concept-differential-equation-advanced",
     "episode-newton-apple",
     "person-cauchy",
+    "person-dalembert",
     "person-euler",
     "person-huygens",
     "person-lagrange",
@@ -7575,12 +7891,24 @@
     "person-descartes",
     "person-leibniz"
    ],
+   "미분방정식": [
+    "person-dalembert",
+    "person-fourier",
+    "person-johann-bernoulli"
+   ],
+   "수리물리학": [
+    "person-fourier"
+   ],
    "함수해석학": [
     "person-hilbert"
    ],
    "변분법": [
     "person-jakob-bernoulli",
+    "person-johann-bernoulli",
     "person-lagrange"
+   ],
+   "미적분학": [
+    "person-johann-bernoulli"
    ],
    "동역학계": [
     "person-kolmogorov"
@@ -7697,15 +8025,18 @@
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
+    "person-dalembert",
     "person-dedekind",
     "person-descartes",
     "person-euler",
     "person-fermat",
+    "person-fourier",
     "person-godel",
     "person-gregory",
     "person-hilbert",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-johann-bernoulli",
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
@@ -7755,12 +8086,15 @@
     "episode-prague-1834",
     "episode-priority-dispute",
     "person-barrow",
+    "person-dalembert",
     "person-descartes",
     "person-euler",
     "person-fermat",
+    "person-fourier",
     "person-godel",
     "person-gregory",
     "person-hilbert",
+    "person-johann-bernoulli",
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
@@ -7831,7 +8165,9 @@
     "concept-series",
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
+    "person-dalembert",
     "person-euler",
+    "person-johann-bernoulli",
     "person-lagrange",
     "person-laplace",
     "person-leibniz",
@@ -7849,16 +8185,20 @@
     "concept-graph-theory",
     "concept-series",
     "concept-series-advanced",
-    "person-euler"
+    "person-dalembert",
+    "person-euler",
+    "person-johann-bernoulli"
    ],
    "라그랑주": [
     "century-18c",
     "concept-calculus-of-variations",
+    "person-fourier",
     "person-lagrange"
    ],
    "라플라스": [
     "century-18c",
     "concept-probability-advanced",
+    "person-fourier",
     "person-laplace"
    ],
    "해석학": [
@@ -7880,6 +8220,7 @@
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
     "episode-prague-1834",
+    "person-fourier",
     "person-laplace"
    ],
    "엄밀화": [
@@ -7993,7 +8334,8 @@
     "episode-prague-1834"
    ],
    "극한": [
-    "concept-analysis-rigor"
+    "concept-analysis-rigor",
+    "person-dalembert"
    ],
    "실수의 구성": [
     "concept-analysis-rigor-advanced"
@@ -8037,10 +8379,12 @@
    ],
    "변분법": [
     "concept-calculus-of-variations",
+    "person-johann-bernoulli",
     "person-lagrange"
    ],
    "최속강하선": [
-    "concept-calculus-of-variations"
+    "concept-calculus-of-variations",
+    "person-johann-bernoulli"
    ],
    "사이클로이드": [
     "concept-calculus-of-variations"
@@ -8114,16 +8458,19 @@
     "person-leibniz"
    ],
    "파동방정식": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "person-dalembert"
    ],
    "함수개념": [
     "concept-differential-equation-advanced"
    ],
    "달랑베르": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "person-dalembert"
    ],
    "푸리에": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "person-fourier"
    ],
    "디리클레": [
     "concept-differential-equation-advanced",
@@ -8374,6 +8721,12 @@
    "트리니티": [
     "person-barrow"
    ],
+   "백과전서": [
+    "person-dalembert"
+   ],
+   "진동하는 현": [
+    "person-dalembert"
+   ],
    "방법서설": [
     "person-descartes"
    ],
@@ -8392,6 +8745,15 @@
    ],
    "정수론": [
     "person-fermat"
+   ],
+   "푸리에급수": [
+    "person-fourier"
+   ],
+   "열방정식": [
+    "person-fourier"
+   ],
+   "함수 개념": [
+    "person-fourier"
    ],
    "연속체가설": [
     "person-godel"
@@ -8413,6 +8775,15 @@
    ],
    "괴팅겐": [
     "person-hilbert"
+   ],
+   "요한베르누이": [
+    "person-johann-bernoulli"
+   ],
+   "로피탈": [
+    "person-johann-bernoulli"
+   ],
+   "야코프베르누이": [
+    "person-johann-bernoulli"
    ],
    "공리": [
     "person-kolmogorov"
@@ -8581,7 +8952,13 @@
     "episode-bernoulli-tomb",
     "person-euler",
     "person-huygens",
+    "person-johann-bernoulli",
     "person-leibniz"
+   ],
+   "person-johann-bernoulli": [
+    "concept-calculus-of-variations",
+    "concept-differential-equation",
+    "person-jakob-bernoulli"
    ],
    "person-lagrange": [
     "concept-calculus-of-variations",
@@ -8596,9 +8973,6 @@
    "갈릴레오": [
     "concept-calculus-of-variations"
    ],
-   "요한 베르누이": [
-    "concept-calculus-of-variations"
-   ],
    "가우스": [
     "concept-complex-number",
     "concept-complex-number-advanced",
@@ -8610,10 +8984,11 @@
    "카르다노": [
     "concept-complex-number"
    ],
-   "달랑베르": [
+   "person-dalembert": [
     "concept-complex-number-advanced",
     "concept-differential-equation",
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "person-fourier"
    ],
    "아르강": [
     "concept-complex-number-advanced"
@@ -8627,6 +9002,12 @@
    ],
    "코시·리만": [
     "concept-complex-number-advanced"
+   ],
+   "person-fourier": [
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-function",
+    "person-dalembert"
    ],
    "person-huygens": [
     "concept-differential-equation",
@@ -8672,10 +9053,6 @@
    ],
    "융기우스": [
     "concept-differential-equation"
-   ],
-   "푸리에": [
-    "concept-differential-equation",
-    "concept-differential-equation-advanced"
    ],
    "person-laplace": [
     "concept-differential-equation-advanced",
@@ -8887,6 +9264,12 @@
     {
      "슬러그": "person-gregory",
      "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "관련일화"
     },
@@ -10223,6 +10606,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-fourier",
+     "제목": "조제프 푸리에",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -10351,6 +10740,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-dalembert",
+     "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-dedekind",
      "제목": "리하르트 데데킨트",
      "유형": "인물",
@@ -10401,8 +10796,20 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "person-dalembert",
+     "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-fourier",
+     "제목": "조제프 푸리에",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -10415,6 +10822,12 @@
     {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -10491,6 +10904,12 @@
     {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -10743,6 +11162,12 @@
      "제목": "1834년 프라하",
      "유형": "일화",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-fourier",
+     "제목": "조제프 푸리에",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-differential-equation-advanced": [
@@ -10771,8 +11196,20 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-dalembert",
+     "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-fourier",
+     "제목": "조제프 푸리에",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -10990,6 +11427,18 @@
      "슬러그": "concept-series-advanced",
      "제목": "무한급수 확장편",
      "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-dalembert",
+     "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
+     "유형": "인물",
      "경로": "본문"
     },
     {
@@ -11581,8 +12030,34 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-johann-bernoulli": [
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-jakob-bernoulli",
+     "제목": "야코프 베르누이",
      "유형": "인물",
      "경로": "관련인물"
     }
@@ -11695,6 +12170,52 @@
      "경로": "관련인물"
     }
    ],
+   "person-dalembert": [
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-fourier",
+     "제목": "조제프 푸리에",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-fourier": [
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-dalembert",
+     "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
    "episode-koenigsberg-1930": [
     {
      "슬러그": "person-godel",
@@ -11721,6 +12242,12 @@
     {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "관련일화"
     }
@@ -12069,6 +12596,14 @@
   "인물_오귀스탱루이 코시": "person-cauchy",
   "코시": "person-cauchy",
   "코시 수열": "person-cauchy",
+  "Jean le Rond d'Alembert": "person-dalembert",
+  "person-dalembert": "person-dalembert",
+  "달랑베르": "person-dalembert",
+  "달랑베르 원리": "person-dalembert",
+  "백과전서": "person-dalembert",
+  "인물_장 르 롱 달랑베르": "person-dalembert",
+  "장 르 롱 달랑베르": "person-dalembert",
+  "장르롱달랑베르": "person-dalembert",
   "Richard Dedekind": "person-dedekind",
   "person-dedekind": "person-dedekind",
   "데데킨트": "person-dedekind",
@@ -12096,6 +12631,15 @@
   "페르마": "person-fermat",
   "피에르 드 페르마": "person-fermat",
   "피에르페르마": "person-fermat",
+  "Joseph Fourier": "person-fourier",
+  "person-fourier": "person-fourier",
+  "열방정식": "person-fourier",
+  "열의 해석적 이론": "person-fourier",
+  "인물_조제프 푸리에": "person-fourier",
+  "조제프 푸리에": "person-fourier",
+  "조제프푸리에": "person-fourier",
+  "푸리에": "person-fourier",
+  "푸리에 급수": "person-fourier",
   "Kurt Gödel": "person-godel",
   "person-godel": "person-godel",
   "괴델": "person-godel",
@@ -12140,6 +12684,13 @@
   "인물_야코프 베르누이": "person-jakob-bernoulli",
   "자코브 베르누이": "person-jakob-bernoulli",
   "추측술": "person-jakob-bernoulli",
+  "Johann Bernoulli": "person-johann-bernoulli",
+  "person-johann-bernoulli": "person-johann-bernoulli",
+  "로피탈의 스승": "person-johann-bernoulli",
+  "오일러의 스승": "person-johann-bernoulli",
+  "요한 베르누이": "person-johann-bernoulli",
+  "요한베르누이": "person-johann-bernoulli",
+  "인물_요한 베르누이": "person-johann-bernoulli",
   "Andrey Kolmogorov": "person-kolmogorov",
   "KAM 이론": "person-kolmogorov",
   "person-kolmogorov": "person-kolmogorov",

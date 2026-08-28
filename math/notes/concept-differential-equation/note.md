@@ -40,8 +40,8 @@
     출처: 6
 
 선행개념: [concept-differentiation, concept-integration]
-후속개념: [concept-function, ]
-기여인물: [person-newton, person-leibniz, person-euler, person-lagrange, person-jakob-bernoulli, person-huygens]
+후속개념: [concept-function]
+기여인물: [person-newton, person-leibniz, person-euler, person-lagrange, person-jakob-bernoulli, person-huygens, person-dalembert, person-fourier, person-johann-bernoulli]
 
 출처:
   - 번호: 1
