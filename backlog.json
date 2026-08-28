@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 233,
- "resolved": 1024,
- "pending": 548,
+ "scanned": 234,
+ "resolved": 1045,
+ "pending": 547,
  "counts": {
-  "new": 258,
+  "new": 257,
   "companion": 5,
   "gap": 0
  },
@@ -4534,21 +4534,6 @@
     {
      "t": "미분방정식",
      "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "페터 구스타프 르죈 디리클레",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식 확장편",
-     "u": "math/#n=concept-differential-equation-advanced",
      "s": "math",
      "n": 1
     }

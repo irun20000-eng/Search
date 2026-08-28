@@ -13,7 +13,7 @@
 사실성: 확실
 사실성근거: 착상의 날짜(1858년 11월 24일)와 그것이 첫 미적분 강의 준비 중이었다는 것은 MacTutor 전기[1]와 데데킨트 본인의 1872년 서문[2]이 함께 적는다. 본인이 남긴 1차 기록이 있는 드문 경우다. 다만 "그날 하루에 완성했다"는 식으로 읽으면 과장이다 — 본인은 착상한 날을 적었을 뿐이고 출판까지는 14년이 걸렸다[1][4]. 디리클레의 추천서 문구도 MacTutor 가 적는다[1].
 
-관련인물: [person-dedekind]
+관련인물: [person-dedekind, person-dirichlet]
 관련개념: [concept-analysis-rigor, concept-analysis-rigor-advanced]
 
 출처:
