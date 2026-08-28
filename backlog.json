@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 232,
- "resolved": 1008,
- "pending": 549,
+ "scanned": 233,
+ "resolved": 1024,
+ "pending": 548,
  "counts": {
-  "new": 259,
+  "new": 258,
   "companion": 5,
   "gap": 0
  },
@@ -4601,21 +4601,6 @@
   },
   {
    "name": "카를 프리드리히 가우스",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "확률론 확장편",
-     "u": "math/#n=concept-probability-advanced",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "아브라암 드무아브르",
    "count": 1,
    "kind": "new",
    "target": null,

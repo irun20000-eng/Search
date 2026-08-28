@@ -17,7 +17,7 @@
   출생지: 프랑스 노르망디 보몽앙오주
 
 기여개념: [concept-probability-advanced, concept-probability, concept-differential-equation-advanced, concept-integration]
-관련인물: [person-lagrange, person-cauchy, person-bayes]
+관련인물: [person-lagrange, person-cauchy, person-bayes, person-de-moivre]
 관련일화: []
 
 출처:

@@ -17,7 +17,7 @@
   출생지: 잉글랜드 런던
 
 기여개념: [concept-probability-advanced, concept-differentiation-advanced]
-관련인물: [person-laplace]
+관련인물: [person-laplace, person-de-moivre]
 
 출처:
   - 번호: 1

@@ -17,7 +17,7 @@
   출생지: 스위스 바젤
 
 기여개념: [concept-calculus-of-variations, concept-differential-equation]
-관련인물: [person-jakob-bernoulli]
+관련인물: [person-jakob-bernoulli, person-de-moivre]
 관련일화: [episode-priority-dispute, episode-bernoulli-tomb]
 
 출처:

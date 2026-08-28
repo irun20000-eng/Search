@@ -13,7 +13,7 @@
 사실성: 확실
 사실성근거: 1712년 왕립학회 조사와 1713년 보고서 『서한 왕래』가 문서로 남아 있고, 뉴턴이 학회장으로서 조사에 관여한 사실도 기록으로 확인된다[1]. 오늘날 학계의 결론은 독립 발견이다[1][2].
 
-관련인물: [person-newton, person-leibniz]
+관련인물: [person-newton, person-leibniz, person-de-moivre]
 관련개념: [concept-differentiation]
 
 출처:

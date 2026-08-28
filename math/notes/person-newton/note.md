@@ -17,7 +17,7 @@
   출생지: 잉글랜드 링컨셔 울즈소프
 
 기여개념: [concept-differentiation, concept-integration, concept-fundamental-theorem, concept-differential-equation]
-관련인물: [person-leibniz, person-barrow, person-huygens]
+관련인물: [person-leibniz, person-barrow, person-huygens, person-de-moivre]
 관련일화: [episode-newton-apple, episode-priority-dispute]
 
 출처:
