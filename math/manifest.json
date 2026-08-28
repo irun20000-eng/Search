@@ -2804,6 +2804,7 @@
     "concept-real-analysis"
    ],
    "기여인물": [
+    "person-de-moivre",
     "person-bayes",
     "person-laplace",
     "person-jakob-bernoulli",
@@ -3044,6 +3045,123 @@
     17
    ],
    "자수": 6034,
+   "시각화": 4
+  },
+  {
+   "유형": "인물",
+   "제목": "아브라암 드무아브르",
+   "슬러그": "person-de-moivre",
+   "별칭": [
+    "드무아브르",
+    "De Moivre",
+    "Abraham de Moivre",
+    "아브라함 드무아브르",
+    "드무아브르의 정리",
+    "우연의 교리"
+   ],
+   "볼트파일명": "인물_아브라암 드무아브르",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "확률론",
+    "복소수",
+    "해석학"
+   ],
+   "교과": [
+    "확률과 통계",
+    "기하"
+   ],
+   "난이도": "표준",
+   "요약": "프랑스가 종교를 이유로 20만 명을 내보냈고 그중 하나가 런던에서 뉴턴의 친구가 됐다. 그런데 영국은 끝내 그에게 대학 자리를 주지 않았다. 종교 차별을 피해 갔더니 국적 차별이 기다렸다.",
+   "태그": [
+    "수학사",
+    "드무아브르",
+    "위그노",
+    "낭트칙령",
+    "확률론",
+    "우연의교리",
+    "정규분포",
+    "스털링공식",
+    "뉴턴",
+    "17세기",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1667,
+    "사망": 1754,
+    "출생지": "프랑스 샹파뉴 비트리르프랑수아"
+   },
+   "기여개념": [
+    "concept-probability-advanced",
+    "concept-complex-number-advanced"
+   ],
+   "관련일화": [
+    "episode-priority-dispute"
+   ],
+   "관련인물": [
+    "person-bayes",
+    "person-laplace",
+    "person-newton",
+    "person-johann-bernoulli"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Abraham de Moivre — 생몰(1667년 5월 26일 샹파뉴 비트리르프랑수아 출생, 1754년 11월 27일 런던 사망)과 아버지가 외과의였다는 것, 개신교도 부모인데도 비트리의 관용적인 가톨릭 학교에 먼저 다녔고 열한 살에 스당 개신교 아카데미로 보내져 뒤 롱델에게 그리스어를 4년 배웠다는 것, 1682년 스당 아카데미가 폐쇄돼 1684년까지 소뮈르에서 논리학을 공부했고 수학이 교과에 없었는데도 혼자 수학책을 읽었으며 특히 하위헌스의 『주사위 놀이에서의 추론』을 읽었다는 것, 1685년 낭트칙령 폐지 뒤 성 마르탱 수도원에 갇혔고 언제까지 있었는지가 전기마다 갈린다는 것, 런던에 와서 개인 수학 교사가 되어 학생 집을 다니고 커피하우스에서 가르쳤다는 것, 데번셔 백작을 찾아갔다가 뉴턴의 『프린키피아』를 보고 한 부를 사서 책장을 잘라 늘 몇 장씩 지니고 다니며 학생 사이를 오가는 동안 읽었다는 것, 수학 교수 자리를 바랐으나 영국에서 외국인이 불리했고 종교 차별에서는 벗어났어도 프랑스인이라는 차별을 받았다는 것, 1692년 무렵 핼리를 알게 되고 곧 뉴턴과 친해졌으며 1695년 3월 핼리가 첫 논문 「유율법」을 왕립학회에 전달했고 1697년 회원으로 선출됐다는 것, 뉴턴–라이프니츠 우선권 위원회에 뉴턴과의 친분으로 임명됐고 \"왕립학회는 자기가 원하는 답을 알고 있었다\"는 것, 『우연의 교리』가 1711년 라틴판을 거쳐 1718·1738·1756년 판으로 나왔고 프랜시스 로바츠가 몽모르(1708)보다 넓은 그림을 제안했으며 몽모르와의 우선권 다툼은 원만히 정리된 것으로 보인다는 것, 이 책에 통계적 독립의 정의가 나온다는 것, 정규 근사를 1733년 11월 13일 라틴어 소책자로 먼저 냈고 야코프 베르누이의 큰 수의 법칙을 개선하려는 것이었다는 것, 「생명 연금」(1724)이 핼리의 자료에 기댔다는 것, 『해석 잡록』(1730)에 스털링 공식이 나오는데 스털링에게 잘못 귀속됐고 『해석 잡록』 2판(1738)에서 드무아브르가 스털링의 개선에 공을 돌리며 \"나는 더 나아가기를 그만두고 있었다 — 나보다 뒤에 이 탐구에 손댄 나의 훌륭하고 학식 있는 친구 제임스 스털링 씨가 [c=√(2π)임을 발견하기] 전까지는\"이라 적었다는 것, 주 수입이 개인 교습이었고 가난하게 죽었으며 케임브리지 자리를 얻으려 요한 베르누이를 통해 라이프니츠에게 지지를 부탁해 1710년에 그렇게 됐다는 것, 뉴턴과 핼리 같은 영향력 있는 친구들도 그에게 대학 자리를 얻어 주지 못했다는 것, 뉴턴이 저녁마다 커피하우스에서 그를 데려와 자기 집에서 담론했다는 클라크의 서술, 뉴턴이 『프린키피아』를 묻는 사람들에게 \"드무아브르 씨에게 가시오, 그가 나보다 이런 것들을 더 잘 압니다\"라고 했다는 것, 결혼하지 않았고 문학이 소일거리였으며 \"뉴턴이기보다 몰리에르이고 싶다\"고 한 번 말했다는 것, 시력과 청력을 차례로 잃은 뒤에도 1754년 6월 27일 파리 과학원 외국인 회원 선출에 황홀해했다는 것, 매일 밤 15분씩 더 자는 것을 알고 등차수열의 합으로 자기 죽는 날을 계산했다는 이야기",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/De_Moivre/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Abraham de Moivre — 성 마르탱 수도원이 당국이 개신교도 아이들을 가톨릭으로 교화하려고 보내던 학교였다는 것과, 기록상 그가 1688년에 그곳을 떠난 것으로 되어 있는데 그와 동생이 1687년 8월 28일 런던 사보이 교회에 위그노로 등록했다는 기록이 있어 시점이 불분명하다는 것, 『프린키피아』의 책장을 찢어 주머니에 넣고 수업 사이에 읽었다는 것, 뉴턴이 수학 질문을 받으면 \"그가 나보다 이런 것들을 다 더 잘 안다\"며 드무아브르에게 보냈다는 이야기가 \"출처가 의심스러울 수 있는 이야기\"라는 것, 1697년 뉴턴의 이항정리를 다항정리로 일반화한 것이 알려져 11월 30일 왕립학회 회원으로 선출됐다는 것, 1712년 우선권 위원회에 아버스넛·힐·핼리·존스·매친 등과 함께 임명됐다는 것, 프랑스 출신이라는 편견이 대학 자리를 얻지 못한 이유의 적어도 일부였다는 것, 평생 가난했고 슬로터스 커피하우스의 단골로 체스를 두어 약간의 돈을 벌었다는 것, 1733년 n!≈c·n^(n+1/2)·e^(−n) 을 제안했으나 상수 c의 근삿값만 얻었고 c=√(2π)를 찾은 것은 스털링이라는 것, 『우연의 교리』가 확률론의 두 번째 교과서이며 카르다노의 『주사위 놀이에 관하여』가 1560년대에 쓰여 1663년에야 출판됐다는 것, 중심극한정리를 처음 상정하고 특수한 경우를 증명했다는 것, 피보나치 수의 닫힌 형태(비네 공식)를 처음 발견했다는 것, 푸아송 분포의 일부 결과를 먼저 냈다는 것, 죽는 날을 계산했다는 주장이 당대의 어느 기록에도 남아 있지 않다는 점에서 의심받는다는 것, 1754년 11월 27일 런던에서 죽어 세인트마틴인더필즈에 묻혔다가 나중에 이장됐다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Abraham_de_Moivre",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(프랑스사, 김복래), 침울한 가톨릭의 르네상스(낭트 칙령의 폐지) — 루이 14세가 1680년대에 국내 위그노 탄압을 개시하고 1685년 신교의 자유를 약속한 낭트 칙령을 폐지했다는 것, 그 철회로 대략 20만 명의 신교도 상공인과 기술자가 해외로 이주해 프랑스의 공장제 수공업과 무역 회사가 타격을 입었다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1007115&cid=62118&categoryId=62118",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(종교학대사전, 한국사전연구사), 위그노 — 종교개혁기부터 프랑스 혁명까지의 프랑스 칼뱅파 신도를 가리키며, 가톨릭 기즈당이 경멸의 호칭으로 쓰기 시작했고 어원은 \"서약동료\"를 뜻하는 독일어 Eidgenosse의 제네바 방언에서 왔다는 설이 유력하다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=630580&cid=50766&categoryId=50794",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과), 드무아브르 라플라스 정리 — 이항분포에서 시행횟수가 크고 성공 확률이 적당한 범위에 있을 때 정규분포로 근삿값을 구할 수 있다는 결과이고 중심극한정리의 특별한 경우이며, 1733년 드무아브르가 p=1/2인 경우를 증명하고 1812년 라플라스가 일반적인 경우로 넓혔다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125247&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 드무아브르의 정리 — 복소평면의 단위원 위의 복소수를 극형식으로 나타냈을 때 얻는 (cos θ + i sin θ)^n = cos nθ + i sin nθ",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338252&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Edmond Halley — 핼리가 1693년 브레슬라우시의 사망률 표를 출판했고 그것이 인구에서 사망률과 나이를 연결한 가장 이른 작업의 하나로 뒷날 생명보험 계리표 작성에 큰 영향을 주었다는 것, 1691년 옥스퍼드의 빈 새빌 천문학 석좌에 지원했으나 데이비드 그레고리에게 갔고 대학 자리가 없다는 것이 그의 연구를 막지는 않았다는 것, 1704년 월리스가 죽은 뒤 옥스퍼드 새빌 기하학 교수로 임명됐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Halley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Thomas Bayes — 사후에 나온 점근급수 논문에서 스털링과 드무아브르가 준 log z! 의 급수가 발산하므로 타당하지 않음을 보였다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-de-moivre/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 7752,
    "시각화": 4
   },
   {
@@ -3630,7 +3748,8 @@
     "episode-bernoulli-tomb"
    ],
    "관련인물": [
-    "person-jakob-bernoulli"
+    "person-jakob-bernoulli",
+    "person-de-moivre"
    ],
    "출처": [
     {
@@ -3853,7 +3972,8 @@
    "관련인물": [
     "person-leibniz",
     "person-barrow",
-    "person-huygens"
+    "person-huygens",
+    "person-de-moivre"
    ],
    "출처": [
     {
@@ -4337,7 +4457,8 @@
    "사실성근거": "1712년 왕립학회 조사와 1713년 보고서 『서한 왕래』가 문서로 남아 있고, 뉴턴이 학회장으로서 조사에 관여한 사실도 기록으로 확인된다[1]. 오늘날 학계의 결론은 독립 발견이다[1][2].",
    "관련인물": [
     "person-newton",
-    "person-leibniz"
+    "person-leibniz",
+    "person-de-moivre"
    ],
    "관련개념": [
     "concept-differentiation"
@@ -4636,7 +4757,8 @@
    ],
    "기여인물": [
     "person-euler",
-    "person-lagrange"
+    "person-lagrange",
+    "person-de-moivre"
    ],
    "출처": [
     {
@@ -5200,7 +5322,8 @@
     "concept-differentiation-advanced"
    ],
    "관련인물": [
-    "person-laplace"
+    "person-laplace",
+    "person-de-moivre"
    ],
    "출처": [
     {
@@ -5757,7 +5880,8 @@
    "관련인물": [
     "person-lagrange",
     "person-cauchy",
-    "person-bayes"
+    "person-bayes",
+    "person-de-moivre"
    ],
    "출처": [
     {
@@ -7725,6 +7849,7 @@
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
     "person-barrow",
+    "person-de-moivre",
     "person-descartes",
     "person-fermat",
     "person-gregory",
@@ -7755,6 +7880,7 @@
     "episode-priority-dispute",
     "person-bayes",
     "person-dalembert",
+    "person-de-moivre",
     "person-euler",
     "person-fourier",
     "person-jakob-bernoulli",
@@ -7847,6 +7973,7 @@
     "person-cantor",
     "person-cauchy",
     "person-dalembert",
+    "person-de-moivre",
     "person-dedekind",
     "person-euler",
     "person-fermat",
@@ -7881,6 +8008,7 @@
     "concept-probability-advanced",
     "episode-pascal-fermat-letters",
     "person-bayes",
+    "person-de-moivre",
     "person-fermat",
     "person-huygens",
     "person-jakob-bernoulli",
@@ -8004,6 +8132,9 @@
     "person-fourier",
     "person-johann-bernoulli"
    ],
+   "복소수": [
+    "person-de-moivre"
+   ],
    "수리물리학": [
     "person-fourier"
    ],
@@ -8052,6 +8183,7 @@
    ],
    "기하": [
     "concept-analytic-geometry-advanced",
+    "person-de-moivre",
     "person-euler"
    ],
    "공통수학1": [
@@ -8073,6 +8205,7 @@
    "확률과 통계": [
     "concept-probability",
     "person-bayes",
+    "person-de-moivre",
     "person-huygens",
     "person-jakob-bernoulli",
     "person-kolmogorov",
@@ -8136,6 +8269,7 @@
     "person-cantor",
     "person-cauchy",
     "person-dalembert",
+    "person-de-moivre",
     "person-dedekind",
     "person-descartes",
     "person-euler",
@@ -8198,6 +8332,7 @@
     "person-barrow",
     "person-bayes",
     "person-dalembert",
+    "person-de-moivre",
     "person-descartes",
     "person-euler",
     "person-fermat",
@@ -8230,6 +8365,7 @@
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
     "person-barrow",
+    "person-de-moivre",
     "person-descartes",
     "person-fermat",
     "person-gregory",
@@ -8278,6 +8414,7 @@
     "episode-priority-dispute",
     "person-bayes",
     "person-dalembert",
+    "person-de-moivre",
     "person-euler",
     "person-johann-bernoulli",
     "person-lagrange",
@@ -8558,6 +8695,7 @@
     "episode-newton-apple",
     "episode-priority-dispute",
     "person-barrow",
+    "person-de-moivre",
     "person-newton"
    ],
    "라이프니츠": [
@@ -8679,6 +8817,7 @@
    "확률론": [
     "concept-integration-advanced",
     "concept-probability-advanced",
+    "person-de-moivre",
     "person-kolmogorov",
     "person-laplace"
    ],
@@ -8712,7 +8851,8 @@
     "concept-probability-advanced"
    ],
    "정규분포": [
-    "concept-probability-advanced"
+    "concept-probability-advanced",
+    "person-de-moivre"
    ],
    "무한급수": [
     "concept-series",
@@ -8850,6 +8990,21 @@
    ],
    "진동하는 현": [
     "person-dalembert"
+   ],
+   "드무아브르": [
+    "person-de-moivre"
+   ],
+   "위그노": [
+    "person-de-moivre"
+   ],
+   "낭트칙령": [
+    "person-de-moivre"
+   ],
+   "우연의교리": [
+    "person-de-moivre"
+   ],
+   "스털링공식": [
+    "person-de-moivre"
    ],
    "방법서설": [
     "person-descartes"
@@ -9082,6 +9237,7 @@
    "person-johann-bernoulli": [
     "concept-calculus-of-variations",
     "concept-differential-equation",
+    "person-de-moivre",
     "person-jakob-bernoulli"
    ],
    "person-lagrange": [
@@ -9107,6 +9263,15 @@
    ],
    "카르다노": [
     "concept-complex-number"
+   ],
+   "person-de-moivre": [
+    "concept-complex-number-advanced",
+    "concept-probability-advanced",
+    "episode-priority-dispute",
+    "person-bayes",
+    "person-johann-bernoulli",
+    "person-laplace",
+    "person-newton"
    ],
    "person-dalembert": [
     "concept-complex-number-advanced",
@@ -9169,6 +9334,7 @@
     "episode-newton-apple",
     "episode-priority-dispute",
     "person-barrow",
+    "person-de-moivre",
     "person-huygens",
     "person-leibniz"
    ],
@@ -9183,6 +9349,7 @@
     "concept-probability-advanced",
     "person-bayes",
     "person-cauchy",
+    "person-de-moivre",
     "person-lagrange"
    ],
    "디리클레": [
@@ -9206,6 +9373,7 @@
    "person-bayes": [
     "concept-differentiation-advanced",
     "concept-probability-advanced",
+    "person-de-moivre",
     "person-laplace"
    ],
    "로빈슨": [
@@ -9258,9 +9426,6 @@
    ],
    "파스칼·페르마": [
     "concept-probability"
-   ],
-   "드무아브르": [
-    "concept-probability-advanced"
    ],
    "르장드르": [
     "concept-probability-advanced"
@@ -9373,6 +9538,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
      "유형": "인물",
      "경로": "관련일화"
     },
@@ -10067,6 +10238,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -10149,6 +10326,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
      "유형": "인물",
      "경로": "본문"
     },
@@ -11141,6 +11324,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
      "유형": "인물",
@@ -11249,6 +11438,12 @@
     {
      "슬러그": "person-cauchy",
      "제목": "오귀스탱루이 코시",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
      "유형": "인물",
      "경로": "관련인물"
     },
@@ -11583,6 +11778,12 @@
     {
      "슬러그": "person-dalembert",
      "제목": "장 르 롱 달랑베르",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
      "유형": "인물",
      "경로": "본문"
     },
@@ -12207,6 +12408,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
      "유형": "인물",
@@ -12233,10 +12440,60 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "기여개념"
+    }
+   ],
+   "person-de-moivre": [
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-probability-advanced",
+     "제목": "확률론 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-priority-dispute",
+     "제목": "뉴턴–라이프니츠 우선권 논쟁",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-bayes",
+     "제목": "토마스 베이즈",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-newton",
+     "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "person-gregory": [
@@ -12379,6 +12636,12 @@
      "제목": "확률론 확장편",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-laplace",
@@ -12790,6 +13053,15 @@
   "인물_장 르 롱 달랑베르": "person-dalembert",
   "장 르 롱 달랑베르": "person-dalembert",
   "장르롱달랑베르": "person-dalembert",
+  "Abraham de Moivre": "person-de-moivre",
+  "De Moivre": "person-de-moivre",
+  "person-de-moivre": "person-de-moivre",
+  "드무아브르": "person-de-moivre",
+  "드무아브르의 정리": "person-de-moivre",
+  "아브라암 드무아브르": "person-de-moivre",
+  "아브라함 드무아브르": "person-de-moivre",
+  "우연의 교리": "person-de-moivre",
+  "인물_아브라암 드무아브르": "person-de-moivre",
   "Richard Dedekind": "person-dedekind",
   "person-dedekind": "person-dedekind",
   "데데킨트": "person-dedekind",
