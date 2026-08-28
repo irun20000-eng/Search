@@ -1049,7 +1049,8 @@
     "person-cantor",
     "person-weierstrass",
     "person-cauchy",
-    "person-bolzano"
+    "person-bolzano",
+    "person-hilbert"
    ],
    "출처": [
     {
@@ -2610,7 +2611,8 @@
     "person-pascal",
     "person-fermat",
     "person-huygens",
-    "person-jakob-bernoulli"
+    "person-jakob-bernoulli",
+    "person-kolmogorov"
    ],
    "출처": [
     {
@@ -2791,7 +2793,8 @@
    ],
    "기여인물": [
     "person-laplace",
-    "person-jakob-bernoulli"
+    "person-jakob-bernoulli",
+    "person-kolmogorov"
    ],
    "이미지": [
     {
@@ -6259,6 +6262,119 @@
   },
   {
    "유형": "인물",
+   "제목": "다비트 힐베르트",
+   "슬러그": "person-hilbert",
+   "별칭": [
+    "힐베르트",
+    "David Hilbert",
+    "다비트힐베르트",
+    "힐베르트 프로그램",
+    "힐베르트의 23문제",
+    "형식주의",
+    "힐베르트 공간"
+   ],
+   "볼트파일명": "인물_다비트 힐베르트",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "수학기초론",
+    "기하학",
+    "대수학",
+    "함수해석학"
+   ],
+   "교과": [],
+   "난이도": "표준",
+   "요약": "1900년에 그는 \"모든 수학 문제는 반드시 엄밀하게 해결될 수 있다\"고 공언했다 — 본인도 아직 아무도 증명하지 못한 확신이라 괄호에 적었다. 31년 뒤 스물넷의 젊은이가 그것이 아님을 증명했다.",
+   "태그": [
+    "수학사",
+    "힐베르트",
+    "형식주의",
+    "공리주의",
+    "23문제",
+    "괴델",
+    "괴팅겐",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1862,
+    "사망": 1943,
+    "출생지": "프로이센 벨라우(쾨니히스베르크 인근, 지금의 러시아 칼리닌그라드 주)"
+   },
+   "기여개념": [
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련인물": [
+    "person-godel",
+    "person-kolmogorov"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, David Hilbert — 생몰(1862년 1월 23일 쾨니히스베르크 인근 벨라우 출생, 1943년 2월 14일 괴팅겐 사망), 쾨니히스베르크에서 민코프스키·후르비츠와 맺은 우정과 린데만 아래에서의 1884년 학위, 클라인의 권유로 간 1886년 파리 방문과 에르미트를 두 번 찾아간 것 및 관광을 하나도 적지 않았다는 것, 돌아오는 길에 슈바르츠에게서 크로네커의 냉대를 각오하라는 조언을 들었으나 베를린의 환대를 매우 다정했다고 적은 것, 클라인의 만류에도 쾨니히스베르크에서 교수자격을 얻기로 하고 \"만족스럽고 기쁩니다\"라고 써 보낸 것, 1895년 괴팅겐 부임 이후 평생 재직, 1899년 『기하학의 기초』가 유클리드 기하의 공리를 체계적으로 연구해 21개 공리를 제안하고 20세기 내내 수학의 특징이 된 공리적 접근을 널리 퍼뜨렸다는 것, 1900년 파리 제2회 국제수학자대회 「수학의 문제들」 강연이 다가올 세기에 대한 낙관으로 가득했고 미해결 문제가 학문의 활력을 보여 준다고 여겼다는 것과 그 강연의 인용, 파리 문제들이 오늘까지도 도전 과제로 남았다는 것, 1909년 적분방정식 연구가 20세기 함수해석학으로 이어지고 힐베르트 공간의 바탕이 됐다는 것, 1930년 은퇴와 쾨니히스베르크시의 명예시민증 및 여섯 단어로 끝난 연설, 1933년 나치 집권으로 괴팅겐이 완전히 달라지고 유대인 강사들이 해임돼 그해 가을까지 대부분이 떠나거나 쫓겨난 것, 은퇴 뒤에도 1933~34년 겨울학기에 기하학의 기초를 주 1회 강의했고 그 강의를 마친 뒤 다시는 연구소에 발을 들이지 않은 것, 1942년 초 넘어져 팔이 부러진 것, 『수학의 기초』 두 권이 1934년과 1939년에 나왔고 그것이 겨냥한 직접적 무모순성 증명이라는 목표를 1931년 괴델의 논문이 불가능하게 만들었다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor History of Mathematics, Hilbert's Problems — 1900년 8월 8일 파리 강연에서 23개 중 10개를 소개했고 전체 23개는 학회 논문집에 실린 논문에서 나왔다는 것, 강연은 독일어였으나 논문집의 논문은 프랑스어라는 것, 초고에 있던 24번째 문제(\"증명의 단순성\")를 힐베르트가 취소했다는 것, 제1문제가 연속체의 크기, 제2문제가 산술 공리의 무모순성, 제6문제가 물리학의 공리라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(365일 수학, 대한수학회), 힐베르트의 23문제 — 수학이 어떤 학문이며 어떠해야 하는지를 체계적으로 논한 것이 그의 이름을 불멸로 만든 업적이라는 평가, 형식주의를 \"공리에서 출발하여 실질적 내용과 무관하게 형식적인 논리에 따라 결론을 이끌어내는 일종의 놀이\"로 설명한 것, 20세기 이후 현대 수학이 형식주의에 따라 발전해 왔다는 서술, 그가 수학을 \"계산하는 학문\"이 아니라 \"논리적 구조를 파악하는 학문\"으로 재정립했다는 평가, 23개 문제가 수리논리·정수론·대수학·기하학과 물리학의 공리화에까지 걸쳐 있다는 것, 그 문제들이 정답을 구하는 문제가 아니라 \"이런 걸 한번 연구해 보라\"를 뜻한다는 것, 제7문제의 2^√2 예와 힐베르트 자신도 답을 몰랐다는 것 및 30년쯤 뒤 겔폰트와 슈나이더가 해결했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5665510&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학산책), 힐베르트의 23가지 문제 — 국제수학자회의(ICM)가 1893년 시카고 모임에서 시작해 1897년 취리히에서 1회, 1900년 파리에서 2회가 열렸다는 것, 가우스가 죽은 뒤 그런 인물이 다시 나오지 않으리라 여겨 수학자들이 당황했고 푸앵카레와 힐베르트가 등장하며 그 걱정이 풀렸다는 서술, 1900년 당시 힐베르트가 기하학의 기초 확립으로 유명했다는 것, 그가 23개 문제가 다가오는 100년 동안 수학자들을 바쁘게 만들고 미래 수학의 방향을 제시하리라 생각했다는 것, 제8문제 리만 가설에 100만 달러 현상금이 걸려 있다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3573934&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학산책), 참이지만 증명할 수 없는 수학적 명제가 있다? 괴델의 불완전성 정리 (글 김병한, 자료제공 한국과학창의재단) — 힐베르트의 형식주의를 \"인간의 언어가 가지는 결함을 제거하기 위해 모든 수학의 명제를 형식적 기호의 나열로 바꾸고, 모순이 생성되는 요소를 피해 공리를 세우고 거기서 새 명제를 유도하는 법칙을 세우는\" 것으로 설명한 것과 힐베르트 프로그램이라는 이름, 그가 이런 체계에서 모순이 절대로 유도되지 않음을 보일 수 있으리라 예상했다는 것, 제2 불완전성 정리가 그 프로그램이 성취될 수 없음을 뜻한다는 것, 불완전성 정리가 형식주의를 없앤 것이 아니라 문제의 본질을 드러내고 한계 속에서 계속 작업해야 함을 알려 줬으며 현대 수학이 그의 형식주의의 발전 위에 서 있다는 평가",
+     "URL": "https://terms.naver.com/entry.naver?docId=3570783&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, Kurt Gödel — 1931년 어떤 공리 체계에도 증명도 반증도 되지 않는 명제가 있다는 결과, 그것이 수학 전체를 공리적 기초 위에 놓으려는 100년의 시도를 끝냈다는 서술, 힐베르트 형식주의에 심대한 타격이었으나 형식주의의 근본 착상을 파괴하지는 않았고 다만 어떤 체계든 힐베르트가 구상한 것보다 포괄적이어야 함을 보였다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, The real numbers - Stevin to Hilbert — 힐베르트가 1900년에 유리수에서 쌓아 올리는 대신 18개 공리로 실수를 규정한 것, 그런 체계가 실제로 존재한다는 증명이 없었고 존재하더라도 프레게가 지적한 무모순성 물음이 그대로 남는다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor History of Mathematics, Hilbert's 24 problems speech — 1900년 강연의 영역 전문. \"모든 명확한 수학 문제는 반드시 엄밀한 해결이 가능하다\"는 확신을 적으면서 그것이 \"모든 수학자가 공유하지만 어느 누구도 아직 증명으로 뒷받침한 바 없는\" 것이라고 괄호에 단 것, 그 해결이 \"물음에 대한 실제 답의 형태이거나, 아니면 그 해결이 불가능하다는 증명과 그로써 모든 시도가 필연적으로 실패한다는 것의 형태\" 둘 중 하나라고 적은 것, 평행선 공리의 증명이나 원의 구적처럼 오래되고 어려운 문제들이 애초 의도와는 다른 뜻에서나마 완전히 만족스럽고 엄밀한 해결을 찾았다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems_speech/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Andrey Nikolaevich Kolmogorov — 콜모고로프가 힐베르트의 여섯 번째 문제에 큰 기여를 했고, 1957년에는 열세 번째 문제를 완전히 풀면서 세 변수 연속함수 가운데 두 변수 연속함수로 표현할 수 없는 것이 존재한다는 증명을 요구한 힐베르트가 틀렸음을 보였다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-hilbert/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 6474,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
    "제목": "카를 바이어슈트라스",
    "슬러그": "person-weierstrass",
    "별칭": [
@@ -6764,8 +6880,203 @@
    "세기전체": [
     20
    ],
-   "자수": 12184,
+   "자수": 12192,
    "시각화": 9
+  },
+  {
+   "유형": "인물",
+   "제목": "쿠르트 괴델",
+   "슬러그": "person-godel",
+   "별칭": [
+    "괴델",
+    "Kurt Gödel",
+    "쿠르트괴델",
+    "불완전성 정리",
+    "괴델의 불완전성 정리",
+    "왜요 도령"
+   ],
+   "볼트파일명": "인물_쿠르트 괴델",
+   "세기": [
+    20
+   ],
+   "분야": [
+    "수학기초론",
+    "논리학",
+    "집합론"
+   ],
+   "교과": [],
+   "난이도": "표준",
+   "요약": "스물넷에 수학의 한계를 증명했는데, 그 결과가 무엇을 뜻하는지는 남이 먼저 알아봤다. 평생 자기 건강을 의심했고 마지막에는 음식을 의심했다.",
+   "태그": [
+    "수학사",
+    "괴델",
+    "불완전성정리",
+    "힐베르트",
+    "폰노이만",
+    "연속체가설",
+    "튜링",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1906,
+    "사망": 1978,
+    "출생지": "오스트리아-헝가리 브륀(지금의 체코 브르노)"
+   },
+   "기여개념": [],
+   "관련인물": [
+    "person-hilbert"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Kurt Gödel — 생몰(1906년 4월 28일 브륀 출생, 1978년 1월 14일 프린스턴 사망), 여섯 살에 류머티즘열을 앓고 여덟 살에 그 병에 관한 의학책을 읽어 심장 약화가 합병증일 수 있음을 알게 된 것, 어머니에게 헌신적이었고 어머니가 집에 없으면 겁내고 힘들어했다는 것, 1929년 한(Hahn)의 지도 아래 1차 술어논리의 완전성으로 학위, 1930년 빈 대학 교수진이 된 것, 1931년 어떤 공리 체계에도 증명도 반증도 되지 않는 명제가 있다는 결과와 그것이 공리적 기초를 세우려는 100년의 시도를 끝냈다는 서술, 힐베르트 형식주의에 심대한 타격이었으나 근본 착상을 파괴하지는 않았고 어떤 체계든 힐베르트가 구상한 것보다 포괄적이어야 함을 보였다는 서술, 미국 비자를 얻어 러시아와 일본을 거쳐 1940년 미국에 도착하고 1948년 시민이 된 것과 시민권 면접에서 미국 헌법의 모순을 발견했다고 믿었으나 판사가 듣지 않았다는 일화, 1940~46년 고등연구소 일반 회원(해마다 갱신되는 1년 임용)과 1953년부터 죽을 때까지 강의 의무가 없다고 계약에 명시된 프린스턴 교수직, 아인슈타인이 프린스턴에서 가장 가까운 친구 가운데 하나였고 상대성이론에도 기여한 것, 1951년 아인슈타인상과 1974년 국가과학훈장, 박사과정 학생이 없었으나 프린스턴을 찾는 방문자들과의 교류로 많은 이가 도움을 받은 것, 아내가 큰 지지였으나 뇌졸중 두 번과 큰 수술을 겪은 것, 말년에 독살당한다고 확신해 먹기를 거부하다 사실상 굶어 죽은 것, 1940년 선택공리와 일반연속체가설의 무모순성 결과",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Stanford Encyclopedia of Philosophy, Gödel's Incompleteness Theorems — 괴델이 1930년 8월 26일 빈에서 카르나프에게 결과를 알린 것, 1930년 9월 7일 쾨니히스베르크 학회에서 제1정리를 \"토론 중 지나가는 말\"로 발표한 것, 폰 노이만이 청중에 있었고 그 중요성을 즉시 이해한 것, 11월 20일 폰 노이만이 무모순성의 증명 불가능성이라는 따름정리를 편지로 알렸으나 그사이 괴델 본인도 같은 착상에 이르러 제2정리를 담은 최종본을 이미 보낸 뒤였다는 것, 논문이 1931년 1월에 실린 것, 결과의 수용이 엇갈렸고 오해와 저항도 상당했다는 것",
+     "URL": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Stanford Encyclopedia of Philosophy, Kurt Gödel — 두 불완전성 정리가 무모순성과 완전성이라는 목표로 규정된 힐베르트 프로그램의 실현 불가능성을 보였다는 것, 폰 노이만이 괴델 자신보다 먼저 그렇게 이해했다는 서술과 괴델 본인이 그 함의를 보기까지 몇 해가 걸렸다는 것, 1931년 6월 폰 노이만이 카르나프에게 보낸 편지, 그 전해 가을 폰 노이만이 괴델에게 보낸 더 강한 표현의 편지, 괴델이 수학적 플라톤주의를 정식화하고 옹호했다는 것과 힐베르트의 \"본래의 합리주의적 구상\"을 견지했다는 서술, 집합론에서 큰 기수의 중요성을 일찍이 내다보았다는 것",
+     "URL": "https://plato.stanford.edu/entries/goedel/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학산책), 참이지만 증명할 수 없는 수학적 명제가 있다? 괴델의 불완전성 정리 (글 김병한, 자료제공 한국과학창의재단) — 무엇이든 질문을 잘해 \"왜요 도령(der Herr Warum)\"으로 불렸다는 것과 모든 과목에서 최고 성적을 냈다는 것, 어릴 때부터 건강이 좋지 않아 스스로 읽은 의학지식을 더 신뢰하며 지나친 건강 염려증을 갖고 살았고 그것이 말년의 음식 거부로 이어졌다는 것, 1924년 빈 대학 입학과 물리학에서 철학·수학으로 옮긴 것, 지도교수 한을 만난 뒤 수리논리학에 집중한 것, 한과 카르납이 주도한 빈 학단이 그를 정식으로 초청했으나 그가 서클의 주된 의견에 동의하지는 않았다는 것, 1931년 20대의 나이에 발표한 제1·제2 불완전성 정리의 진술, 제2정리가 힐베르트 프로그램이 성취될 수 없음을 뜻한다는 것, 연속체 가설에 대한 괴델(1930년대 중반)과 코헨(1960년대)의 결과와 코헨의 필즈상, 괴델이 \"계산 가능하다\"는 개념을 최초로 제안하고 그것이 튜링과 폰 노이만을 거쳐 최초의 현대적 컴퓨터 설계의 이론 배경이 됐다는 계보, 괴델과 튜링이 타임지가 뽑은 20세기 가장 영향력 있는 100인 중 단 두 명의 수학자라는 것, 불완전성 정리가 형식주의를 없앤 것이 아니라 한계 속에서 계속 작업해야 함을 알려 줬다는 평가, 1930년대 후반 오스트리아를 떠나 고등과학연구소로 이주한 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3570783&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, David Hilbert — 1930년 은퇴와 쾨니히스베르크시의 명예시민증 및 \"우리는 알아야 한다, 우리는 알게 될 것이다\"로 끝난 연설, 『수학의 기초』 두 권이 1934년과 1939년에 나왔고 그것이 겨냥한 직접적 무모순성 증명이라는 목표를 1931년 괴델의 논문이 불가능하게 만들었다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 무한집합 — 칸토어가 \"자연수 전체의 집합보다 크기가 크고 실수 전체의 집합보다 크기가 작은 집합은 없다\"는 명제를 오랫동안 증명하려 했고 그것이 연속체 가설이라는 것, 1900년 파리 제2차 세계수학자대회에서 힐베르트가 그것을 수학자들이 가장 먼저 해결해야 할 문제로 제시했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338027&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, Hilbert's Problems — 제1문제가 연속체의 크기, 제2문제가 산술 공리의 무모순성이라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-godel/note.md",
+   "세기전체": [
+    20
+   ],
+   "자수": 5991,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "안드레이 콜모고로프",
+   "슬러그": "person-kolmogorov",
+   "별칭": [
+    "콜모고로프",
+    "Andrey Kolmogorov",
+    "안드레이콜모고로프",
+    "확률의 공리",
+    "콜모고로프의 공리",
+    "확률론의 기초 개념",
+    "KAM 이론"
+   ],
+   "볼트파일명": "인물_안드레이 콜모고로프",
+   "세기": [
+    20
+   ],
+   "분야": [
+    "확률론",
+    "측도론",
+    "위상수학",
+    "동역학계"
+   ],
+   "교과": [
+    "확률과 통계"
+   ],
+   "난이도": "표준",
+   "요약": "확률이 무엇인지 묻기를 그만두고 무엇을 만족해야 하는지를 적었다. 그러자 확률이 길이·넓이와 같은 것이 됐다. 그는 여러 해에 걸쳐 자기 시간의 상당 부분을 아이들 가르치는 데 썼다.",
+   "태그": [
+    "수학사",
+    "콜모고로프",
+    "확률론",
+    "공리",
+    "측도",
+    "힐베르트",
+    "러시아",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1903,
+    "사망": 1987,
+    "출생지": "러시아 탐보프"
+   },
+   "기여개념": [
+    "concept-probability",
+    "concept-probability-advanced"
+   ],
+   "관련인물": [
+    "person-hilbert"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Andrey Nikolaevich Kolmogorov — 생몰(1903년 4월 25일 탐보프 출생, 1987년 10월 20일 모스크바 사망), 부모가 결혼하지 않았고 아버지가 양육에 관여하지 않은 것과 성이 아버지가 아니라 외조부 야코프 스테파노비치 콜모고로프의 것이라는 것, 학교를 마친 뒤 한동안 철도 차장으로 일하며 여가에 뉴턴 역학에 관한 논고를 쓴 것, 1920년 모스크바 국립대학 입학 당시 수학에 전념하지 않았고 야금학과 러시아사도 공부한 것과 15~16세기 노브고로드의 재산 소유에 관한 진지한 학술 논문을 쓴 것 및 켄들이 전하는 지도교사의 말(\"당신은 증명 하나를 댔다… 우리 역사가들은 적어도 열 개의 증명을 갖기를 좋아한다\")과 그것이 농담이라도 진실이 있기에 재미있다는 서술, 루진과 예고로프의 연구 그룹 '루지타니아', 1931년 모스크바대 교수, 1933년 『확률론의 기초 개념』이 유클리드의 기하 서술에 비할 만한 방식으로 근본 공리에서 확률론을 엄밀하게 세웠고 그 접근의 성과 하나가 조건부 기댓값의 엄밀한 정의라는 것, 1931년을 그의 두 번째 창조기의 시작으로 볼 수 있다는 인용, 마크 카츠가 전하는 1930년대 폴란드 수학자들이 『기초 개념』을 손에 쥐고도 확률적 독립 개념을 이해하느라 애썼다는 서술, 힐베르트의 여섯 번째 문제에 큰 기여를 했고 1957년 열세 번째 문제를 완전히 풀며 힐베르트가 틀렸음을 보인 것, 1935년 모스크바 국제위상수학회의에서 알렉산더와 각각 독립적으로 코호몰로지 환을 발표한 것, 1953·1954년 각 4쪽짜리 논문 두 편이 KAM 이론의 시작이라는 것, 영재 교육 프로젝트에 여러 해에 걸쳐 상당한 시간을 쏟아 교육과정을 짜고 교과서를 쓰고 아이들과 많은 시간을 보내며 문학과 음악을 소개하고 놀이에 함께하고 하이킹·소풍·탐사에 데려간 것, 제자들의 회고(\"피곤하고 수학적 착상으로 가득한 채, 책에서는 찾을 수 없는 무언가를 알아냈다는 의식에 행복해하며 저녁에 모스크바로 돌아오곤 했다\")",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학백과), 공리적 확률 — 확률의 고전적 정의가 가능한 결과가 유한하고 모든 결과의 가능성이 같아야 한다는 전제를 요구한다는 것과 통계적 정의가 같은 조건의 독립 시행을 무한히 요구해 현실적으로 만족하기 쉽지 않다는 것, 이 한계를 극복하고 엄밀성을 확보하기 위해 수학적 공리를 도입해 확률을 정의하며 그것이 현대 확률론의 기초가 된다는 것, 이 공리들을 콜모고로프의 공리라 부른다는 것, 세 공리의 내용(비음수성·전사건의 확률 1·상호배반 사건열의 가산가법성)과 공리 3이 확률이 측도가 됨을 의미한다는 서술, 콜모고로프의 정의에 의하면 확률을 기하에서 길이나 넓이 부피를 계산하는 것과 같은 원리로 계산할 수 있다는 서술, 확률공간을 측도가 1인 가측공간으로 바꾸어 말할 수 있다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125166&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Probability axioms — 콜모고로프가 1933년에 도입했다는 것, 세 공리의 내용, 논리적 역설을 피하면서 확률을 순수수학과 물리과학에 적용하기 위한 기본 가정이라는 서술, 공리가 특정 해석을 전제하지 않는다는 것과 콕스 정리·더치북 논변이 빈도가 아닌 근거로 공리를 정당화한다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/Probability_axioms",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor History of Mathematics, Hilbert's Problems — 제6문제가 물리학의 공리라는 것, 1900년 8월 8일 파리 강연에서 23개 중 10개를 소개했고 전체 23개는 학회 논문집에 실린 논문에서 나왔다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Henri Lebesgue — 1901년 측도론을 세우고 같은 해 4월 29일 논문에서 적분의 정의를 준 것, 그 적분이 곡선 아래 넓이 개념을 불연속 함수를 다수 포함하도록 확장해 리만 적분을 일반화한다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과), 르베그 적분 — 리만은 정의역을, 르베그는 함숫값을 쪼갠다는 대비",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor History of Mathematics, David Hilbert — 1900년 파리 제2회 국제수학자대회 「수학의 문제들」 강연과 파리 문제들이 오늘까지도 도전 과제로 남았다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-kolmogorov/note.md",
+   "세기전체": [
+    20
+   ],
+   "자수": 5858,
+   "시각화": 4
   },
   {
    "유형": "일화",
@@ -6799,7 +7110,10 @@
    ],
    "사실성": "확실",
    "사실성근거": "괴델이 1930년 9월 7일 쾨니히스베르크 학회에서 제1정리를 \"토론 중 지나가는 말\"로 발표했다는 것, 폰 노이만이 청중에 있었고 즉시 중요성을 알아봤다는 것은 스탠퍼드 철학백과가 날짜까지 적는다[1]. 힐베르트가 1930년에 은퇴하고 쾨니히스베르크가 명예시민증을 주었으며 그 연설이 여섯 단어로 끝났다는 것은 MacTutor 가 적는다[3]. **다만 두 행사의 날짜 선후는 이 문서의 출처가 못박지 않는다** — MacTutor 는 힐베르트 연설에 날짜를 붙이지 않는다[3]. 흔히 \"연설 다음 날\"이라고 이야기되지만 이 문서는 그렇게 적지 않고 **같은 해 같은 도시**까지만 적는다. 폰 노이만의 편지 문구는 스탠퍼드 철학백과가 인용한 것이다[2].",
-   "관련인물": [],
+   "관련인물": [
+    "person-hilbert",
+    "person-godel"
+   ],
    "관련개념": [
     "concept-analysis-rigor-advanced"
    ],
@@ -6868,7 +7182,9 @@
    ],
    "사실성": "확실",
    "사실성근거": "동전 비유는 당주아·펠릭스·몽텔이 1957년에 쓴 회고 논문이 **르베그의 말을 직접 인용해** 전한다[1]. 같은 글이 당대의 반응도 적는다 — 대가들의 반응이 유보적이었고 많은 이가 \"함수의 기형학\"이 자리 잡는 것을 두려워했으며, 다르부가 적대적이었고 피카르만이 옹호했다는 것이다[1]. **다만 부시네스크의 말은 그 글 자체가 전언으로 적는다** — \"…라고 말했다고 한다\"이므로 이 문서도 전언으로 옮긴다[1]. MacTutor 전기도 그의 연구가 고전 해석학자들, 특히 프랑스에서 적대적인 반응을 받았다고 적어 정황이 겹친다[2].",
-   "관련인물": [],
+   "관련인물": [
+    "person-kolmogorov"
+   ],
    "관련개념": [
     "concept-integration",
     "concept-integration-advanced"
@@ -7056,6 +7372,7 @@
     "person-cantor",
     "person-cauchy",
     "person-dedekind",
+    "person-hilbert",
     "person-lagrange",
     "person-laplace",
     "person-weierstrass"
@@ -7074,7 +7391,10 @@
     "episode-koenigsberg-1930",
     "episode-lebesgue-coins",
     "episode-namdaemun-1947",
-    "person-cantor"
+    "person-cantor",
+    "person-godel",
+    "person-hilbert",
+    "person-kolmogorov"
    ]
   },
   "분야": {
@@ -7126,6 +7446,7 @@
     "episode-descartes-fly",
     "person-barrow",
     "person-descartes",
+    "person-hilbert",
     "person-huygens",
     "person-pascal"
    ],
@@ -7140,6 +7461,7 @@
     "person-fermat",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-kolmogorov",
     "person-laplace",
     "person-pascal"
    ],
@@ -7154,6 +7476,7 @@
     "person-cauchy",
     "person-dedekind",
     "person-descartes",
+    "person-hilbert",
     "person-jakob-bernoulli",
     "person-napier"
    ],
@@ -7181,7 +7504,8 @@
     "century-19c",
     "concept-function",
     "episode-cantor-letter-1877",
-    "person-cantor"
+    "person-cantor",
+    "person-godel"
    ],
    "수학기초론": [
     "century-19c",
@@ -7195,18 +7519,22 @@
     "person-bolzano",
     "person-cantor",
     "person-dedekind",
+    "person-godel",
+    "person-hilbert",
     "person-weierstrass"
    ],
    "논리학": [
     "century-20c",
     "episode-koenigsberg-1930",
     "person-bolzano",
+    "person-godel",
     "person-leibniz"
    ],
    "측도론": [
     "century-20c",
     "concept-integration-advanced",
-    "episode-lebesgue-coins"
+    "episode-lebesgue-coins",
+    "person-kolmogorov"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -7221,7 +7549,8 @@
     "person-euler"
    ],
    "위상수학": [
-    "concept-graph-theory"
+    "concept-graph-theory",
+    "person-kolmogorov"
    ],
    "통계학": [
     "concept-probability-advanced"
@@ -7246,9 +7575,15 @@
     "person-descartes",
     "person-leibniz"
    ],
+   "함수해석학": [
+    "person-hilbert"
+   ],
    "변분법": [
     "person-jakob-bernoulli",
     "person-lagrange"
+   ],
+   "동역학계": [
+    "person-kolmogorov"
    ],
    "천체역학": [
     "person-laplace"
@@ -7303,6 +7638,7 @@
     "concept-probability",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-kolmogorov",
     "person-laplace"
    ],
    "미적분": [
@@ -7365,9 +7701,12 @@
     "person-descartes",
     "person-euler",
     "person-fermat",
+    "person-godel",
     "person-gregory",
+    "person-hilbert",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
     "person-leibniz",
@@ -7419,7 +7758,10 @@
     "person-descartes",
     "person-euler",
     "person-fermat",
+    "person-godel",
     "person-gregory",
+    "person-hilbert",
+    "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
     "person-leibniz",
@@ -7593,24 +7935,34 @@
     "century-20c",
     "episode-koenigsberg-1930",
     "episode-lebesgue-coins",
-    "episode-namdaemun-1947"
+    "episode-namdaemun-1947",
+    "person-godel",
+    "person-hilbert",
+    "person-kolmogorov"
    ],
    "공리주의": [
-    "century-20c"
+    "century-20c",
+    "person-hilbert"
    ],
    "힐베르트": [
     "century-20c",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced",
-    "episode-koenigsberg-1930"
+    "episode-koenigsberg-1930",
+    "person-godel",
+    "person-hilbert",
+    "person-kolmogorov"
    ],
    "괴델": [
     "century-20c",
-    "episode-koenigsberg-1930"
+    "episode-koenigsberg-1930",
+    "person-godel",
+    "person-hilbert"
    ],
    "콜모고로프": [
     "century-20c",
-    "concept-probability-advanced"
+    "concept-probability-advanced",
+    "person-kolmogorov"
    ],
    "르베그": [
     "century-20c",
@@ -7858,7 +8210,8 @@
    ],
    "측도": [
     "concept-integration-advanced",
-    "episode-lebesgue-coins"
+    "episode-lebesgue-coins",
+    "person-kolmogorov"
    ],
    "볼테라": [
     "concept-integration-advanced"
@@ -7866,6 +8219,7 @@
    "확률론": [
     "concept-integration-advanced",
     "concept-probability-advanced",
+    "person-kolmogorov",
     "person-laplace"
    ],
    "기댓값": [
@@ -7980,10 +8334,12 @@
     "episode-huygens-anagram"
    ],
    "폰노이만": [
-    "episode-koenigsberg-1930"
+    "episode-koenigsberg-1930",
+    "person-godel"
    ],
    "불완전성정리": [
-    "episode-koenigsberg-1930"
+    "episode-koenigsberg-1930",
+    "person-godel"
    ],
    "힐베르트프로그램": [
     "episode-koenigsberg-1930"
@@ -8037,11 +8393,32 @@
    "정수론": [
     "person-fermat"
    ],
+   "연속체가설": [
+    "person-godel"
+   ],
+   "튜링": [
+    "person-godel"
+   ],
    "원주율": [
     "person-gregory"
    ],
    "반사망원경": [
     "person-gregory"
+   ],
+   "형식주의": [
+    "person-hilbert"
+   ],
+   "23문제": [
+    "person-hilbert"
+   ],
+   "괴팅겐": [
+    "person-hilbert"
+   ],
+   "공리": [
+    "person-kolmogorov"
+   ],
+   "러시아": [
+    "person-kolmogorov"
    ],
    "해석역학": [
     "person-lagrange"
@@ -8136,12 +8513,15 @@
    "뉴턴·라이프니츠": [
     "concept-analysis-rigor"
    ],
+   "person-hilbert": [
+    "concept-analysis-rigor-advanced",
+    "episode-koenigsberg-1930",
+    "person-godel",
+    "person-kolmogorov"
+   ],
    "클라인": [
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced"
-   ],
-   "힐베르트": [
-    "concept-analysis-rigor-advanced"
    ],
    "person-descartes": [
     "concept-analytic-geometry",
@@ -8354,6 +8734,12 @@
    "헨스톡·커즈와일": [
     "concept-integration-advanced"
    ],
+   "person-kolmogorov": [
+    "concept-probability",
+    "concept-probability-advanced",
+    "episode-lebesgue-coins",
+    "person-hilbert"
+   ],
    "person-pascal": [
     "concept-probability",
     "episode-pascal-fermat-letters",
@@ -8375,9 +8761,6 @@
    "베이즈": [
     "concept-probability-advanced"
    ],
-   "콜모고로프": [
-    "concept-probability-advanced"
-   ],
    "프라이스": [
     "concept-probability-advanced"
    ],
@@ -8395,6 +8778,10 @@
    ],
    "아벨": [
     "concept-series-advanced"
+   ],
+   "person-godel": [
+    "episode-koenigsberg-1930",
+    "person-hilbert"
    ]
   },
   "역링크": {
@@ -10152,6 +10539,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
@@ -10192,6 +10585,12 @@
     {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -10880,6 +11279,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-godel",
+     "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-weierstrass",
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
@@ -10933,6 +11338,24 @@
      "슬러그": "episode-namdaemun-1947",
      "제목": "남대문 시장의 학술지",
      "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-godel",
+     "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
+     "유형": "인물",
      "경로": "본문"
     }
    ],
@@ -10998,10 +11421,100 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-weierstrass",
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
      "경로": "기여개념"
+    }
+   ],
+   "person-hilbert": [
+    {
+     "슬러그": "century-20c",
+     "제목": "20세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-koenigsberg-1930",
+     "제목": "1930년 쾨니히스베르크",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-godel",
+     "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-godel": [
+    {
+     "슬러그": "century-20c",
+     "제목": "20세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-koenigsberg-1930",
+     "제목": "1930년 쾨니히스베르크",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
+   "person-kolmogorov": [
+    {
+     "슬러그": "century-20c",
+     "제목": "20세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-probability",
+     "제목": "확률론",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-probability-advanced",
+     "제목": "확률론 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-lebesgue-coins",
+     "제목": "르베그의 동전",
+     "유형": "일화",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "episode-descartes-fly": [
@@ -11182,6 +11695,20 @@
      "경로": "관련인물"
     }
    ],
+   "episode-koenigsberg-1930": [
+    {
+     "슬러그": "person-godel",
+     "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "episode-huygens-anagram": [
     {
      "슬러그": "person-huygens",
@@ -11196,6 +11723,14 @@
      "제목": "야코프 베르누이",
      "유형": "인물",
      "경로": "관련일화"
+    }
+   ],
+   "episode-lebesgue-coins": [
+    {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "episode-newton-apple": [
@@ -11561,6 +12096,15 @@
   "페르마": "person-fermat",
   "피에르 드 페르마": "person-fermat",
   "피에르페르마": "person-fermat",
+  "Kurt Gödel": "person-godel",
+  "person-godel": "person-godel",
+  "괴델": "person-godel",
+  "괴델의 불완전성 정리": "person-godel",
+  "불완전성 정리": "person-godel",
+  "왜요 도령": "person-godel",
+  "인물_쿠르트 괴델": "person-godel",
+  "쿠르트 괴델": "person-godel",
+  "쿠르트괴델": "person-godel",
   "James Gregory": "person-gregory",
   "person-gregory": "person-gregory",
   "그레고리": "person-gregory",
@@ -11569,6 +12113,16 @@
   "인물_제임스 그레고리": "person-gregory",
   "제임스 그레고리": "person-gregory",
   "제임스그레고리": "person-gregory",
+  "David Hilbert": "person-hilbert",
+  "person-hilbert": "person-hilbert",
+  "다비트 힐베르트": "person-hilbert",
+  "다비트힐베르트": "person-hilbert",
+  "인물_다비트 힐베르트": "person-hilbert",
+  "형식주의": "person-hilbert",
+  "힐베르트": "person-hilbert",
+  "힐베르트 공간": "person-hilbert",
+  "힐베르트 프로그램": "person-hilbert",
+  "힐베르트의 23문제": "person-hilbert",
   "Christiaan Huygens": "person-huygens",
   "person-huygens": "person-huygens",
   "인물_크리스티안 하위헌스": "person-huygens",
@@ -11586,6 +12140,15 @@
   "인물_야코프 베르누이": "person-jakob-bernoulli",
   "자코브 베르누이": "person-jakob-bernoulli",
   "추측술": "person-jakob-bernoulli",
+  "Andrey Kolmogorov": "person-kolmogorov",
+  "KAM 이론": "person-kolmogorov",
+  "person-kolmogorov": "person-kolmogorov",
+  "안드레이 콜모고로프": "person-kolmogorov",
+  "안드레이콜모고로프": "person-kolmogorov",
+  "인물_안드레이 콜모고로프": "person-kolmogorov",
+  "콜모고로프": "person-kolmogorov",
+  "콜모고로프의 공리": "person-kolmogorov",
+  "확률론의 기초 개념": "person-kolmogorov",
   "Joseph-Louis Lagrange": "person-lagrange",
   "Lagrange": "person-lagrange",
   "person-lagrange": "person-lagrange",

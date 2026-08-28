@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 225,
- "resolved": 936,
- "pending": 559,
+ "scanned": 228,
+ "resolved": 963,
+ "pending": 554,
  "counts": {
-  "new": 266,
+  "new": 263,
   "companion": 5,
   "gap": 0
  },
@@ -2692,21 +2692,6 @@
    ]
   },
   {
-   "name": "힐베르트 공간",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "벡터(Vector) — 확장편: 벡터공간에서 벡터해석·함수공간·AI까지",
-     "u": "research/#r=vector-advanced",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
    "name": "선형사상",
    "count": 2,
    "kind": "new",
@@ -2994,27 +2979,6 @@
      "u": "concept/#n=optimal-stopping",
      "s": "concept",
      "n": 2
-    }
-   ]
-  },
-  {
-   "name": "안드레이 콜모고로프",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "20세기",
-     "u": "math/#n=century-20c",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "확률론 확장편",
-     "u": "math/#n=concept-probability-advanced",
-     "s": "math",
-     "n": 1
     }
    ]
   },
@@ -4547,21 +4511,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "다비트 힐베르트",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
      "n": 1
     }
    ]
