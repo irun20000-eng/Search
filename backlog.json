@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 236,
- "resolved": 1088,
- "pending": 545,
+ "scanned": 237,
+ "resolved": 1099,
+ "pending": 544,
  "counts": {
-  "new": 255,
+  "new": 254,
   "companion": 5,
   "gap": 0
  },
@@ -4490,21 +4490,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "고틀로프 프레게",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
      "n": 1
     }
    ]
