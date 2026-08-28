@@ -48,6 +48,8 @@
     제목: MacTutor History of Mathematics, Hilbert's Problems — 제1문제가 연속체의 크기, 제2문제가 산술 공리의 무모순성이라는 것
     URL: https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/
     유형: 2차
+
+갤러리URL: "#n=person-godel"
 ---
 
 ## 한눈에

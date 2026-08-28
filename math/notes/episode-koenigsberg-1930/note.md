@@ -33,6 +33,8 @@
     제목: MacTutor History of Mathematics, Kurt Gödel — 1906년 브륀 출생, 1929년 하안(Hahn)의 지도 아래 1차 술어논리의 완전성으로 학위, 1931년 결과가 공리적 기초를 세우려는 100년의 시도를 끝냈다는 서술, 형식주의의 근본 착상을 파괴하지는 않았고 다만 어떤 체계든 힐베르트가 구상한 것보다 포괄적이어야 함을 보였다는 서술
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Godel/
     유형: 2차
+
+갤러리URL: "#n=episode-koenigsberg-1930"
 ---
 
 ## 한 해, 한 도시

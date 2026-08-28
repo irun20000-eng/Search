@@ -29,6 +29,8 @@
     제목: 'Rimhak Ree, On a problem of Max A. Zorn, Bulletin of the American Mathematical Society 55 (1949), 575-576 — 1949년 미국수학회 회보 55권 6호에 실린 논문 자체. 저자 표기 Rimhak Ree, 쪽수 575~576, DOI 10.1090/S0002-9904-1949-09249-2'
     URL: https://www.ams.org/journals/bull/1949-55-06/S0002-9904-1949-09249-2/
     유형: 1차
+
+갤러리URL: "#n=episode-namdaemun-1947"
 ---
 
 ## 수학과가 없는 대학을 나왔다

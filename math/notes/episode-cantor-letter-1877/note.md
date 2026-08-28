@@ -29,6 +29,8 @@
     제목: MacTutor History of Mathematics, Richard Dedekind — 1872년 게르자우에서 칸토어를 만나 무한을 논한 것, 1874년 인터라켄에서 집합론을 논한 것, 데데킨트가 칸토어의 이론에 상당히 기여했으나 칸토어가 발표할 때 그것이 밝혀지지 않았다는 서술
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/
     유형: 2차
+
+갤러리URL: "#n=episode-cantor-letter-1877"
 ---
 
 ## 3년 전에 던진 물음

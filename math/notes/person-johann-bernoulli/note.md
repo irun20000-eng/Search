@@ -49,6 +49,8 @@
     제목: 네이버 지식백과(수학백과), 변분법 — 적분으로 표현된 양을 최소·최대로 만드는 곡선을 찾는 방법이며 무한차원 공간의 문제라는 서술
     URL: https://terms.naver.com/entry.naver?docId=3405106&cid=47324&categoryId=47324
     유형: 2차
+
+갤러리URL: "#n=person-johann-bernoulli"
 ---
 
 ## 한눈에

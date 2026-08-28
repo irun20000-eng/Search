@@ -29,6 +29,8 @@
     제목: 네이버 지식백과(수학백과), 르베그 적분 — 리만은 정의역을, 르베그는 함숫값을 쪼갠다는 대비
     URL: https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207
     유형: 2차
+
+갤러리URL: "#n=episode-lebesgue-coins"
 ---
 
 ## 빚을 갚는 두 가지 방식

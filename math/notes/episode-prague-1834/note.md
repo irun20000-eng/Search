@@ -33,6 +33,8 @@
     제목: 네이버 지식백과(수학백과), 해석학 — 18세기의 무분별한 직관 사용에 대한 반성, 극한 이론의 진정한 발달이 1821년에 가서야 시작됐다는 서술
     URL: https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324
     유형: 2차
+
+갤러리URL: "#n=episode-prague-1834"
 ---
 
 ## 두 사람이 같은 도시에 있게 된 이유
