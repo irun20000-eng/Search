@@ -1360,7 +1360,8 @@
    "기여인물": [
     "person-descartes",
     "person-fermat",
-    "person-gauss"
+    "person-gauss",
+    "person-poincare"
    ],
    "출처": [
     {
@@ -4946,7 +4947,8 @@
     "person-laplace",
     "person-dalembert",
     "person-fourier",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-poincare"
    ],
    "이미지": [
     {
@@ -6002,7 +6004,8 @@
     "person-cauchy",
     "person-bayes",
     "person-de-moivre",
-    "person-gauss"
+    "person-gauss",
+    "person-poincare"
    ],
    "출처": [
     {
@@ -7077,7 +7080,8 @@
    ],
    "관련인물": [
     "person-godel",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-poincare"
    ],
    "출처": [
     {
@@ -7142,6 +7146,117 @@
    ],
    "자수": 6474,
    "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "앙리 푸앵카레",
+   "슬러그": "person-poincare",
+   "별칭": [
+    "푸앵카레",
+    "Poincare",
+    "Henri Poincaré",
+    "앙리푸앵카레",
+    "쥘 앙리 푸앵카레",
+    "푸앵카레 추측",
+    "마지막 만능인"
+   ],
+   "볼트파일명": "인물_앙리 푸앵카레",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "미분방정식",
+    "위상수학",
+    "천체역학",
+    "수리물리학",
+    "과학철학"
+   ],
+   "교과": [
+    "미적분",
+    "기하"
+   ],
+   "난이도": "표준",
+   "요약": "고치러 되돌아가기를 싫어한 사람이었다. 그런데 왕의 상을 받은 논문에서 오류가 발견돼 다시 써야 했고, 그 오류가 혼돈 이론의 탄생을 표시하는 것으로 여겨진다.",
+   "태그": [
+    "수학사",
+    "푸앵카레",
+    "3체문제",
+    "혼돈",
+    "카오스",
+    "위상수학",
+    "푸앵카레추측",
+    "직관",
+    "미타그레플레르",
+    "19세기",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1854,
+    "사망": 1912,
+    "출생지": "프랑스 낭시"
+   },
+   "기여개념": [
+    "concept-differential-equation-advanced",
+    "concept-analytic-geometry-advanced"
+   ],
+   "관련일화": [],
+   "관련인물": [
+    "person-hilbert",
+    "person-godel",
+    "person-laplace"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Henri Poincaré — 아버지 레옹 푸앵카레가 낭시 대학 의학 교수였고 사촌 레몽 푸앵카레가 여러 차례 프랑스 총리이자 1차 대전 중 대통령이었다는 것, 그가 양손잡이에 근시였고 어린 시절 근육 협응이 나빴으며 디프테리아로 한동안 크게 앓았고 재능 있는 어머니에게 특별한 가르침을 받아 초등학교 때 이미 작문에 뛰어났다는 것, 1862년 낭시 리세에 들어가 열한 해를 보내며 모든 과목에서 최상위였고 수학 교사가 그를 \"수학의 괴물\"이라 불렀으며 전국 리세 우등생 경시대회에서 1등상을 받았다는 것, 1873년 에콜 폴리테크니크에 들어가 1875년 졸업했는데 수학은 다른 모든 학생보다 훨씬 앞섰으나 체육과 미술은 평균을 넘지 못했다는 것, 기억력이 비상했으나 통암기가 아니라 특히 시각적으로 착상을 연결하는 방식이었고 눈이 너무 나빠 강의자가 칠판에 쓰는 기호를 제대로 볼 수 없었기에 들은 것을 시각화하는 능력이 특히 쓸모 있었다는 것, 이어 에콜 데 민에서 공부했고 현장 답사 노트가 광업의 과학적·상업적 방법에 대한 깊은 지식을 보여 준다는 것, 브줄에서 잠시 광산 기사로 일하며 박사 과정을 마쳤고 에르미트의 학생으로 1879년 파리 대학에서 미분방정식에 관한 논문으로 박사 학위를 받았는데 심사자들이 \"논문의 나머지는 다소 혼란스럽고 저자가 아직 자기 착상을 명료하고 단순하게 표현하지 못함을 보여 준다. 그럼에도 주제의 큰 어려움과 드러난 재능을 고려해 학부는 푸앵카레 씨에게 모든 특권과 함께 박사 학위를 줄 것을 권고한다\"고 적었다는 것, 캉 대학에서 가르쳤으나 강의가 때로 산만하다는 평이 있었고 1881년 파리 이학부 교수, 1886년 에르미트의 지원으로 소르본의 수리물리·확률 강좌에 임명됐다는 것, 파리에서 해마다 강의를 바꿔 광학·전기·유체 평형·전기의 수학·천문학·열역학·빛·확률을 훑었다는 것, 스웨덴·노르웨이 왕 오스카르 2세가 1889년의 예순 번째 생일을 기려 1887년에 수학 경시를 열었고 푸앵카레가 천체역학의 3체 문제에 관해 낸 각서로 상을 받았으며 그 각서에서 호모클리닉 점을 처음 서술하고 혼돈적 운동을 처음 수학적으로 서술했으며 불변적분 개념을 처음 크게 쓴 것, 그런데 그 각서가 『악타 마테마티카』에 실리려 할 때 편집을 맡은 프라그멘이 오류를 발견했고 푸앵카레가 자기 오류를 인정했으며 미타그레플레르가 잘못된 판본의 출판을 막으려고 몹시 애썼다는 것, 1887년 3월부터 1890년 7월 사이 푸앵카레와 미타그레플레르가 이 경시에 관해 편지 쉰 통을 주고받았고 뒤쪽 편지들이 그 오류를 논의한다는 것, 이 오류가 오늘날 혼돈 이론의 탄생을 표시하는 것으로 여겨진다는 것과 개정판이 1890년에 나왔다는 것, 『천체역학의 새로운 방법』(1892~1899, 세 권)에서 3체 문제 연구에 쓰이던 급수 전개가 수렴하지만 일반적으로 균등수렴하지는 않음을 보여 라그랑주와 라플라스의 안정성 증명에 의문을 던졌다는 것, 프랑스에서 과학이 대중적 주제가 아니던 때에 대중 과학 글을 많이 썼고 『과학과 가설』(1901)·『과학의 가치』(1905)·『과학과 방법』(1908)이 그것이며 1908년에 \"수학의 미래를 내다보는 참된 방법은 그 역사와 현재 상태를 공부하는 것이다\"라고 적었다는 것, 「교육에서의 수학적 정의」(1904)에서 \"증명하는 것은 논리로, 발명하는 것은 직관으로 한다\"고 썼고 뒤의 글에서 \"그러므로 논리는 직관으로 비옥해지지 않는 한 불모로 남는다\"고 다시 강조했다는 것, 그가 엄밀하려 애쓰지 않았다는 지적이 있으나 그에게 직관은 논리적 증명을 못 찾을 때 쓰는 것이 아니었고 형식적 논증이 직관의 잘못을 드러낼 수 있으며 논리적 논증만이 통찰을 확인하는 수단이라고 믿었다는 것, 힐베르트의 『기하학의 기초』(1902) 서평에서 \"논리적 관점만이 그의 관심을 끄는 듯하다. 일련의 명제가 주어지면 그는 모두가 첫 명제에서 논리적으로 따라 나온다는 것을 찾아낸다. 그 첫 명제의 기초에는, 그 심리적 기원에는 그가 마음을 쓰지 않는다\"고 적었으나 그 서평이 부정적인 것은 아니었다는 것, 수학을 공리화하려는 러셀 같은 이들이 실패할 수밖에 없다는 그의 비판이 옳았고 수학적 귀납법의 원리는 논리적으로 연역될 수 없다고 주장했으며 힐베르트가 한 것처럼 산술을 공리계로 정의하면 산술의 무모순성은 결코 증명될 수 없다고 주장했는데 이 주장들이 결국 옳음이 드러났다는 것, 당대 수학에 큰 영향을 주었음에도 제자가 없어 자기 학파를 세우지 않았고 동시대인들이 그의 결과는 썼으나 그의 기법은 거의 쓰지 않았다는 것, 1887년 과학원 회원, 1906년 과학원 회장이 됐고 연구의 폭 때문에 과학원의 다섯 부문(기하·역학·물리·지리·항해) 모두에 선출된 유일한 회원이었으며 1908년 아카데미 프랑세즈에 선출돼 죽던 해에 원장이 됐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Henri Poincaré — 1854년 4월 29일부터 1912년 7월 17일까지 살았고 수학자·이론물리학자·공학자·과학철학자였으며 생전에 존재하던 수학의 모든 분야에서 뛰어났기에 흔히 \"마지막 만능인(The Last Universalist)\"으로 불리고 \"현대 수학의 가우스\"라고도 불린다는 것, 3체 문제 연구에서 혼돈적 결정론계를 처음 발견해 현대 혼돈 이론의 기초를 놓았다는 것, 대수적 위상수학의 창시자로 여겨진다는 것, 1904년에 푸앵카레 추측을 제기했고 그것이 2002~2003년 그리고리 페렐만에 의해 풀렸다는 것, 로런츠 변환을 현대의 대칭적 형태로 처음 제시했고 특수상대성의 기초를 놓은 사람으로도 평가된다는 것, 1905년에 중력파를 처음 제안했다는 것, 1875년 11월부터 1878년 6월까지 에콜 데 민에서 공부하고 1879년 3월 보통 광산 기사 학위를 받았다는 것, 1887년 미타그레플레르의 조언으로 오스카르 2세가 3체 문제의 해를 찾는 사람에게 줄 상을 세웠고 공고가 매우 구체적이었으며 문제를 풀지 못할 경우 고전역학에 대한 다른 중요한 기여도 수상 대상으로 본다고 했다는 것, 결국 푸앵카레가 원래 문제를 풀지 못했는데도 상을 받았다는 것, 심사자 가운데 하나인 바이어슈트라스가 \"이 작업이 제기된 물음의 완전한 해를 제공하는 것으로 볼 수는 없으나, 그럼에도 그 출판이 천체역학의 역사에 새 시대를 열 만큼 중요하다\"고 말했다는 것, 그의 첫 판본에는 심각한 오류가 있었고 최종 인쇄본이 혼돈 이론으로 이어지는 중요한 착상들을 담았다는 것, 원래 제기된 문제는 1912년 순드만이 n=3에 대해 풀었고 1990년대에 왕추둥이 n>3으로 일반화했으나 급수의 수렴이 매우 느려 아주 짧은 시간 구간의 운동을 정하는 데도 수백만 항이 필요해 수치 작업에는 쓸 수 없다는 것, 심리학자 에두아르 툴루즈가 『앙리 푸앵카레』(1910)에서 그의 규칙적인 일과를 적었는데 매일 같은 시각에 짧게 나눠 일했고 오전 열 시부터 정오까지, 오후 다섯 시부터 일곱 시까지 하루 네 시간 수학 연구를 했으며 저녁 늦게 학술지 논문을 읽었다는 것, 평소 작업 습관이 문제를 머릿속에서 완전히 푼 다음 다 푼 것을 종이에 옮기는 것이었다는 것, 양손잡이에 근시였고 몸이 서툴고 예술에 소질이 없었다는 것, 늘 서둘렀고 고치러 되돌아가기를 싫어했다는 것, 한 문제에 오래 매달리지 않았는데 자기가 다른 문제를 의식적으로 푸는 동안 잠재의식이 그 문제를 계속 다룰 것이라 믿었기 때문이라는 것, 대부분의 수학자가 이미 확립된 원리에서 출발하는 데 반해 푸앵카레는 매번 기본 원리에서 출발했다고 툴루즈가 적었다는 것, 그의 사고법이 \"세부를 무시하고 봉우리만 보는 데 익숙해 놀라운 신속함으로 하나에서 다른 하나로 넘어갔고, 그가 발견한 사실들은 저희끼리 중심 둘레에 모여 즉각 자동으로 그의 기억에 분류돼 들어갔다\"로 요약된다는 것, 다르부가 그를 \"직관형\"이라 했고 시각적 표상으로 일하는 일이 잦았다는 것이 그 근거라는 것, 푸앵카레 자신이 논리는 발명하는 길이 아니라 착상을 구조화하는 길이며 논리가 착상을 제한한다고 믿는다고 적었다는 것, 1912년 전립선 문제로 수술을 받고 7월 17일 파리에서 색전증으로 죽었으며 쉰여덟이었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(시사상식사전, pmg 지식엔진연구소), 푸앵카레 — 1854~1912년의 프랑스 이론 물리학자·수학자이고 수론·대수학·기하학·해석학 등 수학의 거의 전 분야에서 뛰어난 업적을 남겼을 뿐 아니라 물리학·천문학 등 인접 과학에서도 당대를 대표할 만한 이론가였으며, 우주진화론·상대성이론·위상수학에 영향을 미쳤고 일반 대중에게 과학을 해석해 주는 탁월한 재능을 가졌다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=73629&cid=43667&categoryId=43667",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(시사상식사전, pmg 지식엔진연구소), 푸앵카레의 추측 — 1904년 앙리 푸앵카레가 제기한 가설로 어떤 하나의 밀폐된 3차원 공간에서 모든 폐곡선이 수축돼 하나의 점이 될 수 있다면 그 공간은 반드시 원구로 변형될 수 있다는 것이며, 2000년 5월 클레이 수학연구소가 100만 달러를 내건 7대 난제 중 하나이고 그리고리 페렐만이 2003년 이 문제를 푸는 데 기초를 제공한 공로로 2006년 필즈상 수상자로 결정됐으나 수상을 거부했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=933889&cid=43667&categoryId=43667",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Wikipedia, Three-body problem — 브룬스가 대수적 보존량이 더 없음을, 푸앵카레가 1889년에 해석적 보존량이 더 없음을 보였다는 것, 1892~1899년에 정리된 작업에서 푸앵카레가 제한 3체 문제에 주기해가 무한히 많이 존재함을 확립하고 그 해들을 일반 3체 문제로 이어 가는 기법을 함께 세웠다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Three-body_problem",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Poincaré conjecture — 1904년 푸앵카레가 제기했고 국소적으로 보통의 3차원 유클리드 공간처럼 보이면서 크기가 유한한 공간을 다루며, 그런 공간의 모든 고리가 연속적으로 한 점으로 조여질 수 있다면 반드시 3차원 구라는 가설이라는 것, 이 추측을 풀려는 시도가 20세기 기하적 위상수학의 발전을 크게 밀었다는 것, 해밀턴의 리치 흐름 프로그램 위에서 페렐만이 새 기법과 결과를 개발해 그것을 수정·완성했고 2002년과 2003년 arXiv에 올린 논문으로 증명을 제시했다는 것, 2006년 8월 22일 국제수학자대회가 그에게 필즈상을 주었으나 거부했고 2010년 3월 18일 클레이 수학연구소가 100만 달러 밀레니엄 상을 주었으나 해밀턴의 기여가 자기 것과 같다며 거부했다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(지형 공간정보체계 용어사전), 카오스 이론·혼돈 이론 — 기상학자 로렌츠가 처음 제안한 \"나비효과\"가 오늘날 카오스 이론의 토대가 되었고, 카오스 현상이 불규칙한 심장 박동·태양계에서 행성의 운동 등 과학과 공학의 모든 영역에서 발견된다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3474139&cid=58439&categoryId=58439",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-poincare/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 9693,
+   "시각화": 6
   },
   {
    "유형": "인물",
@@ -7695,7 +7810,8 @@
    },
    "기여개념": [],
    "관련인물": [
-    "person-hilbert"
+    "person-hilbert",
+    "person-poincare"
    ],
    "출처": [
     {
@@ -8157,6 +8273,7 @@
     "person-hilbert",
     "person-lagrange",
     "person-laplace",
+    "person-poincare",
     "person-weierstrass"
    ],
    "20": [
@@ -8176,7 +8293,8 @@
     "person-cantor",
     "person-godel",
     "person-hilbert",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-poincare"
    ]
   },
   "분야": {
@@ -8344,7 +8462,8 @@
    ],
    "위상수학": [
     "concept-graph-theory",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-poincare"
    ],
    "통계학": [
     "concept-probability-advanced"
@@ -8373,14 +8492,16 @@
    "미분방정식": [
     "person-dalembert",
     "person-fourier",
-    "person-johann-bernoulli"
+    "person-johann-bernoulli",
+    "person-poincare"
    ],
    "복소수": [
     "person-de-moivre"
    ],
    "수리물리학": [
     "person-dirichlet",
-    "person-fourier"
+    "person-fourier",
+    "person-poincare"
    ],
    "측지학": [
     "person-gauss"
@@ -8400,13 +8521,17 @@
     "person-kolmogorov"
    ],
    "천체역학": [
-    "person-laplace"
+    "person-laplace",
+    "person-poincare"
    ],
    "계산법": [
     "person-napier"
    ],
    "유체역학": [
     "person-pascal"
+   ],
+   "과학철학": [
+    "person-poincare"
    ]
   },
   "교과": {
@@ -8432,7 +8557,8 @@
     "concept-analytic-geometry-advanced",
     "person-de-moivre",
     "person-euler",
-    "person-gauss"
+    "person-gauss",
+    "person-poincare"
    ],
    "공통수학1": [
     "concept-complex-number",
@@ -8462,7 +8588,8 @@
    ],
    "미적분": [
     "concept-series",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-poincare"
    ],
    "수학Ⅰ": [
     "person-dirichlet"
@@ -8546,6 +8673,7 @@
     "person-napier",
     "person-newton",
     "person-pascal",
+    "person-poincare",
     "person-weierstrass"
    ]
   },
@@ -8607,7 +8735,8 @@
     "person-leibniz",
     "person-napier",
     "person-newton",
-    "person-pascal"
+    "person-pascal",
+    "person-poincare"
    ],
    "17세기": [
     "century-17c",
@@ -8733,7 +8862,8 @@
     "person-dirichlet",
     "person-fourier",
     "person-gauss",
-    "person-laplace"
+    "person-laplace",
+    "person-poincare"
    ],
    "엄밀화": [
     "century-19c",
@@ -8793,7 +8923,8 @@
     "episode-namdaemun-1947",
     "person-godel",
     "person-hilbert",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-poincare"
    ],
    "공리주의": [
     "century-20c",
@@ -8997,7 +9128,8 @@
     "concept-differential-equation-advanced"
    ],
    "푸앵카레": [
-    "concept-differential-equation-advanced"
+    "concept-differential-equation-advanced",
+    "person-poincare"
    ],
    "미분": [
     "concept-differentiation",
@@ -9054,7 +9186,8 @@
     "person-euler"
    ],
    "위상수학": [
-    "concept-graph-theory"
+    "concept-graph-theory",
+    "person-poincare"
    ],
    "쾨니히스베르크": [
     "concept-graph-theory",
@@ -9413,6 +9546,24 @@
    ],
    "팡세": [
     "person-pascal"
+   ],
+   "3체문제": [
+    "person-poincare"
+   ],
+   "혼돈": [
+    "person-poincare"
+   ],
+   "카오스": [
+    "person-poincare"
+   ],
+   "푸앵카레추측": [
+    "person-poincare"
+   ],
+   "직관": [
+    "person-poincare"
+   ],
+   "미타그레플레르": [
+    "person-poincare"
    ]
   },
   "인물": {
@@ -9466,7 +9617,8 @@
     "concept-analysis-rigor-advanced",
     "episode-koenigsberg-1930",
     "person-godel",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-poincare"
    ],
    "클라인": [
     "concept-analysis-rigor-advanced",
@@ -9497,6 +9649,13 @@
     "concept-probability-advanced",
     "person-dedekind",
     "person-dirichlet",
+    "person-laplace"
+   ],
+   "person-poincare": [
+    "concept-analytic-geometry-advanced",
+    "concept-differential-equation-advanced",
+    "person-godel",
+    "person-hilbert",
     "person-laplace"
    ],
    "데자르그": [
@@ -9664,10 +9823,8 @@
     "person-cauchy",
     "person-de-moivre",
     "person-gauss",
-    "person-lagrange"
-   ],
-   "푸앵카레": [
-    "concept-differential-equation-advanced"
+    "person-lagrange",
+    "person-poincare"
    ],
    "person-barrow": [
     "concept-differentiation",
@@ -9760,7 +9917,8 @@
    ],
    "person-godel": [
     "episode-koenigsberg-1930",
-    "person-hilbert"
+    "person-hilbert",
+    "person-poincare"
    ]
   },
   "역링크": {
@@ -11798,6 +11956,12 @@
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "century-19c": [
@@ -11866,6 +12030,12 @@
      "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-differential-equation-advanced": [
@@ -11926,6 +12096,12 @@
     {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -12062,6 +12238,12 @@
     {
      "슬러그": "person-gauss",
      "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -12428,6 +12610,12 @@
      "제목": "오귀스탱루이 코시",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-cantor": [
@@ -12558,6 +12746,12 @@
      "제목": "안드레이 콜모고로프",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-analysis-rigor-advanced": [
@@ -12664,6 +12858,12 @@
      "제목": "안드레이 콜모고로프",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "person-godel": [
@@ -12682,6 +12882,12 @@
     {
      "슬러그": "person-hilbert",
      "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "관련인물"
     }
@@ -12766,6 +12972,44 @@
     {
      "슬러그": "person-dirichlet",
      "제목": "페터 구스타프 르죈 디리클레",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-poincare": [
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differential-equation-advanced",
+     "제목": "미분방정식 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-godel",
+     "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-hilbert",
+     "제목": "다비트 힐베르트",
      "유형": "인물",
      "경로": "관련인물"
     },
@@ -13128,6 +13372,12 @@
      "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-poincare",
+     "제목": "앙리 푸앵카레",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-bayes": [
@@ -13739,6 +13989,16 @@
   "블레즈파스칼": "person-pascal",
   "인물_블레즈 파스칼": "person-pascal",
   "파스칼": "person-pascal",
+  "Henri Poincaré": "person-poincare",
+  "Poincare": "person-poincare",
+  "person-poincare": "person-poincare",
+  "마지막 만능인": "person-poincare",
+  "앙리 푸앵카레": "person-poincare",
+  "앙리푸앵카레": "person-poincare",
+  "인물_앙리 푸앵카레": "person-poincare",
+  "쥘 앙리 푸앵카레": "person-poincare",
+  "푸앵카레": "person-poincare",
+  "푸앵카레 추측": "person-poincare",
   "Karl Weierstrass": "person-weierstrass",
   "person-weierstrass": "person-weierstrass",
   "바이어슈트라스": "person-weierstrass",

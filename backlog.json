@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-28",
- "scanned": 235,
- "resolved": 1066,
- "pending": 546,
+ "scanned": 236,
+ "resolved": 1088,
+ "pending": 545,
  "counts": {
-  "new": 256,
+  "new": 255,
   "companion": 5,
   "gap": 0
  },
@@ -4534,21 +4534,6 @@
     {
      "t": "미분방정식",
      "u": "math/#n=concept-differential-equation",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "앙리 푸앵카레",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식 확장편",
-     "u": "math/#n=concept-differential-equation-advanced",
      "s": "math",
      "n": 1
     }
