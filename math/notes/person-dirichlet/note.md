@@ -17,7 +17,7 @@
   출생지: 뒤렌 (당시 프랑스 제1제국, 뒤에 프로이센)
 
 기여개념: [concept-function, concept-differential-equation-advanced]
-관련인물: [person-dedekind, person-fourier, person-cauchy]
+관련인물: [person-dedekind, person-fourier, person-cauchy, person-gauss]
 관련일화: [episode-dedekind-nov24]
 
 출처:

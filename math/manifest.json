@@ -421,7 +421,8 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
-    "person-euler"
+    "person-euler",
+    "person-gauss"
    ],
    "출처": [
     {
@@ -1358,7 +1359,8 @@
    ],
    "기여인물": [
     "person-descartes",
-    "person-fermat"
+    "person-fermat",
+    "person-gauss"
    ],
    "출처": [
     {
@@ -2808,6 +2810,7 @@
     "person-de-moivre",
     "person-bayes",
     "person-laplace",
+    "person-gauss",
     "person-jakob-bernoulli",
     "person-kolmogorov"
    ],
@@ -4757,6 +4760,7 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-gauss",
     "person-euler",
     "person-lagrange",
     "person-de-moivre"
@@ -5713,6 +5717,119 @@
   },
   {
    "유형": "인물",
+   "제목": "카를 프리드리히 가우스",
+   "슬러그": "person-gauss",
+   "별칭": [
+    "가우스",
+    "Gauss",
+    "Carl Friedrich Gauss",
+    "칼 프리드리히 가우스",
+    "수학의 왕자",
+    "산술 연구"
+   ],
+   "볼트파일명": "인물_카를 프리드리히 가우스",
+   "세기": [
+    18,
+    19
+   ],
+   "분야": [
+    "정수론",
+    "기하학",
+    "천문학",
+    "측지학",
+    "확률론"
+   ],
+   "교과": [
+    "수학",
+    "기하",
+    "확률과 통계"
+   ],
+   "난이도": "표준",
+   "요약": "발견한 것과 발표한 것이 달랐다. 인장에 \"적지만 무르익은\"을 새겼고, 우선권을 먼저 출판한 사람이 아니라 먼저 발견한 사람의 것으로 여겼다. 그래서 그의 생애에는 \"나는 이미 알고 있었다\"는 편지가 반복된다.",
+   "태그": [
+    "수학사",
+    "가우스",
+    "산술연구",
+    "정십칠각형",
+    "비유클리드기하",
+    "우선권",
+    "보여이",
+    "최소제곱",
+    "괴팅겐",
+    "18세기",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1777,
+    "사망": 1855,
+    "출생지": "브라운슈바이크볼펜뷔텔 공국 브라운슈바이크"
+   },
+   "기여개념": [
+    "concept-complex-number-advanced",
+    "concept-probability-advanced",
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number"
+   ],
+   "관련일화": [],
+   "관련인물": [
+    "person-dedekind",
+    "person-dirichlet",
+    "person-laplace"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Carl Friedrich Gauss — 일곱 살에 초등학교에 들어가자마자 재능이 눈에 띄었고 교사 뷔트너와 조교 바르텔스가 그가 1부터 100까지를 각각 101이 되는 50쌍으로 알아보아 순식간에 더한 것에 놀랐다는 것, 1788년 김나지움에서 고지독일어와 라틴어를 배웠고 브라운슈바이크볼펜뷔텔 공작의 장학금으로 1792년 카롤리눔에 들어가 보데의 법칙·이항정리·산술기하평균·이차상호법칙·소수정리를 독자적으로 발견했다는 것, 1795년 괴팅겐으로 갔고 케스트너를 자주 조롱했으며 학생 중 유일하게 알려진 친구가 1799년에 만난 파르카시 보여이였다는 것, 1798년 학위 없이 괴팅겐을 떠났으나 그때 이미 자와 컴퍼스로 정십칠각형을 작도하는 발견을 해 두었고 그것이 그리스 수학 이래 이 분야의 가장 큰 진전이며 『산술 연구』 제7절로 출판됐다는 것, 1799년 브라운슈바이크에서 학위를 받았고 공작의 요청으로 헬름슈테트 대학에 박사논문을 냈으며 지도교수는 파프였고 논문이 대수학의 기본정리를 다뤘다는 것, 장학금 덕에 일자리를 찾을 필요가 없어 연구에 전념해 1801년 여름 『산술 연구』를 냈다는 것, 1801년 6월 차흐가 세레스의 궤도 위치를 발표했고 그중 가우스의 것이 다른 것들과 크게 달랐는데 1801년 12월 7일 재발견됐을 때 거의 정확히 가우스가 예측한 자리였으며 그때는 방법을 밝히지 않았으나 최소제곱 근사를 썼다는 것, 1805년 10월 9일 요한나 오스토프와 결혼했고 후원자인 공작이 프로이센군으로 싸우다 전사했으며 1807년 괴팅겐 천문대장으로 갔다는 것, 1808년 아버지가 죽고 이듬해 아내 요한나가 둘째 아들을 낳고 죽었으며 그 아들도 곧 죽어 가우스가 무너져 올베르스에게 \"당신 우정의 품에서 새 힘을 얻게 해 달라 — 오직 내 어린 세 아이의 것이기에 값진 삶을 위한 힘을\"이라고 편지했다는 것, 이듬해 요한나의 가장 친한 친구 미나와 재혼했고 아이 셋을 두었으나 이 결혼은 편의를 위한 것으로 보인다는 것, 1809년 『천체운동론』을 냈다는 것, 1818년 하노버 측지 측량을 맡아 낮에는 재고 밤에는 계산했으며 그 때문에 헬리오트로프를 발명했고 1820~30년에 논문 70편 넘게 냈다는 것, 1828년 『곡면에 관한 일반 연구』에서 가우스 곡률과 \"경이로운 정리\"를 냈다는 것, 1800년대 초부터 비유클리드 기하의 가능성에 관심을 두었고 파르카시 보여이·게를링·슈마허와 그 이야기를 나눴으며 1816년 서평에서 평행선 공리를 다른 공리에서 끌어내려는 증명들을 \"메울 수 없는 틈을 지탱할 수 없는 사이비 증명의 조직으로 가리려는 헛된 노력\"이라 적었다는 것, 그런 기하가 존재한다고 공개적으로 인정하면 자기 평판이 상할 것이라고 슈마허에게 털어놓았다는 것, 1831년 파르카시가 아들 야노시의 작업을 보내오자 \"그것을 칭찬하는 것은 나 자신을 칭찬하는 일이 될 것\"이라 답했다는 것, 십 년 뒤 로바쳅스키의 작업을 알고는 그 \"진정으로 기하학적인\" 성격을 칭찬했고 1846년 슈마허에게 보낸 편지에서 \"같은 확신을 54년째 갖고 있었다\"고 적었는데 MacTutor는 이것이 열다섯 살부터 알았다는 뜻이 되므로 \"그럴 법하지 않아 보인다\"고 덧붙인다는 것, 1817~32년이 특히 괴로운 시기여서 1817년 병든 어머니를 모셔 와 1839년 죽을 때까지 함께 살았고 베를린 대학의 자리를 제안받았으나 변화를 싫어해 괴팅겐에 남기로 했으며 1831년 둘째 아내가 오랜 병 끝에 죽었다는 것, 1831년 베버가 괴팅겐에 오고 1832년부터 그와 지구자기를 연구해 1833년 자기 금속이 전혀 없는 자기 관측소를 지었고 키르히호프 법칙을 발견했으며 5000피트 거리로 전신 장치를 만들었으나 그것은 즐거운 소일거리였고 그가 더 관심을 둔 것은 전 세계 자기 관측점 망이었다는 것, 1837년 베버가 정치적 분쟁으로 괴팅겐을 떠나야 했고 그때부터 활동이 점차 줄었으며 동료 과학자들의 발견에 답하는 편지에서 대개 그 방법을 여러 해 전부터 알고 있었으나 발표할 필요를 느끼지 못했다고 적었다는 것, 때로는 다른 수학자의 진전 특히 아이젠슈타인과 로바쳅스키의 것을 크게 기뻐하는 듯 보였다는 것, 1845~51년 괴팅겐 대학 과부기금을 갱신했고 그 경험으로 사채에 투자해 재산을 모았다는 것, 마지막 박사 제자 둘이 모리츠 칸토어와 데데킨트였고 데데킨트가 그의 강의 모습을 \"대개 그는 편안한 자세로 앉아 아래를 내려다보며 약간 구부정하게 두 손을 무릎 위에 모으고 있었다. 아주 자유롭게, 매우 명료하고 단순하고 평이하게 말했다. 그러나 새로운 관점을 강조하고 싶을 때면 고개를 들어 옆에 앉은 사람 쪽으로 몸을 돌리고 그 아름답고 꿰뚫는 푸른 눈으로 그를 응시하며 힘주어 말했다. 원리의 설명에서 수식의 전개로 넘어갈 때면 일어서서 위엄 있고 아주 꼿꼿한 자세로 옆의 칠판에 그 특유의 아름다운 필체로 썼다. 그는 늘 아끼고 신중히 배치해 꽤 좁은 공간으로 해내는 데 성공했다. 특별히 공들여 마치는 것을 중히 여긴 수치 예제를 위해서는 필요한 자료를 작은 종이쪽지에 적어 가지고 왔다\"고 묘사했다는 것, 1849년 헬름슈테트 학위 오십 주년 기념 강연을 했는데 1799년 학위논문의 변주였고 수학계에서는 야코비와 디리클레만 참석했다는 것, 1850년부터 다시 거의 실용적인 일만 했으나 리만의 박사논문을 승인하고 그 예비 강연을 들었다는 것, 1854년 수정한 푸코 진자를 게를링과 논의한 것이 마지막 과학적 교류였고 하노버–괴팅겐 철도 개통식에 참석한 것이 마지막 외출이었으며 1855년 2월 23일 이른 아침 잠결에 죽었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Carl Friedrich Gauss — 1777년 4월 30일 브라운슈바이크 출생이고 집안의 사회적 지위가 비교적 낮았다는 것, 아버지 게프하르트 디트리히 가우스가 도축업자·벽돌공·정원사·사망급여기금 회계 등 여러 일을 했고 가우스가 아버지를 정직하고 존경받았으나 집에서는 거칠고 지배적이었다고 표현했다는 것, 어머니 도로테아가 거의 문맹이었다는 것, 초등 교사들이 그의 능력을 알아보고 브라운슈바이크 공작에게 알렸고 공작이 그를 카롤리눔에 보냈으며 이어 1798년까지 괴팅겐 학업의 자금을 댔다는 것, 케스트너를 그의 경구 때문에 \"시인들 가운데 으뜸가는 수학자, 수학자들 가운데 으뜸가는 시인\"이라 불렀다는 것, 1796년에 자와 컴퍼스로 어떤 정다각형을 작도할 수 있는지 결정해 고대 그리스 이래의 문제를 풀었고 이 발견이 결국 그를 문헌학 대신 수학으로 이끌었다는 것, 열아홉에 정십칠각형 작도를 증명한 것이 2000년 넘는 기간에 정다각형 작도에서 나온 첫 진전이었다는 것, 1796년부터 1814년까지의 결과에 대한 짧은 메모 모음인 수학 일기가 남아 있고 『산술 연구』(1801)의 착상 다수가 이 시기의 것임을 보여 준다는 것, 1부터 100까지를 더한 이야기가 \"출처가 의심스러운 이야기\"이며 같은 합산법이 12세기 바빌로니아 탈무드 토사포트 주석에 이미 명시적으로 서술돼 있었다는 것, 그가 완결되고 비판을 넘어섰다고 여길 때만 발표하려 했고 이 완벽주의가 개인 인장의 좌우명 Pauca sed Matura(\"적지만 무르익은\")와 맞아떨어졌다는 것, 여러 동료가 새 착상을 알리라고 권했고 너무 오래 망설인다고 질책하기도 했는데 가우스는 착상을 처음 얻는 것은 쉬웠지만 발표할 만한 형태로 다듬는 것이 시간이나 \"마음의 평온\"이 없어 힘든 일이었다고 변호했다는 것, 오일러 같은 앞 세대가 독자를 자기 추론에 참여시키며 잘못된 갈래까지 보여 준 것과 달리 가우스는 저자의 사고 과정을 보여 주지 않는 직접적이고 완결된 서술 방식을 도입했다는 것, 그가 때때로 다른 학자의 착상이 이미 자기 수중에 있었다고 주장했고 우선권을 \"먼저 출판한 사람이 아니라 먼저 발견한 사람\"의 것으로 보는 그의 개념이 동시대 과학자들의 것과 달랐다는 것, 인용 관행이 소홀하다고 비판받았고 중요한 선행 저자에 대한 완전한 참고문헌만 달겠다는 특이한 견해로 자기를 변호했으나 그렇게 하려면 과학사 지식과 그가 쓰고 싶은 것보다 많은 시간이 필요하다는 것, 파르카시 보여이에게 보낸 편지에서 \"가장 큰 즐거움을 주는 것은 지식이 아니라 배우는 행위이고, 소유가 아니라 거기 이르는 행위다. 어떤 주제를 밝히고 다 써 버리면 나는 그것에서 돌아선다 — 다시 어둠 속으로 들어가기 위해\"라고 적었다는 것, 최소제곱법을 르장드르가 1805년에 먼저 출판했으나 가우스가 『천체운동론』(1809)에서 1794년 또는 1795년부터 그것을 써 왔다고 주장했다는 것, 1790년대부터 기하의 기초를 생각했으나 평행선 공준 없는 비유클리드 기하가 문제를 풀 수 있다는 것을 1810년대에야 깨달았다는 것, 1824년 프란츠 타우리누스에게 보낸 편지에서 자기가 \"비유클리드 기하\"라 이름 붙인 것의 짧고 이해할 만한 개요를 제시하면서도 그것을 어떤 식으로도 쓰지 말라고 강하게 금했다는 것, 비유클리드 기하에 관한 최초의 출판이 1829년 로바쳅스키와 1832년 야노시 보여이의 것이며 그 뒤로 가우스가 자기 생각을 적었으나 발표하지 않아 당대의 논의에 영향을 주지 않았다는 것, 그가 로바쳅스키와 보여이를 어느 정도나 앞섰는지는 그의 기록이 모호하고 불분명해 아주 분명하지는 않다는 것, 사르토리우스가 1856년에 가우스의 비유클리드 기하 작업을 처음 언급했고 전집 제8권(1900)이 출판되고서야 그 생각이 드러났다는 것, 그가 헌신적이거나 열성적인 교사는 아니었고 대체로 자기 작업에 집중하기를 좋아했으나 데데킨트와 리만 같은 제자들이 저명한 수학자가 됐다는 것, 그의 뇌가 보존됐다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(천문학 작은사전, 가람기획), 가우스 — 독일의 수학자·물리학자·측지학자로 장학금으로 1798년 괴팅겐 대학을 졸업하고 1807년 괴팅겐 천문대장이 됐다는 것, 말을 배우기 전에 계산부터 할 수 있을 정도의 신동이었고 자와 컴퍼스에 의한 정십칠각형 작도법을 1796년 3월에 발견함으로써 그의 뜻이 수리과학으로 향해지게 되었다고 일컬어진다는 것, 정수론·초기하급수론·곡면론·복소함수론 연구와 퍼텐셜 이론 기여가 유명하다는 것, 1801년 피아치가 발견했다가 잃어버린 소행성 세레스의 궤도를 계산해 재출현을 맞혔다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1621041&cid=42469&categoryId=42469",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(365일 수학, 대한수학회), 정 17각형은 자와 컴퍼스로 작도 가능하다 — 정 n각형이 언제 자와 컴퍼스만으로 작도 가능한지에 대한 필요충분조건을 찾아낸 사람이 가우스이고, 가우스의 정리에 의하면 정17각형은 자와 컴퍼스로 작도 가능하며, 2^k+1 꼴의 수가 소수이려면 k가 2의 거듭제곱이어야 한다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4383098&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학산책 「작도이야기」, 글 정경훈), 정다각형 작도 — 가우스가 정17각형을 작도할 수 있다는 것을 발견하고 언어학이 아니라 수학을 공부하기로 결심했다고 하며, 자기 묘비에 정17각형을 새겨 달라고 유언했을 정도로 이 발견을 자랑스러워했다고 전해지나 작은 비석에 새기면 동그라미와 구분이 잘 가지 않아 그 유언은 이뤄지지 않았다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3567923&cid=58944&categoryId=58969",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor History of Mathematics, János Bolyai — 1831년 6월 20일까지 「부록」이 출판돼 그날 파르카시 보여이가 별쇄본을 가우스에게 보냈고, 가우스가 그것을 읽고 한 친구에게 \"나는 이 젊은 기하학자 보여이를 일류의 천재로 여긴다\"고 썼으나 정작 파르카시에게는 \"그것을 칭찬하는 것은 나 자신을 칭찬하는 데 이르게 될 것이다. 그 작업의 내용 전체가 … 지난 삼십 년 내지 삼십오 년 동안 내 마음을 차지해 온 나 자신의 사색과 거의 정확히 일치하기 때문이다\"라고 썼다는 것, MacTutor가 여기서 가우스가 사실을 말한 것일 뿐이라는 데 의심의 여지가 없다고 적으며 그 근거로 1824년 11월 8일 타우리누스에게 보낸 편지를 드는 것, 가우스가 자기 작업을 앞질렀다는 사실이 보여이를 크게 낙담시켜 심한 타격으로 받아들였고 그가 짜증을 잘 내고 어울리기 어려운 사람이 되었으며 건강이 나빠져 1833년 6월 16일 연금을 청하고 퇴역했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Bolyai/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, Disquisitiones Arithmeticae — 가우스가 스물한 살이던 1798년에 라틴어로 쓰고 스물넷이던 1801년에 출판한 정수론 교과서이며, 그 전까지 흩어진 정리와 추측의 모음이던 정수론을 체계로 만들고 빈틈을 메우고 부실한 증명을 고쳤다는 것, 정리–증명–따름정리라는 논리 구조가 뒷날 교재의 표준이 됐다는 것, 서문에서 가우스 자신이 \"여러 어려운 문제에서 간결함을 위해 도출 과정을 생략했다\"고 적었다는 것, 가우스의 주석 다수가 자기 후속 연구의 예고여서 동시대인에게는 특히 알아보기 어려웠을 것이라는 것, 마지막 절에서 정십칠각형의 작도 가능성을 기하 문제를 대수 문제로 바꾸어 증명한다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Disquisitiones_Arithmeticae",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-gauss/note.md",
+   "세기전체": [
+    18,
+    19
+   ],
+   "자수": 10552,
+   "시각화": 6
+  },
+  {
+   "유형": "인물",
    "제목": "조제프루이 라그랑주",
    "슬러그": "person-lagrange",
    "별칭": [
@@ -5884,7 +6001,8 @@
     "person-lagrange",
     "person-cauchy",
     "person-bayes",
-    "person-de-moivre"
+    "person-de-moivre",
+    "person-gauss"
    ],
    "출처": [
     {
@@ -6725,7 +6843,8 @@
    ],
    "관련인물": [
     "person-cantor",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-gauss"
    ],
    "출처": [
     {
@@ -6857,7 +6976,8 @@
    "관련인물": [
     "person-dedekind",
     "person-fourier",
-    "person-cauchy"
+    "person-cauchy",
+    "person-gauss"
    ],
    "출처": [
     {
@@ -7997,6 +8117,7 @@
     "person-de-moivre",
     "person-euler",
     "person-fourier",
+    "person-gauss",
     "person-jakob-bernoulli",
     "person-johann-bernoulli",
     "person-lagrange",
@@ -8032,6 +8153,7 @@
     "person-dedekind",
     "person-dirichlet",
     "person-fourier",
+    "person-gauss",
     "person-hilbert",
     "person-lagrange",
     "person-laplace",
@@ -8111,6 +8233,7 @@
     "episode-descartes-fly",
     "person-barrow",
     "person-descartes",
+    "person-gauss",
     "person-hilbert",
     "person-huygens",
     "person-pascal"
@@ -8126,6 +8249,7 @@
     "person-bayes",
     "person-de-moivre",
     "person-fermat",
+    "person-gauss",
     "person-huygens",
     "person-jakob-bernoulli",
     "person-kolmogorov",
@@ -8167,6 +8291,7 @@
     "person-dirichlet",
     "person-euler",
     "person-fermat",
+    "person-gauss",
     "person-lagrange"
    ],
    "집합론": [
@@ -8227,6 +8352,7 @@
    "천문학": [
     "episode-huygens-anagram",
     "person-euler",
+    "person-gauss",
     "person-gregory",
     "person-huygens"
    ],
@@ -8255,6 +8381,9 @@
    "수리물리학": [
     "person-dirichlet",
     "person-fourier"
+   ],
+   "측지학": [
+    "person-gauss"
    ],
    "함수해석학": [
     "person-hilbert"
@@ -8302,7 +8431,8 @@
    "기하": [
     "concept-analytic-geometry-advanced",
     "person-de-moivre",
-    "person-euler"
+    "person-euler",
+    "person-gauss"
    ],
    "공통수학1": [
     "concept-complex-number",
@@ -8324,6 +8454,7 @@
     "concept-probability",
     "person-bayes",
     "person-de-moivre",
+    "person-gauss",
     "person-huygens",
     "person-jakob-bernoulli",
     "person-kolmogorov",
@@ -8339,6 +8470,9 @@
    "확률과통계": [
     "person-fermat",
     "person-pascal"
+   ],
+   "수학": [
+    "person-gauss"
    ]
   },
   "유형": {
@@ -8398,6 +8532,7 @@
     "person-euler",
     "person-fermat",
     "person-fourier",
+    "person-gauss",
     "person-godel",
     "person-gregory",
     "person-hilbert",
@@ -8461,6 +8596,7 @@
     "person-euler",
     "person-fermat",
     "person-fourier",
+    "person-gauss",
     "person-godel",
     "person-gregory",
     "person-hilbert",
@@ -8540,6 +8676,7 @@
     "person-dalembert",
     "person-de-moivre",
     "person-euler",
+    "person-gauss",
     "person-johann-bernoulli",
     "person-lagrange",
     "person-laplace",
@@ -8595,6 +8732,7 @@
     "episode-prague-1834",
     "person-dirichlet",
     "person-fourier",
+    "person-gauss",
     "person-laplace"
    ],
    "엄밀화": [
@@ -8793,7 +8931,8 @@
    "가우스": [
     "concept-complex-number",
     "concept-complex-number-advanced",
-    "concept-probability-advanced"
+    "concept-probability-advanced",
+    "person-gauss"
    ],
    "16세기": [
     "concept-complex-number",
@@ -8976,7 +9115,8 @@
     "person-bayes"
    ],
    "최소제곱": [
-    "concept-probability-advanced"
+    "concept-probability-advanced",
+    "person-gauss"
    ],
    "정규분포": [
     "concept-probability-advanced",
@@ -9059,7 +9199,8 @@
    "우선권": [
     "episode-huygens-anagram",
     "episode-prague-1834",
-    "episode-priority-dispute"
+    "episode-priority-dispute",
+    "person-gauss"
    ],
    "갈릴레이": [
     "episode-huygens-anagram"
@@ -9176,6 +9317,22 @@
    "함수 개념": [
     "person-fourier"
    ],
+   "산술연구": [
+    "person-gauss"
+   ],
+   "정십칠각형": [
+    "person-gauss"
+   ],
+   "비유클리드기하": [
+    "person-gauss"
+   ],
+   "보여이": [
+    "person-gauss"
+   ],
+   "괴팅겐": [
+    "person-gauss",
+    "person-hilbert"
+   ],
    "연속체가설": [
     "person-godel"
    ],
@@ -9192,9 +9349,6 @@
     "person-hilbert"
    ],
    "23문제": [
-    "person-hilbert"
-   ],
-   "괴팅겐": [
     "person-hilbert"
    ],
    "요한베르누이": [
@@ -9295,7 +9449,8 @@
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
     "person-cantor",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-gauss"
    ],
    "person-weierstrass": [
     "concept-analysis-rigor",
@@ -9334,6 +9489,15 @@
    ],
    "후대 편집자들": [
     "concept-analytic-geometry"
+   ],
+   "person-gauss": [
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "concept-probability-advanced",
+    "person-dedekind",
+    "person-dirichlet",
+    "person-laplace"
    ],
    "데자르그": [
     "concept-analytic-geometry-advanced"
@@ -9396,11 +9560,6 @@
    ],
    "갈릴레오": [
     "concept-calculus-of-variations"
-   ],
-   "가우스": [
-    "concept-complex-number",
-    "concept-complex-number-advanced",
-    "concept-probability-advanced"
    ],
    "봄벨리": [
     "concept-complex-number"
@@ -9495,7 +9654,8 @@
     "episode-dedekind-nov24",
     "person-cauchy",
     "person-dedekind",
-    "person-fourier"
+    "person-fourier",
+    "person-gauss"
    ],
    "person-laplace": [
     "concept-differential-equation-advanced",
@@ -9503,6 +9663,7 @@
     "person-bayes",
     "person-cauchy",
     "person-de-moivre",
+    "person-gauss",
     "person-lagrange"
    ],
    "푸앵카레": [
@@ -10803,6 +10964,12 @@
      "제목": "레온하르트 오일러",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "concept-differentiation-advanced": [
@@ -11497,6 +11664,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-jakob-bernoulli",
      "제목": "야코프 베르누이",
      "유형": "인물",
@@ -11615,6 +11788,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
@@ -11679,6 +11858,12 @@
     {
      "슬러그": "person-fourier",
      "제목": "조제프 푸리에",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "본문"
     }
@@ -11873,6 +12058,12 @@
      "제목": "리하르트 데데킨트",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "century-18c": [
@@ -11973,6 +12164,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-johann-bernoulli",
      "제목": "요한 베르누이",
      "유형": "인물",
@@ -12055,6 +12252,12 @@
     {
      "슬러그": "person-dirichlet",
      "제목": "페터 구스타프 르죈 디리클레",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "관련인물"
     }
@@ -12529,6 +12732,50 @@
      "경로": "관련일화"
     }
    ],
+   "person-gauss": [
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-probability-advanced",
+     "제목": "확률론 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-dirichlet",
+     "제목": "페터 구스타프 르죈 디리클레",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "관련인물"
+    }
+   ],
    "person-jakob-bernoulli": [
     {
      "슬러그": "concept-calculus-of-variations",
@@ -12645,6 +12892,12 @@
     {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -12867,6 +13120,12 @@
     {
      "슬러그": "person-fourier",
      "제목": "조제프 푸리에",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "관련인물"
     }
@@ -13368,6 +13627,15 @@
   "조제프푸리에": "person-fourier",
   "푸리에": "person-fourier",
   "푸리에 급수": "person-fourier",
+  "Carl Friedrich Gauss": "person-gauss",
+  "Gauss": "person-gauss",
+  "person-gauss": "person-gauss",
+  "가우스": "person-gauss",
+  "산술 연구": "person-gauss",
+  "수학의 왕자": "person-gauss",
+  "인물_카를 프리드리히 가우스": "person-gauss",
+  "카를 프리드리히 가우스": "person-gauss",
+  "칼 프리드리히 가우스": "person-gauss",
   "Kurt Gödel": "person-godel",
   "person-godel": "person-godel",
   "괴델": "person-godel",
