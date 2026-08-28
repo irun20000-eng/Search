@@ -17,7 +17,7 @@
   출생지: 오스트리아-헝가리 브륀(지금의 체코 브르노)
 
 기여개념: []
-관련인물: [person-hilbert]
+관련인물: [person-hilbert, person-poincare]
 
 출처:
   - 번호: 1

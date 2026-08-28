@@ -45,7 +45,7 @@
 
 선행개념: [concept-differential-equation]
 후속개념: []
-기여인물: [person-euler, person-lagrange, person-laplace, person-dalembert, person-fourier, person-dirichlet]
+기여인물: [person-euler, person-lagrange, person-laplace, person-dalembert, person-fourier, person-dirichlet, person-poincare]
 
 이미지:
   - 파일: assets/figures/vibrating-string-initial-shape.svg
