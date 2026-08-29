@@ -15,7 +15,7 @@
   사망: 1705
   출생지: 스위스 바젤
 
-기여개념: [concept-probability, concept-probability-advanced, concept-differential-equation, concept-calculus-of-variations, concept-series]
+기여개념: [concept-probability, concept-probability-advanced, concept-differential-equation, concept-calculus-of-variations, concept-series, concept-logarithm-advanced]
 관련인물: [person-huygens, person-leibniz, person-euler, person-johann-bernoulli]
 관련일화: [episode-bernoulli-tomb]
 

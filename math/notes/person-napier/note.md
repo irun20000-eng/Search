@@ -16,7 +16,7 @@
   사망: 1617
   출생지: 스코틀랜드 에든버러 머치스턴 성
 
-기여개념: [concept-logarithm]
+기여개념: [concept-logarithm, concept-logarithm-advanced]
 
 출처:
   - 번호: 1

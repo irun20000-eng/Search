@@ -16,7 +16,7 @@
   사망: 1783
   출생지: 스위스 바젤
 
-기여개념: [concept-function, concept-graph-theory, concept-calculus-of-variations, concept-series, concept-series-advanced, concept-complex-number, concept-complex-number-advanced, concept-differential-equation, concept-differential-equation-advanced, concept-fundamental-theorem, concept-integration]
+기여개념: [concept-function, concept-graph-theory, concept-calculus-of-variations, concept-series, concept-series-advanced, concept-complex-number, concept-complex-number-advanced, concept-differential-equation, concept-differential-equation-advanced, concept-fundamental-theorem, concept-integration, concept-logarithm, concept-logarithm-advanced]
 관련인물: [person-lagrange, person-jakob-bernoulli]
 
 출처:
