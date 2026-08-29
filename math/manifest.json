@@ -172,6 +172,167 @@
   },
   {
    "유형": "개념",
+   "제목": "대수 기호법",
+   "슬러그": "concept-algebra-notation",
+   "별칭": [
+    "기호법",
+    "대수기호",
+    "문자식",
+    "미지수 표기",
+    "수사적 대수",
+    "기호적 대수",
+    "대수학의 세 단계"
+   ],
+   "볼트파일명": "개념_대수 기호법",
+   "트랙": "이해편",
+   "짝문서": "concept-algebra-notation-advanced",
+   "세기": [
+    3,
+    9,
+    16,
+    17
+   ],
+   "분야": [
+    "대수학",
+    "수학기초론"
+   ],
+   "교과": [
+    "중등수학",
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "x 를 쓰기까지 2000년이 걸렸다. 기호가 있어서 대수를 한 것이 아니라, 대수를 하다가 기호가 나왔다. 그리고 기호가 생기자 풀 수 있는 문제의 종류가 바뀌었다.",
+   "태그": [
+    "수학사",
+    "대수학",
+    "기호법",
+    "문자식",
+    "미지수",
+    "디오판토스",
+    "알콰리즈미",
+    "비에트",
+    "데카르트",
+    "레코드",
+    "등호",
+    "3세기",
+    "9세기",
+    "16세기",
+    "17세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 3,
+     "인물": "디오판토스",
+     "변화": "『산술』에서 낱말 대신 줄임말을 쓰기 시작했다. 완전한 문장도 완전한 기호도 아닌 중간 단계다.",
+     "출처": 1
+    },
+    {
+     "세기": 9,
+     "인물": "알콰리즈미",
+     "변화": "『알자브르』의 대수는 처음부터 끝까지 말로 되어 있다. 기호가 하나도 없이 방정식 풀이를 세운 셈이다.",
+     "출처": 1
+    },
+    {
+     "세기": 16,
+     "인물": "레코드",
+     "변화": "1557년 『지혜의 숫돌』에서 \"같다\"를 되풀이해 쓰는 번거로움을 피하려고 길이가 같은 평행선 두 줄을 썼다. 등호가 여기서 나왔다.",
+     "출처": 4
+    },
+    {
+     "세기": 16,
+     "인물": "비에트",
+     "변화": "1591년 『해석 기술 입문』에서 모음을 미지수에, 자음을 기지수에 배정했다. 아는 것과 모르는 것을 처음으로 표기에서 갈랐다.",
+     "출처": 2
+    },
+    {
+     "세기": 17,
+     "인물": "데카르트",
+     "변화": "1637년 『기하학』에서 미지수를 알파벳 뒤쪽 x·y·z, 기지수를 앞쪽 a·b·c 로 바꾸고 거듭제곱을 지수로 적었다. 오늘 우리가 쓰는 모습이다.",
+     "출처": 7
+    }
+   ],
+   "선행개념": [],
+   "후속개념": [
+    "concept-analytic-geometry",
+    "concept-complex-number"
+   ],
+   "기여인물": [
+    "person-descartes"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Wikiquote, History of algebra (네셀만의 3단계 인용 모음) — **1842년 동양학자 G H F 네셀만이 대수의 발전을 세 단계로 나누었다**는 것과 그 내용, 곧 **① 수사적 대수(문제를 말로 진술하고 말로 푸는 것) ② 생략적 대수(낱말 자리에 줄임말을 쓰는 것) ③ 기호적 대수(낱말을 기호로 완전히 바꾸어 일반적인 수치 주장을 세울 수 있게 되는 것)** 라는 것, **디오판토스가 산문과 함께 약간의 속기를 쓴 생략적 대수의 선구자 가운데 하나**라는 것과 대조적으로 **『알자브르』의 대수는 완전히 수사적이고 『산술』은 생략적**이라는 것",
+     "URL": "https://en.wikiquote.org/wiki/History_of_algebra",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Encyclopaedia Britannica, In artem analyticem isagoge — **1591년 프랑수아 비에트가 『해석 기술 입문』에서 오늘날까지 대수에 쓰이는 문자 표기를 세웠고, 미지의 양 또는 변수에 모음을, 이미 아는 양 또는 매개변수에 자음을 배정했다**는 것",
+     "URL": "https://www.britannica.com/topic/In-artem-analyticem-isagoge",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Rutgers University, François Viète — Father of Modern Algebraic Notation — 비에트가 문자를 쓰는 새 대수를 **로지스티카 스페키오사(logistica speciosa)** 라 불렀고, 수를 쓰던 옛 대수인 **로지스티카 누메로사(logistica numerosa)** 와 대비했다는 것",
+     "URL": "https://sites.math.rutgers.edu/~cherlin/History/Papers2002/vieta.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, The Whetstone of Witte — **로버트 레코드가 1557년 『지혜의 숫돌』에서 \"같다(aequalis)\"는 낱말을 성가시게 되풀이하는 것을 피하려고 길이가 같은 평행선 두 줄로 이루어진 기호 \"=\"를 썼다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Whetstone_of_Witte",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, Robert Recorde (1510~1558) — **레코드가 1489년 독일의 코스 학자 요하네스 비트만이 도입한 \"+\"와 \"−\" 기호를 받아들인 최초의 영국인**이라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Christoph Rudolff — **루돌프가 최초의 독일어 대수 교재를 냈고 근호 기호 √ 를 도입했다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Christoph_Rudolff",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학산책) 「미지수」 — **문자를 이용하여 나타낸 방정식에서 값을 알아내려는 문자를 미지수라 한다**는 것, 그리고 **이미 알고 있는 값(기지수)은 알파벳 앞 문자인 a·b·c 등으로, 아직 알지 못하는 값(미지수)은 알파벳 뒤쪽 문자로 적는다**는 관행",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405085&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(학문명백과) 「대수학」 — **대수학은 수 대신에 문자를 사용하여 방정식의 풀이 방법이나 대수적 구조를 연구하는 학문**이라는 정의와, 그 역사가 기원전 1600년 무렵 고대 이집트까지 거슬러 올라간다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098120&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학의 대왕) 「수학에 문자를 왜 사용할까?」 — 수학에서 **문자는 주로 우리가 모르는 수를 구할 때 쓰인다**는 것, 그것이 \"□를 구하시오\"라는 물음과 이어진다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582963&cid=58600&categoryId=59193",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학과 함께하는 세계여행) 「0의 간략한 역사」 — **'zero'라는 용어와 0의 현대적인 기호가 불과 400여 년 전에 만들어졌다**는 것과, 0의 개념이 비교적 최근까지 쉽게 받아들여지지 않았다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582423&cid=60204&categoryId=60204",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-algebra-notation/note.md",
+   "세기전체": [
+    3,
+    9,
+    16,
+    17
+   ],
+   "자수": 7843,
+   "시각화": 6
+  },
+  {
+   "유형": "개념",
    "제목": "무한급수",
    "슬러그": "concept-series",
    "별칭": [
@@ -347,6 +508,177 @@
    ],
    "자수": 8568,
    "시각화": 4
+  },
+  {
+   "유형": "개념",
+   "제목": "대수 기호법 (확장편)",
+   "슬러그": "concept-algebra-notation-advanced",
+   "별칭": [
+    "대수 기호법 확장편",
+    "동차성",
+    "동차성의 법칙",
+    "단위 선분",
+    "로지스티카 스페키오사",
+    "기호대수"
+   ],
+   "볼트파일명": "개념_대수 기호법 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-algebra-notation",
+   "세기": [
+    16,
+    17,
+    19
+   ],
+   "분야": [
+    "대수학",
+    "기하학",
+    "수학기초론"
+   ],
+   "교과": [
+    "공통수학1",
+    "수학"
+   ],
+   "난이도": "심화",
+   "요약": "비에트는 문자를 도입하고도 \"길이는 길이끼리만 더한다\"는 제약을 지켰다. 데카르트가 그것을 깬 방법은 증명이 아니라 약속이었다 — 길이 1인 선분 하나를 몰래 놓는 것. 대수가 기하에서 풀려나는 대신 무엇을 잃었는지도 함께 본다.",
+   "태그": [
+    "수학사",
+    "대수학",
+    "기호법",
+    "동차성",
+    "비에트",
+    "데카르트",
+    "단위선분",
+    "로지스티카스페키오사",
+    "네셀만",
+    "차원",
+    "16세기",
+    "17세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 16,
+     "인물": "비에트",
+     "변화": "문자 표기를 세우면서도 동차성의 법칙을 지켰다. 길이는 길이끼리, 넓이는 넓이끼리만 더할 수 있다는 요구다.",
+     "출처": 1
+    },
+    {
+     "세기": 17,
+     "인물": "데카르트",
+     "변화": "암묵적인 단위 길이를 놓아 제약을 우회했다. 그 기준으로 나누면 양이 무차원이 되고 x² + x³ 같은 식이 허용된다.",
+     "출처": 1
+    },
+    {
+     "세기": 17,
+     "인물": "데카르트",
+     "변화": "식의 모든 항을 단순한 선분으로 보고, 단위를 몇 번 곱하거나 나누어 원하는 차원을 맞췄다.",
+     "출처": 2
+    },
+    {
+     "세기": 19,
+     "인물": "네셀만",
+     "변화": "1842년에 대수의 발전을 수사적·생략적·기호적 세 단계로 구분했다. 이 구분 자체가 후대의 틀이다.",
+     "출처": 3
+    }
+   ],
+   "선행개념": [
+    "concept-algebra-notation"
+   ],
+   "후속개념": [
+    "concept-analytic-geometry-advanced",
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-descartes",
+    "person-fermat"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Viète, Descartes, and the Emergence of Modern Mathematics (연구 논문) — **비에트가 크기를 나타내는 데 추상적인 문자를 썼으면서도 대수 연산이 차원의 동차성을 지켜야 한다고 고집했고, 선분은 선분끼리만 넓이는 넓이끼리만 더할 수 있게 요구했다**는 것, **데카르트가 암묵적인 가상의 단위 길이를 도입해 그 제약을 우회했다**는 것, **그 임의의 기준으로 기하학적 양을 나누면 양이 무차원이 되어 x² + x³ 같은 표현이 대수적으로 허용된다**는 것, 그리고 **양이 임의의 기준에 상대적으로 표현되자 수치 표현이 구조적 구별을 가리기 시작했고 표현의 편의가 본래의 통일성으로 오인되기에 이르렀다**는 것",
+     "URL": "https://www.researchgate.net/publication/271163803_Viete_Descartes_and_the_Emergence_of_Modern_Mathematics",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "René Descartes' Foundations of Analytic Geometry (룬드대 학위논문, DiVA) — **비에트가 맞닥뜨린 동차성 문제를 풀기 위해 데카르트가 식의 모든 항을 단순한 선분으로 보고 그것을 정사각형·정육면체 등으로 다루었다**는 것, **따라서 모든 항은 원하는 차원을 얻기 위해 단위로 몇 번이든 나누거나 곱할 수 있었다**는 것",
+     "URL": "https://www.diva-portal.org/smash/get/diva2:631055/FULLTEXT01.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikiquote, History of algebra (네셀만의 3단계 인용 모음) — **1842년 동양학자 G H F 네셀만이 대수의 발전을 수사적·생략적·기호적 세 단계로 나누었다**는 것과, 기호적 단계의 표지가 **낱말을 기호로 완전히 바꾸어 일반적인 수치 주장을 세울 수 있게 되는 것**이라는 서술",
+     "URL": "https://en.wikiquote.org/wiki/History_of_algebra",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Encyclopaedia Britannica, In artem analyticem isagoge — **1591년 비에트가 『해석 기술 입문』에서 오늘날까지 쓰이는 문자 표기를 세웠고 미지의 양에 모음을, 이미 아는 양에 자음을 배정했다**는 것",
+     "URL": "https://www.britannica.com/topic/In-artem-analyticem-isagoge",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Rutgers University, François Viète — Father of Modern Algebraic Notation — 비에트가 문자를 쓰는 새 대수를 **로지스티카 스페키오사**, 수를 쓰던 옛 대수를 **로지스티카 누메로사**라 부르며 대비했다는 것",
+     "URL": "https://sites.math.rutgers.edu/~cherlin/History/Papers2002/vieta.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "arXiv, François Viète and his contribution to mathematics — 비에트의 대수 개혁과 그가 남긴 표기·방법에 관한 개관",
+     "URL": "https://arxiv.org/pdf/2210.12545",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과) 「대수학」 — **대수학이 해석학·기하학과 함께 수학의 큰 분야 중 하나로서 수 또는 수 대신에 사용하는 문자 및 그와 관련된 연산을 포함하는 이론을 연구하는 학문**이며, 고전적 의미로는 방정식 특히 다항방정식을 다룬다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125227&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(한 권으로 끝내는 수학) 「대수학의 도입」 — **대수학에서는 양 대신 문자를 사용하여 만든 방정식으로 수학 문제를 나타낸다**는 것과, **방정식이 균형 잡힌 양팔 저울과 같아 그 특성을 이용해 미지량을 구할 수 있다**는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582424&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학산책) 「미지수」 — **이미 알고 있는 값(기지수)은 알파벳 앞 문자 a·b·c 등으로, 아직 알지 못하는 값(미지수)은 알파벳 뒤쪽 문자로 적는다**는 관행",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405085&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(학문명백과) 「대수학」 — 대수학의 정의와, 그 역사가 기원전 1600년 무렵 고대 이집트까지 거슬러 올라간다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098120&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, The Whetstone of Witte — 레코드가 1557년 『지혜의 숫돌』에서 **\"같다\"를 되풀이하는 성가심을 피하려고** 길이가 같은 평행선 두 줄로 등호를 썼다는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Whetstone_of_Witte",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor History of Mathematics, Robert Recorde (1510~1558) — 레코드가 **1489년 비트만이 도입한 + 와 − 를 받아들인 최초의 영국인**이라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, Christoph Rudolff — 루돌프가 최초의 독일어 대수 교재를 냈고 **근호 기호 √ 를 도입했다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Christoph_Rudolff",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-algebra-notation-advanced/note.md",
+   "세기전체": [
+    16,
+    17,
+    19
+   ],
+   "자수": 10706,
+   "시각화": 7
   },
   {
    "유형": "개념",
@@ -650,7 +982,7 @@
     17,
     18
    ],
-   "자수": 7680,
+   "자수": 7693,
    "시각화": 7
   },
   {
@@ -3557,7 +3889,9 @@
     "출생지": "프랑스 투렌 라에"
    },
    "기여개념": [
-    "concept-analytic-geometry"
+    "concept-analytic-geometry",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced"
    ],
    "관련일화": [
     "episode-descartes-fly"
@@ -3662,7 +3996,8 @@
    },
    "기여개념": [
     "concept-differentiation",
-    "concept-probability"
+    "concept-probability",
+    "concept-algebra-notation-advanced"
    ],
    "관련일화": [
     "episode-pascal-fermat-letters"
@@ -8882,16 +9217,26 @@
    "-3": [
     "concept-integration"
    ],
+   "3": [
+    "concept-algebra-notation"
+   ],
+   "9": [
+    "concept-algebra-notation"
+   ],
    "14": [
     "concept-series"
    ],
    "16": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-complex-number",
     "concept-logarithm",
     "person-napier"
    ],
    "17": [
     "century-17c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
@@ -8961,6 +9306,7 @@
    ],
    "19": [
     "century-19c",
+    "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced",
@@ -9071,6 +9417,7 @@
    "기하학": [
     "century-17c",
     "century-19c",
+    "concept-algebra-notation-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "episode-bernoulli-tomb",
@@ -9104,6 +9451,8 @@
    "대수학": [
     "century-17c",
     "century-20c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
@@ -9151,6 +9500,8 @@
    "수학기초론": [
     "century-19c",
     "century-20c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
@@ -9286,6 +9637,25 @@
    ]
   },
   "교과": {
+   "중등수학": [
+    "concept-algebra-notation"
+   ],
+   "공통수학1": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "concept-function",
+    "concept-logarithm",
+    "person-napier"
+   ],
+   "수학": [
+    "concept-algebra-notation-advanced",
+    "person-frege",
+    "person-gauss",
+    "person-heine",
+    "person-klein"
+   ],
    "미적분Ⅰ": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
@@ -9312,13 +9682,6 @@
     "person-gauss",
     "person-klein",
     "person-poincare"
-   ],
-   "공통수학1": [
-    "concept-complex-number",
-    "concept-complex-number-advanced",
-    "concept-function",
-    "concept-logarithm",
-    "person-napier"
    ],
    "미적분Ⅱ": [
     "concept-fundamental-theorem",
@@ -9357,12 +9720,6 @@
    "확률과통계": [
     "person-fermat",
     "person-pascal"
-   ],
-   "수학": [
-    "person-frege",
-    "person-gauss",
-    "person-heine",
-    "person-klein"
    ]
   },
   "유형": {
@@ -9373,6 +9730,8 @@
     "century-20c"
    ],
    "개념": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
@@ -9451,6 +9810,8 @@
     "century-18c",
     "century-19c",
     "century-20c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry",
@@ -9513,6 +9874,8 @@
    ],
    "17세기": [
     "century-17c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
     "concept-analytic-geometry",
     "concept-calculus-of-variations",
     "concept-differential-equation",
@@ -9753,6 +10116,71 @@
     "century-20c",
     "episode-namdaemun-1947"
    ],
+   "대수학": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced"
+   ],
+   "기호법": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced"
+   ],
+   "문자식": [
+    "concept-algebra-notation"
+   ],
+   "미지수": [
+    "concept-algebra-notation"
+   ],
+   "디오판토스": [
+    "concept-algebra-notation"
+   ],
+   "알콰리즈미": [
+    "concept-algebra-notation"
+   ],
+   "비에트": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced"
+   ],
+   "데카르트": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-analytic-geometry",
+    "episode-descartes-fly",
+    "person-descartes"
+   ],
+   "레코드": [
+    "concept-algebra-notation"
+   ],
+   "등호": [
+    "concept-algebra-notation"
+   ],
+   "3세기": [
+    "concept-algebra-notation"
+   ],
+   "9세기": [
+    "concept-algebra-notation"
+   ],
+   "16세기": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-complex-number",
+    "concept-logarithm",
+    "person-napier"
+   ],
+   "동차성": [
+    "concept-algebra-notation-advanced"
+   ],
+   "단위선분": [
+    "concept-algebra-notation-advanced"
+   ],
+   "로지스티카스페키오사": [
+    "concept-algebra-notation-advanced"
+   ],
+   "네셀만": [
+    "concept-algebra-notation-advanced"
+   ],
+   "차원": [
+    "concept-algebra-notation-advanced"
+   ],
    "실수": [
     "concept-analysis-rigor",
     "episode-dedekind-nov24"
@@ -9786,11 +10214,6 @@
    "좌표": [
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
-    "episode-descartes-fly",
-    "person-descartes"
-   ],
-   "데카르트": [
-    "concept-analytic-geometry",
     "episode-descartes-fly",
     "person-descartes"
    ],
@@ -9852,11 +10275,6 @@
     "concept-complex-number-advanced",
     "concept-probability-advanced",
     "person-gauss"
-   ],
-   "16세기": [
-    "concept-complex-number",
-    "concept-logarithm",
-    "person-napier"
    ],
    "대수학의 기본정리": [
     "concept-complex-number-advanced"
@@ -10454,6 +10872,40 @@
    ]
   },
   "인물": {
+   "person-descartes": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
+    "episode-descartes-fly",
+    "person-huygens"
+   ],
+   "디오판토스": [
+    "concept-algebra-notation"
+   ],
+   "레코드": [
+    "concept-algebra-notation"
+   ],
+   "비에트": [
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced"
+   ],
+   "알콰리즈미": [
+    "concept-algebra-notation"
+   ],
+   "person-fermat": [
+    "concept-algebra-notation-advanced",
+    "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
+    "concept-differentiation",
+    "concept-probability",
+    "episode-pascal-fermat-letters",
+    "person-huygens",
+    "person-pascal"
+   ],
+   "네셀만": [
+    "concept-algebra-notation-advanced"
+   ],
    "person-bolzano": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
@@ -10529,21 +10981,6 @@
    "person-klein": [
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced"
-   ],
-   "person-descartes": [
-    "concept-analytic-geometry",
-    "concept-analytic-geometry-advanced",
-    "episode-descartes-fly",
-    "person-huygens"
-   ],
-   "person-fermat": [
-    "concept-analytic-geometry",
-    "concept-analytic-geometry-advanced",
-    "concept-differentiation",
-    "concept-probability",
-    "episode-pascal-fermat-letters",
-    "person-huygens",
-    "person-pascal"
    ],
    "후대 편집자들": [
     "concept-analytic-geometry"
@@ -10860,6 +11297,18 @@
      "제목": "17세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "concept-analytic-geometry",
@@ -11220,6 +11669,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-analytic-geometry",
      "제목": "해석기하",
      "유형": "개념",
@@ -11310,6 +11765,12 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "후속개념"
     },
     {
      "슬러그": "concept-analytic-geometry-advanced",
@@ -11896,6 +12357,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-calculus-of-variations",
      "제목": "변분법",
      "유형": "개념",
@@ -12065,6 +12538,18 @@
      "슬러그": "century-18c",
      "제목": "18세기",
      "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
      "경로": "본문"
     },
     {
@@ -12358,6 +12843,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-analysis-rigor",
      "제목": "해석학의 엄밀화",
      "유형": "개념",
@@ -12442,6 +12933,18 @@
      "제목": "20세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
     },
     {
      "슬러그": "concept-analysis-rigor-advanced",
@@ -13244,6 +13747,12 @@
      "제목": "19세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
     },
     {
      "슬러그": "concept-analytic-geometry",
@@ -14054,27 +14563,91 @@
      "경로": "관련인물"
     }
    ],
-   "person-heine": [
+   "concept-algebra-notation-advanced": [
     {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
      "유형": "개념",
-     "경로": "기여인물"
+     "경로": "짝문서"
     },
     {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "person-klein",
-     "제목": "펠릭스 클라인",
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
      "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-fermat",
+     "제목": "피에르 드 페르마",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-algebra-notation": [
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-logarithm-advanced": [
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-jakob-bernoulli",
+     "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "person-frege": [
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
     {
      "슬러그": "concept-analysis-rigor-advanced",
      "제목": "해석학의 엄밀화 (확장편)",
@@ -14110,6 +14683,26 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "person-heine": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-klein": [
@@ -14650,38 +15243,6 @@
      "경로": "관련인물"
     }
    ],
-   "concept-logarithm-advanced": [
-    {
-     "슬러그": "concept-logarithm",
-     "제목": "로그",
-     "유형": "개념",
-     "경로": "짝문서"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-jakob-bernoulli",
-     "제목": "야코프 베르누이",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-leibniz",
-     "제목": "고트프리트 라이프니츠",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-napier",
-     "제목": "존 네이피어",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
    "concept-logarithm": [
     {
      "슬러그": "concept-logarithm-advanced",
@@ -14796,6 +15357,29 @@
   "세기_20세기": "century-20c",
   "수학기초론의 세기": "century-20c",
   "이십세기": "century-20c",
+  "concept-algebra-notation": "concept-algebra-notation",
+  "개념_대수 기호법": "concept-algebra-notation",
+  "기호법": "concept-algebra-notation",
+  "기호적 대수": "concept-algebra-notation",
+  "대수 기호법": "concept-algebra-notation",
+  "대수 기호법 이해편": "concept-algebra-notation",
+  "대수 기호법이해편": "concept-algebra-notation",
+  "대수기호": "concept-algebra-notation",
+  "대수학의 세 단계": "concept-algebra-notation",
+  "문자식": "concept-algebra-notation",
+  "미지수 표기": "concept-algebra-notation",
+  "수사적 대수": "concept-algebra-notation",
+  "concept-algebra-notation-advanced": "concept-algebra-notation-advanced",
+  "개념_대수 기호법 확장편": "concept-algebra-notation-advanced",
+  "기호대수": "concept-algebra-notation-advanced",
+  "단위 선분": "concept-algebra-notation-advanced",
+  "대수 기호법 (확장편)": "concept-algebra-notation-advanced",
+  "대수 기호법 (확장편) 확장편": "concept-algebra-notation-advanced",
+  "대수 기호법 (확장편)확장편": "concept-algebra-notation-advanced",
+  "대수 기호법 확장편": "concept-algebra-notation-advanced",
+  "동차성": "concept-algebra-notation-advanced",
+  "동차성의 법칙": "concept-algebra-notation-advanced",
+  "로지스티카 스페키오사": "concept-algebra-notation-advanced",
   "concept-analysis-rigor": "concept-analysis-rigor",
   "개념_해석학의 엄밀화": "concept-analysis-rigor",
   "데데킨트 절단": "concept-analysis-rigor",

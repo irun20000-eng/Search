@@ -16,7 +16,7 @@
   사망: 1665
   출생지: 프랑스 보몽드로마뉴
 
-기여개념: [concept-differentiation, concept-probability]
+기여개념: [concept-differentiation, concept-probability, concept-algebra-notation-advanced]
 관련인물: [person-pascal, person-huygens]
 관련일화: [episode-pascal-fermat-letters]
 
