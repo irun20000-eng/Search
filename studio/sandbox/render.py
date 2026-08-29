@@ -78,12 +78,50 @@ def cmd_sheet(a):
 
 
 # --- 컷툰 ------------------------------------------------------------------
+# 진짜 컷아웃이 없어도 **그림이 들어가는 경로가 도는지**는 확인할 수 있어야 한다.
+# 아래는 캐릭터가 아니라 그냥 사람 크기의 투명 PNG 다. 배관 점검용이고,
+# 진짜 컷아웃이 오면 같은 파일명으로 덮으면 된다.
+STUB_COLORS = {"dr-pi": "#1F3A5F", "root": "#9FD8C9", "zero": "#E8B93E",
+               "coco": "#C0704A", "mu": "#7A6AA8"}
+
+
+def make_stubs(force=False):
+    d = HERE / "assets" / "characters"
+    d.mkdir(parents=True, exist_ok=True)
+    need = {k: v for k, v in STUB_COLORS.items()
+            if force or not (d / (k + ".png")).exists()}
+    if not need:
+        return []
+    use_local_chromium()
+    from playwright.sync_api import sync_playwright
+    exe = os.environ.get("CONCEPT_CHROMIUM")
+    with sync_playwright() as pw:
+        b = pw.chromium.launch(**({"executable_path": exe} if exe else {}))
+        for name, c in need.items():
+            pg = b.new_page(viewport={"width": 300, "height": 560})
+            pg.set_content(
+                '<body style="margin:0;background:transparent"><svg width="300" '
+                'height="560"><g fill="%s"><circle cx="150" cy="110" r="86"/>'
+                '<rect x="72" y="205" width="156" height="250" rx="46"/>'
+                '<rect x="106" y="440" width="34" height="110" rx="16"/>'
+                '<rect x="160" y="440" width="34" height="110" rx="16"/>'
+                '</g></svg></body>' % c)
+            pg.screenshot(path=str(d / (name + ".png")), omit_background=True)
+            pg.close()
+        b.close()
+    print("[대역] 임시 실루엣 %d개 생성 — %s" % (len(need), d))
+    print("       캐릭터가 아니다. 진짜 컷아웃이 오면 같은 이름으로 덮을 것.")
+    return sorted(need)
+
+
 def cmd_cuttoon(a):
     import cuttoon
     names = ([a.spec] if a.spec else
              [p.stem for p in sorted(SPECS.glob("cuttoon-*.py"))])
     if not names:
         raise SystemExit("specs/cuttoon-*.py 가 없다")
+    if a.stubs:
+        make_stubs()
     use_local_chromium()
     for n in names:
         spec = load_spec(SPECS / (n + ".py"))
@@ -193,6 +231,8 @@ def main():
     c = sub.add_parser("cuttoon", help="A4 여섯 컷 만화")
     c.add_argument("spec", nargs="?")
     c.add_argument("--scale", type=int, default=1)
+    c.add_argument("--stubs", action="store_true",
+                   help="컷아웃이 없을 때 임시 실루엣을 만들어 배관을 확인한다")
     c.set_defaults(fn=cmd_cuttoon)
 
     m = sub.add_parser("same", help="A 판형 동일성 확인")

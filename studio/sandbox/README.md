@@ -15,6 +15,7 @@
 python3 studio/sandbox/render.py sheet size-bias --plan all   # 한 스펙을 세 판형으로
 python3 studio/sandbox/render.py sheet --all --plan B         # 전 스펙을 판형 B 로
 python3 studio/sandbox/render.py cuttoon                      # 컷툰 A4 6컷
+python3 studio/sandbox/render.py cuttoon --stubs              # 컷아웃 대신 임시 실루엣
 python3 studio/sandbox/render.py same                         # A 판형 동일성 확인 ★
 ```
 
@@ -49,8 +50,21 @@ playwright    pip install playwright  (브라우저는 이미 있으므로 insta
 | | 무엇 | 지금 상태 |
 |---|---|---|
 | 판형 | 개념 한 장의 A/B/C | `render.py sheet --plan`. A=기준(발행분) · B=센터 임팩트 · C=구조 강조 |
-| 컷툰 | A4 6컷 만화 조립 | `render.py cuttoon` |
-| 캐릭터 | QED프렌즈 컷아웃 끼우기 | **플레이스홀더** — 아래 참조 |
+| 컷툰 | A4 6컷 만화 조립 | `render.py cuttoon`. `rows`(행 높이 비율)·`tall`(두 행)로 판면 리듬 |
+| 캐릭터 | QED프렌즈 컷아웃 세우기 | `figures` — 파일이 없으면 자리표, `--stubs` 로 대역 |
+
+### 렌더가 자동으로 재는 것
+
+눈으로만 보면 매번 놓치는 것들이라 숫자로 만들었다. 실패시키지는 않는다 —
+실험대에서 죽이면 시험을 못 하기 때문이다. 대신 무엇이 얼마나 어긋났는지 짚어 준다.
+
+| 재는 것 | 왜 |
+|---|---|
+| 컷 밖으로 밀림 | 컷은 `overflow:hidden` 이라 밀려난 말풍선은 **소리 없이 사라진다** |
+| 격자 빈칸 | `wide`/`tall` 을 섞으면 마지막 줄에 구멍이 남는다 |
+| 컷 높이 종수 | 여섯 컷이 전부 같은 높이면 만화가 아니라 **표로 읽힌다** |
+| 말풍선·나레이션·효과음 겹침 | 전부 `absolute` 라 서로를 모르고 앉는다 |
+| 얼굴 가림 | 몸통을 조금 가리는 건 연출이지만 **얼굴을 가리면 컷이 죽는다**(상단 30%, 12% 이상) |
 
 ### 그림은 어떻게 들어오나 — 세 단계
 
@@ -75,10 +89,28 @@ playwright    pip install playwright  (브라우저는 이미 있으므로 insta
 studio/sandbox/assets/characters/dr-pi.png  root.png  zero.png  coco.png  mu.png
 ```
 
+**이 폴더는 git 이 무시한다.** Search 는 공개 리포이고(갤러리가 여기서 Pages 로 나간다)
+QED프렌즈는 비공개 Shorts_Flow 의 자산이라, 커밋하면 그대로 웹에 공개된다. 정본도
+Shorts_Flow 쪽이다. 그러니 각자 자기 작업 폴더에 내려두고 쓴다.
+
+그림을 넣는 자리는 둘로 나뉜다. **섞어 쓸 수 있다.**
+
 ```python
-{"n": 3, "cast": ["닥터파이"], "img": "assets/characters/dr-pi.png",
+# ① 컷 전체를 채우는 그림 — Flow 가 그려 준 배경/연출컷
+{"n": 1, "img": "assets/bg/ep001-cut1.png"}
+
+# ② 배경 없는 컷아웃을 바닥에 세우기 — 인물만 갈아 끼울 때
+{"n": 3, "cast": ["닥터파이"],
+ "figures": [{"src": "assets/characters/dr-pi.png", "h": 80}],
+ "stage": "flex-start",           # center(기본) · flex-start · flex-end · space-between
  "bubbles": [{"t": "위는 곱해 가고 아래는 더해 가지.", "at": "top r"}]}
 ```
 
-경로는 `studio/sandbox` 기준 상대경로다. `img` 가 없으면 `cast`·`shot` 이 적힌
-자리표가 그려진다.
+경로는 `studio/sandbox` 기준 상대경로다. **파일이 없으면 조용히 깨지지 않고**
+"그림 없음 — dr-pi.png" 라고 적힌 자리표로 되돌아간다.
+
+컷아웃만 있는 컷은 인물이 흰 허공에 뜨므로 옅은 **바닥 띠**가 자동으로 깔린다
+(`"ground": False` 로 끈다. `img` 배경이 들어오면 필요 없다).
+
+진짜 컷아웃이 없어도 배관은 확인할 수 있다 — `--stubs` 가 사람 크기의 투명 PNG 를
+만들어 준다. 캐릭터가 아니라 대역이고, 진짜가 오면 같은 이름으로 덮으면 된다.
