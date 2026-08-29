@@ -32,6 +32,11 @@ sys.path.insert(0, str(HERE))
 
 DEFAULT_CHROMIUM = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 
+# 판형(plan) 이 들어가기 **직전** 커밋. `same` 의 기준은 여기여야 한다.
+# HEAD 를 기준으로 삼으면 판형이 머지된 뒤에는 자기 자신과 비교하게 돼
+# 언제나 통과하는 가짜 초록이 된다 — 검사가 아니라 위안이다.
+BASELINE = "07dd26c"
+
 
 def use_local_chromium():
     if not os.environ.get("CONCEPT_CHROMIUM") and pathlib.Path(DEFAULT_CHROMIUM).exists():
@@ -191,7 +196,8 @@ def main():
     c.set_defaults(fn=cmd_cuttoon)
 
     m = sub.add_parser("same", help="A 판형 동일성 확인")
-    m.add_argument("--ref", default="HEAD", help="비교 기준 커밋")
+    m.add_argument("--ref", default=BASELINE,
+                   help="비교 기준 커밋 (기본: 판형 도입 직전 %s)" % BASELINE)
     m.set_defaults(fn=cmd_same)
 
     a = ap.parse_args()
