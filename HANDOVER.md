@@ -78,17 +78,47 @@ git push origin --delete \
 운영 정본은 `routines/cardnews-weekly.md` + `studio/CLAUDE.md` 로 넘어갔다.
 **설계 근거 기록으로 main 에 남길지 버릴지**는 사용자 판단.
 
-### 2-2-1. 시각화 실험대 `studio/sandbox/` — 다음 실험 대기
+### 2-2-1. 컷툰 그림 넣기 — **PC 환경에서 이어서** (2026-08-29 사용자 결정)
 
-2026-08-29 신설. **발행되지 않는 자리**라 여기서 부수는 것은 값이 안 든다(`out/` 은 git 무시).
-지금 들어 있는 것: 개념 한 장 판형 A/B/C, A4 여섯 컷 컷툰(QED프렌즈), A 판형 동일성 검사.
+`studio/sandbox/` 는 발행되지 않는 실험대다(`out/` 은 git 무시). 지금 들어 있는 것:
+개념 한 장 판형 A/B/C, A4 여섯 컷 컷툰, A 판형 동일성 검사.
 
-- 컷툰의 그림은 **아직 자리표**다. 다음 차례는 `Shorts_Flow` 드라이브
-  (`19Glc5hs8h3UXhOahDmm6V4jo3PFMRzG1`)의 `characters/cutouts_*.png` 5종을
-  `studio/sandbox/assets/characters/` 로 내려두고 스펙의 `img` 를 채우는 일.
-- 판형 B/C 는 **아직 발행에 쓰지 않는다.** `studio/concept_sheet.py` 와 러너
-  워크플로는 그대로 A 만 그린다 — 실험대에서 골라 본 뒤에 옮기는 것이 순서.
-- 판형 CSS 를 건드렸으면 `render.py same` 을 반드시 돌릴 것(발행분 다섯 장이 A 다).
+**배관은 끝나 있다. PC 에서 할 일은 파일을 두고 한 줄 돌리는 것뿐이다.**
+
+```bash
+# Shorts_Flow 의 characters/cutouts_*.png 5종을 이 이름으로 둔다
+#   studio/sandbox/assets/characters/{dr-pi,root,zero,coco,mu}.png
+python3 studio/sandbox/render.py cuttoon        # 그러면 그 자리에 그대로 들어간다
+```
+
+- 스펙(`specs/cuttoon-logarithm.py`)의 `figures` 가 이미 그 경로를 가리킨다.
+  코드는 더 손댈 것이 없다.
+- **이 폴더는 gitignore 다.** Search 는 공개 리포이고(API 로 `private:false` 확인)
+  QED프렌즈는 비공개 Shorts_Flow 자산이라, 커밋하면 그대로 웹에 공개된다.
+- 대역 실루엣(`--stubs`)이 깔려 있으면 렌더가 매번 경고한다. 진짜 컷아웃으로
+  덮으면 해시가 달라 저절로 조용해진다.
+
+**왜 클라우드에서 못 했나** — 두 경로가 다 막혔다. 다시 시도해 시간 쓰지 말 것.
+1. Drive MCP 다운로드는 base64 로 컨텍스트에 들어온다. 5장 563KB → 디스크에 쓰려면
+   그것을 한 번 더 뱉어야 해서 실질 2배, 한 장에 약 7만 토큰이다.
+2. 링크 공유 후 curl 도 안 된다 — **에이전트 프록시가 정책으로 Drive 를 막는다**
+   (`drive.google.com:443 connect_rejected`, 403). 공유를 켰어도 못 받았다.
+
+**그림이 들어가는 자리는 둘**이고 섞어 쓸 수 있다 — `img`(컷 전체를 채우는 Flow
+배경컷, cover) / `figures`(배경 없는 컷아웃을 바닥에 세움, contain). 자세한 것은
+`studio/sandbox/README.md`.
+
+#### 판형 B/C
+
+**아직 발행에 쓰지 않는다.** `studio/concept_sheet.py` 와 러너 워크플로는 그대로
+A 만 그린다 — 실험대에서 골라 본 뒤 옮기는 것이 순서. 판형 CSS 를 건드렸으면
+`render.py same` 을 반드시 돌릴 것(발행분 다섯 장이 A 이고, 기준 커밋은
+`render.py` 의 `BASELINE` 에 못박혀 있다).
+
+#### 손대지 않은 디자인 지적 하나
+
+개념 한 장은 **모든 편이 4칸 단계 + 3칸 정리로 똑같다.** 판형 B/C 는 겉만 바꾸고
+뼈대는 그대로다. 스키마를 바꾸면 발행분 일곱 장이 전부 흔들리므로 별건으로 두었다.
 
 ### 2-3. frontmatter 상호참조 단방향 67건
 
