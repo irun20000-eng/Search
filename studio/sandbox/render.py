@@ -85,6 +85,14 @@ STUB_COLORS = {"dr-pi": "#1F3A5F", "root": "#9FD8C9", "zero": "#E8B93E",
                "coco": "#C0704A", "mu": "#7A6AA8"}
 
 
+STUB_MARK = "assets/characters/.stubs"
+
+
+def _sha1(path):
+    import hashlib
+    return hashlib.sha1(pathlib.Path(path).read_bytes()).hexdigest()
+
+
 def make_stubs(force=False):
     d = HERE / "assets" / "characters"
     d.mkdir(parents=True, exist_ok=True)
@@ -109,9 +117,44 @@ def make_stubs(force=False):
             pg.screenshot(path=str(d / (name + ".png")), omit_background=True)
             pg.close()
         b.close()
+    # 대역이 깔려 있다는 표식을 남긴다. 이게 없으면 다음 사람이 실루엣을
+    # 진짜 캐릭터로 착각한 채 만화를 뽑는다 — 렌더는 아무 말도 하지 않는다.
+    # 이름만 적으면 진짜 컷아웃으로 덮은 뒤에도 계속 경고해서(거짓 경보) 검사를
+    # 못 믿게 된다. 그래서 **그때 그 파일의 해시**를 함께 적고, 파일이 바뀌면
+    # 저절로 조용해지게 한다.
+    mark = HERE / STUB_MARK
+    rec = {}
+    if mark.exists():
+        for line in mark.read_text(encoding="utf-8").split("\n"):
+            bits = line.split()
+            if len(bits) == 2:
+                rec[bits[0]] = bits[1]
+    for name in need:
+        rec[name] = _sha1(d / (name + ".png"))
+    mark.write_text("".join("%s %s\n" % kv for kv in sorted(rec.items())),
+                    encoding="utf-8")
     print("[대역] 임시 실루엣 %d개 생성 — %s" % (len(need), d))
     print("       캐릭터가 아니다. 진짜 컷아웃이 오면 같은 이름으로 덮을 것.")
     return sorted(need)
+
+
+def warn_stubs():
+    """대역이 섞인 채로 렌더되고 있으면 매번 말한다."""
+    mark = HERE / STUB_MARK
+    if not mark.exists():
+        return
+    live = []
+    for line in mark.read_text(encoding="utf-8").split("\n"):
+        bits = line.split()
+        if len(bits) != 2:
+            continue
+        f = HERE / "assets" / "characters" / (bits[0] + ".png")
+        if f.exists() and _sha1(f) == bits[1]:   # 덮였으면 해시가 달라 조용해진다
+            live.append(bits[0])
+    if live:
+        print("[대역] ⚠ 지금 쓰이는 %d개는 진짜 캐릭터가 아니라 실루엣이다: %s"
+              % (len(live), ", ".join(live)))
+        print("       발행용으로 쓰지 말 것. 진짜 컷아웃으로 덮으면 이 경고는 사라진다.")
 
 
 def cmd_cuttoon(a):
@@ -122,6 +165,7 @@ def cmd_cuttoon(a):
         raise SystemExit("specs/cuttoon-*.py 가 없다")
     if a.stubs:
         make_stubs()
+    warn_stubs()
     use_local_chromium()
     for n in names:
         spec = load_spec(SPECS / (n + ".py"))
