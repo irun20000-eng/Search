@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-28",
- "scanned": 237,
- "resolved": 1099,
- "pending": 544,
+ "generated": "2026-08-29",
+ "scanned": 243,
+ "resolved": 1176,
+ "pending": 539,
  "counts": {
-  "new": 254,
+  "new": 251,
   "companion": 5,
   "gap": 0
  },
@@ -2416,21 +2416,6 @@
    ]
   },
   {
-   "name": "상용로그",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "벤포드 법칙(Benford's Law) — 이해편(입문·딥)",
-     "u": "research/#r=benford-law",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
    "name": "확률분포",
    "count": 2,
    "kind": "new",
@@ -2979,27 +2964,6 @@
      "u": "concept/#n=optimal-stopping",
      "s": "concept",
      "n": 2
-    }
-   ]
-  },
-  {
-   "name": "에두아르트 하이네",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화",
-     "u": "math/#n=concept-analysis-rigor",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
-     "n": 1
     }
    ]
   },
@@ -4490,21 +4454,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "펠릭스 클라인",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "해석학의 엄밀화 (확장편)",
-     "u": "math/#n=concept-analysis-rigor-advanced",
-     "s": "math",
      "n": 1
     }
    ]
