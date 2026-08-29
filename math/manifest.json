@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-28",
+ "generated": "2026-08-29",
  "notes": [
   {
    "유형": "개념",
@@ -490,6 +490,170 @@
    "시각화": 4
   },
   {
+   "유형": "개념",
+   "제목": "로그",
+   "슬러그": "concept-logarithm",
+   "별칭": [
+    "로그",
+    "logarithm",
+    "상용로그",
+    "자연로그",
+    "로그표",
+    "로그의 발견"
+   ],
+   "볼트파일명": "개념_로그",
+   "트랙": "이해편",
+   "짝문서": "concept-logarithm-advanced",
+   "세기": [
+    16,
+    17,
+    18
+   ],
+   "분야": [
+    "대수학",
+    "해석학",
+    "계산법"
+   ],
+   "교과": [
+    "공통수학1",
+    "대수"
+   ],
+   "난이도": "표준",
+   "요약": "지수보다 로그가 먼저 나왔다. 교실에서는 지수를 배우고 그 역함수로 로그를 배우지만, 역사는 정확히 거꾸로였다 — 로그는 함수로 태어난 것이 아니라 계산을 줄이려고 만든 도구였다.",
+   "태그": [
+    "수학사",
+    "로그",
+    "네이피어",
+    "브리그스",
+    "뷔르기",
+    "상용로그",
+    "자연로그",
+    "로그표",
+    "계산자",
+    "지표와가수",
+    "16세기",
+    "17세기",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 16,
+     "인물": "뷔르기",
+     "변화": "등차수열과 등비수열을 나란히 놓아 곱셈을 덧셈으로 바꾸는 표를 만들었다. 다만 출판이 1620년으로 늦어 우선권은 네이피어에게 갔다.",
+     "출처": 3
+    },
+    {
+     "세기": 17,
+     "인물": "네이피어",
+     "변화": "1614년 『놀라운 로그 법칙의 기술』을 내어 로그를 세상에 내놓았다. 설명 57쪽과 표 90쪽이었다.",
+     "출처": 2
+    },
+    {
+     "세기": 17,
+     "인물": "브리그스",
+     "변화": "밑을 10으로 바꾸자고 제안하고 그 계산을 떠맡았다. 1624년 『로그 산술』이 오늘날 쓰는 상용로그표의 원형이다.",
+     "출처": 1
+    },
+    {
+     "세기": 17,
+     "인물": "그레고리우스 드 생뱅상",
+     "변화": "쌍곡선과 점근선 사이의 넓이를 다루었고, 제자 사라사가 1649년 그 넓이가 로그처럼 움직인다는 것을 밝혔다. 계산 도구이던 로그가 기하학적 대상과 이어졌다.",
+     "출처": 8
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "지수함수를 먼저 세우고 로그를 그 역함수로 정의해, 표에 붙어 있던 로그를 함수로 만들었다. 오늘날 교과서의 순서가 여기서 나온다.",
+     "출처": 6
+    }
+   ],
+   "선행개념": [],
+   "후속개념": [
+    "concept-series",
+    "concept-analysis-rigor"
+   ],
+   "기여인물": [
+    "person-napier",
+    "person-euler"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Encyclopaedia Britannica, John Napier — 네이피어(1550~1617)와 로그의 도입, **헨리 브리그스가 네이피어의 판을 개선했고 네이피어가 제안에 동의했으며 브리그스가 상용로그표가 될 방대한 계산을 떠맡아 1624년 『로그 산술(Arithmetica Logarithmica)』로 냈다**는 것, 다만 **상용로그의 착상이 네이피어의 것이었음은 두 사람 책의 서문에서 분명하다**는 것",
+     "URL": "https://www.britannica.com/biography/John-Napier",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Mirifici Logarithmorum Canonis Descriptio — **1614년 7월 에든버러에서 출판된 작은 책**이며 **설명 57쪽과 표 90쪽**으로 이루어졌다는 것, 그것이 수학의 사용에 핵심적인 진전이 된다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Mirifici_Logarithmorum_Canonis_Descriptio",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MAA Convergence, Logarithms — The Early History of a Familiar Function — 등차수열과 등비수열의 대응이라는 성질을 **여러 수학자가 미리 알아챘으나 계산을 간단히 할 목적으로 표를 만든 것은 네이피어와 요스트 뷔르기(1552~1632) 둘뿐**이라는 것, **뷔르기의 작업은 1620년에야 불완전한 형태로 출판됐고 그것은 네이피어가 『기술』을 낸 지 여섯 해 뒤**라는 것, 네이피어가 1594년 무렵부터 로그 작업을 시작했다는 것",
+     "URL": "https://old.maa.org/press/periodicals/convergence/logarithms-the-early-history-of-a-familiar-function-john-napier-introduces-logarithms",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과) 「로그」 — **양수 x에 대하여 a를 밑으로 하는 x의 로그는 방정식 aʸ = x 의 해 y** 를 뜻하며 y = log_a x 로 나타낸다는 것, **지수함수의 특징상 밑 a 의 범위가 1이 아닌 양수로 제한된다**는 것, 곧 \"x는 a의 몇 제곱인가\"를 묻는 것이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338260&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과) 「상용로그」 — **10을 밑으로 하는 로그이며 밑 10은 보통 생략한다**는 것, **로그표는 이 상용로그를 기준으로 작성한다**는 것, 그리고 **지표와 가수**로 나누어 다루는 방식과 그 역사",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338274&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과) 「자연로그」 — **네이피어의 수 e 를 밑으로 하는 로그**를 자연로그라 하며 log_e x · ln x 로 쓴다는 것, **기호 log x 가 상용로그를 뜻할 때도 있어 프랑스어 표현(logarithme naturel)을 따라 ln x 로 적는다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338137&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학교과서 개념읽기) 「상용로그」 — 고등학교 교과 맥락에서 **밑을 10으로 하는 로그를 상용로그라 하고 보통 밑을 생략해 log x 로 적는다**는 것, 고등학교 이상의 과정에서 log x 가 밑을 무리수 e 로 보는 경우가 있다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073777&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor History of Mathematics, Gregory of Saint-Vincent (1584~1667) — **1647년 『기하학 저작(Opus Geometricum)』**을 냈고 거기에 수열과 극한을 정확히 다룬 대목이 있다는 것, **쌍곡선과 점근선 사이의 넓이를 다룬 절이 있으며 그것이 1649년 안토니 드 사라사가 \"그 넓이가 로그와 같다\"고 주장하는 근거가 됐다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학산책) 「상용로그와 계산자」 — 계산기가 없던 시절 상용로그를 눈금으로 옮겨 만든 계산자가 실제 계산 도구로 쓰였다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5569554&cid=60205&categoryId=60205",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Napierian logarithm — **네이피어가 자기 로그를 두 거리의 비라는 기하학적 형태로 정의했으며, 그것은 로그를 지수로 보는 오늘날의 정의와 다르다**는 것, 그의 원래 로그가 밑 1/e 에 해당하고 10⁷ 이라는 상수를 품는다는 것, **소수를 피하려고 10⁷ 을 골라 수와 로그에 곱했으리라**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Napierian_logarithm",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "National Museums Scotland, Napier's bones — 네이피어가 계산을 줄이기 위해 만든 도구들과 로그가 계산 혁명이었다는 서술",
+     "URL": "https://www.nms.ac.uk/discover-catalogue/napiers-bones-the-logarithmic-genius-who-revolutionised-calculations",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-logarithm/note.md",
+   "세기전체": [
+    16,
+    17,
+    18
+   ],
+   "자수": 7680,
+   "시각화": 7
+  },
+  {
    "유형": "인물",
    "제목": "존 네이피어",
    "슬러그": "person-napier",
@@ -529,7 +693,8 @@
     "출생지": "스코틀랜드 에든버러 머치스턴 성"
    },
    "기여개념": [
-    "concept-logarithm"
+    "concept-logarithm",
+    "concept-logarithm-advanced"
    ],
    "출처": [
     {
@@ -2562,6 +2727,187 @@
   },
   {
    "유형": "개념",
+   "제목": "로그 (확장편)",
+   "슬러그": "concept-logarithm-advanced",
+   "별칭": [
+    "로그 확장편",
+    "네이피어 로그",
+    "자연로그의 유래",
+    "쌍곡선 넓이",
+    "메르카토르 급수",
+    "음수의 로그"
+   ],
+   "볼트파일명": "개념_로그 확장편",
+   "트랙": "확장편",
+   "짝문서": "concept-logarithm",
+   "세기": [
+    17,
+    18
+   ],
+   "분야": [
+    "해석학",
+    "대수학",
+    "수학기초론"
+   ],
+   "교과": [
+    "미적분Ⅱ",
+    "대수"
+   ],
+   "난이도": "심화",
+   "요약": "네이피어의 로그는 오늘날의 어느 로그와도 일치하지 않는다. 밑이 없었고 지수의 역함수도 아니었다. 그것이 함수가 되기까지 134년이 걸렸고, 그 사이에 쌍곡선과 급수와 복리가 각각 다른 길로 같은 수에 도착했다.",
+   "태그": [
+    "수학사",
+    "로그",
+    "자연로그",
+    "네이피어",
+    "생뱅상",
+    "사라사",
+    "메르카토르",
+    "오일러",
+    "야코프베르누이",
+    "요한베르누이",
+    "라이프니츠",
+    "e",
+    "쌍곡선",
+    "17세기",
+    "18세기"
+   ],
+   "발전단계": [
+    {
+     "세기": 17,
+     "인물": "네이피어",
+     "변화": "두 점의 운동으로 로그를 정의했다. 밑이라는 개념이 없었고 10⁷ 이라는 상수를 품었다. 오늘날 말로 옮기면 밑이 1/e 에 해당한다.",
+     "출처": 1
+    },
+    {
+     "세기": 17,
+     "인물": "그레고리우스 드 생뱅상",
+     "변화": "1647년 『기하학 저작』에서 쌍곡선과 점근선 사이의 넓이를 다루었다. 제자 사라사가 1649년 그 넓이가 로그와 같다고 밝혔다.",
+     "출처": 3
+    },
+    {
+     "세기": 17,
+     "인물": "메르카토르",
+     "변화": "1668년 『로그 계산술』에서 log(1+x)의 급수 전개를 냈고, 이 책에서 '자연로그'라는 말이 처음 쓰였다.",
+     "출처": 6
+    },
+    {
+     "세기": 17,
+     "인물": "야코프 베르누이",
+     "변화": "1683년 복리 문제에서 (1+1/n)ⁿ 의 극한을 찾으려 했다. 극한 과정으로 수를 정의한 최초의 사례다.",
+     "출처": 5
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1731년 골드바흐에게 보낸 편지에서 기호 e 를 도입했고, 1748년에 e 를 무한급수의 합으로 보였다. 지수를 먼저 놓고 로그를 역함수로 두는 오늘의 틀이 여기서 나온다.",
+     "출처": 5
+    }
+   ],
+   "선행개념": [
+    "concept-logarithm",
+    "concept-series"
+   ],
+   "후속개념": [
+    "concept-analysis-rigor",
+    "concept-complex-number-advanced"
+   ],
+   "기여인물": [
+    "person-napier",
+    "person-euler",
+    "person-jakob-bernoulli",
+    "person-leibniz"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "Wikipedia, Napierian logarithm — **네이피어의 원래 로그가 밑 1/e 에 해당하고 10⁷ 이라는 상수를 품는다**는 것, 그 관계가 NapLog(x) = −10⁷ ln(x/10⁷) 로 적힌다는 것, **네이피어가 소수를 피하려고 10⁷ 을 골라 수와 로그에 곱했으리라**는 것, **그가 자기 로그를 두 거리의 비라는 기하학적 형태로 정의했으며 그것이 로그를 지수로 보는 오늘날의 정의와 다르다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Napierian_logarithm",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Open University OpenLearn, John Napier — Napier's approach to logarithms — **네이피어가 로그를 운동학적 틀 위에 세웠고, 두 평행선 위를 달리는 두 입자를 상상했다**는 것, **첫 직선은 무한히 길고 둘째는 길이가 정해져 있으며 두 입자가 같은 자리에서 같은 시각에 같은 속도로 출발한다**는 것, **P 는 느려지고 L 은 등속으로 달리며 P 의 속도가 남은 거리에 비례해 줄어든다**는 것, **어느 순간에도 거리 L₀L 이 네이피어의 정의에서 거리 PQ 의 로그**라는 것",
+     "URL": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/john-napier/content-section-5",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor History of Mathematics, Gregory of Saint-Vincent (1584~1667) — **1647년 『기하학 저작(Opus Geometricum)』**을 냈고 거기에 수열과 극한을 정확히 다룬 대목이 있다는 것, **쌍곡선과 점근선 사이의 넓이를 다룬 절이 있으며 그것이 1649년 안토니 드 사라사가 \"그 넓이가 로그와 같다\"고 주장하는 근거가 됐다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Wikipedia, Alphonse Antonio de Sarasa — 생뱅상의 제자인 사라사가 로그와의 연결을 지었고, **쌍곡선과 한 점의 가로좌표 사이의 넓이가 그 가로좌표의 로그에 비례한다는 것을 증명해 로그의 대수와 쌍곡선의 기하를 이었다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Alphonse_Antonio_de_Sarasa",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor History of Mathematics, The number e — **1618년 네이피어의 로그 책 부록에 e 가 처음 나타나며 잉글랜드의 윌리엄 오트레드가 계산했을 가능성이 크나 밑으로 명시되지는 않았다**는 것, **1683년 야코프 베르누이가 복리 문제를 보며 연속 복리를 따지다 n 이 무한으로 갈 때 (1+1/n)ⁿ 의 극한을 찾으려 했고 그것이 극한 과정으로 수를 정의한 최초의 사례**라는 것, **오일러가 1731년 11월 25일 크리스티안 골드바흐에게 보낸 편지에서 자연로그의 밑으로 문자 e 를 도입했다**는 것, **1748년 오일러가 e 를 1/1 + 1/(1×2) + 1/(1×2×3) + … 의 무한급수 합으로 보였다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/e/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Wikipedia, Mercator series — **1668년 니콜라우스 메르카토르가 『로그 계산술(Logarithmotechnia)』을 냈고 거기에 log(1+x) 의 급수 전개가 들어 있다**는 것, **이 저작에서 '자연로그(natural logarithm)'라는 말이 처음 쓰였다**는 것, 메르카토르가 독립적으로 그 급수를 발견해 값을 실었고 **일반 급수는 같은 해 존 월리스의 서평에 실렸다**는 것",
+     "URL": "https://en.wikipedia.org/wiki/Mercator_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Deepak Bal, Leibniz, Bernoulli and the Logarithms of Negative Numbers (Montclair State University) — **1702년 요한 베르누이가 복소수의 로그를 계산하는 문제에 부딪혔고**, **1712년에 이르러 베르누이와 라이프니츠가 음수의 로그가 무엇인지를 두고 논쟁했다**는 것",
+     "URL": "https://msuweb.montclair.edu/~bald/files/LeibBernLogs.pdf",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "오일러, De la controverse entre Mrs. Leibniz et Bernoulli sur les logarithmes des nombres négatifs et imaginaires — 음수와 허수의 로그를 두고 라이프니츠와 베르누이 사이에 벌어진 논쟁을 다룬 오일러의 논문이며 **1749년에 쓰이고 1751년에 출판**됐다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Complex_logarithm",
+     "유형": "1차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과) 「자연로그」 — **네이피어의 수 e 를 밑으로 하는 로그**를 자연로그라 하며 log_e x · ln x 로 쓴다는 것, **기호 log x 가 상용로그를 뜻할 때도 있어 프랑스어 표현(logarithme naturel)을 따라 ln x 로 적는다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338137&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학의 세계) 「오일러의 수 e」 — **자연로그를 e 로 표기한 최초의 수학자가 오일러이며 그런 뜻에서 e 를 '오일러의 수'라고도 한다**는 것, **오일러가 표기법의 중요성을 인식해 e 밖에도 함수 f(x), 삼각함수 sin·cos·tan, 수열의 합 기호 등을 정착시켰다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3534096&cid=60209&categoryId=60209",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(수학의 세계) 「e는 자연로그의 밑」 — 리히터 규모·데시벨·pH·별의 등급이 **10을 밑으로 하는 상용로그**를 쓰는 데 견주어, 수학에서 실제로 쓰는 로그의 밑이 무엇인지를 다루는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3534092&cid=60209&categoryId=60209",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학산책) 「자연로그」 — **로그표를 어떻게 만들었는가**를 다루는 글. 브리그스가 로그표를 만들어 계산을 쉽게 했다는 앞 글에 이어, 그 표가 실제로 어떤 방법으로 계산됐는지를 설명한다",
+     "URL": "https://terms.naver.com/entry.naver?docId=3569535&cid=58944&categoryId=58970",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Encyclopaedia Britannica, John Napier — 네이피어(1550~1617)와 로그의 도입, 브리그스가 네이피어의 판을 개선해 1624년 『로그 산술』을 냈다는 것",
+     "URL": "https://www.britannica.com/biography/John-Napier",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-logarithm-advanced/note.md",
+   "세기전체": [
+    17,
+    18
+   ],
+   "자수": 10967,
+   "시각화": 7
+  },
+  {
+   "유형": "개념",
    "제목": "확률론",
    "슬러그": "concept-probability",
    "별칭": [
@@ -3640,7 +3986,8 @@
     "concept-probability-advanced",
     "concept-differential-equation",
     "concept-calculus-of-variations",
-    "concept-series"
+    "concept-series",
+    "concept-logarithm-advanced"
    ],
    "관련일화": [
     "episode-bernoulli-tomb"
@@ -3857,7 +4204,8 @@
     "concept-integration",
     "concept-fundamental-theorem",
     "concept-series",
-    "concept-differential-equation"
+    "concept-differential-equation",
+    "concept-logarithm-advanced"
    ],
    "관련일화": [
     "episode-priority-dispute"
@@ -5540,7 +5888,9 @@
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "concept-fundamental-theorem",
-    "concept-integration"
+    "concept-integration",
+    "concept-logarithm",
+    "concept-logarithm-advanced"
    ],
    "관련인물": [
     "person-lagrange",
@@ -8537,6 +8887,7 @@
    ],
    "16": [
     "concept-complex-number",
+    "concept-logarithm",
     "person-napier"
    ],
    "17": [
@@ -8553,6 +8904,8 @@
     "concept-fundamental-theorem",
     "concept-graph-theory",
     "concept-integration",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -8585,6 +8938,8 @@
     "concept-differentiation-advanced",
     "concept-function",
     "concept-graph-theory",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -8683,6 +9038,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-series",
     "concept-series-advanced",
     "episode-cantor-letter-1877",
@@ -8751,6 +9108,8 @@
     "concept-analytic-geometry-advanced",
     "concept-complex-number",
     "concept-complex-number-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "episode-namdaemun-1947",
     "person-cauchy",
     "person-dedekind",
@@ -8795,6 +9154,7 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
+    "concept-logarithm-advanced",
     "episode-dedekind-nov24",
     "episode-koenigsberg-1930",
     "episode-prague-1834",
@@ -8836,6 +9196,10 @@
     "person-heine",
     "person-kolmogorov",
     "person-poincare"
+   ],
+   "계산법": [
+    "concept-logarithm",
+    "person-napier"
    ],
    "통계학": [
     "concept-probability-advanced"
@@ -8914,9 +9278,6 @@
     "person-laplace",
     "person-poincare"
    ],
-   "계산법": [
-    "person-napier"
-   ],
    "유체역학": [
     "person-pascal"
    ],
@@ -8956,18 +9317,24 @@
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-function",
+    "concept-logarithm",
     "person-napier"
    ],
    "미적분Ⅱ": [
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-logarithm-advanced",
     "person-barrow",
     "person-euler",
     "person-gregory",
     "person-heine",
     "person-lagrange",
     "person-napier"
+   ],
+   "대수": [
+    "concept-logarithm",
+    "concept-logarithm-advanced"
    ],
    "확률과 통계": [
     "concept-probability",
@@ -9022,6 +9389,8 @@
     "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -9098,6 +9467,8 @@
     "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -9149,6 +9520,8 @@
     "concept-function",
     "concept-fundamental-theorem",
     "concept-integration",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-probability",
     "episode-descartes-fly",
     "episode-huygens-anagram",
@@ -9190,6 +9563,8 @@
    ],
    "로그": [
     "century-17c",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "person-napier"
    ],
    "18세기": [
@@ -9200,6 +9575,8 @@
     "concept-differential-equation",
     "concept-function",
     "concept-graph-theory",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-series",
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
@@ -9224,6 +9601,7 @@
     "concept-differential-equation-advanced",
     "concept-function",
     "concept-graph-theory",
+    "concept-logarithm-advanced",
     "concept-series",
     "concept-series-advanced",
     "person-dalembert",
@@ -9477,6 +9855,7 @@
    ],
    "16세기": [
     "concept-complex-number",
+    "concept-logarithm",
     "person-napier"
    ],
    "대수학의 기본정리": [
@@ -9511,6 +9890,7 @@
     "concept-function",
     "concept-fundamental-theorem",
     "concept-graph-theory",
+    "concept-logarithm-advanced",
     "episode-priority-dispute",
     "person-leibniz"
    ],
@@ -9632,6 +10012,57 @@
     "person-de-moivre",
     "person-kolmogorov",
     "person-laplace"
+   ],
+   "네이피어": [
+    "concept-logarithm",
+    "concept-logarithm-advanced",
+    "person-napier"
+   ],
+   "브리그스": [
+    "concept-logarithm",
+    "person-napier"
+   ],
+   "뷔르기": [
+    "concept-logarithm"
+   ],
+   "상용로그": [
+    "concept-logarithm"
+   ],
+   "자연로그": [
+    "concept-logarithm",
+    "concept-logarithm-advanced"
+   ],
+   "로그표": [
+    "concept-logarithm"
+   ],
+   "계산자": [
+    "concept-logarithm"
+   ],
+   "지표와가수": [
+    "concept-logarithm"
+   ],
+   "생뱅상": [
+    "concept-logarithm-advanced"
+   ],
+   "사라사": [
+    "concept-logarithm-advanced"
+   ],
+   "메르카토르": [
+    "concept-logarithm-advanced"
+   ],
+   "야코프베르누이": [
+    "concept-logarithm-advanced",
+    "person-johann-bernoulli"
+   ],
+   "요한베르누이": [
+    "concept-logarithm-advanced",
+    "person-johann-bernoulli"
+   ],
+   "e": [
+    "concept-logarithm-advanced"
+   ],
+   "쌍곡선": [
+    "concept-logarithm-advanced"
    ],
    "기댓값": [
     "concept-probability"
@@ -9940,13 +10371,7 @@
    "23문제": [
     "person-hilbert"
    ],
-   "요한베르누이": [
-    "person-johann-bernoulli"
-   ],
    "로피탈": [
-    "person-johann-bernoulli"
-   ],
-   "야코프베르누이": [
     "person-johann-bernoulli"
    ],
    "에를랑겐프로그램": [
@@ -9991,13 +10416,7 @@
    "dy/dx": [
     "person-leibniz"
    ],
-   "네이피어": [
-    "person-napier"
-   ],
    "계산": [
-    "person-napier"
-   ],
-   "브리그스": [
     "person-napier"
    ],
    "유율법": [
@@ -10174,6 +10593,8 @@
     "concept-differential-equation-advanced",
     "concept-function",
     "concept-graph-theory",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
     "concept-series",
     "concept-series-advanced",
     "person-jakob-bernoulli",
@@ -10182,6 +10603,7 @@
    "person-jakob-bernoulli": [
     "concept-calculus-of-variations",
     "concept-differential-equation",
+    "concept-logarithm-advanced",
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
@@ -10271,6 +10693,7 @@
     "concept-graph-theory",
     "concept-integration",
     "concept-integration-advanced",
+    "concept-logarithm-advanced",
     "concept-series",
     "episode-priority-dispute",
     "person-huygens",
@@ -10366,6 +10789,23 @@
    ],
    "헨스톡·커즈와일": [
     "concept-integration-advanced"
+   ],
+   "person-napier": [
+    "concept-logarithm",
+    "concept-logarithm-advanced"
+   ],
+   "그레고리우스 드 생뱅상": [
+    "concept-logarithm",
+    "concept-logarithm-advanced"
+   ],
+   "뷔르기": [
+    "concept-logarithm"
+   ],
+   "브리그스": [
+    "concept-logarithm"
+   ],
+   "메르카토르": [
+    "concept-logarithm-advanced"
    ],
    "person-kolmogorov": [
     "concept-probability",
@@ -10496,6 +10936,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -10562,6 +11008,18 @@
      "제목": "18세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "person-leibniz",
@@ -10684,6 +11142,12 @@
     {
      "슬러그": "concept-integration-advanced",
      "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -11284,6 +11748,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "episode-huygens-anagram",
      "제목": "하위헌스의 아나그램",
      "유형": "일화",
@@ -11366,6 +11836,18 @@
     {
      "슬러그": "concept-graph-theory",
      "제목": "그래프이론의 탄생",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -11752,6 +12234,18 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
      "슬러그": "concept-series-advanced",
      "제목": "무한급수 확장편",
      "유형": "개념",
@@ -11820,6 +12314,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-probability-advanced",
      "제목": "확률론 확장편",
      "유형": "개념",
@@ -11880,6 +12380,18 @@
      "제목": "미분방정식",
      "유형": "개념",
      "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
     },
     {
      "슬러그": "person-dedekind",
@@ -11988,6 +12500,18 @@
     {
      "슬러그": "concept-integration-advanced",
      "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
      "유형": "개념",
      "경로": "후속개념"
     },
@@ -12992,6 +13516,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "episode-prague-1834",
      "제목": "1834년 프라하",
      "유형": "일화",
@@ -13724,6 +14254,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-probability",
      "제목": "확률론",
      "유형": "개념",
@@ -13816,6 +14352,12 @@
      "제목": "그래프이론의 탄생",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "후속개념"
     },
     {
      "슬러그": "person-de-moivre",
@@ -14108,6 +14650,58 @@
      "경로": "관련인물"
     }
    ],
+   "concept-logarithm-advanced": [
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-jakob-bernoulli",
+     "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-logarithm": [
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
    "episode-namdaemun-1947": [
     {
      "슬러그": "person-bayes",
@@ -14363,6 +14957,27 @@
   "적분법 (확장편)확장편": "concept-integration-advanced",
   "적분법 확장편": "concept-integration-advanced",
   "측도": "concept-integration-advanced",
+  "concept-logarithm": "concept-logarithm",
+  "logarithm": "concept-logarithm",
+  "개념_로그": "concept-logarithm",
+  "로그": "concept-logarithm",
+  "로그 이해편": "concept-logarithm",
+  "로그의 발견": "concept-logarithm",
+  "로그이해편": "concept-logarithm",
+  "로그표": "concept-logarithm",
+  "상용로그": "concept-logarithm",
+  "자연로그": "concept-logarithm",
+  "concept-logarithm-advanced": "concept-logarithm-advanced",
+  "개념_로그 확장편": "concept-logarithm-advanced",
+  "네이피어 로그": "concept-logarithm-advanced",
+  "로그 (확장편)": "concept-logarithm-advanced",
+  "로그 (확장편) 확장편": "concept-logarithm-advanced",
+  "로그 (확장편)확장편": "concept-logarithm-advanced",
+  "로그 확장편": "concept-logarithm-advanced",
+  "메르카토르 급수": "concept-logarithm-advanced",
+  "쌍곡선 넓이": "concept-logarithm-advanced",
+  "음수의 로그": "concept-logarithm-advanced",
+  "자연로그의 유래": "concept-logarithm-advanced",
   "concept-probability": "concept-probability",
   "개념_확률론": "concept-probability",
   "기댓값": "concept-probability",
