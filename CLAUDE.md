@@ -5,6 +5,7 @@ Claude Code 세션이 **오케스트레이터**다. 백엔드·크론·서버 �
 ## 작업 시작 전 필수 (preflight)
 1. **`PIPELINE.md`를 먼저 읽는다** — 보고서 작업의 정본 런북(트리거·수집·합성·검수·배포 전 절차). 이 CLAUDE.md는 요약·포인터일 뿐, 상세는 PIPELINE이 정본.
 2. **`LESSONS.md`의 "방지 규칙 체크리스트"를 로드**한다 — 같은 실수 재발 차단(품질 복리). 검수 후 새 교훈을 거기에 append.
+2-1. **세션을 이어받는 자리라면 `HANDOVER.md` 를 먼저 본다** — 지금 무엇이 열려 있나(서가 가로지르는 것·리포 바깥 일). 수학사는 그쪽이 아니라 `math/ROADMAP.md` §11 이 인계를 맡는다. **계약문서(이 파일·PIPELINE)는 잘 안 바뀌고, HANDOVER 는 살아 있는 목록이다.**
 3. 스펙 정본: `E:\AI_Project\.omc\specs\deep-interview-topic-research-pipeline.md` (로컬).
 
 ## 트리거
@@ -69,9 +70,11 @@ python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 �
 
 # 수학사(math/) — 정본 절차는 MATH_PIPELINE.md
 python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게이트
-python3 tools/verify_math.py --backlog       # 미해결 위키링크 = 콘텐츠 백로그
+python3 tools/verify_math.py --backlog       # 백로그 2채널 (위키링크 + 발전단계 인물)
+python3 tools/verify_math.py --symmetry      # frontmatter 상호참조 대칭 보고 (게이트 아님)
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
+python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
 python3 tools/sync_math_obsidian.py --dry-run  # 볼트 002-수학사/ 동기화
 
 # 커밋 전 분량 게이트 측정 (개념 설명서)
@@ -92,8 +95,9 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - **테마 저장 키는 `stTheme` 하나다**(2026-08-21 통일). 예전엔 리서치·가이드 `stTheme`, 영상 `vgTheme`, 허브 `theme` 로 갈려
   페이지를 넘을 때마다 테마가 튀었다. 영상노트만 기존 사용자 설정을 잃지 않도록 `vgTheme` 를 읽기 폴백으로 남겨 뒀다.
   새 페이지를 만들 때 다른 키를 쓰지 말 것.
-- `link-index.json`(루트) — 4개 갤러리 통합 링크 조회표. 본문 `[[위키링크]]`가 갤러리 경계를 넘게 한다. `tools/build_link_index.py` 산출물이며 **직접 편집 금지**. 자동 정규화로 안 잡히는 별칭만 `link-aliases.json`에 손으로 적는다.
+- `link-index.json`(루트) — 7개 갤러리 통합 링크 조회표. **항목마다 `검색어`**(각 갤러리 태그를 공백으로 이은 문자열)를 함께 실어 허브 검색이 제목만이 아니라 태그로도 걸리게 한다(2026-08-29). 리스트가 아니라 문자열인 이유는 이 파일을 모든 페이지가 받아 가기 때문 — 자세한 것은 `tools/build_link_index.py` 머리말. 본문 `[[위키링크]]`가 갤러리 경계를 넘게 한다. `tools/build_link_index.py` 산출물이며 **직접 편집 금지**. 자동 정규화로 안 잡히는 별칭만 `link-aliases.json`에 손으로 적는다.
 - `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
 - `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
 - `routines/` — 예약 루틴 지침. `spark-video-curator.md` = 스파크 영상 분석본 → 갤러리 발행(정본 절차는 `VIDEO_PIPELINE.md`).
+- `HANDOVER.md`(루트) — **인계 문서.** 열려 있는 것·닫힌 것·완료의 정의. 살아 있는 목록이라 자주 바뀐다(수학사 인계는 `math/ROADMAP.md` §11).
 - `LESSONS.md` — 검수 학습 원장(방지규칙 누적). 라이브 갤러리: https://irun20000-eng.github.io/Search/

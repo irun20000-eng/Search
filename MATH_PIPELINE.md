@@ -116,8 +116,19 @@ frontmatter `이미지.파일`은 **math/ 기준**(`assets/figures/x.svg`)이다
 ```bash
 python3 tools/verify_math.py                # 전체
 python3 tools/verify_math.py <슬러그>        # 일부
-python3 tools/verify_math.py --backlog      # 미해결 위키링크만
+python3 tools/verify_math.py --backlog      # 백로그 2채널
+python3 tools/verify_math.py --symmetry     # 상호참조 대칭 보고 (게이트 아님)
 ```
+
+**백로그가 두 채널인 이유**(2026-08-29). 위키링크만 세면 **본문이 반복 호명하는데
+링크를 안 건 이름**이 영원히 안 보인다 — 유클리드 79회·아르키메데스 38회가 그랬다.
+그래서 이미 구조화된 신호인 `발전단계[].인물` 을 두 번째 채널로 쓴다. 손 목록은
+반드시 낡으므로 쓰지 않는다. ※ 평문으로만 불리는 이름은 여전히 안 잡히며,
+그건 **집필이 위키링크를 걸어 해결할 일**이다.
+
+**`--symmetry` 는 게이트가 아니라 보고다.** 첫 실측이 130건이었고, 하한 없는 검사기를
+에러로 켜면 그날로 아무도 못 돌린다. 먼저 재고, 줄인 뒤에 켠다.
+새 노트를 쓸 때는 **자기가 만든 단방향을 0으로 맞추는 것**까지가 회차의 일이다.
 
 검증기가 막는 것: 스키마, 유형별 분량 게이트, 출처 번호 중복,
 **본문 인용이 출처에 없음(dangling)**, 발전단계의 출처 번호 존재,
@@ -144,11 +155,15 @@ python3 tools/sync_math_obsidian.py
 
 ```bash
 python3 tools/build_math_manifest.py    # math/manifest.json
-python3 tools/build_link_index.py       # 루트 link-index.json (4개 갤러리 통합)
+python3 tools/build_link_index.py       # 루트 link-index.json (7개 갤러리 통합)
+python3 tools/build_math_status.py      # ROADMAP 「자동 측정」 블록
 ```
 
-`build_link_index.py` 는 반드시 manifest 뒤에 돌린다 — math 항목을 manifest에서 읽는다.
-그 다음 커밋 → 푸시 → PR → main 머지 → Pages 자동 배포.
+**순서가 고정돼 있다.** `build_link_index.py` 는 manifest 뒤에 돌린다(math 항목을
+manifest 에서 읽는다). `build_math_status.py` 는 그 뒤에 돌린다(link-index 로 위키링크를
+해석한다). 셋 다 **산출물이므로 손으로 고치지 않는다.**
+
+그 다음 커밋 → 푸시 → PR → main 머지 → Pages 자동 배포 → 볼트.
 
 ---
 
