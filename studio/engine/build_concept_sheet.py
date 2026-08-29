@@ -26,7 +26,7 @@ HTML → Playwright 스크린샷 경로를 쓰면 한글이 100% 정확하게 �
  "h_r2": 2행 높이(기본 330) · 단계 카드 분량에 맞춰 조정,
 }
 """
-import pathlib, sys
+import os, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import brand_signature as bs
 
@@ -127,6 +127,57 @@ td:first-child{text-align:left;font-weight:800}
 """
 
 
+# --- 판형(plan) -------------------------------------------------------------
+# 같은 스펙을 세 가지 지면으로 그린다. 카드뉴스가 `layout_archive.PLANS` 로
+# A/B/C 를 돌리는 것과 같은 생각이다 — 카피를 다시 쓰지 않고 인상만 바꿔 본다.
+#
+# **A 는 빈 문자열이어야 한다.** 이미 발행된 일곱 장이 A 로 그려졌고, 여기에
+# 한 글자라도 더 붙으면 HTML 이 달라져 그림이 미묘하게 바뀐다. A 의 산출물이
+# 이 변경 전후로 바이트까지 같은지는 `studio/sandbox/render.py --same` 이 본다.
+PLAN_CSS = {
+    # A — 기준형. 지금 서가에 올라간 일곱 장이 이 판형이다.
+    "A": "",
+
+    # B — 센터 임팩트. 후크를 붉은 면에 가운데로 세우고, 한 줄 정리를 왼쪽으로
+    #     옮겨 시선이 '질문 → 답' 순서로 지면을 한 바퀴 돌게 한다.
+    "B": r"""
+.hd h1{font-size:41px}
+.intro{background:#D6452C;text-align:center;align-items:center}
+.intro .q{font-size:32px}
+.intro .q b{color:#FFE08A}
+.intro .s{color:#F8DBD4;border-top:1px solid rgba(255,255,255,.28);padding-top:10px}
+.dt{color:#D6452C}
+.step{background:#FFFDFA}
+.st{font-size:20px}
+.r3{flex-direction:row-reverse}
+.sumR{flex:0 0 548px}
+.sumR .big{font-size:32px}
+.pt{text-align:center;align-items:center}
+.pt .h{align-self:center}
+.flow{justify-content:center}
+""",
+
+    # C — 구조 강조. 색면을 걷어내고 선·격자로만 위계를 만든다. 표와 단계의
+    #     순서가 먼저 읽히는 판형이라 절차·비교형 주제에 맞는다.
+    "C": r"""
+body{background:#F4F2ED}
+.card{border-width:1.5px;border-radius:4px;box-shadow:none}
+.intro{background:#fff;color:#1E2430;border-left:9px solid #1E2430}
+.intro .q b{color:#D6452C}
+.intro .s{color:#4A5262}
+tr:nth-child(even) td{background:#F7F6F3}
+.num{top:-13px;left:16px;width:30px;height:30px;border-radius:5px;font-size:16px}
+.pt{background:#fff;border:1.5px solid #E2E0DA;border-radius:4px}
+.chip{border-radius:4px;border-width:1.5px}
+.sumR{background:#fff;color:#1E2430;border-left:9px solid #D6452C}
+.sumR .t{color:#7A8394}
+.sumR .big b{color:#D6452C}
+.sumR .sub{color:#4A5262;border-top-color:#E2E0DA}
+.sumR .ask{background:#1E2430;color:#fff}
+""",
+}
+
+
 def table(head, rows):
     th = "".join(f"<th>{h}</th>" for h in head)
     tr = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
@@ -159,7 +210,7 @@ def check_hangul(pg):
 
 
 
-def build(spec, out_png, scale=2):
+def build(spec, out_png, scale=2, plan="A"):
     steps = "".join(f'''<div class="card step">
       <div class="num" style="background:{s.get('c', STEP_COLORS[i])}">{i+1}</div>
       <div class="st">{s['t']}</div>
@@ -181,9 +232,14 @@ def build(spec, out_png, scale=2):
 
     hvar = f"body{{--h1:{spec.get('h_r1',250)}px;--h2:{spec.get('h_r2',330)}px}}"
 
+    if plan not in PLAN_CSS:
+        raise SystemExit("[개념 한 장] 없는 판형: %s (있는 것: %s)"
+                         % (plan, ", ".join(PLAN_CSS)))
+    pcss = PLAN_CSS[plan]
+
     html = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <style>{CSS}
-{hvar}</style></head><body><div class="sheet">
+{hvar}{pcss}</style></head><body><div class="sheet">
  <div class="hd"><h1>{spec['title']}</h1><span class="en">{spec['en']}</span>
   <span class="tag">{spec['tag']}</span></div>
 
@@ -226,7 +282,11 @@ def build(spec, out_png, scale=2):
 
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
-        b = pw.chromium.launch()
+        # 이 컨테이너의 playwright 패키지가 기대하는 브라우저 빌드와
+        # /opt/pw-browsers 에 깔린 빌드가 달라 기본 launch() 가 실패한다.
+        # 러너에는 이 변수가 없으니 기존 동작 그대로다.
+        _exe = os.environ.get("CONCEPT_CHROMIUM")
+        b = pw.chromium.launch(**({"executable_path": _exe} if _exe else {}))
         pg = b.new_page(viewport={"width": 1536, "height": 1024}, device_scale_factor=scale)
         pg.goto(h.as_uri()); pg.wait_for_timeout(500)
         check_hangul(pg)
