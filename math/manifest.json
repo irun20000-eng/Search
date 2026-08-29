@@ -868,7 +868,8 @@
     "person-bolzano",
     "person-dedekind",
     "person-cantor",
-    "person-weierstrass"
+    "person-weierstrass",
+    "person-heine"
    ],
    "이미지": [
     {
@@ -1052,7 +1053,9 @@
     "person-cauchy",
     "person-bolzano",
     "person-hilbert",
-    "person-frege"
+    "person-frege",
+    "person-heine",
+    "person-klein"
    ],
    "출처": [
     {
@@ -1362,7 +1365,8 @@
     "person-descartes",
     "person-fermat",
     "person-gauss",
-    "person-poincare"
+    "person-poincare",
+    "person-klein"
    ],
    "출처": [
     {
@@ -7145,6 +7149,120 @@
   },
   {
    "유형": "인물",
+   "제목": "에두아르트 하이네",
+   "슬러그": "person-heine",
+   "별칭": [
+    "하이네",
+    "Heine",
+    "Eduard Heine",
+    "하인리히 에두아르트 하이네",
+    "에두아르트 하이네",
+    "하이네보렐",
+    "하이네칸토어"
+   ],
+   "볼트파일명": "인물_에두아르트 하이네",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "위상수학",
+    "특수함수"
+   ],
+   "교과": [
+    "미적분Ⅱ",
+    "수학"
+   ],
+   "난이도": "표준",
+   "요약": "이름이 붙은 두 정리가 있는데 둘 다 온전히 그의 것이라 하기 어렵다. 정작 그가 남긴 것은 정리가 아니라 개념 하나와, 옆자리 젊은이에게 건넨 문제 하나였다.",
+   "태그": [
+    "수학사",
+    "하이네",
+    "균등연속",
+    "하이네보렐정리",
+    "옹골집합",
+    "할레",
+    "칸토어",
+    "디리클레",
+    "구면조화함수",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1821,
+    "사망": 1881,
+    "출생지": "프로이센 베를린"
+   },
+   "기여개념": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련일화": [],
+   "관련인물": [
+    "person-cantor",
+    "person-dirichlet",
+    "person-weierstrass",
+    "person-gauss",
+    "person-bolzano"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Eduard Heine — 1821년 3월 16일 베를린에서 태어나 1881년 10월 21일 할레에서 죽었다는 것, 1838년 가을 아비투어 뒤 베를린 대학에 들어갔으나 **한 학기 만에 괴팅겐으로 옮겨 가우스의 강의와 M A 슈테른의 정수론 강의를 들었다**는 것, 괴팅겐에서 세 학기를 보낸 뒤 베를린으로 돌아와 **디리클레에게 배우고 슈타이너의 기하 강의를 들었다**는 것, **균등연속이라는 착상을 도입한 사람으로 기억된다**는 것과 **하이네-보렐 정리로 가장 잘 알려져 있다**는 것, **닫히고 유계인 구간 위의 연속함수가 균등연속이라는 정리를 처음 증명한 사람은 디리클레이며 그것이 1862년 강의에서였고 하이네가 그것을 증명한 것은 1872년**이라는 것, 구면조화함수와 르장드르 함수에 관한 중요한 저작 『구면조화함수 편람』을 썼다는 것, 베를린의 가족을 자주 찾아간 덕에 **바이어슈트라스·쿠머·크로네커·보르하르트와 수학을 논할 수 있었다**는 것, **할레로 유망한 젊은 수학자들을 끌어들였고 그중에 카를 노이만·구스타프 로흐·H A 슈바르츠·J 토마에·게오르크 칸토어가 있었다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Heine/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Eduard Heine — 생몰(1821년 3월 16일 ~ 1881년 10월 21일)과 독일 수학자라는 것, 베를린 출생·할레 사망",
+     "URL": "https://en.wikipedia.org/wiki/Eduard_Heine",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Catalogus Professorum Halensis, Heinrich Eduard Heine — 학력·임용 일자. **1842년 4월 30일 베를린 대학에서 박사**, **1844년 7월 20일 본 대학에서 교수자격(하빌리타치온)**, **1848년 5월 13일 본 대학 부교수**, **1848년 9월 6일 할레 대학 교수**이며 **1856년부터 할레에 정착**했다는 것",
+     "URL": "https://www.catalogus-professorum-halensis.de/heineheinricheduard.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Encyclopedia.com, Cantor, Georg (1845–1918) — 칸토어가 할레 대학에서 강사로 가르치기 시작했을 때 **동료 가운데 에두아르트 하인리히 하이네가 있었다**는 것, 하이네가 삼각급수 관련 문제를 다루고 있었고 **임의의 함수가 삼각급수로 표현될 때 그 표현이 유일한가 하는 어려운 문제를 칸토어에게 권했다**는 것, **하이네가 1870년에 거의 어디서나 연속인 함수에 대해, 그 삼각급수가 균등수렴한다는 가정 아래 표현의 유일성을 확립했다**는 것, 칸토어가 1870~1872년에 낸 일련의 논문에서 점점 일반적인 유일성 정리를 세웠고 **예외점이 무한히 많아도 그 무한집합이 특정한 방식으로 분포하면 유일성이 여전히 성립함을 보인 것**이 그중 가장 주목할 만하다는 것",
+     "URL": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/cantor-georg-1845-1918",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과) 「하이네-보렐 정리」 — 유클리드 공간 ℝⁿ의 부분집합이 **옹골집합일 필요충분조건이 '유계이고 닫힌 집합'** 임을 알려주는 정리라는 것과 그 증명·보조정리",
+     "URL": "https://terms.naver.com/entry.naver?docId=6512716&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과) 「옹골공간」 — **ℝⁿ의 부분집합이 유계이고 닫힌 집합이면 그 집합에서 정의된 연속함수는 항상 최댓값과 최솟값을 가진다**는 것과, 그런 좋은 성질을 가지는 공간을 옹골공간이라 부른다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125385&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학산책) 「실수의 완비성」 — 실수와 유리수를 구별하게 해 주는 가장 뚜렷한 성질이 완비성이고, 그것이 극한과 관련한 논의를 가능하게 하는 성질이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학산책) 「최대최소 정리」 — 연속함수가 최댓값과 최솟값을 가질 조건을 말해 주는 정리이며, **사잇값 정리와 함께 연속함수의 당연한 성질로 오랫동안 다루어져 왔다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338504&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-heine/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 5859,
+   "시각화": 5
+  },
+  {
+   "유형": "인물",
    "제목": "다비트 힐베르트",
    "슬러그": "person-hilbert",
    "별칭": [
@@ -7257,6 +7375,138 @@
    ],
    "자수": 6474,
    "시각화": 3
+  },
+  {
+   "유형": "인물",
+   "제목": "펠릭스 클라인",
+   "슬러그": "person-klein",
+   "별칭": [
+    "클라인",
+    "Klein",
+    "Felix Klein",
+    "펠릭스클라인",
+    "크리스티안 펠릭스 클라인",
+    "에를랑겐프로그램",
+    "에를랑겐계획",
+    "클라인병"
+   ],
+   "볼트파일명": "인물_펠릭스 클라인",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "기하학",
+    "군론",
+    "함수론",
+    "수학교육"
+   ],
+   "교과": [
+    "기하",
+    "공통수학2",
+    "수학"
+   ],
+   "난이도": "표준",
+   "요약": "스물셋에 기하학 전체를 군으로 다시 정리했고 서른셋에 무너졌다. 연구자로서의 생애는 거기서 사실상 끝났는데, 그 뒤 사십 년이 수학의 지형을 더 크게 바꿨다.",
+   "태그": [
+    "수학사",
+    "클라인",
+    "에를랑겐프로그램",
+    "변환군",
+    "비유클리드기하",
+    "괴팅겐",
+    "힐베르트",
+    "푸앵카레",
+    "수학교육",
+    "클라인병",
+    "19세기",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1849,
+    "사망": 1925,
+    "출생지": "프로이센 뒤셀도르프"
+   },
+   "기여개념": [
+    "concept-analytic-geometry-advanced",
+    "concept-analysis-rigor-advanced"
+   ],
+   "관련일화": [],
+   "관련인물": [
+    "person-poincare",
+    "person-hilbert",
+    "person-weierstrass",
+    "person-frege"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History of Mathematics, Felix Klein — 1849년 4월 25일 뒤셀도르프에서 태어나 1925년 6월 22일 괴팅겐에서 죽었다는 것, **1872년 스물셋의 이례적으로 이른 나이에 바이에른의 에를랑겐 교수로 임명됐다**는 것, 학생이 매우 적은 에를랑겐에 머물고 싶어 하지 않아 **1875년 뮌헨 공과대학 교수직 제안을 반겼다**는 것, 뮌헨에서 다섯 해를 보낸 뒤 **라이프치히의 기하학 강좌에 임명**됐다는 것, **1881년 라이프치히에서 수학 세미나(Mathematisches Seminar)를 만들고 기하학적(리만적) 함수론 강의를 시작했다**는 것, 프랑스 수학자 푸앵카레가 같은 분야에서 일하기 시작한 것을 알고 **서신 교환을 시작해 자기 가장 중요한 발견 가운데 하나로 여긴 자기동형함수에 의한 대수곡선의 균일화 정리에 이르렀다**는 것, **큰 압박 속에서 일하다 1882년 가을 건강이 완전히 무너졌고 1883~1884년 내내 우울증에 시달렸다**는 것, **연구 수학자로서의 경력이 사실상 끝난 뒤 1886년 괴팅겐의 강좌를 받아들였다**는 것, 괴팅겐에서 새 강의·교수직·연구소를 세워 **그곳을 수학·과학 연구의 중심으로 바꾸었다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Klein/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, Felix Klein — **1874년부터 『수학 연보』(Mathematische Annalen)의 편집자**였고 그것이 세계 유수의 수학 학술지 가운데 하나라는 것, **1895년부터 『수학 백과사전』(Encyklopädie der mathematischen Wissenschaften)을 감독했다**는 것, **1895년 쾨니히스베르크에서 다비트 힐베르트를 데려왔다**는 것, 괴팅겐이 **1900~1914년 클라인과 힐베르트 아래 세계 유수의 연구 중심 가운데 하나로 떠올랐다**는 것, **클라인 병이 한쪽 면만 가진 닫힌 곡면이며 유클리드 공간 안에 만들 수 없다**는 것, 1908년 **국제수학교육위원회(ICMI) 위원장으로 선출**됐다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Felix_Klein",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Encyclopaedia Britannica, Felix Klein — **주어진 변환군 아래 불변인 공간의 성질을 연구하는 것으로 기하학을 종합한 것**이 에를랑겐 프로그램으로 알려졌고 수학의 발전에 깊이 영향을 미쳤다는 것, **1872년 에를랑겐 교수로 임명되면서 기하와 대칭에 관한 유명한 연설문을 준비했으나 실제로는 하지 않았다**는 것",
+     "URL": "https://www.britannica.com/biography/Felix-Klein",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과) 「에를랑겐 계획」 — **1872년 23세의 나이에 클라인이 독일 남부 바이에른 주 에를랑겐 대학교 교수로 임명되어 관례에 따라 전공에 관련한 취임강연을 하게 되었다**는 것과, 그 강연에서 당시의 기하학을 정리한 관점을 제시했다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338493&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과) 「펠릭스 클라인」 — **클라인 병으로 유명한 펠릭스 클라인이 독일 본(Bonn) 대학에서 수학과 물리학을 공부했다**는 것, **군(group) 개념을 기하학과 연결시켜 연구하여 기하학 연구에 새로운 방향을 제시했다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668914&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(인명사전) 「클라인」 — 독일의 수학자로 **뒤셀도르프에서 태어나 본 대학에서 공부했고, 베를린에서 소푸스 리와 공동으로 수학을 연구하고 함께 파리에 유학했으나 프로이센·프랑스 전쟁이 일어나 귀국했다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=885817&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과(수학백과) 「기하학」 — 공간을 연구하는 학문이 기하학이며, 데카르트의 해석기하학 다음 자리에 **클라인의 프로그램**을 놓아 기하학을 보는 틀의 계보를 정리한다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125189&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Erlangen program — 1872년 클라인이 「Vergleichende Betrachtungen über neuere geometrische Forschungen」(최근 기하학 연구에 대한 비교 고찰)로 발표한 것이며, **기하학들을 그 기본 대칭군으로 분류한 것**이자 당대 수학의 상당 부분을 종합한 영향력 있는 작업이라는 것",
+     "URL": "https://en.wikipedia.org/wiki/Erlangen_program",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Henri Poincaré Papers (낭트대), 4-44. Felix Klein / Poincaré–Klein 서한 — 두 사람이 **주로 1881년 6월 12일부터 1882년 9월 22일 사이에 많은 편지를 주고받았고**, 그 시기가 자기동형함수라는 새 분야와 균일화 정리를 두고 두 사람 모두에게 격렬한 수학적 활동의 시기였다는 것",
+     "URL": "https://henripoincarepapers.univ-nantes.fr/chp/text/klein.html",
+     "유형": "1차"
+    },
+    {
+     "번호": 10,
+     "제목": "Springer, Felix Klein — Mathematician, Academic Organizer, Educational Reformer — **1872년 12월 7일의 에를랑겐 취임 연설(Erlanger Antrittsrede)이 대체로 비수학자로 이루어진 대학 청중 앞에서 이루어졌고**, 거기서 강의·실습·세미나·모형 작업을 포함한 교육 활동을 말하며 **더 나은 교사를 길러 내는 것이 교육 전반을 낫게 한다**고 강조했다는 것, 그가 1차 대전 이전 20년간 융성한 교육 개혁 운동에서 주도적 역할을 했다는 것",
+     "URL": "https://link.springer.com/chapter/10.1007/978-3-319-99386-7_1",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-klein/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 6031,
+   "시각화": 4
   },
   {
    "유형": "인물",
@@ -8384,7 +8634,9 @@
     "person-fourier",
     "person-frege",
     "person-gauss",
+    "person-heine",
     "person-hilbert",
+    "person-klein",
     "person-lagrange",
     "person-laplace",
     "person-poincare",
@@ -8408,6 +8660,7 @@
     "person-frege",
     "person-godel",
     "person-hilbert",
+    "person-klein",
     "person-kolmogorov",
     "person-poincare"
    ]
@@ -8450,6 +8703,7 @@
     "person-fermat",
     "person-fourier",
     "person-gregory",
+    "person-heine",
     "person-jakob-bernoulli",
     "person-lagrange",
     "person-laplace",
@@ -8469,6 +8723,7 @@
     "person-gauss",
     "person-hilbert",
     "person-huygens",
+    "person-klein",
     "person-pascal"
    ],
    "확률론": [
@@ -8578,6 +8833,7 @@
    ],
    "위상수학": [
     "concept-graph-theory",
+    "person-heine",
     "person-kolmogorov",
     "person-poincare"
    ],
@@ -8628,6 +8884,9 @@
    "측지학": [
     "person-gauss"
    ],
+   "특수함수": [
+    "person-heine"
+   ],
    "함수해석학": [
     "person-hilbert"
    ],
@@ -8638,6 +8897,15 @@
    ],
    "미적분학": [
     "person-johann-bernoulli"
+   ],
+   "군론": [
+    "person-klein"
+   ],
+   "함수론": [
+    "person-klein"
+   ],
+   "수학교육": [
+    "person-klein"
    ],
    "동역학계": [
     "person-kolmogorov"
@@ -8673,13 +8941,15 @@
    "공통수학2": [
     "concept-analytic-geometry",
     "person-cantor",
-    "person-descartes"
+    "person-descartes",
+    "person-klein"
    ],
    "기하": [
     "concept-analytic-geometry-advanced",
     "person-de-moivre",
     "person-euler",
     "person-gauss",
+    "person-klein",
     "person-poincare"
    ],
    "공통수학1": [
@@ -8695,6 +8965,7 @@
     "person-barrow",
     "person-euler",
     "person-gregory",
+    "person-heine",
     "person-lagrange",
     "person-napier"
    ],
@@ -8722,7 +8993,9 @@
    ],
    "수학": [
     "person-frege",
-    "person-gauss"
+    "person-gauss",
+    "person-heine",
+    "person-klein"
    ]
   },
   "유형": {
@@ -8786,10 +9059,12 @@
     "person-gauss",
     "person-godel",
     "person-gregory",
+    "person-heine",
     "person-hilbert",
     "person-huygens",
     "person-jakob-bernoulli",
     "person-johann-bernoulli",
+    "person-klein",
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
@@ -8852,8 +9127,10 @@
     "person-gauss",
     "person-godel",
     "person-gregory",
+    "person-heine",
     "person-hilbert",
     "person-johann-bernoulli",
+    "person-klein",
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
@@ -8988,6 +9265,8 @@
     "person-fourier",
     "person-frege",
     "person-gauss",
+    "person-heine",
+    "person-klein",
     "person-laplace",
     "person-poincare"
    ],
@@ -9029,7 +9308,8 @@
     "century-19c",
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
-    "episode-cantor-letter-1877"
+    "episode-cantor-letter-1877",
+    "person-heine"
    ],
    "리만": [
     "century-19c",
@@ -9050,6 +9330,7 @@
     "person-frege",
     "person-godel",
     "person-hilbert",
+    "person-klein",
     "person-kolmogorov",
     "person-poincare"
    ],
@@ -9064,6 +9345,7 @@
     "episode-koenigsberg-1930",
     "person-godel",
     "person-hilbert",
+    "person-klein",
     "person-kolmogorov"
    ],
    "괴델": [
@@ -9120,7 +9402,8 @@
    ],
    "클라인": [
     "concept-analysis-rigor-advanced",
-    "concept-analytic-geometry-advanced"
+    "concept-analytic-geometry-advanced",
+    "person-klein"
    ],
    "좌표": [
     "concept-analytic-geometry",
@@ -9249,13 +9532,15 @@
    "디리클레": [
     "concept-differential-equation-advanced",
     "concept-function",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-heine"
    ],
    "라플라스변환": [
     "concept-differential-equation-advanced"
    ],
    "푸앵카레": [
     "concept-differential-equation-advanced",
+    "person-klein",
     "person-poincare"
    ],
    "미분": [
@@ -9608,14 +9893,16 @@
     "person-gauss"
    ],
    "비유클리드기하": [
-    "person-gauss"
+    "person-gauss",
+    "person-klein"
    ],
    "보여이": [
     "person-gauss"
    ],
    "괴팅겐": [
     "person-gauss",
-    "person-hilbert"
+    "person-hilbert",
+    "person-klein"
    ],
    "연속체가설": [
     "person-godel"
@@ -9628,6 +9915,24 @@
    ],
    "반사망원경": [
     "person-gregory"
+   ],
+   "하이네": [
+    "person-heine"
+   ],
+   "균등연속": [
+    "person-heine"
+   ],
+   "하이네보렐정리": [
+    "person-heine"
+   ],
+   "옹골집합": [
+    "person-heine"
+   ],
+   "할레": [
+    "person-heine"
+   ],
+   "구면조화함수": [
+    "person-heine"
    ],
    "형식주의": [
     "person-hilbert"
@@ -9643,6 +9948,18 @@
    ],
    "야코프베르누이": [
     "person-johann-bernoulli"
+   ],
+   "에를랑겐프로그램": [
+    "person-klein"
+   ],
+   "변환군": [
+    "person-klein"
+   ],
+   "수학교육": [
+    "person-klein"
+   ],
+   "클라인병": [
+    "person-klein"
    ],
    "공리": [
     "person-kolmogorov"
@@ -9722,7 +10039,8 @@
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "episode-prague-1834",
-    "person-cauchy"
+    "person-cauchy",
+    "person-heine"
    ],
    "person-cantor": [
     "concept-analysis-rigor",
@@ -9730,6 +10048,7 @@
     "episode-cantor-letter-1877",
     "person-dedekind",
     "person-frege",
+    "person-heine",
     "person-weierstrass"
    ],
    "person-cauchy": [
@@ -9755,12 +10074,18 @@
     "person-dirichlet",
     "person-gauss"
    ],
+   "person-heine": [
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced"
+   ],
    "person-weierstrass": [
     "concept-analysis-rigor",
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
     "concept-series-advanced",
-    "person-cantor"
+    "person-cantor",
+    "person-heine",
+    "person-klein"
    ],
    "뉴턴·라이프니츠": [
     "concept-analysis-rigor"
@@ -9770,6 +10095,7 @@
     "person-cantor",
     "person-godel",
     "person-hilbert",
+    "person-klein",
     "person-poincare"
    ],
    "person-hilbert": [
@@ -9777,10 +10103,11 @@
     "episode-koenigsberg-1930",
     "person-frege",
     "person-godel",
+    "person-klein",
     "person-kolmogorov",
     "person-poincare"
    ],
-   "클라인": [
+   "person-klein": [
     "concept-analysis-rigor-advanced",
     "concept-analytic-geometry-advanced"
    ],
@@ -9809,6 +10136,7 @@
     "concept-probability-advanced",
     "person-dedekind",
     "person-dirichlet",
+    "person-heine",
     "person-laplace"
    ],
    "person-poincare": [
@@ -9817,6 +10145,7 @@
     "person-frege",
     "person-godel",
     "person-hilbert",
+    "person-klein",
     "person-laplace"
    ],
    "데자르그": [
@@ -9975,7 +10304,8 @@
     "person-cauchy",
     "person-dedekind",
     "person-fourier",
-    "person-gauss"
+    "person-gauss",
+    "person-heine"
    ],
    "person-laplace": [
     "concept-differential-equation-advanced",
@@ -11722,6 +12052,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-weierstrass",
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
@@ -12200,6 +12536,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-poincare",
      "제목": "앙리 푸앵카레",
      "유형": "인물",
@@ -12406,6 +12754,12 @@
     {
      "슬러그": "person-gauss",
      "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -12650,6 +13004,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-weierstrass",
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
@@ -12780,6 +13140,18 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-poincare",
      "제목": "앙리 푸앵카레",
      "유형": "인물",
@@ -12846,6 +13218,12 @@
      "제목": "쿠르트 괴델",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-weierstrass",
@@ -12918,6 +13296,12 @@
     {
      "슬러그": "person-hilbert",
      "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
      "유형": "인물",
      "경로": "본문"
     },
@@ -13002,8 +13386,20 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-hilbert",
      "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -13042,6 +13438,12 @@
     {
      "슬러그": "person-godel",
      "제목": "쿠르트 괴델",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
      "유형": "인물",
      "경로": "관련인물"
     },
@@ -13122,6 +13524,26 @@
      "경로": "관련인물"
     }
    ],
+   "person-heine": [
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-frege": [
     {
      "슬러그": "concept-analysis-rigor-advanced",
@@ -13148,10 +13570,30 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-poincare",
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "person-klein": [
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
     }
    ],
    "episode-descartes-fly": [
@@ -13206,6 +13648,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
@@ -13246,6 +13694,12 @@
     {
      "슬러그": "person-hilbert",
      "제목": "다비트 힐베르트",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-klein",
+     "제목": "펠릭스 클라인",
      "유형": "인물",
      "경로": "관련인물"
     },
@@ -13606,6 +14060,12 @@
     {
      "슬러그": "person-gauss",
      "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-heine",
+     "제목": "에두아르트 하이네",
      "유형": "인물",
      "경로": "관련인물"
     },
@@ -14149,6 +14609,15 @@
   "인물_제임스 그레고리": "person-gregory",
   "제임스 그레고리": "person-gregory",
   "제임스그레고리": "person-gregory",
+  "Eduard Heine": "person-heine",
+  "Heine": "person-heine",
+  "person-heine": "person-heine",
+  "에두아르트 하이네": "person-heine",
+  "인물_에두아르트 하이네": "person-heine",
+  "하이네": "person-heine",
+  "하이네보렐": "person-heine",
+  "하이네칸토어": "person-heine",
+  "하인리히 에두아르트 하이네": "person-heine",
   "David Hilbert": "person-hilbert",
   "person-hilbert": "person-hilbert",
   "다비트 힐베르트": "person-hilbert",
@@ -14183,6 +14652,17 @@
   "요한 베르누이": "person-johann-bernoulli",
   "요한베르누이": "person-johann-bernoulli",
   "인물_요한 베르누이": "person-johann-bernoulli",
+  "Felix Klein": "person-klein",
+  "Klein": "person-klein",
+  "person-klein": "person-klein",
+  "에를랑겐계획": "person-klein",
+  "에를랑겐프로그램": "person-klein",
+  "인물_펠릭스 클라인": "person-klein",
+  "크리스티안 펠릭스 클라인": "person-klein",
+  "클라인": "person-klein",
+  "클라인병": "person-klein",
+  "펠릭스 클라인": "person-klein",
+  "펠릭스클라인": "person-klein",
   "Andrey Kolmogorov": "person-kolmogorov",
   "KAM 이론": "person-kolmogorov",
   "person-kolmogorov": "person-kolmogorov",

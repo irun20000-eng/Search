@@ -56,7 +56,25 @@
 사용:
   python tools/verify_math.py              # 전체
   python tools/verify_math.py <슬러그>...   # 일부
-  python tools/verify_math.py --backlog    # 미해결 위키링크만 출력
+  python tools/verify_math.py --backlog    # 백로그만 출력 (위키링크 + 발전단계 인물)
+  python tools/verify_math.py --symmetry   # frontmatter 상호참조 대칭 보고 (게이트 아님)
+
+■ 백로그 채널이 둘인 이유 (2026-08-29)
+
+  백로그를 위키링크만으로 세면 **본문이 반복 호명하는데 링크를 안 건 이름**이
+  영원히 안 보인다. 실측: 유클리드 79회 · 아르키메데스 38회 · 카르다노 19회 ·
+  카발리에리 15회 · 갈릴레이 11회가 본문에 나오는데 위키링크는 **0건**이었다.
+  그래서 지도(ROADMAP §0)의 세 경로가 전부 닫혀 16세기 이전이 착수 불가였다.
+
+  NER 없이 이걸 잡으려면 손으로 관리하는 이름 목록이 필요한데, 그건 반드시 낡는다.
+  대신 **이미 구조화돼 있는 신호**를 쓴다 — `발전단계[].인물` 이다.
+  개념 노트가 "이 단계는 누가 했다"고 적어 둔 이름이므로 저장소가 스스로 중요하다고
+  판정한 것이고, 손으로 더 적을 것이 없다.
+
+  ※ 한계 — 평문으로만 불리는 이름(유클리드가 그렇다)은 여전히 안 잡힌다.
+  그건 검사기가 아니라 **집필이 위키링크를 걸어 해결할 일**이다. 링크를 걸면
+  그 순간 위키링크 백로그에 뜬다. 볼드 강조를 세 보는 방법도 시험했으나
+  후보 328종 중 3편 이상에 걸치는 것이 '과'·'정의' 둘뿐이라 폐기했다.
 """
 import sys
 import re
@@ -235,6 +253,133 @@ def collect_wikilinks(only=None):
     return resolved, pending, where
 
 
+def collect_stage_people(only=None):
+    """발전단계[].인물 중 문서·별칭으로 해석되지 않는 이름.
+
+    위키링크 백로그와 성격이 다르다 — 본문에 링크를 걸지 않았어도
+    개념 노트가 frontmatter 에 이름을 적어 둔 것이므로 이미 '예약'이다.
+    ROADMAP §0 이 말하는 유형①(frontmatter 가 가리키는데 문서가 없는 것)과 같다.
+    """
+    idx = M.load_link_index()
+    pending = Counter()
+    where = {}
+    for slug, path in M.iter_notes():
+        if only and slug not in only:
+            continue
+        try:
+            fm, _ = M.read_note(path)
+        except ValueError:
+            continue
+        for stage in (fm.get("발전단계") or []):
+            raw = str(stage.get("인물") or "").strip()
+            if not raw:
+                continue
+            # "페르마·파스칼" 이나 "뉴턴, 라이프니츠" 처럼 둘을 한 칸에 적는 일이 있다
+            for name in [x.strip() for x in raw.replace("·", ",").split(",")]:
+                if not name:
+                    continue
+                if M.norm(name) in idx:
+                    continue
+                pending[name] += 1
+                where.setdefault(name, set()).add(slug)
+    return pending, where
+
+
+# frontmatter 상호참조가 짝을 이뤄야 하는 필드쌍.
+# (A 가 B 를 가리키면 B 의 짝필드에도 A 가 있어야 한다)
+#
+# ★ `관련인물` 은 유형에 따라 뜻이 다르다 — 첫 판이 이걸 놓쳐 90건을 헛집었다.
+#     일화.관련인물  = "이 일화에 나오는 인물"  → 역방향은 인물.관련일화
+#     인물.관련인물  = "관련된 다른 인물"        → 역방향은 그 인물의 관련인물 (같은 필드)
+#   유형을 안 보고 관련인물 → 관련일화 하나로 묶으면, 인물끼리 걸어 둔 링크마다
+#   "상대의 관련일화에 네가 없다"고 잘못 지적한다. 그래서 짝을 출처 유형별로 나눈다.
+#
+# (출처유형 또는 None=전체, 출처필드, 역방향필드)
+SYM_PAIRS = [
+    (None,   "기여인물", "기여개념"),
+    (None,   "기여개념", "기여인물"),
+    (None,   "선행개념", "후속개념"),
+    (None,   "후속개념", "선행개념"),
+    ("일화", "관련인물", "관련일화"),
+    ("인물", "관련일화", "관련인물"),
+    ("인물", "관련인물", "관련인물"),
+    ("개념", "관련인물", "관련인물"),
+]
+
+
+def collect_symmetry():
+    """단방향으로만 걸린 상호참조. (게이트가 아니라 보고다 — 이유는 print 쪽 주석)"""
+    fms = {}
+    for slug, path in M.iter_notes():
+        try:
+            fm, _ = M.read_note(path)
+        except ValueError:
+            continue
+        fms[slug] = fm
+
+    def lst(fm, key):
+        return [str(x).strip() for x in (fm.get(key) or []) if str(x).strip()]
+
+    holes = []
+    seen = set()
+    for kind, src, dst in SYM_PAIRS:
+        for slug, fm in sorted(fms.items()):
+            if kind and fm.get("유형") != kind:
+                continue
+            for target in lst(fm, src):
+                if target not in fms:
+                    continue          # 문서가 없는 것은 백로그가 잡는다
+                if slug in lst(fms[target], dst):
+                    continue
+                key = (slug, src, target, dst)
+                if key in seen:       # 같은 필드끼리 짝인 규칙은 양쪽에서 걸린다
+                    continue
+                seen.add(key)
+                holes.append(key)
+    return holes
+
+
+def print_stage_backlog(pending, where, limit=40, wiki_pending=None):
+    if not pending:
+        print("발전단계 인물 전부 해석됨.")
+        return
+    total = sum(pending.values())
+    print("\n── 호명 백로그 — 발전단계가 이름을 적었으나 문서가 없다 %d종 %d회 ──"
+          % (len(pending), total))
+    print("   (개념 노트가 frontmatter 에 적어 둔 이름 = 이미 예약이다. ROADMAP §0 유형①)")
+
+    # 두 백로그가 같은 사람을 다른 표기로 부르는 일이 잦다 —
+    # 위키링크는 '펠릭스 클라인', 발전단계는 '클라인' 이다.
+    # 표시해 두지 않으면 두 건으로 세어 우선순위를 잘못 잡는다.
+    wiki = list(wiki_pending or ())
+    for t, c in pending.most_common(limit):
+        src = ", ".join(sorted(where.get(t, ()))[:3])
+        same = [w for w in wiki if t != w and (t in w or w in t)]
+        tail = ("  ※ 위키링크 백로그의 '%s' 과 같은 대상" % same[0]) if same else ""
+        print("  %3d회  %-30s  ← %s%s" % (c, t[:30], src, tail))
+    if len(pending) > limit:
+        print("  … 외 %d종" % (len(pending) - limit))
+
+
+def print_symmetry(holes):
+    # 게이트로 만들지 않는 이유: 2026-08-29 첫 실측이 130건이었다.
+    # 하한 없는 검사기를 에러로 켜면 그날로 아무도 못 돌린다(LESSONS
+    # "항상 실패하는 검사기는 게이트가 아니다"). 먼저 재고, 줄인 뒤에 켠다.
+    if not holes:
+        print("frontmatter 상호참조 대칭 — 구멍 없음.")
+        return
+    by = Counter("%s → 역방향 %s" % (s, d) for _, s, _, d in holes)
+    print("\n── frontmatter 상호참조 — 단방향 %d건 (보고이며 게이트가 아니다) ──" % len(holes))
+    for k, c in by.most_common():
+        print("  %3d건  %s" % (c, k))
+    print("\n   상세(앞 25건):")
+    for slug, src, target, dst in holes[:25]:
+        print("     %-34s %s → %-30s (%s 에 역방향 없음)"
+              % (slug[:34], src, target[:30], dst))
+    if len(holes) > 25:
+        print("     … 외 %d건" % (len(holes) - 25))
+
+
 def print_backlog(pending, where, limit=40):
     if not pending:
         print("미해결 위키링크 없음.")
@@ -257,9 +402,15 @@ def main():
     if args:
         notes = [(s, p) for s, p in notes if s in set(args)]
 
+    if "--symmetry" in flags:
+        print_symmetry(collect_symmetry())
+        return 0
+
     if "--backlog" in flags:
         r, p, w = collect_wikilinks()
         print_backlog(p, w, limit=200)
+        sp, sw = collect_stage_people()
+        print_stage_backlog(sp, sw, limit=200, wiki_pending=p)
         return 0
 
     if not notes:
@@ -287,6 +438,8 @@ def main():
     resolved, pending, where = collect_wikilinks({s for s, _ in notes})
     print("위키링크: 해결 %d회 / 미해결 %d회" % (sum(resolved.values()), sum(pending.values())))
     print_backlog(pending, where)
+    sp, sw = collect_stage_people({s for s, _ in notes})
+    print_stage_backlog(sp, sw, wiki_pending=pending)
 
     return 1 if fail else 0
 
