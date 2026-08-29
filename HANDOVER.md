@@ -78,6 +78,18 @@ git push origin --delete \
 운영 정본은 `routines/cardnews-weekly.md` + `studio/CLAUDE.md` 로 넘어갔다.
 **설계 근거 기록으로 main 에 남길지 버릴지**는 사용자 판단.
 
+### 2-2-1. 시각화 실험대 `studio/sandbox/` — 다음 실험 대기
+
+2026-08-29 신설. **발행되지 않는 자리**라 여기서 부수는 것은 값이 안 든다(`out/` 은 git 무시).
+지금 들어 있는 것: 개념 한 장 판형 A/B/C, A4 여섯 컷 컷툰(QED프렌즈), A 판형 동일성 검사.
+
+- 컷툰의 그림은 **아직 자리표**다. 다음 차례는 `Shorts_Flow` 드라이브
+  (`19Glc5hs8h3UXhOahDmm6V4jo3PFMRzG1`)의 `characters/cutouts_*.png` 5종을
+  `studio/sandbox/assets/characters/` 로 내려두고 스펙의 `img` 를 채우는 일.
+- 판형 B/C 는 **아직 발행에 쓰지 않는다.** `studio/concept_sheet.py` 와 러너
+  워크플로는 그대로 A 만 그린다 — 실험대에서 골라 본 뒤에 옮기는 것이 순서.
+- 판형 CSS 를 건드렸으면 `render.py same` 을 반드시 돌릴 것(발행분 다섯 장이 A 다).
+
 ### 2-3. frontmatter 상호참조 단방향 67건
 
 `python3 tools/verify_math.py --symmetry` 가 보고한다. **게이트가 아니다.**
