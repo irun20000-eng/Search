@@ -173,6 +173,22 @@ def cmd_cuttoon(a):
     return 0
 
 
+def cmd_cards(a):
+    """같은 스펙을 카드뉴스 판형으로. 원본은 하나고 판형만 둘이다."""
+    import cards
+    names = ([a.spec] if a.spec else
+             [p.stem for p in sorted(SPECS.glob("cuttoon-*.py"))])
+    if not names:
+        raise SystemExit("specs/cuttoon-*.py 가 없다")
+    warn_stubs()
+    use_local_chromium()
+    for n in names:
+        spec = load_spec(SPECS / (n + ".py"))
+        cards.build(spec, OUT, base=HERE, scale=a.scale,
+                    stem=n.replace("cuttoon-", "cards-"))
+    return 0
+
+
 # --- A 판형 동일성 ---------------------------------------------------------
 # 이미 발행된 다섯 장이 A 판형이다. 판형 기능을 넣으면서 A 의 HTML 이 한 글자라도
 # 달라지면 서가의 그림이 소리 없이 바뀐다. "PLAN_CSS['A'] 가 빈 문자열이다" 는
@@ -278,6 +294,11 @@ def main():
     c.add_argument("--stubs", action="store_true",
                    help="컷아웃이 없을 때 임시 실루엣을 만들어 배관을 확인한다")
     c.set_defaults(fn=cmd_cuttoon)
+
+    k = sub.add_parser("cards", help="카드뉴스 판 컷툰 (1080×1350, 장당 두 컷)")
+    k.add_argument("spec", nargs="?")
+    k.add_argument("--scale", type=int, default=1)
+    k.set_defaults(fn=cmd_cards)
 
     m = sub.add_parser("same", help="A 판형 동일성 확인")
     m.add_argument("--ref", default=BASELINE,
