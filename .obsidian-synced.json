@@ -78,7 +78,9 @@
   "#r=hermes-agent-deep": "20260621_헤르메스 에이전트(Hermes Agent) — 심층 리서치.md",
   "#r=hermes-agent-quick": "20260621_헤르메스 에이전트(Hermes Agent)란 무엇인가 — 초보자용 설치·활용.md",
   "#r=continuous-function-theorems": "20260825_연속함수의 두 정리 (이해편) — IVT·EVT.md",
-  "#r=continuous-function-theorems-advanced": "20260825_IVT·EVT의 증명 (확장편) — 완비성에서 컴팩트성까지.md"
+  "#r=continuous-function-theorems-advanced": "20260825_IVT·EVT의 증명 (확장편) — 완비성에서 컴팩트성까지.md",
+  "#r=derivative-rate-of-change": "20260831_미분과 변화율 (이해편) — 속도계·물가·커피로 배우는 변화 읽기와 예측 (DEEP).md",
+  "#r=derivative-rate-of-change-advanced": "20260831_변화율로 예측하기 (확장편) — 오차 한계·관련 변화율·미분방정식·자동미분 (DEEP).md"
  },
  "videos": {
   "XgWJWuz6Dmw": "20260821_제미나이_Spark(스파크)_사용법_총정리｜컴퓨터가_꺼져_있어도_일하는_AI_에이전트.md",
