@@ -189,6 +189,20 @@ def cmd_cards(a):
     return 0
 
 
+def cmd_process(a):
+    """프로세스 인포그래픽 — 이미지 프롬프트를 렌더러 스펙으로 옮긴 판형."""
+    import process
+    names = ([a.spec] if a.spec else
+             [p.stem for p in sorted(SPECS.glob("process-*.py"))])
+    if not names:
+        raise SystemExit("specs/process-*.py 가 없다")
+    use_local_chromium()
+    for n in names:
+        spec = load_spec(SPECS / (n + ".py"))
+        process.build(spec, OUT / (n + ".png"), scale=a.scale)
+    return 0
+
+
 # --- A 판형 동일성 ---------------------------------------------------------
 # 이미 발행된 다섯 장이 A 판형이다. 판형 기능을 넣으면서 A 의 HTML 이 한 글자라도
 # 달라지면 서가의 그림이 소리 없이 바뀐다. "PLAN_CSS['A'] 가 빈 문자열이다" 는
@@ -299,6 +313,11 @@ def main():
     k.add_argument("spec", nargs="?")
     k.add_argument("--scale", type=int, default=1)
     k.set_defaults(fn=cmd_cards)
+
+    r = sub.add_parser("process", help="프로세스 인포그래픽 (1536×1024)")
+    r.add_argument("spec", nargs="?")
+    r.add_argument("--scale", type=int, default=1)
+    r.set_defaults(fn=cmd_process)
 
     m = sub.add_parser("same", help="A 판형 동일성 확인")
     m.add_argument("--ref", default=BASELINE,

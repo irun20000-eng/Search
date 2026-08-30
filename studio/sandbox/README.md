@@ -53,6 +53,8 @@ playwright    pip install playwright  (브라우저는 이미 있으므로 insta
 | 컷툰 | A4 6컷 만화 조립 | `render.py cuttoon`. `rows`(행 높이 비율)·`tall`(두 행)로 판면 리듬 |
 | 캐릭터 | QED프렌즈 컷아웃 세우기 | `figures` — 파일이 없으면 자리표, `--stubs` 로 대역 |
 | 배경 | **코드로 그린 장면** | `scene` — `scenes.py` 의 이름을 부른다. 생성형 그림 없이 컷이 선다 |
+| 카드뉴스 | 같은 스펙, 장당 두 컷 | `render.py cards`. 1080×1350 · 통컷은 낮게(`.cut.wide`) |
+| 프로세스 | 도입+단계+마무리 도표 | `render.py process`. 1536×1024 · **글자수 상한을 렌더러가 잰다** |
 
 ### 렌더가 자동으로 재는 것
 
