@@ -8,7 +8,7 @@
 > 무엇을 쓸지·다음 대상·부채가 전부 거기 있고, 수치는 그 안의 「자동 측정」 블록이 정본이다.
 > 이 문서는 **서가를 가로지르는 것**과 **리포 바깥 일**만 맡는다.
 
-마지막 갱신: 2026-08-29
+마지막 갱신: 2026-08-30
 
 ---
 
@@ -66,10 +66,20 @@ git push origin --delete \
   feat/math-concept-probability feat/math-concept-series feat/math-concept-roadmap
 ```
 
-⚠️ **원격에는 그 밖에도 브랜치가 열두 개쯤 더 있고 그것들은 대조하지 않았다**
-(`blissful-pascal-*` · `video-gallery-mobile-automation-*` · `feat/math-history-archive` 등).
-커밋 수가 60~100 으로 찍히는데 **스쿼시 머지 뒤 남은 옛 이력일 가능성이 크다** — 세어 본 숫자로
-판단하지 말고 `git diff origin/main origin/<브랜치>` 로 **내용**을 대조한 뒤 지울 것.
+**2026-08-30 — 나머지도 전수 대조했다. 22개 중 21개가 삭제 안전이다.**
+`blissful-pascal-*` 5 · `compassionate-goldberg-*` 4 · `inspiring-ramanujan-5k4njo` ·
+`video-gallery-mobile-automation-oz2e3p` · `feat/math-history-archive` ·
+`chore/vault-sync-20260828` · `iran-us-conflict-timeline-vr6mv0`(머지 77건) 전부 머지된
+PR 을 갖는다. 남은 하나가 §2-2 의 `claude/cardnews-plan`(PR #100 **CLOSED**)이다.
+
+⚠️ **파일 내용 대조로 판단하면 안 된다.** `git diff` 나 파일 해시로 재면 21개 중 19개가
+"미반영" 으로 찍힌다 — **스쿼시 머지 뒤 그 파일들이 더 바뀌었기 때문**이고, 브랜치 작업이
+안 들어간 게 아니다. 정확한 판정은 **PR 이력**이다:
+
+```bash
+gh pr list --state all --limit 300 --json number,headRefName,state,mergedAt
+# 브랜치별로 state=MERGED 인 PR 이 있으면 삭제 안전
+```
 
 ### 2-2. `claude/cardnews-plan` — 판단 필요
 
@@ -82,6 +92,14 @@ git push origin --delete \
 
 `studio/sandbox/` 는 발행되지 않는 실험대다(`out/` 은 git 무시). 지금 들어 있는 것:
 개념 한 장 판형 A/B/C, A4 여섯 컷 컷툰, A 판형 동일성 검사.
+
+> **2026-08-30 — 컷아웃 배치·렌더는 끝났다.** `E:\AI_Project\Shorts_Flow\characters\cutouts\`
+> 의 5종을 아래 이름으로 두고 `python studio/sandbox/render.py cuttoon` 을 돌렸다.
+> 대역 경고 없이 통과했고(컷 높이 3종·겹침 0·얼굴 가림 0) 여섯 컷에 QED프렌즈가 들어갔다.
+> **남은 것은 배경컷뿐이다** — 스펙이 "그림은 아직 없다, 각 컷의 `shot` 이 Flow 프롬프트의
+> 씨앗"이라 적어 둔 그 단계(README 의 ②)이고, 컷 1·6 이 넓게 비어 보이는 것은 그 때문이다.
+> 사용자가 Flow 에서 여섯 장을 받아 오면 스펙의 `img` 에 경로를 적고 다시 돌리면 된다.
+> ⚠️ **컷아웃은 gitignore 라 이 PC 에만 있다.** 다른 자리에서는 아래를 다시 해야 한다.
 
 **배관은 끝나 있다. PC 에서 할 일은 파일을 두고 한 줄 돌리는 것뿐이다.**
 
@@ -132,7 +150,14 @@ A 만 그린다 — 실험대에서 골라 본 뒤 옮기는 것이 순서. 판�
 
 ---
 
-## 3. 닫힌 것 (2026-08-29 확인)
+## 3. 닫힌 것 (2026-08-29 확인 · 2026-08-30 추가)
+
+- ~~**블로그 서가 도해가 검게 뭉갠 것**~~ — 고쳤다(#166). 노트 SVG 가 색을 `var(--green)`
+  류로 부르는데 그 정의(`brand.css`)가 이관을 안 따라와 **미정의 `var()` 가 SVG 에서
+  검정으로 떨어졌다** — 19/22편·499자리·라이트와 다크 양쪽. 콘솔 오류도 깨진 이미지도
+  없어 조용히 두 달을 갔다. 정본 팔레트를 필라별로 심고, 다크는 색을 뒤집는 대신
+  도해에만 제 지면을 깔았다(`math/` 도해와 같은 규약). 표지 누락 3편은
+  `ingest_blog.py` 에서 고쳤다 — **노트를 손으로 고치면 자동 인제스트가 되돌린다.**
 
 - ~~**`youtube-math-skill` manifest 패치**~~ — 사용자가 적용했다. `output/manifest.json` **70편**.
   허브 「학습자료」 바깥 서가가 살아 있다.
@@ -159,6 +184,13 @@ A 만 그린다 — 실험대에서 골라 본 뒤 옮기는 것이 순서. 판�
 - **분량 게이트 미달이면 절을 새로 끼우기 전에 기존 절을 깊게 쓴다.** 구조를 건드리면 참조가 깨진다.
 - **인용하기 전에 그 자료를 실제로 열어 봤는지 확인한다.** 계획 단계에서 떠올린 문서를
   검색도 하지 않고 출처 목록에 적을 뻔한 일이 있었다(2026-08-29).
+- **다른 리포에서 본문을 옮겨 올 때 색·폰트 정의가 따라왔는지 본다.** 옮긴 HTML 이
+  `var(--…)` 로 색을 부르면 정의는 원천 스타일시트에 있다. 안 따라오면 **SVG 는 검정으로
+  떨어지고 조용하다** — 콘솔 오류도 깨진 이미지도 없다. 블로그 서가가 그렇게 두 달 갔다.
+- **파일 무결성 검사는 화면 정상을 뜻하지 않는다.** 이관·갤러리 변경 뒤에는 실제 브라우저로
+  한 편 열어 눈으로 본다. 계측기만 믿지 말 것 — 이번에도 오탐 둘이 진짜를 덮을 뻔했다.
+- **`blog/notes/*.md` 를 손으로 고치지 않는다.** Blog 리포 워크플로가 Search 를 체크아웃해
+  `tools/ingest_blog.py` 로 다시 쓴다. 고칠 자리는 노트가 아니라 그 스크립트다.
 - **산출물을 손으로 고치지 않는다** — `manifest.json` · `link-index.json` · ROADMAP 「자동 측정」 블록.
   충돌 나면 `git checkout origin/main -- <파일>` 뒤 빌더를 다시 돌린다.
 
