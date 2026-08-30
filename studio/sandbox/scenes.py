@@ -139,8 +139,15 @@ def plain_room():
         f'<rect width="{w}" height="{h}" fill="{WALL}"/>',
         f'<rect y="{floor_y}" width="{w}" height="{h - floor_y}" fill="{FLOOR}"/>',
         f'<rect y="{floor_y}" width="{w}" height="3" fill="{NAVY}" opacity=".16"/>',
-        # 스펙이 "배경은 단순한 크림색"이라 적어 두었다. 소품을 놓아 봤더니
-        # 종이로 읽히지 않고 흰 막대로만 보여서 뺐다 — 지시를 그대로 지킨다.
+        # 스펙이 "배경은 단순한 크림색"이라 적어 두었다. 이야기 소품은 놓지 않는다 —
+        # 종이 한 장을 놓아 봤더니 종이로 읽히지 않고 흰 막대로만 보였다.
+        #
+        # 다만 A4 에서는 이 정도로 충분했는데 카드 판형(1000×700)으로 커지자
+        # 그냥 빈 벽이 됐다. 그래서 '이야기'가 아니라 '건축'만 더한다 —
+        # 굽도리 선과 창빛 한 조각. 무엇도 설명하지 않지만 방으로는 읽힌다.
+        f'<rect y="{floor_y - 26}" width="{w}" height="4" fill="{NAVY}" opacity=".08"/>',
+        f'<path d="M96 {floor_y} L150 {h} L392 {h} L308 {floor_y} Z" '
+        f'fill="{MUSTARD}" opacity=".10"/>',
     ]
     return _svg(w, h, "".join(s))
 
@@ -290,8 +297,12 @@ def observatory_morning():
         f'<rect y="{floor_y}" width="{w}" height="{h - floor_y}" fill="{FLOOR}"/>',
         f'<rect y="{floor_y}" width="{w}" height="3" fill="{NAVY}" opacity=".16"/>',
     ]
-    # 아치창 둘 — 아침 빛
-    for x in (128, 872):
+    # 아치창 둘 — 아침 빛.
+    # 첫 판에는 왼쪽 창을 x=128 에 두었는데 왼쪽 끝에 선 코코가 통째로 가렸다.
+    # 세 인물이 좌·중·우로 서므로 창은 **인물 사이 빈 자리**로 옮긴다.
+    # 창(y 126~220)과 책상(y 238~292)은 세로로 안 겹치므로 같은 x 에 겹쳐 앉힌다 —
+    # 컷 1 처럼 '책상 위의 창'이 되어 같은 방이라는 것이 읽힌다.
+    for x in (300, 800):
         s += [
             f'<path d="M{x} 214 V126 a62 62 0 0 1 124 0 V214 Z" fill="url(#morn)" '
             f'stroke="{NAVY}" stroke-width="6"/>',
@@ -301,10 +312,9 @@ def observatory_morning():
             f'stroke="{NAVY}" stroke-width="3"/>',
         ]
     # 빛 기둥 — 창에서 바닥으로
-    s.append(f'<path d="M150 216 L104 {floor_y} L286 {floor_y} L262 216 Z" '
-             f'fill="{MUSTARD}" opacity=".12"/>')
-    s.append(f'<path d="M894 216 L848 {floor_y} L1030 {floor_y} L1006 216 Z" '
-             f'fill="{MUSTARD}" opacity=".12"/>')
+    for x in (300, 800):
+        s.append(f'<path d="M{x + 22} 218 L{x - 24} {floor_y} L{x + 158} {floor_y} '
+                 f'L{x + 134} 218 Z" fill="{MUSTARD}" opacity=".12"/>')
     # 낮은 책상 하나와 그 위의 로그표 한 권 — 더미가 아니라 '한 권'.
     # 첫 판에는 책상을 한가운데(452~668)에 두었는데 가운데 선 루트가 책을 가려
     # 노란 조각만 보였다. 세 인물이 좌·중·우로 서므로 그 사이로 옮긴다.
