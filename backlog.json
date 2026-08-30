@@ -2,9 +2,9 @@
  "generated": "2026-08-30",
  "scanned": 243,
  "resolved": 1176,
- "pending": 539,
+ "pending": 559,
  "counts": {
-  "new": 251,
+  "new": 254,
   "companion": 5,
   "gap": 0
  },
@@ -119,6 +119,81 @@
      "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
      "u": "research/#r=claude-cowork-mobile",
      "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "유클리드",
+   "count": 11,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "19세기",
+     "u": "math/#n=century-19c",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "20세기",
+     "u": "math/#n=century-20c",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "대수 기호법 (확장편)",
+     "u": "math/#n=concept-algebra-notation-advanced",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석기하",
+     "u": "math/#n=concept-analytic-geometry",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "해석기하 (확장편)",
+     "u": "math/#n=concept-analytic-geometry-advanced",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "무한급수 확장편",
+     "u": "math/#n=concept-series-advanced",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "아이작 배로",
+     "u": "math/#n=person-barrow",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "베른하르트 볼차노",
+     "u": "math/#n=person-bolzano",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "리하르트 데데킨트",
+     "u": "math/#n=person-dedekind",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "안드레이 콜모고로프",
+     "u": "math/#n=person-kolmogorov",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "블레즈 파스칼",
+     "u": "math/#n=person-pascal",
+     "s": "math",
      "n": 1
     }
    ]
@@ -433,6 +508,45 @@
    ]
   },
   {
+   "name": "카르다노",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대수 기호법 (확장편)",
+     "u": "math/#n=concept-algebra-notation-advanced",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "변분법",
+     "u": "math/#n=concept-calculus-of-variations",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "복소수",
+     "u": "math/#n=concept-complex-number",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "파스칼–페르마 서신",
+     "u": "math/#n=episode-pascal-fermat-letters",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "아브라암 드무아브르",
+     "u": "math/#n=person-de-moivre",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "무한소",
    "count": 4,
    "kind": "new",
@@ -714,6 +828,39 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
+    }
+   ]
+  },
+  {
+   "name": "아르키메데스",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미적분학의 기본정리",
+     "u": "math/#n=concept-fundamental-theorem",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "적분법",
+     "u": "math/#n=concept-integration",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "베르누이의 묘비",
+     "u": "math/#n=episode-bernoulli-tomb",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "아이작 배로",
+     "u": "math/#n=person-barrow",
+     "s": "math",
+     "n": 1
     }
    ]
   },
