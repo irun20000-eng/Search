@@ -17,6 +17,7 @@ SPEC = {
         {
             "wide": True,
             "cast": ["코코"],
+            "scene": "observatory-dawn",
             "shot": "1600년경 천문 관측실. 책상 위에 여덟 자리 숫자가 빼곡한 종이 더미, "
                     "촛불, 지친 표정. 창밖은 새벽.",
             "figures": [{"src": "assets/characters/coco.png", "h": 76}],
@@ -26,6 +27,7 @@ SPEC = {
         },
         {
             "cast": ["루트"],
+            "scene": "plain-room",
             "shot": "루트가 종이 한 장을 들고 고개를 갸웃. 배경은 단순한 크림색.",
             # 말풍선이 왼쪽 위이므로 인물은 오른쪽에 세운다(얼굴 가림 검사가 잡았다).
             "figures": [{"src": "assets/characters/root.png", "h": 78}],
@@ -34,6 +36,7 @@ SPEC = {
         },
         {
             "cast": ["닥터파이"],
+            "scene": "blackboard-pairing",
             "shot": "닥터파이가 칠판에 두 줄을 나란히 적는다. 위는 2·4·8·16, "
                     "아래는 1·2·3·4. 두 줄을 잇는 화살표.",
             "figures": [{"src": "assets/characters/dr-pi.png", "h": 80}],
@@ -44,6 +47,7 @@ SPEC = {
         },
         {
             "cast": ["닥터파이", "제로"],
+            "scene": "napier-book",
             "shot": "1614년 에든버러. 작고 낡은 책 한 권을 펼쳐 보인다. "
                     "앞쪽은 글, 뒤쪽은 숫자표가 빽빽하다.",
             "figures": [{"src": "assets/characters/dr-pi.png", "h": 62},
@@ -54,6 +58,7 @@ SPEC = {
         },
         {
             "cast": ["뮤"],
+            "scene": "base-ten",
             "shot": "브리그스가 네이피어에게 손가락 열 개를 펴 보이는 장면. "
                     "둘 사이에 '10' 이 크게.",
             "figures": [{"src": "assets/characters/mu.png", "h": 74}],
@@ -64,6 +69,7 @@ SPEC = {
         {
             "wide": True,
             "cast": ["코코", "루트", "닥터파이"],
+            "scene": "observatory-morning",
             "shot": "같은 책상. 종이 더미가 얇아지고 로그표 한 권만 남았다. 창밖은 아침.",
             "figures": [{"src": "assets/characters/coco.png", "h": 70},
                         {"src": "assets/characters/root.png", "h": 66},
