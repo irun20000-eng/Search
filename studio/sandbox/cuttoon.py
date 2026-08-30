@@ -14,6 +14,11 @@ Shorts_Flow(비공개 리포·드라이브 사본 `19Glc5hs8h3UXhOahDmm6V4jo3PFM
     ③ 스펙의 img 에 파일 경로를 채워 다시 렌더
 가 된다. ①에서 이미 읽을 수 있는 한 장이 나오는 것이 요점이다.
 
+두 번째 길도 있다 — **배경을 코드로 그린다**(`scenes.py`, 스펙의 `scene`). 인물은 이미
+컷아웃으로 들어오므로 배경만 있으면 컷이 선다. 생성형 이미지가 없어도 완성되고,
+덤으로 **글자가 정확하다**(컷 3 칠판의 숫자). `img` 와 `scene` 이 둘 다 있으면 `img` 가
+이긴다 — Flow 그림이 오면 그것이 정본이라는 뜻이다.
+
 --- spec 스키마 ---------------------------------------------------------------
 {
  "ep": "EP.001", "title": "제목", "logo": "Q.E.D.",
@@ -25,6 +30,7 @@ Shorts_Flow(비공개 리포·드라이브 사본 `19Glc5hs8h3UXhOahDmm6V4jo3PFM
      "cast": ["닥터파이", "루트"],  # 등장 인물 — 자리표에 그대로 찍힌다
      "shot": "연출 지시 한 줄",      # Flow 프롬프트의 씨앗
      "img": "assets/bg/....png",   # 컷 전체를 채우는 그림(cover)
+     "scene": "observatory-dawn",  # 코드로 그린 배경(scenes.py) — img 없이 컷을 세운다
      "figures": [                  # 배경 없는 컷아웃을 바닥에 세운다
          {"src": "assets/characters/dr-pi.png", "h": 74}   # h = 컷 높이 대비 %
      ],
@@ -43,6 +49,8 @@ Shorts_Flow(비공개 리포·드라이브 사본 `19Glc5hs8h3UXhOahDmm6V4jo3PFM
 import html as _html
 import os
 import pathlib
+
+import scenes
 
 W, H = 1240, 1754
 
@@ -67,6 +75,9 @@ body{height:1754px;background:var(--cream);
 .panel.wide{grid-column:1 / -1}
 .panel.tall{grid-row:span 2}
 .panel>img.bg{width:100%;height:100%;object-fit:cover;display:block}
+/* 코드로 그린 배경(scenes.py). img 와 같은 자리에 깔린다 — 컷아웃(.stage)보다 아래. */
+.panel>.scene{position:absolute;inset:0;z-index:0}
+.panel>.scene svg{width:100%;height:100%;display:block}
 /* 컷아웃 무대 — 배경 없는 인물 PNG 를 컷 바닥에 세운다.
    전신 그림(cover)과 달리 컷아웃은 잘라 채우면 안 되므로 contain 으로 둔다. */
 .stage{position:absolute;inset:0;display:flex;align-items:flex-end;
@@ -137,6 +148,14 @@ def panel_html(p, i, base):
             body = '<img class="bg" src="%s" alt="">' % f.resolve().as_uri()
         else:
             missing.append(p["img"])
+    # 코드로 그린 배경 — Flow 그림이 아직 없을 때 컷을 세운다.
+    # img 가 이미 들어왔으면 그것이 정본이므로 덮지 않는다.
+    if not body and p.get("scene"):
+        svg = scenes.get(p["scene"])
+        if svg:
+            body = '<div class="scene">%s</div>' % svg
+        else:
+            missing.append("scene:" + p["scene"])
     figs = []
     for g in p.get("figures") or []:
         f = pathlib.Path(base, g["src"])
@@ -146,7 +165,10 @@ def panel_html(p, i, base):
         else:
             missing.append(g["src"])
     if figs:
-        if p.get("ground", True):
+        # 바닥 띠는 인물이 흰 허공에 뜨는 것을 막는 장치다. 배경(img·scene)이
+        # 들어오면 그 그림이 이미 바닥을 갖고 있으므로 겹쳐 깔지 않는다.
+        has_bg = bool(p.get("img") or p.get("scene"))
+        if p.get("ground", not has_bg):
             body += '<div class="ground"></div>'
         body += ('<div class="stage" style="justify-content:%s">%s</div>'
                  % (p.get("stage", "center"), "".join(figs)))
@@ -184,8 +206,12 @@ def check(spec):
     if narrow % 2:
         print("[컷툰] 주의 — 좁은 컷이 %d개(홀수)라 마지막 줄 한 칸이 빈다." % narrow)
     for i, p in enumerate(ps, 1):
-        if not p.get("img") and not p.get("shot"):
+        if not p.get("img") and not p.get("scene") and not p.get("shot"):
             print("[컷툰] 주의 — %d번 컷에 연출 지시(shot)가 없다." % i)
+        # 이름을 잘못 적으면 조용히 자리표로 되돌아간다. 그 전에 말해 준다.
+        if p.get("scene") and p["scene"] not in scenes.SCENES:
+            print("[컷툰] 주의 — %d번 컷의 scene '%s' 을 scenes.py 에서 찾지 못했다."
+                  % (i, p["scene"]))
     return True
 
 
