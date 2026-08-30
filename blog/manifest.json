@@ -352,7 +352,7 @@
     "챗gpt 오답",
     "AI 수학 검증"
    ],
-   "chars": 3025,
+   "chars": 3033,
    "path": "blog/notes/07-ai-math-errors.md"
   },
   {
@@ -368,7 +368,7 @@
     "완전제곱식",
     "이차함수 표준형"
    ],
-   "chars": 3832,
+   "chars": 3840,
    "path": "blog/notes/07-quadratic-max-min.md"
   },
   {
@@ -384,7 +384,7 @@
     "생성형 AI",
     "챗GPT 오류"
    ],
-   "chars": 3225,
+   "chars": 3229,
    "path": "blog/notes/07-ai-math-problems.md"
   }
  ]

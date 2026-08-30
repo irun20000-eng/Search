@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+<!-- 도해 전용. 블로그 SVG 는 Pretendard 로 조판돼(brand.css) 좌표가 그 폭에 맞춰져 있다.
+     다른 폰트로 그리면 글자가 상자를 넘어 잘린다 — 본문 폰트(Nunito)는 그대로 둔다. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
 <link rel="stylesheet" href="../assets/brand.css" />
 <link rel="stylesheet" href="../assets/topbar.css" />
 <link rel="stylesheet" href="../assets/basket.css" />
@@ -92,6 +95,27 @@
     padding:14px;overflow-x:auto;font-size:.86rem}
   .post .fig{margin:18px 0;text-align:center}
   .post .caption{font-size:.83rem;color:var(--muted);margin-top:6px}
+
+  /* ── 도해 팔레트 — 원천 Blog 리포 published/2026/<슬러그>/brand.css 가 정본 ──
+     노트 SVG 는 색을 var(--green) 류로 부른다. ingest_blog.py 가 본문·이미지만
+     가져오고 brand.css 를 안 가져와서 이 변수들이 미정의였다. 미정의 var() 는
+     SVG 에서 검정으로 떨어지므로 도해가 통째로 새까맣게 뭉갰다 — 19/22편·499자리,
+     라이트·다크 양쪽. 값은 필라별로 갈리고 openPost 가 .post 에 data-pillar 를 심는다.
+     ※ 손으로 고치지 말 것. brand.css 가 바뀌면 거기서 다시 옮겨 온다. */
+  .post .fig{--ink:#131a12;--ink-soft:#5a6356;--green:#3d6600;--green-deep:#243b00;
+    --green-soft:#f1f8dc;--amber:#6b5a00;--amber-soft:#fbf6dc;--line:#e0e6d5;--paper:#fafbf6}
+  .post[data-pillar=ai] .fig{--ink:#101e22;--ink-soft:#4e6167;--green:#06657a;--green-deep:#00323d;
+    --green-soft:#e4f6fa;--amber:#0a7c94;--amber-soft:#e4f6fa;--line:#d6e7ec;--paper:#f7fcfd}
+  .post[data-pillar=admissions] .fig{--ink:#1e1a10;--ink-soft:#625a48;--green:#7a5a00;--green-deep:#3a2a00;
+    --green-soft:#fcf3d8;--amber:#8a6a00;--amber-soft:#fcf3d8;--line:#ebe3cc;--paper:#fdfbf3}
+  .post .fig svg{font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+
+  /* 도해는 흰 지면 전제로 그려졌다(brand.css --bg:#ffffff). 다크에서 색을 뒤집으면
+     --green-deep 처럼 글자 58회·배경 12회로 겸용된 변수가 뒤집혀 읽히므로,
+     색은 그대로 두고 도해에만 제 지면을 깔아 준다 — math/ 수학사 도해와 같은 규약. */
+  :root[data-theme=dark] .post .fig{background:var(--paper);border:1px solid var(--line);
+    border-radius:14px;padding:16px 14px 12px}
+  :root[data-theme=dark] .post .fig .caption{color:var(--ink-soft)}
   .meta{color:var(--muted);font-size:.85rem;margin:0 0 4px}
   footer{border-top:1px solid var(--line);color:var(--muted);font-size:.83rem;
     padding:22px 20px 40px;text-align:center}
@@ -197,6 +221,8 @@ function openPost(slug){
   var p = POSTS.filter(function(x){return x.slug===slug})[0];
   if(!p) return;
   var ov=document.getElementById("ov"), body=document.getElementById("pbody");
+  /* 도해 팔레트가 필라별로 갈린다 — CSS 가 .post[data-pillar=…] 로 골라 쓴다. */
+  body.dataset.pillar = p.pillar || "math";
   document.getElementById("pmeta").textContent = p.pillar_ko + " · " + p.date + (p.series ? " · " + p.series : "");
   body.innerHTML = '<p class="meta">불러오는 중…</p>';
   ov.classList.add("on"); document.body.style.overflow="hidden";

@@ -51,13 +51,31 @@ def parse_frontmatter(text: str) -> dict:
     return out
 
 
-def extract_body(html: str) -> str | None:
+THUMB_RE = re.compile(r'<section class="thumb".*?</section>', re.S)
+
+
+def extract_body(html: str, post_dir: Path) -> str | None:
     art = re.search(r'<article class="post">(.*?)</article>', html, re.S)
     if not art:
         return None
     body = art.group(1)
-    # 자체 브랜드 썸네일 제거 — 이룬 서재는 자기 카드 디자인을 쓴다
-    body = re.sub(r'<section class="thumb".*?</section>', "", body, flags=re.S)
+    # 자체 브랜드 썸네일(<section class="thumb">)은 HTML 로 조판한 표지다. 마크업째로는
+    # 들이지 않는다 — 이룬 서재는 자기 카드 디자인을 쓴다.
+    #
+    # 다만 걷어내기만 하면 초기 3편(2026-07)에는 표지가 통째로 사라진다. 이후 글들은
+    # 원천이 이미 <img class="cover"> 로 바뀌어 있어 표지가 남았고, 그래서 22편 중
+    # 19편만 표지가 보이는 상태였다. 같은 그림이 images/thumb.png 로 옆에 있으니
+    # 같은 형식의 <img> 로 바꿔 끼워 서가를 한 벌로 맞춘다. (src 는 아래 반입 단계가
+    # assets/<슬러그>/ 로 다시 쓴다 — 나머지 19편과 같은 경로가 된다.)
+    if (post_dir / "images" / "thumb.png").exists():
+        cover = (
+            # 주석 안에 꺾쇠를 두지 않는다 — manifest 의 chars 가 태그를 지울 때 쓰는
+            # 정규식이 주석을 반만 걷어내 글자수가 헛되이 늘어난다.
+            '<!-- 표지 — 원천의 thumb 섹션을 같은 그림의 img 로 바꾼 것 -->\n'
+            '  <img class="cover" src="images/thumb.png" alt="표지" width="800" height="800">\n'
+        )
+        body = THUMB_RE.sub(cover, body, count=1)
+    body = THUMB_RE.sub("", body)
     return body.strip()
 
 
@@ -82,7 +100,7 @@ def main() -> int:
             skipped.append((slug, "obsidian.md 또는 post.html 없음"))
             continue
         fm = parse_frontmatter(fm_path.read_text(encoding="utf-8"))
-        body = extract_body(html_path.read_text(encoding="utf-8"))
+        body = extract_body(html_path.read_text(encoding="utf-8"), d)
         if body is None:
             skipped.append((slug, "<article class=\"post\"> 없음"))
             continue
@@ -96,7 +114,10 @@ def main() -> int:
             shutil.copytree(img_dir, dst)
             body = re.sub(r'(<img[^>]+src=")(?:\./)?images/', r"\1assets/%s/" % slug, body)
 
-        (OUT_NOTES / (slug + ".md")).write_text(body + "\n", encoding="utf-8")
+        # newline="\n" 을 못박는다 — 윈도우에서 돌리면 파이썬이 \n 을 CRLF 로 바꿔 써서
+        # 내용이 그대로인 편들까지 전부 '수정됨'으로 잡힌다(.gitattributes 가 eol=lf 로
+        # 막으려던 바로 그 문제다). 러너는 리눅스라 안 드러나지만 손으로 돌릴 때 드러난다.
+        (OUT_NOTES / (slug + ".md")).write_text(body + "\n", encoding="utf-8", newline="\n")
 
         pillar = fm.get("pillar", "")
         # 슬러그는 폴더명 하나로 통일한다. 프론트매터의 slug 는 20편 중 7편이
@@ -124,7 +145,7 @@ def main() -> int:
     MANIFEST.write_text(
         json.dumps({"count": len(items), "pillars": pillars, "posts": items},
                    ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
 
     print("[OK] blog/ %d편 · 이미지 %d슬러그" % (len(items), len(list(OUT_ASSETS.glob('*')))))
     for s, why in skipped:
