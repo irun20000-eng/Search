@@ -34,25 +34,36 @@ cat LESSONS.md | sed -n '1,120p'                                # 방지 규칙 
   반드시 `markdown` 으로 받을 것.
   → **Firecrawl 이 없으면** 종전대로 WebSearch 요약 + 네이버 MCP 스니펫 다중 교차검증으로
   쓰고 직접 인용을 넣지 않는다. 도구 유무를 세션 시작 때 확인할 것.
+  ⚠️ **2026-08-31 세션 도중 Firecrawl 이 끊겼다.** 붙어 있다고 가정하고 시작하지 말 것 —
+  세션 시작 때 실제로 한 번 호출해 보고, 안 되면 위 대체 경로로 계획을 짠다.
+  (직접 인용을 쓸 수 있느냐 없느냐가 그날 쓸 수 있는 글의 성격을 바꾼다.)
 - 라이브 URL 도 못 받는다 → 배포 확인은 **머지 커밋 SHA 의 `pages build and deployment` success** 로 한다.
 - 학습카드 `auto` 렌더는 로컬 전용 → 클라우드는 `manual`.
 
 ---
 
-## 1. 서가 현황 (2026-08-31)
+## 1. 서가 현황
 
-| 서가 | 편수 | 정본 위치 |
-|---|---|---|
-| research | 68 | `reports/<slug>/report.md` |
-| videos | 96 | `videos/notes/<ID>.md` |
-| math | 72 | `math/notes/<slug>/note.md` |
-| blog | 22 | `blog/notes/<slug>.md` |
-| cardnews | 22 | `cardnews/` + `studio/` |
-| concept | 7 | `concept/notes/<slug>.md` |
-| guides | 2 | `guides/<slug>/guide.md` |
-| **합계** | **289** | `link-index.json` 이 통합 조회표 |
+| 서가 | 정본 위치 |
+|---|---|
+| research | `reports/<slug>/report.md` |
+| videos | `videos/notes/<ID>.md` |
+| math | `math/notes/<slug>/note.md` |
+| blog | `blog/notes/<slug>.md` |
+| cardnews | `cardnews/` + `studio/` |
+| concept | `concept/notes/<slug>.md` |
+| guides | `guides/<slug>/guide.md` |
 
-수치를 손으로 세지 말 것 — `python3 tools/build_link_index.py` 산출물이 정본이다.
+**편수는 여기 적지 않는다.** 이 표는 2026-08-31 에 "math 72"(실제 78) · "videos 96"(실제 98) 로
+낡은 채 발견됐다 — **바로 아래에 "손으로 세지 말 것" 이라 적어 두고 표는 손으로 센 것**이었다.
+같은 유형이 `math/ROADMAP.md` §11 에서도 같은 날 나왔다(LESSONS 2026-08-31).
+
+편수가 필요하면 그 자리에서 센다:
+
+```bash
+python3 tools/build_link_index.py   # 항목 총계를 찍는다
+python3 -c "import json,collections;d=json.load(open('link-index.json',encoding='utf-8'));c=collections.Counter(e['섹션'] for e in d['entries']);print(dict(sorted(c.items())),'합',len(d['entries']))"
+```
 
 ---
 
@@ -192,6 +203,19 @@ A 만 그린다 — 실험대에서 골라 본 뒤 옮기는 것이 순서. 판�
 **일반화** — 볼트에 이미 있는 노트의 본문을 고치면 볼트가 자동으로 따라오지 않는다.
 부채 정리처럼 **기존 문서를 손보는 회차**에서는 이 어긋남이 매번 생긴다.
 
+### 2-7. 내일(2026-09-01) 수학사 이어서 — 정본은 `math/ROADMAP.md` §11
+
+여기 중복해 적지 않는다. §11 의 **「2026-08-31 중간보고」 → 「발전 방향」 → 「다음 대상」** 세 절을
+차례로 읽으면 그날 무엇을 왜 하는지가 나온다. 요지만 적으면:
+
+- **권고 대상은 `century-bc3`(기원전 3세기 개관)** — 개관이 없는 세기 넷(-3·3·9·14) 가운데
+  **인물이 서 있는 유일한 세기**다. 근거가 16세기 때와 다르다: 원자는 2편(유클리드·아르키메데스)뿐인데
+  **두 이름을 부르는 노트가 30편**(겹침 4 제외)으로 서가의 38%다.
+- **호명 백로그 상위가 2회로 평평해졌다** — "가장 많이 불리는 것부터" 전략이 효력을 다했다.
+- **새 부채 둘**: 78편 중 71편이 이미지 0장 / 인물 노트가 하한(5,750자)에 붙어 있다.
+- **세기 개관은 게이트가 가장 무겁다**(7,673자·140줄·8절·시각화3·출처10 + `연대`·`시대이슈` 필수).
+  하루치로 잡을 때 인물 노트 한 편의 1.3배로 셈할 것.
+
 ### 2-3. frontmatter 상호참조 단방향 67건
 
 `python3 tools/verify_math.py --symmetry` 가 보고한다. **게이트가 아니다.**
@@ -244,6 +268,15 @@ A 만 그린다 — 실험대에서 골라 본 뒤 옮기는 것이 순서. 판�
 - ~~**허브 검색이 서가를 가로지르지 못하던 것**~~ — `link-index.json` 항목에 `검색어` 를 실어 해결(#144).
   「묶어 읽기」 여섯 중 다섯이 다서가가 됐다.
 - ~~**ROADMAP 부채표가 손으로 관리돼 낡던 것**~~ — `tools/build_math_status.py` 가 수치를 쓴다(#156).
+- ~~**수학사 부채 3건**~~ — `person-euler` 본문 미분방정식 0건 · `person-laplace` 무인용 ·
+  `reports/infinity-set-theory` §6 인과 암시. 셋 다 닫혔다(#179).
+- ~~**생몰 막대가 기원전을 못 그리던 것**~~ — 축이 선형이라 기원전 인물이 들어오자 19세기
+  37명이 오른쪽 끝에 뭉갰다. 200년 이상 빈 구간에서 축을 끊는 분절 렌더러로 고쳤다(#178).
+- ~~**math 서가에 자기 날짜가 없던 것**~~ — 허브 「최근」이 **빌드 날짜**를 콘텐츠 날짜로 읽어
+  빌드할 때마다 전편이 "오늘" 이 됐다. `날짜` 를 frontmatter 필수로 올렸다(#174).
+- ~~**인계 문서의 손으로 센 숫자**~~ — §1 서가 표(math 72·videos 96)와 `ROADMAP` §11 「지금 상태」
+  (인물 30편·세기 4편·갤러리URL 61편)가 둘 다 낡아 있었다. **숫자를 지우고 세는 명령을 남겼다**
+  (2026-08-31). 부채표가 둘로 갈려 서로 어긋나던 것도 함께 정리했다.
 
 ---
 
