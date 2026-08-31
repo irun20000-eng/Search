@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-31",
- "scanned": 250,
- "resolved": 1242,
- "pending": 554,
+ "scanned": 251,
+ "resolved": 1264,
+ "pending": 543,
  "counts": {
-  "new": 253,
+  "new": 252,
   "companion": 5,
   "gap": 0
  },
@@ -119,81 +119,6 @@
      "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
      "u": "research/#r=claude-cowork-mobile",
      "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "유클리드",
-   "count": 11,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "19세기",
-     "u": "math/#n=century-19c",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "20세기",
-     "u": "math/#n=century-20c",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "대수 기호법 (확장편)",
-     "u": "math/#n=concept-algebra-notation-advanced",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석기하",
-     "u": "math/#n=concept-analytic-geometry",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "해석기하 (확장편)",
-     "u": "math/#n=concept-analytic-geometry-advanced",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "무한급수 확장편",
-     "u": "math/#n=concept-series-advanced",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "아이작 배로",
-     "u": "math/#n=person-barrow",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "베른하르트 볼차노",
-     "u": "math/#n=person-bolzano",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "리하르트 데데킨트",
-     "u": "math/#n=person-dedekind",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "안드레이 콜모고로프",
-     "u": "math/#n=person-kolmogorov",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "블레즈 파스칼",
-     "u": "math/#n=person-pascal",
-     "s": "math",
      "n": 1
     }
    ]

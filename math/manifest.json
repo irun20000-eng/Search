@@ -172,6 +172,138 @@
    "시각화": 5
   },
   {
+   "유형": "인물",
+   "제목": "유클리드",
+   "슬러그": "person-euclid",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "유클리드",
+    "Euclid",
+    "에우클레이데스",
+    "유클리드의 원론",
+    "원론"
+   ],
+   "볼트파일명": "인물_유클리드",
+   "세기": [
+    -3
+   ],
+   "분야": [
+    "기하학",
+    "수론",
+    "수학기초론"
+   ],
+   "교과": [
+    "중등수학",
+    "공통수학2"
+   ],
+   "난이도": "표준",
+   "요약": "생애는 거의 알려지지 않았고 남은 것은 책 한 권이다. 『원론』은 밑에 무엇을 깔고 시작할지를 먼저 적고 거기서만 쌓아 올렸다 — 그 방식이 이천 년 넘게 증명의 표준이 됐다.",
+   "태그": [
+    "수학사",
+    "유클리드",
+    "원론",
+    "공리",
+    "공준",
+    "평행선",
+    "기하학적대수",
+    "기원전3세기"
+   ],
+   "생몰": {
+    "출생": -325,
+    "사망": -265,
+    "출생지": "알 수 없음"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과 「유클리드의 정의」 — 점·선·직선·면을 포함한 스물세 개의 정의가 『원론』에 실려 있으며 유클리드가 기원전 300년경 사람이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=6587996&cid=47308&categoryId=47308",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학산책) 「유클리드와 원론」 — 기원전 300년경 알렉산드리아에서 집대성됐고 그 일을 완성한 이가 유클리드로 **추정**되며, 성경 다음으로 서양에서 가장 많이 번역된 책이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582417&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「유클리드 원론」 — 성경 다음으로 많이 읽힌 책이며 기원전 330~320년경에 집필됐다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3386685&cid=60206&categoryId=60206",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과 「공준」 — 기본적인 전제로 요청되는 명제로서 논리적 증명은 불가능하지만 필연적으로 요청되는 것이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=509954&cid=42126&categoryId=42126",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과 「비유클리드 기하학」 — 제5공준을 부정하는 공리를 취한 체계이며, 제5공준이 \"직선 밖의 한 점을 지나 그 직선에 평행한 직선은 단 하나 존재한다\"는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=510916&cid=42126&categoryId=42126",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과) 「유클리드 호제법」 — 두 정수의 최대공약수를 나눗셈의 나머지로 되풀이해 구하는 방법",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073670&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Britannica, Euclid — 그의 생애는 『원론』에서 미루어 짐작하는 것 말고는 거의 알려져 있지 않고, 프로클로스가 전하는 바로는 프톨레마이오스 1세 소테르(재위 기원전 323~285) 때 알렉산드리아에서 가르쳤다는 것",
+     "URL": "https://www.britannica.com/biography/Euclid-Greek-mathematician",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Euclid's Elements — 열세 권으로 이루어졌고, 제1권이 기본 용어의 정의로 시작해 다섯 공준과 다섯 공리를 놓는다는 것, 제2권의 주제가 흔히 '기하학적 대수'라 불린다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Euclid's Elements — 1482년 에르하르트 라트돌트가 캄파누스 판을 바탕으로 첫 인쇄본을 냈고, 그 뒤 나온 판본 수가 성경 다음가며 천 종을 넘는 것으로 추정된다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Clark University, Euclid's Elements — Common Notions — 다섯째 공리가 \"전체는 부분보다 크다\"이며 이는 '크다'의 정의로 읽을 수도 있다는 것",
+     "URL": "https://mathcs.clarku.edu/~djoyce/elements/bookI/cn.html",
+     "유형": "1차"
+    },
+    {
+     "번호": 11,
+     "제목": "University of Pittsburgh, Euclid's Fifth Postulate (J. D. Norton) — 다섯째 공준이 나머지 넷에 견줘 복잡해 보였기에 그것을 넷에서 증명하려는 시도가 오래 이어졌고 모두 실패했다는 것",
+     "URL": "https://sites.pitt.edu/~jdnorton/teaching/HPS_0410/chapters/non_Euclid_fifth_postulate/index.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Museo Galileo, Niccolò Tartaglia — 그가 아르키메데스와 유클리드를 이탈리아어로 처음 옮겼다는 것",
+     "URL": "https://catalogue.museogalileo.it/biography/NiccoloTartaglia.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor, Euclid of Alexandria — 생몰을 기원전 325~265년 무렵으로 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-euclid/note.md",
+   "세기전체": [
+    -3
+   ],
+   "자수": 5811,
+   "시각화": 3
+  },
+  {
    "유형": "개념",
    "제목": "대수 기호법",
    "슬러그": "concept-algebra-notation",
@@ -9714,7 +9846,8 @@
  "index": {
   "세기": {
    "-3": [
-    "concept-integration"
+    "concept-integration",
+    "person-euclid"
    ],
    "3": [
     "concept-algebra-notation"
@@ -9902,6 +10035,7 @@
     "episode-descartes-fly",
     "person-barrow",
     "person-descartes",
+    "person-euclid",
     "person-gauss",
     "person-hilbert",
     "person-huygens",
@@ -9913,7 +10047,8 @@
     "century-16c"
    ],
    "수론": [
-    "century-16c"
+    "century-16c",
+    "person-euclid"
    ],
    "해석학": [
     "century-17c",
@@ -10027,6 +10162,7 @@
     "person-bolzano",
     "person-cantor",
     "person-dedekind",
+    "person-euclid",
     "person-frege",
     "person-godel",
     "person-hilbert",
@@ -10156,7 +10292,8 @@
   },
   "교과": {
    "중등수학": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-euclid"
    ],
    "공통수학1": [
     "concept-algebra-notation",
@@ -10193,6 +10330,7 @@
     "concept-analytic-geometry",
     "person-cantor",
     "person-descartes",
+    "person-euclid",
     "person-klein"
    ],
    "기하": [
@@ -10303,6 +10441,7 @@
     "person-dedekind",
     "person-descartes",
     "person-dirichlet",
+    "person-euclid",
     "person-euler",
     "person-fermat",
     "person-fourier",
@@ -10378,6 +10517,7 @@
     "person-de-moivre",
     "person-descartes",
     "person-dirichlet",
+    "person-euclid",
     "person-euler",
     "person-fermat",
     "person-fourier",
@@ -11251,6 +11391,29 @@
    "야코비": [
     "person-dirichlet"
    ],
+   "유클리드": [
+    "person-euclid",
+    "person-tartaglia"
+   ],
+   "원론": [
+    "person-euclid"
+   ],
+   "공리": [
+    "person-euclid",
+    "person-kolmogorov"
+   ],
+   "공준": [
+    "person-euclid"
+   ],
+   "평행선": [
+    "person-euclid"
+   ],
+   "기하학적대수": [
+    "person-euclid"
+   ],
+   "기원전3세기": [
+    "person-euclid"
+   ],
    "오일러항등식": [
     "person-euler"
    ],
@@ -11366,9 +11529,6 @@
    "클라인병": [
     "person-klein"
    ],
-   "공리": [
-    "person-kolmogorov"
-   ],
    "러시아": [
     "person-kolmogorov"
    ],
@@ -11433,9 +11593,6 @@
     "person-poincare"
    ],
    "탄도학": [
-    "person-tartaglia"
-   ],
-   "유클리드": [
     "person-tartaglia"
    ]
   },
@@ -11949,6 +12106,12 @@
     {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -14195,6 +14358,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-fourier",
      "제목": "조제프 푸리에",
      "유형": "인물",
@@ -14649,6 +14818,74 @@
      "경로": "관련인물"
     }
    ],
+   "person-euclid": [
+    {
+     "슬러그": "century-19c",
+     "제목": "19세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-20c",
+     "제목": "20세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-bolzano",
+     "제목": "베른하르트 볼차노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-dedekind",
+     "제목": "리하르트 데데킨트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-kolmogorov",
+     "제목": "안드레이 콜모고로프",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-pascal",
+     "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-bolzano": [
     {
      "슬러그": "century-19c",
@@ -14968,6 +15205,12 @@
      "슬러그": "episode-namdaemun-1947",
      "제목": "남대문 시장의 학술지",
      "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
      "경로": "본문"
     },
     {
@@ -15925,12 +16168,24 @@
      "제목": "지롤라모 카르다노",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "century-16c": [
     {
      "슬러그": "person-cardano",
      "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
      "유형": "인물",
      "경로": "본문"
     },
@@ -16433,6 +16688,13 @@
   "인물_페터 구스타프 르죈 디리클레": "person-dirichlet",
   "페터 구스타프 르죈 디리클레": "person-dirichlet",
   "페터 구스타프 르준 디리클레": "person-dirichlet",
+  "Euclid": "person-euclid",
+  "person-euclid": "person-euclid",
+  "에우클레이데스": "person-euclid",
+  "원론": "person-euclid",
+  "유클리드": "person-euclid",
+  "유클리드의 원론": "person-euclid",
+  "인물_유클리드": "person-euclid",
   "Leonhard Euler": "person-euler",
   "person-euler": "person-euler",
   "레온하르트 오일러": "person-euler",

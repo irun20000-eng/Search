@@ -133,6 +133,11 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
 .lifewrap{background:var(--card);border:1px solid var(--rule);border-radius:2px;
   padding:20px 18px 12px;margin-top:8px;overflow-x:auto}
 .lifegrid{min-width:620px}
+/* 축을 끊은 자리. 고대와 근대 사이처럼 아무도 살지 않는 긴 구간을 잘라 냈다는 표시다 —
+   표시 없이 자르면 시간이 이어져 있는 것처럼 읽힌다. */
+.lifebreak{display:flex;align-items:center;gap:10px;margin:14px 0 10px;
+  font-size:12px;color:var(--muted)}
+.lifebreak::before,.lifebreak::after{content:"";flex:1;border-top:2px dashed var(--line)}
 .lifeaxis{display:flex;font-size:12px;color:var(--ink3);border-bottom:1px solid var(--rule2);
   padding-bottom:6px;margin-bottom:12px}
 .lifeaxis span{flex:1}
@@ -993,23 +998,49 @@ function renderPeople(){
         pending.slice(0,8).join(", ")):"");
   }
   list.sort(function(a,b){return a["생몰"]["출생"]-b["생몰"]["출생"];});
-  var lo=Math.min.apply(null,list.map(function(n){return n["생몰"]["출생"];}));
-  var hi=Math.max.apply(null,list.map(function(n){return n["생몰"]["사망"];}));
-  lo=Math.floor((lo-10)/25)*25; hi=Math.ceil((hi+10)/25)*25;
-  var span=hi-lo, ticks=[];
-  for(var y=lo;y<=hi;y+=Math.max(25,Math.round(span/7/25)*25)) ticks.push(y);
+
+  /* 축을 끊어 그린다.
+     인물이 16세기 이후에만 있을 때는 한 축으로 충분했다. 그런데 고대 인물이
+     하나만 들어와도 축이 2300년으로 늘어나, 나머지 서른몇 명이 오른쪽 21%
+     안에 뭉개지고 가운데 1800년이 텅 빈다(실측). 살아 있는 사람이 아무도 없는
+     긴 구간을 잘라 내고, 끊긴 자리를 눈에 보이게 표시한다. */
+  var GAP = 200;                       // 이만큼 비면 축을 끊는다
+  var segs = [], cur = null;
+  list.forEach(function(n){
+    var b = n["생몰"]["출생"], d = n["생몰"]["사망"];
+    if(cur && b - cur.hi <= GAP){ cur.rows.push(n); cur.hi = Math.max(cur.hi, d); }
+    else { cur = {rows:[n], lo:b, hi:d}; segs.push(cur); }
+  });
+
+  function axisTicks(lo, hi){
+    var span = hi - lo, step = Math.max(25, Math.round(span/7/25)*25), t = [];
+    for(var y=lo; y<=hi; y+=step) t.push(y);
+    return t;
+  }
+  function yr(v){ return v < 0 ? "기원전 " + (-v) : String(v); }
+
+  var body = segs.map(function(sg, i){
+    var lo = Math.floor((sg.lo-10)/25)*25, hi = Math.ceil((sg.hi+10)/25)*25;
+    var span = hi - lo;
+    var brk = i ? '<div class="lifebreak"><span>중간 시기에는 아직 인물 문서가 없다</span></div>' : '';
+    return brk +
+      '<div class="lifegrid">'+
+      '<div class="lifeaxis">'+axisTicks(lo,hi).map(function(t){
+        return '<span>'+esc(yr(t))+'</span>';}).join("")+'</div>'+
+      sg.rows.map(function(n){
+        var b=n["생몰"]["출생"], d=n["생몰"]["사망"];
+        var left=(b-lo)/span*100, w=(d-b)/span*100;
+        return '<div class="liferow"><div class="lifename" data-go="'+esc(n["슬러그"])+'">'+esc(n["제목"])+'</div>'+
+          '<div class="lifetrack"><div class="lifebar" data-go="'+esc(n["슬러그"])+'" '+
+          'style="left:'+left.toFixed(1)+'%;width:'+Math.max(2,w).toFixed(1)+'%">'+
+          '<span>'+esc(yr(b))+'–'+esc(yr(d))+'</span></div></div></div>';
+      }).join("")+
+      '</div>';
+  }).join("");
+
   return '<h2 class="vh">인물</h2>'+
     '<p class="vsub">생몰 막대를 겹쳐 놓으면 누가 누구와 동시대였는지가 한눈에 보인다.</p>'+
-    '<div class="lifewrap"><div class="lifegrid">'+
-    '<div class="lifeaxis">'+ticks.map(function(t){return '<span>'+t+'</span>';}).join("")+'</div>'+
-    list.map(function(n){
-      var b=n["생몰"]["출생"], d=n["생몰"]["사망"];
-      var left=(b-lo)/span*100, w=(d-b)/span*100;
-      return '<div class="liferow"><div class="lifename" data-go="'+esc(n["슬러그"])+'">'+esc(n["제목"])+'</div>'+
-        '<div class="lifetrack"><div class="lifebar" data-go="'+esc(n["슬러그"])+'" '+
-        'style="left:'+left.toFixed(1)+'%;width:'+Math.max(2,w).toFixed(1)+'%">'+
-        '<span>'+b+'–'+d+'</span></div></div></div>';
-    }).join("")+'</div></div>'+
+    '<div class="lifewrap">'+body+'</div>'+
     '<div class="grid" style="margin-top:22px">'+list.map(card).join("")+'</div>';
 }
 function renderEpisodes(){
