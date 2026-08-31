@@ -9069,6 +9069,153 @@
   },
   {
    "유형": "인물",
+   "제목": "베른하르트 리만",
+   "슬러그": "person-riemann",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "리만",
+    "Riemann",
+    "베른하르트리만",
+    "게오르크 프리드리히 베른하르트 리만",
+    "Bernhard Riemann"
+   ],
+   "볼트파일명": "인물_베른하르트 리만",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "해석학",
+    "기하학",
+    "수론",
+    "복소해석"
+   ],
+   "교과": [
+    "미적분Ⅱ",
+    "기하"
+   ],
+   "난이도": "표준",
+   "요약": "직관으로 앞서가고 엄밀함이 뒤늦게 따라온 사람. 그가 쓴 도구는 틀렸다고 밝혀졌는데 결과는 맞았고, 그것을 엄밀하게 만들려는 오십 년이 새 대수학을 낳았다.",
+   "태그": [
+    "수학사",
+    "리만",
+    "리만적분",
+    "리만가설",
+    "리만기하",
+    "제타함수",
+    "디리클레원리",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1826,
+    "사망": 1866,
+    "출생지": "하노버 브레젤렌츠"
+   },
+   "기여개념": [
+    "concept-integration",
+    "concept-complex-number-advanced",
+    "concept-analytic-geometry-advanced"
+   ],
+   "관련인물": [
+    "person-dirichlet",
+    "person-dedekind",
+    "person-weierstrass",
+    "person-gauss"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Georg Friedrich Bernhard Riemann — 1826년 9월 17일 하노버 브레젤렌츠에서 나고 1866년 7월 20일 이탈리아 셀라스카에서 죽었다는 것, 아버지가 루터교 목사였고 열 살까지 직접 가르쳤다는 것, 르장드르의 900쪽짜리 정수론 책을 엿새 만에 읽었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Riemann — 1846년 아버지의 뜻에 따라 괴팅겐 신학부에 들어갔다가 허락을 받고 철학부로 옮겼다는 것, 당시 괴팅겐이 수학에는 오히려 부실한 곳이었고 가우스가 초급 강의만 했으며 리만의 천재성을 알아본 흔적이 없다는 것, 슈테른이 그를 두고 \"이미 카나리아처럼 노래하고 있었다\"고 한 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, Riemann — 1847년 베를린으로 옮겨 슈타이너·야코비·디리클레·아이젠슈타인에게 배웠고 디리클레의 영향이 가장 컸다는 것, 클라인이 전하는 디리클레의 방식(직관적 바탕 위에서 명료하게 하고 긴 계산을 되도록 피한다)이 리만에게 맞았다는 것, 리만의 작업이 늘 직관적 추론에 기대어 엄밀함에는 조금 못 미쳤다는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Riemann — 1851년 12월 16일 심사받은 학위논문이 리만 곡면을 다뤄 복소함수론에 위상수학의 방법을 들여왔다는 것, 가우스가 심사보고서에서 그를 \"눈부시게 비옥한 독창성\"이라 적은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, Riemann — 교수자격 논문을 서른 달에 걸쳐 썼고 함수가 적분을 가질 조건, 곧 오늘날의 리만 적분가능성 조건을 제시했다는 것, 강연 셋을 준비했는데 가우스가 리만의 예상과 달리 기하학 강연을 골랐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Riemann — 1854년 6월 10일의 강연이 n차원 공간을 정의하고 곡률 텐서에 이르렀다는 것, 청중 가운데 가우스만이 그 깊이를 알아봤다는 모나스티르스키의 서술, 그 강연이 예순 해 뒤에야 온전히 이해됐고 일반상대성이론이 그것을 정당화했다는 프로이덴탈의 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Riemann — 1857년 『아벨 함수론』이 나오자 바이어슈트라스가 같은 주제의 자기 논문을 거둬들이고 그 뒤로 그 주제로 발표하지 않았다는 클라인의 전언, 1859년 7월 30일 디리클레의 후임으로 괴팅겐 수학 교수가 되고 베를린 학술원 회원으로 뽑혔다는 것, 학술원 추천서가 \"가장 최근 작업이 나오기 전까지 리만은 수학자들에게 거의 알려져 있지 않았다\"고 적은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Riemann — 새로 뽑힌 회원은 가장 최근 연구를 학술원에 보고해야 했다는 것, 그가 낸 보고 「주어진 크기보다 작은 소수의 개수에 관하여」에서 오일러가 이미 다룬 제타 함수를 실함수가 아니라 복소함수로 보았고, 자명하지 않은 근이 무한히 많으며 그것들이 모두 실수부 1/2 을 가질 법하다고 적었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor, Riemann — 바이어슈트라스가 디리클레 원리에 문제가 있음을 보이자 대다수 수학자가 리만에게서 등을 돌렸다는 것, 리만은 그 비판이 정당함을 인정하면서도 디리클레 원리를 손 닿는 곳에 있던 편리한 도구로 썼을 뿐 존재정리는 여전히 옳다고 했다는 것, 1901년 힐베르트가 디리클레 원리의 올바른 형태를 주어 리만의 증명을 엄밀하게 만들었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Riemann — 1862년 6월 엘리제 코흐와 결혼했고 그해 가을 걸린 감기가 결핵이 됐다는 것, 어머니가 그의 나이 스물에 죽고 형제자매도 일찍 죽었다는 것, 데데킨트가 전하는 임종 전날의 모습(\"죽기 전날 무화과나무 아래서 쉬며… 끝내 마치지 못한 마지막 작업을 하고 있었다\")",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(인명사전) 「리만」 — 하노버에서 목사의 아들로 태어나 괴팅겐과 베를린에서 공부했고 1851년 학위, 1854년 강사, 1857년 조교수, 1859년 디리클레의 후임이 됐다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=880054&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과 「리만 가설」 — 소수정리에서 오차항의 크기에 관한 추측이자 리만 제타함수의 영점 분포에 관한 추측이며 1859년에 후자의 형태로 제기됐다는 것, 클레이 수학연구소의 밀레니엄 문제라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5669182&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과 「리만 제타 함수」 — 힐베르트가 1900년에 낸 23대 문제와 클레이 수학연구소가 2000년에 낸 밀레니엄 7대 문제에 **공통으로** 들어 있다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3576120&cid=58944&categoryId=58967",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과 「리만 기하학」 — 1854년 6월 10일 괴팅겐 대학에서 가우스가 지켜보는 가운데 교수자격 강연을 했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5668464&cid=60207&categoryId=60207",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-riemann/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 6379,
+   "시각화": 2
+  },
+  {
+   "유형": "인물",
    "제목": "카를 바이어슈트라스",
    "슬러그": "person-weierstrass",
    "날짜": "2026-08-26",
@@ -10118,6 +10265,7 @@
     "person-lagrange",
     "person-laplace",
     "person-poincare",
+    "person-riemann",
     "person-weierstrass"
    ],
    "20": [
@@ -10184,6 +10332,7 @@
     "person-huygens",
     "person-klein",
     "person-pascal",
+    "person-riemann",
     "person-tartaglia"
    ],
    "삼각법": [
@@ -10191,7 +10340,8 @@
    ],
    "수론": [
     "century-16c",
-    "person-euclid"
+    "person-euclid",
+    "person-riemann"
    ],
    "해석학": [
     "century-17c",
@@ -10239,6 +10389,7 @@
     "person-laplace",
     "person-leibniz",
     "person-newton",
+    "person-riemann",
     "person-weierstrass"
    ],
    "확률론": [
@@ -10433,6 +10584,9 @@
    ],
    "과학철학": [
     "person-poincare"
+   ],
+   "복소해석": [
+    "person-riemann"
    ]
   },
   "교과": {
@@ -10485,7 +10639,8 @@
     "person-euler",
     "person-gauss",
     "person-klein",
-    "person-poincare"
+    "person-poincare",
+    "person-riemann"
    ],
    "미적분Ⅱ": [
     "concept-fundamental-theorem",
@@ -10498,7 +10653,8 @@
     "person-gregory",
     "person-heine",
     "person-lagrange",
-    "person-napier"
+    "person-napier",
+    "person-riemann"
    ],
    "대수": [
     "concept-logarithm",
@@ -10611,6 +10767,7 @@
     "person-newton",
     "person-pascal",
     "person-poincare",
+    "person-riemann",
     "person-tartaglia",
     "person-weierstrass"
    ]
@@ -10686,6 +10843,7 @@
     "person-newton",
     "person-pascal",
     "person-poincare",
+    "person-riemann",
     "person-tartaglia"
    ],
    "16세기": [
@@ -10864,7 +11022,8 @@
     "person-heine",
     "person-klein",
     "person-laplace",
-    "person-poincare"
+    "person-poincare",
+    "person-riemann"
    ],
    "엄밀화": [
     "century-19c",
@@ -10913,7 +11072,8 @@
     "concept-complex-number-advanced",
     "concept-integration-advanced",
     "concept-series-advanced",
-    "person-dirichlet"
+    "person-dirichlet",
+    "person-riemann"
    ],
    "조선산학": [
     "century-19c"
@@ -11383,7 +11543,8 @@
     "concept-series-advanced"
    ],
    "제타함수": [
-    "concept-series-advanced"
+    "concept-series-advanced",
+    "person-riemann"
    ],
    "해석적정수론": [
     "concept-series-advanced",
@@ -11754,6 +11915,18 @@
    "미타그레플레르": [
     "person-poincare"
    ],
+   "리만적분": [
+    "person-riemann"
+   ],
+   "리만가설": [
+    "person-riemann"
+   ],
+   "리만기하": [
+    "person-riemann"
+   ],
+   "디리클레원리": [
+    "person-riemann"
+   ],
    "탄도학": [
     "person-tartaglia"
    ]
@@ -11830,7 +12003,8 @@
     "episode-dedekind-nov24",
     "person-cantor",
     "person-dirichlet",
-    "person-gauss"
+    "person-gauss",
+    "person-riemann"
    ],
    "person-heine": [
     "concept-analysis-rigor",
@@ -11843,7 +12017,8 @@
     "concept-series-advanced",
     "person-cantor",
     "person-heine",
-    "person-klein"
+    "person-klein",
+    "person-riemann"
    ],
    "뉴턴·라이프니츠": [
     "concept-analysis-rigor"
@@ -11880,7 +12055,8 @@
     "person-dedekind",
     "person-dirichlet",
     "person-heine",
-    "person-laplace"
+    "person-laplace",
+    "person-riemann"
    ],
    "person-poincare": [
     "concept-analytic-geometry-advanced",
@@ -11897,7 +12073,7 @@
    "로바쳅스키·보여이": [
     "concept-analytic-geometry-advanced"
    ],
-   "리만": [
+   "person-riemann": [
     "concept-analytic-geometry-advanced",
     "concept-integration",
     "concept-integration-advanced",
@@ -12052,7 +12228,8 @@
     "person-dedekind",
     "person-fourier",
     "person-gauss",
-    "person-heine"
+    "person-heine",
+    "person-riemann"
    ],
    "person-laplace": [
     "concept-differential-equation-advanced",
@@ -13372,6 +13549,12 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-integration": [
@@ -13492,6 +13675,12 @@
     {
      "슬러그": "person-newton",
      "제목": "아이작 뉴턴",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -14572,6 +14761,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-differential-equation-advanced": [
@@ -14794,6 +14989,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "century-18c": [
@@ -14988,6 +15189,12 @@
     {
      "슬러그": "person-gauss",
      "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
      "유형": "인물",
      "경로": "관련인물"
     }
@@ -15262,6 +15469,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "person-cantor": [
@@ -15570,6 +15783,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-godel": [
@@ -15808,6 +16027,12 @@
      "제목": "해석기하 (확장편)",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "episode-descartes-fly": [
@@ -15878,6 +16103,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "person-poincare": [
@@ -16058,6 +16289,12 @@
     {
      "슬러그": "person-gauss",
      "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -16300,6 +16537,12 @@
      "제목": "앙리 푸앵카레",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-riemann",
+     "제목": "베른하르트 리만",
+     "유형": "인물",
+     "경로": "관련인물"
     }
    ],
    "person-bayes": [
@@ -17099,6 +17342,14 @@
   "쥘 앙리 푸앵카레": "person-poincare",
   "푸앵카레": "person-poincare",
   "푸앵카레 추측": "person-poincare",
+  "Bernhard Riemann": "person-riemann",
+  "Riemann": "person-riemann",
+  "person-riemann": "person-riemann",
+  "게오르크 프리드리히 베른하르트 리만": "person-riemann",
+  "리만": "person-riemann",
+  "베른하르트 리만": "person-riemann",
+  "베른하르트리만": "person-riemann",
+  "인물_베른하르트 리만": "person-riemann",
   "Niccolò Tartaglia": "person-tartaglia",
   "Tartaglia": "person-tartaglia",
   "person-tartaglia": "person-tartaglia",
