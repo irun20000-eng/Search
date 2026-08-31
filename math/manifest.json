@@ -1199,6 +1199,121 @@
   },
   {
    "유형": "인물",
+   "제목": "지롤라모 카르다노",
+   "슬러그": "person-cardano",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "카르다노",
+    "Cardano",
+    "지롤라모카르다노",
+    "카르단",
+    "Girolamo Cardano"
+   ],
+   "볼트파일명": "인물_지롤라모 카르다노",
+   "세기": [
+    16
+   ],
+   "분야": [
+    "대수학",
+    "확률론",
+    "의학"
+   ],
+   "교과": [
+    "공통수학1",
+    "확률과통계"
+   ],
+   "난이도": "표준",
+   "요약": "삼차·사차방정식 해법을 처음 인쇄한 사람이자, 그 때문에 맹세를 깬 사람. 의사로 이름을 얻었고 도박판에서 확률을 처음 계산했으며, 말년에는 아들의 처형과 종교재판을 겪었다.",
+   "태그": [
+    "수학사",
+    "카르다노",
+    "아르스마그나",
+    "삼차방정식",
+    "확률",
+    "타르탈리아",
+    "페라리",
+    "16세기"
+   ],
+   "생몰": {
+    "출생": 1501,
+    "사망": 1576,
+    "출생지": "밀라노 공국 파비아"
+   },
+   "기여개념": [
+    "concept-complex-number",
+    "concept-probability"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(학생백과) 「카르다노」 — 이탈리아의 수학자이자 의사이며 세계 최초로 확률을 이해하고 연구했고 도박에서 나올 경우의 수를 따졌다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5667069&cid=47317&categoryId=47317",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「카르다노」 — 파비아 출생이며 파도바 대학에서 의학을, 밀라노에서 기하학을 배웠고 점성술에 능했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=885469&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「카르다노의 해법」 — \"내게 그 해법을 알려 주시오. 세상 누구에게도 그 내용을 알리지 않겠소\"라는 약속과, 타르탈리아가 대가를 받고 알려 준 것 같지는 않다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699306&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "Britannica, Girolamo Cardano — 1501년 9월 24일 파비아에서 나고 1576년 로마에서 죽었으며, 발진티푸스의 첫 임상 기술을 남긴 의사이자 수학자·점성술사였고, 법학자 파치오 카르다노의 사생아였으리라는 것",
+     "URL": "https://www.britannica.com/biography/Girolamo-Cardano",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Britannica, Girolamo Cardano — 『아르스 마그나』(1545)가 라틴어로 쓰인 최초의 위대한 대수학 논저이며 삼차·사차방정식의 체계적 해법을 처음 실었다는 것, 총애하던 아들이 1560년에 처형됐다는 것",
+     "URL": "https://www.britannica.com/biography/Girolamo-Cardano",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Girolamo Cardano — 1539년 3월 25일 타르탈리아가 스물다섯 줄의 시로 해법을 넘겼다는 것과, 1543년 볼로냐에서 델 페로의 공책을 보고 맹세에서 풀려났다고 판단했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cardan/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Stanford Encyclopedia of Philosophy, Girolamo Cardano — 1570년 10월 6일 체포되어 12월 22일까지 수감됐고, 1571년 2월 \"이단의 강한 혐의\"를 인정하며 더는 가르치거나 책을 내지 않겠다고 서약했다는 것, 자서전 『내 삶의 책』이 1643년 나우데에 의해 사후 출판됐다는 것",
+     "URL": "https://plato.stanford.edu/entries/cardano/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Lodovico Ferrari — 제자 페라리가 1540년에 사차방정식 해법에 이르렀으나 삼차가 공개되기 전에는 낼 수 없었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Ferrari/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "The Renaissance Mathematicus, The sixteenth century dispute about higher order algebraic equations — 1546년 타르탈리아의 반박 뒤 소책자가 오갔고 1548년 8월 밀라노에서 공개 토론으로 끝났다는 것",
+     "URL": "https://thonyc.wordpress.com/2022/07/20/the-sixteenth-century-dispute-about-higher-order-algebraic-equations-and-their-solution/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Encyclopedia.com, Scipione dal Ferro — 델 페로가 1515년 무렵 축약 삼차방정식을 풀고도 공개하지 않았고 1526년 임종 무렵 제자 피오르에게만 알렸다는 것",
+     "URL": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/scipione-dal-ferro",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-cardano/note.md",
+   "세기전체": [
+    16
+   ],
+   "자수": 5773,
+   "시각화": 3
+  },
+  {
+   "유형": "인물",
    "제목": "존 네이피어",
    "슬러그": "person-napier",
    "날짜": "2026-08-21",
@@ -1304,6 +1419,112 @@
    ],
    "자수": 5766,
    "시각화": 2
+  },
+  {
+   "유형": "인물",
+   "제목": "니콜로 타르탈리아",
+   "슬러그": "person-tartaglia",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "타르탈리아",
+    "Tartaglia",
+    "니콜로타르탈리아",
+    "니콜로 폰타나",
+    "Niccolò Tartaglia"
+   ],
+   "볼트파일명": "인물_니콜로 타르탈리아",
+   "세기": [
+    16
+   ],
+   "분야": [
+    "대수학",
+    "역학",
+    "기하학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "삼차방정식 해법을 스스로 얻고도 남의 책으로 세상에 나가는 것을 본 사람. 탄도학을 처음 수학으로 다뤘고, 유클리드와 아르키메데스를 이탈리아어로 처음 옮겼다.",
+   "태그": [
+    "수학사",
+    "타르탈리아",
+    "삼차방정식",
+    "카르다노",
+    "탄도학",
+    "유클리드",
+    "16세기"
+   ],
+   "생몰": {
+    "출생": 1500,
+    "사망": 1557,
+    "출생지": "베네치아 공화국 브레시아"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과 「타르탈리아」 — 이탈리아의 수학자이며 본명은 Nicola Fontana 이고 브레시아의 가난한 집에서 태어났으며, 카르다노의 초청으로 밀라노에 가 자기가 만든 3차 방정식 해법을 알려 주었다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=885880&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「비운의 천재 수학자, '타르탈리아'」 — 3차 방정식 해법이 카르다노가 푼 것으로 알려져 있으나 그 공식의 주인이 따로 있다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=6863346&cid=72210&categoryId=72222",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「카르다노의 해법」 — \"말도 제대로 하지 못하는 가난한 수학 교사\"라는 서술과 \"세상 누구에게도 알리지 않겠소\"라는 약속, 대가를 받고 알려 준 것 같지는 않다는 판단",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699306&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Tartaglia — 1535년 대결에서 두 사람이 서른 문제씩 냈고, 2월 13일 이른 시각에 해법에 이르러 피오르의 서른 문제를 두 시간이 안 되어 모두 풀었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "Museo Galileo, Niccolò Tartaglia — 1512년 프랑스군의 브레시아 약탈 때 군도에 얼굴을 크게 다쳐 평생 말이 어눌해졌고 그래서 '타르탈리아'라는 별명을 얻어 스스로 그 이름을 썼다는 것, 아르키메데스와 유클리드를 이탈리아어로 처음 옮겼다는 것",
+     "URL": "https://catalogue.museogalileo.it/biography/NiccoloTartaglia.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "Britannica, Niccolò Fontana Tartaglia — 『노바 시엔티아』(1537)가 포술에 관한 논저이며 낙체의 법칙을 세우려 한 선구적 시도라는 것",
+     "URL": "https://www.britannica.com/biography/Niccolo-Fontana-Tartaglia",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Encyclopedia.com, Scipione dal Ferro — 델 페로가 1515년 무렵 축약 삼차방정식을 풀고도 공개하지 않았고 1526년 임종 무렵 제자 안토니오 피오르에게만 알렸다는 것",
+     "URL": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/scipione-dal-ferro",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Girolamo Cardano — 1539년 3월 25일 타르탈리아가 스물다섯 줄의 시로 해법을 넘겼고 카르다노가 먼저 출판하지 않겠다는 맹세를 했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cardan/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "The Renaissance Mathematicus, The sixteenth century dispute about higher order algebraic equations — 1546년 타르탈리아가 반박을 내고 페라리가 응수해 두 해 동안 소책자가 오갔으며 1548년 8월 밀라노 공개 토론으로 끝났고, 그가 둘째 날 전에 도시를 떠났다는 것",
+     "URL": "https://thonyc.wordpress.com/2022/07/20/the-sixteenth-century-dispute-about-higher-order-algebraic-equations-and-their-solution/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-tartaglia/note.md",
+   "세기전체": [
+    16
+   ],
+   "자수": 5907,
+   "시각화": 4
   },
   {
    "유형": "세기",
@@ -9510,7 +9731,9 @@
     "concept-algebra-notation-advanced",
     "concept-complex-number",
     "concept-logarithm",
-    "person-napier"
+    "person-cardano",
+    "person-napier",
+    "person-tartaglia"
    ],
    "17": [
     "century-17c",
@@ -9659,12 +9882,14 @@
     "concept-logarithm",
     "concept-logarithm-advanced",
     "episode-namdaemun-1947",
+    "person-cardano",
     "person-cauchy",
     "person-dedekind",
     "person-descartes",
     "person-hilbert",
     "person-jakob-bernoulli",
-    "person-napier"
+    "person-napier",
+    "person-tartaglia"
    ],
    "기하학": [
     "century-16c",
@@ -9681,7 +9906,8 @@
     "person-hilbert",
     "person-huygens",
     "person-klein",
-    "person-pascal"
+    "person-pascal",
+    "person-tartaglia"
    ],
    "삼각법": [
     "century-16c"
@@ -9745,6 +9971,7 @@
     "concept-probability-advanced",
     "episode-pascal-fermat-letters",
     "person-bayes",
+    "person-cardano",
     "person-de-moivre",
     "person-fermat",
     "person-gauss",
@@ -9765,7 +9992,8 @@
     "person-euler",
     "person-huygens",
     "person-lagrange",
-    "person-newton"
+    "person-newton",
+    "person-tartaglia"
    ],
    "정수론": [
     "century-18c",
@@ -9863,6 +10091,9 @@
     "person-descartes",
     "person-leibniz"
    ],
+   "의학": [
+    "person-cardano"
+   ],
    "미분방정식": [
     "person-dalembert",
     "person-fourier",
@@ -9934,7 +10165,9 @@
     "concept-complex-number-advanced",
     "concept-function",
     "concept-logarithm",
-    "person-napier"
+    "person-cardano",
+    "person-napier",
+    "person-tartaglia"
    ],
    "수학": [
     "concept-algebra-notation-advanced",
@@ -10001,12 +10234,13 @@
     "person-dirichlet",
     "person-poincare"
    ],
-   "수학Ⅰ": [
-    "person-dirichlet"
-   ],
    "확률과통계": [
+    "person-cardano",
     "person-fermat",
     "person-pascal"
+   ],
+   "수학Ⅰ": [
+    "person-dirichlet"
    ]
   },
   "유형": {
@@ -10062,6 +10296,7 @@
     "person-bayes",
     "person-bolzano",
     "person-cantor",
+    "person-cardano",
     "person-cauchy",
     "person-dalembert",
     "person-de-moivre",
@@ -10089,6 +10324,7 @@
     "person-newton",
     "person-pascal",
     "person-poincare",
+    "person-tartaglia",
     "person-weierstrass"
    ]
   },
@@ -10137,6 +10373,7 @@
     "episode-priority-dispute",
     "person-barrow",
     "person-bayes",
+    "person-cardano",
     "person-dalembert",
     "person-de-moivre",
     "person-descartes",
@@ -10159,7 +10396,8 @@
     "person-napier",
     "person-newton",
     "person-pascal",
-    "person-poincare"
+    "person-poincare",
+    "person-tartaglia"
    ],
    "16세기": [
     "century-16c",
@@ -10167,17 +10405,25 @@
     "concept-algebra-notation-advanced",
     "concept-complex-number",
     "concept-logarithm",
-    "person-napier"
+    "person-cardano",
+    "person-napier",
+    "person-tartaglia"
    ],
    "삼차방정식": [
-    "century-16c"
+    "century-16c",
+    "person-cardano",
+    "person-tartaglia"
    ],
    "카르다노": [
     "century-16c",
-    "concept-complex-number"
+    "concept-complex-number",
+    "person-cardano",
+    "person-tartaglia"
    ],
    "타르탈리아": [
-    "century-16c"
+    "century-16c",
+    "person-cardano",
+    "person-tartaglia"
    ],
    "대수 기호법": [
     "century-16c"
@@ -10240,6 +10486,7 @@
     "century-17c",
     "concept-probability",
     "episode-pascal-fermat-letters",
+    "person-cardano",
     "person-fermat",
     "person-pascal"
    ],
@@ -10958,6 +11205,12 @@
    "비국교도": [
     "person-bayes"
    ],
+   "아르스마그나": [
+    "person-cardano"
+   ],
+   "페라리": [
+    "person-cardano"
+   ],
    "백과전서": [
     "person-dalembert"
    ],
@@ -11178,6 +11431,12 @@
    ],
    "미타그레플레르": [
     "person-poincare"
+   ],
+   "탄도학": [
+    "person-tartaglia"
+   ],
+   "유클리드": [
+    "person-tartaglia"
    ]
   },
   "인물": {
@@ -11381,7 +11640,7 @@
    "봄벨리": [
     "concept-complex-number"
    ],
-   "카르다노": [
+   "person-cardano": [
     "concept-complex-number"
    ],
    "person-de-moivre": [
@@ -11650,6 +11909,12 @@
      "경로": "후속개념"
     },
     {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -11684,6 +11949,12 @@
     {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-tartaglia",
+     "제목": "니콜로 타르탈리아",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -13646,6 +13917,12 @@
      "경로": "관련개념"
     },
     {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-fermat",
      "제목": "피에르 드 페르마",
      "유형": "인물",
@@ -14956,6 +15233,44 @@
      "경로": "기여개념"
     }
    ],
+   "person-cardano": [
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-pascal-fermat-letters",
+     "제목": "파스칼–페르마 서신",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-tartaglia",
+     "제목": "니콜로 타르탈리아",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "concept-logarithm-advanced": [
     {
      "슬러그": "concept-algebra-notation-advanced",
@@ -15604,6 +15919,28 @@
      "경로": "본문"
     }
    ],
+   "person-tartaglia": [
+    {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "century-16c": [
+    {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-tartaglia",
+     "제목": "니콜로 타르탈리아",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "episode-dedekind-nov24": [
     {
      "슬러그": "person-dirichlet",
@@ -16041,6 +16378,14 @@
   "집합론의 창시자": "person-cantor",
   "칸토르": "person-cantor",
   "칸토어": "person-cantor",
+  "Cardano": "person-cardano",
+  "Girolamo Cardano": "person-cardano",
+  "person-cardano": "person-cardano",
+  "인물_지롤라모 카르다노": "person-cardano",
+  "지롤라모 카르다노": "person-cardano",
+  "지롤라모카르다노": "person-cardano",
+  "카르다노": "person-cardano",
+  "카르단": "person-cardano",
   "Augustin-Louis Cauchy": "person-cauchy",
   "person-cauchy": "person-cauchy",
   "오귀스탱루이 코시": "person-cauchy",
@@ -16262,6 +16607,14 @@
   "쥘 앙리 푸앵카레": "person-poincare",
   "푸앵카레": "person-poincare",
   "푸앵카레 추측": "person-poincare",
+  "Niccolò Tartaglia": "person-tartaglia",
+  "Tartaglia": "person-tartaglia",
+  "person-tartaglia": "person-tartaglia",
+  "니콜로 타르탈리아": "person-tartaglia",
+  "니콜로 폰타나": "person-tartaglia",
+  "니콜로타르탈리아": "person-tartaglia",
+  "인물_니콜로 타르탈리아": "person-tartaglia",
+  "타르탈리아": "person-tartaglia",
   "Karl Weierstrass": "person-weierstrass",
   "person-weierstrass": "person-weierstrass",
   "바이어슈트라스": "person-weierstrass",

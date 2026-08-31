@@ -1,10 +1,10 @@
 {
  "generated": "2026-08-31",
- "scanned": 248,
- "resolved": 1220,
- "pending": 559,
+ "scanned": 250,
+ "resolved": 1242,
+ "pending": 554,
  "counts": {
-  "new": 254,
+  "new": 253,
   "companion": 5,
   "gap": 0
  },
@@ -503,45 +503,6 @@
      "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
      "u": "research/#r=slack-ai-bot",
      "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "카르다노",
-   "count": 5,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "대수 기호법 (확장편)",
-     "u": "math/#n=concept-algebra-notation-advanced",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "변분법",
-     "u": "math/#n=concept-calculus-of-variations",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "복소수",
-     "u": "math/#n=concept-complex-number",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "파스칼–페르마 서신",
-     "u": "math/#n=episode-pascal-fermat-letters",
-     "s": "math",
-     "n": 1
-    },
-    {
-     "t": "아브라암 드무아브르",
-     "u": "math/#n=person-de-moivre",
-     "s": "math",
      "n": 1
     }
    ]
