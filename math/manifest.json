@@ -173,6 +173,135 @@
   },
   {
    "유형": "인물",
+   "제목": "아르키메데스",
+   "슬러그": "person-archimedes",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "아르키메데스",
+    "Archimedes",
+    "시라쿠사의 아르키메데스",
+    "아르키메데스의 원리"
+   ],
+   "볼트파일명": "인물_아르키메데스",
+   "세기": [
+    -3
+   ],
+   "분야": [
+    "기하학",
+    "해석학",
+    "역학"
+   ],
+   "교과": [
+    "중등수학",
+    "미적분Ⅱ"
+   ],
+   "난이도": "표준",
+   "요약": "넓이와 부피를 재려고 무한을 다루는 방법을 만든 사람. 그 소진법이 이천 년 뒤 적분이 된다. 자기가 어떻게 찾아냈는지를 적어 둔 책이 1906년에야 발견됐다.",
+   "태그": [
+    "수학사",
+    "아르키메데스",
+    "소진법",
+    "적분",
+    "원주율",
+    "구와원기둥",
+    "시라쿠사",
+    "기원전3세기"
+   ],
+   "생몰": {
+    "출생": -287,
+    "사망": -212,
+    "출생지": "시칠리아 시라쿠사"
+   },
+   "기여개념": [
+    "concept-integration",
+    "concept-fundamental-theorem"
+   ],
+   "관련일화": [
+    "episode-bernoulli-tomb"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(인명사전) 「아르키메데스」 — 고대 그리스 최대의 수학자·물리학자이며 생몰이 기원전 287년 추정~기원전 212년이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=937810&cid=43667&categoryId=43667",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(수학산책) 「아르키메데스」 — 네덜란드 수학사학자 더크 스트루이크가 그를 \"헬레니즘 시대 그리고 고대 전체를 통해 가장 위대한 수학자\"로 꼽는다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582418&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「아르키메데스」 — 시라쿠사 태생이며 제2차 포에니 전쟁 중 시라쿠사에서 로마병에게 피살됐다는 것, 구의 겉넓이가 큰 원 넓이의 네 배라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=2297560&cid=60227&categoryId=60227",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과 「아르키메데스의 원리」 — 물속에 물체를 넣으면 그 부피만큼 물이 넘치고 넘친 물의 무게만큼 물체가 가벼워진다는 원리",
+     "URL": "https://terms.naver.com/entry.naver?docId=6588000&cid=47308&categoryId=47308",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과 「입체 도형」 — 마르켈루스가 이끈 로마 군대가 시라쿠사를 수년간 포위한 끝에 함락시켰다는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=2039055&cid=47308&categoryId=47308",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Archimedes of Syracuse — 아버지 피디아스가 천문학자였다는 것을 우리가 아는 유일한 이유가 아르키메데스 자신이 『모래알을 세는 사람』에 적었기 때문이라는 것, 친구 헤라클레이데스가 쓴 전기가 소실됐다는 것, 알렉산드리아에서 유클리드의 후계자들에게 배웠을 가능성이 높다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Archimedes of Syracuse — 『나선에 관하여』 서문의 일화 — 증명 없이 정리만 보내던 습관, 알렉산드리아의 일부가 그 결과를 자기 것이라 주장하자 마지막에 **거짓 정리 둘**을 섞어 보냈다는 것과 그 이유(\"증명 없이 모든 것을 발견했다 주장하는 자들이 불가능한 것을 발견한 척했다는 것이 드러나도록\")",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Archimedes of Syracuse — 소진법이 적분의 이른 형태라는 것, 샬이 그의 적분 작업을 두고 \"케플러·카발리에리·페르마·라이프니츠·뉴턴이 구상하고 완성한 무한의 계산을 낳았다\"고 한 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor, Archimedes of Syracuse — 『구와 원기둥에 관하여』에서 구의 겉넓이가 대원의 네 배이고 구의 부피가 외접 원기둥의 3분의 2이며 겉넓이도 밑면을 포함한 원기둥 겉넓이의 3분의 2임을 보였다는 것, 『원의 측정』에서 96각형을 안팎으로 그려 π가 3+10/71 과 3+1/7 사이임을 보였다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Archimedes of Syracuse — 1906년 코펜하겐대 고전문헌학 교수 하이베르가 10세기 사본에서 『방법』을 발견했다는 것과, 그 책에 적힌 \"어떤 것들은 역학적 방법으로 먼저 분명해졌으나 그 방법이 실제 증명을 주지는 않으므로 나중에 기하학으로 증명해야 했다\"는 서술",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor, Archimedes of Syracuse — 플루타르코스가 그의 죽음에 관해 서로 다른 세 판본을 전한다는 것, 그가 묘비에 구와 외접 원기둥과 그 비를 새겨 달라 했다는 것, 키케로가 기원전 75년 시칠리아에서 가시덤불에 덮인 그 무덤을 찾아냈다고 적은 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor, Archimedes of Syracuse — 클라제트의 지적 — 유클리드의 『원론』과 달리 아르키메데스의 저작은 고대에 널리 알려지지 않았고, 6세기에 에우토키우스가 주석을 붙인 편집본을 낸 뒤에야 널리 알려지게 됐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-archimedes/note.md",
+   "세기전체": [
+    -3
+   ],
+   "자수": 5887,
+   "시각화": 4
+  },
+  {
+   "유형": "인물",
    "제목": "유클리드",
    "슬러그": "person-euclid",
    "날짜": "2026-08-31",
@@ -9859,6 +9988,7 @@
   "세기": {
    "-3": [
     "concept-integration",
+    "person-archimedes",
     "person-euclid"
    ],
    "3": [
@@ -10045,6 +10175,7 @@
     "concept-analytic-geometry-advanced",
     "episode-bernoulli-tomb",
     "episode-descartes-fly",
+    "person-archimedes",
     "person-barrow",
     "person-descartes",
     "person-euclid",
@@ -10088,6 +10219,7 @@
     "episode-lebesgue-coins",
     "episode-prague-1834",
     "episode-priority-dispute",
+    "person-archimedes",
     "person-barrow",
     "person-bayes",
     "person-bolzano",
@@ -10134,6 +10266,7 @@
     "concept-differential-equation",
     "concept-differential-equation-advanced",
     "episode-newton-apple",
+    "person-archimedes",
     "person-cauchy",
     "person-dalembert",
     "person-euler",
@@ -10305,6 +10438,7 @@
   "교과": {
    "중등수학": [
     "concept-algebra-notation",
+    "person-archimedes",
     "person-euclid"
    ],
    "공통수학1": [
@@ -10358,6 +10492,7 @@
     "concept-integration",
     "concept-integration-advanced",
     "concept-logarithm-advanced",
+    "person-archimedes",
     "person-barrow",
     "person-euler",
     "person-gregory",
@@ -10442,6 +10577,7 @@
     "episode-priority-dispute"
    ],
    "인물": [
+    "person-archimedes",
     "person-barrow",
     "person-bayes",
     "person-bolzano",
@@ -10522,6 +10658,7 @@
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
     "episode-priority-dispute",
+    "person-archimedes",
     "person-barrow",
     "person-bayes",
     "person-cardano",
@@ -11088,7 +11225,8 @@
     "concept-fundamental-theorem",
     "concept-integration",
     "concept-integration-advanced",
-    "episode-lebesgue-coins"
+    "episode-lebesgue-coins",
+    "person-archimedes"
    ],
    "배로": [
     "concept-fundamental-theorem",
@@ -11258,7 +11396,8 @@
     "episode-bernoulli-tomb"
    ],
    "아르키메데스": [
-    "episode-bernoulli-tomb"
+    "episode-bernoulli-tomb",
+    "person-archimedes"
    ],
    "묘비": [
     "episode-bernoulli-tomb"
@@ -11342,6 +11481,23 @@
    "연속": [
     "episode-prague-1834"
    ],
+   "소진법": [
+    "person-archimedes"
+   ],
+   "원주율": [
+    "person-archimedes",
+    "person-gregory"
+   ],
+   "구와원기둥": [
+    "person-archimedes"
+   ],
+   "시라쿠사": [
+    "person-archimedes"
+   ],
+   "기원전3세기": [
+    "person-archimedes",
+    "person-euclid"
+   ],
    "루카스석좌": [
     "person-barrow"
    ],
@@ -11423,9 +11579,6 @@
    "기하학적대수": [
     "person-euclid"
    ],
-   "기원전3세기": [
-    "person-euclid"
-   ],
    "오일러항등식": [
     "person-euler"
    ],
@@ -11495,9 +11648,6 @@
    ],
    "튜링": [
     "person-godel"
-   ],
-   "원주율": [
-    "person-gregory"
    ],
    "반사망원경": [
     "person-gregory"
@@ -11946,7 +12096,7 @@
    "히어홀처": [
     "concept-graph-theory"
    ],
-   "아르키메데스": [
+   "person-archimedes": [
     "concept-integration"
    ],
    "월리스": [
@@ -13298,6 +13448,12 @@
      "경로": "관련개념"
     },
     {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -13376,6 +13532,12 @@
      "제목": "적분법 (확장편)",
      "유형": "개념",
      "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-barrow",
@@ -14868,6 +15030,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -16166,29 +16334,59 @@
      "경로": "관련인물"
     }
    ],
-   "episode-namdaemun-1947": [
+   "person-archimedes": [
     {
-     "슬러그": "person-bayes",
-     "제목": "토마스 베이즈",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-tartaglia": [
-    {
-     "슬러그": "person-cardano",
-     "제목": "지롤라모 카르다노",
-     "유형": "인물",
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
      "경로": "본문"
     },
     {
-     "슬러그": "person-euclid",
-     "제목": "유클리드",
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-bernoulli-tomb",
+     "제목": "베르누이의 묘비",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
      "유형": "인물",
      "경로": "본문"
     }
    ],
+   "episode-bernoulli-tomb": [
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-jakob-bernoulli",
+     "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "관련일화"
+    },
+    {
+     "슬러그": "person-johann-bernoulli",
+     "제목": "요한 베르누이",
+     "유형": "인물",
+     "경로": "관련일화"
+    }
+   ],
    "century-16c": [
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "본문"
+    },
     {
      "슬러그": "person-cardano",
      "제목": "지롤라모 카르다노",
@@ -16204,6 +16402,34 @@
     {
      "슬러그": "person-tartaglia",
      "제목": "니콜로 타르탈리아",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-tartaglia": [
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "episode-namdaemun-1947": [
+    {
+     "슬러그": "person-bayes",
+     "제목": "토마스 베이즈",
      "유형": "인물",
      "경로": "본문"
     }
@@ -16234,20 +16460,6 @@
     {
      "슬러그": "person-huygens",
      "제목": "크리스티안 하위헌스",
-     "유형": "인물",
-     "경로": "관련일화"
-    }
-   ],
-   "episode-bernoulli-tomb": [
-    {
-     "슬러그": "person-jakob-bernoulli",
-     "제목": "야코프 베르누이",
-     "유형": "인물",
-     "경로": "관련일화"
-    },
-    {
-     "슬러그": "person-johann-bernoulli",
-     "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "관련일화"
     }
@@ -16613,6 +16825,12 @@
   "우선권 논쟁": "episode-priority-dispute",
   "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "표절 시비": "episode-priority-dispute",
+  "Archimedes": "person-archimedes",
+  "person-archimedes": "person-archimedes",
+  "시라쿠사의 아르키메데스": "person-archimedes",
+  "아르키메데스": "person-archimedes",
+  "아르키메데스의 원리": "person-archimedes",
+  "인물_아르키메데스": "person-archimedes",
   "Isaac Barrow": "person-barrow",
   "person-barrow": "person-barrow",
   "배로": "person-barrow",

@@ -24,9 +24,16 @@ cat LESSONS.md | sed -n '1,120p'                                # 방지 규칙 
 2026-08-25 에 그것 때문에 24커밋 뒤처진 상태로 작업해 충돌을 만들었다(LESSONS 참조).
 
 **환경 전제**(클라우드/모바일 세션):
-- 원문 직접 열람 불가 — `mathshistory`·`wikipedia`·`terms.naver` 전부 프록시가 `connect_rejected`.
-  ROADMAP §11 이 적어 둔 네이버 원문 `curl` 요령도 **이 환경에서는 듣지 않는다.**
-  → WebSearch 요약 + 네이버 MCP 스니펫 **다중 교차검증**으로 쓰고, **직접 인용은 넣지 않는다.**
+- 브라우저·`curl` 로는 원문 직접 열람 불가 — `mathshistory`·`wikipedia`·`terms.naver` 전부
+  프록시가 `connect_rejected`. ROADMAP §11 의 네이버 원문 `curl` 요령도 **여기서는 듣지 않는다.**
+- **다만 `Firecrawl` MCP 가 붙어 있으면 원문을 읽을 수 있다**(2026-08-31 확인).
+  서버 쪽에서 긁어 오므로 프록시 차단을 받지 않는다. `firecrawl_scrape` 에
+  `formats:["markdown"], onlyMainContent:true` 로 MacTutor 전문을 받아 **직접 인용**했다
+  (`person-archimedes` 가 첫 사례).
+  ⚠️ `formats:["summary"]` 는 **Firecrawl 이 만든 요약**이지 원문이 아니다 — 인용하려면
+  반드시 `markdown` 으로 받을 것.
+  → **Firecrawl 이 없으면** 종전대로 WebSearch 요약 + 네이버 MCP 스니펫 다중 교차검증으로
+  쓰고 직접 인용을 넣지 않는다. 도구 유무를 세션 시작 때 확인할 것.
 - 라이브 URL 도 못 받는다 → 배포 확인은 **머지 커밋 SHA 의 `pages build and deployment` success** 로 한다.
 - 학습카드 `auto` 렌더는 로컬 전용 → 클라우드는 `manual`.
 
