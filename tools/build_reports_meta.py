@@ -43,6 +43,7 @@ CATS = {
     # ── 수학 ──
     "benford-law": "math", "benford-law-advanced": "math",
     "calculus-discovery": "math", "calculus-discovery-advanced": "math",
+    "derivative-rate-of-change": "math", "derivative-rate-of-change-advanced": "math",
     "infinity-set-theory": "math", "infinity-set-theory-advanced": "math",
     "jacobian-transformation": "math", "jacobian-advanced": "math",
     "leslie-matrix": "math", "leslie-matrix-advanced": "math",

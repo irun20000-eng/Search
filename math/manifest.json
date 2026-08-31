@@ -6901,14 +6901,20 @@
      "제목": "Wikiquote, Pierre-Simon Laplace — \"Lisez Euler…\" 의 출처가 리브리의 1846년 『Journal des Savants』 전언이라는 기록",
      "URL": "https://en.wikiquote.org/wiki/Pierre-Simon_Laplace",
      "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, Differential equation — 진동하는 현을 달랑베르·오일러·다니엘 베르누이·라그랑주가 연구했다는 것, 1746년 달랑베르의 1차원 파동방정식과 10년 안의 오일러 3차원 파동방정식",
+     "URL": "https://en.wikipedia.org/wiki/Differential_equation",
+     "유형": "2차"
     }
    ],
    "path": "notes/person-euler/note.md",
    "세기전체": [
     18
    ],
-   "자수": 6514,
-   "시각화": 3
+   "자수": 7175,
+   "시각화": 4
   },
   {
    "유형": "인물",
@@ -7365,6 +7371,12 @@
      "제목": "MacTutor History of Mathematics, Joseph-Louis Lagrange — 같은 시기 파리의 동료",
      "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
      "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, A Philosophical Essay on Probabilities — 1814년 저작이며 확률의 뜻을 폭넓게 다룬다는 것, \"확률은 한편으로는 이 무지에, 한편으로는 우리의 지식에 상대적이다\"라는 문장, 그리고 라플라스에게 우연이란 우리의 무지에서 생긴 겉모습일 뿐이었다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/A_Philosophical_Essay_on_Probabilities",
+     "유형": "2차"
     }
    ],
    "path": "notes/person-laplace/note.md",
@@ -7372,7 +7384,7 @@
     18,
     19
    ],
-   "자수": 6599,
+   "자수": 6688,
    "시각화": 3
   },
   {
