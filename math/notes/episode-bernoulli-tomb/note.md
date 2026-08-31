@@ -2,6 +2,7 @@
 유형: 일화
 제목: 베르누이의 묘비
 슬러그: episode-bernoulli-tomb
+날짜: "2026-08-26"
 별칭: [베르누이의 묘비, 기적의 나선, spira mirabilis, 에아뎀 무타타 레수르고, Eadem mutata resurgo]
 볼트파일명: 일화_베르누이의 묘비
 세기: [18]

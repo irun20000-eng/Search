@@ -93,7 +93,7 @@ G = {
     "일화":       dict(chars=800,   chars_max=2500, lines=0,   sections=3,  visuals=1, sources=3),
 }
 
-COMMON_REQUIRED = ["유형", "제목", "슬러그", "볼트파일명", "세기", "요약", "출처"]
+COMMON_REQUIRED = ["유형", "제목", "슬러그", "날짜", "볼트파일명", "세기", "요약", "출처"]
 TYPE_REQUIRED = {
     "개념": ["트랙", "발전단계", "기여인물"],
     "인물": ["생몰"],
@@ -126,6 +126,12 @@ def check_note(slug, path):
     for k in COMMON_REQUIRED:
         if not fm.get(k):
             E("필수 필드 누락: %s" % k)
+
+    # 날짜는 모양까지 본다. 따옴표를 빠뜨리면 YAML 이 date 객체로 읽어 매니페스트
+    # 직렬화가 터지고, 자릿수가 틀리면 허브가 문자열로 정렬하다 조용히 어긋난다.
+    d = fm.get("날짜")
+    if d is not None and not (isinstance(d, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)):
+        E('날짜는 "YYYY-MM-DD" 꼴 문자열이어야 한다 (따옴표 필수): %r' % (d,))
 
     typ = fm.get("유형")
     if typ not in M.TYPES:

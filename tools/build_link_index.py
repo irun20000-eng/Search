@@ -153,10 +153,14 @@ def build():
 
     # ── math ──
     math_man = load("math/manifest.json")
+    # 예전에는 여기서 manifest 의 generated(=빌드한 날)를 72편 전부에 넣었다.
+    # 그러면 (a) 허브 「최근」이 math 로 뒤덮이고 그중 실제로 최근인 것은 몇 편뿐이며,
+    # (b) 날이 바뀔 때마다 이 파일 73줄이 바뀌어 진짜 변경을 덮었다.
+    # 지금은 노트 frontmatter 의 날짜를 쓴다. generated 는 그것이 없을 때의 폴백일 뿐이다.
     math_gen = math_man.get("generated", "")
     for n in math_man.get("notes", []):
         entries.append(dict(제목=n["제목"], 섹션="math", 유형=n.get("유형"),
-                            슬러그=n["슬러그"], 날짜=math_gen,
+                            슬러그=n["슬러그"], 날짜=n.get("날짜") or math_gen,
                             검색어=hay(n.get("태그"), n.get("분야"), n.get("교과")),
                             url="math/#n=" + n["슬러그"]))
         add(len(entries) - 1, M.aliases_for_math(n))
