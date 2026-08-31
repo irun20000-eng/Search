@@ -513,6 +513,212 @@
    "시각화": 4
   },
   {
+   "유형": "세기",
+   "제목": "16세기",
+   "슬러그": "century-16c",
+   "날짜": "2026-08-31",
+   "별칭": [
+    "16세기",
+    "십육세기",
+    "방정식의 세기"
+   ],
+   "볼트파일명": "세기_16세기",
+   "세기": [
+    16
+   ],
+   "분야": [
+    "대수학",
+    "기하학",
+    "삼각법",
+    "수론"
+   ],
+   "난이도": "개관",
+   "요약": "비밀로 지키던 공식이 인쇄로 풀려난 세기. 삼차·사차방정식이 풀리면서 음수의 제곱근이 계산 도중에 나타났고, 아는 것과 모르는 것을 문자로 갈라 적는 방법이 생겼다.",
+   "태그": [
+    "수학사",
+    "16세기",
+    "삼차방정식",
+    "카르다노",
+    "타르탈리아",
+    "대수 기호법",
+    "십진소수",
+    "삼각법",
+    "인쇄술"
+   ],
+   "연대": {
+    "시작": 1501,
+    "끝": 1600
+   },
+   "시대이슈": [
+    "인쇄술의 확산 — 비밀로 지키던 해법이 책으로 풀려나기 시작함",
+    "종교개혁(1517~) — 유럽 지식 지형의 분열과 재편",
+    "대항해와 원양 항해 — 위치를 알아내야 하는 계산 수요",
+    "공개 수학 대결 — 자리와 보수가 걸린 시합이 지식을 비밀로 만듦",
+    "상업 산술의 성장 — 셈이 상인과 관리의 실무 기술이 됨"
+   ],
+   "세계사사건": [
+    {
+     "연도": 1517,
+     "사건": "루터의 95개조 논제",
+     "수학과의연결": "인쇄와 논쟁의 시대가 열렸고, 학문 저작도 같은 통로로 빠르게 퍼졌다"
+    },
+    {
+     "연도": 1543,
+     "사건": "코페르니쿠스 『천구의 회전에 관하여』 출판",
+     "수학과의연결": "행성 운동을 사인표와 구면삼각법으로 다뤄, 천문 계산의 수요를 키웠다"
+    },
+    {
+     "연도": 1545,
+     "사건": "카르다노 『아르스 마그나』 출판",
+     "수학과의연결": "삼차·사차방정식 해법이 처음으로 인쇄되어 공개됐다"
+    },
+    {
+     "연도": 1569,
+     "사건": "메르카토르 세계지도 간행",
+     "수학과의연결": "항해에 쓰도록 설계된 도법이라, 지도 제작이 계산 문제가 됐다"
+    },
+    {
+     "연도": 1588,
+     "사건": "영국-스페인 해전",
+     "수학과의연결": "원양 항해 경쟁이 항해술과 그 바탕인 삼각법의 수요를 밀어 올렸다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학산책) 「삼차방정식 문제」 — 파치올리가 1494년 『수마』에서 삼차방정식 세 형태를 남기고 그 풀이를 원적문제에 견주었다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582435&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「카르다노의 해법」 — 타르탈리아가 대가 없이 해법을 넘긴 정황과 \"세상 누구에게도 알리지 않겠소\"라는 약속",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699306&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(학생백과) 「카르다노」 — 이탈리아의 수학자이자 의사이며 도박의 경우의 수를 따져 확률을 연구했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5667069&cid=47317&categoryId=47317",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학백과) 「삼차방정식」 — 삼차방정식의 정의와 근의 공식",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405158&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(한국민족문화대백과) 「산학」 — 산술에 관한 학문제도이며 통일신라부터 제도로 성립했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=572989&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(한국민족문화대백과) 「상명산법」 — 『양휘산법』·『산학계몽』과 함께 조선시대 호조 산원의 업무와 취재에 쓰였다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=573588&cid=46637&categoryId=46637",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과 「신편산학계몽」 — 주세걸이 1299년 편찬한 산학 입문서를 조선 전기에 원나라에서 수입했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=6718565&cid=46669&categoryId=46669",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과 「스테빈」 — 네덜란드의 수학자·물리학자이며 상점 지배인·관리를 거쳐 제방 감찰관에 이르렀다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=882470&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과) 「소수(decimal)」 — 소수는 실수를 아라비아 숫자와 소수점으로 나타내는 방법이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338500&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Chronology for 1500–1600 — 비에트가 1591년 『해석 기술 입문』에서 모음을 미지수에 자음을 기지수에 썼다는 것, trigonometry 라는 말이 피티스쿠스의 1595년 『삼각법』 제목에서 처음 나왔다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Chronology/8/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor, Lodovico Ferrari — 페라리가 1540년에 사차방정식 해법에 이르렀으나 삼차 해법이 공개되기 전에는 낼 수 없었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Ferrari/",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor, Girolamo Cardano — 1539년 3월 25일 타르탈리아가 스물다섯 줄의 시 형태로 해법을 넘겼다는 것과 카르다노가 먼저 출판하지 않겠다는 맹세를 했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cardan/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor, Luca Pacioli — 1494년 『수마』에서 삼차방정식의 일반 해법이 알려져 있지 않고 아마 불가능하리라고 적었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Pacioli/",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Encyclopedia.com, Scipione dal Ferro — 1515년 무렵 축약 삼차방정식을 풀었으나 공개하지 않았고 1526년 임종 무렵 제자 안토니오 피오르에게 알렸다는 것",
+     "URL": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/scipione-dal-ferro",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "Wikipedia, De Thiende — 스테빈이 1585년에 낸 스물아홉 쪽짜리 소책자이며 자리 표기를 소수까지 넓혔다는 것",
+     "URL": "https://en.wikipedia.org/wiki/De_Thiende",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "Wikipedia, Mercator 1569 world map — 1569년 도법이며 제목 자체가 \"항해에 쓰도록 알맞게 고친\" 지도라고 밝힌다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Mercator_1569_world_map",
+     "유형": "2차"
+    },
+    {
+     "번호": 17,
+     "제목": "Wikipedia, Georg Joachim Rheticus — 1542년 뉘른베르크에서 『천구의 회전에 관하여』 초판 인쇄를 감독하며 삼각함수표를 함께 실었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Georg_Joachim_Rheticus",
+     "유형": "2차"
+    },
+    {
+     "번호": 18,
+     "제목": "The Renaissance Mathematicus, The sixteenth century dispute about higher order algebraic equations — 1546년 타르탈리아의 반박 이후 소책자가 오갔고 1548년 8월 밀라노에서 공개 토론으로 끝났다는 것",
+     "URL": "https://thonyc.wordpress.com/2022/07/20/the-sixteenth-century-dispute-about-higher-order-algebraic-equations-and-their-solution/",
+     "유형": "2차"
+    },
+    {
+     "번호": 19,
+     "제목": "Wikipedia, Rafael Bombelli — 1572년 『대수학』이 복소수의 곱셈 규칙을 처음으로 명시적으로 정의했고 그것으로 허수가 나오는 삼차방정식을 풀었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Rafael_Bombelli",
+     "유형": "2차"
+    },
+    {
+     "번호": 20,
+     "제목": "MacTutor, Robert Recorde — 1557년 『지혜의 숫돌』에서 등호를 도입하며 \"두 개의 무엇도 이보다 더 같을 수는 없다\"고 그 길이가 같은 평행선 두 줄을 설명했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 21,
+     "제목": "MacTutor, Tartaglia — 1535년 대결에서 두 사람이 서른 문제씩 냈고, 2월 13일 이른 시각에 타르탈리아가 해법에 이르러 피오르의 서른 문제를 두 시간이 안 되어 모두 풀었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/century-16c/note.md",
+   "세기전체": [
+    16
+   ],
+   "자수": 8182,
+   "시각화": 5
+  },
+  {
    "유형": "개념",
    "제목": "대수 기호법 (확장편)",
    "슬러그": "concept-algebra-notation-advanced",
@@ -9299,6 +9505,7 @@
     "concept-series"
    ],
    "16": [
+    "century-16c",
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
     "concept-complex-number",
@@ -9439,6 +9646,49 @@
    ]
   },
   "분야": {
+   "대수학": [
+    "century-16c",
+    "century-17c",
+    "century-20c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number",
+    "concept-complex-number-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
+    "episode-namdaemun-1947",
+    "person-cauchy",
+    "person-dedekind",
+    "person-descartes",
+    "person-hilbert",
+    "person-jakob-bernoulli",
+    "person-napier"
+   ],
+   "기하학": [
+    "century-16c",
+    "century-17c",
+    "century-19c",
+    "concept-algebra-notation-advanced",
+    "concept-analytic-geometry",
+    "concept-analytic-geometry-advanced",
+    "episode-bernoulli-tomb",
+    "episode-descartes-fly",
+    "person-barrow",
+    "person-descartes",
+    "person-gauss",
+    "person-hilbert",
+    "person-huygens",
+    "person-klein",
+    "person-pascal"
+   ],
+   "삼각법": [
+    "century-16c"
+   ],
+   "수론": [
+    "century-16c"
+   ],
    "해석학": [
     "century-17c",
     "century-18c",
@@ -9486,22 +9736,6 @@
     "person-newton",
     "person-weierstrass"
    ],
-   "기하학": [
-    "century-17c",
-    "century-19c",
-    "concept-algebra-notation-advanced",
-    "concept-analytic-geometry",
-    "concept-analytic-geometry-advanced",
-    "episode-bernoulli-tomb",
-    "episode-descartes-fly",
-    "person-barrow",
-    "person-descartes",
-    "person-gauss",
-    "person-hilbert",
-    "person-huygens",
-    "person-klein",
-    "person-pascal"
-   ],
    "확률론": [
     "century-17c",
     "century-18c",
@@ -9519,25 +9753,6 @@
     "person-kolmogorov",
     "person-laplace",
     "person-pascal"
-   ],
-   "대수학": [
-    "century-17c",
-    "century-20c",
-    "concept-algebra-notation",
-    "concept-algebra-notation-advanced",
-    "concept-analytic-geometry",
-    "concept-analytic-geometry-advanced",
-    "concept-complex-number",
-    "concept-complex-number-advanced",
-    "concept-logarithm",
-    "concept-logarithm-advanced",
-    "episode-namdaemun-1947",
-    "person-cauchy",
-    "person-dedekind",
-    "person-descartes",
-    "person-hilbert",
-    "person-jakob-bernoulli",
-    "person-napier"
    ],
    "역학": [
     "century-18c",
@@ -9796,6 +10011,7 @@
   },
   "유형": {
    "세기": [
+    "century-16c",
     "century-17c",
     "century-18c",
     "century-19c",
@@ -9878,6 +10094,7 @@
   },
   "태그": {
    "수학사": [
+    "century-16c",
     "century-17c",
     "century-18c",
     "century-19c",
@@ -9943,6 +10160,36 @@
     "person-newton",
     "person-pascal",
     "person-poincare"
+   ],
+   "16세기": [
+    "century-16c",
+    "concept-algebra-notation",
+    "concept-algebra-notation-advanced",
+    "concept-complex-number",
+    "concept-logarithm",
+    "person-napier"
+   ],
+   "삼차방정식": [
+    "century-16c"
+   ],
+   "카르다노": [
+    "century-16c",
+    "concept-complex-number"
+   ],
+   "타르탈리아": [
+    "century-16c"
+   ],
+   "대수 기호법": [
+    "century-16c"
+   ],
+   "십진소수": [
+    "century-16c"
+   ],
+   "삼각법": [
+    "century-16c"
+   ],
+   "인쇄술": [
+    "century-16c"
    ],
    "17세기": [
     "century-17c",
@@ -10231,13 +10478,6 @@
    "9세기": [
     "concept-algebra-notation"
    ],
-   "16세기": [
-    "concept-algebra-notation",
-    "concept-algebra-notation-advanced",
-    "concept-complex-number",
-    "concept-logarithm",
-    "person-napier"
-   ],
    "동차성": [
     "concept-algebra-notation-advanced"
    ],
@@ -10334,9 +10574,6 @@
     "concept-complex-number"
    ],
    "복소평면": [
-    "concept-complex-number"
-   ],
-   "카르다노": [
     "concept-complex-number"
    ],
    "봄벨리": [
@@ -11363,6 +11600,206 @@
    ]
   },
   "역링크": {
+   "concept-complex-number": [
+    {
+     "슬러그": "century-16c",
+     "제목": "16세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor-advanced",
+     "제목": "해석학의 엄밀화 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-calculus-of-variations",
+     "제목": "변분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-series",
+     "제목": "무한급수",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gauss",
+     "제목": "카를 프리드리히 가우스",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-algebra-notation": [
+    {
+     "슬러그": "century-16c",
+     "제목": "16세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation-advanced",
+     "제목": "대수 기호법 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-logarithm": [
+    {
+     "슬러그": "century-16c",
+     "제목": "16세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-napier",
+     "제목": "존 네이피어",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "century-17c": [
+    {
+     "슬러그": "century-16c",
+     "제목": "16세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry",
+     "제목": "해석기하",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-huygens-anagram",
+     "제목": "하위헌스의 아나그램",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-de-moivre",
+     "제목": "아브라암 드무아브르",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-laplace",
+     "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-descartes": [
     {
      "슬러그": "century-17c",
@@ -12243,86 +12680,6 @@
      "경로": "관련인물"
     }
    ],
-   "century-17c": [
-    {
-     "슬러그": "century-18c",
-     "제목": "18세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-analytic-geometry",
-     "제목": "해석기하",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-analytic-geometry-advanced",
-     "제목": "해석기하 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-integration-advanced",
-     "제목": "적분법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-logarithm",
-     "제목": "로그",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "episode-huygens-anagram",
-     "제목": "하위헌스의 아나그램",
-     "유형": "일화",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-barrow",
-     "제목": "아이작 배로",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-de-moivre",
-     "제목": "아브라암 드무아브르",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-gregory",
-     "제목": "제임스 그레고리",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-laplace",
-     "제목": "피에르시몽 라플라스",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
    "person-euler": [
     {
      "슬러그": "century-18c",
@@ -12601,62 +12958,6 @@
     {
      "슬러그": "person-newton",
      "제목": "아이작 뉴턴",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
-   "concept-complex-number": [
-    {
-     "슬러그": "century-18c",
-     "제목": "18세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-algebra-notation",
-     "제목": "대수 기호법",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-algebra-notation-advanced",
-     "제목": "대수 기호법 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-analysis-rigor-advanced",
-     "제목": "해석학의 엄밀화 (확장편)",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-calculus-of-variations",
-     "제목": "변분법",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-complex-number-advanced",
-     "제목": "복소수 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-series",
-     "제목": "무한급수",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-gauss",
-     "제목": "카를 프리드리히 가우스",
      "유형": "인물",
      "경로": "기여개념"
     }
@@ -14655,26 +14956,6 @@
      "경로": "기여개념"
     }
    ],
-   "concept-algebra-notation": [
-    {
-     "슬러그": "concept-algebra-notation-advanced",
-     "제목": "대수 기호법 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-analytic-geometry",
-     "제목": "해석기하",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "person-descartes",
-     "제목": "르네 데카르트",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
    "concept-logarithm-advanced": [
     {
      "슬러그": "concept-algebra-notation-advanced",
@@ -15315,26 +15596,6 @@
      "경로": "관련인물"
     }
    ],
-   "concept-logarithm": [
-    {
-     "슬러그": "concept-logarithm-advanced",
-     "제목": "로그 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-napier",
-     "제목": "존 네이피어",
-     "유형": "인물",
-     "경로": "기여개념"
-    }
-   ],
    "episode-namdaemun-1947": [
     {
      "슬러그": "person-bayes",
@@ -15406,6 +15667,11 @@
   }
  },
  "별칭": {
+  "16세기": "century-16c",
+  "century-16c": "century-16c",
+  "방정식의 세기": "century-16c",
+  "세기_16세기": "century-16c",
+  "십육세기": "century-16c",
   "17세기": "century-17c",
   "century-17c": "century-17c",
   "과학혁명의 세기": "century-17c",
