@@ -1,5 +1,5 @@
 {
- "count": 22,
+ "count": 23,
  "series": [
   {
    "key": "parent",
@@ -27,6 +27,28 @@
   }
  ],
  "episodes": [
+  {
+   "folder": "부모노트_13_친구문제",
+   "series": "parent",
+   "title": "친구 문제로 힘들어할 때",
+   "angle": "듣는 자리와 고치는 자리는 다르다",
+   "layout": "A",
+   "date": "2026-09-01",
+   "caption": "친구 이야기는 대개 한 줄로 시작해서 그대로 닫힙니다.\n\n누가 잘못했는지 가리고 대신 해결해 주면 문제는 줄어도 말이 줄어듭니다. 아이가 찾는 것은 답이 아니라 말할 자리입니다.\n듣기 · 정리 · 선택 — 다음에 할 일을 아이가 고르게 두면 다음 이야기도 꺼내집니다.\n\n저장해두고 아이가 말을 꺼낼 때 다시 꺼내 보세요.\n\n#부모노트 #친구관계 #또래관계 #경청 #육아",
+   "images": [
+    "parent13_01.webp",
+    "parent13_02.webp",
+    "parent13_03.webp",
+    "parent13_04.webp",
+    "parent13_05.webp",
+    "parent13_06.webp",
+    "parent13_07.webp",
+    "parent13_08.webp",
+    "parent13_09.webp",
+    "parent13_10.webp"
+   ],
+   "study": null
+  },
   {
    "folder": "부모노트_12_실수한아이",
    "series": "parent",

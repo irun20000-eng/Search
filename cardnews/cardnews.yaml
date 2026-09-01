@@ -186,6 +186,15 @@ episodes:
     images: [discovery03_01.webp, discovery03_02.webp, discovery03_03.webp, discovery03_04.webp, discovery03_05.webp, discovery03_06.webp, discovery03_07.webp, discovery03_08.webp, discovery03_09.webp, discovery03_10.webp]
     caption: "길을 하나 더 놓았더니 모두가 늦어졌습니다.\n\n4,000대가 두 갈래로 나뉘어 65분에 가던 길에, 두 길을 잇는 짧은 샛길을 냈습니다. 처음 그 길을 탄 사람은 25분을 벌었지만, 결국 모두가 그리로 옮겨 타 전원이 80분이 됐습니다. 혼자 빠져나오면 85분이라 되돌아갈 수도 없습니다.\n1968년 수학자 브라에스가 논문 한 편으로 보인 이야기입니다. 아무도 잘못 고르지 않았는데 전체는 나빠집니다.\n\n저장해두고 무언가를 늘리려 할 때 다시 꺼내 보세요.\n\n#발견노트 #브라에스의역설 #내시균형 #네트워크 #교양"
 
+  - folder: 부모노트_13_친구문제
+    date: 2026-09-01
+    series: parent
+    title: "친구 문제로 힘들어할 때"
+    angle: "듣는 자리와 고치는 자리는 다르다"
+    layout: A
+    images: [parent13_01.webp, parent13_02.webp, parent13_03.webp, parent13_04.webp, parent13_05.webp, parent13_06.webp, parent13_07.webp, parent13_08.webp, parent13_09.webp, parent13_10.webp]
+    caption: "친구 이야기는 대개 한 줄로 시작해서 그대로 닫힙니다.\n\n누가 잘못했는지 가리고 대신 해결해 주면 문제는 줄어도 말이 줄어듭니다. 아이가 찾는 것은 답이 아니라 말할 자리입니다.\n듣기 · 정리 · 선택 — 다음에 할 일을 아이가 고르게 두면 다음 이야기도 꺼내집니다.\n\n저장해두고 아이가 말을 꺼낼 때 다시 꺼내 보세요.\n\n#부모노트 #친구관계 #또래관계 #경청 #육아"
+
 # ── 반입 대기: 없음 (2026-08-22 신규 2편 반입 완료 · 총 20편) ──────
 pending_episodes: []
 
