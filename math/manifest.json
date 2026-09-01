@@ -1,6 +1,202 @@
 {
- "generated": "2026-08-31",
+ "generated": "2026-09-01",
  "notes": [
+  {
+   "유형": "세기",
+   "제목": "기원전 3세기",
+   "슬러그": "century-bc3",
+   "날짜": "2026-09-01",
+   "별칭": [
+    "기원전 3세기",
+    "기원전3세기",
+    "알렉산드리아의 세기",
+    "헬레니즘 수학"
+   ],
+   "볼트파일명": "세기_기원전3세기",
+   "세기": [
+    -3
+   ],
+   "분야": [
+    "기하학",
+    "수론",
+    "천문학",
+    "측량"
+   ],
+   "난이도": "개관",
+   "요약": "새로 발견한 것보다 쓰는 방식이 정해진 세기다. 왕이 학자에게 봉급을 준 최초의 제도 안에서, 흩어져 있던 결과들이 「무엇을 깔고 시작할지 먼저 적는」 형식으로 묶였다. 그 형식이 이천 년을 갔다.",
+   "태그": [
+    "수학사",
+    "기원전3세기",
+    "헬레니즘",
+    "알렉산드리아",
+    "무세이온",
+    "유클리드",
+    "아르키메데스",
+    "아폴로니오스",
+    "에라토스테네스",
+    "아리스타르코스",
+    "원뿔곡선",
+    "소진법"
+   ],
+   "기여인물": [
+    "person-euclid",
+    "person-archimedes"
+   ],
+   "연대": {
+    "시작": -300,
+    "끝": -201
+   },
+   "시대이슈": [
+    "알렉산드로스 사후의 분열 — 그리스어가 이집트와 서아시아를 잇는 지식의 공용어가 됨",
+    "왕의 후원 — 무세이온과 도서관이 학자에게 봉급과 생활비를 대는 제도를 만듦",
+    "사본과 파피루스 — 개인의 노트가 아니라 도서관의 장서로 지식이 쌓이기 시작함",
+    "측량·항해·역법의 실무 수요 — 땅과 하늘을 실제로 재야 할 이유가 생김",
+    "로마의 팽창 — 지중해의 무게중심이 서쪽으로 옮겨 가며 헬레니즘 세계의 끝이 시작됨"
+   ],
+   "세계사사건": [
+    {
+     "연도": -323,
+     "사건": "알렉산드로스 사망, 제국이 셋으로 갈라짐",
+     "수학과의연결": "프톨레마이오스 왕조가 이집트를 맡으면서 알렉산드리아에 학문을 모을 여력과 동기가 생겼다"
+    },
+    {
+     "연도": -288,
+     "사건": "알렉산드리아 도서관 설립",
+     "수학과의연결": "국경을 넘어 자료를 모은 최초의 장소가 되어, 흩어져 있던 그리스 수학이 한자리에 모였다"
+    },
+    {
+     "연도": -264,
+     "사건": "제1차 포에니 전쟁 시작",
+     "수학과의연결": "로마와 카르타고의 다툼이 시칠리아에서 시작돼, 반세기 뒤 시라쿠사를 삼킨다"
+    },
+    {
+     "연도": -221,
+     "사건": "진(秦)의 중국 통일",
+     "수학과의연결": "도량형과 문자를 통일한 국가 사업이 동아시아 산학의 제도적 바탕이 됐다"
+    },
+    {
+     "연도": -212,
+     "사건": "시라쿠사 함락, 아르키메데스 사망",
+     "수학과의연결": "이 세기 최고의 수학자가 전쟁 중에 죽었고, 그의 방법은 이천 년 뒤에야 이어졌다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과 「고대 알렉산드리아 도서관」 — 기원전 288년 이집트 알렉산드리아에 세워진 초대형 도서관으로, 최초로 국경을 초월해 국제적인 자료를 보관한 장소로 평가된다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=892008&cid=43143&categoryId=43143",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「무세이온」 — 프톨레마이오스 왕조의 역대 왕들이 사재를 털어 학자를 초빙하고 수당과 생활비까지 제공했으며, 강당·도서관·연구동을 갖췄다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699225&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「헬레니즘」 — 알렉산드로스가 기원전 323년 서른셋에 죽고 제국이 셋으로 나뉘었다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3546878&cid=58584&categoryId=58596",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과 「알렉산드리아」 — 기원전 332년 알렉산더 대왕이 건설했고 프톨레마이오스 왕조의 수도로서 무세이온·대도서관·연구소를 갖췄다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=630312&cid=50766&categoryId=50794",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학산책) 「지구를 측정한 사서」 — 무세이온 관장이었던 키레네의 에라토스테네스(기원전 276~194)가 아르키메데스와 동시대 사람이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582419&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과 「에라토스테네스의 지구 둘레 측정」 — 알렉산드리아와 시에네의 각도차 7.2도와 거리 925km 로 비례식을 세웠다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=70263&cid=43667&categoryId=43667",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "네이버 지식백과 「잘못 측정된 지구 크기와 마젤란의 세계일주」 — 포시도니우스가 다시 재어 얻은 18만 스타디아가 에라토스테네스 값보다 작았다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=982568&cid=47340&categoryId=47340",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "네이버 지식백과(수학백과) 「원뿔곡선」 — 직원뿔과 평면의 공통부분으로 표시되는 곡선이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338226&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과 「초기 철기 문화」 — 기원전 3세기경 한반도 북부에 철기가 유입되어 초기 철기시대(BC 3세기~서력기원 전후)가 시작됐다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1631001&cid=42956&categoryId=42956",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Apollonius of Perga — 생몰을 기원전 262~190년으로 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Apollonius/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Britannica, Apollonius of Perga — 원뿔곡선을 기울인 평면과 원뿔의 교선으로 정의하고 타원(elleipsis, 모자람)·포물선(parabolē, 들어맞음)·쌍곡선(hyperbolē, 넘침)이라 이름 붙였으며, 생몰을 기원전 240~190년 무렵으로 적는다는 것",
+     "URL": "https://www.britannica.com/biography/Apollonius-of-Perga",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor, Aristarchus of Samos — 생몰을 기원전 310~230년으로 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Aristarchus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, On the Sizes and Distances (Aristarchus) — 태양까지의 거리를 달까지 거리의 19배로 구했고 실제보다 스무 배가량 작았다는 것",
+     "URL": "https://en.wikipedia.org/wiki/On_the_Sizes_and_Distances_(Aristarchus)",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Wikipedia, Earth's circumference — 에라토스테네스가 지구 둘레를 252,000 스타디아로 계산했으나 스타디온의 실제 길이가 불확실해 정확도가 확정되지 않으며, 155~160m 로 잡으면 오차가 −2.4%~+0.8% 범위라는 것",
+     "URL": "https://en.wikipedia.org/wiki/Earth%27s_circumference",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "Britannica, Library of Alexandria — 프톨레마이오스 1세(재위 기원전 323~282)가 제안하고 프톨레마이오스 2세(재위 기원전 282~246) 때 지어졌다고 보는 견해",
+     "URL": "https://www.britannica.com/topic/Library-of-Alexandria",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "World History Encyclopedia, Library of Alexandria — 플라톤의 아카데메이아·아리스토텔레스의 리케이온과 달리 프톨레마이오스 왕조의 공식 후원을 받았고, 학자의 봉급을 왕이 지급했다는 것",
+     "URL": "https://www.worldhistory.org/Library_of_Alexandria/",
+     "유형": "2차"
+    },
+    {
+     "번호": 17,
+     "제목": "네이버 지식백과(수학백과) 「데데킨트 절단」 — 절단의 정의와 √2 예, 그리고 에우독소스 비례론과의 관계",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 18,
+     "제목": "MacTutor, Archimedes of Syracuse — 알렉산드리아에서 유클리드의 후계자들에게 배웠을 가능성이 높다는 것과, 알렉산드리아의 수학자들을 개인적으로 알고 결과를 편지로 보냈다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/century-bc3/note.md",
+   "세기전체": [
+    -3
+   ],
+   "자수": 8612,
+   "시각화": 6
+  },
   {
    "유형": "개념",
    "제목": "적분법",
@@ -10134,6 +10330,7 @@
  "index": {
   "세기": {
    "-3": [
+    "century-bc3",
     "concept-integration",
     "person-archimedes",
     "person-euclid"
@@ -10318,6 +10515,7 @@
     "century-16c",
     "century-17c",
     "century-19c",
+    "century-bc3",
     "concept-algebra-notation-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
@@ -10340,6 +10538,7 @@
    ],
    "수론": [
     "century-16c",
+    "century-bc3",
     "person-euclid",
     "person-riemann"
    ],
@@ -10477,6 +10676,17 @@
     "episode-lebesgue-coins",
     "person-kolmogorov"
    ],
+   "천문학": [
+    "century-bc3",
+    "episode-huygens-anagram",
+    "person-euler",
+    "person-gauss",
+    "person-gregory",
+    "person-huygens"
+   ],
+   "측량": [
+    "century-bc3"
+   ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
    ],
@@ -10501,13 +10711,6 @@
    ],
    "통계학": [
     "concept-probability-advanced"
-   ],
-   "천문학": [
-    "episode-huygens-anagram",
-    "person-euler",
-    "person-gauss",
-    "person-gregory",
-    "person-huygens"
    ],
    "광학": [
     "person-barrow",
@@ -10690,7 +10893,8 @@
     "century-17c",
     "century-18c",
     "century-19c",
-    "century-20c"
+    "century-20c",
+    "century-bc3"
    ],
    "개념": [
     "concept-algebra-notation",
@@ -10779,6 +10983,7 @@
     "century-18c",
     "century-19c",
     "century-20c",
+    "century-bc3",
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
     "concept-analysis-rigor",
@@ -11130,6 +11335,46 @@
    "한국수학": [
     "century-20c",
     "episode-namdaemun-1947"
+   ],
+   "기원전3세기": [
+    "century-bc3",
+    "person-archimedes",
+    "person-euclid"
+   ],
+   "헬레니즘": [
+    "century-bc3"
+   ],
+   "알렉산드리아": [
+    "century-bc3"
+   ],
+   "무세이온": [
+    "century-bc3"
+   ],
+   "유클리드": [
+    "century-bc3",
+    "person-euclid",
+    "person-tartaglia"
+   ],
+   "아르키메데스": [
+    "century-bc3",
+    "episode-bernoulli-tomb",
+    "person-archimedes"
+   ],
+   "아폴로니오스": [
+    "century-bc3"
+   ],
+   "에라토스테네스": [
+    "century-bc3"
+   ],
+   "아리스타르코스": [
+    "century-bc3"
+   ],
+   "원뿔곡선": [
+    "century-bc3"
+   ],
+   "소진법": [
+    "century-bc3",
+    "person-archimedes"
    ],
    "대수학": [
     "concept-algebra-notation",
@@ -11556,10 +11801,6 @@
    "등각나선": [
     "episode-bernoulli-tomb"
    ],
-   "아르키메데스": [
-    "episode-bernoulli-tomb",
-    "person-archimedes"
-   ],
    "묘비": [
     "episode-bernoulli-tomb"
    ],
@@ -11642,9 +11883,6 @@
    "연속": [
     "episode-prague-1834"
    ],
-   "소진법": [
-    "person-archimedes"
-   ],
    "원주율": [
     "person-archimedes",
     "person-gregory"
@@ -11654,10 +11892,6 @@
    ],
    "시라쿠사": [
     "person-archimedes"
-   ],
-   "기원전3세기": [
-    "person-archimedes",
-    "person-euclid"
    ],
    "루카스석좌": [
     "person-barrow"
@@ -11719,10 +11953,6 @@
    ],
    "야코비": [
     "person-dirichlet"
-   ],
-   "유클리드": [
-    "person-euclid",
-    "person-tartaglia"
    ],
    "원론": [
     "person-euclid"
@@ -11932,6 +12162,13 @@
    ]
   },
   "인물": {
+   "person-archimedes": [
+    "century-bc3",
+    "concept-integration"
+   ],
+   "person-euclid": [
+    "century-bc3"
+   ],
    "person-descartes": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
@@ -12272,9 +12509,6 @@
    ],
    "히어홀처": [
     "concept-graph-theory"
-   ],
-   "person-archimedes": [
-    "concept-integration"
    ],
    "월리스": [
     "concept-integration"
@@ -14105,6 +14339,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-bc3",
+     "제목": "기원전 3세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
      "슬러그": "concept-algebra-notation",
      "제목": "대수 기호법",
      "유형": "개념",
@@ -15213,6 +15453,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "century-bc3",
+     "제목": "기원전 3세기",
+     "유형": "세기",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "concept-algebra-notation-advanced",
      "제목": "대수 기호법 (확장편)",
      "유형": "개념",
@@ -15853,6 +16099,70 @@
      "제목": "다비트 힐베르트",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "person-archimedes": [
+    {
+     "슬러그": "century-bc3",
+     "제목": "기원전 3세기",
+     "유형": "세기",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-bernoulli-tomb",
+     "제목": "베르누이의 묘비",
+     "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-barrow",
+     "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "century-16c": [
+    {
+     "슬러그": "century-bc3",
+     "제목": "기원전 3세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-tartaglia",
+     "제목": "니콜로 타르탈리아",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-algebra-notation-advanced": [
@@ -16577,32 +16887,6 @@
      "경로": "관련인물"
     }
    ],
-   "person-archimedes": [
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "episode-bernoulli-tomb",
-     "제목": "베르누이의 묘비",
-     "유형": "일화",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-barrow",
-     "제목": "아이작 배로",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
    "episode-bernoulli-tomb": [
     {
      "슬러그": "person-archimedes",
@@ -16621,32 +16905,6 @@
      "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "관련일화"
-    }
-   ],
-   "century-16c": [
-    {
-     "슬러그": "person-archimedes",
-     "제목": "아르키메데스",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cardano",
-     "제목": "지롤라모 카르다노",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-euclid",
-     "제목": "유클리드",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-tartaglia",
-     "제목": "니콜로 타르탈리아",
-     "유형": "인물",
-     "경로": "본문"
     }
    ],
    "person-tartaglia": [
@@ -16754,6 +17012,12 @@
   "세기_20세기": "century-20c",
   "수학기초론의 세기": "century-20c",
   "이십세기": "century-20c",
+  "century-bc3": "century-bc3",
+  "기원전 3세기": "century-bc3",
+  "기원전3세기": "century-bc3",
+  "세기_기원전3세기": "century-bc3",
+  "알렉산드리아의 세기": "century-bc3",
+  "헬레니즘 수학": "century-bc3",
   "concept-algebra-notation": "concept-algebra-notation",
   "개념_대수 기호법": "concept-algebra-notation",
   "기호법": "concept-algebra-notation",
