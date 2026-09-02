@@ -791,6 +791,135 @@
    "시각화": 6
   },
   {
+   "유형": "인물",
+   "제목": "알콰리즈미",
+   "슬러그": "person-al-khwarizmi",
+   "날짜": "2026-09-02",
+   "별칭": [
+    "알 콰리즈미",
+    "콰리즈미",
+    "호라즈미",
+    "al-Khwarizmi",
+    "al-Khwārizmī",
+    "무함마드 이븐 무사 알콰리즈미"
+   ],
+   "볼트파일명": "인물_알콰리즈미",
+   "세기": [
+    9
+   ],
+   "분야": [
+    "대수학",
+    "산술",
+    "천문학",
+    "지리학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "책 제목이 대수(algebra)가 되고 이름이 알고리즘(algorithm)이 된 사람. 다만 그는 알고리즘을 발명하지 않았고, 그가 일했다는 「지혜의 집」도 우리가 아는 그 모습이 아니었을 수 있다.",
+   "태그": [
+    "수학사",
+    "알콰리즈미",
+    "대수학",
+    "알자브르",
+    "알고리즘",
+    "이차방정식",
+    "지혜의 집",
+    "인도숫자",
+    "바그다드",
+    "9세기"
+   ],
+   "생몰": {
+    "출생": 780,
+    "사망": 850,
+    "출생지": "화레즘(추정) — 오늘날 우즈베키스탄 일대"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학산책) 「알 콰리즈미」 — 무하마드 알 콰리즈미(780?~850?)가 일반적으로 중세 이슬람의 가장 중요한 수학자로 인정받으며 '대수학의 아버지'로 불리는데, 그 존칭은 고대 그리스의 디오판토스도 함께 받는다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582427&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「알 콰리즈미」 — Muḥammad ibn Mūsā al-Khwārizmī(780?~850?)를 페르시아의 수학자로 적으며, 인도에서 도입된 아라비아 숫자를 이용한 사칙연산을 다뤘다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3473264&cid=58439&categoryId=58439",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(인명사전) 「콰리즈미」 — 이슬람의 수학자·천문학자·지리학자로 바그다드의 알 마문 도서관과 바그다드 천문대에서 일하며 그리스와 인도의 지식을 조화시켰고, 그의 산술책이 인도식으로 숫자 적는 법을 전했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=885714&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(이슬람사전) 「지혜의 집」 — 830년 칼리프 마문(833년 죽음)이 그리스어로 된 철학과 과학책을 아랍어로 번역할 목적으로 바그다드에 세운 학술원이라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=2051553&cid=62098&categoryId=62098",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과 「바이트 알히크마」 — '지혜의 집'이라는 뜻으로, 아바스 왕조 시절 830년에 설립된 연구 및 번역 전문 기관이라는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=814043&cid=43141&categoryId=43141",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(학문명백과) 「대수학」 — 대수학은 수 대신에 문자를 사용하여 방정식의 풀이 방법이나 대수적 구조를 연구하는 학문이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098120&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Britannica, al-Khwarizmi — 생몰과 활동을 개관하는 표준 전기 항목",
+     "URL": "https://www.britannica.com/biography/al-Khwarizmi",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』이고 830년 무렵 칼리프 마문의 권유로 쓰였다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했으며 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Algorism — 12세기 라틴 번역 제목이 『Algoritmi de numero Indorum』이고 Algoritmi 가 이름의 라틴화라는 것, 중세 라틴어 algorismus 는 그저 십진 기수법을 뜻했다는 것, 17세기에 프랑스어에서 logarithm 을 본떠 algorithm 으로 형태가 바뀌었고 현대적 의미는 19세기 말에야 붙었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Algorism",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "The Renaissance Mathematicus, \"Al-Khwarizmi didn't in any way originate, invent or create the algorithm\" — 알콰리즈미가 알고리즘을 창안·발명했다는 널리 퍼진 서술을 반박하는 과학사 논평",
+     "URL": "https://thonyc.wordpress.com/2026/05/06/al-khwarizmi-didnt-in-any-way-originate-invent-or-create-the-algorithm/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "HandWiki, House of Wisdom — 디미트리 구타스가 「지혜의 집」의 존재와 그 형태·기능을 문제 삼으며 Bayt al-Hikma 가 '창고'를 뜻하는 Khizanat al-Hikma 의 오역이라 보고, 당대 사료에 그 이름이 거의 나오지 않는다고 지적한다는 것",
+     "URL": "https://handwiki.org/wiki/Organization:House_of_Wisdom",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "Wikipedia, Al-Khwarizmi — 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Al-Khwarizmi",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-al-khwarizmi/note.md",
+   "세기전체": [
+    9
+   ],
+   "자수": 7409,
+   "시각화": 6
+  },
+  {
    "유형": "개념",
    "제목": "무한급수",
    "슬러그": "concept-series",
@@ -10339,7 +10468,8 @@
     "concept-algebra-notation"
    ],
    "9": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-al-khwarizmi"
    ],
    "14": [
     "concept-series"
@@ -10502,6 +10632,7 @@
     "concept-logarithm",
     "concept-logarithm-advanced",
     "episode-namdaemun-1947",
+    "person-al-khwarizmi",
     "person-cardano",
     "person-cauchy",
     "person-dedekind",
@@ -10679,6 +10810,7 @@
    "천문학": [
     "century-bc3",
     "episode-huygens-anagram",
+    "person-al-khwarizmi",
     "person-euler",
     "person-gauss",
     "person-gregory",
@@ -10711,6 +10843,12 @@
    ],
    "통계학": [
     "concept-probability-advanced"
+   ],
+   "산술": [
+    "person-al-khwarizmi"
+   ],
+   "지리학": [
+    "person-al-khwarizmi"
    ],
    "광학": [
     "person-barrow",
@@ -10805,6 +10943,7 @@
     "concept-complex-number-advanced",
     "concept-function",
     "concept-logarithm",
+    "person-al-khwarizmi",
     "person-cardano",
     "person-napier",
     "person-tartaglia"
@@ -10937,6 +11076,7 @@
     "episode-priority-dispute"
    ],
    "인물": [
+    "person-al-khwarizmi",
     "person-archimedes",
     "person-barrow",
     "person-bayes",
@@ -11020,6 +11160,7 @@
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
     "episode-priority-dispute",
+    "person-al-khwarizmi",
     "person-archimedes",
     "person-barrow",
     "person-bayes",
@@ -11378,7 +11519,8 @@
    ],
    "대수학": [
     "concept-algebra-notation",
-    "concept-algebra-notation-advanced"
+    "concept-algebra-notation-advanced",
+    "person-al-khwarizmi"
    ],
    "기호법": [
     "concept-algebra-notation",
@@ -11394,7 +11536,8 @@
     "concept-algebra-notation"
    ],
    "알콰리즈미": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-al-khwarizmi"
    ],
    "비에트": [
     "concept-algebra-notation",
@@ -11417,7 +11560,8 @@
     "concept-algebra-notation"
    ],
    "9세기": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-al-khwarizmi"
    ],
    "동차성": [
     "concept-algebra-notation-advanced"
@@ -11883,6 +12027,24 @@
    "연속": [
     "episode-prague-1834"
    ],
+   "알자브르": [
+    "person-al-khwarizmi"
+   ],
+   "알고리즘": [
+    "person-al-khwarizmi"
+   ],
+   "이차방정식": [
+    "person-al-khwarizmi"
+   ],
+   "지혜의 집": [
+    "person-al-khwarizmi"
+   ],
+   "인도숫자": [
+    "person-al-khwarizmi"
+   ],
+   "바그다드": [
+    "person-al-khwarizmi"
+   ],
    "원주율": [
     "person-archimedes",
     "person-gregory"
@@ -12187,7 +12349,7 @@
     "concept-algebra-notation",
     "concept-algebra-notation-advanced"
    ],
-   "알콰리즈미": [
+   "person-al-khwarizmi": [
     "concept-algebra-notation"
    ],
    "person-fermat": [
@@ -12675,6 +12837,12 @@
      "제목": "해석기하",
      "유형": "개념",
      "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-al-khwarizmi",
+     "제목": "알콰리즈미",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-descartes",
@@ -15483,6 +15651,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-al-khwarizmi",
+     "제목": "알콰리즈미",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-archimedes",
      "제목": "아르키메데스",
      "유형": "인물",
@@ -16887,6 +17061,14 @@
      "경로": "관련인물"
     }
    ],
+   "century-bc3": [
+    {
+     "슬러그": "person-al-khwarizmi",
+     "제목": "알콰리즈미",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "episode-bernoulli-tomb": [
     {
      "슬러그": "person-archimedes",
@@ -17332,6 +17514,15 @@
   "우선권 논쟁": "episode-priority-dispute",
   "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "표절 시비": "episode-priority-dispute",
+  "al-Khwarizmi": "person-al-khwarizmi",
+  "al-Khwārizmī": "person-al-khwarizmi",
+  "person-al-khwarizmi": "person-al-khwarizmi",
+  "무함마드 이븐 무사 알콰리즈미": "person-al-khwarizmi",
+  "알 콰리즈미": "person-al-khwarizmi",
+  "알콰리즈미": "person-al-khwarizmi",
+  "인물_알콰리즈미": "person-al-khwarizmi",
+  "콰리즈미": "person-al-khwarizmi",
+  "호라즈미": "person-al-khwarizmi",
   "Archimedes": "person-archimedes",
   "person-archimedes": "person-archimedes",
   "시라쿠사의 아르키메데스": "person-archimedes",
