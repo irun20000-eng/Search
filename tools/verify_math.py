@@ -101,6 +101,35 @@ TYPE_REQUIRED = {
     "세기": ["연대", "시대이슈"],
 }
 
+# 스키마에 있는 필드 전부. 여기 없는 키는 거부한다.
+#
+# ■ 왜 미지 필드를 막나 (2026-09-02)
+#
+#   frontmatter 는 아무 키나 받아 주므로, 없는 필드를 적어도 아무 일도 나지 않는다.
+#   실측: `관련세기` 가 3편에, `위키링크` 가 1편에 있었는데 `tools/` 도 `index.html` 도
+#   읽지 않는 **죽은 메타데이터**였다. 소비자가 없으니 값이 틀려도 드러나지 않아,
+#   `person-diophantus`(3세기 AD)에 `관련세기: [century-bc3]`(기원전 3세기)가
+#   프론트매터 복사로 딸려 와서도 모든 게이트를 통과했다.
+#
+#   `위키링크` 쪽은 더 조용한 실패였다 — 본문에 이미 13종이 있는데 프론트매터에는
+#   4종만 적혀 있었다. 아무도 읽지 않으니 **낡아도 낡은 줄 모른다.**
+#
+#   그래서 규칙을 문서가 아니라 여기에 둔다. 새 필드가 필요하면 이 목록과
+#   `build_math_manifest.py` 의 CARD_FIELDS, 그리고 실제로 읽는 코드를 **함께** 만든다.
+#   (LESSONS "frontmatter 필드를 새로 만들기 전에 그것을 읽는 코드가 있는지 확인한다")
+KNOWN_FIELDS = set(COMMON_REQUIRED) | {f for v in TYPE_REQUIRED.values() for f in v} | {
+    # 공통 선택
+    "별칭", "분야", "교과", "난이도", "태그", "이미지", "갤러리URL",
+    # 개념 (트랙·발전단계·기여인물은 TYPE_REQUIRED 에서 온다)
+    "짝문서", "선행개념", "후속개념",
+    # 인물 (생몰은 TYPE_REQUIRED)
+    "기여개념", "관련일화",
+    # 일화 (사실성·사실성근거는 TYPE_REQUIRED)
+    "관련인물", "관련개념",
+    # 세기 (연대·시대이슈는 TYPE_REQUIRED)
+    "세계사사건",
+}
+
 
 def gate_key(fm):
     if fm.get("유형") == "개념":
@@ -132,6 +161,12 @@ def check_note(slug, path):
     d = fm.get("날짜")
     if d is not None and not (isinstance(d, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)):
         E('날짜는 "YYYY-MM-DD" 꼴 문자열이어야 한다 (따옴표 필수): %r' % (d,))
+
+    unknown = sorted(set(fm) - KNOWN_FIELDS)
+    if unknown:
+        E("스키마에 없는 frontmatter 필드: %s  "
+          "(읽는 코드 없이 적으면 죽은 메타데이터가 된다 — "
+          "정말 필요하면 KNOWN_FIELDS·CARD_FIELDS·소비자를 함께 만들 것)" % unknown)
 
     typ = fm.get("유형")
     if typ not in M.TYPES:

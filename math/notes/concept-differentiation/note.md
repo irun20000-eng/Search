@@ -112,7 +112,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3570884&cid=58944&categoryId=58970
     유형: 2차
 
-위키링크: ["[[미적분의 발견]]", "[[미적분의 엄밀화]]", "[[평균값 정리]]", "[[다항함수]]"]
 갤러리URL: "#n=concept-differentiation"
 ---
 
