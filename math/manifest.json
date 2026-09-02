@@ -716,7 +716,8 @@
     "concept-complex-number"
    ],
    "기여인물": [
-    "person-descartes"
+    "person-descartes",
+    "person-diophantus"
    ],
    "출처": [
     {
@@ -898,7 +899,7 @@
     },
     {
      "번호": 11,
-     "제목": "Wikipedia, Fermat's Last Theorem — 페르마가 읽던 책이 1621년 바셰가 펴낸 『산술』 라틴어 대역판이고, 1637년 무렵 제2권 문제 8의 여백에 메모를 적었다는 것, 와일스의 증명이 1994년에 완성되었다는 것",
+     "제목": "Wikipedia, Fermat's Last Theorem — 페르마가 읽던 책이 1621년 바셰가 펴낸 『산술』 라틴어 대역판이고, 1637년 무렵 제2권 문제 8의 여백에 메모를 적었다는 것, 그가 죽은 뒤 아들 사뮈엘이 그 메모를 실은 판을 1670년에 펴냈다는 것, 와일스의 증명이 1994년에 완성되었다는 것",
      "URL": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
      "유형": "2차"
     },
@@ -907,13 +908,31 @@
      "제목": "arXiv 1210.7750, \"Almost equal: The method of adequality from Diophantus to Fermat and beyond\" — 페르마의 adaequalitas 가 디오판토스의 παρισότης(파리소테스, 근사적 같음)를 바셰가 라틴어로 옮긴 낱말에서 왔다는 것",
      "URL": "https://arxiv.org/abs/1210.7750",
      "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과(수학산책) 「알 콰리즈미」 — 알 콰리즈미가 일반적으로 중세 이슬람의 가장 중요한 수학자로 인정받으며 '대수학의 아버지'로 불리는데, 그 존칭을 고대 그리스의 디오판토스도 함께 받는다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582427&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 『알자브르』가 이차방정식을 여섯 가지 기본 유형으로 분류해 각각의 대수적·기하학적 해법을 세웠고 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 가 복원·완성을 뜻하며 그 낱말이 algebra 가 되었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "Wikiquote, History of algebra (네셀만의 3단계 인용 모음) — 1842년 네셀만이 대수의 발전을 수사적·생략적·기호적 세 단계로 나누었다는 것, 디오판토스가 산문과 함께 약간의 속기를 쓴 생략적 대수의 선구자 가운데 하나라는 것, 대조적으로 『알자브르』의 대수는 완전히 수사적이고 『산술』은 생략적이라는 것",
+     "URL": "https://en.wikiquote.org/wiki/History_of_algebra",
+     "유형": "2차"
     }
    ],
    "path": "notes/person-diophantus/note.md",
    "세기전체": [
     3
    ],
-   "자수": 8751,
+   "자수": 9458,
    "시각화": 7
   },
   {
@@ -16504,6 +16523,14 @@
      "제목": "니콜로 타르탈리아",
      "유형": "인물",
      "경로": "본문"
+    }
+   ],
+   "person-diophantus": [
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "기여인물"
     }
    ],
    "concept-algebra-notation-advanced": [
