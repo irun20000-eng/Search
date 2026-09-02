@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-01",
+ "generated": "2026-09-02",
  "notes": [
   {
    "유형": "세기",
@@ -789,6 +789,132 @@
    ],
    "자수": 7843,
    "시각화": 6
+  },
+  {
+   "유형": "인물",
+   "제목": "디오판토스",
+   "슬러그": "person-diophantus",
+   "날짜": "2026-09-02",
+   "별칭": [
+    "디오판투스",
+    "디오판토스의 산술",
+    "Diophantus",
+    "Diophantos",
+    "Diophantus of Alexandria"
+   ],
+   "볼트파일명": "인물_디오판토스",
+   "세기": [
+    3
+   ],
+   "분야": [
+    "정수론",
+    "대수학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "우리가 그의 나이를 아는 유일한 통로가 후대의 수수께끼 시 한 편인 사람. 그가 남긴 『산술』은 절반이 사라졌고, 그 사라지다 남은 책의 여백에서 페르마의 마지막 정리가 태어났다.",
+   "태그": [
+    "수학사",
+    "디오판토스",
+    "산술",
+    "정수론",
+    "부정방정식",
+    "디오판토스방정식",
+    "묘비명",
+    "페르마",
+    "알렉산드리아",
+    "3세기"
+   ],
+   "생몰": {
+    "출생": 200,
+    "사망": 284,
+    "출생지": "알렉산드리아(활동지) — 출생지는 전하지 않는다"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과 「디오판토스의 묘비명」 — 그의 생애에 대해 알려진 것이 거의 없고 묘비에 새겨졌다고 전하는 수수께끼 형태의 글이 나이를 알려 준다는 것, 그 조건(생애의 1/6이 소년기, 1/12이 청년기, 다시 1/7이 지나 결혼, 5년 뒤 아들, 아들은 아버지 수명의 절반을 살고, 아들이 죽은 4년 뒤 아버지가 죽었다)",
+     "URL": "https://terms.naver.com/entry.naver?docId=1528896",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과 「디오판토스는 몇 살까지 살았을까」 — 같은 묘비 문제를 일차방정식으로 세워 84세라는 답을 얻는 풀이",
+     "URL": "https://terms.naver.com/entry.naver?docId=3552245",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과 「디오판토스 방정식」 — 정수 계수를 갖는 부정방정식에서 정수해(또는 유리수해)만을 구하는 문제를 가리키는 이름이고 그 이름이 디오판토스에게서 왔다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338477",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과 「부정(不定)」 — 미지수의 개수가 식의 개수보다 많아 해가 하나로 정해지지 않는 상태를 가리키는 용어 설명",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338117",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과 「페르마의 마지막 정리」 — 페르마가 디오판토스 『산술』의 여백에 \"이 정리의 놀라운 증명을 발견했으나 여백이 좁아 적지 않는다\"는 메모를 남겼다는 것과 정리의 진술",
+     "URL": "https://terms.naver.com/entry.naver?docId=3476460",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과 「357년 만에 증명된 페르마의 마지막 정리」 — 앤드루 와일스가 1994년에 증명을 완성하기까지 걸린 시간을 357년으로 세는 서술",
+     "URL": "https://terms.naver.com/entry.naver?docId=6510683",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Diophantus of Alexandria — 생몰을 약 200년~약 284년으로 적으며 그의 생애에 관한 확실한 정보가 거의 없다는 것, 나이의 근거가 후대 선집에 실린 수수께끼라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Diophantus/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Diophantus — 『산술』이 원래 13권이었다고 전하나 그리스어로 남은 것은 6권이고, 1968년 아랍어 번역본으로 4권이 더 발견되었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Diophantus",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, Metrodorus (grammarian) — 묘비 수수께끼가 실린 『그리스 사화집』 제14권의 수학 경구들을 모은 편찬자가 5~6세기의 문법학자 메트로도로스로 전해지며 그 시기가 확실치 않다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Metrodorus_(grammarian)",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "ProofWiki, Epitaph of Diophantus — 묘비 수수께끼의 전문과 그것을 방정식으로 옮긴 풀이, 답이 84라는 것",
+     "URL": "https://proofwiki.org/wiki/Diophantus%27s_Riddle",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "Wikipedia, Fermat's Last Theorem — 페르마가 읽던 책이 1621년 바셰가 펴낸 『산술』 라틴어 대역판이고, 1637년 무렵 제2권 문제 8의 여백에 메모를 적었다는 것, 와일스의 증명이 1994년에 완성되었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "arXiv 1210.7750, \"Almost equal: The method of adequality from Diophantus to Fermat and beyond\" — 페르마의 adaequalitas 가 디오판토스의 παρισότης(파리소테스, 근사적 같음)를 바셰가 라틴어로 옮긴 낱말에서 왔다는 것",
+     "URL": "https://arxiv.org/abs/1210.7750",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-diophantus/note.md",
+   "세기전체": [
+    3
+   ],
+   "자수": 8751,
+   "시각화": 7
   },
   {
    "유형": "인물",
@@ -10465,7 +10591,8 @@
     "person-euclid"
    ],
    "3": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-diophantus"
    ],
    "9": [
     "concept-algebra-notation",
@@ -10637,6 +10764,7 @@
     "person-cauchy",
     "person-dedekind",
     "person-descartes",
+    "person-diophantus",
     "person-hilbert",
     "person-jakob-bernoulli",
     "person-napier",
@@ -10760,6 +10888,7 @@
     "century-18c",
     "concept-series-advanced",
     "person-dedekind",
+    "person-diophantus",
     "person-dirichlet",
     "person-euler",
     "person-fermat",
@@ -10945,6 +11074,7 @@
     "concept-logarithm",
     "person-al-khwarizmi",
     "person-cardano",
+    "person-diophantus",
     "person-napier",
     "person-tartaglia"
    ],
@@ -11088,6 +11218,7 @@
     "person-de-moivre",
     "person-dedekind",
     "person-descartes",
+    "person-diophantus",
     "person-dirichlet",
     "person-euclid",
     "person-euler",
@@ -11168,6 +11299,7 @@
     "person-dalembert",
     "person-de-moivre",
     "person-descartes",
+    "person-diophantus",
     "person-dirichlet",
     "person-euclid",
     "person-euler",
@@ -11486,7 +11618,8 @@
     "century-bc3"
    ],
    "알렉산드리아": [
-    "century-bc3"
+    "century-bc3",
+    "person-diophantus"
    ],
    "무세이온": [
     "century-bc3"
@@ -11533,7 +11666,8 @@
     "concept-algebra-notation"
    ],
    "디오판토스": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-diophantus"
    ],
    "알콰리즈미": [
     "concept-algebra-notation",
@@ -11557,7 +11691,8 @@
     "concept-algebra-notation"
    ],
    "3세기": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-diophantus"
    ],
    "9세기": [
     "concept-algebra-notation",
@@ -11619,6 +11754,7 @@
     "concept-differentiation",
     "concept-probability",
     "episode-pascal-fermat-letters",
+    "person-diophantus",
     "person-fermat"
    ],
    "방정식": [
@@ -12100,6 +12236,22 @@
    "방법서설": [
     "person-descartes"
    ],
+   "산술": [
+    "person-diophantus"
+   ],
+   "정수론": [
+    "person-diophantus",
+    "person-fermat"
+   ],
+   "부정방정식": [
+    "person-diophantus"
+   ],
+   "디오판토스방정식": [
+    "person-diophantus"
+   ],
+   "묘비명": [
+    "person-diophantus"
+   ],
    "디리클레급수": [
     "person-dirichlet"
    ],
@@ -12143,9 +12295,6 @@
     "person-leibniz"
    ],
    "극대극소": [
-    "person-fermat"
-   ],
-   "정수론": [
     "person-fermat"
    ],
    "열방정식": [
@@ -12339,7 +12488,7 @@
     "episode-descartes-fly",
     "person-huygens"
    ],
-   "디오판토스": [
+   "person-diophantus": [
     "concept-algebra-notation"
    ],
    "레코드": [
@@ -12847,6 +12996,12 @@
     {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -13415,6 +13570,12 @@
     {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
      "유형": "인물",
      "경로": "본문"
     },
@@ -15681,6 +15842,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-kolmogorov",
      "제목": "안드레이 콜모고로프",
      "유형": "인물",
@@ -17067,6 +17234,12 @@
      "제목": "알콰리즈미",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "episode-bernoulli-tomb": [
@@ -17113,6 +17286,14 @@
     {
      "슬러그": "person-bayes",
      "제목": "토마스 베이즈",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-al-khwarizmi": [
+    {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
      "유형": "인물",
      "경로": "본문"
     }
@@ -17607,6 +17788,14 @@
   "르네 데카르트": "person-descartes",
   "르네데카르트": "person-descartes",
   "인물_르네 데카르트": "person-descartes",
+  "Diophantos": "person-diophantus",
+  "Diophantus": "person-diophantus",
+  "Diophantus of Alexandria": "person-diophantus",
+  "person-diophantus": "person-diophantus",
+  "디오판토스": "person-diophantus",
+  "디오판토스의 산술": "person-diophantus",
+  "디오판투스": "person-diophantus",
+  "인물_디오판토스": "person-diophantus",
   "Dirichlet": "person-dirichlet",
   "Lejeune Dirichlet": "person-dirichlet",
   "person-dirichlet": "person-dirichlet",
