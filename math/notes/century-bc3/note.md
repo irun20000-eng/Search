@@ -114,7 +114,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/
     유형: 2차
 
-관련세기: [century-16c]
 기여인물: [person-euclid, person-archimedes]
 ---
 

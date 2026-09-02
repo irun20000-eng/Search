@@ -18,7 +18,6 @@
   출생지: 화레즘(추정) — 오늘날 우즈베키스탄 일대
 
 기여개념: [concept-algebra-notation]
-관련세기: [century-bc3]
 
 출처:
   - 번호: 1
