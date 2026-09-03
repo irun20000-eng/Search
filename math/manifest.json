@@ -2153,6 +2153,146 @@
   },
   {
    "유형": "인물",
+   "제목": "로버트 레코드",
+   "슬러그": "person-recorde",
+   "날짜": "2026-09-03",
+   "별칭": [
+    "레코드",
+    "로버트레코드",
+    "Recorde",
+    "Robert Recorde",
+    "Record"
+   ],
+   "볼트파일명": "인물_로버트 레코드",
+   "세기": [
+    16
+   ],
+   "분야": [
+    "대수학",
+    "산술",
+    "기하학",
+    "천문학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "등호를 만든 사람으로만 기억되지만, 그가 한 일은 수학을 라틴어에서 영어로 옮긴 것이다. 그렇게 만든 네 권의 교과서 가운데 마지막 책이 나온 해에 £1000 배상 판결을 받았고, 이듬해 감옥에서 죽었다.",
+   "태그": [
+    "수학사",
+    "레코드",
+    "등호",
+    "기호법",
+    "영어",
+    "수학교과서",
+    "대화체",
+    "지혜의숫돌",
+    "웨일스",
+    "16세기"
+   ],
+   "생몰": {
+    "출생": 1510,
+    "사망": 1558,
+    "출생지": "텐비, 웨일스 — 출생 연도는 자료가 갈린다(1510 / 약 1512)"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Robert Recorde — 1510년 웨일스 텐비에서 태어나 1558년에 죽었다는 것, 토머스와 로즈의 둘째 아들로 1525년 무렵 옥스퍼드에 들어간 것으로 여겨지나 확실하지 않다는 것, 1531년 학사 학위를 받고 그해 올소울스 칼리지 펠로로 뽑혔다는 것, 옥스퍼드에서 의학을 공부했고 케임브리지로 옮겨 **1545년 의학박사(M.D.) 학위**를 받았으며 그 뒤 런던에서 의사로 일했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 그가 **아주 의도적인 정책**으로 초급 교과서를 여러 권 썼다는 것, **완전한 수학 교육 과정**을 만들려 했고 **배워야 할 순서대로** 책을 썼다는 것, 그 과정을 **라틴어나 그리스어를 읽을 수 있는 소수의 교육받은 사람만이 아니라 모두가** 쓸 수 있게 하려 했으므로 **책을 전부 영어로 썼고** 분명하고 쉬운 표현을 쓰려 했다는 것, 그가 **영국 수학 학파를 사실상 세웠고 대수를 영국에 처음 들여왔다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 네 권의 제목·연도·내용. 『Grounde of Artes』(1543, 상업 산술 — 아라비아 숫자 연산·계산봉·비례·삼률법을 다루고 1549·1550년 재판, 1552년 증보판에서 유리수와 '가정법'까지 넓힘), 『Pathwaie to Knowledge』(1551, 유클리드 『원론』의 축약으로 보는 이들이 있으며 **그의 책 가운데 유일하게 대화체가 아니고** 증명 대신 정리가 왜 참인지를 설명한다), 『Castle of Knowledge』(1556, 프톨레마이오스 천문학 입문이며 **코페르니쿠스의 지동설이 언급된다**), 『Whetstone of Witte』(1557)",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 1549년 브리스틀 조폐국 감사관에 임명됐고 허버트가 그를 반역으로 고발해 자리에서 밀어내면서 조폐국이 생산을 멈췄으며 그가 60일간 궁정에 억류됐다는 것, 1551년 왕이 그를 **아일랜드 광산·화폐 총감독관**으로 임명해 웩스퍼드 은광을 맡고 더블린 조폐국을 기술 감독했다는 것, 그가 도입한 **5실링 은화 크라운이 로마 숫자가 아니라 아라비아 숫자로 날짜를 적은 최초의 영국 주화**라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 1551년 10월 허버트가 펨브룩 백작이 됐고, 1556년 레코드가 궁정 자리를 되찾으려고 펨브룩을 부정행위로 고발한 것이 **아주 어리석은 수**였다는 것, 펨브룩이 명예훼손으로 맞소송해 1556년 10월 16일 소장이 송달되고 1557년 1월 심리가 열려 **2월 10일 £1000 배상 판결**이 났다는 것, 그가 그 돈을 낼 수 없었거나 내지 않아 투옥됐다는 것, **아일랜드 복무 대가로 그가 받지 못한 액수가 정확히 £1000이었고 그 돈은 1570년에야 유산에 지급돼 그가 죽은 지 12년 뒤였다**는 것, 서더크 킹스벤치 감옥에서 **1558년 6월 28일** 네 아들과 다섯 딸에게 적은 돈을 남기는 유언장을 쓰고 아마 몇 주 안에 감옥에서 죽었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 등호가 1557년 『Whetstone of Witte』에 나오며 그가 길이가 같은 평행선 두 도막을 쓴 이유를 **\"bicause noe 2 thynges can be moare equalle\"** 라 적었다는 것, **= 가 곧바로 인기를 얻지 못해 `||` 를 쓰는 사람도 있었고 'aequalis'에서 온 `ae`(또는 `oe`)가 1700년대까지 널리 쓰였다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Robert Recorde (같은 항목) — 책 제목이 **말장난**이라는 것, `cosa`가 초기 대수에서 미지수를 가리키는 '것'을 뜻해 대수학자를 `cossist`, 대수를 `cossic art`라 불렀고 1525년 루돌프가 최초의 독일어 대수책 『Coss』를 냈다는 것, `cos`는 면도날과 연장을 가는 **숫돌**을 뜻하므로 **\"수학적 재치를 가는 숫돌\"** 이라는 말장난이 된다는 것, 책이 1555년 세바스천 캐벗이 세워 영러 무역을 독점한 상인 모험가 조합 **머스코비 회사에 헌정**됐다는 것, 이 책이 **산술의 제2부**로 근의 추출·방정식론·무리수 계산을 다루며 제1부가 『Grounde of Artes』라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Recorde/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, Robert Recorde — 머리글은 생몰을 **c.1510–1558** 로 적는데 같은 문서의 초상 설명은 **c.1512–1558** 로 적어 한 문서 안에서 어긋난다는 것, 그가 웨일스의 의사이자 수학자로 등호를 만들었고 **이미 있던 `+`와 `−`를 1557년 영어권에 소개**했다는 것, 정적에게 명예훼손으로 피소된 뒤 빚으로 체포돼 **1558년 6월 중순까지는** 서더크 킹스벤치 감옥에서 죽었다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Robert_Recorde",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, The Whetstone of Witte — 전체 제목이 『The Whetstone of Witte, whiche is the seconde parte of Arithmeteke: containing thextraction of rootes; the cossike practise, with the rule of equation; and the workes of Surde Nombers』(London, 1557)이고 **영어로 된 최초의 대수책**이며 등호가 인쇄본에 도입된 책이라는 것, 이 책의 출간으로 레코드가 **체계적 표기와 함께 대수를 브리튼 섬에 들여온 공로**를 인정받는다는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Whetstone_of_Witte",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학백과) 「등호」 — **누가 처음 썼는지 분명하지 않지만** 영국의 수학자 레코드(1510~1558)가 1557년 처음 쓴 것으로 **추측된다**는 것, 그가 **오늘날 쓰는 등호보다 긴 기호**를 썼다는 것, 그가 밝힌 이유가 '왜냐하면 어떠한 두 개도 이것보다 더 같을 수 없기 때문이다(thus: =, because noe. 2. thynges, can be moare equalle)'라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338075&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(학문명백과) 「대수학」 — 대수학은 수 대신에 문자를 사용하여 방정식의 풀이 방법이나 대수적 구조를 연구하는 학문이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098120&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(학문명백과) 「기하학」 — 기하학은 선과 면, 도형 등 기하학적인 대상의 모양·크기·상대적 위치와 공간의 성질을 연구하는 수학의 한 갈래라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098122&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과(인명사전) 「유클리드」 — 기원전 3세기경의 그리스 수학자이자 기하학의 창시자이며 그의 생애에 관해서는 알려진 바가 없다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=883533&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과 「지구의 회전에 관하여」 — 코페르니쿠스가 **죽던 해에 공간(公刊)된** 지동설에 관한 책이며 전6권으로 제1권에 지동설의 전 사상이 집약되어 있고 제2권 이하는 그 수학적 전개에 할애되었다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1622597&cid=50316&categoryId=50316",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-recorde/note.md",
+   "세기전체": [
+    16
+   ],
+   "자수": 7803,
+   "시각화": 5
+  },
+  {
+   "유형": "인물",
    "제목": "니콜로 타르탈리아",
    "슬러그": "person-tartaglia",
    "날짜": "2026-08-31",
@@ -10781,6 +10921,7 @@
     "concept-logarithm",
     "person-cardano",
     "person-napier",
+    "person-recorde",
     "person-tartaglia",
     "person-viete"
    ],
@@ -10941,6 +11082,7 @@
     "person-hilbert",
     "person-jakob-bernoulli",
     "person-napier",
+    "person-recorde",
     "person-tartaglia",
     "person-viete"
    ],
@@ -10963,6 +11105,7 @@
     "person-huygens",
     "person-klein",
     "person-pascal",
+    "person-recorde",
     "person-riemann",
     "person-tartaglia"
    ],
@@ -11119,6 +11262,7 @@
     "person-gauss",
     "person-gregory",
     "person-huygens",
+    "person-recorde",
     "person-viete"
    ],
    "측량": [
@@ -11150,7 +11294,8 @@
     "concept-probability-advanced"
    ],
    "산술": [
-    "person-al-khwarizmi"
+    "person-al-khwarizmi",
+    "person-recorde"
    ],
    "지리학": [
     "person-al-khwarizmi"
@@ -11252,6 +11397,7 @@
     "person-cardano",
     "person-diophantus",
     "person-napier",
+    "person-recorde",
     "person-tartaglia",
     "person-viete"
    ],
@@ -11419,6 +11565,7 @@
     "person-newton",
     "person-pascal",
     "person-poincare",
+    "person-recorde",
     "person-riemann",
     "person-tartaglia",
     "person-viete",
@@ -11499,6 +11646,7 @@
     "person-newton",
     "person-pascal",
     "person-poincare",
+    "person-recorde",
     "person-riemann",
     "person-tartaglia",
     "person-viete"
@@ -11511,6 +11659,7 @@
     "concept-logarithm",
     "person-cardano",
     "person-napier",
+    "person-recorde",
     "person-tartaglia",
     "person-viete"
    ],
@@ -11839,6 +11988,7 @@
    "기호법": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
+    "person-recorde",
     "person-viete"
    ],
    "문자식": [
@@ -11869,10 +12019,12 @@
     "person-descartes"
    ],
    "레코드": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-recorde"
    ],
    "등호": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-recorde"
    ],
    "3세기": [
     "concept-algebra-notation",
@@ -12642,6 +12794,21 @@
    "미타그레플레르": [
     "person-poincare"
    ],
+   "영어": [
+    "person-recorde"
+   ],
+   "수학교과서": [
+    "person-recorde"
+   ],
+   "대화체": [
+    "person-recorde"
+   ],
+   "지혜의숫돌": [
+    "person-recorde"
+   ],
+   "웨일스": [
+    "person-recorde"
+   ],
    "리만적분": [
     "person-riemann"
    ],
@@ -12683,7 +12850,7 @@
    "person-diophantus": [
     "concept-algebra-notation"
    ],
-   "레코드": [
+   "person-recorde": [
     "concept-algebra-notation"
    ],
    "person-viete": [
@@ -13200,6 +13367,12 @@
     {
      "슬러그": "person-euclid",
      "제목": "유클리드",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -16062,6 +16235,12 @@
      "제목": "블레즈 파스칼",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-bolzano": [
@@ -16710,6 +16889,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-tartaglia",
      "제목": "니콜로 타르탈리아",
      "유형": "인물",
@@ -16728,6 +16913,12 @@
      "제목": "대수 기호법",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-viete",
@@ -17585,6 +17776,14 @@
      "유형": "인물",
      "경로": "관련일화"
     }
+   ],
+   "person-viete": [
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
+    }
    ]
   }
  },
@@ -18228,6 +18427,14 @@
   "쥘 앙리 푸앵카레": "person-poincare",
   "푸앵카레": "person-poincare",
   "푸앵카레 추측": "person-poincare",
+  "Record": "person-recorde",
+  "Recorde": "person-recorde",
+  "Robert Recorde": "person-recorde",
+  "person-recorde": "person-recorde",
+  "레코드": "person-recorde",
+  "로버트 레코드": "person-recorde",
+  "로버트레코드": "person-recorde",
+  "인물_로버트 레코드": "person-recorde",
   "Bernhard Riemann": "person-riemann",
   "Riemann": "person-riemann",
   "person-riemann": "person-riemann",
