@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02",
+ "generated": "2026-09-03",
  "notes": [
   {
    "유형": "세기",
@@ -2256,6 +2256,159 @@
    ],
    "자수": 5907,
    "시각화": 4
+  },
+  {
+   "유형": "인물",
+   "제목": "프랑수아 비에트",
+   "슬러그": "person-viete",
+   "날짜": "2026-09-02",
+   "별칭": [
+    "비에트",
+    "비에타",
+    "프랑수아비에트",
+    "Viète",
+    "Viete",
+    "François Viète",
+    "Vieta"
+   ],
+   "볼트파일명": "인물_프랑수아 비에트",
+   "세기": [
+    16
+   ],
+   "분야": [
+    "대수학",
+    "삼각법",
+    "천문학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "본업이 법이었고 수학은 여가에 했다고 스스로 적은 사람. 종교 때문에 궁정에서 쫓겨난 5년이 그의 가장 중요한 수학을 만들었고, 왕에게 돌아온 뒤로는 적국의 암호를 풀었다.",
+   "태그": [
+    "수학사",
+    "비에트",
+    "대수학",
+    "기호법",
+    "미지수",
+    "암호해독",
+    "위그노",
+    "근과계수의관계",
+    "원주율",
+    "16세기"
+   ],
+   "생몰": {
+    "출생": 1540,
+    "사망": 1603,
+    "출생지": "퐁트네르콩트, 푸아투(오늘날 방데) — 프랑스"
+   },
+   "기여개념": [
+    "concept-algebra-notation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, François Viète — 1540년 퐁트네르콩트에서 태어나 1603년 12월 13일 파리에서 죽었다는 것, 아버지 에티엔이 변호사였고 1560년 법학 학위를 받아 4년간 법조계에 있었다는 것, 직업 수학자였던 적이 한 번도 없다는 것, **1562년 프랑스 종교전쟁이 시작됐다**는 것, 1564년 앙투아네트 도베테르의 집에 들어가 딸 카트린의 교육을 맡았다는 것, **첫 수학 저작이 1571년 파리에서 나왔다**는 것, 1573년 10월 24일 샤를 9세가 그를 렌에 있던 브르타뉴 정부에 임명했다는 것, **1584년 앙리 3세의 동생이 죽고 신교도인 나바르의 앙리가 왕위 계승자가 되면서 가톨릭 신성동맹이 강해졌고 알려진 위그노였던 그의 자리가 버틸 수 없게 되어 정치적 적들에게 궁정에서 추방됐다**는 것, 보부아르쉬르메르에서 5년을 보냈고 **그의 가장 중요한 수학이 그 시기에 이루어졌다**는 것, **1589년 4월 앙리 3세가 그를 투르의 의회로 다시 불렀고 그해 8월 1일 앙리 3세가 자코뱅 수사에게 암살됐다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, François Viète (같은 항목) — 1580년 3월 25일 앙리 3세가 그를 왕실 추밀고문관에 임명했다는 것, 앙리 3세 암살 뒤 앙리 4세를 위해 일했고 스페인 펠리페 2세에게 가던 암호문을 해독해 1590년 3월 15일 완전한 해독문을 보냈다는 것, 암호가 깨질 리 없다고 여긴 펠리페가 **자기 나라에 흑마술이 쓰이고 있다고 교황에게 항의**했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, François Viète (같은 항목) — 1591년 투르에서 『해석 기술 입문(In artem analyticam isagoge)』을 펴내 최초의 체계적 대수 기호법을 도입했고 모음을 미지수에 자음을 기지수에 배정했다는 것, **동차성(homogeneity)의 제약**에 묶여 있어 $x^3+x=1$ 처럼 세제곱과 선을 더하는 식은 쓸 수 없었고 대신 $A^3+B^2A=B^2Z$ 처럼 각 항의 차원을 3으로 맞췄다는 것, 그가 적은 법칙이 \"동차인 양은 동차인 양과 비교해야 한다\"는 것, **`계수(coefficient)`라는 낱말이 비에트에게서 왔다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, François Viète (같은 항목) — 1593년 반 로먼이 45차 방정식을 푸는 문제를 냈고 네덜란드 대사가 앙리 4세에게 프랑스 수학자 중에는 풀 사람이 없다고 말하자 왕이 비에트에게 넘겼으며, 그가 **밑에 깔린 삼각함수 관계를 알아채고** 풀었다는 것, 그 뒤 두 사람 사이에 우정이 생겨 비에트가 아폴로니오스 문제를 되물었다는 것, 1595년 해답을 출판하며 **\"나는 수학자를 자처하지 않으나 여가가 날 때마다 수학 공부를 즐긴다\"**고 적었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, François Viète (같은 항목) — 1593년에 **6×2¹⁶ = 393,216각형**으로 π를 소수점 아래 10자리까지 계산했고 π를 무한곱으로 나타냈는데 이것이 **알려진 한 π의 가장 이른 무한 표현**이라는 것, 그가 흔히 '대수학의 아버지'로 불리지만 그 호칭이 앞선 대수학자들에게도 비에트 자신에게도 공정하지 않다는 평가가 있다는 것, 1602년 12월 14일 앙리 4세에게 해임되고 거의 정확히 1년 뒤에 죽었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Adriaan van Roomen — 반 로먼이 1593년 『Ideae mathematicae』에서 45차 방정식을 푸는 문제를 \"온 세계의 수학자들에게\" 도전으로 냈고 비에트가 그것을 풀었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Roomen/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, François Viète — 그가 1540년에 태어나 **1603년 2월 23일** 파리에서 죽었다고 적으며, 직업이 법률가였고 앙리 3세와 앙리 4세 두 왕의 추밀고문관을 지냈다는 것 (사망일이 [1]과 어긋난다)",
+     "URL": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Encyclopaedia Britannica, François Viète, seigneur de la Bigotière — 사망일을 **1603년 12월 13일** 파리로 적는 표준 전기 항목",
+     "URL": "https://www.britannica.com/biography/Francois-Viete-seigneur-de-la-Bigotiere",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Encyclopaedia Britannica, In artem analyticem isagoge — 1591년 비에트가 『해석 기술 입문』에서 오늘날까지 대수에 쓰이는 문자 표기를 세웠고 미지의 양 또는 변수에 모음을, 이미 아는 양 또는 매개변수에 자음을 배정했다는 것",
+     "URL": "https://www.britannica.com/topic/In-artem-analyticem-isagoge",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Rutgers University, François Viète — Father of Modern Algebraic Notation — 비에트가 문자를 쓰는 새 대수를 **로지스티카 스페키오사(logistica speciosa)** 라 부르고 수를 쓰던 옛 대수인 **로지스티카 누메로사(logistica numerosa)** 와 대비했다는 것",
+     "URL": "https://math.berkeley.edu/~robin/Viete/index.html",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(수학백과) 「근과 계수의 관계」 — 근과 계수의 관계를 **프랑스 수학자 비에트의 라틴어 이름을 따 '비에타의 공식(Vieta's formulas)'** 이라고도 하며, **같은 수학자의 이름을 딴 원주율 계산 '비에트의 공식(Viète's formula)'과는 구별해야 한다**는 것, 이차식에서 $\\alpha+\\beta=-b/a$ · $\\alpha\\beta=c/a$ 가 인수분해 $ax^2+bx+c=a(x-\\alpha)(x-\\beta)$ 의 계수 비교로 나온다는 것, 일반 $n$차에서는 기본대칭식으로 $e_k=(-1)^k a_{n-k}/a_n$ 이 성립한다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3404990&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학백과) 「원주율」 — 내접·외접 정다각형으로 π를 좁히는 방법과 아르키메데스가 정96각형으로 3.14084 < π < 3.142858 을 얻었다는 것, **원에 내접하는 정$n$각형과 정$2n$각형의 넓이 비가 $\\cos\\theta$ 이고 이를 거듭 적용해 코사인 무한곱을 얻으며 $n=4$(따라서 $\\theta=45°$)로 두면 중첩 제곱근 꼴이 된다**는 유도, 그것이 **\"르네상스 시대의 수학자 비에트의 아이디어로 π를 무한곱으로 표현한 것\"** 이라는 것, **17세기 제임스 그레고리의 급수를 이용해 라이프니츠가 $\\pi/4 = 1-1/3+1/5-\\cdots$ 를 얻었다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405254&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "네이버 지식백과 「미지수」 — 이미 알고 있는 값(기지수)은 알파벳 앞 문자인 $a,b,c$ 등으로, 아직 알지 못하는 값(미지수)은 알파벳 뒤 문자로 적는다는 오늘날의 관례 설명",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405085&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "네이버 지식백과(학문명백과) 「대수학」 — 대수학은 수 대신에 문자를 사용하여 방정식의 풀이 방법이나 대수적 구조를 연구하는 학문이라는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=2098120&cid=44413&categoryId=44413",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "네이버 지식백과 「이차방정식의 근과 계수의 관계」 — 중학교 3학년 과정에서 두 근의 합 $\\alpha+\\beta=-b/a$, 두 근의 곱 $\\alpha\\beta=c/a$ 로 배우는 개념이라는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=5744732&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "MacTutor, François Viète (같은 항목) — **그가 아랍 수학을 자기 취향에 맞지 않다고 여겨 카르단 같은 이탈리아 수학자들과 고대 그리스 수학자들의 일에 기대 썼으며, 아랍 수학을 더 잘 이해했더라면 자기가 내놓은 착상 여럿이 이미 앞선 아랍 수학자들에게 알려져 있었음을 발견했을지도 모른다**는 것, 해리엇에 관해 **1900년 H 스티븐스의 책에서 \"해리엇의 해석학 또는 대수 체계가 그의 친구이자 편지 상대인 프랑수아 비에트의 것에 기대고 있었던 것으로 보인다\"는 구절**이 인용되나, MacTutor 집필자(EFR)는 **해리엇이 비에트보다 더 깊은 이해를 보인다는 점을 들어 착상이 양방향으로 흘렀을 가능성을 열어 두어야 한다**고 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Viete/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-viete/note.md",
+   "세기전체": [
+    16
+   ],
+   "자수": 9139,
+   "시각화": 7
   },
   {
    "유형": "세기",
@@ -10628,7 +10781,8 @@
     "concept-logarithm",
     "person-cardano",
     "person-napier",
-    "person-tartaglia"
+    "person-tartaglia",
+    "person-viete"
    ],
    "17": [
     "century-17c",
@@ -10787,7 +10941,8 @@
     "person-hilbert",
     "person-jakob-bernoulli",
     "person-napier",
-    "person-tartaglia"
+    "person-tartaglia",
+    "person-viete"
    ],
    "기하학": [
     "century-16c",
@@ -10812,7 +10967,8 @@
     "person-tartaglia"
    ],
    "삼각법": [
-    "century-16c"
+    "century-16c",
+    "person-viete"
    ],
    "수론": [
     "century-16c",
@@ -10962,7 +11118,8 @@
     "person-euler",
     "person-gauss",
     "person-gregory",
-    "person-huygens"
+    "person-huygens",
+    "person-viete"
    ],
    "측량": [
     "century-bc3"
@@ -11095,7 +11252,8 @@
     "person-cardano",
     "person-diophantus",
     "person-napier",
-    "person-tartaglia"
+    "person-tartaglia",
+    "person-viete"
    ],
    "수학": [
     "concept-algebra-notation-advanced",
@@ -11263,6 +11421,7 @@
     "person-poincare",
     "person-riemann",
     "person-tartaglia",
+    "person-viete",
     "person-weierstrass"
    ]
   },
@@ -11341,7 +11500,8 @@
     "person-pascal",
     "person-poincare",
     "person-riemann",
-    "person-tartaglia"
+    "person-tartaglia",
+    "person-viete"
    ],
    "16세기": [
     "century-16c",
@@ -11351,7 +11511,8 @@
     "concept-logarithm",
     "person-cardano",
     "person-napier",
-    "person-tartaglia"
+    "person-tartaglia",
+    "person-viete"
    ],
    "삼차방정식": [
     "century-16c",
@@ -11672,17 +11833,20 @@
    "대수학": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
-    "person-al-khwarizmi"
+    "person-al-khwarizmi",
+    "person-viete"
    ],
    "기호법": [
     "concept-algebra-notation",
-    "concept-algebra-notation-advanced"
+    "concept-algebra-notation-advanced",
+    "person-viete"
    ],
    "문자식": [
     "concept-algebra-notation"
    ],
    "미지수": [
-    "concept-algebra-notation"
+    "concept-algebra-notation",
+    "person-viete"
    ],
    "디오판토스": [
     "concept-algebra-notation",
@@ -11694,7 +11858,8 @@
    ],
    "비에트": [
     "concept-algebra-notation",
-    "concept-algebra-notation-advanced"
+    "concept-algebra-notation-advanced",
+    "person-viete"
    ],
    "데카르트": [
     "concept-algebra-notation",
@@ -12202,7 +12367,8 @@
    ],
    "원주율": [
     "person-archimedes",
-    "person-gregory"
+    "person-gregory",
+    "person-viete"
    ],
    "구와원기둥": [
     "person-archimedes"
@@ -12241,7 +12407,8 @@
     "person-de-moivre"
    ],
    "위그노": [
-    "person-de-moivre"
+    "person-de-moivre",
+    "person-viete"
    ],
    "낭트칙령": [
     "person-de-moivre"
@@ -12489,6 +12656,12 @@
    ],
    "탄도학": [
     "person-tartaglia"
+   ],
+   "암호해독": [
+    "person-viete"
+   ],
+   "근과계수의관계": [
+    "person-viete"
    ]
   },
   "인물": {
@@ -12513,7 +12686,7 @@
    "레코드": [
     "concept-algebra-notation"
    ],
-   "비에트": [
+   "person-viete": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced"
    ],
@@ -13035,6 +13208,12 @@
      "제목": "니콜로 타르탈리아",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "concept-logarithm": [
@@ -13207,6 +13386,12 @@
     {
      "슬러그": "person-pascal",
      "제목": "블레즈 파스칼",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
      "유형": "인물",
      "경로": "본문"
     }
@@ -16491,6 +16676,12 @@
      "제목": "아이작 배로",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "century-16c": [
@@ -16523,6 +16714,12 @@
      "제목": "니콜로 타르탈리아",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-diophantus": [
@@ -16531,6 +16728,12 @@
      "제목": "대수 기호법",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "concept-algebra-notation-advanced": [
@@ -16551,6 +16754,12 @@
      "제목": "피에르 드 페르마",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-cardano": [
@@ -16587,6 +16796,12 @@
     {
      "슬러그": "person-tartaglia",
      "제목": "니콜로 타르탈리아",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-viete",
+     "제목": "프랑수아 비에트",
      "유형": "인물",
      "경로": "본문"
     }
@@ -18029,6 +18244,16 @@
   "니콜로타르탈리아": "person-tartaglia",
   "인물_니콜로 타르탈리아": "person-tartaglia",
   "타르탈리아": "person-tartaglia",
+  "François Viète": "person-viete",
+  "Vieta": "person-viete",
+  "Viete": "person-viete",
+  "Viète": "person-viete",
+  "person-viete": "person-viete",
+  "비에타": "person-viete",
+  "비에트": "person-viete",
+  "인물_프랑수아 비에트": "person-viete",
+  "프랑수아 비에트": "person-viete",
+  "프랑수아비에트": "person-viete",
   "Karl Weierstrass": "person-weierstrass",
   "person-weierstrass": "person-weierstrass",
   "바이어슈트라스": "person-weierstrass",
