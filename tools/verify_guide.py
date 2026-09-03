@@ -21,6 +21,9 @@
 import re, sys, json
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import mdtables as MT          # noqa: E402  표 렌더 검사(서가 공용)
+
 ROOT = Path(__file__).resolve().parent.parent
 LEVELS = {"입문", "중급", "고급"}
 
@@ -47,6 +50,13 @@ def check(path):
             meta[k.strip()] = v.strip()
 
     fails = []
+
+    # 표가 실제로 그려지는가. guides/index.html 은 이스케이프를 모르는 자체 파서라
+    # "plain" 규칙이다 — 셀 안에 `|` 를 넣을 방법이 아예 없다. 자세한 것은 mdtables.py
+    for _ln, want, got, row in MT.defects(body, "plain"):
+        fails.append("표 행이 머리행과 칸 수가 다름 (%d칸이어야 하는데 %d칸): %s — %s"
+                     % (want, got, row[:60], MT.advice("plain")))
+
     body_n  = len(re.sub(r'\s', '', body))
     steps   = re.findall(r'^##\s+\d+단계', body, re.M)      # 10단계 이상도 잡히도록 \d+
 

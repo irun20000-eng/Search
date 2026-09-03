@@ -39,6 +39,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import mdtables as MT          # noqa: E402  표 렌더 검사(서가 공용)
+
 ROOT = Path(__file__).resolve().parent.parent
 
 # ── 게이트 (기존 5편 실측 최저값) ──────────────────────────────
@@ -108,6 +111,12 @@ def check(path: Path, cardnews_series=None):
     stat["줄"] = body.count("\n") + 1
     stat["섹션"] = len(re.findall(r"(?m)^## ", body))
     stat["시각화"] = len(re.findall(r"(?m)^\|", body)) + len(re.findall(r"(?m)^```", body)) // 2
+    # 표가 실제로 그려지는가. concept/index.html 은 marked 라 "gfm" 규칙이다
+    # (셀 안의 `|` 는 `\\|` 로 이스케이프하면 살릴 수 있다). 자세한 것은 mdtables.py
+    for _ln, want, got, row in MT.defects(body, "gfm"):
+        errs.append("표 행이 머리행과 칸 수가 다름 (%d칸이어야 하는데 %d칸): %s — %s"
+                    % (want, got, row[:60], MT.advice("gfm")))
+
     dom, fgn, src_nums, fmt = sources(body)
     stat["국내"], stat["해외"] = dom, fgn
 

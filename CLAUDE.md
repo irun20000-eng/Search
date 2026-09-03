@@ -70,6 +70,8 @@ cd Search && python -m http.server 8080   # http://localhost:8080
 python3 tools/verify_video.py videos/notes/<영상ID>.md
 python3 tools/verify_guide.py guides/<슬러그>/guide.md
 python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 동일성 대조
+python3 tools/verify_tables.py            # ★ 서가 전체 — 마크다운 표가 실제로 그려지는가
+python3 tools/verify_tables.py reports    #   한 서가만
 
 # 수학사(math/) — 정본 절차는 MATH_PIPELINE.md
 python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게이트
@@ -101,6 +103,7 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - `link-index.json`(루트) — 7개 갤러리 통합 링크 조회표. **항목마다 `검색어`**(각 갤러리 태그를 공백으로 이은 문자열)를 함께 실어 허브 검색이 제목만이 아니라 태그로도 걸리게 한다(2026-08-29). 리스트가 아니라 문자열인 이유는 이 파일을 모든 페이지가 받아 가기 때문 — 자세한 것은 `tools/build_link_index.py` 머리말. 본문 `[[위키링크]]`가 갤러리 경계를 넘게 한다. `tools/build_link_index.py` 산출물이며 **직접 편집 금지**. 자동 정규화로 안 잡히는 별칭만 `link-aliases.json`에 손으로 적는다.
 - `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
 - `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
+  - **`mdtables.py` — 표가 실제로 그려지는지 재는 서가 공용 모듈**(2026-09-03). 셀 안의 `|` 는 셀 구분자로 읽혀 한 칸이 행 전체를 쪼개는데, **자수·절수·시각화 게이트는 표를 세기만 하고 그려지는지는 보지 않아** 전부 통과한다. ⚠ **규칙이 서가마다 다르다** — `research`·`concept`·`math` 는 marked 라 `\|` 로 이스케이프하면 되지만(코드 스팬은 보호해 주지 않는다), **`videos`·`guides` 는 이스케이프를 모르는 자체 파서라 셀 안에 `|` 를 쓸 방법이 아예 없다**(낱말로 풀어 적을 것). 다섯 검증기가 이 모듈을 함께 쓴다.
 - `routines/` — 예약 루틴 지침. `spark-video-curator.md` = 스파크 영상 분석본 → 갤러리 발행(정본 절차는 `VIDEO_PIPELINE.md`).
 - `HANDOVER.md`(루트) — **인계 문서.** 열려 있는 것·닫힌 것·완료의 정의. 살아 있는 목록이라 자주 바뀐다(수학사 인계는 `math/ROADMAP.md` §11).
 - `LESSONS.md` — 검수 학습 원장(방지규칙 누적). 라이브 갤러리: https://irun20000-eng.github.io/Search/
