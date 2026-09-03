@@ -1,6 +1,28 @@
 {
- "count": 7,
+ "count": 8,
  "notes": [
+  {
+   "slug": "littles-law",
+   "title": "리틀의 법칙(Little's Law) — 이해편(입문·딥)",
+   "date": "2026-09-03",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "대기행렬",
+    "큐잉이론",
+    "생산관리",
+    "리드타임",
+    "칸반",
+    "WIP",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 4편 · 동시에 벌이면 늦어진다",
+   "chars": 8982,
+   "pic": "littles-law.png",
+   "path": "concept/notes/littles-law.md"
+  },
   {
    "slug": "braess-paradox",
    "title": "브라에스의 역설(Braess's Paradox) — 이해편(입문·딥)",
