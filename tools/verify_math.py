@@ -131,6 +131,55 @@ KNOWN_FIELDS = set(COMMON_REQUIRED) | {f for v in TYPE_REQUIRED.values() for f i
 }
 
 
+def table_defects(body):
+    """머리행과 칸 수가 어긋나는 마크다운 표 행을 찾는다.
+
+    ■ 왜 게이트인가 (2026-09-03)
+
+      갤러리는 marked 로 표를 그리는데, **셀 안의 `|` 는 코드 스팬 안에 있어도
+      셀 구분자로 읽힌다.** `` `||` `` 한 칸이 3칸짜리 행을 5칸으로 쪼개
+      그 행이 통째로 깨져 렌더된다. 자수·절수·시각화 게이트는 표를 세기만 하고
+      **표가 그려지는지는 보지 않으므로** 전부 통과한다.
+
+      전수 조사에서 저장소 4건이 나왔다 — `person-recorde` 의 `||` 하나,
+      `reports/derivative-rate-of-change-advanced` 의 `|∇f|` 둘(이미 발행돼
+      있었다), `math/ROADMAP.md` 의 4칸 행 하나. 절댓값·노름·논리합처럼
+      **수학 글이 자주 쓰는 기호가 전부 `|`** 라 재발하기 쉽다.
+
+      → 셀 안에서는 `\|` 로 이스케이프한다.
+    """
+    out, in_block, i = [], False, 0
+    lines = body.split("\n")
+
+    def cells(line):
+        return re.split(r"(?<!\\)\|", line.strip().strip("|"))
+
+    def is_sep(line):
+        cs = cells(line)
+        return bool(cs) and all(re.fullmatch(r":?\s*-{2,}\s*:?", c.strip()) for c in cs)
+
+    while i < len(lines):
+        if lines[i].strip().startswith("```"):
+            in_block = not in_block
+            i += 1
+            continue
+        if in_block:
+            i += 1
+            continue
+        head = lines[i].strip()
+        if head.startswith("|") and i + 1 < len(lines) and is_sep(lines[i + 1]):
+            ncol, j = len(cells(head)), i + 2
+            while j < len(lines) and lines[j].strip().startswith("|"):
+                n = len(cells(lines[j]))
+                if n != ncol:
+                    out.append((lines[j].strip()[:60], ncol, n))
+                j += 1
+            i = j
+        else:
+            i += 1
+    return out
+
+
 def gate_key(fm):
     if fm.get("유형") == "개념":
         return "개념/%s" % fm.get("트랙", "이해편")
@@ -238,6 +287,12 @@ def check_note(slug, path):
                 E("발전단계[%d] 필드 누락: %s" % (i, k))
         if st.get("출처") is not None and st["출처"] not in numset:
             E("발전단계[%d]의 출처 %r 가 출처 목록에 없음" % (i, st["출처"]))
+
+    # ── 마크다운 표가 실제로 그려지는가 ──
+    for row, want, got in table_defects(body):
+        E("표 행의 칸 수가 머리행과 다름 (%d칸이어야 하는데 %d칸): %s  "
+          "— 셀 안의 `|` 는 코드 스팬 안에서도 구분자로 읽힌다. `\\|` 로 이스케이프할 것"
+          % (want, got, row))
 
     # ── 이미지 라이선스 ──
     for i, im in enumerate(fm.get("이미지") or [], 1):
