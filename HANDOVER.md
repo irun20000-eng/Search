@@ -231,6 +231,12 @@ python3 tools/sync_obsidian.py --check --only reports
 
 여기 중복해 적지 않는다. §11 의 **「새 권고」** 를 읽으면 된다. 요지만:
 
+- ⚠ **선행 판단이 하나 생겼다 — `갤러리URL` 이 math 서가에서 죽은 필드다**(2026-09-03 발견).
+  최근 7편(`century-bc3`·알콰리즈미·디오판토스·비에트·레코드·버클리·생뱅상)에 이 필드가 없는데
+  **아무 검사에도 안 걸렸다.** `CARD_FIELDS` 에 없고 `math/index.html` 도 안 읽으며
+  `sync_math_obsidian.py` 는 URL 을 슬러그에서 직접 짓는다 — **소비자가 없다.**
+  (`reports/` 에서는 살아 있다. `sync_obsidian.py` 가 `#r=슬러그` 를 볼트 식별자로 읽는다.)
+  걷어낼지 채우고 게이트를 붙일지 정할 것. **지금처럼 "있어도 되고 없어도 되는" 상태가 가장 나쁘다.**
 - **다음 집필 권고는 `person-wallis`(존 월리스, 17세기).** 부름 **7편 15회**이고
   `concept-integration` 발전단계가 이름을 적어 뒀다(1656). 결정적인 것은
   **`person-newton`·`person-de-moivre` 두 인물 노트가 이미 그를 앞사람으로 지목한다**는
