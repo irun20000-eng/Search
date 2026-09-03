@@ -7568,6 +7568,132 @@
   },
   {
    "유형": "인물",
+   "제목": "조지 버클리",
+   "슬러그": "person-berkeley",
+   "날짜": "2026-09-03",
+   "별칭": [
+    "버클리",
+    "조지버클리",
+    "버클리 주교",
+    "Berkeley",
+    "George Berkeley"
+   ],
+   "볼트파일명": "인물_조지 버클리",
+   "세기": [
+    18
+   ],
+   "분야": [
+    "철학",
+    "해석학"
+   ],
+   "교과": [
+    "미적분"
+   ],
+   "난이도": "표준",
+   "요약": "수학자가 아니었고, 수학을 하려던 것도 아니었다. 그는 신앙을 비웃는 수학자들에게 \"당신들 학문의 기초도 다를 것 없다\"고 말하려 했고 — 그 말이 맞았다. 미적분의 기초를 다시 세우는 일이 그 지적에서 시작됐다.",
+   "태그": [
+    "수학사",
+    "버클리",
+    "해석학자",
+    "무한소",
+    "비물질론",
+    "지각",
+    "성직자",
+    "버뮤다",
+    "타르물",
+    "18세기"
+   ],
+   "생몰": {
+    "출생": 1685,
+    "사망": 1753,
+    "출생지": "킬케니, 아일랜드 — 1685년 3월 12일"
+   },
+   "기여개념": [
+    "concept-differentiation"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, George Berkeley — 1685년 3월 12일 아일랜드 킬케니에서 태어나 1753년 1월 14일 잉글랜드 옥스퍼드에서 죽었다는 것, 그가 **아일랜드의 주교이자 철학자**이며 수학에 남긴 가장 잘 알려진 기여가 **뉴턴이 세운 미적분의 논리적 기초에 대한 공격**이라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, George Berkeley (같은 항목) — 1696년 7월 킬케니의 오먼드 공작 학교에 들어가 1700년 1월까지 다녔고, **아직 열다섯이 되기 전에** 더블린 트리니티 칼리지에 들어갔고 **열다섯이 된 직후인 1700년 3월에** **장학생이 아니라 자비로 기숙하는 신분(pensioner)** 으로 등록(matriculate)했다는 것, 1704년 봄에 학사 학위를 받았다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, George Berkeley (같은 항목) — 1706년 펠로 자리가 나자 **아주 까다로운 경쟁 시험**을 치러 1707년 6월 9일 트리니티 칼리지 주니어 펠로가 됐다는 것, 가벼운 지도 업무를 하면서 신학을 공부해 **1709년 2월 부제로, 이듬해 사제로 서품**됐다는 것, 그 시기에 **1709년 『시각 신론』과 1710년 『인간 지식의 원리론』** 을 냈다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, George Berkeley (같은 항목) — 그가 1724년까지 트리니티 칼리지 펠로 자리를 유지했으나 **1713년부터 1724년까지 대부분을 더블린 밖에서 보냈다**는 것, 잉글랜드로 돌아오는 길에 리옹에 머물며 **『운동에 관하여(De motu)』** 를 써 파리 과학아카데미 대상에 냈다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, George Berkeley (같은 항목) — 그가 **버뮤다에 대학을 세워** 식민지 정착민의 아들들과 그가 개종시키려 한 아메리카 원주민을 가르치려 했다는 것, 런던 하원의 표결 뒤 **1만 파운드**의 자금이 약속됐다는 것, 그가 그 지원금이 지급되기를 기다렸으나 **1731년 중반에 받지 못하리라는 것이 분명해져** 그해 10월 런던으로 돌아왔다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, George Berkeley (같은 항목) — **1734년 1월 클로인 주교**에 임명돼 그해 5월 19일 더블린 세인트폴 교회에서 서품됐다는 것, 같은 1734년에 낸 소책자 **『해석학자, 또는 어느 무신론 수학자에게 부치는 논설』** 에서 **미적분이 참인 결과에 이르기는 하나 그 기초가 종교의 기초보다 조금도 더 튼튼하지 않다**고 논하려 했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, George Berkeley (같은 항목) — **버클리의 비판이 근거가 튼튼했고, 수학자들의 주의를 미적분의 논리적 명료화로 돌렸다는 점에서 중요했다**는 평가, 그가 맞는 결과가 나오는 까닭을 **두 개의 오차가 서로 상쇄된 결과**라고 설명하는 기발한 이론을 세웠다는 것, 그의 생애와 『해석학자』의 내용을 살펴본 결론이 **그의 비판이 옳았고 미적분 기초의 개선을 객관적으로 추동했다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Berkeley/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "Wikipedia, The Analyst — 1734년에 나온 『해석학자』의 부제가 **\"어느 무신론 수학자에게 부치는 논설(A DISCOURSE Addressed to an Infidel Mathematician)\"** 이고, 여기서 말하는 무신론 수학자가 **에드먼드 핼리 또는 뉴턴 본인으로 여겨지나** 뉴턴은 1727년에 이미 죽었으므로 후자라면 사후에 부친 글이 된다는 것",
+     "URL": "https://en.wikipedia.org/wiki/The_Analyst",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "Wikipedia, George Berkeley — 그의 명제 **\"Esse est percipi\"(존재하는 것은 지각되는 것)** 가 우리는 대상의 감각과 관념만을 직접 알 수 있을 뿐 '물질' 같은 추상은 알 수 없다는 주장이며, 이 이론을 **버클리 자신이 '비물질론(immaterialism)'이라 불렀고** 뒷날 '주관적 관념론'이라고도 불린다는 것",
+     "URL": "https://en.wikipedia.org/wiki/George_Berkeley",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "Wikipedia, George Berkeley — 1744년의 『시리스, 타르물의 효능에 관한 철학적 성찰과 탐구의 사슬』이 그의 주요 저작 가운데 하나이며, **상당 부분이 타르물(소나무 타르와 물을 섞은 것)의 약효를 예찬하고** 18세기 화학의 미립자 가설에 기대어 그 효능의 과학적 근거를 설명하는 데 쓰였다는 것",
+     "URL": "https://en.wikipedia.org/wiki/George_Berkeley",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과(인명사전) 「버클리」 — 1685~1753년 영국의 철학자로 **더블린의 트리니티 대학에서 데카르트·뉴턴·로크 등을 연구하여 영향을 받고** 그곳에서 성직자가 되었으며 1710년에 주저 『인간 지식의 원리』를 쓰고 1713년 런던으로 나왔다는 것, 그에 따르면 **\"존재하는 것은 지각되는 것이며(esse est percipi), 제1성질은 제2성질과 구별되지 않는다. 지각되지 않고 정신 외에 실재하는 물질 세계는 있을 수 없다\"** 하여 우리가 사물을 지각하는 것이 아니라 **사물은 우리가 지각함으로써 존재하는 것처럼** 생각했다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=881387&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과 「영국의 경험론」 — 경험론이란 **뜬구름 잡기식의 탁상공론이나 사변(speculation)을 배척하고 모든 학문의 기초를 경험에 두려고 한 철학적 경향**을 말하며, 합리론이 유럽 대륙 철학자들에 의해 발전한 것과 대비된다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3339440&cid=47323&categoryId=47323",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-berkeley/note.md",
+   "세기전체": [
+    18
+   ],
+   "자수": 7382,
+   "시각화": 5
+  },
+  {
+   "유형": "인물",
    "제목": "장 르 롱 달랑베르",
    "슬러그": "person-dalembert",
    "날짜": "2026-08-28",
@@ -10984,6 +11110,7 @@
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
     "person-bayes",
+    "person-berkeley",
     "person-dalembert",
     "person-de-moivre",
     "person-euler",
@@ -11148,6 +11275,7 @@
     "person-archimedes",
     "person-barrow",
     "person-bayes",
+    "person-berkeley",
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
@@ -11310,6 +11438,7 @@
     "person-barrow"
    ],
    "철학": [
+    "person-berkeley",
     "person-bolzano",
     "person-descartes",
     "person-leibniz"
@@ -11467,6 +11596,7 @@
    ],
    "미적분": [
     "concept-series",
+    "person-berkeley",
     "person-dirichlet",
     "person-poincare"
    ],
@@ -11533,6 +11663,7 @@
     "person-archimedes",
     "person-barrow",
     "person-bayes",
+    "person-berkeley",
     "person-bolzano",
     "person-cantor",
     "person-cardano",
@@ -11620,6 +11751,7 @@
     "person-archimedes",
     "person-barrow",
     "person-bayes",
+    "person-berkeley",
     "person-cardano",
     "person-dalembert",
     "person-de-moivre",
@@ -11764,6 +11896,7 @@
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
     "person-bayes",
+    "person-berkeley",
     "person-dalembert",
     "person-de-moivre",
     "person-euler",
@@ -12218,11 +12351,13 @@
    ],
    "무한소": [
     "concept-differentiation",
-    "concept-differentiation-advanced"
+    "concept-differentiation-advanced",
+    "person-berkeley"
    ],
    "버클리": [
     "concept-differentiation-advanced",
-    "person-bayes"
+    "person-bayes",
+    "person-berkeley"
    ],
    "비표준해석학": [
     "concept-differentiation-advanced"
@@ -12542,6 +12677,24 @@
    ],
    "비국교도": [
     "person-bayes"
+   ],
+   "해석학자": [
+    "person-berkeley"
+   ],
+   "비물질론": [
+    "person-berkeley"
+   ],
+   "지각": [
+    "person-berkeley"
+   ],
+   "성직자": [
+    "person-berkeley"
+   ],
+   "버뮤다": [
+    "person-berkeley"
+   ],
+   "타르물": [
+    "person-berkeley"
    ],
    "아르스마그나": [
     "person-cardano"
@@ -13155,7 +13308,7 @@
     "person-gregory",
     "person-newton"
    ],
-   "버클리": [
+   "person-berkeley": [
     "concept-differentiation",
     "concept-differentiation-advanced"
    ],
@@ -14129,6 +14282,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-descartes",
      "제목": "르네 데카르트",
      "유형": "인물",
@@ -14771,6 +14930,12 @@
      "제목": "토마스 베이즈",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-cauchy",
@@ -16025,6 +16190,12 @@
     {
      "슬러그": "person-bayes",
      "제목": "토마스 베이즈",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
      "유형": "인물",
      "경로": "본문"
     },
@@ -17643,6 +17814,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-de-moivre",
      "제목": "아브라암 드무아브르",
      "유형": "인물",
@@ -17723,6 +17900,28 @@
      "경로": "본문"
     }
    ],
+   "person-viete": [
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-recorde": [
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-al-khwarizmi": [
     {
      "슬러그": "person-diophantus",
@@ -17775,14 +17974,6 @@
      "제목": "아이작 뉴턴",
      "유형": "인물",
      "경로": "관련일화"
-    }
-   ],
-   "person-viete": [
-    {
-     "슬러그": "person-recorde",
-     "제목": "로버트 레코드",
-     "유형": "인물",
-     "경로": "본문"
     }
    ]
   }
@@ -18166,6 +18357,14 @@
   "토마스 베이즈": "person-bayes",
   "토마스베이즈": "person-bayes",
   "토머스 베이즈": "person-bayes",
+  "Berkeley": "person-berkeley",
+  "George Berkeley": "person-berkeley",
+  "person-berkeley": "person-berkeley",
+  "버클리": "person-berkeley",
+  "버클리 주교": "person-berkeley",
+  "인물_조지 버클리": "person-berkeley",
+  "조지 버클리": "person-berkeley",
+  "조지버클리": "person-berkeley",
   "Bernard Bolzano": "person-bolzano",
   "person-bolzano": "person-bolzano",
   "베른하르트 볼차노": "person-bolzano",
