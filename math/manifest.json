@@ -6321,6 +6321,139 @@
    "시각화": 2
   },
   {
+   "유형": "인물",
+   "제목": "그레고리우스 드 생뱅상",
+   "슬러그": "person-saint-vincent",
+   "날짜": "2026-09-03",
+   "별칭": [
+    "생뱅상",
+    "그레고리우스드생뱅상",
+    "성 빈센트의 그레고리우스",
+    "Saint-Vincent",
+    "Gregory of Saint-Vincent",
+    "Gregoire de Saint-Vincent"
+   ],
+   "볼트파일명": "인물_그레고리우스 드 생뱅상",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "기하학",
+    "해석학"
+   ],
+   "교과": [
+    "미적분"
+   ],
+   "난이도": "표준",
+   "요약": "평생을 걸어 원을 구적했다고 믿었고, 그것이 틀렸다. 그런데 그 1250쪽짜리 책의 곁가지 — 쌍곡선 아래 넓이 — 는 살아남아 로그로 가는 길이 됐다. 원고는 프라하에 10년을 갇혀 있었다.",
+   "태그": [
+    "수학사",
+    "생뱅상",
+    "예수회",
+    "원적문제",
+    "쌍곡선",
+    "기하급수",
+    "구적법",
+    "프라하",
+    "호이겐스",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1584,
+    "사망": 1667,
+    "출생지": "브뤼허, 스페인령 네덜란드(오늘날 벨기에) — 1584년 9월 8일"
+   },
+   "기여개념": [
+    "concept-logarithm"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Gregory of Saint-Vincent — **1584년 9월 8일 스페인령 네덜란드(오늘날 벨기에) 브뤼허에서 태어나 1667년 1월 27일에 죽었다**는 것, 그가 **당대 수학의 여러 면을 다룬 책을 쓴 플랑드르의 예수회원**이라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 1595년 브뤼허 예수회 학교에서 공부를 시작했고 **1605년 로마에서 예수회 수련수사가 되어 1607년 입회**했다는 것, 로마 콜레조 로마노에서 **크리스토퍼 클라비우스의 학생**이었고 **클라비우스가 그의 재능을 곧 알아보아 학교에 남아 수학·철학과 신학의 더 깊은 주제를 공부하도록 설득**했다는 것, **1612년 2월 초 클라비우스가 죽자** 그해 말 신학 학위를 마치러 루뱅으로 갔다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 그가 안트베르펜 예수회 학교에서 **3년간 수학을 가르쳤는데 처음에는 프랑수아 드 아길롱의 조수였고 1617년 아길롱이 죽은 뒤 후임이 됐다**는 것, **1621년 안트베르펜의 학교가 루뱅으로 옮겨** 거기서 4년을 더 가르쳤다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 제자 발테루스 판 알스트와 요한 시르만스가 『Theoremata mathematica scientiae staticae』(루뱅, 1624)를 변호했고, 다른 두 제자 기욤 볼만스와 이그나츠 데르케니스가 **원의 구적법인 『Problema Austriacum』** 을 준비하는 것을 도왔으며 **그레고리우스가 그것을 자기의 가장 중요한 결과로 여겼다**는 것, 그가 로마에 인쇄 허가를 청했으나 **수도회 총장 무티오 비텔레스키가 허가를 망설였고** 루뱅에서 보낸 예비 자료를 근거로 **클라비우스의 후임 크리스토프 그리엔베르거가 낸 의견이 그 의심을 굳혔다**는 것, 볼만스가 그의 지시로 준비해 그리엔베르거에게 보낸 원고를 **벨기에 왕립도서관이 지금도 소장하고 있다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 그가 **1626년부터 1632년까지 6년간 프라하에서 신성로마황제 페르디난트 2세의 사제로 지냈다**는 것, **프라하에 원고를 버리고 온 지 10년 뒤 데 아마지아 신부가 그것을 그에게 돌려주었고** 그것이 1647년 안트베르펜에서 『Opus geometricum quadraturae circuli sectionum coni』로 출판됐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 주저 『Opus geometricum』(1647)이 **1250쪽이 넘는 책**이며 원·삼각형·기하급수·타원·포물선·쌍곡선을 두루 다루고 **제2권이 제1권에서 도입한 변환을 써서 기하급수를 합한다**는 것, 그가 **등비수열로 놓은 세로선들을 써서 쌍곡선 아래 넓이를 더했고**, 요컨대 **직각쌍곡선 xy=k 아래 구간 [a,b]의 넓이가 a/b = c/d 일 때 구간 [c,d]의 넓이와 같다**는 것을 보였다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — 그의 목표가 어디까지나 **원의 구적**이었고 **제10권에서 그것에 이르는데, 바로 거기서 자와 컴퍼스로 원을 구적했다고 스스로 믿게 만든 오류를 범했다**는 것, 그 때문에 **책이 나쁜 평판을 얻었다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "문헌 요약(Encyclopedia.com, Saint Vincent, Gregorius) — 『Opus geometricum』이 1647년 안트베르펜에서 인쇄됐고 **1200쪽이 넘는 2절판에 수천 개의 그림**이 실렸다는 것, 제목에 붙은 **'quadraturae circuli'(원의 구적)** 라는 말이 곧바로 불안을 일으켰다는 것, **4년 뒤인 1651년 크리스티안 호이겐스가 『Opus geometricum』 마지막 권 곧 제10권 명제 39(1121쪽)에서 심각한 결함을 찾아냈다**는 것",
+     "URL": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/saint-vincent-gregorius",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "네이버 지식백과(수학백과) 「삼대 작도 불능 문제」 — 자와 컴퍼스만으로는 **원과 같은 넓이의 정사각형**, 부피가 2배인 정육면체, 임의 각의 삼등분을 작도할 수 없다는 것, **1882년 린데만이 π가 초월수임을 증명했고 그 사실로부터 주어진 원과 같은 넓이를 갖는 정사각형의 작도가 불가능함이 증명된다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338233&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "네이버 지식백과(수학백과) 「원뿔곡선」 — 3차원 공간에서 양쪽으로 뻗어 있는 직원뿔과 평면의 공통부분으로 표시되는 곡선을 원뿔곡선 또는 원추곡선이라 한다는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338226&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "네이버 지식백과 「쌍곡선」 — 평면 위의 **두 정점에서의 거리의 차가 일정한 점들의 자취**를 쌍곡선이라 하고 그 두 정점을 초점이라 한다는 교과서 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=2073853&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "네이버 지식백과(수학백과) 「작도 가능」 — 눈금 없는 자와 컴퍼스만을 **유한번** 사용하여 도형을 그리는 것을 작도라 하고, 어떤 도형을 작도로 그릴 수 있을 때 작도 가능하다고 한다는 정의",
+     "URL": "https://terms.naver.com/entry.naver?docId=3405287&cid=47324&categoryId=47324",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor, Gregory of Saint-Vincent (같은 항목) — **그 연결을 실제로 지은 사람이 생뱅상의 제자 알폰소 안토니오 데 사라사(1618~1667)** 라는 것, 제7권에 그의 **기하학적 적분법**이 자세히 나오고 흥미로운 예가 많이 실렸다는 것, **오류가 1651년 호이겐스에게 발견됐다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Saint-Vincent/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-saint-vincent/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 7440,
+   "시각화": 6
+  },
+  {
    "유형": "일화",
    "제목": "데카르트와 천장의 파리",
    "슬러그": "episode-descartes-fly",
@@ -11088,7 +11221,8 @@
     "person-leibniz",
     "person-napier",
     "person-newton",
-    "person-pascal"
+    "person-pascal",
+    "person-saint-vincent"
    ],
    "18": [
     "century-18c",
@@ -11234,6 +11368,7 @@
     "person-pascal",
     "person-recorde",
     "person-riemann",
+    "person-saint-vincent",
     "person-tartaglia"
    ],
    "삼각법": [
@@ -11294,6 +11429,7 @@
     "person-leibniz",
     "person-newton",
     "person-riemann",
+    "person-saint-vincent",
     "person-weierstrass"
    ],
    "확률론": [
@@ -11598,7 +11734,8 @@
     "concept-series",
     "person-berkeley",
     "person-dirichlet",
-    "person-poincare"
+    "person-poincare",
+    "person-saint-vincent"
    ],
    "확률과통계": [
     "person-cardano",
@@ -11698,6 +11835,7 @@
     "person-poincare",
     "person-recorde",
     "person-riemann",
+    "person-saint-vincent",
     "person-tartaglia",
     "person-viete",
     "person-weierstrass"
@@ -11780,6 +11918,7 @@
     "person-poincare",
     "person-recorde",
     "person-riemann",
+    "person-saint-vincent",
     "person-tartaglia",
     "person-viete"
    ],
@@ -11850,7 +11989,8 @@
     "person-leibniz",
     "person-napier",
     "person-newton",
-    "person-pascal"
+    "person-pascal",
+    "person-saint-vincent"
    ],
    "과학혁명": [
     "century-17c"
@@ -12462,7 +12602,8 @@
     "concept-logarithm"
    ],
    "생뱅상": [
-    "concept-logarithm-advanced"
+    "concept-logarithm-advanced",
+    "person-saint-vincent"
    ],
    "사라사": [
     "concept-logarithm-advanced"
@@ -12482,7 +12623,8 @@
     "concept-logarithm-advanced"
    ],
    "쌍곡선": [
-    "concept-logarithm-advanced"
+    "concept-logarithm-advanced",
+    "person-saint-vincent"
    ],
    "기댓값": [
     "concept-probability"
@@ -12974,6 +13116,24 @@
    "디리클레원리": [
     "person-riemann"
    ],
+   "예수회": [
+    "person-saint-vincent"
+   ],
+   "원적문제": [
+    "person-saint-vincent"
+   ],
+   "기하급수": [
+    "person-saint-vincent"
+   ],
+   "구적법": [
+    "person-saint-vincent"
+   ],
+   "프라하": [
+    "person-saint-vincent"
+   ],
+   "호이겐스": [
+    "person-saint-vincent"
+   ],
    "탄도학": [
     "person-tartaglia"
    ],
@@ -13352,7 +13512,7 @@
     "concept-logarithm",
     "concept-logarithm-advanced"
    ],
-   "그레고리우스 드 생뱅상": [
+   "person-saint-vincent": [
     "concept-logarithm",
     "concept-logarithm-advanced"
    ],
@@ -13566,6 +13726,12 @@
      "제목": "존 네이피어",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-saint-vincent",
+     "제목": "그레고리우스 드 생뱅상",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "century-17c": [
@@ -13650,6 +13816,12 @@
     {
      "슬러그": "person-laplace",
      "제목": "피에르시몽 라플라스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-saint-vincent",
+     "제목": "그레고리우스 드 생뱅상",
      "유형": "인물",
      "경로": "본문"
     }
@@ -17028,6 +17200,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-saint-vincent",
+     "제목": "그레고리우스 드 생뱅상",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-viete",
      "제목": "프랑수아 비에트",
      "유형": "인물",
@@ -17204,6 +17382,12 @@
      "제목": "존 네이피어",
      "유형": "인물",
      "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-saint-vincent",
+     "제목": "그레고리우스 드 생뱅상",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-frege": [
@@ -17684,6 +17868,12 @@
      "제목": "블레즈 파스칼",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-saint-vincent",
+     "제목": "그레고리우스 드 생뱅상",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-dalembert": [
@@ -18642,6 +18832,15 @@
   "베른하르트 리만": "person-riemann",
   "베른하르트리만": "person-riemann",
   "인물_베른하르트 리만": "person-riemann",
+  "Gregoire de Saint-Vincent": "person-saint-vincent",
+  "Gregory of Saint-Vincent": "person-saint-vincent",
+  "Saint-Vincent": "person-saint-vincent",
+  "person-saint-vincent": "person-saint-vincent",
+  "그레고리우스 드 생뱅상": "person-saint-vincent",
+  "그레고리우스드생뱅상": "person-saint-vincent",
+  "생뱅상": "person-saint-vincent",
+  "성 빈센트의 그레고리우스": "person-saint-vincent",
+  "인물_그레고리우스 드 생뱅상": "person-saint-vincent",
   "Niccolò Tartaglia": "person-tartaglia",
   "Tartaglia": "person-tartaglia",
   "person-tartaglia": "person-tartaglia",
