@@ -10,6 +10,9 @@
 import re, sys, json
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import mdtables as MT          # noqa: E402  표 렌더 검사(서가 공용)
+
 CATS = {"knowledge", "design", "agent", "automation", "video", "build"}
 
 # ── 게이트 (기존 73편 실측 최저값) ────────────────────────────
@@ -70,6 +73,13 @@ def check(path):
         return [err], {}
 
     fails = []
+
+    # 표가 실제로 그려지는가. videos/index.html 도 guides 와 같은 자체 파서라
+    # "plain" 규칙이다(이스케이프 없음). 자세한 것은 mdtables.py
+    for _ln, want, got, row in MT.defects(body, "plain"):
+        fails.append("표 행이 머리행과 칸 수가 다름 (%d칸이어야 하는데 %d칸): %s — %s"
+                     % (want, got, row[:60], MT.advice("plain")))
+
     chaps = re.findall(r'^##\s+(\d+\..*)$', body, re.M)
     tldr_h = re.findall(r'^##\s+TL;DR.*$', body, re.M)
 
