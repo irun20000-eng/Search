@@ -5212,6 +5212,185 @@
   },
   {
    "유형": "인물",
+   "제목": "보나벤투라 카발리에리",
+   "슬러그": "person-cavalieri",
+   "날짜": "2026-09-04",
+   "별칭": [
+    "카발리에리",
+    "보나벤투라카발리에리",
+    "Cavalieri",
+    "Bonaventura Cavalieri"
+   ],
+   "볼트파일명": "인물_보나벤투라 카발리에리",
+   "세기": [
+    17
+   ],
+   "분야": [
+    "기하학",
+    "해석학"
+   ],
+   "교과": [
+    "미적분"
+   ],
+   "난이도": "표준",
+   "요약": "자리를 못 얻었고 평생 아팠고 원고는 8년 묵었다. 그리고 책이 나오자 널리 공격받았다 — 그런데 그 공격이 그를 다시 쓰게 했고, 다시 쓴 책이 17세기 수학자들의 주요 원천이 됐다.",
+   "태그": [
+    "수학사",
+    "카발리에리",
+    "불가분량",
+    "구적법",
+    "예수아티",
+    "볼로냐",
+    "갈릴레오",
+    "구엘딘",
+    "로그",
+    "17세기"
+   ],
+   "생몰": {
+    "출생": 1598,
+    "사망": 1647,
+    "출생지": "밀라노 — 출생 연도만 알려져 있고 MacTutor 는 날짜를 적지 않는다"
+   },
+   "기여개념": [
+    "concept-integration"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Bonaventura Francesco Cavalieri — 그가 **1598년에 태어나 1647년 11월 30일 교황령 볼로냐(오늘날 이탈리아)에서 죽었다**는 것, 그가 **적분학의 발전에 한 요인이 된 불가분량법을 발전시킨** 이탈리아 수학자라는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **태어날 때 이름이 프란체스코였고 아버지 이름이 보나벤투라 카발리에리였는데, 1615년 밀라노에서 예수아티 수도회에 들어가며 보나벤투라라는 이름을 취해** 늘 그 이름으로 불린다는 것, 예수아티 수도회가 **1360년 시에나의 조반니 콜롬비니와 그의 친구 프란체스코 미아니가 세웠고 원래 흑사병에 걸린 이들을 돌봤다**는 것, **설교를 늘 '예수'라는 이름을 외치며 시작하고 끝냈기에 예수아티라 불렸다**는 것, 예수아티로서 그가 **늘 샌들을 신고 날마다 스스로를 채찍질했을 것**이라는 것, 그 수도회가 결국 실패해 **1668년 교황 클레멘스 9세가 해산**했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 **1616년 피사의 예수아티 수도원인 산 지롤라모로 옮겨 1620년까지 머물렀고**, 거기서 **피사 대학 수학 강사 베네데토 안토니오 카스텔리에게 수학을 배웠다**는 것, **카스텔리가 그에게 기하학을 가르치고 갈릴레오의 사상을 소개했다**는 것, 유클리드 『원론』이 그의 수학에 대한 관심을 자극했고 **갈릴레오를 만난 뒤 자신을 그 천문학자의 제자로 여겼다**는 것, 그 만남을 **페데리코 보로메오 추기경이 주선**했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 인용된 대목 — **\"그 결과 1619년부터 1641년 사이에 카발리에리가 갈릴레오에게 보낸 편지가 100통이 넘는다. 갈릴레오는 그 모두에 답하지는 않았고 이따금 편지를 보냈는데, 그중 아주 몇 통을 빼고는 전부 사라졌다.\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **1619년 조반니 안토니오 마지니의 죽음으로 공석이 된 볼로냐 수학 석좌에 지원했으나 그 정도 중책에는 너무 젊다고 여겨져 떨어졌다**는 것, **1626년 카스텔리가 로마로 떠났을 때 로마·피사를 비롯한 여러 대학의 수학 석좌도 얻지 못했다**는 것, **카발리에리 본인은 자기가 예수아티 수도회 소속이라는 것을 실패의 이유로 여겼다**는 것과 **그 수도회가 로마에서 인기 없었던 것은 분명히 사실이나 그것이 실제로 낙방을 설명하는지는 말할 수 없다**는 MacTutor 의 유보",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **1621년 부제가 되어 밀라노 산 지롤라모 수도원에서 페데리코 보로메오 추기경의 보좌**가 됐고 **밀라노에 있던 그 시기에 오늘날 그를 유명하게 만든 불가분량법을 발전시키기 시작했다**는 것, **1623년까지 밀라노에서 신학을 가르치다 로디 성 베드로 수도원장이 됐고 3년 뒤 파르마의 예수아티 수도원장**이 됐다는 것, 인용된 대목 — **\"1626년 가을 파르마에서 밀라노로 가는 여행 중에 그는 통풍으로 앓아누웠는데, 그 병은 어린 시절부터 앓아 온 것이었고 생을 마칠 때까지 그를 괴롭히게 된다. 이 병으로 그는 여러 달 밀라노에 머물렀다.\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 **1627년 12월 16일 갈릴레오와 보로메오 추기경에게 『Geometria』를 완성했다고 알리는 편지를 썼다**는 것, 그 책이 **적분학의 발전에 한 요인이 된 불가분량법을 담고 있다**는 것, 그리고 **볼로냐 임명에 한 요인이 됐던 그 기하학 원고가 1627년 12월에 완성됐음에도 1635년까지 출판되지 않았다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **1629년 볼로냐 수학 석좌에 임명**됐고 그 지원을 **갈릴레오가 후원**했다는 것, 인용된 대목 — 갈릴레오가 **1629년 새 수학 강사를 찾는 일을 맡은 볼로냐의 신사이자 린체이 아카데미아 회원인 체사레 마르실리에게 편지를 써 \"아르키메데스 이래 기하학이라는 학문을 이만큼 멀리, 이만큼 깊이 파고든 사람은 있다 해도 거의 없다\"고 말했다**는 것, 카발리에리가 마르실리에게 **기하학 원고와 원뿔곡선 및 그 광학 응용에 관한 짧은 논고를 보냈다**는 것, **갈릴레오의 추천이 「연대의 신사들」로 하여금 제1 수학 석좌를 카발리에리에게 맡기게 했고 그가 1629년부터 죽을 때까지 그 자리를 지켰다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 볼로냐에서 **산타 마리아 델라 마스카렐라 성당에 딸린 예수아티 수도원장 자리도 함께 받았고**, 그것이 **수도원에서 연구하며 대학에서 가르치고 다른 수학자들과 교류할 수 있는 이상적인 상황**이었다는 것, **볼로냐에서의 18년 동안 11권을 출판했다**는 것, 다만 **임명 무렵부터 건강이 나빠져 평생 다리에 문제를 겪었다**는 것, 그리고 **볼로냐 임명이 처음에는 3년 시험 기간이었다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 하워드 이브스의 서술로 인용된 대목 — **\"카발리에리의 불가분량법 논문은 장황하고 명료하게 쓰이지 않아서, 카발리에리가 '불가분량'으로 무엇을 뜻했는지 정확히 알아내기가 쉽지 않다\"** 는 것, 평면 조각의 불가분량이 **그 조각의 현(chord)** 으로 보이고 입체의 불가분량이 **그 입체의 평면 절단**으로 보인다는 것, 그리고 **카드를 수직으로 쌓은 뒤 옆면을 밀어 곡면으로 만들어도 흐트러진 더미의 부피가 원래 더미와 같다**는 예시",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **불가분량법이 엄밀한 기초 위에 놓이지 않아 그의 책이 널리 공격받았고 특히 파울 구엘딘이 카발리에리를 공격했다**는 것, 구엘딘의 **첫 논점이 카발리에리가 케플러의 『Stereometria Doliorum』(1615)과 소베르의 『Curvi ac Recti Proportio』(1630)를 표절했다는 혐의**였다는 것, 케플러 쪽 주장에는 **케플러가 원을 무한소로 이루어진 무한 다각형으로 본다는 점에서 일리가 있으나 카발리에리의 불가분량은 케플러의 무한소와 다르다**는 것, 소베르 건에 대해 **카발리에리가 소베르의 책이 출판되기 전에 자기 책을 썼다고 반박**했다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 구엘딘이 **선을 축 둘레로 돌려 면이 생길 때 그 면은 선들의 집합이 아니라고 논박**했다는 것과 그 인용 — **\"내 생각에 어떤 기하학자도, 그 면이 기하학의 언어로 '그 도형의 모든 선'이라 불릴 수 있고 또 그렇게 불려도 된다는 것을 카발리에리에게 인정해 주지 않을 것이다. 실제로 여러 개의 선이, 혹은 모든 선이 면이라 불릴 수는 결코 없다. 선의 무리가 아무리 크다 한들 가장 작은 면조차 이룰 수 없기 때문이다.\"** 그리고 만코수의 평 — **\"구엘딘은 명시적 작도라는 관념에 젖은 '고전주의자' 기하학자였고, 기하학의 영역에서 무한을 고려하는 데 회의적이었으며, 연속체의 원자론에 이르고 마는 위험을 경계했다.\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **\"구엘딘과 카발리에리 중 누가 옳으냐고 묻는다면 답은 카발리에리여야 한다\"** 는 판정, 그리고 **\"그러나 구엘딘의 공격에는 긍정적인 면이 있었으니, 카발리에리가 자기 서술을 개선해 『Exercitationes geometricae sex』(1647)를 펴냈고 그것이 17세기 수학자들의 주요 원천이 됐다는 것\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **이탈리아에 로그를 계산 도구로 도입한 공이 대체로 그에게 있으며 그것이 『Directorium Generale Uranometricum』을 통해서였다**는 것, **볼로냐 임명이 처음 3년이었고 이 로그 책을 그 자리를 연장받기 위한 신청의 일부로 출판했다**는 것, 그가 낸 로그표에 **천문학자들이 쓸 삼각함수의 로그**가 들어 있었다는 것, 인용된 대목 — 그 저작이 **로그·평면삼각법·구면삼각법 세 부분으로 나뉘고, 용어상의 주목할 혁신에 더해 존 네이피어의 구면삼각형 규칙에 대한 중요한 증명들과, 알베르 지라르에게 귀속되었다가 뒤에 조제프 라그랑주가 자기 것이라 주장한 각 구면삼각형의 구적 정리를 담고 있다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 **원뿔곡선·삼각법·광학·천문학·점성술에 관해서도 썼고 렌즈의 초점거리에 대한 일반 규칙을 만들었으며 반사망원경을 기술**했다는 것, 피에로 아리오티의 서술로 인용된 대목 — **『Specchio ustorio』(1632년 인쇄, 1650년 재판)에서 카발리에리가 \"아르키메데스가 기원전 212년 시라쿠사를 포위한 로마 함대를 어떻게 태웠다는 것인가\"라는 오랜 논쟁을 풀 목적으로 반사거울을 다루었으나, 그 책은 정해 둔 목적을 훨씬 넘어 원뿔곡선의 성질, 빛·소리·열(그리고 냉기!)의 반사, 운동학·역학 문제, 그리고 반사망원경의 아이디어를 체계적으로 다룬다**는 것, **오목거울과 오목렌즈를 결합하면 망원경을 얻는다는 그의 주장 때문에 일부 역사가는 그가 반사망원경을 먼저 발명했다고 주장한다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 **점성술에 관한 책도 여러 권 냈고 1639년의 『Nuova pratica astromlogica』와 마지막 저작인 1646년의 『Trattato della ruota planetaria perpetua』가 그것**이라는 것, 그러나 **이 책들이 점성술의 용어를 쓸 뿐 진지한 천문학 저작이며, 카발리에리는 점성술로 미래를 예측할 수 있다고 믿지 않았고 점성술을 하지도 않았으며 1639년 저작에서 그것을 분명히 밝혔다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 17,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그가 **갈릴레오·메르센·레니에리·로카·토리첼리·비비아니를 비롯한 많은 수학자와 서신을 주고받았다**는 것, **토리첼리가 그의 방법을 극찬**했다는 것과 그 인용 — **\"나는 이 불가분량의 기하학이 정말로 새로운 발견이라고 감히 단언하지는 않겠다. … 확실한 것은 이 기하학이 증명에서 놀라운 노동의 절감을 보여 주고, 짧고 직접적이며 긍정적인 증명으로 헤아릴 수 없이 많은, 거의 헤아릴 길 없는 정리들을 세운다는 것이다. 고대인의 학설로는 할 수 없던 일이다. 불가분량의 기하학은 참으로 수학이라는 가시덤불 속의 이른바 왕도였고, 카발리에리가 그것을 처음으로 열어 놀라운 발명의 도구로서 세상에 내놓았다.\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 18,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 그의 **가장 유명한 제자가 스테파노 델리 안젤리**였고 **카발리에리가 꽤 늙어 관절염을 앓던 무렵 볼로냐에서 그에게 배웠으며, 카발리에리가 동료 수학자들에게 보낸 편지의 상당수를 그가 대신 썼다**는 것, **1636년 통풍이 심해져 치료를 구하러 아르체트리의 온천에 가 여름을 보냈는데 그때 갈릴레오가 아르체트리에서 가택연금 중이었고 카발리에리가 그 여름을 갈릴레오와 수학을 논하며 보냈다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 19,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — 볼로냐로 돌아온 뒤 **삶이 점점 힘들어졌고 건강이 나아지지 않았으며 대학 당국이 그가 사랑하는 수학이 아니라 천문학을 하라고 압박했다**는 것, **피사 수학 석좌 제안을 거절했고 보로메오 추기경이 준 밀라노 암브로시아나 도서관 자리도 거절하고 볼로냐에 남았다**는 것, **1646년 건강이 너무 나빠져 강의를 그만둘 수밖에 없었고 이듬해 죽을 때는 완전히 불구가 되어 걷지 못했다**는 것, **볼로냐의 산타 마리아 델라 마스카렐라 성당에 묻혔다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 20,
+     "제목": "MacTutor, Bonaventura Cavalieri (같은 항목) — **\"사실 토리첼리는 카발리에리가 『Arithmetica infinitorum』(1655)에서 도입한 아이디어를 계속 발전시켰다\"** 는 문장. ※ 이 노트가 §13에서 다루는 어긋남의 근거로만 쓴다 — 원문을 그대로 옮긴 것이며 이 노트는 그 내용을 사실로 채택하지 않는다.",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+     "유형": "2차"
+    },
+    {
+     "번호": 21,
+     "제목": "네이버 지식백과(수학백과) 「카발리에리의 원리」 — **두 평면도형을 평행한 직선으로 자를 때 각 도형을 통과하는 선분의 길이가 같으면 두 도형의 넓이가 같다**는 것, **밑변과 높이가 일정한 삼각형을 기울여도 같은 평행선이 만드는 선분의 길이가 변하지 않으므로 넓이가 일정하다**는 것, 같은 원리로 **가로 절단선의 비가 m:n 이면 넓이의 비도 m:n 이며 타원판의 넓이가 πab 가 된다**는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3338309&cid=47324&categoryId=47324",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-cavalieri/note.md",
+   "세기전체": [
+    17
+   ],
+   "자수": 9945,
+   "시각화": 7
+  },
+  {
+   "유형": "인물",
    "제목": "아브라암 드무아브르",
    "슬러그": "person-de-moivre",
    "날짜": "2026-08-28",
@@ -11361,6 +11540,7 @@
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
     "person-barrow",
+    "person-cavalieri",
     "person-de-moivre",
     "person-descartes",
     "person-fermat",
@@ -11511,6 +11691,7 @@
     "episode-descartes-fly",
     "person-archimedes",
     "person-barrow",
+    "person-cavalieri",
     "person-descartes",
     "person-euclid",
     "person-gauss",
@@ -11566,6 +11747,7 @@
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
+    "person-cavalieri",
     "person-dalembert",
     "person-de-moivre",
     "person-dedekind",
@@ -11886,6 +12068,7 @@
    "미적분": [
     "concept-series",
     "person-berkeley",
+    "person-cavalieri",
     "person-dirichlet",
     "person-poincare",
     "person-saint-vincent",
@@ -11959,6 +12142,7 @@
     "person-cantor",
     "person-cardano",
     "person-cauchy",
+    "person-cavalieri",
     "person-dalembert",
     "person-de-moivre",
     "person-dedekind",
@@ -12046,6 +12230,7 @@
     "person-bayes",
     "person-berkeley",
     "person-cardano",
+    "person-cavalieri",
     "person-dalembert",
     "person-de-moivre",
     "person-descartes",
@@ -12138,6 +12323,7 @@
     "episode-pascal-fermat-letters",
     "episode-priority-dispute",
     "person-barrow",
+    "person-cavalieri",
     "person-de-moivre",
     "person-descartes",
     "person-fermat",
@@ -12177,6 +12363,7 @@
     "century-17c",
     "concept-logarithm",
     "concept-logarithm-advanced",
+    "person-cavalieri",
     "person-napier"
    ],
    "18세기": [
@@ -12709,7 +12896,8 @@
     "concept-integration"
    ],
    "카발리에리": [
-    "concept-integration"
+    "concept-integration",
+    "person-cavalieri"
    ],
    "다르부": [
     "concept-integration-advanced",
@@ -13001,6 +13189,26 @@
    "페라리": [
     "person-cardano"
    ],
+   "불가분량": [
+    "person-cavalieri"
+   ],
+   "구적법": [
+    "person-cavalieri",
+    "person-saint-vincent",
+    "person-wallis"
+   ],
+   "예수아티": [
+    "person-cavalieri"
+   ],
+   "볼로냐": [
+    "person-cavalieri"
+   ],
+   "갈릴레오": [
+    "person-cavalieri"
+   ],
+   "구엘딘": [
+    "person-cavalieri"
+   ],
    "백과전서": [
     "person-dalembert"
    ],
@@ -13281,10 +13489,6 @@
    ],
    "기하급수": [
     "person-saint-vincent"
-   ],
-   "구적법": [
-    "person-saint-vincent",
-    "person-wallis"
    ],
    "프라하": [
     "person-saint-vincent"
@@ -13673,7 +13877,7 @@
    "person-wallis": [
     "concept-integration"
    ],
-   "카발리에리": [
+   "person-cavalieri": [
     "concept-integration"
    ],
    "다르부": [
@@ -13893,6 +14097,12 @@
      "경로": "선행개념"
     },
     {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
@@ -13969,6 +14179,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
      "유형": "인물",
      "경로": "본문"
     },
@@ -14779,6 +14995,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-gregory",
      "제목": "제임스 그레고리",
      "유형": "인물",
@@ -15105,6 +15327,12 @@
     {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
      "유형": "인물",
      "경로": "기여개념"
     },
@@ -17401,6 +17629,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-saint-vincent",
      "제목": "그레고리우스 드 생뱅상",
      "유형": "인물",
@@ -18241,6 +18475,12 @@
      "제목": "적분법",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "century-bc3": [
@@ -18327,6 +18567,20 @@
      "경로": "본문"
     }
    ],
+   "person-saint-vincent": [
+    {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-wallis",
+     "제목": "존 월리스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-al-khwarizmi": [
     {
      "슬러그": "person-diophantus",
@@ -18379,14 +18633,6 @@
      "제목": "아이작 뉴턴",
      "유형": "인물",
      "경로": "관련일화"
-    }
-   ],
-   "person-saint-vincent": [
-    {
-     "슬러그": "person-wallis",
-     "제목": "존 월리스",
-     "유형": "인물",
-     "경로": "본문"
     }
    ],
    "person-berkeley": [
@@ -18818,6 +19064,13 @@
   "인물_오귀스탱루이 코시": "person-cauchy",
   "코시": "person-cauchy",
   "코시 수열": "person-cauchy",
+  "Bonaventura Cavalieri": "person-cavalieri",
+  "Cavalieri": "person-cavalieri",
+  "person-cavalieri": "person-cavalieri",
+  "보나벤투라 카발리에리": "person-cavalieri",
+  "보나벤투라카발리에리": "person-cavalieri",
+  "인물_보나벤투라 카발리에리": "person-cavalieri",
+  "카발리에리": "person-cavalieri",
   "Jean le Rond d'Alembert": "person-dalembert",
   "person-dalembert": "person-dalembert",
   "달랑베르": "person-dalembert",
