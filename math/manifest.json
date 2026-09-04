@@ -4505,7 +4505,8 @@
     "person-gregory",
     "person-barrow",
     "person-newton",
-    "person-leibniz"
+    "person-leibniz",
+    "person-lebesgue"
    ],
    "출처": [
     {
@@ -4575,7 +4576,7 @@
     19,
     20
    ],
-   "자수": 7863,
+   "자수": 7908,
    "시각화": 4
   },
   {
@@ -9233,7 +9234,8 @@
    ],
    "기여인물": [
     "person-newton",
-    "person-leibniz"
+    "person-leibniz",
+    "person-lebesgue"
    ],
    "출처": [
     {
@@ -9262,7 +9264,7 @@
     },
     {
      "번호": 5,
-     "제목": "MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 함께 쓴 1957년 논문의 영역. 르베그 본인의 말로 인용된 동전 비유",
+     "제목": "MacTutor History of Mathematics, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 함께 쓴 1957년 논문의 영역. 르베그 본인의 말로 인용된 동전 비유, 그리고 **당대 대가들의 반응이 유보적이었고 많은 이가 「함수의 기형학」이 자리 잡는 것을 두려워했다**는 서술",
      "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/",
      "유형": "2차"
     },
@@ -9332,7 +9334,7 @@
     19,
     20
    ],
-   "자수": 10808,
+   "자수": 10881,
    "시각화": 4
   },
   {
@@ -10326,6 +10328,176 @@
   },
   {
    "유형": "인물",
+   "제목": "앙리 르베그",
+   "슬러그": "person-lebesgue",
+   "날짜": "2026-09-04",
+   "별칭": [
+    "르베그",
+    "앙리 르베그",
+    "앙리 레옹 르베그",
+    "Lebesgue",
+    "Henri Lebesgue",
+    "Henri Léon Lebesgue"
+   ],
+   "볼트파일명": "인물_앙리 르베그",
+   "세기": [
+    19,
+    20
+   ],
+   "분야": [
+    "해석학",
+    "측도론",
+    "위상수학"
+   ],
+   "교과": [
+    "미적분"
+   ],
+   "난이도": "표준",
+   "요약": "스물다섯의 리세 교사가 적분을 다시 정의했다. 그런데 그 사람은 일반화를 두려워했고, 자기가 연 분야에 평생 머물지 않았다.",
+   "태그": [
+    "수학사",
+    "르베그",
+    "측도",
+    "적분",
+    "베르",
+    "보렐",
+    "실변수함수론",
+    "일반화",
+    "19세기",
+    "20세기"
+   ],
+   "생몰": {
+    "출생": 1875,
+    "사망": 1941,
+    "출생지": "프랑스 우아즈주 보베 — 1875년 6월 28일, 사망은 1941년 7월 26일 파리"
+   },
+   "기여개념": [
+    "concept-integration-advanced",
+    "concept-fundamental-theorem"
+   ],
+   "관련일화": [
+    "episode-lebesgue-coins"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Henri Léon Lebesgue — 1875년 6월 28일 프랑스 피카르디 우아즈주 보베에서 나고 1941년 7월 26일 파리에서 죽었다는 것, **아버지가 인쇄공**이었다는 것, 보베 콜레주에서 공부를 시작해 파리로 가 먼저 리세 생루이, 다음에 리세 루이르그랑에서 배웠다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 1894년 파리 고등사범학교에 들어가 1897년 수학 교수자격을 받았다는 것, **그 뒤 두 해 동안 그 학교 도서관에서 공부하며 베르의 불연속 함수 논문들을 읽고 이 분야에서 훨씬 더 많은 것을 이룰 수 있음을 깨달았다**는 것, **뒷날 베르와 르베그 사이에 상당한 경쟁이 있게 된다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 그가 **낭시의 리세 상트랄에 임명돼 1899년부터 1902년까지 가르쳤다**는 것, **에밀 보렐과 카미유 조르당을 비롯한 다른 이들의 작업 위에서** 1901년 측도론을 세웠다는 것, **1901년 4월 29일 『콩트 랑뒤』에 실린 「정적분의 일반화에 관하여」**에서 곡선 아래 넓이 개념을 다수의 불연속 함수를 포함하도록 확장해 리만 적분을 일반화하는 적분의 정의를 주었다는 것, 이 일반화가 적분학을 혁명적으로 바꿨다는 것, **19세기 말까지 해석학이 사실상 연속 함수에 한정돼 있었고 그것이 대체로 리만의 적분법에 근거했다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 그의 기여가 **푸리에 해석의 범위를 크게 넓힌** 현대 해석학의 성취 가운데 하나라는 것, 이 뛰어난 작업이 1902년 파리 이과대학에 제출된 학위논문 『적분·길이·넓이』에 실렸고 **130쪽짜리인 그 논문이 같은 해 밀라노에서 『Annali di Matematica』에 출판**됐다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — **학위를 받은 뒤 1902년 렌 이과대학의 mâitre de conférences 가 되면서 첫 대학 자리를 얻었다**는 것, 그리고 이것이 **젊은 학자가 먼저 지방에서 자리를 얻고 나중에 파리의 더 낮은 자리에 임명되며 인정받는 프랑스의 표준 관례에 부합한다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — **1903년 12월 3일 루이즈마르그리트 발레와 결혼해 두 자녀를 두었으나 그 혼인이 1916년 이혼으로 끝났다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 경력 초기에 받은 영예 하나가 **콜레주 드 프랑스의 쿠르 페코 강의 초청**이었고 1903년에 했으며 두 해 뒤 1905년에 다시 초청받았다는 것, **1904년 베르가 콜레주 드 프랑스에서 쿠르 페코를 할 때 누가 그런 강의를 할 권리가 더 있느냐를 두고 르베그가 베르와 처음 틀어졌고 그 경쟁이 뒷날 더 심각한 다툼이 됐다**는 것, 그 두 강의에서 나온 『적분과 원시함수 탐구에 관한 강의』(1904)와 『삼각급수에 관한 강의』(1906) 두 저작이 그의 중요한 착상을 더 널리 알리는 구실을 했다는 것, **그러나 그의 연구가 고전 해석학자들 특히 프랑스에서 적대적인 반응을 받았다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — **1906년 푸아티에 이과대학에 임명되고 이듬해 그곳 역학 교수로 불렸다**는 것, **1910년 소르본의 해석학 mâitre de conférences 로 임명**됐다는 것, **1차 세계대전 동안 프랑스의 방위를 위해 일했고 그때 같은 일을 하던 보렐과 틀어졌다**는 것, **1918년 「해석학에 대한 기하학의 응용」 교수로 승진**할 때까지 소르본 자리를 지켰다는 것, **1921년 콜레주 드 프랑스 수학 교수로 불려 1941년 죽을 때까지 그 자리에 있었다**는 것, 1927년부터 1937년까지 파리시립 물리화학공업학교에서, 그리고 세브르의 고등사범학교에서도 가르쳤다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 인용된 대목 — **\"르베그가 자기 경력 내내 자기 자신이 시작한 분야에 집중하지 않았다는 것은 흥미롭다. 이는 그의 작업이 두드러진 일반화였는데도 르베그 자신은 일반화를 두려워했기 때문이다\"** 와 그가 쓴 문장 **\"일반 이론으로 환원되면 수학은 내용 없는 아름다운 형식이 될 것이다. 그것은 빠르게 죽을 것이다\"**, 그리고 **뒷날의 전개가 그의 두려움에 근거가 없음을 보였으나 그 두려움이 그 자신의 작업이 걸어간 길을 이해하게 해 준다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 그가 **위상수학·퍼텐셜론·디리클레 문제·변분법·집합론·표면적 이론·차원론을 비롯한 다른 분야에도 주요한 기여를 했다**는 것, **1922년 『Notice sur les travaux scientifique de M Henri Lebesgue』를 낼 무렵 90편 가까운 책과 논문을 썼고** 92쪽짜리인 그 저작이 그의 논문 내용에 대한 분석도 제공한다는 것, **1922년 이후에도 그가 활동했으나 그의 기여가 교육 문제·역사 연구·초등기하학 쪽으로 향했다**는 것, **1922년 5월 29일 과학아카데미 회원으로 뽑혔다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor, Henri Léon Lebesgue (같은 항목) — 호킨스의 서술을 인용한 대목 — **\"르베그의 작업에서 … 적분의 일반화된 정의는 적분론에 대한 그의 기여의 출발점일 뿐이었다. 새 정의를 중요하게 만든 것은 르베그가 그 안에서, 리만의 적분론과 관련해 일어난 수많은 이론적 난점을 다루고 또 상당 부분 극복할 수 있는 해석적 도구를 알아보았다는 점이다. 실제로 이 난점들이 제기한 문제들이 르베그의 주요 결과 전부를 이끌었다\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 12,
+     "제목": "MacTutor, Quotations by Henri Lebesgue — 르베그의 말 두 편. **\"내 생각에 수학자는 수학자인 한에서 철학에 몰두할 필요가 없다 — 더구나 많은 철학자가 표명해 온 견해이기도 하다\"** 와 **\"수학자들은 자기네 학문에 대해 한 번도 온전히 합의한 적이 없다. 그것이 자명한 진리의 학문 — 절대적이고 논박할 수 없고 결정적인 — 이라고들 하는데도 그렇다. 그들은 언제나 수학의 전개되는 국면들을 두고 논쟁해 왔고, 언제나 자기 시대를 위기의 시기라고 여겨 왔다\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/quotations/",
+     "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "MacTutor, Obituary of René-Louis Baire by Henri Lebesgue — 파리 과학아카데미 기하학 부문 통신회원 르네루이 베르의 부고를 **앙리 르베그가 낭독**했고 『L'Enseignement Mathématique』(2) 3(1)(1957) 28-30 에 실렸다는 것, 베르가 1874년 1월 21일 파리에서 나 1892년 11월 고등사범학교에 들어갔고 1899년 이학박사가 됐으며 디종 이과대학이 그를 해석학 교수로 뽑았고 청소년기부터 앓아 곧 모든 활동을 접어야 했으며 1932년 7월 5일 샹베리 근처 바상에서 죽었다는 것, 그리고 르베그가 그 부고에서 적은 평가 — **\"베르 이전에도 많은 학자가 실변수에 관심을 가졌으나 그것은 부수적이었고 19세기 초부터 거의 배타적으로 몰두해 온 복소변수를 염두에 둔 것이었다. 베르는 자기 학문 활동 전부를 실변수 함수론에 바친 첫 사람이다. 그는 그 이상을 했다. 그는 우리가 그 일에 열매 맺게 활동을 바치는 법을 가르쳤다\"**, **\"우선 그는 우리에게 연구할 재료를 주었다\"**, **\"베르의 가르침은 조금씩 열매를 맺을 것이다. 그에게 빚진 모든 것을 더 정확히 헤아리면서 우리는 방금 잃은 이가 최고 수준의 수학자였음을 더 잘 이해하게 될 것이다\"**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Baire_Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 14,
+     "제목": "Britannica, Henri-Léon Lebesgue — 1875년 6월 28일 보베에서 나 1941년 7월 26일 파리에서 죽은 프랑스 수학자로 **리만 적분의 일반화가 적분 분야를 혁명적으로 바꿨다**는 것, **1902년부터 1906년까지 렌 대학의 mâitre de conférences 였고 1906년 푸아티에로 가 처음에는 이과대학 chargé de cours 로, 나중에 교수로 있었다**는 것, **1910년 파리 소르본에 해석학 mâitre de conférences 로 갔고 1921년 콜레주 드 프랑스 교수가 됐다**는 것, **1917년 생투르상을 받고 1922년 프랑스 과학아카데미 회원으로 뽑혔으며 1924년 런던수학회 명예회원, 1930년 런던 왕립학회 외국인 회원이 됐다**는 것, **피복 정리로 위상수학에 중요한 기여를 했다**는 것, **논문 약 50편에 더해 1904년과 1906년의 두 주요 저작을 썼다**는 것",
+     "URL": "https://www.britannica.com/biography/Henri-Leon-Lebesgue",
+     "유형": "2차"
+    },
+    {
+     "번호": 15,
+     "제목": "MacTutor, Henri Léon Lebesgue — Honours 목록 — **런던수학회 명예회원 1924년, 왕립학회 회원(FRS) 1934년**, 달 분화구 르베그",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+     "유형": "2차"
+    },
+    {
+     "번호": 16,
+     "제목": "네이버 지식백과(인명사전) 「르베그」 — 프랑스의 수학자로 **\"프와티에 이공과 대학 교수(1916~10)ㆍ파리 대학 강사(1910~19)ㆍ교수(1920~21)ㆍ콜레주 드 프랑스 교수(1921) 등을 역임\"** 했다는 서술과, **'르베그 측도'의 개념을 확립해 실변수 함수론에 새 단계를 열고 '르베그 적분'의 개념에 의한 적분론에 공헌했으며 푸리에 급수와 그 응용도 연구했다**는 것. ※ 이 노트는 앞의 연도 서술을 **국내 자료의 표기가 해외 자료와 어긋나는 사례로만** 인용하며 사실로 채택하지 않는다(§12)",
+     "URL": "https://terms.naver.com/entry.naver?docId=880024&cid=43671&categoryId=43671",
+     "유형": "2차"
+    },
+    {
+     "번호": 17,
+     "제목": "네이버 지식백과(수학백과) 「르베그 적분」 — 측도공간에서 정의된 적분으로, **리만 적분이 함수의 정의역을 쪼개어 직사각형의 넓이로 적분을 정의했다면 르베그 적분은 함수의 값을 쪼개어 적분을 정의한다**는 대비",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 18,
+     "제목": "MacTutor, Henri Lebesgue, the Scientist, the Professor, the Man — 당주아·펠릭스·몽텔이 1957년에 쓴 회고 논문의 영역. 당대 대가들의 반응이 유보적이었고 **많은 이가 \"함수의 기형학\"이 자리 잡는 것을 두려워했다**는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-lebesgue/note.md",
+   "세기전체": [
+    19,
+    20
+   ],
+   "자수": 9576,
+   "시각화": 8
+  },
+  {
+   "유형": "인물",
    "제목": "앙리 푸앵카레",
    "슬러그": "person-poincare",
    "날짜": "2026-08-28",
@@ -11097,7 +11269,7 @@
    "세기전체": [
     20
    ],
-   "자수": 12196,
+   "자수": 12264,
    "시각화": 9
   },
   {
@@ -11436,7 +11608,7 @@
    "세기전체": [
     20
    ],
-   "자수": 1800,
+   "자수": 1848,
    "시각화": 1
   },
   {
@@ -11644,6 +11816,7 @@
     "person-klein",
     "person-lagrange",
     "person-laplace",
+    "person-lebesgue",
     "person-poincare",
     "person-riemann",
     "person-weierstrass"
@@ -11668,6 +11841,7 @@
     "person-hilbert",
     "person-klein",
     "person-kolmogorov",
+    "person-lebesgue",
     "person-poincare"
    ]
   },
@@ -11780,6 +11954,7 @@
     "person-jakob-bernoulli",
     "person-lagrange",
     "person-laplace",
+    "person-lebesgue",
     "person-leibniz",
     "person-newton",
     "person-riemann",
@@ -11871,7 +12046,8 @@
     "century-20c",
     "concept-integration-advanced",
     "episode-lebesgue-coins",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-lebesgue"
    ],
    "천문학": [
     "century-bc3",
@@ -11903,6 +12079,7 @@
     "concept-graph-theory",
     "person-heine",
     "person-kolmogorov",
+    "person-lebesgue",
     "person-poincare"
    ],
    "계산법": [
@@ -12090,6 +12267,7 @@
     "person-berkeley",
     "person-cavalieri",
     "person-dirichlet",
+    "person-lebesgue",
     "person-poincare",
     "person-saint-vincent",
     "person-wallis"
@@ -12186,6 +12364,7 @@
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
+    "person-lebesgue",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -12271,6 +12450,7 @@
     "person-kolmogorov",
     "person-lagrange",
     "person-laplace",
+    "person-lebesgue",
     "person-leibniz",
     "person-napier",
     "person-newton",
@@ -12469,6 +12649,7 @@
     "person-heine",
     "person-klein",
     "person-laplace",
+    "person-lebesgue",
     "person-poincare",
     "person-riemann"
    ],
@@ -12535,6 +12716,7 @@
     "person-hilbert",
     "person-klein",
     "person-kolmogorov",
+    "person-lebesgue",
     "person-poincare"
    ],
    "공리주의": [
@@ -12565,7 +12747,8 @@
    "르베그": [
     "century-20c",
     "concept-integration-advanced",
-    "episode-lebesgue-coins"
+    "episode-lebesgue-coins",
+    "person-lebesgue"
    ],
    "로빈슨": [
     "century-20c"
@@ -12889,7 +13072,8 @@
     "concept-integration",
     "concept-integration-advanced",
     "episode-lebesgue-coins",
-    "person-archimedes"
+    "person-archimedes",
+    "person-lebesgue"
    ],
    "배로": [
     "concept-fundamental-theorem",
@@ -12929,7 +13113,8 @@
    "측도": [
     "concept-integration-advanced",
     "episode-lebesgue-coins",
-    "person-kolmogorov"
+    "person-kolmogorov",
+    "person-lebesgue"
    ],
    "볼테라": [
     "concept-integration-advanced"
@@ -13438,6 +13623,18 @@
    "나폴레옹": [
     "person-laplace"
    ],
+   "베르": [
+    "person-lebesgue"
+   ],
+   "보렐": [
+    "person-lebesgue"
+   ],
+   "실변수함수론": [
+    "person-lebesgue"
+   ],
+   "일반화": [
+    "person-lebesgue"
+   ],
    "dy/dx": [
     "person-leibniz"
    ],
@@ -13893,7 +14090,7 @@
     "concept-series",
     "person-barrow"
    ],
-   "르베그": [
+   "person-lebesgue": [
     "concept-fundamental-theorem",
     "concept-integration-advanced"
    ],
@@ -15455,6 +15652,12 @@
      "경로": "기여개념"
     },
     {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
      "슬러그": "person-leibniz",
      "제목": "고트프리트 라이프니츠",
      "유형": "인물",
@@ -16647,6 +16850,12 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "기여개념"
     }
    ],
    "concept-analytic-geometry-advanced": [
@@ -17393,6 +17602,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-poincare",
      "제목": "앙리 푸앵카레",
      "유형": "인물",
@@ -17489,6 +17704,32 @@
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
      "경로": "기여개념"
+    }
+   ],
+   "person-lebesgue": [
+    {
+     "슬러그": "century-20c",
+     "제목": "20세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-integration-advanced",
+     "제목": "적분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "episode-lebesgue-coins",
+     "제목": "르베그의 동전",
+     "유형": "일화",
+     "경로": "본문"
     }
    ],
    "person-hilbert": [
@@ -17609,6 +17850,12 @@
      "제목": "다비트 힐베르트",
      "유형": "인물",
      "경로": "관련인물"
+    },
+    {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-archimedes": [
@@ -18071,6 +18318,12 @@
      "제목": "적분법",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "본문"
     }
    ],
    "person-poincare": [
@@ -18711,6 +18964,12 @@
      "제목": "안드레이 콜모고로프",
      "유형": "인물",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-lebesgue",
+     "제목": "앙리 르베그",
+     "유형": "인물",
+     "경로": "관련일화"
     }
    ],
    "episode-newton-apple": [
@@ -19343,6 +19602,14 @@
   "천체역학": "person-laplace",
   "피에르 시몽 라플라스": "person-laplace",
   "피에르시몽 라플라스": "person-laplace",
+  "Henri Lebesgue": "person-lebesgue",
+  "Henri Léon Lebesgue": "person-lebesgue",
+  "Lebesgue": "person-lebesgue",
+  "person-lebesgue": "person-lebesgue",
+  "르베그": "person-lebesgue",
+  "앙리 레옹 르베그": "person-lebesgue",
+  "앙리 르베그": "person-lebesgue",
+  "인물_앙리 르베그": "person-lebesgue",
   "Leibniz": "person-leibniz",
   "person-leibniz": "person-leibniz",
   "고트프리트 라이프니츠": "person-leibniz",
