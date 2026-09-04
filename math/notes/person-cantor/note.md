@@ -53,7 +53,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3405192&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=person-cantor"
 ---
 
 # 게오르크 칸토어

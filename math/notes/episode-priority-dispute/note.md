@@ -39,7 +39,6 @@
     URL: https://terms.naver.com/entry.naver?docId=419705&cid=60277&categoryId=60277
     유형: 2차
 
-갤러리URL: "#n=episode-priority-dispute"
 ---
 
 # 뉴턴–라이프니츠 우선권 논쟁

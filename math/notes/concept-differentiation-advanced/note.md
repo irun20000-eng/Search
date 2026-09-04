@@ -114,7 +114,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/
     유형: 2차
 
-갤러리URL: "#n=concept-differentiation-advanced"
 ---
 
 # 미분법 (확장편)

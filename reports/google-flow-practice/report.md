@@ -7,7 +7,6 @@
 태그: [AI영상, GoogleFlow, Veo, 실습가이드, 프롬프트, Scenebuilder, 크리에이터, 따라하기]
 소스수: { 국내: 5, 해외: 10 }
 위키링크: ["[[Google Flow]]", "[[Veo]]", "[[프롬프트 엔지니어링]]", "[[AI 영상 생성]]", "[[콘텐츠 크리에이터]]", "[[Scenebuilder]]"]
-갤러리URL: "#r=google-flow-practice"
 ---
 
 # Google Flow 실습편 — 실전 예제·실행 순서·따라하기 가이드

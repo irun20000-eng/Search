@@ -57,7 +57,6 @@
     URL: https://thonyc.wordpress.com/2022/07/20/the-sixteenth-century-dispute-about-higher-order-algebraic-equations-and-their-solution/
     유형: 2차
 
-갤러리URL: "#n=person-tartaglia"
 ---
 
 # 니콜로 타르탈리아

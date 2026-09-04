@@ -55,7 +55,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/
     유형: 2차
 
-갤러리URL: "#n=person-de-moivre"
 ---
 
 ## 한눈에

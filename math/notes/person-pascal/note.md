@@ -59,7 +59,6 @@
     URL: https://terms.naver.com/entry.naver?docId=2843010&cid=55589&categoryId=55589
     유형: 2차
 
-갤러리URL: "#n=person-pascal"
 ---
 
 # 블레즈 파스칼

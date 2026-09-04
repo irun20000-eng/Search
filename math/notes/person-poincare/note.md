@@ -51,7 +51,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3474139&cid=58439&categoryId=58439
     유형: 2차
 
-갤러리URL: "#n=person-poincare"
 ---
 
 ## 한눈에

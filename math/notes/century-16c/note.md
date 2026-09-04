@@ -125,7 +125,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/
     유형: 2차
 
-갤러리URL: "#n=century-16c"
 ---
 
 # 16세기

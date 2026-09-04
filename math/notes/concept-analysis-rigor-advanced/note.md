@@ -94,7 +94,6 @@
     URL: https://terms.naver.com/entry.naver?docId=4125359&cid=60207&categoryId=60207
     유형: 2차
 
-갤러리URL: "#n=concept-analysis-rigor-advanced"
 ---
 
 # 해석학의 엄밀화 (확장편)

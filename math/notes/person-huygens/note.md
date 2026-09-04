@@ -50,7 +50,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/
     유형: 2차
 
-갤러리URL: "#n=person-huygens"
 ---
 
 # 크리스티안 하위헌스

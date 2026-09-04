@@ -7,7 +7,6 @@
 태그: [Slack, AI봇, LLM, ClaudeAPI, Bolt, 1인개발자, 자동화, 에이전트, 생산성]
 위키링크: ["[[Slack]]", "[[웹훅(Webhook)]]", "[[MCP(Model Context Protocol)]]", "[[1인 개발자]]", "[[업무 자동화]]", "[[클로드 플러그인 워크플로우]]"]
 소스수: { 국내: 5, 해외: 10 }
-갤러리URL: "#r=slack-ai-bot"
 ---
 
 # AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가

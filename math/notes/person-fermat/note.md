@@ -55,7 +55,6 @@
     URL: https://en.wikipedia.org/wiki/History_of_probability
     유형: 2차
 
-갤러리URL: "#n=person-fermat"
 ---
 
 # 피에르 드 페르마

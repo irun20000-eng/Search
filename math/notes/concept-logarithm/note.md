@@ -86,7 +86,6 @@
     URL: https://www.nms.ac.uk/discover-catalogue/napiers-bones-the-logarithmic-genius-who-revolutionised-calculations
     유형: 2차
 
-갤러리URL: "#n=concept-logarithm"
 ---
 
 ## TL;DR

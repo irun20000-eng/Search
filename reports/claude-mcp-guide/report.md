@@ -7,7 +7,6 @@
 태그: [AI, MCP, ModelContextProtocol, ClaudeCode, ClaudeDesktop, 자동화, 생산성, 도구연동, 보안]
 소스수: { 국내: 5, 해외: 9 }
 위키링크: ["[[MCP(Model Context Protocol)]]", "[[Claude Code]]", "[[Claude Desktop]]", "[[AI 에이전트]]", "[[프롬프트 인젝션]]", "[[OAuth 2.1]]", "[[주제 리서치 파이프라인]]"]
-갤러리URL: "#r=claude-mcp-guide"
 ---
 
 # 클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지

@@ -116,7 +116,6 @@
     URL: https://en.wikipedia.org/wiki/Fourier_series
     유형: 2차
 
-갤러리URL: "#n=concept-differential-equation-advanced"
 ---
 
 # 미분방정식 확장편

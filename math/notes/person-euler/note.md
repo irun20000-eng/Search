@@ -70,7 +70,6 @@
     URL: https://en.wikipedia.org/wiki/Differential_equation
     유형: 2차
 
-갤러리URL: "#n=person-euler"
 ---
 
 # 레온하르트 오일러

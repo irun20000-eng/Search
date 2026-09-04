@@ -106,7 +106,6 @@
     URL: https://terms.naver.com/entry.naver?docId=880024&cid=43671&categoryId=43671
     유형: 2차
 
-갤러리URL: "#n=concept-integration-advanced"
 ---
 
 # 적분법 (확장편)

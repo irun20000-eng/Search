@@ -39,7 +39,6 @@
     URL: https://en.wikipedia.org/wiki/Ars_Conjectandi
     유형: 2차
 
-갤러리URL: "#n=episode-pascal-fermat-letters"
 ---
 
 # 파스칼–페르마 서신

@@ -58,7 +58,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
     유형: 2차
 
-갤러리URL: "#n=person-lagrange"
 ---
 
 # 조제프루이 라그랑주

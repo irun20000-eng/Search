@@ -50,7 +50,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/
     유형: 2차
 
-갤러리URL: "#n=person-godel"
 ---
 
 ## 한눈에

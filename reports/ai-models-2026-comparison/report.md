@@ -7,7 +7,6 @@
 태그: [AI, LLM, AI모델비교, ChatGPT, Claude, Gemini, DeepSeek, 엑사원, 솔라, 하이퍼클로바X]
 소스수: { 국내: 5, 해외: 11 }
 위키링크: ["[[AI 모델 비교]]", "[[LLM]]", "[[벤치마크]]", "[[소버린 AI]]", "[[국산 AI 모델]]"]
-갤러리URL: "#r=ai-models-2026-comparison"
 ---
 
 # AI 모델 완전 비교 (2026)

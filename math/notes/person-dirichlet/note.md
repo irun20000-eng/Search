@@ -51,7 +51,6 @@
     URL: https://terms.naver.com/entry.naver?docId=1004514&cid=62105&categoryId=62105
     유형: 2차
 
-갤러리URL: "#n=person-dirichlet"
 ---
 
 ## 한눈에

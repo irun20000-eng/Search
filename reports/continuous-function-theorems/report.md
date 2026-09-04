@@ -7,7 +7,6 @@
 태그: [수학, 해석학, 연속함수, 중간값정리, 사잇값정리, 최대최소정리, 극값정리, IVT, EVT, 반례]
 위키링크: ["[[중간값 정리]]", "[[최대·최소 정리]]", "[[연속함수]]", "[[실수의 완비성]]", "[[이분법]]"]
 소스수: { 국내: 10, 해외: 3 }
-갤러리URL: "#r=continuous-function-theorems"
 짝문서: "continuous-function-theorems-advanced"
 ---
 

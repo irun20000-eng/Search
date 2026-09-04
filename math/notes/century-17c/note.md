@@ -113,7 +113,6 @@
     URL: https://terms.naver.com/entry.naver?docId=6624161&cid=51648&categoryId=63595
     유형: 2차
 
-갤러리URL: "#n=century-17c"
 ---
 
 # 17세기 — 자연을 수로 쓰기로 한 세기

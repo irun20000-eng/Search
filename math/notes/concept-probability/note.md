@@ -86,7 +86,6 @@
     URL: https://en.wikipedia.org/wiki/Classical_definition_of_probability
     유형: 2차
 
-갤러리URL: "#n=concept-probability"
 ---
 
 # 확률론

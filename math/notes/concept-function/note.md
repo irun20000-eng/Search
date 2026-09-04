@@ -69,7 +69,6 @@
     URL: https://en.wikipedia.org/wiki/Contributions_of_Leonhard_Euler_to_mathematics
     유형: 2차
 
-갤러리URL: "#n=concept-function"
 ---
 
 # 함수 개념

@@ -35,7 +35,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3405411&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=episode-prague-1834"
 ---
 
 ## 두 사람이 같은 도시에 있게 된 이유

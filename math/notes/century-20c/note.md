@@ -117,7 +117,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Extras/Lebesgue_extra/
     유형: 2차
 
-갤러리URL: "#n=century-20c"
 ---
 
 ## TL;DR

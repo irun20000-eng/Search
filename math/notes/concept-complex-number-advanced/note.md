@@ -98,7 +98,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3405238&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=concept-complex-number-advanced"
 ---
 
 # 복소수 (확장편)

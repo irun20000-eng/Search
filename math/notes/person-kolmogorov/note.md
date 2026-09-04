@@ -50,7 +50,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
     유형: 2차
 
-갤러리URL: "#n=person-kolmogorov"
 ---
 
 ## 한눈에

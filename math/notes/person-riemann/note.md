@@ -78,7 +78,6 @@
     URL: https://terms.naver.com/entry.naver?docId=5668464&cid=60207&categoryId=60207
     유형: 2차
 
-갤러리URL: "#n=person-riemann"
 ---
 
 # 베른하르트 리만

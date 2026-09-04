@@ -120,7 +120,7 @@ TYPE_REQUIRED = {
 #   (LESSONS "frontmatter 필드를 새로 만들기 전에 그것을 읽는 코드가 있는지 확인한다")
 KNOWN_FIELDS = set(COMMON_REQUIRED) | {f for v in TYPE_REQUIRED.values() for f in v} | {
     # 공통 선택
-    "별칭", "분야", "교과", "난이도", "태그", "이미지", "갤러리URL",
+    "별칭", "분야", "교과", "난이도", "태그", "이미지",
     # 개념 (트랙·발전단계·기여인물은 TYPE_REQUIRED 에서 온다)
     "짝문서", "선행개념", "후속개념",
     # 인물 (생몰은 TYPE_REQUIRED)
@@ -130,6 +130,39 @@ KNOWN_FIELDS = set(COMMON_REQUIRED) | {f for v in TYPE_REQUIRED.values() for f i
     # 세기 (연대·시대이슈는 TYPE_REQUIRED)
     "세계사사건",
 }
+
+# 허용 목록에 있으면서 카드에 실리지 않아도 되는 필드.
+#
+# ■ 왜 이 집합이 필요한가 (2026-09-03)
+#
+#   위의 미지 필드 차단은 「모르는 필드」를 막았지, 「아무도 안 읽는 필드」는
+#   막지 못했다 — 오히려 허용 목록에 넣어 **살려 두었다.** 실측: `갤러리URL` 이
+#   reports 68편·math 78편 도합 146편에 있었는데 저장소 전체에 읽는 코드가
+#   없었다. manifest 카드 필드에도 없고, index.html 도 읽지 않고,
+#   sync_obsidian.py 는 그 URL 을 manifest 슬러그로 직접 짓는다. 이 필드가
+#   0편인 서가 넷(concept·videos·guides·blog)이 멀쩡히 도는 것이 대조군이었다.
+#   146편에서 걷어내고 빌더를 다시 돌렸더니 산출물 7개가 비트 단위로 같았다.
+#
+#   그래서 이제 검사기가 자기 허용 목록을 스스로 잰다 — KNOWN_FIELDS 에 있는데
+#   CARD_FIELDS 에도 없고 여기 예외로도 안 적힌 필드가 있으면 그 자리에서 죽는다.
+#   예외를 늘리려면 **읽는 코드가 어디 있는지를 옆에 적을 것.** 못 적으면 죽은
+#   필드이므로 넣지 말고 걷어낸다.
+NOT_ON_CARD = set()  # 추가할 때는 「무엇이 이 필드를 읽는가」를 옆에 적을 것
+
+
+def audit_schema():
+    """허용 목록에 죽은 필드가 섞였는지 잰다. 섞였으면 메시지를, 아니면 None."""
+    try:
+        import build_math_manifest as BM
+    except ImportError:
+        return None  # 빌더 없이 검증기만 돌리는 경우는 건너뛴다
+    dead = sorted(KNOWN_FIELDS - set(BM.CARD_FIELDS) - NOT_ON_CARD)
+    if not dead:
+        return None
+    return ("스키마 결함 — 허용 목록에 있으나 카드에 실리지 않는 필드: %s\n"
+            "  아무도 읽지 않으면 낡아도 낡은 줄 모른다. 읽는 코드가 있으면\n"
+            "  verify_math.py 의 NOT_ON_CARD 에 근거와 함께 적고, 없으면 걷어낼 것."
+            % ", ".join(dead))
 
 
 def gate_key(fm):
@@ -444,6 +477,11 @@ def print_backlog(pending, where, limit=40):
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     flags = {a for a in sys.argv[1:] if a.startswith("--")}
+
+    problem = audit_schema()
+    if problem:
+        print("FAIL  " + problem)
+        return 1
 
     notes = list(M.iter_notes())
     if args:

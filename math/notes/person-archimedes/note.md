@@ -70,7 +70,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/
     유형: 2차
 
-갤러리URL: "#n=person-archimedes"
 ---
 
 # 아르키메데스

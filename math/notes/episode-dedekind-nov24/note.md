@@ -35,7 +35,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/
     유형: 2차
 
-갤러리URL: "#n=episode-dedekind-nov24"
 ---
 
 ## 추천서가 예언이 되다

@@ -31,7 +31,6 @@
     URL: https://www.ams.org/journals/bull/1949-55-06/S0002-9904-1949-09249-2/
     유형: 1차
 
-갤러리URL: "#n=episode-namdaemun-1947"
 ---
 
 ## 수학과가 없는 대학을 나왔다

@@ -94,7 +94,6 @@
     URL: https://www.britannica.com/biography/John-Napier
     유형: 2차
 
-갤러리URL: "#n=concept-logarithm-advanced"
 ---
 
 ## TL;DR

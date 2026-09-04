@@ -76,7 +76,6 @@
     URL: https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes
     유형: 2차
 
-갤러리URL: "#n=concept-analytic-geometry"
 ---
 
 # 해석기하

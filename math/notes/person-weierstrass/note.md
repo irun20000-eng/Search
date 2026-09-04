@@ -53,7 +53,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/
     유형: 2차
 
-갤러리URL: "#n=person-weierstrass"
 ---
 
 # 카를 바이어슈트라스

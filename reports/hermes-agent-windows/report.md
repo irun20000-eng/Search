@@ -7,7 +7,6 @@
 태그: [AI, HermesAgent, 헤르메스에이전트, NousResearch, 오픈소스, AI에이전트, 로컬AI, 윈도우, 셀프호스팅, 소버린AI]
 소스수: { 국내: 7, 해외: 11 }
 위키링크: ["[[Hermes Agent]]", "[[Nous Research]]", "[[로컬 AI 에이전트]]", "[[셀프호스팅]]", "[[소버린 AI]]"]
-갤러리URL: "#r=hermes-agent-windows"
 ---
 
 # Hermes Agent 윈도우 데스크톱 설치 및 활용
