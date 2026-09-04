@@ -6,7 +6,8 @@
   "#n=optimal-stopping": "[2026-08-13] 최적 정지 — 이해편.md",
   "#n=simpsons-paradox": "[2026-08-04] 심슨의 역설 — 이해편.md",
   "#n=braess-paradox": "[2026-08-27] 브라에스의 역설 — 이해편.md",
-  "#n=base-rate-fallacy": "[2026-08-25] 기저율의 함정 — 이해편.md"
+  "#n=base-rate-fallacy": "[2026-08-25] 기저율의 함정 — 이해편.md",
+  "#n=littles-law": "[2026-09-03] 리틀의 법칙 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
@@ -178,6 +179,9 @@
   "youtu.be/y6HIrsG7pE8": "20260624_코딩_몰라도_OK_—_클로드_코드로_100만_원짜리_사이트_만들기__구글시트_자동_저장까지.md",
   "youtu.be/HNlBFesXiW8": "20260623_클로드·코덱스·제미나이를_동시에_제어합니다__하네스_멀티_에이전트_2.0.md",
   "youtu.be/6BGIfYbzWz4": "20260827_카드뉴스_한_땀_한_땀_만드시나요_자동화로_대량_제작하세요!_제미나이_잼스(Gems)_+_캔바_대량_제작!_구글_시트_연동부터.md",
-  "youtu.be/xxUbF6EPyfU": "20260825_Claude_Code(클로드_코드)_서브에이전트_1초컷!_순식간에_전문_비서_만든다!.md"
+  "youtu.be/xxUbF6EPyfU": "20260825_Claude_Code(클로드_코드)_서브에이전트_1초컷!_순식간에_전문_비서_만든다!.md",
+  "youtu.be/QWMIQFJye-A": "20260901_클로드_역대급_디자인_스킬_업데이트_design.md",
+  "youtu.be/DRcnLOmbaPM": "20260831_지겨운 엑셀작업은 제미나이 노트북으로 끝내세요.md",
+  "youtu.be/T6TjZY_9rO8": "20260831_노트북LM에서 안 되던 게 다 되네 — 제미나이 노트북 8월 최신 활용법 6가지.md"
  }
 }
