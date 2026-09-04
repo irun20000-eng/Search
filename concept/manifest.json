@@ -1,6 +1,29 @@
 {
- "count": 8,
+ "count": 9,
  "notes": [
+  {
+   "slug": "sample-mean-variance",
+   "title": "표본평균의 평균과 분산 — 이해편(입문·딥)",
+   "date": "2026-09-05",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "확률과통계",
+    "표본평균",
+    "표본분포",
+    "표준오차",
+    "모평균",
+    "모분산",
+    "큰수의법칙",
+    "고등수학",
+    "이해편"
+   ],
+   "cardnews": "",
+   "chars": 8903,
+   "pic": null,
+   "path": "concept/notes/sample-mean-variance.md"
+  },
   {
    "slug": "littles-law",
    "title": "리틀의 법칙(Little's Law) — 이해편(입문·딥)",
