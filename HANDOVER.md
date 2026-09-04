@@ -200,6 +200,14 @@ python3 tools/sync_obsidian.py --check --only reports
   본문은 리포와 바이트 길이가 정확히 일치한다(34,189 / 31,626).
 - **뒤처짐 3편** — `person-euler` · `person-laplace` · `reports/infinity-set-theory`
   (2026-08-31 부채 정리로 리포만 바뀜).
+- **뒤처짐 3편 추가** (2026-09-04 상호참조 회차) — `concept-probability` · `concept-differentiation` ·
+  `person-lagrange`. **셋 다 볼트에 이미 있어 일부러 덮지 않았다.**
+  - `개념_확률론.md` — Drive `1nu0w633FKTiz47wc08ffOX0CPqpwBmRZ`(02-개념), 볼트 **25,475** 바이트 대
+    새 생성본 **27,980**. 카르다노 소절·라플라스 한 문장·출처 13·발전단계 16세기 항목이 빠져 있다.
+  - `개념_미분법.md` · `인물_조제프루이 라그랑주.md` — frontmatter 한 줄과 링크 한 줄 차이다(작다).
+  **이번 회차는 「그대로 둔다」(위 1번)를 골랐다** — 세 편 다 기존 노트라 갈아 끼우면 볼트 메모가
+  사라질 수 있고, 리포가 정본이며 갤러리는 이미 새 판을 보여 준다. **`G:\` 가 있는 자리에서
+  `--check` 를 돌려 실제 볼트 상태를 확인한 뒤 갈아 끼울 것.**
 
 **고르는 법은 셋이다.** 먼저 `--check` 로 실제 목록을 확인할 것.
 
