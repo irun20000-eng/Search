@@ -280,6 +280,7 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-cavalieri",
     "person-wallis",
     "person-barrow",
     "person-newton",
@@ -5386,7 +5387,7 @@
    "세기전체": [
     17
    ],
-   "자수": 9945,
+   "자수": 10053,
    "시각화": 7
   },
   {
@@ -13874,10 +13875,10 @@
    "히어홀처": [
     "concept-graph-theory"
    ],
-   "person-wallis": [
+   "person-cavalieri": [
     "concept-integration"
    ],
-   "person-cavalieri": [
+   "person-wallis": [
     "concept-integration"
    ],
    "다르부": [
@@ -18467,6 +18468,14 @@
      "제목": "피에르시몽 라플라스",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "person-cavalieri": [
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "기여인물"
     }
    ],
    "person-wallis": [
