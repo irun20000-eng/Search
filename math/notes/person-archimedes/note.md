@@ -17,7 +17,7 @@
   사망: -212
   출생지: 시칠리아 시라쿠사
 
-기여개념: [concept-integration, concept-fundamental-theorem]
+기여개념: [concept-integration]
 관련일화: [episode-bernoulli-tomb]
 
 출처:

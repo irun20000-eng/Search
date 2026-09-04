@@ -34,7 +34,7 @@
 
 선행개념: [concept-series]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-euler, person-gauss]
+기여인물: [person-cardano, person-euler, person-gauss]
 
 출처:
   - 번호: 1

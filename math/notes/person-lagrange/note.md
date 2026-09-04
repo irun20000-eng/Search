@@ -17,7 +17,7 @@
   사망: 1813
   출생지: 사르데냐피에몬테 토리노
 
-기여개념: [concept-calculus-of-variations, concept-differential-equation, concept-differential-equation-advanced, concept-differentiation, concept-differentiation-advanced]
+기여개념: [concept-calculus-of-variations, concept-differential-equation, concept-differential-equation-advanced, concept-differentiation-advanced]
 관련인물: [person-laplace, person-euler, person-cauchy]
 
 출처:
@@ -261,4 +261,3 @@ $$f(x+h) = f(x) + p\,h + q\,h^2 + \cdots$$
 - [[레온하르트 오일러]] — 그가 편지를 보냈고, 자리를 이어받은 사람
 - [[미분법 확장편]] — 그의 멱급수 시도가 왜 실패했나
 - [[해석기하]] — 도형을 식으로 옮긴 출발점
-- [[미분법]] · [[적분법]] — 그가 물려받아 형식화한 도구

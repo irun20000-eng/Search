@@ -46,7 +46,7 @@
 
 선행개념: [concept-differentiation]
 후속개념: [concept-real-analysis]
-기여인물: [person-leibniz, person-newton, person-bayes]
+기여인물: [person-leibniz, person-newton, person-bayes, person-lagrange]
 
 출처:
   - 번호: 1

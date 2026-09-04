@@ -42,7 +42,7 @@
 
 선행개념: [concept-analytic-geometry]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-descartes, person-fermat, person-gauss, person-poincare, person-klein]
+기여인물: [person-descartes, person-fermat, person-gauss, person-riemann, person-poincare, person-klein]
 
 출처:
   - 번호: 1
