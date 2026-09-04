@@ -3789,8 +3789,7 @@
     "person-barrow",
     "person-newton",
     "person-leibniz",
-    "person-berkeley",
-    "person-lagrange"
+    "person-berkeley"
    ],
    "이미지": [
     {
@@ -4748,10 +4747,12 @@
     "기댓값",
     "큰 수의 법칙",
     "조건부확률",
+    "카르다노",
     "파스칼",
     "페르마",
     "하위헌스",
     "베르누이",
+    "라플라스",
     "17세기"
    ],
    "발전단계": [
@@ -4865,6 +4866,12 @@
      "제목": "Wikipedia, Classical definition of probability — 세계 곳곳에 주사위를 굴린 선사시대 증거가 있는데도(각주는 선사시대 증거가 고고학적 추정임을 밝히고 기원전 3500년경의 기록·그림으로는 증거가 확실하다고 단서를 단다) 확률론이 기하학 등에 비해 매우 늦게 성립했다는 서술, 1654년 파스칼–페르마 서신과 슈발리에 드 메레, 주사위 하나에서 둘로 늘리자 규칙이 깨져 보였다는 두 번째 문제와 \"수학을 현실에 적용하는 것이 얼마나 위험한지\"라는 드 메레의 결론, 1814년 라플라스가 정식화한 고전적 정의",
      "URL": "https://en.wikipedia.org/wiki/Classical_definition_of_probability",
      "유형": "2차"
+    },
+    {
+     "번호": 13,
+     "제목": "Wikipedia, History of probability — 확률의 수학적 방법이 1560년대 카르다노의 탐구에서 처음 일어났고 그것이 100년 뒤에야 출판됐다는 것, 그가 주사위 세 개의 합을 살펴 합이 10인 순열은 27가지·합이 9인 순열은 25가지임을 따졌다는 것, 『주사위 놀이에 관한 책』(1560년 집필, 1663년 출판)에서 확률을 유리한 경우 수와 전체 경우 수의 비로 정의하는 생각을 내놓았고 이것이 우연을 형식화하려 한 가장 이른 체계적 시도였다는 서술",
+     "URL": "https://en.wikipedia.org/wiki/History_of_probability",
+     "유형": "2차"
     }
    ],
    "path": "notes/concept-probability/note.md",
@@ -4872,8 +4879,8 @@
     17,
     18
    ],
-   "자수": 9114,
-   "시각화": 6
+   "자수": 9970,
+   "시각화": 7
   },
   {
    "유형": "개념",
@@ -8665,7 +8672,6 @@
     "concept-calculus-of-variations",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
-    "concept-differentiation",
     "concept-differentiation-advanced"
    ],
    "관련인물": [
@@ -12287,6 +12293,7 @@
    "카르다노": [
     "century-16c",
     "concept-complex-number",
+    "concept-probability",
     "person-cardano",
     "person-tartaglia"
    ],
@@ -12420,6 +12427,7 @@
    ],
    "라플라스": [
     "century-18c",
+    "concept-probability",
     "concept-probability-advanced",
     "person-fourier",
     "person-laplace"
@@ -13730,7 +13738,6 @@
     "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
-    "concept-differentiation",
     "concept-differentiation-advanced",
     "person-cauchy",
     "person-euler",
@@ -14888,7 +14895,7 @@
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-leibniz",
@@ -16289,12 +16296,6 @@
     {
      "슬러그": "concept-differential-equation-advanced",
      "제목": "미분방정식 확장편",
-     "유형": "개념",
-     "경로": "기여인물"
-    },
-    {
-     "슬러그": "concept-differentiation",
-     "제목": "미분법",
      "유형": "개념",
      "경로": "기여인물"
     },
