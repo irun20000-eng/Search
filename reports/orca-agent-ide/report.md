@@ -7,7 +7,6 @@
 태그: [AI도구, Orca, ADE, ClaudeCode, 코딩에이전트, 병렬개발, gitworktree, 생산성]
 소스수: { 국내: 5, 해외: 8 }
 위키링크: ["[[Orca 에이전트 IDE]]", "[[클로드 코드]]", "[[git worktree]]", "[[코딩 에이전트]]", "[[클로드 MCP 가이드]]"]
-갤러리URL: "#r=orca-agent-ide"
 ---
 
 # Orca(오르카) — 병렬 AI 코딩 에이전트 IDE 완전 가이드

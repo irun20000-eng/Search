@@ -7,7 +7,6 @@
 태그: [과학, 반도체, 에너지밴드, pn접합, MOSFET, CMOS, 변조, QAM, 표본화정리, 섀넌한계, 통신공학, 고등과학]
 위키링크: ["[[에너지 밴드]]", "[[pn 접합]]", "[[MOSFET]]", "[[변조]]", "[[표본화 정리]]", "[[섀넌 한계]]"]
 소스수: { 국내: 5, 해외: 8 }
-갤러리URL: "#r=semiconductor-communication-advanced"
 짝문서: "semiconductor-communication"
 ---
 

@@ -31,7 +31,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/
     유형: 2차
 
-갤러리URL: "#n=episode-cantor-letter-1877"
 ---
 
 ## 3년 전에 던진 물음

@@ -124,7 +124,6 @@
     URL: https://en.wikipedia.org/wiki/Pierre-Simon_Laplace
     유형: 2차
 
-갤러리URL: "#n=concept-probability-advanced"
 ---
 
 # 확률론 확장편

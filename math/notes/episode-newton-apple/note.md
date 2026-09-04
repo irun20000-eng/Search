@@ -39,7 +39,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3567199&cid=59014&categoryId=59014
     유형: 2차
 
-갤러리URL: "#n=episode-newton-apple"
 ---
 
 # 뉴턴의 사과

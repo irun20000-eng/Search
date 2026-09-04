@@ -98,7 +98,6 @@
     URL: https://web.williams.edu/Mathematics/sjmiller/public_html/hudson/Emmell,%20Amber_Euler%20&%20The%20Basel%20Problem.pdf
     유형: 2차
 
-갤러리URL: "#n=concept-series"
 ---
 
 # 무한급수

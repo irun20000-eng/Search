@@ -63,7 +63,6 @@
     URL: https://link.springer.com/chapter/10.1007/978-3-319-99386-7_1
     유형: 2차
 
-갤러리URL: "#n=person-klein"
 ---
 
 ## 한눈에

@@ -90,7 +90,6 @@
     URL: https://en.wikipedia.org/wiki/Christoph_Rudolff
     유형: 2차
 
-갤러리URL: "#n=concept-algebra-notation-advanced"
 ---
 
 ## TL;DR

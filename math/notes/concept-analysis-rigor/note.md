@@ -93,7 +93,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3405193&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=concept-analysis-rigor"
 ---
 
 # 해석학의 엄밀화

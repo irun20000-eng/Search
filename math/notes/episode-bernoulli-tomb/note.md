@@ -39,7 +39,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3409330&cid=60335&categoryId=60335
     유형: 2차
 
-갤러리URL: "#n=episode-bernoulli-tomb"
 ---
 
 # 베르누이의 묘비

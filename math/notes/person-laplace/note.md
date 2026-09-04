@@ -67,7 +67,6 @@
     URL: https://en.wikipedia.org/wiki/A_Philosophical_Essay_on_Probabilities
     유형: 2차
 
-갤러리URL: "#n=person-laplace"
 ---
 
 # 피에르시몽 라플라스

@@ -73,7 +73,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/
     유형: 2차
 
-갤러리URL: "#n=person-euclid"
 ---
 
 # 유클리드

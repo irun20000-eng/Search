@@ -85,7 +85,6 @@
     URL: https://terms.naver.com/entry.naver?docId=2073840&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=concept-fundamental-theorem"
 ---
 
 # 미적분학의 기본정리

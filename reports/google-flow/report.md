@@ -7,7 +7,6 @@
 태그: [AI영상, GoogleFlow, Veo, Imagen, Gemini, 크리에이터, 콘텐츠제작, AI도구, 요금비교]
 소스수: { 국내: 5, 해외: 10 }
 위키링크: ["[[Google Flow]]", "[[AI 영상 생성]]", "[[Veo]]", "[[Runway]]", "[[Sora]]", "[[콘텐츠 크리에이터]]", "[[프롬프트 엔지니어링]]"]
-갤러리URL: "#r=google-flow"
 ---
 
 # Google Flow(구글 플로우) 완전 해부 — 활용법·유사도구·결과물·요금

@@ -72,7 +72,6 @@
     URL: https://terms.naver.com/entry.naver?docId=2039066&cid=47308&categoryId=47308
     유형: 2차
 
-갤러리URL: "#n=concept-graph-theory"
 ---
 
 # 그래프이론의 탄생

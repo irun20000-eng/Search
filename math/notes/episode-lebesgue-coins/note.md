@@ -31,7 +31,6 @@
     URL: https://terms.naver.com/entry.naver?docId=4125266&cid=60207&categoryId=60207
     유형: 2차
 
-갤러리URL: "#n=episode-lebesgue-coins"
 ---
 
 ## 빚을 갚는 두 가지 방식

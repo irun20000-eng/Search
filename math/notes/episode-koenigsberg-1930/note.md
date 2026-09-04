@@ -35,7 +35,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Godel/
     유형: 2차
 
-갤러리URL: "#n=episode-koenigsberg-1930"
 ---
 
 ## 한 해, 한 도시

@@ -6,7 +6,6 @@
 태그: [AI에이전트, 오픈소스, NousResearch, 자가발전, 로컬AI]
 소스수: { 국내: 3, 해외: 3 }
 위키링크: ["[[AI 에이전트]]", "[[오픈소스 LLM]]", "[[로컬 AI]]"]
-갤러리URL: "#r=hermes-agent-quick"
 ---
 
 # 헤르메스 에이전트(Hermes Agent) — 퀵 다이제스트

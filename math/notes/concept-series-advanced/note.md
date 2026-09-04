@@ -134,7 +134,6 @@
     URL: https://arxiv.org/pdf/1312.5712
     유형: 2차
 
-갤러리URL: "#n=concept-series-advanced"
 ---
 
 # 무한급수 확장편

@@ -108,7 +108,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/HistTopics/Functions/
     유형: 2차
 
-갤러리URL: "#n=century-19c"
 ---
 
 # 19세기

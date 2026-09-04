@@ -59,7 +59,6 @@
     URL: https://www.agenciasinc.es/en/Visual/Illustrations/1675-Leibniz-writes-the-integral-sign-for-the-first-time
     유형: 2차
 
-갤러리URL: "#n=person-leibniz"
 ---
 
 # 고트프리트 라이프니츠

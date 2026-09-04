@@ -82,7 +82,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3582423&cid=60204&categoryId=60204
     유형: 2차
 
-갤러리URL: "#n=concept-algebra-notation"
 ---
 
 ## TL;DR

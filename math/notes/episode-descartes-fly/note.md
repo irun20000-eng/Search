@@ -39,7 +39,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3575285&cid=58939&categoryId=58951
     유형: 2차
 
-갤러리URL: "#n=episode-descartes-fly"
 ---
 
 # 데카르트와 천장의 파리

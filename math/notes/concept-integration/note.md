@@ -94,7 +94,6 @@
     URL: https://en.wikipedia.org/wiki/Method_of_Fluxions
     유형: 2차
 
-갤러리URL: "#n=concept-integration"
 ---
 
 # 적분법

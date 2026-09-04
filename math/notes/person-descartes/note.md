@@ -55,7 +55,6 @@
     URL: https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes
     유형: 2차
 
-갤러리URL: "#n=person-descartes"
 ---
 
 # 르네 데카르트

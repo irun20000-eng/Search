@@ -61,7 +61,6 @@
     URL: https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/scipione-dal-ferro
     유형: 2차
 
-갤러리URL: "#n=person-cardano"
 ---
 
 # 지롤라모 카르다노

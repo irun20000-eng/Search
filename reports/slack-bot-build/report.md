@@ -7,7 +7,6 @@
 태그: [Slack, 봇개발, Bolt, SocketMode, 1인개발자, 자동화, 웹훅, 실전튜토리얼]
 소스수: { 국내: 5, 해외: 9 }
 위키링크: ["[[웹훅(Webhook)]]", "[[Slack]]", "[[1인 개발자]]", "[[업무 자동화]]", "[[MCP(Model Context Protocol)]]"]
-갤러리URL: "#r=slack-bot-build"
 ---
 
 # Slack 봇 직접 만들기 — Bolt · Socket Mode 실전 워크스루

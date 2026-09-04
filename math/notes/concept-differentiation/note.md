@@ -112,7 +112,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3570884&cid=58944&categoryId=58970
     유형: 2차
 
-갤러리URL: "#n=concept-differentiation"
 ---
 
 # 미분법

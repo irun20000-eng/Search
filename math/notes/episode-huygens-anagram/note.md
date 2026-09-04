@@ -31,7 +31,6 @@
     URL: https://terms.naver.com/entry.naver?docId=6627666&cid=62801&categoryId=62801
     유형: 2차
 
-갤러리URL: "#n=episode-huygens-anagram"
 ---
 
 # 하위헌스의 아나그램

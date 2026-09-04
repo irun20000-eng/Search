@@ -100,7 +100,6 @@
     URL: https://www.britannica.com/biography/Leonhard-Euler
     유형: 2차
 
-갤러리URL: "#n=century-18c"
 ---
 
 # 18세기 — 그림을 지우고 식만 남긴 세기

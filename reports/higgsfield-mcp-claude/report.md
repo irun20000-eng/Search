@@ -7,7 +7,6 @@
 태그: [AI영상, Higgsfield, MCP, ClaudeCode, 힉스필드, 콘텐츠자동화, 크레딧, 요금]
 소스수: { 국내: 5, 해외: 9 }
 위키링크: ["[[힉스필드 MCP]]", "[[MCP(Model Context Protocol)]]", "[[Claude Code]]", "[[Google Flow]]", "[[AI 영상 생성]]", "[[콘텐츠 크리에이터]]"]
-갤러리URL: "#r=higgsfield-mcp-claude"
 ---
 
 # 클로드 코드 × 힉스필드(Higgsfield) MCP — 연결·활용·설치·예제·비용 완전 가이드

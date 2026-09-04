@@ -7,7 +7,6 @@
 태그: [자동화, Zapier, 재피어, 노코드, 업무자동화, 생산성, 워크플로우, ZapierAgents, SaaS연동, AI자동화]
 소스수: { 국내: 6, 해외: 8 }
 위키링크: ["[[Zapier]]", "[[노코드 자동화]]", "[[업무 자동화]]", "[[Zapier Agents]]", "[[워크플로우]]"]
-갤러리URL: "#r=zapier-automation-guide"
 ---
 
 # Zapier 완전 활용 가이드

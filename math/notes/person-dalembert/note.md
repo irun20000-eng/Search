@@ -50,7 +50,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3338249&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=person-dalembert"
 ---
 
 ## 한눈에

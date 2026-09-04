@@ -51,7 +51,6 @@
     URL: https://en.wikipedia.org/wiki/Disquisitiones_Arithmeticae
     유형: 2차
 
-갤러리URL: "#n=person-gauss"
 ---
 
 ## 한눈에

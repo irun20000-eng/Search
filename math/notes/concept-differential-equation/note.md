@@ -74,7 +74,6 @@
     URL: https://en.wikipedia.org/wiki/Catenary
     유형: 2차
 
-갤러리URL: "#n=concept-differential-equation"
 ---
 
 # 미분방정식

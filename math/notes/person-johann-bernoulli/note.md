@@ -51,7 +51,6 @@
     URL: https://terms.naver.com/entry.naver?docId=3405106&cid=47324&categoryId=47324
     유형: 2차
 
-갤러리URL: "#n=person-johann-bernoulli"
 ---
 
 ## 한눈에

@@ -68,7 +68,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
     유형: 2차
 
-갤러리URL: "#n=concept-calculus-of-variations"
 ---
 
 # 변분법

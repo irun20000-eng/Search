@@ -65,7 +65,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/
     유형: 2차
 
-갤러리URL: "#n=person-dedekind"
 ---
 
 # 리하르트 데데킨트

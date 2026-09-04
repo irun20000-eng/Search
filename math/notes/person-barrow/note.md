@@ -63,7 +63,6 @@
     URL: https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/
     유형: 2차
 
-갤러리URL: "#n=person-barrow"
 ---
 
 # 아이작 배로

@@ -98,7 +98,6 @@
     URL: https://link.springer.com/book/10.1007/978-3-662-70872-9
     유형: 1차
 
-갤러리URL: "#n=concept-analytic-geometry-advanced"
 ---
 
 # 해석기하 (확장편)
