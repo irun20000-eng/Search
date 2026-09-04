@@ -38,7 +38,7 @@
 
 선행개념: []
 후속개념: [concept-series, concept-analysis-rigor]
-기여인물: [person-napier, person-euler]
+기여인물: [person-napier, person-saint-vincent, person-euler]
 
 출처:
   - 번호: 1

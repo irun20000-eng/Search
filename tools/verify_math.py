@@ -165,6 +165,49 @@ def audit_schema():
             % ", ".join(dead))
 
 
+def audit_contrib():
+    """인물이 선언한 `기여개념` 이 반대쪽 `기여인물` 에도 있는지 잰다.
+
+    ■ 왜 이 방향만 막나 (2026-09-04)
+
+      `기여인물` 은 개념 노트의 필수 필드이자 **갤러리 검색 인덱스**다
+      (MATH_PIPELINE §검색: 제목·요약·태그·별칭·분야·교과·발전단계.변화·기여인물).
+      그래서 인물이 "이 개념에 기여했다" 고 선언해 놓고 개념 쪽이 그를 안 적으면
+      **그 이름으로 개념을 찾을 수 없다.** 반대 방향(개념이 인물을 적었는데 인물이
+      개념을 안 적음)은 검색에 영향이 없어 `--symmetry` 보고로만 둔다.
+
+      실측: 2026-09-04 에 이 방향이 21건이었다. 하나씩 근거를 보고 14건은 채우고
+      7건은 선언을 뺐다 — 「관련이 있다」와 「기여했다」가 섞여 있었기 때문이다
+      (유클리드→대수 기호법은 *문자가 없던 시대의 사례*이지 기여가 아니다).
+      그 뒤 0이 됐으므로 게이트로 올린다.
+
+      규칙이 아니라 게이트인 이유: 규칙을 LESSONS 에 적은 **바로 다음 회차에**
+      같은 자리에서 또 놓쳤다. 검사기가 이미 재고 있었는데 아무도 그 보고를 안 봤다.
+    """
+    fms = {}
+    for slug, path in M.iter_notes():
+        try:
+            fms[slug] = M.read_note(path)[0]
+        except Exception:
+            return None  # 읽기 자체가 깨지면 본 검사가 먼저 잡는다
+    bad = []
+    for slug in sorted(fms):
+        for c in (fms[slug].get("기여개념") or []):
+            tgt = fms.get(c)
+            if tgt is None:
+                bad.append("%s → %s (대상 노트 없음)" % (slug, c))
+            elif slug not in (tgt.get("기여인물") or []):
+                bad.append("%s → %s (그쪽 기여인물에 없음)" % (slug, c))
+    if not bad:
+        return None
+    return ("상호참조 결함 — `기여개념` 을 선언했으나 반대쪽 `기여인물` 에 없다 %d건:\n"
+            "%s\n"
+            "  `기여인물` 은 갤러리 검색 인덱스다 — 비면 그 이름으로 개념을 못 찾는다.\n"
+            "  기여가 맞으면 개념 노트의 `기여인물` 에 넣고, 「관련이 있을 뿐」이면\n"
+            "  인물 노트의 `기여개념` 에서 빼고 위키링크로 잇는다."
+            % (len(bad), "\n".join("    " + b for b in bad)))
+
+
 def gate_key(fm):
     if fm.get("유형") == "개념":
         return "개념/%s" % fm.get("트랙", "이해편")
@@ -478,10 +521,11 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     flags = {a for a in sys.argv[1:] if a.startswith("--")}
 
-    problem = audit_schema()
-    if problem:
-        print("FAIL  " + problem)
-        return 1
+    for audit in (audit_schema, audit_contrib):
+        problem = audit()
+        if problem:
+            print("FAIL  " + problem)
+            return 1
 
     notes = list(M.iter_notes())
     if args:

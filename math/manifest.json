@@ -280,11 +280,13 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-archimedes",
     "person-cavalieri",
     "person-wallis",
     "person-barrow",
     "person-newton",
-    "person-leibniz"
+    "person-leibniz",
+    "person-riemann"
    ],
    "출처": [
     {
@@ -411,8 +413,7 @@
     "출생지": "시칠리아 시라쿠사"
    },
    "기여개념": [
-    "concept-integration",
-    "concept-fundamental-theorem"
+    "concept-integration"
    ],
    "관련일화": [
     "episode-bernoulli-tomb"
@@ -540,9 +541,6 @@
     "사망": -265,
     "출생지": "알 수 없음"
    },
-   "기여개념": [
-    "concept-algebra-notation"
-   ],
    "출처": [
     {
      "번호": 1,
@@ -718,8 +716,11 @@
     "concept-complex-number"
    ],
    "기여인물": [
-    "person-descartes",
-    "person-diophantus"
+    "person-diophantus",
+    "person-al-khwarizmi",
+    "person-recorde",
+    "person-viete",
+    "person-descartes"
    ],
    "출처": [
     {
@@ -1697,6 +1698,7 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
+    "person-cardano",
     "person-euler",
     "person-gauss"
    ],
@@ -1851,6 +1853,7 @@
    ],
    "기여인물": [
     "person-napier",
+    "person-saint-vincent",
     "person-euler"
    ],
    "출처": [
@@ -2333,9 +2336,6 @@
     "사망": 1557,
     "출생지": "베네치아 공화국 브레시아"
    },
-   "기여개념": [
-    "concept-algebra-notation"
-   ],
    "출처": [
     {
      "번호": 1,
@@ -3327,6 +3327,7 @@
     "person-descartes",
     "person-fermat",
     "person-gauss",
+    "person-riemann",
     "person-poincare",
     "person-klein"
    ],
@@ -3787,7 +3788,9 @@
     "person-fermat",
     "person-barrow",
     "person-newton",
-    "person-leibniz"
+    "person-leibniz",
+    "person-berkeley",
+    "person-lagrange"
    ],
    "이미지": [
     {
@@ -3990,7 +3993,8 @@
    "기여인물": [
     "person-leibniz",
     "person-newton",
-    "person-bayes"
+    "person-bayes",
+    "person-lagrange"
    ],
    "출처": [
     {
@@ -4781,10 +4785,12 @@
     "concept-probability-advanced"
    ],
    "기여인물": [
+    "person-cardano",
     "person-pascal",
     "person-fermat",
     "person-huygens",
     "person-jakob-bernoulli",
+    "person-laplace",
     "person-kolmogorov"
    ],
    "출처": [
@@ -5763,8 +5769,7 @@
    },
    "기여개념": [
     "concept-series",
-    "concept-fundamental-theorem",
-    "concept-integration"
+    "concept-fundamental-theorem"
    ],
    "관련일화": [
     "episode-priority-dispute"
@@ -7406,7 +7411,8 @@
     "person-gauss",
     "person-euler",
     "person-lagrange",
-    "person-de-moivre"
+    "person-de-moivre",
+    "person-riemann"
    ],
    "출처": [
     {
@@ -8307,8 +8313,6 @@
     "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
-    "concept-fundamental-theorem",
-    "concept-integration",
     "concept-logarithm",
     "concept-logarithm-advanced"
    ],
@@ -8780,8 +8784,7 @@
    "기여개념": [
     "concept-probability-advanced",
     "concept-probability",
-    "concept-differential-equation-advanced",
-    "concept-integration"
+    "concept-differential-equation-advanced"
    ],
    "관련일화": [],
    "관련인물": [
@@ -13534,6 +13537,9 @@
    "person-euclid": [
     "century-bc3"
    ],
+   "person-al-khwarizmi": [
+    "concept-algebra-notation"
+   ],
    "person-descartes": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced",
@@ -13551,9 +13557,6 @@
    "person-viete": [
     "concept-algebra-notation",
     "concept-algebra-notation-advanced"
-   ],
-   "person-al-khwarizmi": [
-    "concept-algebra-notation"
    ],
    "person-fermat": [
     "concept-algebra-notation-advanced",
@@ -13669,17 +13672,18 @@
     "person-klein",
     "person-laplace"
    ],
+   "person-riemann": [
+    "concept-analytic-geometry-advanced",
+    "concept-complex-number-advanced",
+    "concept-integration",
+    "concept-integration-advanced",
+    "concept-series-advanced"
+   ],
    "데자르그": [
     "concept-analytic-geometry-advanced"
    ],
    "로바쳅스키·보여이": [
     "concept-analytic-geometry-advanced"
-   ],
-   "person-riemann": [
-    "concept-analytic-geometry-advanced",
-    "concept-integration",
-    "concept-integration-advanced",
-    "concept-series-advanced"
    ],
    "미분기하학": [
     "concept-analytic-geometry-advanced"
@@ -13726,6 +13730,7 @@
     "concept-complex-number-advanced",
     "concept-differential-equation",
     "concept-differential-equation-advanced",
+    "concept-differentiation",
     "concept-differentiation-advanced",
     "person-cauchy",
     "person-euler",
@@ -13734,10 +13739,11 @@
    "갈릴레오": [
     "concept-calculus-of-variations"
    ],
-   "봄벨리": [
-    "concept-complex-number"
-   ],
    "person-cardano": [
+    "concept-complex-number",
+    "concept-probability"
+   ],
+   "봄벨리": [
     "concept-complex-number"
    ],
    "person-de-moivre": [
@@ -13835,6 +13841,7 @@
    ],
    "person-laplace": [
     "concept-differential-equation-advanced",
+    "concept-probability",
     "concept-probability-advanced",
     "person-bayes",
     "person-cauchy",
@@ -14063,7 +14070,7 @@
      "슬러그": "person-euclid",
      "제목": "유클리드",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-recorde",
@@ -14075,7 +14082,7 @@
      "슬러그": "person-tartaglia",
      "제목": "니콜로 타르탈리아",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-viete",
@@ -15341,25 +15348,19 @@
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-gregory",
      "제목": "제임스 그레고리",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-lagrange",
      "제목": "조제프루이 라그랑주",
      "유형": "인물",
      "경로": "본문"
-    },
-    {
-     "슬러그": "person-laplace",
-     "제목": "피에르시몽 라플라스",
-     "유형": "인물",
-     "경로": "기여개념"
     },
     {
      "슬러그": "person-leibniz",
@@ -15427,7 +15428,7 @@
      "슬러그": "person-archimedes",
      "제목": "아르키메데스",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-barrow",
@@ -15439,7 +15440,7 @@
      "슬러그": "person-euler",
      "제목": "레온하르트 오일러",
      "유형": "인물",
-     "경로": "기여개념"
+     "경로": "본문"
     },
     {
      "슬러그": "person-gregory",
@@ -16292,6 +16293,18 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-differentiation-advanced",
+     "제목": "미분법 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "person-cauchy",
      "제목": "오귀스탱루이 코시",
      "유형": "인물",
@@ -16333,7 +16346,7 @@
      "슬러그": "concept-probability",
      "제목": "확률론",
      "유형": "개념",
-     "경로": "본문"
+     "경로": "기여인물"
     },
     {
      "슬러그": "concept-probability-advanced",
@@ -17615,7 +17628,7 @@
      "슬러그": "concept-integration",
      "제목": "적분법",
      "유형": "개념",
-     "경로": "본문"
+     "경로": "기여인물"
     },
     {
      "슬러그": "episode-bernoulli-tomb",
@@ -17712,6 +17725,54 @@
      "경로": "본문"
     }
    ],
+   "person-al-khwarizmi": [
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-diophantus",
+     "제목": "디오판토스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-recorde": [
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-viete": [
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-berkeley",
+     "제목": "조지 버클리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-recorde",
+     "제목": "로버트 레코드",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "concept-algebra-notation-advanced": [
     {
      "슬러그": "concept-algebra-notation",
@@ -17755,7 +17816,13 @@
      "슬러그": "concept-complex-number",
      "제목": "복소수",
      "유형": "개념",
-     "경로": "본문"
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-probability",
+     "제목": "확률론",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "episode-pascal-fermat-letters",
@@ -17984,6 +18051,26 @@
      "제목": "베른하르트 리만",
      "유형": "인물",
      "경로": "관련인물"
+    }
+   ],
+   "person-riemann": [
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "기여인물"
     }
    ],
    "person-poincare": [
@@ -18432,6 +18519,20 @@
      "경로": "관련인물"
     }
    ],
+   "person-berkeley": [
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-wallis",
+     "제목": "존 월리스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-bayes": [
     {
      "슬러그": "concept-differentiation-advanced",
@@ -18488,6 +18589,26 @@
     {
      "슬러그": "person-cavalieri",
      "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "person-saint-vincent": [
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-cavalieri",
+     "제목": "보나벤투라 카발리에리",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-wallis",
+     "제목": "존 월리스",
      "유형": "인물",
      "경로": "본문"
     }
@@ -18554,50 +18675,6 @@
      "경로": "본문"
     }
    ],
-   "person-viete": [
-    {
-     "슬러그": "person-berkeley",
-     "제목": "조지 버클리",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-recorde",
-     "제목": "로버트 레코드",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-recorde": [
-    {
-     "슬러그": "person-berkeley",
-     "제목": "조지 버클리",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-saint-vincent": [
-    {
-     "슬러그": "person-cavalieri",
-     "제목": "보나벤투라 카발리에리",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-wallis",
-     "제목": "존 월리스",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
-   "person-al-khwarizmi": [
-    {
-     "슬러그": "person-diophantus",
-     "제목": "디오판토스",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
    "episode-dedekind-nov24": [
     {
      "슬러그": "person-dirichlet",
@@ -18642,14 +18719,6 @@
      "제목": "아이작 뉴턴",
      "유형": "인물",
      "경로": "관련일화"
-    }
-   ],
-   "person-berkeley": [
-    {
-     "슬러그": "person-wallis",
-     "제목": "존 월리스",
-     "유형": "인물",
-     "경로": "본문"
     }
    ]
   }

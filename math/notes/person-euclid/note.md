@@ -17,7 +17,6 @@
   사망: -265
   출생지: 알 수 없음
 
-기여개념: [concept-algebra-notation]
 
 출처:
   - 번호: 1

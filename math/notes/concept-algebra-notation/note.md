@@ -38,7 +38,7 @@
 
 선행개념: []
 후속개념: [concept-analytic-geometry, concept-complex-number]
-기여인물: [person-descartes, person-diophantus]
+기여인물: [person-diophantus, person-al-khwarizmi, person-recorde, person-viete, person-descartes]
 
 출처:
   - 번호: 1
