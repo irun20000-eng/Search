@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-04",
- "scanned": 266,
- "resolved": 1435,
- "pending": 539,
+ "generated": "2026-09-06",
+ "scanned": 268,
+ "resolved": 1459,
+ "pending": 540,
  "counts": {
   "new": 251,
   "companion": 5,
@@ -1251,6 +1251,27 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "미분가능",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "도함수가 불연속인 함수 (이해편) — 미분가능한데 도함수는 왜 끊기나 (DEEP)",
+     "u": "research/#r=discontinuous-derivative",
+     "s": "research",
+     "n": 1
+    },
+    {
+     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
+     "u": "research/#r=mean-value-theorem",
+     "s": "research",
+     "n": 1
     }
    ]
   },
@@ -3508,21 +3529,6 @@
     {
      "t": "전자회로와 반도체가 통신에 쓰이는 원리 (이해편) — 초등·중등 눈높이 (DEEP)",
      "u": "research/#r=semiconductor-communication",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "미분가능",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
-     "u": "research/#r=mean-value-theorem",
      "s": "research",
      "n": 1
     }
