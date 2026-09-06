@@ -2,6 +2,56 @@
   "generated": "2026-08-31",
   "reports": [
     {
+      "slug": "discontinuous-derivative",
+      "title": "도함수가 불연속인 함수 (이해편) — 미분가능한데 도함수는 왜 끊기나 (DEEP)",
+      "date": "2026-09-07",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "도함수",
+        "불연속",
+        "미분가능",
+        "다르부정리",
+        "사잇값성질",
+        "반례",
+        "해석학",
+        "미적분",
+        "수능수학"
+      ],
+      "tldr": "미분가능 ⇒ 연속은 맞다 . 그러나 미분가능 ⇒ 도함수가 연속은 틀렸다 . 반례는 f(x) = x² sin(1/x) (단 f(0) = 0). 이 함수는 모든 점에서 미분가능하고 f′(0) = 0 인데, f′ 는 원점에서 불연속이다 . 이유: x ≠ 0 에서 f′(x) = 2x sin(1/x) − cos(1/x) 인데, 앞항은 0으로 가지만 뒷항 cos(1/x) 가 −1과 1 사이를 무한히 왕복해 극한이 없다 . 그렇다고 도함수가 마음대로 끊기는 것은 아니다. 다르부 정리: 미분가능한 함수의 도함수는 연속이 아니어도 사잇값 성질[^사잇값성질]을 가진다 .",
+      "sources": 8,
+      "path": "reports/discontinuous-derivative/report.md",
+      "cat": "math",
+      "pair": "discontinuous-derivative-advanced",
+      "track": "intro",
+      "chars": 12292
+    },
+    {
+      "slug": "discontinuous-derivative-advanced",
+      "title": "도함수의 불연속 (확장편) — 다르부 정리·베르 1류·볼테라 함수와 미적분 기본정리의 균열 (DEEP)",
+      "date": "2026-09-07",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "도함수",
+        "불연속",
+        "다르부정리",
+        "베르1류",
+        "볼테라함수",
+        "리만적분",
+        "르베그측도",
+        "미적분기본정리",
+        "실해석학"
+      ],
+      "tldr": "도함수 불연속은 제2종(본질적)만 가능하다. 제거가능·점프형은 평균값 정리로 원천 봉쇄된다 . 다르부 정리(1875): 미분가능 함수의 도함수는 연속이 아니어도 사잇값 성질을 갖는다 . 증명은 두 갈래 — 최대최소 정리 경유와 평균값 정리+중간값 정리 경유 . 모든 도함수는 베르 1류다. fₙ(x) = (f(x+1/n) − f(x))/(1/n) 이 연속이고 그 점별극한이 f′ 이기 때문이다 . 따라서 도함수는 조밀한 집합에서 반드시 연속이고, 디리클레 함수는 도함수가 될 수 없다 . 볼테라 함수(1881): 모든 점에서 미분가능, V′ 유계, 그런데 V′ 이 측도 1/2 인 집합에서 불연속 → 르베그 판정법에 의해 리만적분 불가 .",
+      "sources": 15,
+      "path": "reports/discontinuous-derivative-advanced/report.md",
+      "cat": "math",
+      "pair": "discontinuous-derivative",
+      "track": "advanced",
+      "chars": 18591
+    },
+    {
       "slug": "derivative-rate-of-change",
       "title": "미분과 변화율 (이해편) — 속도계·물가·커피로 배우는 변화 읽기와 예측 (DEEP)",
       "date": "2026-08-31",
@@ -51,7 +101,7 @@
       "cat": "math",
       "pair": "derivative-rate-of-change",
       "track": "advanced",
-      "chars": 16945
+      "chars": 16949
     },
     {
       "slug": "continuous-function-theorems",
