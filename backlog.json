@@ -1,10 +1,10 @@
 {
  "generated": "2026-09-07",
- "scanned": 269,
- "resolved": 1459,
- "pending": 540,
+ "scanned": 271,
+ "resolved": 1493,
+ "pending": 536,
  "counts": {
-  "new": 251,
+  "new": 250,
   "companion": 5,
   "gap": 0
  },
@@ -455,33 +455,6 @@
      "t": "미분법",
      "u": "math/#n=concept-differentiation",
      "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "테일러 정리",
-   "count": 4,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "로피탈 정리 (확장편) — 진짜 가치와 함정, 왜 성립하고 언제 쓰면 안 되나 (DEEP)",
-     "u": "research/#r=lhopital-rule-advanced",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "평균값 정리 (이해편) — 롤에서 시작해 미분학을 떠받치는 한 문장 (DEEP)",
-     "u": "research/#r=mean-value-theorem",
-     "s": "research",
-     "n": 1
-    },
-    {
-     "t": "코시 평균값 정리 (확장편) — 두 함수로 확장한 다리, 로피탈·테일러의 뿌리 (DEEP)",
-     "u": "research/#r=mean-value-theorem-advanced",
-     "s": "research",
      "n": 1
     }
    ]
