@@ -365,8 +365,13 @@ python3 tools/sync_obsidian.py --check --only reports
   `md5sum -c /tmp/a`. `backlog.json` 은 이 셋의 산출물이 아니다(`build_backlog.py` 몫이라 늘 OK 로 찍힌다).
   **`git diff` 로 재면 안 된다** — HEAD 와 비교하므로 정당한 변경까지 걸린다.
   ⚠ **사각지대**: 목록에 없는 산출물은 못 본다. 빌더가 늘면 목록도 늘릴 것.
-  검수 권고 — 이걸 `tools/verify_builders.py` 로 만들면(임시 트리에 돌려 3파일 대조, 다르면 exit 1)
-  워킹트리를 안 건드려 CI 에도 걸 수 있다. **다음 회차 항목.**
+  → **만들었다 (2026-09-09): `python3 tools/verify_builders.py`.** 손으로 `md5sum` 을 뜰 일이 없어졌다.
+  임시 트리가 아니라 **제자리에서 돌리고 되돌려 놓는다** — `build_math_manifest.py` 가 `generated` 를
+  `git log -1` 로 채우므로 `.git` 없는 복사본에서는 **없는 차이가 생기기 때문**이다.
+  같은 이유로 `generated` 는 비교에서 뺀다(커밋이 날짜를 넘기면 그 한 줄만 어긋난다 — 소스를 안 고쳤다는 뜻이다).
+  왕복 일곱으로 확인했다: 최신 → OK · 낡음 → FAIL(차이를 세 줄까지 보여 준다) · `--write` → 새것을 남김 ·
+  빌더 사망 → FAIL 이면서 트리 원복 · 모르는 인자 → exit 2 · 산출물 없음 → FAIL.
+  ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
 - **원문을 못 여는 자리가 있다(2026-09-09).** 이 환경에서 `mathshistory.st-andrews.ac.uk` 는
   `EGRESS_BLOCKED` 다. `person-huygens` 출처 1 의 제목에 등시곡선 증명을 **원문 재개봉 없이**
   기입했다 — 본문 §5 가 이미 같은 [1] 로 MacTutor 문장을 직접 인용하고 있어 원장 기입으로 처리했다.

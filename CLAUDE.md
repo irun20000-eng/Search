@@ -81,6 +81,7 @@ python3 tools/verify_figures.py              # ★ 도해 — 브라우저로 �
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
 python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
+python3 tools/verify_builders.py             # ★ 산출물이 소스보다 낡았나 (빌더 3종을 돌려 멱등성 확인)
 python3 tools/sync_math_obsidian.py --dry-run  # 볼트 002-수학사/ 동기화
 
 # 커밋 전 분량 게이트 측정 (개념 설명서)
