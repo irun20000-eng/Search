@@ -15,7 +15,7 @@
   <!-- 할선 PQ (연장) -->
   <line x1="170" y1="192" x2="410" y2="61" stroke="#9C5A2C" stroke-width="1.7"/>
   <!-- 접선 at P -->
-  <line x1="150" y1="194" x2="345" y2="112" stroke="#3A5C77" stroke-width="1.7" stroke-dasharray="7 4"/>
+  <line x1="182" y1="209.3" x2="298" y2="74.0" stroke="#3A5C77" stroke-width="1.7" stroke-dasharray="7 4"/>
 
   <!-- 증분 보조선 -->
   <line x1="220" y1="165" x2="330" y2="165" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
@@ -32,7 +32,7 @@
   <text x="338" y="140" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#5B5245">f(x+e) − f(x)</text>
 
   <text x="415" y="58" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C">할선 PQ</text>
-  <text x="350" y="118" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#3A5C77">접선</text>
+  <text x="303" y="70" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#3A5C77">접선</text>
 
   <!-- 하단 주석 -->
   <text x="60" y="240" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E">

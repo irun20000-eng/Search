@@ -133,6 +133,7 @@ python3 tools/verify_math.py                # 전체
 python3 tools/verify_math.py <슬러그>        # 일부
 python3 tools/verify_math.py --backlog      # 백로그 2채널
 python3 tools/verify_math.py --symmetry     # 상호참조 대칭 보고 (게이트 아님)
+python3 tools/verify_figures.py             # 도해 SVG — 브라우저(Chromium)로 글자 넘침·겹침
 ```
 
 **백로그가 두 채널인 이유**(2026-08-29). 위키링크만 세면 **본문이 반복 호명하는데
