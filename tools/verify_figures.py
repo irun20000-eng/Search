@@ -18,12 +18,21 @@
 무엇을 재나.
     1. 넘침 — 글자의 실제 경계상자가 viewBox 밖으로 나가는가.
     2. 겹침 — 글자끼리 경계상자가 겹치는가(가로·세로 각각 하한, 회전 라벨 포함).
+    3. 관통 — `<line>`·`<polyline>` 이 글자 상자 **안쪽**을 지나는가. 2026-09-09 에
+       접선과 할선이 `P` 라벨 한복판을 지나갔는데 1·2 만 보던 이 검사기가 통과시켰다.
+       상자 가장자리를 스치는 것은 정상(라벨은 대개 선 옆에 붙는다)이므로 안쪽으로
+       INSET 만큼 줄여서 잰다.
+       ⚠ **기하만으로는 오탐이 난다.** 뒤에 그린 불투명 도형에 가려 화면에는 안 보이는
+       선이 있다(라이프니츠의 확대 상자가 지시선을 덮는다). 그래서 교차점에서
+       `elementsFromPoint` 로 **그 선이 실제로 맨 위에 그려지는지**까지 확인한다.
     회전·translate 는 `getCTM()` 으로 루트 좌표계에 옮겨 놓고 잰다. 이걸 빼먹으면
     회전 라벨이 전부 오탐으로 뜬다(getBBox 는 변환 전 좌표를 준다).
 
 못 재는 것.
-    그림이 **옳은가**는 못 잰다. 컴퍼스 두 다리가 둘 다 중심에서 나오거나, 접선이
-    할선보다 완만하거나, 「확대도」의 삼각형 비가 원본과 다른 것은 사람이 봐야 한다.
+    그림이 **옳은가**는 못 잰다. 컴퍼스 두 다리가 둘 다 중심에서 나오거나, 「확대도」의
+    삼각형 비가 원본과 다르거나, **할선과 접선의 대소가 본문 주장과 반대**인 것은
+    사람이 봐야 한다. 마지막 것은 2026-09-09 에 실제로 났다 — 곡선을 오목으로 그리면
+    할선이 접선보다 **언제나** 완만해지는데, 본문은 `2x+e > 2x` 를 계산하고 있었다.
     이 검사기는 그 앞단의 값싼 그물이지 대신이 아니다.
 
 쓰기.
@@ -44,7 +53,7 @@ FIGURE_DIR = 'math/assets/figures'
 # 바뀌는데(chromium-1194 → …), 못 박아 두면 그날부터 검사기가 조용히 건너뛴다.
 CHROME_GLOBS = (
     '/opt/pw-browsers/chromium-*/chrome-linux/chrome',
-    '/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/chrome-headless-shell',
+    '/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell',
 )
 # 겹침으로 셀 최소 폭·높이(px). 가로·세로 **둘 다** 넘을 때만 센다.
 #   면적 하나로 재면 감도가 균일하지 않다 — 긴 캡션 둘이 스치기만 해도 면적이 커지고,
@@ -52,8 +61,11 @@ CHROME_GLOBS = (
 #   이 여유는 커닝이 아니라 글자 상자의 사이드베어링(실제 잉크보다 넓은 AABB) 몫이다.
 OVERLAP_MIN_W = 1.5
 OVERLAP_MIN_H = 1.5
+# 관통 판정에서 글자 상자를 안쪽으로 줄이는 비율. 라벨은 대개 선 옆에 붙으므로
+# 가장자리를 스치는 것은 정상이고, 「한복판을 지나는가」만 결함으로 센다.
+TEXT_INSET = 0.28
 
-MEASURE_JS = """(vb) => {
+MEASURE_JS = """({ vb, INSET }) => {
   const [X0, Y0, W, H] = vb;
   const X1 = X0 + W, Y1 = Y0 + H;
   const svg = document.querySelector('svg');
@@ -83,15 +95,71 @@ MEASURE_JS = """(vb) => {
       const h = Math.min(a.y1, c.y1) - Math.max(a.y0, c.y0);
       if (w > 0 && h > 0) hits.push({ a: a.t, b: c.t, w: w, h: h, area: w * h });
     }
-  return { over, hits, n: boxes.length };
+  // 관통 — 직선이 글자 상자 안쪽을 지나는가
+  const segs = [];
+  for (const el of svg.querySelectorAll('line, polyline')) {
+    const m = root.multiply(el.getScreenCTM());
+    const T = (x, y) => ({ x: m.a * x + m.c * y + m.e, y: m.b * x + m.d * y + m.f });
+    let raw = [];
+    if (el.tagName === 'line')
+      raw = [[+el.getAttribute('x1') || 0, +el.getAttribute('y1') || 0],
+             [+el.getAttribute('x2') || 0, +el.getAttribute('y2') || 0]];
+    else
+      raw = (el.getAttribute('points') || '').trim().split(/[\s,]+/).map(Number)
+              .reduce((a, v, i) => (i % 2 ? a[a.length - 1].push(v) : a.push([v]), a), []);
+    const p = raw.filter(q => q.length === 2 && q.every(Number.isFinite)).map(q => T(q[0], q[1]));
+    for (let i = 0; i + 1 < p.length; i++) segs.push([p[i], p[i + 1], el]);
+  }
+  const crossed = [];
+  for (const b of boxes) {
+    const iw = (b.x1 - b.x0) * INSET, ih = (b.y1 - b.y0) * INSET;
+    const r = { x0: b.x0 + iw, x1: b.x1 - iw, y0: b.y0 + ih, y1: b.y1 - ih };
+    if (r.x1 <= r.x0 || r.y1 <= r.y0) continue;
+    for (const [a, c, el0] of segs) {
+      // Liang-Barsky
+      let t0 = 0, t1 = 1;
+      const dx = c.x - a.x, dy = c.y - a.y;
+      const P = [-dx, dx, -dy, dy];
+      const Q = [a.x - r.x0, r.x1 - a.x, a.y - r.y0, r.y1 - a.y];
+      let ok = true;
+      for (let i = 0; i < 4; i++) {
+        if (P[i] === 0) { if (Q[i] < 0) { ok = false; break; } continue; }
+        const t = Q[i] / P[i];
+        if (P[i] < 0) { if (t > t1) { ok = false; break; } if (t > t0) t0 = t; }
+        else { if (t < t0) { ok = false; break; } if (t < t1) t1 = t; }
+      }
+      if (!ok || t1 <= t0) continue;
+      // 기하로는 지나간다. 화면에서도 보이는지 — 뒤에 그린 불투명 도형에 가리면 아니다.
+      const scr = svg.getScreenCTM();
+      let visible = false;
+      for (let k = 0; k <= 12 && !visible; k++) {
+        const t = t0 + (t1 - t0) * (k / 12);
+        const ux = a.x + dx * t, uy = a.y + dy * t;
+        const cx = scr.a * ux + scr.c * uy + scr.e;
+        const cy = scr.b * ux + scr.d * uy + scr.f;
+        // 글자는 상자 전체가 히트 테스트에 걸리므로 걷어낸다 — 우리가 알고 싶은 것은
+        // 「그 선이 다른 **도형**에 가려졌는가」다. 남은 것 중 맨 앞이 이 선이면 보인다.
+        const stack = document.elementsFromPoint(cx, cy)
+          .filter(e => e.tagName !== 'text' && e.tagName !== 'tspan');
+        if (stack[0] === el0) visible = true;
+      }
+      if (visible) { crossed.push({ t: b.t }); break; }
+    }
+  }
+  return { over, hits, crossed, n: boxes.length };
 }"""
 
 
 def find_chrome():
+    """설치된 브라우저 중 버전이 가장 높은 것. 사전순으로 고르면 안 된다 —
+    chromium-999 가 chromium-1234 를 이긴다."""
+    def version(path):
+        m = re.search(r'-(\d+)/', path)
+        return int(m.group(1)) if m else -1
     for pattern in CHROME_GLOBS:
-        found = sorted(glob.glob(pattern))
+        found = glob.glob(pattern)
         if found:
-            return found[-1]
+            return max(found, key=version)
     return None
 
 
@@ -145,17 +213,19 @@ def main(argv):
             page.set_content(
                 '<style>html,body{margin:0;padding:0}svg{display:block}</style>' + src,
                 wait_until='domcontentloaded')
-            r = page.evaluate(MEASURE_JS, vb)
+            r = page.evaluate(MEASURE_JS, {'vb': vb, 'INSET': TEXT_INSET})
             hits = [h for h in r['hits']
                     if h['w'] >= OVERLAP_MIN_W and h['h'] >= OVERLAP_MIN_H]
-            bad = len(r['over']) + len(hits)
+            bad = len(r['over']) + len(hits) + len(r['crossed'])
             fails += bad
             flag = 'OK  ' if not bad else 'FAIL'
             print(f'{name:34s} {flag} {int(vb[2])}x{int(vb[3])} · 글자 {r["n"]:2d} '
-                  f'· 넘침 {len(r["over"])} · 겹침 {len(hits)}')
+                  f'· 넘침 {len(r["over"])} · 겹침 {len(hits)} · 관통 {len(r["crossed"])}')
             for d in r['over']:
                 print(f'    넘침 "{d["t"]}"  x {d["x0"]:.1f}~{d["x1"]:.1f}'
                       f'  y {d["y0"]:.1f}~{d["y1"]:.1f}')
+            for d in r['crossed']:
+                print(f'    관통 "{d["t"]}"  — 직선이 글자 상자 안쪽을 지난다')
             for h in hits:
                 print(f'    겹침 "{h["a"]}" × "{h["b"]}"  '
                       f'{h["w"]:.1f}×{h["h"]:.1f} = {h["area"]:.1f}px²')
