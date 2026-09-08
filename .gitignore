@@ -14,3 +14,5 @@ __pycache__/
 # 카드뉴스 스튜디오 산출물 (렌더 결과는 cardnews/ 로만 반입한다)
 studio/out/
 studio/dist/
+# tools/verify_builders.py 의 원자 복원 임시파일 (SIGKILL 로 죽으면 남는다)
+*.vbtmp

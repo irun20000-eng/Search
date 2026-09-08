@@ -372,11 +372,19 @@ python3 tools/sync_obsidian.py --check --only reports
   다만 **빌더가 다른 파일에 한 일까지 되돌리지는 않는다** — `OUTPUTS` 에 적힌 것만 본다.
   임시 트리(`git worktree`·`git clone`)에 안 돌리는 이유는 그것이 주는 게 **HEAD** 라서다.
   이 게이트가 봐야 하는 자리는 **커밋 직전에 손에 든 워킹트리**다 — 방금 고친 노트와 안 돌린 빌더의 관계.
-  `math/manifest.json` 의 `generated` 한 줄만 비교에서 뺀다(`git log -1` 이 준 HEAD 커밋 날짜라
-  타임존 따라 갈린다. 어느 화면도 안 읽는다). **다른 산출물의 `generated` 는 빼지 않는다** —
+  **시계가 섞인 자리 둘**만 비교에서 뺀다. ① `math/manifest.json` 의 `generated`(=`git log -1` 이 준
+  HEAD 커밋 날짜라 타임존 따라 갈린다. 어느 화면도 안 읽는다) ② `backlog.json` 의 `generated`
+  (=`build_backlog.py` 의 `date.today()` **벽시계**. 안 빼면 소스를 안 고쳐도 **날짜가 바뀌는 순간부터
+  매일 첫 실행이 FAIL 한다** — 검수가 「내일」을 흉내 내 실측해 잡았다. 값 자체는 `backlog.html` 이
+  화면에 쓰므로 빌더는 건드리지 않고 검사기에서만 뺀다). **그 밖의 `generated` 는 빼지 않는다** —
   `link-index.json` 의 것은 `reports/manifest.json` 에서 온 **소스 값**이라 빼면 진짜 낡음을 숨긴다.
-  왕복 열하나로 확인했다: 최신 → OK · 낡음 → FAIL(차이를 세 줄까지) · `--write` → 새것을 남김 ·
-  빌더 사망/SIGINT → FAIL·130 이면서 트리 원복 · 산출물 삭제 → FAIL 하고 되살림 · 두 번 연속 → 자기 멱등.
+  ⚠ **산출물을 목록에 넣을 때 그 빌더가 시계를 찍는지 읽어 볼 것** — `backlog.json` 을 넣으면서
+  `build_backlog.py` 를 안 읽어 바로 이 함정에 빠졌다.
+  ⚠ `build_link_index.py` 는 `build_backlog` 의 예외를 **삼키고 rc 0 을 돌려준다.** 그러면 갱신이 안 된
+  파일이 「고정점」으로 읽히므로, 검사기가 그 실패 문구를 stdout 에서 찾아 FAIL 로 올린다.
+  왕복으로 확인한 것: 최신 → OK · 낡음 → FAIL(차이를 세 줄까지) · 날짜가 바뀐 다음 날 → OK(거짓 FAIL 없음) ·
+  `--write` → 새것을 남김 · 빌더 사망/SIGINT → FAIL·130 이면서 트리 원복 · 산출물 삭제 → FAIL 하고 되살림 ·
+  백로그 갱신 실패 → FAIL · 모르는 인자 → exit 2 · 두 번 연속 → 자기 멱등.
   ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
   ⚠ 아직 `math` 서가만 본다. `concept`·`reports` 빌더로 넓히는 것이 다음 회차 후보다.
 - **원문을 못 여는 자리가 있다(2026-09-09).** 이 환경에서 `mathshistory.st-andrews.ac.uk` 는

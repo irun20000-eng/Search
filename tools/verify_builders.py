@@ -33,21 +33,33 @@
     도 이 명령의 산출물이고 여기서 함께 잰다 — 빼 두면 검사기가 그 파일을 **말없이 덮어쓰고**
     낡음도 영영 안 잡힌다(첫 판이 그랬다).
     ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
+    ⚠ **되돌리기도 `OUTPUTS` 안에서만 참이다.** 빌더가 목록 밖 파일에 한 일은 그대로 남는다
+      (지금 빌더 3종은 목록 밖을 안 건드리는 것을 확인했다).
+    ⚠ `build_link_index.py` 는 `build_backlog` 의 예외를 **삼키고 rc 0 을 돌려준다.** 그러면
+      `backlog.json` 이 갱신되지 않아 「안 바뀌었다 = 고정점」으로 읽힌다 — 그래서 그 실패 문구를
+      stdout 에서 찾아 FAIL 로 올린다(`BACKLOG_FAIL`).
 
-`math/manifest.json` 의 `generated` 만 비교에서 뺀다.
-    그 값은 노트가 아니라 `git log -1 --format=%cs` 가 준 **HEAD 의 커밋 날짜**이고,
-    `%cs` 는 커밋의 타임존으로 찍히므로 같은 날 작업도 로컬(+0900)과 클라우드(+0000)에서
-    갈린다. 어느 화면도 이 값을 읽지 않는다(`grep generated */index.html` → 0건).
-    그러므로 여기서 어긋나는 것은 결함이 아니라 시계이고, 매번 알리면 곧 무시된다 —
-    조용히 되돌린다. **다른 산출물의 `generated` 는 절대 빼지 않는다**: `link-index.json`
-    의 것은 `reports/manifest.json` 에서 온 **소스 값**이라, 빼면 진짜 낡음을 숨긴다.
+시계가 섞인 자리 **둘**만 비교에서 뺀다 — 나머지는 절대 빼지 않는다.
+    ① `math/manifest.json` 의 `generated` — `git log -1 --format=%cs` 가 준 **HEAD 의 커밋 날짜**다.
+       `%cs` 는 커밋의 타임존으로 찍히므로 같은 날 작업도 로컬(+0900)과 클라우드(+0000)에서 갈린다.
+       이 값을 읽는 화면은 없다(`grep -n '"generated"' math/index.html` → 0건).
+    ② `backlog.json` 의 `generated` — `build_backlog.py` 가 `datetime.date.today()` 로 찍는 **벽시계**다.
+       빼지 않으면 **소스를 한 글자도 안 고쳐도 날짜가 바뀌는 순간부터 매일 첫 실행이 FAIL 한다.**
+       매일 거짓 FAIL 하는 게이트는 곧 무시되므로 그 자체가 결함이다. 값의 뜻은 `backlog.html` 이
+       화면에 쓰므로(「<날짜> 기준」) **빌더 쪽은 건드리지 않고 검사기에서만 뺀다.**
+
+    ⚠ **다른 산출물의 `generated` 는 절대 빼지 않는다.** `link-index.json` 의 것은
+    `reports/manifest.json` 에서 온 **소스 값**이라(`build_link_index.py` 가 복사한다), 빼면 진짜 낡음을 숨긴다.
     (LESSONS 2026-08-31 「빌더를 두 번 돌려 같지 않으면 그 자리에 시계가 섞여 있다」—
-    여기가 그 시계이고, 이 한 자리만 의도된 것이다.)
+     여기가 그 시계이고, 이 두 자리만 의도된 것이다. **산출물을 늘릴 때 그 빌더가 시계를 찍는지
+     반드시 읽어 볼 것** — `backlog.json` 을 목록에 넣으면서 `build_backlog.py` 를 안 읽어 이 함정에 빠졌다.)
 
 쓰기.
     python3 tools/verify_builders.py           # 확인만 (워킹트리를 되돌린다)
     python3 tools/verify_builders.py --write   # 낡았으면 새로 만든 것을 남긴다
     ※ 읽기 전용 검사가 아니다 — 빌더를 **실제로 돌린다**. 되돌리기는 그 뒤의 일이다.
+    ※ `--write` 는 낡은 파일을 **통째로** 남기므로 그 파일의 시계 줄도 새 값이 된다
+      (확인 모드에서만 시계를 되돌린다). 빌더가 방금 찍은 값이니 그대로 커밋하면 된다.
 """
 import os
 import pathlib
@@ -70,8 +82,13 @@ OUTPUTS = (
     'math/ROADMAP.md',
 )
 
-# 시계가 섞인 자리 — 이 파일의 이 필드 하나뿐이다(머리말 참조).
-CLOCK = {'math/manifest.json': re.compile(rb'^(\s*"generated":\s*)"[^"]*"', re.M)}
+# 시계가 섞인 자리 — 두 곳뿐이고 이유가 서로 다르다(머리말 참조).
+#   math/manifest.json → git log -1 (커밋 타임존)   backlog.json → date.today() (벽시계)
+_GEN = re.compile(rb'^(\s*"generated":\s*)"[^"]*"', re.M)
+CLOCK = {'math/manifest.json': _GEN, 'backlog.json': _GEN}
+
+# build_link_index.py 가 backlog 실패를 삼키므로 이 문구를 직접 본다.
+BACKLOG_FAIL = '! 백로그 갱신 실패'
 
 USAGE = ('쓰기: python3 tools/verify_builders.py [--write]\n'
          '      --write 를 주면 낡았을 때 새로 만든 것을 남긴다(기본은 되돌린다).')
@@ -146,6 +163,13 @@ def main(argv):
                 restore(before)
                 print(f'FAIL — 빌더가 죽었다: {b} (exit {r.returncode})')
                 print((r.stderr or r.stdout).strip()[:1500])
+                return 1
+            # rc 0 이어도 삼켜진 실패가 있다 — 그러면 산출물이 안 바뀌어 「고정점」으로 읽힌다.
+            if BACKLOG_FAIL in (r.stdout or ''):
+                restore(before)
+                print(f'FAIL — 빌더는 살았는데 백로그 갱신이 실패했다: {b}')
+                print('  ' + next(l for l in r.stdout.splitlines() if BACKLOG_FAIL in l).strip()[:300])
+                print('  (rc 0 으로 삼켜지므로 여기서 직접 본다 — 이대로 두면 backlog.json 낡음이 안 잡힌다.)')
                 return 1
     except KeyboardInterrupt:                 # 트리를 그대로 두고 나가지 않는다
         restore(before)

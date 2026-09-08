@@ -335,10 +335,10 @@
 - [ ] `python3 tools/verify_math.py` — 스키마·분량 게이트
 - [ ] `python3 tools/verify_figures.py` — 도해를 손댔으면. 브라우저로 글자 넘침·겹침(그림이 옳은지는 사람이 본다)
 - [ ] `python3 tools/build_math_manifest.py` → `python3 tools/build_link_index.py` → `python3 tools/build_math_status.py` (**순서 고정**)
-- [ ] `python3 tools/verify_builders.py` — **커밋 직전 마지막.** 위 빌더를 다시 돌려 산출물이 지금 소스의 고정점인지 본다
-      (읽기 전용 아님 — 빌더를 실제로 돌리고 워킹트리는 되돌린다. 아직 안 돌렸으면 `--write`).
+- [ ] `python3 tools/verify_builders.py` — **리포를 고치는 마지막 단계.** 위 빌더를 다시 돌려 산출물이
+      지금 소스의 고정점인지 본다(읽기 전용 아님 — 빌더를 실제로 돌리고 워킹트리는 되돌린다. 아직 안 돌렸으면 `--write`).
       게이트가 FAIL 해서 **고친 뒤에** 반드시 한 번 더 — 고치기 전에 돌린 빌더는 낡은 값을 굳힌다.
-- [ ] `python3 tools/sync_math_obsidian.py --dry-run` → 실행
+- [ ] `python3 tools/sync_math_obsidian.py --dry-run` → 실행  ※ 볼트만 쓰므로 리포 산출물에 영향 없다
 - [ ] 검수는 **별도 패스**. 작성한 컨텍스트에서 self-approve 하지 않는다.
 - [ ] PR 본문에 **측정값 표** 첨부(자수·줄·절·시각화·출처·게이트 통과 여부)
 
