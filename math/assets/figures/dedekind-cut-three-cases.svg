@@ -29,7 +29,7 @@
   <circle cx="338" cy="246" r="5" fill="#FFFDF7" stroke="#8A7F6E" stroke-width="2"/>
 
   <!-- 구멍 표시 -->
-  <line x1="330" y1="228" x2="330" y2="272" stroke="#9C5A2C" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="330" y1="234" x2="330" y2="272" stroke="#9C5A2C" stroke-width="1.6" stroke-dasharray="5 4"/>
   <text x="336" y="280" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#9C5A2C">&#8730;2</text>
   <text x="180" y="266" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#221E18">A</text>
   <text x="440" y="266" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#8A7F6E">B</text>
