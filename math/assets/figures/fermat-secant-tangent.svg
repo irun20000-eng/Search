@@ -8,34 +8,31 @@
   <text x="570" y="219" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E">x</text>
   <text x="52" y="24" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E">y</text>
 
-  <!-- 곡선 -->
-  <path d="M70 208 C170 201 205 183 220 165 C250 131 295 117 330 105 C400 81 490 52 555 34"
-        fill="none" stroke="#221E18" stroke-width="2.2"/>
+  <!-- 곡선 — 본문이 다루는 f(x)=x². 볼록·증가라야 할선(2x+e)이 접선(2x)보다 가파르다. -->
+  <polyline points="70.0,214.8 73.5,214.8 77.0,214.7 80.5,214.5 83.9,214.4 87.4,214.3 90.9,214.1 94.4,213.9 97.9,213.7 101.4,213.5 104.9,213.2 108.3,213.0 111.8,212.7 115.3,212.4 118.8,212.1 122.3,211.8 125.8,211.4 129.3,211.1 132.7,210.7 136.2,210.3 139.7,209.9 143.2,209.5 146.7,209.0 150.2,208.6 153.7,208.1 157.1,207.6 160.6,207.1 164.1,206.5 167.6,206.0 171.1,205.4 174.6,204.8 178.1,204.2 181.5,203.6 185.0,203.0 188.5,202.3 192.0,201.6 195.5,201.0 199.0,200.3 202.5,199.5 205.9,198.8 209.4,198.0 212.9,197.3 216.4,196.5 219.9,195.7 223.4,194.8 226.9,194.0 230.3,193.1 233.8,192.2 237.3,191.4 240.8,190.4 244.3,189.5 247.8,188.6 251.3,187.6 254.7,186.6 258.2,185.6 261.7,184.6 265.2,183.6 268.7,182.5 272.2,181.4 275.7,180.4 279.1,179.3 282.6,178.1 286.1,177.0 289.6,175.8 293.1,174.7 296.6,173.5 300.1,172.3 303.5,171.1 307.0,169.8 310.5,168.6 314.0,167.3 317.5,166.0 321.0,164.7 324.5,163.3 327.9,162.0 331.4,160.6 334.9,159.3 338.4,157.9 341.9,156.4 345.4,155.0 348.9,153.6 352.3,152.1 355.8,150.6 359.3,149.1 362.8,147.6 366.3,146.1 369.8,144.5 373.3,142.9 376.7,141.4 380.2,139.7 383.7,138.1 387.2,136.5 390.7,134.8 394.2,133.2 397.7,131.5 401.1,129.8 404.6,128.0 408.1,126.3 411.6,124.5 415.1,122.8 418.6,121.0 422.1,119.1 425.5,117.3 429.0,115.5 432.5,113.6 436.0,111.7 439.5,109.8 443.0,107.9 446.5,106.0 449.9,104.0 453.4,102.1 456.9,100.1 460.4,98.1 463.9,96.1 467.4,94.0 470.9,92.0 474.3,89.9 477.8,87.8 481.3,85.7 484.8,83.6 488.3,81.4 491.8,79.3 495.3,77.1 498.7,74.9 502.2,72.7 505.7,70.5 509.2,68.2 512.7,66.0 516.2,63.7 519.7,61.4 523.1,59.1 526.6,56.8 530.1,54.4 533.6,52.0 537.1,49.7 540.6,47.3 544.1,44.8 547.5,42.4 551.0,40.0 554.5,37.5 558.0,35.0" fill="none" stroke="#221E18" stroke-width="2.2"/>
 
   <!-- 할선 PQ (연장) -->
-  <line x1="170" y1="192" x2="410" y2="61" stroke="#9C5A2C" stroke-width="1.7"/>
-  <!-- 접선 at P -->
-  <line x1="150" y1="194" x2="345" y2="112" stroke="#3A5C77" stroke-width="1.7" stroke-dasharray="7 4"/>
+  <line x1="258" y1="192.0" x2="505" y2="76.0" stroke="#9C5A2C" stroke-width="1.7"/>
+  <!-- 접선 at P — 볼록이므로 곡선 아래에 얹힌다 -->
+  <line x1="250" y1="189.7" x2="385" y2="142.7" stroke="#3A5C77" stroke-width="1.7" stroke-dasharray="7 4"/>
 
   <!-- 증분 보조선 -->
-  <line x1="220" y1="165" x2="330" y2="165" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
-  <line x1="330" y1="165" x2="330" y2="105" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="300" y1="172.3" x2="470" y2="172.3" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="470" y1="172.3" x2="470" y2="92.5" stroke="#8A7F6E" stroke-width="1.1" stroke-dasharray="4 3"/>
 
   <!-- 점 -->
-  <circle cx="220" cy="165" r="4.5" fill="#221E18"/>
-  <circle cx="330" cy="105" r="4.5" fill="#221E18"/>
+  <circle cx="300" cy="172.3" r="4.5" fill="#221E18"/>
+  <circle cx="470" cy="92.5" r="4.5" fill="#221E18"/>
 
   <!-- 라벨 -->
-  <text x="203" y="158" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">P</text>
-  <text x="337" y="99" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">Q</text>
-  <text x="269" y="181" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#5B5245">e</text>
-  <text x="338" y="140" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#5B5245">f(x+e) − f(x)</text>
+  <text x="283" y="164" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">P</text>
+  <text x="474" y="80" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#221E18">Q</text>
+  <text x="385" y="190.3" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#5B5245" text-anchor="middle">e</text>
+  <text x="479" y="137.4" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#5B5245">f(x+e) − f(x)</text>
 
-  <text x="415" y="58" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C">할선 PQ</text>
-  <text x="350" y="118" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#3A5C77">접선</text>
+  <text x="509" y="92" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C">할선 PQ</text>
+  <text x="386" y="156" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#3A5C77">접선</text>
 
   <!-- 하단 주석 -->
-  <text x="60" y="240" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E">
-    Q를 P에 붙일수록(e → 0) 할선의 기울기가 접선의 기울기에 가까워진다.
-  </text>
+  <text x="60" y="240" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E">Q를 P에 붙일수록(e → 0) 할선의 기울기가 접선의 기울기에 가까워진다.</text>
 </svg>

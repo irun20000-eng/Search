@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 310" role="img" aria-label="유리수를 자르는 세 가지 경우와 데데킨트 절단">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 322" role="img" aria-label="유리수를 자르는 세 가지 경우와 데데킨트 절단">
   <title>데데킨트 절단 — 유리수를 자르면 생기는 세 경우</title>
-  <rect width="620" height="310" fill="#FFFDF7"/>
+  <rect width="620" height="322" fill="#FFFDF7"/>
 
   <!-- ① A에 최댓값이 있다 -->
   <text x="30" y="46" font-family="EB Garamond, Georgia, serif" font-size="17" fill="#221E18">①</text>
@@ -29,11 +29,11 @@
   <circle cx="338" cy="246" r="5" fill="#FFFDF7" stroke="#8A7F6E" stroke-width="2"/>
 
   <!-- 구멍 표시 -->
-  <line x1="330" y1="228" x2="330" y2="264" stroke="#9C5A2C" stroke-width="1.6" stroke-dasharray="5 4"/>
-  <text x="278" y="222" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#9C5A2C">&#8730;2</text>
+  <line x1="330" y1="234" x2="330" y2="272" stroke="#9C5A2C" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="336" y="280" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="16" fill="#9C5A2C">&#8730;2</text>
   <text x="180" y="266" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#221E18">A</text>
   <text x="440" y="266" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#8A7F6E">B</text>
 
   <!-- 결론 -->
-  <text x="60" y="294" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#221E18">③ 의 분할 자체를 새로운 수라고 부른다 — 데데킨트가 무리수를 만든 방법</text>
+  <text x="60" y="308" font-family="Pretendard, 'Malgun Gothic', sans-serif" font-size="13" fill="#221E18">③ 의 분할 자체를 새로운 수라고 부른다 — 데데킨트가 무리수를 만든 방법</text>
 </svg>
