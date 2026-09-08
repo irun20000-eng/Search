@@ -360,10 +360,18 @@ python3 tools/sync_obsidian.py --check --only reports
   **이 노트에 문장을 더 넣으려면 다른 곳을 줄여야 한다.**
 - **게이트가 FAIL 해서 고쳤으면 빌더를 다시 돌릴 것.** 2026-09-09 에 안 돌려서 `manifest.json` 에
   **실패 시점의 자수(2,547)가 굳었고** 그 값이 갤러리 카드에 나갔다. ROADMAP 「자동 측정」도
-  없는 실패를 기록했다. 확인은 빌더 재실행 뒤
-  빌더를 돌리기 **전에** 산출물 해시를 떠 두고 돌린 뒤 대조한다
-        (`md5sum math/manifest.json link-index.json math/ROADMAP.md backlog.json > /tmp/a` → 빌더 3종 → `md5sum -c /tmp/a`).
-        **`git diff` 로 재면 안 된다** — HEAD 와 비교하므로 정당한 변경도 걸린다. 재야 할 것은 **멱등성**이다.
+  없는 실패를 기록했다. **확인은 멱등성이다** — 빌더를 돌리기 **전에** 해시를 떠 두고 돌린 뒤 대조한다:
+  `md5sum math/manifest.json link-index.json math/ROADMAP.md > /tmp/a` → **manifest → link-index → status 순으로** →
+  `md5sum -c /tmp/a`. `backlog.json` 은 이 셋의 산출물이 아니다(`build_backlog.py` 몫이라 늘 OK 로 찍힌다).
+  **`git diff` 로 재면 안 된다** — HEAD 와 비교하므로 정당한 변경까지 걸린다.
+  ⚠ **사각지대**: 목록에 없는 산출물은 못 본다. 빌더가 늘면 목록도 늘릴 것.
+  검수 권고 — 이걸 `tools/verify_builders.py` 로 만들면(임시 트리에 돌려 3파일 대조, 다르면 exit 1)
+  워킹트리를 안 건드려 CI 에도 걸 수 있다. **다음 회차 항목.**
+- **원문을 못 여는 자리가 있다(2026-09-09).** 이 환경에서 `mathshistory.st-andrews.ac.uk` 는
+  `EGRESS_BLOCKED` 다. `person-huygens` 출처 1 의 제목에 등시곡선 증명을 **원문 재개봉 없이**
+  기입했다 — 본문 §5 가 이미 같은 [1] 로 MacTutor 문장을 직접 인용하고 있어 원장 기입으로 처리했다.
+  검수 판정은 「규칙 위반 아님」이지만 **비용이 하나 있다**: 원장이 자기정합해져서, 본문 서술 자체가
+  오독이었다면 「제목 대조」 검사로는 못 잡는다. **로컬(재개봉 가능한 자리)에서 이 한 줄만 원문 대조할 것.**
 - **검사기의 여유폭 둘 — 다음에 라벨을 놓을 때 알고 있을 것(2026-09-09 검수 실측).**
   ① **관통 예산을 라벨 하나가 다 쓰고 있다.** `strokeWidth/2` 확장에 여분을 +1px 만 더해도
   `fermat` 의 `Q` 가 뜬다(상자는 곡선 잉크와 1.3px 겹치나 실제 글리프 잉크는 비어 있어 조치 불필요로
