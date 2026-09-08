@@ -184,6 +184,10 @@ EP4 = {
 # (자녀 편차 = 중간부모 편차의 2/3, 거꾸로는 1/3)과 비행 교관 일화의 출처는 짝 학습자료
 # concept/notes/regression-to-the-mean.md 에 출처·검증 메모와 함께 뒀다.
 # s5 는 플랜 B(pill 칩)라 항목당 4~6자를 지켰다.
+# 2026-09-08 — 첫 push 가 `cardnews-render` 와 `concept-sheet-render` 를 동시에 깨워
+# 늦게 끝난 카드뉴스 쪽 커밋이 rebase 충돌(link-index.json·backlog.json)로 사라졌다.
+# LESSONS 2026-09-03 과 같은 자리다. 컷은 정상으로 렌더·검사됐고 커밋만 유실됐으므로
+# 이 주석 한 줄로 카드뉴스 워크플로만 다시 깨워 재렌더한다(개념 쪽은 이미 붙었다).
 EP5 = {
  "series": "숫자 노트",
  "s1": {"kick":"도입",
