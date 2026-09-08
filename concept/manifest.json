@@ -1,6 +1,28 @@
 {
- "count": 9,
+ "count": 10,
  "notes": [
+  {
+   "slug": "regression-to-the-mean",
+   "title": "평균으로의 회귀(Regression to the Mean) — 이해편(입문·딥)",
+   "date": "2026-09-08",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "확률",
+    "평균회귀",
+    "골턴",
+    "회귀분석",
+    "상관계수",
+    "2년차징크스",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 5편 · 잘한 다음에 떨어지는 건 정상이다",
+   "chars": 10873,
+   "pic": "regression-to-the-mean.png",
+   "path": "concept/notes/regression-to-the-mean.md"
+  },
   {
    "slug": "sample-mean-variance",
    "title": "표본평균의 평균과 분산 — 이해편(입문·딥)",
