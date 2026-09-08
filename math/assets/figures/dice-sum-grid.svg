@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="주사위 두 개의 36가지 순서쌍 격자에서 합이 7인 칸 여섯 개를 표시한 그림">
+  <title>주사위 두 개 — 무엇을 하나의 경우로 셀 것인가</title>
+  <rect width="600" height="300" fill="#FFFDF7"/>
+  <rect x="96" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="46" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="96" y="73" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="73" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="73" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="73" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="73" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="73" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="96" y="100" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="100" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="100" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="100" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="100" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="100" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="96" y="127" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="127" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="127" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="127" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="127" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="127" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="96" y="154" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="154" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="154" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="154" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="154" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="154" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="96" y="181" width="27" height="27" fill="#9C5A2C" fill-opacity="0.34" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="123" y="181" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="150" y="181" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="177" y="181" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="204" y="181" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="231" y="181" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="109" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">1</text>
+  <text x="83" y="64" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">1</text>
+  <text x="136" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">2</text>
+  <text x="83" y="91" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">2</text>
+  <text x="163" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">3</text>
+  <text x="83" y="118" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">3</text>
+  <text x="190" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">4</text>
+  <text x="83" y="145" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">4</text>
+  <text x="217" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">5</text>
+  <text x="83" y="172" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">5</text>
+  <text x="244" y="37" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">6</text>
+  <text x="83" y="199" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#8A7F6E" text-anchor="middle">6</text>
+  <text x="177" y="20" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#221E18" text-anchor="middle">두 번째 주사위</text>
+  <text x="26" y="127" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#221E18" transform="rotate(-90 26 127)" text-anchor="middle">첫 번째 주사위</text>
+  <text x="276" y="121" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C">색칠한 여섯 칸이 합 7</text>
+  <text x="96" y="238" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E">합의 종류로</text>
+  <text x="250" y="238" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E">11가지 중 1</text>
+  <text x="380" y="238" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E" font-weight="400">1/11</text>
+  <text x="96" y="258" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E">두 눈의 조합으로</text>
+  <text x="250" y="258" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E">21가지 중 3</text>
+  <text x="380" y="258" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#8A7F6E" font-weight="400">1/7</text>
+  <text x="96" y="278" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#221E18">순서쌍으로</text>
+  <text x="250" y="278" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#221E18">36가지 중 6</text>
+  <text x="380" y="278" font-family="EB Garamond, Georgia, serif" font-size="13.5" fill="#9C5A2C" font-weight="700">1/6</text>
+  <text x="428" y="278" font-family="EB Garamond, Georgia, serif" font-size="13" fill="#9C5A2C">← 맞는 것은 이것뿐</text>
+</svg>
