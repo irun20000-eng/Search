@@ -19,26 +19,37 @@
     ⚠ `git diff` 로 재면 안 된다. HEAD 와 비교하므로 **정당한 변경까지** 걸린다.
     재야 할 것은 커밋과의 차이가 아니라 소스와의 고정점 관계다.
 
-왜 임시 트리에 안 돌리나.
-    `build_math_manifest.py` 가 `generated` 를 `git log -1` 로 채운다. `.git` 없는 복사본에서는
-    빈 문자열이 되어 **없는 차이가 생긴다.** 그래서 제자리에서 돌리고 **되돌려 놓는다**
-    (`--write` 를 주면 새로 만든 것을 남긴다). 중간에 죽어도 새 산출물이 남을 뿐이라 무해하다.
+왜 임시 트리에 안 돌리나 — **커밋 안 된 워킹트리를 못 보기 때문이다.**
+    `git worktree`·`git clone` 이 주는 것은 HEAD 다. 그런데 이 게이트가 재야 하는 것은
+    **커밋 직전에 손에 든 트리**다 — 방금 고친 노트와 아직 안 돌린 빌더의 관계.
+    임시 트리로는 그 자리를 아예 못 본다. (부수적으로 `.git` 없는 복사본에서는
+    `build_math_manifest.py` 의 `generated` 가 `git log -1` 을 못 불러 빈 문자열이 되어
+    없는 차이까지 생긴다 — 다만 `.git` 을 함께 복사하면 그건 사라지므로 결정적 이유는 아니다.)
+    그래서 **제자리에서 돌리고 되돌려 놓는다**(`--write` 면 새것을 남긴다).
 
-무엇을 안 보나.
-    `backlog.json` 은 이 세 빌더의 산출물이 아니다(`build_backlog.py` 몫). 넣어 두면 늘
-    OK 로 찍혀 검사 범위가 실제보다 넓어 보인다.
-    **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
+무엇을 보나.
+    `python3 tools/build_link_index.py` 는 끝에 `build_backlog.build()` 를 **이어서 부른다**
+    (그 파일이 「따로 돌리게 두면 반드시 잊는다」고 적어 둔 결정이다). 그래서 `backlog.json`
+    도 이 명령의 산출물이고 여기서 함께 잰다 — 빼 두면 검사기가 그 파일을 **말없이 덮어쓰고**
+    낡음도 영영 안 잡힌다(첫 판이 그랬다).
+    ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
 
-    그리고 `manifest.json` 의 `generated` 는 **노트에서 오지 않는다** — `git log -1` 이 준
-    HEAD 의 커밋 날짜다. 커밋이 날짜를 넘기면 그 한 줄만 어긋나고, 그것은 「소스를 고치고
-    빌더를 안 돌렸다」가 아니라 「그 사이에 커밋이 있었다」는 뜻이다. 그래서 **비교에서
-    빼고, 그것만 다르면 실패가 아니라 안내로 찍는다.** (LESSONS 2026-08-31 「빌더를 두 번
-    돌려 같지 않으면 그 자리에 시계가 섞여 있다」— 여기가 그 시계이고, 의도된 것이다.)
+`math/manifest.json` 의 `generated` 만 비교에서 뺀다.
+    그 값은 노트가 아니라 `git log -1 --format=%cs` 가 준 **HEAD 의 커밋 날짜**이고,
+    `%cs` 는 커밋의 타임존으로 찍히므로 같은 날 작업도 로컬(+0900)과 클라우드(+0000)에서
+    갈린다. 어느 화면도 이 값을 읽지 않는다(`grep generated */index.html` → 0건).
+    그러므로 여기서 어긋나는 것은 결함이 아니라 시계이고, 매번 알리면 곧 무시된다 —
+    조용히 되돌린다. **다른 산출물의 `generated` 는 절대 빼지 않는다**: `link-index.json`
+    의 것은 `reports/manifest.json` 에서 온 **소스 값**이라, 빼면 진짜 낡음을 숨긴다.
+    (LESSONS 2026-08-31 「빌더를 두 번 돌려 같지 않으면 그 자리에 시계가 섞여 있다」—
+    여기가 그 시계이고, 이 한 자리만 의도된 것이다.)
 
 쓰기.
     python3 tools/verify_builders.py           # 확인만 (워킹트리를 되돌린다)
     python3 tools/verify_builders.py --write   # 낡았으면 새로 만든 것을 남긴다
+    ※ 읽기 전용 검사가 아니다 — 빌더를 **실제로 돌린다**. 되돌리기는 그 뒤의 일이다.
 """
+import os
 import pathlib
 import re
 import subprocess
@@ -49,37 +60,49 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # 실행 순서가 결과를 바꾼다 — manifest 를 link-index 가 읽고, 그 둘을 status 가 읽는다.
 BUILDERS = (
     'tools/build_math_manifest.py',
-    'tools/build_link_index.py',
+    'tools/build_link_index.py',      # 끝에서 build_backlog 를 이어 부른다
     'tools/build_math_status.py',
 )
 OUTPUTS = (
     'math/manifest.json',
     'link-index.json',
+    'backlog.json',
     'math/ROADMAP.md',
 )
 
+# 시계가 섞인 자리 — 이 파일의 이 필드 하나뿐이다(머리말 참조).
+CLOCK = {'math/manifest.json': re.compile(rb'^(\s*"generated":\s*)"[^"]*"', re.M)}
+
+USAGE = ('쓰기: python3 tools/verify_builders.py [--write]\n'
+         '      --write 를 주면 낡았을 때 새로 만든 것을 남긴다(기본은 되돌린다).')
+
+
+def normalize(path: str, data: bytes) -> bytes:
+    pat = CLOCK.get(path)
+    return pat.sub(rb'\1"<clock>"', data) if pat else data
+
 
 def snapshot():
-    return {p: (ROOT / p).read_bytes() for p in OUTPUTS if (ROOT / p).exists()}
+    return {p: (ROOT / p).read_bytes() for p in OUTPUTS if (ROOT / p).is_file()}
 
 
-def restore(snap):
+def restore(snap, only=None):
+    """되돌린다. 쓰다 죽어도 반쪽 파일이 남지 않게 임시파일 → os.replace 로."""
     for p, data in snap.items():
-        if (ROOT / p).read_bytes() != data:
-            (ROOT / p).write_bytes(data)
-
-
-# `generated` 는 노트가 아니라 HEAD 의 커밋 날짜에서 온다 — 비교에서 뺀다(위 머리말).
-GENERATED = re.compile(rb'^(\s*"generated":\s*)"[^"]*"', re.M)
-
-
-def normalize(data: bytes) -> bytes:
-    return GENERATED.sub(rb'\1"<git>"', data)
+        if only is not None and p not in only:
+            continue
+        f = ROOT / p
+        if f.is_file() and f.read_bytes() == data:
+            continue
+        tmp = f.with_suffix(f.suffix + '.vbtmp')
+        tmp.write_bytes(data)
+        os.replace(tmp, f)
 
 
 def diffs(old: bytes, new: bytes, limit: int = 3) -> str:
     """달라진 줄 몇 개 — 첫 줄만 보이면 정작 중요한 차이를 가린다.
-    (실제로 그랬다: `generated` 한 줄이 앞에 있어 자수 2547 을 못 보여 줬다.)"""
+    (첫 판이 그랬다: `generated` 한 줄이 앞에 있어 자수 2547 을 못 보여 줬다.
+     그래서 **판정에서 뺀 자리는 여기서도 빼고** 넘긴다.)"""
     a = old.decode('utf-8', 'replace').splitlines()
     b = new.decode('utf-8', 'replace').splitlines()
     out, n = [], 0
@@ -99,10 +122,14 @@ def diffs(old: bytes, new: bytes, limit: int = 3) -> str:
 
 
 def main(argv):
-    write = '--write' in argv[1:]
-    unknown = [a for a in argv[1:] if a != '--write']
+    args = argv[1:]
+    if {'-h', '--help'} & set(args):
+        print(__doc__.strip())
+        return 0
+    write = '--write' in args
+    unknown = [a for a in args if a != '--write']
     if unknown:
-        print(f'모르는 인자: {" ".join(unknown)}\n{__doc__.splitlines()[-2].strip()}')
+        print(f'모르는 인자: {" ".join(unknown)}\n{USAGE}')
         return 2
 
     before = snapshot()
@@ -111,38 +138,52 @@ def main(argv):
         print('FAIL — 산출물이 없다: ' + ', '.join(missing))
         return 1
 
-    for b in BUILDERS:
-        r = subprocess.run([sys.executable, b], cwd=str(ROOT),
-                           capture_output=True, text=True)
-        if r.returncode != 0:
-            restore(before)
-            print(f'FAIL — 빌더가 죽었다: {b} (exit {r.returncode})')
-            print((r.stderr or r.stdout).strip()[:1500])
-            return 1
+    try:
+        for b in BUILDERS:
+            r = subprocess.run([sys.executable, b], cwd=str(ROOT),
+                               capture_output=True, text=True)
+            if r.returncode != 0:
+                restore(before)
+                print(f'FAIL — 빌더가 죽었다: {b} (exit {r.returncode})')
+                print((r.stderr or r.stdout).strip()[:1500])
+                return 1
+    except KeyboardInterrupt:                 # 트리를 그대로 두고 나가지 않는다
+        restore(before)
+        print('\n중단됨 — 워킹트리는 되돌렸다.')
+        return 130
+    except BaseException:
+        restore(before)
+        raise
 
     after = snapshot()
-    stale = [p for p in OUTPUTS if normalize(before[p]) != normalize(after[p])]
-    clock = [p for p in OUTPUTS if p not in stale and before[p] != after[p]]
+    gone = [p for p in OUTPUTS if p not in after]
+    if gone:
+        restore(before)
+        print('FAIL — 빌더가 산출물을 지웠다: ' + ', '.join(gone))
+        return 1
+
+    stale, clock = [], []
+    for p in OUTPUTS:
+        if before[p] == after[p]:
+            continue
+        (stale if normalize(p, before[p]) != normalize(p, after[p]) else clock).append(p)
+
+    restore(before, only=clock)               # 시계는 어느 모드에서도 되돌린다
 
     if not stale:
         print(f'OK — 산출물 {len(OUTPUTS)}개가 지금 소스의 고정점이다.')
-        for p in clock:
-            print(f'   · {p} 의 `generated` 만 HEAD 날짜와 다르다 — 다음 빌더 실행 때 따라온다.')
-        if clock and write:
-            return 0
-        if clock:
-            restore(before)
         return 0
 
     if not write:
-        restore(before)
+        restore(before, only=stale)
     print(f'FAIL — 산출물 {len(stale)}개가 소스보다 낡았다. 빌더를 돌리고 함께 커밋할 것.')
     for p in stale:
         print(f'  ── {p}')
-        print('     ' + diffs(before[p], after[p]).replace('\n', '\n     '))
+        print('     ' + diffs(normalize(p, before[p]),
+                              normalize(p, after[p])).replace('\n', '\n     '))
     print('\n  고치기: ' + ' && '.join(f'python3 {b}' for b in BUILDERS))
     print('  (지금 워킹트리는 ' + ('새로 만든 것으로 바꿔 뒀다 — 그대로 커밋하면 된다.'
-                                if write else '건드리지 않았다. --write 를 주면 새로 만든 것을 남긴다.') + ')')
+                                if write else '건드리지 않았다. --write 를 주면 새것을 남긴다.') + ')')
     return 1
 
 
