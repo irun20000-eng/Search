@@ -40,6 +40,12 @@
 후속개념: [concept-analysis-rigor, concept-complex-number-advanced]
 기여인물: [person-napier, person-euler, person-jakob-bernoulli, person-leibniz]
 
+이미지:
+  - 파일: assets/figures/hyperbola-equal-areas.svg
+    설명: y = 1/x 아래에서 1에서 2, 2에서 4, 4에서 8 구간의 넓이가 서로 같다
+    출처: 직접 제작
+    라이선스: CC0
+
 출처:
   - 번호: 1
     제목: Wikipedia, Napierian logarithm — **네이피어의 원래 로그가 밑 1/e 에 해당하고 10⁷ 이라는 상수를 품는다**는 것, 그 관계가 NapLog(x) = −10⁷ ln(x/10⁷) 로 적힌다는 것, **네이피어가 소수를 피하려고 10⁷ 을 골라 수와 로그에 곱했으리라**는 것, **그가 자기 로그를 두 거리의 비라는 기하학적 형태로 정의했으며 그것이 로그를 지수로 보는 오늘날의 정의와 다르다**는 것
@@ -233,6 +239,10 @@ log √x = (log x) / 2
 - 넓이는 그대로다.
 
 즉 **넓이는 구간의 위치가 아니라 양 끝의 비에만 달려 있다.** 그러면 `[1, ab]` 의 넓이는 `[1, a]` 의 넓이와 `[a, ab]` 의 넓이의 합인데, 뒤쪽은 `[1, b]` 를 `a` 배 늘린 것이므로 `[1, b]` 의 넓이와 같다.
+
+![y = 1/x 아래에서 구간을 두 배씩 늘려도 넓이가 같다](../../assets/figures/hyperbola-equal-areas.svg)
+
+`k = 2` 인 경우다. `[1, 2]` · `[2, 4]` · `[4, 8]` 은 길이가 1 · 2 · 4 로 두 배씩 늘어나는데 높이가 그만큼 낮아져, 색칠한 세 넓이가 모두 같다. 각각 `ln 2` 다.
 
 ```
 넓이(1→ab) = 넓이(1→a) + 넓이(1→b)
