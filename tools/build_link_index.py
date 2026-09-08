@@ -204,5 +204,8 @@ if __name__ == "__main__":
             print()
             build_backlog.build()
         except Exception as e:
+            # ⚠ 이 문구를 tools/verify_builders.py 가 stdout 에서 찾아 FAIL 로 올린다
+            #   (여기서 rc 0 으로 삼켜지면 backlog.json 낡음이 「고정점」으로 읽히기 때문).
+            #   문구를 바꾸면 그쪽 BACKLOG_FAIL 도 함께 고칠 것 — 안 그러면 검사가 조용히 꺼진다.
             print("! 백로그 갱신 실패(링크 인덱스는 정상): %s" % e)
     sys.exit(rc)

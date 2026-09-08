@@ -143,6 +143,9 @@ python3 tools/verify_math.py --symmetry     # 상호참조 대칭 보고 (게이
 python3 tools/verify_figures.py             # 도해 SVG — 브라우저(Chromium)로 글자 넘침·겹침
 ```
 
+산출물 낡음 게이트(`verify_builders.py`)는 여기가 아니라 **M6 에 있다** — 읽기 전용 검사가
+아니라 **빌더를 실제로 돌리기** 때문이다. 빌더를 돌리는 자리와 같은 자리에 둔다.
+
 **백로그가 두 채널인 이유**(2026-08-29). 위키링크만 세면 **본문이 반복 호명하는데
 링크를 안 건 이름**이 영원히 안 보인다 — 유클리드 79회·아르키메데스 38회가 그랬다.
 그래서 이미 구조화된 신호인 `발전단계[].인물` 을 두 번째 채널로 쓴다. 손 목록은
@@ -180,7 +183,16 @@ python3 tools/sync_math_obsidian.py
 python3 tools/build_math_manifest.py    # math/manifest.json
 python3 tools/build_link_index.py       # 루트 link-index.json (7개 갤러리 통합)
 python3 tools/build_math_status.py      # ROADMAP 「자동 측정」 블록
+python3 tools/verify_builders.py        # ★ 위 셋을 다시 돌려 산출물이 고정점인지 확인
 ```
+
+**마지막 줄이 게이트다.** `verify_builders.py` 는 읽기 전용이 아니라 **빌더를 제자리에서
+다시 돌린다** — 결과가 달라지면 산출물이 소스보다 낡은 것이다(멱등성). 기본 모드는 확인만
+하고 워킹트리를 원래대로 되돌리므로, 아직 한 번도 안 돌렸다면 `--write` 를 주어 새로 만든
+것을 남긴다. `backlog.json` 도 함께 본다 — `build_link_index.py` 가 끝에서
+`build_backlog.build()` 를 이어 부르므로 그것도 이 명령의 산출물이다.
+2026-09-09 에 게이트 FAIL 을 고치고 빌더를 안 돌려 `manifest.json` 에 **실패 시점의 자수가
+굳은 채 갤러리 카드로 나갔다** — 그래서 이 줄이 생겼다.
 
 **순서가 고정돼 있다.** `build_link_index.py` 는 manifest 뒤에 돌린다(math 항목을
 manifest 에서 읽는다). `build_math_status.py` 는 그 뒤에 돌린다(link-index 로 위키링크를
