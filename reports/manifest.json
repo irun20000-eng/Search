@@ -2,6 +2,106 @@
   "generated": "2026-08-31",
   "reports": [
     {
+      "slug": "taylor-series",
+      "title": "테일러 급수 (이해편) — 함수를 다항식으로 바꾸는 기술, 계수는 왜 n!로 나누나 (DEEP)",
+      "date": "2026-09-08",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "테일러급수",
+        "매클로린급수",
+        "다항식근사",
+        "미분",
+        "급수",
+        "근사",
+        "오차",
+        "미적분",
+        "수능수학"
+      ],
+      "tldr": "테일러 급수: f 가 x = a 에서 한없이 미분가능하면 f(a) + f′(a)(x−a) + ⋯ + f⁽ⁿ⁾(a)/n! · (x−a)ⁿ + ⋯ 를 만들 수 있다 . 계수가 f⁽ⁿ⁾(a)/n! 인 이유는 억지가 아니라 강제다. \"원래 함수와 도함수값을 n차까지 전부 맞춘다\"고 요구하면 계수가 그 값 말고는 될 수 없다(§3). a = 0 인 경우를 특별히 매클로린 급수라 부른다 . 대표 다섯: eˣ, sin x, cos x 는 모든 실수에서 수렴하고, ln(1+x) 는 (−1, 1], 1/(1+x) 는 (−1, 1) 에서 수렴한다 .",
+      "sources": 8,
+      "path": "reports/taylor-series/report.md",
+      "cat": "math",
+      "pair": "taylor-series-advanced",
+      "track": "intro",
+      "chars": 12061
+    },
+    {
+      "slug": "taylor-series-advanced",
+      "title": "테일러 정리 (확장편) — 잉여항 네 형태, 수렴반경의 진짜 이유, 그리고 급수가 함수를 배신할 때 (DEEP)",
+      "date": "2026-09-08",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "테일러정리",
+        "잉여항",
+        "수렴반경",
+        "해석함수",
+        "매끄러운함수",
+        "보렐정리",
+        "복소해석",
+        "실해석학",
+        "근사이론"
+      ],
+      "tldr": "테일러 정리는 f(x) = pₙ(x) + Rₙ(x) 에서 잉여항 Rₙ 을 구체적으로 써 주는 정리다. 형태가 넷이고 가정이 각각 다르다 . 라그랑주형 Rₙ = f⁽ⁿ⁺¹⁾(c)/(n+1)! · (x−a)ⁿ⁺¹ 이 가장 널리 쓰인다 . n = 0 이면 정확히 평균값 정리다 . 라그랑주 한계는 생각보다 빡빡하다 — sin(0.5) 에서 n 을 제대로 고르면 한계가 실제 오차의 1.01배다(§4). 잘못 고르면 14배까지 헐거워진다. 수렴반경은 실수축을 봐서는 설명되지 않는다. 1/(1+x²) 는 모든 실수에서 매끄럽고 유계인데 매클로린 급수의 수렴반경이 1이다 — 범인은 복소평면의 ±i 다 .",
+      "sources": 14,
+      "path": "reports/taylor-series-advanced/report.md",
+      "cat": "math",
+      "pair": "taylor-series",
+      "track": "advanced",
+      "chars": 16418
+    },
+    {
+      "slug": "discontinuous-derivative",
+      "title": "도함수가 불연속인 함수 (이해편) — 미분가능한데 도함수는 왜 끊기나 (DEEP)",
+      "date": "2026-09-07",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "도함수",
+        "불연속",
+        "미분가능",
+        "다르부정리",
+        "사잇값성질",
+        "반례",
+        "해석학",
+        "미적분",
+        "수능수학"
+      ],
+      "tldr": "미분가능 ⇒ 연속은 맞다 . 그러나 미분가능 ⇒ 도함수가 연속은 틀렸다 . 반례는 f(x) = x² sin(1/x) (단 f(0) = 0). 이 함수는 모든 점에서 미분가능하고 f′(0) = 0 인데, f′ 는 원점에서 불연속이다 . 이유: x ≠ 0 에서 f′(x) = 2x sin(1/x) − cos(1/x) 인데, 앞항은 0으로 가지만 뒷항 cos(1/x) 가 −1과 1 사이를 무한히 왕복해 극한이 없다 . 그렇다고 도함수가 마음대로 끊기는 것은 아니다. 다르부 정리: 미분가능한 함수의 도함수는 연속이 아니어도 사잇값 성질[^사잇값성질]을 가진다 .",
+      "sources": 8,
+      "path": "reports/discontinuous-derivative/report.md",
+      "cat": "math",
+      "pair": "discontinuous-derivative-advanced",
+      "track": "intro",
+      "chars": 12394
+    },
+    {
+      "slug": "discontinuous-derivative-advanced",
+      "title": "도함수의 불연속 (확장편) — 다르부 정리·베르 1류·볼테라 함수와 미적분 기본정리의 균열 (DEEP)",
+      "date": "2026-09-07",
+      "depth": "deep",
+      "tags": [
+        "수학",
+        "도함수",
+        "불연속",
+        "다르부정리",
+        "베르1류",
+        "볼테라함수",
+        "리만적분",
+        "르베그측도",
+        "미적분기본정리",
+        "실해석학"
+      ],
+      "tldr": "도함수 불연속은 제2종(본질적)만 가능하다. 제거가능·점프형은 평균값 정리로 원천 봉쇄된다 . 다르부 정리(1875): 미분가능 함수의 도함수는 연속이 아니어도 사잇값 성질을 갖는다 . 증명은 두 갈래 — 최대최소 정리 경유와 평균값 정리+중간값 정리 경유 . 모든 도함수는 베르 1류다. fₙ(x) = (f(x+1/n) − f(x))/(1/n) 이 연속이고 그 점별극한이 f′ 이기 때문이다 . 따라서 도함수는 조밀한 집합에서 반드시 연속이고, 디리클레 함수는 도함수가 될 수 없다 . 볼테라 함수(1881): 모든 점에서 미분가능, V′ 유계, 그런데 V′ 이 측도 1/2 인 집합에서 불연속 → 르베그 판정법에 의해 리만적분 불가 .",
+      "sources": 15,
+      "path": "reports/discontinuous-derivative-advanced/report.md",
+      "cat": "math",
+      "pair": "discontinuous-derivative",
+      "track": "advanced",
+      "chars": 18591
+    },
+    {
       "slug": "derivative-rate-of-change",
       "title": "미분과 변화율 (이해편) — 속도계·물가·커피로 배우는 변화 읽기와 예측 (DEEP)",
       "date": "2026-08-31",
@@ -51,7 +151,7 @@
       "cat": "math",
       "pair": "derivative-rate-of-change",
       "track": "advanced",
-      "chars": 16945
+      "chars": 16949
     },
     {
       "slug": "continuous-function-theorems",
