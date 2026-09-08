@@ -25,6 +25,16 @@
        ⚠ **기하만으로는 오탐이 난다.** 뒤에 그린 불투명 도형에 가려 화면에는 안 보이는
        선이 있다(라이프니츠의 확대 상자가 지시선을 덮는다). 그래서 교차점에서
        `elementsFromPoint` 로 **그 선이 실제로 맨 위에 그려지는지**까지 확인한다.
+       그 히트 테스트에는 함정이 셋 있고 셋 다 실제로 물렸다 —
+       ① 글자는 상자 전체가 걸리므로 스택에서 걷어내야 한다(안 그러면 진짜를 못 잡는다),
+       ② 점선은 **틈**에서 아무것도 안 걸린다 → 잴 때만 `stroke-dasharray` 를 끈다
+          (안 그러면 위상 운으로 놓친다 — `5 4` 에서 offset 6·8 이 통째로 빗나갔다),
+       ③ 반투명 도형은 **가리지 못한다** → 실효 알파 0.5 미만은 차단으로 세지 않는다.
+       그리고 `line`·`polyline` 만 보면 리포 잉크의 절반을 놓친다(`dice-sum-grid` 는
+       전부 `<rect>`, `descartes` 의 컴퍼스는 `<path>`) → 기하 요소를 **길이로 훑는다**.
+       마지막으로 **옅은 잉크는 세지 않는다.** 배경과 대비가 낮은 격자선이 라벨 밑을
+       지나는 것은 정상 배치다(`descartes` 의 #EDE4D4 격자). 지면색과의 명암비가
+       MIN_CONTRAST 미만이면 건너뛴다 — 안 그러면 정상 도해가 FAIL 로 뜬다.
     회전·translate 는 `getCTM()` 으로 루트 좌표계에 옮겨 놓고 잰다. 이걸 빼먹으면
     회전 라벨이 전부 오탐으로 뜬다(getBBox 는 변환 전 좌표를 준다).
 
@@ -61,11 +71,17 @@ CHROME_GLOBS = (
 #   이 여유는 커닝이 아니라 글자 상자의 사이드베어링(실제 잉크보다 넓은 AABB) 몫이다.
 OVERLAP_MIN_W = 1.5
 OVERLAP_MIN_H = 1.5
-# 관통 판정에서 글자 상자를 안쪽으로 줄이는 비율. 라벨은 대개 선 옆에 붙으므로
-# 가장자리를 스치는 것은 정상이고, 「한복판을 지나는가」만 결함으로 센다.
-TEXT_INSET = 0.28
+# 관통 판정에서 글자 상자를 안쪽으로 줄이는 양. 라벨은 대개 선 옆에 붙으므로 가장자리를
+# 스치는 것은 정상이고, 「한복판을 지나는가」만 결함으로 센다.
+#   비율만 쓰면 감도가 라벨 크기에 좌우된다 — 408px 캡션은 가장자리에서 114px 안쪽까지
+#   들어와야 잡히고 7px 라벨은 2px 만 비켜도 통과한다. 그래서 둘 중 **작은 쪽**을 쓴다.
+TEXT_INSET_RATIO = 0.25
+TEXT_INSET_MAX = 2.0
+# 관통으로 셀 최소 명암비(WCAG, 지면색 대비). 옅은 격자선이 라벨 밑을 지나는 것은
+# 읽기를 해치지 않는 정상 배치다 — #EDE4D4 격자는 지면 #FFFDF7 대비 1.26 이다.
+MIN_CONTRAST = 1.5
 
-MEASURE_JS = """({ vb, INSET }) => {
+MEASURE_JS = """({ vb, RATIO, MAXIN, MINC }) => {
   const [X0, Y0, W, H] = vb;
   const X1 = X0 + W, Y1 = Y0 + H;
   const svg = document.querySelector('svg');
@@ -95,55 +111,84 @@ MEASURE_JS = """({ vb, INSET }) => {
       const h = Math.min(a.y1, c.y1) - Math.max(a.y0, c.y0);
       if (w > 0 && h > 0) hits.push({ a: a.t, b: c.t, w: w, h: h, area: w * h });
     }
-  // 관통 — 직선이 글자 상자 안쪽을 지나는가
-  const segs = [];
-  for (const el of svg.querySelectorAll('line, polyline')) {
+  // 관통 — 그려진 잉크가 글자 상자 안쪽을 지나는가.
+  //   line/polyline 만 보면 리포 잉크의 절반을 놓치므로 기하 요소를 전부 훑고,
+  //   세그먼트 수식 대신 getTotalLength()/getPointAtLength() 로 윤곽을 표본한다.
+  //   (rect 는 윤곽 = 테두리이므로 배경 rect 가 안쪽 글자를 「관통」으로 잡지 않는다.)
+  const geoms = [];
+  for (const el of svg.querySelectorAll('line, polyline, polygon, path, rect, circle, ellipse')) {
+    let L = 0;
+    try { L = el.getTotalLength(); } catch (e) { continue; }
+    if (!(L > 0)) continue;
+    const cs0 = getComputedStyle(el);
+    if (cs0.visibility === 'hidden' || cs0.display === 'none') continue;
+    if (cs0.stroke === 'none' && cs0.fill === 'none') continue;
     const m = root.multiply(el.getScreenCTM());
-    const T = (x, y) => ({ x: m.a * x + m.c * y + m.e, y: m.b * x + m.d * y + m.f });
-    let raw = [];
-    if (el.tagName === 'line')
-      raw = [[+el.getAttribute('x1') || 0, +el.getAttribute('y1') || 0],
-             [+el.getAttribute('x2') || 0, +el.getAttribute('y2') || 0]];
-    else
-      raw = (el.getAttribute('points') || '').trim().split(/[\s,]+/).map(Number)
-              .reduce((a, v, i) => (i % 2 ? a[a.length - 1].push(v) : a.push([v]), a), []);
-    const p = raw.filter(q => q.length === 2 && q.every(Number.isFinite)).map(q => T(q[0], q[1]));
-    for (let i = 0; i + 1 < p.length; i++) segs.push([p[i], p[i + 1], el]);
+    const n = Math.min(3000, Math.max(40, Math.ceil(L)));
+    const pts = [];
+    for (let k = 0; k <= n; k++) {
+      const q = el.getPointAtLength(L * k / n);
+      pts.push({ x: m.a * q.x + m.c * q.y + m.e, y: m.b * q.x + m.d * q.y + m.f });
+    }
+    geoms.push({ el, pts });
   }
+  const scr = svg.getScreenCTM();   // 루트 viewBox → client 좌표. elementsFromPoint 가
+                                    // 쓰는 좌표계와 같다(스크롤·확대까지 반영된다).
+  // 지면색 — 첫 <rect> 의 fill 을 지면으로 본다
+  const bgEl = svg.querySelector('rect');
+  const parseRGB = (c) => {
+    const m = /rgba?\(([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)(?:[,\s/]+([\d.]+))?/.exec(c || '');
+    return m ? [+m[1], +m[2], +m[3], m[4] === undefined ? 1 : +m[4]] : null;
+  };
+  const BG = (bgEl && parseRGB(getComputedStyle(bgEl).fill)) || [255, 253, 247, 1];
+  const lum = (c) => {
+    const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]);
+  };
+  const inkContrast = (el) => {
+    const cs = getComputedStyle(el);
+    const c = parseRGB(cs.stroke !== 'none' ? cs.stroke : cs.fill);
+    if (!c) return 0;
+    const a = c[3] * (parseFloat(cs.strokeOpacity) || 1) * (parseFloat(cs.opacity) || 1);
+    const over = [0, 1, 2].map(i => c[i] * a + BG[i] * (1 - a));   // 지면 위에 합성
+    const l1 = Math.max(lum(over), lum(BG)), l2 = Math.min(lum(over), lum(BG));
+    return (l1 + 0.05) / (l2 + 0.05);
+  };
+  const opaqueEnough = (e) => {
+    const cs = getComputedStyle(e);
+    if (cs.fill === 'none' || !cs.fill) return false;
+    const a = (parseFloat(cs.fillOpacity) || 0) * (parseFloat(cs.opacity) || 0);
+    return a >= 0.5;   // 반투명은 아래 잉크를 가리지 못한다
+  };
   const crossed = [];
   for (const b of boxes) {
-    const iw = (b.x1 - b.x0) * INSET, ih = (b.y1 - b.y0) * INSET;
+    const iw = Math.min((b.x1 - b.x0) * RATIO, MAXIN);
+    const ih = Math.min((b.y1 - b.y0) * RATIO, MAXIN);
     const r = { x0: b.x0 + iw, x1: b.x1 - iw, y0: b.y0 + ih, y1: b.y1 - ih };
     if (r.x1 <= r.x0 || r.y1 <= r.y0) continue;
-    for (const [a, c, el0] of segs) {
-      // Liang-Barsky
-      let t0 = 0, t1 = 1;
-      const dx = c.x - a.x, dy = c.y - a.y;
-      const P = [-dx, dx, -dy, dy];
-      const Q = [a.x - r.x0, r.x1 - a.x, a.y - r.y0, r.y1 - a.y];
-      let ok = true;
-      for (let i = 0; i < 4; i++) {
-        if (P[i] === 0) { if (Q[i] < 0) { ok = false; break; } continue; }
-        const t = Q[i] / P[i];
-        if (P[i] < 0) { if (t > t1) { ok = false; break; } if (t > t0) t0 = t; }
-        else { if (t < t0) { ok = false; break; } if (t < t1) t1 = t; }
+    let done = false;
+    for (const g of geoms) {
+      if (done) break;
+      const inside = g.pts.filter(q => q.x >= r.x0 && q.x <= r.x1 && q.y >= r.y0 && q.y <= r.y1);
+      if (!inside.length) continue;
+      if (inkContrast(g.el) < MINC) continue;   // 옅은 격자선은 읽기를 해치지 않는다
+      // 화면에서도 보이나 — 점선의 틈에서는 아무것도 안 걸리므로 잴 때만 실선으로 둔다
+      const keep = g.el.style.strokeDasharray;
+      g.el.style.strokeDasharray = 'none';
+      const step = Math.max(1, Math.floor(inside.length / 16));
+      for (let k = 0; k < inside.length && !done; k += step) {
+        const u = inside[k];
+        const cx = scr.a * u.x + scr.c * u.y + scr.e;
+        const cy = scr.b * u.x + scr.d * u.y + scr.f;
+        let blocked = false, seen = false;
+        for (const e of document.elementsFromPoint(cx, cy)) {
+          if (e === g.el) { seen = true; break; }
+          if (e.tagName === 'text' || e.tagName === 'tspan') continue;
+          if (opaqueEnough(e)) { blocked = true; break; }
+        }
+        if (seen && !blocked) { crossed.push({ t: b.t, by: g.el.tagName }); done = true; }
       }
-      if (!ok || t1 <= t0) continue;
-      // 기하로는 지나간다. 화면에서도 보이는지 — 뒤에 그린 불투명 도형에 가리면 아니다.
-      const scr = svg.getScreenCTM();
-      let visible = false;
-      for (let k = 0; k <= 12 && !visible; k++) {
-        const t = t0 + (t1 - t0) * (k / 12);
-        const ux = a.x + dx * t, uy = a.y + dy * t;
-        const cx = scr.a * ux + scr.c * uy + scr.e;
-        const cy = scr.b * ux + scr.d * uy + scr.f;
-        // 글자는 상자 전체가 히트 테스트에 걸리므로 걷어낸다 — 우리가 알고 싶은 것은
-        // 「그 선이 다른 **도형**에 가려졌는가」다. 남은 것 중 맨 앞이 이 선이면 보인다.
-        const stack = document.elementsFromPoint(cx, cy)
-          .filter(e => e.tagName !== 'text' && e.tagName !== 'tspan');
-        if (stack[0] === el0) visible = true;
-      }
-      if (visible) { crossed.push({ t: b.t }); break; }
+      g.el.style.strokeDasharray = keep;
     }
   }
   return { over, hits, crossed, n: boxes.length };
@@ -213,7 +258,9 @@ def main(argv):
             page.set_content(
                 '<style>html,body{margin:0;padding:0}svg{display:block}</style>' + src,
                 wait_until='domcontentloaded')
-            r = page.evaluate(MEASURE_JS, {'vb': vb, 'INSET': TEXT_INSET})
+            r = page.evaluate(MEASURE_JS, {'vb': vb, 'RATIO': TEXT_INSET_RATIO,
+                                           'MAXIN': TEXT_INSET_MAX,
+                                           'MINC': MIN_CONTRAST})
             hits = [h for h in r['hits']
                     if h['w'] >= OVERLAP_MIN_W and h['h'] >= OVERLAP_MIN_H]
             bad = len(r['over']) + len(hits) + len(r['crossed'])
@@ -225,7 +272,7 @@ def main(argv):
                 print(f'    넘침 "{d["t"]}"  x {d["x0"]:.1f}~{d["x1"]:.1f}'
                       f'  y {d["y0"]:.1f}~{d["y1"]:.1f}')
             for d in r['crossed']:
-                print(f'    관통 "{d["t"]}"  — 직선이 글자 상자 안쪽을 지난다')
+                print(f'    관통 "{d["t"]}"  — <{d["by"]}> 가 글자 상자 안쪽을 지난다')
             for h in hits:
                 print(f'    겹침 "{h["a"]}" × "{h["b"]}"  '
                       f'{h["w"]:.1f}×{h["h"]:.1f} = {h["area"]:.1f}px²')
