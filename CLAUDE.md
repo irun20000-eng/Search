@@ -79,7 +79,8 @@ python3 tools/build_manifest.py           # videos/manifest.json   (이름이 �
 python3 tools/build_reports_meta.py       # reports/manifest.json 의 cat·pair·track·chars
 python3 tools/build_link_index.py         # 루트 link-index.json + backlog.json (서가 manifest 뒤에)
 python3 tools/verify_reports_meta.py      # 보고서 manifest ↔ report.md 대조 (rebuild 빌더가 없는 서가라)
-                                          #   date·depth·tags·path·고아를 잠근다. title·tldr·cover·sources 는 소스가 없다
+                                          #   date·depth·tags·sources·path·cover·고아 + title 56편을 잠근다
+                                          #   ⚠ 못 잡는 것: tldr(소스와 다른 문장) · 손질 허용목록 16편의 제목 · sources 표기 형태
 python3 tools/verify_builders.py          # ★ 커밋 직전 마지막 — OUTPUTS 7종이 지금 소스의 고정점인가
                                           #   7종 = concept·videos·reports·math manifest + link-index + backlog + math/ROADMAP
                                           #   ⚠ **읽기 전용이 아니다** — 빌더 6종을 제자리에서 실제로 돌리고
