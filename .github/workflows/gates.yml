@@ -102,6 +102,11 @@ jobs:
       - name: 영상 노트
         run: python tools/verify_video.py
 
+      # reports 는 rebuild 빌더가 없어 아래 멱등성 검사가 네 필드만 덮는다.
+      # 그 빈자리를 이것이 반쯤 메운다 — manifest 가 report.md 와 어긋났는지 직접 대조한다.
+      - name: 보고서 manifest 가 소스와 어긋났는가
+        run: python tools/verify_reports_meta.py
+
       # 마지막에 둔다 — 이 검사만 빌더를 **실제로 돌린다**(그 뒤 워킹트리를 되돌린다).
       # 앞의 게이트들이 원본 산출물을 보게 하려면 순서가 이래야 한다.
       # ⚠ 이 초록이 모든 서가를 보증하지 않는다 — reports 는 네 필드만 덮인다(아래 요약 참조).
@@ -120,7 +125,7 @@ jobs:
             echo "★ 도해는 **이 러너의 계측이 정본**이다 — 로컬은 폰트가 달라 판정이 갈린다."
             echo "   (로컬 0건이 여기서 7건이 된 적이 있다. 재현법은 이 워크플로 머리말 참조.)"
             echo "★ 그림이 「옳은가」는 여기서 못 잰다 — 렌더해서 사람이 볼 것(LESSONS 2026-09-08)."
-            echo "★ **빌더 멱등성의 초록이 reports 서가를 보증하지 않는다.** 거기서 다시 지어지는 것은"
-            echo "   \`cat\`·\`pair\`·\`track\`·\`chars\` 넷뿐이다 — 제목·날짜·태그·tldr 가 manifest 와"
-            echo "   어긋나도 이 검사는 통과한다(그 서가엔 rebuild 빌더가 아직 없다)."
+            echo "★ reports 는 rebuild 빌더가 없다(만들면 손으로 다듬은 카드 제목 16개와 tldr 71개를 덮는다)."
+            echo "   대신 \`verify_reports_meta\` 가 **date·depth·tags·path·고아**를 소스와 대조한다."
+            echo "   ⚠ 그래도 **title·tldr·cover·sources 는 어느 게이트도 안 잡는다** — 소스가 없거나 규칙이 하나가 아니다."
           } >> $GITHUB_STEP_SUMMARY

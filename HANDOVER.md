@@ -408,7 +408,13 @@ python3 tools/sync_obsidian.py --check --only reports
   ⚠ **`reports` 는 네 필드만 잡는다** — `cat`·`pair`·`track`·`chars`(본문 자수는 잡힌다).
   **못 잡는 것**: **소스(report.md) 쪽**에서 `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover` 를 고쳤을 때. `build_reports_meta` 는 그 넷만 다시 지으므로
   **보고서 제목을 고치고 manifest 를 안 고쳐도 게이트가 통과한다**(실측 확인). 그 서가의 진짜 낡음을
-  잡으려면 **`reports/` 용 rebuild 빌더가 먼저 있어야 한다** — 지금은 그런 빌더가 없다. 다음 회차 후보.
+  잡으려면 rebuild 빌더가 있어야 하는데, **2026-09-09 에 만들려고 재 보니 만들면 안 되는 것이었다** —
+  `title` 은 16편이 카드용으로 손질돼 있고 `tldr` 은 71/72 가 손으로 쓴 문장이라 규칙 하나로 다시 지으면
+  **갤러리에 나가는 제목과 요약을 덮는다.** 대신 `tools/verify_reports_meta.py` 를 만들어 **소스가 있는
+  필드만**(date·depth·tags·path·양방향 고아) 잠갔고, 첫 실행에서 **실제 태그 드리프트 7편**을 찾아 고쳤다.
+  ⚠ **여전히 아무 게이트도 안 잡는 것**: `title`·`tldr`·`cover`·`sources`. 소스가 없거나(tldr·cover)
+  규칙이 하나가 아니다(title 접미사 3종 · sources 타입 int 12/dict 60). 통일은 발행물 표시가 바뀌는
+  일이라 **사람이 정할 자리**다 — 세션이 임의로 밀어붙이지 말 것.
   ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 누적이라 멱등성이 맞는 잣대가 아니다).
   ⚠ **보고서를 새로 올리면 이 게이트가 멈춘다.** `build_reports_meta.py` 는 `CATS` 에 없는 슬러그가
   있으면 `cat="etc"` 로 두면서도 **정책상 exit 1** 을 낸다 → `verify_builders` 가 그것을 「0 이 아닌 코드」로
