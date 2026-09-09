@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 372" role="img" aria-label="산술 삼각형에서 이웃한 두 수 3 과 3 을 더해 아래의 6 을 만드는 규칙">
+  <title>산술 삼각형 — 이웃한 두 수를 더해 아래를 만든다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+  </style>
+  <rect width="700" height="372" fill="#FFFDF7"/>
+
+  <text x="60" y="30" font-size="16">산술 삼각형 — 이웃한 두 수가 아래 수를 만든다</text>
+
+  <!-- 더해지는 두 수와 그 합 -->
+  <circle cx="324" cy="203" r="17" fill="none" stroke="#9C5A2C" stroke-width="1.8"/>
+  <circle cx="376" cy="203" r="17" fill="none" stroke="#9C5A2C" stroke-width="1.8"/>
+  <circle cx="350" cy="249" r="17" fill="none" stroke="#9C5A2C" stroke-width="1.8" stroke-dasharray="5 3"/>
+  <line x1="330" y1="219" x2="343" y2="234" stroke="#9C5A2C" stroke-width="1.6"/>
+  <line x1="370" y1="219" x2="357" y2="234" stroke="#9C5A2C" stroke-width="1.6"/>
+
+  <text x="350" y="70" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="70" font-size="13" text-anchor="end" class="ax">n = 0</text>
+  <text x="324" y="116" font-size="16" text-anchor="middle">1</text>
+  <text x="376" y="116" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="116" font-size="13" text-anchor="end" class="ax">n = 1</text>
+  <text x="298" y="162" font-size="16" text-anchor="middle">1</text>
+  <text x="350" y="162" font-size="16" text-anchor="middle">2</text>
+  <text x="402" y="162" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="162" font-size="13" text-anchor="end" class="ax">n = 2</text>
+  <text x="272" y="208" font-size="16" text-anchor="middle">1</text>
+  <text x="324" y="208" font-size="16" text-anchor="middle" class="sien">3</text>
+  <text x="376" y="208" font-size="16" text-anchor="middle" class="sien">3</text>
+  <text x="428" y="208" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="208" font-size="13" text-anchor="end" class="ax">n = 3</text>
+  <text x="246" y="254" font-size="16" text-anchor="middle">1</text>
+  <text x="298" y="254" font-size="16" text-anchor="middle">4</text>
+  <text x="350" y="254" font-size="16" text-anchor="middle" class="sien">6</text>
+  <text x="402" y="254" font-size="16" text-anchor="middle">4</text>
+  <text x="454" y="254" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="254" font-size="13" text-anchor="end" class="ax">n = 4</text>
+  <text x="220" y="300" font-size="16" text-anchor="middle">1</text>
+  <text x="272" y="300" font-size="16" text-anchor="middle">5</text>
+  <text x="324" y="300" font-size="16" text-anchor="middle">10</text>
+  <text x="376" y="300" font-size="16" text-anchor="middle">10</text>
+  <text x="428" y="300" font-size="16" text-anchor="middle">5</text>
+  <text x="480" y="300" font-size="16" text-anchor="middle">1</text>
+  <text x="150" y="300" font-size="13" text-anchor="end" class="ax">n = 5</text>
+
+  <text x="545" y="212" font-size="13.5" class="sien">3 + 3 = 6</text>
+
+  <text x="60" y="352" font-size="13" class="sien">실선 원 두 개를 더하면 파선 원이 된다.</text>
+</svg>
