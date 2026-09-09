@@ -36,8 +36,8 @@
     | `build_math_manifest`     | `math/manifest.json`    | 노트 frontmatter 어긋남 **전부** |
 
     ⚠ **reports 서가에는 소스에서 다시 짓는 빌더가 없다.** `build_reports_meta` 는 네 필드만
-    다시 짓는다(`:137` cat · `:145` pair · `:151` track · `:158` chars). **못 잡는 것**을 적어 둔다 —
-    `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover`. 즉 **보고서 제목을 고치고 manifest 를
+    다시 짓는다(`:137` cat · `:145` pair · `:151` track · `:158` chars). **못 잡는 것**을 적어 둔다 — **소스(report.md) 쪽 변경이**
+    `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover` 에 났을 때다(manifest 쪽 훼손은 link-index 가 잡는 것도 있다). 즉 **보고서 제목을 고치고 manifest 를
     안 고쳐도 이 게이트는 통과한다**(실측). 그 서가의 진짜 낡음을 잡으려면 `reports/`용 rebuild
     빌더가 먼저 있어야 한다 — 없는 것을 있는 척하지 않으려고 여기 적어 둔다.
     ⚠ `videos/manifest.json` 의 `order`·`categories` 는 **옛 manifest 에서 그대로 가져온다**
@@ -192,12 +192,16 @@ def main(argv):
                 restore(before)
                 print(f'FAIL — 빌더가 0 이 아닌 코드로 끝났다: {b} (exit {r.returncode})')
                 print((r.stderr or r.stdout).strip()[:1500])
-                # ⚠ 「죽었다」가 아닐 수도 있다 — `build_reports_meta.py` 는 분류 안 된 보고서가
-                #   있으면 `cat="etc"` 로 두면서도 **정책상 exit 1** 을 낸다. 즉 보고서를 새로
-                #   올리고 `CATS` 에 한 줄 안 넣으면 이 게이트가 여기서 멈춘다.
-                print(f'  ⚠ 뒤 빌더는 돌지 않았다 — 이 회차에 그 산출물들의 낡음은 안 재졌다.')
-                print('  ⚠ 크래시가 아닐 수 있다: build_reports_meta 는 미분류 보고서가 있으면'
-                      ' 정책상 exit 1 을 낸다(CATS 에 한 줄 넣고 다시 돌릴 것).')
+                rest = BUILDERS[BUILDERS.index(b) + 1:]
+                if rest:
+                    print('  ⚠ 뒤 빌더 %d개가 안 돌았다 — 그 산출물의 낡음은 이 회차에 안 재졌다: %s'
+                          % (len(rest), ', '.join(pathlib.Path(x).name for x in rest)))
+                # 이 힌트는 **그 빌더가 실패했을 때만** 찍는다. 무조건 찍으면 다른 빌더의
+                # 파이썬 트레이스백 바로 밑에서 「크래시가 아닐 수 있다」고 말하며 엉뚱한 파일을
+                # 가리키게 된다(2026-09-09 검수가 실측으로 잡았다 — 내가 넣은 결함이다).
+                if b.endswith('build_reports_meta.py'):
+                    print('  ⚠ 크래시가 아닐 수 있다: 미분류 보고서가 있으면 `cat="etc"` 로 두면서도'
+                          ' 정책상 exit 1 을 낸다(CATS 에 한 줄 넣고 다시 돌릴 것).')
                 return 1
             # rc 0 이어도 삼켜진 실패가 있다 — 그러면 산출물이 안 바뀌어 「고정점」으로 읽힌다.
             if BACKLOG_FAIL in (r.stdout or ''):
@@ -230,7 +234,7 @@ def main(argv):
     restore(before, only=clock)               # 시계는 어느 모드에서도 되돌린다
 
     if not stale:
-        print(f'OK — 산출물 {len(OUTPUTS)}개가 지금 소스의 고정점이다.')
+        print(f'OK — OUTPUTS {len(OUTPUTS)}종이 지금 소스의 고정점이다 (reports 는 네 필드만 — 머리말 참조).')
         return 0
 
     if not write:

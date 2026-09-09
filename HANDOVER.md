@@ -406,7 +406,7 @@ python3 tools/sync_obsidian.py --check --only reports
   backlog + ROADMAP). 다만 **서가마다 잡는 범위가 다르다**(자세한 표는 도구 머리말):
   concept·videos·math 는 노트 frontmatter 어긋남을 전부 잡지만,
   ⚠ **`reports` 는 네 필드만 잡는다** — `cat`·`pair`·`track`·`chars`(본문 자수는 잡힌다).
-  **못 잡는 것**: `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover`. `build_reports_meta` 는 그 넷만 다시 지으므로
+  **못 잡는 것**: **소스(report.md) 쪽**에서 `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover` 를 고쳤을 때. `build_reports_meta` 는 그 넷만 다시 지으므로
   **보고서 제목을 고치고 manifest 를 안 고쳐도 게이트가 통과한다**(실측 확인). 그 서가의 진짜 낡음을
   잡으려면 **`reports/` 용 rebuild 빌더가 먼저 있어야 한다** — 지금은 그런 빌더가 없다. 다음 회차 후보.
   ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 누적이라 멱등성이 맞는 잣대가 아니다).
