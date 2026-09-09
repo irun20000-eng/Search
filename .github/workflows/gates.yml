@@ -102,6 +102,11 @@ jobs:
       - name: 영상 노트
         run: python tools/verify_video.py
 
+      # reports 는 rebuild 빌더가 없어 아래 멱등성 검사가 네 필드만 덮는다.
+      # 그 빈자리를 이것이 반쯤 메운다 — manifest 가 report.md 와 어긋났는지 직접 대조한다.
+      - name: 보고서 manifest 가 소스와 어긋났는가
+        run: python tools/verify_reports_meta.py
+
       # 마지막에 둔다 — 이 검사만 빌더를 **실제로 돌린다**(그 뒤 워킹트리를 되돌린다).
       # 앞의 게이트들이 원본 산출물을 보게 하려면 순서가 이래야 한다.
       # ⚠ 이 초록이 모든 서가를 보증하지 않는다 — reports 는 네 필드만 덮인다(아래 요약 참조).
@@ -120,7 +125,12 @@ jobs:
             echo "★ 도해는 **이 러너의 계측이 정본**이다 — 로컬은 폰트가 달라 판정이 갈린다."
             echo "   (로컬 0건이 여기서 7건이 된 적이 있다. 재현법은 이 워크플로 머리말 참조.)"
             echo "★ 그림이 「옳은가」는 여기서 못 잰다 — 렌더해서 사람이 볼 것(LESSONS 2026-09-08)."
-            echo "★ **빌더 멱등성의 초록이 reports 서가를 보증하지 않는다.** 거기서 다시 지어지는 것은"
-            echo "   \`cat\`·\`pair\`·\`track\`·\`chars\` 넷뿐이다 — 제목·날짜·태그·tldr 가 manifest 와"
-            echo "   어긋나도 이 검사는 통과한다(그 서가엔 rebuild 빌더가 아직 없다)."
+            echo "★ reports 는 rebuild 빌더가 없다 — 만들면 손질된 카드 제목과 손으로 쓴 tldr 을 덮는다."
+            echo "   대신 \`verify_reports_meta\` 가 date·depth·tags·sources·path·cover·고아를 소스와 대조한다."
+            echo "   sources 는 사본 둘(소스수·manifest)에 더해 **실제 \`## 출처\` 목록**과 tldr 이 적은 수까지 센다"
+            echo "   — 사본끼리만 맞대면 **둘이 함께 틀렸을 때 초록**이다(그렇게 통과하던 2편을 찾았다)."
+            echo "   ⚠ 그래도 **tldr 의 문장 내용과 손질 허용목록의 제목은 어느 게이트도 안 잡는다.**"
+            echo "   ⚠ 출처의 **국내/해외 갈래**와 **항목의 실재**는 안 본다 — 수만 센다."
+            echo "   (URL 없이 뭉뚱그린 줄도 한 항목으로 세어진다 — 무환각은 사람이 볼 일이다.)"
+            echo "   (수치는 여기 적지 않는다 — 그 스텝의 로그가 매번 라이브로 찍는다.)"
           } >> $GITHUB_STEP_SUMMARY

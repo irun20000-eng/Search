@@ -5,7 +5,7 @@
 대상수준: 확장편(학부·대학원 통합)
 카드모드: manual
 태그: [수학, 변수변환, 선형대수, 미분기하, 로보틱스, 머신러닝]
-소스수: { 국내: 5, 해외: 10 }
+소스수: { 국내: 6, 해외: 10 }
 위키링크: ["[[야코비안 변환 이해편]]", "[[행렬과 다변수 미적분 확장편]]", "[[미분형식]]", "[[프레셰 미분]]", "[[미분기구학]]", "[[정규화 흐름]]"]
 ---
 
@@ -115,9 +115,9 @@
 - [3] 네이버 지식백과 「자코비안」(det=0의 의미·Jacobi 유래) — https://terms.naver.com/entry.naver?docId=394678 (국내)
 - [4] 나무위키 「야코비안」(다변수 치환·용어 관행) — https://namu.wiki/w/야코비안 (국내)
 - [5] 공돌이의 수학정리노트 「자코비안 행렬의 기하학적 의미」 — https://angeloyeo.github.io/2020/07/24/Jacobian_en.html (국내)
+- [J6] 네이버 블로그 「다중적분의 변수변환」(치환 관점) — https://blog.naver.com/alsdnr7680/220790769499 (국내)
 
 **해외**
-- [J6] 네이버 블로그 「다중적분의 변수변환」(치환 관점) — https://blog.naver.com/alsdnr7680/220790769499 (국내)
 - [7] Wikipedia "Jacobian matrix and determinant"(정의·부피 왜곡) — https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant (해외)
 - [8] Paul's Online Notes(Lamar) "Change of Variables"(극좌표 J=r) — https://tutorial.math.lamar.edu/classes/calciii/changeofvariables.aspx (해외)
 - [9] LibreTexts "Change of Variables in Multiple Integrals (Jacobians)"(평행사변형 넓이=행렬식) — https://math.libretexts.org/Courses/Monroe_Community_College/MTH_212_Calculus_III/Chapter_14:_Multiple_Integration/14.7:_Change_of_Variables_in_Multiple_Integrals_(Jacobians) (해외)

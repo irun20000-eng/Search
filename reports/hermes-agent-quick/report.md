@@ -4,7 +4,7 @@
 깊이: quick
 카드모드: none
 태그: [AI에이전트, 오픈소스, NousResearch, 자가발전, 로컬AI]
-소스수: { 국내: 3, 해외: 3 }
+소스수: { 국내: 5, 해외: 3 }
 위키링크: ["[[AI 에이전트]]", "[[오픈소스 LLM]]", "[[로컬 AI]]"]
 ---
 
@@ -63,8 +63,8 @@ hermes setup --portal   # Nous 포털 빠른 설정(모델+기본 도구 한 번
 - [4] AI타임스 「헤르메스, 신규 기여자 수에서 오픈클로 역전」 — https://www.aitimes.com/news/articleView.html?idxno=211931 (국내)
 - [5] tilnote 「Hermes Agent란 설치 사용법 핵심 기능 정리」 — https://tilnote.io/pages/69dc5925df448d30aa398a63 (국내)
 - [6] 이데일리 「엔비디아, 디퓨전젬마 가속화…헤르메스 에이전트 기본 윈도우 지원 추가」 — https://n.news.naver.com/mnews/article/018/0006303971 (국내)
-- elancer 「Hermes Agent 사용법, 설치부터 활용 노하우까지」 — https://www.elancer.co.kr/blog/detail/1086 (국내)
-- Daddy Makers 「헤르메스 에이전트 개발배경, 설치 및 사용방법」 — http://daddynkidsmakers.blogspot.com/2026/05/blog-post.html (국내)
+- [7] elancer 「Hermes Agent 사용법, 설치부터 활용 노하우까지」 — https://www.elancer.co.kr/blog/detail/1086 (국내)
+- [8] Daddy Makers 「헤르메스 에이전트 개발배경, 설치 및 사용방법」 — http://daddynkidsmakers.blogspot.com/2026/05/blog-post.html (국내)
 
 ## 후속 질문·연결
 - 더 깊게: [[헤르메스 에이전트(Hermes Agent) — 심층 리서치]] (DEEP 버전)
