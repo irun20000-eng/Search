@@ -317,18 +317,34 @@ python3 tools/sync_obsidian.py --check --only reports
   그리고 로그를 읽을 때 **stdout 이 종료 시점에 한꺼번에 플러시돼 stderr 와 순서가 섞인다** —
   `[X] 여백` 경고(stdout, 계속 진행)와 `넘침 감지`(stderr, 죽인 것)를 혼동하지 말 것.
 
-### 2-9. 수학사 도해 — **14장** (2026-09-09)
+### 2-9. 수학사 도해
 
-노트 88편 중 자체 도해를 가진 것이 **12편(SVG 14장)**. 세 회차에 걸쳐 6장을 새로 그렸고
-기존 8장을 전수로 점검했다.
+**숫자를 여기 적지 않는다** — 세 회차 연속으로 낡았다(직전엔 「14장·12편」이 하루 만에 틀렸다).
+지금 현황은 `python3 tools/figure_status.py` 가 찍어 준다.
 
 | 회차 | 새 도해 | 물린 곳 |
 |---|---|---|
 | 2026-09-08 | `cavalieri-card-stack` · `hyperbola-equal-areas` · `dice-sum-grid` | 인물 1 · 개념 2 |
 | 2026-09-08 | (기존 8장 전수 점검 — 결함 6건 수정) | — |
 | 2026-09-09 | `archimedes-sphere-cylinder` · `bernoulli-two-spirals` · `huygens-cycloid` | 인물 2 · **일화 1(첫 도해)** |
+| 2026-09-09 | `area-function-strip` · `riemann-rectangles-refine` · `conic-sections-three-cuts` | 개념 2 · 세기 1 |
 
-**아직 인물 44/46 · 일화 11/12 · 세기 5/6 이 도해 0장이다.**
+**열려 있는 판단 — 도해 글꼴 계열 혼용 5장(2026-09-09).** `math/` 톤은 「세리프 본문」이
+사용자 승인 예외(CLAUDE.md)인데 도해 17장 중 다섯이 거기서 벗어나 있다.
+
+| | 도해 |
+|---|---|
+| 한 그림 안에서 섞임 3장 | `binomial-to-normal`(세4·산7) · `dedekind-cut-three-cases`(세10·산4) · `vibrating-string-initial-shape`(세1·산11 — 사실상 산세리프) |
+| 전부 산세리프 2장 | `least-squares-residuals` · `riemann-vs-lebesgue-slicing` |
+
+**「3장」으로 적으면 다음 사람이 두 장을 놓친다**(2026-09-09 에 실제로 그렇게 보고했다가 검수가
+전수로 세어 정정했다). 이건 정확성이 아니라 **톤 결정**이라 `math/_design/mockup-v1.html` 목업과
+같은 승인 경로를 밟아야 한다 — 세션이 임의로 통일하지 말 것.
+
+**부채가 가장 큰 곳은 인물 노트다** — 절대 다수가 아직 도해가 없다(정확한 수는 위 명령).
+다음 대상은 「도형어가 많은 노트」가 아니라 **「그 절이 그림으로 논증하고 있는 노트」**로 고른다.
+2026-09-09 에 그 기준으로 재니 `concept-fundamental-theorem` §2 가 소제목을
+「왜 그런가 — 그림으로」라 적어 놓고 **그림이 없는 것**이 드러났다.
 
 **대상은 실측으로 고른다.** 인물·일화 본문에서 **「인용이 달린 줄」에만** 도형어(작도·나선·곡선·
 넓이·부피·진자…)를 세어 상위를 뽑았다 — 베르누이 묘비 21 · 하위헌스 18 · 아르키메데스 17.
@@ -514,7 +530,7 @@ riemann) · **섞인 것 3장**(binomial · dedekind · vibrating-string). 규�
   충돌하고, 재시도 루프는 충돌을 풀 줄 몰라 커밋이 사라진다. 그 뒤로 세 번 났다
   (2026-08-27 · 09-03 · 09-08). **2026-09-09 에 `tools/push_rendered.sh` 로 닫았다**(#246):
   충돌한 산출물은 병합하지 않고 합쳐진 소스에서 다시 만든다. 회귀 시험은
-  `tools/test_push_rendered.sh` 이고 `push-retry-test.yml` 이 PR마다 돌린다.
+  `tools/test_push_rendered.sh` 이고 서가 게이트(`gates.yml`)가 PR마다 돌린다.
 - ~~**허브 검색이 서가를 가로지르지 못하던 것**~~ — `link-index.json` 항목에 `검색어` 를 실어 해결(#144).
   「묶어 읽기」 여섯 중 다섯이 다서가가 됐다.
 - ~~**ROADMAP 부채표가 손으로 관리돼 낡던 것**~~ — `tools/build_math_status.py` 가 수치를 쓴다(#156).

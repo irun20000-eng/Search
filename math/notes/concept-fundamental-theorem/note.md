@@ -43,6 +43,12 @@
 후속개념: [concept-analysis-rigor]
 기여인물: [person-gregory, person-barrow, person-newton, person-leibniz, person-lebesgue]
 
+이미지:
+  - 파일: assets/figures/area-function-strip.svg
+    설명: a부터 x까지 곡선 아래를 모은 넓이 함수와, x를 h만큼 늘렸을 때 더해지는 가느다란 띠. 띠는 밑변 h 높이 f(x)인 직사각형에 가깝고, 그 위에 남는 작은 조각이 오차다
+    출처: 직접 제작
+    라이선스: CC0
+
 출처:
   - 번호: 1
     제목: 네이버 지식백과(수학산책), 미적분의 기본정리 — 넓이를 구하는 적분과 변화율을 구하는 미분의 관계
@@ -143,6 +149,10 @@ $x$를 아주 조금, $h$만큼 늘려 보자. 넓이는 얼마나 늘어나는�
 늘어난 부분은 **밑변 $h$, 높이 대략 $f(x)$인 가느다란 직사각형**이다. 그러니
 
 $$A(x+h) - A(x) \approx f(x)\cdot h$$
+
+![넓이 함수 A(x)와 x를 h만큼 늘렸을 때 더해지는 띠](../../assets/figures/area-function-strip.svg)
+
+직사각형 위로 남는 조각이 **「대략」의 정체**다. 그 조각은 $h$가 줄 때 $h$보다 빨리 줄어들어, $h$로 나눈 뒤에도 0으로 간다 — 그래서 근사가 등식이 된다.
 
 양변을 $h$로 나누면
 
