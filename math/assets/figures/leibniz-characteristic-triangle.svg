@@ -27,7 +27,7 @@
     <!-- 직각 표시 -->
     <path d="M114 92 L114 82 L124 82" fill="none" stroke="#9C5A2C" stroke-width="1.1"/>
     <!-- 라벨 -->
-    <text x="70" y="107" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="16" fill="#221E18" text-anchor="middle">dx</text>
+    <text x="70" y="111" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="16" fill="#221E18" text-anchor="middle">dx</text>
     <text x="134" y="65" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="16" fill="#221E18">dy</text>
     <text x="62" y="55" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="16" fill="#9C5A2C">ds</text>
   </g>

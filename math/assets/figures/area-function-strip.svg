@@ -23,8 +23,8 @@
   <text x="237.1" y="218.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="16" fill="#9C5A2C" text-anchor="middle">A(x)</text>
   <text x="237.1" y="236.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#9C5A2C" text-anchor="middle">a 부터 x 까지 모은 넓이</text>
   <line x1="415.6" y1="88.1" x2="473.6" y2="64.0" stroke="#3A5C77" stroke-width="1"/>
-  <text x="477.6" y="66.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">남는 조각 = 오차</text>
-  <text x="477.6" y="82.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">h 가 줄면 함께 사라진다</text>
+  <text x="477.6" y="60.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">남는 조각 = 오차</text>
+  <text x="477.6" y="81.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">h 가 줄면 함께 사라진다</text>
   <text x="610.0" y="134.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="14.5" fill="#9C5A2C" text-anchor="end">늘어난 넓이 ≈ f(x) · h</text>
   <text x="330.0" y="30" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="15.5" fill="#221E18" text-anchor="middle">x 를 h 만큼 늘리면 넓이는 얼마나 늘어나는가</text>
   <text x="330.0" y="316" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="14" fill="#221E18" text-anchor="middle">늘어난 조각은 밑변 h · 높이 f(x) 인 직사각형에 가깝다 — 그래서 넓이가 늘어나는 속도가 높이와 같아진다</text>
