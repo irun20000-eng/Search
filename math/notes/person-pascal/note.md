@@ -21,6 +21,12 @@
 관련일화: [episode-pascal-fermat-letters]
 관련인물: [person-fermat, person-huygens]
 
+이미지:
+  - 파일: assets/figures/pascal-triangle-recurrence.svg
+    설명: 산술 삼각형 0~5줄 — 이웃한 두 수 3 과 3 을 더해 아래의 6 이 된다
+    출처: 직접 제작
+    라이선스: CC0
+
 출처:
   - 번호: 1
     제목: MacTutor History of Mathematics, Blaise Pascal — 생애·연도·저작
@@ -126,6 +132,8 @@
 ## 5. 파스칼의 삼각형
 
 같은 시기에 그는 『산술 삼각형론』을 썼다. 수를 삼각형으로 배열하고, 이웃한 두 수를 더해 아래 수를 만드는 그 배열이다[5].
+
+![산술 삼각형에서 이웃한 두 수 3 과 3 을 더해 아래의 6 을 만든다](../../assets/figures/pascal-triangle-recurrence.svg)
 
 이 배열 자체는 파스칼이 처음이 아니다. 중국·인도·페르시아에서 이미 알려져 있었고, 유럽에도 앞선 기록이 있다[5]. **파스칼이 한 일은 그것을 확률 계산과 이항계수에 체계적으로 연결한 것**이다.
 
