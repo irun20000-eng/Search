@@ -183,7 +183,8 @@ python3 tools/sync_math_obsidian.py
 python3 tools/build_math_manifest.py    # math/manifest.json
 python3 tools/build_link_index.py       # 루트 link-index.json (7개 갤러리 통합)
 python3 tools/build_math_status.py      # ROADMAP 「자동 측정」 블록
-python3 tools/verify_builders.py        # ★ 위 셋을 다시 돌려 산출물이 고정점인지 확인
+python3 tools/verify_builders.py        # ★ 빌더 6종을 다시 돌려 산출물 7종이 고정점인지 확인
+                                        #   (math 만이 아니다 — concept·videos·reports 도 함께 본다)
 ```
 
 **마지막 줄이 게이트다.** `verify_builders.py` 는 읽기 전용이 아니라 **빌더를 제자리에서
@@ -195,8 +196,14 @@ python3 tools/verify_builders.py        # ★ 위 셋을 다시 돌려 산출물
 굳은 채 갤러리 카드로 나갔다** — 그래서 이 줄이 생겼다.
 
 **순서가 고정돼 있다.** `build_link_index.py` 는 manifest 뒤에 돌린다(math 항목을
-manifest 에서 읽는다). `build_math_status.py` 는 그 뒤에 돌린다(link-index 로 위키링크를
-해석한다). 셋 다 **산출물이므로 손으로 고치지 않는다.**
+manifest 에서 읽는다). ⚠ `build_math_status.py` 는 **link-index 를 읽지 않는다** — 노트를 직접
+훑는다(`M.iter_notes()` + `verify_math`). 여기 오래 「link-index 로 위키링크를 해석한다」고
+적혀 있었는데 거짓이었다(2026-09-09 검수). 순서는 그대로 두되 이유를 바로잡는다.
+셋 다 **산출물이므로 손으로 고치지 않는다.**
+
+⚠ `verify_builders.py` 는 이제 **네 서가**를 본다(`OUTPUTS` 7종). 다만 **reports 는 네 필드만**
+덮인다 — 자세한 표는 그 도구 머리말. 그리고 보고서를 새로 올리고 `build_reports_meta.py` 의
+`CATS` 에 한 줄 안 넣으면 **그 빌더가 정책상 exit 1 을 내어 이 게이트가 거기서 멈춘다.**
 
 그 다음 커밋 → 푸시 → PR → main 머지 → Pages 자동 배포 → 볼트.
 

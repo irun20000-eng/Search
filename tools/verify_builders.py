@@ -32,14 +32,17 @@
     |---|---|---|
     | `build_concept_manifest` | `concept/manifest.json` | 노트 frontmatter 어긋남 **전부** |
     | `build_manifest`(videos)  | `videos/manifest.json`  | 노트 frontmatter 어긋남 **전부** |
-    | `build_reports_meta`      | `reports/manifest.json` | **`cat`·`pair` 만** |
+    | `build_reports_meta`      | `reports/manifest.json` | `cat`·`pair`·`track`·`chars` **만**(본문 자수는 잡힌다) |
     | `build_math_manifest`     | `math/manifest.json`    | 노트 frontmatter 어긋남 **전부** |
 
-    ⚠ **reports 서가에는 소스에서 다시 짓는 빌더가 없다.** `build_reports_meta` 는 카테고리와
-    짝문서를 *채워 넣을* 뿐이라, 보고서 제목을 고치고 manifest 를 안 고쳐도 **이 게이트가 통과한다**
-    (실측: `주제:` 를 바꿔 돌렸더니 manifest 가 안 바뀌었다. 반대로 `cat`·`pair` 를 114개 지웠더니
-    되살렸다). 그 서가의 진짜 낡음을 잡으려면 `reports/`용 rebuild 빌더가 먼저 있어야 한다 —
-    없는 것을 있는 척하지 않으려고 여기 적어 둔다.
+    ⚠ **reports 서가에는 소스에서 다시 짓는 빌더가 없다.** `build_reports_meta` 는 네 필드만
+    다시 짓는다(`:137` cat · `:145` pair · `:151` track · `:158` chars). **못 잡는 것**을 적어 둔다 —
+    `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover`. 즉 **보고서 제목을 고치고 manifest 를
+    안 고쳐도 이 게이트는 통과한다**(실측). 그 서가의 진짜 낡음을 잡으려면 `reports/`용 rebuild
+    빌더가 먼저 있어야 한다 — 없는 것을 있는 척하지 않으려고 여기 적어 둔다.
+    ⚠ `videos/manifest.json` 의 `order`·`categories` 는 **옛 manifest 에서 그대로 가져온다**
+    (`build_manifest.py:23-24,49,51`). 소스가 없는 필드라 거기 심은 오염은 **그 자체가 고정점**이
+    되어 안 잡힌다(실측: `categories` 에 가짜 항목을 넣어도 OK).
     ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 **누적**이라 멱등성이
     맞는 잣대가 아니다 — 돌릴 때마다 항목이 늘면 그것은 낡음이 아니다).
 
@@ -85,8 +88,11 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# 실행 순서가 결과를 바꾼다 — 서가 manifest 들을 link-index 와 backlog 이 읽고,
-# 그 둘을 math_status 가 읽는다. 서가 빌더가 먼저다.
+# 실행 순서가 결과를 바꾼다 — `build_link_index` 와 `build_backlog` 이 서가 manifest 들을
+# 읽으므로 서가 빌더가 먼저다. ⚠ `build_math_status` 는 link-index 를 읽지 **않는다** —
+# 노트를 직접 훑는다(`M.iter_notes()` + `verify_math`). 앞 판이 「그 둘을 status 가 읽는다」고
+# 적었는데 거짓이었다(2026-09-09 검수). 순서 자체는 무해하나 이유를 틀리게 적어 두면
+# 다음 사람이 순서를 잘못 판단한다.
 BUILDERS = (
     'tools/build_concept_manifest.py',   # concept/manifest.json
     'tools/build_manifest.py',           # videos/manifest.json  (이름이 서가를 안 밝힌다 — videos 다)
@@ -184,8 +190,14 @@ def main(argv):
                                capture_output=True, text=True)
             if r.returncode != 0:
                 restore(before)
-                print(f'FAIL — 빌더가 죽었다: {b} (exit {r.returncode})')
+                print(f'FAIL — 빌더가 0 이 아닌 코드로 끝났다: {b} (exit {r.returncode})')
                 print((r.stderr or r.stdout).strip()[:1500])
+                # ⚠ 「죽었다」가 아닐 수도 있다 — `build_reports_meta.py` 는 분류 안 된 보고서가
+                #   있으면 `cat="etc"` 로 두면서도 **정책상 exit 1** 을 낸다. 즉 보고서를 새로
+                #   올리고 `CATS` 에 한 줄 안 넣으면 이 게이트가 여기서 멈춘다.
+                print(f'  ⚠ 뒤 빌더는 돌지 않았다 — 이 회차에 그 산출물들의 낡음은 안 재졌다.')
+                print('  ⚠ 크래시가 아닐 수 있다: build_reports_meta 는 미분류 보고서가 있으면'
+                      ' 정책상 exit 1 을 낸다(CATS 에 한 줄 넣고 다시 돌릴 것).')
                 return 1
             # rc 0 이어도 삼켜진 실패가 있다 — 그러면 산출물이 안 바뀌어 「고정점」으로 읽힌다.
             if BACKLOG_FAIL in (r.stdout or ''):

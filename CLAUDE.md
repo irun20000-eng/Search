@@ -73,6 +73,13 @@ python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 �
 python3 tools/verify_tables.py            # ★ 서가 전체 — 마크다운 표가 실제로 그려지는가
 python3 tools/verify_tables.py reports    #   한 서가만
 
+# 서가 산출물이 소스보다 낡았는가 — 네 서가 공용 (수학사 전용이 아니다)
+python3 tools/build_concept_manifest.py   # concept/manifest.json  (노트를 손으로 고쳤으면)
+python3 tools/build_manifest.py           # videos/manifest.json   (이름이 서가를 안 밝힌다 — videos 다)
+python3 tools/build_reports_meta.py       # reports/manifest.json 의 cat·pair·track·chars
+python3 tools/verify_builders.py          # ★ 커밋 직전 마지막 — OUTPUTS 7종이 지금 소스의 고정점인가
+                                          #   ⚠ reports 는 네 필드만 덮인다(제목·날짜·태그 낡음은 안 잡힌다)
+
 # 수학사(math/) — 정본 절차는 MATH_PIPELINE.md
 python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게이트
 python3 tools/verify_math.py --backlog       # 백로그 2채널 (위키링크 + 발전단계 인물)
@@ -84,8 +91,7 @@ python3 tools/figure_status.py               # 도해 현황 (게이트 아님) 
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
 python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
-python3 tools/verify_builders.py             # ★ 커밋 직전 마지막 — 산출물 7종이 지금 소스의 고정점인가
-                                            #   (concept·videos·reports·math manifest + link-index + backlog + ROADMAP)
+python3 tools/verify_builders.py             # ★ 커밋 직전 마지막 (서가 공용 — 위 블록 참조)
                                             #   (읽기 전용 아님: 빌더를 실제로 돌리고 워킹트리는 되돌린다. --write 면 새것을 남긴다)
 python3 tools/sync_math_obsidian.py --dry-run  # 볼트 002-수학사/ 동기화
 
