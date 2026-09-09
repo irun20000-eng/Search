@@ -27,14 +27,32 @@
     없는 차이까지 생긴다 — 다만 `.git` 을 함께 복사하면 그건 사라지므로 결정적 이유는 아니다.)
     그래서 **제자리에서 돌리고 되돌려 놓는다**(`--write` 면 새것을 남긴다).
 
-무엇을 보나.
+무엇을 보나 — 서가마다 **잡는 범위가 다르다.** 실측해서 적는다(2026-09-09).
+    | 빌더 | 산출물 | 잡는 것 |
+    |---|---|---|
+    | `build_concept_manifest` | `concept/manifest.json` | 노트 frontmatter 어긋남 **전부** |
+    | `build_manifest`(videos)  | `videos/manifest.json`  | 노트 frontmatter 어긋남 **전부** |
+    | `build_reports_meta`      | `reports/manifest.json` | `cat`·`pair`·`track`·`chars` **만**(본문 자수는 잡힌다) |
+    | `build_math_manifest`     | `math/manifest.json`    | 노트 frontmatter 어긋남 **전부** |
+
+    ⚠ **reports 서가에는 소스에서 다시 짓는 빌더가 없다.** `build_reports_meta` 는 네 필드만
+    다시 짓는다(`:137` cat · `:145` pair · `:151` track · `:158` chars). **못 잡는 것**을 적어 둔다 — **소스(report.md) 쪽 변경이**
+    `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover` 에 났을 때다(manifest 쪽 훼손은 link-index 가 잡는 것도 있다). 즉 **보고서 제목을 고치고 manifest 를
+    안 고쳐도 이 게이트는 통과한다**(실측). 그 서가의 진짜 낡음을 잡으려면 `reports/`용 rebuild
+    빌더가 먼저 있어야 한다 — 없는 것을 있는 척하지 않으려고 여기 적어 둔다.
+    ⚠ `videos/manifest.json` 의 `order`·`categories` 는 **옛 manifest 에서 그대로 가져온다**
+    (`build_manifest.py:23-24,49,51`). 소스가 없는 필드라 거기 심은 오염은 **그 자체가 고정점**이
+    되어 안 잡힌다(실측: `categories` 에 가짜 항목을 넣어도 OK).
+    ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 **누적**이라 멱등성이
+    맞는 잣대가 아니다 — 돌릴 때마다 항목이 늘면 그것은 낡음이 아니다).
+
     `python3 tools/build_link_index.py` 는 끝에 `build_backlog.build()` 를 **이어서 부른다**
     (그 파일이 「따로 돌리게 두면 반드시 잊는다」고 적어 둔 결정이다). 그래서 `backlog.json`
     도 이 명령의 산출물이고 여기서 함께 잰다 — 빼 두면 검사기가 그 파일을 **말없이 덮어쓰고**
     낡음도 영영 안 잡힌다(첫 판이 그랬다).
     ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
     ⚠ **되돌리기도 `OUTPUTS` 안에서만 참이다.** 빌더가 목록 밖 파일에 한 일은 그대로 남는다
-      (지금 빌더 3종은 목록 밖을 안 건드리는 것을 확인했다).
+      (빌더 6종이 목록 밖을 안 건드리는 것을 깨끗한 트리에서 하나씩 돌려 확인했다 — 2026-09-09).
     ⚠ `build_link_index.py` 는 `build_backlog` 의 예외를 **삼키고 rc 0 을 돌려준다.** 그러면
       `backlog.json` 이 갱신되지 않아 「안 바뀌었다 = 고정점」으로 읽힌다 — 그래서 그 실패 문구를
       stdout 에서 찾아 FAIL 로 올린다(`BACKLOG_FAIL`).
@@ -70,13 +88,23 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# 실행 순서가 결과를 바꾼다 — manifest 를 link-index 가 읽고, 그 둘을 status 가 읽는다.
+# 실행 순서가 결과를 바꾼다 — `build_link_index` 와 `build_backlog` 이 서가 manifest 들을
+# 읽으므로 서가 빌더가 먼저다. ⚠ `build_math_status` 는 link-index 를 읽지 **않는다** —
+# 노트를 직접 훑는다(`M.iter_notes()` + `verify_math`). 앞 판이 「그 둘을 status 가 읽는다」고
+# 적었는데 거짓이었다(2026-09-09 검수). 순서 자체는 무해하나 이유를 틀리게 적어 두면
+# 다음 사람이 순서를 잘못 판단한다.
 BUILDERS = (
+    'tools/build_concept_manifest.py',   # concept/manifest.json
+    'tools/build_manifest.py',           # videos/manifest.json  (이름이 서가를 안 밝힌다 — videos 다)
+    'tools/build_reports_meta.py',       # reports/manifest.json 의 cat·pair 만 (아래 ⚠)
     'tools/build_math_manifest.py',
-    'tools/build_link_index.py',      # 끝에서 build_backlog 를 이어 부른다
+    'tools/build_link_index.py',         # 끝에서 build_backlog 를 이어 부른다
     'tools/build_math_status.py',
 )
 OUTPUTS = (
+    'concept/manifest.json',
+    'videos/manifest.json',
+    'reports/manifest.json',
     'math/manifest.json',
     'link-index.json',
     'backlog.json',
@@ -162,8 +190,18 @@ def main(argv):
                                capture_output=True, text=True)
             if r.returncode != 0:
                 restore(before)
-                print(f'FAIL — 빌더가 죽었다: {b} (exit {r.returncode})')
+                print(f'FAIL — 빌더가 0 이 아닌 코드로 끝났다: {b} (exit {r.returncode})')
                 print((r.stderr or r.stdout).strip()[:1500])
+                rest = BUILDERS[BUILDERS.index(b) + 1:]
+                if rest:
+                    print('  ⚠ 뒤 빌더 %d개가 안 돌았다 — 그 산출물의 낡음은 이 회차에 안 재졌다: %s'
+                          % (len(rest), ', '.join(pathlib.Path(x).name for x in rest)))
+                # 이 힌트는 **그 빌더가 실패했을 때만** 찍는다. 무조건 찍으면 다른 빌더의
+                # 파이썬 트레이스백 바로 밑에서 「크래시가 아닐 수 있다」고 말하며 엉뚱한 파일을
+                # 가리키게 된다(2026-09-09 검수가 실측으로 잡았다 — 내가 넣은 결함이다).
+                if b.endswith('build_reports_meta.py'):
+                    print('  ⚠ 크래시가 아닐 수 있다: 미분류 보고서가 있으면 `cat="etc"` 로 두면서도'
+                          ' 정책상 exit 1 을 낸다(CATS 에 한 줄 넣고 다시 돌릴 것).')
                 return 1
             # rc 0 이어도 삼켜진 실패가 있다 — 그러면 산출물이 안 바뀌어 「고정점」으로 읽힌다.
             if BACKLOG_FAIL in (r.stdout or ''):
@@ -196,7 +234,7 @@ def main(argv):
     restore(before, only=clock)               # 시계는 어느 모드에서도 되돌린다
 
     if not stale:
-        print(f'OK — 산출물 {len(OUTPUTS)}개가 지금 소스의 고정점이다.')
+        print(f'OK — OUTPUTS {len(OUTPUTS)}종이 지금 소스의 고정점이다 (reports 는 네 필드만 — 머리말 참조).')
         return 0
 
     if not write:

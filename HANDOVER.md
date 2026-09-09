@@ -383,7 +383,7 @@ python3 tools/sync_obsidian.py --check --only reports
   정당한 변경까지 걸린다). 손으로 `md5sum` 을 뜨던 절차는 **더 쓰지 않는다** — 거기엔 `backlog.json` 이
   빠져 있었고 「이 셋의 산출물이 아니다」라는 **틀린 설명**까지 달려 있었다(`build_link_index.py` 가 끝에서
   `build_backlog.build()` 를 이어 부르므로 그것도 이 명령의 산출물이다).
-  **읽기 전용 검사가 아니다** — 빌더를 제자리에서 **실제로 돌린다.** 기본 모드는 그 뒤 산출물 4개를
+  **읽기 전용 검사가 아니다** — 빌더를 제자리에서 **실제로 돌린다.** 기본 모드는 그 뒤 산출물 7개를
   원래 바이트로 되돌리고(`--write` 면 새것을 남긴다), 중단(Ctrl-C)·빌더 사망에도 되돌린 뒤 나간다.
   다만 **빌더가 다른 파일에 한 일까지 되돌리지는 않는다** — `OUTPUTS` 에 적힌 것만 본다.
   임시 트리(`git worktree`·`git clone`)에 안 돌리는 이유는 그것이 주는 게 **HEAD** 라서다.
@@ -402,7 +402,20 @@ python3 tools/sync_obsidian.py --check --only reports
   `--write` → 새것을 남김 · 빌더 사망/SIGINT → FAIL·130 이면서 트리 원복 · 산출물 삭제 → FAIL 하고 되살림 ·
   백로그 갱신 실패 → FAIL · 모르는 인자 → exit 2 · 두 번 연속 → 자기 멱등.
   ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
-  ⚠ 아직 `math` 서가만 본다. `concept`·`reports` 빌더로 넓히는 것이 다음 회차 후보다.
+  **2026-09-09 에 넓혔다 — `OUTPUTS` 7종**(concept · videos · reports · math manifest + link-index +
+  backlog + ROADMAP). 다만 **서가마다 잡는 범위가 다르다**(자세한 표는 도구 머리말):
+  concept·videos·math 는 노트 frontmatter 어긋남을 전부 잡지만,
+  ⚠ **`reports` 는 네 필드만 잡는다** — `cat`·`pair`·`track`·`chars`(본문 자수는 잡힌다).
+  **못 잡는 것**: **소스(report.md) 쪽**에서 `제목`·`날짜`·`깊이`·`태그`·`tldr`·`소스수`·`cover` 를 고쳤을 때. `build_reports_meta` 는 그 넷만 다시 지으므로
+  **보고서 제목을 고치고 manifest 를 안 고쳐도 게이트가 통과한다**(실측 확인). 그 서가의 진짜 낡음을
+  잡으려면 **`reports/` 용 rebuild 빌더가 먼저 있어야 한다** — 지금은 그런 빌더가 없다. 다음 회차 후보.
+  ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 누적이라 멱등성이 맞는 잣대가 아니다).
+  ⚠ **보고서를 새로 올리면 이 게이트가 멈춘다.** `build_reports_meta.py` 는 `CATS` 에 없는 슬러그가
+  있으면 `cat="etc"` 로 두면서도 **정책상 exit 1** 을 낸다 → `verify_builders` 가 그것을 「0 이 아닌 코드」로
+  보고 거기서 끝내므로 **뒤 빌더 셋이 아예 안 돈다**(그 산출물의 낡음은 그 회차에 안 재진다).
+  보고서를 추가하면 `CATS` 에 한 줄 넣고 다시 돌릴 것.
+  ⚠ `videos/manifest.json` 의 `order`·`categories` 는 옛 manifest 에서 그대로 오므로(소스가 없다)
+  거기 심은 오염은 **그 자체가 고정점**이 되어 안 잡힌다.
   **세 번째 시계 누출 경로가 지금은 막혀 있다(2026-09-09 검수).** `build_link_index.py:160` 은 math 노트에
   `날짜` 가 없으면 `math/manifest.json` 의 `generated`(=커밋 날짜)를 `link-index.json` 에 복사한다.
   그 파일은 `CLOCK` 밖이라, 경로가 열리면 **마스크 안 된 파일에 시계가 새어** 커밋 뒤마다 거짓 FAIL 이 난다.
