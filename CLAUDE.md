@@ -78,6 +78,8 @@ python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게�
 python3 tools/verify_math.py --backlog       # 백로그 2채널 (위키링크 + 발전단계 인물)
 python3 tools/verify_math.py --symmetry      # frontmatter 상호참조 대칭 보고 (게이트 아님)
 python3 tools/verify_figures.py              # ★ 도해 — 브라우저로 글자 넘침·겹침 (좌표 검사로는 못 잡는다)
+                                            #   ⚠ 한글 자폭은 깔린 폰트가 자(尺)다 — 로컬과 러너가 2~4% 어긋난다.
+                                            #     정본은 CI(`.github/workflows/gates.yml`) 쪽 계측이다.
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
 python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
@@ -107,6 +109,7 @@ grep -cE '^- \[' reports/<slug>/report.md # 출처수
 - `prompts/gemini-video-analysis.md` — 제미나이 영상 분석 프롬프트(정본).
 - `tools/` — 게이트 측정기·인제스트·이관 대조 스크립트.
   - **`mdtables.py` — 표가 실제로 그려지는지 재는 서가 공용 모듈**(2026-09-03). 셀 안의 `|` 는 셀 구분자로 읽혀 한 칸이 행 전체를 쪼개는데, **자수·절수·시각화 게이트는 표를 세기만 하고 그려지는지는 보지 않아** 전부 통과한다. ⚠ **규칙이 서가마다 다르다** — `research`·`concept`·`math` 는 marked 라 `\|` 로 이스케이프하면 되지만(코드 스팬은 보호해 주지 않는다), **`videos`·`guides` 는 이스케이프를 모르는 자체 파서라 셀 안에 `|` 를 쓸 방법이 아예 없다**(낱말로 풀어 적을 것). 다섯 검증기가 이 모듈을 함께 쓴다.
+- `.github/workflows/gates.yml` — **서가 게이트 CI**(2026-09-09). 검증기 일곱을 PR·main push 에서 각각 별도 스텝으로 돌린다. 「재발 방지는 문서가 아니라 게이트에 적는다」의 다음 단계 — 세션이 기억해야만 도는 검사는 문서지 게이트가 아니다. **도해 글자 계측의 기준 환경도 여기다**(개념 한 장이 2026-08-22 에 러너를 기준으로 삼은 것과 같은 이유).
 - `routines/` — 예약 루틴 지침. `spark-video-curator.md` = 스파크 영상 분석본 → 갤러리 발행(정본 절차는 `VIDEO_PIPELINE.md`).
 - `HANDOVER.md`(루트) — **인계 문서.** 열려 있는 것·닫힌 것·완료의 정의. 살아 있는 목록이라 자주 바뀐다(수학사 인계는 `math/ROADMAP.md` §11).
 - `LESSONS.md` — 검수 학습 원장(방지규칙 누적). 라이브 갤러리: https://irun20000-eng.github.io/Search/
