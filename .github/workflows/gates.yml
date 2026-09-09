@@ -127,6 +127,9 @@ jobs:
             echo "★ 그림이 「옳은가」는 여기서 못 잰다 — 렌더해서 사람이 볼 것(LESSONS 2026-09-08)."
             echo "★ reports 는 rebuild 빌더가 없다 — 만들면 손질된 카드 제목과 손으로 쓴 tldr 을 덮는다."
             echo "   대신 \`verify_reports_meta\` 가 date·depth·tags·sources·path·cover·고아를 소스와 대조한다."
-            echo "   ⚠ 그래도 **tldr 과 손질 허용목록의 제목은 어느 게이트도 안 잡는다.**"
+            echo "   sources 는 사본 둘(소스수·manifest)에 더해 **실제 \`## 출처\` 목록**과 tldr 이 적은 수까지 센다"
+            echo "   — 사본끼리만 맞대면 **둘이 함께 틀렸을 때 초록**이다(그렇게 통과하던 2편을 찾았다)."
+            echo "   ⚠ 그래도 **tldr 의 문장 내용과 손질 허용목록의 제목은 어느 게이트도 안 잡는다.**"
+            echo "   ⚠ 출처의 **국내/해외 갈래**도 안 본다 — 항목 수만 센다."
             echo "   (수치는 여기 적지 않는다 — 그 스텝의 로그가 매번 라이브로 찍는다.)"
           } >> $GITHUB_STEP_SUMMARY

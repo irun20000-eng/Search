@@ -10,7 +10,7 @@
     | `date`    | frontmatter `날짜` (72/72 일치) | 예 → 잠근다 |
     | `depth`   | frontmatter `깊이` (72/72) | 예 → 잠근다 |
     | `tags`    | frontmatter `태그` | 예 → 잠근다 |
-    | `sources` | frontmatter `소스수: { 국내, 해외 }` (72/72 파싱) | **값은 잠근다**(아래 ⚠) |
+    | `sources` | frontmatter `소스수` **와 실제 `## 출처` 목록** (72/72 파싱) | **값은 잠근다**(아래 ⚠) |
     | `title`   | `주제` + 접미사인데 규칙이 셋이고 일부는 손질됨 | 아니오 → 허용목록으로 반만 |
     | `tldr`    | 본문 `## TL;DR` 절과 **다른 문장**이다 | 아니오 |
     | `cover`   | **소스가 아예 없다**(72편 중 1편만 보유) | 아니오 |
@@ -24,18 +24,30 @@
     두 형태를 모두 받아 **숫자만** 본다.
 
     `title`·`tldr` 을 규칙 하나로 다시 지었으면 **갤러리 카드에 그대로 나가는 제목 16개와
-    요약 71개를 덮었을 것**이다. 그래서 rebuild 대신 대조로 방향을 바꿨다.
+    요약 72개를 덮었을 것**이다. 그래서 rebuild 대신 대조로 방향을 바꿨다.
+
+    ⚠⚠ **그리고 한 번 더 틀렸다(같은 날 두 번째 검수).** 위 대조는 `소스수` 와 manifest 라는
+    **사본 둘**만 맞대 본다 — 그래서 **둘이 함께 틀리면 초록이었다.** 실제 `## 출처` 목록을
+    세어 보니 두 편이 그 상태로 통과하고 있었다(`chrome-extensions-work` 13≠14,
+    `jacobian-advanced` 16≠15). 사본끼리의 합치는 사실이 아니다 — **세 번째 증인**으로
+    목록 자체를 센다(아래 ④-b). `tldr` 이 본문에 적어 둔 출처 수도 같은 이유로 본다(④-c):
+    사본을 고치고 문장을 안 따라가면 카드 한 장 안에서 숫자가 엇갈린다(실제로 그랬다).
 
 무엇을 잠그나 (FAIL).
-    ① manifest ↔ 디스크 양방향 고아 · ② `path` · ③ `date`·`depth`·`tags` · ④ `sources` 값
+    ① manifest ↔ 디스크 양방향 고아 · ② `path` · ③ `date`·`depth`·`tags`
+    ④ `sources` — (a) manifest ↔ `소스수` · (b) `소스수` ↔ **실제 `## 출처` 목록 항목 수**
+      · (c) `tldr` 이 문장으로 적은 출처 수
     ⑤ `cover` 가 가리키는 파일의 실재
     ⑥ **소스에 그 필드가 아예 없는 것도 FAIL** 이다 — 「소스가 없다」와 「소스가 맞다」를 같은
       결과로 내보내면 frontmatter 를 통째로 날린 파일이 초록으로 지나간다(첫 판이 그랬다).
     ⑦ `title` 은 **손질 허용목록** 밖에서 `주제` 로 시작하지 않으면 FAIL — 56편이 잠긴다.
 
 무엇을 못 잡나 — 여기 적어 두는 이유는 초록이 그 자리까지 보증하는 것처럼 읽히기 때문이다.
-    `tldr` (소스와 다른 문장) · `cover` 의 유무 자체 · 허용목록에 실린 16편의 `title` 내용 ·
-    `sources` 의 **표기 형태**(int/dict) · 최상위 `generated`(아무도 안 읽는다).
+    `tldr` 의 **문장 내용**(출처 수만 본다 — 나머지는 소스와 다른 문장이라 기준이 없다) ·
+    `cover` 의 유무 자체 · 허용목록에 실린 16편의 `title` 내용 ·
+    `sources` 의 **표기 형태**(int/dict) · 최상위 `generated`(아무도 안 읽는다) ·
+    출처 목록의 **국내/해외 갈래**(항목 수만 세고 어느 구획인지는 안 본다 —
+    `jacobian-advanced` 는 네이버 블로그가 `**해외**` 아래 있었다).
 
 쓰기.
     python3 tools/verify_reports_meta.py            # 게이트 (어긋나면 exit 1)
@@ -64,9 +76,13 @@ RESHAPED_TITLES = {
 }
 
 
-def frontmatter(path):
+def split_note(path):
+    """(frontmatter, 본문). 실제 출처 목록을 세려면 본문이 필요하다."""
     s = path.read_text(encoding='utf-8')
-    return s.split('---', 2)[1] if s.startswith('---') else ''
+    if s.startswith('---'):
+        parts = s.split('---', 2)
+        return parts[1], (parts[2] if len(parts) > 2 else '')
+    return '', s
 
 
 def field(fm, key):
@@ -86,6 +102,43 @@ def src_counts(fm):
     kr = re.search(r'국내\s*:\s*(\d+)', fm)
     it = re.search(r'해외\s*:\s*(\d+)', fm)
     return (int(kr.group(1)), int(it.group(1))) if kr and it else None
+
+
+def listed_sources(body):
+    """`## 출처` 절의 실제 항목 수. 못 읽으면 None (그 경우도 FAIL 로 보고한다).
+
+    ⚠ 절 제목을 `출처` 로 **줄머리에 고정**해야 한다. `^##.*출처` 로 느슨하게 잡으면
+      `## 10. 배포 3단계 — 출처만 바뀐다` 같은 본문 절이 먼저 걸려 「파싱 불가」가 된다
+      (첫 판이 그래서 claude-plugins-build 를 못 읽었다).
+    ⚠ 표기가 두 가지다 — `- [12] …` 와 `1. (국내) …`. 둘 다 읽고 많이 잡히는 쪽을 쓴다.
+      라벨에 글자가 섞인 것도 항목이다(`jacobian-advanced` 의 `[J6]`).
+    """
+    m = re.search(r'^##\s*출처[^\n]*\n(.*?)(?=^## |\Z)', body, re.M | re.S)
+    if not m:
+        return None
+    sec = m.group(1)
+    dashed = re.findall(r'^\s*-\s*\[[A-Za-z]*\d+\]', sec, re.M)
+    numbered = re.findall(r'^\s*\d+\.\s', sec, re.M)
+    n = max(len(dashed), len(numbered))
+    return n or None
+
+
+def tldr_claim(tldr, total):
+    """tldr 이 문장으로 적은 출처 수가 `total` 과 다르면 그 문구를 돌려준다.
+
+    세 표기를 쓴다 — `출처 13(국내5·해외8)` · `14개 출처` · `출처 14개`.
+    사본(소스수·manifest)을 고치고 이 문장을 안 따라가면 **카드 한 장 안에서 숫자가
+    엇갈린다** — 실제로 네 편이 그랬다(2026-09-09 검수).
+    """
+    off = []
+    m = re.search(r'출처\s*(\d+)\s*\(국내\s*(\d+)[^0-9]*해외\s*(\d+)\)', tldr or '')
+    if m and int(m.group(1)) != total:
+        off.append(m.group(0))
+    for pat in (r'(\d+)\s*개\s*출처', r'출처\s*(\d+)\s*개'):
+        for mm in re.finditer(pat, tldr or ''):
+            if int(mm.group(1)) != total:
+                off.append(mm.group(0))
+    return off
 
 
 def man_counts(v):
@@ -131,7 +184,7 @@ def main(argv):
             bad.append('%s — path 가 %r 인데 실제는 %r' % (slug, r.get('path'), want))
         if not p.is_file():
             continue
-        fm = frontmatter(p)
+        fm, body = split_note(p)
 
         # ── 소스가 있는 것: 잠근다. **없는 것도 FAIL** 이다(있는 줄 알고 통과시키면 안 된다).
         for mkey, fkey in (('date', '날짜'), ('depth', '깊이')):
@@ -167,11 +220,28 @@ def main(argv):
                 bad.append('%s — sources: manifest {국내 %s, 해외 %s} ≠ 소스 {국내 %d, 해외 %d}'
                            % (slug, m_kr, m_it, sc[0], sc[1]))
 
-        # ⚠ cover 는 **보고서 폴더 기준**이다(`comics/card.png`). 리포 루트로 풀면 늘 없다고
-        #   나온다 — 첫 판이 그랬다. 리포 루트 형태로 적힌 경우도 있을 수 있어 둘 다 본다.
+            # (b) **세 번째 증인** — 사본 둘이 함께 틀린 것을 여기서 잡는다.
+            total = sc[0] + sc[1]
+            listed = listed_sources(body)
+            if listed is None:
+                bad.append('%s — `## 출처` 절의 항목을 못 읽었다 (표기가 새로 생겼으면 '
+                           'listed_sources 를 늘릴 것 — 못 세는 것을 통과로 두지 않는다)' % slug)
+            elif listed != total:
+                bad.append('%s — 소스수 %d(국내 %d·해외 %d) 인데 `## 출처` 목록은 %d항목이다'
+                           % (slug, total, sc[0], sc[1], listed))
+
+            # (c) 카드에 보이는 문장까지 같은 수인가
+            for phrase in tldr_claim(r.get('tldr'), total):
+                bad.append('%s — tldr 의 「%s」 가 실제 %d 과 다르다 (카드 안에서 숫자가 엇갈린다)'
+                           % (slug, phrase, total))
+
+        # ⚠ cover 는 **보고서 폴더 기준**이다(`comics/card.png`). 유일한 소비자인
+        #   `research/index.html:502` 이 `r.path` 의 폴더에 이어 붙이므로 그 기준만 옳다.
+        #   리포 루트 폴백을 뒀다가 검수가 잡았다 — **렌더러가 못 읽는 형태를 게이트가
+        #   통과시키면 게이트가 거짓을 보증한다.**
         cover = r.get('cover')
-        if cover and not ((p.parent / cover).is_file() or (ROOT / cover).is_file()):
-            bad.append('%s — cover 가 가리키는 %r 가 보고서 폴더에도 리포 루트에도 없다'
+        if cover and not (p.parent / cover).is_file():
+            bad.append('%s — cover 가 가리키는 %r 가 보고서 폴더에 없다 (갤러리가 못 읽는다)'
                        % (slug, cover))
 
         # ── title: 손질 허용목록 밖은 잠근다
@@ -202,7 +272,9 @@ def main(argv):
     print('         손질 허용목록 %d편 — 그 편들의 제목 내용은 아무도 안 본다' % len(reshaped))
     print('  sources 표기가 %s 로 갈려 있다 — **값은 위에서 잠갔고 형태 통일만 사람 몫이다**'
           % ', '.join('%s %d편' % (k, v) for k, v in sorted(shapes.items())))
-    print('  tldr 은 본문 `## TL;DR` 절과 **다른 문장**이라 대조할 기준이 없다. cover 는 소스가 없다.')
+    print('  tldr 은 본문 `## TL;DR` 절과 **다른 문장**이라 문장 내용은 기준이 없다')
+    print('         — 다만 거기 적힌 **출처 수**는 위에서 잠갔다.  cover 는 소스가 없다.')
+    print('  출처 목록의 국내/해외 **갈래**는 안 본다 — 항목 수만 센다.')
     print('  최상위 `generated` 는 아무 빌더도 갤러리도 안 읽는다.')
     print()
 
@@ -214,7 +286,8 @@ def main(argv):
         print('  실제 출처 목록을 세어 어느 쪽이 거짓인지 확인하고 고칠 것.')
         return 0 if report_only else 1
 
-    print('OK — date · depth · tags · sources · title · path · cover · 고아 모두 소스와 일치한다.')
+    print('OK — date · depth · tags · sources(사본 둘 + 실제 목록 + tldr) · title · path ·')
+    print('     cover · 고아 모두 소스와 일치한다.')
     return 0
 
 
