@@ -27,14 +27,29 @@
     없는 차이까지 생긴다 — 다만 `.git` 을 함께 복사하면 그건 사라지므로 결정적 이유는 아니다.)
     그래서 **제자리에서 돌리고 되돌려 놓는다**(`--write` 면 새것을 남긴다).
 
-무엇을 보나.
+무엇을 보나 — 서가마다 **잡는 범위가 다르다.** 실측해서 적는다(2026-09-09).
+    | 빌더 | 산출물 | 잡는 것 |
+    |---|---|---|
+    | `build_concept_manifest` | `concept/manifest.json` | 노트 frontmatter 어긋남 **전부** |
+    | `build_manifest`(videos)  | `videos/manifest.json`  | 노트 frontmatter 어긋남 **전부** |
+    | `build_reports_meta`      | `reports/manifest.json` | **`cat`·`pair` 만** |
+    | `build_math_manifest`     | `math/manifest.json`    | 노트 frontmatter 어긋남 **전부** |
+
+    ⚠ **reports 서가에는 소스에서 다시 짓는 빌더가 없다.** `build_reports_meta` 는 카테고리와
+    짝문서를 *채워 넣을* 뿐이라, 보고서 제목을 고치고 manifest 를 안 고쳐도 **이 게이트가 통과한다**
+    (실측: `주제:` 를 바꿔 돌렸더니 manifest 가 안 바뀌었다. 반대로 `cat`·`pair` 를 114개 지웠더니
+    되살렸다). 그 서가의 진짜 낡음을 잡으려면 `reports/`용 rebuild 빌더가 먼저 있어야 한다 —
+    없는 것을 있는 척하지 않으려고 여기 적어 둔다.
+    ⚠ `guides`·`blog`·`cardnews` 는 rebuild 빌더 자체가 없다(`ingest_*` 는 **누적**이라 멱등성이
+    맞는 잣대가 아니다 — 돌릴 때마다 항목이 늘면 그것은 낡음이 아니다).
+
     `python3 tools/build_link_index.py` 는 끝에 `build_backlog.build()` 를 **이어서 부른다**
     (그 파일이 「따로 돌리게 두면 반드시 잊는다」고 적어 둔 결정이다). 그래서 `backlog.json`
     도 이 명령의 산출물이고 여기서 함께 잰다 — 빼 두면 검사기가 그 파일을 **말없이 덮어쓰고**
     낡음도 영영 안 잡힌다(첫 판이 그랬다).
     ⚠ **빌더가 늘면 `BUILDERS` 와 `OUTPUTS` 를 함께 늘려야 한다** — 목록에 없는 산출물은 못 본다.
     ⚠ **되돌리기도 `OUTPUTS` 안에서만 참이다.** 빌더가 목록 밖 파일에 한 일은 그대로 남는다
-      (지금 빌더 3종은 목록 밖을 안 건드리는 것을 확인했다).
+      (빌더 6종이 목록 밖을 안 건드리는 것을 깨끗한 트리에서 하나씩 돌려 확인했다 — 2026-09-09).
     ⚠ `build_link_index.py` 는 `build_backlog` 의 예외를 **삼키고 rc 0 을 돌려준다.** 그러면
       `backlog.json` 이 갱신되지 않아 「안 바뀌었다 = 고정점」으로 읽힌다 — 그래서 그 실패 문구를
       stdout 에서 찾아 FAIL 로 올린다(`BACKLOG_FAIL`).
@@ -70,13 +85,20 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# 실행 순서가 결과를 바꾼다 — manifest 를 link-index 가 읽고, 그 둘을 status 가 읽는다.
+# 실행 순서가 결과를 바꾼다 — 서가 manifest 들을 link-index 와 backlog 이 읽고,
+# 그 둘을 math_status 가 읽는다. 서가 빌더가 먼저다.
 BUILDERS = (
+    'tools/build_concept_manifest.py',   # concept/manifest.json
+    'tools/build_manifest.py',           # videos/manifest.json  (이름이 서가를 안 밝힌다 — videos 다)
+    'tools/build_reports_meta.py',       # reports/manifest.json 의 cat·pair 만 (아래 ⚠)
     'tools/build_math_manifest.py',
-    'tools/build_link_index.py',      # 끝에서 build_backlog 를 이어 부른다
+    'tools/build_link_index.py',         # 끝에서 build_backlog 를 이어 부른다
     'tools/build_math_status.py',
 )
 OUTPUTS = (
+    'concept/manifest.json',
+    'videos/manifest.json',
+    'reports/manifest.json',
     'math/manifest.json',
     'link-index.json',
     'backlog.json',

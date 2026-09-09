@@ -84,7 +84,8 @@ python3 tools/figure_status.py               # 도해 현황 (게이트 아님) 
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
 python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
-python3 tools/verify_builders.py             # ★ 커밋 직전 마지막 — 산출물 4종이 지금 소스의 고정점인가
+python3 tools/verify_builders.py             # ★ 커밋 직전 마지막 — 산출물 7종이 지금 소스의 고정점인가
+                                            #   (concept·videos·reports·math manifest + link-index + backlog + ROADMAP)
                                             #   (읽기 전용 아님: 빌더를 실제로 돌리고 워킹트리는 되돌린다. --write 면 새것을 남긴다)
 python3 tools/sync_math_obsidian.py --dry-run  # 볼트 002-수학사/ 동기화
 
