@@ -1,0 +1,122 @@
+# 서가 게이트 — 검사기를 사람의 기억에서 떼어 낸다
+#
+# 왜: 이 리포의 원칙은 「재발 방지는 문서가 아니라 게이트에 적는다」(LESSONS 2026-09-02)인데,
+#     정작 그 게이트들이 **아무 워크플로에도 없었다.** 세션이 기억해서 돌릴 때만 도는 검사는
+#     문서지 게이트가 아니다. 2026-09-09 검수가 리포 전체 공백으로 짚었다.
+#
+# 무엇을: 일곱 검사기를 각각 별도 스텝으로 돌린다. 한 스텝에 몰면 어느 서가가 깨졌는지
+#     로그를 뒤져야 하고, 앞의 것이 죽으면 뒤의 것은 아예 안 돈다.
+#
+# ★ 이 러너가 도해 글자 계측의 **기준 환경**이다.
+#     `verify_figures.py` 는 웹폰트를 일부러 안 심는다 — 노트가 `<img>` 로 임베드하므로
+#     발행 화면도 시스템 폰트로 떨어지기 때문이다. 그래서 **깔린 폰트가 곧 자(尺)**다.
+#     로컬 컨테이너에는 Noto CJK 가 없어 같은 SVG 가 다르게 측정된다. 개념 한 장이
+#     2026-08-22 에 「기준 환경을 러너로 옮긴다」고 정한 것과 같은 이유로, 도해도
+#     **여기 결과를 정본으로 삼는다.**
+#
+#     ⚠ 차이가 작지 않다. 이 워크플로를 처음 넣을 때 「2~4% 어긋난다」고 적었는데
+#     **결과의 크기를 과소평가한 문장이었다** — 글꼴 스택을 고친 커밋에서 로컬 0건이
+#     러너에서 **7건**으로 나왔다(네 그림, 겹침이 전부 높이 2.0px 로 임계값 턱걸이).
+#     Noto Serif CJK 의 글자 상자가 나눔명조보다 높아 간발의 차가 뒤집힌다.
+#
+#     ★ 러너 글꼴을 로컬에서 재현하는 법(시스템에 깔지 않는다 — 다른 작업의 계측을 흔든다):
+#         apt-get download fonts-noto-cjk && dpkg-deb -x fonts-noto-cjk*.deb ext
+#         # <dir>ext/usr/share/fonts</dir> 와 <dir>/usr/share/fonts</dir> 를 담은 fonts.conf 를 만들고
+#         FONTCONFIG_FILE=/경로/fonts.conf python3 tools/verify_figures.py
+#       이 방법으로 러너의 7건을 픽셀 단위까지 재현했다(2026-09-09).
+#       ⚠ `@font-face` 로 .ttc 를 물리는 우회는 **안 된다** — 브라우저가 폰트 컬렉션을
+#         @font-face 로 못 읽고 조용히 폴백해서 「0건」이 찍힌다(거짓 음성이었다).
+#
+# 언제: main 으로 가는 PR 과 main push. 브랜치 push 마다 돌리지 않는다 —
+#     cardnews·concept 워크플로가 이미 브랜치 push 에서 산출물을 커밋해 되밀기 때문에
+#     같은 push 를 두 번 재게 된다. 검사가 필요한 순간은 **머지 직전**이다.
+name: 서가 게이트
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gates-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      # verify_builders 가 build_math_manifest 를 돌리고, 그것이 `git log -1 --format=%cs` 로
+      # generated 를 채운다. 얕은 클론이라도 HEAD 하나는 있으므로 fetch-depth 기본값으로 족하다.
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 의존성
+        run: |
+          python -m pip install -q --upgrade pip
+          pip install -q pyyaml playwright
+
+      # 도해 계측의 자(尺)다. 조용히 실패하면 한글이 두부(네모)로 떨어져 글자 폭이 통째로
+      # 달라지고, 그 상태로 「통과」가 찍힌다. 다른 두 워크플로와 같은 이유로 여기서 끊는다.
+      - name: 한글 폰트 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+          fc-cache -f
+          # ⚠ `noto.*cjk` 로 재면 **Sans 만 있어도 통과**한다. 도해의 자(尺)는 Serif 다 —
+          #   산세리프로 재면서 「통과」가 찍히는 것이 바로 이 회차가 겪은 실패 양식이다.
+          fc-list | grep -qi "noto serif cjk" || { echo "::error::Noto Serif CJK 없음 — 도해 계측의 자가 없다"; exit 1; }
+          # 스택이 이름으로 잡으므로 제네릭 serif 경로를 찍으면 **실제로 잰 자가 아닌 것**을 보고하게 된다.
+          echo "도해가 실제로 잡는 자: $(fc-match -f '%{family}' 'Noto Serif CJK KR')"
+
+      - name: 크로미움 설치
+        run: python -m playwright install --with-deps chromium
+
+      # ── 여기부터 게이트. 한 줄씩 따로 세워 어디서 깨졌는지 목록에서 바로 보이게 한다.
+
+      - name: 표가 실제로 그려지는가 (서가 전체)
+        run: python tools/verify_tables.py
+
+      - name: 수학사 — 스키마 · 유형별 분량
+        run: python tools/verify_math.py
+
+      # 브라우저가 없으면 exit 2 로 나간다(`--allow-skip` 을 주지 않는다).
+      # 「검사를 안 했다」와 「검사해서 통과했다」를 같은 코드로 내보내지 않기 위한 설계이고,
+      # CI 에서는 그 둘을 섞으면 게이트가 조용히 사라진다.
+      - name: 수학사 — 도해 글자 넘침 · 겹침 (브라우저)
+        run: python tools/verify_figures.py
+
+      - name: 개념노트
+        run: python tools/verify_concept.py
+
+      - name: 가이드
+        run: python tools/verify_guide.py
+
+      - name: 영상 노트
+        run: python tools/verify_video.py
+
+      # 마지막에 둔다 — 이 검사만 빌더를 **실제로 돌린다**(그 뒤 워킹트리를 되돌린다).
+      # 앞의 게이트들이 원본 산출물을 보게 하려면 순서가 이래야 한다.
+      - name: 산출물이 소스보다 낡았는가 (빌더 멱등성)
+        run: python tools/verify_builders.py
+
+      - name: 요약
+        if: always()
+        run: |
+          {
+            echo "### 서가 게이트"
+            echo ""
+            echo "- 결과: ${{ job.status }}"
+            echo "- 도해가 잡은 자: \`$(fc-match -f '%{family}' 'Noto Serif CJK KR' 2>/dev/null || echo '?')\`"
+            echo ""
+            echo "★ 도해는 **이 러너의 계측이 정본**이다 — 로컬은 폰트가 달라 판정이 갈린다."
+            echo "   (로컬 0건이 여기서 7건이 된 적이 있다. 재현법은 이 워크플로 머리말 참조.)"
+            echo "★ 그림이 「옳은가」는 여기서 못 잰다 — 렌더해서 사람이 볼 것(LESSONS 2026-09-08)."
+          } >> $GITHUB_STEP_SUMMARY

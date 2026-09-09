@@ -90,7 +90,7 @@ TEXT_INSET_MAX = 2.0
 #   눈에 띈다. 1.30 이면 격자(1.24)만 빠지고 둘은 감시 안에 남는다.
 MIN_CONTRAST = 1.30
 
-MEASURE_JS = """({ vb, RATIO, MAXIN, MINC }) => {
+MEASURE_JS = r"""({ vb, RATIO, MAXIN, MINC }) => {
   const [X0, Y0, W, H] = vb;
   const X1 = X0 + W, Y1 = Y0 + H;
   const svg = document.querySelector('svg');
@@ -278,14 +278,24 @@ def main(argv):
         print('         설치: pip install playwright  (브라우저가 이미 있으면 받지 않아도 된다)')
         return skip
     chrome = find_chrome()
-    if chrome is None:
-        print('[건너뜀] 브라우저를 찾지 못했다 — 도해 렌더 검사를 하지 않았다.')
-        print('         찾은 자리: ' + ' · '.join(CHROME_GLOBS))
-        return skip
 
     fails = 0
     with sync_playwright() as p:
-        browser = p.chromium.launch(executable_path=chrome)
+        # 경로를 찾았으면 그것으로, 못 찾았으면 playwright 가 제 손으로 깐 것에 맡긴다.
+        # CHROME_GLOBS 는 **이 컨테이너의 자리**다(PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers).
+        # 여기서는 `playwright install` 이 버전 불일치로 실패해 미리 깔린 것을 가리켜야 하지만,
+        # 러너·다른 PC 에서는 playwright 가 ~/.cache/ms-playwright 에 깐다 — 글롭만 보면
+        # 거기서 **아무것도 못 찾아 그날부터 게이트가 건너뛴다.** 이 파일이 버전을 못 박지
+        # 않은 이유(:69)와 같은 이유로 뿌리 경로도 못 박지 않는다. (2026-09-09, CI 배선에서 발견)
+        try:
+            browser = (p.chromium.launch(executable_path=chrome) if chrome
+                       else p.chromium.launch())
+        except Exception as e:
+            print('[건너뜀] 브라우저를 띄우지 못했다 — 도해 렌더 검사를 하지 않았다.')
+            print('         찾은 자리: ' + ' · '.join(CHROME_GLOBS))
+            print('         playwright 기본 경로도 실패: %s' % str(e).splitlines()[0][:160])
+            print('         설치: python -m playwright install --with-deps chromium')
+            return skip
         page = browser.new_page()
         for f in files:
             src = pathlib.Path(f).read_text(encoding='utf-8')
