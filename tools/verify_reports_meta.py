@@ -46,8 +46,11 @@
     `tldr` 의 **문장 내용**(출처 수만 본다 — 나머지는 소스와 다른 문장이라 기준이 없다) ·
     `cover` 의 유무 자체 · 허용목록에 실린 16편의 `title` 내용 ·
     `sources` 의 **표기 형태**(int/dict) · 최상위 `generated`(아무도 안 읽는다) ·
-    출처 목록의 **국내/해외 갈래**(항목 수만 세고 어느 구획인지는 안 본다 —
-    `jacobian-advanced` 는 네이버 블로그가 `**해외**` 아래 있었다).
+    출처 목록의 **국내/해외 갈래**(항목 수만 세고 어느 구획에 있는지는 안 본다 —
+    `jacobian-advanced` 는 네이버 블로그가 `**해외**` 아래 있었다. `소스수` 의 국내·해외를
+    서로 맞바꿔도 총계가 같으면 통과한다) ·
+    **출처 항목의 실재**(URL 없이 「국내 블로그 다수」처럼 뭉뚱그린 줄도 한 항목으로 센다 —
+    `ai-engineering-evolution-graph` 가 그렇다. 무환각 잣대는 사람이 볼 일이다).
 
 쓰기.
     python3 tools/verify_reports_meta.py            # 게이트 (어긋나면 exit 1)
@@ -112,27 +115,35 @@ def listed_sources(body):
       (첫 판이 그래서 claude-plugins-build 를 못 읽었다).
     ⚠ 표기가 두 가지다 — `- [12] …` 와 `1. (국내) …`. 둘 다 읽고 많이 잡히는 쪽을 쓴다.
       라벨에 글자가 섞인 것도 항목이다(`jacobian-advanced` 의 `[J6]`).
+    ⚠ **라벨 없는 `- 매체 「제목」 — URL` 도 항목이다.** 처음에는 `- [n]` 만 셌는데,
+      그러면 라벨 없이 붙인 출처가 **세 사본 어디에도 안 세어진다** — `hermes-agent-quick`
+      이 실제로 그 상태였다(목록 8인데 셋 다 6). 세 번째 증인을 두는 뜻이 없어지므로
+      줄머리 `- ` 를 전부 센다. 각주 정의(`- [^라벨]:`)만 뺀다.
     """
     m = re.search(r'^##\s*출처[^\n]*\n(.*?)(?=^## |\Z)', body, re.M | re.S)
     if not m:
         return None
     sec = m.group(1)
-    dashed = re.findall(r'^\s*-\s*\[[A-Za-z]*\d+\]', sec, re.M)
+    dashed = re.findall(r'^-\s+(?!\[\^)\S', sec, re.M)
     numbered = re.findall(r'^\s*\d+\.\s', sec, re.M)
     n = max(len(dashed), len(numbered))
     return n or None
 
 
-def tldr_claim(tldr, total):
-    """tldr 이 문장으로 적은 출처 수가 `total` 과 다르면 그 문구를 돌려준다.
+def tldr_claim(tldr, kr, intl):
+    """tldr 이 문장으로 적은 출처 수가 실제와 다르면 그 문구를 돌려준다.
 
     세 표기를 쓴다 — `출처 13(국내5·해외8)` · `14개 출처` · `출처 14개`.
     사본(소스수·manifest)을 고치고 이 문장을 안 따라가면 **카드 한 장 안에서 숫자가
     엇갈린다** — 실제로 네 편이 그랬다(2026-09-09 검수).
+
+    ⚠ 첫 판은 `(국내a·해외b)` 를 **캡처해 놓고 총계만 비교했다.** 총계가 맞으면
+      내역이 뒤바뀌어도 통과한다(검수가 심어서 보였다). 잡은 값은 다 쓴다.
     """
+    total = kr + intl
     off = []
     m = re.search(r'출처\s*(\d+)\s*\(국내\s*(\d+)[^0-9]*해외\s*(\d+)\)', tldr or '')
-    if m and int(m.group(1)) != total:
+    if m and (int(m.group(1)), int(m.group(2)), int(m.group(3))) != (total, kr, intl):
         off.append(m.group(0))
     for pat in (r'(\d+)\s*개\s*출처', r'출처\s*(\d+)\s*개'):
         for mm in re.finditer(pat, tldr or ''):
@@ -231,9 +242,9 @@ def main(argv):
                            % (slug, total, sc[0], sc[1], listed))
 
             # (c) 카드에 보이는 문장까지 같은 수인가
-            for phrase in tldr_claim(r.get('tldr'), total):
-                bad.append('%s — tldr 의 「%s」 가 실제 %d 과 다르다 (카드 안에서 숫자가 엇갈린다)'
-                           % (slug, phrase, total))
+            for phrase in tldr_claim(r.get('tldr'), sc[0], sc[1]):
+                bad.append('%s — tldr 의 「%s」 가 실제 %d(국내 %d·해외 %d) 과 다르다 '
+                           '(카드 안에서 숫자가 엇갈린다)' % (slug, phrase, total, sc[0], sc[1]))
 
         # ⚠ cover 는 **보고서 폴더 기준**이다(`comics/card.png`). 유일한 소비자인
         #   `research/index.html:502` 이 `r.path` 의 폴더에 이어 붙이므로 그 기준만 옳다.

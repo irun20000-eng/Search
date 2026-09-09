@@ -1863,13 +1863,13 @@
       ],
       "tldr": "Nous Research가 만든 오픈소스(MIT) 자율 AI 에이전트. 영속 메모리·자가발전(스킬 학습) 루프가 핵심이고, 한 줄 명령으로 설치해 터미널·메신저로 쓴다. 특정 모델에 묶이지 않고 수백 종 LLM을 갈아끼울 수 있으며, 2026년 오픈클로를 추월하며 주목받았다.",
       "sources": {
-        "kr": 3,
+        "kr": 5,
         "intl": 3
       },
       "path": "reports/hermes-agent-quick/report.md",
       "cat": "ai",
       "track": "intro",
-      "chars": 2822
+      "chars": 2830
     }
   ],
   "categories": [
