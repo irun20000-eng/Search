@@ -90,7 +90,7 @@ TEXT_INSET_MAX = 2.0
 #   눈에 띈다. 1.30 이면 격자(1.24)만 빠지고 둘은 감시 안에 남는다.
 MIN_CONTRAST = 1.30
 
-MEASURE_JS = """({ vb, RATIO, MAXIN, MINC }) => {
+MEASURE_JS = r"""({ vb, RATIO, MAXIN, MINC }) => {
   const [X0, Y0, W, H] = vb;
   const X1 = X0 + W, Y1 = Y0 + H;
   const svg = document.querySelector('svg');

@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-label="곡선 아래 넓이를 a부터 x까지 모은 넓이 함수와, x를 h만큼 늘렸을 때 더해지는 가느다란 띠. 띠는 밑변 h 높이 f(x)인 직사각형에 가깝고 그 위에 남는 작은 조각이 오차다">
   <title>미적분학의 기본정리 — 넓이가 늘어나는 속도는 그 지점의 높이다</title>
+  <style>text{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;}</style>
   <rect width="660" height="330" fill="#FFFDF7"/>
   <path d="M117.5,252.0 L117.5,159.1 L120.2,158.1 L122.8,157.2 L125.5,156.2 L128.1,155.3 L130.8,154.3 L133.4,153.4 L136.1,152.5 L138.8,151.5 L141.4,150.6 L144.1,149.7 L146.7,148.8 L149.4,147.9 L152.1,147.0 L154.7,146.1 L157.4,145.3 L160.0,144.4 L162.7,143.5 L165.3,142.7 L168.0,141.8 L170.7,141.0 L173.3,140.1 L176.0,139.3 L178.6,138.5 L181.3,137.7 L184.0,136.8 L186.6,136.0 L189.3,135.2 L191.9,134.4 L194.6,133.6 L197.2,132.9 L199.9,132.1 L202.6,131.3 L205.2,130.6 L207.9,129.8 L210.5,129.0 L213.2,128.3 L215.9,127.6 L218.5,126.8 L221.2,126.1 L223.8,125.4 L226.5,124.7 L229.1,124.0 L231.8,123.3 L234.5,122.6 L237.1,121.9 L239.8,121.2 L242.4,120.5 L245.1,119.9 L247.8,119.2 L250.4,118.6 L253.1,117.9 L255.7,117.3 L258.4,116.6 L261.0,116.0 L263.7,115.4 L266.4,114.8 L269.0,114.2 L271.7,113.6 L274.3,113.0 L277.0,112.4 L279.7,111.8 L282.3,111.2 L285.0,110.6 L287.6,110.1 L290.3,109.5 L293.0,109.0 L295.6,108.4 L298.3,107.9 L300.9,107.3 L303.6,106.8 L306.2,106.3 L308.9,105.8 L311.6,105.3 L314.2,104.8 L316.9,104.3 L319.5,103.8 L322.2,103.3 L324.9,102.8 L327.5,102.4 L330.2,101.9 L332.8,101.4 L335.5,101.0 L338.1,100.6 L340.8,100.1 L343.5,99.7 L346.1,99.3 L348.8,98.8 L351.4,98.4 L354.1,98.0 L356.8,97.6 L356.8,252.0 Z" fill="#9C5A2C" fill-opacity="0.14" stroke="none"/>
   <path d="M356.8,252.0 L356.8,97.6 L357.8,97.5 L358.9,97.3 L359.9,97.2 L361.0,97.0 L362.0,96.8 L363.1,96.7 L364.1,96.5 L365.2,96.4 L366.2,96.2 L367.3,96.1 L368.3,96.0 L369.4,95.8 L370.5,95.7 L371.5,95.5 L372.6,95.4 L373.6,95.2 L374.7,95.1 L375.7,95.0 L376.8,94.8 L377.8,94.7 L378.9,94.5 L379.9,94.4 L381.0,94.3 L382.0,94.1 L383.1,94.0 L384.2,93.9 L385.2,93.7 L386.3,93.6 L387.3,93.5 L388.4,93.4 L389.4,93.2 L390.5,93.1 L391.5,93.0 L392.6,92.9 L393.6,92.7 L394.7,92.6 L395.8,92.5 L396.8,92.4 L397.9,92.3 L398.9,92.1 L400.0,92.0 L401.0,91.9 L402.1,91.8 L403.1,91.7 L404.2,91.6 L405.2,91.5 L406.3,91.4 L407.4,91.2 L408.4,91.1 L409.5,91.0 L410.5,90.9 L411.6,90.8 L412.6,90.7 L413.7,90.6 L414.7,90.5 L415.8,90.4 L416.8,90.3 L417.9,90.2 L418.9,90.1 L420.0,90.0 L421.1,89.9 L422.1,89.8 L423.2,89.7 L424.2,89.6 L425.3,89.5 L426.3,89.4 L427.4,89.4 L428.4,89.3 L429.5,89.2 L430.5,89.1 L431.6,89.0 L432.6,88.9 L433.7,88.8 L434.8,88.7 L435.8,88.7 L436.9,88.6 L437.9,88.5 L439.0,88.4 L440.0,88.3 L441.1,88.3 L442.1,88.2 L443.2,88.1 L444.2,88.0 L445.3,88.0 L446.4,87.9 L447.4,87.8 L448.5,87.8 L449.5,87.7 L450.6,87.6 L451.6,87.6 L451.6,252.0 Z" fill="#9C5A2C" fill-opacity="0.42" stroke="none"/>
@@ -12,19 +13,19 @@
   <line x1="356.8" y1="97.6" x2="356.8" y2="252.0" stroke="#9C5A2C" stroke-width="1.5"/>
   <line x1="451.6" y1="87.6" x2="451.6" y2="252.0" stroke="#9C5A2C" stroke-width="1.5"/>
   <line x1="68.0" y1="97.6" x2="356.8" y2="97.6" stroke="#3A5C77" stroke-width="1.1" stroke-dasharray="4 4"/>
-  <text x="60.0" y="102.6" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#3A5C77" text-anchor="end">f(x)</text>
+  <text x="60.0" y="102.6" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="14" fill="#3A5C77" text-anchor="end">f(x)</text>
   <line x1="117.5" y1="252" x2="117.5" y2="258" stroke="#8A7F6E" stroke-width="1.2"/>
-  <text x="117.5" y="275" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">a</text>
+  <text x="117.5" y="275" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">a</text>
   <line x1="356.8" y1="252" x2="356.8" y2="258" stroke="#8A7F6E" stroke-width="1.2"/>
-  <text x="356.8" y="275" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">x</text>
+  <text x="356.8" y="275" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">x</text>
   <line x1="451.6" y1="252" x2="451.6" y2="258" stroke="#8A7F6E" stroke-width="1.2"/>
-  <text x="451.6" y="275" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">x + h</text>
-  <text x="237.1" y="218.0" font-family="EB Garamond, Georgia, serif" font-size="16" fill="#9C5A2C" text-anchor="middle">A(x)</text>
-  <text x="237.1" y="236.0" font-family="EB Garamond, Georgia, serif" font-size="12.5" fill="#9C5A2C" text-anchor="middle">a 부터 x 까지 모은 넓이</text>
+  <text x="451.6" y="275" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="14" fill="#8A7F6E" text-anchor="middle">x + h</text>
+  <text x="237.1" y="218.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="16" fill="#9C5A2C" text-anchor="middle">A(x)</text>
+  <text x="237.1" y="236.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#9C5A2C" text-anchor="middle">a 부터 x 까지 모은 넓이</text>
   <line x1="415.6" y1="88.1" x2="473.6" y2="64.0" stroke="#3A5C77" stroke-width="1"/>
-  <text x="477.6" y="66.0" font-family="EB Garamond, Georgia, serif" font-size="12.5" fill="#3A5C77">남는 조각 = 오차</text>
-  <text x="477.6" y="82.0" font-family="EB Garamond, Georgia, serif" font-size="12.5" fill="#3A5C77">h 가 줄면 함께 사라진다</text>
-  <text x="610.0" y="134.0" font-family="EB Garamond, Georgia, serif" font-size="14.5" fill="#9C5A2C" text-anchor="end">늘어난 넓이 ≈ f(x) · h</text>
-  <text x="330.0" y="30" font-family="EB Garamond, Georgia, serif" font-size="15.5" fill="#221E18" text-anchor="middle">x 를 h 만큼 늘리면 넓이는 얼마나 늘어나는가</text>
-  <text x="330.0" y="316" font-family="EB Garamond, Georgia, serif" font-size="14" fill="#221E18" text-anchor="middle">늘어난 조각은 밑변 h · 높이 f(x) 인 직사각형에 가깝다 — 그래서 넓이가 늘어나는 속도가 높이와 같아진다</text>
+  <text x="477.6" y="66.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">남는 조각 = 오차</text>
+  <text x="477.6" y="82.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#3A5C77">h 가 줄면 함께 사라진다</text>
+  <text x="610.0" y="134.0" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="14.5" fill="#9C5A2C" text-anchor="end">늘어난 넓이 ≈ f(x) · h</text>
+  <text x="330.0" y="30" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="15.5" fill="#221E18" text-anchor="middle">x 를 h 만큼 늘리면 넓이는 얼마나 늘어나는가</text>
+  <text x="330.0" y="316" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="14" fill="#221E18" text-anchor="middle">늘어난 조각은 밑변 h · 높이 f(x) 인 직사각형에 가깝다 — 그래서 넓이가 늘어나는 속도가 높이와 같아진다</text>
 </svg>
