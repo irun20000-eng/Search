@@ -44,6 +44,12 @@
 후속개념: [concept-calculus-of-variations, concept-fundamental-theorem, concept-series, concept-differential-equation, concept-analysis-rigor]
 기여인물: [person-archimedes, person-cavalieri, person-wallis, person-barrow, person-newton, person-leibniz, person-riemann]
 
+이미지:
+  - 파일: assets/figures/riemann-rectangles-refine.svg
+    설명: 같은 곡선 아래 넓이를 직사각형 4개로 덮은 그림과 16개로 덮은 그림을 나란히 둔 것. 개수를 늘리면 곡선 위로 삐져나온 몫이 줄어든다
+    출처: 직접 제작
+    라이선스: CC0
+
 출처:
   - 번호: 1
     제목: 네이버 지식백과(수학백과), 정적분 — 잘게 나누어 더하는 것
@@ -158,6 +164,10 @@ $$S = \lim_{n\to\infty}\sum_{k=1}^{n} f(x_k)\,\Delta x$$
 | 구분 | 구간을 $n$등분해 가는 직사각형으로 덮는다 |
 | 구적 | 직사각형들의 넓이를 모두 더한다 |
 | 극한 | $n \to \infty$로 보내 참값에 접근한다 |
+
+![직사각형 4개와 16개로 덮은 같은 넓이](../../assets/figures/riemann-rectangles-refine.svg)
+
+그림의 곡선에서는 $n$을 4에서 16으로 늘리자 삐져나온 몫이 33%에서 8%로 줄었다. **「극한」이 하는 일은 이 줄어듦을 끝까지 미는 것**이다.
 
 **2천 년의 아이디어가 이 세 줄에 압축돼 있다.** 아르키메데스가 삼각형으로 한 것을 직사각형으로 하고, 귀류법 대신 극한을 쓴 것이 차이다[1][3].
 
