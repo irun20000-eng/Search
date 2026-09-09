@@ -46,5 +46,5 @@
 
   <text x="545" y="212" font-size="13.5" class="sien">3 + 3 = 6</text>
 
-  <text x="60" y="352" font-size="13" class="sien">실선 원 두 개를 더하면 파선 원이 된다 — 줄마다 같은 규칙이 되풀이된다.</text>
+  <text x="60" y="352" font-size="13" class="sien">실선 원 두 개를 더하면 파선 원이 된다.</text>
 </svg>
