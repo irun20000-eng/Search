@@ -1,0 +1,36 @@
+# 렌더 산출물 push 재시도 — 셸 로직 회귀 시험
+#
+# 왜 워크플로로 두나: 이 저장소가 세 번 겪은 유실(2026-08-27 · 09-03 · 09-08)은
+# 전부 **커밋 단계의 셸 로직**에서 났다. YAML 이 파싱된다고 로직이 맞는 것이 아니고
+# (LESSONS 2026-08-25), 렌더 워크플로는 실제 렌더가 필요해 결함을 그 자리에서
+# 재현하기 어렵다. 그래서 push 로직만 떼어 실제 git 저장소 셋으로 재현한다.
+#
+# 시험이 지키는 것: 경합에서 늦은 커밋이 살아남는가 · 공용 산출물이 「한쪽 선택」이
+# 아니라 **재생성된 값**인가 · 사람이 봐야 할 충돌에서는 멈추는가 ·
+# 그리고 **종전 로직이 실제로 실패하는가**(결함 재현이 유지되는지).
+name: push 재시도 시험
+
+on:
+  push:
+    paths:
+      - 'tools/push_rendered.sh'
+      - 'tools/test_push_rendered.sh'
+      - '.github/workflows/push-retry-test.yml'
+  pull_request:
+    paths:
+      - 'tools/push_rendered.sh'
+      - 'tools/test_push_rendered.sh'
+      - '.github/workflows/cardnews-render.yml'
+      - '.github/workflows/concept-sheet-render.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 회귀 시험
+        run: bash tools/test_push_rendered.sh

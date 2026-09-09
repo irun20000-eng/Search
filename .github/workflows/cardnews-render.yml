@@ -146,16 +146,18 @@ jobs:
           git add cardnews/ link-index.json backlog.json
           git commit -m "chore(cardnews): ${{ steps.pick.outputs.series }} ${{ steps.pick.outputs.episode }} 렌더 반입 [skip ci]"
           # concept-sheet-render 가 같은 push 로 깨어나 같은 브랜치에 커밋한다.
-          # 늦게 끝난 쪽은 `! [rejected] (fetch first)` 로 죽고 그 커밋은 러너와 함께 사라진다
-          # (2026-08-27 발견노트 EP3 에서 개념 한 장이 이렇게 유실됐다).
-          # 산출물 경로가 겹치지 않으므로 rebase 재시도로 안전하게 붙일 수 있다.
-          for i in 1 2 3; do
-            git push && exit 0
-            echo "::notice::push 거절($i/3) — 다른 워크플로가 같은 브랜치에 밀어 넣었다. rebase 후 재시도"
-            git pull --rebase origin "${GITHUB_REF#refs/heads/}"
-          done
-          echo "::error::3회 시도했는데도 push 하지 못했다 — 컷이 브랜치에 없다"
-          exit 1
+          # 늦게 끝난 쪽은 `! [rejected] (fetch first)` 로 죽고 그 커밋은 러너와 함께 사라진다.
+          #
+          # ⚠ 여기 있던 종전 주석("산출물 경로가 겹치지 않으므로 rebase 재시도로 안전하다")은
+          #    **틀렸다.** 경로는 안 겹치지만 두 워크플로가 `link-index.json`·`backlog.json` 을
+          #    둘 다 재생성하므로 rebase 가 CONFLICT 로 멈추고, 재시도 루프는 충돌을 풀 줄
+          #    몰라 exit 1 이 된다. 실제로 세 번 났다 — 2026-08-27 발견노트 EP3(개념 한 장
+          #    유실) · 2026-09-03 일머리 EP4 · 2026-09-08 숫자노트 EP5(컷 10장 유실).
+          #
+          # 그래서 재시도를 tools/push_rendered.sh 로 옮겼다. 충돌한 산출물은 병합하지 않고
+          # **합쳐진 소스에서 다시 만든다**(LESSONS 2026-08-25). 그 셸 로직의 회귀 시험은
+          # tools/test_push_rendered.sh 이고 push-retry-test.yml 이 PR마다 돌린다.
+          bash tools/push_rendered.sh "${GITHUB_REF#refs/heads/}" python tools/build_link_index.py
 
       - name: 모아보기를 아티팩트로
         if: steps.pick.outputs.skip != '1'
