@@ -33,13 +33,23 @@ def main():
         kind = note.parent.name.split('-')[0]
         tot[kind] += 1
         body = note.read_text(encoding='utf-8')
-        if re.search(r'^이미지:', body, re.M):
+        # ⚠ `이미지:` 가 있다고 도해가 아니다 — MATH_PIPELINE M3 은 같은 필드에
+        #   `assets/portraits/` PD 초상도 넣게 돼 있다. 초상이 들어오는 날 이 도구가
+        #   도해 없는 노트를 「보유」로 세게 된다. 그래서 경로까지 본다.
+        if re.search(r'^이미지:', body, re.M) and 'assets/figures/' in body:
             has[kind] += 1
         # ⚠ 한 노트가 같은 파일을 **두 번** 적는다 — frontmatter 의 `이미지.파일` 과
         #   본문 임베드. 낱개로 세면 거의 모든 SVG 가 「2곳에 물림」으로 찍힌다(첫 판이 그랬다).
         #   세려는 것은 **몇 편의 노트가 쓰는가**이므로 노트 단위로 집합을 만든다.
         for f in set(re.findall(r'assets/figures/([\w-]+\.svg)', body)):
             used[f] += 1
+
+    # 유형 넷 밖의 접두사가 생기면 머리글 합계에는 들어가고 표에는 한 줄도 안 찍혀
+    # **총계와 표가 조용히 어긋난다.** 여기서 끊는다(세는 단위가 틀리는 것이 이 도구의 실패 양식이다).
+    unknown = sorted(set(tot) - {k for k, _ in TYPES})
+    if unknown:
+        print('⚠ TYPES 에 없는 슬러그 접두사: %s — 표와 총계가 어긋난다. TYPES 를 늘릴 것.'
+              % ', '.join(unknown))
 
     svgs = sorted(p.name for p in (ROOT / 'math/assets/figures').glob('*.svg'))
     print('도해 SVG %d장 · 도해를 가진 노트 %d편 / 전체 %d편'

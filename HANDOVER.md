@@ -329,6 +329,18 @@ python3 tools/sync_obsidian.py --check --only reports
 | 2026-09-09 | `archimedes-sphere-cylinder` · `bernoulli-two-spirals` · `huygens-cycloid` | 인물 2 · **일화 1(첫 도해)** |
 | 2026-09-09 | `area-function-strip` · `riemann-rectangles-refine` · `conic-sections-three-cuts` | 개념 2 · 세기 1 |
 
+**열려 있는 판단 — 도해 글꼴 계열 혼용 5장(2026-09-09).** `math/` 톤은 「세리프 본문」이
+사용자 승인 예외(CLAUDE.md)인데 도해 17장 중 다섯이 거기서 벗어나 있다.
+
+| | 도해 |
+|---|---|
+| 한 그림 안에서 섞임 3장 | `binomial-to-normal`(세4·산7) · `dedekind-cut-three-cases`(세10·산4) · `vibrating-string-initial-shape`(세1·산11 — 사실상 산세리프) |
+| 전부 산세리프 2장 | `least-squares-residuals` · `riemann-vs-lebesgue-slicing` |
+
+**「3장」으로 적으면 다음 사람이 두 장을 놓친다**(2026-09-09 에 실제로 그렇게 보고했다가 검수가
+전수로 세어 정정했다). 이건 정확성이 아니라 **톤 결정**이라 `math/_design/mockup-v1.html` 목업과
+같은 승인 경로를 밟아야 한다 — 세션이 임의로 통일하지 말 것.
+
 **부채가 가장 큰 곳은 인물 노트다** — 절대 다수가 아직 도해가 없다(정확한 수는 위 명령).
 다음 대상은 「도형어가 많은 노트」가 아니라 **「그 절이 그림으로 논증하고 있는 노트」**로 고른다.
 2026-09-09 에 그 기준으로 재니 `concept-fundamental-theorem` §2 가 소제목을
