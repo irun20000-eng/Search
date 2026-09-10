@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="왼쪽은 원에 정육각형과 정십이각형을 겹쳐 내접시킨 그림이고, 오른쪽은 그중 A에서 B까지 한 조각을 2.9배로 키운 그림이다. 확대도에서 정십이각형이 정육각형에 더한 삼각형에 기호 ㄱ 이, 그 바깥으로 원이 정십이각형보다 넓은 활꼴 둘에 기호 ㄴ 이 붙어 있다. ㄴ 이 ㄱ 보다 눈에 띄게 얇다">
+  <title>유휘의 할원술 — 원의 넓이를 두 다각형 사이에 가둔다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+  </style>
+  <rect width="700" height="392" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">원의 넓이를 두 다각형 사이에 가둔다 — 유휘의 할원술</text>
+
+  <g>
+    <path d="M 170.0,77.0 A 108.0 108.0 0 0 1 224.0,91.5 Z" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.20"/>
+    <path d="M 224.0,91.5 A 108.0 108.0 0 0 1 263.5,131.0 Z" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.20"/>
+    <polygon points="170.0,77.0 224.0,91.5 263.5,131.0" fill="#CEDCE6" stroke="#3A5C77" stroke-width="1.30"/>
+    <circle cx="170.0" cy="185.0" r="108.0" fill="none" stroke="#221E18" stroke-width="2"/>
+    <polygon points="170.0,77.0 224.0,91.5 263.5,131.0 278.0,185.0 263.5,239.0 224.0,278.5 170.0,293.0 116.0,278.5 76.5,239.0 62.0,185.0 76.5,131.0 116.0,91.5" fill="none" stroke="#3A5C77" stroke-width="1.4"/>
+    <polygon points="170.0,77.0 263.5,131.0 263.5,239.0 170.0,293.0 76.5,239.0 76.5,131.0" fill="none" stroke="#9C5A2C" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <circle cx="170.0" cy="185.0" r="2.4" fill="#8A7F6E"/>
+    <line x1="170.0" y1="185.0" x2="170.0" y2="77.0" stroke="#8A7F6E" stroke-width="1.1"/>
+  </g>
+  <text x="146" y="145" font-size="13" class="ax">r</text>
+  <text x="165" y="62" font-size="13" class="ax">A</text>
+  <text x="286" y="126" font-size="13" class="ax">B</text>
+
+  <g transform="translate(-143.00,-135.30) scale(2.9)">
+    <path d="M 170.0,77.0 A 108.0 108.0 0 0 1 224.0,91.5 Z" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="0.41"/>
+    <path d="M 224.0,91.5 A 108.0 108.0 0 0 1 263.5,131.0 Z" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="0.41"/>
+    <polygon points="170.0,77.0 224.0,91.5 263.5,131.0" fill="#CEDCE6" stroke="#3A5C77" stroke-width="0.51"/>
+    <path d="M 170.0,77.0 A 108.0 108.0 0 0 1 263.5,131.0" fill="none" stroke="#221E18" stroke-width="0.69"/>
+    <polyline points="170.0,77.0 224.0,91.5 263.5,131.0" fill="none" stroke="#3A5C77" stroke-width="0.48"/>
+    <line x1="170.0" y1="77.0" x2="263.5" y2="131.0" stroke="#9C5A2C" stroke-width="0.48" stroke-dasharray="2.07 1.38"/>
+  </g>
+  <text x="336" y="82" font-size="13" class="ax">A</text>
+  <text x="503" y="118" font-size="13" class="ax">C</text>
+  <text x="628" y="250" font-size="13" class="ax">B</text>
+
+  <line x1="398" y1="76" x2="428" y2="95" stroke="#9C5A2C" stroke-width="1"/>
+  <text x="368" y="72" font-size="14" class="sien">ㄴ</text>
+  <line x1="537" y1="217" x2="507" y2="157" stroke="#3A5C77" stroke-width="1"/>
+  <text x="540" y="226" font-size="14" class="blue">ㄱ</text>
+
+  <text x="46" y="318" font-size="13" class="dim">파선이 정6각형, 그 안쪽 실선이 정12각형이다. 오른쪽은 A 에서 B 까지 한 조각을 2.9배로 키운 것이다.</text>
+  <text x="46" y="340" font-size="13.5">조각마다 ㄴ 이 ㄱ 보다 얇다 — 원의 넓이는 정12각형보다 크고, 정12각형 + ㄱ 보다 작다.</text>
+  <text x="46" y="362" font-size="13" class="dim">6 → 12 → 24 → 48 → 96 → 192 로 되풀이하면 이 폭이 좁아진다. 유휘는 정192각형까지 갔다.</text>
+</svg>
