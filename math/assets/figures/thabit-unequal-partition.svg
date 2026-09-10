@@ -6,7 +6,7 @@
     .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
   </style>
   <rect width="700" height="392" fill="#FFFDF7"/>
-  <text x="60" y="30" font-size="16">y = √x 아래의 넓이 — 폭이 저마다 다른 구간으로</text>
+  <text x="60" y="27" font-size="16">y = √x 아래의 넓이 — 폭이 저마다 다른 구간으로</text>
   <rect x="111.2" y="276.0" width="42.4" height="54.0" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.2"/>
   <rect x="153.6" y="236.5" width="68.9" height="93.5" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.2"/>
   <rect x="222.5" y="195.0" width="106.0" height="135.0" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.2"/>
@@ -29,7 +29,7 @@
   <line x1="461.0" y1="330" x2="461.0" y2="336" stroke="#8A7F6E" stroke-width="1.1"/>
   <line x1="620.0" y1="330" x2="620.0" y2="336" stroke="#8A7F6E" stroke-width="1.1"/>
   <text x="652" y="334" font-size="14" font-style="italic" class="ax">x</text>
-  <text x="74" y="46" font-size="14" font-style="italic" class="ax">y</text>
+  <text x="74" y="68" font-size="14" font-style="italic" class="ax">y</text>
   <text x="86" y="352" font-size="13" class="ax">0</text>
   <text x="614" y="352" font-size="13" class="ax">1</text>
   <text x="470" y="196" font-size="13.5" class="sien">아래 합 — 칠한 칸</text>
