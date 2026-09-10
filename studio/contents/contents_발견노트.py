@@ -179,7 +179,7 @@ EP4 = {
  "content": {
   "series": SERIES,
   "s1": {"kick":"도입",
-         "head":'숫자는 왜<br>자꾸<br><span class="ac">1로 시작할까</span>',
+         "head":'숫자는<br>왜 자꾸<br><span class="ac">1로 시작할까</span>',
          "sub":"벤포드의 법칙"},
   "s2": {"kick":"궁금증",
          "head":"1부터 9까지<br>공평하지<br>않을까",
