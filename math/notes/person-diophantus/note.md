@@ -73,7 +73,7 @@
     URL: https://terms.naver.com/entry.naver?docId=3582427&cid=60204&categoryId=60204
     유형: 2차
   - 번호: 14
-    제목: Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 『알자브르』가 이차방정식을 여섯 가지 기본 유형으로 분류해 각각의 대수적·기하학적 해법을 세웠고 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 가 복원·완성을 뜻하며 그 낱말이 algebra 가 되었다는 것
+    제목: Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 『알자브르』가 이차방정식을 여섯 가지 기본 유형으로 분류해 각각의 대수적·기하학적 해법을 세웠다는 것, al-jabr 가 복원·완성을 뜻하며 그 낱말이 algebra 가 되었다는 것
     URL: https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing
     유형: 2차
   - 번호: 15
