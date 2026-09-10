@@ -944,7 +944,7 @@
     },
     {
      "번호": 14,
-     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 『알자브르』가 이차방정식을 여섯 가지 기본 유형으로 분류해 각각의 대수적·기하학적 해법을 세웠고 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 가 복원·완성을 뜻하며 그 낱말이 algebra 가 되었다는 것",
+     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 『알자브르』가 이차방정식을 여섯 가지 기본 유형으로 분류해 각각의 대수적·기하학적 해법을 세웠다는 것, al-jabr 가 복원·완성을 뜻하며 그 낱말이 algebra 가 되었다는 것",
      "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
      "유형": "2차"
     },
@@ -1115,7 +1115,7 @@
     },
     {
      "번호": 12,
-     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(인포박스 발행연도 820, 본문 \"written in Baghdad around 820\"), 다만 보이어를 인용한 대목은 825로 적어 자료 안에서도 값이 갈린다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
+     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(인포박스 발행연도 820, 본문 \"written in Baghdad around 820\"), 다만 각주로 인용된 카츠·바턴(2006)은 825로 적어 자료 안에서도 값이 갈린다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
      "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
      "유형": "2차"
     },
@@ -1142,7 +1142,7 @@
    "세기전체": [
     9
    ],
-   "자수": 8666,
+   "자수": 8674,
    "시각화": 5
   },
   {
@@ -1246,7 +1246,7 @@
     },
     {
      "번호": 8,
-     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(본문 \"written in Baghdad around 820\"·인포박스 820, 보이어를 인용한 대목은 825), 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
+     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(본문 \"written in Baghdad around 820\"·인포박스 820, 각주로 인용된 카츠·바턴(2006)은 825), 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
      "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
      "유형": "2차"
     },
@@ -1279,7 +1279,7 @@
    "세기전체": [
     9
    ],
-   "자수": 7334,
+   "자수": 7348,
    "시각화": 7
   },
   {

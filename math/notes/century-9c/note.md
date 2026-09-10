@@ -91,7 +91,7 @@
     URL: https://handwiki.org/wiki/Organization:House_of_Wisdom
     유형: 2차
   - 번호: 12
-    제목: Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(인포박스 발행연도 820, 본문 "written in Baghdad around 820"), 다만 보이어를 인용한 대목은 825로 적어 자료 안에서도 값이 갈린다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것
+    제목: Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(인포박스 발행연도 820, 본문 "written in Baghdad around 820"), 다만 각주로 인용된 카츠·바턴(2006)은 825로 적어 자료 안에서도 값이 갈린다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것
     URL: https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing
     유형: 2차
   - 번호: 13
@@ -176,7 +176,7 @@ MacTutor 는 이 점을 분명히 적는다 — 이 시기의 아랍어 번역�
 
 알 콰리즈미(780?~850?)는 중세 이슬람의 가장 중요한 수학자로 인정받으며 **'대수학의 아버지'**로 불린다. 다만 그 존칭은 고대 그리스의 디오판토스도 함께 받는다 [4]. 그는 바그다드의 알 마문 도서관과 천문대에서 일하며 **그리스와 인도의 지식을 서로 조화시켰다** [5].
 
-**820년 무렵** 칼리프 마문의 권유로 쓴 책의 원제가 『**al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala**』다 [12][14]. ⚠ **연도는 자료마다 갈린다** — 같은 문서가 본문에서는 820을, 보이어를 인용한 대목에서는 825를 적고, 편찬 시기를 **813~833년 사이**로만 적는 자료도 있다 [12][14]. 이 책이 한 일은 이렇다.
+**820년 무렵** 칼리프 마문의 권유로 쓴 책의 원제가 『**al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala**』다 [12][14]. ⚠ **연도는 자료마다 갈린다** — 같은 문서가 본문에서는 820을, 각주로 인용한 카츠·바턴(2006)에서는 825를 적고, 편찬 시기를 **813~833년 사이**로만 적는 자료도 있다 [12][14]. 이 책이 한 일은 이렇다.
 
 - 이차방정식을 **여섯 가지 기본 유형으로 분류**했다 [12].
 - 각 유형마다 **대수적 해법과 기하학적 해법을 함께** 제시했다 [12].
