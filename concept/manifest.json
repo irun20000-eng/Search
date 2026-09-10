@@ -1,6 +1,28 @@
 {
- "count": 10,
+ "count": 11,
  "notes": [
+  {
+   "slug": "benfords-law",
+   "title": "벤포드의 법칙(Benford's Law) — 이해편(입문·딥)",
+   "date": "2026-09-10",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "통계",
+    "확률",
+    "로그",
+    "벤포드",
+    "첫자리수",
+    "회계부정",
+    "데이터리터러시",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 4편 · 숫자는 1로 시작하기를 좋아한다",
+   "chars": 11288,
+   "pic": "benfords-law.png",
+   "path": "concept/notes/benfords-law.md"
+  },
   {
    "slug": "regression-to-the-mean",
    "title": "평균으로의 회귀(Regression to the Mean) — 이해편(입문·딥)",
