@@ -1456,6 +1456,165 @@
    "시각화": 7
   },
   {
+   "유형": "세기",
+   "제목": "14세기",
+   "슬러그": "century-14c",
+   "날짜": "2026-09-10",
+   "별칭": [
+    "14세기",
+    "십사세기",
+    "잊힌 세기"
+   ],
+   "볼트파일명": "세기_14세기",
+   "세기": [
+    14
+   ],
+   "분야": [
+    "해석학",
+    "급수",
+    "삼각법",
+    "좌표기하",
+    "운동학"
+   ],
+   "난이도": "개관",
+   "요약": "파리와 케랄라에서 「무한히 더해도 되는가」를 각자 건드린 세기. 두 성취 모두 원본이 남지 않아 뒷사람이 다시 발견해야 했고, 다시 발견됐다는 사실조차 한 번 더 잊혔다.",
+   "태그": [
+    "수학사",
+    "14세기",
+    "오렘",
+    "마다바",
+    "케랄라학파",
+    "조화급수",
+    "무한급수",
+    "발산",
+    "원주율",
+    "흑사병",
+    "백년전쟁",
+    "위시"
+   ],
+   "기여인물": [],
+   "연대": {
+    "시작": 1301,
+    "끝": 1400
+   },
+   "시대이슈": [
+    "유럽에 흑사병이 돌아 인구가 크게 줄고 학문·예술의 인력이 끊김",
+    "잉글랜드와 프랑스의 긴 전쟁이 시작돼 왕실 후원의 우선순위가 바뀜",
+    "대학이 자리를 잡아 파리·옥스퍼드에서 운동과 변화를 따지는 논의가 이어짐",
+    "남인도 케랄라에서 천문 계산을 중심으로 한 학파가 형성됨",
+    "필사가 유일한 복제 수단이라 한 계보가 끊기면 결과도 함께 사라짐"
+   ],
+   "세계사사건": [
+    {
+     "연도": 1328,
+     "사건": "프랑스 왕 샤를 4세가 죽자 잉글랜드 왕 에드워드 3세가 왕위 계승자를 자처",
+     "수학과의연결": "이 요구가 백년전쟁으로 이어진다. 오렘은 그 전쟁 중의 프랑스 궁정에서 일했다"
+    },
+    {
+     "연도": 1347,
+     "사건": "흑사병이 유럽에 퍼지기 시작했다는 것이 일반적인 설인 해",
+     "수학과의연결": "오렘이 조화급수를 다룬 1350년 무렵이 바로 이 시기다"
+    },
+    {
+     "연도": 1350,
+     "사건": "오렘이 조화급수의 발산을 증명",
+     "수학과의연결": "항이 0으로 가는데도 합이 무한히 커질 수 있음을 처음 보인 자리다"
+    },
+    {
+     "연도": 1377,
+     "사건": "오렘이 리지외 주교로 임명됨",
+     "수학과의연결": "같은 해 『천체와 지상계에 관한 책』에서 지구의 자전을 논했다"
+    },
+    {
+     "연도": 1400,
+     "사건": "마다바가 사인·코사인·아크탄젠트 급수를 얻은 것으로 전해지는 무렵",
+     "수학과의연결": "유럽이 같은 급수에 이르는 것은 270년 안팎 뒤다"
+    }
+   ],
+   "이미지": [
+    {
+     "파일": "assets/figures/oresme-harmonic-grouping.svg",
+     "설명": "조화급수의 첫 열여섯 항을 막대로 그리고, 두 번째 항부터 1·2·4·8개씩 묶어 각 묶음을 그 안의 가장 작은 항 높이로 깎은 파선 직사각형을 겹친 그림. 깎고도 칸 수 × 그 높이가 ½ 이라는 것이 발산의 근거다",
+     "출처": "직접 제작",
+     "라이선스": "CC0"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "네이버 지식백과(수학백과) 「조화급수」 — 조화급수의 부분합이 아주 느리게 커져 수렴하는 것처럼 보이는 탓에 수렴·발산 여부가 오랜 연구 주제였다는 것, 발산을 최초로 증명한 사람이 1350년경 오렘(Oresme, N. ; 1320~1382)이었다는 것, 이후 1647년 멩골리(Mengoli, P.)와 1687년 베르누이 형제(Johann Bernoulli와 Jakob Bernoulli) 등이 여러 방법으로 증명했다는 것, 그리고 항을 2의 거듭제곱 단위로 묶어 각 묶음을 그 안의 가장 작은 항으로 낮춰도 ½ 이 되므로 H(2ⁿ) > 1 + n/2 가 된다는 증명 전문",
+     "URL": "https://terms.naver.com/entry.naver?docId=4125442&cid=60207&categoryId=60207",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(사진으로 이해하는 수학의 모든 것) 「중세 유럽 수학」 — 피보나치 다음으로 위대한 중세 수학자가 프랑스인 니콜 오렘(Nicole Oresme, 1323~1382)이라는 것, 그가 최초로 분수지수를 연구하고 무한급수에 대해 집필했다는 것, 그의 가장 큰 수학적 업적이 데카르트보다 수 세기 앞서 좌표기하학의 한 형태를 제안한 것이라는 것, 일정하게 가속하는 물체가 그 평균속력으로 이동하는 물체와 같은 거리를 간다는 것을 그래프로 증명하며 최초로 도식 해법을 썼다는 것, 시간·속력·거리를 나타내는 그래프를 처음 그린 것으로 추정된다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582428&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(사진으로 이해하는 수학의 모든 것) 「중세 인도 수학」 — 14세기 인도 수학자 산가마그라마의 마다바가 이끄는 천문학자·수학자 학파가 남인도 케랄라 지역에서 활동했다는 것, 케랄라 학파가 아주 작은 분수의 값들로 0에 한없이 다가가는 무한소 개념을 상당히 진전시켰다는 것, 마다바가 π를 많은 분수를 교대로 더하고 빼는 무한급수로 나타낼 수 있음을 알아냈다는 것. (같은 항목이 앞 시대의 아리아바타가 π의 근삿값과 사인표를 남겼고 그것이 무리수임을 인식하고 있었다고 적는다)",
+     "URL": "https://terms.naver.com/entry.naver?docId=3582421&cid=60204&categoryId=60204",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(교양인문) 「흑사병」 — 흑사병이 14세기 중반 1347년 무렵 유럽에 전파되었다는 것이 일반적인 설이라는 것, 당시 기록에 따르면 전 유럽 인구의 1/3 내지 1/4이 사망했고 숫자로는 2500만에서 6000만 명에 이르며 두 숫자의 간격이 지속 기간과 지역별 집계 차이에서 온다는 것, 그 공포가 \"우선 예술의 후퇴를 가져왔다\"는 것과 예술가가 사라진 자리를 메우는 데 오랜 시간이 필요했다는 것, 노동력 부족으로 임금이 급등하고 수도원 피해로 성직자가 급감해 자격 요건이 완화됐다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699347&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(교양인문) 「백년전쟁」 — 1328년 프랑스 왕 샤를 4세가 서거하자 기옌 공작을 겸하던 잉글랜드 왕 에드워드 3세가 프랑스 왕위 계승자를 자처했고, 왕위를 요구하면서 플랑드르 지방에 군대를 파견해 100년이 넘는 전쟁의 막이 올랐다는 것, 그 전쟁이 1453년에 끝났다는 것, 이를 기점으로 프랑스인은 독자적 국가라는 인식을 굳히고 잉글랜드는 유럽 대륙 정치에 관여하려는 사고에서 벗어나게 됐다는 것",
+     "URL": "https://terms.naver.com/entry.naver?docId=1699236&cid=42050&categoryId=42050",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "MacTutor, Nicholas Oresme — 1323년 프랑스 알르마뉴에서 나 1382년 7월 11일 리지외에서 죽었다는 것, 샤를이 그 공로로 1377년 그를 리지외 주교로 임명했다는 것, 『질과 운동의 배치에 관하여』에서 값을 표로 적는 것과 그래프로 그리는 것이 논리적으로 같음을 알아내 데카르트에 앞서 일종의 좌표기하를 만들었다는 것, 한 변수의 값이 다른 변수에 따라 달라질 때 그것을 그래프로 그리자고 제안했다는 것, 등가속 운동하는 물체가 일정 시간에 간 거리가 그 시간 중간 지점의 속력으로 등속 운동했을 때와 같다는 머튼 정리를 처음 증명했다는 것, 『비들의 비에 관하여』에 분수 지수의 최초 사용이 들어 있다는 것, 무한급수를 다뤘고 지구 바깥의 무한한 허공을 주장했다는 것, 1377년 『천체와 지상계에 관한 책』에서 아리스토텔레스의 정지한 지구설에 반대해 코페르니쿠스보다 200년쯤 앞서 지구의 자전을 제안했다는 것, **다만 같은 페이지가 클라제트를 인용해 「데카르트에 앞선 해석기하의 발명·갈릴레오에 앞선 자유낙하 법칙·코페르니쿠스에 앞선 지구 자전 주장」이라는 귀속들에 대해 「이 주장들 가운데 어느 것도 사실이 아니다」라고 적고, 오렘이 책 끝에서 자기 생각을 스스로 물렸으므로 지구 자전을 먼저 주장했다고 볼 수 없다고 못 박는다는 것**",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Oresme/",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, Nicole Oresme — 1325년 1월 1일에 나 1382년 7월 11일에 죽은 프랑스 철학자로 리지외 주교이자 샤를 5세의 고문이었고 14세기 유럽에서 가장 독창적인 사상가의 한 사람이라는 것, 1342년에 이미 학예 정교수였다는 것, 1369년 무렵 샤를 5세의 요청으로 아리스토텔레스 번역을 시작해 1371년 연금을 받고 1377년 리지외 주교로 임명됐다는 것, 조화급수 발산의 첫 증명을 세웠다는 것과 그 증명의 상세(2의 거듭제곱 n에 대해 1/(n/2) 과 1/n 사이의 항들이 각각 1/n 이상이고 그 수가 n/2 이라 합이 ½ 이상이 되므로, 전체가 1 + ½ + ½ + … 보다 크다), 처음 n 항의 합이 최소한 (1/2)log₂n 만큼 빨리 커진다는 것, 그가 이를 처음 증명했으나 **증명이 유실된 뒤 17세기까지 다시 증명되지 않았고** 1647년 이탈리아의 피에트로 멩골리와 1687년 스위스의 요한 베르누이가 다시 증명했다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Nicole_Oresme",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Madhava — 1350년 케랄라 상가마그라마(코친 부근)에서 나 1425년에 죽은 남인도 수학자라는 것, **마다바의 수학 저작은 전부 소실됐고** 천문학 저작 일부만 남아 그의 업적이 대체로 약 100년 뒤 닐라칸타 같은 다른 케랄라 수학자들의 보고를 통해 알려졌다는 것, 그가 1400년 무렵 sin·cos·arctan 의 매클로린 전개에 해당하는 급수를 발견했고 이는 유럽에서 다시 발견되기 200년도 더 전이라는 것, 예스타데바가 마다바의 급수를 서술한 대목(첫 항 이후 사인의 제곱을 곱하고 코사인의 제곱으로 나누기를 되풀이한 뒤 홀수 1, 3, 5, …로 나누고 홀수 번째와 짝수 번째 항을 각각 더하고 빼서 호를 얻는다)과 그 서술조차 제임스 그레고리의 재발견보다 100년 이상 앞선다는 것, 그가 소수 11자리까지 정확한 π 근삿값을 얻었다는 것, 조셉이 \"우리는 마다바를 수학적 해석학의 창시자로 볼 수 있다\"고 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Madhava/",
+     "유형": "2차"
+    },
+    {
+     "번호": 9,
+     "제목": "HandWiki, Madhava series — 마다바 급수가 사인·코사인·아크탄젠트의 테일러 전개 셋을 가리키며 14세기 또는 15세기 케랄라에서 마다바(약 1350~약 1425) 또는 그를 잇는 케랄라 학파 사람들이 발견했다는 것, **현존하는 마다바의 저작 어디에도 오늘날 마다바 급수라 불리는 식들에 대한 명시적 서술이 없고** 후대 케랄라 수학자 닐라칸타 소마야지(1444~1544)와 예스타데바의 글에서 그에게 돌려진다는 것, 사인·코사인 급수는 1669년 뉴턴이, 아크탄젠트 급수는 1671년 제임스 그레고리와 1673년 라이프니츠가 다시 발견했고 관례상 그레고리 급수라 불린다는 것, 마다바의 선취를 인정해 최근 문헌에서 마다바–뉴턴 급수·마다바–그레고리 급수·마다바–라이프니츠 급수로도 부른다는 것",
+     "URL": "https://handwiki.org/wiki/Madhava_series",
+     "유형": "2차"
+    },
+    {
+     "번호": 10,
+     "제목": "MacTutor, Indian mathematics — 이 시기의 가장 두드러진 기여가 마다바에게서 나왔고 그가 케랄라 출신으로 닐라칸타·예스타데바 같은 추종자 학파를 낳았다는 것, 케랄라 수학자들의 발견 목록(황도 공식, 뉴턴–가우스 보간 공식, 무한급수의 합 공식, 원에 내접하는 사각형의 외접원 반지름에 대한 륄리에 공식)과 그중 특히 **급수를 써서 얻은 최초의 π 근삿값**이 흥미롭다는 것, 마다바의 다른 π 공식 하나가 3.14159265359 라는 근삿값으로 이어진다는 것, **케랄라 수학자들이 유럽의 미적분 결과 가운데 일부를 300년 가까이 앞질렀다는 것을 근대에 처음 알아차린 사람이 찰스 위시(이 자료는 그 시점을 1835년으로 적는다)**였고 **100년이 지난 1940년대에야** 사학자들이 케랄라 수학자들의 저작을 자세히 들여다보고 위시의 주장이 대체로 참임을 확인했다는 것, 위시가 그 저작들이 \"유율법의 완전한 체계의 토대를 놓았다\"고 썼다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Indian_mathematics/",
+     "유형": "2차"
+    },
+    {
+     "번호": 11,
+     "제목": "MacTutor, Charles Whish — 1795년 1월 9일 런던 메릴본에서 나 1833년 4월 14일에 죽은 동인도회사 소속 영국 공무원으로, 케랄라 천문·수학 학파의 성취를 서양 수학계에 처음 알린 사람이라는 것, 그의 유명한 논문 「힌두의 원의 구적과 원주 대 지름 비의 무한급수에 관하여 — 탄트라 상그라함·육티 바샤·카라나 파다티·사드라트나말라 네 사스트라에 나타난」이 **1834년** 『왕립아시아학회 회보』에 실렸다는 것, 그가 \"이런 형태의 무한급수의 발명이 말라바르에서 비롯되었다는 것은 내가 의심의 여지 없이 확인한 사실\"이라고 적었다는 것, 그가 사인·코사인 급수와 그 증명에 관한 별도의 논문을 예고했다는 것, 그의 논문이 이후 100년 동안 완전히 잊힌 것은 아니고 **대체로 무시되었다**고 말하는 편이 공정하다는 것, 그리고 인용된 논평이 이 주장과 마다바의 업적이 서양 사학자들에게 무시된 이유를 \"처음에는 인도인이 미적분을 발견했다는 것을 인정할 수 없었기 때문이고 나중에는 아무도 그 회보를 읽지 않았기 때문\"으로 짚으며 **문제가 1950년대에 다시 떠올랐다**는 것과 \"많은 사학자가 여전히 그 문제와 해법을 미적분 말고 다른 것으로는 생각하지 못해 마다바가 발견한 것이 미적분이라고 선언한다\"고 적는다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Whish/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/century-14c/note.md",
+   "세기전체": [
+    14
+   ],
+   "자수": 10283,
+   "시각화": 6
+  },
+  {
    "유형": "개념",
    "제목": "무한급수",
    "슬러그": "concept-series",
@@ -12144,6 +12303,7 @@
     "person-al-khwarizmi"
    ],
    "14": [
+    "century-14c",
     "concept-series"
    ],
    "16": [
@@ -12300,6 +12460,76 @@
    ]
   },
   "분야": {
+   "해석학": [
+    "century-14c",
+    "century-17c",
+    "century-18c",
+    "century-19c",
+    "century-20c",
+    "concept-analysis-rigor",
+    "concept-analysis-rigor-advanced",
+    "concept-calculus-of-variations",
+    "concept-complex-number",
+    "concept-differential-equation",
+    "concept-differential-equation-advanced",
+    "concept-differentiation",
+    "concept-differentiation-advanced",
+    "concept-function",
+    "concept-fundamental-theorem",
+    "concept-integration",
+    "concept-integration-advanced",
+    "concept-logarithm",
+    "concept-logarithm-advanced",
+    "concept-series",
+    "concept-series-advanced",
+    "episode-cantor-letter-1877",
+    "episode-dedekind-nov24",
+    "episode-lebesgue-coins",
+    "episode-prague-1834",
+    "episode-priority-dispute",
+    "person-archimedes",
+    "person-barrow",
+    "person-bayes",
+    "person-berkeley",
+    "person-bolzano",
+    "person-cantor",
+    "person-cauchy",
+    "person-cavalieri",
+    "person-dalembert",
+    "person-de-moivre",
+    "person-dedekind",
+    "person-dirichlet",
+    "person-euler",
+    "person-fermat",
+    "person-fourier",
+    "person-gregory",
+    "person-heine",
+    "person-jakob-bernoulli",
+    "person-lagrange",
+    "person-laplace",
+    "person-lebesgue",
+    "person-leibniz",
+    "person-newton",
+    "person-riemann",
+    "person-saint-vincent",
+    "person-wallis",
+    "person-weierstrass"
+   ],
+   "급수": [
+    "century-14c"
+   ],
+   "삼각법": [
+    "century-14c",
+    "century-16c",
+    "century-9c",
+    "person-viete"
+   ],
+   "좌표기하": [
+    "century-14c"
+   ],
+   "운동학": [
+    "century-14c"
+   ],
    "대수학": [
     "century-16c",
     "century-17c",
@@ -12355,71 +12585,12 @@
     "person-saint-vincent",
     "person-tartaglia"
    ],
-   "삼각법": [
-    "century-16c",
-    "century-9c",
-    "person-viete"
-   ],
    "수론": [
     "century-16c",
     "century-9c",
     "century-bc3",
     "person-euclid",
     "person-riemann"
-   ],
-   "해석학": [
-    "century-17c",
-    "century-18c",
-    "century-19c",
-    "century-20c",
-    "concept-analysis-rigor",
-    "concept-analysis-rigor-advanced",
-    "concept-calculus-of-variations",
-    "concept-complex-number",
-    "concept-differential-equation",
-    "concept-differential-equation-advanced",
-    "concept-differentiation",
-    "concept-differentiation-advanced",
-    "concept-function",
-    "concept-fundamental-theorem",
-    "concept-integration",
-    "concept-integration-advanced",
-    "concept-logarithm",
-    "concept-logarithm-advanced",
-    "concept-series",
-    "concept-series-advanced",
-    "episode-cantor-letter-1877",
-    "episode-dedekind-nov24",
-    "episode-lebesgue-coins",
-    "episode-prague-1834",
-    "episode-priority-dispute",
-    "person-archimedes",
-    "person-barrow",
-    "person-bayes",
-    "person-berkeley",
-    "person-bolzano",
-    "person-cantor",
-    "person-cauchy",
-    "person-cavalieri",
-    "person-dalembert",
-    "person-de-moivre",
-    "person-dedekind",
-    "person-dirichlet",
-    "person-euler",
-    "person-fermat",
-    "person-fourier",
-    "person-gregory",
-    "person-heine",
-    "person-jakob-bernoulli",
-    "person-lagrange",
-    "person-laplace",
-    "person-lebesgue",
-    "person-leibniz",
-    "person-newton",
-    "person-riemann",
-    "person-saint-vincent",
-    "person-wallis",
-    "person-weierstrass"
    ],
    "확률론": [
     "century-17c",
@@ -12747,6 +12918,7 @@
   },
   "유형": {
    "세기": [
+    "century-14c",
     "century-16c",
     "century-17c",
     "century-18c",
@@ -12847,6 +13019,7 @@
   },
   "태그": {
    "수학사": [
+    "century-14c",
     "century-16c",
     "century-17c",
     "century-18c",
@@ -12930,6 +13103,47 @@
     "person-tartaglia",
     "person-viete",
     "person-wallis"
+   ],
+   "14세기": [
+    "century-14c"
+   ],
+   "오렘": [
+    "century-14c"
+   ],
+   "마다바": [
+    "century-14c"
+   ],
+   "케랄라학파": [
+    "century-14c"
+   ],
+   "조화급수": [
+    "century-14c",
+    "concept-series"
+   ],
+   "무한급수": [
+    "century-14c",
+    "concept-series",
+    "concept-series-advanced",
+    "person-gregory"
+   ],
+   "발산": [
+    "century-14c"
+   ],
+   "원주율": [
+    "century-14c",
+    "century-3c",
+    "person-archimedes",
+    "person-gregory",
+    "person-viete"
+   ],
+   "흑사병": [
+    "century-14c"
+   ],
+   "백년전쟁": [
+    "century-14c"
+   ],
+   "위시": [
+    "century-14c"
    ],
    "16세기": [
     "century-16c",
@@ -13251,12 +13465,6 @@
    ],
    "할원술": [
     "century-3c"
-   ],
-   "원주율": [
-    "century-3c",
-    "person-archimedes",
-    "person-gregory",
-    "person-viete"
    ],
    "알렉산드리아": [
     "century-3c",
@@ -13736,18 +13944,10 @@
     "concept-probability-advanced",
     "person-de-moivre"
    ],
-   "무한급수": [
-    "concept-series",
-    "concept-series-advanced",
-    "person-gregory"
-   ],
    "급수": [
     "concept-series"
    ],
    "바젤 문제": [
-    "concept-series"
-   ],
-   "조화급수": [
     "concept-series"
    ],
    "발산급수": [
@@ -14684,6 +14884,200 @@
    ]
   },
   "역링크": {
+   "concept-series": [
+    {
+     "슬러그": "century-14c",
+     "제목": "14세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-analysis-rigor",
+     "제목": "해석학의 엄밀화",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-complex-number-advanced",
+     "제목": "복소수 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-differential-equation",
+     "제목": "미분방정식",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-integration",
+     "제목": "적분법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm",
+     "제목": "로그",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-logarithm-advanced",
+     "제목": "로그 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-gregory",
+     "제목": "제임스 그레고리",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-jakob-bernoulli",
+     "제목": "야코프 베르누이",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-leibniz",
+     "제목": "고트프리트 라이프니츠",
+     "유형": "인물",
+     "경로": "기여개념"
+    }
+   ],
+   "concept-analytic-geometry": [
+    {
+     "슬러그": "century-14c",
+     "제목": "14세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-17c",
+     "제목": "17세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-18c",
+     "제목": "18세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-algebra-notation",
+     "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-analytic-geometry-advanced",
+     "제목": "해석기하 (확장편)",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-complex-number",
+     "제목": "복소수",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-differentiation",
+     "제목": "미분법",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-function",
+     "제목": "함수 개념",
+     "유형": "개념",
+     "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-fundamental-theorem",
+     "제목": "미적분학의 기본정리",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "episode-descartes-fly",
+     "제목": "데카르트와 천장의 파리",
+     "유형": "일화",
+     "경로": "관련개념"
+    },
+    {
+     "슬러그": "person-descartes",
+     "제목": "르네 데카르트",
+     "유형": "인물",
+     "경로": "기여개념"
+    },
+    {
+     "슬러그": "person-euler",
+     "제목": "레온하르트 오일러",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-lagrange",
+     "제목": "조제프루이 라그랑주",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "century-9c": [
+    {
+     "슬러그": "century-14c",
+     "제목": "14세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "century-3c",
+     "제목": "3세기",
+     "유형": "세기",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-al-khwarizmi",
+     "제목": "알콰리즈미",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
+   "century-3c": [
+    {
+     "슬러그": "century-14c",
+     "제목": "14세기",
+     "유형": "세기",
+     "경로": "본문"
+    }
+   ],
    "concept-complex-number": [
     {
      "슬러그": "century-16c",
@@ -15440,80 +15834,6 @@
      "제목": "블레즈 파스칼",
      "유형": "인물",
      "경로": "관련인물"
-    }
-   ],
-   "concept-analytic-geometry": [
-    {
-     "슬러그": "century-17c",
-     "제목": "17세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "century-18c",
-     "제목": "18세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-algebra-notation",
-     "제목": "대수 기호법",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-analytic-geometry-advanced",
-     "제목": "해석기하 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-complex-number",
-     "제목": "복소수",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-differentiation",
-     "제목": "미분법",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-function",
-     "제목": "함수 개념",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-fundamental-theorem",
-     "제목": "미적분학의 기본정리",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "episode-descartes-fly",
-     "제목": "데카르트와 천장의 파리",
-     "유형": "일화",
-     "경로": "관련개념"
-    },
-    {
-     "슬러그": "person-descartes",
-     "제목": "르네 데카르트",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-lagrange",
-     "제목": "조제프루이 라그랑주",
-     "유형": "인물",
-     "경로": "본문"
     }
    ],
    "concept-differentiation": [
@@ -16292,86 +16612,6 @@
      "제목": "카를 바이어슈트라스",
      "유형": "인물",
      "경로": "본문"
-    }
-   ],
-   "concept-series": [
-    {
-     "슬러그": "century-18c",
-     "제목": "18세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-analysis-rigor",
-     "제목": "해석학의 엄밀화",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-complex-number",
-     "제목": "복소수",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-complex-number-advanced",
-     "제목": "복소수 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-differential-equation",
-     "제목": "미분방정식",
-     "유형": "개념",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "concept-integration",
-     "제목": "적분법",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-logarithm",
-     "제목": "로그",
-     "유형": "개념",
-     "경로": "후속개념"
-    },
-    {
-     "슬러그": "concept-logarithm-advanced",
-     "제목": "로그 (확장편)",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "concept-series-advanced",
-     "제목": "무한급수 확장편",
-     "유형": "개념",
-     "경로": "선행개념"
-    },
-    {
-     "슬러그": "person-euler",
-     "제목": "레온하르트 오일러",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-gregory",
-     "제목": "제임스 그레고리",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-jakob-bernoulli",
-     "제목": "야코프 베르누이",
-     "유형": "인물",
-     "경로": "기여개념"
-    },
-    {
-     "슬러그": "person-leibniz",
-     "제목": "고트프리트 라이프니츠",
-     "유형": "인물",
-     "경로": "기여개념"
     }
    ],
    "concept-series-advanced": [
@@ -18430,20 +18670,6 @@
      "경로": "본문"
     }
    ],
-   "century-9c": [
-    {
-     "슬러그": "century-3c",
-     "제목": "3세기",
-     "유형": "세기",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-al-khwarizmi",
-     "제목": "알콰리즈미",
-     "유형": "인물",
-     "경로": "본문"
-    }
-   ],
    "person-al-khwarizmi": [
     {
      "슬러그": "century-9c",
@@ -19547,6 +19773,11 @@
   }
  },
  "별칭": {
+  "14세기": "century-14c",
+  "century-14c": "century-14c",
+  "세기_14세기": "century-14c",
+  "십사세기": "century-14c",
+  "잊힌 세기": "century-14c",
   "16세기": "century-16c",
   "century-16c": "century-16c",
   "방정식의 세기": "century-16c",
