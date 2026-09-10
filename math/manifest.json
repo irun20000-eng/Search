@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09",
+ "generated": "2026-09-10",
  "notes": [
   {
    "유형": "세기",
@@ -1023,14 +1023,14 @@
      "수학과의연결": "번역과 연구를 함께 후원해 바그다드가 학문의 중심이 됐다"
     },
     {
-     "연도": 830,
+     "연도": 820,
      "사건": "알콰리즈미 『알자브르』 무렵",
      "수학과의연결": "이차방정식을 여섯 유형으로 갈라 절차로 푸는 책이 나왔다"
     },
     {
-     "연도": 836,
-     "사건": "사마라 천도",
-     "수학과의연결": "후원의 중심이 옮겨 가도 바그다드의 학문 활동은 이어졌다"
+     "연도": 833,
+     "사건": "알 마문 사망",
+     "수학과의연결": "번역과 연구를 함께 밀어 준 최대 후원자가 사라졌다"
     },
     {
      "연도": 901,
@@ -1110,12 +1110,12 @@
     {
      "번호": 11,
      "제목": "HandWiki, House of Wisdom — 디미트리 구타스가 「지혜의 집」의 존재와 그 형태·기능을 문제 삼으며 Bayt al-Hikma 가 '창고'를 뜻하는 Khizanat al-Hikma 의 오역이라 보고, 당대 사료에 그 이름이 거의 나오지 않는다고 지적한다는 것",
-     "URL": "https://handwiki.org/wiki/History:House_of_Wisdom",
+     "URL": "https://handwiki.org/wiki/Organization:House_of_Wisdom",
      "유형": "2차"
     },
     {
      "번호": 12,
-     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』이고 830년 무렵 칼리프 마문의 권유로 쓰였다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했으며 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
+     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(인포박스 발행연도 820, 본문 \"written in Baghdad around 820\"), 다만 보이어를 인용한 대목은 825로 적어 자료 안에서도 값이 갈린다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
      "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
      "유형": "2차"
     },
@@ -1127,7 +1127,7 @@
     },
     {
      "번호": 14,
-     "제목": "Wikipedia, Al-Khwarizmi — 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것",
+     "제목": "Wikipedia, Al-Khwarizmi — 『알자브르』가 **813년에서 833년 사이에 편찬**됐고 **선형·이차방정식의 최초의 체계적 해법**을 제시했다는 것, 그 책이 **대략 820년에 쓰였으며 칼리프 마문의 권유로** 집필됐다는 것, 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것",
      "URL": "https://en.wikipedia.org/wiki/Al-Khwarizmi",
      "유형": "2차"
     },
@@ -1142,7 +1142,7 @@
    "세기전체": [
     9
    ],
-   "자수": 7989,
+   "자수": 8666,
    "시각화": 5
   },
   {
@@ -1246,7 +1246,7 @@
     },
     {
      "번호": 8,
-     "제목": "Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』이고 830년 무렵 칼리프 마문의 권유로 쓰였다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했으며 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
+     "제목": "Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(본문 \"written in Baghdad around 820\"·인포박스 820, 보이어를 인용한 대목은 825), 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것",
      "URL": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
      "유형": "2차"
     },
@@ -1270,7 +1270,7 @@
     },
     {
      "번호": 12,
-     "제목": "Wikipedia, Al-Khwarizmi — 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것",
+     "제목": "Wikipedia, Al-Khwarizmi — 『알자브르』가 **813~833년 사이에 편찬**됐고 **선형·이차방정식의 최초의 체계적 해법**을 제시했다는 것, **대략 820년에 칼리프 마문의 권유로** 쓰였다는 것, 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것",
      "URL": "https://en.wikipedia.org/wiki/Al-Khwarizmi",
      "유형": "2차"
     }
@@ -1279,7 +1279,7 @@
    "세기전체": [
     9
    ],
-   "자수": 7205,
+   "자수": 7334,
    "시각화": 7
   },
   {

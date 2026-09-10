@@ -55,7 +55,7 @@
     URL: https://www.britannica.com/biography/al-Khwarizmi
     유형: 2차
   - 번호: 8
-    제목: Wikipedia, The Compendious Book on Calculation by Completion and Balancing — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』이고 830년 무렵 칼리프 마문의 권유로 쓰였다는 것, 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했으며 선형·이차방정식의 최초의 체계적 해법이라는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것
+    제목: Wikipedia, Al-Jabr (전 The Compendious Book on Calculation by Completion and Balancing) — 원제가 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』라는 것, 바그다드에서 **820년 무렵** 쓰였다는 것(본문 "written in Baghdad around 820"·인포박스 820, 보이어를 인용한 대목은 825), 이차방정식을 여섯 가지 기본 유형으로 분류해 대수적·기하학적 해법을 함께 제시했다는 것, al-jabr 는 복원·완성이고 al-muqābala 는 균형·대조라는 것
     URL: https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing
     유형: 2차
   - 번호: 9
@@ -71,7 +71,7 @@
     URL: https://handwiki.org/wiki/Organization:House_of_Wisdom
     유형: 2차
   - 번호: 12
-    제목: Wikipedia, Al-Khwarizmi — 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것
+    제목: Wikipedia, Al-Khwarizmi — 『알자브르』가 **813~833년 사이에 편찬**됐고 **선형·이차방정식의 최초의 체계적 해법**을 제시했다는 것, **대략 820년에 칼리프 마문의 권유로** 쓰였다는 것, 『지즈 알신드힌드』가 역법·천문 계산 37장과 116개 표(사인표 포함)로 이루어졌고 브라마굽타의 표에 크게 기댔다는 것, 『키탑 수라트 알아르드』(833년 완성)가 프톨레마이오스의 좌표를 바탕으로 하되 지중해의 길이와 아시아·아프리카 도시 위치를 개선했다는 것
     URL: https://en.wikipedia.org/wiki/Al-Khwarizmi
     유형: 2차
 ---
@@ -125,7 +125,7 @@
 
 ## 4. 『알자브르』 — 왜 여섯 유형인가
 
-830년 무렵, 칼리프 마문의 권유로 그는 책을 썼다 [8]. 원제는 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』 — **복원과 균형에 의한 계산의 간추린 책**이다.
+**820년 무렵**, 칼리프 마문의 권유로 그는 책을 썼다 [12]. ⚠ 연도는 자료 안에서도 갈린다 — 같은 문서가 본문에 820, 보이어 인용에 825를 적고, 편찬 시기를 813~833년 사이로만 적는 자료도 있다 [8][12]. 원제는 『al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala』 — **복원과 균형에 의한 계산의 간추린 책**이다.
 
 이 책이 한 일은 **선형·이차방정식의 최초의 체계적 해법**을 세운 것이다 [8]. 그런데 오늘 눈으로 보면 이상한 대목이 하나 있다 — **이차방정식을 여섯 가지로 갈라 놓았다.**
 
@@ -229,7 +229,7 @@
 | 연도 | 일 |
 |---|---|
 | 780 무렵 | 출생(자료마다 물음표) [1][2] |
-| 830 무렵 | 『알자브르』 — 칼리프 마문의 권유로 [8] |
+| 820 무렵 | 『알자브르』 — 칼리프 마문의 권유로. 자료에 따라 825, 또는 813~833 사이 [8][12] |
 | 833 | 『키탑 수라트 알아르드』 완성 [12] |
 | 833 | 칼리프 마문 사망 [4] |
 | 850 무렵 | 사망(자료마다 물음표) [1][2] |
