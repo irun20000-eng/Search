@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="왼쪽은 원에 정육각형과 정십이각형을 겹쳐 내접시킨 그림이고, 오른쪽은 그중 A에서 B까지 한 조각을 2.9배로 키운 그림이다. 확대도에서 정십이각형이 정육각형에 더한 삼각형에 기호 ㄱ 이, 그 바깥으로 원이 정십이각형보다 넓은 활꼴 둘에 기호 ㄴ 이 붙어 있다. ㄴ 이 ㄱ 보다 눈에 띄게 얇다">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="왼쪽은 원에 정육각형과 정십이각형을 겹쳐 내접시킨 그림이고, 오른쪽은 그중 A에서 B까지 한 조각을 2.9배로 키운 그림이다. A와 B는 정육각형의 이웃 꼭짓점이고 C는 그 사이에 정십이각형이 새로 세운 꼭짓점이다. 확대도에서 A·C·B가 이루는 삼각형에 기호 ㄱ 이, 그 바깥으로 원과 정십이각형 사이에 남은 활꼴 둘에 기호 ㄴ 이 붙어 있다. ㄴ 둘을 합쳐도 ㄱ 보다 좁다">
   <title>유휘의 할원술 — 원의 넓이를 두 다각형 사이에 가둔다</title>
   <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
@@ -34,12 +34,13 @@
   <text x="503" y="118" font-size="13" class="ax">C</text>
   <text x="628" y="250" font-size="13" class="ax">B</text>
 
-  <line x1="398" y1="76" x2="428" y2="95" stroke="#9C5A2C" stroke-width="1"/>
+  <line x1="398" y1="76" x2="428" y2="102" stroke="#9C5A2C" stroke-width="1"/>
   <text x="368" y="72" font-size="14" class="sien">ㄴ</text>
   <line x1="537" y1="217" x2="507" y2="157" stroke="#3A5C77" stroke-width="1"/>
   <text x="540" y="226" font-size="14" class="blue">ㄱ</text>
 
-  <text x="46" y="318" font-size="13" class="dim">파선이 정6각형, 그 안쪽 실선이 정12각형이다. 오른쪽은 A 에서 B 까지 한 조각을 2.9배로 키운 것이다.</text>
-  <text x="46" y="340" font-size="13.5">조각마다 ㄴ 이 ㄱ 보다 얇다 — 원의 넓이는 정12각형보다 크고, 정12각형 + ㄱ 보다 작다.</text>
-  <text x="46" y="362" font-size="13" class="dim">6 → 12 → 24 → 48 → 96 → 192 로 되풀이하면 이 폭이 좁아진다. 유휘는 정192각형까지 갔다.</text>
+  <text x="46" y="310" font-size="13" class="dim">파선이 정6각형, 그 안쪽 실선이 정12각형이다. 오른쪽은 한 조각을 2.9배로 키운 것이다.</text>
+  <text x="46" y="330" font-size="13" class="dim">A·B 는 정6각형의 이웃 꼭짓점, C 는 그 사이에 정12각형이 새로 세운 꼭짓점이다.</text>
+  <text x="46" y="350" font-size="13.5">조각마다 ㄴ 둘을 합쳐도 ㄱ 보다 좁다 — 원의 넓이는 정12각형보다 크고, 정12각형 + ㄱ 보다 작다.</text>
+  <text x="46" y="370" font-size="13" class="dim">6 → 12 → 24 → 48 → 96 → 192 로 되풀이하면 이 폭이 좁아진다. 유휘는 정192각형까지 갔다.</text>
 </svg>
