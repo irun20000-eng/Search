@@ -8,7 +8,9 @@
   "#n=braess-paradox": "[2026-08-27] 브라에스의 역설 — 이해편.md",
   "#n=base-rate-fallacy": "[2026-08-25] 기저율의 함정 — 이해편.md",
   "#n=littles-law": "[2026-09-03] 리틀의 법칙 — 이해편.md",
-  "#n=sample-mean-variance": "[2026-09-05] 표본평균의 평균과 분산 — 이해편.md"
+  "#n=sample-mean-variance": "[2026-09-05] 표본평균의 평균과 분산 — 이해편.md",
+  "#n=benfords-law": "[2026-09-10] 벤포드의 법칙 — 이해편.md",
+  "#n=regression-to-the-mean": "[2026-09-08] 평균으로의 회귀 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
@@ -82,7 +84,11 @@
   "#r=continuous-function-theorems": "20260825_연속함수의 두 정리 (이해편) — IVT·EVT.md",
   "#r=continuous-function-theorems-advanced": "20260825_IVT·EVT의 증명 (확장편) — 완비성에서 컴팩트성까지.md",
   "#r=derivative-rate-of-change": "20260831_미분과 변화율 (이해편) — 속도계·물가·커피로 배우는 변화 읽기와 예측 (DEEP).md",
-  "#r=derivative-rate-of-change-advanced": "20260831_변화율로 예측하기 (확장편) — 오차 한계·관련 변화율·미분방정식·자동미분 (DEEP).md"
+  "#r=derivative-rate-of-change-advanced": "20260831_변화율로 예측하기 (확장편) — 오차 한계·관련 변화율·미분방정식·자동미분 (DEEP).md",
+  "#r=taylor-series": "20260908_테일러 급수 (이해편) — 함수를 다항식으로 바꾸는 기술, 계수는 왜 n!로 나누나.md",
+  "#r=taylor-series-advanced": "20260908_테일러 정리 (확장편) — 잉여항 네 형태, 수렴반경의 진짜 이유, 그리고 급수가 함수를 배신할 때.md",
+  "#r=discontinuous-derivative": "20260907_도함수가 불연속인 함수 (이해편) — 미분가능한데 도함수는 왜 끊기나.md",
+  "#r=discontinuous-derivative-advanced": "20260907_도함수의 불연속 (확장편) — 다르부 정리·베르 1류·볼테라 함수와 미적분 기본정리의 균열.md"
  },
  "videos": {
   "youtu.be/XgWJWuz6Dmw": "20260821_제미나이_Spark(스파크)_사용법_총정리｜컴퓨터가_꺼져_있어도_일하는_AI_에이전트.md",
@@ -186,6 +192,9 @@
   "youtu.be/T6TjZY_9rO8": "20260831_노트북LM에서 안 되던 게 다 되네 — 제미나이 노트북 8월 최신 활용법 6가지.md",
   "youtu.be/8b8Mn91-_iY": "20260907_클로드_코드로_구글_Flow_돌려서_공학_쇼츠_만들었습니다_(스킬_무료_배포).md",
   "youtu.be/Edbsr4kbfSI": "20260910_이걸_알고_유튜브_보는_법이_달라졌습니다__노트북LM_활용법_끝판왕.md",
-  "youtu.be/Ami0E-CL3Fw": "20260910_Gemini_Notebook_특별편_NotebookLM에_책한권_통째로_넣기_—_스캔부터_업로드까지_5분만에_끝내는_법.md"
+  "youtu.be/Ami0E-CL3Fw": "20260910_Gemini_Notebook_특별편_NotebookLM에_책한권_통째로_넣기_—_스캔부터_업로드까지_5분만에_끝내는_법.md",
+  "youtu.be/9ZzF5iGj0BM": "20260908_요즘 AI 브라우저는 어디까지 할까 Aside 직접 써봤습니다 - 설치·개념·사용법 총정리 [어사이드 브라우저].md",
+  "youtu.be/e1KYWoDrmBM": "20260908_매번 시트 복사하지 마세요, 버튼 한 번이면 끝납니다 - 엑셀 템플릿 자동화.md",
+  "youtu.be/Vm1Mm0ff0Qw": "20260908_이미지 AI 설치, 제 컴퓨터에서 공짜로 뽑습니다 (구독료 0원·무제한·상업이용 OK).md"
  }
 }
