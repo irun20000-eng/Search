@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="가로축이 시간, 세로축이 속력인 그림. 0에서 일정하게 빨라지는 운동이 빗변이 직선인 삼각형으로, 그 평균속력으로 일정하게 가는 운동이 높이가 절반인 직사각형으로 그려져 있다. 두 도형이 겹치는 부분은 옅게 칠했고, 직사각형에만 있는 왼쪽 아래 조각에 기호 ㄱ, 삼각형에만 있는 오른쪽 위 조각에 기호 ㄴ 을 붙여 같은 색으로 칠했다. 두 조각은 합동이라 넓이가 같고, 넓이가 곧 지나간 거리이므로 두 운동은 같은 시간에 같은 거리를 간다">
+  <title>오렘의 도형 — 등가속 운동이 평균속력의 등속 운동과 같은 거리를 간다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+  </style>
+  <rect width="700" height="392" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">시간을 가로로, 속력을 세로로 — 오렘의 도형</text>
+
+  <!-- 두 도형이 겹치는 부분 -->
+  <polygon points="86.0,300.0 386.0,300.0 386.0,200.0 236.0,200.0" fill="#F2E8D8" stroke="none"/>
+  <!-- ㄱ : 직사각형에만 있는 조각 -->
+  <polygon points="86.0,300.0 236.0,200.0 86.0,200.0" fill="#CEDCE6" stroke="#3A5C77" stroke-width="1.1"/>
+  <!-- ㄴ : 삼각형에만 있는 조각 -->
+  <polygon points="236.0,200.0 386.0,200.0 386.0,100.0" fill="#CEDCE6" stroke="#3A5C77" stroke-width="1.1"/>
+
+  <!-- 직사각형(평균속력의 등속 운동) · 삼각형(일정하게 빨라지는 운동) -->
+  <rect x="86.0" y="200.0" width="300.0" height="100.0" fill="none" stroke="#9C5A2C" stroke-width="1.7" stroke-dasharray="7 4"/>
+  <polygon points="86.0,300.0 386.0,300.0 386.0,100.0" fill="none" stroke="#3A5C77" stroke-width="1.9"/>
+
+  <line x1="86.0" y1="300.0" x2="412.0" y2="300.0" stroke="#8A7F6E" stroke-width="1.3"/>
+  <line x1="86.0" y1="300.0" x2="86.0" y2="74.0" stroke="#8A7F6E" stroke-width="1.3"/>
+  <line x1="81.0" y1="200.0" x2="86.0" y2="200.0" stroke="#8A7F6E" stroke-width="1.1"/>
+  <line x1="81.0" y1="100.0" x2="86.0" y2="100.0" stroke="#8A7F6E" stroke-width="1.1"/>
+  <line x1="386.0" y1="300.0" x2="386.0" y2="305.0" stroke="#8A7F6E" stroke-width="1.1"/>
+
+  <text x="418.0" y="305.0" font-size="13" class="ax">시간</text>
+  <text x="56.0" y="68.0" font-size="13" class="ax">속력</text>
+  <text x="74.0" y="318.0" font-size="13" class="ax">0</text>
+  <text x="378.0" y="320.0" font-size="13" class="ax">끝</text>
+  <text x="24.0" y="205.0" font-size="13" class="ax">평균속력</text>
+  <text x="36.0" y="105.0" font-size="13" class="ax">끝속력</text>
+
+  <text x="128" y="242" font-size="15" class="blue">ㄱ</text>
+  <text x="330" y="176" font-size="15" class="blue">ㄴ</text>
+
+  <text x="412" y="96" font-size="13.5" class="blue">실선 삼각형 = 일정하게 빨라짐</text>
+  <text x="412" y="117" font-size="13.5" class="sien">파선 직사각형 = 평균속력 등속</text>
+  <text x="412" y="147" font-size="13.5">ㄱ 과 ㄴ 은 합동이다</text>
+  <text x="412" y="168" font-size="13" class="dim">떼어 붙이면 포개진다</text>
+  <text x="412" y="196" font-size="13" class="dim">옅게 칠한 칸은 둘이 겹치는 부분</text>
+
+  <text x="46" y="344" font-size="13" class="dim">ㄱ 은 직사각형에만, ㄴ 은 삼각형에만 있는 조각이다. 둘이 합동이니 두 도형의 넓이가 같다.</text>
+  <text x="46" y="366" font-size="13" class="dim">넓이가 곧 지나간 거리이므로, 두 운동은 같은 시간에 같은 거리를 간다.</text>
+</svg>
