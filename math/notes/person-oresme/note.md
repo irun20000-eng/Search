@@ -104,9 +104,11 @@
 
 열 같은 성질에서 각 점의 **세기**(intensio)와 **길이**(extensio)를 구별하는 것은 **오렘이 시작한 일이 아니다** — 뒤엠은 그것을 **스콜라 학자들**이 해 오던 구별로 적고, `latitudo`·`longitudo` 라는 말로 바꿔 부르는 것도 당대의 관행이었다고 적는다 [8].
 
-오렘이 한 것은 그다음이다. **그 둘을 평면 도형으로 그렸다** — 밑변에 longitudo 를 놓고, 각 점에서 세운 수선의 길이로 latitudo 를 나타냈다 [8]. 오늘날의 직각좌표에 가까운 배치다 [5][8].
+오렘이 한 것은 그다음이다. **그 둘을 평면 도형으로 그렸다** — 밑변에 longitudo 를 놓고, 각 점에서 세운 수선의 길이로 latitudo 를 나타냈다. 오늘날의 직각좌표에 가까운 배치다 [8].
 
-> ⚠ **[5] 의 이 대목은 [8] 의 전재다.** 두 글을 맞대어 보면 문장이 거의 그대로 겹치고(「In virtue of this transposition, the theorem of the latitud… became the law of the space traversed in case of uniformly varied motion」), 뒤엠의 **「스콜라 학자들이 구별했다」가 [5] 에서는 「그가 구별했다」로 바뀌어 있다.** 1911년 가톨릭 백과사전은 퍼블릭 도메인이다. **그러니 이 노트에서 [5] 와 [8] 이 같은 말을 할 때 그것은 교차검증이 아니다.**
+> ⚠ **[5] 의 수학 절은 [8] 의 전재다.** 바로 이 대목이 그렇다 — 뒤엠의 「**the Scholastics** distinguished the *intensio* … and the *extensio*」가 [5] 에서는 「**he** distinguished …」로, **주어만 바뀐 채** 그대로 있다. 뒤쪽 대목도 마찬가지여서 「In virtue of this transposition, the theorem of the latitud**e**/latitud**o** uniformiter difformis became the law of the space traversed in case of uniformly varied motion」이 한 낱말만 다르게 겹친다. 1911년 가톨릭 백과사전은 퍼블릭 도메인이다.
+>
+> **그러니 이 노트에서 [5] 와 [8] 이 같은 말을 할 때 그것은 교차검증이 아니다.** 그리고 **전재되며 손댄 그 한 낱말이 곧 오류가 들어온 자리다** — 이 문단의 첫 초고가 그 「he」를 읽고 구별의 주체를 오렘으로 적고 있었다.
 
 여기에 한 걸음이 더 있다. **시간을 longitudo 로, 속력을 latitudo 로 두면 도형의 넓이가 지나간 거리가 된다** [8].
 
