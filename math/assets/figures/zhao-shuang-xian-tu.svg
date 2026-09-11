@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="같은 그림 둘을 나란히 놓았다. 왼쪽은 조상의 현도로, 기울어진 정사각형 하나 안에 직각삼각형 넷이 바람개비처럼 배치되어 가운데에 작은 정사각형 하나를 남긴다. 삼각형은 넷 다 같은 모양이고 세 변의 비가 3 대 4 대 5 인데 그 3 과 4 는 숫자로 적혀 있지 않고 그려진 비율로만 있다. 기울어진 정사각형의 한 변 옆에 5 라고 적혀 있고, 가운데 작은 정사각형 안에 1 이라고 적혀 있다. 오른쪽은 같은 그림에 바깥 정사각형이 하나 더 둘러져 있는 모양이다. 바깥 정사각형은 한 변이 7 이고 파선으로 그렸으며, 그 네 귀퉁이에 같은 3-4-5 삼각형이 넷 더 들어가 안쪽의 기울어진 정사각형을 만든다. 왼쪽 아래에는 조상의 현도이고 넓이 25 는 6 의 네 배에 1 을 더한 것이라고 적혀 있다. 이 넓이 산식은 자료가 준 것이 아니라 이 노트가 세 수를 맞춰 본 것이다. 오른쪽 아래에는 흔히 쓰는 모양이며 바깥에 7 곱하기 7 이 더 있다고 적혀 있다. 그림 맨 아래에는 컬런의 말로, 바깥 부분은 조상이 한 번도 언급하지 않으며 제도의 보조선에서 온 것으로 보인다는 단서가 붙어 있다">
+  <title>조상의 현도와, 그 바깥에 붙은 것</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .tri{fill:#D9B89A;stroke:#9C5A2C;stroke-width:1.2;}
+    .add{fill:#DCE4EA;stroke:#3A5C77;stroke-width:1.1;}
+  </style>
+  <rect width="700" height="392" fill="#FFFDF7"/>
+  <text x="46" y="28" font-size="16">두 그림 — 조상의 현도(弦圖)와, 오늘 그 이름으로 도는 그림</text>
+
+  <!-- ── 왼쪽: 조상의 현도 (5×5 + 삼각형 넷 + 중앙 1×1) ── -->
+  <polygon points="160,330 160,240 280,240" class="tri"/>
+  <polygon points="280,240 190,240 190,120" class="tri"/>
+  <polygon points="190,120 190,210 70,210" class="tri"/>
+  <polygon points="70,210 160,210 160,330" class="tri"/>
+  <polygon points="160,240 190,240 190,210 160,210" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.2"/>
+  <polygon points="160,330 280,240 190,120 70,210" fill="none" stroke="#9C5A2C" stroke-width="1.8"/>
+  <text x="171" y="229" font-size="12" class="sien">1</text>
+  <text x="226" y="295" font-size="12" class="sien">5</text>
+
+  <!-- ── 오른쪽: 같은 그림 + 바깥 7×7 ── -->
+  <polygon points="390,330 480,330 390,210" class="add"/>
+  <polygon points="600,330 600,240 480,330" class="add"/>
+  <polygon points="600,120 510,120 600,240" class="add"/>
+  <polygon points="390,120 390,210 510,120" class="add"/>
+  <polygon points="480,330 480,240 600,240" class="tri"/>
+  <polygon points="600,240 510,240 510,120" class="tri"/>
+  <polygon points="510,120 510,210 390,210" class="tri"/>
+  <polygon points="390,210 480,210 480,330" class="tri"/>
+  <polygon points="480,240 510,240 510,210 480,210" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.2"/>
+  <polygon points="480,330 600,240 510,120 390,210" fill="none" stroke="#9C5A2C" stroke-width="1.8"/>
+  <polygon points="390,330 600,330 600,120 390,120" fill="none" stroke="#3A5C77" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="491" y="229" font-size="12" class="sien">1</text>
+  <text x="607" y="229" font-size="12" class="blue">7</text>
+
+  <text x="70" y="354" font-size="13" class="sien">조상의 현도 [4] — 넓이 25 = 6×4 + 1</text>
+  <text x="390" y="354" font-size="13" class="blue">흔히 쓰는 모양 [4] — 바깥 7×7 이 더 있다</text>
+  <text x="46" y="378" font-size="13" class="dim">⚠ 컬런 — 바깥 부분은 조상이 한 번도 언급하지 않는다. 제도의 보조선에서 온 것으로 보인다 [4]</text>
+</svg>
