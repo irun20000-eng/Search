@@ -121,17 +121,16 @@ jobs:
           # 같은 push 가 cardnews-render 도 깨우고, 그쪽도 같은 브랜치에 커밋한다.
           # 둘이 동시에 끝나면 늦은 쪽이 `! [rejected] (fetch first)` 로 죽고 **그 커밋은
           # 사라진다** — 러너에만 있었으므로 그림이 렌더됐는데도 브랜치에 없다.
-          # (2026-08-27 발견노트 EP3, run 33026612891. 그림은 그려졌고 push 만 졌다.)
-          # 재시도는 rebase 로 한다. 산출물끼리는 겹치지 않으므로 충돌하지 않는다.
-          for i in 1 2 3; do
-            if git push; then
-              echo "changed=1" >> $GITHUB_OUTPUT; exit 0
-            fi
-            echo "::notice::push 거절($i/3) — 다른 워크플로가 같은 브랜치에 밀어 넣었다. rebase 후 재시도"
-            git pull --rebase origin "${GITHUB_REF#refs/heads/}"
-          done
-          echo "::error::3회 시도했는데도 push 하지 못했다 — 그림이 브랜치에 없다"
-          exit 1
+          #
+          # ⚠ 여기 있던 종전 주석("산출물끼리는 겹치지 않으므로 충돌하지 않는다")은
+          #    **틀렸다.** `link-index.json`·`backlog.json` 을 두 워크플로가 모두 재생성하므로
+          #    rebase 가 그 둘에서 충돌한다. 2026-08-27 발견노트 EP3 · 2026-09-03 일머리 EP4 ·
+          #    2026-09-08 숫자노트 EP5 에서 실제로 커밋이 사라졌다.
+          #
+          # 재시도는 tools/push_rendered.sh 가 한다 — 충돌한 산출물은 병합하지 않고
+          # **합쳐진 소스에서 다시 만든다**(LESSONS 2026-08-25).
+          bash tools/push_rendered.sh "${GITHUB_REF#refs/heads/}" python tools/build_link_index.py
+          echo "changed=1" >> $GITHUB_OUTPUT
 
       - name: 요약
         if: always()
