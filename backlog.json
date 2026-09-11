@@ -1,12 +1,12 @@
 {
  "generated": "2026-09-11",
- "scanned": 282,
- "resolved": 1542,
+ "scanned": 284,
+ "resolved": 1554,
  "pending": 536,
  "counts": {
-  "new": 250,
+  "new": 249,
   "companion": 5,
-  "gap": 0
+  "gap": 1
  },
  "items": [
   {
@@ -4365,8 +4365,8 @@
   {
    "name": "...",
    "count": 1,
-   "kind": "new",
-   "target": null,
+   "kind": "gap",
+   "target": "劉徽",
    "base": null,
    "refs": [
     {

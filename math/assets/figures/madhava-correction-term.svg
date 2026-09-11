@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="그림 위쪽에 「부분합은 아주 느리게 좁혀지고, 보정항 하나가 그 거리를 건너뛴다」라는 표제가 있다. 교대급수 1 빼기 삼분의 일 더하기 오분의 일 식의 부분합을 항의 개수 1에서 10까지 점으로 찍고 선으로 이은 그림. 점들은 원주율 사분의 일을 나타내는 가로 파선 위아래로 번갈아 놓이며 아주 느리게 그 선으로 좁혀진다. 다섯 항까지 더한 값 0.8349 는 선보다 한참 위에 있는데, 거기서 아래로 내린 화살표에 R 이라는 부호가 붙어 있고 그 끝의 점은 파선에 거의 닿아 있다. 세로축 눈금은 0.7, 0.8, 0.9, 1.0 이고 가로축 눈금은 1부터 10까지이며, 그림 아래 두 줄이 다섯 항까지 더한 값 0.8349 와 그 오차 0.0495, 보정항 R 이 1/20 이라는 것과 그것을 뺀 값 0.7849 및 오차 0.00048 을 적어 둔다">
+  <title>마다바의 보정항 — 느린 급수를 한 번에 건너뛴다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+  </style>
+  <rect width="700" height="392" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">부분합은 아주 느리게 좁혀지고, 보정항 하나가 그 거리를 건너뛴다</text>
+
+  <!-- axes -->
+  <line x1="72" y1="52" x2="72" y2="345" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="72" y1="345" x2="600" y2="345" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="34" y="76" font-size="13" class="ax">1.0</text>
+  <text x="34" y="138" font-size="13" class="ax">0.9</text>
+  <text x="34" y="200" font-size="13" class="ax">0.8</text>
+  <text x="34" y="262" font-size="13" class="ax">0.7</text>
+  <line x1="66" y1="72.4" x2="72" y2="72.4" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="66" y1="134.3" x2="72" y2="134.3" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="66" y1="196.2" x2="72" y2="196.2" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="66" y1="258.1" x2="72" y2="258.1" stroke="#8A7F6E" stroke-width="1"/>
+  <text transform="rotate(-90 20 200)" x="20" y="200" font-size="13" class="dim" text-anchor="middle">부분합</text>
+
+  <!-- pi/4 line -->
+  <line x1="72" y1="205.2" x2="600" y2="205.2" stroke="#9C5A2C" stroke-width="1.4" stroke-dasharray="7 5"/>
+  <text x="608" y="210" font-size="15" class="sien">π/4</text>
+
+  <!-- zigzag -->
+  <polyline points="90,72.4 142,278.7 194,154.9 246,243.4 298,174.6 350,230.8 402,183.2 454,224.5 506,188.1 558,220.7"
+            fill="none" stroke="#3A5C77" stroke-width="1.6"/>
+  <circle cx="90" cy="72.4" r="3.6" fill="#3A5C77"/>
+  <circle cx="142" cy="278.7" r="3.6" fill="#3A5C77"/>
+  <circle cx="194" cy="154.9" r="3.6" fill="#3A5C77"/>
+  <circle cx="246" cy="243.4" r="3.6" fill="#3A5C77"/>
+  <circle cx="298" cy="174.6" r="4.6" fill="#3A5C77"/>
+  <circle cx="350" cy="230.8" r="3.6" fill="#3A5C77"/>
+  <circle cx="402" cy="183.2" r="3.6" fill="#3A5C77"/>
+  <circle cx="454" cy="224.5" r="3.6" fill="#3A5C77"/>
+  <circle cx="506" cy="188.1" r="3.6" fill="#3A5C77"/>
+  <circle cx="558" cy="220.7" r="3.6" fill="#3A5C77"/>
+
+  <!-- correction arrow -->
+  <line x1="298" y1="180.5" x2="298" y2="192.2" stroke="#9C5A2C" stroke-width="1.8"/>
+  <polygon points="298,199.6 294.2,191.2 301.8,191.2" fill="#9C5A2C"/>
+  <circle cx="298" cy="205.5" r="4.6" fill="#9C5A2C"/>
+  <text x="308" y="224" font-size="15" class="sien">R</text>
+
+  <!-- x ticks -->
+  <text x="86" y="364" font-size="13" class="ax">1</text>
+  <text x="138" y="364" font-size="13" class="ax">2</text>
+  <text x="190" y="364" font-size="13" class="ax">3</text>
+  <text x="242" y="364" font-size="13" class="ax">4</text>
+  <text x="294" y="364" font-size="13" class="ax">5</text>
+  <text x="346" y="364" font-size="13" class="ax">6</text>
+  <text x="398" y="364" font-size="13" class="ax">7</text>
+  <text x="450" y="364" font-size="13" class="ax">8</text>
+  <text x="502" y="364" font-size="13" class="ax">9</text>
+  <text x="551" y="364" font-size="13" class="ax">10</text>
+  <text x="590" y="364" font-size="13" class="dim">더한 항의 개수</text>
+
+  <!-- notes -->
+  <text x="96" y="306" font-size="14" class="dim">다섯 항까지 더한 값은 0.8349 — π/4 와의 오차 0.0495</text>
+  <text x="96" y="325" font-size="14" class="sien">보정항 R = 1/20 을 빼면 0.7849 — 오차 0.00048</text>
+</svg>
