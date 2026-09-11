@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="그림 위쪽에 「두 번 재서, 갈 수 없는 곳을 잰다 — 『해도산경』 제1문제」라는 표제가 있다. 왼쪽에 산 모양의 섬이 있고 그 꼭대기에 「섬 꼭대기 · 높이 1255보」라고 적혀 있다. 오른쪽 평지에 높이 5보짜리 장대 둘이 서 있는데 섬에 가까운 쪽이 P1, 먼 쪽이 P2 이고 둘 사이가 1000보다. 관측자는 P1 뒤 123보 자리 X 와 P2 뒤 127보 자리 Y 에서 땅에 눈을 두고 본다. X 에서 P1 장대 끝을 지나는 시선과 Y 에서 P2 장대 끝을 지나는 시선이 그려져 있고, 두 시선은 섬 꼭대기 한 점에서 만난다. 지면 아래에 P1 에서 섬까지가 30750보라고 적혀 있다. 가로는 비례가 아니라는 단서가 오른쪽 아래에 붙어 있다">
+  <title>유휘의 중차 — 두 번 재서 갈 수 없는 곳을 잰다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+  </style>
+  <rect width="700" height="392" fill="#FFFDF7"/>
+  <text x="46" y="28" font-size="16">두 번 재서, 갈 수 없는 곳을 잰다 — 『해도산경』 제1문제</text>
+
+  <!-- 섬 -->
+  <polygon points="62,340 110,106 160,340" fill="#E6D5BD" stroke="#9C5A2C" stroke-width="1.4"/>
+  <circle cx="110" cy="106" r="3.4" fill="#9C5A2C"/>
+  <text x="126" y="100" font-size="14" class="sien">섬 꼭대기 · 높이 1255보</text>
+
+  <!-- 지면 -->
+  <line x1="40" y1="340" x2="640" y2="340" stroke="#8A7F6E" stroke-width="1.2"/>
+
+  <!-- 시선 둘 -->
+  <line x1="470" y1="340" x2="110" y2="106" stroke="#3A5C77" stroke-width="1.5"/>
+  <line x1="578" y1="340" x2="110" y2="106" stroke="#3A5C77" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- 장대 둘 -->
+  <line x1="430" y1="340" x2="430" y2="314" stroke="#221E18" stroke-width="2.6"/>
+  <line x1="526" y1="340" x2="526" y2="314" stroke="#221E18" stroke-width="2.6"/>
+  <text x="410" y="332" font-size="13">P₁</text>
+  <text x="506" y="332" font-size="13">P₂</text>
+  <text x="418" y="290" font-size="12" class="dim">5보</text>
+  <text x="514" y="290" font-size="12" class="dim">5보</text>
+
+  <!-- 관측 자리 -->
+  <circle cx="470" cy="340" r="3.4" fill="#3A5C77"/>
+  <circle cx="578" cy="340" r="3.4" fill="#3A5C77"/>
+  <text x="464" y="333" font-size="13" class="blue">X</text>
+  <text x="572" y="333" font-size="13" class="blue">Y</text>
+
+  <!-- 치수 -->
+  <line x1="430" y1="352" x2="526" y2="352" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="430" y1="348" x2="430" y2="356" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="526" y1="348" x2="526" y2="356" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="455" y="368" font-size="13" class="ax">1000보</text>
+
+  <line x1="430" y1="378" x2="470" y2="378" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="430" y1="374" x2="430" y2="382" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="470" y1="374" x2="470" y2="382" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="382" y="382" font-size="13" class="ax">123보</text>
+
+  <line x1="526" y1="378" x2="578" y2="378" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="526" y1="374" x2="526" y2="382" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="578" y1="374" x2="578" y2="382" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="586" y="382" font-size="13" class="ax">127보</text>
+
+  <line x1="110" y1="352" x2="430" y2="352" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="110" y1="348" x2="110" y2="356" stroke="#8A7F6E" stroke-width="1"/>
+  <text x="186" y="368" font-size="13" class="ax">P₁ 에서 섬까지 30750보</text>
+
+  <text x="470" y="130" font-size="13" class="dim">⚠ 가로는 비례가 아니다</text>
+</svg>
