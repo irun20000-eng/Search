@@ -1,38 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-label="가로로 수직선 하나가 그려져 있고 눈금 1, 1.5, 2 가 적혀 있다. 그 위에 점 열세 개가 찍혀 있는데 왼쪽에서 오른쪽으로 갈수록 간격이 좁아지면서 2 라고 적힌 자리 쪽으로 몰린다. 점들은 계속 오른쪽으로 가지만 2.2 자리에 세로로 그은 파선을 넘지 않는다. 그 파선에는 상계라고 적혀 있다. 2 자리에는 속이 빈 동그라미와 물음표가 있다. 그림 아래에는 눈이 여기서 멈추는 자리를 보지만 그림이 그 자리가 있다는 것을 보여 주지는 않는다는 설명과, 데데킨트가 1858년에 불편해한 것이 바로 이 자리였다는 단서가 붙어 있다">
-  <title>그림이 증명 노릇을 하던 자리 — 유계 증가 수열</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-label="가로축이 수열의 번호이고 세로축이 값인 그래프다. 점 일곱 개가 있는데 첫 점만 아래쪽에 외따로 있고 나머지 여섯은 위쪽에서 거의 한 줄로 붙어 이어진다. 값은 계속 커지기만 한다. 위쪽에 가로 파선이 둘 있다. 높은 쪽 파선에는 상계 1.5 라고 적혀 있고 점들은 그 선을 넘지 않는다. 낮은 쪽 파선은 점들이 붙어 가는 자리이며 그 선 오른쪽 끝에 값 대신 물음표가 붙어 있다. 그래프 오른쪽 아래 빈자리에 두 줄이 있어, 수열이 1, 1.4, 1.41, 1.414 로 이어지며 모두 유리수라는 것과, 유리수 줄에는 점들이 붙어 가는 그 자리에 이름이 없다는 것을 적는다. 그림 아래에는 계속 커지고 상계를 넘지 않으니 멈춘다고 눈이 말하지만 그 자리에 붙일 유리수가 없다는 설명과, 이 그림은 이 노트가 그 정리를 그린 것이며 어느 자료에서 옮겨 온 도해가 아니라는 단서가 붙어 있다">
+  <title>그림이 증명 노릇을 하던 자리 — 멈출 곳에 이름이 없다</title>
   <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
          font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
     .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
   </style>
-  <rect width="700" height="300" fill="#FFFDF7"/>
-  <text x="46" y="30" font-size="16">계속 커지지만 어디도 넘지 않는다 — 그래서 멈춘다고, 눈이 말한다</text>
+  <rect width="700" height="420" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">계속 커지고 어디도 넘지 않는다 — 그런데 멈출 곳에 붙일 유리수가 없다</text>
 
-  <line x1="60" y1="170" x2="676" y2="170" stroke="#8A7F6E" stroke-width="1.2"/>
-  <line x1="145.0" y1="165" x2="145.0" y2="175" stroke="#8A7F6E" stroke-width="1"/>
-  <text x="141.0" y="194" font-size="12" class="ax">1</text>
-  <line x1="332.5" y1="165" x2="332.5" y2="175" stroke="#8A7F6E" stroke-width="1"/>
-  <text x="328.5" y="194" font-size="12" class="ax">1.5</text>
-  <line x1="520.0" y1="165" x2="520.0" y2="175" stroke="#8A7F6E" stroke-width="1"/>
-  <text x="516.0" y="194" font-size="12" class="ax">2</text>
-  <line x1="595.0" y1="104" x2="595.0" y2="182" stroke="#3A5C77" stroke-width="1.4" stroke-dasharray="6 4"/>
-  <text x="603.0" y="120" font-size="13" class="blue">상계</text>
-  <circle cx="145.0" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="332.5" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="395.0" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="426.2" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="445.0" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="457.5" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="473.1" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="482.5" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="491.2" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="497.9" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="503.0" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="507.5" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="510.6" cy="170" r="3.4" fill="#9C5A2C"/>
-  <circle cx="520.0" cy="170" r="5.4" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="1.6"/>
-  <text x="516.0" y="146" font-size="14" class="sien">?</text>
-  <text x="90" y="146" font-size="13" class="dim">점은 오른쪽으로만 간다</text>
-  <text x="46" y="236" font-size="13" class="dim">⚠ 눈은 여기서 「멈추는 자리」를 본다. 그런데 그 자리가 있다는 것을 이 그림이 보여 주지는 않는다.</text>
-  <text x="46" y="262" font-size="13" class="dim">데데킨트가 1858년 11월에 불편해한 것이 이 자리였다 — 증명이 그림에 기대고 있었다.</text>
+  <line x1="104" y1="330" x2="668" y2="330" stroke="#8A7F6E" stroke-width="1.1"/>
+  <line x1="104" y1="117.4" x2="104" y2="330" stroke="#8A7F6E" stroke-width="1.1"/>
+  <line x1="104" y1="137.2" x2="650" y2="137.2" stroke="#3A5C77" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="556" y="128.2" font-size="13" class="blue">상계 1.5</text>
+  <line x1="104" y1="165.5" x2="650" y2="165.5" stroke="#9C5A2C" stroke-width="1.3" stroke-dasharray="4 5"/>
+  <text x="658" y="171.5" font-size="16" class="sien">?</text>
+  <polyline points="130,302.2 208,170.2 286,166.9 364,165.6 442,165.5 520,165.5 598,165.5" fill="none" stroke="#9C5A2C" stroke-width="1.3"/>
+  <circle cx="130" cy="302.2" r="3.4" fill="#9C5A2C"/>
+  <circle cx="208" cy="170.2" r="3.4" fill="#9C5A2C"/>
+  <circle cx="286" cy="166.9" r="3.4" fill="#9C5A2C"/>
+  <circle cx="364" cy="165.6" r="3.4" fill="#9C5A2C"/>
+  <circle cx="442" cy="165.5" r="3.4" fill="#9C5A2C"/>
+  <circle cx="520" cy="165.5" r="3.4" fill="#9C5A2C"/>
+  <circle cx="598" cy="165.5" r="3.4" fill="#9C5A2C"/>
+  <text x="112" y="350" font-size="13" class="ax">수열의 번호</text>
+  <text x="330" y="258" font-size="12" class="dim">수열 1, 1.4, 1.41, 1.414, … 은 모두 유리수다</text>
+  <text x="330" y="284" font-size="12" class="sien">유리수 줄에는 점들이 붙어 가는 그 자리에 이름이 없다</text>
+
+  <text x="46" y="386" font-size="13" class="dim">계속 커지고 상계를 넘지 않으니 멈춘다고 눈이 말한다. 그런데 멈출 그 자리에 붙일 유리수가 없다.</text>
+  <text x="46" y="408" font-size="12" class="dim">⚠ 이 그림은 이 노트가 그 정리를 그린 것이다 — 어느 자료에서 옮겨 온 도해가 아니다.</text>
 </svg>

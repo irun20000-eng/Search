@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 392" role="img" aria-label="왼쪽에는 원 하나가 있고 그 안에 정사각형, 정팔각형, 정십육각형이 겹쳐 그려져 있다. 변의 수가 배로 늘면서 다각형이 원에 점점 가까워진다. 오른쪽에는 꺾은선 그래프가 있다. 가로축은 무한곱의 항 수이고 점이 여섯 개 있다. 점들은 왼쪽 아래에서 시작해 빠르게 올라가다가 위쪽의 가로 파선에 붙는데 그 파선에는 원주율이라고 적혀 있다. 그래프 아래 빈자리에 세 줄짜리 표가 있어 항 한 개일 때 정팔각형 2.828, 두 개일 때 정십육각형 3.061, 세 개일 때 정삼십이각형 3.121 이라고 적는다. 그림 아래에는 항을 k 개 곱했을 때 2 를 그 누적곱으로 나눈 값이 곧 그 다각형의 넓이라는 설명과, 이 대응은 자료가 적는 넓이비를 이 도해가 풀어 쓴 것이라는 단서가 붙어 있다">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 418" role="img" aria-label="반지름 1 인 원 하나 안에 정사각형, 정팔각형, 정십육각형이 겹쳐 그려져 있고 변의 수가 배로 늘면서 다각형이 원에 점점 가까워진다. 그 오른쪽에는 꺾은선 그래프가 있는데 가로축이 무한곱의 항 수이고 점 여섯 개가 왼쪽 아래에서 빠르게 올라가다가 위쪽의 가로 파선에 붙는다. 그 파선에는 원주율이라고 적혀 있다. 그래프 아래 빈자리에 세 줄이 있어 항 한 개일 때 정팔각형 2.828, 두 개일 때 정십육각형 3.061, 세 개일 때 정삼십이각형 3.121 이라고 적는다. 그림 아래에는 반지름 1 인 원에서 항을 k 개 곱했을 때 2 를 그 누적곱으로 나눈 값이 곧 그 다각형의 넓이라는 설명과, 여기서 나누는 2 는 그 원에 내접하는 정사각형의 넓이라는 것, 그리고 이 대응은 자료가 적는 넓이비를 이 도해가 풀어 쓴 것이라는 단서가 붙어 있다">
   <title>비에트의 무한곱 — 다각형을 배로 늘리는 일과 식 하나로 적는 일</title>
   <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
          font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
     .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
   </style>
-  <rect width="700" height="392" fill="#FFFDF7"/>
+  <rect width="700" height="418" fill="#FFFDF7"/>
   <text x="46" y="28" font-size="16">같은 반으로 나누기가 그림도 만들고 식도 만든다 — 비에트의 무한곱</text>
 
   <circle cx="175" cy="218" r="106" fill="none" stroke="#8A7F6E" stroke-width="1.2"/>
@@ -28,5 +28,6 @@
   <text x="452" y="274" font-size="12" class="dim">항 2 · 16각형 · 3.061</text>
   <text x="452" y="296" font-size="12" class="dim">항 3 · 32각형 · 3.121</text>
   <text x="378" y="352" font-size="13" class="ax">항 수</text>
-  <text x="46" y="374" font-size="13" class="dim">항을 k 개 곱하면 2 ÷ (누적곱) 이 곧 그 다각형의 넓이다. ⚠ 이 대응은 [12] 의 넓이비를 이 도해가 풀어 쓴 것이다</text>
+  <text x="46" y="378" font-size="13" class="dim">반지름 1 인 원에서, 항을 k 개 곱하면 2 ÷ (누적곱) 이 곧 그 다각형의 넓이다.</text>
+  <text x="46" y="402" font-size="12" class="dim">나누는 2 는 그 원에 내접하는 정사각형의 넓이다. ⚠ 이 대응은 [12] 의 넓이비를 이 도해가 풀어 쓴 것이다</text>
 </svg>
