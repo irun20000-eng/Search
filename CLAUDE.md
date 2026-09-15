@@ -73,6 +73,9 @@ python3 tools/render_parity.py            # 영상 갤러리 구조 변경 시 �
 python3 tools/verify_tables.py            # ★ 서가 전체 — 마크다운 표가 실제로 그려지는가
 python3 tools/verify_tables.py reports    #   한 서가만
 
+# 렌더 워크플로의 push 재시도 — 셸 로직 회귀 시험(실제 git 저장소 셋으로 경합 재현)
+bash tools/test_push_rendered.sh          # 서가 게이트(gates.yml)가 PR마다 같은 것을 돌린다
+
 # 서가 산출물이 소스보다 낡았는가 — 네 서가 공용 (수학사 전용이 아니다)
 python3 tools/build_concept_manifest.py   # concept/manifest.json  (노트를 손으로 고쳤으면)
 python3 tools/build_manifest.py           # videos/manifest.json   (이름이 서가를 안 밝힌다 — videos 다)

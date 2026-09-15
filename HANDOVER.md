@@ -568,7 +568,13 @@ riemann) · **섞인 것 3장**(binomial · dedekind · vibrating-string). 규�
 - ~~**카드뉴스·블로그를 바깥 서가로 둘 것인가**~~ — 둘 다 **Search 안으로 들어왔다**.
   허브 `ORDER` 가 7서가로 확장됐고 `EXTRA`(바깥 서가)에는 학습자료 하나만 남았다.
 - ~~**`cardnews-render.yml` 스텝 순서 버그**~~ — 고쳐졌다. `doctor` 가 `playwright install` 뒤로 갔고,
-  동시 워크플로 push 경합(rebase 3회 재시도)과 Actions PR 생성 거부 로깅도 함께 들어갔다.
+  Actions PR 생성 거부 로깅도 함께 들어갔다.
+  ⚠ **같이 들어갔던 「동시 워크플로 push 경합(rebase 3회 재시도)」은 실제로는 안 고쳐져 있었다** —
+  두 워크플로가 `link-index.json`·`backlog.json` 을 모두 재생성하므로 rebase 가 그 둘에서
+  충돌하고, 재시도 루프는 충돌을 풀 줄 몰라 커밋이 사라진다. 그 뒤로 세 번 났다
+  (2026-08-27 · 09-03 · 09-08). **2026-09-09 에 `tools/push_rendered.sh` 로 닫았다**(#246):
+  충돌한 산출물은 병합하지 않고 합쳐진 소스에서 다시 만든다. 회귀 시험은
+  `tools/test_push_rendered.sh` 이고 서가 게이트(`gates.yml`)가 PR마다 돌린다.
 - ~~**허브 검색이 서가를 가로지르지 못하던 것**~~ — `link-index.json` 항목에 `검색어` 를 실어 해결(#144).
   「묶어 읽기」 여섯 중 다섯이 다서가가 됐다.
 - ~~**ROADMAP 부채표가 손으로 관리돼 낡던 것**~~ — `tools/build_math_status.py` 가 수치를 쓴다(#156).
