@@ -1,5 +1,5 @@
 {
- "count": 26,
+ "count": 27,
  "series": [
   {
    "key": "parent",
@@ -27,6 +27,28 @@
   }
  ],
  "episodes": [
+  {
+   "folder": "부모노트_14_숙제봐주기",
+   "series": "parent",
+   "title": "숙제를 봐 줄 때 어디까지",
+   "angle": "대신 풀어 주면 내 숙제가 된다",
+   "layout": "B",
+   "date": "2026-09-15",
+   "caption": "숙제를 봐 주다 보면 어느새 내가 풀고 있습니다.\n\n옆에 앉으면 금방 끝나지만 빨라진 것은 속도지 실력이 아닙니다. 아이가 멈춘 자리를 대신 넘어 주면 답은 남아도 넘어 본 기억은 남지 않습니다.\n위치 · 한 칸 · 반납 — 어디서 멈췄는지 묻고, 막힌 한 칸만 같이 넘고, 나머지는 아이에게 돌려줍니다.\n\n저장해두고 숙제 앞에 같이 앉게 될 때 다시 꺼내 보세요.\n\n#부모노트 #숙제 #자기주도학습 #학습습관 #육아",
+   "images": [
+    "parent14_01.webp",
+    "parent14_02.webp",
+    "parent14_03.webp",
+    "parent14_04.webp",
+    "parent14_05.webp",
+    "parent14_06.webp",
+    "parent14_07.webp",
+    "parent14_08.webp",
+    "parent14_09.webp",
+    "parent14_10.webp"
+   ],
+   "study": null
+  },
   {
    "folder": "부모노트_13_친구문제",
    "series": "parent",
