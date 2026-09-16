@@ -29,14 +29,22 @@
 
 무엇을 못 재나 (중요)
 ---------------------
-  - **`<details>` 안은 건너뛴다.** 「이행한 옛 권고 (기록)」처럼 **일부러 남겨 둔 archive** 라
+  - **`<details>` 안과 취소선 그은 제목 아래 구간은 건너뛴다.** 「이행한 옛 권고 (기록)」처럼 **일부러 남겨 둔 archive** 라
     거기 적힌 「권고」는 낡은 것이 아니라 그때의 기록이다. 이것을 안 건너뛰면 지적 셋이 거짓으로
     뜨고, **정상인데 FAIL 이 뜨면 다음 사람이 게이트를 무시한다**(LESSONS 2026-09-09).
+    ⚠ 아카이브는 `<details>` 로만 표시되지 않는다 — `#### ~~다음 대상 …~~ → **썼다**` 처럼
+    **제목에 취소선을 그어** 그 아래를 통째로 기록으로 두는 관례가 있다. 처음 판에서 이것을
+    놓쳐 **아카이브 두 줄을 「완료」로 고쳐 버렸다**(= 게이트를 통과시키려고 역사를 고친 것).
+    되돌리고 취소선 제목 구간도 건너뛰게 했다.
+  - **펜스 코드블록 안은 건너뛴다.** §11 에 예시 코드가 있고 그 안의 표 비슷한 줄이 걸렸다.
   - **반대 방향(없는 노트가 완료)은 안 본다.** 후보는 **쓰지 않기로 하고도** 닫힌다 —
     `concept-real-analysis` 가 「새 문서로 쓸 일이 아니다」로 해소된 것이 그 예다.
     그것까지 지적하면 「안 쓰기로 함」을 표현할 방법이 없어진다.
   - **판단이 옳은가는 안 본다.** 「아직 이르다」가 타당한지, 근거로 적은 수가 맞는지는
     사람이 볼 일이다. 이 검사기는 **「이미 썼는데 아직 쓸 것으로 적혀 있다」** 하나만 잡는다.
+  - **첫 칸에 백틱 슬러그가 없는 후보 줄은 못 본다.** §11 은 후보를 슬러그로도 적고
+    한글 이름으로도 적는다(「카발리에리 (17세기)」). 그런 줄은 세지 못하므로 **몇 줄을
+    못 봤는지 함께 찍는다** — 안 찍으면 「후보 줄 N개」가 전수로 읽힌다.
   - **표 밖의 산문은 안 본다.** 「`century-3c` 는 아직 이르다」가 문단에 있으면 못 잡는다.
     표로 적는 것이 이 파일의 관례라 표만 본다 — 산문까지 넓히면 인용·회고까지 걸린다.
   - **자동 측정 블록은 건너뛴다.** 빌더 산출물이라 사람이 고칠 자리가 아니다.
@@ -54,7 +62,43 @@ AUTO_END = "<!-- 자동측정:끝 -->"
 SLUG = re.compile(r"`((?:person|century|concept|episode)-[a-z0-9-]+)`")
 
 
-DETAILS = re.compile(r"<details>.*?</details>", re.S)
+FENCE = re.compile(r"^```.*?^```", re.S | re.M)
+STRUCK_HEAD = re.compile(r"^(#{2,6}) *~~.*?~~.*$", re.M)
+
+
+def drop_details(sec):
+    """<details> 를 **깊이를 세며** 지운다 — 중첩·`<details open>` 을 비탐욕 정규식은 못 판다."""
+    out, depth, i = [], 0, 0
+    tok = re.compile(r"<details\b[^>]*>|</details>", re.I)
+    for m in tok.finditer(sec):
+        if m.group(0).lower().startswith("</"):
+            depth = max(0, depth - 1)
+            if depth == 0:
+                i = m.end()
+        else:
+            if depth == 0:
+                out.append(sec[i:m.start()])
+            depth += 1
+    out.append(sec[i:])
+    return "".join(out)
+
+
+def drop_struck_sections(sec):
+    """취소선 그은 제목(`#### ~~…~~`) 아래를, 같은 깊이 이상의 다음 제목까지 지운다."""
+    lines = sec.split("\n")
+    out, skip_at = [], None
+    for line in lines:
+        m = re.match(r"^(#{2,6}) ", line)
+        if m:
+            lvl = len(m.group(1))
+            if skip_at is not None and lvl <= skip_at:
+                skip_at = None
+            if skip_at is None and STRUCK_HEAD.match(line):
+                skip_at = lvl
+                continue
+        if skip_at is None:
+            out.append(line)
+    return "\n".join(out)
 
 
 def section_11(text):
@@ -67,7 +111,9 @@ def section_11(text):
         head, rest = sec.split(AUTO_BEGIN, 1)
         _auto, tail = rest.split(AUTO_END, 1)
         sec = head + tail
-    return DETAILS.sub("", sec)
+    sec = FENCE.sub("", sec)
+    sec = drop_details(sec)
+    return drop_struck_sections(sec)
 
 
 def rows(sec):
@@ -93,19 +139,24 @@ def main():
         print("§11 을 찾지 못했다 — 제목이 바뀌었는가")
         return 2
 
-    seen, stale = 0, []
+    seen, unseen, stale = 0, 0, []
     for n, cells in rows(sec):
         slugs = SLUG.findall(cells[0])
         if not slugs:
+            if len(cells) >= 3 and cells[-1].strip() in ("권고", "보류", "차선", "채우기", "판단 필요", "끼워넣기"):
+                unseen += 1
             continue
         seen += 1
-        done = ("~~" in cells[0]) or ("완료" in cells[-1])
+        last = cells[-1].strip()
+        done = ("~~" in cells[0]) or (last.endswith("완료") and "미완료" not in last)
         for slug in slugs:
             exists = os.path.exists(os.path.join(NOTES, slug, "note.md"))
             if exists and not done:
                 stale.append((slug, cells[-1]))
 
-    print("§11 후보 줄 %d개 · 슬러그가 붙은 것만 잰다 (<details> 아카이브·자동측정 블록 제외)" % seen)
+    print("§11 후보 줄 %d개를 쟀다 (아카이브·코드블록·자동측정 블록 제외)" % seen)
+    if unseen:
+        print("⚠ 첫 칸에 슬러그가 없어 **못 본** 후보 줄 %d개 — 한글 이름으로만 적힌 줄은 이 게이트 밖이다." % unseen)
     if stale:
         print("\n! 이미 쓴 노트가 아직 「쓸 것」으로 적혀 있다 — %d건" % len(stale))
         for slug, w in stale:
