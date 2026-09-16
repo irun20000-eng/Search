@@ -286,7 +286,12 @@ def check_fonts(files):
         name = pathlib.Path(f).name
         text = pathlib.Path(f).read_text(encoding='utf-8')
         allowed = [frag for frag, _why in FONT_EXCEPTIONS.get(name, [])]
-        for decl in re.findall(r'font-family\s*[:=]\s*"([^"]+)"', text):
+        # ⚠ 선언 형태가 **둘**이다 — 속성 `font-family="…"`(190개)과 CSS `font-family:…;`(19개).
+        #   첫 판은 따옴표를 요구해 **CSS 쪽 19개 파일을 통째로 못 봤다.** 그런데 시험을
+        #   속성 방식 파일로만 해서 초록이 나왔다 — 「한 방향만으로는 모른다」(LESSONS).
+        decls = (re.findall(r'font-family\s*=\s*"([^"]+)"', text)
+                 + [d.strip() for d in re.findall(r'font-family\s*:\s*([^;}\n]+)', text)])
+        for decl in decls:
             if decl == SERIF_STACK:
                 continue
             if any(frag in decl for frag in allowed):
