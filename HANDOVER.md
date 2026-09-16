@@ -329,17 +329,26 @@ python3 tools/sync_obsidian.py --check --only reports
 | 2026-09-09 | `archimedes-sphere-cylinder` · `bernoulli-two-spirals` · `huygens-cycloid` | 인물 2 · **일화 1(첫 도해)** |
 | 2026-09-09 | `area-function-strip` · `riemann-rectangles-refine` · `conic-sections-three-cuts` | 개념 2 · 세기 1 |
 
-**열려 있는 판단 — 도해 글꼴 계열 혼용 5장(2026-09-09).** `math/` 톤은 「세리프 본문」이
-사용자 승인 예외(CLAUDE.md)인데 도해 17장 중 다섯이 거기서 벗어나 있다.
+**~~열려 있는 판단~~ → 닫혔다 — 도해 글꼴을 세리프로 통일했다(2026-09-16 사용자 승인).**
 
-| | 도해 |
+`math/` 톤의 「세리프 본문」은 사용자 승인 예외(CLAUDE.md)인데 도해 다섯이 거기서 벗어나
+산세리프 스택(`Pretendard, 'Malgun Gothic', …`)을 쓰고 있었다. 2026-09-09 에 열어 두고
+「세션이 임의로 통일하지 말 것」이라 적어 둔 항목이고, **2026-09-16 에 사용자가 「세리프로
+통일」을 골라 닫았다.**
+
+| 고친 도해 | 바꾼 곳 |
 |---|---|
-| 한 그림 안에서 섞임 3장 | `binomial-to-normal`(세4·산7) · `dedekind-cut-three-cases`(세10·산4) · `vibrating-string-initial-shape`(세1·산11 — 사실상 산세리프) |
-| 전부 산세리프 2장 | `least-squares-residuals` · `riemann-vs-lebesgue-slicing` |
+| `least-squares-residuals` | 15 (전부 산세리프였다) |
+| `vibrating-string-initial-shape` | 11 |
+| `riemann-vs-lebesgue-slicing` | 8 |
+| `binomial-to-normal` | 7 |
+| `dedekind-cut-three-cases` | 4 |
 
-**「3장」으로 적으면 다음 사람이 두 장을 놓친다**(2026-09-09 에 실제로 그렇게 보고했다가 검수가
-전수로 세어 정정했다). 이건 정확성이 아니라 **톤 결정**이라 `math/_design/mockup-v1.html` 목업과
-같은 승인 경로를 밟아야 한다 — 세션이 임의로 통일하지 말 것.
+**글꼴을 바꾸면 통과했던 것까지 다시 잰다**(LESSONS — 전에 한글이 좁아지고 라틴이 넓어져
+`fermat-secant-tangent` 의 `Q` 가 관통당했다). **36장 전체**를 로컬·러너 폰트 양쪽에서
+다시 재어 지적 0건을 확인했고, 바꾼 다섯 장은 렌더해서 눈으로도 봤다.
+숫자는 다섯 장 모두 `font-variant-numeric:lining-nums` 를 이미 갖고 있어
+올드스타일 숫자(`0` 이 `o` 로 읽히는 것) 문제는 생기지 않았다.
 
 **부채가 가장 큰 곳은 인물 노트다** — 절대 다수가 아직 도해가 없다(정확한 수는 위 명령).
 다음 대상은 「도형어가 많은 노트」가 아니라 **「그 절이 그림으로 논증하고 있는 노트」**로 고른다.
