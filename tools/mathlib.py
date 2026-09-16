@@ -219,12 +219,33 @@ def count_sections(body):
     return len(re.findall(r"^##\s+\S", body, re.M))
 
 
+# 도해 대체글(`![...]` 의 alt, `<img alt="...">`)을 자수에서 빼는 자리.
+# 대체글은 frontmatter `이미지.설명` 과 **한 글자까지 같은 문자열**이고,
+# frontmatter 는 이미 자수에서 빠져 있다(위 「측정 공식」의 327자 환산). 그러니
+# 본문에서 세면 같은 글을 두 번 세는 셈이고, 세는 대상도 산문이 아니다.
+_ALT_MD = re.compile(r"(!\[)[^\]]*(\])")
+_ALT_HTML = re.compile(r'(<img\b[^>]*?\balt=")[^"]*(")')
+
+
+def strip_alt(body):
+    """대체글만 비운다 — 이미지가 있었다는 사실(`![]`·`<img …>`)은 남긴다."""
+    body = _ALT_MD.sub(r"\1\2", body)
+    return _ALT_HTML.sub(r"\1\2", body)
+
+
 def count_chars(body):
     """자수 = 공백 포함 문자 수.  LC_ALL=C.UTF-8 wc -m 과 같은 기준.
 
     LESSONS.md가 게이트 수치를 이 공식으로 정했으므로 검사도 같은 공식을 쓴다.
+
+    ⚠ 단 **도해 대체글은 뺀다**(2026-09-16). 대체글이 길어지면서 산문이 아닌 글자가
+    자수를 밀어 올렸다 — `episode-lebesgue-coins` 가 상한 2500 에 **6자**를 남기고
+    붙었고, 일화 평균 자수 통계도 함께 부풀고 있었다. 게이트를 낮춘 것이 아니라
+    **재는 대상을 산문으로 되돌린 것**이다. 하한은 그대로이고, 이 변경으로 하한을
+    밑도는 노트가 생기지 않는 것을 95편 전수로 확인했다(가장 낮아진 것이
+    `episode-pascal-fermat-letters` 1137자, 일화 하한 800).
     """
-    return len(body)
+    return len(strip_alt(body))
 
 
 def count_lines(body):

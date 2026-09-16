@@ -85,6 +85,9 @@ python3 tools/verify_reports_meta.py      # 보고서 manifest ↔ report.md 대
                                           #   ⚠ 못 잡는 것: tldr 의 문장 내용 · 손질 허용목록 16편의 제목 ·
                                           #     sources 표기 형태 · 출처의 국내/해외 갈래 ·
                                           #     출처 항목의 실재(URL 없이 뭉뚱그린 줄도 한 항목으로 센다)
+python3 tools/verify_roadmap.py           # math/ROADMAP.md §11 이 서가보다 낡았는가
+                                          #   이미 쓴 노트가 아직 「권고·보류·차선」으로 적혀 있는지만 본다
+                                          #   ⚠ 판단이 옳은가는 안 본다 · <details> 아카이브는 건너뛴다
 python3 tools/verify_builders.py          # ★ 커밋 직전 마지막 — OUTPUTS 7종이 지금 소스의 고정점인가
                                           #   7종 = concept·videos·reports·math manifest + link-index + backlog + math/ROADMAP
                                           #   ⚠ **읽기 전용이 아니다** — 빌더 6종을 제자리에서 실제로 돌리고

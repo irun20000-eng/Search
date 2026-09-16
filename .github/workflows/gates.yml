@@ -110,6 +110,12 @@ jobs:
       - name: 수학사 — 도해 글자 넘침 · 겹침 (브라우저)
         run: python tools/verify_figures.py
 
+      # §11 은 다음 세션이 「무엇을 할까」를 읽는 자리다. 거기 후보로 올려 둔 노트를 쓰고
+      # 그 줄을 완료로 바꾸는 것을 세 번 빠뜨렸다(2026-08-31 · 09-05 · 09-16). 숫자는
+      # build_math_status 가 맞춰 주지만 판단 문장은 사람이 적으니 노후가 안 가려진다.
+      - name: 수학사 — ROADMAP §11 이 서가보다 낡았는가
+        run: python tools/verify_roadmap.py
+
       - name: 개념노트
         run: python tools/verify_concept.py
 
