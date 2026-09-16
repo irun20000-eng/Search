@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 444" role="img" aria-label="그림 위쪽에 「어느 타일에 앉았는가 — 천장의 파리 이야기」라는 표제가 있다. 그 아래에 천장의 타일을 나타낸 격자가 있다. 가로로 일곱 칸, 세로로 네 칸이다. 왼쪽에서 넷째, 위에서 셋째 칸이 옅게 칠해져 있고 그 칸 한가운데에 굵은 점이 찍혀 있으며 그 위에 파리라고 적혀 있다. 그 칸에서 왼쪽 가장자리까지 가로로 파선이, 위쪽 가장자리까지 세로로 파선이 그어져 있다. 격자 아래에는 가로 4칸이라고 적혀 있고 그 길이만큼 선이 그어져 있으며, 격자 왼쪽에는 세로 3칸이라고 적혀 있고 역시 그 길이만큼 선이 그어져 있다. 그림 아래에는 부호 설명이 있다. 격자가 천장의 타일이고 칠한 칸이 파리가 앉은 칸이며 파선이 그 칸을 두 가장자리에 잇는 선이라는 것, 그리고 굵은 막대 둘이 두 가장자리에서 그 칸까지 센 칸수로 가로 4칸 세로 3칸이라는 것이다. 맨 아래에는 단서가 있다. 브리태니커도 이 이야기를 전설에 따르면 이라는 단서를 달아 소개하며, 이 그림은 두 수로 한 자리를 가리키는 일이 무엇인지를 보일 뿐이라는 것이다">
+  <title>어느 타일에 앉았는가 — 데카르트와 천장의 파리</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .tile{stroke:#C9BBA4;stroke-width:1;}
+    .guide{stroke:#3A5C77;stroke-width:1.4;stroke-dasharray:5 4;}
+    .meas{stroke:#9C5A2C;stroke-width:1.8;}
+  </style>
+  <rect width="700" height="444" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">어느 타일에 앉았는가 — 천장의 파리 이야기</text>
+  <rect x="140" y="76" width="420" height="240" fill="#FBF6EC"/>
+  <rect x="320" y="196" width="60" height="60" fill="#E6D5BD"/>
+  <line x1="140" y1="76" x2="140" y2="316" class="tile"/><line x1="200" y1="76" x2="200" y2="316" class="tile"/><line x1="260" y1="76" x2="260" y2="316" class="tile"/><line x1="320" y1="76" x2="320" y2="316" class="tile"/><line x1="380" y1="76" x2="380" y2="316" class="tile"/><line x1="440" y1="76" x2="440" y2="316" class="tile"/><line x1="500" y1="76" x2="500" y2="316" class="tile"/><line x1="560" y1="76" x2="560" y2="316" class="tile"/><line x1="140" y1="76" x2="560" y2="76" class="tile"/><line x1="140" y1="136" x2="560" y2="136" class="tile"/><line x1="140" y1="196" x2="560" y2="196" class="tile"/><line x1="140" y1="256" x2="560" y2="256" class="tile"/><line x1="140" y1="316" x2="560" y2="316" class="tile"/>
+  <line x1="140" y1="226" x2="320" y2="226" class="guide"/>
+  <line x1="350" y1="76" x2="350" y2="196" class="guide"/>
+  <circle cx="350" cy="226" r="6" fill="#221E18"/>
+  <text x="332" y="214" font-size="12" class="dim">파리</text>
+  <line x1="126" y1="76" x2="126" y2="256" class="meas"/>
+  <text x="52" y="176" font-size="12" class="sien">세로 3칸</text>
+  <line x1="140" y1="350" x2="380" y2="350" class="meas"/>
+  <text x="238" y="372" font-size="12" class="sien">가로 4칸</text>
+  <text x="46" y="392" font-size="13" class="dim">격자가 천장의 타일, 칠한 칸이 파리가 앉은 칸, 파선이 그 칸을 두 가장자리에 잇는 선이다.</text>
+  <text x="46" y="412" font-size="13" class="dim">굵은 막대 둘이 두 가장자리에서 그 칸까지 센 칸수다 — 가로 4칸, 세로 3칸.</text>
+  <text x="46" y="434" font-size="13" class="sien">⚠ 브리태니커도 「전설에 따르면」이라는 단서를 달아 소개한다 [2].</text>
+</svg>

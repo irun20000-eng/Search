@@ -272,6 +272,6 @@ manifest 에서 읽는다). ⚠ `build_math_status.py` 는 **link-index 를 읽�
 
 - **frontmatter 값이 따옴표로 시작하면 YAML이 깨진다.** `제목: "Barrow and …" (arXiv:…)` 처럼
   인용 스칼라 뒤에 내용이 더 오는 형태. 통째로 작은따옴표로 감싼다.
-- **자수는 본문 기준**이다(frontmatter 제외). 근거는 `verify_math.py` 머리말 참조.
+- **자수는 본문 기준**이다(frontmatter 제외, **그리고 2026-09-16 부터 도해 대체글도 제외**). 그래서 `LC_ALL=C.UTF-8 wc -m` 과 값이 다를 수 있다 — 대체글이 있는 노트에서는 `wc -m` 이 더 크다. 근거는 `verify_math.py` 머리말과 `tools/mathlib.py` 의 `strip_alt` 참조.
 - **`build_link_index.py` 를 manifest보다 먼저 돌리면** math 항목이 빠진다.
 - **일화가 2,500자를 넘으면 실패한다.** 길어졌다면 개념이나 인물로 옮길 내용이 섞인 것이다.
