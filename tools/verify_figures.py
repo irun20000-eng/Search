@@ -257,6 +257,48 @@ def find_chrome():
     return None
 
 
+# ── 글꼴 계열 검사 (브라우저가 없어도 돈다) ─────────────────────────────
+# `math/` 톤은 「세리프 본문」이 사용자 승인 예외다(CLAUDE.md). 2026-09-16 에 도해
+# 다섯 장이 산세리프를 쓰고 있던 것을 사용자 승인으로 통일했는데, **문서 한 줄로 끝내면
+# 다음 도해가 산세리프로 돌아가도 CI 는 초록이다.** 「재발 방지는 문서가 아니라 게이트에
+# 적는다」(LESSONS 2026-09-02)라 여기에 적는다.
+#
+# ⚠ 예외는 지우지 말고 **이유와 함께** 아래에 적는다. 통일 커밋이 예외 하나를 이유도
+#   모른 채 삼켰다 — 세리프 옛날식 숫자로 `u(x, 0)` 이 `u(x, o)` 로 읽혀 2026-08-26
+#   검수가 그 「0」만 산세리프 tspan 으로 떼어 둔 것이었다(LESSONS 의 아직 열린 항목).
+#   ⚠ `font-variant-numeric:lining-nums` 는 **폰트가 `lnum` 피처를 가질 때만** 듣는다 —
+#     실측하니 이 컨테이너에서도 EB Garamond(구글폰트)에서도 무효였다. 숫자를 지키려면
+#     선언이 아니라 **산세리프 tspan** 이다.
+SERIF_STACK = ("EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', "
+               "NanumMyeongjo, Batang, AppleMyungjo, serif")
+FONT_EXCEPTIONS = {
+    # 파일: [(선언 조각, 왜)]
+    'vibrating-string-initial-shape.svg': [
+        ('sans-serif', '수식 u(x, 0) 의 「0」 한 글자 — 세리프 옛날식 숫자 방지(2026-08-26 검수)'),
+    ],
+}
+
+
+def check_fonts(files):
+    """도해 글꼴이 세리프 스택인가. 예외는 이유와 함께 위에 적힌 것만 봐준다."""
+    bad = 0
+    for f in files:
+        name = pathlib.Path(f).name
+        text = pathlib.Path(f).read_text(encoding='utf-8')
+        allowed = [frag for frag, _why in FONT_EXCEPTIONS.get(name, [])]
+        for decl in re.findall(r'font-family\s*[:=]\s*"([^"]+)"', text):
+            if decl == SERIF_STACK:
+                continue
+            if any(frag in decl for frag in allowed):
+                continue
+            print('    글꼴 %-34s 세리프 스택이 아니다: %s' % (name, decl[:60]))
+            bad += 1
+    if bad:
+        print('\n글꼴 지적 %d건 — math 톤은 세리프다(CLAUDE.md). 일부러 벗어나야 하면'
+              ' verify_figures.py 의 FONT_EXCEPTIONS 에 **이유와 함께** 적을 것.' % bad)
+    return bad
+
+
 def main(argv):
     args = [a for a in argv[1:] if a != '--allow-skip']
     allow_skip = '--allow-skip' in argv[1:]
@@ -271,12 +313,14 @@ def main(argv):
         print('FAIL — 파일이 없다: ' + ', '.join(missing))
         return 1
 
+    font_bad = check_fonts(files)
+
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         print('[건너뜀] playwright 가 없다 — 도해 렌더 검사를 하지 않았다.')
         print('         설치: pip install playwright  (브라우저가 이미 있으면 받지 않아도 된다)')
-        return skip
+        return 1 if font_bad else skip
     chrome = find_chrome()
 
     fails = 0
@@ -340,8 +384,8 @@ def main(argv):
                       f'{h["w"]:.1f}×{h["h"]:.1f} = {h["area"]:.1f}px²')
         browser.close()
 
-    print(f'\n{len(files)}장 · 지적 {fails}건.')
-    return 1 if fails else 0
+    print(f'\n{len(files)}장 · 지적 {fails}건 · 글꼴 지적 {font_bad}건.')
+    return 1 if (fails or font_bad) else 0
 
 
 if __name__ == '__main__':

@@ -48,7 +48,9 @@
   <polyline fill="none" stroke="#221E18" stroke-width="2.6" stroke-linejoin="round"
     points="350.00,196.00 355.00,192.72 360.00,189.45 365.00,186.22 370.00,183.04 375.00,179.92 380.00,176.89 385.00,173.95 390.00,171.13 395.00,168.43 400.00,165.88 405.00,163.47 410.00,161.24 415.00,159.18 420.00,157.30 425.00,155.63 430.00,154.16 435.00,152.90 440.00,151.86 445.00,151.05 450.00,150.47 455.00,150.12 460.00,150.00 465.00,150.12 470.00,150.47 475.00,151.05 480.00,151.86 485.00,152.90 490.00,154.16 495.00,155.63 500.00,157.30 505.00,159.18 510.00,161.24 515.00,163.47 520.00,165.88 525.00,168.43 530.00,171.13 535.00,173.95 540.00,176.89 545.00,179.92 550.00,183.04 555.00,186.22 560.00,189.45 565.00,192.72 570.00,196.00"/>
 
-  <text x="460" y="246" text-anchor="middle" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="15" fill="#221E18">u(x, <tspan font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="normal" font-size="13">0</tspan>) = a · sin(πx / L)</text>
+  <text x="460" y="246" text-anchor="middle" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="15" fill="#221E18">u(x, <!-- ⚠ 이 「0」만 산세리프다. 세리프 옛날식 숫자로 u(x, 0) 이 u(x, o) 로 읽혀
+       2026-08-26 검수가 떼어 놓은 것이다(LESSONS 「세리프 서체에 숫자를 넣지 않는다」).
+       2026-09-16 톤 통일에서 한 번 지웠다가 검수가 잡아 되돌렸다 — 지우지 말 것. --><tspan font-family="Pretendard, 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', NanumGothic, 'Apple SD Gothic Neo', sans-serif" font-style="normal" font-size="13">0</tspan>) = a · sin(πx / L)</text>
   <text x="460" y="264" text-anchor="middle" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12.5" fill="#5C5346">전 구간이 한 식으로 쓰인다</text>
 
   <!-- 아래 물음 -->

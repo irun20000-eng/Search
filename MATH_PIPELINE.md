@@ -126,6 +126,21 @@ PD 초상은 위키미디어 커먼즈에서 확보해 `math/assets/portraits/` 
 본문 마크다운의 이미지 경로는 **노트 폴더 기준**(`../../assets/figures/x.svg`),
 frontmatter `이미지.파일`은 **math/ 기준**(`assets/figures/x.svg`)이다.
 
+**도해 글자는 세리프 스택 하나로 쓴다**(2026-09-16 사용자 승인). `math/` 톤의 세리프 예외가
+본문에만 적용되고 도해 다섯 장이 산세리프로 남아 있던 것을 그때 통일했다. 스택은 이것 하나다.
+
+```
+EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif
+```
+
+⚠ **숫자를 세리프에 넣을 때 `font-variant-numeric:lining-nums` 를 믿지 말 것.** 그 선언은
+폰트가 `lnum` 피처를 가질 때만 듣는다 — 실측하니 구글폰트 EB Garamond 에도 NanumMyeongjo 에도
+없고, 선언을 지운 사본과 원본의 렌더가 **픽셀 단위로 같았다**. 옛날식 숫자가 걱정되는 자리는
+**그 숫자만 산세리프 `<tspan>`** 으로 뺀다(`vibrating-string-initial-shape` 의 `u(x, 0)` 이
+그 예다 — 세리프로 두니 `u(x, o)` 로 읽혔다). **그런 예외는 `tools/verify_figures.py` 의
+`FONT_EXCEPTIONS` 에 이유와 함께 등재한다** — 등재하지 않으면 글꼴 게이트가 잡고, 등재해 두지
+않으면 다음 통일 작업이 이유도 모른 채 삼킨다(2026-09-16 에 실제로 한 번 삼켰다).
+
 **도해는 두 번 본다 — 글자는 기계가, 그림은 사람이.**
 `python3 tools/verify_figures.py` 가 브라우저로 글자 넘침·겹침을 막는다(좌표만 읽어서는
 한글 폭을 모른다). **그림이 옳은지는 그 검사기가 못 잰다** — 렌더해서 눈으로 보고
