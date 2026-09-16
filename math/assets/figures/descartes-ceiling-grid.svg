@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 416" role="img" aria-label="그림 위쪽에 「두 수로 한 점을 가리킨다 — 천장의 파리 이야기」라는 표제가 있다. 그 아래에 천장의 타일을 나타낸 격자가 있다. 가로로 일곱 칸, 세로로 네 칸이다. 격자 안 한 자리에 굵은 점이 찍혀 있고 그 옆에 파리라고 적혀 있다. 그 점에서 왼쪽 가장자리까지 가로로 파선이, 위쪽 가장자리까지 세로로 파선이 그어져 있다. 격자 아래에는 가로로 네 칸이라고 적혀 있고 그 길이만큼 선이 그어져 있으며, 격자 왼쪽에는 세로로 세 칸이라고 적혀 있고 역시 그 길이만큼 선이 그어져 있다. 점 옆에는 괄호 열고 4 쉼표 3 괄호 닫고 라고 적혀 있다. 그림 아래에는 부호 설명이 있다. 격자가 천장의 타일이고 굵은 점이 파리이며 파선이 두 가장자리에서 잰 칸수라는 것이다. 맨 아래에는 단서가 있다. 파리를 보고 좌표를 떠올렸다는 이야기는 동시대 기록이 없다는 것이 출처 2 이며, 이 그림은 좌표가 무엇인지를 보일 뿐이라는 것이다">
+  <title>두 수로 한 점을 가리킨다 — 데카르트와 천장의 파리</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .tile{stroke:#C9BBA4;stroke-width:1;}
+    .guide{stroke:#3A5C77;stroke-width:1.4;stroke-dasharray:5 4;}
+    .meas{stroke:#9C5A2C;stroke-width:1.8;}
+  </style>
+  <rect width="700" height="416" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">두 수로 한 점을 가리킨다 — 천장의 파리 이야기</text>
+  <rect x="140" y="76" width="420" height="240" fill="#FBF6EC"/>
+  <line x1="140" y1="76" x2="140" y2="316" class="tile"/><line x1="200" y1="76" x2="200" y2="316" class="tile"/><line x1="260" y1="76" x2="260" y2="316" class="tile"/><line x1="320" y1="76" x2="320" y2="316" class="tile"/><line x1="380" y1="76" x2="380" y2="316" class="tile"/><line x1="440" y1="76" x2="440" y2="316" class="tile"/><line x1="500" y1="76" x2="500" y2="316" class="tile"/><line x1="560" y1="76" x2="560" y2="316" class="tile"/><line x1="140" y1="76" x2="560" y2="76" class="tile"/><line x1="140" y1="136" x2="560" y2="136" class="tile"/><line x1="140" y1="196" x2="560" y2="196" class="tile"/><line x1="140" y1="256" x2="560" y2="256" class="tile"/><line x1="140" y1="316" x2="560" y2="316" class="tile"/>
+  <line x1="140" y1="256" x2="380" y2="256" class="guide"/>
+  <line x1="380" y1="76" x2="380" y2="256" class="guide"/>
+  <circle cx="380" cy="256" r="6" fill="#221E18"/>
+  <text x="392" y="246" font-size="12" class="dim">파리</text>
+  <text x="392" y="276" font-size="13" class="sien">(4, 3)</text>
+  <line x1="126" y1="76" x2="126" y2="256" class="meas"/>
+  <text x="52" y="176" font-size="12" class="sien">세로 3칸</text>
+  <line x1="140" y1="344" x2="380" y2="344" class="meas"/>
+  <text x="238" y="366" font-size="12" class="sien">가로 4칸</text>
+  <text x="46" y="392" font-size="13" class="dim">격자가 천장의 타일, 굵은 점이 파리, 파선이 두 가장자리에서 잰 칸수다.</text>
+  <text x="46" y="412" font-size="13" class="sien">⚠ 파리 이야기는 동시대 기록이 없다 [2] — 이 그림은 좌표가 무엇인지를 보일 뿐이다.</text>
+</svg>
