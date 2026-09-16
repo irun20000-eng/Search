@@ -103,6 +103,10 @@ python3 tools/verify_figures.py              # ★ 도해 — 브라우저로 �
                                             #   ⚠ 한글 자폭은 깔린 폰트가 자(尺)다 — 로컬과 러너가 2~4% 어긋난다.
                                             #     정본은 CI(`.github/workflows/gates.yml`) 쪽 계측이다.
 python3 tools/figure_status.py               # 도해 현황 (게이트 아님) — 이 수를 문서에 손으로 적지 말 것
+python3 tools/verify_roadmap.py              # ROADMAP §11 이 서가보다 낡았는가
+                                            #   이미 쓴 노트가 아직 「권고·보류·차선」으로 적혀 있는지만 본다
+                                            #   ⚠ 판단이 옳은가는 안 본다 · 아카이브(취소선 제목·<details>)는 건너뛴다
+                                            #   ⚠ 첫 칸이 한글 이름인 후보 줄은 못 본다 — 몇 줄인지 함께 찍는다
 python3 tools/build_math_manifest.py         # math/manifest.json
 python3 tools/build_link_index.py            # 루트 link-index.json (manifest 뒤에 실행)
 python3 tools/build_math_status.py           # ROADMAP 「자동 측정」 블록 (link-index 뒤에 실행)
