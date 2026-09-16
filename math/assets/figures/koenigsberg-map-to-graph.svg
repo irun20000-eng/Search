@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 434" role="img" aria-label="왼쪽은 쾨니히스베르크의 약도다. 위와 아래에 강변 땅이 가로로 길게 있고 그 사이를 옅은 청색 띠로 칠한 강이 지난다. 강 안에 섬이 둘 있는데 왼쪽 섬이 더 크다. 네 땅에 각각 A, B, C, D 라고 적혀 있다. A 는 위 강변, B 는 큰 섬, C 는 아래 강변, D 는 작은 섬이다. 땅과 땅을 잇는 갈색 막대가 일곱 개 있다. A 와 B 사이에 둘, C 와 B 사이에 둘, A 와 D 사이에 하나, C 와 D 사이에 하나, B 와 D 사이에 하나다. 막대는 서로 다른 자리에 놓여 하나씩 셀 수 있다. 오른쪽은 같은 것을 점과 선으로 바꾼 그림이다. 점이 넷이고 왼쪽 약도와 같은 자리에 A, B, C, D 로 놓였다. 점을 잇는 파란 선이 일곱이며, 선이 둘인 자리는 두 줄로 휘어 그렸다. 점 옆에 그 점에 붙은 선의 개수가 적혀 있는데 A 는 3, B 는 5, C 는 3, D 는 3 이다. 그림 아래에는 부호 설명이 있다. 왼쪽은 갈색 막대가 다리, 옅은 청색 띠가 강, 글자 A B C D 가 네 땅이라는 것이고, 오른쪽은 파란 선이 같은 다리, 점이 같은 땅, 점 옆의 수가 그 점에 붙은 선의 개수라는 것이다. 그림 맨 아래에는 단서가 있다. 다리 배치는 널리 쓰이는 그림을 따라 이 노트가 재구성한 것이며, 배치를 직접 밝히는 출처는 아직 없다는 것이다">
-  <title>버려서 얻는다 — 쾨니히스베르크의 약도와 그래프</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 434" role="img" aria-label="그림 위쪽에 「같은 문제를 두 번 그린다 — 약도와 그래프」라는 표제가 있다. 왼쪽은 쾨니히스베르크의 약도다. 위와 아래에 강변 땅이 가로로 길게 있고 그 사이를 넓은 띠로 칠한 강이 지난다. 강 안에 섬이 둘 있는데 왼쪽 섬이 더 크다. 네 땅에 각각 A, B, C, D 라고 적혀 있다. A 는 위 강변, B 는 큰 섬, C 는 아래 강변, D 는 작은 섬이다. 땅과 땅을 잇는 굵은 막대가 일곱 개 있다. A 와 B 사이에 둘, C 와 B 사이에 둘, A 와 D 사이에 하나, C 와 D 사이에 하나, B 와 D 사이에 하나다. 막대는 서로 다른 자리에 놓여 하나씩 셀 수 있다. 오른쪽은 같은 것을 점과 선으로 바꾼 그림이다. 점이 넷이고 왼쪽 약도와 같은 자리에 A, B, C, D 로 놓였다. 점을 잇는 가는 선이 일곱이며, 선이 둘인 자리는 두 줄로 휘어 그렸다. 점 옆에 그 점에 붙은 선의 개수가 적혀 있는데 A 는 3, B 는 5, C 는 3, D 는 3 이다. 그림 아래에는 부호 설명이 있다. 왼쪽은 굵은 막대가 다리, 넓은 띠가 강, 글자 A B C D 가 네 땅이라는 것이고, 오른쪽은 가는 선이 같은 다리, 둥근 점이 같은 땅, 점 옆의 수가 그 점에 붙은 선의 개수라는 것이다. 그림 맨 아래에는 단서가 있다. 어느 땅이 어느 땅과 몇 개의 다리로 이어졌는지 그 배치는 널리 쓰이는 그림을 따라 재구성한 것이며, 직접 밝히는 출처는 아직 없다는 것이다">
+  <title>같은 문제를 두 번 그린다 — 쾨니히스베르크의 약도와 그래프</title>
   <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
          font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
@@ -9,9 +9,7 @@
     .edge{stroke:#3A5C77;stroke-width:1.8;fill:none;}
   </style>
   <rect width="700" height="434" fill="#FFFDF7"/>
-  <text x="46" y="30" font-size="16">버려서 얻는다 — 같은 문제를 두 번 그린다</text>
-
-  <!-- ══ 왼쪽: 약도 ══ -->
+  <text x="46" y="30" font-size="16">같은 문제를 두 번 그린다 — 약도와 그래프</text>
   <rect x="50" y="108" width="280" height="184" fill="#E3EAEF"/>
   <rect x="50" y="62" width="280" height="46" class="land"/>
   <rect x="50" y="292" width="280" height="46" class="land"/>
@@ -28,8 +26,6 @@
   <text x="60" y="322" font-size="14" class="dim">C</text>
   <text x="140" y="206" font-size="14" class="dim">B</text>
   <text x="264" y="206" font-size="14" class="dim">D</text>
-
-  <!-- ══ 오른쪽: 그래프 ══ -->
   <path d="M520,110 Q466,151 445,215" class="edge"/>
   <path d="M520,110 Q499,174 445,215" class="edge"/>
   <path d="M520,320 Q499,254 445,215" class="edge"/>
@@ -45,8 +41,7 @@
   <text x="392" y="212" font-size="13" class="blue">B · 5</text>
   <text x="608" y="212" font-size="13" class="blue">D · 3</text>
   <text x="533" y="330" font-size="13" class="blue">C · 3</text>
-
-  <text x="46" y="368" font-size="13" class="dim">왼쪽 — 갈색 막대가 다리, 옅은 청색 띠가 강, 글자 A B C D 가 네 땅이다.</text>
-  <text x="46" y="392" font-size="13" class="dim">오른쪽 — 파란 선이 같은 다리, 점이 같은 땅, 점 옆의 수가 그 점에 붙은 선의 개수다.</text>
-  <text x="46" y="418" font-size="13" class="sien">⚠ 다리 배치는 널리 쓰이는 그림을 따라 이 노트가 재구성한 것이다 — 배치를 직접 밝히는 출처는 아직 없다.</text>
+  <text x="46" y="368" font-size="13" class="dim">왼쪽 — 굵은 막대가 다리, 넓은 띠가 강, 글자 A B C D 가 네 땅이다.</text>
+  <text x="46" y="392" font-size="13" class="dim">오른쪽 — 가는 선이 같은 다리, 둥근 점이 같은 땅, 점 옆의 수가 그 점에 붙은 선의 개수다.</text>
+  <text x="46" y="418" font-size="13" class="sien">⚠ 어느 땅이 어느 땅과 몇 개로 이어졌는지, 그 배치는 재구성한 것이다 — 직접 밝히는 출처는 아직 없다.</text>
 </svg>
