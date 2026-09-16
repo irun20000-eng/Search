@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 396" role="img" aria-label="왼쪽과 오른쪽 두 그림이 나란히 있다. 왼쪽은 복소평면이다. 가로축이 실수축, 세로축이 허수축이고 원점에서 만난다. 실수축에 1, 2, 3 눈금이 있고 1 과 3 에 숫자가 붙어 있으며, 허수축에 i 와 2i 눈금이 있다. 실수 3, 허수 2 자리에 점이 하나 찍혀 있고 거기서 두 축으로 파선 안내선이 내려가 있으며, 그 점 옆에 3 더하기 2i 는 좌표 3, 2 라고 적혀 있다. 오른쪽은 반지름 1 인 원이다. 원 위의 오른쪽 끝에 1, 위쪽 끝에 i, 왼쪽 끝에 마이너스 1 이 표시되어 있고 세 점 모두 찍혀 있다. 원 바깥에 굽은 화살표가 둘 있는데 하나는 1 에서 i 로, 다른 하나는 i 에서 마이너스 1 로 향하고 각각 i 를 곱한다는 표시가 붙어 있다. 두 화살표는 각각 90도씩이다. 원 안쪽 원점에는 1 방향과 i 방향 사이의 직각을 표시한 작은 호가 있고 90도라고 적혀 있다. 아래에는 왼쪽 그림이 수 하나가 평면의 점 하나라는 것이고, 오른쪽 그림은 1 에 i 를 곱하면 i 가 되고 i 에 i 를 곱하면 마이너스 1 이 되며 두 번 다 90도라는 것이라고 적혀 있다. 맨 아래에는 제곱해서 마이너스 1 이 되는 수라는 정의가 두 번 돌면 반대편이라는 그림이 된다고 적혀 있다">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" role="img" aria-label="왼쪽과 오른쪽 두 그림이 나란히 있다. 왼쪽은 복소평면이다. 가로축이 실수축, 세로축이 허수축이고 원점에서 만난다. 실수축에 1, 2, 3 눈금이 있고 셋 다 숫자가 붙어 있으며, 허수축에 i 와 2i 눈금이 있다. 실수 3, 허수 2 자리에 갈색 점이 하나 찍혀 있고 거기서 두 축으로 파선 안내선이 내려가 있으며, 그 점 옆에 3 더하기 2i 는 좌표 3, 2 라고 적혀 있다. 오른쪽은 반지름 1 인 원을 파선으로 그린 것이다. 원 위의 오른쪽 끝에 1, 위쪽 끝에 i, 왼쪽 끝에 마이너스 1 이 파란 점으로 찍혀 있다. 원 안에는 옅은 파선 십자 안내선이 있고, 원점에는 1 방향과 i 방향 사이의 각을 표시한 작은 호가 있으며 90도라고 적혀 있다. 원 바깥에는 갈색 굽은 화살표가 둘 있다. 하나는 1 이 있는 방향에서 시작해 i 가 있는 방향에서 끝나고, 다른 하나는 i 가 있는 방향에서 시작해 마이너스 1 이 있는 방향에서 끝난다. 둘 다 정확히 4분의 1 바퀴이고 각각 i 를 곱한다는 표시가 붙어 있다. 그림 아래에는 부호 설명이 있다. 왼쪽은 갈색 점이 3 더하기 2i 이고 파선이 두 축으로 내린 안내선이라는 것, 오른쪽은 파란 점이 1 과 i 와 마이너스 1 이고 갈색 호 둘이 i 를 한 번씩 곱하는 것이며 원점의 작은 호가 두 방향 사이의 각이라는 것이다. 맨 아래에는 두 그림의 축척이 다르다는 단서가 있다. 오른쪽은 단위원을 크게 그린 것이다">
   <title>정의가 그림이 된다 — 복소평면과 i 를 곱하는 일</title>
   <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
@@ -9,13 +9,13 @@
     .circ{fill:none;stroke:#3A5C77;stroke-width:1.4;stroke-dasharray:6 4;}
     .rot{fill:none;stroke:#9C5A2C;stroke-width:2;}
   </style>
-  <rect width="700" height="396" fill="#FFFDF7"/>
+  <rect width="700" height="400" fill="#FFFDF7"/>
   <text x="46" y="30" font-size="16">정의가 그림이 된다 — 복소평면과 i 를 곱하는 일</text>
 
   <!-- ══ 왼쪽: 복소평면 위의 한 점 ══ -->
-  <line x1="56" y1="206" x2="286" y2="206" class="axis"/>
+  <line x1="88" y1="206" x2="286" y2="206" class="axis"/>
   <polygon points="292,206 281,201.5 281,210.5" fill="#8A7F6E"/>
-  <line x1="150" y1="292" x2="150" y2="112" class="axis"/>
+  <line x1="150" y1="264" x2="150" y2="112" class="axis"/>
   <polygon points="150,106 145.5,117 154.5,117" fill="#8A7F6E"/>
   <line x1="178" y1="202" x2="178" y2="210" class="axis"/>
   <line x1="206" y1="202" x2="206" y2="210" class="axis"/>
@@ -25,8 +25,9 @@
   <line x1="234" y1="150" x2="234" y2="206" class="guide"/>
   <line x1="150" y1="150" x2="234" y2="150" class="guide"/>
   <circle cx="234" cy="150" r="6" fill="#9C5A2C"/>
-  <text x="172" y="224" font-size="12" class="ax">1</text>
-  <text x="228" y="224" font-size="12" class="ax">3</text>
+  <text x="174" y="224" font-size="12" class="ax">1</text>
+  <text x="202" y="224" font-size="12" class="ax">2</text>
+  <text x="230" y="224" font-size="12" class="ax">3</text>
   <text x="134" y="182" font-size="12" class="ax">i</text>
   <text x="128" y="154" font-size="12" class="ax">2i</text>
   <text x="252" y="196" font-size="12" class="ax">실수축</text>
@@ -34,25 +35,25 @@
   <text x="246" y="144" font-size="13" class="sien">3 + 2i ↔ (3, 2)</text>
 
   <!-- ══ 오른쪽: 1 → i → −1 ══ -->
-  <line x1="398" y1="208" x2="602" y2="208" class="axis"/>
-  <line x1="500" y1="306" x2="500" y2="110" class="axis"/>
+  <line x1="404" y1="208" x2="596" y2="208" class="guide"/>
+  <line x1="500" y1="304" x2="500" y2="112" class="guide"/>
   <circle cx="500" cy="208" r="90" class="circ"/>
-  <path d="M612.9,192.1 A114,114 0 0 0 515.9,95.1" class="rot"/>
-  <polygon points="515.9,95.1 527.5,91.2 526.0,102.1" fill="#9C5A2C"/>
-  <path d="M484.1,95.1 A114,114 0 0 0 387.1,192.1" class="rot"/>
-  <polygon points="387.1,192.1 383.2,180.5 394.1,182.0" fill="#9C5A2C"/>
+  <path d="M552,208 A52,52 0 0 0 500,156" fill="none" stroke="#8A7F6E" stroke-width="1.2"/>
+  <text x="514" y="196" font-size="11" class="ax">90°</text>
+  <path d="M604,208 A104,104 0 0 0 500,104" class="rot"/>
+  <polygon points="500,104 511,98.5 511,109.5" fill="#9C5A2C"/>
+  <path d="M500,104 A104,104 0 0 0 396,208" class="rot"/>
+  <polygon points="396,208 390.5,197 401.5,197" fill="#9C5A2C"/>
   <circle cx="590" cy="208" r="6" fill="#3A5C77"/>
   <circle cx="500" cy="118" r="6" fill="#3A5C77"/>
   <circle cx="410" cy="208" r="6" fill="#3A5C77"/>
-  <text x="600" y="228" font-size="13" class="blue">1</text>
-  <text x="510" y="114" font-size="13" class="blue">i</text>
-  <text x="380" y="228" font-size="13" class="blue">−1</text>
-  <text x="578" y="122" font-size="13" class="sien">× i</text>
-  <text x="396" y="122" font-size="13" class="sien">× i</text>
-  <path d="M536,208 A36,36 0 0 0 500,172" fill="none" stroke="#8A7F6E" stroke-width="1.2"/>
-  <text x="540" y="180" font-size="12" class="ax">90°</text>
+  <text x="572" y="228" font-size="13" class="blue">1</text>
+  <text x="510" y="136" font-size="13" class="blue">i</text>
+  <text x="414" y="228" font-size="13" class="blue">−1</text>
+  <text x="596" y="120" font-size="13" class="sien">× i</text>
+  <text x="386" y="120" font-size="13" class="sien">× i</text>
 
-  <text x="56" y="340" font-size="13" class="dim">a + bi ↔ (a, b) — 수 하나가 평면의 점 하나다 [3][8]</text>
-  <text x="380" y="340" font-size="13" class="dim">1 · i = i, i · i = −1 — 두 번 다 90° 다</text>
-  <text x="46" y="372" font-size="13" class="sien">제곱해서 −1 이 되는 수라는 정의 [6] 가, 두 번 돌면 반대편이라는 그림이 된다.</text>
+  <text x="46" y="340" font-size="13" class="dim">왼쪽 — 갈색 점이 3 + 2i, 파선이 두 축으로 내린 안내선. 오른쪽 — 파란 점이 1, i, −1.</text>
+  <text x="46" y="362" font-size="13" class="dim">오른쪽의 갈색 호 둘은 i 를 한 번씩 곱하는 것이고, 원점의 작은 호는 두 방향 사이의 각이다.</text>
+  <text x="46" y="386" font-size="13" class="sien">⚠ 두 그림의 축척이 다르다 — 오른쪽은 단위원을 크게 그린 것이다.</text>
 </svg>
