@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 390" role="img" aria-label="그림 위쪽에 「넓어진 것이지 바뀐 것이 아니다 — 두 정의가 담는 것」이라는 표제가 있다. 그 아래에 함수의 정의가 넓어진 것을 두 겹의 상자로 그렸다. 바깥 상자에는 디리클레 1837 이라고 적혀 있고 x 하나에 y 하나가 정해지기만 하면 된다는 설명과 출처 1 표시가 붙어 있다. 그 안에 더 작은 상자가 하나 들어 있고 오일러 1748, 하나의 식 이라는 말과 출처 1 표시가 붙어 있다. 안쪽 상자에는 예가 둘 그려져 있는데 위로 벌어진 포물선에 y 는 x 의 제곱이라는 이름이 붙었고, 물결 모양 곡선에 사인 x 라는 이름이 붙었다. 안쪽 상자 바깥이면서 바깥 상자 안인 자리에는 1837 에 들어온 것들 이라고 적혀 있고 예가 셋 그려져 있다. 하나는 가운데가 뾰족하게 꺾인 선이고 꺾인 선이라는 이름이 붙었다. 하나는 위아래 두 높이에 작은 점이 번갈아 찍힌 그림인데, 같은 가로 자리에 점이 둘 겹치는 일 없이 위 높이와 아래 높이가 서로 어긋나게 놓였고, 어느 구간을 보아도 두 높이에 점이 다 있다. 위가 1, 아래가 0 이며 그릴 수 없는 것이라는 이름이 붙었다. 하나는 세 칸 곱하기 두 칸짜리 격자에 날은 1 과 2, 비는 3 과 1 을 적어 넣은 관측표이고 표라는 이름이 붙었다. 상자 아래에는 부호 설명이 있다. 상자 두 개가 겹쳐 있고 바깥이 디리클레 1837, 안이 오일러 1748 이며 상자 안의 그림이 그 정의가 담는 예라는 것이다. 맨 아래에는 단서가 있다. 가운데의 그릴 수 없는 것은 정말로 그릴 수 없으며, 어느 칸을 확대해도 1 과 0 이 함께 있으므로 여기 그린 것은 그 성질을 다 담지 못한 시늉이라는 것이다">
+  <title>넓어진 것이지 바뀐 것이 아니다 — 오일러 1748 과 디리클레 1837</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;
+         font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .blue{fill:#3A5C77;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .outer{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1.6;}
+    .inner{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.5;}
+    .curve{fill:none;stroke:#3A5C77;stroke-width:2;}
+    .grid{stroke:#8A7F6E;stroke-width:1;}
+  </style>
+  <rect width="700" height="390" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">넓어진 것이지 바뀐 것이 아니다 — 두 정의가 담는 것</text>
+  <rect x="56" y="62" width="588" height="228" rx="14" class="outer"/>
+  <text x="72" y="88" font-size="13" class="sien">디리클레 1837 — x 하나에 y 하나가 정해지기만 하면 된다 [1]</text>
+  <rect x="84" y="108" width="214" height="162" rx="12" class="inner"/>
+  <text x="98" y="130" font-size="13" class="blue">오일러 1748 — 하나의 식 [1]</text>
+  <polyline points="104,170.0 110,187.9 116,202.6 122,214.2 128,222.6 134,227.9 140,230.0 146,228.9 152,224.7 158,217.3 164,206.8 170,193.1 176,176.3" class="curve"/>
+  <polyline points="200,200.0 205,191.1 210,183.3 215,177.5 220,174.4 225,174.4 230,177.5 235,183.3 240,191.1 245,200.0 250,208.9 255,216.7 260,222.5 265,225.6 270,225.6 275,222.5 280,216.7 285,208.9 290,200.0" class="curve"/>
+  <text x="112" y="258" font-size="12" class="ax">y = x²</text>
+  <text x="228" y="258" font-size="12" class="ax">sin x</text>
+  <text x="330" y="130" font-size="13" class="sien">1837 에 들어온 것들</text>
+  <polyline points="332,236 366,180 408,236" class="curve"/>
+  <text x="344" y="258" font-size="12" class="ax">꺾인 선</text>
+  <circle cx="433.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="438.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="443.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="448.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="453.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="458.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="463.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="468.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="473.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="478.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="483.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="488.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="493.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="498.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="503.0" cy="186" r="0.9" fill="#3A5C77"/><circle cx="435.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="440.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="445.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="450.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="455.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="460.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="465.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="470.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="475.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="480.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="485.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="490.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="495.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="500.5" cy="230" r="0.9" fill="#3A5C77"/><circle cx="505.5" cy="230" r="0.9" fill="#3A5C77"/>
+  <text x="420" y="190" font-size="10" class="ax">1</text>
+  <text x="420" y="234" font-size="10" class="ax">0</text>
+  <text x="428" y="258" font-size="12" class="ax">그릴 수 없는 것</text>
+  <line x1="532" y1="180" x2="604" y2="180" class="grid"/>
+  <line x1="532" y1="199" x2="604" y2="199" class="grid"/>
+  <line x1="532" y1="218" x2="604" y2="218" class="grid"/>
+  <line x1="532" y1="180" x2="532" y2="218" class="grid"/>
+  <line x1="556" y1="180" x2="556" y2="218" class="grid"/>
+  <line x1="580" y1="180" x2="580" y2="218" class="grid"/>
+  <line x1="604" y1="180" x2="604" y2="218" class="grid"/>
+  <text x="538" y="194" font-size="10" class="ax">날</text>
+  <text x="565" y="194" font-size="10" class="ax">1</text>
+  <text x="589" y="194" font-size="10" class="ax">2</text>
+  <text x="538" y="213" font-size="10" class="ax">비</text>
+  <text x="565" y="213" font-size="10" class="ax">3</text>
+  <text x="589" y="213" font-size="10" class="ax">1</text>
+  <text x="562" y="258" font-size="12" class="ax">표</text>
+  <text x="46" y="322" font-size="13" class="dim">상자 두 개가 겹쳐 있다 — 바깥이 디리클레 1837, 안이 오일러 1748. 상자 안의 그림이 그 정의가 담는 예다.</text>
+  <text x="46" y="346" font-size="13" class="sien">⚠ 가운데 「그릴 수 없는 것」은 정말로 그릴 수 없다 — 어느 칸을 확대해도 1 과 0 이 함께 있다.</text>
+  <text x="46" y="368" font-size="13" class="sien">여기 그린 것은 그 성질을 다 담지 못한 시늉이다.</text>
+</svg>
