@@ -1,6 +1,28 @@
 {
- "count": 11,
+ "count": 12,
  "notes": [
+  {
+   "slug": "parkinsons-law",
+   "title": "파킨슨의 법칙(Parkinson's Law) — 이해편(입문·딥)",
+   "date": "2026-09-17",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "행정학",
+    "조직",
+    "관료제",
+    "시간관리",
+    "마감",
+    "업무량",
+    "통계읽기",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 5편 · 시간을 주면 그만큼 늘어난다",
+   "chars": 11385,
+   "pic": "parkinsons-law.png",
+   "path": "concept/notes/parkinsons-law.md"
+  },
   {
    "slug": "benfords-law",
    "title": "벤포드의 법칙(Benford's Law) — 이해편(입문·딥)",
