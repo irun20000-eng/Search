@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 362" role="img" aria-label="그림 위쪽에 「먼저 적어 둔 쪽과 먼저 펴낸 쪽 — 뉴턴과 라이프니츠」라는 표제가 있고 그 아래에 우선권을 인쇄된 때로 재면 한쪽이고 먼저 적은 때로 재면 다른 쪽이 된다고 적혀 있다. 가운데에는 1660년부터 1740년까지의 가로 연표가 있고 눈금이 스무 해마다 붙어 있다. 연표 위로 가로줄이 둘 있다. 위쪽 줄은 뉴턴의 것으로 1666년 10월 자리에 굵은 점이 있고 1736년 자리에 네모가 있으며, 두 표시를 잇는 긴 줄에 적어 둔 뒤 인쇄되기까지 70년이라고 적혀 있다. 아래쪽 줄은 라이프니츠의 것으로 1675년 가을 자리에 굵은 점이 있고 1684년 자리에 네모가 있어 두 표시가 가깝게 붙어 있다. 1666년부터 1684년까지의 구간에는 옅은 띠가 깔려 있고 그 위에 이 18년 사이에 갈렸다고 적혀 있다. 그림 아래에는 부호 설명이 있다. 굵은 점이 인쇄되지 않은 원고이고 네모가 인쇄된 출판이며 옅은 띠가 두 잣대 사이의 18년이라는 것이다. 맨 아래에는 단서가 둘 있다. 하나는 해와 달이 출처가 적은 것이고 가로 간격만 자에 맞췄으며 점은 해 단위로 놓고 달은 라벨이 적는다는 것이고, 다른 하나는 1736년에 인쇄된 것이 1671년에 쓴 유율법이어서 1666년 원고와 같은 글이 아니라는 것이다">
+  <title>먼저 적어 둔 쪽과 먼저 펴낸 쪽 — 뉴턴과 라이프니츠</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .blue{fill:#3A5C77;} .ax{fill:#8A7F6E;}
+    .lane{stroke:#8A7F6E;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1.2;}
+  </style>
+  <rect width="700" height="362" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">먼저 적어 둔 쪽과 먼저 펴낸 쪽 — 뉴턴과 라이프니츠</text>
+  <text x="46" y="52" font-size="12" class="dim">우선권을 인쇄된 때로 재면 한쪽, 먼저 적은 때로 재면 다른 쪽이 된다.</text>
+  <rect x="113.5" y="88" width="130.5" height="174" fill="#F4EADC"/>
+  <text x="178.75" y="80" font-size="12" text-anchor="middle" class="sien">이 18년 사이에 갈렸다</text>
+  <line x1="113.5" y1="130" x2="621.0" y2="130" class="lane"/>
+  <circle cx="113.5" cy="130" r="5" fill="#9C5A2C"/>
+  <rect x="616.0" y="125" width="10" height="10" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="2"/>
+  <text x="46" y="134" font-size="13" class="sien">뉴턴</text>
+  <text x="122.5" y="118" font-size="12" class="dim">1666년 10월 유율 소논문</text>
+  <text x="612.0" y="118" font-size="12" text-anchor="end" class="dim">1736년 사후 출판</text>
+  <text x="367.25" y="150" font-size="12" text-anchor="middle" class="ax">적어 둔 뒤 인쇄되기까지 70년</text>
+  <line x1="178.75" y1="200" x2="244.0" y2="200" class="lane"/>
+  <circle cx="178.75" cy="200" r="5" fill="#3A5C77"/>
+  <rect x="239.0" y="195" width="10" height="10" fill="#FFFDF7" stroke="#3A5C77" stroke-width="2"/>
+  <text x="46" y="204" font-size="13" class="blue">라이프니츠</text>
+  <text x="178.75" y="180" font-size="12" text-anchor="middle" class="dim">1675년 가을 원고</text>
+  <text x="253.0" y="204" font-size="12" class="dim">1684년 출판 — 먼저 인쇄됐다</text>
+  <line x1="70" y1="262" x2="650" y2="262" class="axis"/>
+  <line x1="70.0" y1="262" x2="70.0" y2="267" class="axis"/>
+  <text x="70.0" y="282" font-size="12" text-anchor="middle" class="ax">1660</text>
+  <line x1="215.0" y1="262" x2="215.0" y2="267" class="axis"/>
+  <text x="215.0" y="282" font-size="12" text-anchor="middle" class="ax">1680</text>
+  <line x1="360.0" y1="262" x2="360.0" y2="267" class="axis"/>
+  <text x="360.0" y="282" font-size="12" text-anchor="middle" class="ax">1700</text>
+  <line x1="505.0" y1="262" x2="505.0" y2="267" class="axis"/>
+  <text x="505.0" y="282" font-size="12" text-anchor="middle" class="ax">1720</text>
+  <line x1="650.0" y1="262" x2="650.0" y2="267" class="axis"/>
+  <text x="650.0" y="282" font-size="12" text-anchor="middle" class="ax">1740</text>
+  <text x="46" y="308" font-size="13" class="dim">굵은 점이 인쇄되지 않은 원고, 네모가 인쇄된 출판이다 — 옅은 띠가 두 잣대 사이의 18년이다.</text>
+  <text x="46" y="330" font-size="12" class="sien">⚠ 해와 달은 출처가 적은 것이고, 가로 간격만 자에 맞췄다 — 점은 해 단위, 달은 라벨이 적는다.</text>
+  <text x="46" y="348" font-size="12" class="sien">⚠ 1736년에 인쇄된 것은 1671년에 쓴 『유율법』이다 — 1666년 원고와 같은 글이 아니다 [3].</text>
+</svg>

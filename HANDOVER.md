@@ -349,6 +349,7 @@ python3 tools/sync_obsidian.py --check --only reports
 | 2026-09-16 | `koenigsberg-map-to-graph` · `complex-plane-rotation` · `function-definition-widened` | 개념 3 |
 | 2026-09-16 | `lebesgue-coins-two-orders` · `points-problem-two-readings` · `descartes-ceiling-grid` | 일화 3 |
 | 2026-09-17 | `gregorian-telescope-path` · `gauss-17gon-shrinks` (+ `hyperbola-equal-areas` 를 생뱅상에도 물림) | 인물 3 |
+| 2026-09-17 | `huygens-anagram-letters` · `newton-leibniz-two-yardsticks` (+ `dedekind-geometric-evidence` 를 11월 24일에도 물림) | 일화 3 |
 
 **~~열려 있는 판단~~ → 닫혔다 — 도해 글꼴을 세리프로 통일했다(2026-09-16 사용자 승인).**
 
