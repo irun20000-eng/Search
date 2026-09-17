@@ -328,6 +328,11 @@ python3 tools/sync_obsidian.py --check --only reports
 | 2026-09-08 | (기존 8장 전수 점검 — 결함 6건 수정) | — |
 | 2026-09-09 | `archimedes-sphere-cylinder` · `bernoulli-two-spirals` · `huygens-cycloid` | 인물 2 · **일화 1(첫 도해)** |
 | 2026-09-09 | `area-function-strip` · `riemann-rectangles-refine` · `conic-sections-three-cuts` | 개념 2 · 세기 1 |
+| 2026-09-09 | `al-khwarizmi-completing-square` · `wallis-interpolation-gap` · `pascal-triangle-recurrence` | 인물 3 |
+| 2026-09-14 | `viete-infinite-product` · `dedekind-geometric-evidence` · `cantor-countable-vs-not` | 인물 3 |
+| 2026-09-16 | `koenigsberg-map-to-graph` · `complex-plane-rotation` · `function-definition-widened` | 개념 3 |
+| 2026-09-16 | `lebesgue-coins-two-orders` · `points-problem-two-readings` · `descartes-ceiling-grid` | 일화 3 |
+| 2026-09-17 | `gregorian-telescope-path` · `gauss-17gon-shrinks` (+ `hyperbola-equal-areas` 를 생뱅상에도 물림) | 인물 3 |
 
 **~~열려 있는 판단~~ → 닫혔다 — 도해 글꼴을 세리프로 통일했다(2026-09-16 사용자 승인).**
 

@@ -41,6 +41,9 @@
        마지막으로 **옅은 잉크는 세지 않는다.** 배경과 대비가 낮은 격자선이 라벨 밑을
        지나는 것은 정상 배치다(`descartes` 의 #EDE4D4 격자). 지면색과의 명암비가
        MIN_CONTRAST 미만이면 건너뛴다 — 안 그러면 정상 도해가 FAIL 로 뜬다.
+    5. 여백 — 넘치지는 않았으나 **지면 가장자리에 닿은** 글자가 있는가(네 변 모두).
+       1 만 보면 0.2px 남기고 걸친 캡션이 통과하고, 폰트가 바뀌면 그대로 넘침이 된다.
+       문턱(MIN_MARGIN)은 「닿았음」 자리에 있지 「빠듯함」 자리에 있지 않다 — 상수 주석 참조.
     회전·translate 는 `getCTM()` 으로 루트 좌표계에 옮겨 놓고 잰다. 이걸 빼먹으면
     회전 라벨이 전부 오탐으로 뜬다(getBBox 는 변환 전 좌표를 준다).
 
@@ -89,6 +92,19 @@ TEXT_INSET_MAX = 2.0
 #   패널 구분선 #E2DACB(1.37). 그것들은 배경이 아니라 구역을 나누는 선이라 라벨이 걸치면
 #   눈에 띈다. 1.30 이면 격자(1.24)만 빠지고 둘은 감시 안에 남는다.
 MIN_CONTRAST = 1.30
+# 글자가 지면 가장자리에서 떨어져 있어야 하는 최소 거리(px). **네 변 모두** 본다.
+#   넘침(경계 밖)만 보면 **0.2px 남기고 걸친 캡션**이 통과한다. 2026-09-17 검수가
+#   `gregorian-telescope-path` 의 0.17px 를 짚어 서가 전체를 재 보니 다섯 장이 그랬다 —
+#   `area-function-strip` 왼쪽 0.5 · `binomial-to-normal` 아래 0.2 ·
+#   `complex-plane-rotation` 아래 2.2 · `dice-sum-grid` 위 4.0 · `bernoulli-two-spirals` 아래 5.0.
+#   닿은 글자는 잘린 것처럼 보이고, **폰트가 바뀌면 그대로 넘침이 된다** — 로컬과 러너의
+#   자가 1~3px 다르므로(머리말) 로컬에서 남은 1px 은 러너에서 없을 수 있다.
+#   ⚠ 문턱은 「빠듯함」이 아니라 **「닿았음」**을 잡는 자리에 뒀다. 서가 실측(러너 폰트)에서
+#   정상 배치의 최소 여백이 4~10px 에 몰려 있어, 6~10 으로 올리면 멀쩡한 장이 스물 넘게
+#   FAIL 로 뜬다 — **정상인데 FAIL 이 뜨면 다음 사람이 게이트를 무시한다**(LESSONS 2026-09-09).
+#   그래서 3.0 이다. 4px 짜리 배치를 좋다고 말하는 것이 아니라, 게이트가 말할 수 있는
+#   것만 말하게 둔 것이다. 빠듯한 것은 사람이 렌더를 보고 판단한다.
+MIN_MARGIN = 3.0
 
 MEASURE_JS = r"""({ vb, RATIO, MAXIN, MINC }) => {
   const [X0, Y0, W, H] = vb;
@@ -113,6 +129,12 @@ MEASURE_JS = r"""({ vb, RATIO, MAXIN, MINC }) => {
   }
   const over = boxes.filter(b => b.x0 < X0 - 0.5 || b.x1 > X1 + 0.5
                             || b.y0 < Y0 - 0.5 || b.y1 > Y1 + 0.5);
+  // 여백 — 넘치지는 않았으나 지면 가장자리에 붙어 버린 글자.
+  let marg = null;
+  for (const b of boxes)
+    for (const [side, d] of [['왼', b.x0 - X0], ['우', X1 - b.x1],
+                             ['위', b.y0 - Y0], ['아래', Y1 - b.y1]])
+      if (marg === null || d < marg.d) marg = { side: side, d: d, t: b.t };
   const hits = [];
   for (let i = 0; i < boxes.length; i++)
     for (let j = i + 1; j < boxes.length; j++) {
@@ -240,7 +262,7 @@ MEASURE_JS = r"""({ vb, RATIO, MAXIN, MINC }) => {
         }
       }
   }
-  return { over, hits, crossed, covered, n: boxes.length };
+  return { over, marg, hits, crossed, covered, n: boxes.length };
 }"""
 
 
@@ -371,12 +393,19 @@ def main(argv):
                                            'MINC': MIN_CONTRAST})
             hits = [h for h in r['hits']
                     if h['w'] >= OVERLAP_MIN_W and h['h'] >= OVERLAP_MIN_H]
-            bad = len(r['over']) + len(hits) + len(r['crossed']) + len(r['covered'])
+            mg = r.get('marg')
+            tight = 1 if (mg and not r['over'] and mg['d'] < MIN_MARGIN) else 0
+            bad = (len(r['over']) + len(hits) + len(r['crossed'])
+                   + len(r['covered']) + tight)
             fails += bad
             flag = 'OK  ' if not bad else 'FAIL'
             print(f'{name:34s} {flag} {int(vb[2])}x{int(vb[3])} · 글자 {r["n"]:2d} '
                   f'· 넘침 {len(r["over"])} · 겹침 {len(hits)} · 관통 {len(r["crossed"])}'
-                  f' · 가려짐 {len(r["covered"])}')
+                  f' · 가려짐 {len(r["covered"])}'
+                  + (f' · 여백 {mg["d"]:.1f}' if mg else ''))
+            if tight:
+                print(f'    여백 "{mg["t"]}" 가 {mg["side"]}쪽 가장자리에서 '
+                      f'{mg["d"]:.2f}px — 하한 {MIN_MARGIN}px, viewBox 를 키울 것')
             for d in r['over']:
                 print(f'    넘침 "{d["t"]}"  x {d["x0"]:.1f}~{d["x1"]:.1f}'
                       f'  y {d["y0"]:.1f}~{d["y1"]:.1f}')

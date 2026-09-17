@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" role="img" aria-label="동전던지기의 이항분포 막대가 n이 커질수록 연속적인 정규곡선에 가까워진다">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 310" role="img" aria-label="동전던지기의 이항분포 막대가 n이 커질수록 연속적인 정규곡선에 가까워진다">
   <title>이항분포의 정규 근사 — 띄엄띄엄한 것을 세는데 답이 연속 곡선이다</title>
   <style>text{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;}</style>
-  <rect width="620" height="300" fill="#FFFDF7"/>
+  <rect width="620" height="310" fill="#FFFDF7"/>
 
   <text x="34" y="34" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="14" font-weight="600" fill="#221E18">동전을 n번 던져 앞면이 k번 나올 확률</text>
   <text x="34" y="54" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="12" fill="#8A7F6E">막대는 하나하나 셀 수 있는 값이다. 그런데 n이 커지면 그 위에 끊긴 데 없는 곡선이 얹힌다.</text>
