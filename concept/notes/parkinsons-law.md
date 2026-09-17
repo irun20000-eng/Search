@@ -257,7 +257,7 @@ x : 해마다 새로 필요해지는 직원 수
 **해외**
 6. (해외) Wikipedia, "Parkinson's law" — 1955년 11월 19일 『이코노미스트』 무기명 게재, 첫 문장 "work expands so as to fill the time available for its completion", 1957년 단행본 『Parkinson's Law, or The Pursuit of Progress』, 해군성 1914/1928 수치(62·146,000·57,000·3,249·2,000 → 20·100,000·62,439·4,558·3,569)와 78.45% 등 증감률, 식민성 직원 372/450/817/1,139/1,661 과 평시 증가율 5.24%·6.55%, 두 공리, 공식 `x = (2k^m + l) / n` 과 변수 정의, "5.17%에서 6.56% 사이" 진술. 2026-09-17 확인. https://en.wikipedia.org/wiki/Parkinson%27s_law
 7. (해외) Wikipedia, "Law of triviality" — 1957년 책에서 나온 사소함의 법칙, 안건에 쓰는 시간이 금액에 반비례한다는 진술, 재정위원회 세 안건의 처리 시간(원자로 2분 30초 · 자전거 보관소 45분 · 다과 1시간 15분), 자전거 보관소 논쟁(bikeshedding)이라는 별칭, 금액 표기가 자료마다 갈리는 점. 2026-09-17 확인. https://en.wikipedia.org/wiki/Law_of_triviality
-8. (해외) J. F. Bryan, E. A. Locke, "Parkinson's Law as a goal-setting phenomenon", *Organizational Behavior and Human Performance* 2(3):258–275 (1967) — 필요한 시간의 두 배를 준 집단과 최소 시간을 준 집단을 비교해 앞의 집단이 더 오래 걸렸고, 목표 설정이 그 효과를 매개한다는 결론. 2026-09-17 확인. https://www.sciencedirect.com/science/article/abs/pii/0030507367900219
+8. (해외) J. F. Bryan, E. A. Locke, "Parkinson's Law as a goal-setting phenomenon", *Organizational Behavior and Human Performance* (1967) — 필요한 시간의 두 배를 준 집단과 최소 시간을 준 집단을 비교해 앞의 집단이 더 오래 걸렸고, 목표 설정이 그 효과를 매개한다는 결론. 2026-09-17 확인. https://www.sciencedirect.com/science/article/abs/pii/0030507367900219
 9. (해외) P. Klimek, R. Hanel, S. Thurner, "Parkinson's Law quantified: three investigations on bureaucratic inefficiency", *Journal of Statistical Mechanics: Theory and Experiment* (2009) P03008 — 파킨슨의 세 에세이를 정량·동역학 모형으로 옮긴 연구이며, 의사결정 기구의 크기가 '비효율 계수'(대략 20)를 넘으면 급격히 비효율적이 된다는 관찰을 의견 형성 모형으로 재현. 2026-09-17 확인. https://iopscience.iop.org/article/10.1088/1742-5468/2009/03/P03008
 10. (해외) *Naval History* (U.S. Naval Institute) 8(6), 1994년 12월, "Challenging Parkinson's Law" — 파킨슨이 해군 행정을 고른 이유(책임 범위가 "숫자와 톤수"로 재기 쉬웠다는 것)와 1914년 해군성 관리 수 기준치에 대한 비판. 2026-09-17 확인. https://www.usni.org/magazines/naval-history-magazine/1994/december-1/challenging-parkinsons-law
 
@@ -270,7 +270,7 @@ x : 해마다 새로 필요해지는 직원 수
 > 공식 `x = (2k^m + l) / n` 은 **전재본마다 표기가 갈린다.** 네 번째 항을 `l` 로 적은 자료와 `P` 로 적은 자료가 있었고, 지수 표기도 `2k^m` 과 `2km` 으로 갈렸다. 변수의 뜻(승진하려는 직원 수 · 임용과 퇴직 나이의 차 · 회람에 쓰는 사람-시간 · 관리되는 업무 단위 수)은 여러 요약에서 일치했으므로 뜻만 본문에 싣고, **표기가 갈린다는 사실은 여기에 남긴다.**
 > 사소함의 법칙의 **금액은 자료끼리 어긋난다**(자전거 보관소 350파운드 / 2,350파운드, 다과비 연 21파운드 / 4.75파운드). 원자로 1,000만 파운드와 세 안건의 토론 시간(2분 30초 · 45분 · 1시간 15분)은 일치했으므로 그것만 표에 넣고 금액 충돌은 본문에 밝혔다.
 > [10]의 "1914년 승인 정원이 2,000명이 아니라 1,802명" 은 **검색 요약에서 한 번 본 값**이다. 기사 본문을 읽지 못했으므로 본문에 "한 자료에 따르면"으로 한정해 적었고, 이 값을 근거로 다른 계산을 하지 않았다.
-> [8]의 서지(저자·연도·학술지)와 실험 설계(두 배 시간 대 최소 시간, 목표 설정이 매개), [9]의 서지와 '비효율 계수 약 20'은 각각 두 개 이상의 질의 요약에서 같은 내용으로 나왔다. **초록 전문을 읽지는 못했다.**
+> [8]의 서지(저자·연도·학술지)와 실험 설계(두 배 시간 대 최소 시간, 목표 설정이 매개), [9]의 서지와 '비효율 계수 약 20'은 각각 두 개 이상의 질의 요약에서 같은 내용으로 나왔다. **초록 전문을 읽지는 못했다.** [8]의 권·호·쪽수는 검색 요약에서 확인되지 않아 **적지 않았다** — 학술지 이름과 연도까지만 쓴다.
 > 6절 표의 오른쪽 칸(무엇을 바꾸나)과 10절 표는 **출처에서 끌어낸 실천안이지 연구 결과가 아니다.** 본문에도 그렇게 표시했다.
 
 ## 후속 질문·연결

@@ -10,7 +10,7 @@
 x = (2k^m + l)/n 과 "5.17~6.56%" 는 예측 도구가 아니라 농담의 형식이다.
 
 출처: Wikipedia "Parkinson's law" · "Law of triviality" ·
-Bryan & Locke, Organizational Behavior and Human Performance 2(3), 1967 ·
+Bryan & Locke, Organizational Behavior and Human Performance, 1967 ·
 Klimek·Hanel·Thurner, J. Stat. Mech. (2009) P03008 ·
 Naval History (USNI) 8(6), 1994 — 반론.
 국내: 네이버 지식백과 한경 경제용어사전·행정학사전·시사상식사전 · 한국경제 생글생글(2007).
@@ -102,7 +102,7 @@ SPEC = {
     },
 
     "foot": "출처 · Parkinson, The Economist 1955-11-19 및 단행본 1957 · "
-            "Bryan & Locke, Organ. Behav. Hum. Perform. 2(3) 1967 · "
+            "Bryan & Locke, Organ. Behav. Hum. Perform. 1967 · "
             "Klimek 외, J. Stat. Mech. 2009 P03008 · Naval History 8(6) 1994(반론) · "
             "네이버 지식백과 행정학사전 — 증감 칸과 단리·복리 값은 표에서 다시 계산한 것이다",
 
