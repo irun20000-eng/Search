@@ -317,6 +317,22 @@ python3 tools/sync_obsidian.py --check --only reports
   그리고 로그를 읽을 때 **stdout 이 종료 시점에 한꺼번에 플러시돼 stderr 와 순서가 섞인다** —
   `[X] 여백` 경고(stdout, 계속 진행)와 `넘침 감지`(stderr, 죽인 것)를 혼동하지 말 것.
 
+### 2-8-1. 영상 서가 Anthropic 표기가 갈려 있다 — **손대려면 슬롯을 갈라서** (2026-09-17)
+
+전수 조사: `앤트로픽` **22건 / 11파일** · `엔트로픽` **9건 / 5파일** · `안트로픽` 0건.
+다수는 `앤트로픽` 이고, 2026-09-17 회차에 새로 쓴 `vBOWc49NY1Y` 는 그쪽으로 통일했다.
+나머지 다섯 파일(`QWMIQFJye-A`·`hmWSM6HMyZU`·`3Q9Gg75Ob4o`·`w5XO8zYGJ2Y`)은 **그 회차 범위 밖이라
+일부러 두었다.** 찾아 바꾸기로 한 번에 밀면 안 되는 이유가 둘 있다.
+
+- **`QWMIQFJye-A.md` L20 은 핵심 인용 안이다** — `"클로드 디자인 이후로 엔트로픽에서 가장 큰…"`.
+  인용은 자동 자막 전사라 고치면 그게 창작이다. **반드시 제외**할 것.
+- **같은 파일 L8 은 frontmatter 태그 `엔트로픽`** 이다. 태그를 바꾸면 `link-index.json` 의
+  `검색어` 와 허브 검색 결과가 함께 움직인다 — 문자열 치환이 아니라 `build_manifest.py` →
+  `build_link_index.py` → `verify_builders.py` 가 따라붙는 작업이다.
+
+즉 「한 패턴이 여기 있는 이유가 파일마다 같은가」(LESSONS 2026-09-16)의 교과서 사례다.
+슬롯을 갈라 산문만 고치고, 인용과 태그는 각각 따로 판단할 것.
+
 ### 2-9. 수학사 도해
 
 **숫자를 여기 적지 않는다** — 세 회차 연속으로 낡았다(직전엔 「14장·12편」이 하루 만에 틀렸다).
@@ -328,6 +344,11 @@ python3 tools/sync_obsidian.py --check --only reports
 | 2026-09-08 | (기존 8장 전수 점검 — 결함 6건 수정) | — |
 | 2026-09-09 | `archimedes-sphere-cylinder` · `bernoulli-two-spirals` · `huygens-cycloid` | 인물 2 · **일화 1(첫 도해)** |
 | 2026-09-09 | `area-function-strip` · `riemann-rectangles-refine` · `conic-sections-three-cuts` | 개념 2 · 세기 1 |
+| 2026-09-09 | `al-khwarizmi-completing-square` · `wallis-interpolation-gap` · `pascal-triangle-recurrence` | 인물 3 |
+| 2026-09-14 | `viete-infinite-product` · `dedekind-geometric-evidence` · `cantor-countable-vs-not` | 인물 3 |
+| 2026-09-16 | `koenigsberg-map-to-graph` · `complex-plane-rotation` · `function-definition-widened` | 개념 3 |
+| 2026-09-16 | `lebesgue-coins-two-orders` · `points-problem-two-readings` · `descartes-ceiling-grid` | 일화 3 |
+| 2026-09-17 | `gregorian-telescope-path` · `gauss-17gon-shrinks` (+ `hyperbola-equal-areas` 를 생뱅상에도 물림) | 인물 3 |
 
 **~~열려 있는 판단~~ → 닫혔다 — 도해 글꼴을 세리프로 통일했다(2026-09-16 사용자 승인).**
 

@@ -99,7 +99,7 @@ python3 tools/verify_builders.py          # ★ 커밋 직전 마지막 — OUTP
 python3 tools/verify_math.py                 # 스키마 + 유형별 분량 게이트
 python3 tools/verify_math.py --backlog       # 백로그 2채널 (위키링크 + 발전단계 인물)
 python3 tools/verify_math.py --symmetry      # frontmatter 상호참조 대칭 보고 (게이트 아님)
-python3 tools/verify_figures.py              # ★ 도해 — 브라우저로 글자 넘침·겹침 (좌표 검사로는 못 잡는다)
+python3 tools/verify_figures.py              # ★ 도해 — 브라우저로 넘침·겹침·관통·가려짐·여백·글꼴 (좌표 검사로는 못 잡는다)
                                             #   ⚠ 한글 자폭은 깔린 폰트가 자(尺)다 — 로컬과 러너가 2~4% 어긋난다.
                                             #     정본은 CI(`.github/workflows/gates.yml`) 쪽 계측이다.
 python3 tools/figure_status.py               # 도해 현황 (게이트 아님) — 이 수를 문서에 손으로 적지 말 것
