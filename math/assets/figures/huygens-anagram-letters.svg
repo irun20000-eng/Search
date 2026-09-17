@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 422" role="img" aria-label="그림 위쪽에 「세어 보면 답이 나온다 — 하위헌스의 아나그램」이라는 표제가 있다. 그 아래에 뒤섞어 실은 글자를 세면 3년 뒤 공개한 문장의 글자와 낱낱이 같다는 설명이 있다. 가운데에는 가로선 위에 작은 네모를 쌓아 올린 기둥이 열일곱 개 서 있다. 기둥마다 아래에 알파벳이 하나씩 붙어 있고 왼쪽부터 a, c, d, e, g, h, i, l, m, n, o, p, q, r, s, t, u 순이다. 네모의 개수가 그 글자가 나오는 횟수이며 a 일곱, c 다섯, d 하나, e 다섯, g 하나, h 하나, i 일곱, l 넷, m 둘, n 아홉, o 넷, p 둘, q 하나, r 둘, s 하나, t 다섯, u 다섯이다. h 의 네모 하나만 진한 색으로 칠해져 있고 그 아래에 h 는 하나이고 b 는 없다고 적혀 있다. 오른쪽에는 글자가 열일곱 가지이고 모두 62개라고 적혀 있다. 그 아래에 1659년 『토성의 체계』에서 풀어 보인 라틴어 문장이 기울인 글씨로 적혀 있고, 이 문장의 글자를 세면 위 그림과 낱낱이 같다는 설명이 붙어 있다. 이어서 다른 철자로 적으면 어떻게 어긋나는지가 두 줄 적혀 있다. cobaerente 로 적으면 목록에 없는 b 를 쓰게 되고, coherente 로 적으면 a 가 하나 모자라 61개가 된다는 것이다. 맨 아래에는 단서가 있다. 이 노트의 출처는 소문자 엘 넷 가운데 둘을 대문자 아이로 옮겼으며 소문자 엘로 읽어야 수가 맞는다는 것이다">
+  <title>세어 보면 답이 나온다 — 하위헌스의 아나그램</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .tile{fill:#E6D5BD;stroke:#9C5A2C;stroke-width:0.8;}
+    .tileh{fill:#9C5A2C;stroke:#9C5A2C;stroke-width:0.8;}
+  </style>
+  <rect width="700" height="422" fill="#FFFDF7"/>
+  <text x="46" y="30" font-size="16">세어 보면 답이 나온다 — 하위헌스의 아나그램</text>
+  <text x="46" y="52" font-size="12" class="dim">뒤섞어 실은 글자를 세면 3년 뒤 공개한 문장의 글자와 낱낱이 같다.</text>
+  <line x1="52" y1="217" x2="656" y2="217" stroke="#8A7F6E" stroke-width="1"/>
+  <rect x="58.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="138.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="58.5" y="125.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="64.0" y="236" font-size="13" text-anchor="middle" class="ax">a</text>
+  <rect x="95.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="95.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="95.0" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="95.0" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="95.0" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="100.5" y="236" font-size="13" text-anchor="middle" class="ax">c</text>
+  <rect x="131.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="137.0" y="236" font-size="13" text-anchor="middle" class="ax">d</text>
+  <rect x="168.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="168.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="168.0" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="168.0" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="168.0" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="173.5" y="236" font-size="13" text-anchor="middle" class="ax">e</text>
+  <rect x="204.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="210.0" y="236" font-size="13" text-anchor="middle" class="ax">g</text>
+  <rect x="241.0" y="203.0" width="11" height="11" rx="1.5" class="tileh"/>
+  <text x="246.5" y="236" font-size="13" text-anchor="middle" class="sien">h</text>
+  <rect x="277.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="138.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="277.5" y="125.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="283.0" y="236" font-size="13" text-anchor="middle" class="ax">i</text>
+  <rect x="314.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="314.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="314.0" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="314.0" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="319.5" y="236" font-size="13" text-anchor="middle" class="ax">l</text>
+  <rect x="350.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="350.5" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="356.0" y="236" font-size="13" text-anchor="middle" class="ax">m</text>
+  <rect x="387.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="138.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="125.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="112.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="387.0" y="99.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="392.5" y="236" font-size="13" text-anchor="middle" class="ax">n</text>
+  <rect x="423.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="423.5" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="423.5" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="423.5" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="429.0" y="236" font-size="13" text-anchor="middle" class="ax">o</text>
+  <rect x="460.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="460.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="465.5" y="236" font-size="13" text-anchor="middle" class="ax">p</text>
+  <rect x="496.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="502.0" y="236" font-size="13" text-anchor="middle" class="ax">q</text>
+  <rect x="533.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="533.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="538.5" y="236" font-size="13" text-anchor="middle" class="ax">r</text>
+  <rect x="569.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="575.0" y="236" font-size="13" text-anchor="middle" class="ax">s</text>
+  <rect x="606.0" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="606.0" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="606.0" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="606.0" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="606.0" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="611.5" y="236" font-size="13" text-anchor="middle" class="ax">t</text>
+  <rect x="642.5" y="203.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="642.5" y="190.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="642.5" y="177.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="642.5" y="164.0" width="11" height="11" rx="1.5" class="tile"/>
+  <rect x="642.5" y="151.0" width="11" height="11" rx="1.5" class="tile"/>
+  <text x="648.0" y="236" font-size="13" text-anchor="middle" class="ax">u</text>
+  <line x1="246.5" y1="244" x2="246.5" y2="251" stroke="#9C5A2C" stroke-width="0.9"/>
+  <text x="246.5" y="264" font-size="12" text-anchor="middle" class="sien">h 는 하나, b 는 없다</text>
+  <text x="440" y="264" font-size="12" class="dim">글자 열일곱 가지 · 모두 62개</text>
+  <text x="46" y="300" font-size="12" class="ax">1659년 『토성의 체계』에서 풀어 보인 문장</text>
+  <text x="46" y="322" font-size="14" font-style="italic">Annulo cingitur, tenui, plano, nusquam cohaerente, ad eclipticam inclinato.</text>
+  <text x="46" y="346" font-size="13" class="dim">이 문장의 글자를 세면 위 그림과 낱낱이 같다 — 그래서 뒤섞기가 풀린다.</text>
+  <text x="46" y="368" font-size="12" class="ax">cobaerente 로 적으면 목록에 없는 b 를 쓰게 된다.</text>
+  <text x="46" y="386" font-size="12" class="ax">coherente 로 적으면 a 가 하나 모자라 61개가 된다.</text>
+  <text x="46" y="408" font-size="12" class="sien">⚠ 이 노트의 출처는 소문자 엘(l) 넷 가운데 둘을 대문자 아이(I)로 옮겼다 — 엘로 읽어야 수가 맞는다 [4].</text>
+</svg>
