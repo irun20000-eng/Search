@@ -5,7 +5,7 @@
 
   <!-- ① A에 최댓값이 있다 -->
   <text x="30" y="46" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="17" fill="#221E18">①</text>
-  <text x="52" y="46" font-family="Pretendard, 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', NanumGothic, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#5C5346">A 에 최댓값이 있다 — 자른 자리가 유리수</text>
+  <text x="52" y="46" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="13" fill="#5C5346">A 에 최댓값이 있다 — 자른 자리가 유리수</text>
   <line x1="60" y1="66" x2="330" y2="66" stroke="#221E18" stroke-width="2.6"/>
   <line x1="330" y1="66" x2="560" y2="66" stroke="#B9B0A0" stroke-width="2.6"/>
   <circle cx="330" cy="66" r="5.5" fill="#221E18"/>
@@ -14,7 +14,7 @@
 
   <!-- ② B에 최솟값이 있다 -->
   <text x="30" y="136" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="17" fill="#221E18">②</text>
-  <text x="52" y="136" font-family="Pretendard, 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', NanumGothic, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#5C5346">B 에 최솟값이 있다 — 자른 자리가 유리수</text>
+  <text x="52" y="136" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="13" fill="#5C5346">B 에 최솟값이 있다 — 자른 자리가 유리수</text>
   <line x1="60" y1="156" x2="330" y2="156" stroke="#221E18" stroke-width="2.6"/>
   <line x1="330" y1="156" x2="560" y2="156" stroke="#B9B0A0" stroke-width="2.6"/>
   <circle cx="330" cy="156" r="5.5" fill="#FFFDF7" stroke="#221E18" stroke-width="2.2"/>
@@ -23,7 +23,7 @@
 
   <!-- ③ 양쪽 다 없다 -->
   <text x="30" y="226" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="17" fill="#9C5A2C">③</text>
-  <text x="52" y="226" font-family="Pretendard, 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', NanumGothic, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#9C5A2C">양쪽 다 끝이 없다 — 자른 자리에 유리수가 없다</text>
+  <text x="52" y="226" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="13" fill="#9C5A2C">양쪽 다 끝이 없다 — 자른 자리에 유리수가 없다</text>
   <line x1="60" y1="246" x2="322" y2="246" stroke="#221E18" stroke-width="2.6"/>
   <line x1="338" y1="246" x2="560" y2="246" stroke="#B9B0A0" stroke-width="2.6"/>
   <circle cx="322" cy="246" r="5" fill="#FFFDF7" stroke="#221E18" stroke-width="2"/>
@@ -36,5 +36,5 @@
   <text x="440" y="266" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-style="italic" font-size="15" fill="#8A7F6E">B</text>
 
   <!-- 결론 -->
-  <text x="60" y="308" font-family="Pretendard, 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', NanumGothic, 'Apple SD Gothic Neo', sans-serif" font-size="13" fill="#221E18">③ 의 분할 자체를 새로운 수라고 부른다 — 데데킨트가 무리수를 만든 방법</text>
+  <text x="60" y="308" font-family="EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif" font-size="13" fill="#221E18">③ 의 분할 자체를 새로운 수라고 부른다 — 데데킨트가 무리수를 만든 방법</text>
 </svg>
