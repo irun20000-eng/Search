@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="주사위 두 개의 36가지 순서쌍 격자에서 합이 7인 칸 여섯 개를 표시한 그림">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -7 600 307" role="img" aria-label="주사위 두 개의 36가지 순서쌍 격자에서 합이 7인 칸 여섯 개를 표시한 그림">
   <title>주사위 두 개 — 무엇을 하나의 경우로 셀 것인가</title>
   <style>text{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;}</style>
-  <rect width="600" height="300" fill="#FFFDF7"/>
+  <rect x="0" y="-7" width="600" height="307" fill="#FFFDF7"/>
   <rect x="96" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
   <rect x="123" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
   <rect x="150" y="46" width="27" height="27" fill="#FFFFFF" fill-opacity="0" stroke="#8A7F6E" stroke-width="1"/>
