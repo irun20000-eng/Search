@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 468" role="img" aria-label="그림 위쪽에 「면의 점을 선의 점으로 — 자릿수를 엮는다」라는 표제가 있고 그 아래에 정사각형의 한 점을 선분의 한 점으로 보내며 두 좌표의 자릿수를 번갈아 엮는다고 적혀 있다. 왼쪽에는 눈금이 그어진 정사각형이 있고 그 안에 점이 하나 찍혀 있다. 가로가 0.5183, 세로가 0.2794 다. 오른쪽에는 그 두 수의 자릿수가 두 줄로 놓여 있다. 위 줄이 x 의 자릿수 5·1·8·3 이고 아래 줄이 y 의 자릿수 2·7·9·4 인데 두 줄의 자리가 서로 어긋나 있다. 가는 세로선이 두 줄에서 번갈아 내려와 한 줄로 모이고, 그 줄에 0.52178934 가 적혀 있다. 그 아래에는 0 에서 1 까지의 선분이 있고 0.52178934 자리에 점이 찍혀 있다. 맨 아래에는 선분이 하나 더 있다. 세로를 0.2794 로 고정하고 가로만 0.4999 와 0.5000 으로 둔 두 점을 엮으면 0.42979994 와 0.52070904 가 되어 선분에서 멀찍이 떨어진다. 두 점 사이가 0.0909 로 가로로 옮긴 0.0001 의 909 배이며 이 대응은 연속이 아니라고 적혀 있다. 맨 아래에는 단서가 셋 있다. 첫째는 이 엮기가 대응을 눈으로 보이려는 장치이며 칸토어의 증명이 쓴 방법인지는 이 그림이 말하지 않는다는 것이고, 둘째는 엮기만으로는 아직 일대일 대응이 아니며 0.5 가 0.5000… 로도 0.4999… 로도 적히는데 엮으면 갈라진다는 것이고, 셋째는 네 자리까지만 그렸으며 실제로는 자릿수가 끝없이 이어지고 엮은 것도 끝이 없다는 것이다">
+  <title>면의 점을 선의 점으로 — 자릿수를 엮는다</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .blue{fill:#3A5C77;} .ax{fill:#8A7F6E;}
+    .box{fill:none;stroke:#8A7F6E;stroke-width:1.1;}
+    .grid{stroke:#E6D5BD;stroke-width:0.7;}
+    .gd{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;}
+    .tie{stroke:#8A7F6E;stroke-width:0.7;}
+    .seg{stroke:#221E18;stroke-width:1.6;stroke-linecap:round;}
+    .tick{stroke:#8A7F6E;stroke-width:1.2;}
+  </style>
+  <rect width="700" height="468" fill="#FFFDF7"/>
+  <text x="56" y="30" font-size="16">면의 점을 선의 점으로 — 자릿수를 엮는다</text>
+  <text x="56" y="52" font-size="12" class="dim">정사각형의 한 점을 선분의 한 점으로 — 두 좌표의 자릿수를 번갈아 엮는다.</text>
+  <line x1="69.20" y1="84.00" x2="69.20" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="202.80" x2="188.00" y2="202.80" class="grid"/>
+  <line x1="82.40" y1="84.00" x2="82.40" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="189.60" x2="188.00" y2="189.60" class="grid"/>
+  <line x1="95.60" y1="84.00" x2="95.60" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="176.40" x2="188.00" y2="176.40" class="grid"/>
+  <line x1="108.80" y1="84.00" x2="108.80" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="163.20" x2="188.00" y2="163.20" class="grid"/>
+  <line x1="122.00" y1="84.00" x2="122.00" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="150.00" x2="188.00" y2="150.00" class="grid"/>
+  <line x1="135.20" y1="84.00" x2="135.20" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="136.80" x2="188.00" y2="136.80" class="grid"/>
+  <line x1="148.40" y1="84.00" x2="148.40" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="123.60" x2="188.00" y2="123.60" class="grid"/>
+  <line x1="161.60" y1="84.00" x2="161.60" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="110.40" x2="188.00" y2="110.40" class="grid"/>
+  <line x1="174.80" y1="84.00" x2="174.80" y2="216.00" class="grid"/>
+  <line x1="56.00" y1="97.20" x2="188.00" y2="97.20" class="grid"/>
+  <rect x="56.00" y="84.00" width="132.00" height="132.00" class="box"/>
+  <line x1="56.00" y1="179.12" x2="124.42" y2="179.12" class="gd"/>
+  <line x1="124.42" y1="216.00" x2="124.42" y2="179.12" class="gd"/>
+  <circle cx="124.42" cy="179.12" r="4" fill="#221E18"/>
+  <text x="122.00" y="72.00" font-size="12" text-anchor="middle" class="ax">정사각형 위의 한 점</text>
+  <text x="56.00" y="236.00" font-size="12" class="sien">x = 0.5183</text>
+  <text x="188.00" y="236.00" font-size="12" text-anchor="end" class="blue">y = 0.2794</text>
+  <text x="278" y="112.00" font-size="13" text-anchor="end" class="sien">x</text>
+  <text x="278" y="150.00" font-size="13" text-anchor="end" class="blue">y</text>
+  <text x="300.00" y="112.00" font-size="15" text-anchor="middle" class="sien">5</text>
+  <text x="348.00" y="112.00" font-size="15" text-anchor="middle" class="sien">1</text>
+  <text x="396.00" y="112.00" font-size="15" text-anchor="middle" class="sien">8</text>
+  <text x="444.00" y="112.00" font-size="15" text-anchor="middle" class="sien">3</text>
+  <text x="324.00" y="150.00" font-size="15" text-anchor="middle" class="blue">2</text>
+  <text x="372.00" y="150.00" font-size="15" text-anchor="middle" class="blue">7</text>
+  <text x="420.00" y="150.00" font-size="15" text-anchor="middle" class="blue">9</text>
+  <text x="468.00" y="150.00" font-size="15" text-anchor="middle" class="blue">4</text>
+  <line x1="300.00" y1="121.00" x2="300.00" y2="182.00" class="tie"/>
+  <line x1="324.00" y1="159.00" x2="324.00" y2="182.00" class="tie"/>
+  <line x1="348.00" y1="121.00" x2="348.00" y2="182.00" class="tie"/>
+  <line x1="372.00" y1="159.00" x2="372.00" y2="182.00" class="tie"/>
+  <line x1="396.00" y1="121.00" x2="396.00" y2="182.00" class="tie"/>
+  <line x1="420.00" y1="159.00" x2="420.00" y2="182.00" class="tie"/>
+  <line x1="444.00" y1="121.00" x2="444.00" y2="182.00" class="tie"/>
+  <line x1="468.00" y1="159.00" x2="468.00" y2="182.00" class="tie"/>
+  <text x="250" y="206.00" font-size="13" text-anchor="end" class="ax">엮으면</text>
+  <text x="282.00" y="206.00" font-size="15" text-anchor="middle">0.</text>
+  <text x="300.00" y="206.00" font-size="15" text-anchor="middle" class="sien">5</text>
+  <text x="324.00" y="206.00" font-size="15" text-anchor="middle" class="blue">2</text>
+  <text x="348.00" y="206.00" font-size="15" text-anchor="middle" class="sien">1</text>
+  <text x="372.00" y="206.00" font-size="15" text-anchor="middle" class="blue">7</text>
+  <text x="396.00" y="206.00" font-size="15" text-anchor="middle" class="sien">8</text>
+  <text x="420.00" y="206.00" font-size="15" text-anchor="middle" class="blue">9</text>
+  <text x="444.00" y="206.00" font-size="15" text-anchor="middle" class="sien">3</text>
+  <text x="468.00" y="206.00" font-size="15" text-anchor="middle" class="blue">4</text>
+  <line x1="110.00" y1="258" x2="660.00" y2="258" class="seg"/>
+  <line x1="110.00" y1="252" x2="110.00" y2="264" class="tick"/>
+  <text x="110.00" y="280" font-size="12" text-anchor="middle" class="ax">0</text>
+  <line x1="660.00" y1="252" x2="660.00" y2="264" class="tick"/>
+  <text x="660.00" y="280" font-size="12" text-anchor="middle" class="ax">1</text>
+  <circle cx="396.98" cy="258" r="4" fill="#221E18"/>
+  <text x="396.98" y="244" font-size="12" text-anchor="middle">t = 0.52178934</text>
+  <text x="100.00" y="262" font-size="12" text-anchor="end" class="ax">선분</text>
+  <text x="56" y="308" font-size="13" class="dim">세로를 0.2794 로 두고 가로만 0.0001 옮기면 — 선분에서는 이만큼 떨어진다.</text>
+  <line x1="110.00" y1="340" x2="660.00" y2="340" class="seg"/>
+  <line x1="110.00" y1="334" x2="110.00" y2="346" class="tick"/>
+  <line x1="660.00" y1="334" x2="660.00" y2="346" class="tick"/>
+  <circle cx="346.39" cy="340" r="4" fill="#9C5A2C"/>
+  <text x="338.39" y="326.00" font-size="12" text-anchor="end" class="sien">0.4999 → 0.42979994</text>
+  <circle cx="396.39" cy="340" r="4" fill="#3A5C77"/>
+  <text x="404.39" y="364.00" font-size="12" text-anchor="start" class="blue">0.5000 → 0.52070904</text>
+  <text x="56" y="386" font-size="13" class="dim">두 점 사이가 0.0909 — 가로로 옮긴 0.0001 의 909 배다. 이 대응은 연속이 아니다.</text>
+  <text x="56" y="410" font-size="12" class="sien">⚠ 이 엮기는 대응을 눈으로 보이려는 장치다 — 칸토어의 증명이 쓴 방법인지는 이 그림이 말하지 않는다.</text>
+  <text x="56" y="428" font-size="12" class="sien">⚠ 엮기만으로는 아직 일대일 대응이 아니다 — 0.5 는 0.5000… 로도 0.4999… 로도 적히는데, 엮으면 갈라진다.</text>
+  <text x="56" y="446" font-size="12" class="sien">⚠ 네 자리까지만 그렸다 — 실제로는 자릿수가 끝없이 이어지고, 엮은 것도 끝이 없다.</text>
+</svg>

@@ -8,9 +8,21 @@
     적어 뒀다. 그래서 이 수는 문장에서 빼고 여기로 옮긴다 — LESSONS 2026-09-09
     「손으로 적은 숫자는 빌더가 안 따라온다」의 처방이 「측정 명령을 대신 적는다」였다.
 
-무엇을 세나.
-    노트가 도해를 가졌다는 표지는 **frontmatter 의 `이미지:` 필드**다(본문 임베드가 아니라).
-    갤러리 카드·볼트 동기화·manifest 가 전부 그 필드를 보므로 그것이 정본이다.
+무엇을 세나 — **두 가지를 따로 센다.** 셀 수 있는 것을 한 가지로만 찍어 놓으면
+다음 사람이 나머지를 손으로 세고 **셈법 없이 적는다.** 2026-09-18 에 실제로 그랬다 —
+커밋 `b358f10` 본문이 「도해 없는 노트 49편에서 … 골랐다」라고만 적었는데, 그 49 는
+②(본문 임베드까지) 값이었고 같은 시점의 ① 은 53 이었다. **두 기준의 차가 4편**이라
+어느 쪽 기준인지를 안 밝히면 재현이 안 된다.
+
+    ① **프론트매터 `이미지:` 기준** — 갤러리 카드·볼트 동기화·manifest 가 보는 정본이다.
+    ② **본문 임베드까지 친 것** — 남의 그림을 짧은 alt 로 빌려 온 노트는 프론트매터에
+       등재하지 않으므로 ① 로는 「무도해」로 찍히지만, **이미 그림이 붙어 있어 다음
+       회차의 대상이 아니다.** 대상을 고를 때 보는 것은 이쪽이다.
+    ⚠ ② 를 가리는 표지는 **경로**(`../../`)다. 문법은 하나가 아니다 — 마크다운
+    `![alt](…)` 와 생 HTML `<img src="…">` 둘 다 쓰인다(리포 현재 **장수**로 48 대 4,
+    `<img>` 를 쓴 노트는 3편). 정규식을 마크다운만으로 좁히면 `<img>` 로만 빌려 온
+    노트가 조용히 「무도해」로 찍힌다 — **오늘은 그 셋이 프론트매터에도 있어 ② 값이
+    안 바뀌지만(새는 노트 0편), 프론트매터 없이 빌려 오는 날 그 편이 샌다.**
     ⚠ 그래서 **SVG 장수와 노트 편수는 같지 않다** — 한 노트가 두 장을 갖기도 하고
     (`concept-probability-advanced`), 한 장이 두 노트에 물리기도 한다
     (`leibniz-characteristic-triangle`). 둘을 따로 센다.
@@ -28,6 +40,7 @@ TYPES = (('person', '인물'), ('concept', '개념'), ('century', '세기'), ('e
 
 def main():
     tot, has = collections.Counter(), collections.Counter()
+    emb = collections.Counter()          # 프론트매터 ∪ 본문 임베드
     used = collections.Counter()
     for note in sorted((ROOT / 'math/notes').glob('*/note.md')):
         kind = note.parent.name.split('-')[0]
@@ -36,8 +49,19 @@ def main():
         # ⚠ `이미지:` 가 있다고 도해가 아니다 — MATH_PIPELINE M3 은 같은 필드에
         #   `assets/portraits/` PD 초상도 넣게 돼 있다. 초상이 들어오는 날 이 도구가
         #   도해 없는 노트를 「보유」로 세게 된다. 그래서 경로까지 본다.
-        if re.search(r'^이미지:', body, re.M) and 'assets/figures/' in body:
+        fm = bool(re.search(r'^이미지:', body, re.M)) and 'assets/figures/' in body
+        # 본문 임베드는 노트 폴더 기준 경로다(MATH_PIPELINE M3) — 프론트매터의
+        # `assets/figures/…` 와 갈리는 표지가 그 `../../` 다. **문법은 둘**이므로
+        # 마크다운과 `<img>` 를 함께 문다(머리말 ⚠ — 오늘 새는 노트는 0편이다).
+        # `[^<>]` 인 이유: 닫는 `>` 없는 `<img` 가 산문에 있어도 **아래쪽 임베드의
+        # `src` 까지 건너뛰어** 물지 않게 한다(중간에 다른 태그의 `<` 가 끼면 끊긴다).
+        # ⚠ `\n` 까지 막으면 속성을 여러 줄로 감싼 `<img>` 를 못 본다 — 줄바꿈은 남긴다.
+        body_embed = bool(re.search(
+            r'(?:!\[[^\]]*\]\(|<img[^<>]*src=")\.\./\.\./assets/figures/', body))
+        if fm:
             has[kind] += 1
+        if fm or body_embed:
+            emb[kind] += 1
         # ⚠ 한 노트가 같은 파일을 **두 번** 적는다 — frontmatter 의 `이미지.파일` 과
         #   본문 임베드. 낱개로 세면 거의 모든 SVG 가 「2곳에 물림」으로 찍힌다(첫 판이 그랬다).
         #   세려는 것은 **몇 편의 노트가 쓰는가**이므로 노트 단위로 집합을 만든다.
@@ -52,12 +76,18 @@ def main():
               % ', '.join(unknown))
 
     svgs = sorted(p.name for p in (ROOT / 'math/assets/figures').glob('*.svg'))
-    print('도해 SVG %d장 · 도해를 가진 노트 %d편 / 전체 %d편'
-          % (len(svgs), sum(has.values()), sum(tot.values())))
+    total = sum(tot.values())
+    print('도해 SVG %d장 · 전체 노트 %d편' % (len(svgs), total))
+    print('  ① 프론트매터 `이미지:` 기준  — 도해를 가진 노트 %d편 (남은 %d편)   ← manifest·갤러리·볼트가 보는 것'
+          % (sum(has.values()), total - sum(has.values())))
+    print('  ② 본문 임베드까지 치면      — %d편 (남은 %d편)   ← 다음 대상을 고를 때 보는 것'
+          % (sum(emb.values()), total - sum(emb.values())))
     print()
-    print('  %-6s %7s   %s' % ('유형', '보유/전체', '남은 무도해'))
+    print('  %-6s %9s %7s   %9s %7s' % ('유형', '① 보유/전체', '① 남은', '② 보유/전체', '② 남은'))
     for key, label in TYPES:
-        print('  %-6s %4d/%-4d   %d편' % (label, has[key], tot[key], tot[key] - has[key]))
+        print('  %-6s %6d/%-4d %6d편   %6d/%-4d %6d편'
+              % (label, has[key], tot[key], tot[key] - has[key],
+                 emb[key], tot[key], tot[key] - emb[key]))
 
     orphan = [s for s in svgs if s not in used]
     if orphan:
