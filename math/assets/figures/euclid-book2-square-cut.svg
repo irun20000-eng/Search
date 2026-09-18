@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 438" role="img" aria-label="그림 위쪽에 「문자 없이 하는 대수 — 『원론』 제2권」이라는 표제가 있고 그 아래에 임의의 수를 말하려면 길이 두 개를 그리는 수밖에 없었다고 적혀 있다. 왼쪽에는 한 변이 a 더하기 b 인 정사각형이 있고, 가로로 한 번 세로로 한 번 잘려 넷으로 나뉘어 있다. 왼쪽 위가 ㄱ, 오른쪽 위가 ㄴ, 왼쪽 아래가 ㄷ, 오른쪽 아래가 ㄹ 이다. ㄱ 과 ㄹ 은 정사각형이고, ㄴ 과 ㄷ 은 돌려 놓으면 포개지는 직사각형이다 — ㄴ 은 세로로 길고 ㄷ 은 가로로 길다. 아래쪽과 왼쪽 가장자리에 a 와 b 가 표시돼 있고 a 쪽이 더 길다. 오른쪽에는 넷을 옮겨 적은 표가 있다. 『원론』이 말하는 것과 오늘의 기호를 나란히 둔 것이다. ㄱ 은 a 위의 정사각형이고 a 제곱, ㄴ 은 a 와 b 를 두 변으로 하는 직사각형이고 ab, ㄷ 은 그것을 돌려 놓은 것이고 ab, ㄹ 은 b 위의 정사각형이고 b 제곱이다. 그 아래에 넷을 합하면 a 더하기 b 의 제곱이 a 제곱 더하기 2ab 더하기 b 제곱이라고 적혀 있다. 그림 아래에는 큰 정사각형을 두 번 자르면 넷이 되며 정사각형 둘과 돌려 놓으면 포개지는 직사각형 둘이라고 적혀 있다. 맨 아래에는 단서가 셋 있다. 첫째는 a 와 b 가 오늘의 표기이며 이 그림이 본문 5절이 말하는 자르고 붙이는 증명을 그린 것이라는 것이고, 둘째는 두 길이를 3 대 2 로 그렸으며 비는 아무렇게나 잡아도 넷으로 갈리는 것은 같다는 것이고, 셋째는 제2권의 한 대목을 그린 것이고 그 권 전체를 보이지는 않는다는 것이다">
+  <title>문자 없이 하는 대수 — 『원론』 제2권</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .mk{fill:#9C5A2C;}
+    .sq{fill:#F4EADC;stroke:none;}
+    .rc{fill:#E6D5BD;stroke:none;}
+    .outer{fill:none;stroke:#221E18;stroke-width:1.6;}
+    .cut{stroke:#8A7F6E;stroke-width:1;}
+    .edge{stroke:#9C5A2C;stroke-width:1.6;stroke-linecap:round;}
+    .rule{stroke:#D8CDBB;stroke-width:1;}
+  </style>
+  <rect width="700" height="438" fill="#FFFDF7"/>
+  <text x="56" y="30" font-size="16">문자 없이 하는 대수 — 『원론』 제2권</text>
+  <text x="56" y="52" font-size="12" class="dim">임의의 수를 말하려면 길이 두 개를 그리는 수밖에 없었다.</text>
+  <rect x="56.0" y="102.0" width="120.0" height="120.0" class="sq"/>
+  <rect x="176.0" y="102.0" width="80.0" height="120.0" class="rc"/>
+  <rect x="56.0" y="222.0" width="120.0" height="80.0" class="rc"/>
+  <rect x="176.0" y="222.0" width="80.0" height="80.0" class="sq"/>
+  <rect x="56.0" y="102.0" width="200.0" height="200.0" class="outer"/>
+  <line x1="176.0" y1="102.0" x2="176.0" y2="302.0" class="cut"/>
+  <line x1="56.0" y1="222.0" x2="256.0" y2="222.0" class="cut"/>
+  <text x="116.0" y="169.0" font-size="19" text-anchor="middle" class="mk">ㄱ</text>
+  <text x="216.0" y="169.0" font-size="19" text-anchor="middle" class="mk">ㄴ</text>
+  <text x="116.0" y="269.0" font-size="19" text-anchor="middle" class="mk">ㄷ</text>
+  <text x="216.0" y="269.0" font-size="19" text-anchor="middle" class="mk">ㄹ</text>
+  <line x1="59.0" y1="318.0" x2="173.0" y2="318.0" class="edge"/>
+  <text x="116.0" y="334.0" font-size="13" text-anchor="middle">a</text>
+  <line x1="179.0" y1="318.0" x2="253.0" y2="318.0" class="edge"/>
+  <text x="216.0" y="334.0" font-size="13" text-anchor="middle">b</text>
+  <line x1="40.0" y1="105.0" x2="40.0" y2="219.0" class="edge"/>
+  <text x="32.0" y="167.0" font-size="13" text-anchor="end">a</text>
+  <line x1="40.0" y1="225.0" x2="40.0" y2="299.0" class="edge"/>
+  <text x="32.0" y="267.0" font-size="13" text-anchor="end">b</text>
+  <text x="156.0" y="88.0" font-size="12" text-anchor="middle" class="ax">한 변이 a + b 인 정사각형</text>
+  <text x="336.0" y="106.0" font-size="12" class="ax">『원론』이 말하는 것</text>
+  <text x="656" y="106.0" font-size="12" text-anchor="end" class="ax">오늘의 기호</text>
+  <text x="310.0" y="136.0" font-size="15" class="mk">ㄱ</text>
+  <text x="336.0" y="136.0" font-size="13">a 위의 정사각형</text>
+  <text x="656" y="136.0" font-size="15" text-anchor="end" class="sien">a²</text>
+  <text x="310.0" y="170.0" font-size="15" class="mk">ㄴ</text>
+  <text x="336.0" y="170.0" font-size="13">a 와 b 를 두 변으로 하는 직사각형</text>
+  <text x="656" y="170.0" font-size="15" text-anchor="end" class="sien">ab</text>
+  <text x="310.0" y="204.0" font-size="15" class="mk">ㄷ</text>
+  <text x="336.0" y="204.0" font-size="13">그것을 돌려 놓은 것</text>
+  <text x="656" y="204.0" font-size="15" text-anchor="end" class="sien">ab</text>
+  <text x="310.0" y="238.0" font-size="15" class="mk">ㄹ</text>
+  <text x="336.0" y="238.0" font-size="13">b 위의 정사각형</text>
+  <text x="656" y="238.0" font-size="15" text-anchor="end" class="sien">b²</text>
+  <line x1="310.0" y1="258.0" x2="656" y2="258.0" class="rule"/>
+  <text x="310.0" y="284.0" font-size="14">넷을 합하면</text>
+  <text x="656" y="284.0" font-size="15" text-anchor="end" class="sien">(a+b)² = a² + 2ab + b²</text>
+  <text x="56" y="354.0" font-size="13" class="dim">큰 정사각형을 두 번 자르면 넷이 된다 — 정사각형 둘과, 돌려 놓으면 포개지는 직사각형 둘이다.</text>
+  <text x="56" y="378.0" font-size="12" class="sien">⚠ a·b 는 오늘의 표기다 — 이 그림은 본문 §5 가 말하는 「자르고 붙이는 증명」을 그린 것이다.</text>
+  <text x="56" y="396.0" font-size="12" class="sien">⚠ 두 길이를 3 대 2 로 그렸다 — 비는 아무렇게나 잡아도 넷으로 갈리는 것은 같다.</text>
+  <text x="56" y="414.0" font-size="12" class="sien">⚠ 제2권의 한 대목을 그린 것이고, 그 권 전체를 보이지는 않는다.</text>
+</svg>
