@@ -1,10 +1,10 @@
 {
  "generated": "2026-09-20",
- "scanned": 288,
- "resolved": 1579,
- "pending": 536,
+ "scanned": 289,
+ "resolved": 1598,
+ "pending": 537,
  "counts": {
-  "new": 249,
+  "new": 250,
   "companion": 5,
   "gap": 1
  },
@@ -4433,6 +4433,21 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "프톨레마이오스",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "15세기",
+     "u": "math/#n=century-15c",
+     "s": "math",
      "n": 1
     }
    ]
