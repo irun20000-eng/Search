@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 452" role="img" aria-label="그림 위쪽에 「1424년의 도약 — π 를 맞게 적은 소수 자릿수」라는 표제가 있고 그 아래에 알카시가 세운 자리를 172년 동안 아무도 넘지 못했다고 적혀 있다. 아래에 가로 막대 여덟 개가 위에서 아래로 연도순으로 놓여 있고, 막대 길이가 맞은 자릿수에 정비례한다. 왼쪽에 연도와 이름이 적혀 있고 막대 오른쪽 끝에 자릿수가 적혀 있다. 위에서부터 기원전 250년 아르키메데스 3자리, 150년 프톨레마이오스 3자리, 263년 유휘 5자리, 480년 조충지 7자리, 1424년 알카시 16자리, 1579년 비에트 9자리, 1593년 판 로먼 15자리, 1596년 판 쾰런 20자리다. 알카시의 막대만 짙게 칠해져 있고 나머지는 옅다. 16자리 자리에 세로 파선이 그어져 있고 그 위에 「알카시가 세운 자리 16」이라고 적혀 있다. 알카시 아래의 비에트와 판 로먼의 막대는 그 파선에 못 미치고, 맨 아래 판 쾰런의 막대만 파선을 넘어선다. 막대 아래에는 1424년에서 1596년까지가 172년이며 그 사이의 두 시도가 이 선을 넘지 못했다고 적혀 있다. 맨 아래에는 단서가 셋 있다. 첫째는 자릿수가 맞게 적은 소수 자릿수이고 저마다 방법과 표기가 달랐다는 것이고, 둘째는 알카시가 2π 를 60진법 아홉 자리로 적었으며 소수 열여섯 자리는 그것을 옮긴 값이라는 것이고, 셋째는 기록이 버틴 기간을 자료가 약 180년 또는 거의 200년으로 적지만 두 연도를 빼면 172년이라는 것이다">
+  <title>1424년의 도약 — π 를 맞게 적은 소수 자릿수</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;}
+    .bar{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .hi{fill:#E6D5BD;stroke:#9C5A2C;stroke-width:1.6;}
+    .rec{stroke:#3A5C77;stroke-width:1.2;stroke-dasharray:5 4;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+  </style>
+  <rect width="700" height="452" fill="#FFFDF7"/>
+  <text x="56" y="30" font-size="16">1424년의 도약 — π 를 맞게 적은 소수 자릿수</text>
+  <text x="56" y="52" font-size="12" class="dim">알카시가 세운 자리를 172년 동안 아무도 넘지 못했다.</text>
+  <text x="56" y="110.00" font-size="11.5" class="dim">기원전 250 · 아르키메데스</text>
+  <rect x="206.00" y="96.00" width="60.90" height="19.00" class="bar"/>
+  <text x="273.90" y="110.00" font-size="11.5" class="dim">3</text>
+  <text x="56" y="144.00" font-size="11.5" class="dim">150 · 프톨레마이오스</text>
+  <rect x="206.00" y="130.00" width="60.90" height="19.00" class="bar"/>
+  <text x="273.90" y="144.00" font-size="11.5" class="dim">3</text>
+  <text x="56" y="178.00" font-size="11.5" class="dim">263 · 유휘</text>
+  <rect x="206.00" y="164.00" width="101.50" height="19.00" class="bar"/>
+  <text x="314.50" y="178.00" font-size="11.5" class="dim">5</text>
+  <text x="56" y="212.00" font-size="11.5" class="dim">480 · 조충지</text>
+  <rect x="206.00" y="198.00" width="142.10" height="19.00" class="bar"/>
+  <text x="355.10" y="212.00" font-size="11.5" class="dim">7</text>
+  <text x="56" y="246.00" font-size="11.5" class="sien">1424 · 알카시</text>
+  <rect x="206.00" y="232.00" width="324.80" height="19.00" class="hi"/>
+  <text x="537.80" y="246.00" font-size="11.5" class="sien">16</text>
+  <text x="56" y="280.00" font-size="11.5" class="dim">1579 · 비에트</text>
+  <rect x="206.00" y="266.00" width="182.70" height="19.00" class="bar"/>
+  <text x="395.70" y="280.00" font-size="11.5" class="dim">9</text>
+  <text x="56" y="314.00" font-size="11.5" class="dim">1593 · 판 로먼</text>
+  <rect x="206.00" y="300.00" width="304.50" height="19.00" class="bar"/>
+  <text x="517.50" y="314.00" font-size="11.5" class="dim">15</text>
+  <text x="56" y="348.00" font-size="11.5" class="dim">1596 · 판 쾰런</text>
+  <rect x="206.00" y="334.00" width="406.00" height="19.00" class="bar"/>
+  <text x="619.00" y="348.00" font-size="11.5" class="dim">20</text>
+  <line x1="206.00" y1="90.00" x2="206.00" y2="359.00" class="axis"/>
+  <line x1="530.80" y1="82.00" x2="530.80" y2="363.00" class="rec"/>
+  <text x="526.80" y="76.00" font-size="11" class="sien" text-anchor="end">알카시가 세운 자리 16</text>
+  <text x="56" y="385.00" font-size="11.5">1424 → 1596 은 <tspan class="sien">172년</tspan>이다. 그 사이 비에트(9자리)도 판 로먼(15자리)도 이 선을 넘지 못했다.</text>
+  <text x="56" y="407.00" font-size="10.5" class="ax">⚠ 자릿수는 「맞게 적은 소수 자릿수」다. 여덟 사람이 쓴 방법도 표기도 저마다 달랐다.</text>
+  <text x="56" y="423.00" font-size="10.5" class="ax">⚠ 알카시는 2π 를 60진법 아홉 자리로 적었다. 소수 열여섯 자리는 그것을 옮긴 값이다.</text>
+  <text x="56" y="439.00" font-size="10.5" class="ax">⚠ 기록이 버틴 기간을 자료는 약 180년 또는 거의 200년으로 적는다. 두 연도를 빼면 172년이다.</text>
+</svg>
