@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 468" width="700" height="468" role="img" aria-label="그림 위쪽에 「구멍 하나를 다섯 이름으로 부른다 — 완비성의 다섯 얼굴」이라는 표제가 있고 그 아래에 √2 로 다가가는 소수 근사 하나가 다섯 형태 모두에서 유리수의 구멍을 보여준다고 적혀 있다. 왼쪽에 다섯 이름이 세로로 쌓여 있는데 위에서부터 단조수렴성, 최소상계 공리, 코시 완비성, 줄어드는 구간, 볼차노–바이어슈트라스다. 그 왼쪽에는 갈래라는 머리를 단 칸이 있고 같은 줄에 차례로 순서, 순서, 거리, 줄표, 줄표가 적혀 있다. 다섯 이름에서 가는 선이 하나씩 뻗어 나와 오른쪽 한 점으로 모이고, 모인 자리에서 굵은 갈색 화살표 하나가 오른쪽으로 나간다. 화살표가 가리키는 곳에 파란 가로 직선이 있다. 직선은 오른쪽으로 가다가 한 자리에서 끊겨 빈 동그라미가 놓여 있고 그 위에 √2 자리, 아래에 유리수에는 없다고 적혀 있으며, 끊긴 자리 오른쪽으로 직선이 다시 이어져 그 끝에 유리수라고 적혀 있다. 직선 위에는 짧은 눈금이 다섯 있고 왼쪽부터 1과 1.4와 1.41과 1.414와 1.4142이며 오른쪽으로 갈수록 빈 동그라미에 가까이 붙는다. 맨 아래에는 단서가 넷 있다. 첫째는 가로 자리가 눈금에 비례하지 않고 √2 까지의 거리를 상용로그로 재서 놓았다는 것이며 그래야 다섯 항이 다 보인다는 것이고, 둘째는 순서와 거리로 가른 것이 셋뿐이며 노트가 단조성과 상한을 순서로, 코시 완비성을 거리로 적고 나머지 둘은 가르지 않았다는 것이고, 셋째는 다섯이 동치인 것이 실수에서이며 코시 완비성이 나머지와 동치라는 것은 아르키메데스 성질과 얽혀 있다는 것이고, 넷째는 구멍이 한 자리가 아니라는 것이며 11절이 대수적으로 정의할 수 없는 실수가 훨씬 많다고 적는다는 것과 이 그림은 한 자리를 본보기로 들었다는 것이다">
+<title>구멍 하나를 다섯 이름으로 부른다 — 완비성의 다섯 얼굴</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .ax{font-size:10.5px;fill:#5B5245;} .nm{font-size:12px;} .tag{font-size:10px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .fan{stroke:#8A7F6E;stroke-width:1;fill:none;}
+    .arrow{stroke:#9C5A2C;stroke-width:2.2;fill:none;}
+    .line{stroke:#3A5C77;stroke-width:2;fill:none;}
+    .tick{stroke:#9C5A2C;stroke-width:1.2;fill:none;}
+    .hole{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:2;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="468"/>
+<text class="h1" x="56" y="44">구멍 하나를 다섯 이름으로 부른다 — 완비성의 다섯 얼굴</text>
+<text class="h2" x="56" y="66">√2 로 다가가는 소수 근사 하나가 다섯 형태 모두에서 유리수의 구멍을 보여준다.</text>
+  <text class="tag" x="56" y="118.0">갈래</text>
+  <text class="tag" x="56" y="144.0">순서</text>
+  <text class="nm" x="250.0" y="144.0" text-anchor="end">단조수렴성</text>
+  <line class="fan" x1="262.0" y1="140.0" x2="330.0" y2="236.0"/>
+  <text class="tag" x="56" y="192.0">순서</text>
+  <text class="nm" x="250.0" y="192.0" text-anchor="end">최소상계 공리</text>
+  <line class="fan" x1="262.0" y1="188.0" x2="330.0" y2="236.0"/>
+  <text class="tag" x="56" y="240.0">거리</text>
+  <text class="nm" x="250.0" y="240.0" text-anchor="end">코시 완비성</text>
+  <line class="fan" x1="262.0" y1="236.0" x2="330.0" y2="236.0"/>
+  <text class="tag" x="56" y="288.0">—</text>
+  <text class="nm" x="250.0" y="288.0" text-anchor="end">줄어드는 구간</text>
+  <line class="fan" x1="262.0" y1="284.0" x2="330.0" y2="236.0"/>
+  <text class="tag" x="56" y="336.0">—</text>
+  <text class="nm" x="250.0" y="336.0" text-anchor="end">볼차노–바이어슈트라스</text>
+  <line class="fan" x1="262.0" y1="332.0" x2="330.0" y2="236.0"/>
+  <line class="arrow" x1="330.0" y1="236.0" x2="386.0" y2="236.0"/>
+  <path class="arrow" d="M 386.0 236.0 l -7 -4 l 0 8 z" fill="#9C5A2C" stroke="none"/>
+  <line class="line" x1="394.0" y1="236.0" x2="573.0" y2="236.0"/>
+  <line class="line" x1="587.0" y1="236.0" x2="648.0" y2="236.0"/>
+  <circle class="hole" cx="580.0" cy="236.0" r="5"/>
+  <text class="ax" x="580.0" y="206.0" text-anchor="middle">√2 자리</text>
+  <text class="ax" x="580.0" y="272.0" text-anchor="middle">유리수에는 없다</text>
+  <text class="ax" x="648.0" y="224.0" text-anchor="end">유리수</text>
+  <line class="tick" x1="400.0" y1="231.0" x2="400.0" y2="241.0"/>
+  <text class="ax" x="400.0" y="224.0" text-anchor="middle">1</text>
+  <line class="tick" x1="454.7" y1="231.0" x2="454.7" y2="241.0"/>
+  <text class="ax" x="454.7" y="254.0" text-anchor="middle">1.4</text>
+  <line class="tick" x1="474.5" y1="231.0" x2="474.5" y2="241.0"/>
+  <text class="ax" x="474.5" y="224.0" text-anchor="middle">1.41</text>
+  <line class="tick" x1="522.8" y1="231.0" x2="522.8" y2="241.0"/>
+  <text class="ax" x="522.8" y="254.0" text-anchor="middle">1.414</text>
+  <line class="tick" x1="567.6" y1="231.0" x2="567.6" y2="241.0"/>
+  <text class="ax" x="567.6" y="224.0" text-anchor="middle">1.4142</text>
+<text class="warn" x="56" y="390.0">⚠ 가로 자리는 눈금에 비례하지 않는다 — √2 까지의 거리를 상용로그로 재서 놓았다. 그래야 다섯 항이 다 보인다.</text>
+<text class="warn" x="56" y="409.0">⚠ 순서·거리로 가른 것은 셋뿐이다 — 노트는 단조성과 상한을 순서, 코시 완비성을 거리라 적고 나머지 둘은 가르지 않는다.</text>
+<text class="warn" x="56" y="428.0">⚠ 다섯이 동치인 것은 실수에서다. 코시 완비성이 나머지와 동치라는 것은 아르키메데스 성질과 얽혀 있다.</text>
+<text class="warn" x="56" y="447.0">⚠ 구멍은 한 자리가 아니다 — §11 은 대수적으로 정의할 수 없는 실수가 훨씬 많다고 적는다. 이 그림은 한 자리를 본보기로 들었다.</text>
+</svg>
