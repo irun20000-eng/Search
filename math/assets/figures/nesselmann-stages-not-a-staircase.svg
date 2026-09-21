@@ -9,7 +9,7 @@
     .axis{stroke:#8A7F6E;stroke-width:1;fill:none;}
     .path{stroke:#3A5C77;stroke-width:2;fill:none;}
     .down{stroke:#9C5A2C;stroke-width:2.6;fill:none;}
-    .dot{fill:#3A5C77;} .dotd{fill:#9C5A2C;}
+    .dot{fill:#221E18;}
     .warn{font-size:10.5px;fill:#5B5245;}
   </style>
 <rect class="bg" x="0" y="0" width="700" height="512"/>
@@ -35,10 +35,10 @@
   <text class="ax" x="348.0" y="371.0" text-anchor="middle">연도</text>
   <polyline class="path" points="308.5,284.0 563.9,122.0"/>
   <polyline class="down" points="119.2,203.0 308.5,284.0"/>
-  <circle class="dotd" cx="119.2" cy="203.0" r="4"/>
+  <circle class="dot" cx="119.2" cy="203.0" r="4"/>
   <text class="nm" x="119.2" y="189.0" text-anchor="middle">디오판토스</text>
   <text class="ax" x="119.2" y="173.0" text-anchor="middle">3세기</text>
-  <circle class="dotd" cx="308.5" cy="284.0" r="4"/>
+  <circle class="dot" cx="308.5" cy="284.0" r="4"/>
   <text class="nm" x="308.5" y="308.0" text-anchor="middle">알콰리즈미</text>
   <text class="ax" x="308.5" y="325.0" text-anchor="middle">9세기</text>
   <circle class="dot" cx="563.9" cy="122.0" r="4"/>
