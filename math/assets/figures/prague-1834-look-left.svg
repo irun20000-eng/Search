@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 470" width="700" height="470" role="img" aria-label="그림 위쪽에 「눈은 1834년으로 가지만, 물어야 할 곳은 17년 앞이다」라는 표제가 있고 그 아래에 한 번의 만남은 오른쪽 끝에 있고 수학사가 묻는 것은 왼쪽의 4년이라고 적혀 있다. 가운데에 1820년부터 1840년까지 다섯 눈금이 매겨진 가로 시간축이 있고 그 위로 가로줄이 둘 있는데 위는 코시, 아래는 볼차노다. 볼차노 줄에는 왼쪽 끝 1817년 자리에 『순수 해석적 증명』이 있고, 1819년 12월 자리에 정직·가택연금·검열이, 1825년 자리에 사임이 있으며 뒤의 두 자리 사이가 굵은 갈색 선으로 이어져 있다. 코시 줄에는 1821년 『해석학 강의』, 1830년 9월 파리를 떠남, 1838년 파리로 돌아옴이 있고 뒤의 두 자리 사이가 굵은 파란 선으로 이어져 있다. 1834년 자리에서는 두 줄의 점이 세로 파선으로 이어지는데 파선 가운데가 비어 있고 그 빈 곳에 1834년 한 번 만남과 오간 말은 전하지 않는다가 적혀 있다. 그림 위쪽에는 1817년에서 1821년까지를 재는 짧은 자가 있고 1817에서 1821까지 4년이며 같은 개념이 여기서 다시 나온다고 적혀 있다. 시간축 아래에는 1817년에서 1834년까지를 재는 긴 자가 있고 1817에서 1834까지 17년이며 만남은 여기까지 뒤라고 적혀 있다. 맨 아래에는 단서가 넷 있다. 첫째는 만남에서 무슨 이야기가 오갔는지 어느 자료도 전하지 않아 그 칸을 비워 두었다는 것이고, 둘째는 「베낀 것인가」의 답이 확정이 아니라 저울질이며 읽었을 가능성은 낮고 연속의 정의는 「더 설득력 있어 보인다」까지라는 것이고, 셋째는 1817년 논문이 출판됐고 막힌 것은 그다음이며 출판 금지가 1819년 12월부터라 그 논문보다 뒤라는 것이고, 넷째는 달까지 아는 자리가 둘뿐이고 나머지는 해만 알아 해만 아는 것은 그 해 첫머리에 놓았다는 것이다">
+<title>눈은 1834년으로 가지만 물어야 할 곳은 17년 앞이다</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .ax{font-size:10.5px;fill:#5B5245;} .nm{font-size:12px;} .ev{font-size:11px;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;fill:none;}
+    .life{stroke:#3A5C77;stroke-width:2;fill:none;}
+    .block{stroke:#9C5A2C;stroke-width:2.6;fill:none;}
+    .meet{stroke:#9C5A2C;stroke-width:1.2;fill:none;stroke-dasharray:4 3;}
+    .dot{fill:#221E18;} .span{stroke:#5B5245;stroke-width:1;fill:none;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="470"/>
+<text class="h1" x="56" y="44">눈은 1834년으로 가지만, 물어야 할 곳은 17년 앞이다</text>
+<text class="h2" x="56" y="66">한 번의 만남은 오른쪽 끝에 있고, 수학사가 묻는 것은 왼쪽의 4년이다.</text>
+  <line class="lane" x1="88.0" y1="168.0" x2="612.0" y2="168.0"/>
+  <text class="nm" x="80.0" y="172.0" text-anchor="end">코시</text>
+  <line class="lane" x1="88.0" y1="258.0" x2="612.0" y2="258.0"/>
+  <text class="nm" x="80.0" y="262.0" text-anchor="end">볼차노</text>
+  <line class="axis" x1="96.0" y1="316.0" x2="604.0" y2="316.0"/>
+  <line class="axis" x1="197.6" y1="316.0" x2="197.6" y2="321.0"/>
+  <text class="ax" x="197.6" y="334.0" text-anchor="middle">1820</text>
+  <line class="axis" x1="299.2" y1="316.0" x2="299.2" y2="321.0"/>
+  <text class="ax" x="299.2" y="334.0" text-anchor="middle">1825</text>
+  <line class="axis" x1="400.8" y1="316.0" x2="400.8" y2="321.0"/>
+  <text class="ax" x="400.8" y="334.0" text-anchor="middle">1830</text>
+  <line class="axis" x1="502.4" y1="316.0" x2="502.4" y2="321.0"/>
+  <text class="ax" x="502.4" y="334.0" text-anchor="middle">1835</text>
+  <line class="axis" x1="604.0" y1="316.0" x2="604.0" y2="321.0"/>
+  <text class="ax" x="604.0" y="334.0" text-anchor="middle">1840</text>
+  <line class="block" x1="195.9" y1="258.0" x2="299.2" y2="258.0"/>
+  <line class="life" x1="414.3" y1="168.0" x2="563.4" y2="168.0"/>
+  <circle class="dot" cx="136.6" cy="258.0" r="3.5"/>
+  <text class="ev" x="136.6" y="244.0" text-anchor="middle">『순수 해석적 증명』</text>
+  <text class="ax" x="136.6" y="229.0" text-anchor="middle">1817</text>
+  <circle class="dot" cx="195.9" cy="258.0" r="3.5"/>
+  <text class="ev" x="195.9" y="284.0" text-anchor="middle">정직 · 가택연금 · 검열</text>
+  <text class="ax" x="195.9" y="300.0" text-anchor="middle">1819.12</text>
+  <circle class="dot" cx="299.2" cy="258.0" r="3.5"/>
+  <text class="ev" x="299.2" y="284.0" text-anchor="middle">사임</text>
+  <text class="ax" x="299.2" y="300.0" text-anchor="middle">1825</text>
+  <circle class="dot" cx="217.9" cy="168.0" r="3.5"/>
+  <text class="ev" x="217.9" y="154.0" text-anchor="middle">『해석학 강의』</text>
+  <text class="ax" x="217.9" y="139.0" text-anchor="middle">1821</text>
+  <circle class="dot" cx="414.3" cy="168.0" r="3.5"/>
+  <text class="ev" x="414.3" y="154.0" text-anchor="middle">파리를 떠남</text>
+  <text class="ax" x="414.3" y="139.0" text-anchor="middle">1830.9</text>
+  <circle class="dot" cx="563.4" cy="168.0" r="3.5"/>
+  <text class="ev" x="563.4" y="154.0" text-anchor="middle">파리로 돌아옴</text>
+  <text class="ax" x="563.4" y="139.0" text-anchor="middle">1838</text>
+  <line class="meet" x1="482.1" y1="168.0" x2="482.1" y2="198.0"/>
+  <line class="meet" x1="482.1" y1="234.0" x2="482.1" y2="258.0"/>
+  <circle class="dot" cx="482.1" cy="168.0" r="3.5"/>
+  <circle class="dot" cx="482.1" cy="258.0" r="3.5"/>
+  <text class="ev" x="482.1" y="210.0" text-anchor="middle">1834 · 한 번 만남</text>
+  <text class="ax" x="482.1" y="230.0" text-anchor="middle">오간 말은 전하지 않는다</text>
+  <line class="span" x1="136.6" y1="120.0" x2="217.9" y2="120.0"/>
+  <line class="span" x1="136.6" y1="114.0" x2="136.6" y2="126.0"/>
+  <line class="span" x1="217.9" y1="114.0" x2="217.9" y2="126.0"/>
+  <text class="ax" x="177.3" y="110.0" text-anchor="middle">1817 → 1821 · 4년 — 같은 개념이 여기서 다시 나온다</text>
+  <line class="span" x1="136.6" y1="362.0" x2="482.1" y2="362.0"/>
+  <line class="span" x1="136.6" y1="356.0" x2="136.6" y2="368.0"/>
+  <line class="span" x1="482.1" y1="356.0" x2="482.1" y2="368.0"/>
+  <text class="ax" x="309.4" y="352.0" text-anchor="middle">1817 → 1834 · 17년 — 만남은 여기까지 뒤다</text>
+<text class="warn" x="56" y="398.0">⚠ 만남에서 무슨 이야기가 오갔는지는 어느 자료도 전하지 않는다 — 그래서 그 칸을 비워 두었다.</text>
+<text class="warn" x="56" y="417.0">⚠ 「베낀 것인가」의 답은 확정이 아니라 저울질이다 — 읽었을 가능성은 낮고, 연속의 정의는 「더 설득력 있어 보인다」까지다.</text>
+<text class="warn" x="56" y="436.0">⚠ 1817년 논문은 출판됐다. 막힌 것은 그다음이다 — 출판 금지는 1819년 12월부터라 그 논문보다 뒤다.</text>
+<text class="warn" x="56" y="455.0">⚠ 달까지 아는 자리는 둘(1819년 12월 · 1830년 9월)뿐이고 나머지는 해만 안다 — 해만 아는 것은 그 해 첫머리에 놓았다.</text>
+</svg>
