@@ -138,6 +138,13 @@ jobs:
       - name: manifest 의 path 가 실제 파일을 가리키는가 (guides·videos·concept)
         run: python tools/verify_manifest_paths.py
 
+      # 이 목록을 CLAUDE.md 가 이름으로 적어 두는데 **두 번 어긋났다**(2026-09-21 둘 빠짐,
+      # 2026-09-22 manifest_paths 가 늘며 또). CLAUDE.md 스스로 「수를 세지 말고 이름을
+      # 맞댈 것」이라 적고도 어긋났으니 사람이 맞댈 일이 아니다. 이 검사기는 제 등재도
+      # 제가 강제한다 — 목록에서 빠지면 저를 빼먹은 것으로 잡힌다.
+      - name: CLAUDE.md 의 게이트 목록이 여기와 같은가
+        run: python tools/verify_gate_list.py
+
       # 마지막에 둔다 — 이 검사만 빌더를 **실제로 돌린다**(그 뒤 워킹트리를 되돌린다).
       # 앞의 게이트들이 원본 산출물을 보게 하려면 순서가 이래야 한다.
       # ⚠ 이 초록이 모든 서가를 보증하지 않는다 — reports 는 네 필드만 덮인다(아래 요약 참조).
