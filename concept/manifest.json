@@ -1,6 +1,28 @@
 {
- "count": 12,
+ "count": 13,
  "notes": [
+  {
+   "slug": "percentage-point",
+   "title": "퍼센트와 퍼센트포인트(Percentage Point) — 이해편(입문·딥)",
+   "date": "2026-09-22",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "백분율",
+    "퍼센트포인트",
+    "베이시스포인트",
+    "금리",
+    "여론조사",
+    "통계읽기",
+    "숫자노트",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 6편 · 5%에서 6%로 오르면 몇 퍼센트 오른 것인가",
+   "chars": 11865,
+   "pic": "percentage-point.png",
+   "path": "concept/notes/percentage-point.md"
+  },
   {
    "slug": "parkinsons-law",
    "title": "파킨슨의 법칙(Parkinson's Law) — 이해편(입문·딥)",

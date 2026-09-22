@@ -1,10 +1,10 @@
 {
  "generated": "2026-09-22",
- "scanned": 289,
- "resolved": 1601,
- "pending": 537,
+ "scanned": 290,
+ "resolved": 1614,
+ "pending": 538,
  "counts": {
-  "new": 250,
+  "new": 251,
   "companion": 5,
   "gap": 1
  },
@@ -4403,6 +4403,21 @@
      "t": "(FULL VER) 옵시디언과 클로드코드로 진짜 AI 팀 만들기 | 세컨드 브레인 튜토리얼",
      "u": "videos/#post-R2aSqw7S3Ws",
      "s": "videos",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "퍼센트포인트",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "퍼센트와 퍼센트포인트(Percentage Point) — 이해편(입문·딥)",
+     "u": "concept/#n=percentage-point",
+     "s": "concept",
      "n": 1
     }
    ]
