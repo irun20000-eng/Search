@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 472" width="700" height="472" role="img" aria-label="그림 위쪽에 「문제가 간 길과 답이 돌아온 길 — 같은 학술지」라는 표제가 있고 그 아래에 남은 것은 문제를 낸 사람이 그 통로가 됐다는 사실이라고 적혀 있다. 가운데 위에 가로로 긴 막대가 있고 안에 미국수학회 회보라고 적혀 있다. 막대의 왼쪽 끝 아래에 초른의 논문 미완의 문제가, 오른쪽 끝 아래에 1949년 55권 575에서 576쪽 한국인 최초의 국제 수학 논문이 적혀 있다. 그 왼쪽 글귀 아래에서 파선이 1947 남대문 시장 쓰레기 더미라고 적힌 네모를 향해 내려가고, 파선 옆에 왜 거기 있었는지 자료가 말하지 않는다고 적혀 있다. 그 네모에서 오른쪽으로 화살표가 이임학이 읽고 풀었다라고 적힌 가운데 네모로, 다시 오른쪽으로 문제 낸 사람에게 보냈다라고 적힌 네모로 간다. 오른쪽 네모에서 실선 화살표가 막대 오른쪽 끝 아래 글귀를 향해 올라가고, 그 옆에 초른이 대신 투고했다, 왜 그랬는지는 자료가 말하지 않는다고 적혀 있다. 그래서 막대의 두 끝과 아래 세 네모가 한 바퀴 도는 고리를 이룬다. 아래에 단서가 다섯 줄 있다. 첫째, 왼쪽 파선은 학술지가 왜 거기 있었는지를 모른다는 뜻이고, 시장과 쓰레기 더미라는 구체는 출처 1번에만 있으며 2번은 우연히 구했다고만 적는다. 둘째, 오른쪽 선은 실선이다 — 초른이 대신 투고한 것은 출처 1번이 적고 모르는 것은 왜 그랬는지뿐이다. 셋째, 막대는 같은 학술지이지 같은 호가 아니다 — 초른의 문제가 실린 호와 해는 노트가 적지 않아서 막대의 왼쪽 끝에는 해가 없다. 넷째, 답을 보낸 해와 투고한 해도 노트가 적지 않고 확실한 해는 1947과 1949 둘뿐이다. 다섯째, 해와 쪽수는 노트의 출처 1번 한국민족문화대백과, 2번 수학백과, 3번 논문 원문을 따랐다.">
+<title>문제가 간 길과 답이 돌아온 길 같은 학술지</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3A5C77"/></marker></defs>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .jt{font-size:13px;} .ev{font-size:11.5px;} .sm{font-size:10.5px;fill:#5B5245;}
+    .note{font-size:10.5px;fill:#9C5A2C;}
+    .bg{fill:#FFFDF7;}
+    .jour{fill:#F4EADC;stroke:#8A7F6E;stroke-width:1;}
+    .box{fill:#FFFDF7;stroke:#8A7F6E;stroke-width:1;}
+    .known{stroke:#3A5C77;stroke-width:1.8;fill:none;}
+    .unk{stroke:#9C5A2C;stroke-width:1.4;fill:none;stroke-dasharray:5 4;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="472"/>
+<text class="h1" x="56" y="44">문제가 간 길과 답이 돌아온 길 — 같은 학술지</text>
+<text class="h2" x="56" y="66">남은 것은 문제를 낸 사람이 그 통로가 됐다는 사실이다.</text>
+  <rect class="jour" x="95" y="96" width="510" height="42" rx="3"/>
+  <text class="jt" x="350" y="122" text-anchor="middle">『Bulletin of the American Mathematical Society』</text>
+  <text class="ev" x="170" y="158" text-anchor="middle">초른의 논문 — 미완의 문제</text>
+  <text class="ev" x="530" y="158" text-anchor="middle">1949 · 55권 575~576쪽</text>
+  <text class="sm" x="530" y="174" text-anchor="middle">한국인 최초의 국제 수학 논문</text>
+  <line class="unk" x1="170" y1="186" x2="170" y2="276"/>
+  <text class="note" x="158" y="227" text-anchor="end">왜 거기 있었는지</text>
+  <text class="note" x="158" y="243" text-anchor="end">자료가 말하지 않는다</text>
+  <line class="known" x1="530" y1="276" x2="530" y2="186" marker-end="url(#ah)"/>
+  <text class="ev" x="542" y="219">초른이 대신 투고했다</text>
+  <text class="note" x="542" y="235">왜 그랬는지는</text>
+  <text class="note" x="542" y="251">자료가 말하지 않는다</text>
+  <rect class="box" x="95" y="280" width="150" height="48" rx="3"/>
+  <text class="ev" x="170" y="300" text-anchor="middle">1947</text>
+  <text class="ev" x="170" y="317" text-anchor="middle">남대문 시장 쓰레기 더미</text>
+  <rect class="box" x="275" y="280" width="150" height="48" rx="3"/>
+  <text class="ev" x="350" y="300" text-anchor="middle">이임학이</text>
+  <text class="ev" x="350" y="317" text-anchor="middle">읽고 풀었다</text>
+  <rect class="box" x="455" y="280" width="150" height="48" rx="3"/>
+  <text class="ev" x="530" y="300" text-anchor="middle">문제 낸 사람에게</text>
+  <text class="ev" x="530" y="317" text-anchor="middle">보냈다</text>
+  <line class="known" x1="249" y1="304" x2="269" y2="304" marker-end="url(#ah)"/>
+  <line class="known" x1="429" y1="304" x2="449" y2="304" marker-end="url(#ah)"/>
+<text class="warn" x="56" y="380">⚠ 왼쪽 파선은 왜 거기 있었는지를 모른다는 뜻이다. 시장·쓰레기 더미는 [1]에만 있고, [2]는 「우연히 구한」이다.</text>
+<text class="warn" x="56" y="397">⚠ 오른쪽 선은 실선이다 — 초른이 대신 투고한 것은 [1]이 적는다. 모르는 것은 왜 그랬는지뿐이다.</text>
+<text class="warn" x="56" y="414">⚠ 막대는 같은 학술지이지 같은 호가 아니다. 초른의 문제가 실린 호와 해는 노트가 적지 않아 왼쪽 끝에는 해가 없다.</text>
+<text class="warn" x="56" y="431">⚠ 답을 보낸 해와 투고한 해도 노트가 적지 않는다. 확실한 해는 1947과 1949 둘뿐이다.</text>
+<text class="warn" x="56" y="448">⚠ 해와 쪽수는 노트의 출처 [1] 한국민족문화대백과 · [2] 수학백과 · [3] 논문 원문을 따랐다.</text>
+</svg>
