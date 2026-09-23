@@ -2,6 +2,30 @@
   "generated": "2026-08-31",
   "reports": [
     {
+      "slug": "jev-aside-deep",
+      "title": "Jev와 Aside — 글을 안 쓰는 AI와 통합을 안 쓰는 브라우저, 무엇이 다르고 무엇을 바꾸나 (DEEP)",
+      "date": "2026-09-22",
+      "depth": "deep",
+      "tags": [
+        "AI에이전트",
+        "Aside",
+        "Jev",
+        "TypeSafe",
+        "AI브라우저",
+        "업무자동화",
+        "시스템원",
+        "판단모델",
+        "프롬프트인젝션",
+        "도구비교"
+      ],
+      "tldr": "Aside = 크로미엄 기반으로 다시 만든 에이전트 브라우저. 연동(integration)을 붙이지 않고 내가 이미 로그인해 둔 사이트를 그대로 조작한다 . 한국인 3명이 창업했고 Y Combinator(F25) 투자를 받았다 . Jev = TypeSafe AI의 System One 모델. 문장을 만들지 않고 상태를 받아 타입이 정해진 값과 확률을 바로 돌려준다 . 응답이 70~500ms 다 . Jev가 답하는 질문은 딱 세 종류다 — Noul(예/아니오) · Choice(최대 255개 중 택1) · Score(순서 있는 등급) . 차별성의 핵심은 \"무엇을 안 하기로 했는가\"다. Aside는 API 연동을 안 하기로 했고, Jev는 글쓰기를 안 하기로 했다. 그 포기가 각각 커버리지와 속도·비용을 샀다.",
+      "sources": 22,
+      "path": "reports/jev-aside-deep/report.md",
+      "cat": "ai",
+      "track": "intro",
+      "chars": 20897
+    },
+    {
       "slug": "taylor-series",
       "title": "테일러 급수 (이해편) — 함수를 다항식으로 바꾸는 기술, 계수는 왜 n!로 나누나 (DEEP)",
       "date": "2026-09-08",

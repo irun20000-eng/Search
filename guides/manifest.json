@@ -1,110 +1,156 @@
 {
- "generated": "2026-08-08",
- "guides": [
-  {
-   "slug": "openrouter-api-start",
-   "title": "OpenRouter API로 AI 활용하기 — 키 하나로 GPT·클로드·제미나이 다 쓰기",
-   "date": "2026-08-08",
-   "level": "입문",
-   "minutes": 45,
-   "tags": [
-    "OpenRouter",
-    "API",
-    "LLM",
-    "파이썬",
-    "OpenAI호환",
-    "무료모델",
-    "API키",
-    "비용관리"
-   ],
-   "summary": "모델마다 계정 만들고 카드 등록하는 일을 그만두기 위한 가이드. 키 하나·주소 하나로 GPT·클로드·제미나이를 같은 코드로 부른다. 무료 모델로 돈 안 쓰고 첫 호출을 성공시킨 뒤, 기존 OpenAI 코드를 두 줄만 고쳐 옮기고, 요청 한도와 키 안전까지 6단계로 다룬다.",
-   "videos": [
+  "generated": "2026-08-08",
+  "guides": [
     {
-     "id": "l-JZm60cpUU",
-     "title": "Accessing Multiple AI Models With the OpenRouter API: Getting Started & Using Intelligent Routing",
-     "channel": "Real Python",
-     "duration": 494,
-     "published": "2026-06-11"
+      "slug": "aside-jev-start",
+      "title": "Aside와 Jev 시작하기 — 설치부터 첫 판정까지",
+      "date": "2026-09-22",
+      "level": "입문",
+      "minutes": 60,
+      "tags": [
+        "Aside",
+        "Jev",
+        "TypeSafe",
+        "AI브라우저",
+        "AI에이전트",
+        "업무자동화",
+        "설치",
+        "판단모델",
+        "프롬프트인젝션"
+      ],
+      "summary": "단톡방에서 한 묶음으로 도는 Jev와 Aside는 사실 별개 제품이다. Aside를 설치해 데이터를 옮기고 첫 작업을 시켜 본 뒤, Jev 플레이그라운드에서 첫 판정을 받고 파이썬에서 자동과 보류의 경계를 긋기까지 6단계로 따라간다. 첫 작업을 읽기로 잡는 이유와, Jev 판정을 단독 관문으로 세우면 안 되는 이유까지 함께 다룬다.",
+      "videos": [
+        {
+          "id": "Q-f0dQ764so",
+          "title": "Introducing Aside",
+          "channel": "Aside",
+          "duration": "PT1M28S"
+        },
+        {
+          "id": "2NNAF2VZ_6U",
+          "title": "AI 브라우저 Aside 실제 사용법 공개",
+          "channel": "AI 겸임교수 이종범",
+          "duration": "PT15M31S"
+        },
+        {
+          "id": "JMJ2DDsXsfI",
+          "title": "Aside AI Browser, Real Demo and Source-Grounded Breakdown",
+          "channel": "TechWealth Hub",
+          "duration": "PT6M31S"
+        },
+        {
+          "id": "W_uuqrlIlJk",
+          "title": "LE TUEUR DE DIA : Aside Browser, le premier \"vrai\" AI Browser ?",
+          "channel": "Melvynx",
+          "duration": "PT17M21S"
+        }
+      ],
+      "path": "aside-jev-start/guide.md"
     },
     {
-     "id": "hsQ-vjdlXJ0",
-     "title": "OpenRouter Quick Start (5–8 min): Free Models, API Key, open Web UI.",
-     "channel": "Richard Young",
-     "duration": 1112,
-     "published": "2026-01-26"
+      "slug": "openrouter-api-start",
+      "title": "OpenRouter API로 AI 활용하기 — 키 하나로 GPT·클로드·제미나이 다 쓰기",
+      "date": "2026-08-08",
+      "level": "입문",
+      "minutes": 45,
+      "tags": [
+        "OpenRouter",
+        "API",
+        "LLM",
+        "파이썬",
+        "OpenAI호환",
+        "무료모델",
+        "API키",
+        "비용관리"
+      ],
+      "summary": "모델마다 계정 만들고 카드 등록하는 일을 그만두기 위한 가이드. 키 하나·주소 하나로 GPT·클로드·제미나이를 같은 코드로 부른다. 무료 모델로 돈 안 쓰고 첫 호출을 성공시킨 뒤, 기존 OpenAI 코드를 두 줄만 고쳐 옮기고, 요청 한도와 키 안전까지 6단계로 다룬다.",
+      "videos": [
+        {
+          "id": "l-JZm60cpUU",
+          "title": "Accessing Multiple AI Models With the OpenRouter API: Getting Started & Using Intelligent Routing",
+          "channel": "Real Python",
+          "duration": 494,
+          "published": "2026-06-11"
+        },
+        {
+          "id": "hsQ-vjdlXJ0",
+          "title": "OpenRouter Quick Start (5–8 min): Free Models, API Key, open Web UI.",
+          "channel": "Richard Young",
+          "duration": 1112,
+          "published": "2026-01-26"
+        },
+        {
+          "id": "OkMep9yQICM",
+          "title": "How to Use OpenRouter AI 🔥 Free LLM Models, Pricing, API Key & Postman REST API Tutorial",
+          "channel": "BEENUM LEARNING",
+          "duration": 665,
+          "published": "2026-02-07"
+        },
+        {
+          "id": "EFUid56ggcw",
+          "title": "오픈라우터 API Key 발급 및 등록 방법 (How to Create a OpenRouter API Key)",
+          "channel": "모모캔버스",
+          "duration": 110,
+          "published": "2026-05-05"
+        },
+        {
+          "id": "lSwoy6ZHIWw",
+          "title": "How to use OpenRouter API with JavaScript Node JS Tutorial",
+          "channel": "United Top Tech",
+          "duration": 351,
+          "published": "2026-05-14"
+        }
+      ],
+      "path": "openrouter-api-start/guide.md"
     },
     {
-     "id": "OkMep9yQICM",
-     "title": "How to Use OpenRouter AI 🔥 Free LLM Models, Pricing, API Key & Postman REST API Tutorial",
-     "channel": "BEENUM LEARNING",
-     "duration": 665,
-     "published": "2026-02-07"
-    },
-    {
-     "id": "EFUid56ggcw",
-     "title": "오픈라우터 API Key 발급 및 등록 방법 (How to Create a OpenRouter API Key)",
-     "channel": "모모캔버스",
-     "duration": 110,
-     "published": "2026-05-05"
-    },
-    {
-     "id": "lSwoy6ZHIWw",
-     "title": "How to use OpenRouter API with JavaScript Node JS Tutorial",
-     "channel": "United Top Tech",
-     "duration": 351,
-     "published": "2026-05-14"
+      "slug": "n8n-first-workflow",
+      "title": "n8n으로 첫 자동화 워크플로우 만들기",
+      "date": "2026-08-08",
+      "level": "입문",
+      "minutes": 40,
+      "tags": [
+        "n8n",
+        "자동화",
+        "노코드",
+        "워크플로우",
+        "트리거",
+        "노드",
+        "JSON",
+        "스케줄"
+      ],
+      "summary": "n8n을 처음 쓰는 사람이 계정 만들기부터 실제로 돌아가는 워크플로우 하나를 완성하기까지. 트리거 고르기, 노드 사이를 흐르는 JSON 데이터 모양 읽기, 실행 기록으로 디버깅하기, 스케줄로 전환해 자동화 완성까지 6단계.",
+      "videos": [
+        {
+          "id": "JJTowW0N-fo",
+          "title": "초보자를 위한 n8n 튜토리얼 (2026) – 완전 가이드",
+          "channel": "Metics Media | 한국어",
+          "duration": 976,
+          "published": "2025-12-16"
+        },
+        {
+          "id": "4cQWJViybAQ",
+          "title": "n8n Quick Start Tutorial: Build Your First Workflow [2025]",
+          "channel": "n8n",
+          "duration": 887,
+          "published": "2025-06-20"
+        },
+        {
+          "id": "y9u1IdDYHZQ",
+          "title": "n8n 빨리 배우려면 가장 중요한데 다들 놓치는 기초만 눌러담았습니다",
+          "channel": "솔브잇",
+          "duration": 4987,
+          "published": "2025-11-19"
+        },
+        {
+          "id": "q6iuH_oxqHs",
+          "title": "초보자도 쉽게 배우는 n8n 뉴스피드 자동화 [n8n 자동화 1탄]",
+          "channel": "opencore AI",
+          "duration": 381,
+          "published": "2025-05-06"
+        }
+      ],
+      "path": "n8n-first-workflow/guide.md"
     }
-   ],
-   "path": "openrouter-api-start/guide.md"
-  },
-  {
-   "slug": "n8n-first-workflow",
-   "title": "n8n으로 첫 자동화 워크플로우 만들기",
-   "date": "2026-08-08",
-   "level": "입문",
-   "minutes": 40,
-   "tags": [
-    "n8n",
-    "자동화",
-    "노코드",
-    "워크플로우",
-    "트리거",
-    "노드",
-    "JSON",
-    "스케줄"
-   ],
-   "summary": "n8n을 처음 쓰는 사람이 계정 만들기부터 실제로 돌아가는 워크플로우 하나를 완성하기까지. 트리거 고르기, 노드 사이를 흐르는 JSON 데이터 모양 읽기, 실행 기록으로 디버깅하기, 스케줄로 전환해 자동화 완성까지 6단계.",
-   "videos": [
-    {
-     "id": "JJTowW0N-fo",
-     "title": "초보자를 위한 n8n 튜토리얼 (2026) – 완전 가이드",
-     "channel": "Metics Media | 한국어",
-     "duration": 976,
-     "published": "2025-12-16"
-    },
-    {
-     "id": "4cQWJViybAQ",
-     "title": "n8n Quick Start Tutorial: Build Your First Workflow [2025]",
-     "channel": "n8n",
-     "duration": 887,
-     "published": "2025-06-20"
-    },
-    {
-     "id": "y9u1IdDYHZQ",
-     "title": "n8n 빨리 배우려면 가장 중요한데 다들 놓치는 기초만 눌러담았습니다",
-     "channel": "솔브잇",
-     "duration": 4987,
-     "published": "2025-11-19"
-    },
-    {
-     "id": "q6iuH_oxqHs",
-     "title": "초보자도 쉽게 배우는 n8n 뉴스피드 자동화 [n8n 자동화 1탄]",
-     "channel": "opencore AI",
-     "duration": 381,
-     "published": "2025-05-06"
-    }
-   ],
-   "path": "n8n-first-workflow/guide.md"
-  }
- ]
+  ]
 }
