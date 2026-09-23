@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520" role="img" aria-label="그림 위쪽에 「원전은 있다 — 그런데 사건에서 87년 떨어져 있다」라는 표제가 있고 그 아래에 사건으로부터 60여 년 뒤의 회고이며 동시대 기록이 아니라고 적혀 있다. 가운데에 가로로 뻗은 줄이 둘 있다. 위 줄은 이야기가 전해진 길이고 점이 셋 있다 — 왼쪽 끝 1665년 울즈소프의 정원, 가운데 1726년 뉴턴이 말했다, 오른쪽 끝 1752년 스터클리가 적었다. 두 점 사이의 줄이 끊긴 자리에 각각 61년과 26년이 적혀 있다. 아래 줄은 떠올린 것에서 증명한 것까지이고 점이 둘 있다 — 왼쪽 끝은 위 줄과 같은 1665~66년 자리이고 오른쪽은 1687년 『프린키피아』이며 그 사이가 22년이다. 두 줄의 왼쪽 끝은 같은 가로 자리에서 시작한다. 그 아래에 1665년부터 1752년까지를 묶는 자가 있고 87년, 사건에서 원전까지라고 적혀 있다. 맨 아래에 「머리에 맞았다」라고 적힌 네모가 따로 떨어져 있고, 거기서 위로 길게 뻗은 파선이 어느 줄에도 닿지 못하고 중간에 끊긴다. 그 옆에 어느 원전에도 없다, 후대의 각색이라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 가로 자리는 해에 비례하고 1665년에서 1752년까지 87년이 520화소다. 둘째, 1726년은 스터클리가 뉴턴에게서 직접 들었다고 적은 해이고 들은 것을 적은 것은 26년 뒤다. 셋째, 머리에 맞았다는 원전에 없어서 사슬의 어디에도 닿지 않고 이 네모의 가로 자리만은 해가 아니다. 넷째, 원고는 1931년 경매를 거쳐 1936년 왕립학회에 들어갔고 이 그림은 거기까지 그리지 않는다. 다섯째, 해와 자리는 모두 노트의 출처를 따랐고 어느 해가 어느 출처인지까지는 그림이 말하지 않는다.">
+<title>원전은 있다 그런데 사건에서 87년 떨어져 있다</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .yr{font-size:11.5px;} .ev{font-size:11px;} .ln{font-size:11px;fill:#5B5245;}
+    .gap{font-size:11px;fill:#9C5A2C;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#3A5C77;stroke-width:2;fill:none;}
+    .span{stroke:#5B5245;stroke-width:1;fill:none;}
+    .dot{fill:#221E18;}
+    .orphan{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1;}
+    .cut{stroke:#9C5A2C;stroke-width:1;fill:none;stroke-dasharray:4 4;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="520"/>
+<text class="h1" x="56" y="44">원전은 있다 — 그런데 사건에서 87년 떨어져 있다</text>
+<text class="h2" x="56" y="66">사건(1665~66년)으로부터 60여 년 뒤의 회고이며 동시대 기록이 아니다.</text>
+  <text class="ln" x="56" y="116">이야기가 전해진 길</text>
+  <line class="lane" x1="106.00" y1="150.0" x2="260.30" y2="150.0"/>
+  <line class="lane" x1="304.30" y1="150.0" x2="458.60" y2="150.0"/>
+  <text class="gap" x="282.30" y="154.0" text-anchor="middle">61년</text>
+  <line class="lane" x1="470.60" y1="150.0" x2="520.30" y2="150.0"/>
+  <line class="lane" x1="564.30" y1="150.0" x2="614.00" y2="150.0"/>
+  <text class="gap" x="542.30" y="154.0" text-anchor="middle">26년</text>
+  <circle class="dot" cx="100.00" cy="150.0" r="4"/>
+  <text class="yr" x="100.00" y="134" text-anchor="middle">1665~66</text>
+  <text class="ev" x="100.00" y="176" text-anchor="middle">울즈소프의 정원</text>
+  <circle class="dot" cx="464.60" cy="150.0" r="4"/>
+  <text class="yr" x="464.60" y="134" text-anchor="middle">1726</text>
+  <text class="ev" x="464.60" y="176" text-anchor="middle">뉴턴이 말했다</text>
+  <circle class="dot" cx="620.00" cy="150.0" r="4"/>
+  <text class="yr" x="620.00" y="134" text-anchor="middle">1752</text>
+  <text class="ev" x="620.00" y="176" text-anchor="middle">스터클리가 적었다</text>
+  <text class="ln" x="56" y="218">떠올린 것에서 증명한 것까지</text>
+  <line class="lane" x1="106.00" y1="252.0" x2="143.75" y2="252.0"/>
+  <line class="lane" x1="187.75" y1="252.0" x2="225.49" y2="252.0"/>
+  <text class="gap" x="165.75" y="256.0" text-anchor="middle">22년</text>
+  <circle class="dot" cx="100.00" cy="252.0" r="4"/>
+  <circle class="dot" cx="231.49" cy="252.0" r="4"/>
+  <text class="yr" x="231.49" y="236" text-anchor="middle">1687</text>
+  <text class="ev" x="231.49" y="278" text-anchor="middle">『프린키피아』</text>
+  <text class="yr" x="100.00" y="236" text-anchor="middle">1665~66</text>
+  <line class="span" x1="100.0" y1="302.0" x2="620.0" y2="302.0"/>
+  <line class="span" x1="100.0" y1="296.0" x2="100.0" y2="308.0"/>
+  <line class="span" x1="620.0" y1="296.0" x2="620.0" y2="308.0"/>
+  <text class="ev" x="360.0" y="322" text-anchor="middle">87년 — 사건에서 원전까지</text>
+  <rect class="orphan" x="148" y="376" width="132" height="26" rx="3"/>
+  <text class="ev" x="214" y="393" text-anchor="middle">「머리에 맞았다」</text>
+  <line class="cut" x1="214" y1="372" x2="214" y2="330"/>
+  <text class="ev" x="296" y="393">어느 원전에도 없다 — 후대의 각색</text>
+<text class="warn" x="56" y="448">⚠ 가로 자리는 해에 비례한다 — 1665년에서 1752년까지 87년이 520화소다.</text>
+<text class="warn" x="56" y="463">⚠ 1726년은 스터클리가 「뉴턴에게서 직접 들었다」고 적은 해다. 들은 것을 적은 것은 26년 뒤다.</text>
+<text class="warn" x="56" y="478">⚠ 「머리에 맞았다」는 원전에 없다 — 그래서 사슬의 어디에도 닿지 않는다. 이 상자의 가로 자리만은 해가 아니다.</text>
+<text class="warn" x="56" y="493">⚠ 원고는 1931년 경매를 거쳐 1936년 왕립학회에 들어갔다. 이 그림은 거기까지 그리지 않는다.</text>
+<text class="warn" x="56" y="508">⚠ 해와 자리는 모두 노트의 출처를 따랐다 — 어느 해가 어느 출처인지까지는 그림이 말하지 않는다.</text>
+</svg>
