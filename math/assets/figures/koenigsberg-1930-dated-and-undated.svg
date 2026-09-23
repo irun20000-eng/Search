@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 503" width="700" height="503" role="img" aria-label="그림 위쪽에 「얻은 사람과 알아본 사람 — 1930년 쾨니히스베르크」라는 표제가 있고 그 아래에 정리를 먼저 얻은 것은 괴델인데 그것이 무엇을 뜻하는지를 먼저 안 것은 폰 노이만이라고 적혀 있다. 가로축은 1930년 1월부터 1931년 7월까지의 달이고, 줄이 셋 있다. 맨 위 힐베르트 줄에는 1930년 한 해 전체에 걸친 넓은 띠가 있고 안에 명예시민증 연설, 1930년 어느 날이라고 적혀 있다. 가운데 괴델 줄에는 8월 26일 빈에서 카르나프에게라는 점과 9월 7일 학회 토론 중 지나가는 말이라는 점이 거의 붙어 있고, 그 아래 9월 7일부터 11월 20일까지 걸친 가는 띠에 그사이 최종본을 보냈다고, 1931년 1월 한 달 폭의 띠에 논문이 실렸다고 적혀 있다. 줄 오른쪽 끝에는 축 밖으로 나가는 파선 화살표가 있고 함의를 본 것은 몇 해 뒤라고 적혀 있다. 맨 아래 폰 노이만 줄에는 9월 7일 청중 즉시 알아봄이라는 점, 11월 20일 편지 제2정리라는 점, 1931년 6월 한 달 폭의 띠 아래에 카르나프에게, 낡은 논의라는 말이 있고, 그 아래 9월부터 11월까지 걸친 가는 띠에 1930년 가을 편지 부정적으로 답했다고 적혀 있다. 아래에 단서가 여섯 줄 있다. 첫째, 점은 출처가 날짜까지 적은 일이고 띠는 그 폭까지만 적은 일이라 띠 안 어디인지는 모른다. 둘째, 힐베르트의 연설은 1930년 한 해 전체에 걸쳐 그렸고, 연설 바로 다음 날이라는 형태는 출처가 적지 않아 그리지 않는다. 셋째, 최종본을 보낸 때는 노트가 그사이로만 적어 학회와 11월 20일 편지 사이의 띠로 그렸다. 넷째, 가을은 9월에서 11월까지의 폭으로 그렸고, 가을 편지와 11월 20일 편지가 같은 편지인지는 노트가 가르지 않는다. 다섯째, 괴델이 그 함의를 본 때는 몇 해 뒤까지만 있어 축 밖으로 나가는 화살표로 그렸다. 여섯째, 날짜는 노트의 출처 1번과 2번 스탠퍼드 철학백과, 3번 MacTutor를 따랐다.">
+<title>얻은 사람과 알아본 사람 1930년 쾨니히스베르크</title>
+<defs><marker id="oa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#9C5A2C" stroke-width="1.6"/></marker></defs>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .lane{font-size:12.5px;} .ev{font-size:11px;} .sm{font-size:10.5px;fill:#5B5245;}
+    .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .wide{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .pt{fill:#221E18;}
+    .open{stroke:#9C5A2C;stroke-width:1.4;fill:none;stroke-dasharray:5 4;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="503"/>
+<text class="h1" x="56" y="44">얻은 사람과 알아본 사람 — 1930년 쾨니히스베르크</text>
+<text class="h2" x="56" y="66">정리를 먼저 얻은 것은 괴델인데, 그것이 무엇을 뜻하는지를 먼저 안 것은 폰 노이만이다.</text>
+  <text class="lane" x="136" y="122" text-anchor="end">힐베르트</text>
+  <text class="lane" x="136" y="195" text-anchor="end">괴델</text>
+  <text class="lane" x="136" y="287" text-anchor="end">폰 노이만</text>
+  <rect class="wide" x="150.0" y="106" width="326.7" height="24" rx="2"/>
+  <text class="ev" x="313.3" y="122" text-anchor="middle">명예시민증 연설 — 1930년 어느 날</text>
+  <circle class="pt" cx="362.5" cy="178" r="3.6"/>
+  <text class="ev" x="356.5" y="168" text-anchor="end">8월 26일 · 빈에서 카르나프에게</text>
+  <circle class="pt" cx="373.2" cy="178" r="3.6"/>
+  <text class="ev" x="379.2" y="168" text-anchor="start">9월 7일 · 학회, 토론 중 지나가는 말</text>
+  <rect class="band" x="373.2" y="198" width="66.2" height="12" rx="2"/>
+  <text class="sm" x="439.5" y="226" text-anchor="end">그사이 최종본을 보냈다</text>
+  <rect class="band" x="476.7" y="198" width="27.2" height="12" rx="2"/>
+  <text class="sm" x="476.7" y="226" text-anchor="start">1931년 1월 · 논문이 실렸다</text>
+  <line class="open" x1="640.0" y1="178" x2="678.0" y2="178" marker-end="url(#oa)"/>
+  <text class="sm" x="678.0" y="196" text-anchor="end">함의를 본 것은 몇 해 뒤</text>
+  <circle class="pt" cx="373.2" cy="270" r="3.6"/>
+  <text class="ev" x="367.2" y="260" text-anchor="end">9월 7일 · 청중, 즉시 알아봄</text>
+  <circle class="pt" cx="439.5" cy="270" r="3.6"/>
+  <text class="ev" x="445.5" y="260" text-anchor="start">11월 20일 · 편지, 제2정리</text>
+  <rect class="band" x="612.8" y="264" width="27.2" height="12" rx="2"/>
+  <text class="sm" x="640.0" y="290" text-anchor="end">1931년 6월 · 카르나프에게</text>
+  <text class="sm" x="640.0" y="304" text-anchor="end">「낡은 논의」</text>
+  <rect class="band" x="367.8" y="290" width="81.7" height="12" rx="2"/>
+  <text class="sm" x="367.8" y="318" text-anchor="start">1930년 가을 · 편지, 「부정적으로 답했다」</text>
+  <line class="axis" x1="150" y1="344" x2="640" y2="344"/>
+  <line class="axis" x1="150.0" y1="344" x2="150.0" y2="351.0"/>
+  <line class="axis" x1="177.2" y1="344" x2="177.2" y2="347.5"/>
+  <line class="axis" x1="204.4" y1="344" x2="204.4" y2="347.5"/>
+  <line class="axis" x1="231.7" y1="344" x2="231.7" y2="347.5"/>
+  <line class="axis" x1="258.9" y1="344" x2="258.9" y2="347.5"/>
+  <line class="axis" x1="286.1" y1="344" x2="286.1" y2="347.5"/>
+  <line class="axis" x1="313.3" y1="344" x2="313.3" y2="347.5"/>
+  <line class="axis" x1="340.6" y1="344" x2="340.6" y2="347.5"/>
+  <line class="axis" x1="367.8" y1="344" x2="367.8" y2="347.5"/>
+  <line class="axis" x1="395.0" y1="344" x2="395.0" y2="347.5"/>
+  <line class="axis" x1="422.2" y1="344" x2="422.2" y2="347.5"/>
+  <line class="axis" x1="449.4" y1="344" x2="449.4" y2="347.5"/>
+  <line class="axis" x1="476.7" y1="344" x2="476.7" y2="351.0"/>
+  <line class="axis" x1="503.9" y1="344" x2="503.9" y2="347.5"/>
+  <line class="axis" x1="531.1" y1="344" x2="531.1" y2="347.5"/>
+  <line class="axis" x1="558.3" y1="344" x2="558.3" y2="347.5"/>
+  <line class="axis" x1="585.6" y1="344" x2="585.6" y2="347.5"/>
+  <line class="axis" x1="612.8" y1="344" x2="612.8" y2="347.5"/>
+  <line class="axis" x1="640.0" y1="344" x2="640.0" y2="347.5"/>
+  <text class="yr" x="150.0" y="364" text-anchor="middle">1930</text>
+  <text class="yr" x="476.7" y="364" text-anchor="middle">1931</text>
+  <text class="sm" x="640.0" y="364" text-anchor="middle">7월</text>
+<text class="warn" x="56" y="394">⚠ 점은 출처가 날짜까지 적은 일이고, 띠는 폭까지만 적은 일이다. 띠 안 어디인지는 모른다.</text>
+<text class="warn" x="56" y="411">⚠ 힐베르트의 연설은 1930년 한 해에 걸쳐 그렸다. 「연설 바로 다음 날」은 출처가 적지 않아 그리지 않는다.</text>
+<text class="warn" x="56" y="428">⚠ 최종본을 보낸 때는 노트가 「그사이」로만 적는다 — 학회와 11월 20일 편지 사이의 띠로 그렸다.</text>
+<text class="warn" x="56" y="445">⚠ 「가을」은 9~11월 폭으로 그렸다. 가을 편지와 11월 20일 편지가 같은 편지인지 노트는 가르지 않는다.</text>
+<text class="warn" x="56" y="462">⚠ 괴델이 그 함의를 본 때는 「몇 해 뒤」까지만 있다 — 그래서 축 밖으로 나가는 화살표다.</text>
+<text class="warn" x="56" y="479">⚠ 날짜는 노트의 출처 [1]·[2] 스탠퍼드 철학백과 · [3] MacTutor 를 따랐다.</text>
+</svg>
