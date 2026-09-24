@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 499" width="700" height="499" role="img" aria-label="그림 위쪽에 「84는 딱 떨어지고, 기록은 멀다」라는 표제가 있고 그 아래에 위는 묘비 문제가 그리는 생애를 나이로, 아래는 그 문제가 기록된 시기를 서기로 잰다는 부호표가 있다. 위쪽에 나이 0부터 84까지의 가로 막대 하나가 여섯 칸으로 나뉘어 있고 칸 안에 햇수 14, 7, 12, 5, 42, 4가 적혀 있다. 칸 위에는 두 줄로 엇갈려 소년기 6분의 1, 청년기 12분의 1, 결혼까지 7분의 1, 아들 출생 더하기 5, 아들의 생애 2분의 1, 아들 사후 더하기 4라고 적혀 있고, 아들의 생애 칸만 색이 다르다. 막대 아래 칸 경계마다 나이 0, 14, 21, 33, 38, 80, 84가 적혀 있고 84는 굵다. 아래쪽에는 서기 200년부터 600년까지 눈금이 있는 가로축이 있고, 그 위에 옅은 띠가 둘 있다. 왼쪽 띠는 200년에서 284년까지로 디오판토스 생몰 약 200에서 약 284라고, 오른쪽 띠는 401년에서 600년까지로 그리스 사화집 제14권 편찬 5에서 6세기라고 적혀 있다. 두 띠 위에 284년에서 401년까지는 실선, 600년까지는 파선으로 이어진 괄호가 있고 117에서 316년이라고 적혀 있다. 아래에 단서가 여섯 줄 있다. 첫째, 위와 아래는 자가 다르다 — 위는 나이, 아래는 서기다. 둘째, 위 막대의 칸은 묘비 조건을 84에 넣은 값이고 조건은 출처 1번과 10번, 답은 2번과 10번이다. 셋째, 칸이 모두 정수로 떨어진다고 조건이 사실이라는 뜻은 아니고, 84를 먼저 정하고 조건을 짰다는 노트의 읽기도 그리지 않았다. 넷째, 생몰 약 200에서 약 284는 추정이다(출처 7번). 다섯째, 편찬 시기 5에서 6세기는 확실하지 않아 401에서 600 전체를 띠로 그렸다(출처 9번). 여섯째, 117에서 316년은 노트가 284와 401에서 600으로 뺀 값이다.">
+<title>84는 딱 떨어지고 기록은 멀다</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#9C5A2C;}
+    .ev{font-size:11px;} .sm{font-size:10.5px;fill:#5B5245;} .yr{font-size:11px;fill:#5B5245;}
+    .age84{font-size:12px;font-weight:bold;}
+    .bg{fill:#FFFDF7;}
+    .sega{fill:#F4EADC;stroke:#8A7F6E;stroke-width:1;}
+    .segb{fill:#FFFDF7;stroke:#8A7F6E;stroke-width:1;}
+    .son{fill:#CEDCE6;stroke:#3A5C77;stroke-width:1;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .brk{stroke:#9C5A2C;stroke-width:1.2;fill:none;}
+    .brkd{stroke:#9C5A2C;stroke-width:1.2;fill:none;stroke-dasharray:4 3;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="499"/>
+<text class="h1" x="56" y="44">84는 딱 떨어지고, 기록은 멀다</text>
+<text class="h2" x="56" y="66">위 = 묘비 문제가 그리는 생애(나이) · 아래 = 그 문제가 기록된 시기(서기)</text>
+  <text class="grp" x="56.0" y="112" text-anchor="start">묘비 문제가 그리는 생애 — 나이</text>
+  <rect class="sega" x="70.0" y="150" width="93.3" height="26"/>
+  <text class="ev" x="116.7" y="167" text-anchor="middle">14</text>
+  <text class="sm" x="116.7" y="142" text-anchor="middle">소년기 1/6</text>
+  <rect class="segb" x="163.3" y="150" width="46.7" height="26"/>
+  <text class="ev" x="186.7" y="167" text-anchor="middle">7</text>
+  <text class="sm" x="186.7" y="128" text-anchor="middle">청년기 1/12</text>
+  <rect class="sega" x="210.0" y="150" width="80.0" height="26"/>
+  <text class="ev" x="250.0" y="167" text-anchor="middle">12</text>
+  <text class="sm" x="250.0" y="142" text-anchor="middle">결혼까지 1/7</text>
+  <rect class="segb" x="290.0" y="150" width="33.3" height="26"/>
+  <text class="ev" x="306.7" y="167" text-anchor="middle">5</text>
+  <text class="sm" x="306.7" y="128" text-anchor="middle">아들 출생 +5</text>
+  <rect class="son" x="323.3" y="150" width="280.0" height="26"/>
+  <text class="ev" x="463.3" y="167" text-anchor="middle">42</text>
+  <text class="sm" x="463.3" y="142" text-anchor="middle">아들의 생애 1/2</text>
+  <rect class="segb" x="603.3" y="150" width="26.7" height="26"/>
+  <text class="ev" x="616.7" y="167" text-anchor="middle">4</text>
+  <text class="sm" x="616.7" y="128" text-anchor="middle">아들 사후 +4</text>
+  <text class="yr" x="70.0" y="192" text-anchor="middle">0</text>
+  <text class="yr" x="163.3" y="192" text-anchor="middle">14</text>
+  <text class="yr" x="210.0" y="192" text-anchor="middle">21</text>
+  <text class="yr" x="290.0" y="192" text-anchor="middle">33</text>
+  <text class="yr" x="323.3" y="192" text-anchor="middle">38</text>
+  <text class="yr" x="603.3" y="192" text-anchor="middle">80</text>
+  <text class="age84" x="630.0" y="192" text-anchor="middle">84</text>
+  <text class="grp" x="56.0" y="238" text-anchor="start">그 문제가 기록된 시기 — 서기</text>
+  <rect class="band" x="126.0" y="292" width="94.1" height="16" rx="2"/>
+  <text class="sm" x="173.0" y="326" text-anchor="middle">디오판토스 생몰 약 200 ~ 약 284 [7]</text>
+  <rect class="band" x="351.1" y="292" width="222.9" height="16" rx="2"/>
+  <text class="sm" x="462.6" y="326" text-anchor="middle">『그리스 사화집』 제14권 편찬 5~6세기 [9]</text>
+  <path class="brk" d="M220.1,284 V278 H351.1 V284"/>
+  <path class="brkd" d="M351.1,278 H574.0 V284"/>
+  <text class="ev" x="397.0" y="271" text-anchor="middle">117 ~ 316년</text>
+  <line class="axis" x1="70" y1="338" x2="630" y2="338"/>
+  <line class="axis" x1="126.0" y1="338" x2="126.0" y2="343"/>
+  <text class="yr" x="126.0" y="356" text-anchor="middle">200</text>
+  <line class="axis" x1="238.0" y1="338" x2="238.0" y2="343"/>
+  <text class="yr" x="238.0" y="356" text-anchor="middle">300</text>
+  <line class="axis" x1="350.0" y1="338" x2="350.0" y2="343"/>
+  <text class="yr" x="350.0" y="356" text-anchor="middle">400</text>
+  <line class="axis" x1="462.0" y1="338" x2="462.0" y2="343"/>
+  <text class="yr" x="462.0" y="356" text-anchor="middle">500</text>
+  <line class="axis" x1="574.0" y1="338" x2="574.0" y2="343"/>
+  <text class="yr" x="574.0" y="356" text-anchor="middle">600</text>
+<text class="warn" x="56" y="390">⚠ 위와 아래는 자가 다르다 — 위는 나이(0~84), 아래는 서기(150~650)다.</text>
+<text class="warn" x="56" y="407">⚠ 위 막대의 칸은 묘비 조건을 84에 넣은 값이다. 조건은 [1][10], 풀이와 답은 [2][10].</text>
+<text class="warn" x="56" y="424">⚠ 칸이 모두 정수로 떨어진다고 조건이 사실인 것은 아니다. 「84를 먼저 정했다」는 노트의 읽기도 그리지 않았다.</text>
+<text class="warn" x="56" y="441">⚠ 생몰 「약 200 ~ 약 284」는 추정이다 [7].</text>
+<text class="warn" x="56" y="458">⚠ 편찬 시기 「5~6세기」는 확실하지 않아 401~600 전체를 띠로 그렸다 [9].</text>
+<text class="warn" x="56" y="475">⚠ 「117~316년」은 노트가 284와 401~600으로 뺀 값이다.</text>
+</svg>
