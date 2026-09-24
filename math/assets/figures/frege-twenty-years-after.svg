@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 498" width="700" height="498" role="img" aria-label="그림 위쪽에 「그 뒤 스무 해 — 프레게」라는 표제가 있고 그 아래에 점은 날짜, 띠는 그 해, 빗금은 출판이 끊긴 해, 파선은 끝을 그리지 않은 이어짐이라는 부호표가 있다. 가로축은 1900년부터 1926년까지의 해이고, 줄이 둘 있다. 줄 이름은 왼쪽 끝에 출판, 삶이라고 적혀 있다. 위 줄 출판에는 1903년에 옅은 푸른 띠가 있고 그 아래에 1903 제2권, 막바지 부록이라고 적혀 있다. 바로 이어 1904년부터 1917년 끝까지 빗금 친 막대가 있고, 그 위에 두 줄로 1904~17 아무것도 출판하지 않는다, 그리고 괄호 안에 동료에 대한 쓴 논쟁적 공격을 빼면이라고 적혀 있다. 막대가 끝나는 1918년부터 죽은 날 앞까지 파선이 이어지고, 그 아래에 1918~ 다시 중요한 논문이라고 적혀 있다. 아래 줄 삶에는 1902년 6월 16일 점 위에 1902.6.16 러셀의 편지, 1904년 띠 아래에 1904 아내 마르가레테가 죽다, 1912년 띠 위에 1912 러셀의 강연 초대에 거절 답장이라고 적혀 있다. 1917년 띠와 1918년 띠가 붙어 있고, 1917년 띠 아래에 1917 퇴임 출처 1번, 1918년 띠 위에 1918 퇴임 출처 2번이라고 따로 적혀 있다. 1923년 띠 아래 오른쪽에 두 줄로 1923 산술을 논리 위에 세우는 목표가 틀렸다고 결론짓다라고 적혀 있고, 오른쪽 끝의 1925년 7월 26일 점 위쪽에 1925.7.26 죽다라고 적혀 있다. 아래에 단서가 일곱 줄 있다. 첫째, 점은 날짜까지 아는 일이고 띠는 해만 아는 일이라 띠 안 어디인지는 모른다. 둘째, 러셀의 편지 뒤 우울해져 연구를 포기했다는 말을 MacTutor는 근거가 없지는 않으나 이유가 훨씬 복잡하다고 적는다. 셋째, 1904년에 아내가 죽은 해와 출판이 끊긴 첫해가 겹치지만, 그림은 겹침을 보일 뿐 인과를 그리지 않는다. 넷째, 퇴임한 해는 출처가 갈려 1번은 1917, 2번은 1918이라 둘 다 그렸다. 다섯째, 편지 날짜 1902년 6월 16일은 1번을 따랐고, 2번은 날짜 없이 제2권이 인쇄에 들어가려 하던 1903년으로 적는다. 여섯째, 1918년부터의 파선은 끝을 그리지 않는다. 1923년의 새 착상에 관해서는 아무것도 출판하지 않았다. 일곱째, 해와 날짜는 노트의 출처 1번 MacTutor 프레게, 2번 위키백과, 3번 국내 자료를 따랐다.">
+<title>그 뒤 스무 해 프레게</title>
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#9C5A2C" stroke-width="1.2"/></pattern></defs>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#9C5A2C;}
+    .ev{font-size:11px;} .sm{font-size:10.5px;fill:#5B5245;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .pt{fill:#3A5C77;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .band2{fill:#CEDCE6;stroke:#3A5C77;stroke-width:1;}
+    .gap{fill:url(#hatch);stroke:#9C5A2C;stroke-width:1;}
+    .cont{stroke:#9C5A2C;stroke-width:1.4;stroke-dasharray:4 3;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="498"/>
+<text class="h1" x="56" y="44">그 뒤 스무 해 — 프레게</text>
+<text class="h2" x="56" y="66">점 = 날짜 · 띠 = 그 해 · 빗금 = 출판이 끊긴 해 · 파선 = 끝을 그리지 않은 이어짐</text>
+  <line class="lane" x1="210" y1="150" x2="640" y2="150"/>
+  <text class="grp" x="56.0" y="154" text-anchor="start">출판</text>
+  <line class="lane" x1="210" y1="238" x2="640" y2="238"/>
+  <text class="grp" x="56.0" y="242" text-anchor="start">삶</text>
+  <rect class="band2" x="259.6" y="144" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="267.9" y="172" text-anchor="middle">1903 제2권 · 막바지 부록 [2]</text>
+  <rect class="gap" x="276.2" y="144" width="231.5" height="12"/>
+  <text class="ev" x="391.9" y="120" text-anchor="middle">1904~17 아무것도 출판하지 않는다 [1]</text>
+  <text class="sm" x="391.9" y="138" text-anchor="middle">(동료에 대한 쓴 논쟁적 공격을 빼면)</text>
+  <line class="cont" x1="507.7" y1="150" x2="630.7" y2="150"/>
+  <text class="ev" x="573.8" y="172" text-anchor="middle">1918~ 다시 중요한 논문 [1]</text>
+  <rect class="band" x="276.2" y="232" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="276.2" y="260" text-anchor="start">1904 아내 마르가레테가 죽다 [1]</text>
+  <rect class="band" x="408.5" y="232" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="479.0" y="226" text-anchor="end">1912 러셀의 강연 초대에 거절 답장 [1]</text>
+  <rect class="band" x="491.2" y="232" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="499.4" y="260" text-anchor="middle">1917 퇴임 [1]</text>
+  <rect class="band" x="507.7" y="232" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="516.0" y="208" text-anchor="middle">1918 퇴임 [2]</text>
+  <rect class="band" x="590.4" y="232" width="16.5" height="12" rx="2"/>
+  <text class="ev" x="670.0" y="276" text-anchor="end">1923 산술을 논리 위에 세우는</text>
+  <text class="ev" x="670.0" y="294" text-anchor="end">목표가 틀렸다고 결론짓다 [1]</text>
+  <circle class="pt" cx="250.6" cy="238" r="4"/>
+  <text class="ev" x="254.6" y="226" text-anchor="end">1902.6.16 러셀의 편지 [1]</text>
+  <circle class="pt" cx="632.8" cy="238" r="4"/>
+  <text class="ev" x="680.0" y="226" text-anchor="end">1925.7.26 죽다 [3]</text>
+  <line class="axis" x1="210" y1="322" x2="640" y2="322"/>
+  <line class="axis" x1="210.0" y1="322" x2="210.0" y2="327"/>
+  <text class="yr" x="210.0" y="340" text-anchor="middle">1900</text>
+  <line class="axis" x1="292.7" y1="322" x2="292.7" y2="327"/>
+  <text class="yr" x="292.7" y="340" text-anchor="middle">1905</text>
+  <line class="axis" x1="375.4" y1="322" x2="375.4" y2="327"/>
+  <text class="yr" x="375.4" y="340" text-anchor="middle">1910</text>
+  <line class="axis" x1="458.1" y1="322" x2="458.1" y2="327"/>
+  <text class="yr" x="458.1" y="340" text-anchor="middle">1915</text>
+  <line class="axis" x1="540.8" y1="322" x2="540.8" y2="327"/>
+  <text class="yr" x="540.8" y="340" text-anchor="middle">1920</text>
+  <line class="axis" x1="623.5" y1="322" x2="623.5" y2="327"/>
+  <text class="yr" x="623.5" y="340" text-anchor="middle">1925</text>
+<text class="warn" x="56" y="372">⚠ 점은 날짜까지 아는 일이고, 띠는 해만 아는 일이다 — 띠 안 어디인지는 모른다.</text>
+<text class="warn" x="56" y="389">⚠ 「러셀의 편지 뒤 우울해져 연구를 포기했다」는 말을 MacTutor는 근거가 없지는 않으나 이유가 훨씬 복잡하다고 적는다 [1].</text>
+<text class="warn" x="56" y="406">⚠ 1904년에 아내가 죽은 해와 출판이 끊긴 첫해가 겹친다 — 그림은 겹침을 보일 뿐 인과를 그리지 않는다.</text>
+<text class="warn" x="56" y="423">⚠ 퇴임한 해는 출처가 갈린다 — [1]은 1917, [2]는 1918. 둘 다 그렸다.</text>
+<text class="warn" x="56" y="440">⚠ 편지 날짜 1902.6.16은 [1]이다 — [2]는 날짜 없이 「제2권이 인쇄에 들어가려 하던 1903년」으로 적는다.</text>
+<text class="warn" x="56" y="457">⚠ 1918~의 파선은 끝을 그리지 않는다 — 1923년의 새 착상에 관해서는 아무것도 출판하지 않았다 [1].</text>
+<text class="warn" x="56" y="474">⚠ 해와 날짜는 노트의 출처 [1] MacTutor 프레게 · [2] 위키백과 · [3] 국내 자료를 따랐다.</text>
+</svg>
