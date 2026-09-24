@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 524" width="700" height="524" role="img" aria-label="그림 위쪽에 「도구가 틀렸는데 결과가 맞았다 — 리만」이라는 표제가 있고 그 아래에 갈색 띠는 도구의 해, 푸른 띠는 결과의 해, 점은 죽은 날, 괄호는 해의 차라는 부호표가 있다. 가로축은 1848년부터 1905년까지의 해이고, 줄이 둘 있다. 줄 이름은 왼쪽 끝에 도구 — 디리클레 원리, 결과 — 존재정리라고 적혀 있다. 위 줄에는 갈색 띠가 셋 있다. 1851년 띠 아래에 1851 학위논문에서 쓰다, 1857년 띠 위 오른쪽에 1857 아벨 함수론에서 쓰다, 1901년 띠 아래 왼쪽에 1901 힐베르트, 올바른 형태로라고 적혀 있다. 위 줄 위에는 1851년 띠 가운데에서 1901년 띠 가운데까지 걸친 괄호가 있고 오십 년이라고 적혀 있다. 아래 줄에는 푸른 띠가 둘 있다. 1869년부터 1870년까지 두 해에 걸친 띠 위에 1869~70 슈바르츠, 다른 증명이라고 적혀 있고, 1892년 띠 아래 왼쪽에 1892 클라인, 리만의 정신 그대로 쓴 책이라고 적혀 있다. 가로축 위 1866년 자리에 점이 있고 그 위에 1866.7.20 리만이 죽다라고 적혀 있다. 그 라벨 바로 위에서 시작해 1901년 띠 가운데까지 걸친 괄호가 있고 서른다섯 해라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 띠는 해만 아는 일이고 점은 날짜까지 아는 일이다. 둘째, 바이어슈트라스가 디리클레 원리의 문제를 보인 해는 노트가 적지 않아 그리지 않았다. 셋째, 서른다섯 해는 노트의 말이고, 오십 년은 노트 절 제목의 수를 1851 학위논문부터 잰 것이다. 넷째, 1892 클라인의 책은 증명이 아니라 리만의 정신 그대로 쓴 책이다. 다섯째, 해와 날짜는 노트의 출처 1번, 4번, 7번, 9번을 따랐고 모두 MacTutor 리만이다.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 542" width="700" height="542" role="img" aria-label="그림 위쪽에 「도구가 틀렸는데 결과가 맞았다 — 리만」이라는 표제가 있고 그 아래에 갈색 띠는 도구의 해, 푸른 띠는 결과 쪽의 일, 점은 죽은 날, 괄호는 해의 차라는 부호표가 있다. 가로축은 1848년부터 1905년까지의 해이고, 줄이 둘 있다. 줄 이름은 왼쪽 끝에 도구 — 디리클레 원리, 결과 — 존재정리라고 적혀 있다. 위 줄에는 갈색 띠가 셋 있다. 1851년 띠 아래에 1851 학위논문에서 쓰다, 1857년 띠 위 오른쪽에 1857 아벨 함수론에서 쓰다, 1901년 띠 아래 왼쪽에 1901 힐베르트, 올바른 형태로라고 적혀 있다. 위 줄 위에는 1851년 띠 가운데에서 1901년 띠 가운데까지 걸친 괄호가 있고 오십 년이라고 적혀 있다. 아래 줄에는 푸른 띠가 둘 있다. 1869년부터 1870년까지 두 해에 걸친 띠 위에 1869~70 슈바르츠, 다른 증명이라고 적혀 있고, 1892년 띠 아래에 두 줄로 1892 클라인, 리만의 정신 그대로 쓴 책이라고 적혀 있다. 가로축 위 1866년 자리에 검은 점이 있고 그 위에 1866.7.20 리만이 죽다라고 적혀 있다. 그 라벨 바로 위에서 시작해 1901년 띠 가운데까지 걸친 괄호가 있고 서른다섯 해라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 띠는 해로만 그렸고 점은 날짜까지 그렸다. 둘째, 바이어슈트라스가 디리클레 원리의 문제를 보인 해는 노트가 적지 않아 그리지 않았다. 셋째, 서른다섯 해는 노트의 말이고, 오십 년은 노트 절 제목의 수를 1851 학위논문부터 잰 것이다. 넷째, 1892 클라인의 책은 증명이 아니라 리만의 정신 그대로 쓴 책이다. 다섯째, 해와 날짜는 노트의 출처 1번, 4번, 7번, 9번을 따랐고 모두 MacTutor 리만이다.">
 <title>도구가 틀렸는데 결과가 맞았다 리만</title>
 <style>
     text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
@@ -7,22 +7,22 @@
     .ev{font-size:11px;} .sm{font-size:10.5px;fill:#5B5245;} .yr{font-size:11px;fill:#5B5245;}
     .bg{fill:#FFFDF7;}
     .lane{stroke:#D8CDBB;stroke-width:1;}
-    .pt{fill:#3A5C77;}
+    .pt{fill:#221E18;}
     .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
     .band2{fill:#CEDCE6;stroke:#3A5C77;stroke-width:1;}
     .brk{stroke:#9C5A2C;stroke-width:1.2;fill:none;}
     .axis{stroke:#8A7F6E;stroke-width:1;}
     .warn{font-size:10.5px;fill:#5B5245;}
   </style>
-<rect class="bg" x="0" y="0" width="700" height="524"/>
+<rect class="bg" x="0" y="0" width="700" height="542"/>
 <text class="h1" x="56" y="44">도구가 틀렸는데 결과가 맞았다 — 리만</text>
-<text class="h2" x="56" y="66">갈색 띠 = 도구의 해 · 푸른 띠 = 결과의 해 · 점 = 죽은 날 · 괄호 = 해의 차</text>
+<text class="h2" x="56" y="66">갈색 띠 = 도구의 해 · 푸른 띠 = 결과 쪽의 일 · 점 = 죽은 날 · 괄호 = 해의 차</text>
   <line class="lane" x1="210" y1="170" x2="640" y2="170"/>
   <text class="grp" x="56.0" y="174" text-anchor="start">도구 — 디리클레 원리</text>
   <line class="lane" x1="210" y1="276" x2="640" y2="276"/>
   <text class="grp" x="56.0" y="280" text-anchor="start">결과 — 존재정리</text>
-  <circle class="pt" cx="349.9" cy="382" r="4"/>
-  <text class="ev" x="349.9" y="370" text-anchor="middle">1866.7.20 리만이 죽다 [1]</text>
+  <circle class="pt" cx="349.9" cy="400" r="4"/>
+  <text class="ev" x="349.9" y="388" text-anchor="middle">1866.7.20 리만이 죽다 [1]</text>
   <rect class="band" x="232.6" y="164" width="7.5" height="12" rx="2"/>
   <text class="ev" x="232.6" y="192" text-anchor="start">1851 학위논문에서 쓰다 [4][9]</text>
   <rect class="band" x="277.9" y="164" width="7.5" height="12" rx="2"/>
@@ -32,27 +32,28 @@
   <rect class="band2" x="368.4" y="270" width="15.1" height="12" rx="2"/>
   <text class="ev" x="368.4" y="264" text-anchor="start">1869~70 슈바르츠 — 다른 증명 [9]</text>
   <rect class="band2" x="541.9" y="270" width="7.5" height="12" rx="2"/>
-  <text class="ev" x="549.5" y="298" text-anchor="end">1892 클라인 — 리만의 정신 그대로 쓴 책 [9]</text>
-  <path class="brk" d="M349.9,346 V340 H613.6 V346"/>
-  <text class="ev" x="481.8" y="333" text-anchor="middle">서른다섯 해</text>
+  <text class="ev" x="545.7" y="298" text-anchor="middle">1892 클라인 [9]</text>
+  <text class="ev" x="545.7" y="316" text-anchor="middle">리만의 정신 그대로 쓴 책</text>
+  <path class="brk" d="M349.9,364 V358 H613.6 V364"/>
+  <text class="ev" x="481.8" y="351" text-anchor="middle">서른다섯 해</text>
   <path class="brk" d="M236.4,130 V124 H613.6 V130"/>
   <text class="ev" x="425.0" y="117" text-anchor="middle">오십 년</text>
-  <line class="axis" x1="210" y1="382" x2="640" y2="382"/>
-  <line class="axis" x1="225.1" y1="382" x2="225.1" y2="387"/>
-  <text class="yr" x="225.1" y="400" text-anchor="middle">1850</text>
-  <line class="axis" x1="300.5" y1="382" x2="300.5" y2="387"/>
-  <text class="yr" x="300.5" y="400" text-anchor="middle">1860</text>
-  <line class="axis" x1="376.0" y1="382" x2="376.0" y2="387"/>
-  <text class="yr" x="376.0" y="400" text-anchor="middle">1870</text>
-  <line class="axis" x1="451.4" y1="382" x2="451.4" y2="387"/>
-  <text class="yr" x="451.4" y="400" text-anchor="middle">1880</text>
-  <line class="axis" x1="526.8" y1="382" x2="526.8" y2="387"/>
-  <text class="yr" x="526.8" y="400" text-anchor="middle">1890</text>
-  <line class="axis" x1="602.3" y1="382" x2="602.3" y2="387"/>
-  <text class="yr" x="602.3" y="400" text-anchor="middle">1900</text>
-<text class="warn" x="56" y="432">⚠ 띠는 해만 아는 일이고, 점은 날짜까지 아는 일이다.</text>
-<text class="warn" x="56" y="449">⚠ 바이어슈트라스가 디리클레 원리의 문제를 보인 해는 노트가 적지 않아 그리지 않았다 [9].</text>
-<text class="warn" x="56" y="466">⚠ 「서른다섯 해」는 노트의 말이고(1901−1866), 「오십 년」은 노트 절 제목의 수를 1851 학위논문부터 잰 것이다.</text>
-<text class="warn" x="56" y="483">⚠ 1892 클라인의 책은 증명이 아니라 「리만의 정신 그대로 쓴 책」이다 [9].</text>
-<text class="warn" x="56" y="500">⚠ 해와 날짜는 노트의 출처 [1] · [4] · [7] · [9] (모두 MacTutor 리만)을 따랐다.</text>
+  <line class="axis" x1="210" y1="400" x2="640" y2="400"/>
+  <line class="axis" x1="225.1" y1="400" x2="225.1" y2="405"/>
+  <text class="yr" x="225.1" y="418" text-anchor="middle">1850</text>
+  <line class="axis" x1="300.5" y1="400" x2="300.5" y2="405"/>
+  <text class="yr" x="300.5" y="418" text-anchor="middle">1860</text>
+  <line class="axis" x1="376.0" y1="400" x2="376.0" y2="405"/>
+  <text class="yr" x="376.0" y="418" text-anchor="middle">1870</text>
+  <line class="axis" x1="451.4" y1="400" x2="451.4" y2="405"/>
+  <text class="yr" x="451.4" y="418" text-anchor="middle">1880</text>
+  <line class="axis" x1="526.8" y1="400" x2="526.8" y2="405"/>
+  <text class="yr" x="526.8" y="418" text-anchor="middle">1890</text>
+  <line class="axis" x1="602.3" y1="400" x2="602.3" y2="405"/>
+  <text class="yr" x="602.3" y="418" text-anchor="middle">1900</text>
+<text class="warn" x="56" y="450">⚠ 띠는 해로만 그렸고, 점은 날짜까지 그렸다.</text>
+<text class="warn" x="56" y="467">⚠ 바이어슈트라스가 디리클레 원리의 문제를 보인 해는 노트가 적지 않아 그리지 않았다 [9].</text>
+<text class="warn" x="56" y="484">⚠ 「서른다섯 해」는 노트의 말이고(1901−1866), 「오십 년」은 노트 절 제목의 수를 1851 학위논문부터 잰 것이다.</text>
+<text class="warn" x="56" y="501">⚠ 1892 클라인의 책은 증명이 아니라 「리만의 정신 그대로 쓴 책」이다 [9].</text>
+<text class="warn" x="56" y="518">⚠ 해와 날짜는 노트의 출처 [1] · [4] · [7] · [9] (모두 MacTutor 리만)을 따랐다.</text>
 </svg>
