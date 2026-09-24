@@ -4175,3 +4175,60 @@ alt 는 그 전에 쓴 순서(「6월 띠 … 그 아래 가을 띠」)를 그�
   봤고, 값은 로컬 22.0 ↔ CI **21.0** 로 갈렸다. **표는 CI 가 돈 뒤 채운다.** 여는 순간에는 「CI 대기」로 둔다.
 - 사소한 것: 선언이 같은 CSS 클래스 둘(`.wide`·`.band`) 하나로 합침 · 축 글자 크기 통일 ·
   파선 길이를 주기(9)의 배수로(38→36) · 막대와 상자 1px 정렬.
+
+## 2026-09-24 · 카드뉴스 발견노트 EP5 — 렌더는 성공했는데 컷이 브랜치에 없었다(두 워크플로의 push 경합)
+
+카피·학습자료·개념 한 장을 한 커밋으로 올렸더니 `cardnews-render` 와 `concept-sheet-render`
+**둘이 같은 push 로 깨어나 같은 브랜치에 밀어 넣었다.** 렌더도 자동검사도 반입도 다 통과했는데
+**커밋 단계에서 죽었고, 컷 10장은 러너와 함께 사라졌다.**
+
+`cardnews-render.yml` 은 이 경합을 **이미 알고 있었다** — 2026-08-27 발견노트 EP3 에서 개념
+한 장이 이렇게 유실된 뒤 `for i in 1 2 3; git push || git pull --rebase` 재시도 고리를 달아
+두었다. 그 고리가 이번에는 **첫 rebase 에서 멈췄다.**
+
+```
+! [rejected]  (fetch first)
+##[notice]push 거절(1/3) — rebase 후 재시도
+Auto-merging backlog.json
+CONFLICT (content): Merge conflict in backlog.json
+CONFLICT (content): Merge conflict in link-index.json
+error: could not apply 6759a23... chore(cardnews): 발견노트 EP5 렌더 반입
+##[error]Process completed with exit code 1
+```
+
+**주석이 틀렸다.** 고리 위에 "산출물 경로가 겹치지 않으므로 rebase 재시도로 안전하게 붙일 수
+있다" 고 적혀 있는데, **겹친다.** 두 워크플로가 **둘 다** `tools/build_link_index.py` 를 돌려
+`link-index.json` 과 `backlog.json` 을 새로 쓴다. 서로 다른 내용으로 같은 두 파일을 건드리니
+rebase 가 반드시 충돌한다. 경로가 겹치지 않는 것은 **컷과 그림**뿐이다.
+
+- 재시도 고리는 **충돌하지 않는 경합만** 넘긴다. 충돌하는 경합에서는 세 번이 아니라 **한 번에**
+  죽는다(`git rebase` 가 충돌 상태로 멈추면 다음 `git push` 도 그 상태에서 도니 남은 두 번이
+  의미가 없다).
+- **「렌더 성공」과 「컷이 브랜치에 있다」는 다르다.** 워크플로 결론만 보면 실패라 눈에 띄지만,
+  단계별로 보면 렌더·검사·반입이 전부 초록이라 **사람이 훑으면 성공으로 읽힌다.**
+  루틴 지침 §5.5 가 "push 했다는 사실은 컷이 나왔다는 뜻이 아니다 — `git ls-tree` 로 컷 10장이
+  실제로 있는지 본다" 고 적은 이유가 이것이고, 이번에 그 검사가 실제로 값을 했다.
+
+### 이번에 한 복구 (같은 일이 나면 이대로)
+1. 개념 한 장 커밋(`517ea88`)은 살아 있으니 **거기에 rebase** 해 카피 수정을 올린다.
+2. 그 push 가 `cardnews-render` **하나만** 깨운다(`concept-sheet-render` 의 트리거 경로는
+   `studio/concepts/**` · `studio/engine/build_concept_sheet.py` · `concept/notes/**` 라
+   카피만 고치면 안 깨어난다). 경합이 없어지니 컷이 그대로 붙는다.
+3. 즉 **경합을 푸는 가장 싼 방법은 두 워크플로를 서로 다른 push 로 나누는 것**이다.
+
+### 고칠 것 — 문서가 아니라 워크플로에
+재시도 고리가 이 두 파일을 만나면 **손으로 병합하지 말고 다시 만들어야** 한다
+(「빌드 산출물은 재생성한다」, LESSONS 2026-08-25 와 같은 규칙).
+
+```bash
+git pull --rebase origin "$BR" || {
+  git checkout --theirs link-index.json backlog.json 2>/dev/null || true
+  python tools/build_link_index.py
+  git add link-index.json backlog.json
+  git -c core.editor=true rebase --continue
+}
+```
+
+⚠ 이 패치는 **아직 넣지 않았다** — 카피 회차의 PR 을 CI 변경으로 넓히지 않으려고 보고만 했다.
+다음에 워크플로를 건드릴 일이 있을 때 함께 넣을 것. 그때 `cardnews-render.yml` 의
+"산출물 경로가 겹치지 않으므로" 주석도 같이 고친다.
