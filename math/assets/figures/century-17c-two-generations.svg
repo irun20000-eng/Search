@@ -43,7 +43,7 @@
   <text class="ev" x="112.0" y="356" text-anchor="end">홍정하</text>
   <text class="sm" x="182.0" y="356" text-anchor="end">1684–?</text>
   <circle class="kpt" cx="526.2" cy="352" r="4"/>
-  <line class="tie" x1="438.8" y1="274" x2="438.8" y2="318"/>
+  <line class="tie" x1="438.8" y1="274" x2="438.8" y2="320"/>
   <text class="sm" x="443.8" y="300" text-anchor="start">같은 해 출생</text>
   <line class="cut" x1="418.1" y1="112" x2="418.1" y2="364"/>
   <text class="ev" x="418.1" y="106" text-anchor="middle">1637 『기하학』</text>
