@@ -51,7 +51,8 @@
   <rect class="band" x="351.1" y="292" width="222.9" height="16" rx="2"/>
   <text class="sm" x="462.6" y="326" text-anchor="middle">묘비 수수께끼의 편찬 5~6세기 [9]</text>
   <path class="brk" d="M220.1,284 V278 H351.1 V284"/>
-  <path class="brkd" d="M351.1,278 H574.0 V284"/>
+  <path class="brkd" d="M351.1,278 H572.1"/>
+  <path class="brk" d="M572.1,278 H574.0 V284"/>
   <text class="ev" x="397.0" y="271" text-anchor="middle">117 ~ 316년</text>
   <line class="axis" x1="70" y1="338" x2="630" y2="338"/>
   <line class="axis" x1="126.0" y1="338" x2="126.0" y2="343"/>
