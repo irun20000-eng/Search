@@ -1,6 +1,28 @@
 {
- "count": 13,
+ "count": 14,
  "notes": [
+  {
+   "slug": "zipfs-law",
+   "title": "지프의 법칙(Zipf's Law) — 이해편(입문·딥)",
+   "date": "2026-09-24",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "언어학",
+    "말뭉치",
+    "멱법칙",
+    "순위규모법칙",
+    "도시",
+    "통계읽기",
+    "로그",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 5편 · 가장 흔한 말이 두 번째보다 두 배 흔하다",
+   "chars": 13247,
+   "pic": "zipfs-law.png",
+   "path": "concept/notes/zipfs-law.md"
+  },
   {
    "slug": "percentage-point",
    "title": "퍼센트와 퍼센트포인트(Percentage Point) — 이해편(입문·딥)",
