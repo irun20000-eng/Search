@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 495" width="700" height="495" role="img" aria-label="그림 위쪽에 「눈이 먼 뒤에 절반 — 오일러」라는 표제가 있고 그 아래에 푸른 칸은 1766 뒤, 검은 표지는 시력의 해, 속 빈 표지는 해를 모르는 시력의 일, 파선은 가량이라는 부호표가 있다. 막대가 위아래로 둘 있다. 위 막대의 제목은 상트페테르부르크 도착부터 — 해이고, 1727년부터 1783년까지를 한 줄로 그렸다. 막대는 1766년에서 갈려 왼쪽 옅은 칸에 39년, 오른쪽 푸른 칸에 17년이라고 적혀 있다. 막대 아래 왼쪽 끝에 1727 상트페테르부르크 도착, 1766 갈림 바로 왼쪽에 1766 돌아오다 — 쉰아홉, 오른쪽 끝에 1783 죽다라고 적혀 있다. 막대 위에는 표지가 셋 있다. 1738년부터 1740년에 걸친 검은 표지 위에 1738~40 시력 악화, 한쪽 눈 상실, 1766년부터 1771년 앞까지 걸친 속 빈 표지 위 두 번째 줄 가운데에 1766 뒤 병을 앓고 거의 실명, 1771년 검은 표지 오른쪽 위에 1771 완전 실명이라고 적혀 있다. 아래 막대의 제목은 평생 저작 — 양이고, 막대가 가운데에서 파선으로 둘로 갈려 왼쪽 옅은 칸에 1766 이전, 오른쪽 푸른 칸에 1766 이후 — 절반가량이라고 적혀 있다. 그 아래에 완전한 실명에도 불구하고 평생 저작의 절반가량을 생산했다는 인용이 있다. 아래에 단서가 여섯 줄 있다. 첫째, 위 막대는 해, 아래 막대는 저작의 양이라 아래 막대의 가로 위치는 해가 아니고, 가름이 1766 자리와 맞지 않는다. 둘째, 두 막대를 견주어 속도로 읽지 말 것. 노트는 그 비율을 계산하지 않으며, 위 막대는 1727 상트페테르부르크 도착부터 그렸다. 셋째, 절반가량은 MacTutor의 말이고 아래 막대의 가름은 정확한 비율이 아니다. 넷째, 1766은 상트페테르부르크로 돌아온 뒤, 오일러가 쉰아홉일 때의 해이고, 39년과 17년은 노트의 해로 잰 수다. 다섯째, 1766 뒤 병을 앓고 거의 실명한 일은 해를 몰라 속 빈 표지로 1766부터 1771 완전 실명 앞까지 그렸다. 여섯째, 시력의 해는 노트 연보와 8절을 따랐고, 해는 모두 노트의 출처 1번 MacTutor 오일러다.">
+<title>눈이 먼 뒤에 절반 오일러</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;} .h3{font-size:13px;fill:#9C5A2C;}
+    .ev{font-size:11px;} .in{font-size:12px;fill:#5B5245;} .inw{font-size:12px;fill:#FFFDF7;}
+    .bg{fill:#FFFDF7;}
+    .life{fill:#F4EADC;}
+    .late{fill:#3A5C77;}
+    .frame{fill:none;stroke:#8A7F6E;stroke-width:1;}
+    .eye{fill:#221E18;}
+    .eyeq{fill:#FFFDF7;stroke:#221E18;stroke-width:1;}
+    .tick{stroke:#8A7F6E;stroke-width:1;}
+    .approx{stroke:#9C5A2C;stroke-width:1.4;stroke-dasharray:3 2;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="495"/>
+<text class="h1" x="56" y="44">눈이 먼 뒤에 절반 — 오일러</text>
+<text class="h2" x="56" y="66">푸른 칸 = 1766 뒤 · 검은 표지 = 시력의 해 · 속 빈 표지 = 해를 모르는 시력의 일 · 파선 = 「가량」</text>
+  <text class="h3" x="56.0" y="110" text-anchor="start">상트페테르부르크 도착부터 — 해</text>
+  <rect class="life" x="150.0" y="157" width="334.3" height="26"/>
+  <rect class="late" x="484.3" y="157" width="145.7" height="26"/>
+  <rect class="frame" x="150.0" y="157" width="480.0" height="26"/>
+  <text class="in" x="317.1" y="174" text-anchor="middle">39년</text>
+  <text class="inw" x="557.1" y="174" text-anchor="middle">17년</text>
+  <line class="tick" x1="150.0" y1="183" x2="150.0" y2="189"/>
+  <line class="tick" x1="484.3" y1="183" x2="484.3" y2="189"/>
+  <line class="tick" x1="630.0" y1="183" x2="630.0" y2="189"/>
+  <text class="ev" x="150.0" y="203" text-anchor="start">1727 상트페테르부르크 도착 [1]</text>
+  <text class="ev" x="480.3" y="203" text-anchor="end">1766 돌아오다 — 쉰아홉 [1]</text>
+  <text class="ev" x="630.0" y="203" text-anchor="end">1783 죽다 [1]</text>
+  <rect class="eye" x="244.3" y="147" width="25.7" height="6" rx="1"/>
+  <text class="ev" x="257.1" y="141" text-anchor="middle">1738~40 시력 악화, 한쪽 눈 상실 [1]</text>
+  <rect class="eyeq" x="484.3" y="147" width="41.4" height="6" rx="1"/>
+  <text class="ev" x="505.7" y="123" text-anchor="middle">1766 뒤 병을 앓고 거의 실명 [1]</text>
+  <rect class="eye" x="527.1" y="147" width="8.6" height="6" rx="1"/>
+  <text class="ev" x="527.1" y="141" text-anchor="start">1771 완전 실명 [1]</text>
+  <text class="h3" x="56.0" y="258" text-anchor="start">평생 저작 — 양</text>
+  <rect class="life" x="150.0" y="287" width="240.0" height="26"/>
+  <rect class="late" x="390.0" y="287" width="240.0" height="26"/>
+  <rect class="frame" x="150.0" y="287" width="480.0" height="26"/>
+  <line class="approx" x1="390.0" y1="279" x2="390.0" y2="317"/>
+  <text class="in" x="270.0" y="304" text-anchor="middle">1766 이전</text>
+  <text class="inw" x="510.0" y="304" text-anchor="middle">1766 이후 — 절반가량</text>
+  <text class="ev" x="390.0" y="343" text-anchor="middle">「완전한 실명에도 불구하고 평생 저작의 절반가량을 생산했다」 [1]</text>
+<text class="warn" x="56" y="386">⚠ 위 막대는 해, 아래 막대는 저작의 양이다 — 아래 막대의 가로 위치는 해가 아니다(가름이 1766 자리와 맞지 않는다).</text>
+<text class="warn" x="56" y="403">⚠ 두 막대를 견주어 속도로 읽지 말 것 — 노트는 그 비율을 계산하지 않는다. 위 막대는 1727 상트페테르부르크 도착부터 그렸다 [1].</text>
+<text class="warn" x="56" y="420">⚠ 「절반가량」은 MacTutor 의 말이다 [1] — 아래 막대의 가름은 정확한 비율이 아니다.</text>
+<text class="warn" x="56" y="437">⚠ 1766 은 「상트페테르부르크로 돌아온 뒤(오일러가 쉰아홉일 때)」의 해다 [1]. 39년·17년은 노트의 해로 잰 수다.</text>
+<text class="warn" x="56" y="454">⚠ 1766 뒤 병을 앓고 거의 실명한 일은 해를 모른다 — 속 빈 표지로 1766 부터 1771 완전 실명 앞까지 그렸다 [1].</text>
+<text class="warn" x="56" y="471">⚠ 시력의 해는 노트 연보와 §8 을 따랐고, 해는 모두 노트의 출처 [1] MacTutor 오일러다.</text>
+</svg>
