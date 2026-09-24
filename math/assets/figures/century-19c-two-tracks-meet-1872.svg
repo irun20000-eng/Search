@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 506" width="700" height="506" role="img" aria-label="그림 위쪽에 「두 갈래가 1872에서 만나다」라는 표제가 있고 그 아래에 위 갈래는 바닥을 놓는 일, 아래 갈래는 직관을 무너뜨리는 일, 세로 파선은 1872라는 부호표가 있다. 가로축은 1810년부터 1880년까지의 해다. 위 갈래의 이름은 바닥을 놓는 일, 엄밀화이고, 그 줄에 점이 넷 있다. 1817 볼차노 그림을 빼고 증명, 1821 코시 극한을 앞세우다와 그 아래 실수는 아는 것으로 전제, 그리고 1858에는 속이 빈 점이 있어 데데킨트의 착상이라고 적혀 있다. 그 빈 점에서 오른쪽으로 파선 호가 1872의 점까지 이어지고 호 위에 14년 묵힘이라고 적혀 있다. 1872의 점 왼쪽 아래에 1872 데데킨트, 칸토어, 하이네 실수를 구성하다라고 적혀 있다. 아래 갈래의 이름은 직관을 무너뜨리는 일, 정의 확장이고, 1837 디리클레 함수에 식을 요구하지 않다라는 점이 있다. 그 오른쪽 1872와 1874 두 자리에 점이 하나씩 있고 두 점 아래가 괄호로 묶여 있다. 1872 점의 왼쪽 위에 바이어슈트라스 함수, 왼쪽 아래에 1872 출처 5번, 1874 점의 오른쪽 위에 1874 출처 8번이라고 적혀 있다. 1872 자리에 두 갈래를 모두 가로지르는 세로 파선이 있고 맨 위에 1872라고 적혀 있다. 1874의 점은 이 선의 오른쪽에 있다. 아래에 단서가 일곱 줄 있다. 첫째, 점은 그 해의 일이고 1858년 점만 속이 빈 것은 착상이지 발표가 아니기 때문이다. 둘째, 바이어슈트라스 함수의 해는 출처가 갈려 5번은 1872, 8번은 1874라서 두 점을 다 찍었다. 셋째, 두 갈래가 같은 자각에서 나왔다는 것은 노트 5절의 해석이고 출처가 적는 것은 해와 일이다. 넷째, 출처 1번은 1872 전의 이름으로 한켈 1867과 메레 1869도 적지만 노트 본문이 다루지 않아 그리지 않았다. 다섯째, 리만 1854와 칸토어의 편지 1873은 이 두 갈래 밖이라 넣지 않았다. 여섯째, 3절의 바이어슈트라스의 걸음, 곧 코시의 그다음은 노트가 해를 적지 않아 찍지 않았다. 일곱째, 해는 노트의 출처 1, 3, 4, 5, 8, 14, 15번을 따랐다.">
+<title>두 갈래가 1872에서 만나다</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#9C5A2C;}
+    .ev{font-size:11px;} .sm{font-size:10.5px;fill:#5B5245;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .pt{fill:#3A5C77;}
+    .hol{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.5;}
+    .arc{stroke:#9C5A2C;stroke-width:1.2;fill:none;stroke-dasharray:4 3;}
+    .brk{stroke:#9C5A2C;stroke-width:1.2;fill:none;}
+    .cut{stroke:#221E18;stroke-width:1.1;stroke-dasharray:5 4;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="506"/>
+<text class="h1" x="56" y="44">두 갈래가 1872에서 만나다</text>
+<text class="h2" x="56" y="66">위 = 바닥을 놓는 일 · 아래 = 직관을 무너뜨리는 일 · 세로 파선 = 1872</text>
+  <line class="lane" x1="180" y1="158" x2="650" y2="158"/>
+  <text class="grp" x="56.0" y="156" text-anchor="start">바닥을 놓는 일</text>
+  <text class="sm" x="56.0" y="171" text-anchor="start">엄밀화</text>
+  <line class="lane" x1="180" y1="268" x2="650" y2="268"/>
+  <text class="grp" x="56.0" y="266" text-anchor="start">직관을 무너뜨리는 일</text>
+  <text class="sm" x="56.0" y="281" text-anchor="start">정의 확장</text>
+  <line class="cut" x1="596.3" y1="100" x2="596.3" y2="324"/>
+  <text class="ev" x="596.3" y="94" text-anchor="middle">1872</text>
+  <circle class="pt" cx="227.0" cy="158" r="4"/>
+  <text class="ev" x="225.0" y="132" text-anchor="start">1817 볼차노</text>
+  <text class="sm" x="225.0" y="146" text-anchor="start">그림을 빼고 증명</text>
+  <circle class="pt" cx="253.9" cy="158" r="4"/>
+  <text class="ev" x="251.9" y="178" text-anchor="start">1821 코시 — 극한을 앞세우다</text>
+  <text class="sm" x="251.9" y="192" text-anchor="start">실수는 아는 것으로 전제</text>
+  <circle class="hol" cx="502.3" cy="158" r="4"/>
+  <text class="sm" x="502.3" y="146" text-anchor="end">1858 데데킨트의 착상</text>
+  <path class="arc" d="M502.3,153 Q549.3,118 596.3,153"/>
+  <text class="sm" x="549.3" y="130" text-anchor="middle">14년 묵힘</text>
+  <circle class="pt" cx="596.3" cy="158" r="4"/>
+  <text class="ev" x="588.3" y="178" text-anchor="end">1872 데데킨트 · 칸토어 · 하이네</text>
+  <text class="sm" x="588.3" y="192" text-anchor="end">실수를 구성하다</text>
+  <circle class="pt" cx="361.3" cy="268" r="4"/>
+  <text class="ev" x="361.3" y="256" text-anchor="middle">1837 디리클레</text>
+  <text class="sm" x="361.3" y="288" text-anchor="middle">함수에 식을 요구하지 않다</text>
+  <circle class="pt" cx="596.3" cy="268" r="4"/>
+  <circle class="pt" cx="609.7" cy="268" r="4"/>
+  <path class="brk" d="M596.3,276 V280 H609.7 V276"/>
+  <text class="ev" x="588.3" y="256" text-anchor="end">바이어슈트라스 함수</text>
+  <text class="sm" x="588.3" y="288" text-anchor="end">1872 [5]</text>
+  <text class="sm" x="616.7" y="260" text-anchor="start">1874 [8]</text>
+  <line class="axis" x1="180" y1="330" x2="650" y2="330"/>
+  <line class="axis" x1="180.0" y1="330" x2="180.0" y2="335"/>
+  <text class="yr" x="180.0" y="348" text-anchor="middle">1810</text>
+  <line class="axis" x1="247.1" y1="330" x2="247.1" y2="335"/>
+  <text class="yr" x="247.1" y="348" text-anchor="middle">1820</text>
+  <line class="axis" x1="314.3" y1="330" x2="314.3" y2="335"/>
+  <text class="yr" x="314.3" y="348" text-anchor="middle">1830</text>
+  <line class="axis" x1="381.4" y1="330" x2="381.4" y2="335"/>
+  <text class="yr" x="381.4" y="348" text-anchor="middle">1840</text>
+  <line class="axis" x1="448.6" y1="330" x2="448.6" y2="335"/>
+  <text class="yr" x="448.6" y="348" text-anchor="middle">1850</text>
+  <line class="axis" x1="515.7" y1="330" x2="515.7" y2="335"/>
+  <text class="yr" x="515.7" y="348" text-anchor="middle">1860</text>
+  <line class="axis" x1="582.9" y1="330" x2="582.9" y2="335"/>
+  <text class="yr" x="582.9" y="348" text-anchor="middle">1870</text>
+  <line class="axis" x1="650.0" y1="330" x2="650.0" y2="335"/>
+  <text class="yr" x="650.0" y="348" text-anchor="middle">1880</text>
+<text class="warn" x="56" y="380">⚠ 점은 그 해의 일이다. 1858년 점만 속이 비었다 — 착상이지 발표가 아니다.</text>
+<text class="warn" x="56" y="397">⚠ 바이어슈트라스 함수의 해는 출처가 갈린다 — [5]는 1872, [8]은 1874. 두 점을 다 찍었다.</text>
+<text class="warn" x="56" y="414">⚠ 두 갈래가 「같은 자각에서 나왔다」는 것은 노트 §5의 해석이다. 출처가 적는 것은 해와 일이다.</text>
+<text class="warn" x="56" y="431">⚠ [1]은 1872 전의 이름(한켈 1867 · 메레 1869)도 적는다 — 노트 본문이 다루지 않아 그리지 않았다.</text>
+<text class="warn" x="56" y="448">⚠ 리만(1854)과 칸토어의 편지(1873)는 이 두 갈래 밖이라 넣지 않았다.</text>
+<text class="warn" x="56" y="465">⚠ §3의 바이어슈트라스의 걸음(코시 「그다음」)은 노트가 해를 적지 않아 찍지 않았다.</text>
+<text class="warn" x="56" y="482">⚠ 해는 노트의 출처 [1]·[3]·[4]·[5]·[8]·[14]·[15]를 따랐다.</text>
+</svg>
