@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 452" width="700" height="452" role="img" aria-label="그림 위쪽에 「눈이 먼 뒤에 절반 — 오일러」라는 표제가 있고 그 아래에 푸른 칸은 1766 뒤, 검은 표지는 시력을 잃은 해, 파선은 가량이라는 부호표가 있다. 막대가 위아래로 둘 있다. 위 막대의 제목은 생애 — 해이고, 1707년부터 1783년까지를 한 줄로 그렸다. 막대는 1766년에서 갈려 왼쪽 옅은 칸에 59년, 오른쪽 푸른 칸에 17년이라고 적혀 있다. 막대 아래 왼쪽 끝에 1707 출생, 1766 갈림 바로 왼쪽에 1766 돌아오다 — 쉰아홉, 오른쪽 끝에 1783 죽다라고 적혀 있다. 막대 위에는 검은 표지가 둘 있다. 1738년부터 1740년에 걸친 표지 위에 1738~40 시력 악화, 한쪽 눈 상실, 1771년 표지 위에 1771 완전 실명이라고 적혀 있다. 아래 막대의 제목은 평생 저작 — 양이고, 막대가 가운데에서 파선으로 둘로 갈려 왼쪽 옅은 칸에 1766 이전, 오른쪽 푸른 칸에 1766 이후 — 절반가량이라고 적혀 있다. 그 아래에 완전한 실명에도 불구하고 평생 저작의 절반가량을 생산했다는 인용이 있다. 아래에 단서가 다섯 줄 있다. 첫째, 위 막대는 해, 아래 막대는 저작의 양이라 자가 다르고, 아래 막대의 가운데는 1766과 이어지지 않는다. 둘째, 절반가량은 MacTutor의 말이고, 아래 막대의 가름은 정확한 비율이 아니라 그 말을 그린 것이다. 셋째, 1766은 상트페테르부르크로 돌아온 뒤, 오일러가 쉰아홉일 때의 해이고, 막대의 59년과 17년은 노트의 해로 잰 수다. 넷째, 시력의 해는 노트 연보를 따랐다. 1738~40 한쪽 눈 상실, 1771 완전 실명이다. 다섯째, 해는 노트의 출처 1번 MacTutor 오일러를 따랐다.">
+<title>눈이 먼 뒤에 절반 오일러</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;} .h3{font-size:13px;fill:#9C5A2C;}
+    .ev{font-size:11px;} .in{font-size:12px;fill:#5B5245;} .inw{font-size:12px;fill:#FFFDF7;}
+    .bg{fill:#FFFDF7;}
+    .life{fill:#F4EADC;}
+    .late{fill:#3A5C77;}
+    .frame{fill:none;stroke:#8A7F6E;stroke-width:1;}
+    .eye{fill:#221E18;}
+    .tick{stroke:#8A7F6E;stroke-width:1;}
+    .approx{stroke:#9C5A2C;stroke-width:1.4;stroke-dasharray:3 2;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="452"/>
+<text class="h1" x="56" y="44">눈이 먼 뒤에 절반 — 오일러</text>
+<text class="h2" x="56" y="66">푸른 칸 = 1766 뒤 · 검은 표지 = 시력을 잃은 해 · 파선 = 「가량」</text>
+  <text class="h3" x="56.0" y="108" text-anchor="start">생애 — 해</text>
+  <rect class="life" x="150.0" y="137" width="372.6" height="26"/>
+  <rect class="late" x="522.6" y="137" width="107.4" height="26"/>
+  <rect class="frame" x="150.0" y="137" width="480.0" height="26"/>
+  <text class="in" x="336.3" y="154" text-anchor="middle">59년</text>
+  <text class="inw" x="576.3" y="154" text-anchor="middle">17년</text>
+  <line class="tick" x1="150.0" y1="163" x2="150.0" y2="169"/>
+  <line class="tick" x1="522.6" y1="163" x2="522.6" y2="169"/>
+  <line class="tick" x1="630.0" y1="163" x2="630.0" y2="169"/>
+  <text class="ev" x="150.0" y="183" text-anchor="start">1707 출생 [1]</text>
+  <text class="ev" x="518.6" y="183" text-anchor="end">1766 돌아오다 — 쉰아홉 [1]</text>
+  <text class="ev" x="630.0" y="183" text-anchor="end">1783 죽다 [1]</text>
+  <rect class="eye" x="345.8" y="127" width="18.9" height="6" rx="1"/>
+  <text class="ev" x="355.3" y="121" text-anchor="middle">1738~40 시력 악화, 한쪽 눈 상실 [1]</text>
+  <rect class="eye" x="554.2" y="127" width="6.3" height="6" rx="1"/>
+  <text class="ev" x="557.4" y="121" text-anchor="middle">1771 완전 실명 [1]</text>
+  <text class="h3" x="56.0" y="238" text-anchor="start">평생 저작 — 양</text>
+  <rect class="life" x="150.0" y="267" width="240.0" height="26"/>
+  <rect class="late" x="390.0" y="267" width="240.0" height="26"/>
+  <rect class="frame" x="150.0" y="267" width="480.0" height="26"/>
+  <line class="approx" x1="390.0" y1="259" x2="390.0" y2="301"/>
+  <text class="in" x="270.0" y="284" text-anchor="middle">1766 이전</text>
+  <text class="inw" x="510.0" y="284" text-anchor="middle">1766 이후 — 절반가량</text>
+  <text class="ev" x="390.0" y="315" text-anchor="middle">「완전한 실명에도 불구하고 평생 저작의 절반가량을 생산했다」 [1]</text>
+<text class="warn" x="56" y="360">⚠ 위 막대는 해, 아래 막대는 저작의 양이다 — 둘은 자가 다르다. 아래 막대의 가운데는 1766 과 이어지지 않는다.</text>
+<text class="warn" x="56" y="377">⚠ 「절반가량」은 MacTutor 의 말이다 [1] — 아래 막대의 가름은 정확한 비율이 아니라 그 말을 그린 것이다.</text>
+<text class="warn" x="56" y="394">⚠ 1766 은 「상트페테르부르크로 돌아온 뒤(오일러가 쉰아홉일 때)」의 해다 [1]. 막대의 59년·17년은 노트의 해로 잰 수다.</text>
+<text class="warn" x="56" y="411">⚠ 시력의 해는 노트 연보를 따랐다 — 1738~40 한쪽 눈 상실, 1771 완전 실명 [1].</text>
+<text class="warn" x="56" y="428">⚠ 해는 노트의 출처 [1] MacTutor 오일러를 따랐다.</text>
+</svg>
