@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 580" width="700" height="580" role="img" aria-label="그림 위쪽에 「두 개의 「처음」 — 달랑베르」라는 표제가 있고 그 아래에 갈색 띠는 그가 처음 한 것, 푸른 띠는 완성한 사람, 점선은 해를 범위로만 아는 것, 점은 죽은 날이라는 부호표가 있다. 가로축은 1740년부터 1830년까지의 해이고, 줄이 둘 있다. 줄 이름은 왼쪽 끝에 파동방정식, 해석학의 기초라고 적혀 있다. 위 줄에는 1747년에 갈색 띠가 있고 그 위 오른쪽에 1747 진동하는 현 논문 — 인쇄물에 처음 실었다라고 적혀 있다. 그 바로 아래에 1746년부터 1756년까지 걸친 푸른 점선 칸이 있어 1747 띠보다 한 해 앞에서 시작하고, 그 아래에 두 줄로 1746~1756 — 오일러가 3차원으로, 달랑베르의 발견(1746) 뒤 10년 안에라고 적혀 있다. 아래 줄에는 1754년에 갈색 띠가 있고 그 위 오른쪽에 두 줄로 1754 『백과전서』 4권 「미분」 항목, 극한이 필요하다고 처음 말했다라고 적혀 있다. 1821년에 푸른 띠가 있고 그 아래 왼쪽에 1821 코시 — 달랑베르의 제안을 실행이라고 적혀 있다. 아래 줄의 두 띠 사이는 비어 있다. 가로축 위 1783년 자리에 검은 점이 있고 그 위에 1783.10.29 달랑베르가 죽다라고 적혀 있다. 아래에 단서가 아홉 줄 있다. 첫째, 띠는 해로만 그렸고 점은 날짜까지 그렸다. 둘째, 오일러의 3차원은 노트가 10년 안에로만 적는다. 그림은 1746 발견에서 재어 1746~1756 점선으로 그렸다. 셋째, 점선 칸이 1747 띠보다 한 해 앞서는 것은 그 때문이고, 오일러가 앞섰다는 뜻이 아니다. 넷째, 1746 발견은 띠로 그리지 않았다. 10절의 표가 적는 처음은 인쇄, 1747이다. 다섯째, 해석학의 기초 줄의 처음은 출처 2번의 말이고, 1754는 그 제안이 놓인 자리로 출처 1번이 적은 해다. 여섯째, 1754와 1821 사이에 8절 표가 둔 라그랑주의 시도는 노트가 해를 적지 않아 그리지 않았다. 일곱째, 죽은 날은 출처 1번을 따랐고, 국내 자료는 1785로 적는다. 여덟째, 해와 날짜는 노트의 출처 1번 MacTutor 달랑베르, 2번 수학백과 해석학을 따랐다. 아홉째, 1746과 10년 안에는 4번 영문 위키백과 Differential equation, 1821은 2번과 6번, 곧 MacTutor 코시를 따랐다.">
+<title>두 개의 처음 달랑베르</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .pt{fill:#221E18;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .band2{fill:#CEDCE6;stroke:#3A5C77;stroke-width:1;}
+    .dash2{fill:#CEDCE6;fill-opacity:.45;stroke:#3A5C77;stroke-width:1;stroke-dasharray:4 3;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="580"/>
+<text class="h1" x="56" y="44">두 개의 「처음」 — 달랑베르</text>
+<text class="h2" x="56" y="66">갈색 띠 = 그가 처음 한 것 · 푸른 띠 = 완성한 사람 · 점선 = 해를 범위로만 아는 것 · 점 = 죽은 날</text>
+  <line class="lane" x1="200" y1="140" x2="640" y2="140"/>
+  <text class="grp" x="56.0" y="144" text-anchor="start">파동방정식</text>
+  <line class="lane" x1="200" y1="272" x2="640" y2="272"/>
+  <text class="grp" x="56.0" y="276" text-anchor="start">해석학의 기초</text>
+  <rect class="band" x="234.2" y="134" width="4.9" height="12" rx="2"/>
+  <text class="ev" x="234.2" y="126" text-anchor="start">1747 진동하는 현 논문 — 인쇄물에 처음 실었다 [1]</text>
+  <rect class="dash2" x="229.3" y="154" width="48.9" height="12" rx="2"/>
+  <text class="ev" x="229.3" y="184" text-anchor="start">1746~1756 — 오일러가 3차원으로 [4]</text>
+  <text class="ev" x="229.3" y="202" text-anchor="start">달랑베르의 발견(1746) 뒤 10년 안에</text>
+  <rect class="band" x="268.4" y="266" width="4.9" height="12" rx="2"/>
+  <text class="ev" x="268.4" y="240" text-anchor="start">1754 『백과전서』 4권 「미분」 항목 [1]</text>
+  <text class="ev" x="268.4" y="258" text-anchor="start">극한이 필요하다고 처음 말했다 [2]</text>
+  <rect class="band2" x="596.0" y="266" width="4.9" height="12" rx="2"/>
+  <text class="ev" x="600.9" y="296" text-anchor="end">1821 코시 — 달랑베르의 제안을 실행 [2][6]</text>
+  <circle class="pt" cx="414.3" cy="370" r="4"/>
+  <text class="ev" x="414.3" y="358" text-anchor="middle">1783.10.29 달랑베르가 죽다 [1]</text>
+  <line class="axis" x1="200" y1="370" x2="640" y2="370"/>
+  <line class="axis" x1="200.0" y1="370" x2="200.0" y2="375"/>
+  <text class="yr" x="200.0" y="388" text-anchor="middle">1740</text>
+  <line class="axis" x1="248.9" y1="370" x2="248.9" y2="375"/>
+  <text class="yr" x="248.9" y="388" text-anchor="middle">1750</text>
+  <line class="axis" x1="297.8" y1="370" x2="297.8" y2="375"/>
+  <text class="yr" x="297.8" y="388" text-anchor="middle">1760</text>
+  <line class="axis" x1="346.7" y1="370" x2="346.7" y2="375"/>
+  <text class="yr" x="346.7" y="388" text-anchor="middle">1770</text>
+  <line class="axis" x1="395.6" y1="370" x2="395.6" y2="375"/>
+  <text class="yr" x="395.6" y="388" text-anchor="middle">1780</text>
+  <line class="axis" x1="444.4" y1="370" x2="444.4" y2="375"/>
+  <text class="yr" x="444.4" y="388" text-anchor="middle">1790</text>
+  <line class="axis" x1="493.3" y1="370" x2="493.3" y2="375"/>
+  <text class="yr" x="493.3" y="388" text-anchor="middle">1800</text>
+  <line class="axis" x1="542.2" y1="370" x2="542.2" y2="375"/>
+  <text class="yr" x="542.2" y="388" text-anchor="middle">1810</text>
+  <line class="axis" x1="591.1" y1="370" x2="591.1" y2="375"/>
+  <text class="yr" x="591.1" y="388" text-anchor="middle">1820</text>
+  <line class="axis" x1="640.0" y1="370" x2="640.0" y2="375"/>
+  <text class="yr" x="640.0" y="388" text-anchor="middle">1830</text>
+<text class="warn" x="56" y="420">⚠ 띠는 해로만 그렸고, 점은 날짜까지 그렸다.</text>
+<text class="warn" x="56" y="437">⚠ 오일러의 3차원은 노트가 「10년 안에」로만 적는다 [4]. 그림은 1746 발견에서 재어 1746~1756 점선으로 그렸다.</text>
+<text class="warn" x="56" y="454">⚠ 점선 칸이 1747 띠보다 한 해 앞서는 것은 그 때문이다 — 오일러가 앞섰다는 뜻이 아니다.</text>
+<text class="warn" x="56" y="471">⚠ 1746 발견 [4]은 띠로 그리지 않았다 — §10 표가 적는 「처음」은 인쇄(1747)다 [1].</text>
+<text class="warn" x="56" y="488">⚠ 해석학의 기초 줄의 「처음」은 [2]의 말이고, 1754는 그 제안이 놓인 자리로 [1]이 적은 해다.</text>
+<text class="warn" x="56" y="505">⚠ 1754와 1821 사이 — §8 표가 둘 사이에 둔 라그랑주의 시도 [2]는 노트가 해를 적지 않아 그리지 않았다.</text>
+<text class="warn" x="56" y="522">⚠ 죽은 날은 [1]을 따랐다. 국내 자료는 1785로 적는다 [2].</text>
+<text class="warn" x="56" y="539">⚠ 해와 날짜는 노트의 출처 [1] MacTutor 달랑베르 · [2] 수학백과 해석학을 따랐다.</text>
+<text class="warn" x="56" y="556">⚠ 1746과 「10년 안에」는 [4] 영문 위키백과 Differential equation, 1821은 [2]와 [6](MacTutor 코시)을 따랐다.</text>
+</svg>
