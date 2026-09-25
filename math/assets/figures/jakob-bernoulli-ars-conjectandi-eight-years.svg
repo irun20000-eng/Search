@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 425" width="700" height="425" role="img" aria-label="그림 위쪽에 「『추측술』, 죽고 8년 뒤에 — 야코프 베르누이」라는 표제가 있고 그 아래에 띠는 그의 일, 점선 띠는 해를 「까지」로만 아는 것, 점은 죽은 날, 괄호는 해의 차라는 부호표가 있다. 가로축은 1685년부터 1716년까지의 해이고, 줄이 둘 있다. 줄 이름은 왼쪽 끝에 큰 수의 법칙, 『추측술』이라고 적혀 있다. 위 줄에는 1689년 자리에 점선 띠가 있고 그 위 오른쪽에 ~1689 — 1689년까지 발표했다라고 적혀 있다. 아래 줄에는 1705년 8월 16일 자리에 검은 점이 있고 그 왼쪽 위에 1705.8.16 야코프가 죽다 — 책은 아직 미완성이라고 적혀 있다. 같은 줄 1713년에 띠가 있고 그 아래 왼쪽에 두 줄로 1713 바젤에서 나오다, 호프만이 적은 목록에 큰 수의 법칙이 든다라고 적혀 있다. 검은 점에서 1713년 띠 가운데까지 걸친 괄호가 있고 그 위에 8년이라고 적혀 있다. 아래에 단서가 네 줄 있다. 첫째, 띠는 해로만 그렸고 점은 날짜까지 그렸다. 점은 책이 아직 미완성이던 날이라 『추측술』 줄에 두었다. 둘째, 큰 수의 법칙은 출처 1번이 1689년까지 발표했다고만 적어 1689 자리에 점선 띠로 그렸다. 셋째, 8년은 노트의 말이다. 넷째, 해와 날짜는 노트의 출처 1번 MacTutor 야코프 베르누이를 따랐다.">
+<title>추측술 죽고 8년 뒤에 야코프 베르누이</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .pt{fill:#221E18;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .dash{fill:#F4EADC;fill-opacity:.5;stroke:#9C5A2C;stroke-width:1;stroke-dasharray:4 3;}
+    .brk{stroke:#9C5A2C;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="425"/>
+<text class="h1" x="56" y="44">『추측술』, 죽고 8년 뒤에 — 야코프 베르누이</text>
+<text class="h2" x="56" y="66">띠 = 그의 일 · 점선 띠 = 해를 「까지」로만 아는 것 · 점 = 죽은 날 · 괄호 = 해의 차</text>
+  <line class="lane" x1="200" y1="128" x2="640" y2="128"/>
+  <text class="grp" x="56.0" y="132" text-anchor="start">큰 수의 법칙</text>
+  <line class="lane" x1="200" y1="236" x2="640" y2="236"/>
+  <text class="grp" x="56.0" y="240" text-anchor="start">『추측술』</text>
+  <rect class="dash" x="256.8" y="122" width="14.2" height="12" rx="2"/>
+  <text class="ev" x="256.8" y="114" text-anchor="start">~1689 — 1689년까지 발표했다 [1]</text>
+  <rect class="band" x="597.4" y="230" width="14.2" height="12" rx="2"/>
+  <text class="ev" x="611.6" y="260" text-anchor="end">1713 바젤에서 나오다 [1]</text>
+  <text class="ev" x="611.6" y="278" text-anchor="end">호프만이 적은 목록에 큰 수의 법칙이 든다 [1]</text>
+  <circle class="pt" cx="492.7" cy="236" r="4"/>
+  <text class="ev" x="484.7" y="224" text-anchor="end">1705.8.16 야코프가 죽다 — 책은 아직 미완성 [1]</text>
+  <path class="brk" d="M492.7,230 V196 H604.5 V228"/>
+  <text class="ev" x="548.6" y="189" text-anchor="middle">8년</text>
+  <line class="axis" x1="200" y1="300" x2="640" y2="300"/>
+  <line class="axis" x1="200.0" y1="300" x2="200.0" y2="305"/>
+  <text class="yr" x="200.0" y="318" text-anchor="middle">1685</text>
+  <line class="axis" x1="271.0" y1="300" x2="271.0" y2="305"/>
+  <text class="yr" x="271.0" y="318" text-anchor="middle">1690</text>
+  <line class="axis" x1="341.9" y1="300" x2="341.9" y2="305"/>
+  <text class="yr" x="341.9" y="318" text-anchor="middle">1695</text>
+  <line class="axis" x1="412.9" y1="300" x2="412.9" y2="305"/>
+  <text class="yr" x="412.9" y="318" text-anchor="middle">1700</text>
+  <line class="axis" x1="483.9" y1="300" x2="483.9" y2="305"/>
+  <text class="yr" x="483.9" y="318" text-anchor="middle">1705</text>
+  <line class="axis" x1="554.8" y1="300" x2="554.8" y2="305"/>
+  <text class="yr" x="554.8" y="318" text-anchor="middle">1710</text>
+  <line class="axis" x1="625.8" y1="300" x2="625.8" y2="305"/>
+  <text class="yr" x="625.8" y="318" text-anchor="middle">1715</text>
+<text class="warn" x="56" y="350">⚠ 띠는 해로만 그렸고, 점은 날짜까지 그렸다. 점은 책이 아직 미완성이던 날이라 『추측술』 줄에 두었다.</text>
+<text class="warn" x="56" y="367">⚠ 큰 수의 법칙은 [1]이 「1689년까지 발표했다」고만 적어, 1689 자리에 점선 띠로 그렸다.</text>
+<text class="warn" x="56" y="384">⚠ 「8년」은 노트의 말이다(1713−1705).</text>
+<text class="warn" x="56" y="401">⚠ 해와 날짜는 노트의 출처 [1] MacTutor 야코프 베르누이를 따랐다.</text>
+</svg>
