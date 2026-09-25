@@ -11,11 +11,14 @@
   "#n=sample-mean-variance": "[2026-09-05] 표본평균의 평균과 분산 — 이해편.md",
   "#n=benfords-law": "[2026-09-10] 벤포드의 법칙 — 이해편.md",
   "#n=regression-to-the-mean": "[2026-09-08] 평균으로의 회귀 — 이해편.md",
-  "#n=parkinsons-law": "[2026-09-17] 파킨슨의 법칙 — 이해편.md"
+  "#n=parkinsons-law": "[2026-09-17] 파킨슨의 법칙 — 이해편.md",
+  "#n=zipfs-law": "[2026-09-24] 지프의 법칙 — 이해편.md",
+  "#n=percentage-point": "[2026-09-22] 퍼센트와 퍼센트포인트 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
-  "#g=n8n-first-workflow": "20260808_n8n으로_첫_자동화_워크플로우_만들기.md"
+  "#g=n8n-first-workflow": "20260808_n8n으로_첫_자동화_워크플로우_만들기.md",
+  "#g=aside-jev-start": "20260922_Aside와_Jev_시작하기_—_설치부터_첫_판정까지.md"
  },
  "reports": {
   "#r=odyssey-troy": "20260822_오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP).md",
@@ -89,7 +92,8 @@
   "#r=taylor-series": "20260908_테일러 급수 (이해편) — 함수를 다항식으로 바꾸는 기술, 계수는 왜 n!로 나누나.md",
   "#r=taylor-series-advanced": "20260908_테일러 정리 (확장편) — 잉여항 네 형태, 수렴반경의 진짜 이유, 그리고 급수가 함수를 배신할 때.md",
   "#r=discontinuous-derivative": "20260907_도함수가 불연속인 함수 (이해편) — 미분가능한데 도함수는 왜 끊기나.md",
-  "#r=discontinuous-derivative-advanced": "20260907_도함수의 불연속 (확장편) — 다르부 정리·베르 1류·볼테라 함수와 미적분 기본정리의 균열.md"
+  "#r=discontinuous-derivative-advanced": "20260907_도함수의 불연속 (확장편) — 다르부 정리·베르 1류·볼테라 함수와 미적분 기본정리의 균열.md",
+  "#r=jev-aside-deep": "20260922_Jev와 Aside — 글을 안 쓰는 AI와 통합을 안 쓰는 브라우저, 무엇이 다르고 무엇을 바꾸나 (DEEP).md"
  },
  "videos": {
   "youtu.be/XgWJWuz6Dmw": "20260821_제미나이_Spark(스파크)_사용법_총정리｜컴퓨터가_꺼져_있어도_일하는_AI_에이전트.md",
