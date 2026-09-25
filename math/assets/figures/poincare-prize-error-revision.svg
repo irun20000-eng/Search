@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 514" width="700" height="514" role="img" aria-label="그림 위쪽에 「오류 — 공고에서 개정판까지 · 푸앵카레」라는 표제가 있고 그 아래에 갈색 띠는 해, 푸른 막대는 달까지 아는 편지 기간, 회색 글씨는 때를 모르는 일이라는 부호표가 있다. 가로축은 1887년부터 1890년까지 해마다 한 칸이고, 줄이 셋 있다. 줄 이름은 왼쪽 끝에 경시 — 오스카르 2세, 편지 — 미타그레플레르와, 『악타 마테마티카』라고 적혀 있다. 첫째 줄에는 1887년 칸과 1889년 칸에 띠가 하나씩 있고, 그 위에 각각 1887 경시를 열다, 1889 왕의 예순 번째 생일이라고 적혀 있다. 둘째 줄에는 1887년 3월부터 1890년 7월까지 푸른 막대가 있고 그 위에 1887.3 ~ 1890.7 편지 쉰 통 — 주로 이 경시에 관해라고 적혀 있다. 막대 아래 왼쪽 끝에 회색으로 첫 편지 — 응모하겠다는 알림, 그 아래 줄 오른쪽 끝에 뒤쪽 편지들 — 그 오류를 논의한다라고 적혀 있다. 셋째 줄 머리 위에는 회색으로 실리려 할 때 편집을 맡은 프라그멘이 오류를 발견하다 — 때는 노트에 없다라고 적혀 있고, 1890년 칸에 띠가 있으며 그 아래에 1890 개정판이 나온다라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 띠는 해로만, 편지 막대는 달까지 그렸다. 둘째, 프라그멘이 오류를 발견한 때와 오류를 논의한 편지들의 자리는 노트가 적지 않고, 뒤쪽 편지들은 순서만 말한다. 셋째, 상을 받은 해는 그리지 않았고, 위키백과만 1887로 적는다. 넷째, 이 오류는 오늘날 혼돈 이론의 탄생을 표시하는 것으로 여겨진다는 출처 1번의 말이다. 다섯째, 해와 달은 노트의 출처 1번 MacTutor History of Mathematics, Henri Poincaré, 2번 Wikipedia, Henri Poincaré를 따랐다.">
+<title>오류 공고에서 개정판까지 푸앵카레</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .sm{font-size:11px;fill:#5B5245;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .band{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .band2{fill:#CEDCE6;stroke:#3A5C77;stroke-width:1;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="514"/>
+<text class="h1" x="56" y="44">오류 — 공고에서 개정판까지 · 푸앵카레</text>
+<text class="h2" x="56" y="66">갈색 띠 = 해 · 푸른 막대 = 달까지 아는 편지 기간 · 회색 글씨 = 때를 모르는 일</text>
+  <line class="lane" x1="200" y1="136" x2="640" y2="136"/>
+  <text class="grp" x="56.0" y="140" text-anchor="start">경시 — 오스카르 2세</text>
+  <line class="lane" x1="200" y1="214" x2="640" y2="214"/>
+  <text class="grp" x="56.0" y="218" text-anchor="start">편지 — 미타그레플레르와</text>
+  <line class="lane" x1="200" y1="312" x2="640" y2="312"/>
+  <text class="grp" x="56.0" y="316" text-anchor="start">『악타 마테마티카』</text>
+  <rect class="band" x="240.0" y="130" width="100.0" height="12" rx="2"/>
+  <text class="ev" x="240.0" y="122" text-anchor="start">1887 경시를 열다 [1]</text>
+  <rect class="band" x="440.0" y="130" width="100.0" height="12" rx="2"/>
+  <text class="ev" x="440.0" y="122" text-anchor="start">1889 왕의 예순 번째 생일 [1]</text>
+  <rect class="band2" x="256.7" y="208" width="341.7" height="12" rx="2"/>
+  <text class="ev" x="427.5" y="200" text-anchor="middle">1887.3 ~ 1890.7 편지 쉰 통 — 주로 이 경시에 관해 [1]</text>
+  <text class="sm" x="256.7" y="238" text-anchor="start">첫 편지 — 응모하겠다는 알림</text>
+  <text class="sm" x="598.3" y="256" text-anchor="end">뒤쪽 편지들 — 그 오류를 논의한다</text>
+  <text class="sm" x="200.0" y="298" text-anchor="start">실리려 할 때 편집을 맡은 프라그멘이 오류를 발견하다 [1] — 때는 노트에 없다</text>
+  <rect class="band" x="540.0" y="306" width="100.0" height="12" rx="2"/>
+  <text class="ev" x="640.0" y="336" text-anchor="end">1890 개정판이 나온다 [1]</text>
+  <line class="axis" x1="200" y1="372" x2="640" y2="372"/>
+  <line class="axis" x1="240.0" y1="372" x2="240.0" y2="377"/>
+  <line class="axis" x1="340.0" y1="372" x2="340.0" y2="377"/>
+  <line class="axis" x1="440.0" y1="372" x2="440.0" y2="377"/>
+  <line class="axis" x1="540.0" y1="372" x2="540.0" y2="377"/>
+  <line class="axis" x1="640.0" y1="372" x2="640.0" y2="377"/>
+  <text class="yr" x="290.0" y="390" text-anchor="middle">1887</text>
+  <text class="yr" x="390.0" y="390" text-anchor="middle">1888</text>
+  <text class="yr" x="490.0" y="390" text-anchor="middle">1889</text>
+  <text class="yr" x="590.0" y="390" text-anchor="middle">1890</text>
+<text class="warn" x="56" y="422">⚠ 띠는 해로만, 편지 막대는 달까지 그렸다.</text>
+<text class="warn" x="56" y="439">⚠ 프라그멘이 오류를 발견한 때와 오류를 논의한 편지들의 자리는 노트가 적지 않는다 — 「뒤쪽 편지들」은 순서만 말한다 [1].</text>
+<text class="warn" x="56" y="456">⚠ 상을 받은 해는 그리지 않았다 — 위키백과만 1887로 적는다 [2].</text>
+<text class="warn" x="56" y="473">⚠ 「이 오류는 오늘날 혼돈 이론의 탄생을 표시하는 것으로 여겨진다」는 [1]의 말이다.</text>
+<text class="warn" x="56" y="490">⚠ 해와 달은 노트의 출처 [1] MacTutor History of Mathematics, Henri Poincaré · [2] Wikipedia, Henri Poincaré를 따랐다.</text>
+</svg>
