@@ -1,5 +1,5 @@
 {
- "count": 30,
+ "count": 31,
  "series": [
   {
    "key": "parent",
@@ -27,6 +27,28 @@
   }
  ],
  "episodes": [
+  {
+   "folder": "부모노트_15_아침준비",
+   "series": "parent",
+   "title": "아침 준비 실랑이",
+   "angle": "재촉은 속도를 만들지 않는다",
+   "layout": "C",
+   "date": "2026-09-29",
+   "caption": "아침마다 같은 실랑이가 반복됩니다.\n\n빨리 하라는 말에는 무엇을 먼저 할지가 없습니다. 재촉을 들은 아이는 서두르다 하던 것을 놓치고 다시 처음으로 돌아갑니다. 빨라진 것은 아이가 아니라 내 말입니다.\n자리 · 전날 · 한 가지 — 매일 멈추는 한 자리를 찾아 그 준비를 밤으로 옮기고, 아침에는 다음 할 것 하나만 말합니다.\n\n저장해두고 아침에 같은 말이 나오려 할 때 다시 꺼내 보세요.\n\n#부모노트 #아침준비 #등교준비 #생활습관 #육아",
+   "images": [
+    "parent15_01.webp",
+    "parent15_02.webp",
+    "parent15_03.webp",
+    "parent15_04.webp",
+    "parent15_05.webp",
+    "parent15_06.webp",
+    "parent15_07.webp",
+    "parent15_08.webp",
+    "parent15_09.webp",
+    "parent15_10.webp"
+   ],
+   "study": null
+  },
   {
    "folder": "부모노트_14_숙제봐주기",
    "series": "parent",
