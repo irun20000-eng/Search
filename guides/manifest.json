@@ -2,6 +2,59 @@
   "generated": "2026-08-08",
   "guides": [
     {
+      "slug": "aside-work-integration",
+      "title": "Aside 업무에 붙이기 — 활용 예시부터 2주 실천 과제까지",
+      "date": "2026-09-29",
+      "level": "중급",
+      "minutes": 90,
+      "tags": [
+        "Aside",
+        "AI브라우저",
+        "AI에이전트",
+        "업무자동화",
+        "루틴",
+        "메모리",
+        "업무효율",
+        "실천과제",
+        "BYOK",
+        "CLI"
+      ],
+      "summary": "설치를 끝낸 사람이 Aside를 실제 업무에 붙이는 단계를 다룬다. 직무별 활용 지도를 펼친 뒤 붙일 일 고르기·읽기로 첫 성과·메모리 길들이기·루틴 예약·브라우저 밖에서 부르기·비용 0으로 고정까지 6단계로 간다. 시간이 줄어드는 자리를 세 곳으로 갈라 계산하고 본전이 2개월 차에 넘는다는 것까지 숫자로 보인 뒤, 하루 10분짜리 2주 실천 과제로 닫는다.",
+      "videos": [
+        {
+          "id": "lKvvVOFa6M0",
+          "title": "AI 브라우저한테 제 앱을 쓰게 했습니다 | 메타 시니어 엔지니어 Aside 실전 활용",
+          "channel": "실밸개발자",
+          "duration": "PT28M"
+        },
+        {
+          "id": "9uU4K1p8_UY",
+          "title": "크롬 20년 쓰고 갈아탔습니다｜어사이드(Aside) AI 브라우저 실사용",
+          "channel": "쫑대표의 딸깍일기",
+          "duration": "PT15M11S"
+        },
+        {
+          "id": "wFjhYpGZDT8",
+          "title": "API 없는 사내 시스템도 AI 자동화 가능할까? | Aside 브라우저가 의미 있는 이유",
+          "channel": "직장인 GPT 멘토",
+          "duration": "PT9M38S"
+        },
+        {
+          "id": "OXg-0BXf_Yk",
+          "title": "AI 브라우저 다 써봤는데 결국 여기로 갈아탔습니다 | Aside Browser 개발자라면 꼭 쓰세요",
+          "channel": "개발동생",
+          "duration": "PT14M27S"
+        },
+        {
+          "id": "LInY2HD_ASs",
+          "title": "AI 월세 그만! 기존에 쓰던 AI 구독으로 모두 사용 가능한 AI 브라우저 Aside",
+          "channel": "시리얼 Sireal",
+          "duration": "PT14M14S"
+        }
+      ],
+      "path": "aside-work-integration/guide.md"
+    },
+    {
       "slug": "aside-jev-start",
       "title": "Aside와 Jev 시작하기 — 설치부터 첫 판정까지",
       "date": "2026-09-22",
