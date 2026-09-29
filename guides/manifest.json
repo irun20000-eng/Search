@@ -25,31 +25,36 @@
           "id": "lKvvVOFa6M0",
           "title": "AI 브라우저한테 제 앱을 쓰게 했습니다 | 메타 시니어 엔지니어 Aside 실전 활용",
           "channel": "실밸개발자",
-          "duration": "PT28M"
+          "duration": "PT28M",
+          "published": "2026-09-17"
         },
         {
           "id": "9uU4K1p8_UY",
           "title": "크롬 20년 쓰고 갈아탔습니다｜어사이드(Aside) AI 브라우저 실사용",
           "channel": "쫑대표의 딸깍일기",
-          "duration": "PT15M11S"
+          "duration": "PT15M11S",
+          "published": "2026-09-22"
         },
         {
           "id": "wFjhYpGZDT8",
           "title": "API 없는 사내 시스템도 AI 자동화 가능할까? | Aside 브라우저가 의미 있는 이유",
           "channel": "직장인 GPT 멘토",
-          "duration": "PT9M38S"
+          "duration": "PT9M38S",
+          "published": "2026-09-12"
         },
         {
           "id": "OXg-0BXf_Yk",
           "title": "AI 브라우저 다 써봤는데 결국 여기로 갈아탔습니다 | Aside Browser 개발자라면 꼭 쓰세요",
           "channel": "개발동생",
-          "duration": "PT14M27S"
+          "duration": "PT14M27S",
+          "published": "2026-08-15"
         },
         {
           "id": "LInY2HD_ASs",
           "title": "AI 월세 그만! 기존에 쓰던 AI 구독으로 모두 사용 가능한 AI 브라우저 Aside",
           "channel": "시리얼 Sireal",
-          "duration": "PT14M14S"
+          "duration": "PT14M14S",
+          "published": "2026-08-28"
         }
       ],
       "path": "aside-work-integration/guide.md"
@@ -77,25 +82,29 @@
           "id": "Q-f0dQ764so",
           "title": "Introducing Aside",
           "channel": "Aside",
-          "duration": "PT1M28S"
+          "duration": "PT1M28S",
+          "published": "2026-06-23"
         },
         {
           "id": "2NNAF2VZ_6U",
           "title": "AI 브라우저 Aside 실제 사용법 공개",
           "channel": "AI 겸임교수 이종범",
-          "duration": "PT15M31S"
+          "duration": "PT15M31S",
+          "published": "2026-09-20"
         },
         {
           "id": "JMJ2DDsXsfI",
           "title": "Aside AI Browser, Real Demo and Source-Grounded Breakdown",
           "channel": "TechWealth Hub",
-          "duration": "PT6M31S"
+          "duration": "PT6M31S",
+          "published": "2026-06-24"
         },
         {
           "id": "W_uuqrlIlJk",
           "title": "LE TUEUR DE DIA : Aside Browser, le premier \"vrai\" AI Browser ?",
           "channel": "Melvynx",
-          "duration": "PT17M21S"
+          "duration": "PT17M21S",
+          "published": "2026-06-30"
         }
       ],
       "path": "aside-jev-start/guide.md"
