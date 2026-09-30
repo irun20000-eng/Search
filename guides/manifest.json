@@ -2,6 +2,64 @@
   "generated": "2026-08-08",
   "guides": [
     {
+      "slug": "aside-claude-code",
+      "title": "Aside를 Claude Code에 붙이기 — CLI·MCP 등록부터 스킬로 굳히기까지",
+      "date": "2026-09-30",
+      "level": "중급",
+      "minutes": 60,
+      "tags": [
+        "Aside",
+        "클로드코드",
+        "ClaudeCode",
+        "MCP",
+        "CLI",
+        "AI브라우저",
+        "AI에이전트",
+        "스킬",
+        "브라우저자동화",
+        "개발워크플로"
+      ],
+      "summary": "Claude Code가 Aside를 도구로 부리게 만드는 터미널 쪽 가이드. Aside CLI를 깔고 aside mcp 를 Claude Code에 MCP 서버로 등록한 뒤, exec(에이전트 판단)와 repl(결정론적 단계)을 가르고, CI 로그처럼 로그인 뒤에 있는 증거를 가져오는 첫 과제를 돌린다. 스킬로 굳히고 .mcp.json 으로 팀과 나누는 법, --scope 를 -- 앞에 둬야 하는 플래그 순서와 종료 코드 0이 성공을 뜻하지 않을 수 있다는 함정까지 다룬다.",
+      "videos": [
+        {
+          "id": "OXg-0BXf_Yk",
+          "title": "AI 브라우저 다 써봤는데 결국 여기로 갈아탔습니다 | Aside Browser 개발자라면 꼭 쓰세요",
+          "channel": "개발동생",
+          "duration": "PT14M27S",
+          "published": "2026-08-15"
+        },
+        {
+          "id": "KMHQfS-qiyQ",
+          "title": "미친 에이전트 브라우저 Aside (코덱스, 클로드 연동 가능)",
+          "channel": "로치의개발일기",
+          "duration": "PT5M10S",
+          "published": "2026-06-24"
+        },
+        {
+          "id": "5EZx-4Op9Po",
+          "title": "Aside 핵심 가이드: 한국인 3명이 만든 AI 브라우저, 직접 써보고 솔직하게 정리했습니다",
+          "channel": "Jay Choi | 인디해커 라이프",
+          "duration": "PT12M30S",
+          "published": "2026-08-08"
+        },
+        {
+          "id": "BIX4ZAvt2us",
+          "title": "I Tested All 3 Browser Tools for Claude Code Here's the Best One",
+          "channel": "AyyazTech",
+          "duration": "PT23M56S",
+          "published": "2026-02-17"
+        },
+        {
+          "id": "3wArVlPvqAk",
+          "title": "Master Claude Code MCP in 13 minutes (Beginner’s Guide)",
+          "channel": "Michele Torti",
+          "duration": "PT13M26S",
+          "published": "2026-04-08"
+        }
+      ],
+      "path": "aside-claude-code/guide.md"
+    },
+    {
       "slug": "aside-work-integration",
       "title": "Aside 업무에 붙이기 — 활용 예시부터 2주 실천 과제까지",
       "date": "2026-09-29",
