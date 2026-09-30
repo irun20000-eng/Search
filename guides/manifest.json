@@ -19,7 +19,7 @@
         "브라우저자동화",
         "개발워크플로"
       ],
-      "summary": "Claude Code가 Aside를 도구로 부리게 만드는 터미널 쪽 가이드. 로그인한 사이트를 쓰는 것 자체는 Claude Code의 Chrome 연동으로도 되지만, 세션이 끊겼을 때 사람 손 없이 다시 여는지와 결정론적 점검을 따로 적을 수 있는지에서 갈린다는 것부터 짚는다. Aside CLI를 깔고 aside mcp 를 MCP 서버로 등록한 뒤 exec와 repl을 가르고, CI 로그처럼 로그인 뒤에 있는 증거를 파일로 남기는 첫 과제를 돌린다. 스킬로 굳히고 .mcp.json 으로 팀과 나누는 법, --scope 를 -- 앞에 둬야 하는 플래그 순서까지 다룬다.",
+      "summary": "Claude Code가 Aside를 도구로 부리게 만드는 터미널 쪽 가이드. 로그인한 사이트를 쓰는 것 자체는 Claude Code의 Chrome 연동으로도 된다는 것부터 짚고, Aside 쪽에서 확인된 차이 — 결정론적 점검을 REPL로 따로 적을 수 있고 스킬이 셸에서 CLI로 부를 수 있다는 것 — 에 기대어 간다. aside mcp 를 MCP 서버로 등록한 뒤 exec와 repl을 가르고, CI 로그처럼 로그인 뒤에 있는 증거를 파일로 남기는 첫 과제를 돌린다. 스킬로 굳히고 .mcp.json 으로 팀과 나누는 법, --scope 를 -- 앞에 둬야 하는 플래그 순서까지 다룬다.",
       "videos": [
         {
           "id": "OXg-0BXf_Yk",
