@@ -47,10 +47,10 @@ Claude Code에 브라우저를 주는 도구는 이미 여럿 있다. 구글의 
 
 **먼저 짚어 둘 것.** 이미 로그인한 사이트를 Claude Code 에서 쓰는 것 자체는 **Claude Code 의 Chrome 연동으로도 된다** [17]. Gmail·Notion 처럼 로그인해 둔 앱을 API 연결 없이 다루는 것이 공식 문서가 드는 쓰임이다 [17]. 이미 Chrome 을 쓰고 있고 로그인 화면에서 사람이 한 번 손대는 게 괜찮다면, 그쪽이 새로 깔 것이 적다.
 
-그러면 Aside 를 붙일 이유는 어디에 남나. **Claude Code 쪽에서 확인된 차이는 도구의 모양이다.**
+그러면 Aside 쪽에는 무엇이 있나. **Claude Code 쪽에서 확인되는 Aside 의 특징은 도구의 모양이다.** 다른 도구에 비슷한 경로가 있는지는 이 가이드가 비교하지 않았다 — 아래는 우열이 아니라 Aside 를 고를 때 무엇을 얻는지다.
 
 - **결정론적 점검을 따로 적을 수 있다.** Aside 는 같은 브라우저를 CLI·MCP·REPL 세 경로로 내놓고 [2], 그중 REPL 은 매번 같은 순서로 같은 것을 보는 결정론적 단계에 쓰라고 공식 도움말이 적는다 [1]. 에이전트에게 맡기는 길과 순서를 내가 적는 길을 한 도구 안에서 고를 수 있다는 뜻이다 — 3단계에서 다룬다.
-- **셸과 스킬에서 부를 수 있다.** MCP 뿐 아니라 CLI 가 따로 있어, 스킬이나 스크립트가 셸에서 바로 부를 수 있다 [2][6]. 5단계에서 다룬다.
+- **셸과 스킬에서 부를 수 있다.** MCP 뿐 아니라 CLI 가 따로 있고 [2], 그 CLI 를 구동하는 커뮤니티 스킬도 공개돼 있다 [6]. 5단계에서 다룬다.
 
 **로그인 화면을 만났을 때의 동작은 아직 차별점으로 세우지 않는다.** 국내 비교 정리에 따르면 Aside 는 로그인 화면에 닿으면 대상 주소와 접근 정책을 확인한 뒤 자동 입력하고, 저장된 비밀번호 자체는 에이전트에게 건네지 않는다 [10]. 그러나 이것은 Aside 가 **자기 에이전트**를 돌릴 때의 설명이고, MCP 로 부를 때도 같은지는 확인하지 못했다. 보안문자나 2단계 인증이 낀 사이트에서는 어떤지도 모른다 — 같은 국내 설치기 원문에는 **카카오 로그인의 보안문자와 세션 끊김 때문에 자동화가 실패한 기록**이 있다 [7]. 그래서 이 가이드는 세션이 끊기면 사람이 다시 여는 것을 기본 처방으로 둔다(4단계 막히면).
 
@@ -180,7 +180,7 @@ Claude Code 세션에서 이렇게 시킨다.
 
 Aside 쪽 커뮤니티에서도 같은 방식의 스킬 디렉터리를 만들어 `~/.claude/skills/` 에 복사해 쓰는 예가 공개돼 있다 [6]. 남이 만든 스킬을 가져다 쓸 때는 **SKILL.md 를 먼저 끝까지 읽는다** — 그 파일이 곧 Claude Code에게 줄 지시다.
 
-**스킬이 셸에서 CLI 를 부르는 경우의 함정.** 그 커뮤니티 스킬처럼 MCP 가 아니라 **셸에서 CLI `aside exec` 를 부르는** 구성이라면 하나를 알아 둔다. 그 저장소의 기록에 따르면 비대화형으로 도는 `aside exec` 는 **권한 확인이나 질문에 답할 수 없어**, 1.26.831 버전까지는 이런 상황에서 끝없이 기다렸고 1.26.902 버전부터는 **호출을 거부하고 종료 코드 0 으로 넘어간다** [6]. 공식 문서로 교차 확인하지 못한 한 자료의 기록이고, **MCP 도구로 부를 때도 같은지는 확인하지 못했다.** 그래도 CLI 경로라면 뜻이 크다 — **종료 코드 0 이 성공을 뜻하지 않는다.** 스킬에 「결과 파일에 기대한 값이 들어 있는지 확인하라」를 한 줄 넣어 둔다.
+**스킬이 셸에서 CLI 를 부르는 경우의 함정.** 그 커뮤니티 스킬처럼 MCP 가 아니라 **CLI 를 구동하는** 구성이라면 [6] 하나를 알아 둔다. 그 저장소의 기록에 따르면 비대화형으로 도는 `aside exec` 는 **권한 확인이나 질문에 답할 수 없어**, 1.26.831 버전까지는 이런 상황에서 끝없이 기다렸고 1.26.902 버전부터는 **호출을 거부하고 종료 코드 0 으로 넘어간다** [6]. 공식 문서로 교차 확인하지 못한 한 자료의 기록이고, **MCP 도구로 부를 때도 같은지는 확인하지 못했다.** 그래도 CLI 경로라면 뜻이 크다 — **종료 코드 0 이 성공을 뜻하지 않는다.** 스킬에 「결과 파일에 기대한 값이 들어 있는지 확인하라」를 한 줄 넣어 둔다.
 
 **화면에서 확인할 것**: 스킬을 만든 그 세션에서 `/` 를 쳤을 때 내가 만든 스킬 이름이 목록에 나온다.
 
@@ -270,7 +270,7 @@ Claude Code 쪽에서 쓸모가 큰 순서로 골랐다. 전부 `get_video_detai
 - [3] Claude Code 공식 문서 "Connect Claude Code to tools via MCP" — `claude mcp add` 가 기본으로 local 범위(나에게만, 현재 프로젝트에서만)에 등록한다는 것, `--scope user` 와 `--scope project` 의 뜻, 범위는 등록할 때 고정되어 바꾸려면 지우고 다시 추가해야 한다는 것, 로컬 stdio 서버는 브라우저·파일시스템처럼 내 기기의 자원이 필요한 도구에 쓰며 전송 플래그가 없고 `--` 뒤의 모든 것이 실행할 명령이라는 것, project 범위의 `.mcp.json` 을 커밋하면 팀원이 승인 창을 받은 뒤 연결된다는 것 — https://code.claude.com/docs/en/mcp
 - [4] Claude Code 공식 문서 "Connect to MCP servers" — `claude mcp list` 로 등록된 서버를 보고 `claude mcp remove` 로 지운다는 것, 세션 안에서 `/mcp` 로 MCP 패널을 연다는 것 — https://code.claude.com/docs/en/mcp-quickstart
 - [5] Claude Code 공식 문서 "Extend Claude with skills" — 스킬은 SKILL.md 가 중심인 디렉터리이고 디렉터리 이름(또는 앞머리의 name)이 칠 명령이 된다는 것, description 이 Claude 가 스킬을 자동으로 꺼낼지 판단하는 근거라는 것, 개인 스킬은 `~/.claude/skills/` 프로젝트 스킬은 `.claude/skills/` 라는 것, 기존 skills 디렉터리 안의 변경은 재시작 없이 반영되지만 세션 시작 때 없던 최상위 디렉터리는 `/reload-skills` 가 필요하다는 것 — https://code.claude.com/docs/en/skills
-- [6] GitHub lidge-jun/aside-skill — Aside 는 브라우저 에이전트를 내장한 크로미엄 포크이고 그 CLI 는 실제 로그인된 프로필로 에이전트를 돌린다는 것, 설치 명령 `curl -fsSL https://releases.aside.com/install.sh | bash`, 비대화형 exec 는 권한 확인이나 질문에 답할 수 없어 1.26.831 까지는 끝없이 기다렸고 1.26.902 부터는 호출을 거부하고 종료 코드 0 으로 넘어간다는 기록, Claude Code 에서는 스킬 디렉터리를 `~/.claude/skills/` 에 복사해 쓰고 디렉터리 이름이 명령이 된다는 것. ⚠️ **커뮤니티 저장소이며 공식 문서가 아니다** — https://github.com/lidge-jun/aside-skill
+- [6] GitHub lidge-jun/aside-skill — 저장소 설명이 스스로 밝히는 성격은 **Aside 브라우저 CLI 를 멈춤 없이 구동하기 위한 스킬**이며 SKILL.md 에 멈춤 규칙과 exec 계약을 담는다는 것, Aside 는 브라우저 에이전트를 내장한 크로미엄 포크이고 그 CLI 는 실제 로그인된 프로필로 에이전트를 돌린다는 것, 설치 명령 `curl -fsSL https://releases.aside.com/install.sh | bash`, 비대화형 exec 는 권한 확인이나 질문에 답할 수 없어 1.26.831 까지는 끝없이 기다렸고 1.26.902 부터는 호출을 거부하고 종료 코드 0 으로 넘어간다는 기록, Claude Code 에서는 스킬 디렉터리를 `~/.claude/skills/` 에 복사해 쓰고 디렉터리 이름이 명령이 된다는 것. ⚠️ **커뮤니티 저장소이며 공식 문서가 아니다** — https://github.com/lidge-jun/aside-skill
 - [7] 브런치 sukistory, "Aside 브라우저 설치, CLI 연동, 사용법, 예시" — 터미널 한 줄 설치와 앱 설정의 Developers 메뉴 버튼 설치, Developers 메뉴에서 CLI 설치 후 스킬 추가 대상으로 Claude Code 를 고르고 Aside MCP 서버 토글을 켜는 순서, mcpServers 안에 aside 를 command aside 와 args mcp 로 넣는 설정 예, `claude mcp add aside -- ~/.local/bin/aside mcp` 예시, `aside mcp` 를 실행하면 exec 와 repl 두 도구를 가진 MCP 서버가 되어 Claude Code 같은 코딩 에이전트에 브라우저를 빌려준다는 설명, 그리고 **카카오 로그인 화면의 보안문자와 세션 끊김 때문에 게시 자동화가 실패한 기록** — https://brunch.co.kr/@sukistory/133
 - [8] 메일리 isaac.perform, "클로드코드 + Aside AI 브라우저. 저도 한번 써봤습니다" — 기존 자동화 도구는 로그인이 안 된 빈 브라우저에서 시작해 회원 페이지 앞에서 멈추고 Aside 는 매일 쓰는 로그인된 브라우저 안에 AI 를 들여놓는다는 대비, 클로드코드와 Aside CLI 를 연결해야 진정한 자동화가 된다는 결론 — https://maily.so/isaac.perform/posts/vpzlnxpdrk9
 - [9] GPTERS, "클로드코드에 Aside 붙여 로그인 벽 뒤 커뮤니티 2,428건" — 사람들이 진짜 이야기를 하는 곳이 페이스북 그룹·레딧·대학 커뮤니티처럼 로그인 벽 뒤에 있었다는 문제 설정, Aside 를 클로드코드에 붙여 2,428건의 커뮤니티 목소리와 1,436명의 서로 다른 사람 데이터를 모았다는 결과, 클로드코드가 Aside 를 인턴처럼 부린다는 표현, 준비물(macOS·Aside 앱·클로드코드·로그인해 둘 계정·결과를 쌓을 Git 저장소) — https://www.gpters.org/ax-lab/post/keulrodeukodeue-aside-butyeo-rogeuin-byeog-dwi-keomyuniti-2-428geon-gUpseP7oaC4Oena
