@@ -89,6 +89,9 @@ python3 tools/verify_reports_meta.py      # 보고서 manifest ↔ report.md 대
                                           #     sources 표기 형태 · 출처의 국내/해외 갈래 ·
                                           #     출처 항목의 실재(URL 없이 뭉뚱그린 줄도 한 항목으로 센다)
 python3 tools/verify_builders.py          # ★ 커밋 직전 마지막 — OUTPUTS 7종이 지금 소스의 고정점인가
+python3 tools/run_gates_local.py          # 서가 게이트 전부를 로컬로 — 목록은 gates.yml 에서 읽는다
+                                          #   렌더 봇 커밋 뒤 최종 head 엔 PR 게이트가 안 돈다([skip ci]·승인 대기)
+                                          #   루틴은 dispatch 가 403 이라 이것으로 대신한다 · 도해는 러너가 정본
                                           #   7종 = concept·videos·reports·math manifest + link-index + backlog + math/ROADMAP
                                           #   ⚠ **읽기 전용이 아니다** — 빌더 6종을 제자리에서 실제로 돌리고
                                           #     워킹트리는 원래 바이트로 되돌린다(--write 면 새것을 남긴다).

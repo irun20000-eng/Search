@@ -176,15 +176,23 @@ take.sub 113자로 `card sumR +13` 넘침이 나 한 사이클을 썼다).
    렌더 봇의 커밋은 `[skip ci]` 이거나(카드뉴스) 봇이 푸시한 것이라 PR 게이트가
    `action_required`(승인 대기)로 멈춘다(개념 한 장) — **어느 쪽이든 컷·manifest 가 다 붙은
    마지막 커밋에는 게이트가 저절로 돌지 않는다**(2026-10-01 #316 에서 확인).
-   그래서 루틴이 직접 돌린다:
-   - `actions_run_trigger`(run_workflow) · `workflow_id: gates.yml` · `ref: <브랜치>`
-   - 그 run 의 `head_sha` 가 브랜치 head 와 같은지, conclusion 이 success 인지 본다
-   - 로컬에서도 `tools/verify_concept.py` · `tools/verify_builders.py` 를 돌린다
-   (`[skip ci]` 를 떼는 것은 처방이 아니다 — 떼도 봇 푸시라 승인 대기로 멈춘다.)
+   그래서 루틴이 **최종 head 를 pull 한 뒤 로컬에서** 같은 목록을 돌린다:
+   ```
+   git pull origin <브랜치> && python3 tools/run_gates_local.py
+   ```
+   목록은 `gates.yml` 에서 읽으므로 손으로 적은 목록과 어긋날 일이 없다. `[X]` 가 하나라도
+   있으면 머지하지 않는다. 도해(verify_figures)는 러너가 정본이라 `math/` 를 안 건드린
+   브랜치에서는 「참고」로만 찍힌다. **머지 뒤 main push 의 서가 게이트(러너)가 success 인지**를
+   6번에서 함께 본다 — 그것이 최종 head 의 러너 확인이다.
+   - ✗ `workflow_dispatch` 로 gates.yml 을 돌리는 길은 **막혀 있다** — 루틴의 GitHub 통합이
+     `403 Resource not accessible by integration` 을 받는다(2026-10-01 시험).
+   - ✗ `[skip ci]` 를 떼는 것도 처방이 아니다 — 떼도 봇 푸시라 승인 대기로 멈춘다.
 6. **라이브에서 확인한다.** main 반영만으로는 부족하다. Pages 배포를 기다렸다가
    `https://irun20000-eng.github.io/Search/cardnews/manifest.json` 과
    `.../concept/manifest.json` 을 실제로 받아 이번 편이 들어 있는지 본다.
    **"머지했다"가 아니라 "라이브에 떴다"까지가 완료 1건이다**(CLAUDE.md 절대 규칙).
+   함께 **머지 SHA 에서 `서가 게이트`(main push)가 success 인지** 본다 — 최종 트리의 러너 확인은
+   이것뿐이다(5번). 실패하면 무엇이 깨졌는지 보고 바로 고치거나 되돌린다.
 
    > ⚠️ **먼저 `curl` 로 받아 본다. 막힐 때가 있고 안 막힐 때가 있다.**
    > 2026-09-15 에는 컨테이너 egress 정책이 `irun20000-eng.github.io` 를 거부했고
