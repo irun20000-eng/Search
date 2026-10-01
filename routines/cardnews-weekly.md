@@ -72,6 +72,11 @@
 주제 리서치와 같다 — 수집(국내+해외) → fact-ledger → 합성 → **측정 게이트** → 검수.
 다른 것은 눈금뿐이다(카드 10장의 범위라 리서치 이해편보다 짧다).
 
+> **국내 출처 요건은 「네이버 MCP」가 아니라 「국내 출처 2건 이상, 본문을 열어 확인」이다.**
+> PlayMCP 의 NaverSearch 가 세션에 안 올라올 때가 있다(2026-10-01). 그때는 웹 검색으로
+> 국내 페이지를 찾아 Firecrawl 등으로 **본문을 직접 받아** 읽는다 — 스니펫만으로 쓰지 않는다.
+> 어느 경로로 확인했는지는 검증 메모에 적는다.
+
 ### 대상인가 — 셋 다 맞아야 한다
 1. **부모 노트가 아니다.** 부모 노트는 만들지 않는다(경험 기반 조언·심리 연구 재현성).
 2. **검증 가능한 개념 핵이 있다.** 명명된 정리·문서로 확인되는 역사·직접 검산 가능한 산술.
@@ -97,9 +102,16 @@
 
 ### 게이트 — 판단이 아니라 측정
 ```
-python tools/verify_concept.py --vault <학습자료 폴더>
+python tools/verify_concept.py concept/notes/<슬러그>.md
+python studio/concept_sheet.py check <슬러그>      # 렌더 없이 — 분량 경고 0 이 될 때까지
 ```
 하나라도 미달이면 **PR 금지**. 하한은 기존 5편 실측 최저값이다.
+(`--vault` 는 볼트가 정본이던 2026-08-22 이전 경로다. 지금 정본은 리포다.)
+
+`concept_sheet.py check` 의 **분량 경고**는 한 줄 정리(take)·출처 줄이 러너에서 넘침 없이
+그려진 스펙들의 관측 최대를 넘었다는 뜻이다. 실패는 아니지만 **줄여서 0 으로 만들고 push**
+한다 — 루틴은 로컬 렌더를 못 하므로 넘침을 알려면 러너 왕복 한 번이 든다(2026-10-01 에
+take.sub 113자로 `card sumR +13` 넘침이 나 한 사이클을 썼다).
 
 | 항목 | 하한 |
 |---|---|
@@ -145,22 +157,50 @@ python tools/verify_concept.py --vault <학습자료 폴더>
    `git ls-tree origin/<브랜치> -- cardnews/assets` 로 컷 10장이 **실제로 있는지** 본다.
 2. **컷을 눈으로 본다.** 자동검사는 규격·넘침·안전여백만 본다 — 지저분한 줄바꿈은 못 잡는다.
    webp 10장을 모아 한 장으로 붙여 직접 확인한다(사람 대신 보는 것이니 건너뛰지 말 것).
+   컷은 브랜치를 pull 하면 `cardnews/assets/<폴더>/` 에 있다. 클라우드 컨테이너에는
+   ImageMagick 이 있다 — 다섯 장씩 두 줄로 붙여 이미지로 읽는다:
+   ```
+   montage cardnews/assets/<폴더>/<prefix>{01,02,03,04,05}.webp -tile 5x1 -geometry 760x950+8+8 a.png
+   montage cardnews/assets/<폴더>/<prefix>{06,07,08,09,10}.webp -tile 5x1 -geometry 760x950+8+8 b.png
+   ```
+   특히 볼 것: **끝 낱말 하나만 둘째 줄로 떨어진 줄바꿈**(9번 실행 체크에서 잘 난다 —
+   항목당 17~18자가 한 줄에 앉는다), 두부(□) 글자, 5번 대비 칸 넘침.
+   개념 한 장도 `concept/assets/<슬러그>.png` 를 같은 방식으로 읽어 본다.
 3. **PR 이 없으면 연다. `draft` 로 열지 않는다.** draft 는 머지 버튼이 비활성이라
    사람도 루틴도 머지할 수 없다. 이것 때문에 EP3 가 한 번 더 멈췄다.
 4. **main 을 병합해 충돌을 먼저 없앤다.** 거의 항상 `link-index.json`·`backlog.json`
    둘이고 **빌드 산출물이다.** 손으로 병합하지 말고
    `git checkout origin/main -- link-index.json backlog.json` 후
    `python tools/build_link_index.py` 로 재생성한다(LESSONS 2026-08-25).
-5. **게이트를 다시 돌리고**(`tools/verify_concept.py`) **squash 머지**한다.
+5. **최종 head 에서 서가 게이트를 돌려 초록을 확인하고 squash 머지**한다.
+   렌더 봇의 커밋은 `[skip ci]` 이거나(카드뉴스) 봇이 푸시한 것이라 PR 게이트가
+   `action_required`(승인 대기)로 멈춘다(개념 한 장) — **어느 쪽이든 컷·manifest 가 다 붙은
+   마지막 커밋에는 게이트가 저절로 돌지 않는다**(2026-10-01 #316 에서 확인).
+   그래서 루틴이 **최종 head 를 pull 한 뒤 로컬에서** 같은 목록을 돌린다:
+   ```
+   git pull origin <브랜치> && python3 tools/run_gates_local.py
+   ```
+   목록은 `gates.yml` 에서 읽으므로 손으로 적은 목록과 어긋날 일이 없다. `[X]` 가 하나라도
+   있으면 머지하지 않는다. 도해(verify_figures)는 러너가 정본이라 `math/` 를 안 건드린
+   브랜치에서는 「참고」로만 찍힌다. **머지 뒤 main push 의 서가 게이트(러너)가 success 인지**를
+   6번에서 함께 본다 — 그것이 최종 head 의 러너 확인이다.
+   - ✗ `workflow_dispatch` 로 gates.yml 을 돌리는 길은 **막혀 있다** — 루틴의 GitHub 통합이
+     `403 Resource not accessible by integration` 을 받는다(2026-10-01 시험).
+   - ✗ `[skip ci]` 를 떼는 것도 처방이 아니다 — 떼도 봇 푸시라 승인 대기로 멈춘다.
 6. **라이브에서 확인한다.** main 반영만으로는 부족하다. Pages 배포를 기다렸다가
    `https://irun20000-eng.github.io/Search/cardnews/manifest.json` 과
    `.../concept/manifest.json` 을 실제로 받아 이번 편이 들어 있는지 본다.
    **"머지했다"가 아니라 "라이브에 떴다"까지가 완료 1건이다**(CLAUDE.md 절대 규칙).
+   함께 **머지 SHA 에서 `서가 게이트`(main push)가 success 인지** 본다 — 최종 트리의 러너 확인은
+   이것뿐이다(5번). 실패하면 무엇이 깨졌는지 보고 바로 고치거나 되돌린다.
 
-   > ⚠️ **클라우드 세션에서는 이 받아 보기가 막힌다**(2026-09-15 확인). 예약 루틴이 도는
-   > 컨테이너의 egress 정책이 `irun20000-eng.github.io` 를 거부한다 — `curl` 은
-   > `connect_rejected`, `WebFetch` 는 `EGRESS_BLOCKED` 로 떨어진다. 우회하지 말 것.
-   > **대신 이 셋을 확인하고, 「라이브 URL 은 받아 보지 못했다」를 보고에 적는다:**
+   > ⚠️ **먼저 `curl` 로 받아 본다. 막힐 때가 있고 안 막힐 때가 있다.**
+   > 2026-09-15 에는 컨테이너 egress 정책이 `irun20000-eng.github.io` 를 거부했고
+   > (`curl` 은 `connect_rejected`, `WebFetch` 는 `EGRESS_BLOCKED`), 2026-10-01 에는 같은
+   > 클라우드 루틴에서 `curl` 이 200 으로 받아졌다. 환경 설정에 따라 다르므로 **막혔다고
+   > 가정하고 건너뛰지 말 것** — 그러면 받을 수 있었는데도 약한 증거로 보고하게 된다.
+   > 받을 때는 캐시를 피하려고 `?cb=$(date +%s)` 를 붙인다. 우회(프록시 끄기 등)는 하지 않는다.
+   > **정말 막혔을 때만 이 셋을 확인하고, 「라이브 URL 은 받아 보지 못했다」를 보고에 적는다:**
    > ① `pages build and deployment` 워크플로가 **머지 커밋 SHA 에서** success 인가,
    > ② `cardnews-sync` 가 같은 SHA 에서 success 인가,
    > ③ main 의 `cardnews/manifest.json` 에 이번 편이 있고 컷 10장이 실제로 붙어 있는가.
