@@ -581,11 +581,11 @@ frontmatter 제목에는 1874 도 바이어슈트라스도 없고 검색 요약�
 (`century-19c-two-tracks-meet-1872.svg`)는 본문을 따라 두 점을 다 찍었다. **할 일: [8] 원문에서
 그 해를 확인하고, 없으면 본문과 도해에서 1874 점을 걷는다.**
 
-**~~열린 것~~ 닫힘 — 라그랑주의 「강의 의무가 없다는 조항」은 파리 계약이다 (2026-09-29 열림 · 2026-10-01 닫힘).**
+**~~열린 것~~ → 닫혔다 — 라그랑주의 「강의 의무가 없다는 조항」은 파리 계약이다 (2026-09-29 열림 · 2026-10-01 닫힘).**
 `person-lagrange` §4(1787 파리 계약)와 §7(「베를린 시절 계약」)이 어긋나 있었다. 2026-10-01 Firecrawl 로
 [1] MacTutor 라그랑주 원문을 열어 확인했다 — 「The offer which was most attractive to Lagrange, however, came not
-from Italy but **from Paris** and included a clause which meant that Lagrange had no teaching. On 18 May 1787 he left
-Berlin …」. §7 을 「1787년 파리의 제안에 … 조항이 들어 있었던 것이[1]」로 고쳤고, 도해 라벨에
+from Italy but from Paris and included a clause which meant that Lagrange had no teaching. On 18 May 1787 he left
+Berlin …」. §7 을 「1787년 파리로 옮길 때의 계약에 … 조항이 들어 있었던 것이[1]」로 고쳤고, 도해 라벨에
 「1787.5.18 파리로 — 계약에 강의 의무 없음 [1]」을 되살렸다(설명 네 면 함께).
 
 ### 2-3. frontmatter 상호참조 단방향 67건 — **한 방향은 게이트가 됐다** (2026-09-04)
