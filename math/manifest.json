@@ -9395,7 +9395,8 @@
     "concept-analysis-rigor"
    ],
    "기여인물": [
-    "person-euler"
+    "person-euler",
+    "person-abel"
    ],
    "이미지": [
     {
@@ -10998,6 +10999,111 @@
    ],
    "자수": 10930,
    "시각화": 5
+  },
+  {
+   "유형": "인물",
+   "제목": "닐스 헨리크 아벨",
+   "슬러그": "person-abel",
+   "날짜": "2026-10-01",
+   "별칭": [
+    "아벨",
+    "Abel",
+    "Niels Henrik Abel",
+    "닐스헨리크아벨",
+    "닐스 헨릭 아벨"
+   ],
+   "볼트파일명": "인물_닐스 헨리크 아벨",
+   "세기": [
+    19
+   ],
+   "분야": [
+    "대수학",
+    "해석학"
+   ],
+   "교과": [
+    "공통수학1"
+   ],
+   "난이도": "표준",
+   "요약": "5차방정식에 근의 공식이 없다는 것을 처음 완전히 증명했다. 스물여섯에 죽었고, 그를 알아보는 소식들은 거의 다 그가 죽은 뒤에 도착했다.",
+   "태그": [
+    "수학사",
+    "아벨",
+    "5차방정식",
+    "근의 공식",
+    "타원함수",
+    "크렐레",
+    "아벨상",
+    "19세기"
+   ],
+   "생몰": {
+    "출생": 1802,
+    "사망": 1829,
+    "출생지": "노르웨이"
+   },
+   "기여개념": [
+    "concept-series-advanced"
+   ],
+   "관련인물": [
+    "person-cauchy",
+    "person-gauss",
+    "person-weierstrass"
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor, Niels Henrik Abel — 1802년 8월 5일에 나서 1829년 4월 6일 프롤란에서 죽었다는 것, 가난이 삶을 지배했다는 것, 1817년 홀름보에가 새 수학 교사로 오고 1820년 아버지가 죽은 뒤 홀름보에가 동료들에게 돈을 모아 대학에 보냈다는 것, 1821년 5차방정식을 풀었다고 믿고 데겐에게 보냈으나 수치 예를 들어 보라는 요청을 받고 오류를 찾았다는 것, 1824년 불가능성을 증명해 자비로 출판하며 인쇄비를 아끼려 증명을 여섯 쪽으로 줄였다는 것(에이유브 인용), 가우스에게 보낸 소책자가 가우스 사후 뜯기지 않은 채 발견됐다는 것, 파리에서 하루 한 끼밖에 먹지 못했다는 것, 파리 논문이 1830년 코시에게서 다시 찾아져 1841년에 인쇄되고 다시 사라졌다가 1952년 피렌체에서 나왔다는 것, 크렐레가 1829년 4월 8일 베를린 임용 소식을 써 보냈으나 이미 죽은 뒤였다는 것, 1830년 학사원이 야코비와 함께 대상을 주었다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Abel/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "네이버 지식백과(과학인물백과, 송성수), 닐스 헨리크 아벨 — 네드스트란 출생과 7남매 중 둘째라는 것, 홀름보에 부임을 1818년으로 적는 것, 데겐이 실례를 들 것과 타원적분을 연구할 것을 당부했다는 것, 자비 소책자를 돈을 아끼느라 축약해 받은 수학자들이 이해하지 못했다는 것, 크렐레 학술지 창간 첫해 아벨이 7편을 실었다는 것, 1829년 4월 6일 죽고 이틀 뒤 크렐레의 편지가 도착했다는 것, 1830년 코시가 집을 뒤져 논문을 찾았다는 것, 3제곱근으로 적은 편지 날짜, 2002년 아벨상 제정",
+     "URL": "https://terms.naver.com/%EA%B3%BC%ED%95%99-%EC%9D%BC%EB%B0%98/%EB%8B%90%EC%8A%A4-%ED%97%A8%EB%A6%AC%ED%81%AC-%EC%95%84%EB%B2%A8-6TI5k3Ajd0Q6BSqD5RU6SD",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "네이버 지식백과(KISTI의 과학향기 칼럼, 2007), 노벨은 노벨상, 아벨은 아벨상 — 1823년 편지 끝에 3√6064321219 를 날짜로 적었다는 것, 핀도 출생, 가우스에게 보낸 논문이 읽히지도 않은 채 쓰레기통에 버려졌다는 서술, 27세에 죽었다는 서술, 죽은 지 이틀 뒤 베를린 대학의 채용 편지가 도착했다는 것",
+     "URL": "https://terms.naver.com/%EA%B3%BC%ED%95%99-%EC%9D%BC%EB%B0%98/%EB%85%B8%EB%B2%A8%EC%9D%80-%EB%85%B8%EB%B2%A8%EC%83%81-%EC%95%84%EB%B2%A8%EC%9D%80-%EC%95%84%EB%B2%A8%EC%83%81-253Lc6v7YT3FHe24aweFNt",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(365일 수학, 대한수학회), 오차방정식의 비가해성 — 근의 공식은 계수와 사칙연산·거듭제곱근만으로 해를 나타내는 방법이라는 것, 1799년 루피니가 5차방정식에 근의 공식이 없다고 주장했고 완전한 증명은 1824년 아벨이 얻었다는 것, 공식이 없다는 것이 해가 없다는 것과 다르다는 것",
+     "URL": "https://terms.naver.com/%EC%88%98%ED%95%99/%EC%98%A4%EC%B0%A8%EB%B0%A9%EC%A0%95%EC%8B%9D%EC%9D%98-%EB%B9%84%EA%B0%80%ED%95%B4%EC%84%B1-0KcTHT3CYAnIeNqNpLIvy9",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "The Abel Prize, The Biography of Niels Henrik Abel — The great journey abroad — 1825년 9월 출발해 괴팅겐의 가우스로 먼저 가기로 한 계획을 코펜하겐에서 바꿔 베를린으로 갔다는 것, 1826년 초 크렐레 학술지 첫 호가 나왔다는 것, 첫 글이 5차방정식 불가능성 증명의 확장판이었다는 것, 1826년 7월에야 파리에 닿았다는 것, 10월 말 「par N.H. Abel, Norvegien」이라 서명해 파리 논문을 냈고 살아 있는 동안 그것을 영영 잃었다고 믿었다는 것",
+     "URL": "https://abelprize.no/page/biography-niels-henrik-abel-great-journey-abroad",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "The Abel Prize, The Biography of Niels Henrik Abel — His last years — 1827년 5월 말 귀국 때 여행이 실패로 여겨졌다는 것, 1828년 성탄 무렵 썰매로 프롤란에 가서 피를 토했다는 것, 병상에서 잃었다고 믿은 파리 논문의 요지를 두세 쪽으로 다시 썼다는 것, 4월 8일 파리와 베를린에서 그에 대한 말이 쓰였고 크렐레가 「당신은 우리 사람이고 안전하다」고 적었다는 것, 이듬해 학사원 상금이 어머니에게 갔다는 것",
+     "URL": "https://abelprize.no/page/biography-niels-henrik-abel-his-last-years",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "The Abel Prize, The Biography of Niels Henrik Abel — The legacy of Abel — 1839년 홀름보에가 엮은 전집에 파리 논문이 빠졌다는 것, 1841년 학사원 학술지에 처음 인쇄됐다는 것, 1881년 쉴로브와 리의 두 권짜리 전집, 1898년 리가 아벨 기금을 모으다 1899년 죽어 중단됐다는 것, 1902년 오스카르 2세의 금메달 구상이 1905년 연합 해체로 끝났다는 것, 국제 아벨상은 탄생 200주년에야 실현됐다는 것",
+     "URL": "https://abelprize.no/page/biography-niels-henrik-abel-legacy-abel",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "The Abel Prize, About Niels Henrik Abel — 1802년 8월 5일~1829년 4월 6일, 5차방정식을 거듭제곱근으로 풀 수 없다는 첫 완전한 증명이 250년 넘게 풀리지 않은 문제였다는 것, 가난 속에서 일했고 스물여섯에 결핵으로 죽었다는 것, 에르미트의 「오백 년」 평",
+     "URL": "https://abelprize.no/page/about-niels-henrik-abel",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/person-abel/note.md",
+   "세기전체": [
+    19
+   ],
+   "자수": 7303,
+   "시각화": 4
   },
   {
    "유형": "인물",
@@ -13612,6 +13718,7 @@
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
     "episode-prague-1834",
+    "person-abel",
     "person-bolzano",
     "person-cantor",
     "person-cauchy",
@@ -13682,6 +13789,7 @@
     "episode-lebesgue-coins",
     "episode-prague-1834",
     "episode-priority-dispute",
+    "person-abel",
     "person-archimedes",
     "person-barrow",
     "person-bayes",
@@ -13770,6 +13878,7 @@
     "concept-logarithm",
     "concept-logarithm-advanced",
     "episode-namdaemun-1947",
+    "person-abel",
     "person-al-khwarizmi",
     "person-cardano",
     "person-cauchy",
@@ -14064,6 +14173,7 @@
     "concept-complex-number-advanced",
     "concept-function",
     "concept-logarithm",
+    "person-abel",
     "person-al-khwarizmi",
     "person-cardano",
     "person-diophantus",
@@ -14213,6 +14323,7 @@
     "episode-priority-dispute"
    ],
    "인물": [
+    "person-abel",
     "person-al-khwarizmi",
     "person-archimedes",
     "person-barrow",
@@ -14313,6 +14424,7 @@
     "episode-pascal-fermat-letters",
     "episode-prague-1834",
     "episode-priority-dispute",
+    "person-abel",
     "person-al-khwarizmi",
     "person-archimedes",
     "person-barrow",
@@ -14614,6 +14726,7 @@
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
     "episode-prague-1834",
+    "person-abel",
     "person-dirichlet",
     "person-fourier",
     "person-frege",
@@ -15251,7 +15364,8 @@
     "concept-series-advanced"
    ],
    "아벨": [
-    "concept-series-advanced"
+    "concept-series-advanced",
+    "person-abel"
    ],
    "제타함수": [
     "concept-series-advanced",
@@ -15348,6 +15462,21 @@
    ],
    "연속": [
     "episode-prague-1834"
+   ],
+   "5차방정식": [
+    "person-abel"
+   ],
+   "근의 공식": [
+    "person-abel"
+   ],
+   "타원함수": [
+    "person-abel"
+   ],
+   "크렐레": [
+    "person-abel"
+   ],
+   "아벨상": [
+    "person-abel"
    ],
    "알자브르": [
     "person-al-khwarizmi"
@@ -15902,6 +16031,7 @@
     "concept-integration-advanced",
     "concept-series-advanced",
     "episode-prague-1834",
+    "person-abel",
     "person-bolzano",
     "person-dirichlet",
     "person-lagrange",
@@ -15926,6 +16056,7 @@
     "concept-analysis-rigor-advanced",
     "concept-differentiation-advanced",
     "concept-series-advanced",
+    "person-abel",
     "person-cantor",
     "person-heine",
     "person-klein",
@@ -15963,6 +16094,7 @@
     "concept-complex-number",
     "concept-complex-number-advanced",
     "concept-probability-advanced",
+    "person-abel",
     "person-dedekind",
     "person-dirichlet",
     "person-heine",
@@ -16255,7 +16387,7 @@
    "그란디": [
     "concept-series"
    ],
-   "아벨": [
+   "person-abel": [
     "concept-series-advanced"
    ],
    "person-godel": [
@@ -17850,6 +17982,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-barrow",
      "제목": "아이작 배로",
      "유형": "인물",
@@ -17976,6 +18114,12 @@
      "제목": "무한급수 확장편",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-dedekind",
@@ -18380,6 +18524,12 @@
      "제목": "무한급수",
      "유형": "개념",
      "경로": "짝문서"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "기여개념"
     },
     {
      "슬러그": "person-cauchy",
@@ -18986,6 +19136,12 @@
      "경로": "기여인물"
     },
     {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-cauchy",
      "제목": "오귀스탱루이 코시",
      "유형": "인물",
@@ -19034,6 +19190,12 @@
      "제목": "확률론 확장편",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
     },
     {
      "슬러그": "person-bayes",
@@ -19119,6 +19281,12 @@
      "슬러그": "episode-prague-1834",
      "제목": "1834년 프라하",
      "유형": "일화",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
      "경로": "본문"
     },
     {
@@ -19730,6 +19898,12 @@
      "경로": "관련인물"
     },
     {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "관련인물"
+    },
+    {
      "슬러그": "person-bolzano",
      "제목": "베른하르트 볼차노",
      "유형": "인물",
@@ -19784,6 +19958,12 @@
      "제목": "미분법 (확장편)",
      "유형": "개념",
      "경로": "본문"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-bolzano",
@@ -20402,6 +20582,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-de-moivre",
      "제목": "아브라암 드무아브르",
      "유형": "인물",
@@ -20586,6 +20772,12 @@
      "제목": "확률론 확장편",
      "유형": "개념",
      "경로": "기여인물"
+    },
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "관련인물"
     },
     {
      "슬러그": "person-dedekind",
@@ -21218,6 +21410,40 @@
      "경로": "본문"
     }
    ],
+   "person-abel": [
+    {
+     "슬러그": "concept-series-advanced",
+     "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    }
+   ],
+   "person-tartaglia": [
+    {
+     "슬러그": "person-abel",
+     "제목": "닐스 헨리크 아벨",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-archimedes",
+     "제목": "아르키메데스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-cardano",
+     "제목": "지롤라모 카르다노",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-euclid",
+     "제목": "유클리드",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "episode-bernoulli-tomb": [
     {
      "슬러그": "person-archimedes",
@@ -21236,26 +21462,6 @@
      "제목": "요한 베르누이",
      "유형": "인물",
      "경로": "관련일화"
-    }
-   ],
-   "person-tartaglia": [
-    {
-     "슬러그": "person-archimedes",
-     "제목": "아르키메데스",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-cardano",
-     "제목": "지롤라모 카르다노",
-     "유형": "인물",
-     "경로": "본문"
-    },
-    {
-     "슬러그": "person-euclid",
-     "제목": "유클리드",
-     "유형": "인물",
-     "경로": "본문"
     }
    ],
    "episode-namdaemun-1947": [
@@ -21689,6 +21895,14 @@
   "우선권 논쟁": "episode-priority-dispute",
   "일화_뉴턴-라이프니츠 우선권 논쟁": "episode-priority-dispute",
   "표절 시비": "episode-priority-dispute",
+  "Abel": "person-abel",
+  "Niels Henrik Abel": "person-abel",
+  "person-abel": "person-abel",
+  "닐스 헨리크 아벨": "person-abel",
+  "닐스 헨릭 아벨": "person-abel",
+  "닐스헨리크아벨": "person-abel",
+  "아벨": "person-abel",
+  "인물_닐스 헨리크 아벨": "person-abel",
   "al-Khwarizmi": "person-al-khwarizmi",
   "al-Khwārizmī": "person-al-khwarizmi",
   "person-al-khwarizmi": "person-al-khwarizmi",
