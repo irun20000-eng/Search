@@ -17,6 +17,7 @@ on:
     branches-ignore: [main]
     paths:
       - 'studio/concepts/**'
+      - 'studio/concept_sheet.py'          # 드라이버 — 2026-10-01 까지 빠져 있어 고쳐도 러너가 안 돌았다
       - 'studio/engine/build_concept_sheet.py'
       - 'studio/engine/brand_signature.py'
       - 'concept/notes/**'
