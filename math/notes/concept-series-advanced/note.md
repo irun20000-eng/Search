@@ -50,7 +50,7 @@
 
 선행개념: [concept-series, concept-integration]
 후속개념: [concept-analysis-rigor]
-기여인물: [person-euler]
+기여인물: [person-euler, person-abel]
 
 이미지:
   - 파일: assets/figures/riemann-rearrangement.svg
