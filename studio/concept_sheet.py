@@ -172,3 +172,5 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# 트리거 경로 시험(머지 금지 브랜치)
