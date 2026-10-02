@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520" role="img" aria-label="그림 위쪽에 「쥐고 있던 해법, 내놓던 책 — 타르탈리아」이라는 표제가 있고 그 아래에 갈색 점은 그가 낸 책, 칸은 해법을 쥐고 있던 동안, 푸른 점은 카르다노가 낸 책, 검은 점은 죽은 날이라는 부호표가 있다. 가로축은 1530년부터 1560년까지의 해이고, 줄이 셋 있다. 줄 이름은 왼쪽 끝에 낸 책, 쥔 해법, 카르다노라고 적혀 있다. 위 줄 낸 책에는 갈색 점이 넷 있다. 1537년 점 왼쪽 위에 두 줄로 1537 노바 시엔티아, 포술을 수학으로, 1543년 점 아래에 두 줄로 1543 유클리드 첫 이탈리아어 번역, 아르키메데스 라틴어판, 1546년 점 오른쪽 위에 두 줄로 1546 여러 질문과 발명, 해법을 스스로 공개, 1551년 점 오른쪽 아래에 두 줄로 1551 아르키메데스 이탈리아어 번역이라고 적혀 있다. 가운데 줄 쥔 해법에는 1535년 2월 13일부터 1546년 가운데까지 칸이 이어져 있고, 칸 왼쪽 위에 1535.2.13 대결에서 얻다라고 적혀 있다. 칸 안 1539년 3월 25일 자리에 세로 금이 있고 그 위에 1539.3.25 카르다노에게 시 스물다섯 줄로라고 적혀 있다. 칸 아래에는 그 금부터 1545년 가운데까지 걸친 괄호가 있고 여섯 해라고 적혀 있다. 아래 줄 카르다노에는 1545년 가운데에 푸른 점이 있고 그 오른쪽 아래에 1545 아르스 마그나, 해법이 인쇄되다라고 적혀 있다. 가로축 위 1557년 끝 자리에 검은 점이 있고 그 왼쪽 위에 1557.12.13 타르탈리아가 죽다라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 해만 아는 일은 해의 가운데에 찍었고 1535.2.13, 1539.3.25, 1557.12.13 은 날짜 자리다. 둘째, 칸은 해법을 얻은 날부터 여러 질문과 발명으로 스스로 공개한 해 1546의 가운데까지 그렸다. 셋째, 여섯 해는 노트 3절의 1539에서 1545까지이고, 괄호는 그림이 넘긴 날부터 1545년 가운데까지 그렸다. 넷째, 1543의 두 책은 같은 해라 점 하나에 적었고 아르키메데스 라틴어판과 1551 번역은 5번만 적는다. 다섯째, 나머지 해와 날짜는 4번 MacTutor, Tartaglia와 5번 Museo Galileo를, 맹세와 인쇄는 8번을 따랐다">
+<title>쥐고 있던 해법 내놓던 책 타르탈리아</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .tick{stroke:#221E18;stroke-width:1.4;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="520"/>
+<text class="h1" x="56" y="44">쥐고 있던 해법, 내놓던 책 — 타르탈리아</text>
+<text class="h2" x="56" y="66">갈색 점 = 그가 낸 책 · 칸 = 해법을 쥐고 있던 동안 · 푸른 점 = 카르다노가 낸 책 · 검은 점 = 죽은 날</text>
+<line class="lane" x1="200" y1="146" x2="640" y2="146"/>
+<text class="grp" x="56" y="150">낸 책</text>
+<line class="lane" x1="200" y1="236" x2="640" y2="236"/>
+<text class="grp" x="56" y="240">쥔 해법</text>
+<line class="lane" x1="200" y1="306" x2="640" y2="306"/>
+<text class="grp" x="56" y="310">카르다노</text>
+<circle class="mk" cx="310.0" cy="146" r="3.5"/>
+<text class="ev" x="306.0" y="120" text-anchor="end">1537 『노바 시엔티아』</text>
+<text class="ev" x="306.0" y="134" text-anchor="end">포술을 수학으로 [4][5]</text>
+<circle class="mk" cx="398.0" cy="146" r="3.5"/>
+<text class="ev" x="398.0" y="168" text-anchor="middle">1543 유클리드 첫 이탈리아어 번역</text>
+<text class="ev" x="398.0" y="182" text-anchor="middle">· 아르키메데스 라틴어판 [4][5]</text>
+<circle class="mk" cx="442.0" cy="146" r="3.5"/>
+<text class="ev" x="446.0" y="120" text-anchor="start">1546 『여러 질문과 발명』</text>
+<text class="ev" x="446.0" y="134" text-anchor="start">— 해법을 스스로 공개 [4][5]</text>
+<circle class="mk" cx="515.3" cy="146" r="3.5"/>
+<text class="ev" x="519.3" y="168" text-anchor="start">1551 아르키메데스</text>
+<text class="ev" x="519.3" y="182" text-anchor="start">이탈리아어 번역 [5]</text>
+<rect class="seg" x="275.1" y="227" width="166.9" height="18"/>
+<text class="ev" x="270.1" y="222" text-anchor="end">1535.2.13 대결에서 얻다 [4]</text>
+<line class="tick" x1="335.3" y1="227" x2="335.3" y2="245"/>
+<text class="ev" x="335.3" y="220" text-anchor="start">1539.3.25 카르다노에게 시 스물다섯 줄로 [8]</text>
+<path class="brk" d="M335.3,249 V255 H427.3 V249"/>
+<text class="ev" x="381.3" y="269" text-anchor="middle">여섯 해</text>
+<circle class="bl" cx="427.3" cy="306" r="3.5"/>
+<text class="ev" x="433.3" y="324" text-anchor="start">1545 『아르스 마그나』 — 해법이 인쇄되다 [8]</text>
+<circle class="pt" cx="609.9" cy="370" r="4"/>
+<text class="ev" x="603.9" y="358" text-anchor="end">1557.12.13 타르탈리아가 죽다 [4]</text>
+<line class="axis" x1="200" y1="370" x2="640" y2="370"/>
+<line class="axis" x1="200.0" y1="370" x2="200.0" y2="375"/>
+<text class="yr" x="200.0" y="388" text-anchor="middle">1530</text>
+<line class="axis" x1="273.3" y1="370" x2="273.3" y2="375"/>
+<line class="axis" x1="346.7" y1="370" x2="346.7" y2="375"/>
+<text class="yr" x="346.7" y="388" text-anchor="middle">1540</text>
+<line class="axis" x1="420.0" y1="370" x2="420.0" y2="375"/>
+<line class="axis" x1="493.3" y1="370" x2="493.3" y2="375"/>
+<text class="yr" x="493.3" y="388" text-anchor="middle">1550</text>
+<line class="axis" x1="566.7" y1="370" x2="566.7" y2="375"/>
+<line class="axis" x1="640.0" y1="370" x2="640.0" y2="375"/>
+<text class="yr" x="640.0" y="388" text-anchor="middle">1560</text>
+<text class="warn" x="56" y="416">⚠ 해만 아는 일은 해의 가운데에 찍었다 — 1535.2.13 · 1539.3.25 · 1557.12.13 은 날짜 자리다.</text>
+<text class="warn" x="56" y="433">⚠ 칸은 해법을 얻은 날부터 『여러 질문과 발명』으로 스스로 공개한 해(1546)의 가운데까지 그렸다 [4][5].</text>
+<text class="warn" x="56" y="450">⚠ 「여섯 해」는 노트 §3 의 1539→1545 다. 괄호는 그림이 넘긴 날부터 1545년 가운데까지 그렸다.</text>
+<text class="warn" x="56" y="467">⚠ 1543 의 두 책은 같은 해라 점 하나에 적었다 — 아르키메데스 라틴어판과 1551 번역은 [5] 만 적는다.</text>
+<text class="warn" x="56" y="484">⚠ 나머지 해와 날짜는 [4] MacTutor, Tartaglia 와 [5] Museo Galileo 를, 맹세와 인쇄는 [8] 을 따랐다.</text>
+</svg>
