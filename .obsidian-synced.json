@@ -18,7 +18,9 @@
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
   "#g=n8n-first-workflow": "20260808_n8n으로_첫_자동화_워크플로우_만들기.md",
-  "#g=aside-jev-start": "20260922_Aside와_Jev_시작하기_—_설치부터_첫_판정까지.md"
+  "#g=aside-jev-start": "20260922_Aside와_Jev_시작하기_—_설치부터_첫_판정까지.md",
+  "#g=aside-claude-code": "20260930_Aside를_Claude_Code에_붙이기_—_CLI·MCP_등록부터_스킬로_굳히기까지.md",
+  "#g=aside-work-integration": "20260929_Aside_업무에_붙이기_—_활용_예시부터_2주_실천_과제까지.md"
  },
  "reports": {
   "#r=odyssey-troy": "20260822_오디세이아와 트로이 (이해편) — 전쟁, 목마, 그리고 10년의 귀향 (DEEP).md",
@@ -202,6 +204,8 @@
   "youtu.be/e1KYWoDrmBM": "20260908_매번 시트 복사하지 마세요, 버튼 한 번이면 끝납니다 - 엑셀 템플릿 자동화.md",
   "youtu.be/Vm1Mm0ff0Qw": "20260908_이미지 AI 설치, 제 컴퓨터에서 공짜로 뽑습니다 (구독료 0원·무제한·상업이용 OK).md",
   "youtu.be/9RZS9yicqSI": "20260914_퇴근시간_2시간_당겨주는_제미나이_신기능_10가지_(무료_프롬프트_제공).md",
-  "youtu.be/vBOWc49NY1Y": "20260917_클로드_쓴다면_이_스킬_한번_써보세요._설명이_완전히_달라집니다..md"
+  "youtu.be/vBOWc49NY1Y": "20260917_클로드_쓴다면_이_스킬_한번_써보세요._설명이_완전히_달라집니다..md",
+  "youtu.be/5LFwLd7ZPvY": "20261002_Jev_미쳤다!_제브_AI_사용하여_클로드_토큰과_비용을_획기적으로_아끼는_가장_완벽한_방법_(2026_최신판).md",
+  "youtu.be/hQoRPlPGnEM": "20260928_카파시의_AI_사용법을_지금_다시_봐야_하는_이유.md"
  }
 }
