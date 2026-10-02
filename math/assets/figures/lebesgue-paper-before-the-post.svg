@@ -33,15 +33,15 @@
 <text class="ev" x="446.0" y="182" text-anchor="start">1922 『Notice』 — 90편 가까운 저작 ·</text>
 <text class="ev" x="446.0" y="199" text-anchor="start">과학아카데미 [10]</text>
 <rect class="seg" x="235.2" y="241" width="26.4" height="18"/>
-<text class="ev" x="261.6" y="272" text-anchor="end">낭시 리세 [3]</text>
 <rect class="seg2" x="261.6" y="241" width="35.2" height="18"/>
-<text class="ev" x="279.2" y="289" text-anchor="middle">렌 [5]</text>
 <rect class="seg2" x="296.8" y="241" width="35.2" height="18"/>
-<text class="ev" x="314.4" y="272" text-anchor="middle">푸아티에 [8]</text>
 <rect class="seg2" x="332.0" y="241" width="96.8" height="18"/>
-<text class="ev" x="380.4" y="289" text-anchor="middle">소르본 [8]</text>
 <rect class="seg2" x="428.8" y="241" width="181.0" height="18"/>
-<text class="ev" x="519.3" y="272" text-anchor="middle">콜레주 드 프랑스 [8]</text>
+<text class="ev" x="261.6" y="276" text-anchor="end">낭시 리세 [3]</text>
+<text class="ev" x="279.2" y="293" text-anchor="middle">렌 [5]</text>
+<text class="ev" x="314.4" y="276" text-anchor="middle">푸아티에 [8]</text>
+<text class="ev" x="380.4" y="293" text-anchor="middle">소르본 [8]</text>
+<text class="ev" x="519.3" y="276" text-anchor="middle">콜레주 드 프랑스 [8]</text>
 <circle class="pt" cx="609.8" cy="350" r="4"/>
 <text class="ev" x="603.8" y="338" text-anchor="end">1941.7.26 르베그가 죽다 [1]</text>
 <line class="axis" x1="200" y1="350" x2="640" y2="350"/>
