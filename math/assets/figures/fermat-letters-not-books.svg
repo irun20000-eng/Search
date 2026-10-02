@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 533" width="700" height="533" role="img" aria-label="그림 위쪽에 「편지로는 돌리고 책으로는 내지 않았다 — 페르마」라는 표제가 있고 그 아래에 갈색 점은 편지 · 원고, 칸은 툴루즈 의회 참사관, 푸른 점은 인쇄, 검은 점은 페르마가 죽은 날이라는 부호표가 있다. 가로축은 1625년부터 1675년까지 다섯 해마다 눈금이 있고 열 해마다 숫자가 적혀 있다. 줄이 셋 있고 줄 이름은 왼쪽 끝에 편지 · 원고, 직업, 인쇄라고 적혀 있다. 편지 · 원고 줄에는 갈색 점이 넷 있다. 1629년 점 왼쪽 위에 두 줄로 1629 아폴로니오스 평면 궤적 복원본을 건네다, 1636년 4월 26일 점 오른쪽 아래에 두 줄로 1636.4.26 메르센에게 첫 편지, 1654년 점에서 점선으로 내려간 자리 오른쪽에 두 줄로 1654 파스칼과 서신, 카르카비에게 출판 제안, 1659년 점에서 점선으로 올라간 자리 오른쪽에 두 줄로 1659 하위헌스에게 무한강하법이라고 적혀 있다. 이 줄 위에는 1643년부터 1654년까지 걸친 괄호가 있고 그 위에 1643~1654 파리와 연락이 끊김이라고 적혀 있다. 직업 줄에는 1631년 5월 14일부터 1665년 1월 12일까지 칸이 있고 칸 안에 1631.5.14 툴루즈 의회 참사관이라고 적혀 있다. 칸 아래 1652년 자리에 짧은 금이 있고 그 아래에 1652 형사법정 최고위직이라고 적혀 있다. 인쇄 줄에는 1670년 가운데에 푸른 점이 하나 있고 그 왼쪽 위에 두 줄로 1670 아들 사뮈엘이 산술에 여백 메모를 실어 펴내다라고 적혀 있다. 인쇄 줄에서 1670년 앞은 비어 있다. 가로축 위 1665년 1월 12일 자리에 검은 점이 있고 그 왼쪽 위에 1665.1.12 페르마가 죽다라고 적혀 있다. 아래에 단서가 다섯 줄 있다. 첫째, 해만 아는 일은 해의 가운데에 찍었고 1631.5.14, 1636.4.26, 1665.1.12 는 날짜 자리다. 둘째, 1643~1654 괄호는 1번이 적은 기간을 그대로 옮겼고 그 사이에도 정수론은 했다. 셋째, 편지 점은 골라 찍었고 1637~ 데카르트와의 접선 논쟁 등은 뺐다. 넷째, 생전에 남의 책에 실린 것도 있는데 에리곤 수학 강의 부록의 극대·극소 방법이고, 1번이 해를 적지 않아 그리지 않았다. 다섯째, 해와 날짜는 1번 MacTutor History of Mathematics, Pierre de Fermat 를 따랐다">
+<title>편지로는 돌리고 책으로는 내지 않았다 페르마</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="533"/>
+<text class="h1" x="56" y="44" text-anchor="start">편지로는 돌리고 책으로는 내지 않았다 — 페르마</text>
+<text class="h2" x="56" y="66" text-anchor="start">갈색 점 = 편지 · 원고 · 칸 = 툴루즈 의회 참사관 · 푸른 점 = 인쇄 · 검은 점 = 페르마가 죽은 날</text>
+<line class="lane" x1="200" y1="150" x2="640" y2="150"/>
+<text class="grp" x="56" y="154" text-anchor="start">편지 · 원고</text>
+<line class="lane" x1="200" y1="236" x2="640" y2="236"/>
+<text class="grp" x="56" y="240" text-anchor="start">직업</text>
+<line class="lane" x1="200" y1="322" x2="640" y2="322"/>
+<text class="grp" x="56" y="326" text-anchor="start">인쇄</text>
+<circle class="mk" cx="239.6" cy="150" r="3.5"/>
+<text class="ev" x="235.6" y="121" text-anchor="end">1629 아폴로니오스 『평면 궤적』</text>
+<text class="ev" x="235.6" y="138" text-anchor="end">복원본을 건네다 [1]</text>
+<circle class="mk" cx="299.6" cy="150" r="3.5"/>
+<text class="ev" x="303.6" y="172" text-anchor="start">1636.4.26 메르센에게</text>
+<text class="ev" x="303.6" y="189" text-anchor="start">첫 편지 [1]</text>
+<path class="brk" d="M358.4,136 V130 H455.2 V136"/>
+<text class="ev" x="406.8" y="124" text-anchor="middle">1643~1654 파리와 연락이 끊김 [1]</text>
+<circle class="mk" cx="459.6" cy="150" r="3.5"/>
+<line class="dash" x1="459.6" y1="155" x2="459.6" y2="185"/>
+<text class="ev" x="463.6" y="196" text-anchor="start">1654 파스칼과 서신 ·</text>
+<text class="ev" x="463.6" y="213" text-anchor="start">카르카비에게 출판 제안 [1]</text>
+<circle class="mk" cx="503.6" cy="150" r="3.5"/>
+<text class="ev" x="507.6" y="99" text-anchor="start">1659 하위헌스에게</text>
+<text class="ev" x="507.6" y="116" text-anchor="start">무한강하법 [1]</text>
+<line class="dash" x1="503.6" y1="145" x2="503.6" y2="120"/>
+<rect class="seg" x="256.0" y="227" width="296.3" height="18"/>
+<text class="ev" x="404.1" y="240" text-anchor="middle">1631.5.14 툴루즈 의회 참사관 [1]</text>
+<line class="axis" x1="442.0" y1="245" x2="442.0" y2="251"/>
+<text class="ev" x="442.0" y="264" text-anchor="middle">1652 형사법정 최고위직 [1]</text>
+<circle class="bl" cx="600.4" cy="322" r="3.5"/>
+<text class="ev" x="594.4" y="293" text-anchor="end">1670 아들 사뮈엘이 『산술』에</text>
+<text class="ev" x="594.4" y="310" text-anchor="end">여백 메모를 실어 펴내다 [1]</text>
+<circle class="pt" cx="552.3" cy="386" r="4"/>
+<text class="ev" x="546.3" y="374" text-anchor="end">1665.1.12 페르마가 죽다 [1]</text>
+<line class="axis" x1="200" y1="386" x2="640" y2="386"/>
+<line class="axis" x1="200.0" y1="386" x2="200.0" y2="391"/>
+<text class="yr" x="200.0" y="404" text-anchor="middle">1625</text>
+<line class="axis" x1="244.0" y1="386" x2="244.0" y2="391"/>
+<line class="axis" x1="288.0" y1="386" x2="288.0" y2="391"/>
+<text class="yr" x="288.0" y="404" text-anchor="middle">1635</text>
+<line class="axis" x1="332.0" y1="386" x2="332.0" y2="391"/>
+<line class="axis" x1="376.0" y1="386" x2="376.0" y2="391"/>
+<text class="yr" x="376.0" y="404" text-anchor="middle">1645</text>
+<line class="axis" x1="420.0" y1="386" x2="420.0" y2="391"/>
+<line class="axis" x1="464.0" y1="386" x2="464.0" y2="391"/>
+<text class="yr" x="464.0" y="404" text-anchor="middle">1655</text>
+<line class="axis" x1="508.0" y1="386" x2="508.0" y2="391"/>
+<line class="axis" x1="552.0" y1="386" x2="552.0" y2="391"/>
+<text class="yr" x="552.0" y="404" text-anchor="middle">1665</text>
+<line class="axis" x1="596.0" y1="386" x2="596.0" y2="391"/>
+<line class="axis" x1="640.0" y1="386" x2="640.0" y2="391"/>
+<text class="yr" x="640.0" y="404" text-anchor="middle">1675</text>
+<text class="warn" x="56" y="432">⚠ 해만 아는 일은 해의 가운데에 찍었다 — 1631.5.14 · 1636.4.26 · 1665.1.12 는 날짜 자리다.</text>
+<text class="warn" x="56" y="449">⚠ 1643~1654 괄호는 [1] 이 적은 기간을 그대로 옮겼다 — 그 사이에도 정수론은 했다 [1].</text>
+<text class="warn" x="56" y="466">⚠ 편지 점은 골라 찍었다 — 1637~ 데카르트와의 접선 논쟁 등은 뺐다 (노트 연보).</text>
+<text class="warn" x="56" y="483">⚠ 생전에 남의 책에 실린 것도 있다 — 에리곤 『수학 강의』 부록의 극대·극소 방법 [1]. [1] 이 해를 적지 않아 그리지 않았다.</text>
+<text class="warn" x="56" y="500">⚠ 해와 날짜는 [1] MacTutor History of Mathematics, Pierre de Fermat 를 따랐다.</text>
+</svg>
