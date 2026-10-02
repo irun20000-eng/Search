@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 680" width="700" height="680" role="img" aria-label="그림 위쪽에 「파리에서 얻고 하노버에서 냈다 — 라이프니츠의 미적분」라는 표제가 있고 그 아래에 두 줄로 칸은 머문 곳과 직책이고 진한 칸은 파리, 갈색 점은 미적분, 파란 점은 왕립학회와 얽힌 일, 검은 점은 라이프니츠가 죽은 날이라는 부호표가 있다. 가로축은 다섯 해마다 눈금이 있고 1665년부터 1715년까지 열 해마다 숫자가 적혀 있다. 줄이 셋 있고 줄 이름은 왼쪽 끝에 머문 곳, 미적분, 왕립학회라고 적혀 있다. 머문 곳 줄에는 칸이 셋 있다. 1667년 11월부터 파리로 간 해의 가운데까지 옅은 칸이 있고 그 끝 왼쪽 위에 보이네부르크, 마인츠라고 적혀 있다. 이어서 1676년 10월까지 진한 칸이 있고 그 아래에 파리라고 적혀 있다. 조금 띄어 1677년부터 1716년 11월 14일까지 옅은 칸이 있고 칸 안에 하노버, 궁정 사서 겸 고문관이라고 적혀 있다. 미적분 줄에는 갈색 점이 셋 있다. 1675년 11월 21일 점 왼쪽 위에 1675.11.21 ∫ 를 처음 쓰다, 1684년 10월 점 오른쪽 위 두 번째 줄에 1684.10 새로운 방법, 미분법 첫 출판, 1686년 점 오른쪽 아래에 1686 ∫ 가 처음 인쇄되다라고 적혀 있다. 왕립학회 줄에는 파란 점이 셋 있다. 1673년 4월 9일 점 오른쪽 위에 1673.4.9 회원, 1711년 점 왼쪽 아래에 1711 표절 비난에 철회를 요구, 1713년 첫머리 가까운 점 왼쪽 위 두 번째 줄에 1713 초 뉴턴 쪽 보고서, 회장은 뉴턴이라고 적혀 있다. 가로축 위 1716년 11월 14일 자리에 검은 점이 있고 그 왼쪽 위에 1716.11.14 하노버에서 라이프니츠가 죽다라고 적혀 있다. 아래에 단서가 열세 줄 있다. 첫째, 해만 아는 일은 해의 가운데, 칸 끝은 해의 첫머리에 두었고 달, 날을 아는 것은 그 자리다. 둘째, 보이네부르크 칸은 늦어도 1667.11 에는 그에게 고용돼 프랑크푸르트에 있었다는 1번을 따랐다. 셋째, 파리로 간 달은 1번이 적지 않는다. 넷째, 하노버 칸은 1677 부터이고, 1676.10 파리를 떠나 런던과 네덜란드를 거쳤으며 닿은 날은 1번이 적지 않는다. 다섯째, ∫ 를 처음 쓴 날은 1번의 1675.11.21 을 따랐고 9번은 10.29 라 적는다. 여섯째, 1676 가을까지 얻은 d(xⁿ) 규칙은 파리를 떠난 달과 겹쳐 어느 쪽에서였는지 갈리지 않아 찍지 않았다. 일곱째, 1673 은 4.9 회원 선출만 찍었고 1월엔 런던에서 미완성 계산기를 시연했다. 여덟째, 1713 보고서는 early in 1713 이라 그해 첫머리 가까이 두었다. 아홉째, 하노버 칸 안 1687.11~1690.6 은 바이에른, 오스트리아, 이탈리아로 문서를 찾아 다닌 여행이고 칸을 끊지 않았다. 열째부터 열셋째까지, 해와 날짜는 1번 MacTutor History of Mathematics, Gottfried Wilhelm Leibniz 를, 1684.10 은 5번 Wikipedia, Nova Methodus pro Maximis et Minimis (1684) 를, 1713 은 6번 Wikipedia, Leibniz–Newton calculus controversy 를, 10.29 는 9번 Agencia SINC, 1675 — Leibniz writes the integral sign for the first time 을 따랐다">
+<title>파리에서 얻고 하노버에서 냈다 라이프니츠의 미적분</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="680"/>
+<text class="h1" x="56" y="44" text-anchor="start">파리에서 얻고 하노버에서 냈다 — 라이프니츠의 미적분</text>
+<text class="h2" x="56" y="66" text-anchor="start">칸 = 머문 곳과 직책(진한 칸 = 파리) · 갈색 점 = 미적분 · 파란 점 = 왕립학회와 얽힌 일</text>
+<text class="h2" x="56" y="83" text-anchor="start">검은 점 = 라이프니츠가 죽은 날</text>
+<line class="lane" x1="200" y1="160" x2="640" y2="160"/>
+<text class="grp" x="56" y="164" text-anchor="start">머문 곳</text>
+<line class="lane" x1="200" y1="250" x2="640" y2="250"/>
+<text class="grp" x="56" y="254" text-anchor="start">미적분</text>
+<line class="lane" x1="200" y1="330" x2="640" y2="330"/>
+<text class="grp" x="56" y="334" text-anchor="start">왕립학회</text>
+<rect class="seg" x="222.7" y="151" width="37.3" height="18"/>
+<rect class="seg2" x="260.0" y="151" width="34.0" height="18"/>
+<rect class="seg" x="296.0" y="151" width="318.9" height="18"/>
+<text class="ev" x="258.0" y="146" text-anchor="end">보이네부르크 · 마인츠 [1]</text>
+<text class="ev" x="277.0" y="186" text-anchor="middle">파리 [1]</text>
+<text class="ev" x="455.4" y="164" text-anchor="middle">하노버 — 궁정 사서 겸 고문관 [1]</text>
+<circle class="mk" cx="287.1" cy="250" r="3.5"/>
+<text class="ev" x="283.1" y="238" text-anchor="end">1675.11.21 ∫ 를 처음 쓰다 [1]</text>
+<circle class="mk" cx="358.3" cy="250" r="3.5"/>
+<text class="ev" x="362.3" y="221" text-anchor="start">1684.10 『새로운 방법』 — 미분법 첫 출판 [1][5]</text>
+<circle class="mk" cx="372.0" cy="250" r="3.5"/>
+<text class="ev" x="376.0" y="272" text-anchor="start">1686 ∫ 가 처음 인쇄되다 [1]</text>
+<circle class="bl" cx="266.1" cy="330" r="3.5"/>
+<text class="ev" x="270.1" y="318" text-anchor="start">1673.4.9 회원 [1]</text>
+<circle class="bl" cx="572.0" cy="330" r="3.5"/>
+<text class="ev" x="568.0" y="352" text-anchor="end">1711 표절 비난에 철회를 요구 [1]</text>
+<circle class="bl" cx="585.6" cy="330" r="3.5"/>
+<text class="ev" x="589.6" y="301" text-anchor="end">1713 초 뉴턴 쪽 보고서 — 회장은 뉴턴 [6]</text>
+<circle class="pt" cx="614.9" cy="400" r="4"/>
+<text class="ev" x="608.9" y="388" text-anchor="end">1716.11.14 하노버에서 라이프니츠가 죽다 [1]</text>
+<line class="axis" x1="200" y1="400" x2="640" y2="400"/>
+<line class="axis" x1="200.0" y1="400" x2="200.0" y2="405"/>
+<text class="yr" x="200.0" y="418" text-anchor="middle">1665</text>
+<line class="axis" x1="240.0" y1="400" x2="240.0" y2="405"/>
+<line class="axis" x1="280.0" y1="400" x2="280.0" y2="405"/>
+<text class="yr" x="280.0" y="418" text-anchor="middle">1675</text>
+<line class="axis" x1="320.0" y1="400" x2="320.0" y2="405"/>
+<line class="axis" x1="360.0" y1="400" x2="360.0" y2="405"/>
+<text class="yr" x="360.0" y="418" text-anchor="middle">1685</text>
+<line class="axis" x1="400.0" y1="400" x2="400.0" y2="405"/>
+<line class="axis" x1="440.0" y1="400" x2="440.0" y2="405"/>
+<text class="yr" x="440.0" y="418" text-anchor="middle">1695</text>
+<line class="axis" x1="480.0" y1="400" x2="480.0" y2="405"/>
+<line class="axis" x1="520.0" y1="400" x2="520.0" y2="405"/>
+<text class="yr" x="520.0" y="418" text-anchor="middle">1705</text>
+<line class="axis" x1="560.0" y1="400" x2="560.0" y2="405"/>
+<line class="axis" x1="600.0" y1="400" x2="600.0" y2="405"/>
+<text class="yr" x="600.0" y="418" text-anchor="middle">1715</text>
+<line class="axis" x1="640.0" y1="400" x2="640.0" y2="405"/>
+<text class="warn" x="56" y="446">⚠ 해만 아는 일은 해의 가운데, 칸 끝은 해의 첫머리에 두었다 — 달·날을 아는 것은 그 자리다.</text>
+<text class="warn" x="56" y="463">⚠ 보이네부르크 칸은 늦어도 1667.11 에는 그에게 고용돼 프랑크푸르트에 있었다는 [1] 을 따랐다.</text>
+<text class="warn" x="56" y="480">⚠ 파리로 간 달은 [1] 이 적지 않는다.</text>
+<text class="warn" x="56" y="497">⚠ 하노버 칸은 1677 부터다 — 1676.10 파리를 떠나 런던·네덜란드를 거쳤고, 닿은 날은 [1] 이 적지 않는다.</text>
+<text class="warn" x="56" y="514">⚠ ∫ 를 처음 쓴 날은 [1] 의 1675.11.21 을 따랐다 — [9] 는 10.29 라 적는다.</text>
+<text class="warn" x="56" y="531">⚠ 「1676 가을까지」 얻은 d(xⁿ) 규칙 [1] 은 파리를 떠난 달과 겹쳐 어느 쪽에서였는지 갈리지 않아 찍지 않았다.</text>
+<text class="warn" x="56" y="548">⚠ 1673 은 4.9 회원 선출만 찍었다 — 1월엔 런던에서 미완성 계산기를 시연했다 [1].</text>
+<text class="warn" x="56" y="565">⚠ 1713 보고서는 「early in 1713」이라 그해 첫머리 가까이 두었다 [6].</text>
+<text class="warn" x="56" y="582">⚠ 하노버 칸 안 1687.11~1690.6 은 바이에른·오스트리아·이탈리아로 문서를 찾아 다닌 여행이다 — 칸을 끊지 않았다 [1].</text>
+<text class="warn" x="56" y="599">⚠ 해와 날짜는 [1] MacTutor History of Mathematics, Gottfried Wilhelm Leibniz 를,</text>
+<text class="warn" x="56" y="616">⚠ 1684.10 은 [5] Wikipedia, Nova Methodus pro Maximis et Minimis (1684) 를,</text>
+<text class="warn" x="56" y="633">⚠ 1713 은 [6] Wikipedia, Leibniz–Newton calculus controversy 를,</text>
+<text class="warn" x="56" y="650">⚠ 10.29 는 [9] Agencia SINC, 1675 — Leibniz writes the integral sign for the first time 을 따랐다.</text>
+</svg>
