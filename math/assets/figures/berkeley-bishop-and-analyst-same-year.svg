@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520" role="img" aria-label="그림 위쪽에 「주교가 된 해에 『해석학자』를 냈다 — 버클리」라는 표제가 있고 그 아래에 옅은 칸은 학생, 진한 칸은 자리, 갈색 점은 쓴 것, 세로 띠는 1734년, 검은 점은 버클리가 죽은 날이라는 부호표가 있다. 가로축은 1695년부터 1755년까지 다섯 해마다 눈금이 있고 열 해마다 숫자가 적혀 있다. 줄이 둘 있고 줄 이름은 왼쪽 끝에 쓴 것, 자리라고 적혀 있다. 1734년 한 해 너비의 옅은 세로 띠가 두 줄을 위아래로 지나고, 띠 위에 1734, 1월 클로인 주교 임명, 5.19 서품, 해석학자라고 적혀 있다. 쓴 것 줄에는 갈색 점이 셋 있다. 1709년 점 왼쪽 위에 1709 시각 신론, 1710년 점 오른쪽 아래에 1710 인간 지식의 원리론, 1744년 점 오른쪽 아래에 두 줄로 1744 시리스, 타르물이라고 적혀 있다. 1734년 띠 안에는 쓴 것 줄 위에 굵은 갈색 선이 그 한 해에 걸쳐 있다. 자리 줄에는 칸이 넷 있다. 1700년 3월부터 1704년까지 옅은 칸이 있고 그 아래 왼쪽에 트리니티 학생이라고 적혀 있다. 1707년 6월 9일부터 1724년까지 진한 칸이 있는데 1713년부터 뒤쪽은 옅게 덮여 있고, 아래에 1707.6.9 펠로, 1713~1724 대부분 더블린 밖이라고 적혀 있다. 1731년 10월 자리에 갈색 점이 있고 그 오른쪽 아래에 1731.10 버뮤다 계획을 접고 런던으로라고 적혀 있다. 1734년부터 1753년 1월 14일까지 진한 칸이 있고 칸 안에 클로인 주교라고 적혀 있다. 가로축 위 1753년 1월 14일 자리에 검은 점이 있고 그 왼쪽 위에 1753.1.14 버클리가 죽다라고 적혀 있다. 아래에 단서가 여섯 줄 있다. 첫째, 해만 아는 일은 해의 가운데, 칸 끝은 해의 첫머리에 두었고 1707.6.9, 1731.10, 1753.1.14 는 날짜 자리다. 둘째, 해석학자는 출처가 1734년까지만 적어 그 한 해 전체에 걸쳐 굵은 선으로 그렸다. 셋째, 펠로 칸의 옅은 뒤쪽은 1713~1724 대부분 더블린 밖에 있던 때다. 넷째, 주교 칸은 죽은 날까지 그렸고 1752년 7월 옥스퍼드로 옮겨 거기서 죽었다. 다섯째, 버뮤다 계획은 시작한 해를 노트가 적지 않아 칸으로 그리지 않았다. 여섯째, 해와 날짜는 1번부터 6번까지 MacTutor, George Berkeley 를, 1744 는 10번 Wikipedia, George Berkeley 를 따랐다">
+<title>주교가 된 해에 해석학자를 냈다 버클리</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="520"/>
+<text class="h1" x="56" y="44" text-anchor="start">주교가 된 해에 『해석학자』를 냈다 — 버클리</text>
+<text class="h2" x="56" y="66" text-anchor="start">옅은 칸 = 학생 · 진한 칸 = 자리 · 갈색 점 = 쓴 것 · 세로 띠 = 1734년 · 검은 점 = 버클리가 죽은 날</text>
+<rect x="486.0" y="112" width="7.3" height="238" fill="#F4EADC"/>
+<text class="ev" x="489.6" y="104" text-anchor="middle">1734 — 1월 클로인 주교 임명 · 5.19 서품 · 『해석학자』 [6]</text>
+<line class="lane" x1="200" y1="170" x2="640" y2="170"/>
+<text class="grp" x="56" y="174" text-anchor="start">쓴 것</text>
+<line class="lane" x1="200" y1="260" x2="640" y2="260"/>
+<text class="grp" x="56" y="264" text-anchor="start">자리</text>
+<circle class="mk" cx="306.3" cy="170" r="3.5"/>
+<text class="ev" x="302.3" y="158" text-anchor="end">1709 『시각 신론』 [3]</text>
+<circle class="mk" cx="313.7" cy="170" r="3.5"/>
+<text class="ev" x="317.7" y="192" text-anchor="start">1710 『인간 지식의 원리론』 [3]</text>
+<line x1="486.0" y1="170" x2="493.3" y2="170" stroke="#9C5A2C" stroke-width="5"/>
+<circle class="mk" cx="563.0" cy="170" r="3.5"/>
+<text class="ev" x="567.0" y="192" text-anchor="start">1744 『시리스』</text>
+<text class="ev" x="567.0" y="209" text-anchor="start">— 타르물 [10]</text>
+<rect class="seg" x="237.9" y="251" width="29.9" height="18"/>
+<rect class="seg2" x="291.2" y="251" width="40.8" height="18"/>
+<rect class="seg2" x="332.0" y="251" width="83.1" height="18"/>
+<rect x="332.0" y="251" width="83.1" height="18" fill="#FFFDF7" fill-opacity="0.55"/>
+<rect class="seg2" x="486.0" y="251" width="139.6" height="18"/>
+<circle class="mk" cx="469.5" cy="260" r="3.5"/>
+<text class="ev" x="267.8" y="286" text-anchor="end">트리니티 학생 [2]</text>
+<text class="ev" x="311.6" y="303" text-anchor="middle">1707.6.9 펠로 [3]</text>
+<text class="ev" x="373.6" y="286" text-anchor="middle">1713~1724 대부분 더블린 밖 [4]</text>
+<text class="ev" x="473.5" y="303" text-anchor="start">1731.10 버뮤다 계획을 접고 런던으로 [5]</text>
+<text class="ev" x="555.8" y="264" text-anchor="middle">클로인 주교 [6]</text>
+<circle class="pt" cx="625.6" cy="350" r="4"/>
+<text class="ev" x="619.6" y="338" text-anchor="end">1753.1.14 버클리가 죽다 [1]</text>
+<line class="axis" x1="200" y1="350" x2="640" y2="350"/>
+<line class="axis" x1="200.0" y1="350" x2="200.0" y2="355"/>
+<text class="yr" x="200.0" y="368" text-anchor="middle">1695</text>
+<line class="axis" x1="236.7" y1="350" x2="236.7" y2="355"/>
+<line class="axis" x1="273.3" y1="350" x2="273.3" y2="355"/>
+<text class="yr" x="273.3" y="368" text-anchor="middle">1705</text>
+<line class="axis" x1="310.0" y1="350" x2="310.0" y2="355"/>
+<line class="axis" x1="346.7" y1="350" x2="346.7" y2="355"/>
+<text class="yr" x="346.7" y="368" text-anchor="middle">1715</text>
+<line class="axis" x1="383.3" y1="350" x2="383.3" y2="355"/>
+<line class="axis" x1="420.0" y1="350" x2="420.0" y2="355"/>
+<text class="yr" x="420.0" y="368" text-anchor="middle">1725</text>
+<line class="axis" x1="456.7" y1="350" x2="456.7" y2="355"/>
+<line class="axis" x1="493.3" y1="350" x2="493.3" y2="355"/>
+<text class="yr" x="493.3" y="368" text-anchor="middle">1735</text>
+<line class="axis" x1="530.0" y1="350" x2="530.0" y2="355"/>
+<line class="axis" x1="566.7" y1="350" x2="566.7" y2="355"/>
+<text class="yr" x="566.7" y="368" text-anchor="middle">1745</text>
+<line class="axis" x1="603.3" y1="350" x2="603.3" y2="355"/>
+<line class="axis" x1="640.0" y1="350" x2="640.0" y2="355"/>
+<text class="yr" x="640.0" y="368" text-anchor="middle">1755</text>
+<text class="warn" x="56" y="396">⚠ 해만 아는 일은 해의 가운데, 칸 끝은 해의 첫머리에 — 1707.6.9 · 1731.10 · 1753.1.14 는 날짜 자리다.</text>
+<text class="warn" x="56" y="413">⚠ 『해석학자』는 출처가 「1734년」까지만 적어 그 한 해 전체에 걸쳐 굵은 선으로 그렸다 [6].</text>
+<text class="warn" x="56" y="430">⚠ 펠로 칸의 옅은 뒤쪽은 1713~1724 대부분 더블린 밖에 있던 때다 [4].</text>
+<text class="warn" x="56" y="447">⚠ 주교 칸은 죽은 날까지 그렸다 — 1752년 7월 옥스퍼드로 옮겨 거기서 죽었다 [1].</text>
+<text class="warn" x="56" y="464">⚠ 버뮤다 계획은 시작한 해를 노트가 적지 않아 칸으로 그리지 않았다 [5].</text>
+<text class="warn" x="56" y="481">⚠ 해와 날짜는 [1]~[6] MacTutor, George Berkeley 를, 1744 는 [10] Wikipedia, George Berkeley 를 따랐다.</text>
+</svg>
