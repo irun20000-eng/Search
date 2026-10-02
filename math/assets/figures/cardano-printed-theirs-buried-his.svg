@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 640" width="700" height="640" role="img" aria-label="그림 위쪽에 「남이 찾은 것은 그가 냈고, 그가 찾은 것은 백 년 묻혔다 — 카르다노」라는 표제가 있고 그 아래에 두 줄로 칸은 삼차 해법이 인쇄되지 않은 동안, 점선 칸은 끝낸 책이 나오지 않은 동안, 갈색 점은 인쇄된 때, 진한 칸은 카르다노가 산 동안, 검은 점은 카르다노가 죽은 날이라는 부호표가 있다. 가로축은 열 해마다 눈금이 있고 1500년부터 1650년까지 쉰 해마다 숫자가 적혀 있다. 줄이 셋 있고 줄 이름은 왼쪽 끝에 삼차방정식, 확률, 카르다노라고 적혀 있다. 삼차방정식 줄에는 1515년 무렵부터 1545년까지 옅은 칸이 있고 칸의 왼쪽 끝은 점선이다. 칸 아래 왼쪽에 1515 무렵 델 페로가 풀다라고 적혀 있다. 칸 위 1539년 3월 25일 자리에 짧은 점선이 있고 그 왼쪽 위에 1539.3.25 시로 카르다노에게라고 적혀 있다. 칸 오른쪽 끝에 큰 갈색 점이 있고 그 오른쪽 위에 1545 아르스 마그나, 그가 인쇄했다라고 적혀 있다. 확률 줄에는 1563년부터 1663년까지 테두리만 점선인 긴 칸이 있고 칸 안에 운에 관한 책, 끝내고도 나오지 않았다라고 적혀 있다. 칸 왼쪽 끝 아래 왼쪽에 1563 까지는 끝냈으리라, 칸 오른쪽 끝의 큰 갈색 점 왼쪽 위에 1663 나오다라고 적혀 있다. 카르다노 줄에는 1501년 9월부터 1576년 9월 21일까지 진한 칸이 있고, 1571년 2월 자리 위에 짧은 점선과 1571.2 더는 책을 내지 않겠다고 서약이라고 적혀 있다. 가로축 위 1576년 9월 21일 자리에 검은 점이 있고 그 오른쪽 위에 1576.9.21 카르다노가 죽다라고 적혀 있다. 점선 칸은 이 점보다 여든일곱 해 오른쪽까지 이어진다. 아래에 단서가 아홉 줄 있다. 첫째, 해만 아는 일은 해의 가운데에, 달, 날을 아는 것은 그 자리에 두었다. 둘째, 삼차 칸의 왼쪽 끝은 점선이고 델 페로가 푼 해는 1515 무렵이다. 셋째, 칸 안에서도 아는 사람은 늘었고, 곧 1526 피오르와 1539 카르다노이며, 인쇄되기 전까지를 칸으로 그렸다. 넷째, 점선 칸의 왼쪽 끝 1563 은 그때까지는 끝냈으리라는 6번의 짐작이고 쓰기 시작한 해는 모른다. 다섯째, 1571 서약과 그 책이 생전에 나오지 않은 것의 앞뒤 관계는 출처가 말하지 않는다. 여섯째, 그 계산이 파스칼, 페르마보다 한 세기 앞섰다는 것은 4번의 평가이고 두 사람의 편지는 그리지 않았다. 일곱째부터 아홉째까지, 해와 날짜는 4번과 5번 Britannica, Girolamo Cardano, 6번 MacTutor, Girolamo Cardano, 7번 Stanford Encyclopedia of Philosophy, Girolamo Cardano, 10번 Encyclopedia.com, Scipione dal Ferro, 11번 MacTutor History Topic, Tartaglia versus Cardan, 12번 Wikipedia, Ars Magna (Cardano book) 를 따랐다">
+<title>남이 찾은 것은 그가 냈고 그가 찾은 것은 백 년 묻혔다 카르다노</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="640"/>
+<text class="h1" x="56" y="44" text-anchor="start">남이 찾은 것은 그가 냈고, 그가 찾은 것은 백 년 묻혔다 — 카르다노</text>
+<text class="h2" x="56" y="66" text-anchor="start">칸 = 삼차 해법이 인쇄되지 않은 동안 · 점선 칸 = 끝낸 책이 나오지 않은 동안</text>
+<text class="h2" x="56" y="83" text-anchor="start">갈색 점 = 인쇄된 때 · 진한 칸 = 카르다노가 산 동안 · 검은 점 = 카르다노가 죽은 날</text>
+<line class="lane" x1="220" y1="170" x2="640" y2="170"/>
+<text class="grp" x="56" y="174" text-anchor="start">삼차방정식</text>
+<line class="lane" x1="220" y1="265" x2="640" y2="265"/>
+<text class="grp" x="56" y="269" text-anchor="start">확률</text>
+<line class="lane" x1="220" y1="345" x2="640" y2="345"/>
+<text class="grp" x="56" y="349" text-anchor="start">카르다노</text>
+<rect class="seg" x="258.3" y="161" width="74.1" height="18"/>
+<line x1="258.3" y1="161" x2="258.3" y2="179" stroke="#FFFDF7" stroke-width="2"/>
+<line class="dash" x1="258.3" y1="161" x2="258.3" y2="179"/>
+<line class="dash" x1="316.9" y1="161" x2="316.9" y2="148"/>
+<text class="ev" x="319.9" y="144" text-anchor="end">1539.3.25 시로 카르다노에게 [11]</text>
+<text class="ev" x="258.3" y="196" text-anchor="start">1515 무렵 델 페로가 풀다 [10]</text>
+<circle class="mk" cx="332.4" cy="170" r="4.5"/>
+<text class="ev" x="338.4" y="158" text-anchor="start">1545 『아르스 마그나』 — 그가 인쇄했다 [5][12]</text>
+<rect x="376.9" y="256" width="247.0" height="18" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="4 3"/>
+<text class="ev" x="500.4" y="269" text-anchor="middle">『운에 관한 책』 — 끝내고도 나오지 않았다</text>
+<circle class="mk" cx="623.9" cy="265" r="4.5"/>
+<text class="ev" x="619.9" y="249" text-anchor="end">1663 나오다 [6]</text>
+<text class="ev" x="376.9" y="291" text-anchor="end">1563 까지는 끝냈으리라 [6]</text>
+<rect class="seg2" x="224.3" y="336" width="185.2" height="18"/>
+<line class="dash" x1="395.6" y1="336" x2="395.6" y2="323"/>
+<text class="ev" x="399.6" y="319" text-anchor="start">1571.2 더는 책을 내지 않겠다고 서약 [7]</text>
+<circle class="pt" cx="409.5" cy="410" r="4"/>
+<text class="ev" x="415.5" y="398" text-anchor="start">1576.9.21 카르다노가 죽다 [4][6]</text>
+<line class="axis" x1="220" y1="410" x2="640" y2="410"/>
+<line class="axis" x1="220.0" y1="410" x2="220.0" y2="415"/>
+<text class="yr" x="220.0" y="428" text-anchor="middle">1500</text>
+<line class="axis" x1="244.7" y1="410" x2="244.7" y2="415"/>
+<line class="axis" x1="269.4" y1="410" x2="269.4" y2="415"/>
+<line class="axis" x1="294.1" y1="410" x2="294.1" y2="415"/>
+<line class="axis" x1="318.8" y1="410" x2="318.8" y2="415"/>
+<line class="axis" x1="343.5" y1="410" x2="343.5" y2="415"/>
+<text class="yr" x="343.5" y="428" text-anchor="middle">1550</text>
+<line class="axis" x1="368.2" y1="410" x2="368.2" y2="415"/>
+<line class="axis" x1="392.9" y1="410" x2="392.9" y2="415"/>
+<line class="axis" x1="417.6" y1="410" x2="417.6" y2="415"/>
+<line class="axis" x1="442.4" y1="410" x2="442.4" y2="415"/>
+<line class="axis" x1="467.1" y1="410" x2="467.1" y2="415"/>
+<text class="yr" x="467.1" y="428" text-anchor="middle">1600</text>
+<line class="axis" x1="491.8" y1="410" x2="491.8" y2="415"/>
+<line class="axis" x1="516.5" y1="410" x2="516.5" y2="415"/>
+<line class="axis" x1="541.2" y1="410" x2="541.2" y2="415"/>
+<line class="axis" x1="565.9" y1="410" x2="565.9" y2="415"/>
+<line class="axis" x1="590.6" y1="410" x2="590.6" y2="415"/>
+<text class="yr" x="590.6" y="428" text-anchor="middle">1650</text>
+<line class="axis" x1="615.3" y1="410" x2="615.3" y2="415"/>
+<line class="axis" x1="640.0" y1="410" x2="640.0" y2="415"/>
+<text class="warn" x="56" y="456">⚠ 해만 아는 일은 해의 가운데에, 달·날을 아는 것은 그 자리에 두었다.</text>
+<text class="warn" x="56" y="473">⚠ 삼차 칸의 왼쪽 끝은 점선이다 — 델 페로가 푼 해는 「1515 무렵」이다 [10].</text>
+<text class="warn" x="56" y="490">⚠ 칸 안에서도 아는 사람은 늘었다 — 1526 피오르 [10], 1539 카르다노 [11]. 인쇄되기 전까지를 칸으로 그렸다.</text>
+<text class="warn" x="56" y="507">⚠ 점선 칸의 왼쪽 끝 1563 은 「그때까지는 끝냈으리라」는 [6] 의 짐작이다 — 쓰기 시작한 해는 모른다.</text>
+<text class="warn" x="56" y="524">⚠ 1571 서약과 그 책이 생전에 나오지 않은 것의 앞뒤 관계는 출처가 말하지 않는다.</text>
+<text class="warn" x="56" y="541">⚠ 그 계산이 파스칼·페르마보다 한 세기 앞섰다는 것은 [4] 의 평가다 — 두 사람의 편지는 그리지 않았다.</text>
+<text class="warn" x="56" y="558">⚠ 해와 날짜는 [4][5] Britannica, Girolamo Cardano · [6] MacTutor, Girolamo Cardano ·</text>
+<text class="warn" x="56" y="575">⚠ [7] Stanford Encyclopedia of Philosophy, Girolamo Cardano · [10] Encyclopedia.com, Scipione dal Ferro ·</text>
+<text class="warn" x="56" y="592">⚠ [11] MacTutor History Topic, Tartaglia versus Cardan · [12] Wikipedia, Ars Magna (Cardano book) 를 따랐다.</text>
+</svg>
