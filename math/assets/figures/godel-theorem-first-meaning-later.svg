@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 585" width="700" height="585" role="img" aria-label="그림 위쪽에 「정리는 그가 냈고, 뜻은 남이 먼저 알아봤다 — 괴델 1930~31」라는 표제가 있고 그 아래에 두 줄로 갈색 점은 괴델이 한 일, 파란 점은 폰 노이만이 한 일, 점선 칸은 날을 모르는 사이, 점선 화살표는 끝을 모르는 기간이라는 부호표가 있다. 가로축은 1930년 8월부터 1931년 8월까지 한 달마다 눈금이 있고 1930.8, 11, 1931.1, 5, 8 이라고 숫자가 적혀 있다. 줄이 둘 있고 줄 이름은 왼쪽 끝에 괴델, 폰 노이만이라고 적혀 있다. 괴델 줄에는 1930년 8월 26일 점 왼쪽 위에 8.26 카르나프에게, 9월 7일 점 오른쪽 위 두 번째 줄에 9.7 쾨니히스베르크, 지나가는 말이라고 적혀 있다. 9월 7일부터 11월 20일까지 테두리만 점선인 칸이 있고 그 아래에 이 사이 최종본을 보냈다라고 적혀 있다. 1931년 1월 가운데 점이 있고 그 오른쪽 아래 두 번째 줄에 1931.1 논문이 실리다라고 적혀 있다. 그 점에서 오른쪽 끝 너머로 굵은 갈색 점선 화살표가 나가고 그 위에 그 뜻을 보기까지 몇 해라고 적혀 있다. 폰 노이만 줄에는 파란 점이 셋 있다. 9월 7일 점 오른쪽 아래에 청중, 곧바로 알아봤다, 11월 20일 점 오른쪽 위에 두 줄로 11.20 괴델에게 편지, 무모순성은 증명될 수 없다, 1931년 6월 가운데 점 왼쪽 아래에 세 줄로 1931.6 카르나프에게, 괴델은 힐베르트 프로그램이 실현될 수 없음을 보였다라고 적혀 있다. 아래에 단서가 아홉 줄 있다. 첫째, 가로축은 달이고 달만 아는 일, 곧 1931.1 과 1931.6 은 그 달의 가운데, 나머지는 날짜 자리다. 둘째, 제2정리를 담은 최종본을 보낸 날은 출처가 적지 않고 11.20 편지 그사이 이미 보냈다는 것만 안다. 셋째, 그래서 점선 칸은 9.7 부터 11.20 까지로 그렸다. 넷째, 몇 해는 언제부터인지 출처가 적지 않아 화살표는 논문이 실린 1931.1 에서 시작했고 끝을 그리지 않았다. 다섯째, 9.7 의 두 점은 같은 학회의 같은 자리다. 여섯째와 일곱째, 3번은 그 전해 가을 폰 노이만이 괴델에게 더 센 말로 쓴 편지도 적는데, 11.20 편지와 같은 것인지 말하지 않아 따로 찍지 않았다. 여덟째와 아홉째, 날짜는 2번 Stanford Encyclopedia of Philosophy, Gödel&#x27;s Incompleteness Theorems 를, 1931.6 과 몇 해는 3번 Stanford Encyclopedia of Philosophy, Kurt Gödel 을 따랐다">
+<title>정리는 그가 냈고 뜻은 남이 먼저 알아봤다 괴델</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="585"/>
+<text class="h1" x="56" y="44" text-anchor="start">정리는 그가 냈고, 뜻은 남이 먼저 알아봤다 — 괴델 1930~31</text>
+<text class="h2" x="56" y="66" text-anchor="start">갈색 점 = 괴델이 한 일 · 파란 점 = 폰 노이만이 한 일</text>
+<text class="h2" x="56" y="83" text-anchor="start">점선 칸 = 날을 모르는 사이 · 점선 화살표 = 끝을 모르는 기간</text>
+<line class="lane" x1="200" y1="180" x2="600" y2="180"/>
+<text class="grp" x="56" y="184" text-anchor="start">괴델</text>
+<line class="lane" x1="200" y1="300" x2="600" y2="300"/>
+<text class="grp" x="56" y="304" text-anchor="start">폰 노이만</text>
+<rect x="240.0" y="171" width="81.1" height="18" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="389.3" y1="180" x2="626" y2="180" stroke="#9C5A2C" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M626,175 L636,180 L626,185 Z" fill="#9C5A2C"/>
+<circle class="mk" cx="226.9" cy="180" r="3.5"/>
+<text class="ev" x="222.9" y="168" text-anchor="end">8.26 카르나프에게 [2]</text>
+<circle class="mk" cx="240.0" cy="180" r="3.5"/>
+<text class="ev" x="244.0" y="151" text-anchor="start">9.7 쾨니히스베르크 — 지나가는 말 [2]</text>
+<text class="ev" x="280.6" y="206" text-anchor="middle">이 사이 최종본을 보냈다 [2]</text>
+<circle class="mk" cx="383.3" cy="180" r="3.5"/>
+<text class="ev" x="387.3" y="223" text-anchor="start">1931.1 논문이 실리다 [2]</text>
+<text class="ev" x="470" y="168" text-anchor="start">그 뜻을 보기까지 몇 해 [3]</text>
+<circle class="bl" cx="240.0" cy="300" r="3.5"/>
+<text class="ev" x="244.0" y="322" text-anchor="start">청중 — 곧바로 알아봤다 [2]</text>
+<circle class="bl" cx="321.1" cy="300" r="3.5"/>
+<text class="ev" x="325.1" y="271" text-anchor="start">11.20 괴델에게 편지 [2]</text>
+<text class="ev" x="325.1" y="288" text-anchor="start">— 무모순성은 증명될 수 없다</text>
+<circle class="bl" cx="550.0" cy="300" r="3.5"/>
+<text class="ev" x="546.0" y="322" text-anchor="end">1931.6 카르나프에게 [3]</text>
+<text class="ev" x="546.0" y="339" text-anchor="end">「괴델은 힐베르트 프로그램이</text>
+<text class="ev" x="546.0" y="356" text-anchor="end">실현될 수 없음을 보였다」</text>
+<line class="axis" x1="200" y1="370" x2="600" y2="370"/>
+<line class="axis" x1="200.0" y1="370" x2="200.0" y2="375"/>
+<line class="axis" x1="233.3" y1="370" x2="233.3" y2="375"/>
+<line class="axis" x1="266.7" y1="370" x2="266.7" y2="375"/>
+<line class="axis" x1="300.0" y1="370" x2="300.0" y2="375"/>
+<line class="axis" x1="333.3" y1="370" x2="333.3" y2="375"/>
+<line class="axis" x1="366.7" y1="370" x2="366.7" y2="375"/>
+<line class="axis" x1="400.0" y1="370" x2="400.0" y2="375"/>
+<line class="axis" x1="433.3" y1="370" x2="433.3" y2="375"/>
+<line class="axis" x1="466.7" y1="370" x2="466.7" y2="375"/>
+<line class="axis" x1="500.0" y1="370" x2="500.0" y2="375"/>
+<line class="axis" x1="533.3" y1="370" x2="533.3" y2="375"/>
+<line class="axis" x1="566.7" y1="370" x2="566.7" y2="375"/>
+<line class="axis" x1="600.0" y1="370" x2="600.0" y2="375"/>
+<text class="yr" x="200.0" y="388" text-anchor="middle">1930.8</text>
+<text class="yr" x="300.0" y="388" text-anchor="middle">11</text>
+<text class="yr" x="366.7" y="388" text-anchor="middle">1931.1</text>
+<text class="yr" x="500.0" y="388" text-anchor="middle">5</text>
+<text class="yr" x="600.0" y="388" text-anchor="middle">8</text>
+<text class="warn" x="56" y="416">⚠ 가로축은 달이다. 달만 아는 일(1931.1 · 1931.6)은 그 달의 가운데, 나머지는 날짜 자리다.</text>
+<text class="warn" x="56" y="433">⚠ 제2정리를 담은 최종본을 보낸 날은 출처가 적지 않는다 — 11.20 편지 「그사이」 이미 보냈다는 것만 안다 [2].</text>
+<text class="warn" x="56" y="450">⚠ 그래서 점선 칸은 9.7 부터 11.20 까지로 그렸다.</text>
+<text class="warn" x="56" y="467">⚠ 「몇 해」는 언제부터인지 출처가 적지 않는다 — 화살표는 논문이 실린 1931.1 에서 시작했고 끝을 그리지 않았다 [3].</text>
+<text class="warn" x="56" y="484">⚠ 9.7 의 두 점은 같은 학회의 같은 자리다 [2].</text>
+<text class="warn" x="56" y="501">⚠ [3] 은 「그 전해 가을」 폰 노이만이 괴델에게 더 센 말로 쓴 편지도 적는다 —</text>
+<text class="warn" x="56" y="518">⚠ 11.20 편지와 같은 것인지 말하지 않아 따로 찍지 않았다.</text>
+<text class="warn" x="56" y="535">⚠ 날짜는 [2] Stanford Encyclopedia of Philosophy, Gödel's Incompleteness Theorems 를,</text>
+<text class="warn" x="56" y="552">⚠ 1931.6 과 「몇 해」는 [3] Stanford Encyclopedia of Philosophy, Kurt Gödel 을 따랐다.</text>
+</svg>
