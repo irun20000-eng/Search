@@ -24,17 +24,17 @@
 <line class="lane" x1="200" y1="306" x2="640" y2="306"/>
 <text class="grp" x="56" y="310">카르다노</text>
 <circle class="mk" cx="310.0" cy="146" r="3.5"/>
-<text class="ev" x="306.0" y="120" text-anchor="end">1537 『노바 시엔티아』</text>
+<text class="ev" x="306.0" y="117" text-anchor="end">1537 『노바 시엔티아』</text>
 <text class="ev" x="306.0" y="134" text-anchor="end">포술을 수학으로 [4][5]</text>
 <circle class="mk" cx="398.0" cy="146" r="3.5"/>
 <text class="ev" x="398.0" y="168" text-anchor="middle">1543 유클리드 첫 이탈리아어 번역</text>
-<text class="ev" x="398.0" y="182" text-anchor="middle">· 아르키메데스 라틴어판 [4][5]</text>
+<text class="ev" x="398.0" y="185" text-anchor="middle">· 아르키메데스 라틴어판 [4][5]</text>
 <circle class="mk" cx="442.0" cy="146" r="3.5"/>
-<text class="ev" x="446.0" y="120" text-anchor="start">1546 『여러 질문과 발명』</text>
+<text class="ev" x="446.0" y="117" text-anchor="start">1546 『여러 질문과 발명』</text>
 <text class="ev" x="446.0" y="134" text-anchor="start">— 해법을 스스로 공개 [4][5]</text>
 <circle class="mk" cx="515.3" cy="146" r="3.5"/>
 <text class="ev" x="519.3" y="168" text-anchor="start">1551 아르키메데스</text>
-<text class="ev" x="519.3" y="182" text-anchor="start">이탈리아어 번역 [5]</text>
+<text class="ev" x="519.3" y="185" text-anchor="start">이탈리아어 번역 [5]</text>
 <rect class="seg" x="275.1" y="227" width="166.9" height="18"/>
 <text class="ev" x="270.1" y="222" text-anchor="end">1535.2.13 대결에서 얻다 [4]</text>
 <line class="tick" x1="335.3" y1="227" x2="335.3" y2="245"/>
