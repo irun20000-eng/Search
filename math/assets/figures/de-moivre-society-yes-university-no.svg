@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" role="img" aria-label="그림 위쪽에 「학회는 받아들이고 대학은 받아주지 않았다 — 드무아브르」라는 표제가 있고 그 아래에 두 줄로 칸은 사는 곳, 갈색 점은 학회가 받아들인 때, 빈 동그라미는 얻지 못한 자리, 파란 점은 핼리가 대학 자리를 얻은 때, 검은 점은 드무아브르가 죽은 날이라는 부호표가 있다. 가로축은 1665년부터 1755년까지 다섯 해마다 눈금이 있고 열 해마다 숫자가 적혀 있다. 줄이 넷 있고 줄 이름은 왼쪽 끝에 사는 곳, 학회, 대학 자리, 핼리 (견줌)라고 적혀 있다. 사는 곳 줄에는 가로축 첫머리 근처, 태어난 때부터 1685년 가운데까지 옅은 칸이 있고 칸 안에 프랑스, 1688년 4월 27일부터 1754년 11월 27일까지 진한 칸이 있고 칸 안에 런던, 개인 교습, 커피하우스라고 적혀 있다. 두 칸 사이는 테두리만 점선인 칸이고 그 아래에 런던에 온 때는 갈린다라고 적혀 있다. 프랑스 칸 끝 위 1685년 자리에 짧은 점선이 있고 그 왼쪽 위에 1685 낭트칙령 폐지라고 적혀 있다. 학회 줄에는 갈색 점이 셋 있다. 1697년 11월 30일 점 왼쪽 위에 1697 왕립학회 회원, 1712년 점 오른쪽 아래에 1712 뉴턴–라이프니츠 조사위원, 1754년 6월 27일 점 왼쪽 위 두 번째 줄에 1754.6.27 파리 과학원이라고 적혀 있다. 대학 자리 줄에는 1710년 자리에 검은 빈 동그라미 하나만 있고 그 위에 1710 케임브리지 자리, 베르누이가 라이프니츠에게 지지를 청함이라고 적혀 있다. 줄의 뒤쪽 아래에 끝내 얻지 못했다라고 적혀 있다. 핼리 (견줌) 줄에는 1691년 자리에 파란 빈 동그라미가 있고 그 왼쪽 아래에 1691 새빌 천문학 석좌, 떨어짐, 1704년 자리에 파란 점이 있고 그 오른쪽 아래에 1704 새빌 기하학 교수라고 적혀 있다. 가로축 위 1754년 11월 27일 자리에 검은 점이 있고 그 왼쪽 위에 1754.11.27 드무아브르가 죽다라고 적혀 있다. 아래에 단서가 열 줄 있다. 첫째, 해만 아는 일, 곧 1685 등은 해의 가운데, 달, 날을 아는 것은 그 자리에 두었고 왕립학회는 1697.11.30 이다. 둘째와 셋째, 점선 칸은 런던에 온 때가 갈리는 사이로, 가톨릭 쪽 전기는 1685 뒤 곧 건너갔다고, 개신교 쪽 전기는 1688.4.27 성 마르탱에서 풀려난 뒤라고 적으며, 1687.8.28 엔 이미 런던 사보이 교회에 있었다. 넷째, 프랑스 칸 안의 학교, 곧 비트리, 스당, 소뮈르, 파리는 가르지 않았고 성 마르탱은 점선 칸 안에 든다. 다섯째, 조사위원 임명은 2번의 1712 를 따랐고 1번은 1710 이라 적는다. 여섯째, 대학 자리 줄의 빈칸이 그림의 요점이고, 독일 자리를 얻어 주려던 시도는 해를 몰라 찍지 않았다. 일곱째, 핼리 줄은 대학 자리만 견주려고 넣었고 1696 체스터 조폐국과 1720 왕실 천문관은 찍지 않았다. 여덟째부터 열째까지, 해와 날짜는 1번 MacTutor History of Mathematics, Abraham de Moivre 를, 1687 과 1712 는 2번 Wikipedia, Abraham de Moivre 를, 핼리는 7번 MacTutor History of Mathematics, Edmond Halley 를, 1685 는 3번 네이버 지식백과(프랑스사, 김복래), 침울한 가톨릭의 르네상스(낭트 칙령의 폐지) 를 따랐다">
+<title>학회는 받아들이고 대학은 받아주지 않았다 드무아브르</title>
+<style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .h1{font-size:19px;} .h2{font-size:12.5px;fill:#5B5245;}
+    .grp{font-size:11.5px;fill:#5B5245;}
+    .ev{font-size:11px;} .yr{font-size:11px;fill:#5B5245;}
+    .bg{fill:#FFFDF7;}
+    .lane{stroke:#D8CDBB;stroke-width:1;}
+    .seg{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .seg2{fill:#E6CDAE;stroke:#9C5A2C;stroke-width:1;}
+    .mk{fill:#9C5A2C;} .bl{fill:#3A5C77;} .pt{fill:#221E18;}
+    .dash{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;}
+    .brk{stroke:#5B5245;stroke-width:1.2;fill:none;}
+    .axis{stroke:#8A7F6E;stroke-width:1;}
+    .warn{font-size:10.5px;fill:#5B5245;}
+  </style>
+<rect class="bg" x="0" y="0" width="700" height="700"/>
+<text class="h1" x="56" y="44" text-anchor="start">학회는 받아들이고 대학은 받아주지 않았다 — 드무아브르</text>
+<text class="h2" x="56" y="66" text-anchor="start">칸 = 사는 곳 · 갈색 점 = 학회가 받아들인 때 · 빈 동그라미 = 얻지 못한 자리</text>
+<text class="h2" x="56" y="83" text-anchor="start">파란 점 = 핼리가 대학 자리를 얻은 때 · 검은 점 = 드무아브르가 죽은 날</text>
+<line class="lane" x1="200" y1="150" x2="640" y2="150"/>
+<text class="grp" x="56" y="154" text-anchor="start">사는 곳</text>
+<line class="lane" x1="200" y1="235" x2="640" y2="235"/>
+<text class="grp" x="56" y="239" text-anchor="start">학회</text>
+<line class="lane" x1="200" y1="320" x2="640" y2="320"/>
+<text class="grp" x="56" y="324" text-anchor="start">대학 자리</text>
+<line class="lane" x1="200" y1="400" x2="640" y2="400"/>
+<text class="grp" x="56" y="404" text-anchor="start">핼리 (견줌)</text>
+<rect class="seg" x="211.7" y="141" width="88.5" height="18"/>
+<rect x="300.2" y="141" width="13.8" height="18" fill="#FFFDF7" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="3 2"/>
+<rect class="seg2" x="314.0" y="141" width="325.5" height="18"/>
+<text class="ev" x="255.9" y="154" text-anchor="middle">프랑스 [1]</text>
+<text class="ev" x="476.8" y="154" text-anchor="middle">런던 — 개인 교습 · 커피하우스 [1][2]</text>
+<line class="dash" x1="300.2" y1="141" x2="300.2" y2="128"/>
+<text class="ev" x="300.2" y="123" text-anchor="end">1685 낭트칙령 폐지 [3]</text>
+<text class="ev" x="307.1" y="176" text-anchor="middle">런던에 온 때는 갈린다 [1][2]</text>
+<circle class="mk" cx="360.9" cy="235" r="3.5"/>
+<text class="ev" x="356.9" y="223" text-anchor="end">1697 왕립학회 회원 [1][2]</text>
+<circle class="mk" cx="432.2" cy="235" r="3.5"/>
+<text class="ev" x="436.2" y="257" text-anchor="start">1712 뉴턴–라이프니츠 조사위원 [2]</text>
+<circle class="mk" cx="637.5" cy="235" r="3.5"/>
+<text class="ev" x="631.5" y="206" text-anchor="end">1754.6.27 파리 과학원 [1]</text>
+<circle cx="422.4" cy="320" r="4" fill="#FFFDF7" stroke="#221E18" stroke-width="1.4"/>
+<text class="ev" x="416.4" y="308" text-anchor="middle">1710 케임브리지 자리 — 베르누이가 라이프니츠에게 지지를 청함 [1]</text>
+<text class="ev" x="542.2" y="342" text-anchor="middle">끝내 얻지 못했다 [1]</text>
+<circle cx="329.6" cy="400" r="4" fill="#FFFDF7" stroke="#3A5C77" stroke-width="1.4"/>
+<text class="ev" x="323.6" y="422" text-anchor="end">1691 새빌 천문학 석좌 — 떨어짐 [7]</text>
+<circle class="bl" cx="393.1" cy="400" r="3.5"/>
+<text class="ev" x="399.1" y="422" text-anchor="start">1704 새빌 기하학 교수 [7]</text>
+<circle class="pt" cx="639.5" cy="470" r="4"/>
+<text class="ev" x="633.5" y="458" text-anchor="end">1754.11.27 드무아브르가 죽다 [1]</text>
+<line class="axis" x1="200" y1="470" x2="640" y2="470"/>
+<line class="axis" x1="200.0" y1="470" x2="200.0" y2="475"/>
+<text class="yr" x="200.0" y="488" text-anchor="middle">1665</text>
+<line class="axis" x1="224.4" y1="470" x2="224.4" y2="475"/>
+<line class="axis" x1="248.9" y1="470" x2="248.9" y2="475"/>
+<text class="yr" x="248.9" y="488" text-anchor="middle">1675</text>
+<line class="axis" x1="273.3" y1="470" x2="273.3" y2="475"/>
+<line class="axis" x1="297.8" y1="470" x2="297.8" y2="475"/>
+<text class="yr" x="297.8" y="488" text-anchor="middle">1685</text>
+<line class="axis" x1="322.2" y1="470" x2="322.2" y2="475"/>
+<line class="axis" x1="346.7" y1="470" x2="346.7" y2="475"/>
+<text class="yr" x="346.7" y="488" text-anchor="middle">1695</text>
+<line class="axis" x1="371.1" y1="470" x2="371.1" y2="475"/>
+<line class="axis" x1="395.6" y1="470" x2="395.6" y2="475"/>
+<text class="yr" x="395.6" y="488" text-anchor="middle">1705</text>
+<line class="axis" x1="420.0" y1="470" x2="420.0" y2="475"/>
+<line class="axis" x1="444.4" y1="470" x2="444.4" y2="475"/>
+<text class="yr" x="444.4" y="488" text-anchor="middle">1715</text>
+<line class="axis" x1="468.9" y1="470" x2="468.9" y2="475"/>
+<line class="axis" x1="493.3" y1="470" x2="493.3" y2="475"/>
+<text class="yr" x="493.3" y="488" text-anchor="middle">1725</text>
+<line class="axis" x1="517.8" y1="470" x2="517.8" y2="475"/>
+<line class="axis" x1="542.2" y1="470" x2="542.2" y2="475"/>
+<text class="yr" x="542.2" y="488" text-anchor="middle">1735</text>
+<line class="axis" x1="566.7" y1="470" x2="566.7" y2="475"/>
+<line class="axis" x1="591.1" y1="470" x2="591.1" y2="475"/>
+<text class="yr" x="591.1" y="488" text-anchor="middle">1745</text>
+<line class="axis" x1="615.6" y1="470" x2="615.6" y2="475"/>
+<line class="axis" x1="640.0" y1="470" x2="640.0" y2="475"/>
+<text class="yr" x="640.0" y="488" text-anchor="middle">1755</text>
+<text class="warn" x="56" y="516">⚠ 해만 아는 일(1685 등)은 해의 가운데, 달·날을 아는 것은 그 자리에 두었다 — 왕립학회는 1697.11.30 이다 [2].</text>
+<text class="warn" x="56" y="533">⚠ 점선 칸은 런던에 온 때가 갈리는 사이다 — 가톨릭 쪽 전기는 1685 뒤 「곧」 건너갔다고 [1],</text>
+<text class="warn" x="56" y="550">⚠ 개신교 쪽 전기는 1688.4.27 성 마르탱에서 풀려난 뒤라고 적는다 [1]. 1687.8.28 엔 이미 런던 사보이 교회에 있었다 [2].</text>
+<text class="warn" x="56" y="567">⚠ 프랑스 칸 안의 학교(비트리 · 스당 · 소뮈르 · 파리)는 가르지 않았고, 성 마르탱은 점선 칸 안에 든다 [1].</text>
+<text class="warn" x="56" y="584">⚠ 조사위원 임명은 [2] 의 1712 를 따랐다 — [1] 은 1710 이라 적는다.</text>
+<text class="warn" x="56" y="601">⚠ 대학 자리 줄의 빈칸이 그림의 요점이다 — 독일 자리를 얻어 주려던 시도 [1] 는 해를 몰라 찍지 않았다.</text>
+<text class="warn" x="56" y="618">⚠ 핼리 줄은 대학 자리만 견주려고 넣었다 — 1696 체스터 조폐국 · 1720 왕실 천문관 [7] 은 찍지 않았다.</text>
+<text class="warn" x="56" y="635">⚠ 해와 날짜는 [1] MacTutor History of Mathematics, Abraham de Moivre 를, 1687 · 1712 는</text>
+<text class="warn" x="56" y="652">⚠ [2] Wikipedia, Abraham de Moivre 를, 핼리는 [7] MacTutor History of Mathematics, Edmond Halley 를,</text>
+<text class="warn" x="56" y="669">⚠ 1685 는 [3] 네이버 지식백과(프랑스사, 김복래), 침울한 가톨릭의 르네상스(낭트 칙령의 폐지) 를 따랐다.</text>
+</svg>
