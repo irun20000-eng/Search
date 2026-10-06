@@ -33,6 +33,9 @@
   "다항함수": "polynomial-functions",
 
   "데미안": "hesse-demian",
-  "싯다르타": "hesse-siddhartha"
+  "싯다르타": "hesse-siddhartha",
+
+  "부분적분": "concept-integration-advanced",
+  "무한소": "concept-differentiation-advanced"
  }
 }
