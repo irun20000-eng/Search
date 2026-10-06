@@ -89,7 +89,25 @@
 | `concept/notes/<슬러그>.md` | **프론트매터 + 본문.** 정본이다 |
 | `studio/concepts/<슬러그>.py` | 개념 한 장 스펙 (`SPEC`) |
 
-`concept/manifest.json` 은 손대지 않는다 — 워크플로가 `build_concept_manifest.py` 로 만든다.
+`concept/manifest.json` 과 루트 `link-index.json`·`backlog.json` 은 **빌더 산출물이라
+손으로 고치지 않는다.** 다만 **올리기 전에 빌더를 한 번 돌려 함께 커밋한다**(2026-10-06 수정).
+
+```
+python3 tools/build_concept_manifest.py   # pic 은 그림이 없으면 null + 주의 한 줄
+python3 tools/build_link_index.py
+```
+
+> 종전에는 「손대지 않는다 — 워크플로가 만든다」였다. 그러면 **노트만 올린 중간 커밋이
+> 서가 게이트에서 반드시 빨갛다** — `concept/notes/<슬러그>.md` 가 매니페스트에 없어
+> `manifest_paths` 가 「고아」로 잡고 `verify_builders` 가 「산출물이 소스보다 낡았다」로
+> 잡는다. 러너가 2분 뒤 만들어 커밋하므로 최종 head 는 초록이지만, 그 사이에 **실패
+> 메일이 한 통 나간다**(2026-10-06 발견 노트 EP6 `8938c2c`). 실패가 아닌데 실패로
+> 보이는 알림은 진짜 실패를 묻는다.
+> 빌더를 먼저 돌려도 안전하다는 것을 그 커밋에서 실측했다 — 그림이 아직 없으면
+> `build_concept_manifest.py` 가 `pic: null` 과 주의 한 줄을 내고 **게이트 12개가 전부
+> 통과**한다. 러너가 그림을 그린 뒤 같은 빌더를 다시 돌려 `pic` 을 채우므로 멱등이다.
+> **금지된 것은 「그림을 로컬에서 그리는 것」이지 「매니페스트를 다시 만드는 것」이 아니다.**
+
 옵시디언 볼트(`003-카드뉴스학습자료`)는 **사본**이며 `sync_obsidian.py` 가 없을 때만 내려보낸다.
 
 슬러그는 제목의 괄호 안 영문에서 나온다 — `평균이라는 착시(Size Bias)` → `size-bias`.
@@ -143,6 +161,12 @@ take.sub 113자로 `card sumR +13` 넘침이 나 한 사이클을 썼다).
 
 `main` 에 직접 푸시하지 않는다. 브랜치에 올라가면 `cardnews-render.yml` 이
 자동으로 렌더해 같은 브랜치에 컷을 커밋하고 PR 을 연다.
+
+**학습자료를 함께 쓴 회차는 push 를 둘로 나눈다**(LESSONS 2026-09-17) — 먼저 카피만
+올리고, **컷이 브랜치에 붙은 것을 본 뒤에** 개념노트·스펙을 올린다. 한 push 로 올리면
+`cardnews-render` 와 `concept-sheet-render` 가 동시에 깨어나 `link-index.json`·
+`backlog.json` 을 양쪽이 다시 만들고, 늦게 끝난 쪽이 충돌로 죽어 **개념 한 장이 통째로
+사라진다.** 둘째 push 에는 §4.5 의 빌더 2종을 돌린 결과를 함께 담는다.
 
 ## 5.5 머지까지 하고 끝낸다 — 루틴의 일이다 (2026-08-27 사용자 지시)
 
