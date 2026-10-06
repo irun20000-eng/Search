@@ -1,6 +1,28 @@
 {
- "count": 15,
+ "count": 16,
  "notes": [
+  {
+   "slug": "seven-bridges",
+   "title": "쾨니히스베르크의 다리(Seven Bridges of Königsberg) — 이해편(입문·딥)",
+   "date": "2026-10-06",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "그래프이론",
+    "위상수학",
+    "오일러",
+    "한붓그리기",
+    "차수",
+    "홀수점",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 6편 · 한 번씩만 건널 수 있는가",
+   "chars": 13159,
+   "pic": "seven-bridges.png",
+   "path": "concept/notes/seven-bridges.md"
+  },
   {
    "slug": "brooks-law",
    "title": "브룩스의 법칙(Brooks's Law) — 이해편(입문·딥)",
