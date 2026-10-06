@@ -94,6 +94,7 @@ CATS = {
     "iran-us-conflict-timeline": "society",
     "korea-college-admission-2032": "society",
     "prosecution-reform-2026": "society",
+    "man-city-115-charges-verdict": "society",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
