@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-06",
- "scanned": 308,
+ "scanned": 309,
  "resolved": 1762,
- "pending": 535,
+ "pending": 545,
  "counts": {
-  "new": 251,
+  "new": 256,
   "companion": 5,
   "gap": 1
  },
@@ -1197,6 +1197,81 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "프리미어리그 재정 규정",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "맨시티 '115개 혐의' 판정 (2026년 10월) — 무엇이 유죄였고 왜인가, 관련 규정과 스포츠 정신 (DEEP)",
+     "u": "research/#r=man-city-115-charges-verdict",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "재정적 페어플레이",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "맨시티 '115개 혐의' 판정 (2026년 10월) — 무엇이 유죄였고 왜인가, 관련 규정과 스포츠 정신 (DEEP)",
+     "u": "research/#r=man-city-115-charges-verdict",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "스포츠워싱",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "맨시티 '115개 혐의' 판정 (2026년 10월) — 무엇이 유죄였고 왜인가, 관련 규정과 스포츠 정신 (DEEP)",
+     "u": "research/#r=man-city-115-charges-verdict",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "최대선의 의무",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "맨시티 '115개 혐의' 판정 (2026년 10월) — 무엇이 유죄였고 왜인가, 관련 규정과 스포츠 정신 (DEEP)",
+     "u": "research/#r=man-city-115-charges-verdict",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "스포츠 정신과 공정성",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "맨시티 '115개 혐의' 판정 (2026년 10월) — 무엇이 유죄였고 왜인가, 관련 규정과 스포츠 정신 (DEEP)",
+     "u": "research/#r=man-city-115-charges-verdict",
+     "s": "research",
+     "n": 2
     }
    ]
   },
