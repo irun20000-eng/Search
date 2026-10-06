@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 530" role="img" aria-label="그림 위쪽에 「그가 쓴 것과 그에게 붙은 것 — 피사의 레오나르도」라는 표제가 있고, 갈색 점은 그가 쓴 책과 그를 부른 당대 문서, 푸른 점은 그가 죽은 뒤 그와 수열에 붙은 이름이라는 부호 설명이 있다. 그림은 위아래 두 칸이다. 위 칸에는 살아 있던 해 가까이, 1195에서 1245, 한 해가 10px 라는 제목이 있고, 가로축에 1200부터 1240까지 열 해마다 눈금이 있다. 갈색 점이 다섯 있다. 1202년 점 위에 1202 『산반서』라고 적혀 있고 그 아래 줄에 토끼 문제는 셋째 부의 한 문제라고 적혀 있다. 1220년 점 위 왼쪽에 1220 『실용 기하』, 1225년 점 아래에 1225 『꽃』 · 『제곱수의 책』, 1228년 점 위에 1228 『산반서』 2판, 1240년 점 위에 1240 피사 포고문과 그 아래 「레오나르도 비골로」라고 적혀 있다. 아래 칸에는 그 뒤, 1150에서 1900, 눈금이 위 칸과 다르다는 제목이 있고, 가로축에 1200, 1400, 1600, 1800 눈금이 있다. 축 위 왼쪽에 1170년부터 1240년까지 옅은 갈색 막대가 있고 그 위에 산 해 1170 무렵~1240 이후라고 적혀 있다. 축 위 오른쪽 1800년부터 1900년까지 푸른 파선 띠가 있고 그 위에 19세기 · 뤼카가 수열에 이름을이라고 적혀 있다. 1838년 자리에 푸른 점이 있고 그 아래에 1838 리브리가 「Fibonacci」로 줄여 씀이라고 적혀 있다. 1202년 자리부터 1838년 자리까지 괄호가 걸쳐 있고 그 아래에 『산반서』에서 「Fibonacci」까지 636년이라고 적혀 있다. 맨 아래에 단서가 여섯 줄 있다. 첫째, 두 칸은 눈금이 다르다. 둘째, 생몰은 자료마다 달라 산 해의 끝을 1240 이후로 적었고 막대는 1240 까지다. 셋째, 뤼카의 해는 이 노트의 출처가 19세기까지만 적어 띠로 그렸다. 넷째, 1202, 1220, 1225, 1228, 1240 은 1번과 2번을 따랐고 포겔은 1220 을 1220/1221 로 적으며, 1838 은 3번과 5번, 뤼카는 4번을 따랐다. 다섯째, 1838 은 근대 자료에서 처음 보인 해이고 636년은 1838 빼기 1202 로 이 노트가 셈했다. 여섯째, 1202년 판은 알려진 사본이 없고 토끼 문제가 남은 본문인 1228년 판에 있다는 것까지가 확인되며 이것은 2번과 8번에 기댄 이 노트의 읽기다">
+  <title>그가 쓴 것과 그에게 붙은 것 — 피사의 레오나르도</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .life{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .band{fill:#E3EAF0;stroke:#3A5C77;stroke-width:1;stroke-dasharray:4 3;}
+    .lead{stroke:#8A7F6E;stroke-width:0.8;}
+    .brk{stroke:#5B5245;stroke-width:1;fill:none;}
+  </style>
+  <rect width="700" height="530" fill="#FFFDF7"/>
+  <text x="56" y="30" font-size="16">그가 쓴 것과 그에게 붙은 것 — 피사의 레오나르도</text>
+  <text x="56" y="50" font-size="11" class="dim"><tspan class="sien">● 갈색</tspan> 그가 쓴 책과 그를 부른 당대 문서 · <tspan class="blue">● 푸른색</tspan> 그가 죽은 뒤 그와 수열에 붙은 이름</text>
+
+  <!-- 위 칸: 1195~1245, 한 해 = 10px -->
+  <text x="56" y="80" font-size="12">살아 있던 해 가까이 — 1195~1245, 한 해가 10px</text>
+  <line x1="100" y1="160" x2="600" y2="160" class="axis"/>
+  <line x1="150" y1="155" x2="150" y2="165" class="tick"/><text x="150" y="179" font-size="10.5" class="ax" text-anchor="middle">1200</text>
+  <line x1="250" y1="155" x2="250" y2="165" class="tick"/><text x="250" y="179" font-size="10.5" class="ax" text-anchor="middle">1210</text>
+  <line x1="350" y1="155" x2="350" y2="165" class="tick"/><text x="350" y="179" font-size="10.5" class="ax" text-anchor="middle">1220</text>
+  <line x1="450" y1="155" x2="450" y2="165" class="tick"/><text x="450" y="179" font-size="10.5" class="ax" text-anchor="middle">1230</text>
+  <line x1="550" y1="155" x2="550" y2="165" class="tick"/><text x="550" y="179" font-size="10.5" class="ax" text-anchor="middle">1240</text>
+
+  <circle cx="170" cy="160" r="4.5" fill="#9C5A2C"/>
+  <line x1="170" y1="155" x2="170" y2="112" class="lead"/>
+  <text x="174" y="104" font-size="11" class="sien">1202 『산반서』</text>
+  <text x="174" y="118" font-size="10" class="dim">토끼 문제는 셋째 부의 한 문제</text>
+
+  <circle cx="350" cy="160" r="4.5" fill="#9C5A2C"/>
+  <line x1="350" y1="155" x2="350" y2="134" class="lead"/>
+  <text x="346" y="138" font-size="11" class="sien" text-anchor="end">1220 『실용 기하』</text>
+
+  <circle cx="400" cy="160" r="4.5" fill="#9C5A2C"/>
+  <line x1="400" y1="165" x2="400" y2="196" class="lead"/>
+  <text x="404" y="204" font-size="11" class="sien">1225 『꽃』 · 『제곱수의 책』</text>
+
+  <circle cx="430" cy="160" r="4.5" fill="#9C5A2C"/>
+  <line x1="430" y1="155" x2="430" y2="112" class="lead"/>
+  <text x="434" y="108" font-size="11" class="sien">1228 『산반서』 2판</text>
+
+  <circle cx="550" cy="160" r="4.5" fill="#9C5A2C"/>
+  <line x1="550" y1="155" x2="550" y2="134" class="lead"/>
+  <text x="554" y="130" font-size="11" class="sien">1240 피사 포고문</text>
+  <text x="554" y="144" font-size="10" class="dim">「레오나르도 비골로」</text>
+
+  <!-- 아래 칸: 1150~1900, 한 해 = 0.6933px -->
+  <text x="56" y="248" font-size="12">그 뒤 — 1150~1900, 눈금이 위 칸과 다르다</text>
+  <line x1="100" y1="330" x2="620" y2="330" class="axis"/>
+  <line x1="134.67" y1="325" x2="134.67" y2="335" class="tick"/><text x="134.67" y="349" font-size="10.5" class="ax" text-anchor="middle">1200</text>
+  <line x1="273.33" y1="325" x2="273.33" y2="335" class="tick"/><text x="273.33" y="349" font-size="10.5" class="ax" text-anchor="middle">1400</text>
+  <line x1="412.00" y1="325" x2="412.00" y2="335" class="tick"/><text x="412.00" y="349" font-size="10.5" class="ax" text-anchor="middle">1600</text>
+  <line x1="550.67" y1="325" x2="550.67" y2="335" class="tick"/><text x="550.67" y="349" font-size="10.5" class="ax" text-anchor="middle">1800</text>
+
+  <rect x="113.87" y="300" width="48.53" height="14" class="life"/>
+  <text x="113.87" y="292" font-size="10.5" class="sien">산 해 1170 무렵~1240 이후</text>
+
+  <rect x="550.67" y="300" width="69.33" height="14" class="band"/>
+  <text x="616" y="292" font-size="10.5" class="blue" text-anchor="end">19세기 · 뤼카가 수열에 이름을</text>
+
+  <circle cx="577.00" cy="330" r="4.5" fill="#3A5C77"/>
+  <line x1="577.00" y1="335" x2="577.00" y2="360" class="lead"/>
+  <text x="573" y="372" font-size="11" class="blue" text-anchor="end">1838 리브리가 「Fibonacci」로 줄여 씀</text>
+
+  <path d="M136.05,388 L136.05,396 L577.00,396 L577.00,388" class="brk"/>
+  <text x="356.53" y="412" font-size="11" class="dim" text-anchor="middle">『산반서』에서 「Fibonacci」까지 636년</text>
+
+  <text x="56" y="436" font-size="10" class="ax">⚠ 두 칸은 눈금이 다르다.</text>
+  <text x="56" y="452" font-size="10" class="ax">⚠ 생몰은 자료마다 달라 산 해의 끝을 「1240 이후」로 적었다(막대는 1240 까지).</text>
+  <text x="56" y="468" font-size="10" class="ax">⚠ 뤼카의 해는 이 노트의 출처가 「19세기」까지만 적어 띠로 그렸다.</text>
+  <text x="56" y="484" font-size="10" class="ax">⚠ 1202·1220(포겔은 1220/1221)·1225·1228·1240 은 1·2번, 1838 은 3·5번, 뤼카는 4번을 따랐다.</text>
+  <text x="56" y="500" font-size="10" class="ax">⚠ 1838 은 「근대 자료에서」 처음 보인 해다. 636년(1838 − 1202)은 이 노트가 셈했다.</text>
+  <text x="56" y="516" font-size="10" class="ax">⚠ 1202년 판은 알려진 사본이 없다. 토끼 문제가 남은 본문(1228년 판)에 있다는 데까지가 확인된다(2·8번에 기댄 읽기).</text>
+</svg>
