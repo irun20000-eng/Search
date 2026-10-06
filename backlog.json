@@ -1,8 +1,8 @@
 {
  "generated": "2026-10-06",
- "scanned": 306,
- "resolved": 1721,
- "pending": 541,
+ "scanned": 307,
+ "resolved": 1731,
+ "pending": 540,
  "counts": {
   "new": 253,
   "companion": 5,
@@ -2983,21 +2983,6 @@
    ]
   },
   {
-   "name": "히파르코스",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "클라우디오스 프톨레마이오스",
-     "u": "math/#n=person-ptolemy",
-     "s": "math",
-     "n": 2
-    }
-   ]
-  },
-  {
    "name": "중간값 정리",
    "count": 1,
    "kind": "new",
@@ -4522,6 +4507,21 @@
     {
      "t": "피사의 레오나르도",
      "u": "math/#n=person-fibonacci",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "기원전 2세기",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "히파르코스",
+     "u": "math/#n=person-hipparchus",
      "s": "math",
      "n": 1
     }
