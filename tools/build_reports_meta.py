@@ -159,7 +159,7 @@ def main():
             r["chars"] = len(M.body_of(p.read_text(encoding="utf-8")))
 
     man["categories"] = CATEGORIES
-    MAN.write_text(json.dumps(man, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    MAN.write_text(json.dumps(man, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline='\n')
 
     counts = {}
     for r in reports:

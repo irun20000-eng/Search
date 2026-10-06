@@ -49,7 +49,7 @@ def main():
     out.sort(key=lambda v: (order.get(v["id"], 10**6), v["id"]))
     man = {"generated": max((v["added"] for v in out), default=""),
            "categories": old.get("categories", []), "videos": out}
-    MAN.write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding='utf-8')
+    MAN.write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding='utf-8', newline='\n')
     print(f"manifest 재생성: {len(out)}편")
 
 
