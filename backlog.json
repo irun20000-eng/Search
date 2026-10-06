@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-06",
- "scanned": 305,
- "resolved": 1699,
- "pending": 540,
+ "scanned": 306,
+ "resolved": 1721,
+ "pending": 541,
  "counts": {
-  "new": 252,
+  "new": 253,
   "companion": 5,
   "gap": 1
  },
@@ -4507,6 +4507,21 @@
     {
      "t": "확률론 확장편",
      "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "13세기",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "피사의 레오나르도",
+     "u": "math/#n=person-fibonacci",
      "s": "math",
      "n": 1
     }
