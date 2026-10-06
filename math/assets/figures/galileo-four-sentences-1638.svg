@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" role="img" aria-label="그림 위쪽에 「1638년의 네 문장 — 그리고 그 뒤」라는 표제가 있고 그 아래에 『새로운 두 과학』에서 그가 적은 말은 갈색, 그것을 정한 사람들은 푸른색이라고 적혀 있다. 가로축은 1630년부터 1700년까지 십 년마다 눈금이 있고, 1638년 자리에 갈색 점선이 세로로 내려오며 그 위에 1638 『새로운 두 과학』이라고 적혀 있다. 줄은 위에서부터 넷이다. 첫째 줄 가장 빠른 길에는 1638년 갈색 점 아래에 원호다 「추론할 수 있다」가 있고, 오른쪽 끝 1696년 빈 점과 1697년 푸른 점 위에 1696 공모 · 1697 요한 베르누이 사이클로이드라고 적혀 있다. 둘째 줄 매달린 줄에는 1638년 갈색 점 아래에 포물선에 「아주 가깝다」가 있고, 1669년 푸른 점 위에 1669 융기우스(죽은 뒤 출간) 포물선이 아니다, 1691년 푸른 점 아래에 1691 식 라이프니츠 · 하위헌스 · 요한 베르누이라고 적혀 있다. 셋째 줄 진자에는 1638년보다 조금 왼쪽인 1636년 무렵 푸른 점 위에 1636 무렵 메르센 · 데카르트 「완전히 등시는 아니다」가 있고, 1638년 갈색 점 아래에 두 줄로 90° 이하 호는 같은 시간 「실험이 보여 준다」가 있으며, 1659년 푸른 점 아래에 1659 하위헌스 사이클로이드라야 등시, 1673년 푸른 점 아래에 1673 『진자시계』로 출간이라고 적혀 있다. 넷째 줄 무한은 축 양쪽 끝으로 화살표가 나간다. 왼쪽 화살표 위에 1302 무렵 둔스 스코투스, 오른쪽 화살표 위에 19세기 칸토어 무한끼리도 견준다가 있고, 1638년 갈색 점 아래에 「같다 · 크다 · 작다」는 무한에 쓸 수 없다 「내가 보는 한」이 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 낫표 안의 갈색 말은 2번(크루 · 드살비오의 1914년 영역)을 이 노트가 옮긴 것이고 원문은 이탈리아어 · 라틴어다. 둘째, 1636 무렵은 6번이 around 1636 으로 적은 것이라 점 자리는 어림이고, 칸토어는 8번이 19세기로만 적어 축 밖에 두었으며 스코투스(about 1302)도 8번이고, 빈 점은 1696년 공모 자리다. 셋째, 1696 · 1697 은 3번, 1669 · 1691 은 7번, 1659 · 1673 은 9번(1659 는 3번도)을 따랐다">
+  <title>1638년의 네 문장 — 그리고 그 뒤</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .y1638{stroke:#9C5A2C;stroke-width:1;stroke-dasharray:4 3;fill:none;}
+    .gdot{fill:#9C5A2C;} .ldot{fill:#3A5C77;} .edot{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .arr{stroke:#3A5C77;stroke-width:1.3;fill:none;}
+  </style>
+  <rect width="720" height="580" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">1638년의 네 문장 — 그리고 그 뒤</text>
+  <text x="30" y="50" font-size="11" class="dim">『새로운 두 과학』에서 그가 적은 말(갈색)과, 그것을 정한 사람들(푸른색).</text>
+
+  <!-- x = 150 + (year - 1630) * 7.5 ; 1638 = 210 -->
+  <path d="M210,80 V278 M210,297 V378 M210,397 V452" class="y1638"/>
+  <text x="214" y="76" font-size="10" class="sien">1638 『새로운 두 과학』</text>
+
+  <!-- 1 최속강하선 y=125 -->
+  <text x="138" y="129" font-size="12" text-anchor="end">가장 빠른 길</text>
+  <line x1="210" y1="125" x2="652.5" y2="125" class="row"/>
+  <circle cx="210" cy="125" r="4.5" class="gdot"/>
+  <text x="217" y="147" font-size="11" class="sien">원호다 — 「추론할 수 있다」</text>
+  <circle cx="645" cy="125" r="3.5" class="edot"/>
+  <circle cx="652.5" cy="125" r="4.5" class="ldot"/>
+  <text x="652" y="111" font-size="11" class="blue" text-anchor="end">1696 공모 · 1697 요한 베르누이 — 사이클로이드</text>
+
+  <!-- 2 매달린 줄 y=215 -->
+  <text x="138" y="219" font-size="12" text-anchor="end">매달린 줄</text>
+  <line x1="210" y1="215" x2="607.5" y2="215" class="row"/>
+  <circle cx="210" cy="215" r="4.5" class="gdot"/>
+  <text x="217" y="237" font-size="11" class="sien">포물선에 「아주 가깝다」</text>
+  <circle cx="442.5" cy="215" r="4.5" class="ldot"/>
+  <text x="442.5" y="201" font-size="11" class="blue" text-anchor="middle">1669 융기우스(죽은 뒤 출간) — 포물선이 아니다</text>
+  <circle cx="607.5" cy="215" r="4.5" class="ldot"/>
+  <text x="680" y="237" font-size="11" class="blue" text-anchor="end">1691 식 — 라이프니츠 · 하위헌스 · 요한 베르누이</text>
+
+  <!-- 3 진자 y=305 -->
+  <text x="138" y="309" font-size="12" text-anchor="end">진자</text>
+  <line x1="195" y1="305" x2="472.5" y2="305" class="row"/>
+  <circle cx="195" cy="305" r="4.5" class="ldot"/>
+  <text x="186" y="291" font-size="11" class="blue">1636 무렵 메르센 · 데카르트 — 「완전히 등시는 아니다」</text>
+  <circle cx="210" cy="305" r="4.5" class="gdot"/>
+  <text x="217" y="327" font-size="11" class="sien">90° 이하 호는 같은 시간 —</text>
+  <text x="217" y="342" font-size="11" class="sien">「실험이 보여 준다」</text>
+  <circle cx="367.5" cy="305" r="4.5" class="ldot"/>
+  <circle cx="472.5" cy="305" r="4.5" class="ldot"/>
+  <text x="367.5" y="327" font-size="11" class="blue">1659 하위헌스 — 사이클로이드라야 등시</text>
+  <text x="472.5" y="342" font-size="11" class="blue">1673 『진자시계』로 출간</text>
+
+  <!-- 4 무한 y=405 -->
+  <text x="138" y="409" font-size="12" text-anchor="end">무한</text>
+  <line x1="150" y1="405" x2="675" y2="405" class="row"/>
+  <path d="M158,400 L150,405 L158,410" class="arr"/>
+  <text x="156" y="391" font-size="11" class="blue">← 1302 무렵 둔스 스코투스</text>
+  <circle cx="210" cy="405" r="4.5" class="gdot"/>
+  <text x="217" y="427" font-size="11" class="sien">「같다 · 크다 · 작다」는 무한에 쓸 수 없다 — 「내가 보는 한」</text>
+  <path d="M667,400 L675,405 L667,410" class="arr"/>
+  <text x="672" y="391" font-size="11" class="blue" text-anchor="end">19세기 칸토어 — 무한끼리도 견준다 →</text>
+
+  <!-- 축 -->
+  <line x1="150" y1="458" x2="680" y2="458" class="axis"/>
+  <line x1="150" y1="454" x2="150" y2="462" class="tick"/><text x="150" y="476" font-size="10" class="ax" text-anchor="middle">1630</text>
+  <line x1="225" y1="454" x2="225" y2="462" class="tick"/><text x="225" y="476" font-size="10" class="ax" text-anchor="middle">1640</text>
+  <line x1="300" y1="454" x2="300" y2="462" class="tick"/><text x="300" y="476" font-size="10" class="ax" text-anchor="middle">1650</text>
+  <line x1="375" y1="454" x2="375" y2="462" class="tick"/><text x="375" y="476" font-size="10" class="ax" text-anchor="middle">1660</text>
+  <line x1="450" y1="454" x2="450" y2="462" class="tick"/><text x="450" y="476" font-size="10" class="ax" text-anchor="middle">1670</text>
+  <line x1="525" y1="454" x2="525" y2="462" class="tick"/><text x="525" y="476" font-size="10" class="ax" text-anchor="middle">1680</text>
+  <line x1="600" y1="454" x2="600" y2="462" class="tick"/><text x="600" y="476" font-size="10" class="ax" text-anchor="middle">1690</text>
+  <line x1="675" y1="454" x2="675" y2="462" class="tick"/><text x="675" y="476" font-size="10" class="ax" text-anchor="middle">1700</text>
+
+  <text x="30" y="506" font-size="10" class="ax">⚠ 「 」 안의 갈색 말은 2번(크루 · 드살비오의 1914년 영역)을 이 노트가 옮긴 것이다. 원문은 이탈리아어 · 라틴어다.</text>
+  <text x="30" y="522" font-size="10" class="ax">⚠ 「1636 무렵」은 6번이 around 1636 으로 적은 것이라 점 자리는 어림이다. 칸토어는 8번이 「19세기」로만 적어 축 밖에 두었고,</text>
+  <text x="46" y="538" font-size="10" class="ax">스코투스(about 1302)도 8번이다. 빈 점은 1696년 공모 자리다.</text>
+  <text x="30" y="554" font-size="10" class="ax">⚠ 1696 · 1697 은 3번, 1669 · 1691 은 7번, 1659 · 1673 은 9번(1659 는 3번도)을 따랐다.</text>
+</svg>

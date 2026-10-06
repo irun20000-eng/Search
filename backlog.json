@@ -1,8 +1,8 @@
 {
  "generated": "2026-10-06",
- "scanned": 307,
- "resolved": 1737,
- "pending": 534,
+ "scanned": 308,
+ "resolved": 1762,
+ "pending": 535,
  "counts": {
   "new": 251,
   "companion": 5,
@@ -2935,6 +2935,27 @@
    ]
   },
   {
+   "name": "요아힘 융기우스",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "미분방정식",
+     "u": "math/#n=concept-differential-equation",
+     "s": "math",
+     "n": 1
+    },
+    {
+     "t": "갈릴레오 갈릴레이",
+     "u": "math/#n=person-galileo",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "중간값 정리",
    "count": 1,
    "kind": "new",
@@ -4400,21 +4421,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "요아힘 융기우스",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "미분방정식",
-     "u": "math/#n=concept-differential-equation",
-     "s": "math",
      "n": 1
     }
    ]
