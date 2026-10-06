@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" role="img" aria-label="그림 위쪽에 「한 사람의 값이 자료마다 — 히파르코스」라는 표제가 있고 그 아래에 그의 책은 거의 남지 않아 같은 값을 자료들이 서로 다르게 전한다고 적혀 있다. 그림은 위아래 두 칸의 가로 막대 그래프다. 위 칸의 제목은 세차, 춘분점이 한 해에 움직이는 각(초)이고, 가로축에 0, 20, 40 눈금이 있다. 막대는 위에서부터 다섯 개다. 첫째 투머 · 「100년에 1° 이상」은 36 까지 그린 파선 막대이고 끝에 오른쪽 화살표와 36 이상 (하한)이라고 적혀 있다. 둘째 MacTutor 46, 셋째 천문학백과 약 45, 넷째 지구과학사전 48 이고, 다섯째 오늘 값 (MacTutor) 50.26 은 푸른 막대다. 아래 칸의 제목은 별 목록, 몇 개를 적었나이고, 가로축에 0, 500, 1,000 눈금이 있다. 막대는 위에서부터 위키백과 · 로마 자료 약 850, 천문학 작은사전 약 850, 천문학백과 1,000 가까이, 지구과학사전 1,080 이고, 맨 아래 프톨레마이오스의 목록 1,025 는 푸른 막대다. 맨 아래에 단서가 네 개 있다. 첫째, 투머의 값은 100년에 1° 이상이라는 하한이라 파선 막대에 화살표를 달았다. 둘째, 천문학백과는 150년 전 성표와 견주어 약 2° 라고도 적고 그 둘로 셈하면 48초가 된다는 것은 이 노트의 셈이다. 셋째, 투머는 850 이라는 수가 확실한 근거에 서 있지 않고 그가 별마다 좌표를 매겼는지조차 증명되지 않는다고 적으며, 아래 막대는 자료가 적은 수일 뿐이다. 넷째, 46 과 50.26 은 1번, 1° 이상은 2번, 약 850 로마 자료와 1,025 는 4번, 45 와 1,000 은 5번, 48 과 1,080 은 6번, 작은사전의 약 850 은 7번을 따랐다">
+  <title>한 사람의 값이 자료마다 — 히파르코스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .bar{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .low{fill:#FBF6EE;stroke:#9C5A2C;stroke-width:1;stroke-dasharray:4 3;}
+    .ref{fill:#E3EAF0;stroke:#3A5C77;stroke-width:1;}
+    .arr{stroke:#9C5A2C;stroke-width:1.4;fill:none;}
+  </style>
+  <rect width="700" height="560" fill="#FFFDF7"/>
+  <text x="40" y="30" font-size="16">한 사람의 값이 자료마다 — 히파르코스</text>
+  <text x="40" y="50" font-size="11" class="dim">그의 책은 거의 남지 않았다. 그래서 같은 값을 자료들이 서로 다르게 전한다.</text>
+
+  <!-- 위 칸: 세차 값 (″/년), x = 200 + v × 8 -->
+  <text x="40" y="82" font-size="12">세차 — 춘분점이 한 해에 움직이는 각(″)</text>
+  <text x="192" y="110" font-size="11" class="dim" text-anchor="end">투머 · 「100년에 1° 이상」</text>
+  <rect x="200" y="99" width="288" height="15" class="low"/>
+  <path d="M488,106.5 L520,106.5 M512,101.5 L520,106.5 L512,111.5" class="arr"/>
+  <text x="526" y="110" font-size="11" class="sien">36 이상 (하한)</text>
+
+  <text x="192" y="134" font-size="11" class="dim" text-anchor="end">MacTutor</text>
+  <rect x="200" y="123" width="368" height="15" class="bar"/>
+  <text x="574" y="134" font-size="11" class="sien">46</text>
+
+  <text x="192" y="158" font-size="11" class="dim" text-anchor="end">천문학백과</text>
+  <rect x="200" y="147" width="360" height="15" class="bar"/>
+  <text x="566" y="158" font-size="11" class="sien">약 45</text>
+
+  <text x="192" y="182" font-size="11" class="dim" text-anchor="end">지구과학사전</text>
+  <rect x="200" y="171" width="384" height="15" class="bar"/>
+  <text x="590" y="182" font-size="11" class="sien">48</text>
+
+  <text x="192" y="206" font-size="11" class="blue" text-anchor="end">오늘 값 (MacTutor)</text>
+  <rect x="200" y="195" width="402.08" height="15" class="ref"/>
+  <text x="608" y="206" font-size="11" class="blue">50.26</text>
+
+  <line x1="200" y1="220" x2="640" y2="220" class="axis"/>
+  <line x1="200" y1="216" x2="200" y2="224" class="tick"/><text x="200" y="236" font-size="10" class="ax" text-anchor="middle">0</text>
+  <line x1="360" y1="216" x2="360" y2="224" class="tick"/><text x="360" y="236" font-size="10" class="ax" text-anchor="middle">20</text>
+  <line x1="520" y1="216" x2="520" y2="224" class="tick"/><text x="520" y="236" font-size="10" class="ax" text-anchor="middle">40</text>
+
+  <!-- 아래 칸: 별의 수, x = 200 + n × 0.38 -->
+  <text x="40" y="276" font-size="12">별 목록 — 몇 개를 적었나</text>
+  <text x="192" y="304" font-size="11" class="dim" text-anchor="end">위키백과 · 로마 자료</text>
+  <rect x="200" y="293" width="323" height="15" class="bar"/>
+  <text x="529" y="304" font-size="11" class="sien">약 850</text>
+
+  <text x="192" y="328" font-size="11" class="dim" text-anchor="end">천문학 작은사전</text>
+  <rect x="200" y="317" width="323" height="15" class="bar"/>
+  <text x="529" y="328" font-size="11" class="sien">약 850</text>
+
+  <text x="192" y="352" font-size="11" class="dim" text-anchor="end">천문학백과</text>
+  <rect x="200" y="341" width="380" height="15" class="bar"/>
+  <text x="586" y="352" font-size="11" class="sien">1,000 가까이</text>
+
+  <text x="192" y="376" font-size="11" class="dim" text-anchor="end">지구과학사전</text>
+  <rect x="200" y="365" width="410.4" height="15" class="bar"/>
+  <text x="616" y="376" font-size="11" class="sien">1,080</text>
+
+  <text x="192" y="400" font-size="11" class="blue" text-anchor="end">프톨레마이오스의 목록</text>
+  <rect x="200" y="389" width="389.5" height="15" class="ref"/>
+  <text x="595.5" y="400" font-size="11" class="blue">1,025</text>
+
+  <line x1="200" y1="414" x2="640" y2="414" class="axis"/>
+  <line x1="200" y1="410" x2="200" y2="418" class="tick"/><text x="200" y="430" font-size="10" class="ax" text-anchor="middle">0</text>
+  <line x1="390" y1="410" x2="390" y2="418" class="tick"/><text x="390" y="430" font-size="10" class="ax" text-anchor="middle">500</text>
+  <line x1="580" y1="410" x2="580" y2="418" class="tick"/><text x="580" y="430" font-size="10" class="ax" text-anchor="middle">1,000</text>
+
+  <text x="40" y="464" font-size="10" class="ax">⚠ 투머의 값은 「100년에 1° 이상」이라는 하한이다. 그래서 파선 막대에 화살표를 달았다.</text>
+  <text x="40" y="480" font-size="10" class="ax">⚠ 천문학백과는 「150년 전 성표와 견주어 약 2°」라고도 적는다. 그 둘로 셈하면 48″ 이 된다(이 노트의 셈).</text>
+  <text x="40" y="496" font-size="10" class="ax">⚠ 투머는 850 이라는 수가 확실한 근거에 서 있지 않고, 그가 별마다 좌표를 매겼는지조차</text>
+  <text x="56" y="512" font-size="10" class="ax">증명되지 않는다고 적는다. 아래 막대는 자료가 적은 수일 뿐이다.</text>
+  <text x="40" y="528" font-size="10" class="ax">⚠ 46 · 50.26 은 1번, 「1° 이상」은 2번, 약 850(로마 자료) · 1,025 는 4번, 45 · 1,000 은 5번,</text>
+  <text x="56" y="544" font-size="10" class="ax">48 · 1,080 은 6번, 작은사전의 약 850 은 7번을 따랐다.</text>
+</svg>
