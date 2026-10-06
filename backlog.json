@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-06",
- "scanned": 303,
- "resolved": 1681,
- "pending": 538,
+ "scanned": 304,
+ "resolved": 1693,
+ "pending": 540,
  "counts": {
-  "new": 251,
+  "new": 252,
   "companion": 5,
   "gap": 1
  },
@@ -2983,6 +2983,21 @@
    ]
   },
   {
+   "name": "히파르코스",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클라우디오스 프톨레마이오스",
+     "u": "math/#n=person-ptolemy",
+     "s": "math",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "중간값 정리",
    "count": 1,
    "kind": "new",
@@ -4453,21 +4468,6 @@
    ]
   },
   {
-   "name": "프톨레마이오스",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "15세기",
-     "u": "math/#n=century-15c",
-     "s": "math",
-     "n": 1
-    }
-   ]
-  },
-  {
    "name": "요아힘 융기우스",
    "count": 1,
    "kind": "new",
@@ -4507,6 +4507,21 @@
     {
      "t": "확률론 확장편",
      "u": "math/#n=concept-probability-advanced",
+     "s": "math",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "2세기",
+   "count": 1,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "클라우디오스 프톨레마이오스",
+     "u": "math/#n=person-ptolemy",
      "s": "math",
      "n": 1
     }
