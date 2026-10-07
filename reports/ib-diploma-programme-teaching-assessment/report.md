@@ -190,7 +190,7 @@ IBO는 ATL을 「교수·학습 환경 전반에 스며드는 의도적인 전�
 
 **영국 — 대학 성과.** IB가 영국 고등교육통계청(HESA) 자료로 의뢰한 연구는 2013/14~2018/19 학년도 입학생을 비교했다. IB 출신의 상위 20개 대학 진학률은 45.7%, A레벨 출신은 32.9%였다. 1등급 학위 비율도 22.9%와 19.4%로 IB가 높았다[34]. 다만 IB가 의뢰한 연구이고, 처음부터 IB를 고른 학생이 다를 수 있다는 점(자기 선택)은 감안해야 한다(분석).
 
-**미국 — 학점 인정과 독립 연구.** 미국 대학의 학점 인정은 대학마다 다르다. 예컨대 UC 데이비스는 HL 5점 이상 과목마다 8쿼터 단위를 인정한다[35]. 시카고대 연구소(UChicago Consortium)는 저소득층 학생이 많은 시카고 공립고 12곳의 DP 학생을 비교군과 견줬다. DP 학생이 4년제 대학에 진학할 가능성은 40%, 선발형 대학에 진학할 가능성은 50% 높았고, 대학에서 2년 이상 학업을 이어 갈 가능성도 더 높았다[36]. 다만 이 연구도 시카고대 연구소가 **IB를 위해 준비한** 보고서다[37]. 대조군을 맞춘 설계지만, 다른 IB 의뢰 연구와 같은 한계를 함께 감안해야 한다(분석).
+**미국 — 학점 인정과 대학 진학 연구.** 미국 대학의 학점 인정은 대학마다 다르다. 예컨대 UC 데이비스는 HL 5점 이상 과목마다 8쿼터 단위를 인정한다[35]. 시카고대 연구소(UChicago Consortium)는 저소득층 학생이 많은 시카고 공립고 12곳의 DP 학생을 비교군과 견줬다. DP 학생이 4년제 대학에 진학할 가능성은 40%, 선발형 대학에 진학할 가능성은 50% 높았고, 대학에서 2년 이상 학업을 이어 갈 가능성도 더 높았다[36]. 다만 이 연구도 시카고대 연구소가 **IB를 위해 준비한** 보고서다[37]. 대조군을 맞춘 설계지만, 다른 IB 의뢰 연구와 같은 한계를 함께 감안해야 한다(분석).
 
 **한국 — 수시로 간다.** DP 학생은 수능 준비가 어려워 수능 최저학력기준이 없는 수시전형으로 국내 대학에 지원한다[63]. 대구 3개교 DP 1기는 2024학년도 입시에서 수도권 대학 22명, 거점국립대 4명, 과학기술특성화대 8명이 합격했고, 토론토대·뉴욕대 등 해외 대학에도 진학했다[63]. 반면 경북대사대부고 1기의 한 학생은 IB 42점을 받고도 국내 대학 진학에 실패하고 토론토대 장학생으로 선발됐다. 기사는 이를 대학이 IB를 제대로 평가하지 않으면 혁신이 무력화된다는 사례로 들었다[64]. 국내 대학에 「IB 전용 전형」이 있는지는 이번 조사에서 확인하지 못했다.
 
@@ -238,7 +238,7 @@ IBO는 ATL을 「교수·학습 환경 전반에 스며드는 의도적인 전�
 
 **⑤ 평가의 신뢰성 사건.** 2020년 5월 코로나19로 시험이 취소되자 IB는 과제 점수·예측 성적·학교 자료로 성적을 냈다. 산출 모델이 공개되지 않아 반발이 거셌고[39], IB는 8월에 예측 성적과 과제를 반영해 결과를 다시 조정했다[40]. 2024년 5월에는 먼저 시험을 본 시간대 학생들이 기억한 문제를 SNS에 퍼뜨려 IB가 부정행위 조사에 나섰다[41]. IB는 시간대별 시험 운영 방식을 검토하겠다고 약속했다[42].
 
-**⑥ 해외의 재정 논쟁.** 잉글랜드 교육부는 2025년 10월, 2026-27학년도부터 공립학교 IB 디플로마에 주던 추가 재정(학생 1인당 약 2,400파운드)을 없앤다고 학교에 알렸다. 잉글랜드에서 DP를 운영하는 공립학교는 20곳 안팎이다[43]. 그 뒤 결정이 바뀌었는지는 이번 조사에서 확인하지 못했다.
+**⑥ 해외의 재정 논쟁.** 잉글랜드 교육부는 2025년 10월, 2026-27학년도부터 공립학교 IB 디플로마에 주던 추가 재정(학생 1인당 약 2,400파운드)을 없앤다고 학교에 알렸다. 2026-27학년도에는 일부 과도기 재정이 남는다고 했고, 잉글랜드에서 DP를 운영하는 공립학교는 20곳 안팎이다[43]. 그 뒤 결정이 바뀌었는지는 이번 조사에서 확인하지 못했다.
 
 > **분석 — 논쟁을 두 갈래로 나눠 읽자.** 「DP의 수업·평가 방식이 좋은가」와 「한국 공교육이 비용을 들여 IB 브랜드를 사야 하는가」는 다른 질문이다. 앞의 질문에는 시카고 연구 같은 긍정적 근거가 있지만, 그 연구 역시 IB를 위해 준비된 것이다[36][37]. 뒤의 질문은 비용[66]·대입 연계[69]·한국형 모델(KB) 구상[60]을 함께 따져야 한다. 서울·대구가 KB를 말하는 것은, IB 방식은 받아들이되 의존은 줄이려는 시도로 읽힌다.
 
@@ -342,7 +342,7 @@ IB가 표본을 다시 채점해 그 학교의 해당 과제 점수 전체를 �
 - [32] IBO, "DP provisional statistical bulletin, November 2025" — 2025년 11월 회차 세계 평균 29.3점, 합격률 73.8%(잠정) — https://ibo.org/globalassets/new-structure/about-the-ib/pdfs/dp-provisional-statistical-bulletin-november-2025_en.pdf
 - [33] UCL CEPEO, Murphy & Wyness, 예측 성적 정확도 브리핑 (2020) — A레벨 최상위 3과목 정확 예측 16%, 과대 예측 75% — https://repec-cepeo.ucl.ac.uk/cepeob/cepeobn7.pdf
 - [34] IBO, "UK higher education outcomes" 최종 보고서(HESA 자료, IB 의뢰) — 상위 20개 대학 진학 45.7% 대 32.9%, 1등급 학위 22.9% 대 19.4% — https://www.ibo.org/globalassets/new-structure/research/pdfs/uk-higher-education-outcomes-final-report.pdf
-- [35] UC Davis General Catalog, "International Baccalaureate (IB) Examinations" — HL 5점 이상 과목당 8단위 인정 — https://catalog.ucdavis.edu/academic-information-policies-regulations/academic-credit/international-baccalaureate-ib-examinations/
+- [35] UC Davis General Catalog, "International Baccalaureate (IB) Examinations" — HL 5점 이상 과목당 8쿼터 단위 인정 — https://catalog.ucdavis.edu/academic-information-policies-regulations/academic-credit/international-baccalaureate-ib-examinations/
 - [36] UChicago Consortium on School Research, "Working to my potential" (2012-03) — 시카고 공립고 DP 학생 4년제 진학 40%·선발형 대학 50% 높음 — https://consortium.uchicago.edu/publications/working-my-potential-postsecondary-experiences-cps-students-international-baccalaureate
 - [37] IBO, "Working to my potential" 연구 요약 (2012-03) — 시카고대 연구소가 IB를 위해 준비한 보고서(prepared for the IB) — https://www.ibo.org/globalassets/new-structure/recognition/pdfs/cpsresearchsummaryfinal3-3-12.pdf
 - [38] University of South Florida, IB·AP 학생 스트레스 다년 연구 (2015) — 스트레스는 높고 삶의 만족도는 비슷하거나 나음 — https://usf.edu/education/about-us/news/2015/2015-multiyear-study-stress-ib-ap-students.aspx
@@ -350,7 +350,7 @@ IB가 표본을 다시 채점해 그 학교의 해당 과제 점수 전체를 �
 - [40] Times Higher Education, "IB announces change to awarded results" (2020-08) — 예측 성적·과제 반영 재조정 — https://timeshighereducation.com/node/698323
 - [41] IBO, "Update on May 2024 DP exams" — 시간대 차이를 이용한 문제 유출, 부정행위 조사 — https://ibo.org/news/news-list/update-on-may-2024-exams/
 - [42] South China Morning Post, "International Baccalaureate body vows to review time-zone arrangements after leak" (2024) — 시간대 운영 검토 약속 — https://mcdn.i-scmp.com/news/hong-kong/education/article/3268587/international-baccalaureate-body-vows-review-time-zone-arrangements-after-leak
-- [43] Tes, "DfE removes funding for IB diploma study in state schools" (2025-10) — 잉글랜드, 2026-27학년도부터 공립 IB 추가 재정 폐지, 공립 DP 학교 20곳 안팎 — https://www.tes.com/magazine/news/secondary/dfe-removes-funding-ib-diploma-study-state-schools
+- [43] Tes, "DfE removes funding for IB diploma study in state schools" (2025-10) — 잉글랜드, 2026-27학년도부터 공립 IB 추가 재정 폐지, 일부 과도기 재정 유지, 공립 DP 학교 20곳 안팎 — https://www.tes.com/magazine/news/secondary/dfe-removes-funding-ib-diploma-study-state-schools
 - [44] IBO, "Statement from the IB about ChatGPT and artificial intelligence in assessment and education" (2023-03) — AI 금지하지 않음, 본문 표기·참고문헌 기재 — https://ibo.org/news/news-about-the-ib/statement-from-the-ib-about-chatgpt-and-artificial-intelligence-in-assessment-and-education/
 - [45] IBO, "Digital examinations for the DP and CP" — 2026년 11월 전 학교 개방, 언어 과목부터 2029년까지 단계 확대, 화면·종이 동일 시험지 — https://ibo.org/programmes/diploma-programme/assessment-and-exams/digital-examinations-for-the-dp-and-cp/
 - [46] Tes, "IB adds new strand to Diploma Programme for 2030: Systems Transformation Pathway" (2026) — 300시간, SL 2과목 대체, 2028년 선도 운영·2030년 전 세계 — https://www.tes.com/magazine/analysis/secondary/ib-new-strand-diploma-programme-2030-systems-transformation-pathway
