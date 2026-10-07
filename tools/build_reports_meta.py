@@ -95,6 +95,7 @@ CATS = {
     "korea-college-admission-2032": "society",
     "prosecution-reform-2026": "society",
     "man-city-115-charges-verdict": "society",
+    "ib-diploma-programme-teaching-assessment": "society",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",

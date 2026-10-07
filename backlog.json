@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-07",
- "scanned": 310,
+ "scanned": 311,
  "resolved": 1788,
- "pending": 544,
+ "pending": 554,
  "counts": {
-  "new": 255,
+  "new": 259,
   "companion": 5,
   "gap": 1
  },
@@ -286,6 +286,27 @@
     {
      "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
      "u": "research/#r=claude-mcp-guide",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "고교학점제",
+   "count": 5,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
+     "u": "research/#r=korea-college-admission-2032",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "IB 디플로마 프로그램(DP)의 수업과 평가 — 구조·채점·합격 조건부터 한국 도입 현황까지 (DEEP)",
+     "u": "research/#r=ib-diploma-programme-teaching-assessment",
      "s": "research",
      "n": 2
     }
@@ -922,21 +943,6 @@
    ]
   },
   {
-   "name": "고교학점제",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "대입제도 개편과 '서·논술형(주관식) 수능' — 2028 확정 vs 2032 전망 정리 (DEEP)",
-     "u": "research/#r=korea-college-admission-2032",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
    "name": "국가교육위원회",
    "count": 3,
    "kind": "new",
@@ -1197,6 +1203,66 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "국제 바칼로레아",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "IB 디플로마 프로그램(DP)의 수업과 평가 — 구조·채점·합격 조건부터 한국 도입 현황까지 (DEEP)",
+     "u": "research/#r=ib-diploma-programme-teaching-assessment",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "지식론(TOK)",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "IB 디플로마 프로그램(DP)의 수업과 평가 — 구조·채점·합격 조건부터 한국 도입 현황까지 (DEEP)",
+     "u": "research/#r=ib-diploma-programme-teaching-assessment",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "준거참조 평가",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "IB 디플로마 프로그램(DP)의 수업과 평가 — 구조·채점·합격 조건부터 한국 도입 현황까지 (DEEP)",
+     "u": "research/#r=ib-diploma-programme-teaching-assessment",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "논술형 평가",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "IB 디플로마 프로그램(DP)의 수업과 평가 — 구조·채점·합격 조건부터 한국 도입 현황까지 (DEEP)",
+     "u": "research/#r=ib-diploma-programme-teaching-assessment",
+     "s": "research",
+     "n": 2
     }
    ]
   },
