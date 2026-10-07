@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 610" role="img" aria-label="그림 위쪽에 「그의 일, 남의 이름 — 르장드르」라는 표제가 있고 그 아래에 갈색은 르장드르, 푸른색은 다른 사람이며 빈 점은 그때부터 갖고 있었다고 뒤에 주장하거나 회고한 해라고 적혀 있다. 가로축은 1780년부터 1840년까지 십 년마다 눈금이 있고, 줄은 위에서부터 다섯이다. 첫째 줄 이차 상호 법칙에는 1783년 푸른 점과 1785년 · 1798년 갈색 점, 1801년 푸른 점이 있고, 위에 갈색으로 1785 진술 · 1798 다시 증명 둘 다 불완전, 아래에 푸른색으로 1783 오일러(1751 에도)와 1801 가우스 첫 완전한 증명이 적혀 있다. 둘째 줄 등차수열 속의 소수에는 1785년 갈색 점 위에 1785 주장 증명 없이가 있고, 오른쪽 끝 1837년 푸른 점 아래에 1837 디리클레 증명이 있다. 셋째 줄 최소제곱에는 1795년 빈 푸른 점 아래에 1795년부터라는 말이, 1805년 갈색 점 위에 1805 혜성 궤도 책의 부록(1806 이라는 자료도)이, 1809년 푸른 점 아래에 1809 가우스 출판 우선권을 주장이 적혀 있다. 넷째 줄 소수의 개수에는 1792년과 1793년 사이 빈 푸른 점 아래에 1792/93 가우스 1849년의 회고가, 1797년과 1798년 사이 갈색 점과 1808년 갈색 점 위에 1797/98 추측 · 1808 상수 1.08366 이 적혀 있다. 다섯째 줄 타원적분에서 타원함수로에는 1786년 갈색 점 위에 1786 첫 논문, 1811년부터 1819년까지 갈색 막대 위에 1811~19 『적분 연습』, 1825년부터 1830년까지 갈색 막대 위에 1825~ 『타원함수론』이 있고, 그 막대 위의 1826년과 1829년 푸른 점 아래에 두 줄로 1826 부터 아벨 · 야코비, 1829 야코비 역함수를 「타원함수」라 부르다가 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 이차 상호 법칙 줄은 1번(오일러 1751 · 1783 도 1번), 등차수열 1837 은 11번, 최소제곱 1805 · 1795 · 1809 는 4번(1806 은 1 · 3번), 소수의 개수 줄은 5번, 타원 줄의 1786 · 1826 · 1829 는 10번, 두 책의 해는 1번을 따랐다. 둘째, 『타원함수론』의 마지막 권은 자료마다 1828 · 1830 · 1832 로 갈려 막대를 1830 에서 끊었고, 『적분 연습』도 1817 에서 끝난다는 자료가 있다. 셋째, 1797/98 과 1792/93 은 자료가 두 해를 함께 적어 점을 그 가운데에 두었다">
+  <title>그의 일, 남의 이름 — 르장드르</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .ld{fill:#9C5A2C;} .lring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .od{fill:#3A5C77;} .oring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .lbar{fill:#9C5A2C;opacity:0.85;}
+  </style>
+  <rect width="720" height="610" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">그의 일, 남의 이름 — 르장드르</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 르장드르, 푸른색은 다른 사람. 빈 점은 「그때부터 갖고 있었다」고 뒤에 주장하거나 회고한 해다.</text>
+
+  <!-- x = 70 + (year - 1780) * 10 -->
+
+  <!-- 1 이차 상호 법칙 y=110 -->
+  <text x="30" y="86" font-size="12">이차 상호 법칙</text>
+  <line x1="70" y1="110" x2="670" y2="110" class="row"/>
+  <circle cx="100" cy="110" r="4" class="od"/>
+  <circle cx="120" cy="110" r="4.5" class="ld"/>
+  <circle cx="250" cy="110" r="4.5" class="ld"/>
+  <circle cx="280" cy="110" r="4.5" class="od"/>
+  <text x="120" y="101" font-size="11" class="sien">1785 진술 · 1798 다시 증명 — 둘 다 불완전</text>
+  <text x="70" y="127" font-size="11" class="blue">1783 오일러(1751 에도)</text>
+  <text x="276" y="127" font-size="11" class="blue">1801 가우스 — 첫 완전한 증명</text>
+
+  <!-- 2 등차수열 속의 소수 y=190 -->
+  <text x="30" y="166" font-size="12">등차수열 속의 소수</text>
+  <line x1="70" y1="190" x2="670" y2="190" class="row"/>
+  <circle cx="120" cy="190" r="4.5" class="ld"/>
+  <circle cx="640" cy="190" r="4.5" class="od"/>
+  <text x="120" y="181" font-size="11" class="sien">1785 주장 — 증명 없이</text>
+  <text x="670" y="207" font-size="11" class="blue" text-anchor="end">1837 디리클레 — 증명</text>
+
+  <!-- 3 최소제곱 y=270 -->
+  <text x="30" y="246" font-size="12">최소제곱</text>
+  <line x1="70" y1="270" x2="670" y2="270" class="row"/>
+  <circle cx="220" cy="270" r="4.5" class="oring"/>
+  <circle cx="320" cy="270" r="4.5" class="ld"/>
+  <circle cx="360" cy="270" r="4.5" class="od"/>
+  <text x="335" y="261" font-size="11" class="sien" text-anchor="end">1805 혜성 궤도 책의 부록(1806 이라는 자료도)</text>
+  <text x="225" y="287" font-size="11" class="blue" text-anchor="end">「1795년부터」</text>
+  <text x="356" y="287" font-size="11" class="blue">1809 가우스 출판 — 우선권을 주장</text>
+
+  <!-- 4 소수의 개수 y=350 -->
+  <text x="30" y="326" font-size="12">소수의 개수</text>
+  <line x1="70" y1="350" x2="670" y2="350" class="row"/>
+  <circle cx="195" cy="350" r="4.5" class="oring"/>
+  <circle cx="245" cy="350" r="4.5" class="ld"/>
+  <circle cx="350" cy="350" r="4.5" class="ld"/>
+  <text x="245" y="341" font-size="11" class="sien">1797/98 추측 · 1808 상수 1.08366</text>
+  <text x="190" y="367" font-size="11" class="blue">1792/93 가우스 — 1849년의 회고</text>
+
+  <!-- 5 타원적분 y=430 -->
+  <text x="30" y="406" font-size="12">타원적분 → 타원함수</text>
+  <line x1="70" y1="430" x2="670" y2="430" class="row"/>
+  <circle cx="130" cy="430" r="4.5" class="ld"/>
+  <rect x="380" y="426" width="80" height="8" class="lbar"/>
+  <rect x="520" y="426" width="50" height="8" class="lbar"/>
+  <circle cx="530" cy="430" r="4.5" class="od"/>
+  <circle cx="560" cy="430" r="4.5" class="od"/>
+  <text x="130" y="421" font-size="11" class="sien">1786 첫 논문</text>
+  <text x="420" y="421" font-size="11" class="sien" text-anchor="middle">1811~19 『적분 연습』</text>
+  <text x="520" y="421" font-size="11" class="sien">1825~ 『타원함수론』</text>
+  <text x="670" y="447" font-size="11" class="blue" text-anchor="end">1826 부터 아벨 · 야코비</text>
+  <text x="670" y="462" font-size="11" class="blue" text-anchor="end">1829 야코비 — 역함수를 「타원함수」라 부르다</text>
+
+  <!-- 축 -->
+  <line x1="70" y1="492" x2="670" y2="492" class="axis"/>
+  <line x1="70" y1="488" x2="70" y2="496" class="tick"/><text x="70" y="510" font-size="10" class="ax" text-anchor="middle">1780</text>
+  <line x1="170" y1="488" x2="170" y2="496" class="tick"/><text x="170" y="510" font-size="10" class="ax" text-anchor="middle">1790</text>
+  <line x1="270" y1="488" x2="270" y2="496" class="tick"/><text x="270" y="510" font-size="10" class="ax" text-anchor="middle">1800</text>
+  <line x1="370" y1="488" x2="370" y2="496" class="tick"/><text x="370" y="510" font-size="10" class="ax" text-anchor="middle">1810</text>
+  <line x1="470" y1="488" x2="470" y2="496" class="tick"/><text x="470" y="510" font-size="10" class="ax" text-anchor="middle">1820</text>
+  <line x1="570" y1="488" x2="570" y2="496" class="tick"/><text x="570" y="510" font-size="10" class="ax" text-anchor="middle">1830</text>
+  <line x1="670" y1="488" x2="670" y2="496" class="tick"/><text x="670" y="510" font-size="10" class="ax" text-anchor="middle">1840</text>
+
+  <text x="30" y="538" font-size="10" class="ax">⚠ 이차 상호 법칙 줄은 1번(오일러 1751 · 1783 도 1번), 등차수열 1837 은 11번, 최소제곱 1805 · 1795 · 1809 는 4번(1806 은 1 · 3번),</text>
+  <text x="46" y="554" font-size="10" class="ax">소수의 개수 줄은 5번, 타원 줄의 1786 · 1826 · 1829 는 10번, 두 책의 해는 1번을 따랐다.</text>
+  <text x="30" y="570" font-size="10" class="ax">⚠ 『타원함수론』의 마지막 권은 자료마다 1828 · 1830 · 1832 로 갈려 막대를 1830 에서 끊었다. 『적분 연습』도 1817 에서 끝난다는 자료가 있다.</text>
+  <text x="30" y="586" font-size="10" class="ax">⚠ 1797/98 과 1792/93 은 자료가 두 해를 함께 적어 점을 그 가운데에 두었다.</text>
+</svg>
