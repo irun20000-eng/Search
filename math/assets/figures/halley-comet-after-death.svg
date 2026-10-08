@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" role="img" aria-label="그림 위쪽에 「죽은 뒤에 돌아온 혜성 — 핼리」라는 표제가 있고 그 아래에 푸른 점은 혜성이 근일점을 지난 해, 갈색은 핼리가 쓴 것, 빈 점은 뒤에 더한 기록이라고 적혀 있다. 그림은 위아래 두 칸이다. 위 칸의 제목은 1300~1770 근일점 사이의 햇수이고, 가로축에 1300부터 1700까지 백 년마다 눈금이 있다. 위쪽 줄에 점이 일곱 개 있다. 1305년과 1380년은 빈 점이고 1456 · 1531 · 1607 · 1682 · 1759년은 푸른 점이다. 점 사이 위쪽에 햇수가 적혀 있는데 왼쪽부터 75, 76, 75.2, 76.2, 74.9, 76.5 이다. 그 아래 줄에는 1656년부터 1742년까지 옅은 갈색 막대가 있고 그 왼쪽에 핼리 1656~1742 라고 적혀 있다. 막대 위 1705년 자리에 갈색 점이 있고 그 아래에 1705 「1758년에 돌아오리라」가 적혀 있으며, 그 점에서 위 줄의 1759년 점으로 갈색 점선이 비스듬히 올라간다. 위 칸 축의 1740년과 1760년 자리에서 아래 칸으로 확대 안내선이 내려온다. 아래 칸의 제목은 1740~1760 확대, 죽은 날에서 다시 보인 날까지이고, 가로축에 1740부터 1760까지 다섯 해마다 눈금이 있다. 줄 왼쪽에 검은 점이 있고 그 아래에 1742.1.25 죽다라고 적혀 있다. 가운데 1749년 자리에 빈 갈색 점이 있고 그 위에 1749 사후의 『천문표』 「1758년 말이나 1759년 초」가 적혀 있다. 오른쪽 끝에 푸른 점 둘이 거의 붙어 있고, 위에 1758.12.25 팔리치가 처음 보다, 아래에 1759.3.13 근일점이라고 적혀 있다. 죽은 날 점에서 1758년 12월 25일 점까지 괄호가 걸쳐 있고 그 아래에 16년 11개월(이 노트의 셈), MacTutor 「15년」 · 천문학백과 「17년 이후」라고 적혀 있다. 맨 아래에 단서가 넷 있다. 첫째, 1456~1759 의 근일점 날짜는 4번의 표를 따랐고 그 사이 햇수는 이 노트가 날짜로 셈했다. 둘째, 1305 · 1380 은 2번 뒤쪽의 1749년판이 더한 해로 날짜가 없어 해의 차만 적었고 점은 해의 첫머리에 두었다. 셋째, 「1758년에 돌아오리라」는 2번 앞쪽의 1705년 영역, 「1758년 말이나 1759년 초」는 같은 2번 뒤쪽의 1757년 영역을 이 노트가 옮긴 것이다. 넷째, 1749 는 해만 알아 그 해 가운데에 두었고, 죽은 날은 3번의 새 달력(1월 25일)을 따랐으며 1번은 1월 14일로 적는다">
+  <title>죽은 뒤에 돌아온 혜성 — 핼리</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .life{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .dead{fill:#221E18;}
+    .guide{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;fill:none;}
+    .arr{stroke:#9C5A2C;stroke-width:1.2;stroke-dasharray:4 3;fill:none;}
+    .brace{stroke:#5B5245;stroke-width:1;fill:none;}
+  </style>
+  <rect width="720" height="580" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">죽은 뒤에 돌아온 혜성 — 핼리</text>
+  <text x="30" y="50" font-size="11" class="dim">푸른 점은 혜성이 근일점을 지난 해, 갈색은 핼리가 쓴 것. 빈 점은 뒤에 더한 기록이다.</text>
+
+  <!-- 위 칸: x = 60 + (year - 1300) * 1.35 -->
+  <text x="30" y="82" font-size="12">1300~1770 — 근일점 사이의 햇수</text>
+  <line x1="60" y1="130" x2="694.5" y2="130" class="row"/>
+  <circle cx="66.75" cy="130" r="4" class="cring"/>
+  <circle cx="168" cy="130" r="4" class="cring"/>
+  <circle cx="270.6" cy="130" r="4.5" class="cd"/>
+  <circle cx="371.85" cy="130" r="4.5" class="cd"/>
+  <circle cx="474.45" cy="130" r="4.5" class="cd"/>
+  <circle cx="575.7" cy="130" r="4.5" class="cd"/>
+  <circle cx="679.65" cy="130" r="4.5" class="cd"/>
+  <text x="117.4" y="120" font-size="10" class="dim" text-anchor="middle">75</text>
+  <text x="219.3" y="120" font-size="10" class="dim" text-anchor="middle">76</text>
+  <text x="321.2" y="120" font-size="10" class="blue" text-anchor="middle">75.2</text>
+  <text x="423.2" y="120" font-size="10" class="blue" text-anchor="middle">76.2</text>
+  <text x="525.1" y="120" font-size="10" class="blue" text-anchor="middle">74.9</text>
+  <text x="627.7" y="120" font-size="10" class="blue" text-anchor="middle">76.5</text>
+  <text x="66.75" y="148" font-size="10" class="ax" text-anchor="middle">1305</text>
+  <text x="168" y="148" font-size="10" class="ax" text-anchor="middle">1380</text>
+  <text x="270.6" y="148" font-size="10" class="blue" text-anchor="middle">1456</text>
+  <text x="371.85" y="148" font-size="10" class="blue" text-anchor="middle">1531</text>
+  <text x="474.45" y="148" font-size="10" class="blue" text-anchor="middle">1607</text>
+  <text x="575.7" y="148" font-size="10" class="blue" text-anchor="middle">1682</text>
+  <text x="679.65" y="148" font-size="10" class="blue" text-anchor="middle">1759</text>
+
+  <rect x="540.6" y="195" width="116.1" height="10" class="life"/>
+  <text x="532" y="204" font-size="11" class="sien" text-anchor="end">핼리 1656~1742</text>
+  <circle cx="606.75" cy="200" r="4" class="sd"/>
+  <text x="606.75" y="222" font-size="10" class="sien" text-anchor="middle">1705 「1758년에 돌아오리라」</text>
+  <path d="M609,195 L672,135" class="arr"/>
+
+  <line x1="60" y1="245" x2="694.5" y2="245" class="axis"/>
+  <line x1="60" y1="241" x2="60" y2="249" class="tick"/><text x="60" y="263" font-size="10" class="ax" text-anchor="middle">1300</text>
+  <line x1="195" y1="241" x2="195" y2="249" class="tick"/><text x="195" y="263" font-size="10" class="ax" text-anchor="middle">1400</text>
+  <line x1="330" y1="241" x2="330" y2="249" class="tick"/><text x="330" y="263" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="465" y1="241" x2="465" y2="249" class="tick"/><text x="465" y="263" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="600" y1="241" x2="600" y2="249" class="tick"/><text x="600" y="263" font-size="10" class="ax" text-anchor="middle">1700</text>
+
+  <!-- 확대 안내 -->
+  <path d="M654,268 L60,290 M681,268 L660,290" class="guide"/>
+
+  <!-- 아래 칸: x = 60 + (year - 1740) * 30 -->
+  <text x="30" y="306" font-size="12">1740~1760 확대 — 죽은 날에서 다시 보인 날까지</text>
+  <line x1="60" y1="365" x2="660" y2="365" class="row"/>
+  <circle cx="122.1" cy="365" r="4.5" class="dead"/>
+  <text x="128" y="383" font-size="11">1742.1.25 죽다</text>
+  <circle cx="345" cy="365" r="4.5" class="sring"/>
+  <text x="345" y="343" font-size="11" class="sien" text-anchor="middle">1749 사후의 『천문표』 — 「1758년 말이나 1759년 초」</text>
+  <circle cx="629.4" cy="365" r="4.5" class="cd"/>
+  <circle cx="636" cy="365" r="4.5" class="cd"/>
+  <text x="625" y="355" font-size="11" class="blue" text-anchor="end">1758.12.25 팔리치가 처음 보다</text>
+  <text x="640" y="383" font-size="11" class="blue" text-anchor="end">1759.3.13 근일점</text>
+  <path d="M122.1,396 L122.1,402 L629.4,402 L629.4,396 M375.75,402 L375.75,408" class="brace"/>
+  <text x="375.75" y="424" font-size="11" class="dim" text-anchor="middle">16년 11개월(이 노트의 셈) — MacTutor 「15년」 · 천문학백과 「17년 이후」</text>
+
+  <line x1="60" y1="445" x2="660" y2="445" class="axis"/>
+  <line x1="60" y1="441" x2="60" y2="449" class="tick"/><text x="60" y="463" font-size="10" class="ax" text-anchor="middle">1740</text>
+  <line x1="210" y1="441" x2="210" y2="449" class="tick"/><text x="210" y="463" font-size="10" class="ax" text-anchor="middle">1745</text>
+  <line x1="360" y1="441" x2="360" y2="449" class="tick"/><text x="360" y="463" font-size="10" class="ax" text-anchor="middle">1750</text>
+  <line x1="510" y1="441" x2="510" y2="449" class="tick"/><text x="510" y="463" font-size="10" class="ax" text-anchor="middle">1755</text>
+  <line x1="660" y1="441" x2="660" y2="449" class="tick"/><text x="660" y="463" font-size="10" class="ax" text-anchor="middle">1760</text>
+
+  <text x="30" y="494" font-size="10" class="ax">⚠ 1456~1759 의 근일점 날짜는 4번의 표를 따랐고, 그 사이 햇수(75.2 · 76.2 · 74.9 · 76.5)는 이 노트가 날짜로 셈했다.</text>
+  <text x="30" y="510" font-size="10" class="ax">⚠ 1305 · 1380 은 2번 뒤쪽의 1749년판이 더한 해로, 날짜가 없어 해의 차(75 · 76)만 적었다. 점은 해의 첫머리에 두었다.</text>
+  <text x="30" y="526" font-size="10" class="ax">⚠ 「1758년에 돌아오리라」는 2번 앞쪽의 1705년 영역, 「1758년 말이나 1759년 초」는 같은 2번 뒤쪽의 1757년 영역을 이 노트가 옮긴 것이다.</text>
+  <text x="30" y="542" font-size="10" class="ax">⚠ 1749 는 해만 알아 그 해 가운데에 두었다. 죽은 날은 3번의 새 달력(1월 25일)을 따랐다 — 1번은 1월 14일로 적는다.</text>
+</svg>
