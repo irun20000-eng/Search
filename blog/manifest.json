@@ -1,5 +1,5 @@
 {
- "count": 23,
+ "count": 24,
  "pillars": [
   {
    "key": "math",
@@ -15,6 +15,23 @@
   }
  ],
  "posts": [
+  {
+   "slug": "10-monty-hall",
+   "title": "몬티홀 문제, 세특에 쓰기 전에 직접 계산해 보세요",
+   "date": "2026-10-08",
+   "pillar": "math",
+   "pillar_ko": "수학 개념",
+   "series": "",
+   "tags": [
+    "몬티홀 문제",
+    "조건부확률",
+    "세특",
+    "확률과 통계",
+    "베이즈 정리"
+   ],
+   "chars": 4606,
+   "path": "blog/notes/10-monty-hall.md"
+  },
   {
    "slug": "09-hs2-midterm-prep",
    "title": "고2 2학기 중간고사 수학, 이제 '수Ⅱ'가 아니에요",
