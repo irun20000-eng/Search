@@ -1,6 +1,29 @@
 {
- "count": 16,
+ "count": 17,
  "notes": [
+  {
+   "slug": "margin-of-error",
+   "title": "여론조사의 오차범위(Margin of Error) — 이해편(입문·딥)",
+   "date": "2026-10-08",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "여론조사",
+    "오차범위",
+    "표본오차",
+    "신뢰수준",
+    "신뢰구간",
+    "선거보도",
+    "통계읽기",
+    "숫자노트",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 7편 · 오차범위 안이면 1위가 아니다",
+   "chars": 12161,
+   "pic": "margin-of-error.png",
+   "path": "concept/notes/margin-of-error.md"
+  },
   {
    "slug": "seven-bridges",
    "title": "쾨니히스베르크의 다리(Seven Bridges of Königsberg) — 이해편(입문·딥)",
