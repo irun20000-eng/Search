@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-08",
- "scanned": 312,
- "resolved": 1798,
- "pending": 554,
+ "scanned": 313,
+ "resolved": 1820,
+ "pending": 553,
  "counts": {
-  "new": 259,
+  "new": 258,
   "companion": 5,
   "gap": 1
  },
@@ -4562,21 +4562,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "에드먼드 핼리",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "확률론 확장편",
-     "u": "math/#n=concept-probability-advanced",
-     "s": "math",
      "n": 1
     }
    ]
