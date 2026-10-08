@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 770" role="img" aria-label="그림 위쪽에 「남이 쓴 머리말 코페르니쿠스」라는 표제가 있고 그 아래에 갈색은 코페르니쿠스가 쓴 것, 푸른색은 남이 쓰거나 한 일, 검은 점은 죽은 날이고 빈 점은 날짜가 어림인 것이라고 적혀 있다. 그림은 세 칸이다. 위 칸의 제목은 1500~1620 책이 나오기까지, 나온 뒤이고, 가로축에 1500부터 1620까지 스무 해마다 눈금이 있다. 맨 위에 1500년부터 1543년까지 옅은 갈색 막대가 있고 그 아래에 코페르니쿠스 1473~1543 이라고 적혀 있다. 그 아래 줄의 1514년 자리에 빈 갈색 점이 있고 1514 이전 『짧은 주해』라고 적혀 있다. 1543년 자리에 검은 점이 있고, 그 둘레의 1539~1544 구간에 아래 확대라고 적힌 점선 상자가 있다. 오른쪽에 푸른 점 둘이 있다. 1609년 점 아래에 1609 케플러 『새 천문학』이 머리말의 주인을 밝히다, 1616년 점 위에 1616.3.5 금서 목록이라고 적혀 있다. 그 아래 괄호 둘이 1543년에서 시작한다. 1609년까지의 괄호에는 66년(이 노트의 셈), MacTutor 「50년 뒤」, 1616년까지의 괄호에는 73년(셈), 위키백과 「70년 넘게」 · 글래스고 「73년」이라고 적혀 있다. 가운데 칸은 1539~1544 확대, 원고가 인쇄소로 가는 동안이고, 가로축에 1539부터 1544까지 해마다 눈금이 있다. 위쪽 줄은 레티쿠스 · 오지안더의 줄로 푸른 점이 다섯 있다. 1539.5 레티쿠스가 오다, 1540 『첫 보고』(단치히), 1542.5 뉘른베르크, 인쇄를 맡다가 찬 점이고, 1542 가을 오지안더가 넘겨받다와 1543 봄 서명 없는 「독자에게」가 빈 점이다. 아래쪽 줄은 코페르니쿠스의 줄이다. 1541.6.9 마침내 내놓기로(레티쿠스의 편지)와 1541.8.29 인쇄할 원고가 되다가 갈색 찬 점, 1542 삼각법 부분만 먼저가 빈 갈색 점, 1542 말 뇌졸중이 빈 검은 점, 1543.5.24 죽다가 검은 점이다. 아래 칸의 제목은 1543.5.24 그날을 적는 아홉 문장 (단정에서 다른 이야기 쪽으로)이고, 출처 번호를 단 문장이 아홉 줄 있다. (2) 그날 임종의 자리에서 완성된 책 한 부를 쥐었다. (8) 레티쿠스의 설득으로 임종의 자리에서야 출판했다. (3) 기제의 편지(쾨슬러 인용), 죽은 날 마지막 순간에야 완성된 책을 보았다. (1) 인쇄된 책을 임종의 자리에서 처음 받았다고 한다. (11) 죽음 당일 그의 머리맡에 놓여졌다고 한다. (12) 인쇄본 한 부를 건네받은 지 몇 시간 만에 죽었다고 한다. (3) 전설에 따르면 그날 마지막 인쇄 쪽을 받았다. 같은 항목의 각주에서 벨은 교정쇄라 적는다. (8) 스넬의 메모, 누운 채 마지막 며칠에 오지안더의 머리말을 보고 마음이 크게 흔들렸다. (9) 출판은 그가 죽은 뒤에 이루어졌다. 맨 아래에 단서가 넷 있다. 첫째, 생애 막대는 1500 앞을 잘랐고 달만 아는 일은 그 달 첫머리, 해만 아는 일은 그 해 가운데에 두었다. 둘째, 「가을」은 9월 말, 「말」은 12월 첫머리, 「봄」은 4월 첫머리에 두었고 이 자리는 이 노트가 정했다. 셋째, 66년 · 73년은 이 노트가 해의 차로 셈했고 1609 는 7번 서평이 적은 해이며 1번은 「50년 뒤」라고만 적는다. 넷째, 아래 칸의 차례는 이 노트가 정했고 영어 문장은 이 노트가 옮긴 것이며 괄호 숫자는 이 노트의 출처 번호다">
+  <title>남이 쓴 머리말 — 코페르니쿠스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .life{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .dead{fill:#221E18;} .dring{fill:#FFFDF7;stroke:#221E18;stroke-width:1.4;}
+    .guide{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;fill:none;}
+    .brace{stroke:#5B5245;stroke-width:1;fill:none;}
+    .zoom{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;fill:none;}
+  </style>
+  <rect width="720" height="770" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">남이 쓴 머리말 — 코페르니쿠스</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 코페르니쿠스가 쓴 것, 푸른색은 남이 쓰거나 한 일, 검은 점은 죽은 날이다. 빈 점은 날짜가 어림인 것이다.</text>
+
+  <!-- 위 칸: x = 60 + (year - 1500) * 5 -->
+  <text x="30" y="82" font-size="12">1500~1620 — 책이 나오기까지, 나온 뒤</text>
+  <rect x="60" y="100" width="216.96" height="9" class="life"/>
+  <text x="64" y="124" font-size="10" class="sien">코페르니쿠스 1473~1543</text>
+  <line x1="60" y1="150" x2="660" y2="150" class="row"/>
+  <circle cx="130" cy="150" r="4.5" class="sring"/>
+  <text x="130" y="168" font-size="10" class="sien" text-anchor="middle">1514 이전 『짧은 주해』</text>
+  <rect x="252" y="92" width="30" height="72" class="zoom"/>
+  <text x="267" y="88" font-size="10" class="ax" text-anchor="middle">아래 확대</text>
+  <circle cx="276.96" cy="150" r="4.5" class="dead"/>
+  <circle cx="605" cy="150" r="4.5" class="cd"/>
+  <text x="598" y="168" font-size="10" class="blue" text-anchor="end">1609 케플러 『새 천문학』이 머리말의 주인을 밝히다</text>
+  <circle cx="640.86" cy="150" r="4.5" class="cd"/>
+  <text x="650" y="138" font-size="10" class="blue" text-anchor="end">1616.3.5 금서 목록</text>
+  <path d="M276.96,180 L276.96,186 L605,186 L605,180 M440.98,186 L440.98,192" class="brace"/>
+  <text x="440.98" y="205" font-size="10.5" class="dim" text-anchor="middle">66년(이 노트의 셈) — MacTutor 「50년 뒤」</text>
+  <path d="M276.96,212 L276.96,218 L640.86,218 L640.86,212 M458.91,218 L458.91,224" class="brace"/>
+  <text x="458.91" y="237" font-size="10.5" class="dim" text-anchor="middle">73년(셈) — 위키백과 「70년 넘게」 · 글래스고 「73년」</text>
+
+  <line x1="60" y1="258" x2="660" y2="258" class="axis"/>
+  <line x1="60" y1="254" x2="60" y2="262" class="tick"/><text x="60" y="275" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="160" y1="254" x2="160" y2="262" class="tick"/><text x="160" y="275" font-size="10" class="ax" text-anchor="middle">1520</text>
+  <line x1="260" y1="254" x2="260" y2="262" class="tick"/><text x="260" y="275" font-size="10" class="ax" text-anchor="middle">1540</text>
+  <line x1="360" y1="254" x2="360" y2="262" class="tick"/><text x="360" y="275" font-size="10" class="ax" text-anchor="middle">1560</text>
+  <line x1="460" y1="254" x2="460" y2="262" class="tick"/><text x="460" y="275" font-size="10" class="ax" text-anchor="middle">1580</text>
+  <line x1="560" y1="254" x2="560" y2="262" class="tick"/><text x="560" y="275" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="660" y1="254" x2="660" y2="262" class="tick"/><text x="660" y="275" font-size="10" class="ax" text-anchor="middle">1620</text>
+
+  <path d="M252,280 L60,296 M282,280 L660,296" class="guide"/>
+
+  <!-- 가운데 칸: x = 60 + (t - 1539) * 120 -->
+  <text x="30" y="314" font-size="12">1539~1544 확대 — 원고가 인쇄소로 가는 동안</text>
+  <text x="30" y="334" font-size="10" class="blue">레티쿠스 · 오지안더</text>
+  <line x1="60" y1="360" x2="660" y2="360" class="row"/>
+  <circle cx="100" cy="360" r="4.5" class="cd"/>
+  <text x="94" y="348" font-size="10.5" class="blue">1539.5 레티쿠스가 오다</text>
+  <circle cx="240" cy="360" r="4.5" class="cd"/>
+  <text x="240" y="378" font-size="10.5" class="blue" text-anchor="middle">1540 『첫 보고』(단치히)</text>
+  <circle cx="460" cy="360" r="4.5" class="cd"/>
+  <text x="466" y="348" font-size="10.5" class="blue" text-anchor="end">1542.5 뉘른베르크, 인쇄를 맡다</text>
+  <circle cx="509" cy="360" r="4.5" class="cring"/>
+  <text x="509" y="378" font-size="10.5" class="blue" text-anchor="middle">1542 가을 오지안더가 넘겨받다</text>
+  <circle cx="570" cy="360" r="4.5" class="cring"/>
+  <text x="660" y="348" font-size="10.5" class="blue" text-anchor="end">1543 봄 서명 없는 「독자에게」</text>
+
+  <text x="30" y="404" font-size="10" class="sien">코페르니쿠스</text>
+  <line x1="60" y1="430" x2="660" y2="430" class="row"/>
+  <circle cx="352.67" cy="430" r="4.5" class="sd"/>
+  <text x="358" y="418" font-size="10.5" class="sien" text-anchor="end">1541.6.9 마침내 내놓기로(레티쿠스의 편지)</text>
+  <circle cx="379.33" cy="430" r="4.5" class="sd"/>
+  <text x="385" y="448" font-size="10.5" class="sien" text-anchor="end">1541.8.29 인쇄할 원고가 되다</text>
+  <circle cx="480" cy="430" r="4.5" class="sring"/>
+  <text x="480" y="418" font-size="10.5" class="sien" text-anchor="middle">1542 삼각법 부분만 먼저</text>
+  <circle cx="530" cy="430" r="4.5" class="dring"/>
+  <text x="530" y="448" font-size="10.5" text-anchor="middle">1542 말 뇌졸중</text>
+  <circle cx="587.01" cy="430" r="4.5" class="dead"/>
+  <text x="660" y="418" font-size="10.5" text-anchor="end">1543.5.24 죽다</text>
+
+  <line x1="60" y1="470" x2="660" y2="470" class="axis"/>
+  <line x1="60" y1="466" x2="60" y2="474" class="tick"/><text x="60" y="487" font-size="10" class="ax" text-anchor="middle">1539</text>
+  <line x1="180" y1="466" x2="180" y2="474" class="tick"/><text x="180" y="487" font-size="10" class="ax" text-anchor="middle">1540</text>
+  <line x1="300" y1="466" x2="300" y2="474" class="tick"/><text x="300" y="487" font-size="10" class="ax" text-anchor="middle">1541</text>
+  <line x1="420" y1="466" x2="420" y2="474" class="tick"/><text x="420" y="487" font-size="10" class="ax" text-anchor="middle">1542</text>
+  <line x1="540" y1="466" x2="540" y2="474" class="tick"/><text x="540" y="487" font-size="10" class="ax" text-anchor="middle">1543</text>
+  <line x1="660" y1="466" x2="660" y2="474" class="tick"/><text x="660" y="487" font-size="10" class="ax" text-anchor="middle">1544</text>
+
+  <!-- 아래 칸: 그날을 적는 문장 -->
+  <text x="30" y="518" font-size="12">1543.5.24 — 그날을 적는 아홉 문장 (단정에서 다른 이야기 쪽으로)</text>
+  <text x="40" y="538" font-size="10.5"><tspan class="blue">(2)</tspan> 그날 임종의 자리에서 완성된 책 한 부를 쥐었다.</text>
+  <text x="40" y="555" font-size="10.5"><tspan class="blue">(8)</tspan> 레티쿠스의 설득으로 임종의 자리에서야 출판했다.</text>
+  <text x="40" y="572" font-size="10.5"><tspan class="blue">(3)</tspan> 기제의 편지(쾨슬러 인용) — 죽은 날 마지막 순간에야 완성된 책을 보았다.</text>
+  <text x="40" y="589" font-size="10.5"><tspan class="blue">(1)</tspan> 인쇄된 책을 임종의 자리에서 처음 받았다고 한다.</text>
+  <text x="40" y="606" font-size="10.5"><tspan class="blue">(11)</tspan> 죽음 당일 그의 머리맡에 놓여졌다고 한다.</text>
+  <text x="40" y="623" font-size="10.5"><tspan class="blue">(12)</tspan> 인쇄본 한 부를 건네받은 지 몇 시간 만에 죽었다고 한다.</text>
+  <text x="40" y="640" font-size="10.5"><tspan class="blue">(3)</tspan> 전설에 따르면 그날 마지막 인쇄 쪽을 받았다. 같은 항목의 각주에서 벨은 교정쇄라 적는다.</text>
+  <text x="40" y="657" font-size="10.5"><tspan class="blue">(8)</tspan> 스넬의 메모 — 누운 채 마지막 며칠에 오지안더의 머리말을 보고 마음이 크게 흔들렸다.</text>
+  <text x="40" y="674" font-size="10.5"><tspan class="blue">(9)</tspan> 출판은 그가 죽은 뒤에 이루어졌다.</text>
+
+  <text x="30" y="700" font-size="10" class="ax">⚠ 생애 막대는 1500 앞을 잘랐다. 달만 아는 일은 그 달 첫머리, 해만 아는 일은 그 해 가운데에 두었다.</text>
+  <text x="30" y="716" font-size="10" class="ax">⚠ 「가을」은 9월 말, 「말」은 12월 첫머리, 「봄」은 4월 첫머리에 두었다. 이 자리는 이 노트가 정했다.</text>
+  <text x="30" y="732" font-size="10" class="ax">⚠ 66년 · 73년은 이 노트가 해의 차로 셈했다. 1609 는 7번 서평이 적은 해이고, 1번은 「50년 뒤」라고만 적는다.</text>
+  <text x="30" y="748" font-size="10" class="ax">⚠ 아래 칸의 차례는 이 노트가 정했고, 영어 문장은 이 노트가 옮긴 것이다. 괄호 숫자는 이 노트의 출처 번호다.</text>
+</svg>
