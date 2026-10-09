@@ -78,7 +78,7 @@
 
 ## 5. 카스, 그리고 주인이 바뀌는 OB
 
-카스는 1994년 진로쿠어스가 내놓은 맥주로 소개되고[5], OB는 1999년 진로의 맥주 사업을 인수했다[27]. 카스는 2011년 1월 월간 판매에서 처음으로 하이트를 앞섰고[27], 2011년 7월 말 누적으로는 하이트 51.1%, 오비 48.9%까지 격차가 좁혀졌다[30]. OB가 연간으로 다시 1위에 오른 해는 2011년으로 쓴 보도와[31] 카스가 2012년부터 1위를 지켜 왔다고 쓴 자료가 엇갈린다[32].
+카스는 1994년 진로쿠어스가 내놓은 맥주로 소개되고[5], OB는 1999년 진로의 맥주 사업을 인수했다[27]. 카스는 2011년 1월 월간 판매에서 처음으로 하이트를 앞섰고[27], 2011년 7월 말 누적으로는 하이트 51.1%, 오비 48.9%까지 격차가 좁혀졌다[30]. OB가 연간으로 다시 1위에 오른 해는 2011년으로 쓴 보도와[31] 카스가 2012년부터 브랜드 점유율 1위를 이어 왔다고 쓴 보도가 엇갈린다[32]. 앞의 것은 회사 출고량, 뒤의 것은 브랜드 기준이다.
 
 OB의 주인은 여러 번 바뀌었다.
 
@@ -214,7 +214,7 @@ OB의 주인은 여러 번 바뀌었다.
 - [7] Agence Europe — 인터브루의 OB 지분 인수 보도 — https://agenceurope.eu/en/bulletin/article/8620/36/
 - [8] Business Standard(로이터 전재, 2014-01-20) — AB인베브가 58억 달러에 OB 재인수 합의 — https://www.business-standard.com/amp/article/reuters/ab-inbev-to-regain-grip-on-s-korea-brewer-ob-for-5-8-billion-114012000662_1.html
 - [9] FinanceAsia — AB인베브의 OB 재인수(58억 달러)와 KKR의 차익 — https://www.financeasia.com/article/ab-inbev-regains-oriental-brewery-for-5-8bn/370030
-- [10] The Economist (2012-11-24), 「Fiery food, boring beer」 — 대니얼 튜더, 「지루한 복점이 소규모 양조장을 짓누른다」, 대동강맥주와 비교 — https://econ.st/2GE3wLO
+- [10] The Economist (2012-11-24), 「Fiery food, boring beer」 — 대니얼 튜더, 「따분한 복점이 소규모 양조업자를 짓누른다」, 대동강맥주와 비교 — https://econ.st/2GE3wLO
 - [11] South China Morning Post — 불매 5년 뒤 일본 맥주가 한국 수입맥주 1위로 복귀, 아사히의 이전 1위 — https://amp.scmp.com/week-asia/economics/article/3249771/japan-makes-frothy-comeback-top-south-korean-beer-imports-5-years-boycott-fades
 - [12] Wikipedia, "Somaek" — 소맥의 정의와 기원이 불분명하다는 점 — https://en.wikipedia.org/wiki/Somaek
 - [13] CNN Travel — 한국의 치킨과 맥주(치맥) 문화 — https://amp.cnn.com/cnn/travel/article/south-korea-beer-chicken
@@ -238,7 +238,7 @@ OB의 주인은 여러 번 바뀌었다.
 - [29] 이투데이 (2014-01-21) — AB인베브의 OB 58억 달러 재인수 합의, KKR·어피니티 약 3.5조 원 차익 — https://www.etoday.co.kr/news/view/856448
 - [30] 이투데이 (2011), 「맥주시장 2%의 전쟁 오비 대역전?」 — 2011년 7월 말 누적 하이트 51.1%·오비 48.9% — https://www.etoday.co.kr/news/view/493071
 - [31] 비즈워치 (2016-03-08) — 오비맥주가 2011년 하이트맥주를 제치고 1위에 올랐다는 서술 — https://news.bizwatch.co.kr/article/consumer/2016/03/08/0001
-- [32] 잡플래닛 콘텐츠, 「오비 vs 하이트 카스테라 대전 승자는」 — 카스가 2012년부터 1위를 지켜 왔다는 정리 — https://www.jobplanet.co.kr/contents/news-1460
+- [32] 문화일보 (2024) — 카스는 2012년부터 12년 연속 국내 맥주 점유율 1위 — https://www.munhwa.com/article/11409832
 - [33] 뉴스토마토 — 롯데 클라우드 2014년 4월 출시, 2년 누적 3.2억 병 — https://newstomato.com/ReadNews.aspx?no=663724
 - [34] 뉴데일리 (2020-06-02) — 클라우드 점유율 2%대 — https://biz.newdaily.co.kr/site/data/html/2020/06/02/2020060200083.amp.html
 - [35] 비즈한국 — 하이트진로 테라 2019년 출시 — https://www.bizhankook.com/bk/article/25437
