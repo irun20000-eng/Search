@@ -16,7 +16,7 @@
   - 영상 길이만큼 start 부터 잘라, loudnorm 으로 lufs 에 맞추고 앞뒤를 페이드한다.
   - 영상 스트림은 다시 인코딩하지 않는다(-c:v copy).
 
-CC BY 는 「저작자 표기 · 라이선스 링크 · 변경 여부」 세 가지를 요구한다. 영상 끝 화면에
+CC BY 는 「저작자 표기(원본에 있으면 저작권 표시 그대로) · 라이선스 링크 · 변경 여부」를 요구한다. 영상 끝 화면에
 「음악: 작곡가 「곡명」 · CC BY 4.0」을, 보고서 「요약 영상」 칸에 셋을 모두 적는다.
 남의 곡을 편곡·리믹스한 트랙은 원곡의 권리가 따로 있으니 쓰지 않는다.
 
@@ -45,6 +45,13 @@ def fetch(url):
         subprocess.run(["curl", "-sSfL", "-o", str(tmp), url], check=True)
         tmp.rename(dst)
     return dst
+
+
+def credit(meta):
+    """파일 안에도 출처를 남긴다 — 영상만 따로 퍼져도 스스로 출처를 밝히도록."""
+    who = meta.get("copyright") or meta["artist"]
+    return (f"Music: \"{meta['title']}\" {who} — {meta['license']} {meta['license_url']} — "
+            f"{meta['source_page']} — changes: {meta.get('changes', '')}")
 
 
 def duration(ff, path):
@@ -83,6 +90,7 @@ def main():
     cmd = [ff, "-y", "-loglevel", "error", "-i", a.video, "-ss", f"{start}", "-i", str(audio),
            "-filter_complex", f"[1:a]{af}[a]", "-map", "0:v", "-map", "[a]",
            "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",
+           "-metadata", f"comment={credit(meta)}",
            "-movflags", "+faststart", a.out]
     subprocess.run(cmd, check=True)
     print(f"→ {a.out} ({vdur:.1f}초, 음악: {meta['artist']} 「{meta['title']}」 {meta['license']})")

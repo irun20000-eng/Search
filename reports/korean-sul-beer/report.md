@@ -41,7 +41,7 @@
 
 69초 세로 쇼츠(1080×1920)다. 이 보고서에 출처와 함께 실린 수치만 썼다. 내레이션은 없고 배경음악만 깔았다. 재생되지 않으면 [영상 파일 열기](https://irun20000-eng.github.io/Search/reports/korean-sul-beer/video/short.mp4).
 
-배경음악: Tanner Helland, 「A Memory Away」 — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · 출처 [tannerhelland/free-music](https://github.com/tannerhelland/free-music). 변경: 3초 지점부터 69초를 잘라 쓰고(앞의 무음 구간 제외), 음량을 -18 LUFS 로 맞추고, 앞 1초·끝 3초를 페이드했다.
+배경음악: 「A Memory Away」 © 2010 Tanner Helland — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · 출처 [tannerhelland/free-music](https://github.com/tannerhelland/free-music) ([라이선스 원문, 커밋 고정](https://github.com/tannerhelland/free-music/blob/f6bfe16f49feab2181075ab86b13b24740592aa6/LICENSE.md)). 변경: 3초 지점부터 69초를 잘라 쓰고(앞의 무음 구간 제외), 음량을 -18 LUFS 로 맞추고, 앞 1초·끝 3초를 페이드했다.
 
 ## 1. 맥주가 들어오다 — 개항과 일본 맥주
 
