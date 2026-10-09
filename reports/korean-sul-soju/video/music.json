@@ -1,0 +1,16 @@
+{
+  "title": "Daybreak",
+  "artist": "Tanner Helland",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_page": "https://github.com/tannerhelland/free-music",
+  "source_url": "https://raw.githubusercontent.com/tannerhelland/free-music/f6bfe16f49feab2181075ab86b13b24740592aa6/mp3/Daybreak.mp3",
+  "start": 0,
+  "lufs": -18,
+  "fade_in": 1.0,
+  "fade_out": 3.0,
+  "changes": "앞 69초만 잘라 쓰고, 음량을 -18 LUFS 로 맞추고, 앞 1초·끝 3초를 페이드했다",
+  "copyright": "© 2010 Tanner Helland",
+  "license_evidence": "https://github.com/tannerhelland/free-music/blob/f6bfe16f49feab2181075ab86b13b24740592aa6/LICENSE.md",
+  "license_note": "원본 mp3 의 ID3 주석에는 예전 라이선스(CC BY-SA 3.0 US)가 적혀 있으나, 저작자가 2020-01-23 위 커밋에서 모음 전체를 CC BY 4.0 으로 다시 냈다. CC 라이선스는 비독점이라 BY 4.0 을 골라 쓴다."
+}
