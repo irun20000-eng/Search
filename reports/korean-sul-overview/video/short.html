@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>한국인의 술 ① 요약 쇼츠</title>
+<!-- 세로 쇼츠 1080×1920 · tools/motion/render_short.py 로 렌더한다.
+     모든 수치는 reports/korean-sul-overview/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지). -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@700;800;900&display=block" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F0;--ink:#3A2E2A;--sub:#7A6A62;--coral:#E8664F;--amber:#F2A65A;--teal:#5B9AA0;--sage:#9DB98A;--line:#EADBCB}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;background:var(--bg);font-family:'Noto Sans KR',sans-serif;color:var(--ink);overflow:hidden;position:relative;word-break:keep-all}
+.num{font-family:'Nunito','Noto Sans KR',sans-serif;font-weight:900}
+#top{position:absolute;left:96px;right:96px;top:104px;display:flex;align-items:center;justify-content:space-between;font-size:34px;font-weight:700;color:var(--sub)}
+#top b{color:var(--coral)}
+#prog{position:absolute;left:96px;right:96px;top:170px;height:8px;border-radius:4px;background:var(--line)}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--coral);width:0}
+.scene{position:absolute;left:96px;right:96px;top:260px;bottom:220px;opacity:0}
+.kicker{font-size:40px;font-weight:700;color:var(--coral);margin-bottom:28px}
+.h{font-size:84px;font-weight:900;line-height:1.18;letter-spacing:-1px}
+.p{font-size:42px;font-weight:500;line-height:1.5;color:var(--sub);margin-top:36px}
+.src{position:absolute;left:0;right:0;bottom:0;font-size:28px;color:var(--sub);line-height:1.45}
+.bars{margin-top:70px}
+.bar{margin:0 0 54px}
+.bar .lab{display:flex;justify-content:space-between;font-size:44px;font-weight:700;margin-bottom:16px}
+.bar .lab .v{color:var(--ink)}
+.bar .track{height:64px;border-radius:32px;background:#F3E6D8;overflow:hidden}
+.bar .fill{height:100%;border-radius:32px;width:0}
+.big{font-size:200px;line-height:1;color:var(--coral)}
+.unit{font-size:64px;font-weight:800;color:var(--ink);margin-left:12px}
+.badge{display:inline-block;padding:14px 30px;border-radius:40px;background:var(--coral);color:#fff;font-size:40px;font-weight:700}
+svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
+#foot{position:absolute;left:96px;right:96px;bottom:104px;font-size:28px;color:var(--sub);text-align:center}
+</style></head>
+<body>
+<div id="top"><span><b>한국인의 술</b> · 시리즈 ①</span><span id="clock" class="num">1/9</span></div>
+<div id="prog"><i></i></div>
+
+<!-- 1 표지 -->
+<section class="scene" id="s1">
+  <div style="margin-top:300px">
+    <div class="kicker">4편 시리즈의 첫 편</div>
+    <div class="h">한국인은<br>무엇을 얼마나<br>마시나</div>
+    <div class="p">숫자로 보는 술 지도와<br>그 뒤의 제도</div>
+  </div>
+</section>
+
+<!-- 2 구성비 -->
+<section class="scene" id="s2">
+  <div class="kicker">2025년 출고량 구성</div>
+  <div class="h">양으로는<br>맥주가 절반</div>
+  <div class="bars" id="mix"></div>
+  <div class="src">전체 298.8만㎘ 기준 구성비(보고서 계산) · 국세통계 인용 보도</div>
+</section>
+
+<!-- 3 감소 추세 -->
+<section class="scene" id="s3">
+  <div class="kicker">전체 출고량</div>
+  <div class="h">27년 만에<br>300만㎘ 아래로</div>
+  <svg id="line" width="888" height="760" style="margin-top:60px"></svg>
+  <div class="src">2015년 380.4만㎘ 대비 −21.5% · 국세통계 인용 보도</div>
+</section>
+
+<!-- 4 OECD -->
+<section class="scene" id="s4">
+  <div class="kicker">1인당 순수 알코올(15세 이상, 2023)</div>
+  <div class="h">평균은<br>보통 수준</div>
+  <div class="bars" id="oecd"></div>
+  <div class="p" id="s4note">그러나 폭음이 흔하고<br><b style="color:var(--coral)">상위 20%가 66%</b>를 마신다</div>
+  <div class="src">OECD 「Health at a Glance 2025」 · OECD 한국 음주 분석 자료</div>
+</section>
+
+<!-- 5 세금 -->
+<section class="scene" id="s5">
+  <div class="kicker">2020년 주세 개편</div>
+  <div class="h">같은 1ℓ,<br>다른 세금</div>
+  <div class="bars" id="tax"></div>
+  <div class="p" id="s5note">소주·위스키 같은 증류주는<br>값에 매기는 <b style="color:var(--coral)">종가세 72%</b></div>
+  <div class="src">2020년 시작 세율(종량세) · 택스워치·머니투데이 보도</div>
+</section>
+
+<!-- 6 위스키 -->
+<section class="scene" id="s6">
+  <div class="kicker">위스키 수입량(톤)</div>
+  <div class="h">하이볼 붐,<br>그리고 조정</div>
+  <svg id="whisky" width="888" height="760" style="margin-top:60px"></svg>
+  <div class="src">관세청 자료 인용 보도 · 2023년 사상 최대</div>
+</section>
+
+<!-- 7 도수 -->
+<section class="scene" id="s7">
+  <div class="kicker">참이슬 도수</div>
+  <div class="h">점점<br>순해지는 소주</div>
+  <div style="margin-top:110px;text-align:center"><span class="big num" id="abv">23</span><span class="unit">도</span></div>
+  <div class="p" id="abvyear" style="text-align:center;margin-top:20px">1998 · 참이슬</div>
+  <div class="src">1998년은 원조 참이슬, 2006년부터 참이슬 후레쉬 · 하이트진로 발표 인용 보도</div>
+</section>
+
+<!-- 8 건강 -->
+<section class="scene" id="s8">
+  <div class="kicker">건강 지표</div>
+  <div class="h">폭음은 줄고,<br>그늘은 남았다</div>
+  <div class="bars" id="risk"></div>
+  <div class="p" id="s8note">2024년 알코올 관련 사망<br><b class="num" style="color:var(--coral);font-size:72px">하루 13.2명</b></div>
+  <div class="src">국민건강영양조사(2025는 잠정치) · 2024 사망원인통계 인용 보도</div>
+</section>
+
+<!-- 9 마무리 -->
+<section class="scene" id="s9">
+  <div style="margin-top:260px">
+    <div class="kicker">다음 편</div>
+    <div class="h">② 소주<br>증류주에서<br>희석식으로</div>
+    <div class="p">전문과 출처 67개는<br>갤러리 보고서에서</div>
+    <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
+  </div>
+  <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
+</section>
+
+<div id="foot">irun20000-eng.github.io/Search</div>
+
+<script>
+const SCENES=[[0,6],[6,16],[16,25],[25,33],[33,41],[41,50],[50,57],[57,63],[63,69]];
+window.__duration=69;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const $=id=>document.getElementById(id);
+const fmt=(v,d=0)=>v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d});
+
+function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div class="lab"><span>${r[0]}</span><span class="v num" id="${el.id}v${i}">0</span></div><div class="track"><div class="fill" id="${el.id}f${i}" style="background:${r[3]}"></div></div></div>`).join('')}
+const MIX=[["맥주",50.8,"%","var(--coral)"],["희석식 소주",26.5,"%","var(--amber)"],["탁주(막걸리)",10.6,"%","var(--teal)"],["그 밖",12.0,"%","var(--sage)",1]];
+const OECD=[["한국",7.8,"ℓ","var(--coral)"],["OECD 평균",8.5,"ℓ","var(--teal)"]];
+const TAX=[["맥주",830.3,"원","var(--coral)"],["탁주(막걸리)",41.7,"원","var(--teal)"]];
+const RISK=[["고위험음주율 2024",13.6,"%","var(--amber)"],["고위험음주율 2025(잠정)",12.6,"%","var(--coral)"]];
+barRows($('mix'),MIX);barRows($('oecd'),OECD);barRows($('tax'),TAX);barRows($('risk'),RISK);
+
+// 값 글자는 세어 올라가지 않고 최종값을 띄운다 — 중간 숫자는 출처에 없는 값이라 화면에 내지 않는다.
+function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=fmt(r[1],r[4]??(r[1]%1?1:0))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
+
+// 선 그래프: 전체 출고량(만㎘)
+const LINE=[[2014,380.8],[2022,326.9],[2023,323.7],[2024,315.1],[2025,298.8]];
+const WH=[[2021,15662],[2022,27038],[2023,30586],[2024,27441],[2025,22581]];
+function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
+function setupLine(){const s=$('line');const W=888,H=760,pl=70,pr=70,pt=80,pb=90;
+ // 끊어진 가로축: 2014 와 2022 사이(2015~2021)는 자료가 없어 점선 구간으로 따로 두고 「생략」을 밝힌다.
+ // 빈 해를 붙여 연속 축처럼 그리면 기울기가 거짓이 되고, 연도 비례로 그리면 최근 네 점이 겹친다.
+ const gapW=(W-pl-pr)*0.34,step=(W-pl-pr-gapW)/(LINE.length-2);const xs=LINE.map((p,i)=>i===0?pl:pl+gapW+(i-1)*step);
+ const lo=280,hi=390;const ys=LINE.map(p=>pt+(hi-p[1])/(hi-lo)*(H-pt-pb));const y300=pt+(hi-300)/(hi-lo)*(H-pt-pb);
+ s.appendChild(svgEl('line',{x1:pl-40,x2:W-pr+40,y1:y300,y2:y300,stroke:'#E8664F','stroke-dasharray':'10 10','stroke-width':3,opacity:.6}));
+ const lab=svgEl('text',{x:pl-40,y:y300+44,'text-anchor':'start','font-size':30,fill:'#E8664F','font-weight':800});lab.textContent='300만㎘';s.appendChild(lab);
+ s.appendChild(svgEl('line',{x1:xs[0],y1:ys[0],x2:xs[1],y2:ys[1],stroke:'#7A6A62','stroke-width':5,'stroke-dasharray':'4 14','stroke-linecap':'round',id:'lgap',opacity:0}));
+ const gl=svgEl('text',{x:(xs[0]+xs[1])/2+24,y:(ys[0]+ys[1])/2-10,'text-anchor':'start','font-size':26,fill:'#7A6A62','font-weight':700,id:'lgapt',opacity:0});gl.textContent='2015~2021 생략';s.appendChild(gl);
+ const path=svgEl('polyline',{points:xs.slice(1).map((x,i)=>x+','+ys[i+1]).join(' '),fill:'none',stroke:'#3A2E2A','stroke-width':8,'stroke-linejoin':'round','stroke-linecap':'round',id:'lp'});s.appendChild(path);
+ xs.forEach((x,i)=>{s.appendChild(svgEl('circle',{cx:x,cy:ys[i],r:14,fill:i==LINE.length-1?'#E8664F':'#3A2E2A',id:'lc'+i,opacity:0}));
+  const v=svgEl('text',{x:x,y:ys[i]-30,'text-anchor':'middle','font-size':34,'font-weight':900,fill:i==LINE.length-1?'#E8664F':'#3A2E2A',id:'lv'+i,opacity:0});v.textContent=LINE[i][1];s.appendChild(v);
+  if(i===0||i>=1){const y=svgEl('text',{x:x,y:H-30,'text-anchor':'middle','font-size':30,'font-weight':800,fill:'#7A6A62'});y.textContent=LINE[i][0];s.appendChild(y);}});
+ const L=path.getTotalLength();path.style.strokeDasharray=L;path.style.strokeDashoffset=L;path.dataset.len=L;}
+function setupWhisky(){const s=$('whisky');const W=888,H=760,pt=80,pb=90,gap=40;const n=WH.length;const bw=(W-gap*(n-1))/n;const max=32000;
+ WH.forEach((p,i)=>{const x=i*(bw+gap);s.appendChild(svgEl('rect',{x:x,y:H-pb,width:bw,height:0,rx:18,fill:p[0]==2023?'#E8664F':'#F2A65A',id:'wr'+i}));
+  const v=svgEl('text',{x:x+bw/2,y:H-pb-20,'text-anchor':'middle','font-size':32,'font-weight':900,fill:'#3A2E2A',id:'wv'+i,opacity:0});v.textContent=fmt(p[1]);s.appendChild(v);
+  const y=svgEl('text',{x:x+bw/2,y:H-30,'text-anchor':'middle','font-size':32,'font-weight':800,fill:'#7A6A62'});y.textContent=p[0];s.appendChild(y);});
+ s.dataset.max=max;s.dataset.h=H-pt-pb;s.dataset.base=H-pb;}
+setupLine();setupWhisky();
+
+const ABV=[[23,'1998 · 참이슬'],[19.8,'2006 · 참이슬 후레쉬'],[16.9,'2020'],[16,'2024'],[15.7,'2026']];
+
+window.__seek=function(t){
+ // 장면 가시성(앞뒤 0.5초 페이드)
+ let cur=0;SCENES.forEach(([a,b],i)=>{const el=$('s'+(i+1));const o=Math.min(ease((t-a)/0.5),1-ease((t-(b-0.5))/0.5));el.style.opacity=(t>=a&&t<b)?clamp(o):0;el.style.transform=`translateY(${(1-ease((t-a)/0.6))*40}px)`;if(t>=a&&t<b)cur=i;});
+ $('clock').textContent=(cur+1)+'/9';$('prog').firstElementChild.style.width=(t/window.__duration*100)+'%';
+ drawBars('mix',MIX,60,SCENES[1][0]+1.2,t);
+ // 선
+ const g=ease((t-SCENES[2][0]-1.0)/0.8);$('lgap').setAttribute('opacity',g);$('lgapt').setAttribute('opacity',g);
+ $('lc0').setAttribute('opacity',t>=SCENES[2][0]+1.0?1:0);$('lv0').setAttribute('opacity',t>=SCENES[2][0]+1.0?1:0);
+ const lp=$('lp'),L=+lp.dataset.len,k=ease((t-SCENES[2][0]-2.0)/2.6);lp.style.strokeDashoffset=L*(1-k);
+ LINE.slice(1).forEach((_,j)=>{const i=j+1,on=k>=j/(LINE.length-2)-0.001?1:0;$('lc'+i).setAttribute('opacity',on);$('lv'+i).setAttribute('opacity',on);});
+ drawBars('oecd',OECD,10,SCENES[3][0]+1.0,t);$('s4note').style.opacity=ease((t-SCENES[3][0]-3.5)/0.8);
+ drawBars('tax',TAX,900,SCENES[4][0]+1.0,t);$('s5note').style.opacity=ease((t-SCENES[4][0]-3.5)/0.8);
+ const ws=$('whisky'),max=+ws.dataset.max,h=+ws.dataset.h,base=+ws.dataset.base;
+ WH.forEach((p,i)=>{const kk=ease((t-SCENES[5][0]-1.0-i*0.5)/1.0);const hh=p[1]/max*h*kk;const r=$('wr'+i);r.setAttribute('y',base-hh);r.setAttribute('height',hh);const v=$('wv'+i);v.setAttribute('y',base-hh-20);v.setAttribute('opacity',kk>0.95?1:0);});
+ const st=t-SCENES[6][0]-1.0;const idx=clamp(Math.floor(st/1.1),0,ABV.length-1);$('abv').textContent=st<0?'23':String(ABV[idx][0]);$('abvyear').textContent=st<0?ABV[0][1]:ABV[idx][1];
+ drawBars('risk',RISK,16,SCENES[7][0]+1.0,t);$('s8note').style.opacity=ease((t-SCENES[7][0]-3.0)/0.8);
+};
+window.__seek(0);
+</script>
+</body></html>
