@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>한국인의 술 ⑤ 위스키·와인 요약 쇼츠</title>
+<!-- 세로 쇼츠 1080×1920 · tools/motion/render_short.py 로 렌더한다.
+     모든 수치는 reports/korean-sul-whisky-wine/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지).
+     값은 세어 올라가지 않고 최종값을 띄운다 — 중간 숫자는 출처에 없는 값이다(LESSONS 2026-10-09). -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@700;800;900&display=block" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F0;--ink:#3A2E2A;--sub:#7A6A62;--coral:#E8664F;--amber:#F2A65A;--teal:#5B9AA0;--sage:#9DB98A;--green:#4E9A6B;--line:#EADBCB}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;background:var(--bg);font-family:'Noto Sans KR',sans-serif;color:var(--ink);overflow:hidden;position:relative;word-break:keep-all}
+.num{font-family:'Nunito','Noto Sans KR',sans-serif;font-weight:900}
+#top{position:absolute;left:96px;right:96px;top:104px;display:flex;align-items:center;justify-content:space-between;font-size:34px;font-weight:700;color:var(--sub)}
+#top b{color:var(--coral)}
+#prog{position:absolute;left:96px;right:96px;top:170px;height:8px;border-radius:4px;background:var(--line)}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--coral);width:0}
+.scene{position:absolute;left:96px;right:96px;top:260px;bottom:220px;opacity:0}
+.kicker{font-size:40px;font-weight:700;color:var(--coral);margin-bottom:28px}
+.h{font-size:84px;font-weight:900;line-height:1.18;letter-spacing:-1px}
+.p{font-size:42px;font-weight:500;line-height:1.5;color:var(--sub);margin-top:36px}
+.src{position:absolute;left:0;right:0;bottom:0;font-size:28px;color:var(--sub);line-height:1.45}
+.bars{margin-top:70px}
+.bar{margin:0 0 50px}
+.bar .lab{display:flex;justify-content:space-between;font-size:42px;font-weight:700;margin-bottom:14px}
+.bar .track{height:60px;border-radius:30px;background:#F3E6D8;overflow:hidden}
+.bar .fill{height:100%;border-radius:30px;width:0}
+.steps{margin-top:70px}
+.step{display:flex;gap:34px;align-items:flex-start;margin-bottom:46px;opacity:0}
+.step .y{flex:0 0 220px;font-size:46px;color:var(--coral)}
+.step .t{font-size:42px;font-weight:700;line-height:1.4}
+.step .t small{display:block;font-size:32px;font-weight:500;color:var(--sub)}
+.eq{margin-top:56px;font-size:56px;font-weight:900;text-align:center;opacity:0}
+.eq b{color:var(--coral)}
+.big{font-size:180px;line-height:1;color:var(--coral)}
+.unit{font-size:60px;font-weight:800;color:var(--ink);margin-left:12px}
+.badge{display:inline-block;padding:14px 30px;border-radius:40px;background:var(--coral);color:#fff;font-size:40px;font-weight:700}
+svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
+#foot{position:absolute;left:96px;right:96px;bottom:104px;font-size:28px;color:var(--sub);text-align:center}
+.cols{margin-top:40px}
+.cnote{font-size:30px;color:var(--sub);margin-top:6px}
+.step .y{flex-basis:260px}
+</style></head>
+<body>
+<div id="top"><span><b>한국인의 술</b> · 시리즈 ⑤</span><span id="clock" class="num">1/10</span></div>
+<div id="prog"><i></i></div>
+
+<section class="scene" id="s1"><div style="margin-top:300px">
+  <div class="kicker">위스키·와인 편</div>
+  <div class="h">수입 술의<br>붐과 조정</div>
+  <div class="p">하이볼과 홈술,<br>그리고 다시 줄어든 잔</div>
+</div></section>
+
+<section class="scene" id="s2">
+  <div class="kicker">위스키 연대기</div>
+  <div class="h">섞은 위스키에서<br>스카치로</div>
+  <div class="steps" id="st2">
+    <div class="step"><div class="y num">1970년대</div><div class="t">수입 원액 20~25%를 섞은<br>「국산 위스키」</div></div>
+    <div class="step"><div class="y num">1994·1996</div><div class="t">임페리얼·윈저<small>수입 스카치 블렌디드, 유흥업소 중심</small></div></div>
+    <div class="step"><div class="y num">2023</div><div class="t">하이볼 붐, 수입량 처음 3만 톤</div></div>
+  </div>
+  <div class="src">전북일보 · 비즈워치 · 이투데이 · KED Global 보도</div>
+</section>
+
+<section class="scene" id="s3">
+  <div class="kicker">주세율 — WTO 분쟁 뒤</div>
+  <div class="h">소주와 위스키,<br>같은 72%</div>
+  <div class="bars" id="tax"></div>
+  <div class="p" id="s3note">1999.1.18 WTO 상소기구 판정 →<br>2000년 둘 다 <b class="num" style="color:var(--coral)">72%</b></div>
+  <div class="src">WTO 상소기구 보고서 · 월간 통상 · 한국일보 · 시사위크</div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="kicker">위스키 수입량(톤)</div>
+  <div class="h">2023년<br>정점</div>
+  <svg id="wk" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="src">문화일보 · KED Global · 파이낸셜뉴스(2026-10-04) 보도(관세청 통계)</div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="kicker">위스키 1kg당 수입 단가(계산)</div>
+  <div class="h">많이 들일 땐<br>싸게</div>
+  <div class="bars" id="unit"></div>
+  <div class="p" id="s5note">수입액 ÷ 수입량 · 2023년은 물량 최대, 단가 최저</div>
+  <div class="src">파이낸셜뉴스(2026-10-04) 관세청 표로 계산</div>
+</section>
+
+<section class="scene" id="s6">
+  <div class="kicker">수입 원가 6만 4,000원 위스키의 세후 값(계산)</div>
+  <div class="h">세금을 붙이면<br>원가의 2.56배</div>
+  <div class="bars" id="wtax"></div>
+  <div class="p" id="s6note">관세·주세 72%·교육세·부가세 · 유통 마진 제외</div>
+  <div class="src">비즈워치(2024-01-26) 예시 · 스카치는 한·EU FTA로 관세 0%</div>
+</section>
+
+<section class="scene" id="s7">
+  <div class="kicker">와인 수입량(톤)</div>
+  <div class="h">2021년<br>홈술 정점</div>
+  <svg id="wn" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="cnote">수입액 정점은 2022년(5억 8,128만 달러)</div>
+  <div class="src">아시아경제 · 트위그 · 딜사이트 보도(관세청 통계)</div>
+</section>
+
+<section class="scene" id="s8">
+  <div class="kicker">FTA와 와인 관세(기본 15%)</div>
+  <div class="h">관세 0%까지</div>
+  <div class="steps" id="st8">
+    <div class="step"><div class="y num">2004.4.1</div><div class="t">한·칠레 발효<small>단계 인하 뒤 2009년 0%</small></div></div>
+    <div class="step"><div class="y num">2011.7.1</div><div class="t">한·EU 잠정 발효<small>와인 관세 즉시 철폐</small></div></div>
+    <div class="step"><div class="y num">2012.3.15</div><div class="t">한·미 발효<small>와인 관세 즉시 철폐</small></div></div>
+  </div>
+  <div class="src">문화체육관광부 · 경향신문 · 아주경제 · 머니투데이 보도</div>
+</section>
+
+<section class="scene" id="s9">
+  <div class="kicker">수입 원가 1만 원에 붙는 세금(계산)</div>
+  <div class="h">와인 대<br>위스키</div>
+  <div class="bars" id="cmp"></div>
+  <div class="p" id="s9note">와인 주세 30%·교육세 10% / 위스키 72%·30%</div>
+  <div class="src">택스워치 · 머니투데이 · 공공데이터포털 세율로 계산</div>
+</section>
+
+<section class="scene" id="s10"><div style="margin-top:240px">
+  <div class="kicker">시리즈 끝</div>
+  <div class="h">한국인의 술<br>① 술 지도부터<br>다시 보기</div>
+  <div class="p">전문과 출처 128개는<br>갤러리 보고서에서</div>
+  <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
+</div>
+  <div class="src" style="bottom:46px">음악: 「Destiny」 © 2010 Tanner Helland · CC BY 4.0</div>
+  <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
+</section>
+
+<div id="foot">irun20000-eng.github.io/Search</div>
+
+<script>
+const SCENES=[[0,6],[6,14],[14,21],[21,29],[29,35],[35,42],[42,50],[50,56],[56,63],[63,69]];
+window.__duration=69;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const $=id=>document.getElementById(id);
+const fmt=(v,d=0)=>v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d});
+function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div class="lab"><span>${r[0]}</span><span class="v num" id="${el.id}v${i}"></span></div><div class="track"><div class="fill" id="${el.id}f${i}" style="background:${r[3]}"></div></div></div>`).join('')}
+// 값 글자는 세어 올라가지 않고 최종값을 띄운다.
+function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=(r[5]||fmt(r[1],r[4]??(r[1]%1?1:0)))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
+const TAX=[["분쟁 당시 소주",35,"%","var(--teal)"],["분쟁 당시 위스키",100,"%","var(--amber)"],["2000년 이후 둘 다",72,"%","var(--coral)"]];
+const UNIT=[["2022",9.87,"달러","var(--teal)",2],["2023",8.49,"달러","var(--amber)",2],["2025",10.04,"달러","var(--coral)",2]];
+const WTAX=[["수입 원가",64000,"원","var(--teal)"],["스카치(관세 0%)",136294,"원","var(--amber)"],["관세 20% 제품",163553,"원","var(--coral)"]];
+const CMP=[["FTA 와인",4630,"원","var(--teal)"],["비FTA 와인",6825,"원","var(--amber)"],["위스키",11296,"원","var(--coral)"]];
+barRows($('tax'),TAX);barRows($('unit'),UNIT);barRows($('wtax'),WTAX);barRows($('cmp'),CMP);
+function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
+// 세로 막대: 연도마다 한 칸. 빠진 해는 칸 사이에 물결 표시를 넣어 끊긴 축임을 보인다.
+function setupCols(id,data,max,gapAfter,hi){const s=$(id);const W=888,H=720,pb=70,pt=70;const n=data.length,slot=W/n,bw=slot*0.56;
+ data.forEach((d,i)=>{const x=slot*i+(slot-bw)/2,h=(H-pb-pt)*d[1]/max;
+  s.appendChild(svgEl('rect',{x:x,y:H-pb-h,width:bw,height:h,rx:14,fill:i===hi?'#E8664F':'#5B9AA0',id:id+'r'+i,'data-h':h,'data-y':H-pb}));
+  const v=svgEl('text',{x:x+bw/2,y:H-pb-h-18,'text-anchor':'middle','font-size':30,'font-weight':900,fill:'#3A2E2A',id:id+'v'+i,opacity:0});v.textContent=d[2];s.appendChild(v);
+  const y=svgEl('text',{x:x+bw/2,y:H-24,'text-anchor':'middle','font-size':30,'font-weight':800,fill:'#7A6A62'});y.textContent=d[0];s.appendChild(y);});
+ s.appendChild(svgEl('line',{x1:0,y1:H-pb,x2:W,y2:H-pb,stroke:'#EADBCB','stroke-width':4}));
+ if(gapAfter!=null){const gx=slot*(gapAfter+1);const g=svgEl('text',{x:gx,y:H-pb+10,'text-anchor':'middle','font-size':40,'font-weight':900,fill:'#E8664F'});g.textContent='≈';s.appendChild(g);}
+}
+function drawCols(id,n,t0,t){for(let i=0;i<n;i++){const r=$(id+'r'+i),k=ease((t-t0-i*0.3)/1.0),h=+r.dataset.h,yb=+r.dataset.y;r.setAttribute('height',h*k);r.setAttribute('y',yb-h*k);$(id+'v'+i).setAttribute('opacity',clamp((k-0.7)/0.3));}}
+const WK=[["2019",19837,"19,837"],["2020",15923,"15,923"],["2021",15662,"15,662"],["2022",27038,"27,038"],["2023",30586,"30,586"],["2024",27440,"27,440"],["2025",22581,"22,581"]];
+const WN=[["2019",43495,"43,495"],["2020",54127,"54,127"],["2021",76575,"76,575"],["2022",71020,"71,020"],["2023",56542,"56,542"]];
+setupCols('wk',WK,33000,null,4);setupCols('wn',WN,80000,null,2);
+function steps(id,t0,t,gap){[...$(id).children].forEach((el,i)=>{const k=ease((t-t0-i*gap)/0.6);el.style.opacity=k;el.style.transform=`translateX(${(1-k)*40}px)`;});}
+
+window.__seek=function(t){
+ let cur=0;SCENES.forEach(([a,b],i)=>{const el=$('s'+(i+1));const o=Math.min(ease((t-a)/0.5),1-ease((t-(b-0.5))/0.5));el.style.opacity=(t>=a&&t<b)?clamp(o):0;el.style.transform=`translateY(${(1-ease((t-a)/0.6))*40}px)`;if(t>=a&&t<b)cur=i;});
+ $('clock').textContent=(cur+1)+'/10';$('prog').firstElementChild.style.width=(t/window.__duration*100)+'%';
+ steps('st2',SCENES[1][0]+1.0,t,1.5);
+ drawBars('tax',TAX,110,SCENES[2][0]+1.0,t);$('s3note').style.opacity=ease((t-SCENES[2][0]-3.5)/0.8);
+ drawCols('wk',WK.length,SCENES[3][0]+1.0,t);
+ drawBars('unit',UNIT,11,SCENES[4][0]+1.0,t);$('s5note').style.opacity=ease((t-SCENES[4][0]-3.0)/0.8);
+ drawBars('wtax',WTAX,170000,SCENES[5][0]+1.0,t);$('s6note').style.opacity=ease((t-SCENES[5][0]-3.5)/0.8);
+ drawCols('wn',WN.length,SCENES[6][0]+1.0,t);
+ steps('st8',SCENES[7][0]+0.8,t,1.3);
+ drawBars('cmp',CMP,12000,SCENES[8][0]+1.0,t);$('s9note').style.opacity=ease((t-SCENES[8][0]-3.5)/0.8);
+};
+window.__seek(0);
+</script>
+</body></html>
