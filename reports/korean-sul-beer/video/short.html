@@ -65,7 +65,7 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
   <div class="h">약 40년 만의<br>1위 교체</div>
   <div class="bars" id="flip"></div>
   <div class="p" id="s3note">1991 페놀 사태 → 불매<br>1993 「천연 암반수」 하이트</div>
-  <div class="src">비즈한국 · 서울신문(2014-04-12) 보도</div>
+  <div class="src">비즈한국 · 서울신문(2014-04-12) · 비즈워치 보도</div>
 </section>
 
 <section class="scene" id="s4">
@@ -101,7 +101,7 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
   <div class="h">불매와<br>회복</div>
   <svg id="jp" width="888" height="720" style="margin-top:40px"></svg>
   <div class="cnote">2021년 값은 그리지 않았다(축이 끊김)</div>
-  <div class="src">YTN · 뉴시스 · 헤럴드경제 보도(관세청 통계)</div>
+  <div class="src">YTN · 뉴시스 · 헤럴드경제 · SCMP 보도</div>
 </section>
 
 <section class="scene" id="s8">
@@ -123,8 +123,8 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
 
 <section class="scene" id="s10"><div style="margin-top:260px">
   <div class="kicker">마지막 편</div>
-  <div class="h">④ 막걸리·전통주<br>쌀 막걸리<br>금지와 부활</div>
-  <div class="p">전문과 출처 81개는<br>갤러리 보고서에서</div>
+  <div class="h">④ 막걸리·<br>전통주</div>
+  <div class="p">전문과 출처 83개는<br>갤러리 보고서에서</div>
   <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
 </div>
   <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
@@ -144,7 +144,7 @@ function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div cl
 function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=(r[5]||fmt(r[1],r[4]??(r[1]%1?1:0)))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
 // 동양맥주 점유율은 보도마다 41.6~41.7% 라 막대는 41.6 으로, 글자는 범위로 적는다.
 const FLIP=[["조선맥주(하이트)",43,"%","var(--coral)"],["동양맥주(OB)",41.6,"%","var(--teal)",1,"41.6~41.7"]];
-const OB=[["2009 매각(KKR 등)",18,"억 달러","var(--teal)"],["2014 재인수(AB인베브)",58,"억 달러","var(--coral)"]];
+const OB=[["2009 매각(KKR)",18,"억 달러","var(--teal)"],["2014 재인수(AB인베브)",58,"억 달러","var(--coral)"]];
 const TAX=[["종량세 전",1758,"원","var(--amber)"],["종량세 뒤(전망)",1343,"원","var(--coral)"]];
 barRows($('flip'),FLIP);barRows($('ob'),OB);barRows($('tax'),TAX);
 function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
