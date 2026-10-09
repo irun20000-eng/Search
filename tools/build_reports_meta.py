@@ -100,6 +100,7 @@ CATS = {
     "korean-sul-soju": "culture",
     "korean-sul-beer": "culture",
     "korean-sul-makgeolli": "culture",
+    "korean-sul-whisky-wine": "culture",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",

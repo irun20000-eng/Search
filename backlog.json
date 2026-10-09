@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-09",
- "scanned": 319,
- "resolved": 1902,
- "pending": 574,
+ "scanned": 320,
+ "resolved": 1919,
+ "pending": 571,
  "counts": {
-  "new": 265,
+  "new": 264,
   "companion": 5,
   "gap": 1
  },
@@ -163,6 +163,33 @@
    ]
   },
   {
+   "name": "종량세와 종가세",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
+     "u": "research/#r=korean-sul-beer",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "한국인의 술 ⑤ 위스키·와인 — 수입 술의 붐과 조정 (시리즈 ⑤) (DEEP)",
+     "u": "research/#r=korean-sul-whisky-wine",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "클로드 코드",
    "count": 6,
    "kind": "new",
@@ -288,39 +315,6 @@
      "u": "research/#r=claude-mcp-guide",
      "s": "research",
      "n": 2
-    }
-   ]
-  },
-  {
-   "name": "한국인의 술 ⑤ 위스키·와인",
-   "count": 5,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ④ 막걸리·전통주 — 금지와 부활의 100년 (시리즈 ④) (DEEP)",
-     "u": "research/#r=korean-sul-makgeolli",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
-     "u": "research/#r=korean-sul-overview",
-     "s": "research",
-     "n": 1
-    },
-    {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
-     "s": "research",
-     "n": 1
-    },
-    {
-     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
-     "u": "research/#r=korean-sul-beer",
-     "s": "research",
-     "n": 1
     }
    ]
   },
@@ -483,27 +477,6 @@
      "u": "research/#r=slack-ai-bot",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "종량세와 종가세",
-   "count": 4,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
-     "u": "research/#r=korean-sul-overview",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
-     "u": "research/#r=korean-sul-beer",
-     "s": "research",
-     "n": 2
     }
    ]
   },
