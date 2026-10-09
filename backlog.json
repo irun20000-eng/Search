@@ -482,14 +482,14 @@
    "base": null,
    "refs": [
     {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
      "s": "research",
      "n": 2
     },
     {
-     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
-     "u": "research/#r=korean-sul-overview",
+     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
+     "u": "research/#r=korean-sul-soju",
      "s": "research",
      "n": 2
     }
@@ -1249,36 +1249,6 @@
    ]
   },
   {
-   "name": "증류",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "주세령",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
    "name": "종량세와 종가세",
    "count": 2,
    "kind": "new",
@@ -1303,6 +1273,36 @@
     {
      "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
      "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "증류",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
+     "u": "research/#r=korean-sul-soju",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "주세령",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
+     "u": "research/#r=korean-sul-soju",
      "s": "research",
      "n": 2
     }
