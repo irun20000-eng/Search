@@ -96,6 +96,7 @@ CATS = {
     "prosecution-reform-2026": "society",
     "man-city-115-charges-verdict": "society",
     "ib-diploma-programme-teaching-assessment": "society",
+    "korean-sul-overview": "culture",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",

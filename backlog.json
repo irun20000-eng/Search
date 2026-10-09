@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-09",
- "scanned": 315,
+ "scanned": 316,
  "resolved": 1868,
- "pending": 553,
+ "pending": 565,
  "counts": {
-  "new": 258,
+  "new": 263,
   "companion": 5,
   "gap": 1
  },
@@ -450,6 +450,21 @@
      "u": "research/#r=slack-ai-bot",
      "s": "research",
      "n": 1
+    }
+   ]
+  },
+  {
+   "name": "한국인의 술 ② 소주",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 4
     }
    ]
   },
@@ -1203,6 +1218,66 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "한국인의 술 ③ 맥주",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "한국인의 술 ④ 막걸리·전통주",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "종량세와 종가세",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "고위험음주",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
     }
    ]
   },
