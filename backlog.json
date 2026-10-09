@@ -1,8 +1,8 @@
 {
  "generated": "2026-10-09",
- "scanned": 318,
- "resolved": 1886,
- "pending": 573,
+ "scanned": 319,
+ "resolved": 1903,
+ "pending": 569,
  "counts": {
   "new": 264,
   "companion": 5,
@@ -120,33 +120,6 @@
      "u": "research/#r=claude-cowork-mobile",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "한국인의 술 ④ 막걸리·전통주",
-   "count": 8,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
-     "u": "research/#r=korean-sul-beer",
-     "s": "research",
-     "n": 4
-    },
-    {
-     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
-     "u": "research/#r=korean-sul-overview",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
-     "s": "research",
-     "n": 2
     }
    ]
   },
@@ -496,6 +469,27 @@
     {
      "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
      "u": "research/#r=korean-sul-beer",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "주세령",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
+     "u": "research/#r=korean-sul-soju",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "한국인의 술 ④ 막걸리·전통주 — 금지와 부활의 100년 (시리즈 ④) (DEEP)",
+     "u": "research/#r=korean-sul-makgeolli",
      "s": "research",
      "n": 2
     }
@@ -1285,21 +1279,6 @@
    ]
   },
   {
-   "name": "주세령",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ② 소주 — 증류주에서 희석식으로, 초록병 소주의 탄생 (시리즈 ②) (DEEP)",
-     "u": "research/#r=korean-sul-soju",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
    "name": "수제맥주",
    "count": 2,
    "kind": "new",
@@ -1309,6 +1288,21 @@
     {
      "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
      "u": "research/#r=korean-sul-beer",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "name": "누룩",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ④ 막걸리·전통주 — 금지와 부활의 100년 (시리즈 ④) (DEEP)",
+     "u": "research/#r=korean-sul-makgeolli",
      "s": "research",
      "n": 2
     }
