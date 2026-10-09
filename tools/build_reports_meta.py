@@ -98,6 +98,7 @@ CATS = {
     "ib-diploma-programme-teaching-assessment": "society",
     "korean-sul-overview": "culture",
     "korean-sul-soju": "culture",
+    "korean-sul-beer": "culture",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
