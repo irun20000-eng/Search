@@ -1,0 +1,13 @@
+{
+  "title": "A Memory Away",
+  "artist": "Tanner Helland",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_page": "https://github.com/tannerhelland/free-music",
+  "source_url": "https://raw.githubusercontent.com/tannerhelland/free-music/f6bfe16f49feab2181075ab86b13b24740592aa6/mp3/A%20Memory%20Away.mp3",
+  "start": 3.0,
+  "lufs": -18,
+  "fade_in": 1.0,
+  "fade_out": 3.0,
+  "changes": "3초 지점부터 69초를 잘라 쓰고(앞의 무음 구간 제외), 음량을 -18 LUFS 로 맞추고, 앞 1초·끝 3초를 페이드했다"
+}
