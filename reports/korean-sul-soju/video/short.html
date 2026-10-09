@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>한국인의 술 ② 소주 요약 쇼츠</title>
+<!-- 세로 쇼츠 1080×1920 · tools/motion/render_short.py 로 렌더한다.
+     모든 수치는 reports/korean-sul-soju/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지).
+     값은 세어 올라가지 않고 최종값을 띄운다 — 중간 숫자는 출처에 없는 값이다(LESSONS 2026-10-09). -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@700;800;900&display=block" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F0;--ink:#3A2E2A;--sub:#7A6A62;--coral:#E8664F;--amber:#F2A65A;--teal:#5B9AA0;--sage:#9DB98A;--green:#4E9A6B;--line:#EADBCB}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;background:var(--bg);font-family:'Noto Sans KR',sans-serif;color:var(--ink);overflow:hidden;position:relative;word-break:keep-all}
+.num{font-family:'Nunito','Noto Sans KR',sans-serif;font-weight:900}
+#top{position:absolute;left:96px;right:96px;top:104px;display:flex;align-items:center;justify-content:space-between;font-size:34px;font-weight:700;color:var(--sub)}
+#top b{color:var(--coral)}
+#prog{position:absolute;left:96px;right:96px;top:170px;height:8px;border-radius:4px;background:var(--line)}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--coral);width:0}
+.scene{position:absolute;left:96px;right:96px;top:260px;bottom:220px;opacity:0}
+.kicker{font-size:40px;font-weight:700;color:var(--coral);margin-bottom:28px}
+.h{font-size:84px;font-weight:900;line-height:1.18;letter-spacing:-1px}
+.p{font-size:42px;font-weight:500;line-height:1.5;color:var(--sub);margin-top:36px}
+.src{position:absolute;left:0;right:0;bottom:0;font-size:28px;color:var(--sub);line-height:1.45}
+.bars{margin-top:70px}
+.bar{margin:0 0 50px}
+.bar .lab{display:flex;justify-content:space-between;font-size:42px;font-weight:700;margin-bottom:14px}
+.bar .track{height:60px;border-radius:30px;background:#F3E6D8;overflow:hidden}
+.bar .fill{height:100%;border-radius:30px;width:0}
+.steps{margin-top:70px}
+.step{display:flex;gap:34px;align-items:flex-start;margin-bottom:46px;opacity:0}
+.step .y{flex:0 0 220px;font-size:46px;color:var(--coral)}
+.step .t{font-size:42px;font-weight:700;line-height:1.4}
+.step .t small{display:block;font-size:32px;font-weight:500;color:var(--sub)}
+.eq{margin-top:56px;font-size:56px;font-weight:900;text-align:center;opacity:0}
+.eq b{color:var(--coral)}
+.big{font-size:180px;line-height:1;color:var(--coral)}
+.unit{font-size:60px;font-weight:800;color:var(--ink);margin-left:12px}
+.badge{display:inline-block;padding:14px 30px;border-radius:40px;background:var(--coral);color:#fff;font-size:40px;font-weight:700}
+svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
+#foot{position:absolute;left:96px;right:96px;bottom:104px;font-size:28px;color:var(--sub);text-align:center}
+</style></head>
+<body>
+<div id="top"><span><b>한국인의 술</b> · 시리즈 ②</span><span id="clock" class="num">1/10</span></div>
+<div id="prog"><i></i></div>
+
+<section class="scene" id="s1"><div style="margin-top:300px">
+  <div class="kicker">소주 편</div>
+  <div class="h">증류주에서<br>희석식으로</div>
+  <div class="p">초록병 소주는<br>어떻게 태어났나</div>
+</div></section>
+
+<section class="scene" id="s2">
+  <div class="kicker">기원</div>
+  <div class="h">몽골을 거쳐<br>고려로 온 기술</div>
+  <div class="steps" id="st2">
+    <div class="step"><div class="y num">원나라</div><div class="t">증류주 「아라길주」</div></div>
+    <div class="step"><div class="y num">고려</div><div class="t">「아락주」로 불림<small>개성에서는 「이락주」</small></div></div>
+    <div class="step"><div class="y num">개성·안동</div><div class="t">원의 병참기지 → 소주 명산지</div></div>
+  </div>
+  <div class="src">식품의약품안전처 「술의 정의 및 역사」 · 몽골은 증류를 발명하지 않고 퍼뜨린 통로(학술서)</div>
+</section>
+
+<section class="scene" id="s3">
+  <div class="kicker">1960년대 양곡 정책</div>
+  <div class="h">희석식은<br>정책이 만들었다</div>
+  <div class="steps" id="st3">
+    <div class="step"><div class="y num">1961</div><div class="t">곡류 증류식 세율이<br>희석식의 3.6배</div></div>
+    <div class="step"><div class="y num">1964.12</div><div class="t">양곡 원료 주정·<br>증류식 소주 제조 금지</div></div>
+    <div class="step"><div class="y num">1965</div><div class="t">양곡관리법, 희석식 정착</div></div>
+  </div>
+  <div class="eq" id="eq3">주정 + 물 = <b>희석식 소주</b></div>
+  <div class="src">전북일보(2010-02-03)·프레시안 보도</div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="kicker">1995년 4월 지역 소주 점유율</div>
+  <div class="h">도마다<br>한 회사</div>
+  <div class="bars" id="local"></div>
+  <div class="p" id="s4note">1976 자도소주 구입제 →<br><b style="color:var(--coral)">1996.12.26 헌재 위헌</b></div>
+  <div class="src">서울신문(1995-07-17) 보도 · 헌법재판소 96헌가18</div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="kicker">소주 도수</div>
+  <div class="h">100년의<br>카운트다운</div>
+  <svg id="abv" width="888" height="760" style="margin-top:50px"></svg>
+  <div class="src">1998 참이슬 · 2006 처음처럼 · 2019 진로이즈백 · 2024·2026 참이슬 후레쉬 등</div>
+</section>
+
+<section class="scene" id="s6">
+  <div class="kicker">360㎖ 한 병에 든 알코올(계산)</div>
+  <div class="h">같은 한 병,<br>절반 아래</div>
+  <div class="bars" id="ml"></div>
+  <div class="p" id="s6note">도수만 비교한 산술이다</div>
+  <div class="src">360㎖ × 도수 · 보고서 계산</div>
+</section>
+
+<section class="scene" id="s7">
+  <div class="kicker">초록병 이야기</div>
+  <div class="h">투명병에서<br>초록병으로</div>
+  <div class="steps" id="st7">
+    <div class="step"><div class="y num">1994.1</div><div class="t">두산 「그린」<small>국내 첫 초록병 소주</small></div></div>
+    <div class="step"><div class="y num">2009.6</div><div class="t">360㎖ 공용병 협약</div></div>
+    <div class="step"><div class="y num">2019</div><div class="t">하늘색 「진로이즈백」<small>350만 병 갈등 → 병당 10.5원 합의</small></div></div>
+  </div>
+  <div class="src">이데일리·경북매일·비즈워치 보도</div>
+</section>
+
+<section class="scene" id="s8">
+  <div class="kicker">Drinks International 집계(회사 발표 판매량)</div>
+  <div class="h">25년 연속<br>세계 판매 1위 증류주</div>
+  <div style="margin-top:120px;text-align:center"><span class="big num" id="cases">9,450</span><span class="unit">만 상자</span></div>
+  <div class="p" style="text-align:center">진로 · 2025년 판매분(9ℓ 상자)</div>
+  <div class="src">2024년 9,680만 상자에서 2.4% 감소 · 중앙일보 영문판 보도</div>
+</section>
+
+<section class="scene" id="s9">
+  <div class="kicker">참이슬 한 병 값(2023년 11월 보도)</div>
+  <div class="h">출고가에서<br>식당까지</div>
+  <div class="bars" id="price"></div>
+  <div class="p" id="s9note">판매가 ÷ 출고가 ≈ <b class="num" style="color:var(--coral)">5.6배</b> (계산)</div>
+  <div class="src">머니투데이·데일리안 보도 · 식당 판매가는 강남 일부 사례</div>
+</section>
+
+<section class="scene" id="s10"><div style="margin-top:260px">
+  <div class="kicker">다음 편</div>
+  <div class="h">③ 맥주<br>1933년부터<br>수제맥주까지</div>
+  <div class="p">전문과 출처 73개는<br>갤러리 보고서에서</div>
+  <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
+</div>
+  <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
+</section>
+
+<div id="foot">irun20000-eng.github.io/Search</div>
+
+<script>
+const SCENES=[[0,6],[6,13],[13,21],[21,29],[29,38],[38,44],[44,51],[51,56],[56,63],[63,69]];
+window.__duration=69;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const $=id=>document.getElementById(id);
+const fmt=(v,d=0)=>v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d});
+function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div class="lab"><span>${r[0]}</span><span class="v num" id="${el.id}v${i}"></span></div><div class="track"><div class="fill" id="${el.id}f${i}" style="background:${r[3]}"></div></div></div>`).join('')}
+// 값 글자는 세어 올라가지 않고 최종값을 띄운다.
+function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=(r[5]||fmt(r[1],r[4]??(r[1]%1?1:0)))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
+const LOCAL=[["경월(강원)",84.9,"%","var(--coral)"],["금복주(경북)",79.1,"%","var(--amber)"],["보해(전남)",79.1,"%","var(--teal)"],["진로(수도권)",74.9,"%","var(--sage)"]];
+const ML=[["35도(1924)",126.0,"㎖","var(--amber)",1],["25도(1973)",90.0,"㎖","var(--teal)",1],["15.7도(2026)",56.5,"㎖","var(--coral)",1]];
+// 식당 매입가는 범위(1,600~1,800원)라 막대는 위쪽 끝으로 그리고 값 글자는 범위로 적는다.
+const PRICE=[["출고가",1247.7,"원","var(--teal)",1],["식당 매입가",1800,"원","var(--amber)",0,"1,600~1,800"],["식당 판매가(강남 일부)",7000,"원","var(--coral)"]];
+barRows($('local'),LOCAL);barRows($('ml'),ML);barRows($('price'),PRICE);
+function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
+// 도수: 가로축은 연도에 비례(1924~2026 은 자료 점 사이를 잇는 것이며, 점 사이 값은 그리지 않는다)
+const ABV=[[1924,35],[1965,30],[1973,25],[1998,23],[2006,20],[2019,16.9],[2024,16],[2026,15.7]];
+function setupAbv(){const s=$('abv');const W=888,H=760,pl=50,pr=60,pt=70,pb=90;const y0=1924,y1=2026,lo=10,hi=38;
+ const xs=ABV.map(p=>pl+(p[0]-y0)/(y1-y0)*(W-pl-pr)),ys=ABV.map(p=>pt+(hi-p[1])/(hi-lo)*(H-pt-pb));
+ [1924,1950,1975,2000,2026].forEach(y=>{const x=pl+(y-y0)/(y1-y0)*(W-pl-pr);const t=svgEl('text',{x:x,y:H-30,'text-anchor':'middle','font-size':28,'font-weight':800,fill:'#7A6A62'});t.textContent=y;s.appendChild(t);});
+ const path=svgEl('polyline',{points:xs.map((x,i)=>x+','+ys[i]).join(' '),fill:'none',stroke:'#3A2E2A','stroke-width':7,'stroke-linejoin':'round','stroke-linecap':'round',id:'ap'});s.appendChild(path);
+ ABV.forEach((p,i)=>{s.appendChild(svgEl('circle',{cx:xs[i],cy:ys[i],r:12,fill:i==ABV.length-1?'#E8664F':'#3A2E2A',id:'ac'+i,opacity:0}));
+  // 라벨 자리: 꺾이는 점은 선과 겹치지 않게 옆·아래로 뺀다
+  const POS={0:[0,-26,'middle'],1:[0,-26,'middle'],2:[-18,8,'end'],3:[0,-26,'middle'],7:[-6,62,'end']};
+  if(i in POS){const [dx,dy,an]=POS[i];const v=svgEl('text',{x:xs[i]+dx,y:ys[i]+dy,'text-anchor':an,'font-size':34,'font-weight':900,fill:i==7?'#E8664F':'#3A2E2A',id:'av'+i,opacity:0});v.textContent=p[1]+'도';s.appendChild(v);}});
+ const L=path.getTotalLength();path.style.strokeDasharray=L;path.style.strokeDashoffset=L;path.dataset.len=L;s.dataset.xs=JSON.stringify(xs);}
+setupAbv();
+function steps(id,t0,t,gap){[...$(id).children].forEach((el,i)=>{const k=ease((t-t0-i*gap)/0.6);el.style.opacity=k;el.style.transform=`translateX(${(1-k)*40}px)`;});}
+
+window.__seek=function(t){
+ let cur=0;SCENES.forEach(([a,b],i)=>{const el=$('s'+(i+1));const o=Math.min(ease((t-a)/0.5),1-ease((t-(b-0.5))/0.5));el.style.opacity=(t>=a&&t<b)?clamp(o):0;el.style.transform=`translateY(${(1-ease((t-a)/0.6))*40}px)`;if(t>=a&&t<b)cur=i;});
+ $('clock').textContent=(cur+1)+'/10';$('prog').firstElementChild.style.width=(t/window.__duration*100)+'%';
+ steps('st2',SCENES[1][0]+1.0,t,1.2);
+ steps('st3',SCENES[2][0]+1.0,t,1.3);$('eq3').style.opacity=ease((t-SCENES[2][0]-5.0)/0.8);
+ drawBars('local',LOCAL,100,SCENES[3][0]+1.0,t);$('s4note').style.opacity=ease((t-SCENES[3][0]-4.0)/0.8);
+ const ap=$('ap'),L=+ap.dataset.len,k=ease((t-SCENES[4][0]-1.0)/5.0);ap.style.strokeDashoffset=L*(1-k);
+ const xs=JSON.parse($('abv').dataset.xs),x0=xs[0],x1=xs[xs.length-1],xh=x0+(x1-x0)*k;
+ ABV.forEach((_,i)=>{const on=xs[i]<=xh+0.5?1:0;$('ac'+i).setAttribute('opacity',on);const v=$('av'+i);if(v)v.setAttribute('opacity',on);});
+ drawBars('ml',ML,130,SCENES[5][0]+1.0,t);$('s6note').style.opacity=ease((t-SCENES[5][0]-3.2)/0.8);
+ steps('st7',SCENES[6][0]+1.0,t,1.4);
+ drawBars('price',PRICE,7000,SCENES[8][0]+1.0,t);$('s9note').style.opacity=ease((t-SCENES[8][0]-3.5)/0.8);
+};
+window.__seek(0);
+</script>
+</body></html>
