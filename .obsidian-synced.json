@@ -13,7 +13,10 @@
   "#n=regression-to-the-mean": "[2026-09-08] 평균으로의 회귀 — 이해편.md",
   "#n=parkinsons-law": "[2026-09-17] 파킨슨의 법칙 — 이해편.md",
   "#n=zipfs-law": "[2026-09-24] 지프의 법칙 — 이해편.md",
-  "#n=percentage-point": "[2026-09-22] 퍼센트와 퍼센트포인트 — 이해편.md"
+  "#n=percentage-point": "[2026-09-22] 퍼센트와 퍼센트포인트 — 이해편.md",
+  "#n=brooks-law": "[2026-10-01] 브룩스의 법칙 — 이해편.md",
+  "#n=seven-bridges": "[2026-10-06] 쾨니히스베르크의 다리 — 이해편.md",
+  "#n=margin-of-error": "[2026-10-08] 여론조사의 오차범위 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
@@ -212,6 +215,10 @@
   "youtu.be/9RZS9yicqSI": "20260914_퇴근시간_2시간_당겨주는_제미나이_신기능_10가지_(무료_프롬프트_제공).md",
   "youtu.be/vBOWc49NY1Y": "20260917_클로드_쓴다면_이_스킬_한번_써보세요._설명이_완전히_달라집니다..md",
   "youtu.be/5LFwLd7ZPvY": "20261002_Jev_미쳤다!_제브_AI_사용하여_클로드_토큰과_비용을_획기적으로_아끼는_가장_완벽한_방법_(2026_최신판).md",
-  "youtu.be/hQoRPlPGnEM": "20260928_카파시의_AI_사용법을_지금_다시_봐야_하는_이유.md"
+  "youtu.be/hQoRPlPGnEM": "20260928_카파시의_AI_사용법을_지금_다시_봐야_하는_이유.md",
+  "youtu.be/lKBK0elPEtM": "20261005_클로드_x_카카오톡으로_나만의_AI_직원_만들기ㅣ커넥터,_아티팩트,_Play_MCP_실습_포함.md",
+  "youtu.be/Erz8N_yUTuU": "20261005_아직도_직접_하세요_AI_초보도_쓰는_Aside_자동화.md",
+  "youtu.be/mhgCbF6_IKo": "20261005_최대_200배_빠르다는_AI_모델_Jev,_어디에_써야_할까｜클로드_연동_가이드.md",
+  "youtu.be/OMkUQyG1AFE": "20261006_구글신기능_skill미쳤습니다.._gem쓰고_있다면_지금바로_갈아타세요.md"
  }
 }
