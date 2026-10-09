@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8">
-<title>한국인의 술 ③ 맥주 요약 쇼츠</title>
+<title>한국인의 술 ⑤ 위스키·와인 요약 쇼츠</title>
 <!-- 세로 쇼츠 1080×1920 · tools/motion/render_short.py 로 렌더한다.
-     모든 수치는 reports/korean-sul-beer/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지).
+     모든 수치는 reports/korean-sul-whisky-wine/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지).
      값은 세어 올라가지 않고 최종값을 띄운다 — 중간 숫자는 출처에 없는 값이다(LESSONS 2026-10-09). -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@700;800;900&display=block" rel="stylesheet">
 <style>
@@ -38,103 +38,101 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
 #foot{position:absolute;left:96px;right:96px;bottom:104px;font-size:28px;color:var(--sub);text-align:center}
 .cols{margin-top:40px}
 .cnote{font-size:30px;color:var(--sub);margin-top:6px}
+.step .y{flex-basis:260px}
 </style></head>
 <body>
-<div id="top"><span><b>한국인의 술</b> · 시리즈 ③</span><span id="clock" class="num">1/10</span></div>
+<div id="top"><span><b>한국인의 술</b> · 시리즈 ⑤</span><span id="clock" class="num">1/10</span></div>
 <div id="prog"><i></i></div>
 
 <section class="scene" id="s1"><div style="margin-top:300px">
-  <div class="kicker">맥주 편</div>
-  <div class="h">1933년 영등포에서<br>수제맥주까지</div>
-  <div class="p">두 회사의 40년과<br>규제가 바꾼 맥주</div>
+  <div class="kicker">위스키·와인 편</div>
+  <div class="h">수입 술의<br>붐과 조정</div>
+  <div class="p">하이볼과 홈술,<br>그리고 다시 줄어든 잔</div>
 </div></section>
 
 <section class="scene" id="s2">
-  <div class="kicker">1933년 영등포</div>
-  <div class="h">일본 맥주 회사의<br>두 공장</div>
+  <div class="kicker">위스키 연대기</div>
+  <div class="h">섞은 위스키에서<br>스카치로</div>
   <div class="steps" id="st2">
-    <div class="step"><div class="y num">1933.8</div><div class="t">조선맥주<small>대일본맥주(삿포로) 계열 → 크라운 → 하이트</small></div></div>
-    <div class="step"><div class="y num">1933.12</div><div class="t">소화기린맥주<small>기린 계열 → 동양맥주 → OB</small></div></div>
-    <div class="step"><div class="y num">1876</div><div class="t">맥주 전래는 개항 무렵으로<br>「전해진다」<small>통설 · 처음 들어온 해는 단정할 수 없다</small></div></div>
+    <div class="step"><div class="y num">1970년대</div><div class="t">수입 원액 20~25%를 섞은<br>「국산 위스키」</div></div>
+    <div class="step"><div class="y num">1994·1996</div><div class="t">임페리얼·윈저<small>수입 스카치 블렌디드, 유흥업소 중심</small></div></div>
+    <div class="step"><div class="y num">2023</div><div class="t">하이볼 붐, 수입량 처음 3만 톤</div></div>
   </div>
-  <div class="src">기린홀딩스 연혁 · 서울신문 · 코리아타임스 보도</div>
+  <div class="src">전북일보 · 비즈워치 · 이투데이 · KED Global 보도</div>
 </section>
 
 <section class="scene" id="s3">
-  <div class="kicker">1996년 맥주 점유율</div>
-  <div class="h">약 40년 만의<br>1위 교체</div>
-  <div class="bars" id="flip"></div>
-  <div class="p" id="s3note">1991 페놀 사태 → 불매<br>1993 「천연 암반수」 하이트</div>
-  <div class="src">비즈한국 · 서울신문(2014-04-12) · 비즈워치 보도</div>
+  <div class="kicker">주세율 — WTO 분쟁 뒤</div>
+  <div class="h">소주와 위스키,<br>같은 72%</div>
+  <div class="bars" id="tax"></div>
+  <div class="p" id="s3note">1999.1.18 WTO 상소기구 판정 →<br>2000년 둘 다 <b class="num" style="color:var(--coral)">72%</b></div>
+  <div class="src">WTO 상소기구 보고서 · 월간 통상 · 한국일보 · 시사위크</div>
 </section>
 
 <section class="scene" id="s4">
-  <div class="kicker">OB맥주의 주인</div>
-  <div class="h">판 값과<br>되산 값</div>
-  <div class="bars" id="ob"></div>
-  <div class="p" id="s4note">58억 ÷ 18억 ≈ <b class="num" style="color:var(--coral)">3.2배</b> (계산)</div>
-  <div class="src">경향신문(2009-05-04) · 로이터(2014-01-20) 보도 · AB인베브 → KKR → AB인베브</div>
+  <div class="kicker">위스키 수입량(톤)</div>
+  <div class="h">2023년<br>정점</div>
+  <svg id="wk" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="src">문화일보 · KED Global · 파이낸셜뉴스(2026-10-04) 보도(관세청 통계)</div>
 </section>
 
 <section class="scene" id="s5">
-  <div class="kicker">수제맥주의 규제 사다리</div>
-  <div class="h">한 칸씩<br>풀린 규제</div>
-  <div class="steps" id="st5">
-    <div class="step"><div class="y num">2002</div><div class="t">하우스맥주 허용<small>매장 안에서만 판매</small></div></div>
-    <div class="step"><div class="y num">2014</div><div class="t">포장 판매·외부 유통</div></div>
-    <div class="step"><div class="y num">2018</div><div class="t">마트·편의점 판매</div></div>
-    <div class="step"><div class="y num">2020</div><div class="t">종량세 ℓ당 830.3원</div></div>
-  </div>
-  <div class="src">위키백과 「수제 맥주」 · 경기일보 · 아주경제 · 뉴시스 보도</div>
+  <div class="kicker">위스키 1kg당 수입 단가(계산)</div>
+  <div class="h">많이 들일 땐<br>싸게</div>
+  <div class="bars" id="unit"></div>
+  <div class="p" id="s5note">수입액 ÷ 수입량 · 2023년은 물량 최대, 단가 최저</div>
+  <div class="src">파이낸셜뉴스(2026-10-04) 관세청 표로 계산</div>
 </section>
 
 <section class="scene" id="s6">
-  <div class="kicker">국산 캔맥주 1ℓ의 세금(정부 전망)</div>
-  <div class="h">종가세에서<br>종량세로</div>
-  <div class="bars" id="tax"></div>
-  <div class="p" id="s6note">415원, 약 <b class="num" style="color:var(--coral)">23.6%</b> 감소 (계산)</div>
-  <div class="src">뉴시스(2019-06-05) · 교육세·부가세 포함 · 2019년 정부 발표 때의 전망치</div>
+  <div class="kicker">수입 원가 6만 4,000원 위스키의 세후 값(계산)</div>
+  <div class="h">세금을 붙이면<br>원가의 2.56배</div>
+  <div class="bars" id="wtax"></div>
+  <div class="p" id="s6note">관세·주세 72%·교육세·부가세 · 유통 마진 제외</div>
+  <div class="src">비즈워치(2024-01-26) 예시 · 스카치는 한·EU FTA로 관세 0%</div>
 </section>
 
 <section class="scene" id="s7">
-  <div class="kicker">일본 맥주 수입액(만 달러)</div>
-  <div class="h">불매와<br>회복</div>
-  <svg id="jp" width="888" height="720" style="margin-top:40px"></svg>
-  <div class="cnote">2021년 값은 그리지 않았다(축이 끊김)</div>
-  <div class="src">YTN · 뉴시스 · 헤럴드경제 · SCMP 보도</div>
+  <div class="kicker">와인 수입량(톤)</div>
+  <div class="h">2021년<br>홈술 정점</div>
+  <svg id="wn" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="cnote">수입액 정점은 2022년(5억 8,128만 달러)</div>
+  <div class="src">아시아경제 · 트위그 · 딜사이트 보도(관세청 통계)</div>
 </section>
 
 <section class="scene" id="s8">
-  <div class="kicker">맥주 출고량(만㎘)</div>
-  <div class="h">1위지만<br>줄어드는 술</div>
-  <svg id="vol" width="888" height="720" style="margin-top:40px"></svg>
-  <div class="src">경향신문(2023-04-03) · 세계일보(2026-08-23) · SBS Biz 보도</div>
+  <div class="kicker">FTA와 와인 관세(기본 15%)</div>
+  <div class="h">관세 0%까지</div>
+  <div class="steps" id="st8">
+    <div class="step"><div class="y num">2004.4.1</div><div class="t">한·칠레 발효<small>단계 인하 뒤 2009년 0%</small></div></div>
+    <div class="step"><div class="y num">2011.7.1</div><div class="t">한·EU 잠정 발효<small>와인 관세 즉시 철폐</small></div></div>
+    <div class="step"><div class="y num">2012.3.15</div><div class="t">한·미 발효<small>와인 관세 즉시 철폐</small></div></div>
+  </div>
+  <div class="src">문화체육관광부 · 경향신문 · 아주경제 · 머니투데이 보도</div>
 </section>
 
 <section class="scene" id="s9">
-  <div class="kicker">마시는 문화</div>
-  <div class="h">소맥과 치맥</div>
-  <div class="steps" id="st9">
-    <div class="step"><div class="y num">소맥</div><div class="t">누가 처음 섞었는지 모른다<small>「7 : 3 황금비율」은 통설일 뿐</small></div></div>
-    <div class="step"><div class="y num">치맥</div><div class="t">『별에서 온 그대』(2013~14)<small>「눈 오는 날엔 치맥」 → 중국에서 유행</small></div></div>
-  </div>
-  <div class="src">중앙일보 영문판 · 코리아타임스 · CNN 보도</div>
+  <div class="kicker">수입 원가 1만 원에 붙는 세금(계산)</div>
+  <div class="h">와인 대<br>위스키</div>
+  <div class="bars" id="cmp"></div>
+  <div class="p" id="s9note">와인 주세 30%·교육세 10% / 위스키 72%·30%</div>
+  <div class="src">택스워치 · 머니투데이 · 공공데이터포털 세율로 계산</div>
 </section>
 
-<section class="scene" id="s10"><div style="margin-top:260px">
-  <div class="kicker">다음 편</div>
-  <div class="h">④ 막걸리·<br>전통주</div>
-  <div class="p">전문과 출처 83개는<br>갤러리 보고서에서</div>
+<section class="scene" id="s10"><div style="margin-top:240px">
+  <div class="kicker">시리즈 끝</div>
+  <div class="h">한국인의 술<br>① 술 지도부터<br>다시 보기</div>
+  <div class="p">전문과 출처 128개는<br>갤러리 보고서에서</div>
   <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
 </div>
-  <div class="src" style="bottom:46px">음악: 「A Memory Away」 © 2010 Tanner Helland · CC BY 4.0</div>
+  <div class="src" style="bottom:46px">음악: 「Destiny」 © 2010 Tanner Helland · CC BY 4.0</div>
   <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
 </section>
 
 <div id="foot">irun20000-eng.github.io/Search</div>
 
 <script>
-const SCENES=[[0,6],[6,14],[14,21],[21,28],[28,37],[37,44],[44,52],[52,59],[59,64],[64,69]];
+const SCENES=[[0,6],[6,14],[14,21],[21,29],[29,35],[35,42],[42,50],[50,56],[56,63],[63,69]];
 window.__duration=69;
 const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
 const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
@@ -143,11 +141,11 @@ const fmt=(v,d=0)=>v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFrac
 function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div class="lab"><span>${r[0]}</span><span class="v num" id="${el.id}v${i}"></span></div><div class="track"><div class="fill" id="${el.id}f${i}" style="background:${r[3]}"></div></div></div>`).join('')}
 // 값 글자는 세어 올라가지 않고 최종값을 띄운다.
 function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=(r[5]||fmt(r[1],r[4]??(r[1]%1?1:0)))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
-// 동양맥주 점유율은 보도마다 41.6~41.7% 라 막대는 41.6 으로, 글자는 범위로 적는다.
-const FLIP=[["조선맥주(하이트)",43,"%","var(--coral)"],["동양맥주(OB)",41.6,"%","var(--teal)",1,"41.6~41.7"]];
-const OB=[["2009 매각(KKR)",18,"억 달러","var(--teal)"],["2014 재인수(AB인베브)",58,"억 달러","var(--coral)"]];
-const TAX=[["종량세 전",1758,"원","var(--amber)"],["종량세 뒤(전망)",1343,"원","var(--coral)"]];
-barRows($('flip'),FLIP);barRows($('ob'),OB);barRows($('tax'),TAX);
+const TAX=[["분쟁 당시 소주",35,"%","var(--teal)"],["분쟁 당시 위스키",100,"%","var(--amber)"],["2000년 이후 둘 다",72,"%","var(--coral)"]];
+const UNIT=[["2022",9.87,"달러","var(--teal)",2],["2023",8.49,"달러","var(--amber)",2],["2025",10.04,"달러","var(--coral)",2]];
+const WTAX=[["수입 원가",64000,"원","var(--teal)"],["스카치(관세 0%)",136294,"원","var(--amber)"],["관세 20% 제품",163553,"원","var(--coral)"]];
+const CMP=[["FTA 와인",4630,"원","var(--teal)"],["비FTA 와인",6825,"원","var(--amber)"],["위스키",11296,"원","var(--coral)"]];
+barRows($('tax'),TAX);barRows($('unit'),UNIT);barRows($('wtax'),WTAX);barRows($('cmp'),CMP);
 function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
 // 세로 막대: 연도마다 한 칸. 빠진 해는 칸 사이에 물결 표시를 넣어 끊긴 축임을 보인다.
 function setupCols(id,data,max,gapAfter,hi){const s=$(id);const W=888,H=720,pb=70,pt=70;const n=data.length,slot=W/n,bw=slot*0.56;
@@ -159,22 +157,22 @@ function setupCols(id,data,max,gapAfter,hi){const s=$(id);const W=888,H=720,pb=7
  if(gapAfter!=null){const gx=slot*(gapAfter+1);const g=svgEl('text',{x:gx,y:H-pb+10,'text-anchor':'middle','font-size':40,'font-weight':900,fill:'#E8664F'});g.textContent='≈';s.appendChild(g);}
 }
 function drawCols(id,n,t0,t){for(let i=0;i<n;i++){const r=$(id+'r'+i),k=ease((t-t0-i*0.3)/1.0),h=+r.dataset.h,yb=+r.dataset.y;r.setAttribute('height',h*k);r.setAttribute('y',yb-h*k);$(id+'v'+i).setAttribute('opacity',clamp((k-0.7)/0.3));}}
-const JP=[["2018",7830,"7,830"],["2019",3975.6,"3,975.6"],["2020",566.8,"566.8"],["2022",1448.4,"1,448.4"],["2023",5551.6,"5,551.6"],["2024",6744.6,"6,744.6"]];
-const VOL=[["2021",153.9,"153.9"],["2022",169.8,"169.8"],["2023",168.7,"168.7"],["2024",163.7,"163.7"],["2025",151.9,"151.9"]];
-setupCols('jp',JP,8000,2,2);setupCols('vol',VOL,180,null,4);
+const WK=[["2019",19837,"19,837"],["2020",15923,"15,923"],["2021",15662,"15,662"],["2022",27038,"27,038"],["2023",30586,"30,586"],["2024",27440,"27,440"],["2025",22581,"22,581"]];
+const WN=[["2019",43495,"43,495"],["2020",54127,"54,127"],["2021",76575,"76,575"],["2022",71020,"71,020"],["2023",56542,"56,542"]];
+setupCols('wk',WK,33000,null,4);setupCols('wn',WN,80000,null,2);
 function steps(id,t0,t,gap){[...$(id).children].forEach((el,i)=>{const k=ease((t-t0-i*gap)/0.6);el.style.opacity=k;el.style.transform=`translateX(${(1-k)*40}px)`;});}
 
 window.__seek=function(t){
  let cur=0;SCENES.forEach(([a,b],i)=>{const el=$('s'+(i+1));const o=Math.min(ease((t-a)/0.5),1-ease((t-(b-0.5))/0.5));el.style.opacity=(t>=a&&t<b)?clamp(o):0;el.style.transform=`translateY(${(1-ease((t-a)/0.6))*40}px)`;if(t>=a&&t<b)cur=i;});
  $('clock').textContent=(cur+1)+'/10';$('prog').firstElementChild.style.width=(t/window.__duration*100)+'%';
  steps('st2',SCENES[1][0]+1.0,t,1.5);
- drawBars('flip',FLIP,50,SCENES[2][0]+1.0,t);$('s3note').style.opacity=ease((t-SCENES[2][0]-3.5)/0.8);
- drawBars('ob',OB,60,SCENES[3][0]+1.0,t);$('s4note').style.opacity=ease((t-SCENES[3][0]-3.5)/0.8);
- steps('st5',SCENES[4][0]+1.0,t,1.5);
- drawBars('tax',TAX,1800,SCENES[5][0]+1.0,t);$('s6note').style.opacity=ease((t-SCENES[5][0]-3.5)/0.8);
- drawCols('jp',JP.length,SCENES[6][0]+1.0,t);
- drawCols('vol',VOL.length,SCENES[7][0]+1.0,t);
- steps('st9',SCENES[8][0]+0.8,t,1.4);
+ drawBars('tax',TAX,110,SCENES[2][0]+1.0,t);$('s3note').style.opacity=ease((t-SCENES[2][0]-3.5)/0.8);
+ drawCols('wk',WK.length,SCENES[3][0]+1.0,t);
+ drawBars('unit',UNIT,11,SCENES[4][0]+1.0,t);$('s5note').style.opacity=ease((t-SCENES[4][0]-3.0)/0.8);
+ drawBars('wtax',WTAX,170000,SCENES[5][0]+1.0,t);$('s6note').style.opacity=ease((t-SCENES[5][0]-3.5)/0.8);
+ drawCols('wn',WN.length,SCENES[6][0]+1.0,t);
+ steps('st8',SCENES[7][0]+0.8,t,1.3);
+ drawBars('cmp',CMP,12000,SCENES[8][0]+1.0,t);$('s9note').style.opacity=ease((t-SCENES[8][0]-3.5)/0.8);
 };
 window.__seek(0);
 </script>

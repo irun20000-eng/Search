@@ -1,8 +1,8 @@
 {
  "generated": "2026-10-09",
- "scanned": 319,
- "resolved": 1903,
- "pending": 569,
+ "scanned": 320,
+ "resolved": 1919,
+ "pending": 571,
  "counts": {
   "new": 264,
   "companion": 5,
@@ -159,6 +159,33 @@
      "u": "research/#r=gemini-spark-agent",
      "s": "research",
      "n": 1
+    }
+   ]
+  },
+  {
+   "name": "종량세와 종가세",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
+     "u": "research/#r=korean-sul-overview",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
+     "u": "research/#r=korean-sul-beer",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "한국인의 술 ⑤ 위스키·와인 — 수입 술의 붐과 조정 (시리즈 ⑤) (DEEP)",
+     "u": "research/#r=korean-sul-whisky-wine",
+     "s": "research",
+     "n": 2
     }
    ]
   },
@@ -450,27 +477,6 @@
      "u": "research/#r=slack-ai-bot",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "종량세와 종가세",
-   "count": 4,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "한국인의 술 ① 한국인은 무엇을 얼마나 마시나 — 술 지도와 그 뒤의 제도 (시리즈 ①) (DEEP)",
-     "u": "research/#r=korean-sul-overview",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "한국인의 술 ③ 맥주 — 1933년 영등포에서 수제맥주까지 (시리즈 ③) (DEEP)",
-     "u": "research/#r=korean-sul-beer",
-     "s": "research",
-     "n": 2
     }
    ]
   },
