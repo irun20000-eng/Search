@@ -87,11 +87,11 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
 
 <!-- 7 도수 -->
 <section class="scene" id="s7">
-  <div class="kicker">참이슬 후레쉬 도수</div>
+  <div class="kicker">참이슬 도수</div>
   <div class="h">점점<br>순해지는 소주</div>
   <div style="margin-top:110px;text-align:center"><span class="big num" id="abv">23</span><span class="unit">도</span></div>
-  <div class="p" id="abvyear" style="text-align:center;margin-top:20px">출시</div>
-  <div class="src">하이트진로 발표 인용 보도(2026-06-02 15.7도)</div>
+  <div class="p" id="abvyear" style="text-align:center;margin-top:20px">1998 · 참이슬</div>
+  <div class="src">1998년은 원조 참이슬, 2006년부터 참이슬 후레쉬 · 하이트진로 발표 인용 보도</div>
 </section>
 
 <!-- 8 건강 -->
@@ -99,7 +99,7 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
   <div class="kicker">건강 지표</div>
   <div class="h">폭음은 줄고,<br>그늘은 남았다</div>
   <div class="bars" id="risk"></div>
-  <div class="p" id="s8note">알코올 관련 사망<br><b class="num" style="color:var(--coral);font-size:72px">하루 13.2명</b> (2024)</div>
+  <div class="p" id="s8note">2024년 알코올 관련 사망<br><b class="num" style="color:var(--coral);font-size:72px">하루 13.2명</b></div>
   <div class="src">국민건강영양조사(2025는 잠정치) · 2024 사망원인통계 인용 보도</div>
 </section>
 
@@ -108,7 +108,7 @@ svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
   <div style="margin-top:260px">
     <div class="kicker">다음 편</div>
     <div class="h">② 소주<br>증류주에서<br>희석식으로</div>
-    <div class="p">전문과 출처 64개는<br>갤러리 보고서에서</div>
+    <div class="p">전문과 출처 67개는<br>갤러리 보고서에서</div>
     <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
   </div>
   <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
@@ -159,7 +159,7 @@ function setupWhisky(){const s=$('whisky');const W=888,H=760,pt=80,pb=90,gap=40;
  s.dataset.max=max;s.dataset.h=H-pt-pb;s.dataset.base=H-pb;}
 setupLine();setupWhisky();
 
-const ABV=[[23,'출시'],[19.8,'2006'],[16.9,'2020'],[16,'2024'],[15.7,'2026']];
+const ABV=[[23,'1998 · 참이슬'],[19.8,'2006 · 참이슬 후레쉬'],[16.9,'2020'],[16,'2024'],[15.7,'2026']];
 
 window.__seek=function(t){
  // 장면 가시성(앞뒤 0.5초 페이드)
@@ -175,7 +175,7 @@ window.__seek=function(t){
  drawBars('tax',TAX,900,SCENES[4][0]+1.0,t);$('s5note').style.opacity=ease((t-SCENES[4][0]-3.5)/0.8);
  const ws=$('whisky'),max=+ws.dataset.max,h=+ws.dataset.h,base=+ws.dataset.base;
  WH.forEach((p,i)=>{const kk=ease((t-SCENES[5][0]-1.0-i*0.5)/1.0);const hh=p[1]/max*h*kk;const r=$('wr'+i);r.setAttribute('y',base-hh);r.setAttribute('height',hh);const v=$('wv'+i);v.setAttribute('y',base-hh-20);v.setAttribute('opacity',kk>0.95?1:0);});
- const st=t-SCENES[6][0]-1.0;const idx=clamp(Math.floor(st/1.1),0,ABV.length-1);$('abv').textContent=st<0?'23':String(ABV[idx][0]);$('abvyear').textContent=st<0?'출시':ABV[idx][1];
+ const st=t-SCENES[6][0]-1.0;const idx=clamp(Math.floor(st/1.1),0,ABV.length-1);$('abv').textContent=st<0?'23':String(ABV[idx][0]);$('abvyear').textContent=st<0?ABV[0][1]:ABV[idx][1];
  drawBars('risk',RISK,16,SCENES[7][0]+1.0,t);$('s8note').style.opacity=ease((t-SCENES[7][0]-3.0)/0.8);
 };
 window.__seek(0);
