@@ -97,6 +97,7 @@ CATS = {
     "man-city-115-charges-verdict": "society",
     "ib-diploma-programme-teaching-assessment": "society",
     "korean-sul-overview": "culture",
+    "korean-sul-soju": "culture",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
