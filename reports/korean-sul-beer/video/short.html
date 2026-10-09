@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>한국인의 술 ③ 맥주 요약 쇼츠</title>
+<!-- 세로 쇼츠 1080×1920 · tools/motion/render_short.py 로 렌더한다.
+     모든 수치는 reports/korean-sul-beer/report.md 에 출처와 함께 실린 값만 쓴다(새 사실 금지).
+     값은 세어 올라가지 않고 최종값을 띄운다 — 중간 숫자는 출처에 없는 값이다(LESSONS 2026-10-09). -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@700;800;900&display=block" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F0;--ink:#3A2E2A;--sub:#7A6A62;--coral:#E8664F;--amber:#F2A65A;--teal:#5B9AA0;--sage:#9DB98A;--green:#4E9A6B;--line:#EADBCB}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;background:var(--bg);font-family:'Noto Sans KR',sans-serif;color:var(--ink);overflow:hidden;position:relative;word-break:keep-all}
+.num{font-family:'Nunito','Noto Sans KR',sans-serif;font-weight:900}
+#top{position:absolute;left:96px;right:96px;top:104px;display:flex;align-items:center;justify-content:space-between;font-size:34px;font-weight:700;color:var(--sub)}
+#top b{color:var(--coral)}
+#prog{position:absolute;left:96px;right:96px;top:170px;height:8px;border-radius:4px;background:var(--line)}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--coral);width:0}
+.scene{position:absolute;left:96px;right:96px;top:260px;bottom:220px;opacity:0}
+.kicker{font-size:40px;font-weight:700;color:var(--coral);margin-bottom:28px}
+.h{font-size:84px;font-weight:900;line-height:1.18;letter-spacing:-1px}
+.p{font-size:42px;font-weight:500;line-height:1.5;color:var(--sub);margin-top:36px}
+.src{position:absolute;left:0;right:0;bottom:0;font-size:28px;color:var(--sub);line-height:1.45}
+.bars{margin-top:70px}
+.bar{margin:0 0 50px}
+.bar .lab{display:flex;justify-content:space-between;font-size:42px;font-weight:700;margin-bottom:14px}
+.bar .track{height:60px;border-radius:30px;background:#F3E6D8;overflow:hidden}
+.bar .fill{height:100%;border-radius:30px;width:0}
+.steps{margin-top:70px}
+.step{display:flex;gap:34px;align-items:flex-start;margin-bottom:46px;opacity:0}
+.step .y{flex:0 0 220px;font-size:46px;color:var(--coral)}
+.step .t{font-size:42px;font-weight:700;line-height:1.4}
+.step .t small{display:block;font-size:32px;font-weight:500;color:var(--sub)}
+.eq{margin-top:56px;font-size:56px;font-weight:900;text-align:center;opacity:0}
+.eq b{color:var(--coral)}
+.big{font-size:180px;line-height:1;color:var(--coral)}
+.unit{font-size:60px;font-weight:800;color:var(--ink);margin-left:12px}
+.badge{display:inline-block;padding:14px 30px;border-radius:40px;background:var(--coral);color:#fff;font-size:40px;font-weight:700}
+svg text{font-family:'Nunito','Noto Sans KR',sans-serif}
+#foot{position:absolute;left:96px;right:96px;bottom:104px;font-size:28px;color:var(--sub);text-align:center}
+.cols{margin-top:40px}
+.cnote{font-size:30px;color:var(--sub);margin-top:6px}
+</style></head>
+<body>
+<div id="top"><span><b>한국인의 술</b> · 시리즈 ③</span><span id="clock" class="num">1/10</span></div>
+<div id="prog"><i></i></div>
+
+<section class="scene" id="s1"><div style="margin-top:300px">
+  <div class="kicker">맥주 편</div>
+  <div class="h">1933년 영등포에서<br>수제맥주까지</div>
+  <div class="p">두 회사의 40년과<br>규제가 바꾼 맥주</div>
+</div></section>
+
+<section class="scene" id="s2">
+  <div class="kicker">1933년 영등포</div>
+  <div class="h">일본 맥주 회사의<br>두 공장</div>
+  <div class="steps" id="st2">
+    <div class="step"><div class="y num">1933.8</div><div class="t">조선맥주<small>대일본맥주(삿포로) 계열 → 크라운 → 하이트</small></div></div>
+    <div class="step"><div class="y num">1933.12</div><div class="t">소화기린맥주<small>기린 계열 → 동양맥주 → OB</small></div></div>
+    <div class="step"><div class="y num">1876</div><div class="t">맥주 전래는 개항 무렵으로<br>「전해진다」<small>통설 · 처음 들어온 해는 단정할 수 없다</small></div></div>
+  </div>
+  <div class="src">기린홀딩스 연혁 · 서울신문 · 코리아타임스 보도</div>
+</section>
+
+<section class="scene" id="s3">
+  <div class="kicker">1996년 맥주 점유율</div>
+  <div class="h">약 40년 만의<br>1위 교체</div>
+  <div class="bars" id="flip"></div>
+  <div class="p" id="s3note">1991 페놀 사태 → 불매<br>1993 「천연 암반수」 하이트</div>
+  <div class="src">비즈한국 · 서울신문(2014-04-12) · 비즈워치 보도</div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="kicker">OB맥주의 주인</div>
+  <div class="h">판 값과<br>되산 값</div>
+  <div class="bars" id="ob"></div>
+  <div class="p" id="s4note">58억 ÷ 18억 ≈ <b class="num" style="color:var(--coral)">3.2배</b> (계산)</div>
+  <div class="src">경향신문(2009-05-04) · 로이터(2014-01-20) 보도 · AB인베브 → KKR → AB인베브</div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="kicker">수제맥주의 규제 사다리</div>
+  <div class="h">한 칸씩<br>풀린 규제</div>
+  <div class="steps" id="st5">
+    <div class="step"><div class="y num">2002</div><div class="t">하우스맥주 허용<small>매장 안에서만 판매</small></div></div>
+    <div class="step"><div class="y num">2014</div><div class="t">포장 판매·외부 유통</div></div>
+    <div class="step"><div class="y num">2018</div><div class="t">마트·편의점 판매</div></div>
+    <div class="step"><div class="y num">2020</div><div class="t">종량세 ℓ당 830.3원</div></div>
+  </div>
+  <div class="src">위키백과 「수제 맥주」 · 경기일보 · 아주경제 · 뉴시스 보도</div>
+</section>
+
+<section class="scene" id="s6">
+  <div class="kicker">국산 캔맥주 1ℓ의 세금(정부 전망)</div>
+  <div class="h">종가세에서<br>종량세로</div>
+  <div class="bars" id="tax"></div>
+  <div class="p" id="s6note">415원, 약 <b class="num" style="color:var(--coral)">23.6%</b> 감소 (계산)</div>
+  <div class="src">뉴시스(2019-06-05) · 교육세·부가세 포함 · 2019년 정부 발표 때의 전망치</div>
+</section>
+
+<section class="scene" id="s7">
+  <div class="kicker">일본 맥주 수입액(만 달러)</div>
+  <div class="h">불매와<br>회복</div>
+  <svg id="jp" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="cnote">2021년 값은 그리지 않았다(축이 끊김)</div>
+  <div class="src">YTN · 뉴시스 · 헤럴드경제 · SCMP 보도</div>
+</section>
+
+<section class="scene" id="s8">
+  <div class="kicker">맥주 출고량(만㎘)</div>
+  <div class="h">1위지만<br>줄어드는 술</div>
+  <svg id="vol" width="888" height="720" style="margin-top:40px"></svg>
+  <div class="src">경향신문(2023-04-03) · 세계일보(2026-08-23) · SBS Biz 보도</div>
+</section>
+
+<section class="scene" id="s9">
+  <div class="kicker">마시는 문화</div>
+  <div class="h">소맥과 치맥</div>
+  <div class="steps" id="st9">
+    <div class="step"><div class="y num">소맥</div><div class="t">누가 처음 섞었는지 모른다<small>「7 : 3 황금비율」은 통설일 뿐</small></div></div>
+    <div class="step"><div class="y num">치맥</div><div class="t">『별에서 온 그대』(2013~14)<small>「눈 오는 날엔 치맥」 → 중국에서 유행</small></div></div>
+  </div>
+  <div class="src">중앙일보 영문판 · 코리아타임스 · CNN 보도</div>
+</section>
+
+<section class="scene" id="s10"><div style="margin-top:260px">
+  <div class="kicker">마지막 편</div>
+  <div class="h">④ 막걸리·<br>전통주</div>
+  <div class="p">전문과 출처 83개는<br>갤러리 보고서에서</div>
+  <div style="margin-top:48px"><span class="badge">주제 리서치 갤러리</span></div>
+</div>
+  <div class="src">이 영상은 음주를 권하지 않습니다. 정보와 역사를 요약한 자료입니다.</div>
+</section>
+
+<div id="foot">irun20000-eng.github.io/Search</div>
+
+<script>
+const SCENES=[[0,6],[6,14],[14,21],[21,28],[28,37],[37,44],[44,52],[52,59],[59,64],[64,69]];
+window.__duration=69;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const $=id=>document.getElementById(id);
+const fmt=(v,d=0)=>v.toLocaleString('ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d});
+function barRows(el,rows){el.innerHTML=rows.map((r,i)=>`<div class="bar"><div class="lab"><span>${r[0]}</span><span class="v num" id="${el.id}v${i}"></span></div><div class="track"><div class="fill" id="${el.id}f${i}" style="background:${r[3]}"></div></div></div>`).join('')}
+// 값 글자는 세어 올라가지 않고 최종값을 띄운다.
+function drawBars(id,rows,max,t0,t){rows.forEach((r,i)=>{const k=ease((t-t0-i*0.35)/1.4);$(id+'f'+i).style.width=(r[1]/max*100*k)+'%';const v=$(id+'v'+i);v.textContent=(r[5]||fmt(r[1],r[4]??(r[1]%1?1:0)))+r[2];v.style.opacity=clamp((k-0.6)/0.4);});}
+// 동양맥주 점유율은 보도마다 41.6~41.7% 라 막대는 41.6 으로, 글자는 범위로 적는다.
+const FLIP=[["조선맥주(하이트)",43,"%","var(--coral)"],["동양맥주(OB)",41.6,"%","var(--teal)",1,"41.6~41.7"]];
+const OB=[["2009 매각(KKR)",18,"억 달러","var(--teal)"],["2014 재인수(AB인베브)",58,"억 달러","var(--coral)"]];
+const TAX=[["종량세 전",1758,"원","var(--amber)"],["종량세 뒤(전망)",1343,"원","var(--coral)"]];
+barRows($('flip'),FLIP);barRows($('ob'),OB);barRows($('tax'),TAX);
+function svgEl(n,a){const e=document.createElementNS('http://www.w3.org/2000/svg',n);for(const k in a)e.setAttribute(k,a[k]);return e}
+// 세로 막대: 연도마다 한 칸. 빠진 해는 칸 사이에 물결 표시를 넣어 끊긴 축임을 보인다.
+function setupCols(id,data,max,gapAfter,hi){const s=$(id);const W=888,H=720,pb=70,pt=70;const n=data.length,slot=W/n,bw=slot*0.56;
+ data.forEach((d,i)=>{const x=slot*i+(slot-bw)/2,h=(H-pb-pt)*d[1]/max;
+  s.appendChild(svgEl('rect',{x:x,y:H-pb-h,width:bw,height:h,rx:14,fill:i===hi?'#E8664F':'#5B9AA0',id:id+'r'+i,'data-h':h,'data-y':H-pb}));
+  const v=svgEl('text',{x:x+bw/2,y:H-pb-h-18,'text-anchor':'middle','font-size':30,'font-weight':900,fill:'#3A2E2A',id:id+'v'+i,opacity:0});v.textContent=d[2];s.appendChild(v);
+  const y=svgEl('text',{x:x+bw/2,y:H-24,'text-anchor':'middle','font-size':30,'font-weight':800,fill:'#7A6A62'});y.textContent=d[0];s.appendChild(y);});
+ s.appendChild(svgEl('line',{x1:0,y1:H-pb,x2:W,y2:H-pb,stroke:'#EADBCB','stroke-width':4}));
+ if(gapAfter!=null){const gx=slot*(gapAfter+1);const g=svgEl('text',{x:gx,y:H-pb+10,'text-anchor':'middle','font-size':40,'font-weight':900,fill:'#E8664F'});g.textContent='≈';s.appendChild(g);}
+}
+function drawCols(id,n,t0,t){for(let i=0;i<n;i++){const r=$(id+'r'+i),k=ease((t-t0-i*0.3)/1.0),h=+r.dataset.h,yb=+r.dataset.y;r.setAttribute('height',h*k);r.setAttribute('y',yb-h*k);$(id+'v'+i).setAttribute('opacity',clamp((k-0.7)/0.3));}}
+const JP=[["2018",7830,"7,830"],["2019",3975.6,"3,975.6"],["2020",566.8,"566.8"],["2022",1448.4,"1,448.4"],["2023",5551.6,"5,551.6"],["2024",6744.6,"6,744.6"]];
+const VOL=[["2021",153.9,"153.9"],["2022",169.8,"169.8"],["2023",168.7,"168.7"],["2024",163.7,"163.7"],["2025",151.9,"151.9"]];
+setupCols('jp',JP,8000,2,2);setupCols('vol',VOL,180,null,4);
+function steps(id,t0,t,gap){[...$(id).children].forEach((el,i)=>{const k=ease((t-t0-i*gap)/0.6);el.style.opacity=k;el.style.transform=`translateX(${(1-k)*40}px)`;});}
+
+window.__seek=function(t){
+ let cur=0;SCENES.forEach(([a,b],i)=>{const el=$('s'+(i+1));const o=Math.min(ease((t-a)/0.5),1-ease((t-(b-0.5))/0.5));el.style.opacity=(t>=a&&t<b)?clamp(o):0;el.style.transform=`translateY(${(1-ease((t-a)/0.6))*40}px)`;if(t>=a&&t<b)cur=i;});
+ $('clock').textContent=(cur+1)+'/10';$('prog').firstElementChild.style.width=(t/window.__duration*100)+'%';
+ steps('st2',SCENES[1][0]+1.0,t,1.5);
+ drawBars('flip',FLIP,50,SCENES[2][0]+1.0,t);$('s3note').style.opacity=ease((t-SCENES[2][0]-3.5)/0.8);
+ drawBars('ob',OB,60,SCENES[3][0]+1.0,t);$('s4note').style.opacity=ease((t-SCENES[3][0]-3.5)/0.8);
+ steps('st5',SCENES[4][0]+1.0,t,1.5);
+ drawBars('tax',TAX,1800,SCENES[5][0]+1.0,t);$('s6note').style.opacity=ease((t-SCENES[5][0]-3.5)/0.8);
+ drawCols('jp',JP.length,SCENES[6][0]+1.0,t);
+ drawCols('vol',VOL.length,SCENES[7][0]+1.0,t);
+ steps('st9',SCENES[8][0]+0.8,t,1.4);
+};
+window.__seek(0);
+</script>
+</body></html>
