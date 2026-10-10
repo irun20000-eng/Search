@@ -1,8 +1,8 @@
 {
  "generated": "2026-10-10",
- "scanned": 341,
- "resolved": 2204,
- "pending": 594,
+ "scanned": 342,
+ "resolved": 2218,
+ "pending": 600,
  "counts": {
   "new": 268,
   "companion": 5,
@@ -69,6 +69,27 @@
      "u": "research/#r=claude-mcp-guide",
      "s": "research",
      "n": 1
+    }
+   ]
+  },
+  {
+   "name": "현대 ③ 엔진과 기술",
+   "count": 12,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-models",
+     "s": "research",
+     "n": 8
+    },
+    {
+     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-history",
+     "s": "research",
+     "n": 4
     }
    ]
   },
@@ -525,36 +546,6 @@
      "u": "research/#r=slack-ai-bot",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "현대 ② 모델 계보",
-   "count": 4,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-history",
-     "s": "research",
-     "n": 4
-    }
-   ]
-  },
-  {
-   "name": "현대 ③ 엔진과 기술",
-   "count": 4,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-history",
-     "s": "research",
-     "n": 4
     }
    ]
   },
@@ -1329,6 +1320,21 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
+    }
+   ]
+  },
+  {
+   "name": "기아 ② 모델 계보",
+   "count": 2,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-models",
+     "s": "research",
+     "n": 2
     }
    ]
   },
