@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 323,
- "resolved": 1932,
- "pending": 618,
+ "scanned": 324,
+ "resolved": 1940,
+ "pending": 620,
  "counts": {
-  "new": 274,
+  "new": 273,
   "companion": 5,
   "gap": 1
  },
@@ -73,6 +73,39 @@
    ]
   },
   {
+   "name": "BMW ① 역사와 사람",
+   "count": 11,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 4
+    },
+    {
+     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-mercedes-history",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
+     "u": "research/#r=car-brands-basics",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "메르세데스-벤츠 ② 모델 계보 — S·E·C·G·SL과 AMG·마이바흐 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-mercedes-models",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "업무 자동화",
    "count": 11,
    "kind": "new",
@@ -120,33 +153,6 @@
      "u": "research/#r=claude-cowork-mobile",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "BMW ① 역사와 사람",
-   "count": 9,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 4
-    },
-    {
-     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-history",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 2
     }
    ]
   },
@@ -226,6 +232,27 @@
     {
      "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
      "u": "research/#r=car-brands-basics",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "메르세데스-벤츠 ③ 엔진과 기술",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-mercedes-history",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "메르세데스-벤츠 ② 모델 계보 — S·E·C·G·SL과 AMG·마이바흐 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-mercedes-models",
      "s": "research",
      "n": 3
     }
@@ -883,36 +910,6 @@
     {
      "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
      "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "name": "메르세데스-벤츠 ② 모델 계보",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-history",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "name": "메르세데스-벤츠 ③ 엔진과 기술",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-history",
      "s": "research",
      "n": 3
     }

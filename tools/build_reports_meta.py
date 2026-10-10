@@ -104,6 +104,7 @@ CATS = {
     "car-brands-map": "science",
     "car-brands-basics": "science",
     "car-brands-mercedes-history": "science",
+    "car-brands-mercedes-models": "science",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
