@@ -24,7 +24,7 @@
       "path": "reports/car-brands-map/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 26291
+      "chars": 26301
     },
     {
       "slug": "car-brands-basics",
@@ -50,7 +50,7 @@
       "path": "reports/car-brands-basics/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 19278
+      "chars": 19288
     },
     {
       "slug": "car-brands-mercedes-history",
@@ -75,7 +75,7 @@
       "path": "reports/car-brands-mercedes-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 22605
+      "chars": 22615
     },
     {
       "slug": "car-brands-mercedes-models",
@@ -152,7 +152,7 @@
       "path": "reports/car-brands-bmw-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 25624
+      "chars": 25633
     },
     {
       "slug": "car-brands-bmw-models",
@@ -231,7 +231,7 @@
       "path": "reports/car-brands-vw-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 23665
+      "chars": 23676
     },
     {
       "slug": "car-brands-vw-models",
@@ -258,7 +258,7 @@
       "path": "reports/car-brands-vw-models/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 27875
+      "chars": 27908
     },
     {
       "slug": "car-brands-vw-tech",
@@ -285,7 +285,7 @@
       "path": "reports/car-brands-vw-tech/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 23774
+      "chars": 23796
     },
     {
       "slug": "car-brands-porsche-history",
@@ -311,7 +311,7 @@
       "path": "reports/car-brands-porsche-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 27260
+      "chars": 27270
     },
     {
       "slug": "car-brands-porsche-models",
@@ -338,7 +338,7 @@
       "path": "reports/car-brands-porsche-models/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 25520
+      "chars": 25531
     },
     {
       "slug": "car-brands-porsche-tech",
@@ -357,15 +357,15 @@
         "전기차",
         "매거진"
       ],
-      "tldr": "「자동차 브랜드 연대기」 포르쉐 세 쪽 중 마지막 — 엔진과 기술. 로너-포르쉐 허브 모터와 젬퍼 비부스(엔진은 발전만 하는 직렬 하이브리드, 기네스 「최초」 등재 — 1896 암스트롱 페이턴 반례), 수평대향 6기통의 1·2차 균형과 남는 작은 우력, 리어 엔진의 트랙션·리프트오프 오버스티어, 993 마지막 공랭 → 996 수랭(배출가스·4밸브·소음), 930 터보 260 PS → 992.2 T-하이브리드 전동 터보 541 PS(플러그인 아님), PDK(956·962 시험 → 2008 997.2), 르망 19승(1970 917 첫 우승, 1981~1987 7연승, 2015~2017 919, 2026 토요타 우승으로 19회 유지), 카레라 GT·918, 타이칸 800 V(회사 발표 「첫 양산차」)와 P=VI·I²R 원리, 마칸·카이엔 일렉트릭, 한국(타이칸 2019 아시아 첫 공개, 부분변경 105 kWh·LG엔솔 보도, 911 T-하이브리드 2025 서울모빌리티쇼). 총 54개 출처(국내 9·해외 45). ※조회일 10-10.",
+      "tldr": "「자동차 브랜드 연대기」 포르쉐 세 쪽 중 마지막 — 엔진과 기술. 로너-포르쉐 허브 모터와 젬퍼 비부스(엔진은 발전만 하는 직렬 하이브리드, 기네스 「최초」 등재 — 1896 암스트롱 페이턴 반례), 수평대향 6기통의 1·2차 균형(남는 우력은 출처가 갈림), 리어 엔진의 트랙션·코너 리프트오프 오버스티어, 993 마지막 공랭 → 양산 911 첫 전체 수랭 996(배출가스·4밸브·소음), 930 터보 → 992.2 T-하이브리드 전동 터보 541 PS(플러그인 아님), PDK(956·962 시험 → 2008 997.2), 르망 19승(1970 917 첫 우승, 1981~1987 7연승, 2015~2017 919, 2026 토요타 우승으로 19회 유지), 카레라 GT·918, 타이칸 800 V(회사 발표 「첫 양산차」)와 P=VI·I²R 원리, 마칸·카이엔 일렉트릭, 한국(부분변경 타이칸 LG엔솔 배터리 보도, 911 T-하이브리드 2025 서울모빌리티쇼, 2016 르망 통산 18승 보도). 총 49개 출처(국내 8·해외 41). ※조회일 10-10.",
       "sources": {
-        "kr": 9,
-        "intl": 45
+        "kr": 8,
+        "intl": 41
       },
       "path": "reports/car-brands-porsche-tech/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 19342
+      "chars": 18514
     },
     {
       "slug": "korean-sul-overview",
@@ -419,7 +419,7 @@
       "path": "reports/korean-sul-soju/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 19597
+      "chars": 19604
     },
     {
       "slug": "korean-sul-beer",
@@ -446,7 +446,7 @@
       "path": "reports/korean-sul-beer/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 19679
+      "chars": 19686
     },
     {
       "slug": "korean-sul-makgeolli",
@@ -500,7 +500,7 @@
       "path": "reports/korean-sul-whisky-wine/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 30666
+      "chars": 30673
     },
     {
       "slug": "ib-diploma-programme-teaching-assessment",

@@ -249,7 +249,7 @@ OB의 주인은 여러 번 바뀌었다.
 - [38] Korea Times (2017-12-01), 「Tasteless Korean beer — wrong call」 — 튜더 기사와 규제 논지 — https://www.koreatimes.co.kr/opinion/20171201/tasteless-korean-beer-wrong-call
 - [39] 세계일보 (2015-11-25) — 「맛없는 한국 맥주」 논쟁 — https://www.segye.com/newsView/20151125000876
 - [40] 뉴스토마토 — 주세법 맥아 10% 기준과 업계 반박(대부분 70% 이상) — https://newstomato.com/ReadNews.aspx?no=342253
-- [41] 시대일보 계열 (2013-04-18) — 맥아 비율 기준 개정안 발의 — https://www.sidae.com/article/2013041819108084912
+- [41] 머니S(현 동행미디어 시대, 2013-04-18) — 맥아 비율 기준 개정안 발의 — https://www.sidae.com/article/2013041819108084912
 - [42] 이투데이 — 맥아 비율 논쟁 — https://www.etoday.co.kr/news/view/720272
 - [43] 법률신문 — 주세법상 맥주의 정의와 맥아 비율 — https://www.lawtimes.co.kr/news/200189
 - [44] 위키백과, 「수제 맥주」 — 2002년 소규모맥주제조면허, 월드컵·아시안게임 배경, 매장 내 판매 — https://ko.wikipedia.org/wiki/%EC%88%98%EC%A0%9C_%EB%A7%A5%EC%A3%BC
