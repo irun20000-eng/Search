@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 344,
- "resolved": 2259,
- "pending": 589,
+ "scanned": 345,
+ "resolved": 2280,
+ "pending": 592,
  "counts": {
-  "new": 267,
+  "new": 266,
   "companion": 5,
   "gap": 1
  },
@@ -73,6 +73,33 @@
    ]
   },
   {
+   "name": "기아 ② 모델 계보",
+   "count": 12,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "기아 ① 역사와 사람 — 자전거 부품 공장에서 부도와 인수를 지나 「호랑이 코」와 새 이름까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-kia-history",
+     "s": "research",
+     "n": 5
+    },
+    {
+     "t": "기아 ③ 엔진과 기술 — 소하리의 첫 엔진에서 T8D, 스팅어·니로, 레이 EV에서 EV6·EV9·EV3, PV5까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-kia-tech",
+     "s": "research",
+     "n": 5
+    },
+    {
+     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-models",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "업무 자동화",
    "count": 11,
    "kind": "new",
@@ -125,7 +152,7 @@
   },
   {
    "name": "테슬라 ① 역사와 사람",
-   "count": 8,
+   "count": 9,
    "kind": "new",
    "target": null,
    "base": null,
@@ -147,6 +174,12 @@
      "u": "research/#r=car-brands-basics",
      "s": "research",
      "n": 2
+    },
+    {
+     "t": "기아 ③ 엔진과 기술 — 소하리의 첫 엔진에서 T8D, 스팅어·니로, 레이 EV에서 EV6·EV9·EV3, PV5까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-kia-tech",
+     "s": "research",
+     "n": 1
     }
    ]
   },
@@ -186,27 +219,6 @@
      "u": "research/#r=gemini-spark-agent",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "기아 ② 모델 계보",
-   "count": 7,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "기아 ① 역사와 사람 — 자전거 부품 공장에서 부도와 인수를 지나 「호랑이 코」와 새 이름까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-kia-history",
-     "s": "research",
-     "n": 5
-    },
-    {
-     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-models",
-     "s": "research",
-     "n": 2
     }
    ]
   },
@@ -777,27 +789,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
-    }
-   ]
-  },
-  {
-   "name": "기아 ③ 엔진과 기술",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "기아 ① 역사와 사람 — 자전거 부품 공장에서 부도와 인수를 지나 「호랑이 코」와 새 이름까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-kia-history",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "현대 ③ 엔진과 기술 — 포니의 빌린 심장에서 알파·세타·타우, CVVD, E-GMP 800V와 수소차까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-tech",
-     "s": "research",
-     "n": 1
     }
    ]
   },
