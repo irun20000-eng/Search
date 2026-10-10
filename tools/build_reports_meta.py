@@ -103,6 +103,7 @@ CATS = {
     "korean-sul-whisky-wine": "culture",
     "car-brands-map": "science",
     "car-brands-basics": "science",
+    "car-brands-mercedes-history": "science",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
