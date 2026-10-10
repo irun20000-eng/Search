@@ -108,6 +108,7 @@ CATS = {
     "car-brands-mercedes-tech": "science",
     "car-brands-bmw-history": "science",
     "car-brands-bmw-models": "science",
+    "car-brands-bmw-tech": "science",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
