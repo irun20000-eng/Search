@@ -317,7 +317,7 @@
 - [80] 더팩트 (2025-01) — 현대차·기아 2024년 글로벌 판매 7,231,248대 — https://news.tf.co.kr/read/economy/2167349.htm
 - [81] 현대자동차그룹 뉴스룸 (2026-01) — 현대차 2025년 실적, 글로벌 판매 4,138,180대 — https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2025-earnings-announcement
 - [82] 현대자동차그룹 뉴스룸 (2026-01) — 기아 2025년 판매 3,135,803대 — https://www.hyundaimotorgroup.com/ko/news/kia-2025-sales-3135803-units
-- [83] 시대경제 (2025-03-10) — KAMA: 2024년 한국 자동차 생산 413만 대, 세계 7위 — https://www.sidae.com/article/2025031008335133283
+- [83] 머니S(현 동행미디어 시대, 2025-03-10) — KAMA: 2024년 한국 자동차 생산 413만 대, 세계 7위 — https://www.sidae.com/article/2025031008335133283
 - [84] 뉴데일리 (2025-03-09) — 2024년 한국 자동차 생산·내수 — https://biz.newdaily.co.kr/site/data/html/2025/03/09/2025030900036.amp.html
 - [85] 뉴시스 (2026-07-29) — 2026년 6월 말 자동차 누적 등록 2,667만 6천 대, 1.92명당 1대 — https://mobile.newsis.com/view/NISX20260729_0003728744
 - [86] 경북매일 (2026-07-30) — 2026년 상반기 자동차 등록 현황 — https://kbmaeil.com/article/20260730500195

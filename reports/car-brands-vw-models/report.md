@@ -34,7 +34,7 @@
 |---|---|
 | 타입 1(1945~2003) → 뉴 비틀(1997~2010) → 비틀(2012년형~2019)[1][5][7] | 1974 1세대 → 2012 7세대(MQB) → 2019 8세대, 3,700만 대 이상[9][20][27] |
 | **③ GTI·파사트·티구안** | **④ 불리와 ID.** |
-| GTI 1976 · 파사트 1973 → 9세대 바리안트 · 티구안 2007 → 900만 대[32][44][47] | 타입 2 1950 → T4 앞엔진(1990) → ID. Buzz(2022) · ID.3(2019 공개)[55][64][69] |
+| GTI 1976 · 파사트 1973 → 9세대(유럽형 바리안트) · 티구안 2007 → 900만 대[32][44][47] | 타입 2 1950 → T4 앞엔진(1990) → ID. Buzz(2022) · ID.3(2019 공개)[55][64][69] |
 
 ## 1. 비틀과 그 후예 — 타입 1에서 뉴 비틀까지
 
@@ -211,7 +211,7 @@
 
 넷째 줄은 일부러 넣은 함정이다. kW는 출력, km는 거리라 둘을 나눈 값은 아무 뜻이 없다. 효율을 보려면 배터리 용량(kWh)이 필요한데, 이 글의 출처 본문에서는 국내 ID.4의 용량을 확인하지 못했다. 국비 보조금 651만 원은 출시 당시 보도에 따른 것이다[84][85]. 해마다 바뀌는 값이다.
 
-## 11. 헷갈리기 쉬운 것
+## 11. 구분할 것
 
 | 구분할 것 | 정리 | 근거 |
 |---|---|---|
@@ -228,7 +228,7 @@
 | 비틀 계열 | 타입 1(2003 단종, 2,152만 9,464대) → 뉴 비틀(1997) → 비틀(2019 단종)[1][5][7] |
 | 골프 | 1974 → 8세대, 3,700만 대 이상(판매, 회사)[9][27] |
 | GTI | 1976 판매, 5,000대 계획 → 1세대 46만 1,690대, 누적 250만 이상(생산)[33] |
-| 파사트 | 1973 → 9세대(2023, 바리안트만, 브라티슬라바)[44][45] |
+| 파사트 | 1973 → 9세대(2023, 유럽형은 바리안트만, 브라티슬라바)[44][45] |
 | 티구안 | 2007 → 900만 대 이상(판매, 2026.5)[47] |
 | 불리 | 1950 양산 → 1990 T4 앞엔진 → 2022 ID. Buzz[55][59][64] |
 | 한국 | 골프 누적 5만 4,644대(2024), 티구안 6만 71대(2022.11), ID.4 2022.9 출시[76][82][84] |
@@ -240,9 +240,9 @@
 - [3] Wikipedia, 「Volkswagen New Beetle」 — 1994 콘셉트 원(J 메이스·프리먼 토머스), 4세대 골프 PQ34 플랫폼 — https://en.wikipedia.org/wiki/Volkswagen_New_Beetle
 - [4] The Drive, 「The 1994 VW Concept One Gave Us the Modern Retro Design Craze」 — https://www.thedrive.com/news/41369/the-1994-vw-concept-one-gave-us-the-modern-retro-design-craze
 - [5] 폭스바겐 뉴스룸, 「New Beetle (1997–2010)」 — 1997-10-01 푸에블라 양산, 1998-01-05 디트로이트 공식 데뷔 — https://www.volkswagen-newsroom.com/en/new-beetle-19972010-19553
-- [6] GoAuto(2019-07-12), 「VW Beetle production grinds to a halt – again」 — 2세대 비틀 2012년형, 판매 누적 보도 — https://www.goauto.com.au/news/volkswagen/beetle/2019-07-12/79297.html
+- [6] GoAuto(2019-07-12), 「VW Beetle production grinds to a halt – again」 — 뉴 비틀 후속 비틀 2012년형, 판매 누적 보도 — https://www.goauto.com.au/news/volkswagen/beetle/2019-07-12/79297.html
 - [7] NPR(2019-07-09), 「The last VW Beetle rolls off the assembly line in Mexico tomorrow」 — 2019-07-10 마지막 비틀, 미국 전년 판매 1만 5천 대 미만, 박물관 보존 — https://npr.org/2019/07/09/739865991/the-last-vw-beetle-rolls-off-the-assembly-line-in-mexico-tomorrow
-- [8] Motor Authority, 「The bug's been squashed: VW builds its final Beetle」(2019) — 뉴 비틀 120만 대·2세대 비틀 50만 대 이상 판매 — https://motorauthority.com/news/1123975_the-bugs-been-squashed-vw-builds-its-final-beetle
+- [8] Motor Authority, 「The bug's been squashed: VW builds its final Beetle」(2019) — 뉴 비틀 120만 대·2012년형 비틀 50만 대 이상 판매 — https://motorauthority.com/news/1123975_the-bugs-been-squashed-vw-builds-its-final-beetle
 - [9] 폭스바겐 뉴스룸, 「The beginning: Golf I 1974 to 1983」 — 주지아로 디자인, 1974-03-29 볼프스부르크 양산 — https://www.volkswagen-newsroom.com/en/40-years-of-golf-2666/the-beginning-golf-i-1974-to-1983-2677
 - [10] Carrozzieri Italiani, 「Volkswagen Golf」 — 이탈디자인(주지아로)의 1세대 골프 — https://www.carrozzieri-italiani.com/listing/volkswagen-golf/
 - [11] Wikipedia, 「Volkswagen Golf」 — 앞엔진 가로배치·수랭·앞바퀴굴림, 비틀의 후계 — https://en.wikipedia.org/wiki/Volkswagen_Golf
@@ -311,12 +311,12 @@
 
 **국내**
 - [74] 데일리안(2022-01) — 「디젤의 반란…폭스바겐, 신형 골프‧아테온 앞세워 빅4 재탈환」, 8세대 골프 출시, 2016년 7월 이후 판매 중단 약 6년 만 — https://www.dailian.co.kr/news/view/1070538/
-- [75] 시사위크(2022-01-21) — 8세대 골프 국내 출시 — https://www.sidae.com/article/2022012114108037874
-- [76] 시사위크(2025-03-14) — 8세대 부분변경 골프 출시, 2005~2024 국내 누적 5만 4,644대 — https://www.sidae.com/article/2025031413474382916
+- [75] 머니S(현 동행미디어 시대, 2022-01-21) — 8세대 골프 국내 출시 — https://www.sidae.com/article/2022012114108037874
+- [76] 머니S(현 동행미디어 시대, 2025-03-14) — 8세대 부분변경 골프 출시, 2005~2024 국내 누적 5만 4,644대 — https://www.sidae.com/article/2025031413474382916
 - [77] 비즈워치(2025-03-14) — 신형 골프 출시, 국내 누적 5만 4,644대 — https://news.bizwatch.co.kr/article/industry/2025/03/14/0023
 - [78] 아주경제(2024-07-29) — 골프 50주년 국내 사진 공모전 — https://www.ajunews.com/view/20240729091809500
 - [79] 파이낸셜뉴스(2026-09-27) — GTI 글로벌 50주년·국내 20주년, 누적 230만 대, 국내가 5,275만 원 — https://www.fnnews.com/news/202609271449477572
-- [80] 시사위크(2026-09-14) — 골프 GTI 블랙 에디션, 국내 출시 20주년(2006 첫 출시), 5,275만 원 — https://www.sidae.com/article/2026091411302545670
+- [80] 머니S(현 동행미디어 시대, 2026-09-14) — 골프 GTI 블랙 에디션, 국내 출시 20주년(2006 첫 출시), 5,275만 원 — https://www.sidae.com/article/2026091411302545670
 - [81] 카위키 — GTI 누적 230만 대 — https://www.carwiki.co.kr/news/1014020
 - [82] 뉴데일리(2022-12-07) — 티구안 2008년 7월 국내 출시, 누적 6만 71대, 월간 1위 22차례, 2020년 연간 1만 대 — https://biz.newdaily.co.kr/site/data/html/2022/12/07/2022120700074.amp.html
 - [83] 뉴스토마토(2018-02) — 「폭스바겐 '파사트GT' 본격 판매개시」 — https://newstomato.com/ReadNews.aspx?no=804163

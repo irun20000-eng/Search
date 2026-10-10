@@ -321,7 +321,7 @@ MINI 2025  288,290 ÷ 244,915 − 1 ≈ +17.7%
 - [79] 이투데이 (2008-01) — 2007년 수입차 5만 대 시대, BMW 1위 7,618대 — https://www.etoday.co.kr/news/view/151642
 - [80] 뉴데일리 (2023-01-04) — 2009~2015 BMW 7년 연속 1위, 2016 이후 벤츠 — https://biz.newdaily.co.kr/site/data/html/2023/01/04/2023010400087.amp.html
 - [81] 디지털타임스 (2016-01) — 2015년 수입차 역대 최다, BMW 47,877대 — https://www.dt.co.kr/article/10992382
-- [82] 시사저널e (2023-11-09) — BMW·벤츠 판매 경쟁 — https://www.sidae.com/article/2023110915474328122
+- [82] 머니S(현 동행미디어 시대, 2023-11-09) — BMW·벤츠 판매 경쟁 — https://www.sidae.com/article/2023110915474328122
 - [83] 뉴스토마토 (2024-01-04) — 2023년 BMW 8년 만에 수입차 1위 — https://newstomato.com/ReadNews.aspx?no=1214903
 - [84] SBS Biz (2024-01-04) — 2023년 수입차 판매 1위 BMW — https://biz.sbs.co.kr/amp/article/20000151669
 - [85] 딜사이트 (2025-01) — 2024년 BMW 73,754대·벤츠 66,400대 — https://dealsite.co.kr/articles/134518

@@ -272,7 +272,7 @@ Drinks International이 브랜드별 9ℓ 상자 판매량(회사 발표)을 모
 - [56] 뉴데일리 (2019-08-22) — 진로이즈백 공병 갈등 — https://biz.newdaily.co.kr/site/data/html/2019/08/22/2019082200172.amp.html
 - [57] 뉴스토마토 (2022-12-28) — 새로 2022.9 16도, 한 달 680만 병, 3개월 누계 2,700만 병 — https://newstomato.com/ReadNews.aspx?no=1169468
 - [58] 아주경제 (2023-02-13) — 롯데칠성 발표: 새로 출시 5개월 만에 누적 5,000만 병 — https://www.ajunews.com/view/20230213084357444
-- [59] 시대일보 계열 (2023-03) — 하이트진로 2023.1.9 진로 제로슈거 — https://www.sidae.com/article/2023030614365611972
+- [59] 머니S(현 동행미디어 시대, 2023-03) — 하이트진로 2023.1.9 진로 제로슈거 — https://www.sidae.com/article/2023030614365611972
 - [60] Korea Herald — 2024년 소주류 수출 첫 2억 달러 돌파 — https://www.koreaherald.com/article/10456617
 - [61] SBS Biz — 소주 수출 2억 달러 — https://biz.sbs.co.kr/amp/article/20000222763
 - [62] 서울경제 — 소주 수출 증가 — https://www.sedaily.com/article/14039908

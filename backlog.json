@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 331,
- "resolved": 2044,
- "pending": 603,
+ "scanned": 334,
+ "resolved": 2097,
+ "pending": 594,
  "counts": {
-  "new": 270,
+  "new": 269,
   "companion": 5,
   "gap": 1
  },
@@ -120,33 +120,6 @@
      "u": "research/#r=claude-cowork-mobile",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "포르쉐 ① 역사와 사람",
-   "count": 9,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "폭스바겐 ① 역사와 사람 — 국민차 적립금에서 디젤게이트까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-vw-history",
-     "s": "research",
-     "n": 3
     }
    ]
   },

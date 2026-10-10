@@ -176,7 +176,7 @@ R32 0→100 km/h   수동 6.6초 → DSG 6.4초(회사 제원)
 
 **첫 차.** 이 구조를 쓰는 그룹 첫 차는 소형 전기차 ID. EVERY1으로, 2027년 출시 예정이다. 보도에 따르면 작은 차인 이 모델은 존 제어기 하나를, 기능이 많은 상위 모델은 더 많이 쓴다[54]. 그룹은 이 구조를 차세대 플랫폼 SSP 기반 전기차에 넓히겠다고 밝혔다. 내연기관 차에도 리비안 소프트웨어를 쓸 수 있다는 보도도 나왔다[53][55]. 모두 계획이다. 출시와 양산은 아직 일어나지 않았다.
 
-## 10. 헷갈리기 쉬운 것
+## 10. 구분할 것
 
 | 구분할 것 | 정리 | 근거 |
 |---|---|---|
@@ -212,11 +212,11 @@ R32 0→100 km/h   수동 6.6초 → DSG 6.4초(회사 제원)
 - [8] 폭스바겐 뉴스룸, 「Golf GTI history — Golf GTI Mk1」 — 1,588 cc 110 PS(② 출처) — https://www.volkswagen-newsroom.com/en/the-new-golf-gti-6025/golf-gti-history-6034
 - [9] VW Heritage 블로그 — 1960년 8월 1,192 cc 새 엔진(34 bhp), 1966 1300(1,285 cc) — https://blog.heritagepartscentre.com/blog/?p=16425
 - [10] Curbside Classic, 「1966 VW 1300 – the best Beetle of them all」 — 1300의 타입 3 크랭크축, 1967년형 1,493 cc 1500 — https://curbsideclassic.com/curbside-classics-european/curbside-classic-1966-vw-1300-the-best-beetle-of-them-all
-- [11] Wikipedia, 「Flat-four engine」 — 박서 4기통의 1·2차 균형과 남는 회전 우력, 공랭식의 소음·출력 — https://en.wikipedia.org/wiki/Flat-four_engine
+- [11] Wikipedia, 「Flat-four engine」 — 박서 4기통의 1·2차 균형과 남는 회전 토크 맥동, 공랭식의 소음·출력 — https://en.wikipedia.org/wiki/Flat-four_engine
 - [12] The Drive, 「What Is a Boxer Engine?」 — 낮은 무게중심, 비틀의 1.1 L 공랭 박서 — https://www.thedrive.com/cars-101/37710/boxer-engine
 - [13] Engine Builder Magazine, 「The Boxer Engine: Novel Technology or Dying Fad?」 — 대향 엔진의 낮은 무게중심 — https://www.enginebuildermag.com/?p=9510
 - [14] Wikipedia, 「Volkswagen Golf」 — 수랭 직렬 4기통 가로배치·앞바퀴굴림 — https://en.wikipedia.org/wiki/Volkswagen_Golf
-- [15] Wikipedia, 「VR6 engine」 — 1991, 15°(뒤 10.6°), 헤드 하나, 4기통 엔진룸, 코라도 — https://en.wikipedia.org/wiki/VR6_engine
+- [15] Wikipedia, 「VR6 engine」 — 1991, 15°(뒤 엔진은 더 좁은 각), 헤드 하나, 4기통 엔진룸, 파사트 B3·코라도 — https://en.wikipedia.org/wiki/VR6_engine
 - [16] SlashGear, 「V6 Vs. VR6 Engines: What's The Difference?」 — https://www.slashgear.com/1584743/difference-v6-vs-vr6-engines/
 - [17] 아우디 미디어센터, 「Technology milestones」(TDI 테크 워크숍 2014) — 1989 아우디 100 TDI 2,461 cc 직렬 5기통 88 kW — https://www.audi-mediacenter.com/en/the-audi-tdi-tech-workshop-2014-3039/technology-milestones-3129
 - [18] auto123, 「20 years of TDI engines from Audi」 — 1989 IAA 공개, 토크 수치 — https://www.auto123.com/en/news/20-years-of-tdi-engines-from-audi/362/
@@ -243,7 +243,7 @@ R32 0→100 km/h   수동 6.6초 → DSG 6.4초(회사 제원)
 - [39] Carscoops(2022-03), 「It's 20 years since VW's dual-clutch DSG made it okay to like automatics」 — R32·TT, 0→100 6.4초 — https://www.carscoops.com/2022/03/its-20-years-since-vws-dual-clutch-dsg-made-it-okay-to-like-automatics/
 - [40] Autobuzz(2018-12-13), 「When Volkswagen first introduced the DSG 15 years ago」 — https://autobuzz.my/2018/12/13/throwback-thursday-when-volkswagen-first-introduced-the-dsg-15-years-ago/
 - [41] Autocar — DSG 듀얼클러치 해설 — https://www.autocar.co.uk/node/96279
-- [42] Wikipedia, 「Direct-shift gearbox」 — DQ250 습식 6단(2003, 보그워너), DQ200 건식 7단(2008), DQ500(2009, 600 N·m) — https://en.wikipedia.org/wiki/Direct-shift_gearbox
+- [42] Wikipedia, 「Direct-shift gearbox」 — DQ250 습식 6단(2003, 보그워너), DQ200 건식 7단(2008), DQ500(2009~2010, 600 N·m), 보그워너 원설계 — https://en.wikipedia.org/wiki/Direct-shift_gearbox
 - [43] Honest John, 「DSG gearbox problems」 — 건식 7단의 정체 주행 마모 민감성 — https://honestjohn.co.uk/dsg-gearbox
 - [44] 폭스바겐 연차보고서 2012, 「Launching the Modular Transverse Toolkit」 — 가로배치 공용 설계, A3 먼저 — https://annualreport2012.volkswagenag.com/managementreport/value-enhancingfactors/technologyspecial.html
 - [45] 폭스바겐 연차보고서 2013, 「Opportunities arising from the MQB」 — 페달~앞바퀴 중심 거리 고정, 휠베이스·윤거 등 가변 — https://annualreport2013.volkswagenag.com/group-management-report/report-on-risks-and-opportunities/risks-and-opportunities/opportunities-arising-from-the-mqb.html
@@ -263,8 +263,8 @@ R32 0→100 km/h   수동 6.6초 → DSG 6.4초(회사 제원)
 - [57] 한국산업디자인신문(2015-11) — 환경부 폭스바겐 조사 결과 — https://kidd.co.kr/news/182682
 - [58] 문화일보(2016, 승인 전) — 「티구안 새로운 리콜서류 제출」, 운행 조건에 따른 두 가지 모드 명시 — https://www.munhwa.com/article/11004194
 - [59] 문화일보(2017-01) — 환경부, 티구안 2만 7천 대 리콜 승인, 교체명령 없음, 18개월 85% 목표 — https://www.munhwa.com/article/11017617
-- [60] 시사위크(2017-08-29) — EA189 엔진 차량 87% 리콜 승인 — https://www.sidae.com/article/2017082917348051871
-- [61] 시사위크(2016-12-07) — 공정위, 아우디폭스바겐코리아 과징금 373억 2,600만 원·고발 — https://www.sidae.com/article/2016120712598029077
+- [60] 머니S(현 동행미디어 시대, 2017-08-29) — EA189 엔진 차량 87% 리콜 승인 — https://www.sidae.com/article/2017082917348051871
+- [61] 머니S(현 동행미디어 시대, 2016-12-07) — 공정위, 아우디폭스바겐코리아 과징금 373억 2,600만 원·고발 — https://www.sidae.com/article/2016120712598029077
 - [62] 한국산업디자인신문 — 공정위 배출가스 거짓 광고 제재 — https://kidd.co.kr/news/188871
 - [63] 뉴시스(2019-10-24) — 대법원, 폭스바겐 거짓 광고 과징금 소송 원고 패소 확정 — https://mobile.newsis.com/view/NISX20191024_0000808640
 - [64] 서울신문(2016-05-28) — 「2009년 이산화탄소 배출 적어 '클린 디젤'」 — https://www.seoul.co.kr/news/2016/05/28/20160528011004

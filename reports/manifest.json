@@ -24,7 +24,7 @@
       "path": "reports/car-brands-map/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 26291
+      "chars": 26301
     },
     {
       "slug": "car-brands-basics",
@@ -50,7 +50,7 @@
       "path": "reports/car-brands-basics/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 19278
+      "chars": 19288
     },
     {
       "slug": "car-brands-mercedes-history",
@@ -75,7 +75,7 @@
       "path": "reports/car-brands-mercedes-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 22605
+      "chars": 22615
     },
     {
       "slug": "car-brands-mercedes-models",
@@ -152,7 +152,7 @@
       "path": "reports/car-brands-bmw-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 25624
+      "chars": 25633
     },
     {
       "slug": "car-brands-bmw-models",
@@ -231,7 +231,7 @@
       "path": "reports/car-brands-vw-history/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 23665
+      "chars": 23676
     },
     {
       "slug": "car-brands-vw-models",
@@ -258,7 +258,7 @@
       "path": "reports/car-brands-vw-models/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 27862
+      "chars": 27908
     },
     {
       "slug": "car-brands-vw-tech",
@@ -285,7 +285,87 @@
       "path": "reports/car-brands-vw-tech/report.md",
       "cat": "science",
       "track": "intro",
-      "chars": 23748
+      "chars": 23796
+    },
+    {
+      "slug": "car-brands-porsche-history",
+      "title": "포르쉐 ① 역사와 사람 — 설계 사무소에서 폭스바겐 인수전, 상장과 2025년의 급제동까지 (자동차 브랜드 연대기) (DEEP)",
+      "date": "2026-10-10",
+      "depth": "deep",
+      "tags": [
+        "자동차",
+        "시리즈",
+        "포르쉐",
+        "독일차",
+        "자동차역사",
+        "스포츠카",
+        "수입차",
+        "브랜드",
+        "매거진"
+      ],
+      "tldr": "「자동차 브랜드 연대기」 포르쉐 세 쪽 중 첫째 — 역사와 사람. 페르디난트 포르쉐(1875 마파스도르프, 로너·아우스트로-다임러·다임러), 1931-04-25 슈투트가르트 설계 사무소, 1934 국민차 설계 계약(타입 60), 전쟁과 강제노동(1944 국민차 공장 인력 1만 7,300명 중 1만 1,300명, 포르쉐 KG도 400명 넘게 — 회사 의뢰 연구), 1944 그뮌트 이전, 1945 체포·1947 석방, 1948-06-08 356 No.1(브랜드 생일), 1951 엠블럼(호프만 권유·라퍼·라임슈피스), 1972 AG 전환과 가문의 경영 퇴장, 1990년대 위기와 비데킹, 2008 폭스바겐 인수 시도와 2009 역전·2012 완전 편입, 2022-09-29 상장(82.50유로)과 포르쉐 SE/AG, 2025 인도 27만 9,449대·영업이익률 1.1%·특별비용 약 39억 유로, 한국(2014 포르쉐코리아, 2023 첫 1만 대, 2025 1만 746대). 총 79개 출처(국내 12·해외 67). ※조회일 10-10.",
+      "sources": {
+        "kr": 12,
+        "intl": 67
+      },
+      "path": "reports/car-brands-porsche-history/report.md",
+      "cat": "science",
+      "track": "intro",
+      "chars": 27297
+    },
+    {
+      "slug": "car-brands-porsche-models",
+      "title": "포르쉐 ② 모델 계보 — 356과 911 여덟 세대, 트랜스액슬, 카이엔·타이칸까지 (자동차 브랜드 연대기) (DEEP)",
+      "date": "2026-10-10",
+      "depth": "deep",
+      "tags": [
+        "자동차",
+        "시리즈",
+        "포르쉐",
+        "911",
+        "카이엔",
+        "박스터",
+        "타이칸",
+        "스포츠카",
+        "모델계보",
+        "매거진"
+      ],
+      "tldr": "「자동차 브랜드 연대기」 포르쉐 세 쪽 중 둘째 — 모델 계보. 356(1948 No.1 미드십 → 양산 리어 엔진 → 1965 약 7만 6,000대), 911 여덟 세대(1963 901 → 푸조 이의로 911·901 이름 82대, 원조 130 PS, 1973 G 모델 충격 흡수 범퍼, 1974 930 터보 260 PS, 964 첫 사륜구동 양산 911, 993 마지막 공랭, 996 1997 공개 첫 수랭 양산 911, 997.2 PDK, 991 휠베이스 +100 mm, 992 2018 공개·2019 인도, 2017 100만 대, 2024 첫 하이브리드 양산 911 541 PS), 트랜스액슬 924·928·944(1976~1995), 박스터 1996·718 2016, 카이엔 2002(계획 2만 5,000대 → 1세대 27만 6,652대)·파나메라 2009·마칸 2013 공개·마칸 일렉트릭 2024(PPE, 800 V)·카이엔 일렉트릭 2025, 타이칸 2019(800 V 첫 양산차는 회사 발표), 카레라 GT 1,270대·918 스파이더 918대, 2025 인도 마칸 1위 8만 4,328대, 한국(마칸 일렉트릭 2025.2, 카이엔 1~8월 37%). 총 81개 출처(국내 10·해외 71). ※조회일 10-10.",
+      "sources": {
+        "kr": 10,
+        "intl": 71
+      },
+      "path": "reports/car-brands-porsche-models/report.md",
+      "cat": "science",
+      "track": "intro",
+      "chars": 25501
+    },
+    {
+      "slug": "car-brands-porsche-tech",
+      "title": "포르쉐 ③ 엔진과 기술 — 1900년의 하이브리드에서 수평대향 6기통, PDK, 르망 19승, 800 V까지 (자동차 브랜드 연대기) (DEEP)",
+      "date": "2026-10-10",
+      "depth": "deep",
+      "tags": [
+        "자동차",
+        "시리즈",
+        "포르쉐",
+        "엔진",
+        "하이브리드",
+        "수평대향",
+        "PDK",
+        "르망",
+        "전기차",
+        "매거진"
+      ],
+      "tldr": "「자동차 브랜드 연대기」 포르쉐 세 쪽 중 마지막 — 엔진과 기술. 로너-포르쉐 허브 모터와 젬퍼 비부스(엔진은 발전만 하는 직렬 하이브리드, 기네스 「최초」 등재 — 1896 암스트롱 페이턴 반례), 수평대향 6기통의 1·2차 균형(남는 우력은 출처가 갈림), 리어 엔진의 트랙션·코너 리프트오프 오버스티어, 993 마지막 공랭 → 양산 911 첫 전체 수랭 996(배출가스·4밸브·소음), 930 터보 → 992.2 T-하이브리드 전동 터보 541 PS(플러그인 아님), PDK(956·962 시험 → 2008 997.2), 르망 19승(1970 917 첫 우승, 1981~1987 7연승, 2015~2017 919, 2026 토요타 우승으로 19회 유지), 카레라 GT·918, 타이칸 800 V(회사 발표 「첫 양산차」)와 P=VI·I²R 원리, 마칸·카이엔 일렉트릭, 한국(부분변경 타이칸 LG엔솔 배터리 보도, 911 T-하이브리드 2025 서울모빌리티쇼, 2016 르망 통산 18승 보도). 총 49개 출처(국내 8·해외 41). ※조회일 10-10.",
+      "sources": {
+        "kr": 8,
+        "intl": 41
+      },
+      "path": "reports/car-brands-porsche-tech/report.md",
+      "cat": "science",
+      "track": "intro",
+      "chars": 18485
     },
     {
       "slug": "korean-sul-overview",
@@ -339,7 +419,7 @@
       "path": "reports/korean-sul-soju/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 19597
+      "chars": 19604
     },
     {
       "slug": "korean-sul-beer",
@@ -366,7 +446,7 @@
       "path": "reports/korean-sul-beer/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 19679
+      "chars": 19686
     },
     {
       "slug": "korean-sul-makgeolli",
@@ -420,7 +500,7 @@
       "path": "reports/korean-sul-whisky-wine/report.md",
       "cat": "culture",
       "track": "intro",
-      "chars": 30666
+      "chars": 30673
     },
     {
       "slug": "ib-diploma-programme-teaching-assessment",

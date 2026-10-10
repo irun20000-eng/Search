@@ -299,7 +299,7 @@ B58 줄을 손으로 풀면 이렇다.
 - [51] 산업일보 (2008-01) — 고속도로 통행료 할인 경차 기준 변경(유료도로법 시행령) — https://kidd.co.kr/news/110608
 - [52] 국토교통부 입법예고 (2018) — 초소형자동차 신설안(총중량 600 kg·80 km/h·250cc) — https://www.molit.go.kr/USR/law/m_46/dtl.jsp?r_id=5572
 - [53] 서울 열린데이터광장(국토부 자동차등록현황보고) — 배기량 기준 소형·중형·대형 — https://data.seoul.go.kr/dataList/DT201004I020007/S/2/datasetView.do
-- [54] 시대경제 (2014-11-13) — 차급은 세금 기준, 「준중형」은 제조사 용어 — https://www.sidae.com/article/2014111320528015063
+- [54] 머니S(현 동행미디어 시대, 2014-11-13) — 차급은 세금 기준, 「준중형」은 제조사 용어 — https://www.sidae.com/article/2014111320528015063
 - [55] 뉴시스 (2026-07-29) — 2026년 상반기 신규 등록 85만 7천 건 중 전기차 19만 9천 건 — https://mobile.newsis.com/view/NISX20260729_0003728744
 - [56] 오토뷰 — 직렬·V형·수평대향 엔진 배열 해설 — https://www.autoview.co.kr/ko-kr/articles/55728
 - [57] 다음 뉴스 — 터보차저와 다운사이징 — https://v.daum.net/v/B0E5IgBEuH
