@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 337,
- "resolved": 2142,
- "pending": 589,
+ "scanned": 340,
+ "resolved": 2195,
+ "pending": 586,
  "counts": {
-  "new": 268,
+  "new": 267,
   "companion": 5,
   "gap": 1
  },
@@ -124,6 +124,33 @@
    ]
   },
   {
+   "name": "테슬라 ① 역사와 사람",
+   "count": 8,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "토요타 ① 역사와 사람 — 직기 회사에서 6년 연속 세계 1위까지, 리콜과 부정의 그늘 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-toyota-history",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
+     "u": "research/#r=car-brands-basics",
+     "s": "research",
+     "n": 2
+    }
+   ]
+  },
+  {
    "name": "AI 에이전트",
    "count": 8,
    "kind": "new",
@@ -159,27 +186,6 @@
      "u": "research/#r=gemini-spark-agent",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "토요타 ① 역사와 사람",
-   "count": 7,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 4
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 3
     }
    ]
   },
@@ -334,27 +340,6 @@
     {
      "t": "클로드 MCP 완전 가이드 — 추천 서버부터 실전 워크플로우까지 (DEEP)",
      "u": "research/#r=claude-mcp-guide",
-     "s": "research",
-     "n": 2
-    }
-   ]
-  },
-  {
-   "name": "테슬라 ① 역사와 사람",
-   "count": 5,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
      "s": "research",
      "n": 2
     }
@@ -517,6 +502,27 @@
     {
      "t": "AI 봇 만들기 — LLM+Slack으로 무엇을 할 수 있고, 1인에게 유익한가 (DEEP)",
      "u": "research/#r=slack-ai-bot",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "name": "현대 ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "토요타 ③ 엔진과 기술 — 쉐보레를 그려 만든 A형 엔진에서 지도카·간반, 유성기어 하이브리드, 수소와 전고체까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-toyota-tech",
      "s": "research",
      "n": 1
     }
@@ -771,21 +777,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
-    }
-   ]
-  },
-  {
-   "name": "현대 ① 역사와 사람",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
     }
    ]
   },
