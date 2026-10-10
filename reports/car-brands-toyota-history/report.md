@@ -100,7 +100,7 @@
 
 ## 6. 대지진과 그룹의 부정
 
-**2011년 대지진.** 2011년 3월 11일 동일본 대지진으로 부품 업체가 몰린 지역이 피해를 입어 생산이 멈췄다. 4월 18일 일본 내 전 공장이 다시 돌았지만 생산량은 약 절반이었다. 4월 시점 토요타 대변인은 일본 내 생산 손실을 약 26만 대로 밝혔다.[41][42][43].
+**2011년 대지진.** 2011년 3월 11일 동일본 대지진으로 부품 업체가 몰린 지역이 피해를 입어 생산이 멈췄다. 4월 18일 일본 내 전 공장이 다시 돌았지만 생산량은 약 절반이었다. 4월 시점 토요타 대변인은 일본 내 생산 손실을 약 26만 대로 밝혔다[41][42][43].
 
 **히노.** 토요타 계열 트럭 회사 히노는 2022년 배출가스·연비 데이터를 조작해 왔다고 인정했다. 2025년 1월 미국에서 유죄 인정 합의로 형사 벌금 5억 2,176만 달러를 포함해 총 16억 달러 이상을 내기로 했다[44][45][46].
 
@@ -255,7 +255,7 @@
 - [61] Motor Authority — 2024 토요타·렉서스 판매 — https://www.motorauthority.com/news/1145647_toyota-lexus-2024-sales
 - [62] BusinessDay(로이터, 2026-01-29), 「Toyota posts record sales in 2025」 — 그룹 약 1,132만 대, 토요타+렉서스 약 1,050만 대, 폭스바겐 898만 대 — https://www.businessday.co.za/motoring/2026-01-29-toyota-posts-record-sales-in-2025-to-retain-top-carmaker-crown/
 - [63] Tuoi Tre(2026-01-29) — 2025 사상 최고 판매 — https://news.tuoitre.vn/toyota-retains-top-auto-crown-in-2025-with-record-sales-103260129132513725.htm
-- [64] Adnkronos(2026-01-12) — 1~11월 기준 첫 보도 — https://english.adnkronos.com/2026/01/12/toyota-worlds-top-automaker-for-6th-straight-year/
+- [64] Adnkronos(2026-01-12) — 폭스바겐그룹 2025 인도 898만 3,900대 — https://english.adnkronos.com/2026/01/12/toyota-worlds-top-automaker-for-6th-straight-year/
 - [65] 토요타 프레스룸(2024-05-08) — 2024년 3월 결산 영업이익 5조 3,529억 엔 — https://pressroom.toyota.com/tmc-announces-april-through-march-2024-financial-results/
 - [66] ABC News(AP, 2024-05) — 엔저로 이익 급증 — https://abcnews.go.com/Business/wireStory/toyota-racks-booming-profit-vows-invest-growth-110016894
 - [67] 토요타 프레스룸(2025-05) — 2025년 3월 결산 영업이익 4조 7,955억 엔 — https://pressroom.toyota.com/?p=102949
@@ -272,7 +272,7 @@
 - [76] 자소설닷컴 기업정보 — 한국토요타자동차 2000년 설립 — https://jasoseol.com/companies/1326
 - [77] 이투데이(2009-10), 「토요타 20일 한국 공식 출범...캠리 3490만원 결정」 — https://www.etoday.co.kr/news/view/262550
 - [78] 세계일보(2009-10-20) — 토요타 한국 출범 4차종 — https://www.segye.com/newsView/20091020004133
-- [79] 경북매일(2019-08-05) — 2019년 7월 일본산 승용차 2,674대(−32.2%) — https://kbmaeil.com/article/201908050257479
+- [79] 경북매일(2019-08-05) — 2019년 7월 주요 일본 브랜드 승용차 2,674대(−32.2%) — https://kbmaeil.com/article/201908050257479
 - [80] 뉴스토마토(2019-10), 「'차 좀 사주세요'…일본차, 불매운동에 최대 1천만원 할인」 — https://newstomato.com/ReadNews.aspx?no=926588
 - [81] 뉴데일리경제(2023-01-30) — 일본 브랜드 신규등록 2018 45,253대 → 2020 20,564대 — https://biz.newdaily.co.kr/site/data/html/2023/01/30/2023013000075.amp.html
 - [82] 뉴데일리경제(2023-04-07) — 렉서스 2018 13,340 → 2020 8,911, 토요타 16,774 → 6,154 — https://biz.newdaily.co.kr/site/data/html/2023/04/07/2023040700073.amp.html
@@ -280,7 +280,7 @@
 - [84] 토픽트리(2026-01) — 2025 수입차 브랜드 순위 — https://topictree.co.kr/automobiles/news/2025-imported-car-market-sales-ranking-bmw-tesla/
 - [85] 다음 뉴스(2021-12-03), 「4년만에 벤츠 BMW 제치고 '수입차 1위', 렉서스 ES300h」 — https://v.daum.net/v/20211203185403320
 - [86] 메트로서울(2021-12-07) — ES300h 월간 1위 — https://www.metroseoul.co.kr/article/20211207500347
-- [87] 뉴시스(2026-07-14) — 토요타코리아 2025 회계연도 매출 1조 5,013억 원·영업이익 888억 원 — https://mobile.newsis.com/view/NISX20260714_0003708175
+- [87] 뉴시스(2026-07-14) — 토요타코리아 2025 회계연도 매출 약 1조 5,000억 원·영업이익 888억 원 — https://mobile.newsis.com/view/NISX20260714_0003708175
 
 ## 시리즈 내비게이션
 - ◀ 메인: [[자동차 브랜드 연대기 ① 140년의 지도]]

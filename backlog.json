@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 340,
- "resolved": 2195,
- "pending": 586,
+ "scanned": 341,
+ "resolved": 2204,
+ "pending": 594,
  "counts": {
-  "new": 267,
+  "new": 268,
   "companion": 5,
   "gap": 1
  },
@@ -186,6 +186,27 @@
      "u": "research/#r=gemini-spark-agent",
      "s": "research",
      "n": 1
+    }
+   ]
+  },
+  {
+   "name": "기아 ① 역사와 사람",
+   "count": 7,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-history",
+     "s": "research",
+     "n": 4
+    },
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
     }
    ]
   },
@@ -508,23 +529,32 @@
    ]
   },
   {
-   "name": "현대 ① 역사와 사람",
+   "name": "현대 ② 모델 계보",
    "count": 4,
    "kind": "new",
    "target": null,
    "base": null,
    "refs": [
     {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
+     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-history",
      "s": "research",
-     "n": 3
-    },
+     "n": 4
+    }
+   ]
+  },
+  {
+   "name": "현대 ③ 엔진과 기술",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
     {
-     "t": "토요타 ③ 엔진과 기술 — 쉐보레를 그려 만든 A형 엔진에서 지도카·간반, 유성기어 하이브리드, 수소와 전고체까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-toyota-tech",
+     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-history",
      "s": "research",
-     "n": 1
+     "n": 4
     }
    ]
   },
@@ -777,21 +807,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
-    }
-   ]
-  },
-  {
-   "name": "기아 ① 역사와 사람",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
     }
    ]
   },
