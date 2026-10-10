@@ -34,7 +34,7 @@
 |---|---|
 | 타입 1(1945~2003) → 뉴 비틀(1997~2010) → 비틀(2012년형~2019)[1][5][7] | 1974 1세대 → 2012 7세대(MQB) → 2019 8세대, 3,700만 대 이상[9][20][27] |
 | **③ GTI·파사트·티구안** | **④ 불리와 ID.** |
-| GTI 1976 · 파사트 1973 → 9세대 바리안트 · 티구안 2007 → 900만 대[32][44][47] | 타입 2 1950 → T4 앞엔진(1990) → ID. Buzz(2022) · ID.3(2019 공개)[55][64][69] |
+| GTI 1976 · 파사트 1973 → 9세대(유럽형 바리안트) · 티구안 2007 → 900만 대[32][44][47] | 타입 2 1950 → T4 앞엔진(1990) → ID. Buzz(2022) · ID.3(2019 공개)[55][64][69] |
 
 ## 1. 비틀과 그 후예 — 타입 1에서 뉴 비틀까지
 
@@ -228,7 +228,7 @@
 | 비틀 계열 | 타입 1(2003 단종, 2,152만 9,464대) → 뉴 비틀(1997) → 비틀(2019 단종)[1][5][7] |
 | 골프 | 1974 → 8세대, 3,700만 대 이상(판매, 회사)[9][27] |
 | GTI | 1976 판매, 5,000대 계획 → 1세대 46만 1,690대, 누적 250만 이상(생산)[33] |
-| 파사트 | 1973 → 9세대(2023, 바리안트만, 브라티슬라바)[44][45] |
+| 파사트 | 1973 → 9세대(2023, 유럽형은 바리안트만, 브라티슬라바)[44][45] |
 | 티구안 | 2007 → 900만 대 이상(판매, 2026.5)[47] |
 | 불리 | 1950 양산 → 1990 T4 앞엔진 → 2022 ID. Buzz[55][59][64] |
 | 한국 | 골프 누적 5만 4,644대(2024), 티구안 6만 71대(2022.11), ID.4 2022.9 출시[76][82][84] |
@@ -240,9 +240,9 @@
 - [3] Wikipedia, 「Volkswagen New Beetle」 — 1994 콘셉트 원(J 메이스·프리먼 토머스), 4세대 골프 PQ34 플랫폼 — https://en.wikipedia.org/wiki/Volkswagen_New_Beetle
 - [4] The Drive, 「The 1994 VW Concept One Gave Us the Modern Retro Design Craze」 — https://www.thedrive.com/news/41369/the-1994-vw-concept-one-gave-us-the-modern-retro-design-craze
 - [5] 폭스바겐 뉴스룸, 「New Beetle (1997–2010)」 — 1997-10-01 푸에블라 양산, 1998-01-05 디트로이트 공식 데뷔 — https://www.volkswagen-newsroom.com/en/new-beetle-19972010-19553
-- [6] GoAuto(2019-07-12), 「VW Beetle production grinds to a halt – again」 — 2세대 비틀 2012년형, 판매 누적 보도 — https://www.goauto.com.au/news/volkswagen/beetle/2019-07-12/79297.html
+- [6] GoAuto(2019-07-12), 「VW Beetle production grinds to a halt – again」 — 뉴 비틀 후속 비틀 2012년형, 판매 누적 보도 — https://www.goauto.com.au/news/volkswagen/beetle/2019-07-12/79297.html
 - [7] NPR(2019-07-09), 「The last VW Beetle rolls off the assembly line in Mexico tomorrow」 — 2019-07-10 마지막 비틀, 미국 전년 판매 1만 5천 대 미만, 박물관 보존 — https://npr.org/2019/07/09/739865991/the-last-vw-beetle-rolls-off-the-assembly-line-in-mexico-tomorrow
-- [8] Motor Authority, 「The bug's been squashed: VW builds its final Beetle」(2019) — 뉴 비틀 120만 대·2세대 비틀 50만 대 이상 판매 — https://motorauthority.com/news/1123975_the-bugs-been-squashed-vw-builds-its-final-beetle
+- [8] Motor Authority, 「The bug's been squashed: VW builds its final Beetle」(2019) — 뉴 비틀 120만 대·2012년형 비틀 50만 대 이상 판매 — https://motorauthority.com/news/1123975_the-bugs-been-squashed-vw-builds-its-final-beetle
 - [9] 폭스바겐 뉴스룸, 「The beginning: Golf I 1974 to 1983」 — 주지아로 디자인, 1974-03-29 볼프스부르크 양산 — https://www.volkswagen-newsroom.com/en/40-years-of-golf-2666/the-beginning-golf-i-1974-to-1983-2677
 - [10] Carrozzieri Italiani, 「Volkswagen Golf」 — 이탈디자인(주지아로)의 1세대 골프 — https://www.carrozzieri-italiani.com/listing/volkswagen-golf/
 - [11] Wikipedia, 「Volkswagen Golf」 — 앞엔진 가로배치·수랭·앞바퀴굴림, 비틀의 후계 — https://en.wikipedia.org/wiki/Volkswagen_Golf
