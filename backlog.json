@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-09",
- "scanned": 320,
+ "generated": "2026-10-10",
+ "scanned": 321,
  "resolved": 1919,
- "pending": 571,
+ "pending": 604,
  "counts": {
-  "new": 264,
+  "new": 274,
   "companion": 5,
   "gap": 1
  },
@@ -481,6 +481,51 @@
    ]
   },
   {
+   "name": "메르세데스-벤츠 ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "name": "BMW ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "name": "토요타 ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 4
+    }
+   ]
+  },
+  {
    "name": "주세령",
    "count": 4,
    "kind": "new",
@@ -729,6 +774,111 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
+    }
+   ]
+  },
+  {
+   "name": "자동차 브랜드 연대기 ② 자동차 읽는 법",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "폭스바겐 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "포르쉐 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "페라리 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "현대 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "기아 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "테슬라 ① 역사와 사람",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
     }
    ]
   },
