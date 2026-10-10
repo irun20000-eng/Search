@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 346,
- "resolved": 2308,
- "pending": 580,
+ "scanned": 349,
+ "resolved": 2363,
+ "pending": 571,
  "counts": {
-  "new": 265,
+  "new": 264,
   "companion": 5,
   "gap": 1
  },
@@ -118,39 +118,6 @@
     {
      "t": "클로드 코워크(Claude Cowork) 완전 가이드 — 모바일 활용 중심 (DEEP)",
      "u": "research/#r=claude-cowork-mobile",
-     "s": "research",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "테슬라 ① 역사와 사람",
-   "count": 9,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "토요타 ① 역사와 사람 — 직기 회사에서 6년 연속 세계 1위까지, 리콜과 부정의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-toyota-history",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "기아 ③ 엔진과 기술 — 소하리의 첫 엔진에서 T8D, 스팅어·니로, 레이 EV에서 EV6·EV9·EV3, PV5까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-kia-tech",
      "s": "research",
      "n": 1
     }
