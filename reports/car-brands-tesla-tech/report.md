@@ -126,11 +126,11 @@
 ```
 「자율」의 단계 (이 글의 정리)
 2023-12  오토파일럿 리콜 약 200만 대 — OTA로 경고 강화
-2024-10  NHTSA, FSD 약 240만 대 예비조사(리콜 아님)
+2024-10  NHTSA, FSD 약 240만 대 예비조사(리콜 전 단계)
 2025-06  오스틴 로보택시 — 모델 Y, 조수석 안전 요원
 2025-11  한국 FSD(감독형) — 출시 당시 HW4 미국산 S·X·사이버트럭
-2026-07  한국 FSD — 미국산 HW3 모델 3·Y로 확대
 2026-01  일부 모델 Y 로보택시, 안전 요원 없이 유료 운행
+2026-07  한국 FSD — 미국산 HW3 모델 3·Y로 확대
 2026-09  사이버캡 운행 · NHTSA 자가인증 감사 질의 · 특별명령
 ```
 
@@ -138,14 +138,14 @@
 
 | 구분할 것 | 정리 | 근거 |
 |---|---|---|
-| 모델 3 모터 | 「영구자석 모터」(세부 방식은 해석이 갈린다) | [5] |
-| 4680 「5배」 | 셀 하나의 용량(회사 발표). 에너지 밀도 아님 | [14][15] |
+| 모델 3 모터 | 2017년부터 영구자석 모터, 듀얼모터는 앞 유도·뒤 영구자석 | [5] |
+| 4680 「5배」 | 셀 하나의 용량(회사 발표). 셀이 커진 만큼 늘어난 값 | [14][15] |
 | 4680 주행거리 | 형태만 +16% ≠ 배터리 데이 전체 최대 +54% | [14][50] |
 | 기가캐스팅 | 리어 언더바디 약 70개 부품 통합 | [18][59] |
 | 「로봇 300대」 | 머스크의 주장 | [18] |
 | 플래드 1.99초 | 회사 발표, 1피트 롤아웃 제외(회사 각주) | [9][46] |
 | FSD | 「감독형」, SAE 레벨 2 | [67] |
-| 2024 NHTSA | 예비조사(약 240만 대), 리콜 아님 | [35] |
+| 2024 NHTSA | 예비조사(약 240만 대), 리콜 전 단계 | [35] |
 | 446 km | 공정위가 과장 광고로 판단한 광고 문구 | [64] |
 | 사이버캡 감사 질의 | 자가인증 근거 감사 → 특별명령. 리콜 절차와 다르다 | [40][55] |
 
@@ -171,7 +171,7 @@
 - [2] Sports Car Market — 로드스터 3상 4극 교류 유도전동기 — https://www.sportscarmarket.com/?p=679973
 - [3] Green Car Journal, 「Tesla Roadster: The Seismic Shift」 — 노트북용 셀 6,831개 — https://greencarjournal.com/dont-miss/tesla-roadster-the-seismic-shift/
 - [4] The Truth About Cars(2007-03) — 로드스터 배터리 셀 — https://www.thetruthaboutcars.com/2007/03/tesla-roadster/
-- [5] Electrek(2018-05-19) — 모델 3 듀얼모터: 앞 유도·뒤 영구자석, 라스카리스 설명 — https://electrek.co/2018/05/19/tesla-model-3-dual-motor-performance-version-ac-induction-permanent-magnet-motor/
+- [5] Electrek(2018-05-19) — 모델 3 듀얼모터: 앞 유도·뒤 영구자석 — https://electrek.co/2018/05/19/tesla-model-3-dual-motor-performance-version-ac-induction-permanent-magnet-motor/
 - [6] CleanTechnica(2018-05-28) — 모델 3 파워트레인 — https://cleantechnica.com/2018/05/28/more-tesla-model-3-powertrain-fun-from-carburetors-to-carborundum-youve-come-a-long-way-baby/
 - [7] InsideEVs — 모델 3 앞뒤 모터 제어 — https://insideevs.com/news/338618/has-tesla-changed-how-it-controls-front-amp-rear-motors-for-model-3/
 - [8] InsideEVs(2021-06) — 모델 S 플래드 인도 행사 — https://insideevs.com/news/513342/tesla-model-s-plaid-event/

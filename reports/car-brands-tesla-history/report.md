@@ -48,7 +48,7 @@
 
 **소송과 합의.** 2009년 5월 26일 에버하드는 머스크와 테슬라를 명예훼손·계약 위반 등으로 제소했다(6월 초 보도)[46][47]. 테슬라는 제소 직후 에버하드의 주장을 「허구적」이라고 반박했다[48]. 그해 8월 소송은 취하됐고, 9월 테슬라가 합의 사실을 확인했다[49][6]. 제소·취하·합의 확인은 서로 다른 단계다.
 
-**다섯 명.** 이 합의에 따라 에버하드·타페닝·이안 라이트·머스크·JB 스트로벨 다섯 명이 모두 「공동창업자」를 칭할 수 있게 됐다[5][50]. 머스크와 에버하드는 이후에도 창업 경위를 두고 공개적으로 엇갈린 주장을 했다[7]. 전기차 전문 매체 전기차 전문 매체 일렉트렉은 2025년 논평에서 「머스크는 테슬라 창업자지만 핵심 혁신의 주인공은 아니다」라고 썼다[1].
+**다섯 명.** 이 합의에 따라 에버하드·타페닝·이안 라이트·머스크·JB 스트로벨 다섯 명이 모두 「공동창업자」를 칭할 수 있게 됐다[5][50]. 머스크와 에버하드는 이후에도 창업 경위를 두고 공개적으로 엇갈린 주장을 했다[7]. 전기차 전문 매체 일렉트렉은 2025년 논평에서 「머스크는 테슬라 창업자지만 핵심 혁신의 주인공은 아니다」라고 썼다[1].
 
 ```
 「창업자」를 둘러싼 연표
@@ -77,7 +77,7 @@
 
 **이름에서 「모터스」를 빼다.** 테슬라는 2017년 2월 1일 법인명을 「테슬라 모터스」에서 「테슬라(Tesla, Inc.)」로 바꿨다. 미국 증권거래위원회(SEC) 공시로 확인된다[17][18]. 보도는 그 배경으로 2016년 11월 마무리된 솔라시티 인수를 들었다. 자동차를 넘어 에너지 회사로 넓히려는 것이었다는 해석이다[19][20]. 웹 주소는 이보다 앞선 2016년 「tesla.com」으로 바뀌었다[18].
 
-**생산 지옥.** 2017년 7월 28일 프리몬트에서 첫 모델 3 30대가 직원 구매자에게 인도됐다[21][22]. 그 자리에서 머스크는 「적어도 6개월, 어쩌면 그 이상의 생산 지옥(production hell)」을 예고했다[21]. 그가 내건 목표는 2017년 12월 월 2만 대였다[23]. 목표였고 실적이 아니다.
+**생산 지옥.** 2017년 7월 28일 프리몬트에서 첫 모델 3 30대가 직원 구매자에게 인도됐다[21][22]. 그 자리에서 머스크는 「적어도 6개월, 어쩌면 그 이상의 생산 지옥(production hell)」을 예고했다[21]. 그가 내건 목표는 2017년 12월 월 2만 대였다[23].
 
 ## 5. 공장 — 프리몬트에서 상하이·베를린으로
 
@@ -195,7 +195,7 @@
 - [18] CNBC(2017-02-01), 「Tesla Motors is now officially just Tesla」 — https://www.cnbc.com/2017/02/01/tesla-motors-is-now-officially-just-tesla.html
 - [19] BNN Bloomberg/Reuters(2017-02-01), 「Tesla changes its name as CEO Musk looks beyond cars」 — https://www.bnnbloomberg.ca/tesla-changes-its-name-as-ceo-musk-looks-beyond-cars-1.662285
 - [20] CNN Money(2017-02-01) — 사명 변경 — https://money.cnn.com/2017/02/01/technology/tesla-name-change
-- [21] GeekWire/Cosmic Log(2017-07-28), 「Elon Musk kicks off Tesla Model 3 deliveries」 — 30대 인도, 「production hell」 — https://cosmiclog.com/2017/07/28/elon-musk-kicks-off-tesla-model-3-deliveries/
+- [21] Cosmic Log(앨런 보일)(2017-07-28), 「Elon Musk kicks off Tesla Model 3 deliveries」 — 30대 인도, 「production hell」 — https://cosmiclog.com/2017/07/28/elon-musk-kicks-off-tesla-model-3-deliveries/
 - [22] CBC(2017-07-29) — 모델 3 첫 인도 — https://www.cbc.ca/lite/story/1.4227561
 - [23] Interesting Engineering — 모델 3 생산 목표(2017-12 월 2만 대) — https://interestingengineering.com/elon-musk-hands-over-tesla-model-3-to-first-30-buyers/
 - [24] CnEVPost(2022-08-15) — 기가 상하이 2019-01-07 착공, 2019-12 첫 인도 — https://cnevpost.com/2022/08/15/tesla-giga-shanghai-1-millionth-production-vehicle/
