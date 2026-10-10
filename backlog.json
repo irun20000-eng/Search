@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 326,
- "resolved": 1974,
+ "scanned": 327,
+ "resolved": 1985,
  "pending": 609,
  "counts": {
-  "new": 273,
+  "new": 272,
   "companion": 5,
   "gap": 1
  },
@@ -199,6 +199,27 @@
     {
      "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
      "u": "research/#r=car-brands-basics",
+     "s": "research",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "name": "BMW ③ 엔진과 기술",
+   "count": 6,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "BMW ① 역사와 사람 — 항공기 회사에서 노이에 클라세까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-bmw-history",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "BMW ② 모델 계보 — 2002에서 3·5·7 시리즈, M3, X5, 노이에 클라세까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-bmw-models",
      "s": "research",
      "n": 3
     }
@@ -856,36 +877,6 @@
     {
      "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
      "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "name": "BMW ② 모델 계보",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "BMW ① 역사와 사람 — 항공기 회사에서 노이에 클라세까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-bmw-history",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "name": "BMW ③ 엔진과 기술",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "BMW ① 역사와 사람 — 항공기 회사에서 노이에 클라세까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-bmw-history",
      "s": "research",
      "n": 3
     }
