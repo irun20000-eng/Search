@@ -112,6 +112,7 @@ CATS = {
     "car-brands-vw-history": "science",
     "car-brands-vw-models": "science",
     "car-brands-vw-tech": "science",
+    "car-brands-porsche-history": "science",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",
