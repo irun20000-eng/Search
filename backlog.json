@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 339,
- "resolved": 2171,
- "pending": 592,
+ "scanned": 340,
+ "resolved": 2195,
+ "pending": 586,
  "counts": {
-  "new": 268,
+  "new": 267,
   "companion": 5,
   "gap": 1
  },
@@ -186,27 +186,6 @@
      "u": "research/#r=gemini-spark-agent",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "토요타 ③ 엔진과 기술",
-   "count": 7,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "토요타 ② 모델 계보 — 크라운과 코롤라에서 프리우스·RAV4까지, 다시 살린 수프라 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-toyota-models",
-     "s": "research",
-     "n": 4
-    },
-    {
-     "t": "토요타 ① 역사와 사람 — 직기 회사에서 6년 연속 세계 1위까지, 리콜과 부정의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-toyota-history",
-     "s": "research",
-     "n": 3
     }
    ]
   },
@@ -529,6 +508,27 @@
    ]
   },
   {
+   "name": "현대 ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "토요타 ③ 엔진과 기술 — 쉐보레를 그려 만든 A형 엔진에서 지도카·간반, 유성기어 하이브리드, 수소와 전고체까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-toyota-tech",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "주세령",
    "count": 4,
    "kind": "new",
@@ -777,21 +777,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
-    }
-   ]
-  },
-  {
-   "name": "현대 ① 역사와 사람",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
     }
    ]
   },
