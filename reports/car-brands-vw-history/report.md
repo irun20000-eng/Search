@@ -138,17 +138,17 @@ DAF는 노동자들이 돈을 조금씩 부어 차를 받는 적립식 구매 �
 | 2017-01-11 | 미 법무부 발표: 중범죄 3건 유죄 인정 합의, 총 43억 달러 | [46][47][48] |
 | 2017-04-21 | 미 연방법원이 유죄 인정 합의 승인, 3년 보호관찰 | [49] |
 
-2016년 6월의 147억 달러 가운데 약 100억 달러는 해당 차량 구매자의 재매입·보상금으로 배정됐다[42][43]. 법원은 그해 10월 이 합의를 최종 승인했다[44][45]. 2017년의 43억 달러는 형사 벌금 28억 달러와 민사 제재금 15억 달러를 더한 것이다[46][47][48]. 발표(1월)와 법원 승인(4월)도 다른 날이다[49].
+2016년 6월의 최대 147억 달러 가운데 약 100억 달러는 해당 차량 구매자의 재매입·보상금으로 배정됐다[42][43]. 법원은 그해 10월 이 합의를 최종 승인했다[44][45]. 2017년의 43억 달러는 형사 벌금 28억 달러와 민사 제재금 15억 달러를 더한 것이다[46][47][48]. 발표(1월)와 법원 승인(4월)도 다른 날이다[49].
 
 **Worked example 3 — 미국 두 건의 금액.**
 
 ```
 민사 합의(2016.6) 최대 147억 달러 + 형사·민사 처벌(2017.1) 43억 달러 = 최대 190억 달러
-147억 달러 ÷ 2.0 L 차량 약 47.5만 대 ≈ 대당 약 3.1만 달러
+최대 147억 달러 ÷ 2.0 L 차량 약 47.5만 대 ≈ 대당 약 3.1만 달러
 소비자 몫 약 100억 달러 ÷ 약 47.5만 대 ≈ 대당 약 2.1만 달러
 ```
 
-모든 값은 이 글의 계산이다. 147억 달러에는 소비자 보상 밖의 몫도 들어 있어 첫 대당 값은 보상액이 아니다. 이것은 미국 두 건의 합일 뿐이다. 3.0 L 차량 합의, 주별 소송, 캐나다·유럽 비용은 빠졌다. 그래서 「디젤게이트 총비용」으로 읽으면 안 된다.
+모든 값은 이 글의 계산이다. 최대 147억 달러에는 소비자 보상 밖의 몫도 들어 있어 첫 대당 값은 보상액이 아니다. 이것은 미국 두 건의 합일 뿐이다. 3.0 L 차량 합의, 주별 소송, 캐나다·유럽 비용은 빠졌다. 그래서 「디젤게이트 총비용」으로 읽으면 안 된다.
 
 ## 8. 한국과의 인연 — 디젤 붐, 처분, 0대, 재개
 
@@ -270,13 +270,13 @@ DAF는 노동자들이 돈을 조금씩 부어 차를 받는 적립식 구매 �
 - [34] EPA 보관 보도자료(2015-09-18), 「EPA, California Notify Volkswagen of Clean Air Act Violations」 — https://www.epa.gov/archive/epa/newsreleases/epa-california-notify-volkswagen-clean-air-act-violations-carmaker-allegedly-used.html
 - [35] DieselNet(2015-09) — EPA·CARB 위반 통지, 미국 대상 약 48만 2천 대 — https://dieselnet.com/news/2015/09carb.php
 - [36] 미 의회조사국(CRS) 보고서 R44372 — 폭스바겐 배출가스 사건 경과, 대상 약 49만 9천 대(후속 집계) — https://www.everycrsreport.com/reports/R44372.html
-- [37] Nextgov(2015-09) — 폭스바겐, 전 세계 1,100만 대에 조작 소프트웨어 시인 — https://www.nextgov.com/technology-news/2015/09/volkswagen-admits-its-cheating-software-11-million-cars-worldwide/121652/
+- [37] Nextgov(2015-09) — 폭스바겐, 전 세계 1,100만 대 규모 발표(조작 소프트웨어) — https://www.nextgov.com/technology-news/2015/09/volkswagen-admits-its-cheating-software-11-million-cars-worldwide/121652/
 - [38] The Fiscal Times(2015-09-22) — 충당금 65억 유로, 실적 전망 하향 — https://www.thefiscaltimes.com/latestnews/2015/09/22/Volkswagen-cuts-guidance-sets-aside-65-billion-euro-emission-costs
 - [39] Ahram Online(2015-09) — 1,100만 대·65억 유로 충당금 보도 — https://english.ahram.org.eg/News/142125.aspx
 - [40] NPR(2015-09-23) — 빈터코른 CEO 사임, 「충격을 받았다」 — https://www.npr.org/sections/thetwo-way/2015/09/23/442818919/volkswagen-ceo-resigns-saying-he-s-shocked-at-emissions-scandal
 - [41] Al Jazeera(2015-09-24) — 빈터코른 사임 — https://www.aljazeera.com/economy/2015/9/24/volkswagen-chief-executive-winterkorn-resigns
 - [42] JURIST(2016-06) — 미국 2.0L 차량 민사 합의 최대 147억 달러 — https://www.jurist.org/news/2016/06/volkswagen-settles-over-allegations-of-cheating-emissions-tests-and-deceiving-customers
-- [43] TFLcar(2016-06) — 147억 달러 합의, 소비자 보상 약 100억 달러 — https://tflcar.com/2016/06/volkswagen-reaches-settlement-in-u-s-diesel-emissions-case-will-pay-14-7-billion/
+- [43] TFLcar(2016-06) — 최대 147억 달러 합의, 소비자 보상 약 100억 달러 배정 — https://tflcar.com/2016/06/volkswagen-reaches-settlement-in-u-s-diesel-emissions-case-will-pay-14-7-billion/
 - [44] KQED, 「Judge approves VW's $14.7 billion settlement over emissions scandal」 — 2016년 10월 최종 승인, 2.0 L 약 47만 5천 대, 3.0 L 별도 — https://www.kqed.org/news/11145274/judge-approves-vws-14-7-billion-settlement-over-emissions-scandal
 - [45] Business Insurance, 「U.S. judge approves $14.7 billion deal in VW diesel scandal」 — 합의 최종 승인 — https://www.businessinsurance.com/us-judge-approves-settlement-vw-diesel-vehicle-scandal/
 - [46] EPA 「Announcements for Volkswagen Violations」(2017-01-19 스냅숏) — 2017-01-11 형사·민사 43억 달러 — https://19january2017snapshot.epa.gov/vw/announcements-volkswagen-violations_.html
