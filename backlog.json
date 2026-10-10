@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 333,
- "resolved": 2074,
- "pending": 600,
+ "scanned": 334,
+ "resolved": 2096,
+ "pending": 594,
  "counts": {
-  "new": 270,
+  "new": 269,
   "companion": 5,
   "gap": 1
  },
@@ -178,27 +178,6 @@
     {
      "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
      "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "name": "포르쉐 ③ 엔진과 기술",
-   "count": 6,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "포르쉐 ① 역사와 사람 — 설계 사무소에서 폭스바겐 인수전, 상장과 2025년의 급제동까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-porsche-history",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "포르쉐 ② 모델 계보 — 356과 911 여덟 세대, 트랜스액슬, 카이엔·타이칸까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-porsche-models",
      "s": "research",
      "n": 3
     }
