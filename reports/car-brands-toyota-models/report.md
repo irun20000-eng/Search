@@ -82,7 +82,7 @@
 
 **하이럭스.** 1세대 하이럭스는 1968년 3월 나왔다. 1.5 L 가솔린 엔진의 짧은 축거 뒷바퀴굴림 픽업이었다[16]. 하이럭스는 일찍부터 수출 차였다. 1978년 말 누적 수출이 100만 대를 넘었다[18]. 토요타의 하이럭스 50주년 자료는 2017년까지 세계 누적 판매가 1,770만 대를 넘었다고 적는다[17].
 
-**랜드크루저.** 시작은 1951년 「토요타 지프 BJ」였다. 1954년 윌리스의 「지프」 상표 문제로 「랜드크루저」라는 이름을 얻었다. 1960년에 나온 40계(FJ40)가 오래 팔리며 이름을 굳혔다[19][20]. 지프 BJ가 후지산 6합목까지 오른 이야기는 [[토요타 ① 역사와 사람]]에 있다.
+**랜드크루저.** 시작은 1951년 「토요타 지프 BJ」였다. 1954년 윌리스의 「지프」 상표 문제로 「랜드크루저」라는 이름을 얻었다. 1960년에 나온 40계(FJ40)가 오래 팔리며 이름을 굳혔다[19][20]. 토요타는 1951년 지프 BJ가 후지산 6합목까지 오른 첫 차가 됐다고 밝힌다(회사 발표)[21].
 
 300계는 2021년 6월 공개됐다. TNGA 기반의 새 뼈대에 3.5 L V6 트윈터보 가솔린(305 kW, 415 PS, 650 N·m)과 3.3 L V6 트윈터보 디젤을 얹었다. 둘 다 10단 자동변속기다. 토요타는 이전 200계보다 200 kg 가벼워졌다고 밝혔다[23][22]. V8을 내려놓고 V6로 간 세대다[22].
 
@@ -257,7 +257,7 @@ RAV4는 승용차의 뼈대 위에 지은 SUV였다. 토요타 영국 매거진�
 - [15] Wikipedia, 「Toyota MR2」 — 일본 첫 리어 미드십 후륜구동 양산차, 1984-06 생산 — https://en.wikipedia.org/wiki/Toyota_MR2
 - [16] Wikipedia, 「Toyota Hilux」 — 1968-03 1세대 N10, 1.5 L — https://en.wikipedia.org/wiki/Toyota_Hilux
 - [17] 토요타 글로벌, 하이럭스 50주년 「Number of Global Cumulative Sales」 — 2017년까지 1,770만 대 이상 — https://global.toyota/en/mobility/toyota-brand/features/hilux50th/history/numbers.html
-- [18] 토요타 글로벌, 하이럭스 50주년 「Milestones」 — 1978-12 누적 수출 100만 대 — https://global.toyota/en/mobility/toyota-brand/features/hilux50th/history/milestones.html
+- [18] 토요타 글로벌, 하이럭스 50주년 「Milestones」 — 1968-03 출시, 1978년 말 누적 수출 100만 대 — https://global.toyota/en/mobility/toyota-brand/features/hilux50th/history/milestones.html
 - [19] Wikipedia, 「Toyota Land Cruiser」 — 1951 토요타 지프 BJ, 1954 개명, 1960 40계 — https://en.wikipedia.org/wiki/Toyota_Land_Cruiser
 - [20] Gulf News(2021), 「The Toyota Land Cruiser from 1951 to 2021」 — https://gulfnews.com/auto/car-culture/in-pictures-the-toyota-land-cruiser--from-1951-to-2021-1.1623304407594
 - [21] 토요타 보도자료(2025-10-21), 랜드크루저 누적 약 1,215만 대·190여 개국 — https://global.toyota/en/newsroom/toyota/43389422.html
