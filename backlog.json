@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 325,
- "resolved": 1955,
- "pending": 617,
+ "scanned": 328,
+ "resolved": 2003,
+ "pending": 604,
  "counts": {
-  "new": 272,
+  "new": 271,
   "companion": 5,
   "gap": 1
  },
@@ -69,45 +69,6 @@
      "u": "research/#r=claude-mcp-guide",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "BMW ① 역사와 사람",
-   "count": 14,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 4
-    },
-    {
-     "t": "메르세데스-벤츠 ① 역사와 사람 — 특허 한 장에서 세꼭지별까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-history",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "메르세데스-벤츠 ③ 엔진과 기술 — 안전의 발명, 그리고 「최초」의 진짜 크기 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-tech",
-     "s": "research",
-     "n": 3
-    },
-    {
-     "t": "자동차 브랜드 연대기 ② 자동차 읽는 법 — 차급·동력 방식·엔진·단위 (메인 2) (DEEP)",
-     "u": "research/#r=car-brands-basics",
-     "s": "research",
-     "n": 2
-    },
-    {
-     "t": "메르세데스-벤츠 ② 모델 계보 — S·E·C·G·SL과 AMG·마이바흐 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-mercedes-models",
-     "s": "research",
-     "n": 2
     }
    ]
   },
@@ -604,6 +565,27 @@
    ]
   },
   {
+   "name": "폭스바겐 ① 역사와 사람",
+   "count": 4,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
+     "u": "research/#r=car-brands-map",
+     "s": "research",
+     "n": 3
+    },
+    {
+     "t": "BMW ③ 엔진과 기술 — 직렬 6기통의 균형, 밸브트로닉, 그리고 탄소섬유 전기차 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-bmw-tech",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "주세령",
    "count": 4,
    "kind": "new",
@@ -852,21 +834,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 4
-    }
-   ]
-  },
-  {
-   "name": "폭스바겐 ① 역사와 사람",
-   "count": 3,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
-     "s": "research",
-     "n": 3
     }
    ]
   },
