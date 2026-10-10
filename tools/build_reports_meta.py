@@ -123,6 +123,8 @@ CATS = {
     "car-brands-toyota-tech": "science",
     "car-brands-hyundai-history": "science",
     "car-brands-hyundai-models": "science",
+    "car-brands-hyundai-tech": "science",
+    "car-brands-kia-history": "science",
     # ── 인문 ──
     "hesse-demian": "culture",
     "hesse-siddhartha": "culture",

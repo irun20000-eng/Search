@@ -1,10 +1,10 @@
 {
  "generated": "2026-10-10",
- "scanned": 342,
- "resolved": 2218,
- "pending": 599,
+ "scanned": 344,
+ "resolved": 2259,
+ "pending": 589,
  "counts": {
-  "new": 268,
+  "new": 267,
   "companion": 5,
   "gap": 1
  },
@@ -69,27 +69,6 @@
      "u": "research/#r=claude-mcp-guide",
      "s": "research",
      "n": 1
-    }
-   ]
-  },
-  {
-   "name": "현대 ③ 엔진과 기술",
-   "count": 11,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-models",
-     "s": "research",
-     "n": 7
-    },
-    {
-     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-history",
-     "s": "research",
-     "n": 4
     }
    ]
   },
@@ -211,23 +190,23 @@
    ]
   },
   {
-   "name": "기아 ① 역사와 사람",
+   "name": "기아 ② 모델 계보",
    "count": 7,
    "kind": "new",
    "target": null,
    "base": null,
    "refs": [
     {
-     "t": "현대 ① 역사와 사람 — 코티나 조립에서 세계 3위까지, 엑셀의 추락과 세타2의 그늘 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-history",
+     "t": "기아 ① 역사와 사람 — 자전거 부품 공장에서 부도와 인수를 지나 「호랑이 코」와 새 이름까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-kia-history",
      "s": "research",
-     "n": 4
+     "n": 5
     },
     {
-     "t": "자동차 브랜드 연대기 ① 140년의 지도 — 탄생·브랜드·숫자로 읽는 자동차 산업 (메인 1) (DEEP)",
-     "u": "research/#r=car-brands-map",
+     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-models",
      "s": "research",
-     "n": 3
+     "n": 2
     }
    ]
   },
@@ -802,6 +781,27 @@
    ]
   },
   {
+   "name": "기아 ③ 엔진과 기술",
+   "count": 3,
+   "kind": "new",
+   "target": null,
+   "base": null,
+   "refs": [
+    {
+     "t": "기아 ① 역사와 사람 — 자전거 부품 공장에서 부도와 인수를 지나 「호랑이 코」와 새 이름까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-kia-history",
+     "s": "research",
+     "n": 2
+    },
+    {
+     "t": "현대 ③ 엔진과 기술 — 포니의 빌린 심장에서 알파·세타·타우, CVVD, E-GMP 800V와 수소차까지 (자동차 브랜드 연대기) (DEEP)",
+     "u": "research/#r=car-brands-hyundai-tech",
+     "s": "research",
+     "n": 1
+    }
+   ]
+  },
+  {
    "name": "실수의 완비성",
    "count": 3,
    "kind": "new",
@@ -1320,21 +1320,6 @@
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
      "n": 3
-    }
-   ]
-  },
-  {
-   "name": "기아 ② 모델 계보",
-   "count": 2,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "현대 ② 모델 계보 — 포니에서 쏘나타·그랜저·아반떼, 싼타페와 제네시스, 아이오닉까지 (자동차 브랜드 연대기) (DEEP)",
-     "u": "research/#r=car-brands-hyundai-models",
-     "s": "research",
-     "n": 2
     }
    ]
   },
