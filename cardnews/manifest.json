@@ -1,5 +1,5 @@
 {
- "count": 34,
+ "count": 35,
  "series": [
   {
    "key": "parent",
@@ -27,6 +27,28 @@
   }
  ],
  "episodes": [
+  {
+   "folder": "부모노트_16_잠자리실랑이",
+   "series": "parent",
+   "title": "잠자리 실랑이",
+   "angle": "잠은 명령으로 오지 않는다",
+   "layout": "A",
+   "date": "2026-10-13",
+   "caption": "밤마다 같은 실랑이가 반복됩니다.\n\n자라는 말에는 잠드는 길이 없습니다. 아이는 누운 채 깨어 있고 밤은 그대로 길어집니다. 잠은 눕는 순간이 아니라 그 앞 순서에서 천천히 내려옵니다.\n순서 · 예고 · 마감 — 자기 전 순서를 매일 같게 두고, 남은 순서를 미리 알려 주고, 마지막은 늘 불 끄기로 끝냅니다.\n\n저장해두고 밤에 같은 말이 나오려 할 때 다시 꺼내 보세요.\n\n#부모노트 #잠자리 #수면습관 #생활습관 #육아",
+   "images": [
+    "parent16_01.webp",
+    "parent16_02.webp",
+    "parent16_03.webp",
+    "parent16_04.webp",
+    "parent16_05.webp",
+    "parent16_06.webp",
+    "parent16_07.webp",
+    "parent16_08.webp",
+    "parent16_09.webp",
+    "parent16_10.webp"
+   ],
+   "study": null
+  },
   {
    "folder": "부모노트_15_아침준비",
    "series": "parent",
