@@ -1,5 +1,8 @@
 # 루틴 지침 — 구글 스파크 영상 분석본 → 갤러리 영상 노트 (Search 전용)
 
+> **⛔ 은퇴 (2026-10-15).** 스파크가 10월 초 산출을 멈춰 입력원을 Aside 기초자료(brief)로 바꾨다.
+> 현행 지침은 **`routines/brief-video-curator.md`**. 이 문서는 역사 기록이다 — 루틴이 이 문서를 수행하지 말 것.
+
 > 사용법: 이 파일 전체(또는 아래 한 줄)를 **claude.ai/code → Routines** 지침란에 붙여넣고,
 > 대상 리포 `irun20000-eng/Search`, 주기 매일(예: 아침 9시경)로 등록.
 > 한 줄 버전: `Search 리포의 routines/spark-video-curator.md 지침을 그대로 수행해줘. 새 자료 없으면 "처리할 새 자료 없음"만 보고.`

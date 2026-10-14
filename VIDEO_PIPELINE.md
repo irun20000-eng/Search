@@ -222,7 +222,8 @@ guides/
 prompts/
   gemini-video-analysis.md
 routines/
-  spark-video-curator.md  스파크 폴더 → 갤러리 발행 예약 루틴 지침
+  brief-video-curator.md  Aside brief(yt-inbox 브랜치) → 노트 작성·갤러리 발행 예약 루틴 지침
+  spark-video-curator.md  (은퇴 2026-10-15) 스파크 폴더 → 갤러리 발행
 tools/
   extract_videos.py   1회성 이관
   build_manifest.py   notes/ → manifest 재생성
@@ -232,6 +233,7 @@ tools/
   render_parity.py    이관 동일성 대조
   unescape_drive_text.py  Drive read_file_content 출력 → 스파크 원문 복원
   check_encoding.py   인코딩 손상 검출(사설영역 차단 + 코퍼스 대조 자문)
+  check_quotes.py     핵심 인용 ↔ brief 자막 대조(포함률 3-gram, FAIL<0.75)
 ```
 
 `videos/index.html`과 `guides/index.html`은 **외부 CDN에 의존하지 않는다.**
