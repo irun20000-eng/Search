@@ -1,6 +1,27 @@
 {
- "count": 17,
+ "count": 18,
  "notes": [
+  {
+   "slug": "conways-law",
+   "title": "콘웨이의 법칙(Conway's Law) — 이해편(입문·딥)",
+   "date": "2026-10-15",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "소프트웨어공학",
+    "조직설계",
+    "아키텍처",
+    "의사소통",
+    "모듈화",
+    "마이크로서비스",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 7편 · 조직도가 곧 설계도가 된다",
+   "chars": 14439,
+   "pic": "conways-law.png",
+   "path": "concept/notes/conways-law.md"
+  },
   {
    "slug": "margin-of-error",
    "title": "여론조사의 오차범위(Margin of Error) — 이해편(입문·딥)",
