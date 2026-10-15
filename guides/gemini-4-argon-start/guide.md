@@ -119,12 +119,12 @@ Pro 구독인데 메뉴에 아르곤이 없다면 **아직 내 계정에 롤아�
 
 **할 일**
 1. `aistudio.google.com` 에 들어간다.
-2. Ultra 구독자가 아니라면 먼저 **결제를 연결한 유료 프로젝트**를 만든다. AI 스튜디오의 API 키·프로젝트 화면에서 무료 프로젝트를 찾아 결제를 설정하고, 최소 금액(영문 문서 기준 10달러, 정확한 금액은 결제 화면에 표시)을 미리 충전한다[6].
+2. Ultra 구독자가 아니라면 먼저 **결제를 연결한 유료 프로젝트**를 만든다. AI 스튜디오의 API 키·프로젝트 화면에서 무료 프로젝트를 찾아 결제를 설정하고, 최소 금액(영문 문서 기준 10달러 — 현지어판 문서는 금액이 다를 수 있다)을 미리 충전한다[6].
 3. 모델 목록에서 `gemini-4-argon` 을 고른다[3].
 4. 오른쪽 설정에서 사고 수준과 **최대 출력 토큰**을 확인한다.
 5. 3단계에서 쓴 프롬프트를 그대로 넣어 앱 결과와 비교한다.
 
-**최대 출력 토큰은 넉넉하게.** 아르곤은 사고와 답변이 **같은 출력 한도를 나눠 쓴다.** 구글 문서는 최소 32,768을 권하고, 한 번의 요청이 기본으로 만들 수 있는 출력은 SDK·스트리밍 기준 65,536토큰이다(직접 HTTP 비스트리밍 요청은 32,768)[3][4][5].
+**최대 출력 토큰은 넉넉하게.** 아르곤은 사고와 답변이 **같은 출력 한도를 나눠 쓴다.** 구글 문서는 최소 32,768을 권하고, 한 번의 요청이 기본으로 만들 수 있는 출력은 65,536토큰이다[4][5].
 
 **화면에서 확인할 것**
 모델 이름 칸에 **`gemini-4-argon`** 이 보이고, 실행하면 응답 아래에 입력·출력 토큰 수가 표시된다. 이 숫자를 6단계 비용 계산에 쓴다.
@@ -180,7 +180,7 @@ print(resp.usage_metadata)  # 토큰 사용량 — 6단계에서 쓴다
 터미널에 **답변 다섯 줄**이 나오고, 그 아래 `usage_metadata` 에 입력·출력(사고 포함) 토큰 수가 찍힌다.
 
 **막히면**
-오류 숫자부터 본다. **400**이면 위 표의 설정이 남아 있는지, **402**면 선불 잔액이 0인지(6단계), 접근 오류(429 등)면 키가 유료 등급 프로젝트의 것인지(4단계), **응답이 빈 문자열**이면 출력 한도를 사고가 다 써 버린 것이다 — 구글 문서는 이때 `max_output_tokens` 를 올리거나 사고 수준을 낮추라고 안내한다[4]. 오래 걸리는 요청은 HTTP 타임아웃을 15분 이상으로 잡거나 백그라운드 실행을 쓰라고 권한다[3].
+오류 숫자부터 본다. **400**이면 위 표의 설정이 남아 있는지, **402·429**면 숫자보다 **오류 메시지**를 먼저 읽는다 — 「prepayment credits are depleted」면 선불 잔액(6단계), 아니면 키가 유료 등급 프로젝트의 것인지(4단계)를 본다[23][24]. **응답이 빈 문자열**이면 출력 한도를 사고가 다 써 버린 것이다 — 구글 문서는 이때 `max_output_tokens` 를 올리거나 사고 수준을 낮추라고 안내한다[4]. 오래 걸리는 요청은 HTTP 타임아웃을 15분 이상으로 잡거나 백그라운드 실행을 쓰라고 권한다[3].
 
 > **아주 긴 출력이 필요하면** — 65,536토큰을 넘는 출력은 「긴 디코드(long decode)」 기능으로, 입력과 출력을 합쳐 약 100만 토큰 범위 안에서 만들 수 있다[4]. 다만 9월 발표의 「출력 100만 토큰」[8]을 기본 설정으로 그만큼 나온다고 읽으면 안 된다. 기본 한 번의 요청은 65,536토큰이고, 그 이상은 백그라운드 실행 같은 별도 설정이 필요하다[3][4]. 입문 단계에서는 쓰지 않아도 된다.
 
@@ -211,7 +211,7 @@ print(resp.usage_metadata)  # 토큰 사용량 — 6단계에서 쓴다
 결제 콘솔에 **오늘 쓴 금액**이 보이고, 계산한 값과 크게 다르지 않다. 크게 다르면 사고 토큰이 예상보다 많은 것이다.
 
 **막히면**
-잔액이 바닥나면 요청이 멈춘다. 유료 등급 상태는 고정이 아니어서, **선불 잔액이 남아 있을 때만** API가 요청을 처리하고, 잔액이 0이 되면 연결된 키의 요청이 HTTP 402로 실패한다[6]. 예산 알림을 걸어 두고, 반복문으로 대량 호출하기 전에 10번만 먼저 돌려 비용을 재 본다.
+잔액이 바닥나면 요청이 멈춘다. 유료 등급 상태는 고정이 아니어서, **선불 잔액이 남아 있을 때만** API가 요청을 처리한다[6]. 잔액이 0이 되면 「prepayment credits are depleted」 메시지와 함께 요청이 거부되는데, 오류 코드는 402로도 429로도 보고된다[23][24]. 예산 알림을 걸어 두고, 반복문으로 대량 호출하기 전에 10번만 먼저 돌려 비용을 재 본다.
 
 ## 7단계 — (Ultra) 안티그래비티에서 코딩 에이전트로 쓰기
 
@@ -221,7 +221,7 @@ print(resp.usage_metadata)  # 토큰 사용량 — 6단계에서 쓴다
 3. 작은 프로젝트로 시작한다 — 「이 폴더의 코드 구조를 설명하고 테스트가 없는 함수를 찾아 줘」처럼 **읽기부터** 맡긴다.
 4. 결과가 믿을 만하면 「찾은 함수 하나에 테스트를 써 줘」처럼 쓰기 작업으로 넘어간다.
 
-안티그래비티는 구글이 만든 에이전트 코딩 도구다. 구글은 사내판 안티그래비티에서 약 4주 동안 시험한 결과 에이전트 기반 코드의 비율이 35% 늘고, 배포 뒤 되돌림(롤백) 비율이 30% 줄었다고 밝혔다[7][19]. **구글 내부에서 잰 수치**이니, 내 프로젝트에서는 작은 작업으로 직접 재 본다.
+안티그래비티는 구글이 만든 에이전트 코딩 도구다. 구글은 사내판 안티그래비티에서 약 4주 동안 시험한 결과 에이전트 기반 코드의 비율이 35% 늘고, 코드 제출 뒤 되돌림(롤백) 비율이 30% 줄었다고 밝혔다[7][19]. **구글 내부에서 잰 수치**이니, 내 프로젝트에서는 작은 작업으로 직접 재 본다.
 
 **화면에서 확인할 것**
 에이전트 화면의 모델 표시가 **아르곤**이고, 에이전트가 파일을 읽은 기록과 계획이 먼저 나온 뒤 변경 제안이 나온다.
@@ -274,8 +274,8 @@ Pro는 앱과 검색 AI 모드까지다. AI 스튜디오는 유료 API 키, 안�
 - [3] What's new in Gemini 4 Argon — Google AI for Developers · https://ai.google.dev/gemini-api/docs/latest-model (모델 ID `gemini-4-argon`, 사고 수준 low·medium(기본)·high, 샘플링 설정 제거, 출력 한도 32,768 이상 권장, 명시적 캐시 미지원, 타임아웃·백그라운드 실행)
 - [4] Long decode — Google AI for Developers · https://ai.google.dev/gemini-api/docs/generate-content/long-decode (한 요청 출력 한도를 넘는 긴 출력, 빈 응답 + MAX_TOKENS 대처)
 - [5] Developer's guide to Gemini 4 Argon — Google Cloud 문서 · https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon (한 요청 기본 출력 65,536토큰, `thinking_budget`·MINIMAL 400 오류)
-- [6] Gemini API Billing — Google AI for Developers · https://ai.google.dev/gemini-api/docs/billing?authuser=1 (유료 등급 전환, 최소 선불액 — 영문판 10달러, 선불 잔액이 있어야 요청 처리, 잔액 0이면 402)
-- [7] 구글 안티그래비티에 탑재된 제미나이 4 아르곤 — 구글 코리아 블로그 · https://blog.google/intl/ko-kr/products/gemini-4-argon-in-google-antigravity-kr/ (Ultra 구독자·적격 엔터프라이즈 구독자·제미나이 API 이용자 대상 데스크톱 앱과 CLI 순차 제공, 사내 약 4주 시험 — 에이전트 기반 코드 비율 35% 증가·롤백 30% 감소)
+- [6] Gemini API Billing — Google AI for Developers · https://ai.google.dev/gemini-api/docs/billing?authuser=1 (유료 등급 전환, 최소 선불액 — 영문판 10달러, 선불 잔액이 있어야 요청 처리)
+- [7] 구글 안티그래비티에 탑재된 제미나이 4 아르곤 — 구글 코리아 블로그 · https://blog.google/intl/ko-kr/products/gemini-4-argon-in-google-antigravity-kr/ (Ultra 구독자·적격 엔터프라이즈 구독자·제미나이 API 이용자 대상 데스크톱 앱과 CLI 순차 제공, 사내 약 4주 시험 — 에이전트 기반 코드 비율 35% 증가·제출 뒤 롤백 30% 감소)
 
 **해외 자료**
 - [8] Google makes Gemini 4 Argon broadly available with limited-time low API pricing — VentureBeat · https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token (10월 13일 일반 공개, 도입가 2/10달러, 11월 30일 이후 4/20달러)
@@ -297,5 +297,7 @@ Pro는 앱과 검색 AI 모드까지다. AI 스튜디오는 유료 API 키, 안�
 - [20] Gemini 4 Argon pricing: the $2/$10 promo, the $4/$20 bill — eesel AI · https://www.eesel.ai/blog/gemini-4-argon-pricing (출력 단가에 사고 포함, 캐시 입력 95% 할인)
 - [21] Gemini 4 Argon 사용 가능 여부와 가격 — 캐럿 큐레이션 · https://carat.im/curated/gemini-4-argon-availability-pricing (API 토큰 단가를 울트라 구독료로 읽거나 구독에 API 사용료가 포함된다고 보면 안 된다)
 - [22] Gemini Developer API pricing — Google AI for Developers · https://ai.google.dev/gemini-api/docs/pricing (아르곤 출력 단가 사고 포함, 캐시 입력 95% 할인, 명시적 캐시 미지원, 무료 등급·AI Pro 요금제 제외)
+- [23] Error code 402 — Your prepayment credits are depleted — Google AI 개발자 포럼 · https://discuss.ai.google.dev/t/error-code-402-message-your-prepayment-credits-are-depleted/185524 (선불 잔액 소진 시 402 사례 — 사용자 보고)
+- [24] Billing mismatch: Gemini API 429 on Tier 1 Prepay — Google AI 개발자 포럼 · https://discuss.ai.google.dev/t/billing-mismatch-gemini-api-429-on-tier-1-prepay-while-cloud-billing-has-funds-but-ai-studio-shows-0-00/140828 (같은 잔액 문제가 429로 나타난 사례 — 사용자 보고)
 
 > **확인 조건과 한계** — 2026-10-15 기준으로 작성했다. 일반 공개(10월 13일) 이틀 뒤라 자료 대부분이 0~2일 된 글이다. 사실은 **검색 요약을 복수로 대조해** 확정했다. 요금제별 사용 위치·API 도입가와 종료일·모델 ID·사고 수준 세 단계는 구글 공식 글을 포함한 여러 출처에서 일치를 확인했다. **반면 자료끼리 엇갈린 것이 셋 있다.** ① `thinking_budget` 을 보냈을 때 경고만 나오는지 400 오류가 나는지 문서마다 다르다 — 그래서 「쓰지 말 것」으로만 적었다. ② Pro 구독자 앱 제공이 전 세계 동시인지 일부 국가 순차인지 구글 페이지끼리도 다르다는 보고가 있다. ③ 국내 원화 요금은 블로그 정리 기준이다. 앱의 메뉴 이름·위치는 버전에 따라 바뀔 수 있으니 「무엇을 하는 화면인지」를 기준으로 찾으면 된다. 요금·한도·제공 범위는 자주 바뀌는 값이니 결제 전에 구글 공식 페이지에서 한 번 더 확인하기를 권한다.
