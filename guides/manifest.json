@@ -2,6 +2,63 @@
   "generated": "2026-08-08",
   "guides": [
     {
+      "slug": "gemini-4-argon-start",
+      "title": "제미나이 4 아르곤 활용하기 — 내 요금제로 어디서 쓰는지부터 첫 API 호출까지",
+      "date": "2026-10-15",
+      "level": "입문",
+      "minutes": 50,
+      "tags": [
+        "제미나이",
+        "아르곤",
+        "구글",
+        "제미나이앱",
+        "AI스튜디오",
+        "API",
+        "안티그래비티",
+        "사고수준",
+        "비용관리"
+      ],
+      "summary": "구글이 2026년 10월 13일 일반에 연 최상위 모델 제미나이 4 아르곤을 실제로 써 보는 입문 가이드. 요금제별로 앱·AI 스튜디오·API·안티그래비티 중 어디서 열리는지 가르고, 앱에서 사고 수준을 골라 첫 작업을 맡긴 뒤, 파이썬으로 gemini-4-argon 을 호출하고 빈 응답·400 오류를 고친다. 11월 30일 도입가 종료 전후의 호출 비용 계산까지 7단계.",
+      "videos": [
+        {
+          "id": "T2Wfds62ZjM",
+          "title": "Building Real-Time Animation with Gemini 4 Argon",
+          "channel": "Google Antigravity",
+          "duration": 137,
+          "published": "2026-10-13"
+        },
+        {
+          "id": "4iK_UFzW6Zw",
+          "title": "Gemini 4 Argon - Out and Tested!!",
+          "channel": "Sam Witteveen",
+          "duration": 679,
+          "published": "2026-10-13"
+        },
+        {
+          "id": "T4PC_yrNSl4",
+          "title": "Gemini 4 Argon + Antigravity: 20K-Line Rust App",
+          "channel": "Telusko",
+          "duration": 679,
+          "published": "2026-10-13"
+        },
+        {
+          "id": "clNh3f97b2Y",
+          "title": "Gemini 4 Argon Explained",
+          "channel": "Prompt Engineering",
+          "duration": 462,
+          "published": "2026-10-01"
+        },
+        {
+          "id": "D12abv_S-BY",
+          "title": "구글이 이 갈았다... 차세대 첨단 지능모델 제미나이 4 아르곤, 성능·가격 비교 총정리",
+          "channel": "민둥이 | 쉽게 배우는 AI",
+          "duration": 398,
+          "published": "2026-10-01"
+        }
+      ],
+      "path": "gemini-4-argon-start/guide.md"
+    },
+    {
       "slug": "aside-claude-code",
       "title": "Aside를 Claude Code에 붙이기 — CLI·MCP 등록부터 스킬로 굳히기까지",
       "date": "2026-09-30",
