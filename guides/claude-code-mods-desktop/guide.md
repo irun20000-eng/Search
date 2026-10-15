@@ -296,7 +296,7 @@ export const register: Register = on => {
 ## 7단계 — 슬래시 명령과 패널
 
 **할 일**
-세 번째 모드 `tool-calls` 를 만든다. `plugin.json`·`hooks.json`·계약 파일은 6단계와 같은 모양이고(계약은 `'tool-calls': { calls: ToolCall[] }`), `register.tsx` 는 아래와 같다. 2.1.300에서 검사기와 타입 검사를 통과했다[7].
+세 번째 모드 `tool-calls` 를 만든다. `plugin.json`·`hooks.json`·계약 파일은 6단계와 같은 모양이고(계약은 `'tool-calls': { calls: ToolCall[] }`), `register.tsx` 는 아래와 같다. 2.1.300에서 검사기와 타입 검사를 통과했다(작성자 확인).
 
 ```tsx
 import { atom, read, update } from 'claude-code'
