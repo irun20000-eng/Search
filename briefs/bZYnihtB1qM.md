@@ -4,7 +4,7 @@ video_id: bZYnihtB1qM
 url: https://www.youtube.com/watch?v=bZYnihtB1qM
 title: "구글 또 앞서가네요.. 안티그래비티 최신업데이트~! 신규 플랜기능과 서브에이전트 구축방법 총정리~!"
 channel: "AI수익화초월차선, AI상상력대장"
-published: 2026-10-08
+published: 2026-10-09
 duration_sec: 1483
 duration: "24:43"
 playlist: 보자따라하자

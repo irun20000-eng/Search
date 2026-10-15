@@ -4,7 +4,7 @@ video_id: gRrfXUAPxao
 url: https://www.youtube.com/watch?v=gRrfXUAPxao
 title: "영상 하나에 150만원! AI 숏드라마 만드는 법 전부 공개합니다 (+프롬프트 제공) | 제미나이, 구글 플로우"
 channel: "홍아린 AI"
-published: 2026-10-08
+published: 2026-10-09
 duration_sec: 616
 duration: "10:16"
 playlist: 보자따라하자

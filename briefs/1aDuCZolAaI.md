@@ -4,7 +4,7 @@ video_id: 1aDuCZolAaI
 url: https://www.youtube.com/watch?v=1aDuCZolAaI
 title: "나 대신 일하는 가상의 직원 3명 무료로 고용하는 법 (다중 에이전트 세팅) [14/16]"
 channel: "G-CREATOR"
-published: 2026-06-08
+published: 2026-06-09
 duration_sec: 2306
 duration: "38:26"
 playlist: 보자따라하자

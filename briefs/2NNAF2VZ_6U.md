@@ -4,7 +4,7 @@ video_id: 2NNAF2VZ_6U
 url: https://www.youtube.com/watch?v=2NNAF2VZ_6U
 title: "AI 브라우저 Aside 실제 사용법 공개"
 channel: "AI 겸임교수 이종범"
-published: 2026-09-19
+published: 2026-09-20
 duration_sec: 930
 duration: "15:30"
 playlist: 보자따라하자

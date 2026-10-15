@@ -4,7 +4,7 @@ video_id: jMAaK585hxQ
 url: https://www.youtube.com/watch?v=jMAaK585hxQ
 title: "헤르메스 봇모드, 클로드 1000시간 쓰고 결국 세팅했습니다 (50분 풀가이드)"
 channel: "레인 | AI 바이브코딩"
-published: 2026-09-25
+published: 2026-09-26
 duration_sec: 2898
 duration: "48:18"
 playlist: 보자따라하자

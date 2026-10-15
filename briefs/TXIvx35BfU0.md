@@ -4,7 +4,7 @@ video_id: TXIvx35BfU0
 url: https://www.youtube.com/watch?v=TXIvx35BfU0
 title: "프롬프트 하나로 끝? 클로드 디자인으로 숏폼 애니메이션 자동으로 만들기"
 channel: "바이브랩스"
-published: 2026-04-18
+published: 2026-04-19
 duration_sec: 642
 duration: "10:42"
 playlist: 보자따라하자
