@@ -2,6 +2,64 @@
   "generated": "2026-08-08",
   "guides": [
     {
+      "slug": "claude-code-mods-desktop",
+      "title": "클로드 코드 모드(mod) 활용하기 — 데스크톱 앱 Code 탭에서 설치부터 직접 만들기까지",
+      "date": "2026-10-15",
+      "level": "입문",
+      "minutes": 60,
+      "tags": [
+        "클로드코드",
+        "모드",
+        "mods",
+        "데스크톱앱",
+        "플러그인",
+        "훅",
+        "타입스크립트",
+        "상태줄",
+        "패널",
+        "슬래시명령"
+      ],
+      "summary": "클로드 코드 모드(mod)를 Claude 데스크톱 앱 Code 탭 기준으로 쓰는 입문 가이드. 세션 종류별로 모드가 도는지 확인하고, + → Plugins 로 설치·끄기를 익힌 뒤, 말로 첫 모드를 만들고 세 파일 구조와 훅 ($, e, next) 을 읽는다. 도구 호출 가드와 상태줄, 데스크톱 전용 Svg 막대를 곁들인 입력창 위 띠, 슬래시 명령과 패널까지 — 코드 세 벌은 Claude Code 2.1.300 검사기와 타입 검사를 통과한 그대로다. 8단계.",
+      "videos": [
+        {
+          "id": "yUuFvL1lK4k",
+          "title": "Mods in Claude Code: change how Claude Code works",
+          "channel": "Claude",
+          "duration": 201,
+          "published": "2026-10-05"
+        },
+        {
+          "id": "dUKUgvyqAw0",
+          "title": "Claude Code 모드(Mods) 직접 써 봤습니다 | 말로 만드는 나만의 기능 + 쓸만한 모드 사례",
+          "channel": "단테",
+          "duration": 591,
+          "published": "2026-10-06"
+        },
+        {
+          "id": "yIvw5WtMTSU",
+          "title": "Claude Code, 내 입맛대로 바꾸세요 | MODS 실전 예제 3가지",
+          "channel": "코난쌤 conanssam",
+          "duration": 436,
+          "published": "2026-10-05"
+        },
+        {
+          "id": "KtquxqP2YnM",
+          "title": "클로드코드 \"모드\"는 혁신입니다.. ㄷㄷ 미친 신기능 /mods",
+          "channel": "성공지식백과",
+          "duration": 526,
+          "published": "2026-10-03"
+        },
+        {
+          "id": "EiThSVZ8pME",
+          "title": "Claude Code Mods Can Do Basically Anything...",
+          "channel": "Better Stack",
+          "duration": 457,
+          "published": "2026-10-04"
+        }
+      ],
+      "path": "claude-code-mods-desktop/guide.md"
+    },
+    {
       "slug": "gemini-4-argon-start",
       "title": "제미나이 4 아르곤 활용하기 — 내 요금제로 어디서 쓰는지부터 첫 API 호출까지",
       "date": "2026-10-15",
