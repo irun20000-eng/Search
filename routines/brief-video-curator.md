@@ -37,6 +37,8 @@
 3. **새 자료가 없으면 — 끝내기 전에 상류를 한 번 본다** (2026-10-13 도입, 대상만 바뀜)
    - `get_playlist_items(playlist_id: "PLNRs-HbobHU3n14u_AWBUTKe4wU8gOuYh", max_results: 20)`
    - 각 `videoId` 에 대해 노트도 brief 도 없는 것이 **수집 적체**다(= Aside 수집이 멈춤 — PC 꺼짐 등).
+   - 단, `git ls-tree --name-only origin/yt-inbox routed/` 에 `<videoId>.md` 가 있으면 적체가 아니다 — Aside 가 다른 파이프라인으로 보낸 영상이다
+     (2026-10-16 사용자 결정: **3분 미만 영상은 갤러리 게이트를 정직하게 넘을 수 없어 일반 노트로** 보낸다. 예: `h4ko-Np28w0`, 1:37).
    - 적체 0 → '처리할 새 자료 없음'만 보고하고 종료. 적체 ≥1 → 발행 0건이어도 12번 알림
      (`Aside 수집 적체 N편(최고령 MM-DD) · 최신 brief MM-DD · 발행 0건`).
    - ⚠️ 적체를 직접 처리하지 말 것 — 클라우드는 자막을 못 받는다. **검출·알림까지가 끝.**
