@@ -1,6 +1,28 @@
 {
- "count": 18,
+ "count": 19,
  "notes": [
+  {
+   "slug": "monty-hall",
+   "title": "몬티 홀 문제(Monty Hall problem) — 이해편(입문·딥)",
+   "date": "2026-10-20",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "확률",
+    "조건부확률",
+    "베이즈정리",
+    "직관",
+    "의사결정",
+    "몬티홀",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 7편 · 바꾸면 두 배가 된다",
+   "chars": 10700,
+   "pic": null,
+   "path": "concept/notes/monty-hall.md"
+  },
   {
    "slug": "conways-law",
    "title": "콘웨이의 법칙(Conway's Law) — 이해편(입문·딥)",
