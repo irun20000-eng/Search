@@ -29,6 +29,20 @@ FAIL 이 하나라도 있으면 종료코드 1. 함께 가장 가까운 자막 �
    노트가 자동자막용 완충(「자동자막」·「또렷이 잡지 못」 등)을 쓰고 있지 않은가.
    업로더 자막에 그 완충을 붙이면 신뢰도를 실제보다 낮게 알리고, 반대로 자막이
    분명히 말한 값을 버리게 된다(2026-10-16 실측 2건). `transcript_kind` 는 항상 출력한다.
+
+그리고 **자문 하나** (2026-10-21) — 핵심 인용 줄 **밖**의 「…」 가 자막 축자인가.
+
+  LESSONS 2026-10-15 가 「요약·팁 안의 「」는 축자 인용으로 읽힌다」를 적어 두었지만
+  이 검사기는 `**핵심 인용**` 줄만 대조하므로 그 자리에 닿지 않았다. 2026-10-21 회차에
+  검수가 그 유형을 7건 잡았다 — 작성자 문구·압축·두 발화를 합친 서술이 「」 안에 있었다.
+
+  **게이트로 만들지 않은 이유는 실측했기 때문이다.** brief 가 있는 노트의 「」 26건을
+  재니 11건이 포함률 0.75 미만이었는데, 그 11건 중 10건은 「20자로 끊어라」·「이거 몇
+  점이냐」처럼 **작성자가 대비를 위해 지어 쓴 말**이었다(리뷰어도 결함으로 세지 않았다).
+  합격/불합격으로 끊으면 그쪽이 전부 오탐이 된다 — 「검출기를 먼저 의심한다」(2026-09-03).
+  그래서 세지 말고 **보여만 준다**: 사람이 한 줄씩 「이건 발화인가 내 말인가」를 가린다.
+  남은 1건은 실제 결함이었다(영어 영상 노트에서 한국어 번역이 「」 안에 들어가 있었다 —
+  원어가 한국어가 아니면 한국어 「」 는 축자일 수가 없다).
 """
 from __future__ import annotations
 
@@ -44,6 +58,8 @@ KIND_RE = re.compile(r"^transcript_kind:\s*(\S+)", re.M)
 DUR_RE = re.compile(r"^duration:\s*(\S+)", re.M)
 # 자동자막을 전제하는 완충 어구 — 업로더 자막(manual)에 붙으면 잘못된 겸손이다
 ASR_HEDGE = ("자동자막", "또렷이 잡지 못", "또렷하지 않", "또렷이 잡지 않")
+# 핵심 인용 줄 밖의 「…」 — 축자로 읽히는 자리. 자문이지 게이트가 아니다(머리말 참조).
+KAK_RE = re.compile(r"「([^」\n]{4,})」")
 
 
 def to_sec(lbl: str) -> int:
@@ -163,6 +179,26 @@ def main() -> int:
                         % (lo, hi, "·".join(f"{a}s" for a in at)))
         print(f"  [{k}] {verdict} {score:.2f} @{where}  "
               f"{qt[:60]}{'…' if len(qt) > 60 else ''}{zone}")
+    # ── 자문: 핵심 인용 밖의 「…」 가 축자인가 (게이트 아님 — 머리말 참조)
+    loose = []
+    for line in note_txt.splitlines():
+        if QUOTE_RE.match(line):
+            continue
+        for m in KAK_RE.finditer(line):
+            g = grams(norm(m.group(1)))
+            if not g:
+                continue
+            sc = sum(1 for x in g if x in tx_grams) / len(g)
+            if sc < 0.90:
+                loose.append((sc, m.group(1)))
+    if loose:
+        print(f"\nℹ️  핵심 인용 밖의 「」 {len(loose)}건이 자막 축자가 아니다 — 눈으로 가릴 것")
+        print("     (작성자가 지어 쓴 대비 표현이면 그대로 둬도 된다. 발화를 옮긴 자리라면")
+        print("      자막 그대로 바꾸거나 「」 를 떼라. 원어가 한국어가 아닌 영상에서 한국어가")
+        print("      「」 안에 있으면 그것은 번역이므로 축자일 수 없다.)")
+        for sc, s in sorted(loose)[:12]:
+            print(f"     · {sc:.2f} 「{s[:58]}{'…' if len(s) > 58 else ''}」")
+
     print("결과:", "FAIL" if fails else "OK", f"(FAIL {fails}건)")
     return 1 if fails else 0
 
