@@ -1,6 +1,29 @@
 {
- "count": 19,
+ "count": 20,
  "notes": [
+  {
+   "slug": "birthday-problem",
+   "title": "생일 문제(Birthday problem) — 이해편(입문·딥)",
+   "date": "2026-10-22",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "확률",
+    "조합",
+    "여사건",
+    "직관",
+    "해시충돌",
+    "암호학",
+    "생일문제",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 8편 · 스물세 명이면 반반이다",
+   "chars": 14709,
+   "pic": null,
+   "path": "concept/notes/birthday-problem.md"
+  },
   {
    "slug": "monty-hall",
    "title": "몬티 홀 문제(Monty Hall problem) — 이해편(입문·딥)",
