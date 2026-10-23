@@ -17,7 +17,9 @@
   "#n=brooks-law": "[2026-10-01] 브룩스의 법칙 — 이해편.md",
   "#n=seven-bridges": "[2026-10-06] 쾨니히스베르크의 다리 — 이해편.md",
   "#n=margin-of-error": "[2026-10-08] 여론조사의 오차범위 — 이해편.md",
-  "#n=conways-law": "[2026-10-15] 콘웨이의 법칙 — 이해편.md"
+  "#n=conways-law": "[2026-10-15] 콘웨이의 법칙 — 이해편.md",
+  "#n=monty-hall": "[2026-10-20] 몬티 홀 문제 — 이해편.md",
+  "#n=birthday-problem": "[2026-10-22] 생일 문제 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
@@ -274,6 +276,13 @@
   "youtu.be/_qI7NjHwp5Q": "20261021_제미나이_스파크(Spark)_사용법_총정리__하루_종일_일하는_AI_직원(에이전트)_만들기.md",
   "youtu.be/CMhXTG8CJtw": "20261021_클로드_딸깍_자막은_쓰레기입니다.(AI_자막_25분만에_마스터_하세요).md",
   "youtu.be/Rifw9OpXtjo": "20261021_Gemini_4_Argon_No-Hype_Full_Review_&_Testing_(Better_than_Opus).md",
-  "youtu.be/nPrgcONwZJk": "20261023_'수능형_시험'_씹어_먹게_됩니다..md"
+  "youtu.be/nPrgcONwZJk": "20261023_'수능형_시험'_씹어_먹게_됩니다..md",
+  "youtu.be/tDK12yXp_L8": "20261022_REA를 다른 사람들은 어떻게 쓰고 있을까 실제 활용사례모음 & 간단사용법 7분 정리.md",
+  "youtu.be/fW7axMVPnQQ": "20261022_AI 에이전트, 어렵게 생각했는데 직접 만들어보니.md",
+  "youtu.be/BEcQOU_bK_g": "20261020_클로드 코드, 코덱스를 결제했는데 뭘 만들지 모르겠다면 들어오세요.md",
+  "youtu.be/rSKLpR1UwE0": "20261020_“자동화 끝판왕” 요즘 핫한 AI Aside 브라우저 셋팅부터 설치까지 올인원 핵심 총정리.md",
+  "youtu.be/uiVQFkH_Awc": "20261020_[시즌 4] Herdr + 클로드 코드 + 코덱스 한글 문서 자동화.md",
+  "youtu.be/uTlh-Raeajo": "20261020_요즘 미국에서 난리난 조합!! 클로드와 Aside만 있으면 유튜브 자동화 무조건 가능!!(챗GPT도 됩니다).md",
+  "youtu.be/bZYnihtB1qM": "20261020_구글 또 앞서가네요.. 안티그래비티 최신업데이트~! 신규 플랜기능과 서브에이전트 구축방법 총정리~!.md"
  }
 }
