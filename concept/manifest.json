@@ -1,6 +1,28 @@
 {
- "count": 20,
+ "count": 21,
  "notes": [
+  {
+   "slug": "rule-of-72",
+   "title": "72의 법칙(Rule of 72) — 이해편(입문·딥)",
+   "date": "2026-10-27",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "금융",
+    "복리",
+    "로그",
+    "어림셈",
+    "암산",
+    "72의법칙",
+    "숫자노트",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 8편 · 몇 해 만에 두 배가 되나",
+   "chars": 13779,
+   "pic": null,
+   "path": "concept/notes/rule-of-72.md"
+  },
   {
    "slug": "birthday-problem",
    "title": "생일 문제(Birthday problem) — 이해편(입문·딥)",
