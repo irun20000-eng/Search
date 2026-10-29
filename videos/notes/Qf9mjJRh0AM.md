@@ -1,6 +1,6 @@
 ---
 title: 클로드 페이블5 특징·제작 사례·UX/UI 활용 방안 총정리 (유훈식 교수)
-channel: 유훈식 교수 : AI4UX
+channel: "유훈식 교수 : AI4UX"
 video_url: https://youtu.be/Qf9mjJRh0AM
 duration: 50:27
 published: 2026-07-30

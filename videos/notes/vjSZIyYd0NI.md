@@ -1,5 +1,5 @@
 ---
-title: [시즌 3] 온갖 크롤링 코드 안녕 — 공개된 페이지를 모두 긁어버리는 Insane-search (thanks to 지피타쿠)
+title: "[시즌 3] 온갖 크롤링 코드 안녕 — 공개된 페이지를 모두 긁어버리는 Insane-search (thanks to 지피타쿠)"
 channel: 편집자P
 video_url: https://youtu.be/vjSZIyYd0NI
 duration: 17:43

@@ -1,5 +1,5 @@
 ---
-title: "이게 공짜라고?" 쇼츠 자동화: 글만 넣으면 영상+목소리까지 완성 (클로드 코드)
+title: "\"이게 공짜라고?\" 쇼츠 자동화: 글만 넣으면 영상+목소리까지 완성 (클로드 코드)"
 channel: 백야 | AI 1인 기업
 video_url: https://youtu.be/YTPfu1bVFW8
 duration: 15:58

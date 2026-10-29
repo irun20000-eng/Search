@@ -1,6 +1,6 @@
 ---
-title: "교무행정·수업 기획 끝판왕" 교사를 위한 최신 클로드(Claude) 활용법 완전 정복! (feat. 전정선 선생님)
-channel: 교육티타임
+title: "\"교무행정·수업 기획 끝판왕\" 교사를 위한 최신 클로드(Claude) 활용법 완전 정복! (feat. 전정선 선생님)"
+channel: "교육티타임"
 video_url: https://youtu.be/HmBVZ_679Ko
 duration: 1:22:33
 published: 2026-07-01

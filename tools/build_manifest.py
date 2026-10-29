@@ -6,6 +6,7 @@ videos/notes/*.md → videos/manifest.json 재생성.
 """
 import re, json
 from pathlib import Path
+from fm_util import unq   # 따옴표 title 해제(YAML 큰따옴표/작은따옴표 규칙)
 
 ROOT  = Path(__file__).resolve().parent.parent
 NOTES = ROOT / "videos" / "notes"
@@ -31,7 +32,7 @@ def main():
         for line in fm.split('\n'):
             if ': ' in line:
                 k, v = line.split(': ', 1)
-                m[k.strip()] = v.strip()
+                m[k.strip()] = unq(v)
         one = re.search(r'^>\s*한 줄 요약:\s*(.*)$', body, re.M)
         out.append({
             "id": f.stem,

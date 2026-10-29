@@ -1,5 +1,5 @@
 ---
-title: [바이브디자인] AI 가챠뽑기는 그만! 클로드코드에서 디자이너가 정확히 원하는대로 작업하는 방법
+title: "[바이브디자인] AI 가챠뽑기는 그만! 클로드코드에서 디자이너가 정확히 원하는대로 작업하는 방법"
 channel: 디자이너 DK
 video_url: https://youtu.be/WZ4HEwm6Xss
 duration: 24:46

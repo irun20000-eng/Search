@@ -7,6 +7,7 @@
 """
 import re, json, html, os, sys
 from pathlib import Path
+from fm_util import yq   # 문자열 값은 항상 큰따옴표 + 이스케이프(YAML 안전)
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC  = ROOT / "videos" / "index.html"
@@ -127,8 +128,8 @@ def main():
 
         fm = [
             "---",
-            f"title: {title}",
-            f"channel: {channel}",
+            f"title: {yq(title)}",
+            f"channel: {yq(channel)}",
             f"video_url: https://youtu.be/{vid}",
             f"duration: {dur_lbl}",
             f"published: {published}",

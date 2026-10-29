@@ -1,5 +1,5 @@
 ---
-title: [헤르메스 강의 1] 일 잘하는 헤르메스 만드는 법 (폴더 설정, 성격 설정)
+title: "[헤르메스 강의 1] 일 잘하는 헤르메스 만드는 법 (폴더 설정, 성격 설정)"
 channel: 로치의개발일기
 video_url: https://youtu.be/j8UPHTc24H0
 duration: 22:08

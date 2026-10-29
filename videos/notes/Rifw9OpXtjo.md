@@ -1,5 +1,5 @@
 ---
-title: Gemini 4 Argon: No-Hype Full Review & Testing (Better than Opus?)
+title: "Gemini 4 Argon: No-Hype Full Review & Testing (Better than Opus?)"
 channel: Pat Simmons
 video_url: https://youtu.be/Rifw9OpXtjo
 duration: 45:22

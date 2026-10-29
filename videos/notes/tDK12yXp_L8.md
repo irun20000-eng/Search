@@ -1,5 +1,5 @@
 ---
-title: REA를 다른 사람들은 어떻게 쓰고 있을까? 실제 활용사례모음 & 간단사용법 7분 정리 #REA #오픈소스
+title: "REA를 다른 사람들은 어떻게 쓰고 있을까? 실제 활용사례모음 & 간단사용법 7분 정리 #REA #오픈소스"
 channel: 문외인 Layperson
 video_url: https://youtu.be/tDK12yXp_L8
 duration: 07:39

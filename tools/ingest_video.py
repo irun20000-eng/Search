@@ -12,6 +12,7 @@
 """
 import re, json, sys, argparse, datetime as _dt
 from pathlib import Path
+from fm_util import yq   # 문자열 값은 항상 큰따옴표 + 이스케이프(YAML 안전)
 
 ROOT  = Path(__file__).resolve().parent.parent
 NOTES = ROOT / "videos" / "notes"
@@ -204,7 +205,7 @@ def main():
     title = (meta.get('title') or '').strip()
     channel = (meta.get('channelTitle') or '').strip()
 
-    fm = ["---", f"title: {title}", f"channel: {channel}",
+    fm = ["---", f"title: {yq(title)}", f"channel: {yq(channel)}",
           f"video_url: https://youtu.be/{g['id']}", f"duration: {fmt_dur(dur)}",
           f"published: {published}", f"captured: {added}",
           f"tags: [{', '.join(g['tags'])}]", f"category: {g['cat']}", "---", ""]
