@@ -1,6 +1,6 @@
 ---
-title: 모빈(Mobbin) MCP 하나로 리서치·기획·제안서까지 생산성을 몇 배 끌어올리기 (실전: 온보딩 UX 기획)
-channel: Eric Park | 빌더 + 디자이너
+title: "모빈(Mobbin) MCP 하나로 리서치·기획·제안서까지 생산성을 몇 배 끌어올리기 (실전: 온보딩 UX 기획)"
+channel: "Eric Park | 빌더 + 디자이너"
 video_url: https://youtu.be/3W8hJr3DUzI
 duration: 46:05
 published: 2026-08-05

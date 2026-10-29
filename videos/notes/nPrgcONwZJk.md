@@ -1,5 +1,5 @@
 ---
-title: '수능형 시험' 씹어 먹게 됩니다.
+title: "'수능형 시험' 씹어 먹게 됩니다."
 channel: 수능 이코치
 video_url: https://youtu.be/nPrgcONwZJk
 duration: 08:41

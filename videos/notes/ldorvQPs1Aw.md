@@ -1,5 +1,5 @@
 ---
-title: [편집오류 재업] 안티그래비티 깔고 뭐부터? 초보가 꼭 깔아야 할 스킬 3개
+title: "[편집오류 재업] 안티그래비티 깔고 뭐부터? 초보가 꼭 깔아야 할 스킬 3개"
 channel: 일잘러의 도구
 video_url: https://youtu.be/ldorvQPs1Aw
 duration: 04:20

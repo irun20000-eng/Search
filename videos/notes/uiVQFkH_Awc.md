@@ -1,5 +1,5 @@
 ---
-title: [시즌 4] Herdr + 클로드 코드 + 코덱스 한글 문서 자동화
+title: "[시즌 4] Herdr + 클로드 코드 + 코덱스 한글 문서 자동화"
 channel: 편집자P
 video_url: https://youtu.be/uiVQFkH_Awc
 duration: 19:41

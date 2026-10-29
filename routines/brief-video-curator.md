@@ -77,6 +77,9 @@
 8. **적재**:
    `python3 tools/ingest_video.py --gemini /tmp/spark/<video_id>.txt --meta /tmp/spark/meta.json --added <오늘 YYYY-MM-DD>`
    **`--added` 를 반드시 넘긴다.**
+   노트 프론트매터를 직접 쓰거나 고칠 때도 **문자열 값(`title`, `channel` 등)은 항상 큰따옴표로 감싸고 내부 `"` 와 `\` 는 `\"`, `\\` 로 이스케이프한다**
+   (예: `title: "[편집오류] 제목: 부제"`). 따옴표가 없으면 `[`·`"`·`'` 로 시작하거나 `: ` 를 포함한 제목이 YAML 오류가 되어 옵시디언에서 빨간 글씨가 뜬다.
+   `ingest_video.py` 는 이미 이 규칙대로 쓰고, `verify_video.py` 가 따옴표 누락을 거른다.
 9. **품질 게이트**
    - `python3 tools/verify_video.py videos/notes/<video_id>.md` — 하한 미달이면 **자막으로 돌아가 보강**한다
      (영상에 없는 내용을 채워 넣어 통과시키지 않는다). 3회 안에 못 넘기면 폐기·보고.

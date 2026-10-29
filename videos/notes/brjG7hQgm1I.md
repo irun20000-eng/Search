@@ -1,5 +1,5 @@
 ---
-title: [한영자막·한국어 더빙] YouTube 전체를 AI 세컨드 브레인으로 만드는 법 (Cole Medin)
+title: "[한영자막·한국어 더빙] YouTube 전체를 AI 세컨드 브레인으로 만드는 법 (Cole Medin)"
 channel: PATHY
 video_url: https://youtu.be/brjG7hQgm1I
 duration: 14:58

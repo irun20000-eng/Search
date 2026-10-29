@@ -1,5 +1,5 @@
 ---
-title: [저장 필수] 핀터레스트는 그만? 분야별 디자인 레퍼런스 사이트 추천 16선 & 활용법
+title: "[저장 필수] 핀터레스트는 그만? 분야별 디자인 레퍼런스 사이트 추천 16선 & 활용법"
 channel: 레이디러너 디자인 리서치 스튜디오
 video_url: https://youtu.be/rDLJswILbe4
 duration: 04:10

@@ -11,6 +11,7 @@ import re, sys, json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fm_util import unq          # noqa: E402  따옴표 title 해제
 import mdtables as MT          # noqa: E402  표 렌더 검사(서가 공용)
 
 CATS = {"knowledge", "design", "agent", "automation", "video", "build"}
@@ -53,7 +54,7 @@ def parse(path):
     for line in fm.split('\n'):
         if ': ' in line:
             k, v = line.split(': ', 1)
-            meta[k.strip()] = v.strip()
+            meta[k.strip()] = unq(v)
     return meta, body, None
 
 
@@ -162,6 +163,17 @@ def check(path):
     for f in ("title", "channel", "video_url", "published", "duration", "category"):
         if not meta.get(f):
             fails.append(f"프론트매터 '{f}' 누락")
+
+    # 문자열 값은 큰따옴표로 감싸야 한다(YAML 문법 오류 → 옵시디언 속성 깨짐 방지).
+    for ln in Path(path).read_text(encoding='utf-8').split('\n---\n', 1)[0].split('\n'):
+        mm = re.match(r'^(title|channel): (.*)$', ln)
+        if not mm:
+            continue
+        v = mm.group(2)
+        quoted = len(v) >= 2 and v[0] == '"' and v[-1] == '"' and re.fullmatch(r'(?:[^"\\]|\\.)*', v[1:-1])
+        risky = v[:1] in '[]{}"\'&*!|>%@`#,' or ': ' in v or ' #' in v or v.endswith(':')
+        if risky and not quoted:
+            fails.append(f"프론트매터 '{mm.group(1)}' 값이 YAML 오류 위험인데 큰따옴표로 감싸이지 않음: {v[:40]}")
 
     return fails, M
 
