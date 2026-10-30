@@ -55,7 +55,9 @@
    brief 는 지우지 않는다(이 루틴은 yt-inbox 브랜치에 쓰지 않는다).
 6. **메타데이터**: `get_video_details` 로 처리 대상 ID 를 **배치 1회** 조회 → `/tmp/spark/meta.json`
    (`{"<id>": {"title","channelTitle","publishedAt","duration"}}`). **응답에 없는 ID 는 폐기**(무환각 검증기).
-   brief 머리말의 제목·채널 값과 다르면 API 값을 쓴다.
+   brief 머리말의 **제목·채널·게시일·길이** 값과 다르면 API 값을 쓴다 — 네 필드 전부
+   `get_video_details` 가 정본이다(`CLAUDE.md` · `VIDEO_PIPELINE.md` §0·§1). 수집기가 계산한
+   `duration_sec` 가 API 와 1초 어긋나는 일이 있는데, 그때도 API 값을 쓴다.
 7. **작성 — VIDEO-NOTE v1 블록** (`prompts/gemini-video-analysis.md` 의 계약 그대로, 작성자만 이 세션)
    brief 의 **자막과 설명만** 근거로 쓴다. 계약의 절대 규칙·품질 기준·분류 6종·출력 형식을 전부 따르고,
    자막 기반이라 아래를 더 지킨다:
