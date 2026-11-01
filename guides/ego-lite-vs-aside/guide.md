@@ -92,7 +92,7 @@ Claude Code 대화창에서 이렇게 시킨다. README는 에이전트 CLI에�
 - **macOS에서 앱이 안 열린다** — 시스템 설정 → 개인정보 보호 및 보안에서 허용해야 할 수 있다[2].
 - **Windows에서 경고가 뜬다** — SmartScreen에서 「추가 정보(More info)」 → 「실행(Run anyway)」을 누르라고 안내한다[2]. 설치 뒤 PATH는 **새 터미널부터** 적용되니 터미널을 새로 연다[2].
 - **로그인했는데 「not logged in」이라고 한다** — 크롬 프로필을 둘 이상 가져왔다면 에이전트가 엉뚱한 프로필을 받았을 수 있다. 한 리뷰어는 프로필 이름을 지정해서 해결했다[3].
-- **Claude Code가 명령마다 멈칫하며 느리다** — ego lite는 셸 히어독 안에 자바스크립트를 넣는 방식이라 Claude Code 기본 권한 모드의 셸 검사에 걸린다. 이 때문에 같은 작업이 76초 대 40초로 느려졌다는 측정이 있다. ego 문서는 전체 접근(Full access)을 권하고, 리뷰어는 Claude Code를 권한 우회 모드(`--dangerously-skip-permissions`)로 돌렸다[3]. **이 모드는 브라우저만이 아니라 파일 수정·명령 실행을 포함한 도구 호출 전체의 확인과 안전 검사를 끈다.** 공식 문서는 컨테이너나 VM처럼 망가져도 되는 격리 환경에서만 쓰라고 하고, 프롬프트 인젝션도 막아 주지 않는다고 적는다[24]. 입문자는 **기본 모드에서 느린 채로 쓰는 쪽**을 권한다. 굳이 켠다면 중요한 파일이 없는 빈 작업 폴더에서만 켜고, 끝나면 되돌린다. 전용 크롬 프로필은 이 위험을 줄여 주지 않는다.
+- **Claude Code가 명령마다 멈칫하며 느리다** — ego lite는 셸 히어독 안에 자바스크립트를 넣는 방식이라 Claude Code 기본 권한 모드의 셸 검사에 걸린다. 이 때문에 같은 작업이 76초 대 40초로 느려졌다는 측정이 있다. ego 문서는 전체 접근(Full access)을 권하고, 리뷰어는 Claude Code를 권한 우회 모드(`--dangerously-skip-permissions`)로 돌렸다[3]. **이 모드는 브라우저만이 아니라 파일 수정·명령 실행을 포함한 도구 호출 대부분의 확인과 안전 검사를 끈다**(거부 규칙 같은 일부는 남는다). 공식 문서는 컨테이너나 VM처럼 망가져도 되는 격리 환경에서만 쓰라고 하고, 프롬프트 인젝션도 막아 주지 않는다고 적는다[24]. 확인 창을 줄이고 싶으면 우회 모드보다 분류기가 대신 검토하는 auto 모드를 먼저 본다[24]. 입문자는 **기본 모드에서 느린 채로 쓰는 쪽**을 권한다. 굳이 켠다면 중요한 파일이 없는 빈 작업 폴더에서만 켜고, 끝나면 되돌린다. 전용 크롬 프로필은 이 위험을 줄여 주지 않는다.
 - **이미 깔려 있는데 오래된 판이다** — `ego-browser upgrade` 로 올린다. 설치 안내는 이 명령을 실행하기 전에 사용자 승인을 먼저 받으라고 적어 둔다[2].
 
 ## 3단계 — Aside 설치하고 첫 작업 시키기
@@ -204,13 +204,13 @@ ego lite를 골랐다면 Space가 「격리된 공간」이라는 말을 쿠키 
 | 터미널을 안 쓰고, 브라우저에 말로만 시키고 싶다 | **Aside** | 에이전트가 브라우저 안에 있다[7]. ego lite는 자체 AI가 없어 비기술 사용자에게 맞지 않는다는 평가가 있다[4] |
 | 매일 아침 같은 페이지를 확인해 달라진 것만 받고 싶다 | **Aside** | 루틴으로 예약한다[11]. 무료 플랜은 루틴에 용량 제한이 있다[12]. ego lite의 재사용 기능은 아직 출시 전이다[1] |
 | 회사에서 이미 에이전트 CLI를 쓰는데 브라우저 쪽 가입·결제를 늘리기 번거롭다 | **ego lite** | 브라우저는 계정 없이 무료다[1][17]. 에이전트 CLI 요금은 따로다[4]. 회사 보안 규정부터 확인한다 |
-| Windows PC 하나뿐이다 | 둘 다 된다 — 다른 줄로 고른다 | 둘 다 Windows 설치 파일을 받아 설치한다[1][9]. Aside의 「맥판 기능 99%」는 회사 쪽 발표다[9]. ego lite는 Windows용 설치 스크립트가 없다[2] |
+| Windows PC 하나뿐이다 | 둘 다 된다 — 위의 다른 조건으로 고른다 | 둘 다 Windows 설치 파일을 받아 설치한다[1][9]. Aside의 「맥판 기능 99%」는 회사 쪽 발표다[9]. ego lite는 Windows용 설치 스크립트가 없다[2] |
 | 여러 작업을 동시에 많이 돌린다 | 직접 재 보고 결정 | 한 측정에서는 2개부터 Aside가 빨랐다[17]. 기기와 작업마다 다를 수 있다 |
 | 단발성 작업을 빠르게 많이 돌리는 개발자 | **ego lite** | 같은 측정에서 단일 작업은 ego lite가 1.85배 빨랐다[17] |
 | 은행·결제·사내 관리자 페이지 | 둘 다 **무인으로 맡기지 않는다** | Aside는 민감 작업에 확인을 기다리지만[7], 마지막 결정은 사람이 해야 한다. ego lite는 쿠키 격리 문제가 보고됐다[3] |
 | 리눅스 서버나 CI | **둘 다 아니다** | ego lite 리눅스는 로드맵 단계다[1]. Aside는 맥·윈도우 앱이다[8][9] |
 
-> **Claude Code 사용자라면 하나 더.** 공식 Claude in Chrome 연동도 브라우저의 로그인 상태를 공유한다. 다만 로그인 페이지나 CAPTCHA를 만나면 멈추고 사람에게 넘긴다[25]. ego lite의 README도 비교표에 Claude/Codex in Chrome을 넣어 두었다[1]. 셋을 견주려면 이 서가의 「Aside를 Claude Code에 붙이기」 가이드를 함께 본다.
+> **Claude Code 사용자라면 하나 더.** 공식 Claude in Chrome 연동도 브라우저의 로그인 상태를 공유한다. 다만 로그인 페이지나 CAPTCHA를 만나면 멈추고 사람에게 넘긴다[25]. ego lite의 README도 비교표에 Claude/Codex in Chrome을 넣어 두었다[1]. Claude Code에 Aside를 붙이는 절차는 이 서가의 「Aside를 Claude Code에 붙이기」 가이드에서 더 다룬다.
 
 ## 하나만 고른다면
 
@@ -219,7 +219,7 @@ ego lite를 골랐다면 Space가 「격리된 공간」이라는 말을 쿠키 
 이 가이드는 입문자를 기준으로 썼다. 그 기준에서 Aside를 고른 이유는 네 가지다.
 1. **혼자서 완결된다.** 에이전트가 들어 있어 다른 도구 없이 첫날부터 쓴다[7][21]. ego lite는 에이전트 CLI와 그 사용료가 따로 있어야 한다[4].
 2. **두 역할을 다 한다.** 나중에 Claude Code를 배우면 같은 Aside를 MCP로 붙일 수 있다[13][14]. 반대로 ego lite는 평소 브라우저로는 쓸 수 있어도[1][18] AI에게 일을 시키려면 바깥 에이전트가 있어야 한다[4].
-3. **안전장치가 기본으로 켜져 있다.** 비밀번호를 에이전트에 넘기지 않고, 민감한 작업은 확인을 기다린다[7][15]. ego lite는 권한을 넓히라는 안내[3][24]와 쿠키 격리 의문[3]이 입문자에게 부담이다. 다만 공평하게 적어 둔다. Aside의 안전장치는 공식 설명 기준이고 이번에 독립 시험은 찾지 못했다. ego lite의 쿠키 문제는 독립 리뷰의 시험 결과다.
+3. **안전장치가 기본으로 켜져 있다.** 비밀번호를 에이전트에 넘기지 않고, 민감한 작업은 확인을 기다린다[7][15]. ego lite는 권한을 넓히라는 안내[3](그 모드의 위험은 [24])와 쿠키 격리 의문[3]이 입문자에게 부담이다. 다만 공평하게 적어 둔다. Aside의 안전장치는 공식 설명 기준이고 이번에 독립 시험은 찾지 못했다. ego lite의 쿠키 문제는 독립 리뷰의 시험 결과다.
 4. **무료로도 시작한다.** Free 플랜이 있고[10], 한 국내 사용기에 따르면 이미 내는 구독을 연결하면 크레딧이 줄지 않는다[11].
 
 **ego lite로 뒤집히는 조건.** 아래 셋 중 둘 이상이 맞으면 ego lite가 더 낫다. 첫째, Claude Code·Codex·Cursor를 이미 매일 쓴다. 둘째, 브라우저 쪽에는 계정과 크레딧을 더하고 싶지 않다. 셋째, 짧은 작업을 빠르게 많이 돌린다[1][17]. 이 경우에도 전용 프로필과 사람의 마지막 확인은 그대로 둔다[3].
@@ -269,7 +269,7 @@ ego lite에는 AI가 없다[4]. 브라우저 창에 말을 거는 것이 아니�
 ## 출처
 
 **ego lite**
-- [1] GitHub citrolabs/ego-lite 저장소와 README(영문·한국어판) — 저장소 내용은 MIT이고 브라우저 앱은 별도 무료 내려받기라는 것, macOS(애플 실리콘·인텔)와 Windows에서 돌고 리눅스는 로드맵이라는 것, DMG·EXE 직접 받기와 `npx skills add citrolabs/ego-lite` 와 에이전트에게 맡기기 세 설치법, 에이전트마다 완전히 격리된 Space를 주고 마우스가 그 자리에 있다는 것, 어느 Space에 에이전트가 도는지 보고 넘겨받거나 멈출 수 있다는 것, `ego-browser` 가 Claude Code·Codex·Cursor와 ego lite 사이의 연결 계층이라는 것, snapshot·fill·click·wait·navigate·capture 도구, 에이전트 CLI에서 `/ego-browser` 뒤에 한 칸 띄우고 할 일을 쓰라는 사용법, 비교표의 「평소 브라우저로 쓸 수 있음」 항목, 첫 실행 때 크롬 데이터를 옮길지 묻는 것, 브라우징 데이터가 기기에 남고 수집은 좁게 한다는 것, 31개 실제 작업 벤치마크에서 47~63% 빠르다는 벤더 주장, 재사용 스킬과 경험 축적은 곧 출시라는 것 — https://github.com/citrolabs/ego-lite · https://raw.githubusercontent.com/citrolabs/ego-lite/HEAD/README.ko.md
+- [1] GitHub citrolabs/ego-lite 저장소와 README(영문·한국어판) — 저장소 내용은 MIT이고 브라우저 앱은 별도 무료 내려받기라는 것, macOS(애플 실리콘·인텔)와 Windows에서 돌고 리눅스는 로드맵이라는 것, DMG·EXE 직접 받기와 `npx skills add citrolabs/ego-lite` 와 에이전트에게 맡기기 세 설치법, 앱을 설치하면 모든 에이전트의 스킬 폴더에 ego-browser 스킬을 넣는다는 것, 에이전트마다 완전히 격리된 Space를 주고 마우스가 그 자리에 있다는 것, 어느 Space에 에이전트가 도는지 보고 넘겨받거나 멈출 수 있다는 것, `ego-browser` 가 Claude Code·Codex·Cursor와 ego lite 사이의 연결 계층이라는 것, snapshot·fill·click·wait·navigate·capture 도구, 에이전트 CLI에서 `/ego-browser` 뒤에 한 칸 띄우고 할 일을 쓰라는 사용법, 비교표의 「평소 브라우저로 쓸 수 있음」 항목, 첫 실행 때 크롬 데이터를 옮길지 묻는 것, 브라우징 데이터가 기기에 남고 수집은 좁게 한다는 것, 31개 실제 작업 벤치마크에서 47~63% 빠르다는 벤더 주장, 재사용 스킬과 경험 축적은 곧 출시라는 것 — https://github.com/citrolabs/ego-lite · https://raw.githubusercontent.com/citrolabs/ego-lite/HEAD/README.ko.md
 - [2] ego-browser 설치 안내(install.md) — `command -v ego-browser`(PowerShell `Get-Command ego-browser`, cmd `where ego-browser`)로 설치를 확인하고 `ego-browser skill` 출력을 따르라는 것, `ego-browser upgrade` 전에 사용자 승인을 받으라는 것, `ego-browser nodejs` 로 stdin 자바스크립트를 실행한다는 것, macOS 설치 스크립트가 DMG를 응용 프로그램 폴더에 넣고 격리 속성을 지운다는 것, Windows SmartScreen에서 「추가 정보」 → 「실행」, PATH가 macOS에서 보통 `~/.local/bin` 이고 Windows에서는 새 터미널부터 적용된다는 것, macOS 개인정보 보호 및 보안에서 허용해야 할 수 있다는 것 — https://raw.githubusercontent.com/citrolabs/ego-lite/HEAD/skills/ego-browser/references/install.md
 - [3] heyuan110, "ego lite Review: Handing Claude Code Your Logged-In Browser" (2026-09-10) — v0.5를 agent-browser·Chrome DevTools MCP와 비교했고 표에 플랫폼을 macOS로 적었다는 것, 셸 히어독 자바스크립트가 Claude Code 기본 권한 모드의 Bash 검사에 걸려 느려졌다는 것(76초 대 40초)과 ego 문서가 전체 접근을 권한다는 것, 가져온 프로필 둘 중 잘못된 쪽을 받아 「not logged in」이 났고 프로필 이름 지정으로 해결했다는 것, 작업 Space끼리 쿠키가 분리되지 않았다는 시험 결과와 쿠키 관련 열린 이슈들, 프롬프트 인젝션이 세션 쿠키에 닿을 수 있다는 경고, 인턴에게 넘겨도 되는 로그인만 남긴 전용 프로필에서 쓰라는 결론, Windows·리눅스·CI에는 아직 맞지 않는다는 판단 — https://www.heyuan110.com/posts/ai/2026-09-10-ego-lite-browser-review/
 - [4] Roki Ran, "Reviewing ego lite with ego lite" — 자체 에이전트가 없어 Claude Code·Codex 등을 가져와야 한다는 것, 복잡한 깃허브 페이지 스냅숏이 약 14k 토큰으로 마케팅의 200~400 토큰과 차이가 났다는 것, 캡처 함수가 base64가 아니라 임시 파일 경로를 돌려주고 DOM이 바뀌면 스냅숏 참조가 만료된다는 것, Windows·리눅스 사용자와 AI를 바로 쓰고 싶은 비기술 사용자에게는 맞지 않는다는 것, 속도 배수가 README와 중국어 문서 사이에 일치하지 않는다는 지적 — https://0xran.com/en/blog/ego-lite-review/
@@ -292,11 +292,11 @@ ego lite에는 AI가 없다[4]. 브라우저 창에 말을 거는 것이 아니�
 - [17] 유튜브 "어사이드 vs 에고 라이트" (LLM Master, 2026-09-17, 1분 29초) — 설명란: 어사이드는 에이전트가 브라우저 안에 있고 비공개·계정 필요·크레딧, 에고 라이트는 브라우저가 에이전트 밖에 있고 MIT 오픈소스·계정 불필요·무료라는 대비. 2026-09-17 macOS 26.5.2 애플 실리콘에서 잰 단일 작업 9회 중앙값(ego-browser 348ms, aside repl 644ms, 1.85배, 9/9 성공)과 동시 작업 각 5회 중앙값(1개 374·554ms, 2개 676·569ms, 4개 1,611·780ms, 8개 3,057·1,856ms). `get_video_details` 로 실재 확인 — https://www.youtube.com/watch?v=NVgSHticulc
 - [18] 유튜브 "6개월 걸려 만든 자동화가 이거 하나로 다 필요 없어졌습니다" (김경원의 AI, 2026-10-08, 5분 3초) — ego lite를 평소엔 기본 브라우저로 두고 작업은 클로드 대화창에서 시킨다는 시연, 기존 봇 대화창에 「저거 쓰라」 한마디로 연결한다는 것, Aside는 전용 프로그램을 따로 써야 하고 캡처 방식으로 가는 것 같다는 제작자의 인상. 이 서가 영상 노트 `8Oa1_g0hEdA` — https://www.youtube.com/watch?v=8Oa1_g0hEdA
 - [19] 유튜브 "AI 브라우저 무조건 써봐야 합니다. 신세계네요!" (기술노트with 알렉, 2026-10-19, 12분 45초) — 설명란: ego lite가 AI 에이전트를 위해 만든 무료 브라우저이고 브라우징 데이터는 기기에만 저장되며 macOS와 Windows에서 무료로 쓸 수 있다는 것 — https://www.youtube.com/watch?v=12VbiHcHxTY
-- [20] 유튜브 "드디어 모든 브라우저 자동화 고민을 해결해줄 구세주가 탄생했습니다." (코드팩토리, 2026-09-03, 13분 52초) — 설명란: 기존 로그인 세션에서 바로 작동하고 병렬 Spaces로 여러 브라우저 작업을 동시에 실행한다는 것 — https://www.youtube.com/watch?v=uy5XmijKOUA
+- [20] 유튜브 "드디어 모든 브라우저 자동화 고민을 해결해줄 구세주가 탄생했습니다." (코드팩토리, 2026-09-03, 13분 52초) — 설명란: ego (lite)가 AI 에이전트를 위해 만든 **무료 macOS용** 크로미엄 기반 브라우저라는 소개(이 시점 설명에는 Windows가 없다), 기존 로그인 세션에서 바로 작동하고 병렬 Spaces로 여러 브라우저 작업을 동시에 실행한다는 것 — https://www.youtube.com/watch?v=uy5XmijKOUA
 - [21] 유튜브 "크롬 말고 말로 시키는 AI 브라우저 Aside 완전정복 1부" (GPT PARK의 AI팩트, 2026-10-14, 19분 28초) — 설명란 구성: 말로 시키면 사이트를 직접 조작한다는 개념, 설치·로그인·크롬 데이터 가져오기·첫 지시, 새 탭(검색/Ask AI)·사이드 패널·채팅 목록·설정 메뉴, Free/Pro/Max와 크레딧 사용 내역 보는 법 — https://www.youtube.com/watch?v=ttWccqkvnRM
 - [22] 유튜브 "어사이드 Aside 왕초보 탈출하기" (윤자동, 2026-10-18, 13분 28초) — 설명란 구성: 내 ChatGPT·클로드 구독 연결, 사이드 패널, 작업 맡기기, 드래그 요약·번역, 화면 나누기, @로 탭 붙이기, 루틴 예약 — https://www.youtube.com/watch?v=P686evjMs6A
 - [23] Claude Code 공식 문서 "Connect to MCP servers" — `claude mcp list` 로 등록된 서버를 보고 세션 안에서 `/mcp` 로 MCP 패널을 연다는 것 — https://code.claude.com/docs/en/mcp-quickstart
-- [24] Claude Code 공식 문서 "Choose a permission mode" — bypassPermissions 가 권한 확인과 안전 검사를 꺼 도구 호출을 바로 실행한다는 것, `--dangerously-skip-permissions` 가 같은 모드라는 것, 컨테이너나 VM 같은 격리 환경에서만 쓰라는 것, 프롬프트 인젝션이나 의도치 않은 동작을 막아 주지 않는다는 것 — https://code.claude.com/docs/en/permission-modes
+- [24] Claude Code 공식 문서 "Choose a permission mode" — bypassPermissions 가 권한 확인과 안전 검사를 꺼 도구 호출을 바로 실행하되 거부 규칙은 모든 모드에서 남는다는 것, auto 모드는 확인 창 대신 분류기가 검토한다는 것, `--dangerously-skip-permissions` 가 같은 모드라는 것, 컨테이너나 VM 같은 격리 환경에서만 쓰라는 것, 프롬프트 인젝션이나 의도치 않은 동작을 막아 주지 않는다는 것 — https://code.claude.com/docs/en/permission-modes
 - [25] Claude Code 공식 문서 "Use Claude Code with Chrome" — Claude in Chrome 확장과 연동해 브라우저의 로그인 상태를 공유하고, 로그인 페이지나 CAPTCHA를 만나면 멈추고 사람에게 직접 처리하라고 넘긴다는 것 — https://code.claude.com/docs/en/chrome
 
 > **검증 한계를 밝힌다.** 이번 회차에는 `lite.ego.app`·`aside.com`·`docs.aside.com` 과 대부분의 리뷰 사이트를 열지 못했다. ego lite의 1차 사실은 GitHub 저장소 원문[1][2]에서 읽었다. Aside 공식 페이지[7][8][10][13]는 이 서가 이전 가이드에서 확인한 내용을 이번 검색 요약으로 다시 맞춰 보았다. 리뷰[3][4][5][6][9][12][15][16]는 검색 결과 요약으로만 읽었다. 4단계의 속도 표[17]는 한 사람이 한 기기에서 잰 값이며 영상 설명란 수치를 옮긴 것이다. 「하나만 고른다면」은 작성자의 판단이다. 두 도구 모두 지원 운영체제·요금·기능이 몇 달 사이에 바뀌었으니 이 가이드는 **2026년 11월 1일 기준**이다.
