@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 316" role="img" aria-label="2단계. 남이 쓴 머리말 코페르니쿠스 그림의 2단계다. 1539~1544 확대, 원고가 인쇄소로 가는 동안이라는 제목 아래 1539부터 1544까지 해마다 눈금이 있다. 위 줄 레티쿠스 · 오지안더에는 1539.5 레티쿠스가 오다, 1540 『첫 보고』(단치히), 1542.5 뉘른베르크, 인쇄를 맡다가 찬 푸른 점이고 1542 가을 오지안더가 넘겨받다, 1543 봄 서명 없는 「독자에게」가 빈 푸른 점이다. 아래 줄 코페르니쿠스에는 1541.6.9 마침내 내놓기로(레티쿠스의 편지), 1541.8.29 인쇄할 원고가 되다가 갈색 찬 점, 1542 삼각법 부분만 먼저가 빈 갈색 점, 1542 말 뇌졸중이 빈 검은 점, 1543.5.24 죽다가 검은 점이다. 아래에 단서 둘, 생애 막대는 1500 앞을 잘랐고 달만 아는 일은 그 달 첫머리, 해만 아는 일은 그 해 가운데에 두었다는 것과, 「가을」은 9월 말, 「말」은 12월 첫머리, 「봄」은 4월 첫머리에 두었고 이 자리는 이 노트가 정했다는 것이 있다. 범례는 갈색은 코페르니쿠스가 쓴 것, 푸른색은 남이 쓰거나 한 일, 검은 점은 죽은 날, 빈 점은 날짜가 어림인 것이다">
+  <title>남이 쓴 머리말 — 코페르니쿠스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .life{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .dead{fill:#221E18;} .dring{fill:#FFFDF7;stroke:#221E18;stroke-width:1.4;}
+    .guide{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;fill:none;}
+    .brace{stroke:#5B5245;stroke-width:1;fill:none;}
+    .zoom{stroke:#8A7F6E;stroke-width:0.8;stroke-dasharray:3 3;fill:none;}
+  </style>
+  <rect width="720" height="316" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">남이 쓴 머리말 — 코페르니쿠스</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 코페르니쿠스가 쓴 것, 푸른색은 남이 쓰거나 한 일, 검은 점은 죽은 날이다. 빈 점은 날짜가 어림인 것이다.</text>
+  <g transform="translate(0,-232)">
+  <text x="30" y="314" font-size="12">1539~1544 확대 — 원고가 인쇄소로 가는 동안</text>
+  <text x="30" y="334" font-size="10" class="blue">레티쿠스 · 오지안더</text>
+  <line x1="60" y1="360" x2="660" y2="360" class="row"/>
+  <circle cx="100" cy="360" r="4.5" class="cd"/>
+  <text x="94" y="348" font-size="10.5" class="blue">1539.5 레티쿠스가 오다</text>
+  <circle cx="240" cy="360" r="4.5" class="cd"/>
+  <text x="240" y="378" font-size="10.5" class="blue" text-anchor="middle">1540 『첫 보고』(단치히)</text>
+  <circle cx="460" cy="360" r="4.5" class="cd"/>
+  <text x="466" y="348" font-size="10.5" class="blue" text-anchor="end">1542.5 뉘른베르크, 인쇄를 맡다</text>
+  <circle cx="509" cy="360" r="4.5" class="cring"/>
+  <text x="509" y="378" font-size="10.5" class="blue" text-anchor="middle">1542 가을 오지안더가 넘겨받다</text>
+  <circle cx="570" cy="360" r="4.5" class="cring"/>
+  <text x="660" y="348" font-size="10.5" class="blue" text-anchor="end">1543 봄 서명 없는 「독자에게」</text>
+
+  <text x="30" y="404" font-size="10" class="sien">코페르니쿠스</text>
+  <line x1="60" y1="430" x2="660" y2="430" class="row"/>
+  <circle cx="352.67" cy="430" r="4.5" class="sd"/>
+  <text x="358" y="418" font-size="10.5" class="sien" text-anchor="end">1541.6.9 마침내 내놓기로(레티쿠스의 편지)</text>
+  <circle cx="379.33" cy="430" r="4.5" class="sd"/>
+  <text x="385" y="448" font-size="10.5" class="sien" text-anchor="end">1541.8.29 인쇄할 원고가 되다</text>
+  <circle cx="480" cy="430" r="4.5" class="sring"/>
+  <text x="480" y="418" font-size="10.5" class="sien" text-anchor="middle">1542 삼각법 부분만 먼저</text>
+  <circle cx="530" cy="430" r="4.5" class="dring"/>
+  <text x="530" y="448" font-size="10.5" text-anchor="middle">1542 말 뇌졸중</text>
+  <circle cx="587.01" cy="430" r="4.5" class="dead"/>
+  <text x="660" y="418" font-size="10.5" text-anchor="end">1543.5.24 죽다</text>
+
+  <line x1="60" y1="470" x2="660" y2="470" class="axis"/>
+  <line x1="60" y1="466" x2="60" y2="474" class="tick"/><text x="60" y="487" font-size="10" class="ax" text-anchor="middle">1539</text>
+  <line x1="180" y1="466" x2="180" y2="474" class="tick"/><text x="180" y="487" font-size="10" class="ax" text-anchor="middle">1540</text>
+  <line x1="300" y1="466" x2="300" y2="474" class="tick"/><text x="300" y="487" font-size="10" class="ax" text-anchor="middle">1541</text>
+  <line x1="420" y1="466" x2="420" y2="474" class="tick"/><text x="420" y="487" font-size="10" class="ax" text-anchor="middle">1542</text>
+  <line x1="540" y1="466" x2="540" y2="474" class="tick"/><text x="540" y="487" font-size="10" class="ax" text-anchor="middle">1543</text>
+  <line x1="660" y1="466" x2="660" y2="474" class="tick"/><text x="660" y="487" font-size="10" class="ax" text-anchor="middle">1544</text>
+  </g>
+  <text x="30" y="286" font-size="10" class="ax">⚠ 생애 막대는 1500 앞을 잘랐다. 달만 아는 일은 그 달 첫머리, 해만 아는 일은 그 해 가운데에 두었다.</text>
+  <text x="30" y="302" font-size="10" class="ax">⚠ 「가을」은 9월 말, 「말」은 12월 첫머리, 「봄」은 4월 첫머리에 두었다. 이 자리는 이 노트가 정했다.</text>
+</svg>

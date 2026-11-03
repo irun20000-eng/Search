@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" role="img" aria-label="같은 시간, 같은 넓이 케플러의 넓이 법칙이라는 표제 아래, 한 바퀴를 같은 시간 열두 칸으로 나눈 자리에 푸른 점을 찍고 태양(주황 점, 초점)에서 그은 부채꼴을 차례로 채웠다는 설명이 있다. 크게 납작한 타원 위에 푸른 점 열두 개가 있고, 오른쪽 초점의 주황 점에서 이웃한 두 점으로 부채꼴 열두 개가 짙고 옅은 빛으로 번갈아 칠해진다. 오른쪽(태양에 가까운 쪽)의 부채꼴은 짧고 넓으며 호가 길고, 왼쪽(먼 쪽)의 부채꼴은 길고 가늘며 호가 짧다. 그림 아래에 태양에 가까운 오른쪽에서는 같은 시간에 호가 길고, 먼 왼쪽에서는 짧다, 넓이는 같다라고 적혀 있다. 맨 아래 단서 셋, 이심률 0.6 은 보이게 하려고 크게 잡았고 점의 자리는 케플러 방정식 M = E − e sin E 를 이 노트가 풀어 셈했다(이 노트의 셈)는 것, 열두 부채꼴의 넓이는 이 노트가 수치로 셈해 모두 같음을 확인했고 법칙의 내용은 본문의 출처를 따른다는 것, 부채꼴은 차례로 나타나지만 움직임을 끄거나 인쇄하면 열두 칸이 처음부터 모두 보인다는 것이 있다">
+  <title>같은 시간, 같은 넓이 — 케플러의 넓이 법칙</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .ax{fill:#8A7F6E;} .sien{fill:#9C5A2C;}
+    .orbit{fill:none;stroke:#C9BBA6;stroke-width:1.2;}
+    .s{stroke:#9C5A2C;stroke-width:0.8;} .s0{fill:#E9D5BF;} .s1{fill:#F4EADC;}
+    .cd{fill:#3A5C77;} .sun{fill:#C8892F;}
+    @keyframes appear{from{opacity:0}to{opacity:1}}
+    .s{animation:appear .5s ease-out both;}
+    .a0{animation-delay:0.0s} .a1{animation-delay:0.5s} .a2{animation-delay:1.0s} .a3{animation-delay:1.5s} .a4{animation-delay:2.0s} .a5{animation-delay:2.5s} .a6{animation-delay:3.0s} .a7{animation-delay:3.5s} .a8{animation-delay:4.0s} .a9{animation-delay:4.5s} .a10{animation-delay:5.0s} .a11{animation-delay:5.5s}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+    @media print{*{animation:none!important}}
+  </style>
+  <rect width="720" height="640" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">같은 시간, 같은 넓이 — 케플러의 넓이 법칙</text>
+  <text x="30" y="50" font-size="11" class="dim">한 바퀴를 같은 시간 열두 칸으로 나눈 자리에 푸른 점을 찍고, 태양(주황 점, 초점)에서 그은 부채꼴을 차례로 채웠다.</text>
+  <ellipse cx="360" cy="300" rx="250" ry="200.00" class="orbit"/>
+  <path d="M510,300 L610,300 A250,200 0 0,0 486.23,127.37 Z" class="s s0 a0"/>
+  <path d="M510,300 L486.23,127.37 A250,200 0 0,0 341.34,100.56 Z" class="s s1 a1"/>
+  <path d="M510,300 L341.34,100.56 A250,200 0 0,0 235.66,126.49 Z" class="s s0 a2"/>
+  <path d="M510,300 L235.66,126.49 A250,200 0 0,0 164.53,175.31 Z" class="s s1 a3"/>
+  <path d="M510,300 L164.53,175.31 A250,200 0 0,0 123.45,235.29 Z" class="s s0 a4"/>
+  <path d="M510,300 L123.45,235.29 A250,200 0 0,0 110,300 Z" class="s s1 a5"/>
+  <path d="M510,300 L110,300 A250,200 0 0,0 123.45,364.71 Z" class="s s0 a6"/>
+  <path d="M510,300 L123.45,364.71 A250,200 0 0,0 164.53,424.69 Z" class="s s1 a7"/>
+  <path d="M510,300 L164.53,424.69 A250,200 0 0,0 235.66,473.51 Z" class="s s0 a8"/>
+  <path d="M510,300 L235.66,473.51 A250,200 0 0,0 341.34,499.44 Z" class="s s1 a9"/>
+  <path d="M510,300 L341.34,499.44 A250,200 0 0,0 486.23,472.63 Z" class="s s0 a10"/>
+  <path d="M510,300 L486.23,472.63 A250,200 0 0,0 610,300 Z" class="s s1 a11"/>
+  <circle cx="610" cy="300" r="3.5" class="cd"/>
+  <circle cx="486.23" cy="127.37" r="3.5" class="cd"/>
+  <circle cx="341.34" cy="100.56" r="3.5" class="cd"/>
+  <circle cx="235.66" cy="126.49" r="3.5" class="cd"/>
+  <circle cx="164.53" cy="175.31" r="3.5" class="cd"/>
+  <circle cx="123.45" cy="235.29" r="3.5" class="cd"/>
+  <circle cx="110" cy="300" r="3.5" class="cd"/>
+  <circle cx="123.45" cy="364.71" r="3.5" class="cd"/>
+  <circle cx="164.53" cy="424.69" r="3.5" class="cd"/>
+  <circle cx="235.66" cy="473.51" r="3.5" class="cd"/>
+  <circle cx="341.34" cy="499.44" r="3.5" class="cd"/>
+  <circle cx="486.23" cy="472.63" r="3.5" class="cd"/>
+  <circle cx="510" cy="300" r="7" class="sun"/>
+  <text x="30" y="530" font-size="11" class="dim">태양에 가까운 오른쪽에서는 같은 시간에 호가 길고, 먼 왼쪽에서는 짧다 — 넓이는 같다.</text>
+  <text x="30" y="558" font-size="10" class="ax">⚠ 이심률 0.6 은 보이게 하려고 크게 잡았다. 점의 자리는 케플러 방정식</text>
+  <text x="30" y="574" font-size="10" class="ax">　 M = E − e sin E 를 이 노트가 풀어 셈했다(이 노트의 셈).</text>
+  <text x="30" y="590" font-size="10" class="ax">⚠ 열두 부채꼴의 넓이는 이 노트가 수치로 셈해 모두 같음을 확인했다(이 노트의 셈). 법칙의 내용은 본문의 출처를 따른다.</text>
+  <text x="30" y="606" font-size="10" class="ax">⚠ 부채꼴은 차례로 나타나지만, 움직임을 끄거나 인쇄하면 열두 칸이 처음부터 모두 보인다.</text>
+</svg>
