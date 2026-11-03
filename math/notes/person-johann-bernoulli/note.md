@@ -23,7 +23,7 @@
 
 이미지:
   - 파일: assets/portraits/johann-bernoulli-huber-c1740.webp
-    설명: 흰 가발을 쓰고 붉은 갈색 외투를 입은 나이 든 남자가 종이와 지구의를 들고 있다. 오른쪽 위에 JOHANNES BERNOULLI 로 시작하는 글자가 있다
+    설명: 흰 가발을 쓰고 붉은 갈색 외투를 입은 나이 든 남자가 종이와 지구의를 들고 있다. 왼쪽 위에 JOHANNES BERNOULLI 로 시작하는 글자가 있다
     출처: 위키미디어 커먼즈 File:Johann Bernoulli2.jpg (요한 루돌프 후버, 1740년 무렵). 장변 1200px 이하 WebP 로 줄였다
     라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-art-old-100-expired)
   - 파일: assets/figures/johann-bernoulli-both-sides.svg
@@ -67,7 +67,7 @@
 
 ---
 
-![흰 가발을 쓰고 붉은 갈색 외투를 입은 나이 든 남자가 종이와 지구의를 들고 있다. 오른쪽 위에 JOHANNES BERNOULLI 로 시작하는 글자가 있다](../../assets/portraits/johann-bernoulli-huber-c1740.webp)
+![흰 가발을 쓰고 붉은 갈색 외투를 입은 나이 든 남자가 종이와 지구의를 들고 있다. 왼쪽 위에 JOHANNES BERNOULLI 로 시작하는 글자가 있다](../../assets/portraits/johann-bernoulli-huber-c1740.webp)
 
 위 초상은 후버의 1740년 무렵 초상이다[8].
 

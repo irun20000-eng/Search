@@ -21,7 +21,7 @@
 
 이미지:
   - 파일: assets/portraits/napier-1616.webp
-    설명: 어두운 방에서 흰 주름 깃을 단 검은 옷의 수염 난 남자가 의자에 앉아 왼손을 책 위에 얹고 있다. 왼쪽에 지구의가 있고 위쪽에 John Napier of Merchiston, 1616, 문장과 J N 글자가 적혀 있다
+    설명: 어두운 방에서 흰 주름 깃을 단 검은 옷의 수염 난 남자가 의자에 앉아 오른손을 책 위에 얹고 있다. 왼쪽에 지구의가 있고 위쪽에 John Napier of Merchiston, 1616, 문장과 J N 글자가 적혀 있다
     출처: 위키미디어 커먼즈 File:John Napier of Merchiston, 1616.jpg (작가 미상, 1616년, 스코틀랜드 국립미술관 소장). 장변 1200px 이하 WebP 로 줄였다
     라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-Art|PD-old-100-expired)
   - 파일: assets/figures/napier-two-moving-points.svg
@@ -75,7 +75,7 @@
 
 # 존 네이피어
 
-![어두운 방에서 흰 주름 깃을 단 검은 옷의 수염 난 남자가 의자에 앉아 왼손을 책 위에 얹고 있다. 왼쪽에 지구의가 있고 위쪽에 John Napier of Merchiston, 1616, 문장과 J N 글자가 적혀 있다](../../assets/portraits/napier-1616.webp)
+![어두운 방에서 흰 주름 깃을 단 검은 옷의 수염 난 남자가 의자에 앉아 오른손을 책 위에 얹고 있다. 왼쪽에 지구의가 있고 위쪽에 John Napier of Merchiston, 1616, 문장과 J N 글자가 적혀 있다](../../assets/portraits/napier-1616.webp)
 
 위 초상은 작가 미상의 1616년 초상(스코틀랜드 국립미술관)이다[10].
 
