@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" role="img" aria-label="그림 위쪽에 「날짜는 책 밖에서 온다 기원전 2세기」라는 표제가 있고 그 아래에 갈색 띠는 「무렵」으로 어림한 생애, 푸른색은 책 바깥의 증거(관측 기록 · 무덤 · 난파선)가 정한 날짜라고 적혀 있다. 가로축은 BC 250부터 AD 100까지 쉰 해마다 눈금이 있고, 기원전 200~101년 자리에 기원전 2세기라고 적힌 옅은 칸이 세로로 깔려 있다. 줄이 일곱 개 있다. 첫 줄 아폴로니오스에는 기원전 190년 자리에 빈 갈색 점과 기원전 190 무렵 죽다 (MacTutor 「무렵」)라는 글이 있다. 둘째 줄 제노도로스 · 힙시클레스에는 갈색 띠 둘이 위아래로 있고 위 제노도로스 200~140 · 아래 힙시클레스 190~120, 둘 다 「무렵」이라고 적혀 있다. 셋째 줄 히파르코스에는 옅은 푸른 띠 위에 진한 푸른 띠가 겹쳐 있고 기원전 147~127 『알마게스트』에 인용된 그의 관측이라고 적혀 있다. 넷째 줄 『산수서』 장자산 247호 무덤에는 기원전 202~186 자리에 진한 푸른 띠가 있고 기원전 202~186 무덤의 연대 · 1983~84년 발굴이라고 적혀 있다. 다섯째 줄 안티키테라 기계에는 205년 빈 점, 150~100년 갈색 띠, 87년 빈 점, 70~60년 진한 푸른 띠가 있고 제작 205 · 150~100 · 87 / 난파 70~60 이라고 적혀 있다. 여섯째 줄 『구장산술』에는 기원전 100~1년과 기원후 1~100년의 갈색 띠 둘이 엇갈려 있고 완성 기원전 1세기경(수학백과) · 마지막 층 기원후 1세기(위키백과)라고 적혀 있다. 일곱째 줄 바깥 사건에는 기원전 146년 자리에 푸른 점과 기원전 146 로마가 코린토스를 무너뜨리다라는 글이 있다. 맨 아래에 단서가 넷 있다. 첫째, 「무렵」이거나 한 설로만 전하는 해는 점을 비우고 범위로 아는 해는 띠로 그렸으며 띠의 끝은 자료가 적은 해 그대로다. 둘째, 히파르코스의 옅은 띠(162~128)는 그에게서 온 관측 계열로 앞쪽을 그가 직접 했는지 분명하지 않다. 셋째, 『구장산술』의 앞 층(기원전 10~2세기)은 축 밖이라 그리지 않았고 기원전 1년 다음은 기원후 1년이다. 넷째, 바탕의 옅은 칸이 기원전 200~101년이고 이 칸과 띠의 위치는 이 노트가 정했다">
+  <title>날짜는 책 밖에서 온다 — 기원전 2세기</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .est{fill:#F4EADC;stroke:#9C5A2C;stroke-width:1;}
+    .ext{fill:#3A5C77;}
+    .extl{fill:#DCE5EC;stroke:#3A5C77;stroke-width:1;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .cd{fill:#3A5C77;}
+    .band{fill:#F7F1E6;}
+  </style>
+  <rect width="720" height="600" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">날짜는 책 밖에서 온다 — 기원전 2세기</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색 띠는 「무렵」으로 어림한 생애, 푸른색은 책 바깥의 증거(관측 기록 · 무덤 · 난파선)가 정한 날짜다.</text>
+  <rect x="158.4" y="70" width="162.36" height="400" class="band"/>
+  <text x="240.4" y="84" font-size="10" class="ax" text-anchor="middle">기원전 2세기</text>
+
+  <text x="30" y="102" font-size="10" class="dim">아폴로니오스</text><line x1="60" y1="118" x2="650" y2="118" class="row"/>
+  <circle cx="174.8" cy="118" r="4.5" class="sring"/>
+  <text x="182.8" y="108" font-size="10.5" class="sien">기원전 190 무렵 죽다 (MacTutor 「무렵」)</text>
+
+  <text x="30" y="154" font-size="10" class="dim">제노도로스 · 힙시클레스</text><line x1="60" y1="170" x2="650" y2="170" class="row"/>
+  <rect x="158.4" y="160" width="98.40" height="8" class="est"/><rect x="174.8" y="172" width="114.80" height="8" class="est"/>
+  <text x="297.6" y="160" font-size="10.5" class="sien">위 제노도로스 200~140 · 아래 힙시클레스 190~120, 둘 다 「무렵」</text>
+
+  <text x="30" y="206" font-size="10" class="dim">히파르코스</text><line x1="60" y1="222" x2="650" y2="222" class="row"/>
+  <rect x="220.72" y="218" width="55.76" height="8" class="extl"/><rect x="245.32" y="218" width="32.80" height="8" class="ext"/>
+  <text x="286.12" y="212" font-size="10.5" class="blue">기원전 147~127 『알마게스트』에 인용된 그의 관측</text>
+
+  <text x="30" y="258" font-size="10" class="dim">『산수서』 — 장자산 247호 무덤</text><line x1="60" y1="274" x2="650" y2="274" class="row"/>
+  <rect x="155.12" y="270" width="26.24" height="8" class="ext"/>
+  <text x="189.36" y="264" font-size="10.5" class="blue">기원전 202~186 무덤의 연대 · 1983~84년 발굴</text>
+
+  <text x="30" y="310" font-size="10" class="dim">안티키테라 기계</text><line x1="60" y1="326" x2="650" y2="326" class="row"/>
+  <circle cx="150.2" cy="326" r="4" class="sring"/><rect x="240.4" y="322" width="82.00" height="8" class="est"/><circle cx="343.72" cy="326" r="4" class="sring"/><rect x="371.6" y="322" width="16.40" height="8" class="ext"/>
+  <text x="396" y="316" font-size="10.5" class="blue">제작 205 · 150~100 · 87 / 난파 70~60</text>
+
+  <text x="30" y="362" font-size="10" class="dim">『구장산술』</text><line x1="60" y1="378" x2="650" y2="378" class="row"/>
+  <rect x="322.4" y="368" width="162.36" height="8" class="est"/><rect x="488.04" y="380" width="162.36" height="8" class="est"/>
+  <text x="316.4" y="406" font-size="10.5" class="sien">완성 기원전 1세기경(수학백과) · 마지막 층 기원후 1세기(위키백과)</text>
+
+  <text x="30" y="414" font-size="10" class="dim">바깥 사건</text><line x1="60" y1="430" x2="650" y2="430" class="row"/>
+  <circle cx="246.96" cy="430" r="4" class="cd"/>
+  <text x="254.96" y="420" font-size="10.5" class="blue">기원전 146 로마가 코린토스를 무너뜨리다</text>
+
+  <line x1="60" y1="480" x2="650" y2="480" class="axis"/>
+  <line x1="76.4" y1="476" x2="76.4" y2="484" class="tick"/><text x="76.4" y="497" font-size="10" class="ax" text-anchor="middle">BC 250</text>
+  <line x1="158.4" y1="476" x2="158.4" y2="484" class="tick"/><text x="158.4" y="497" font-size="10" class="ax" text-anchor="middle">BC 200</text>
+  <line x1="240.4" y1="476" x2="240.4" y2="484" class="tick"/><text x="240.4" y="497" font-size="10" class="ax" text-anchor="middle">BC 150</text>
+  <line x1="322.4" y1="476" x2="322.4" y2="484" class="tick"/><text x="322.4" y="497" font-size="10" class="ax" text-anchor="middle">BC 100</text>
+  <line x1="404.4" y1="476" x2="404.4" y2="484" class="tick"/><text x="404.4" y="497" font-size="10" class="ax" text-anchor="middle">BC 50</text>
+  <line x1="488.04" y1="476" x2="488.04" y2="484" class="tick"/><text x="488.04" y="497" font-size="10" class="ax" text-anchor="middle">AD 1</text>
+  <line x1="568.4" y1="476" x2="568.4" y2="484" class="tick"/><text x="568.4" y="497" font-size="10" class="ax" text-anchor="middle">AD 50</text>
+  <line x1="650.4" y1="476" x2="650.4" y2="484" class="tick"/><text x="650.4" y="497" font-size="10" class="ax" text-anchor="middle">AD 100</text>
+
+  <text x="30" y="530" font-size="10" class="ax">⚠ 「무렵」이거나 한 설로만 전하는 해는 점을 비우고, 범위로 아는 해는 띠로 그렸다. 띠의 끝은 자료가 적은 해 그대로다.</text>
+  <text x="30" y="546" font-size="10" class="ax">⚠ 히파르코스의 옅은 띠(162~128)는 그에게서 온 관측 계열로, 앞쪽을 그가 직접 했는지 분명하지 않다.</text>
+  <text x="30" y="562" font-size="10" class="ax">⚠ 『구장산술』의 앞 층(기원전 10~2세기)은 축 밖이라 그리지 않았다. 기원전 1년 다음은 기원후 1년이다.</text>
+  <text x="30" y="578" font-size="10" class="ax">⚠ 바탕의 옅은 칸이 기원전 200~101년이다. 이 칸과 띠의 위치는 이 노트가 정했다.</text>
+</svg>
