@@ -32,6 +32,10 @@
 기여개념: [concept-integration]
 
 이미지:
+  - 파일: assets/portraits/wallis-kneller-1701.webp
+    설명: 둥근 테 안에 검은 모자를 쓴 흰머리 노인이 반신으로 있다. 붉은 겉옷 아래 검은 옷과 흰 띠 깃을 달았고 정면을 본다. 글자는 없다
+    출처: 위키미디어 커먼즈 File:John Wallis by Sir Godfrey Kneller, Bt.jpg (고드프리 넬러를 따른 그림(커먼즈 표기 「After Godfrey Kneller」), 1701년, 영국 국립초상화미술관). 장변 1200px 이하 WebP 로 줄였다
+    라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-Art · PD-old)
   - 파일: assets/figures/wallis-interpolation-gap.svg
     설명: 지수 n 의 눈금 — 정수 자리는 풀려 있고 반정수 자리는 비어 있다. 그가 원한 n = 1/2 이 그 빈칸에 있었다
     출처: 직접 제작
@@ -102,9 +106,17 @@
     제목: MacTutor, John Wallis (같은 항목) — **1657년 그가 대학 문서보관인(keeper of the University archives)에 임명됐고 그 선출에 상당한 논란이 있었다**는 것, 아우브리가 『저명인 열전』에 **"1657년 그는 (부당한 수단으로) 옥스퍼드 대학의 문서보관인 자리에 스스로를 앉혔다 … 사바일 교수가 다른 자리를 겸하는 것은 헨리 사바일 경의 규정에 그보다 더 정면으로 어긋날 수 없으며, 그리한다면 그는 명백한 위증이다. 그런데도 박사는 그 다른 자리를 그대로 지키도록 허락받았다"** 고 적은 것, **월리스의 반대자들이 그가 크롬웰을 지지했기 때문에 그 자리를 얻었다고 믿었다**는 것, 그럼에도 **그가 사바일 석좌에서와 마찬가지로 직무를 대단히 잘 수행해 그 자리를 충분히 받을 만했다**는 것
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Wallis/
     유형: 2차
+  - 번호: 17
+    제목: 위키미디어 커먼즈, File:John Wallis by Sir Godfrey Kneller, Bt.jpg — 고드프리 넬러를 따른 그림(커먼즈 표기 「After Godfrey Kneller」), 1701년, 영국 국립초상화미술관, 퍼블릭 도메인이라는 것
+    URL: https://commons.wikimedia.org/wiki/File:John_Wallis_by_Sir_Godfrey_Kneller%2C_Bt.jpg
+    유형: 2차
 ---
 
 # 존 월리스
+
+![둥근 테 안에 검은 모자를 쓴 흰머리 노인이 반신으로 있다. 붉은 겉옷 아래 검은 옷과 흰 띠 깃을 달았고 정면을 본다. 글자는 없다](../../assets/portraits/wallis-kneller-1701.webp)
+
+위 초상은 넬러를 따른 1701년 초상(영국 국립초상화미술관)이다[17].
 
 ## TL;DR
 
