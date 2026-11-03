@@ -69,6 +69,37 @@ python3 -c "import json,collections;d=json.load(open('link-index.json',encoding=
 
 ## 2. 열려 있는 것
 
+### 2-0. 카드뉴스 「이해편 읽기」 링크가 일곱 편에서 빠져 있다 (2026-11-03 발견)
+
+개념노트는 멀쩡히 있는데 **카드뉴스 카드에서 건너가는 길만 없는 편이 일곱**이다.
+`cardnews/cardnews.yaml` 의 해당 편에 `study: <슬러그>` 가 비어 있어서다.
+
+| 편 | 있는 개념노트 |
+|---|---|
+| 일머리 EP5 파킨슨의 법칙 | `parkinsons-law` |
+| 일머리 EP6 브룩스의 법칙 | `brooks-law` |
+| 일머리 EP7 콘웨이의 법칙 | `conways-law` |
+| 숫자 EP6 퍼센트와 퍼센트포인트 | `percentage-point` |
+| 숫자 EP7 여론조사의 오차범위 | `margin-of-error` |
+| 발견 EP5 지프의 법칙 | `zipfs-law` |
+| 발견 EP6 쾨니히스베르크의 다리 | `seven-bridges` |
+
+왜 생겼나 — `tools/ingest_cardnews.py` 에는 `concept.get(folder)` 폴백이 있는데
+**`cardnews-render.yml` 이 실제로 돌리는 것은 폴백이 없는
+`tools/ingest_cardnews_from_studio.py`** 다. 그래서 손으로 `study:` 를 적은 세 편
+(72의 법칙·몬티 홀·생일 문제)만 링크가 붙었다. `cardnews-sync` 의 끊긴 링크 검사는
+**`study` 가 있는데 슬러그가 없는 경우**만 보므로 「아예 없는 것」을 못 본다.
+
+**이 회차(일머리 EP8 암달의 법칙)는 `study: amdahls-law` 를 넣어 발행했고, 위 일곱 편은
+손대지 않았다** — 한 회차의 PR 에 일곱 편을 섞지 않는 쪽을 골랐다.
+
+고칠 때 할 일 둘.
+1. 위 일곱 편에 `study:` 를 채운다(데이터만 고치는 일이다).
+2. **게이트로 올린다** — 개념노트 프론트매터의 `카드뉴스` 표기와 `cardnews.yaml` 의
+   `study` 를 맞대는 검사를 만들어 `gates.yml` 에 등재한다. 「재발 방지는 문서가 아니라
+   게이트에 적는다」(LESSONS 2026-09-02). 세는 검사가 아니라 **대조** 검사라야 한다.
+
+
 ### 2-1. 머지 완료 브랜치 정리 — **대체로 끝났다** (2026-09-01 점검)
 
 > **2026-09-01 — 사용자가 주말에 조치했다. 지목된 14개 중 13개가 삭제됐다.**
