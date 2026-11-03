@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「어떤 말로 남았나 2세기의 책들」이라는 표제가 있고 그 아래에 찬 점은 그 말로 된 판이 남은 것, 빈 점은 사라진 것, 반쯤 찬 점은 일부만 남은 것이며, 줄표는 그 말로 옮겨진 적이 없다는 뜻이 아니라 이 노트의 자료에 없다는 뜻이라고 적혀 있다. 그림은 네 줄 세 칸의 표다. 칸 제목은 왼쪽부터 원문, 아랍어, 라틴어이다. 첫 줄 『구면론』 메넬라오스(그리스어, 100 무렵)는 원문이 빈 점에 사라짐, 아랍어가 찬 점에 이 판만 남음, 라틴어가 찬 점에 아랍어 · 히브리어에서라고 적혀 있다. 둘째 줄 『알마게스트』 프톨레마이오스(그리스어, 150 무렵)는 원문이 찬 점에 남음, 아랍어가 찬 점에 800 무렵 · 9세기, 라틴어가 찬 점에 1175 아랍어에서라고 적혀 있다. 셋째 줄 『산술 입문』 니코마코스(그리스어, 니코마코스 60~120 무렵)는 원문이 찬 점에 남음, 아랍어가 찬 점에 타비트(901 죽음), 라틴어가 찬 점에 보에티우스의 의역이라고 적혀 있다. 넷째 줄 『영헌』 장형(한문, 장형 78~139)은 원문이 반쯤 찬 점에 앞부분만 남음이고 아랍어와 라틴어 칸은 줄표다. 표 아래에 같은 세기 중국, 105년 채륜이 종이 만드는 법을 크게 고쳤다(위키백과는 「발명이 아니라 개량」)라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 칸의 해는 자료가 적은 해이고 『알마게스트』의 아랍어 · 라틴어는 이 서가의 프톨레마이오스 노트가 근거다. 둘째, 『구면론』의 라틴어는 아랍어 · 히브리어 판에서 옮긴 것이고(핼리) 지구과학사전은 히브리어 · 라틴어로도 전한다고 적는다. 셋째, 장형의 「앞부분만 남음」은 별을 적은 『영헌』에 대한 MacTutor 의 말이고 칸을 고르고 점을 찍은 것은 이 노트다">
+  <title>어떤 말로 남았나 — 2세기의 책들</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">어떤 말로 남았나 — 2세기의 책들</text>
+  <text x="30" y="50" font-size="11" class="dim">찬 점은 그 말로 된 판이 남은 것, 빈 점은 사라진 것, 반쯤 찬 점은 일부만 남은 것이다.</text>
+  <text x="30" y="66" font-size="11" class="dim">줄표는 그 말로 옮겨진 적이 없다는 뜻이 아니라 이 노트의 자료에 없다는 뜻이다.</text>
+  <text x="300" y="96" font-size="12" text-anchor="middle">원문</text>
+  <text x="420" y="96" font-size="12" text-anchor="middle">아랍어</text>
+  <text x="540" y="96" font-size="12" text-anchor="middle">라틴어</text>
+  <line x1="30" y1="106" x2="660" y2="106" class="axis"/>
+  <text x="30" y="136" font-size="11.5" class="sien">『구면론』 — 메넬라오스</text>
+  <text x="30" y="154" font-size="10" class="dim">그리스어, 100 무렵</text>
+  <circle cx="300" cy="140" r="6" class="cring"/>
+  <text x="300" y="164" font-size="10" class="blue" text-anchor="middle">사라짐</text>
+  <circle cx="420" cy="140" r="6" class="cd"/>
+  <text x="420" y="164" font-size="10" class="blue" text-anchor="middle">이 판만 남음</text>
+  <circle cx="540" cy="140" r="6" class="cd"/>
+  <text x="540" y="164" font-size="10" class="blue" text-anchor="middle">아랍어 · 히브리어에서</text>
+  <line x1="30" y1="178" x2="660" y2="178" class="row"/>
+  <text x="30" y="206" font-size="11.5" class="sien">『알마게스트』 — 프톨레마이오스</text>
+  <text x="30" y="224" font-size="10" class="dim">그리스어, 150 무렵</text>
+  <circle cx="300" cy="210" r="6" class="cd"/>
+  <text x="300" y="234" font-size="10" class="blue" text-anchor="middle">남음</text>
+  <circle cx="420" cy="210" r="6" class="cd"/>
+  <text x="420" y="234" font-size="10" class="blue" text-anchor="middle">800 무렵 · 9세기</text>
+  <circle cx="540" cy="210" r="6" class="cd"/>
+  <text x="540" y="234" font-size="10" class="blue" text-anchor="middle">1175 아랍어에서</text>
+  <line x1="30" y1="248" x2="660" y2="248" class="row"/>
+  <text x="30" y="276" font-size="11.5" class="sien">『산술 입문』 — 니코마코스</text>
+  <text x="30" y="294" font-size="10" class="dim">그리스어, 니코마코스 60~120 무렵</text>
+  <circle cx="300" cy="280" r="6" class="cd"/>
+  <text x="300" y="304" font-size="10" class="blue" text-anchor="middle">남음</text>
+  <circle cx="420" cy="280" r="6" class="cd"/>
+  <text x="420" y="304" font-size="10" class="blue" text-anchor="middle">타비트(901 죽음)</text>
+  <circle cx="540" cy="280" r="6" class="cd"/>
+  <text x="540" y="304" font-size="10" class="blue" text-anchor="middle">보에티우스의 의역</text>
+  <line x1="30" y1="318" x2="660" y2="318" class="row"/>
+  <text x="30" y="346" font-size="11.5" class="sien">『영헌』 — 장형</text>
+  <text x="30" y="364" font-size="10" class="dim">한문, 장형 78~139</text>
+  <circle cx="300" cy="350" r="6" class="cring"/><path d="M300,344 A6,6 0 0,0 300,356 Z" class="cd"/>
+  <text x="300" y="374" font-size="10" class="blue" text-anchor="middle">앞부분만 남음</text>
+  <line x1="414" y1="350" x2="426" y2="350" class="axis"/>
+  <line x1="534" y1="350" x2="546" y2="350" class="axis"/>
+  <line x1="30" y1="388" x2="660" y2="388" class="row"/>
+
+  <text x="30" y="430" font-size="10.5" class="dim">같은 세기 중국 — 105년 채륜이 종이 만드는 법을 크게 고쳤다(위키백과는 「발명이 아니라 개량」).</text>
+  <text x="30" y="462" font-size="10" class="ax">⚠ 칸의 해는 자료가 적은 해다. 『알마게스트』의 아랍어 · 라틴어는 이 서가의 프톨레마이오스 노트가 근거다.</text>
+  <text x="30" y="478" font-size="10" class="ax">⚠ 『구면론』의 라틴어는 아랍어 · 히브리어 판에서 옮긴 것이고(핼리), 지구과학사전은 히브리어 · 라틴어로도 전한다고 적는다.</text>
+  <text x="30" y="494" font-size="10" class="ax">⚠ 장형의 「앞부분만 남음」은 별을 적은 『영헌』에 대한 MacTutor 의 말이다. 칸을 고르고 점을 찍은 것은 이 노트다.</text>
+</svg>
