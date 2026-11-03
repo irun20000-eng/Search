@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="그림 위쪽에 「그의 셈, 남의 이름 알카시」라는 표제가 있고 그 아래에 갈색은 알카시, 회색은 그보다 앞선 사람, 푸른색은 그 뒤 유럽에서 이름이 붙거나 기록을 넘은 때라고 적혀 있다. 가로축에 900부터 1900까지 200년마다 눈금이 있다. 줄이 넷 있다. 첫 줄 십진소수에는 950년 무렵 회색 점에 10세기 우클리디시, 1427년 갈색 점에 1427 『산술의 열쇠』, 1585년 푸른 점에 1585 스테빈, 1948년 빈 푸른 점에 1948 루키가 다시 알림이라고 적혀 있다. 둘째 줄 원주율에는 1424년 갈색 점에 1424 소수 16자리, 1596년 푸른 점에 1596 판 쾰런 20자리가 적혀 있고, 줄 오른쪽 아래에 국내 초등수학 개념사전은 이 사람을 적지 않는다라고 적혀 있다. 셋째 줄 코사인법칙에는 왼쪽 끝에 ← 유클리드 『원론』 2권 12 · 13, 1250년 무렵 회색 점에 투시, 1427년 갈색 점에 1427 한 식으로, 1464년 푸른 점에 1464 레기오몬타누스가 있고 오른쪽 끝에 점 없이 프랑스 「알카시 정리」라고 적혀 있다. 넷째 줄 sin 1° 에는 1429년 갈색 점에 1429 죽음, 마지막 책, 미완이었을 수도라고 적혀 있고 오른쪽 아래에 19~20세기에야 유럽이 연구라고 적혀 있다. 맨 아래에 단서가 넷 있다. 첫째, 「10세기」 · 「투시」 · 「19~20세기」는 세기만 아는 일이라 그 세기 가운데쯤에 두었고 프랑스 이름은 해가 없어 점을 찍지 않았다. 둘째, sin 1° 책의 해는 자료에 없어 그의 죽음(1429)에 점을 두고 「마지막 책」이라는 MacTutor 의 말을 붙였다. 셋째, 알사마왈(MacTutor 가 앞선 사람으로 드는 이름)은 해가 자료에 없어 그리지 않았다. 넷째, 어느 점이 「처음」인지는 이 그림이 정하지 않고 자리와 색은 이 노트가 골랐다">
+  <title>그의 셈, 남의 이름 — 알카시</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;} .gd{fill:#8A7F6E;}
+  </style>
+  <rect width="720" height="560" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">그의 셈, 남의 이름 — 알카시</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 알카시, 회색은 그보다 앞선 사람, 푸른색은 그 뒤 유럽에서 이름이 붙거나 기록을 넘은 때다.</text>
+
+  <text x="30" y="106" font-size="11">십진소수</text>
+  <line x1="60" y1="130" x2="650" y2="130" class="row"/>
+  <circle cx="86.8" cy="130" r="4" class="gd"/><circle cx="342.47" cy="130" r="4.5" class="sd"/><circle cx="427.16" cy="130" r="4.5" class="cd"/><circle cx="621.73" cy="130" r="4.5" class="cring"/>
+  <text x="86.8" y="150" font-size="10" class="ax" text-anchor="middle">10세기 우클리디시</text>
+  <text x="342.47" y="120" font-size="10.5" class="sien" text-anchor="middle">1427 『산술의 열쇠』</text>
+  <text x="427.16" y="150" font-size="10.5" class="blue" text-anchor="middle">1585 스테빈</text>
+  <text x="621.73" y="120" font-size="10.5" class="blue" text-anchor="end">1948 루키가 다시 알림</text>
+
+  <text x="30" y="186" font-size="11">원주율</text>
+  <line x1="60" y1="210" x2="650" y2="210" class="row"/>
+  <circle cx="340.86" cy="210" r="4.5" class="sd"/><circle cx="433.06" cy="210" r="4.5" class="cd"/>
+  <text x="340.86" y="200" font-size="10.5" class="sien" text-anchor="middle">1424 소수 16자리</text>
+  <text x="433.06" y="200" font-size="10.5" class="blue" text-anchor="start">1596 판 쾰런 20자리</text>
+  <text x="650" y="230" font-size="10" class="dim" text-anchor="end">국내 초등수학 개념사전은 이 사람을 적지 않는다</text>
+
+  <text x="30" y="266" font-size="11">코사인법칙</text>
+  <line x1="60" y1="290" x2="650" y2="290" class="row"/>
+  <circle cx="247.6" cy="290" r="4" class="gd"/><circle cx="342.47" cy="290" r="4.5" class="sd"/><circle cx="362.3" cy="290" r="4.5" class="cd"/>
+  <text x="60" y="310" font-size="10" class="ax">← 유클리드 『원론』 2권 12 · 13</text>
+  <text x="247.6" y="280" font-size="10" class="ax" text-anchor="middle">투시</text>
+  <text x="342.47" y="310" font-size="10.5" class="sien" text-anchor="middle">1427 한 식으로</text>
+  <text x="370.3" y="280" font-size="10.5" class="blue">1464 레기오몬타누스</text>
+  <text x="650" y="310" font-size="10.5" class="blue" text-anchor="end">프랑스 「알카시 정리」</text>
+
+  <text x="30" y="346" font-size="11">sin 1°</text>
+  <line x1="60" y1="370" x2="650" y2="370" class="row"/>
+  <circle cx="343.54" cy="370" r="4.5" class="sd"/>
+  <text x="343.54" y="360" font-size="10.5" class="sien" text-anchor="middle">1429 죽음 — 마지막 책, 미완이었을 수도</text>
+  <text x="569.2" y="390" font-size="10.5" class="blue" text-anchor="middle">19~20세기에야 유럽이 연구</text>
+
+  <line x1="60" y1="420" x2="650" y2="420" class="axis"/>
+  <line x1="60" y1="416" x2="60" y2="424" class="tick"/><text x="60" y="437" font-size="10" class="ax" text-anchor="middle">900</text>
+  <line x1="167.2" y1="416" x2="167.2" y2="424" class="tick"/><text x="167.2" y="437" font-size="10" class="ax" text-anchor="middle">1100</text>
+  <line x1="274.4" y1="416" x2="274.4" y2="424" class="tick"/><text x="274.4" y="437" font-size="10" class="ax" text-anchor="middle">1300</text>
+  <line x1="381.6" y1="416" x2="381.6" y2="424" class="tick"/><text x="381.6" y="437" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="488.8" y1="416" x2="488.8" y2="424" class="tick"/><text x="488.8" y="437" font-size="10" class="ax" text-anchor="middle">1700</text>
+  <line x1="596" y1="416" x2="596" y2="424" class="tick"/><text x="596" y="437" font-size="10" class="ax" text-anchor="middle">1900</text>
+
+  <text x="30" y="476" font-size="10" class="ax">⚠ 「10세기」 · 「투시」 · 「19~20세기」는 세기만 아는 일이라 그 세기 가운데쯤에 두었다. 프랑스 이름은 해가 없어 점을 찍지 않았다.</text>
+  <text x="30" y="492" font-size="10" class="ax">⚠ sin 1° 책의 해는 자료에 없다. 그의 죽음(1429)에 점을 두고 「마지막 책」이라는 MacTutor 의 말을 붙였다.</text>
+  <text x="30" y="508" font-size="10" class="ax">⚠ 알사마왈(MacTutor 가 앞선 사람으로 드는 이름)은 해가 자료에 없어 그리지 않았다.</text>
+  <text x="30" y="524" font-size="10" class="ax">⚠ 어느 점이 「처음」인지는 이 그림이 정하지 않는다. 자리와 색은 이 노트가 골랐다.</text>
+</svg>
