@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 318" role="img" aria-label="2단계, 중국의 책 두 권. 그림 위쪽에 「쓴 해와 찍힌 해 13세기의 책들」이라는 표제가 있고 그 아래에 갈색은 쓴 해, 푸른색은 처음 찍힌 해, 빈 점은 필사·수록·남은 판이며 옅은 띠는 찍히기까지 기다린 시간이라고 적혀 있다. 그 아래 제목은 1200~1880, 한 해가 0.88px 이고, 줄 아래 가로축에 1200부터 1800까지 백 년마다 눈금이 있다. 첫 줄 『수서구장』 진구소에는 1247년 갈색 점이 있고, 띠가 1842년 푸른 점까지 길게 이어지며 그 사이에 1421 영락대전에 들다와 1787 사고전서라고 적힌 빈 푸른 점이 있고 끝에 1842 첫 목판본이라고 적혀 있다. 둘째 줄 『양휘산법』 양휘에는 띠 없이 1274~75 갈색 점과 빈 푸른 점 둘이 있고 1378 판이 남다 · 1433 경주 간행(조선), 송판은 전하지 않는다라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 빈 점은 인쇄본이 아니거나 처음이 아닌 판이고 「무렵」·범위로만 아는 해는 대표 해 하나에 두었다. 둘째, 영락대전(1421)을 수학백과는 「인쇄」로, 위키백과는 「수록」으로 적어 빈 점이다. 셋째, 『양휘산법』은 송대에 찍힌 판이 전하지 않아 띠를 그리지 않았다">
+  <title>쓴 해와 찍힌 해 — 13세기의 책들</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .wait{fill:#F4EADC;stroke:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+  </style>
+  <rect width="720" height="318" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">쓴 해와 찍힌 해 — 13세기의 책들</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 쓴 해, 푸른색은 처음 찍힌 해, 빈 점은 필사·수록·남은 판. 옅은 띠는 찍히기까지 기다린 시간이다.</text>
+  <text x="30" y="74" font-size="12">1200~1880 — 한 해가 0.88px</text>
+
+  <g transform="translate(0,-190)">
+  <text x="30" y="289" font-size="10" class="dim">『수서구장』 — 진구소</text>
+  <line x1="60" y1="311" x2="658" y2="311" class="row"/>
+  <rect x="101.36" y="308" width="523.60" height="6" class="wait"/>
+  <circle cx="101.36" cy="311" r="4.5" class="sd"/>
+  <circle cx="254.48" cy="311" r="4" class="cring"/>
+  <circle cx="576.56" cy="311" r="4" class="cring"/>
+  <circle cx="624.96" cy="311" r="4.5" class="cd"/>
+  <text x="96" y="329" font-size="10.5" class="sien">1247</text>
+  <text x="254.48" y="329" font-size="10.5" class="blue" text-anchor="middle">1421 영락대전에 들다</text>
+  <text x="572" y="329" font-size="10.5" class="blue" text-anchor="end">1787 사고전서</text>
+  <text x="658" y="302" font-size="10.5" class="blue" text-anchor="end">1842 첫 목판본</text>
+
+  <text x="30" y="351" font-size="10" class="dim">『양휘산법』 — 양휘</text>
+  <line x1="60" y1="373" x2="658" y2="373" class="row"/>
+    <circle cx="125.56" cy="373" r="4.5" class="sd"/>
+  <circle cx="216.64" cy="373" r="4" class="cring"/>
+  <circle cx="265.04" cy="373" r="4" class="cring"/>
+  <text x="120" y="391" font-size="10.5" class="sien">1274~75</text>
+  <text x="211" y="391" font-size="10.5" class="blue">1378 판이 남다 · 1433 경주 간행(조선) — 송판은 전하지 않는다</text>
+
+  </g>
+  <g transform="translate(0,-260)">
+  <line x1="60" y1="480" x2="658" y2="480" class="axis"/>
+  <line x1="60" y1="476" x2="60" y2="484" class="tick"/><text x="60" y="497" font-size="10" class="ax" text-anchor="middle">1200</text>
+  <line x1="148" y1="476" x2="148" y2="484" class="tick"/><text x="148" y="497" font-size="10" class="ax" text-anchor="middle">1300</text>
+  <line x1="236" y1="476" x2="236" y2="484" class="tick"/><text x="236" y="497" font-size="10" class="ax" text-anchor="middle">1400</text>
+  <line x1="324" y1="476" x2="324" y2="484" class="tick"/><text x="324" y="497" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="412" y1="476" x2="412" y2="484" class="tick"/><text x="412" y="497" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="500" y1="476" x2="500" y2="484" class="tick"/><text x="500" y="497" font-size="10" class="ax" text-anchor="middle">1700</text>
+  <line x1="588" y1="476" x2="588" y2="484" class="tick"/><text x="588" y="497" font-size="10" class="ax" text-anchor="middle">1800</text>
+  </g>
+  <text x="30" y="270" font-size="10" class="ax">⚠ 빈 점은 인쇄본이 아니거나 처음이 아닌 판이다. 「무렵」·범위로만 아는 해는 대표 해 하나에 두었다.</text>
+  <text x="30" y="286" font-size="10" class="ax">⚠ 영락대전(1421)을 수학백과는 「인쇄」로, 위키백과는 「수록」으로 적는다. 그래서 빈 점이다.</text>
+  <text x="30" y="302" font-size="10" class="ax">⚠ 『양휘산법』은 송대에 찍힌 판이 전하지 않아 띠를 그리지 않았다.</text>
+</svg>
