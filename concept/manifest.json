@@ -1,6 +1,26 @@
 {
- "count": 21,
+ "count": 22,
  "notes": [
+  {
+   "slug": "amdahls-law",
+   "title": "암달의 법칙(Amdahl's Law) — 이해편(입문·딥)",
+   "date": "2026-11-03",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "컴퓨터구조",
+    "병렬처리",
+    "성능최적화",
+    "확장성",
+    "병목",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 8편 · 나눌 수 없는 몫이 속도의 상한을 정한다",
+   "chars": 13114,
+   "pic": "amdahls-law.png",
+   "path": "concept/notes/amdahls-law.md"
+  },
   {
    "slug": "rule-of-72",
    "title": "72의 법칙(Rule of 72) — 이해편(입문·딥)",
