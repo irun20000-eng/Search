@@ -185,6 +185,20 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
   background:#fff;border-radius:2px;margin:0 0 8px}
 /* SVG 도해는 지면색을 파일 안에 갖고 있다. 다크에서 흰 판이 되지 않도록 눌러 앉힌다. */
 :root[data-theme=dark] .article img{filter:brightness(.84) contrast(1.04)}
+/* 클릭 확대 · 넘겨 보기 (2026-11-03 사용자 승인) */
+.article img{cursor:zoom-in}
+#lb{position:fixed;inset:0;z-index:9999;background:rgba(20,16,12,.86);display:none;overflow:hidden;touch-action:none}
+#lb.open{display:block}
+#lb img{position:absolute;left:0;top:0;transform-origin:0 0;background:#FFFDF7;max-width:none;border:0;cursor:grab;user-select:none;-webkit-user-drag:none}
+:root[data-theme=dark] #lb img{filter:brightness(.84) contrast(1.04)}
+#lb .lbx{position:absolute;top:14px;right:16px;font:15px/1 inherit;padding:8px 12px;background:#F4EADC;color:#221E18;border:0;border-radius:3px;cursor:pointer}
+#lb .lbh{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#EDE3D2;font-size:14px}
+.stepfig{margin:0 0 20px}
+.stepfig .stepbar{display:flex;align-items:center;gap:10px;margin-top:6px;font-size:14px;color:var(--ink2)}
+.stepfig .stepbar button{font:inherit;padding:4px 10px;border:1px solid var(--rule);background:var(--card2);color:inherit;border-radius:2px;cursor:pointer}
+.stepfig .stepbar button:disabled{opacity:.4;cursor:default}
+@media print{.stepfig img{display:block!important}.stepfig .stepbar{display:none}#lb{display:none!important}}
+
 /* 초상(assets/portraits/)은 도해와 달리 본문 폭으로 키우지 않는다 — 오른쪽에 작게 띄운다(2026-11-03 사용자 승인).
    다음 구분선에서 흐름을 닫아, 초상이 1절 아래로 흘러내리지 않게 한다. */
 .article img[src*="/portraits/"]{float:right;width:200px;max-width:38%;margin:6px 0 14px 22px}
@@ -599,6 +613,7 @@ async function openNote(slug,push){
   art.style.fontSize=PREFS.fs+"px";
 
   fixImgs(art, n.path.replace(/[^/]+$/,""));
+  stepify(art); zoomify(art);
   // 표 가로 스크롤
   $$("table",art).forEach(function(tb){
     if(tb.closest(".tablewrap")) return;
@@ -1219,6 +1234,78 @@ async function boot(){
   drawCart();
   renderView();
   applyHash();
+}
+
+/* ── 넘겨 보기: 한 문단 안에 이어진 이미지 `<base>-step1.svg`, `-step2` … 를 한 그림으로 묶는다.
+   스크립트가 없는 곳(옵시디언 · 인쇄)에서는 그대로 위아래로 모두 보인다. */
+function stepify(art){
+  $$("p",art).forEach(function(p){
+    var imgs=$$("img",p).filter(function(im){return /-step\d+\.(svg|webp|png)(\?|$)/i.test(im.getAttribute("src")||"");});
+    if(imgs.length<2) return;
+    var base=function(im){return (im.getAttribute("src")||"").replace(/-step\d+\.\w+.*$/,"");};
+    if(imgs.some(function(im){return base(im)!==base(imgs[0]);})) return;
+    imgs.sort(function(a,b){return +a.getAttribute("src").match(/-step(\d+)/)[1] - +b.getAttribute("src").match(/-step(\d+)/)[1];});
+    var fig=document.createElement("div"); fig.className="stepfig";
+    imgs.forEach(function(im){fig.appendChild(im);});
+    var bar=document.createElement("div"); bar.className="stepbar";
+    bar.innerHTML='<button type="button" class="sp" aria-label="이전 단계">◀ 이전</button><span class="sc" aria-live="polite"></span><button type="button" class="sn" aria-label="다음 단계">다음 ▶</button>';
+    fig.appendChild(bar);
+    p.parentNode.replaceChild(fig,p);
+    var i=0, N=imgs.length;
+    function show(k){ i=Math.max(0,Math.min(N-1,k));
+      imgs.forEach(function(im,j){im.style.display=j===i?"block":"none";});
+      var cap=(imgs[i].getAttribute("alt")||"").split(/(?<=[.。])\s/)[0];
+      $(".sc",bar).textContent=(i+1)+"/"+N+(cap?"  "+cap:"");
+      $(".sp",bar).disabled=i===0; $(".sn",bar).disabled=i===N-1; }
+    $(".sp",bar).onclick=function(){show(i-1);}; $(".sn",bar).onclick=function(){show(i+1);};
+    show(0);
+  });
+}
+/* ── 클릭 확대 */
+var LB=null;
+function lbInit(){
+  if(LB) return LB;
+  var d=document.createElement("div"); d.id="lb"; d.setAttribute("role","dialog"); d.setAttribute("aria-modal","true");
+  d.innerHTML='<img alt=""><button type="button" class="lbx" aria-label="닫기">닫기 ✕</button><div class="lbh">휠 · 두 손가락으로 배율 · 끌어서 이동 · Esc 로 닫기</div>';
+  document.body.appendChild(d);
+  var im=$("img",d), s=1, x=0, y=0, drag=null, pts={}, pinch=null, back=null;
+  function ap(){ im.style.transform="translate("+x+"px,"+y+"px) scale("+s+")"; }
+  function zoomAt(f,cx,cy){ var ns=Math.max(.2,Math.min(6,s*f)); x=cx-(cx-x)*ns/s; y=cy-(cy-y)*ns/s; s=ns; ap(); }
+  function close(){ d.classList.remove("open"); document.body.style.overflow=""; if(back) back.focus(); }
+  d.addEventListener("click",function(e){ if(e.target===d) close(); });
+  $(".lbx",d).onclick=close;
+  /* 캡처 단계에서 받아, 열린 확대만 닫고 노트 창의 Esc 는 막는다 */
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&d.classList.contains("open")){ e.stopImmediatePropagation(); e.preventDefault(); close(); } },true);
+  d.addEventListener("wheel",function(e){ e.preventDefault(); zoomAt(e.deltaY<0?1.15:1/1.15,e.clientX,e.clientY); },{passive:false});
+  im.addEventListener("pointerdown",function(e){ im.setPointerCapture(e.pointerId); pts[e.pointerId]={x:e.clientX,y:e.clientY};
+    var k=Object.keys(pts); if(k.length===2){ var a=pts[k[0]],b=pts[k[1]]; pinch=Math.hypot(a.x-b.x,a.y-b.y); drag=null; } else drag={x:e.clientX-x,y:e.clientY-y}; });
+  im.addEventListener("pointermove",function(e){ if(!pts[e.pointerId]) return; pts[e.pointerId]={x:e.clientX,y:e.clientY};
+    var k=Object.keys(pts); if(k.length===2&&pinch){ var a=pts[k[0]],b=pts[k[1]],dd=Math.hypot(a.x-b.x,a.y-b.y); zoomAt(dd/pinch,(a.x+b.x)/2,(a.y+b.y)/2); pinch=dd; }
+    else if(drag){ x=e.clientX-drag.x; y=e.clientY-drag.y; ap(); } });
+  function up(e){ delete pts[e.pointerId]; pinch=null; drag=null; }
+  im.addEventListener("pointerup",up); im.addEventListener("pointercancel",up);
+  LB={open:function(src,alt,from){ back=from; im.src=src; im.alt=alt||"";
+    function fit(){ var W=window.innerWidth,H=window.innerHeight,w=im.naturalWidth,h=im.naturalHeight;
+      if(!w||!h){ w=from.naturalWidth||from.clientWidth||800; h=from.naturalHeight||from.clientHeight||600; }
+      /* <img> 안의 SVG 는 width 속성이 없으면 고유 크기가 150 높이 기본값으로 잡힌다 — viewBox 크기를 쓴다 */
+      var vw=+from.getAttribute("data-vw"), vh=+from.getAttribute("data-vh"); if(vw&&vh){ w=vw; h=vh; }
+      var f=Math.min((W-40)/w,(H-90)/h); im.style.width=w+"px"; im.style.height=h+"px"; s=f; x=(W-w*f)/2; y=(H-h*f)/2; ap(); }
+    if(im.complete&&im.naturalWidth) fit(); else im.onload=fit;
+    d.classList.add("open"); document.body.style.overflow="hidden"; $(".lbx",d).focus(); }};
+  return LB;
+}
+function zoomify(art){
+  $$("img",art).forEach(function(im){
+    if(im.closest("a")) return;
+    im.tabIndex=0; im.setAttribute("role","button");
+    var a=(im.getAttribute("alt")||"그림").slice(0,60); im.setAttribute("aria-label","크게 보기: "+a);
+    /* SVG 는 <img> 에서 고유 크기가 없을 수 있다 — viewBox 비율을 읽어 둔다 */
+    if(/\.svg(\?|$)/i.test(im.src)) fetch(im.src).then(function(r){return r.text();}).then(function(t){
+      var m=t.match(/viewBox="([^"]+)"/); if(m){ var v=m[1].trim().split(/[\s,]+/).map(Number); if(v[2]&&v[3]){ im.setAttribute("data-vw",v[2]); im.setAttribute("data-vh",v[3]); } } }).catch(function(){});
+    function go(){ lbInit().open(im.src,im.getAttribute("alt"),im); }
+    im.addEventListener("click",go);
+    im.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); go(); } });
+  });
 }
 if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot);
 else boot();

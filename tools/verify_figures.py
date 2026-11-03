@@ -388,12 +388,20 @@ def main(argv):
                 print(f'{name:34s} FAIL — viewBox 를 읽을 수 없다: {m.group(1)!r}')
                 fails += 1
                 continue
+            # 움직이는 도해(2026-11-03 사용자 승인): 애니메이션은 덧붙이는 것이고, 움직임을 끈 상태가
+            # 완성본이어야 한다. 그래서 (a) 움직임 줄이기 블록을 요구하고 (b) 움직임을 끈 채로 잰다.
+            animated = bool(re.search(r'@keyframes|<animate', src))
+            if animated and not re.search(r'prefers-reduced-motion\s*:\s*reduce', src):
+                print(f'{name:34s} FAIL — 움직이는 도해인데 @media (prefers-reduced-motion: reduce) 블록이 없다')
+                fails += 1
+                continue
+            freeze = ('*{animation:none!important;transition:none!important}' if animated else '')
             page.set_viewport_size({'width': int(vb[2]), 'height': int(vb[3])})
             # 웹폰트를 일부러 심지 않는다 — 노트는 `![](…svg)` 즉 <img> 로 임베드하고,
             # <img> 안의 SVG 는 격리 모드라 외부 폰트를 못 받고 부모의 폰트도 상속하지
             # 않는다. 여기서 <link> 로 폰트를 받아 재면 발행 화면과 다른 자가 된다.
             page.set_content(
-                '<style>html,body{margin:0;padding:0}svg{display:block}</style>' + src,
+                '<style>html,body{margin:0;padding:0}svg{display:block}' + freeze + '</style>' + src,
                 wait_until='domcontentloaded')
             r = page.evaluate(MEASURE_JS, {'vb': vb, 'RATIO': TEXT_INSET_RATIO,
                                            'MAXIN': TEXT_INSET_MAX,
