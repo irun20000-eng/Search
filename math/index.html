@@ -185,6 +185,12 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
   background:#fff;border-radius:2px;margin:0 0 8px}
 /* SVG 도해는 지면색을 파일 안에 갖고 있다. 다크에서 흰 판이 되지 않도록 눌러 앉힌다. */
 :root[data-theme=dark] .article img{filter:brightness(.84) contrast(1.04)}
+/* 초상(assets/portraits/)은 도해와 달리 본문 폭으로 키우지 않는다 — 오른쪽에 작게 띄운다(2026-11-03 사용자 승인).
+   다음 구분선에서 흐름을 닫아, 초상이 1절 아래로 흘러내리지 않게 한다. */
+.article img[src*="/portraits/"]{float:right;width:200px;max-width:38%;margin:6px 0 14px 22px}
+.article hr{clear:both}
+@media(max-width:560px){.article img[src*="/portraits/"]{float:none;width:160px;max-width:60%;margin:0 auto 14px}}
+@media print{.article img[src*="/portraits/"]{width:150px}}
 .article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 20px}
 .article th,.article td{border:1px solid var(--rule2);padding:8px 11px;text-align:left;vertical-align:top}
 .article th{background:var(--card2);font-weight:600}
