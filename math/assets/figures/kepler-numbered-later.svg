@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660" role="img" aria-label="그림 위쪽에 「번호는 나중에 붙었다 케플러」라는 표제가 있고 그 아래에 갈색은 케플러가 찾거나 쓴 것, 푸른색은 뒷사람이 붙인 이름, 빈 점은 차례가 다르게 적힌 자료라고 적혀 있다. 그림은 위아래 두 칸이다. 위 칸의 제목은 1600~1622 찾은 차례와 책에 실린 차례이고, 가로축에 1600부터 1620까지 다섯 해마다 눈금이 있다. 첫 줄은 찾은 때 (위키백과 · SEP · MacTutor)이다. 갈색 점이 셋 있고 왼쪽부터 1602 말 제2 넓이 법칙, 1604 말 제1 타원 약 40번 실패한 뒤, 1618.3.8 떠올렸다 버리고 5.15 제3 주기 법칙이라고 적혀 있다. 둘째 줄은 천문학백과의 차례로, 1605년 자리에 빈 갈색 점이 있고 1605 제1 타원을 먼저, 제2 넓이는 그 뒤라고 적혀 있다. 셋째 줄은 책에 실린 때로, 갈색 점 셋에 1609 『새 천문학』 제1 · 제2, 1619 『세계의 조화』 제3, 1621 『개요』 지금 꼴의 제2라고 적혀 있다. 아래 칸의 제목은 1600~1850 「세 법칙」이라는 이름이 붙기까지이고, 가로축에 1600부터 1850까지 쉰 해마다 눈금이 있으며 축 왼쪽 끝의 1600~1622 구간에 위 칸이라고 적힌 옅은 띠가 있다. 줄 위에 왼쪽부터 갈색 점 1609 『새 천문학』, 검은 점 1630.11.15 죽다, 푸른 점 1738 볼테르 처음으로 「법칙」, 푸른 점 1804 스몰 셋으로 묶어 「경험 법칙」, 푸른 점 1837 휴얼 「귀납의 천재」가 있다. 1609년 점에서 1804년 점까지 괄호가 걸쳐 있고 그 아래에 195년(이 노트의 셈), 위키백과 「거의 두 세기」라고 적혀 있다. 그 아래 푸른 글씨로 오늘의 사전, 「행성의 운동에 관한 세 개의 경험적 법칙」(13) · 「후대 천문학자들이 성문화」(11)라고 적혀 있다. 맨 아래에 단서가 넷 있다. 첫째, 「말」은 12월 첫머리, 해만 아는 책은 그 해 가운데에 두었고 3월 8일은 5월 15일과 너무 가까워 점을 따로 두지 않았다. 둘째, 찾은 때의 차례는 3번(위키백과)과 2번(SEP), 1618년 날짜는 1번(MacTutor)을 따랐고 10번(천문학백과)은 차례가 거꾸로다. 셋째, 195년은 이 노트가 1609와 1804의 해의 차로 셈했고 「적어도 랄랑드 때부터」라는 4번의 말은 해가 없어 점을 두지 않았다. 넷째, 제1 · 제2 · 제3 은 오늘의 번호이고 케플러가 매긴 번호가 아니며 괄호 숫자는 이 노트의 출처 번호다">
+  <title>번호는 나중에 붙었다 — 케플러</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1.2;fill:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .dead{fill:#221E18;}
+    .zone{fill:#F4EADC;stroke:#C9BBA6;stroke-width:0.8;}
+    .brace{stroke:#5B5245;stroke-width:1;fill:none;}
+  </style>
+  <rect width="720" height="660" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">번호는 나중에 붙었다 — 케플러</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 케플러가 찾거나 쓴 것, 푸른색은 뒷사람이 붙인 이름, 빈 점은 차례가 다르게 적힌 자료다.</text>
+
+  <!-- 위 칸: x = 60 + (t - 1600) * 27 -->
+  <text x="30" y="82" font-size="12">1600~1622 — 찾은 차례와 책에 실린 차례</text>
+
+  <text x="30" y="108" font-size="10" class="dim">찾은 때 (위키백과 · SEP · MacTutor)</text>
+  <line x1="60" y1="135" x2="654" y2="135" class="row"/>
+  <circle cx="138.71" cy="135" r="4.5" class="sd"/>
+  <text x="132" y="125" font-size="10.5" class="sien">1602 말 제2 넓이 법칙</text>
+  <circle cx="192.71" cy="135" r="4.5" class="sd"/>
+  <text x="186" y="153" font-size="10.5" class="sien">1604 말 제1 타원 — 약 40번 실패한 뒤</text>
+  <circle cx="555.91" cy="135" r="4.5" class="sd"/>
+  <text x="654" y="125" font-size="10.5" class="sien" text-anchor="end">1618.3.8 떠올렸다 버리고 5.15 제3 주기 법칙</text>
+
+  <text x="30" y="180" font-size="10" class="dim">천문학백과의 차례</text>
+  <line x1="60" y1="200" x2="654" y2="200" class="row"/>
+  <circle cx="208.5" cy="200" r="4.5" class="sring"/>
+  <text x="202" y="218" font-size="10.5" class="sien">1605 제1 타원을 먼저, 제2 넓이는 그 뒤</text>
+
+  <text x="30" y="245" font-size="10" class="dim">책에 실린 때</text>
+  <line x1="60" y1="268" x2="654" y2="268" class="row"/>
+  <circle cx="316.5" cy="268" r="4.5" class="sd"/>
+  <text x="316.5" y="286" font-size="10.5" class="sien" text-anchor="middle">1609 『새 천문학』 제1 · 제2</text>
+  <circle cx="586.5" cy="268" r="4.5" class="sd"/>
+  <text x="592" y="258" font-size="10.5" class="sien" text-anchor="end">1619 『세계의 조화』 제3</text>
+  <circle cx="640.5" cy="268" r="4.5" class="sd"/>
+  <text x="654" y="286" font-size="10.5" class="sien" text-anchor="end">1621 『개요』 지금 꼴의 제2</text>
+
+  <line x1="60" y1="310" x2="654" y2="310" class="axis"/>
+  <line x1="60" y1="306" x2="60" y2="314" class="tick"/><text x="60" y="327" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="195" y1="306" x2="195" y2="314" class="tick"/><text x="195" y="327" font-size="10" class="ax" text-anchor="middle">1605</text>
+  <line x1="330" y1="306" x2="330" y2="314" class="tick"/><text x="330" y="327" font-size="10" class="ax" text-anchor="middle">1610</text>
+  <line x1="465" y1="306" x2="465" y2="314" class="tick"/><text x="465" y="327" font-size="10" class="ax" text-anchor="middle">1615</text>
+  <line x1="600" y1="306" x2="600" y2="314" class="tick"/><text x="600" y="327" font-size="10" class="ax" text-anchor="middle">1620</text>
+
+  <!-- 아래 칸: x = 60 + (y - 1600) * 2.4 -->
+  <text x="30" y="366" font-size="12">1600~1850 — 「세 법칙」이라는 이름이 붙기까지</text>
+  <line x1="60" y1="415" x2="660" y2="415" class="row"/>
+  <circle cx="82.8" cy="415" r="4.5" class="sd"/>
+  <text x="76" y="403" font-size="10.5" class="sien">1609 『새 천문학』</text>
+  <circle cx="134.09" cy="415" r="4.5" class="dead"/>
+  <text x="128" y="433" font-size="10.5">1630.11.15 죽다</text>
+  <circle cx="392.4" cy="415" r="4.5" class="cd"/>
+  <text x="392.4" y="433" font-size="10.5" class="blue" text-anchor="middle">1738 볼테르 — 처음으로 「법칙」</text>
+  <circle cx="550.8" cy="415" r="4.5" class="cd"/>
+  <text x="550.8" y="403" font-size="10.5" class="blue" text-anchor="middle">1804 스몰 — 셋으로 묶어 「경험 법칙」</text>
+  <circle cx="630" cy="415" r="4.5" class="cd"/>
+  <text x="660" y="433" font-size="10.5" class="blue" text-anchor="end">1837 휴얼 — 「귀납의 천재」</text>
+  <path d="M82.8,450 L82.8,456 L550.8,456 L550.8,450 M316.8,456 L316.8,462" class="brace"/>
+  <text x="316.8" y="477" font-size="10.5" class="dim" text-anchor="middle">195년(이 노트의 셈) — 위키백과 「거의 두 세기」</text>
+
+  <rect x="60" y="497" width="52.8" height="6" class="zone"/>
+  <line x1="60" y1="500" x2="660" y2="500" class="axis"/>
+  <line x1="60" y1="496" x2="60" y2="504" class="tick"/><text x="60" y="517" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="180" y1="496" x2="180" y2="504" class="tick"/><text x="180" y="517" font-size="10" class="ax" text-anchor="middle">1650</text>
+  <line x1="300" y1="496" x2="300" y2="504" class="tick"/><text x="300" y="517" font-size="10" class="ax" text-anchor="middle">1700</text>
+  <line x1="420" y1="496" x2="420" y2="504" class="tick"/><text x="420" y="517" font-size="10" class="ax" text-anchor="middle">1750</text>
+  <line x1="540" y1="496" x2="540" y2="504" class="tick"/><text x="540" y="517" font-size="10" class="ax" text-anchor="middle">1800</text>
+  <line x1="660" y1="496" x2="660" y2="504" class="tick"/><text x="660" y="517" font-size="10" class="ax" text-anchor="middle">1850</text>
+  <text x="86.4" y="491" font-size="9" class="ax" text-anchor="middle">위 칸</text>
+
+  <text x="30" y="548" font-size="10.5" class="blue">오늘의 사전 — 「행성의 운동에 관한 세 개의 경험적 법칙」(13) · 「후대 천문학자들이 성문화」(11)</text>
+
+  <text x="30" y="580" font-size="10" class="ax">⚠ 「말」은 12월 첫머리, 해만 아는 책은 그 해 가운데에 두었다. 3월 8일은 5월 15일과 너무 가까워 점을 따로 두지 않았다.</text>
+  <text x="30" y="596" font-size="10" class="ax">⚠ 찾은 때의 차례는 3번(위키백과)과 2번(SEP), 1618년 날짜는 1번(MacTutor)을 따랐다. 10번(천문학백과)은 차례가 거꾸로다.</text>
+  <text x="30" y="612" font-size="10" class="ax">⚠ 195년은 이 노트가 1609와 1804의 해의 차로 셈했다. 「적어도 랄랑드 때부터」라는 4번의 말은 해가 없어 점을 두지 않았다.</text>
+  <text x="30" y="628" font-size="10" class="ax">⚠ 제1 · 제2 · 제3 은 오늘의 번호이고 케플러가 매긴 번호가 아니다. 괄호 숫자는 이 노트의 출처 번호다.</text>
+</svg>
