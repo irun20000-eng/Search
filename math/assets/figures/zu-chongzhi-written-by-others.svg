@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="그림 위쪽에 「남이 적어 남은 셈 조충지」라는 표제가 있고 그 아래에 갈색은 조충지 부자가 한 일, 푸른색은 그것을 남이 적거나 다룬 때, 빈 점은 해가 정해지지 않은 자리라고 적혀 있다. 가로축에 400부터 1200까지 200년마다 눈금이 있다. 줄이 넷 있다. 첫 줄 원주율에는 5세기 3.1415926 과 3.1415927 사이의 π 를 적은 갈색 점에서 7세기 『수서』가 적다 빈 푸른 점까지 갈색 점선이 이어진다. 둘째 줄 구의 부피에는 아들 조긍지의 셈 갈색 점에서 이순풍의 주석이 전하다 빈 푸른 점까지 갈색 점선이 이어진다. 셋째 줄 『철술』에는 쓰다 갈색 점, 656 시험 교재 푸른 점, 1084 다시 찍다 푸른 점, 12세기 초 사라지다 빈 푸른 점이 있다. 넷째 줄 대명력에는 462 올리다 갈색 점, 464 황제가 죽어 멈추다 푸른 점, 양나라 때 쓰이다 빈 푸른 점이 있다. 맨 아래에 단서가 셋 있다. 첫째, 「5세기」 · 「7세기」 · 「12세기 초」 · 「양나라 때」는 해가 없어 어림한 자리에 두었고 아들의 셈도 해가 없다. 둘째, 『철술』의 저자를 MacTutor 는 조충지로, 위키백과는 부자로 적고 대명력이 언제 쓰였는지는 자료가 갈린다(본문 §4). 셋째, 이순풍 주석의 해는 자료에 없어 656(『철술』이 교재가 된 해)에 함께 두었고 아들의 이름은 자료마다 셋으로 갈린다(본문 §5)">
+  <title>남이 적어 남은 셈 — 조충지</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .gap{stroke:#9C5A2C;stroke-width:1;stroke-dasharray:4 3;}
+  </style>
+  <rect width="720" height="540" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">남이 적어 남은 셈 — 조충지</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 조충지 부자가 한 일, 푸른색은 그것을 남이 적거나 다룬 때, 빈 점은 해가 정해지지 않은 자리다.</text>
+
+  <text x="30" y="90" font-size="11">원주율</text>
+  <line x1="60" y1="120" x2="650" y2="120" class="row"/>
+  <circle cx="111.63" cy="120" r="5" class="sd"/><text x="111.63" y="140" font-size="10" class="sien" text-anchor="start">5세기 3.1415926 &lt; π &lt; 3.1415927</text>
+  <circle cx="244.38" cy="120" r="5" class="ring"/><text x="244.38" y="108" font-size="10" class="blue" text-anchor="start">7세기 『수서』가 적다</text>
+  <line x1="117.63" y1="120" x2="238.38" y2="120" class="gap"/>
+
+  <text x="30" y="180" font-size="11">구의 부피</text>
+  <line x1="60" y1="210" x2="650" y2="210" class="row"/>
+  <circle cx="133.75" cy="210" r="5" class="sd"/><text x="133.75" y="230" font-size="10" class="sien" text-anchor="start">아들 조긍지의 셈</text>
+  <circle cx="248.8" cy="210" r="5" class="ring"/><text x="248.8" y="198" font-size="10" class="blue" text-anchor="start">이순풍의 주석이 전하다</text>
+  <line x1="139.75" y1="210" x2="242.8" y2="210" class="gap"/>
+
+  <text x="30" y="270" font-size="11">『철술』</text>
+  <line x1="60" y1="300" x2="650" y2="300" class="row"/>
+  <circle cx="119" cy="300" r="5" class="sd"/><text x="119" y="288" font-size="10" class="sien" text-anchor="middle">쓰다</text>
+  <circle cx="248.8" cy="300" r="5" class="bd"/><text x="248.8" y="320" font-size="10" class="blue" text-anchor="middle">656 시험 교재</text>
+  <circle cx="564.45" cy="300" r="5" class="bd"/><text x="564.45" y="320" font-size="10" class="blue" text-anchor="end">1084 다시 찍다</text>
+  <circle cx="583.63" cy="300" r="5" class="ring"/><text x="583.63" y="288" font-size="10" class="blue" text-anchor="start">12세기 초 사라지다</text>
+
+  <text x="30" y="360" font-size="11">대명력</text>
+  <line x1="60" y1="390" x2="650" y2="390" class="row"/>
+  <circle cx="105.72" cy="390" r="5" class="sd"/><text x="105.72" y="378" font-size="10" class="sien" text-anchor="end">462 올리다</text>
+  <circle cx="107.2" cy="390" r="5" class="bd"/><text x="107.2" y="410" font-size="10" class="blue" text-anchor="start">464 황제가 죽어 멈추다</text>
+  <circle cx="148.5" cy="390" r="5" class="ring"/><text x="148.5" y="378" font-size="10" class="blue" text-anchor="start">양나라 때 쓰이다</text>
+
+  <line x1="60" y1="440" x2="650" y2="440" class="axis"/>
+  <line x1="60" y1="436" x2="60" y2="444" class="tick"/><text x="60" y="457" font-size="10" class="ax" text-anchor="middle">400</text>
+  <line x1="207.5" y1="436" x2="207.5" y2="444" class="tick"/><text x="207.5" y="457" font-size="10" class="ax" text-anchor="middle">600</text>
+  <line x1="355" y1="436" x2="355" y2="444" class="tick"/><text x="355" y="457" font-size="10" class="ax" text-anchor="middle">800</text>
+  <line x1="502.5" y1="436" x2="502.5" y2="444" class="tick"/><text x="502.5" y="457" font-size="10" class="ax" text-anchor="middle">1000</text>
+  <line x1="650" y1="436" x2="650" y2="444" class="tick"/><text x="650" y="457" font-size="10" class="ax" text-anchor="middle">1200</text>
+
+  <text x="30" y="488" font-size="10" class="ax">⚠ 「5세기」 · 「7세기」 · 「12세기 초」 · 「양나라 때」는 해가 없어 어림한 자리에 두었다. 아들의 셈도 해가 없다.</text>
+  <text x="30" y="504" font-size="10" class="ax">⚠ 『철술』의 저자를 MacTutor 는 조충지로, 위키백과는 부자로 적는다. 대명력이 언제 쓰였는지는 자료가 갈린다(본문 §4).</text>
+  <text x="30" y="520" font-size="10" class="ax">⚠ 이순풍 주석의 해는 자료에 없다. 656(『철술』이 교재가 된 해)에 함께 두었다. 아들의 이름은 자료마다 셋으로 갈린다(본문 §5).</text>
+</svg>
