@@ -23,7 +23,7 @@
 
 이미지:
   - 파일: assets/portraits/demoivre-highmore-1736.webp
-    설명: 짙은 타원 테 안에 긴 회색 곱슬 가발을 쓴 나이 든 남자를 그린 유화다. 단추가 줄지은 갈색 외투에 흰 목도리를 매고 얼굴을 조금 왼쪽으로 돌렸다. 글자는 없다
+    설명: 짙은 타원 테 안에 긴 짙은 갈색 곱슬 가발을 쓴 나이 든 남자를 그린 유화다. 단추가 줄지은 갈색 외투에 흰 목도리를 맸다. 오른쪽 아래에 화가의 서명과 1736 이 적혀 있다
     출처: 위키미디어 커먼즈 File:Abraham de Moivre by Joseph Highmore.jpg (조지프 하이모어 그림, 커먼즈 날짜 1736년). 장변 1200px 이하 WebP 로 줄였다
     라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-Art · PD-old-auto-expired)
   - 파일: assets/figures/de-moivre-society-yes-university-no.svg
@@ -71,7 +71,7 @@
 
 ---
 
-![짙은 타원 테 안에 긴 회색 곱슬 가발을 쓴 나이 든 남자를 그린 유화다. 단추가 줄지은 갈색 외투에 흰 목도리를 매고 얼굴을 조금 왼쪽으로 돌렸다. 글자는 없다](../../assets/portraits/demoivre-highmore-1736.webp)
+![짙은 타원 테 안에 긴 짙은 갈색 곱슬 가발을 쓴 나이 든 남자를 그린 유화다. 단추가 줄지은 갈색 외투에 흰 목도리를 맸다. 오른쪽 아래에 화가의 서명과 1736 이 적혀 있다](../../assets/portraits/demoivre-highmore-1736.webp)
 
 위 초상은 커먼즈가 조지프 하이모어의 1736년 그림으로 적는 것이다[9].
 
