@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「투시가 둘, 이름은 뒤에 나시르 알딘 알투시」라는 표제가 있고 그 아래에 위 두 줄은 투스 출신 두 수학자의 생애, 아래 줄은 「투시 쌍」이 걸어간 길이며 빈 점은 해가 「이전」으로만 남은 자리라고 적혀 있다. 가로축에 1150부터 1550까지 백 년마다 눈금이 있다. 첫 줄 샤라프 알딘 알투시에는 1135 무렵부터 1213 까지 옅은 푸른 띠가 있고 1209 에 푸른 점과 1209 삼차방정식 논고라는 글이 있다. 그 띠 끝에서 아래 줄로 점선 화살표가 내려가고 옆에 제자의 제자 (카말 알딘을 거쳐)라고 적혀 있다. 둘째 줄 나시르 알딘 알투시에는 1201 부터 1274 까지 옅은 갈색 띠가 있고 1258 과 1262 에 갈색 점이 붙어 있으며 오른쪽에 1258 바그다드 · 1262 마라가 천문대라고 적혀 있다. 셋째 줄 「투시 쌍」의 길에는 1247 『알마게스트 주해』 갈색 점, 1362 이전 오렘 빈 푸른 점, 1543 코페르니쿠스 3권 4장 푸른 점이 있고, 그 아래에 사이의 경로, 비잔틴 그리스어 번역? 프로클로스? 아직 밝혀지지 않음, 그리고 오른쪽 끝에 「투시 쌍」이라는 이름 → 1966 케네디라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 1247 은 위키백과(「투시 쌍」)를 따랐고 MacTutor 는 그 정리를 『천문학 비망록』의 달 모형에서 처음 썼다고 적고 해를 적지 않는다. 둘째, 오렘의 서술이 투시 쌍과 같은 것인지는 위키백과도 확실하지 않다고 적고 1966 은 축 밖이라 글자로만 두었다. 셋째, 샤라프 알딘의 생몰은 「무렵」이고 두 사람의 띠 길이와 화살표는 이 노트가 그렸다">
+  <title>투시가 둘, 이름은 뒤에 — 나시르 알딘 알투시</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .life{fill:#9C5A2C;opacity:0.3;} .life2{fill:#3A5C77;opacity:0.3;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .arr{stroke:#5B5245;stroke-width:1;stroke-dasharray:3 3;fill:none;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">투시가 둘, 이름은 뒤에 — 나시르 알딘 알투시</text>
+  <text x="30" y="50" font-size="11" class="dim">위 두 줄은 투스 출신 두 수학자의 생애, 아래 줄은 「투시 쌍」이 걸어간 길이다. 빈 점은 해가 「이전」으로만 남은 자리다.</text>
+
+  <text x="30" y="90" font-size="11" class="blue">샤라프 알딘 알투시</text>
+  <rect x="80.1" y="114" width="104.52" height="12" class="life2"/>
+  <text x="80.1" y="142" font-size="10" class="blue" text-anchor="start">1135 무렵</text><text x="184.62" y="142" font-size="10" class="blue" text-anchor="end">1213</text>
+  <circle cx="179.26" cy="120" r="4.5" class="bd"/><text x="184.62" y="108" font-size="10" class="blue" text-anchor="start">1209 삼차방정식 논고</text>
+
+  <path d="M188.62,148 C214.62,180 178.54,160 174.54,200" class="arr"/>
+  <text x="207.4" y="171" font-size="9.5" class="dim">제자의 제자 (카말 알딘을 거쳐)</text>
+
+  <text x="30" y="180" font-size="11" class="sien">나시르 알딘 알투시</text>
+  <rect x="168.54" y="204" width="97.82" height="12" class="life"/>
+  <text x="168.54" y="232" font-size="10" class="sien" text-anchor="start">1201</text><text x="266.36" y="232" font-size="10" class="sien" text-anchor="end">1274</text>
+  <circle cx="244.92" cy="210" r="4.5" class="sd"/><circle cx="250.28" cy="210" r="3" class="sd"/>
+  <text x="269.04" y="214" font-size="10" class="sien" text-anchor="start">1258 바그다드 · 1262 마라가 천문대</text>
+
+  <text x="30" y="290" font-size="11">「투시 쌍」의 길</text>
+  <line x1="60" y1="330" x2="650" y2="330" class="row"/>
+  <circle cx="230.18" cy="330" r="4.5" class="sd"/><text x="230.18" y="318" font-size="10" class="sien" text-anchor="middle">1247 『알마게스트 주해』</text>
+  <circle cx="384.28" cy="330" r="5" class="ring"/><text x="384.28" y="352" font-size="10" class="blue" text-anchor="middle">1362 이전 오렘</text>
+  <circle cx="626.82" cy="330" r="4.5" class="bd"/><text x="626.82" y="318" font-size="10" class="blue" text-anchor="end">1543 코페르니쿠스 3권 4장</text>
+  <text x="462" y="376" font-size="10" class="dim" text-anchor="middle">사이의 경로 — 비잔틴 그리스어 번역? 프로클로스? 아직 밝혀지지 않음</text>
+  <text x="650" y="396" font-size="10" class="sien" text-anchor="end">「투시 쌍」이라는 이름 → 1966 케네디</text>
+
+  <line x1="60" y1="420" x2="650" y2="420" class="axis"/>
+  <line x1="100.2" y1="416" x2="100.2" y2="424" class="tick"/><text x="100.2" y="437" font-size="10" class="ax" text-anchor="middle">1150</text>
+  <line x1="234.2" y1="416" x2="234.2" y2="424" class="tick"/><text x="234.2" y="437" font-size="10" class="ax" text-anchor="middle">1250</text>
+  <line x1="368.2" y1="416" x2="368.2" y2="424" class="tick"/><text x="368.2" y="437" font-size="10" class="ax" text-anchor="middle">1350</text>
+  <line x1="502.2" y1="416" x2="502.2" y2="424" class="tick"/><text x="502.2" y="437" font-size="10" class="ax" text-anchor="middle">1450</text>
+  <line x1="636.2" y1="416" x2="636.2" y2="424" class="tick"/><text x="636.2" y="437" font-size="10" class="ax" text-anchor="middle">1550</text>
+
+  <text x="30" y="466" font-size="10" class="ax">⚠ 1247 은 위키백과(「투시 쌍」)를 따랐다. MacTutor 는 그 정리를 『천문학 비망록』의 달 모형에서 처음 썼다고 적고 해를 적지 않는다.</text>
+  <text x="30" y="482" font-size="10" class="ax">⚠ 오렘의 서술이 투시 쌍과 같은 것인지는 위키백과도 확실하지 않다고 적는다. 1966 은 축 밖이라 글자로만 두었다.</text>
+  <text x="30" y="498" font-size="10" class="ax">⚠ 샤라프 알딘의 생몰은 「무렵」이다. 두 사람의 띠 길이와 화살표는 이 노트가 그렸다.</text>
+</svg>
