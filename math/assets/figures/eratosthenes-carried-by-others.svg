@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-label="그림 위쪽에 「그의 책 대신 남이 옮긴 것 에라토스테네스」라는 표제가 있고 그 아래에 갈색 띠는 그의 생애, 푸른 점은 뒤 사람이 그의 일을 옮겨 적은 자리, 빈 점은 해가 세기로만 남은 자리라고 적혀 있다. 가로축은 BC 300 부터 AD 900 까지다. 첫 줄 생애에는 기원전 276 부터 194 까지 짧은 갈색 띠가 있고 오른쪽에 책은 모두 사라졌다, 『지구 측정에 관하여』 · 『플라톤 해설』 · 『비례중항에 관하여』라고 적혀 있다. 둘째 줄 지구 둘레 (스타디아)에는 빈 점이 셋 있다. 250,000 (히파르코스가 고쳤다는 설), 1세기 로마 252,000, 4세기 259,200 이다. 그 아래 오른쪽에 점 없이 해 없음, 클레오메데스, 250,000, 방법이 남은 글이라고 적혀 있다. 셋째 줄 소수의 체에는 2세기 초 빈 점과 2세기 초 니코마코스 『산술 입문』, 처음 알려진 언급, 홀수로 거른다가 있다. 넷째 줄 정육면체 배적 · 별명에는 6세기 에우토키오스, 위조 편지와 10세기 수다, 「베타」의 빈 점이 있다. 맨 아래에 단서가 셋 있다. 첫째, 세기로만 아는 일은 그 세기 가운데쯤에 두었고 클레오메데스는 해가 출처에 없어 점 없이 글자로만 두었다. 둘째, 250,000 · 252,000 · 259,200 의 차례와 「히파르코스가 고쳤다」는 위키백과가 옮긴 매슈의 재구성이다(본문 §3). 셋째, 생몰은 MacTutor 를 따랐고 국내 사전은 274~196, 273~192 무렵으로도 적는다">
+  <title>그의 책 대신 남이 옮긴 것 — 에라토스테네스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;} .life{fill:#9C5A2C;opacity:0.3;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+  </style>
+  <rect width="720" height="500" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">그의 책 대신 남이 옮긴 것 — 에라토스테네스</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색 띠는 그의 생애, 푸른 점은 뒤 사람이 그의 일을 옮겨 적은 자리다. 빈 점은 해가 세기로만 남은 자리다.</text>
+
+  <text x="30" y="86" font-size="11">생애</text>
+  <rect x="70.89" y="104" width="37.22" height="12" class="life"/>
+  <text x="70.89" y="132" font-size="10" class="sien" text-anchor="start">기원전 276</text><text x="108.11" y="98" font-size="10" class="sien" text-anchor="middle">194</text>
+  <text x="128.08" y="114" font-size="10" class="sien" text-anchor="start">책은 모두 사라졌다 — 『지구 측정에 관하여』 · 『플라톤 해설』 · 『비례중항에 관하여』</text>
+
+  <text x="30" y="166" font-size="11">지구 둘레 (스타디아)</text>
+  <line x1="60" y1="190" x2="650" y2="190" class="row"/>
+  <circle cx="128.08" cy="190" r="5" class="ring"/><text x="128.08" y="180" font-size="10" class="blue" text-anchor="start">250,000 (히파르코스가 고쳤다는 설)</text>
+  <circle cx="218.85" cy="190" r="5" class="ring"/><text x="218.85" y="210" font-size="10" class="blue" text-anchor="middle">1세기 로마 252,000</text>
+  <circle cx="355" cy="190" r="5" class="ring"/><text x="355" y="180" font-size="10" class="blue" text-anchor="middle">4세기 259,200</text>
+  <text x="650" y="230" font-size="10" class="blue" text-anchor="end">해 없음, 클레오메데스 — 250,000, 방법이 남은 글</text>
+
+  <text x="30" y="246" font-size="11">소수의 체</text>
+  <line x1="60" y1="270" x2="650" y2="270" class="row"/>
+  <circle cx="246.08" cy="270" r="5" class="ring"/><text x="246.08" y="292" font-size="10" class="blue" text-anchor="start">2세기 초 니코마코스 『산술 입문』 — 처음 알려진 언급, 홀수로 거른다</text>
+
+  <text x="30" y="326" font-size="11">정육면체 배적 · 별명</text>
+  <line x1="60" y1="350" x2="650" y2="350" class="row"/>
+  <circle cx="427.62" cy="350" r="5" class="ring"/><text x="427.62" y="340" font-size="10" class="blue" text-anchor="middle">6세기 에우토키오스 — 위조 편지</text>
+  <circle cx="627.31" cy="350" r="5" class="ring"/><text x="627.31" y="370" font-size="10" class="blue" text-anchor="end">10세기 수다 — 「베타」</text>
+
+  <line x1="60" y1="400" x2="650" y2="400" class="axis"/>
+  <line x1="60" y1="396" x2="60" y2="404" class="tick"/><text x="60" y="417" font-size="10" class="ax" text-anchor="middle">BC 300</text>
+  <line x1="196.15" y1="396" x2="196.15" y2="404" class="tick"/><text x="196.15" y="417" font-size="10" class="ax" text-anchor="middle">0</text>
+  <line x1="332.31" y1="396" x2="332.31" y2="404" class="tick"/><text x="332.31" y="417" font-size="10" class="ax" text-anchor="middle">AD 300</text>
+  <line x1="468.46" y1="396" x2="468.46" y2="404" class="tick"/><text x="468.46" y="417" font-size="10" class="ax" text-anchor="middle">AD 600</text>
+  <line x1="604.62" y1="396" x2="604.62" y2="404" class="tick"/><text x="604.62" y="417" font-size="10" class="ax" text-anchor="middle">AD 900</text>
+
+  <text x="30" y="450" font-size="10" class="ax">⚠ 세기로만 아는 일은 그 세기 가운데쯤에 두었다. 클레오메데스는 해가 출처에 없어 점 없이 글자로만 두었다.</text>
+  <text x="30" y="466" font-size="10" class="ax">⚠ 250,000 · 252,000 · 259,200 의 차례와 「히파르코스가 고쳤다」는 위키백과가 옮긴 매슈의 재구성이다(본문 §3).</text>
+  <text x="30" y="482" font-size="10" class="ax">⚠ 생몰은 MacTutor 를 따랐다. 국내 사전은 274~196, 273~192 무렵으로도 적는다.</text>
+</svg>
