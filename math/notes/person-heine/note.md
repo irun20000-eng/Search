@@ -22,6 +22,10 @@
 관련일화: []
 
 이미지:
+  - 파일: assets/portraits/heine-c1881.webp
+    설명: 옅은 갈색 바탕에 흑백으로 찍은 남자의 가슴 위 사진이다. 짧은 머리에 짙은 턱수염을 길렀고 나비넥타이에 외투를 입었으며 얼굴을 왼쪽으로 돌렸다. 글자는 없다
+    출처: 위키미디어 커먼즈 File:Heinrich Eduard Heine 1.jpg (작가 미상 사진, 커먼즈 날짜 1881년 무렵). 장변 1200px 이하 WebP 로 줄였다
+    라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-old)
   - 파일: assets/figures/uniform-continuity-shrinking-delta.svg
     출처: 직접 제작
     라이선스: CC0
@@ -60,8 +64,16 @@
     제목: 네이버 지식백과(수학산책) 「최대최소 정리」 — 연속함수가 최댓값과 최솟값을 가질 조건을 말해 주는 정리이며, **사잇값 정리와 함께 연속함수의 당연한 성질로 오랫동안 다루어져 왔다**는 것
     URL: https://terms.naver.com/entry.naver?docId=3338504&cid=47324&categoryId=47324
     유형: 2차
+  - 번호: 9
+    제목: 위키미디어 커먼즈, File:Heinrich Eduard Heine 1.jpg — 작가 미상 사진, 커먼즈 날짜 1881년 무렵, 퍼블릭 도메인이라는 것
+    URL: https://commons.wikimedia.org/wiki/File:Heinrich_Eduard_Heine_1.jpg
+    유형: 2차
 
 ---
+
+![옅은 갈색 바탕에 흑백으로 찍은 남자의 가슴 위 사진이다. 짧은 머리에 짙은 턱수염을 길렀고 나비넥타이에 외투를 입었으며 얼굴을 왼쪽으로 돌렸다. 글자는 없다](../../assets/portraits/heine-c1881.webp)
+
+위 사진은 커먼즈가 1881년 무렵으로 적는 작가 미상의 상이다[9].
 
 ## 한눈에
 
