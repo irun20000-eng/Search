@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="그림 위쪽에 「페르마 때문이었나 쿠머」라는 표제가 있고 그 아래에 갈색은 쿠머가 한 일, 푸른색은 파리 과학원의 일, 빈 점은 자료마다 해가 다른 자리라고 적혀 있다. 가로축에 1840부터 1860까지 5년마다 눈금이 있다. 줄이 넷 있다. 첫 줄 쿠머의 논문에는 갈색 점이 셋 있다. 1844 야코비 기념 논문(그 아래에 인수분해가 하나가 아님), 1846 이상수, 1847.9 베르누이 수 판정이다. 둘째 줄 파리 과학원에는 푸른 점이 셋 있다. 1847년 초에 나란히 1847.3.1 라메 「증명」과 5.24 리우빌이 쿠머의 편지를 읽다가 있고, 1857 대상 3,000프랑 아래에 쿠머는 응모하지 않았다라고 적혀 있다. 셋째 줄 정규소수의 해에는 빈 점이 둘 있다. 1847 (MacTutor 역사 주제)와 1850 (위키백과 · 365일 수학)이다. 넷째 줄 「페르마 때문에 시작했다」는 서술에는 1843 에 빈 점이 있고 1843 페르마를 위해 이상수 (MacTutor 전기)라고 적혀 있으며, 그 점에서 오른쪽 끝까지 갈색 점선이 이어지고 끝에 → 1910 헨젤이 처음 전한 「틀린 증명」 이야기라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 1847.9 는 「1847년 9월까지」라는 MacTutor 의 말을 9월에 찍은 것이고 1844 · 1846 은 위키백과 · MacTutor 역사 주제를 따랐다. 둘째, 1843 은 MacTutor 전기가 「이상수」를 들였다고 적는 해이고 위키백과는 헨젤의 이야기를 출처의 혼동으로 본다(본문 §3). 셋째, 점선은 이야기가 처음 적히기까지의 거리일 뿐 이 그림은 이야기가 참인지 정하지 않고 1910 은 축 밖이다">
+  <title>페르마 때문이었나 — 쿠머</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+  </style>
+  <rect width="720" height="540" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">페르마 때문이었나 — 쿠머</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 쿠머가 한 일, 푸른색은 파리 과학원의 일, 빈 점은 자료마다 해가 다른 자리다.</text>
+
+  <text x="30" y="92" font-size="11">쿠머의 논문</text>
+  <line x1="60" y1="120" x2="650" y2="120" class="row"/>
+  <circle cx="176" cy="120" r="5" class="sd"/><circle cx="234" cy="120" r="5" class="sd"/><circle cx="283.3" cy="120" r="5" class="sd"/>
+  <text x="176" y="110" font-size="10.5" class="sien" text-anchor="middle">1844 야코비 기념 논문</text>
+  <text x="176" y="140" font-size="10" class="dim" text-anchor="middle">인수분해가 하나가 아님</text>
+  <text x="234" y="156" font-size="10.5" class="sien" text-anchor="middle">1846 이상수</text>
+  <text x="283.3" y="110" font-size="10.5" class="sien" text-anchor="start">1847.9 베르누이 수 판정</text>
+
+  <text x="30" y="172" font-size="11">파리 과학원</text>
+  <line x1="60" y1="200" x2="650" y2="200" class="row"/>
+  <circle cx="267.93" cy="200" r="5" class="bd"/><circle cx="274.6" cy="200" r="5" class="bd"/><circle cx="553" cy="200" r="5" class="bd"/>
+  <text x="267.93" y="190" font-size="10.5" class="blue" text-anchor="end">1847.3.1 라메 「증명」</text>
+  <text x="274.6" y="220" font-size="10.5" class="blue" text-anchor="start">5.24 리우빌이 쿠머의 편지를 읽다</text>
+  <text x="553" y="190" font-size="10.5" class="blue" text-anchor="middle">1857 대상 3,000프랑</text>
+  <text x="553" y="220" font-size="10" class="dim" text-anchor="middle">쿠머는 응모하지 않았다</text>
+
+  <text x="30" y="252" font-size="11">정규소수의 해</text>
+  <line x1="60" y1="280" x2="650" y2="280" class="row"/>
+  <circle cx="263" cy="280" r="5" class="ring"/><circle cx="350" cy="280" r="5" class="ring"/>
+  <text x="263" y="300" font-size="10" class="dim" text-anchor="middle">1847 (MacTutor 역사 주제)</text>
+  <text x="350" y="270" font-size="10" class="dim" text-anchor="start">1850 (위키백과 · 365일 수학)</text>
+
+  <text x="30" y="332" font-size="11">「페르마 때문에 시작했다」는 서술</text>
+  <line x1="60" y1="360" x2="650" y2="360" class="row"/>
+  <circle cx="147" cy="360" r="5" class="ring"/>
+  <text x="147" y="350" font-size="10" class="dim" text-anchor="middle">1843 페르마를 위해 이상수 (MacTutor 전기)</text>
+  <line x1="155" y1="360" x2="640" y2="360" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="650" y="380" font-size="10.5" class="sien" text-anchor="end">→ 1910 헨젤이 처음 전한 「틀린 증명」 이야기</text>
+
+  <line x1="60" y1="410" x2="650" y2="410" class="axis"/>
+  <line x1="60" y1="406" x2="60" y2="414" class="tick"/><text x="60" y="427" font-size="10" class="ax" text-anchor="middle">1840</text>
+  <line x1="205" y1="406" x2="205" y2="414" class="tick"/><text x="205" y="427" font-size="10" class="ax" text-anchor="middle">1845</text>
+  <line x1="350" y1="406" x2="350" y2="414" class="tick"/><text x="350" y="427" font-size="10" class="ax" text-anchor="middle">1850</text>
+  <line x1="495" y1="406" x2="495" y2="414" class="tick"/><text x="495" y="427" font-size="10" class="ax" text-anchor="middle">1855</text>
+  <line x1="640" y1="406" x2="640" y2="414" class="tick"/><text x="640" y="427" font-size="10" class="ax" text-anchor="middle">1860</text>
+
+  <text x="30" y="462" font-size="10" class="ax">⚠ 1847.9 는 「1847년 9월까지」라는 MacTutor 의 말을 9월에 찍은 것이다. 1844 · 1846 은 위키백과 · MacTutor 역사 주제를 따랐다.</text>
+  <text x="30" y="478" font-size="10" class="ax">⚠ 1843 은 MacTutor 전기가 「이상수」를 들였다고 적는 해다. 위키백과는 헨젤의 이야기를 출처의 혼동으로 본다(본문 §3).</text>
+  <text x="30" y="494" font-size="10" class="ax">⚠ 점선은 이야기가 처음 적히기까지의 거리일 뿐, 이 그림은 이야기가 참인지 정하지 않는다. 1910 은 축 밖이다.</text>
+</svg>
