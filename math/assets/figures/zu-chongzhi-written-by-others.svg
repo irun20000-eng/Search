@@ -29,7 +29,7 @@
   <circle cx="119" cy="300" r="5" class="sd"/><text x="119" y="288" font-size="10" class="sien" text-anchor="middle">쓰다</text>
   <circle cx="248.8" cy="300" r="5" class="bd"/><text x="248.8" y="320" font-size="10" class="blue" text-anchor="middle">656 시험 교재</text>
   <circle cx="564.45" cy="300" r="5" class="bd"/><text x="564.45" y="320" font-size="10" class="blue" text-anchor="end">1084 다시 찍다</text>
-  <circle cx="583.63" cy="300" r="5" class="ring"/><text x="583.63" y="288" font-size="10" class="blue" text-anchor="start">12세기 초 사라지다</text>
+  <circle cx="583.63" cy="300" r="5" class="ring"/><text x="650" y="288" font-size="10" class="blue" text-anchor="end">12세기 초 사라지다</text>
 
   <text x="30" y="360" font-size="11">대명력</text>
   <line x1="60" y1="390" x2="650" y2="390" class="row"/>
