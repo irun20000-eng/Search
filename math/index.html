@@ -217,13 +217,13 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
 .article .tldr li{margin-bottom:9px}
 .article h2 .secno{display:inline-block;min-width:1.6em;color:var(--accent);font-weight:700}
 .article p.warn{background:var(--card2);border-left:3px solid var(--accent);padding:10px 14px;font-size:15.5px;line-height:1.75;color:var(--ink2);border-radius:0 2px 2px 0}
-.article .reading{color:var(--ink3);font-size:.92em;white-space:nowrap}
+.article .reading{color:var(--ink2);font-size:.92em;white-space:nowrap}
 .article .tablewrap table tr:nth-child(even) td{background:color-mix(in srgb,var(--card2) 55%,transparent)}
 .article .tablewrap th{border-bottom:2px solid var(--rule)}
 .article blockquote{background:var(--card);border-left-color:var(--accent);padding:12px 18px;border-radius:0 2px 2px 0}
 .article blockquote p:last-child{margin-bottom:0}
 @media(max-width:560px){.article .tldr{padding:12px 14px 2px;margin-left:-4px;margin-right:-4px}}
-@media print{.article .tldr,.article p.warn,.article blockquote{background:none}.article .tldr{border:1px solid #999}}
+@media print{.article .tldr,.article p.warn,.article blockquote{background:none}.article .tldr{border:1px solid var(--ink3)}}
 
 .article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 20px}
 .article th,.article td{border:1px solid var(--rule2);padding:8px 11px;text-align:left;vertical-align:top}
@@ -538,9 +538,9 @@ function magazinize(art){
   const td=hs.find(h=>/^TL;?DR$/i.test(h.textContent.trim()));
   if(td){ const box=document.createElement('section'); box.className='tldr'; td.before(box); let n=td; const take=[]; while(n){ take.push(n); n=n.nextElementSibling; if(!n||n.tagName==='HR'||n.tagName==='H2') break; } take.forEach(x=>box.appendChild(x)); if(n&&n.tagName==='HR') n.remove(); }
   art.querySelectorAll(':scope > p').forEach(p=>{ if(/^\s*⚠/.test(p.textContent)) p.classList.add('warn'); });
-  const tw=document.createTreeWalker(art,NodeFilter.SHOW_TEXT,{acceptNode:n=>/\((이 노트의 (읽기|셈))\)/.test(n.nodeValue)&&!n.parentElement.closest('pre,code,.reading')?1:3});
+  const tw=document.createTreeWalker(art,NodeFilter.SHOW_TEXT,{acceptNode:n=>/\([^()]*이 노트의 (읽기|셈)\)/.test(n.nodeValue)&&!n.parentElement.closest('pre,code,.reading')?1:3});
   const list=[]; let x; while(x=tw.nextNode()) list.push(x);
-  for(const t of list){ const frag=document.createDocumentFragment(); const parts=t.nodeValue.split(/(\(이 노트의 (?:읽기|셈)\))/); for(const p of parts){ if(/^\(이 노트의/.test(p)){ const s=document.createElement('span'); s.className='reading'; s.textContent=p; frag.appendChild(s);} else if(p) frag.appendChild(document.createTextNode(p)); } t.replaceWith(frag); }
+  for(const t of list){ const frag=document.createDocumentFragment(); const parts=t.nodeValue.split(/(\([^()]*이 노트의 (?:읽기|셈)\))/); for(const p of parts){ if(/^\([^()]*이 노트의 (?:읽기|셈)\)$/.test(p)){ const s=document.createElement('span'); s.className='reading'; s.textContent=p; frag.appendChild(s);} else if(p) frag.appendChild(document.createTextNode(p)); } t.replaceWith(frag); }
 }
 function autoConcepts(root){
   // 자기 자신을 가리키는 별칭은 제외한다 — 현재 문서에서 자기 제목에 링크를 거는 것은 잡음이다
