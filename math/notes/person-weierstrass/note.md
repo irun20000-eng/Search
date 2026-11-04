@@ -19,6 +19,12 @@
 기여개념: [concept-analysis-rigor, concept-analysis-rigor-advanced]
 관련인물: [person-cantor]
 
+이미지:
+  - 파일: assets/portraits/weierstrass-fehr-1895.webp
+    설명: 짙은 방에서 흰 머리의 나이 든 남자가 검은 옷을 입고 탁자 옆 의자에 앉아 있다. 손을 무릎과 탁자에 얹었다. 글자는 없다
+    출처: 위키미디어 커먼즈 File:Karl Weierstrass 2.jpg (콘라트 페어, 1895년 유화). 장변 1200px 이하 WebP 로 줄였다
+    라이선스: 퍼블릭 도메인 (커먼즈 표기 PD-Art)
+
 출처:
   - 번호: 1
     제목: MacTutor History of Mathematics, Karl Weierstrass — 생몰·가정·본 대학의 4년, 구더만과 1840년 교원시험, 1842~55년 중등교사 시절과 건강, 1854년 크렐레 논문과 명예박사, 1856년 베를린, 1861년 12월의 붕괴와 앉아서 하는 강의, 1863/64년 실수 이론, 1872년 병리적 함수, 크로네커와의 결별, 코발렙스카야, 만년과 사망
@@ -52,10 +58,18 @@
     제목: MacTutor History of Mathematics, Georg Cantor — 칸토어가 베를린에서 바이어슈트라스의 강의를 들었다는 것, 1870~72년 삼각급수 논문들이 바이어슈트라스의 가르침의 영향을 보인다는 서술
     URL: https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/
     유형: 2차
+  - 번호: 9
+    제목: 위키미디어 커먼즈, File:Karl Weierstrass 2.jpg — 콘라트 페어, 1895년 유화, 퍼블릭 도메인이라는 것
+    URL: https://commons.wikimedia.org/wiki/File:Karl_Weierstrass_2.jpg
+    유형: 2차
 
 ---
 
 # 카를 바이어슈트라스
+
+![짙은 방에서 흰 머리의 나이 든 남자가 검은 옷을 입고 탁자 옆 의자에 앉아 있다. 손을 무릎과 탁자에 얹었다. 글자는 없다](../../assets/portraits/weierstrass-fehr-1895.webp)
+
+위 초상은 콘라트 페어의 1895년 그림이다[9].
 
 > 대학에서 그는 **아무 시험도 치지 않고 떠났다.** 아버지가 짜 준 법학·재정학 과정에도, 그가 좋아한 수학 강의에도 들어가지 않은 채 **4년을 펜싱과 술로 보냈다**[1].
 >

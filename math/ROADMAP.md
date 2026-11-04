@@ -2200,6 +2200,23 @@ HANDOVER 의 그 모드 규칙은 「직접 인용을 넣지 않는다」인데,
 - 위키링크: 15세기 · 13세기 · 2세기 · 알카시 · 코페르니쿠스 → 레기오몬타누스.
 - 검수 지적 반영: 핼리의 결론 해 1696 → 1705(위키백과 본문), 「아리스토텔레스 이론을 따라」 → 「에 맞게」(서전트의 말), 다른 노트의 「핼리혜성」 표기 범위를 좁힘.
 - 후속 후보: century-15c · person-halley 의 「핼리혜성」 줄에 이 노트를 가리키는 단서 달기(내용 변경이라 사용자 확인 뒤).
+#### 2026-11-03 (5) — 초상 2차 10명
+
+| 인물 | 파일 | 근거(커먼즈) | 라이선스 틀 |
+|---|---|---|---|
+| napier | napier-1616.webp | 작가 미상, 1616년, 스코틀랜드 국립미술관 소장 | PD-Art\|PD-old-100-expired |
+| fourier | fourier-boilly.webp | 쥘리앵레오폴 부아이가 그린 것을 새긴 판화, 커먼즈 날짜 19세기 초 | PD-art-100 |
+| dirichlet | dirichlet-before-1859.webp | 작가 미상, 커먼즈 날짜 1859년 이전 | PD-old |
+| johann-bernoulli | johann-bernoulli-huber-c1740.webp | 요한 루돌프 후버, 1740년 무렵 | PD-art-old-100-expired |
+| jakob-bernoulli | jakob-bernoulli-1687.webp | 니클라우스 베르누이(1662~1716), 1687년 | PD-old-auto-1923 |
+| dalembert | dalembert-after-la-tour.webp | 모리스 캉탱 드 라 투르를 따른 작가 미상의 프랑스파 그림, 커먼즈 날짜 18세기 | PD-Art\|PD-old-100-1923 |
+| legendre | legendre-boilly-1820.webp | 쥘리앵레오폴 부아이, 1820년, 수채 캐리커처 | PD-old-auto-1923 |
+| poincare | poincare-1913.webp | 작가 미상, 1913년, 『Popular Science Monthly』 82권 | PD-US |
+| weierstrass | weierstrass-fehr-1895.webp | 콘라트 페어, 1895년 유화 | PD-Art |
+| dedekind | dedekind-c1870.webp | 작가 미상 사진, 커먼즈 설명 1870년 무렵 | PD-old |
+
+- 뺀 후보: 라플라스(게랭 1842, 죽은 뒤 그림), 칸토어(작가 미상 1910 무렵, 근거 약함), 야코비 · 비에트(날짜 · 작가 없음), 하위헌스 · 파스칼 · 코시 · 라그랑주(1차 때 사유 그대로). 배로 · 카르다노 · 볼차노는 커먼즈 위키텍스트에 작가 · 날짜가 비어 있어 뺐다.
+- 르장드르는 유일하게 알려진 동시대 상이 부아이의 캐리커처라 본문에 「초상화가 아니라」고 적었다. 데데킨트 · 르장드르 원본은 작다(262 · 320px).
 
 #### ~~새 권고 — 다음 회차 (2026-10-06 (3))~~ → 히파르코스를 **썼다**(바로 위)
 
