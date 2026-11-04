@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-label="그림 위쪽에 「자리 없이 가르치고, 남이 옮긴 한마디 크로네커」라는 표제가 있고 그 아래에 갈색은 크로네커의 자리와 일, 푸른색은 다른 사람이 한 일, 빈 점은 자료마다 해가 다른 자리라고 적혀 있다. 가로축에 1840부터 1890까지 10년마다 눈금이 있다. 줄이 셋 있다. 첫 줄 자리에는 1845 박사 갈색 점, 1848~1855 집안 사업이라는 옅은 갈색 띠, 1861 학술원 갈색 점, 1862~1883 대학 직함 없이 강의라는 갈색 점선 칸, 1883 교수 갈색 점이 있고, 그 아래 1866 과 1868 자리에 빈 점 둘과 괴팅겐 자리 거절 (1866 · 1868)이 적혀 있다. 둘째 줄 막으려 한 것에는 1870 하이네 논문과 1877 칸토어 논문이 푸른 점, 1880 크렐레 편집과 1886 공개 반대 · 린데만이 갈색 점이다. 셋째 줄 「정수는 신이 만들었다」에는 1886 강연에서 했다고라는 빈 갈색 점과 1893 베버가 적다라는 푸른 점이 갈색 점선으로 이어진다. 1891 에 세 줄을 가로지르는 세로 점선이 있고 위에 1891 죽음이라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 괴팅겐 제안은 MacTutor 가 1868, 위키백과가 리만이 죽은 1866 으로 적고 집안 사업의 끝은 베를린으로 돌아온 1855 로 두었다. 둘째, 「1886 강연에서 했다」는 위키백과가 베버(1893)를 따라 적은 것이고 MacTutor 는 해 없이 「잘 알려진 말」로 적는다. 셋째, 점선은 강연(베버에 따르면)과 베버의 글 사이의 거리이고 이 그림은 그가 그 말을 그대로 했는지 정하지 않는다">
+  <title>자리 없이 가르치고, 남이 옮긴 한마디 — 크로네커</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .band{fill:#9C5A2C;opacity:0.25;} .noband{fill:none;stroke:#9C5A2C;stroke-width:1.2;stroke-dasharray:4 3;}
+    .death{stroke:#221E18;stroke-width:1;stroke-dasharray:1 3;}
+  </style>
+  <rect width="720" height="500" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">자리 없이 가르치고, 남이 옮긴 한마디 — 크로네커</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 크로네커의 자리와 일, 푸른색은 다른 사람이 한 일, 빈 점은 자료마다 해가 다른 자리다.</text>
+
+  <text x="30" y="90" font-size="11">자리</text>
+  <line x1="60" y1="130" x2="650" y2="130" class="row"/>
+  <rect x="145.6" y="124" width="74.90" height="12" class="band"/>
+  <text x="183.05" y="118" font-size="10" class="sien" text-anchor="middle">1848~1855 집안 사업</text>
+  <rect x="295.4" y="124" width="224.70" height="12" class="noband"/>
+  <text x="407.75" y="118" font-size="10" class="sien" text-anchor="middle">1862~1883 대학 직함 없이 강의</text>
+  <circle cx="113.5" cy="130" r="4.5" class="sd"/><text x="113.5" y="152" font-size="10" class="sien" text-anchor="middle">1845 박사</text>
+  <circle cx="284.7" cy="130" r="4.5" class="sd"/><text x="284.7" y="152" font-size="10" class="sien" text-anchor="end">1861 학술원</text>
+  <circle cx="338.2" cy="164" r="4" class="ring"/><circle cx="359.6" cy="164" r="4" class="ring"/>
+  <text x="375.65" y="168" font-size="10" class="dim" text-anchor="start">괴팅겐 자리 거절 (1866 · 1868)</text>
+  <circle cx="520.1" cy="130" r="4.5" class="sd"/><text x="520.1" y="152" font-size="10" class="sien" text-anchor="middle">1883 교수</text>
+
+  <text x="30" y="190" font-size="11">막으려 한 것</text>
+  <line x1="60" y1="230" x2="650" y2="230" class="row"/>
+  <circle cx="381" cy="230" r="4.5" class="bd"/><text x="381" y="218" font-size="10" class="blue" text-anchor="end">1870 하이네 논문</text>
+  <circle cx="455.9" cy="230" r="4.5" class="bd"/><text x="455.9" y="252" font-size="10" class="blue" text-anchor="middle">1877 칸토어 논문</text>
+  <circle cx="488" cy="230" r="4.5" class="sd"/><text x="488" y="218" font-size="10" class="sien" text-anchor="start">1880 크렐레 편집</text>
+  <circle cx="552.2" cy="230" r="4.5" class="sd"/><text x="552.2" y="268" font-size="10" class="sien" text-anchor="end">1886 공개 반대 · 린데만</text>
+
+  <text x="30" y="290" font-size="11">「정수는 신이 만들었다」</text>
+  <line x1="60" y1="330" x2="650" y2="330" class="row"/>
+  <circle cx="552.2" cy="330" r="5" class="ring"/><text x="552.2" y="318" font-size="10" class="sien" text-anchor="end">1886 강연에서 했다고</text>
+  <circle cx="627.1" cy="330" r="4.5" class="bd"/><text x="627.1" y="352" font-size="10" class="blue" text-anchor="end">1893 베버가 적다</text>
+  <line x1="558.2" y1="330" x2="621.1" y2="330" stroke="#9C5A2C" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="605.7" y1="102" x2="605.7" y2="338" class="death"/>
+  <text x="605.7" y="94" font-size="10" class="dim" text-anchor="middle">1891 죽음</text>
+
+  <line x1="60" y1="400" x2="650" y2="400" class="axis"/>
+  <line x1="60" y1="396" x2="60" y2="404" class="tick"/><text x="60" y="417" font-size="10" class="ax" text-anchor="middle">1840</text>
+  <line x1="167" y1="396" x2="167" y2="404" class="tick"/><text x="167" y="417" font-size="10" class="ax" text-anchor="middle">1850</text>
+  <line x1="274" y1="396" x2="274" y2="404" class="tick"/><text x="274" y="417" font-size="10" class="ax" text-anchor="middle">1860</text>
+  <line x1="381" y1="396" x2="381" y2="404" class="tick"/><text x="381" y="417" font-size="10" class="ax" text-anchor="middle">1870</text>
+  <line x1="488" y1="396" x2="488" y2="404" class="tick"/><text x="488" y="417" font-size="10" class="ax" text-anchor="middle">1880</text>
+  <line x1="595" y1="396" x2="595" y2="404" class="tick"/><text x="595" y="417" font-size="10" class="ax" text-anchor="middle">1890</text>
+
+  <text x="30" y="448" font-size="10" class="ax">⚠ 괴팅겐 제안은 MacTutor 가 1868, 위키백과가 리만이 죽은 1866 으로 적는다. 집안 사업의 끝은 베를린으로 돌아온 1855 로 두었다.</text>
+  <text x="30" y="464" font-size="10" class="ax">⚠ 「1886 강연에서 했다」는 위키백과가 베버(1893)를 따라 적은 것이다. MacTutor 는 해 없이 「잘 알려진 말」로 적는다.</text>
+  <text x="30" y="480" font-size="10" class="ax">⚠ 점선은 강연(베버에 따르면)과 베버의 글 사이의 거리다. 이 그림은 그가 그 말을 그대로 했는지 정하지 않는다.</text>
+</svg>

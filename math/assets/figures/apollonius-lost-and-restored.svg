@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「남은 책과 되살린 사람들 아폴로니오스」라는 표제가 있고 그 아래에 파푸스가 적은 그의 책들이 어떻게 남았나, 칸은 남은 상태, 오른쪽 푸른 글씨는 뒤에 되살리거나 풀어 본 사람이라고 적혀 있다. 왼쪽에 책 일곱이 위에서 아래로 놓이고 가운데 칸에 남은 상태, 오른쪽에 되살린 사람이 적혀 있다. 『원뿔곡선론』 8권은 푸른 칸에 Ⅰ~Ⅳ 그리스어 · Ⅴ~Ⅶ 아랍어 · Ⅷ 없음, 오른쪽에 핼리, Ⅷ권 복원 1710 이다. 『비의 절단』 2권은 갈색 칸에 아랍어 번역으로 남음, 오른쪽에 핼리, 라틴어 1706 이다. 『접촉』 2권은 점선 칸에 없음, 파푸스의 보고, 오른쪽에 반 로먼 (쌍곡선) · 비에트 (자와 컴퍼스)이다. 『평면 궤적』 2권은 점선 칸에 없음, 파푸스의 보고, 오른쪽에 페르마 · 스호텐 1656 · 심슨 1749 이다. 『경사』 2권은 점선 칸에 없음, 파푸스의 보고, 오른쪽에 10세기 이슬람 기하학자가 알았다 (호헨데이크)이다. 『면적 절단』 2권과 『한정 절단』 2권은 점선 칸에 없음, 파푸스의 보고이고 오른쪽은 비어 있다. 그 아래에 일곱 가운데 원문 그리스어로 남은 것은 『원뿔곡선론』 앞 네 권뿐이다라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 목록과 「두 권씩」은 위키백과가 옮긴 파푸스의 목록을, 남은 상태는 위키백과 · MacTutor 를 따랐고 칸 색은 이 노트가 골랐다. 둘째, 『평면 궤적』 · 『경사』를 10세기 이슬람 기하학자가 알았다는 것은 호헨데이크의 연구(MacTutor)이고 해가 없는 이름에는 해를 적지 않았다. 셋째, 되살린 책이 원본과 얼마나 같은지는 알 수 없고 위키백과는 『평면 궤적』 복원 가운데 심슨의 것을 「가장 성공적」이라 적는다">
+  <title>남은 책과 되살린 사람들 — 아폴로니오스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;} .wt{fill:#FFFDF7;}
+    .ar{fill:#9C5A2C;} .part{fill:#3A5C77;} .lost{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.2;stroke-dasharray:4 3;}
+    .arr{stroke:#3A5C77;stroke-width:1;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">남은 책과 되살린 사람들 — 아폴로니오스</text>
+  <text x="30" y="50" font-size="11" class="dim">파푸스가 적은 그의 책들이 어떻게 남았나. 칸은 남은 상태, 오른쪽 푸른 글씨는 뒤에 되살리거나 풀어 본 사람이다.</text>
+  <text x="190" y="76" font-size="10" class="ax">남은 상태</text>
+  <text x="426" y="76" font-size="10" class="ax">되살린 사람</text>
+  <text x="30" y="104" font-size="11.5">『원뿔곡선론』 8권</text>
+  <rect x="190" y="89" width="210" height="20" class="part"/>
+  <text x="196" y="104" font-size="10" class="wt">Ⅰ~Ⅳ 그리스어 · Ⅴ~Ⅶ 아랍어 · Ⅷ 없음</text>
+  <line x1="404" y1="100" x2="420" y2="100" class="arr"/><text x="426" y="104" font-size="10.5" class="blue">핼리, Ⅷ권 복원 1710</text>
+  <text x="30" y="154" font-size="11.5">『비의 절단』 2권</text>
+  <rect x="190" y="139" width="210" height="20" class="ar"/>
+  <text x="196" y="154" font-size="10" class="wt">아랍어 번역으로 남음</text>
+  <line x1="404" y1="150" x2="420" y2="150" class="arr"/><text x="426" y="154" font-size="10.5" class="blue">핼리, 라틴어 1706</text>
+  <text x="30" y="204" font-size="11.5">『접촉』 2권</text>
+  <rect x="190" y="189" width="210" height="20" class="lost"/>
+  <text x="196" y="204" font-size="10" class="sien">없음 — 파푸스의 보고</text>
+  <line x1="404" y1="200" x2="420" y2="200" class="arr"/><text x="426" y="204" font-size="10.5" class="blue">반 로먼 (쌍곡선) · 비에트 (자와 컴퍼스)</text>
+  <text x="30" y="254" font-size="11.5">『평면 궤적』 2권</text>
+  <rect x="190" y="239" width="210" height="20" class="lost"/>
+  <text x="196" y="254" font-size="10" class="sien">없음 — 파푸스의 보고</text>
+  <line x1="404" y1="250" x2="420" y2="250" class="arr"/><text x="426" y="254" font-size="10.5" class="blue">페르마 · 스호텐 1656 · 심슨 1749</text>
+  <text x="30" y="304" font-size="11.5">『경사』 2권</text>
+  <rect x="190" y="289" width="210" height="20" class="lost"/>
+  <text x="196" y="304" font-size="10" class="sien">없음 — 파푸스의 보고</text>
+  <line x1="404" y1="300" x2="420" y2="300" class="arr"/><text x="426" y="304" font-size="10.5" class="blue">10세기 이슬람 기하학자가 알았다 (호헨데이크)</text>
+  <text x="30" y="354" font-size="11.5">『면적 절단』 2권</text>
+  <rect x="190" y="339" width="210" height="20" class="lost"/>
+  <text x="196" y="354" font-size="10" class="sien">없음 — 파푸스의 보고</text>
+  
+  <text x="30" y="404" font-size="11.5">『한정 절단』 2권</text>
+  <rect x="190" y="389" width="210" height="20" class="lost"/>
+  <text x="196" y="404" font-size="10" class="sien">없음 — 파푸스의 보고</text>
+  
+  <text x="30" y="456" font-size="11" class="dim">일곱 가운데 원문 그리스어로 남은 것은 『원뿔곡선론』 앞 네 권뿐이다.</text>
+  <text x="30" y="472" font-size="10" class="ax">⚠ 목록과 「두 권씩」은 위키백과가 옮긴 파푸스의 목록을, 남은 상태는 위키백과 · MacTutor 를 따랐다. 칸 색은 이 노트가 골랐다.</text>
+  <text x="30" y="488" font-size="10" class="ax">⚠ 『평면 궤적』 · 『경사』를 10세기 이슬람 기하학자가 알았다는 것은 호헨데이크의 연구(MacTutor)다. 해가 없는 이름에는 해를 적지 않았다.</text>
+  <text x="30" y="504" font-size="10" class="ax">⚠ 되살린 책이 원본과 얼마나 같은지는 알 수 없다. 위키백과는 『평면 궤적』 복원 가운데 심슨의 것을 「가장 성공적」이라 적는다.</text>
+</svg>
