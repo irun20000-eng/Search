@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「동그라미 속 자리, 그리고 누가 점을 찍었나 스테빈」이라는 표제가 있고 그 아래에 위는 같은 수를 두 방식으로 쓴 것, 아래는 「소수점을 처음 쓴 사람」으로 자료마다 드는 이름이며 빈 점은 「…라고 주장된다」로만 남았거나 무엇을 가리키는지 확인되지 않은 자리라고 적혀 있다. 위쪽 스테빈 (1585) 줄에는 7 뒤에 3, 4, 8, 6 이 이어지고 각 숫자 앞 위쪽에 동그라미 속 0, 1, 2, 3, 4 가 붙어 있으며, 오른쪽에 동그라미 숫자는 10 의 몇 제곱분의 일인지를 적은 것(⓪ 이 정수와 소수를 가르는 자리)이라고 적혀 있다. 그 아래 오늘 줄에는 7.3486 이 있다. 아래쪽 「소수점을 처음 쓴 사람」 줄에는 1440년대 비안키니 빈 푸른 점, 1585 스테빈 ⓪①② 갈색 점, 1608 · 1612 피티스쿠스 빈 푸른 점 둘, 네이피어 1614 · 1617 · 1619 점 셋(1614 와 1619 는 푸른 점, 1617 은 빈 점)이 있다. 그 아래에 네이피어의 해는 자료가 고른 해가 다르다며 1614 · 1619 로그표 (위키백과), 1617 (천재학습백과), 1619 (국립중앙과학관)가 적혀 있다. 가로축에 1450부터 1600까지 50년마다 눈금이 있다. 맨 아래에 단서가 셋 있다. 첫째, 비안키니는 위키백과 「소수 구분 기호」가, 피티스쿠스는 위키백과 「스테빈」 · 「피티스쿠스」가 들고 앞의 것에는 위키백과 스스로 모순 표시를 달았으며, 1617 은 같은 해 네이피어가 쉼표를 권했다는 기록이 있어 빈 점으로 두었다. 둘째, 피티스쿠스의 점이 오늘의 소수점과 같은 쓰임인지 다투는 의견이 있어(위키백과) 빈 점으로 비웠다. 셋째, 동그라미 숫자는 위키백과 「데 티엔더」의 보기 7⓪3①4②8③6④ 를 옮겨 그린 것이고 어느 「처음」이 맞는지 이 그림은 정하지 않는다">
+  <title>동그라미 속 자리, 그리고 누가 점을 찍었나 — 스테빈</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .num{font-size:22px;} .circ{fill:none;stroke:#9C5A2C;stroke-width:1.2;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">동그라미 속 자리, 그리고 누가 점을 찍었나 — 스테빈</text>
+  <text x="30" y="50" font-size="11" class="dim">위는 같은 수를 두 방식으로 쓴 것, 아래는 「소수점을 처음 쓴 사람」으로 자료마다 드는 이름이다.</text>
+  <text x="30" y="66" font-size="11" class="dim">빈 점은 「…라고 주장된다」로만 남았거나 무엇을 가리키는지 확인되지 않은 자리다.</text>
+
+  <text x="30" y="96" font-size="11" class="sien">스테빈 (1585)</text>
+  <text x="170" y="100" class="num">7</text>
+  <circle cx="194" cy="84" r="8" class="circ"/><text x="194" y="88" font-size="11" class="sien" text-anchor="middle">0</text>
+  <text x="206" y="100" class="num">3</text><circle cx="230" cy="84" r="8" class="circ"/><text x="230" y="88" font-size="11" class="sien" text-anchor="middle">1</text>
+  <text x="242" y="100" class="num">4</text><circle cx="266" cy="84" r="8" class="circ"/><text x="266" y="88" font-size="11" class="sien" text-anchor="middle">2</text>
+  <text x="278" y="100" class="num">8</text><circle cx="302" cy="84" r="8" class="circ"/><text x="302" y="88" font-size="11" class="sien" text-anchor="middle">3</text>
+  <text x="314" y="100" class="num">6</text><circle cx="338" cy="84" r="8" class="circ"/><text x="338" y="88" font-size="11" class="sien" text-anchor="middle">4</text>
+  <text x="30" y="146" font-size="11" class="blue">오늘</text>
+  <text x="170" y="150" class="num">7.3486</text>
+  <text x="400" y="96" font-size="10" class="dim">동그라미 숫자는 10 의 몇 제곱분의 일인지를 적은 것</text>
+  <text x="400" y="112" font-size="10" class="dim">(⓪ 이 정수와 소수를 가르는 자리)</text>
+
+  <text x="30" y="210" font-size="11">「소수점을 처음 쓴 사람」</text>
+  <line x1="60" y1="250" x2="650" y2="250" class="row"/>
+  <circle cx="104.25" cy="250" r="5" class="ring"/><text x="104.25" y="238" font-size="10" class="blue" text-anchor="start">1440년대 비안키니</text>
+  <circle cx="517.25" cy="250" r="5" class="sd"/><text x="517.25" y="238" font-size="10" class="sien" text-anchor="end">1585 스테빈 ⓪①②</text>
+  <circle cx="585.1" cy="250" r="5" class="ring"/><circle cx="596.9" cy="250" r="5" class="ring"/><text x="579.2" y="272" font-size="10" class="blue" text-anchor="end">1608 · 1612 피티스쿠스</text>
+  <circle cx="602.8" cy="250" r="5" class="bd"/><circle cx="611.65" cy="250" r="5" class="ring"/><circle cx="617.55" cy="250" r="5" class="bd"/><text x="650" y="238" font-size="10" class="blue" text-anchor="end">네이피어 1614 · 1617 · 1619</text>
+
+  <text x="30" y="296" font-size="10" class="dim">네이피어의 해는 자료가 고른 해가 다르다 —</text>
+  <text x="602.8" y="314" font-size="10" class="blue" text-anchor="end">1614 · 1619 로그표 (위키백과)</text>
+  <text x="611.65" y="332" font-size="10" class="blue" text-anchor="end">1617 (천재학습백과)</text>
+  <text x="617.55" y="350" font-size="10" class="blue" text-anchor="end">1619 (국립중앙과학관)</text>
+
+  <line x1="60" y1="420" x2="650" y2="420" class="axis"/>
+  <line x1="119" y1="416" x2="119" y2="424" class="tick"/><text x="119" y="437" font-size="10" class="ax" text-anchor="middle">1450</text>
+  <line x1="266.5" y1="416" x2="266.5" y2="424" class="tick"/><text x="266.5" y="437" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="414" y1="416" x2="414" y2="424" class="tick"/><text x="414" y="437" font-size="10" class="ax" text-anchor="middle">1550</text>
+  <line x1="561.5" y1="416" x2="561.5" y2="424" class="tick"/><text x="561.5" y="437" font-size="10" class="ax" text-anchor="middle">1600</text>
+
+  <text x="30" y="456" font-size="10" class="ax">⚠ 비안키니는 위키백과 「소수 구분 기호」가, 피티스쿠스는 위키백과 「스테빈」 · 「피티스쿠스」가 든다.</text>
+  <text x="30" y="470" font-size="10" class="ax">   앞의 것에는 위키백과 스스로 모순 표시를 달았다. 1617 은 같은 해 네이피어가 쉼표를 권했다는 기록이 있어 빈 점으로 두었다.</text>
+  <text x="30" y="486" font-size="10" class="ax">⚠ 피티스쿠스의 점이 오늘의 소수점과 같은 쓰임인지 다투는 의견이 있다(위키백과). 빈 점은 그래서 비웠다.</text>
+  <text x="30" y="502" font-size="10" class="ax">⚠ 동그라미 숫자는 위키백과 「데 티엔더」의 보기 7⓪3①4②8③6④ 를 옮겨 그린 것이다. 어느 「처음」이 맞는지 이 그림은 정하지 않는다.</text>
+</svg>
