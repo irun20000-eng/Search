@@ -205,6 +205,10 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
 .article hr{clear:both}
 @media(max-width:560px){.article img[src*="/portraits/"]{float:none;width:160px;max-width:60%;margin:0 auto 14px}}
 @media print{.article img[src*="/portraits/"]{width:150px}}
+/* AI 설명 그림(assets/illustrations/)도 초상처럼 작게 오른쪽에 띄운다(2026-11-04 사용자 결정). */
+.article img[src*="/illustrations/"]{float:right;width:240px;max-width:42%;margin:6px 0 14px 22px}
+@media(max-width:560px){.article img[src*="/illustrations/"]{float:none;width:200px;max-width:70%;margin:0 auto 14px}}
+@media print{.article img[src*="/illustrations/"]{width:170px}}
 .article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 20px}
 .article th,.article td{border:1px solid var(--rule2);padding:8px 11px;text-align:left;vertical-align:top}
 .article th{background:var(--card2);font-weight:600}
