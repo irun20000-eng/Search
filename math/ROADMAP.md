@@ -2255,6 +2255,10 @@ HANDOVER 의 그 모드 규칙은 「직접 인용을 넣지 않는다」인데,
 - `person-kronecker`(「레오폴트 크로네커」): 축은 「자리 없이 가르치고, 남이 옮긴 한마디」 — 1862~1883 학술원 권리로 강의, 「정수는 신이」는 베버(1893)가 1886 강연을 전한 것. 칸토어 반대의 성격은 MacTutor(철학) 대 국내 인명사전(엄중한 반대)으로 나란히. 도해 `kronecker-no-chair-borrowed-words.svg`.
 - 위키링크: 아폴로니오스 ← 8편, 크로네커 ← 9편.
 - 다음 후보: 투시(4편 35회), 조충지(5편 28회).
+#### 2026-11-04 (1) — 넘겨 보기 5차
+
+- 도해 점검(-step · 애니메이션 제외, 높이 순): laplace-stance-by-regime(788) · johann-bernoulli-both-sides(720, 두 판) · abel-what-arrived-late(716, 두 칸) · de-moivre-society-yes-university-no(700) · leibniz-found-in-paris-published-in-hanover(680).
+- 두 판 · 두 칸으로 축이 다른 두 장을 나눴다: `abel-what-arrived-late` → `-step1`(1824~1831) · `-step2`(1800~2020), `johann-bernoulli-both-sides` → `-step1`(로피탈 건) · `-step2`(『수력학』 건). 원래 글자는 모두 그대로(아래 판은 translate), ⚠ 줄은 해당 단계에만.
 
 #### ~~새 권고 — 다음 회차 (2026-10-06 (3))~~ → 히파르코스를 **썼다**(바로 위)
 
