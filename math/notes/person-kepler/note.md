@@ -32,8 +32,8 @@
     라이선스: CC0
 
   - 파일: assets/illustrations/kepler-barrel-gauging-ai.webp
-    설명: AI 생성 그림 · 실제 사료 아님. 17세기 잔칫집 안에서 한 남자가 옆으로 눕힌 나무 술통 위쪽 구멍에 눈금 막대를 비스듬히 꽂아 넣고 있다. 뒤쪽 긴 식탁에 손님들이 앉아 있고 촛불이 켜져 있다. 글자는 없다
-    출처: AI 생성(Bing Image Creator, MAI-Image-2.5-Flash, 2026-11-04). §7 의 출처 [1] 이 적는 장면(재혼 잔치에서 막대를 술통 구멍에 비스듬히 넣어 부피를 재는 것)을 그리게 한 설명 그림이며 사료가 아니다. 인물은 케플러나 실제 인물이 아니다
+    설명: AI 생성 그림 · 실제 사료 아님. 촛불이 켜진 어두운 방에서 두 손이 옆으로 눕힌 나무 술통 옆면의 구멍에 눈금 막대를 비스듬히 꽂아 넣고 있다. 소매와 손만 보이고 얼굴은 보이지 않는다. 막대에 눈금 줄이 있고 글자는 없다
+    출처: AI 생성(Bing Image Creator, MAI-Image-2.5-Flash, 2026-11-04, 다시 생성 — 프롬프트 「Close-up historical illustration, early 17th century, two hands pushing a long graduated wooden measuring rod diagonally down through the bung hole of a large wooden wine barrel lying on its side, only hands and forearms visible, no faces, no text」). §7 의 출처 [1] 이 적는 장면(재혼 잔치에서 막대를 술통 구멍에 비스듬히 넣어 부피를 재는 것)을 그리게 한 설명 그림이며 사료가 아니다. 손은 케플러나 실제 인물의 것이 아니다. 그림에서는 구멍이 술통 옆면에 있다
     라이선스: Microsoft 서비스 약관상 사용자 생성물(저작권 귀속 · 상업 이용 조건은 확인 필요)
 출처:
   - 번호: 1
@@ -207,7 +207,7 @@ MacTutor 는 그 모형이 코페르니쿠스의 값과 맞는 정도가 **가�
 
 - **술통(1613 → 1615).** 재혼 잔치에서 막대를 술통 구멍에 비스듬히 넣어 부피를 재는 것을 보고, 그것이 어떻게 되는지 궁금해했다. 결과가 1615년 『술통의 새 입체 측정』이다[1]. 아르키메데스를 바탕으로 「**불가분량**」으로 나눈 그 방법을 [[보나벤투라 카발리에리]]가 발전시켰다고 MacTutor 는 적는다[1]. 카발리에리 노트에서는 바로 이 책이 표절 혐의의 대상으로 나온다.
 
-![AI 생성 그림 · 실제 사료 아님. 17세기 잔칫집 안에서 한 남자가 옆으로 눕힌 나무 술통 위쪽 구멍에 눈금 막대를 비스듬히 꽂아 넣고 있다. 뒤쪽 긴 식탁에 손님들이 앉아 있고 촛불이 켜져 있다. 글자는 없다](../../assets/illustrations/kepler-barrel-gauging-ai.webp)
+![AI 생성 그림 · 실제 사료 아님. 촛불이 켜진 어두운 방에서 두 손이 옆으로 눕힌 나무 술통 옆면의 구멍에 눈금 막대를 비스듬히 꽂아 넣고 있다. 소매와 손만 보이고 얼굴은 보이지 않는다. 막대에 눈금 줄이 있고 글자는 없다](../../assets/illustrations/kepler-barrel-gauging-ai.webp)
 
 위 그림은 AI 로 만든 설명 그림이다 — MacTutor 가 적는 장면[1]을 떠올리게 할 뿐, 술통 · 막대 · 사람의 모습은 사료에 근거하지 않는다.
 
