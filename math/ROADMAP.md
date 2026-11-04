@@ -2259,6 +2259,11 @@ HANDOVER 의 그 모드 규칙은 「직접 인용을 넣지 않는다」인데,
 
 - 도해 점검(-step · 애니메이션 제외, 높이 순): laplace-stance-by-regime(788) · johann-bernoulli-both-sides(720, 두 판) · abel-what-arrived-late(716, 두 칸) · de-moivre-society-yes-university-no(700) · leibniz-found-in-paris-published-in-hanover(680).
 - 두 판 · 두 칸으로 축이 다른 두 장을 나눴다: `abel-what-arrived-late` → `-step1`(1824~1831) · `-step2`(1800~2020), `johann-bernoulli-both-sides` → `-step1`(로피탈 건) · `-step2`(『수력학』 건). 원래 글자는 모두 그대로(아래 판은 translate), ⚠ 줄은 해당 단계에만.
+#### 2026-11-04 — AI 설명 그림 시범
+
+- `person-kepler` §7 술통 항목 아래에 Bing Image Creator(MAI-Image-2.5-Flash) 그림 1장 `assets/illustrations/kepler-barrel-gauging-ai.webp`. MacTutor[1] 이 적는 「막대를 술통 구멍에 비스듬히 넣어 부피를 재는」 장면. 4장 가운데 막대가 구멍에 비스듬히 들어간 1장을 골랐다.
+- 안티키테라(century-bc2 §6)도 만들어 봤으나 4장 모두 손바닥만 한 유물을 사람 키만 한 덩어리로 그려 버렸다 — 틀린 인상이라 쓰지 않았다.
+- 규칙은 MATH_PIPELINE M3 「AI 설명 그림」에 적었다.
 
 #### 2026-11-04 (3) — 나시르 알딘 알투시 썼다
 
