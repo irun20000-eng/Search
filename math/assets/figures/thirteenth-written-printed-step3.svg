@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 242" role="img" aria-label="3단계, 투시 쌍. 그림 위쪽에 「쓴 해와 찍힌 해 13세기의 책들」이라는 표제가 있고 그 아래에 갈색은 쓴 해, 푸른색은 처음 찍힌 해, 빈 점은 필사·수록·남은 판이며 옅은 띠는 찍히기까지 기다린 시간이라고 적혀 있다. 그 아래 제목은 1200~1880, 한 해가 0.88px 이고, 줄 아래 가로축에 1200부터 1800까지 백 년마다 눈금이 있다. 한 줄 투시 쌍 나시르 알딘 알투시에는 1260년대 마라가 갈색 점에서 띠가 1543년 빈 푸른 점까지 가고 1543 코페르니쿠스 III.4 에 다시라고 적혀 있다. 맨 아래에 단서가 둘 있다. 첫째, 빈 점은 인쇄본이 아니거나 처음이 아닌 판이고 「무렵」·범위로만 아는 해는 대표 해 하나에 두었다. 둘째, 투시 쌍의 줄은 인쇄가 아니라 코페르니쿠스의 책에 다시 나타난 해다(MacTutor 「250년 뒤」)">
+  <title>쓴 해와 찍힌 해 — 13세기의 책들</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .wait{fill:#F4EADC;stroke:none;}
+    .cd{fill:#3A5C77;} .cring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .sd{fill:#9C5A2C;} .sring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+  </style>
+  <rect width="720" height="242" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">쓴 해와 찍힌 해 — 13세기의 책들</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 쓴 해, 푸른색은 처음 찍힌 해, 빈 점은 필사·수록·남은 판. 옅은 띠는 찍히기까지 기다린 시간이다.</text>
+  <text x="30" y="74" font-size="12">1200~1880 — 한 해가 0.88px</text>
+
+  <g transform="translate(0,-310)">
+  <text x="30" y="413" font-size="10" class="dim">투시 쌍 — 나시르 알딘 알투시</text>
+  <line x1="60" y1="435" x2="658" y2="435" class="row"/>
+  <rect x="112.8" y="432" width="249.04" height="6" class="wait"/>
+  <circle cx="112.8" cy="435" r="4.5" class="sd"/>
+  <circle cx="361.84" cy="435" r="4" class="cring"/>
+  <text x="107" y="453" font-size="10.5" class="sien">1260년대 마라가</text>
+  <text x="368" y="426" font-size="10.5" class="blue">1543 코페르니쿠스 III.4 에 다시</text>
+
+  </g>
+  <g transform="translate(0,-320)">
+  <line x1="60" y1="480" x2="658" y2="480" class="axis"/>
+  <line x1="60" y1="476" x2="60" y2="484" class="tick"/><text x="60" y="497" font-size="10" class="ax" text-anchor="middle">1200</text>
+  <line x1="148" y1="476" x2="148" y2="484" class="tick"/><text x="148" y="497" font-size="10" class="ax" text-anchor="middle">1300</text>
+  <line x1="236" y1="476" x2="236" y2="484" class="tick"/><text x="236" y="497" font-size="10" class="ax" text-anchor="middle">1400</text>
+  <line x1="324" y1="476" x2="324" y2="484" class="tick"/><text x="324" y="497" font-size="10" class="ax" text-anchor="middle">1500</text>
+  <line x1="412" y1="476" x2="412" y2="484" class="tick"/><text x="412" y="497" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="500" y1="476" x2="500" y2="484" class="tick"/><text x="500" y="497" font-size="10" class="ax" text-anchor="middle">1700</text>
+  <line x1="588" y1="476" x2="588" y2="484" class="tick"/><text x="588" y="497" font-size="10" class="ax" text-anchor="middle">1800</text>
+  </g>
+  <text x="30" y="210" font-size="10" class="ax">⚠ 빈 점은 인쇄본이 아니거나 처음이 아닌 판이다. 「무렵」·범위로만 아는 해는 대표 해 하나에 두었다.</text>
+  <text x="30" y="226" font-size="10" class="ax">⚠ 투시 쌍의 줄은 인쇄가 아니라 코페르니쿠스의 책에 다시 나타난 해다(MacTutor 「250년 뒤」).</text>
+</svg>
