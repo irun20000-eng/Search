@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="그림 위쪽에 「핼리혜성이 아닌 혜성 레기오몬타누스」라는 표제가 있고 그 아래에 위는 혜성, 아래는 그의 책이며 푸른색은 핼리혜성과 인쇄된 해, 갈색은 레기오몬타누스가 보거나 쓴 것이라고 적혀 있다. 가로축에 1440부터 1680까지 40년마다 눈금이 있다. 위쪽 혜성 줄에는 1456, 1531, 1607, 1682 에 푸른 점이 있고 1531 · 1607 · 1682 세 점을 푸른 점선 호가 잇는다. 호 위에 핼리가 같은 혜성으로 묶은 세 번(1531 · 1607 · 1682)이라고 적혀 있다. 1472 에는 조금 큰 갈색 점이 있고 그 아래에 1472 그가 본 혜성 (C/1471 Y1), 국내 두 사전은 이것을 「핼리혜성」으로 적는다라고 적혀 있다. 아래쪽 책 줄은 쓴 해(갈색 점)에서 찍힌 해(푸른 점)까지를 갈색 점선으로 잇는 세 줄이다. 첫째 『알마게스트 요약』 1463 → 1496, 둘째 『모든 종류의 삼각형에 관하여』 1464 → 1533, 셋째 『방향 표』 1467 → 1490 이다. 세 줄을 1476 에서 세로 점선이 가르고 그 아래에 1476 죽음이라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 1472 혜성의 이름(C/1471 Y1)은 MacTutor 와 위키백과, 「핼리혜성」이라는 말은 국내 지구과학사전 · 인명사전을 따랐다. 둘째, 『알마게스트 요약』을 마친 해는 MacTutor 1462, 이 서가 15세기 노트의 자료 1463 이고 그림은 1463 을 썼다. 셋째, 『삼각형』의 인쇄 해를 국내 지구과학사전은 1553 으로 적고 『방향 표』를 쓴 해 1467 은 MacTutor 를 따랐다">
+  <title>핼리혜성이 아닌 혜성 — 레기오몬타누스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .wait{stroke:#9C5A2C;stroke-width:1.2;stroke-dasharray:4 3;}
+    .cyc{stroke:#3A5C77;stroke-width:1;stroke-dasharray:2 3;fill:none;}
+  </style>
+  <rect width="720" height="560" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">핼리혜성이 아닌 혜성 — 레기오몬타누스</text>
+  <text x="30" y="50" font-size="11" class="dim">위는 혜성, 아래는 그의 책이다. 푸른색은 핼리혜성과 인쇄된 해, 갈색은 레기오몬타누스가 보거나 쓴 것이다.</text>
+
+  <text x="30" y="102" font-size="11">혜성</text>
+  <line x1="60" y1="150" x2="650" y2="150" class="row"/>
+  <circle cx="95.2" cy="150" r="5" class="bd"/><circle cx="260.2" cy="150" r="5" class="bd"/><circle cx="427.4" cy="150" r="5" class="bd"/><circle cx="592.4" cy="150" r="5" class="bd"/>
+  <path d="M260.2,142 Q343.79999999999995,110 427.4,142 Q509.9,110 592.4,142" class="cyc"/>
+  <text x="95.2" y="170" font-size="10.5" class="blue" text-anchor="middle">1456</text><text x="260.2" y="170" font-size="10.5" class="blue" text-anchor="middle">1531</text><text x="427.4" y="170" font-size="10.5" class="blue" text-anchor="middle">1607</text><text x="592.4" y="170" font-size="10.5" class="blue" text-anchor="middle">1682</text>
+  <text x="343.8" y="116" font-size="10" class="blue" text-anchor="middle">핼리가 같은 혜성으로 묶은 세 번(1531 · 1607 · 1682)</text>
+  <circle cx="130.4" cy="150" r="6" class="sd"/>
+  <text x="130.4" y="188" font-size="10.5" class="sien" text-anchor="middle">1472 그가 본 혜성 (C/1471 Y1)</text>
+  <text x="90.4" y="204" font-size="10" class="dim">국내 두 사전은 이것을 「핼리혜성」으로 적는다</text>
+
+  <text x="30" y="260" font-size="11">책 — 쓴 해(갈색 점)에서 찍힌 해(푸른 점)까지</text>
+  <line x1="60" y1="290" x2="650" y2="290" class="row"/>
+  <line x1="110.6" y1="290" x2="183.2" y2="290" class="wait"/><circle cx="110.6" cy="290" r="4.5" class="sd"/><circle cx="183.2" cy="290" r="4.5" class="bd"/>
+  <text x="193.2" y="280" font-size="10.5">『알마게스트 요약』 1463 → 1496</text>
+  <line x1="60" y1="350" x2="650" y2="350" class="row"/>
+  <line x1="112.8" y1="350" x2="264.6" y2="350" class="wait"/><circle cx="112.8" cy="350" r="4.5" class="sd"/><circle cx="264.6" cy="350" r="4.5" class="bd"/>
+  <text x="274.6" y="340" font-size="10.5">『모든 종류의 삼각형에 관하여』 1464 → 1533</text>
+  <line x1="60" y1="410" x2="650" y2="410" class="row"/>
+  <line x1="119.4" y1="410" x2="170" y2="410" class="wait"/><circle cx="119.4" cy="410" r="4.5" class="sd"/><circle cx="170" cy="410" r="4.5" class="bd"/>
+  <text x="180" y="400" font-size="10.5">『방향 표』 1467 → 1490</text>
+
+  <line x1="139.2" y1="282" x2="139.2" y2="426" stroke="#221E18" stroke-width="1" stroke-dasharray="1 3"/>
+  <text x="143.2" y="438" font-size="10" class="dim">1476 죽음</text>
+
+  <line x1="60" y1="450" x2="650" y2="450" class="axis"/>
+  <line x1="60" y1="446" x2="60" y2="454" class="tick"/><text x="60" y="467" font-size="10" class="ax" text-anchor="middle">1440</text>
+  <line x1="148" y1="446" x2="148" y2="454" class="tick"/><text x="148" y="467" font-size="10" class="ax" text-anchor="middle">1480</text>
+  <line x1="236" y1="446" x2="236" y2="454" class="tick"/><text x="236" y="467" font-size="10" class="ax" text-anchor="middle">1520</text>
+  <line x1="324" y1="446" x2="324" y2="454" class="tick"/><text x="324" y="467" font-size="10" class="ax" text-anchor="middle">1560</text>
+  <line x1="412" y1="446" x2="412" y2="454" class="tick"/><text x="412" y="467" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="500" y1="446" x2="500" y2="454" class="tick"/><text x="500" y="467" font-size="10" class="ax" text-anchor="middle">1640</text>
+  <line x1="588" y1="446" x2="588" y2="454" class="tick"/><text x="588" y="467" font-size="10" class="ax" text-anchor="middle">1680</text>
+
+  <text x="30" y="496" font-size="10" class="ax">⚠ 1472 혜성의 이름(C/1471 Y1)은 MacTutor 와 위키백과, 「핼리혜성」이라는 말은 국내 지구과학사전 · 인명사전을 따랐다.</text>
+  <text x="30" y="512" font-size="10" class="ax">⚠ 『알마게스트 요약』을 마친 해는 MacTutor 1462, 이 서가 15세기 노트의 자료 1463 이다. 그림은 1463 을 썼다.</text>
+  <text x="30" y="528" font-size="10" class="ax">⚠ 『삼각형』의 인쇄 해를 국내 지구과학사전은 1553 으로 적는다. 『방향 표』를 쓴 해 1467 은 MacTutor 를 따랐다.</text>
+</svg>
