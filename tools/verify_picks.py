@@ -98,15 +98,21 @@ def check(path: Path, evidence: Path | None):
                 if q not in flat:
                     bad.append('%s — 인용이 자막에 없다: "%s"' % (vid, q))
                     continue
-                head = q[:8]
-                hit = next((ln for ln in lines if head in ln), None)
-                if hit is None:  # 구간 경계에 걸친 인용 — 앞 4자로 다시
-                    hit = next((ln for ln in lines if q[:4] in ln), None)
-                m = TS.match(hit or "")
-                if not m:
-                    bad.append('%s — 구간을 못 찾음: "%s"' % (vid, q))
-                elif abs(secs(m.group(1)) - secs(t)) > 3:
-                    bad.append('%s — "%s" 의 [%s] 가 자막 구간 [%s] 와 다르다' % (vid, q, t, m.group(1)))
+                # 인용 **전체**가 시작되는 구간을 모두 찾는다 (2026-11-05 괴델 N1:
+                # 앞 8자만 맞추다 「저희 학교 가정 통신문 양식이에요」가 [14:18] 로 통과했다.
+                # 실제로는 앞부분만 14:18 이고 전문은 29:49 에 있었다).
+                texts = [re.sub(r"^\[[^\]]*\]\s*", "", ln) for ln in lines]
+                starts = []
+                for i in range(len(lines)):
+                    win = " ".join(texts[i:i + 5])
+                    if q in win and q not in " ".join(texts[i + 1:i + 5]):
+                        m = TS.match(lines[i])
+                        if m:
+                            starts.append(m.group(1))
+                if not starts:
+                    bad.append('%s — 인용이 연속 구간에 없다(구간을 넘나듦): "%s"' % (vid, q))
+                elif not any(abs(secs(s) - secs(t)) <= 3 for s in starts):
+                    bad.append('%s — "%s" 의 [%s] 가 자막 구간 [%s] 와 다르다' % (vid, q, t, "·".join(starts)))
     return bad
 
 
