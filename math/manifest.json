@@ -1037,6 +1037,196 @@
    "시각화": 6
   },
   {
+   "유형": "개념",
+   "제목": "삼각법",
+   "슬러그": "concept-trigonometry",
+   "날짜": "2026-11-05",
+   "별칭": [
+    "삼각법",
+    "삼각함수의 역사",
+    "trigonometry",
+    "사인의 어원",
+    "sine",
+    "현의 표",
+    "반현"
+   ],
+   "볼트파일명": "개념_삼각법",
+   "트랙": "이해편",
+   "세기": [
+    -2,
+    2,
+    6,
+    10,
+    13,
+    15,
+    16,
+    17,
+    18
+   ],
+   "분야": [
+    "삼각법",
+    "기하학",
+    "천문학"
+   ],
+   "교과": [
+    "대수"
+   ],
+   "난이도": "표준",
+   "요약": "삼각법은 삼각형이 아니라 하늘에서 시작했다. 처음 표로 만든 것은 사인이 아니라 원의 현이었고, 사인은 그 현의 절반을 부르는 인도의 말이 아랍어와 라틴어를 지나며 뜻이 바뀐 이름이다. 그리고 삼각법을 천문학에서 떼어 「독립」시킨 사람이 누구냐는 물음에는 지금도 자료마다 다른 이름이 적힌다.",
+   "태그": [
+    "수학사",
+    "삼각법",
+    "사인",
+    "코사인",
+    "탄젠트",
+    "현의 표",
+    "반현",
+    "jyā",
+    "sinus",
+    "히파르코스",
+    "프톨레마이오스",
+    "아리아바타",
+    "투시",
+    "레기오몬타누스",
+    "피티스쿠스",
+    "오일러"
+   ],
+   "발전단계": [
+    {
+     "세기": -2,
+     "인물": "히파르코스",
+     "변화": "처음으로 알려진 현의 표를 만들었다. 표는 남지 않았고, MacTutor 는 그를 삼각법의 창시자로 적는다.",
+     "출처": 1
+    },
+    {
+     "세기": 2,
+     "인물": "프톨레마이오스",
+     "변화": "『알마게스트』에 지름을 120 으로 잡은 원의 현의 표를 실었다. 수학백과는 이것을 처음 만든 삼각함수표로 적는다.",
+     "출처": 6
+    },
+    {
+     "세기": 6,
+     "인물": "아리아바타",
+     "변화": "현의 절반, 곧 반현의 표를 내놓았다. 그 이름 jyā 가 아랍어와 라틴어를 지나 sine 이 되었다.",
+     "출처": 1
+    },
+    {
+     "세기": 13,
+     "인물": "나시르 알딘 알투시",
+     "변화": "『사변형론』에서 평면 · 구면 삼각법을 천문학과 따로 펼쳤다. 위키백과는 그를 삼각법을 독립된 분야로 다룬 첫 사람으로 적는다.",
+     "출처": 2
+    },
+    {
+     "세기": 15,
+     "인물": "레기오몬타누스",
+     "변화": "1464년 『모든 종류의 삼각형에 관하여』를 마쳤고, 그 책은 1533년에 인쇄됐다. 사인과 그 역에 특히 강한 책이다.",
+     "출처": 1
+    },
+    {
+     "세기": 16,
+     "인물": "피티스쿠스",
+     "변화": "1595년 책 제목으로 「삼각법(Trigonometria)」이라는 말을 처음 썼다.",
+     "출처": 1
+    },
+    {
+     "세기": 18,
+     "인물": "오일러",
+     "변화": "1748년 exp(ix) = cos x + i sin x 를 냈다. 위키백과는 삼각법이 그와 함께 오늘의 꼴에 이르렀다고 적는다.",
+     "출처": 2
+    }
+   ],
+   "선행개념": [],
+   "후속개념": [
+    "concept-complex-number",
+    "concept-series"
+   ],
+   "기여인물": [
+    "person-hipparchus",
+    "person-ptolemy",
+    "person-al-tusi",
+    "person-regiomontanus",
+    "person-euler"
+   ],
+   "이미지": [
+    {
+     "파일": "assets/figures/trigonometry-chord-and-half-chord.svg",
+     "출처": "직접 제작",
+     "라이선스": "CC0",
+     "설명": "그림 위쪽에 「현 하나, 반현 하나 같은 원의 두 표」라는 표제가 있고 그 아래에 반지름 1 인 원에서 중심각 2α 의 현 AB 와 그 절반 AM, 갈색은 그리스의 현, 푸른색은 인도의 반현이라고 적혀 있다. 왼쪽에 중심 O 인 원이 있고 O 에서 원 위의 두 점 A 와 B 로 반지름이 그어져 있으며 두 반지름 사이의 각에 2α 라고 적혀 있다. A 와 B 를 잇는 세로 현은 갈색 굵은 선이고 AB 라고 적혀 있다. 그 현의 위쪽 절반, A 에서 현의 가운데 점 M 까지는 푸른 굵은 선으로 따로 그어져 있고 AM 이라고 적혀 있다. O 에서 M 까지는 점선이다. 오른쪽에 네 덩이의 글이 있다. 그리스 현 AB 를 표로 아래에 히파르코스 (기원전 140 무렵), 메넬라오스 · 프톨레마이오스, 인도 반현 AM 을 표로 아래에 아리아바타 (500 무렵) · jyā, 오늘 sin α = AM ÷ OA 아래에 반지름이 1 이면 AB = 2 sin α, 교실 직각삼각형 OAM 의 비 아래에 ∠AMO 가 직각, 피타고라스 정리라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, α 는 35° 로 그렸고 프톨레마이오스는 현을 썼고 사인은 쓰지 않았으며(MacTutor) 「AB = 2 sin α」는 오늘의 기호로 옮긴 것이다. 둘째, 첫 현의 표를 MacTutor 는 히파르코스로, 수학백과 「삼각함수표」는 프톨레마이오스로 적는다(본문 §2). 셋째, 반현이 왜 편한가는 수학산책을 따랐고 원 크기와 글자 자리는 이 노트가 골랐다"
+    },
+    {
+     "파일": "assets/figures/trigonometry-name-of-sine.svg",
+     "출처": "직접 제작",
+     "라이선스": "CC0",
+     "설명": "그림 위쪽에 「반의 현에서 sinus 까지 사인이라는 이름의 길」이라는 표제가 있고 그 아래에 갈색 칸은 산스크리트와 아랍어 쪽, 푸른 칸은 라틴어이며 칸 위 회색 글은 한 칸에서 다음 칸으로 넘어간 방식이라고, 그리고 사인(sine)은 라틴어 sinus 를 영어식으로 바꾼 말이라고 적혀 있다. 가운데에 칸 다섯이 왼쪽에서 오른쪽으로 화살표로 이어진다. jyā-ardha (산스크리트, 반의 현), jiba (아랍어, 소리만 옮김), jb (아랍 글자, 모음을 안 씀), jaib (아랍어, 뜻 있는 말), sinus (라틴어, 같은 뜻으로)이고, 칸 사이 위쪽에 소리로, 글자로, 다시 읽음, 뜻으로라고 적혀 있다. 그 아래 「jb 를 무엇으로, 누가 읽었나」에 네 줄이 있다. MacTutor 는 jaib 는 「주름」이고 뒤의 아랍 글에서 jiba 가 그렇게 바뀌었다, 위키백과는 jayb 는 「가슴 · 주머니 · 주름」이고 모음 없는 jb 를 뒤 저자들이 읽은 것, 수학산책은 jaib 는 「만(灣)」이고 jb 를 본 유럽인들이 착각했다, 수학백과는 jaib 는 「작은 만」이고 그 이후의 저자들이 오역했다고 적혀 있다. 그 아래 「라틴어로 옮긴 사람」에 크레모나의 제라르도, 1150년 무렵 (수학백과)과 12세기 제라르도, 그보다 앞에 체스터의 로버트가 있었던 듯 (위키백과)이 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, jyā → jiba → jaib → sinus 의 순서는 네 자료가 같고 jb 칸은 MacTutor 에 없으며, 갈리는 것은 jaib 의 뜻과 처음 그렇게 읽은 사람(뒤의 아랍 글인가, 유럽인인가)이다. 둘째, MacTutor 는 옮긴 사람을 「유럽 저자들」로만 적고 sinus 를 퍼뜨린 것으로 피보나치의 sinus rectus arcus 를 든다. 셋째, 해는 자료가 적은 것만 적었고 칸과 화살표는 이 노트가 그렸다"
+    }
+   ],
+   "출처": [
+    {
+     "번호": 1,
+     "제목": "MacTutor History Topics, The trigonometric functions — 삼각함수가 수학과 천문학의 이른 연결에서 나왔고 구면삼각형이 평면삼각형만큼 중요했다는 것, 처음 연구는 원의 현이었고 반지름 1 인 원에서 각 x 의 현이 2 sin(x/2) 라는 것, 알려진 첫 현의 표를 기원전 140년 무렵 히파르코스가 만들었고 그 표는 남지 않았으며 그가 현의 표 열두 권을 썼다고 「전해진다」는 것, 그래서 그를 삼각법의 창시자로 본다는 것, 100년 무렵 메넬라오스가 로마에서 현의 표 여섯 권을 냈으나 사라졌고 그의 구면학이 남은 가장 이른 구면삼각법이라는 것, 프톨레마이오스가 원을 360° 로, 지름을 120 으로 나눈 것이 바빌로니아의 영향을 보인다는 것, 그들이 사인 · 코사인이 아니라 현을 썼다는 것, 정다각형으로 36° · 72° · 60° · 90° · 120° 의 현을 구하고 반호의 현과 보간으로 표를 채웠으며 sin 30′ 을 60진 0;31,25 로 얻었는데 10진으로 0.0087268 이고 7자리 참값은 0.0087265 라는 것, 사인이 처음 실제로 나타난 것은 500년 무렵 아리아바타의 반현 표이고 그것이 정말 사인표이며 jya 라 불렀다는 것, 같은 표가 628년 브라마굽타에, 1150년 바스카라에 사인표 만드는 방법이 있다는 것, 980년까지 아부 알와파가 sin 2x = 2 sin x cos x 를 알았다는 것, 아랍인이 jya 를 소리가 같은 뜻 없는 말 jiba 로 받았고 뒤의 아랍 글에서 jiba 가 「주름」이라는 뜻의 jaib 가 되었으며 유럽 저자들이 그것을 같은 뜻의 라틴어 sinus 로 옮겼다는 것, 피보나치의 sinus rectus arcus 가 sine 이 널리 쓰이게 했다는 것, 1542년 레티쿠스가 코페르니쿠스의 삼각법 장을 냈다는 것, 1533년 레기오몬타누스의 『모든 종류의 삼각형에 관하여』가 1464년 무렵의 작업이고 사인과 그 역에 특히 강하다는 것, 1624년 건터가 그림에서 sin 을 처음 썼고 1634년 에리곤이 책에서 처음 썼다는 것, 버스트 사인(versin x = 1 − cos x)이 두 번째로 중요한 함수였다는 것, 코사인을 건터가 1620년 co-sinus 로 제안했다는 것, 탄젠트 · 코탄젠트가 그림자 길이에서 왔고 860년 무렵 아랍의 그림자 표가 처음이라는 것, 탄젠트라는 이름은 1583년 핑케, 코탄겐스는 1620년 건터, tan 은 1626년 지라르, cot 은 1674년 무어가 처음 썼다는 것, 코페르니쿠스가 시컨트를 hypotenusa 라 불렀다는 것, 「삼각법」이라는 말이 1595년 피티스쿠스의 책 제목으로 처음 나왔다는 것, 1748년 오일러가 exp(ix) = cos x + i sin x 를 냈다는 것, 쌍곡 삼각함수를 람베르트가 들였다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/HistTopics/Trigonometric_functions/",
+     "유형": "2차"
+    },
+    {
+     "번호": 2,
+     "제목": "Wikipedia, History of trigonometry — 바빌로니아 60진법 때문에 1도를 60분, 1분을 60초로 나눈다는 것, 플림프턴 322 를 시컨트 표로 보는 해석이 있으나 원과 각 없이는 맞지 않는다는 것, 100년 무렵 메넬라오스의 『구면학』 세 권, 아리아바타(6세기)가 사인 · 코사인 · 버스트 사인을 찾았다는 것, 알투시(1201~1274)가 처음으로 삼각법을 천문학과 떨어진 독립된 분야로 다뤘고 여섯 삼각함수를 증명과 함께 세웠으며 평면 · 구면 사인법칙을 세웠다는 것, 르네상스 때 레기오몬타누스(1464 무렵)가 알투시의 저작을 이름을 밝히지 않고 라틴어로 옮겨 유럽의 역사 서술에서 그의 이름이 지워졌고 오랫동안 유럽 교과서가 삼각법의 발전을 레기오몬타누스에게 돌렸다는 것, 현대 연구가 알투시의 몫을 되돌렸고 그를 「삼각법의 대가」로 부른다는 것(이 대목에 「누구에 의해?」 표시가 붙어 있다), 레티쿠스의 『팔라틴 삼각형 저작』이 직각삼각형으로 삼각함수를 직접 정의한 유럽의 아마 첫 책이고 1596년 오토가 마쳤다는 것, 「삼각법」이라는 말이 1595년 피티스쿠스의 『트리고노메트리아』 제목으로 처음 나왔고 그리스어 「삼각형」과 「잼」에서 왔다는 것, 사인이 산스크리트 jya-ardha 가 jiva 로 줄고 아랍어 jiba 로 받아들여진 뒤 라틴어 sinus 가 되었다는 것, 피보나치의 sinus rectus arcus 가 그 말을 굳혔다는 것, 오일러(1748)와 함께 오늘의 꼴에 이르렀다는 것",
+     "URL": "https://en.wikipedia.org/wiki/History_of_trigonometry",
+     "유형": "2차"
+    },
+    {
+     "번호": 3,
+     "제목": "Wikipedia, Sine and cosine (Etymology) — sine 이 산스크리트 jyā(「활시위」)와 그 동의어 jīvá 에서 왔다는 것, 아리아바타가 jyā-ardha(반현)를 jyā · jīvá 로 줄여 썼다는 것, 아랍어로 옮겨질 때 뜻 없는 jiba 로 소리만 적혔고, 아랍어가 짧은 모음을 적지 않아 jb 가 뒤의 저자들에게 「가슴 · 주머니 · 주름」을 뜻하는 jayb 로 읽혔다는 것, 12세기 크레모나의 제라르도가 알바타니와 알콰리즈미의 아랍어 글을 중세 라틴어로 옮기며 sinus(「만」, 「주름」, 토가가 가슴 위로 늘어진 주름)를 썼다는 것, 제라르도가 아마 처음은 아니며 체스터의 로버트가 그보다 앞섰던 듯하고 더 이른 쓰임의 흔적도 있다는 것, 영어 sine 은 1593년 토머스 페일의 『호롤로기오그라피아』가 들였다는 것",
+     "URL": "https://en.wikipedia.org/wiki/Sine_and_cosine",
+     "유형": "2차"
+    },
+    {
+     "번호": 4,
+     "제목": "네이버 지식백과(수학산책), 삼각함수 — 사인, 코사인, 탄젠트 — 삼각비를 처음 연구한 사람들이 고대 그리스의 천문학자들이었다는 것, 별까지의 거리는 정하기 어렵지만 두 별 사이의 각은 일정해 각도마다 비례상수를 구하려는 시도가 삼각함수의 시작이었다는 것, 관측점에서 별까지를 1 로 잡으면 두 별 사이의 거리가 2sin(θ/2) 이라는 것, 피타고라스 정리 때문에 θ/2 의 직각삼각형이 편해 인도 수학자들이 「현의 절반」이라는 뜻의 jya-ardha, 줄여서 jya 라 불렀다는 것, 아라비아 수학자들이 소리를 흉내 내 jiba 로 옮겼고 모음을 적지 않아 jb 를 본 유럽인들이 jaib 로 착각했으며 jaib 가 만(bay)을 뜻해 라틴어 sinus 로 번역되었다는 것, sin 90° · sin 120° 를 현의 길이로 정하는 설명, 오늘은 테일러 급수로 값을 구한다는 것",
+     "URL": "https://terms.naver.com/%EC%88%98%ED%95%99/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98-1QINS4vUOScQEdvWR6svPZ",
+     "유형": "2차"
+    },
+    {
+     "번호": 5,
+     "제목": "네이버 지식백과(수학백과, 대한수학회), 사인 — 사인을 직각삼각형의 대변과 빗변의 비, 또는 원 위의 점에서 y/r 로 정의한다는 것, 「정현」이라고도 부른다는 것, 6세기 무렵 아리아바타가 사인을 「반-현」 또는 「현-반」이라 했다가 jyā 로 줄였다는 것, 아라비아인들이 jiba 로 쓰고 모음을 생략해 jb 로 썼으며 그 이후의 저자들이 이것이 산스크리트어의 음역인 줄 모르고 「작은 만」을 뜻하는 jaib 로 오역했다는 것, 크레모나의 제라르(1150년 무렵)가 jaib 를 같은 뜻의 라틴어 sinus 로 바꾸었다는 것",
+     "URL": "https://terms.naver.com/%EC%88%98%ED%95%99/%EC%82%AC%EC%9D%B8-64onJtQafpVatyQJj2Okvz",
+     "유형": "2차"
+    },
+    {
+     "번호": 6,
+     "제목": "네이버 지식백과(수학백과, 대한수학회), 삼각함수표 — 삼각함수표가 계산기 전까지 과학 · 공학 · 실생활에서 매우 유용했다는 것, 삼각함수표를 역사상 처음 만든 인물은 150년 무렵 알렉산드리아의 프톨레마이오스이며 『알마게스트』에서 0.5° 부터 180° 까지 0.5° 마다 사인의 값을 계산해 놓았다는 것, 그 방법이 오늘의 반각 공식과 덧셈정리라는 것, sin 18° = (√5 − 1)/4 를 정오각형으로 구하는 것, 오늘은 보간법이나 테일러 급수로 값을 계산한다는 것",
+     "URL": "https://terms.naver.com/%EC%88%98%ED%95%99/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98%ED%91%9C-1ptfvpLVQ2w65fsWKmTc9B",
+     "유형": "2차"
+    },
+    {
+     "번호": 7,
+     "제목": "Wikipedia, Regiomontanus — 1464년 『모든 종류의 삼각형에 관하여』를 마쳤고 그것이 삼각법의 현재 상태를 보인 첫 교과서들 가운데 하나라는 것, 그 책의 구면삼각법 상당 부분이 12세기 자비르 이븐 아플라의 저작에서 그대로 왔다고 16세기에 카르다노가 지적했다는 것 — 위키백과는 「그대로(directly)」라는 말에 「의심스러움(dubious)」 표시를 달아 두었다",
+     "URL": "https://en.wikipedia.org/wiki/Regiomontanus",
+     "유형": "2차"
+    },
+    {
+     "번호": 8,
+     "제목": "MacTutor, Nasir al-Din al-Tusi — 그의 가장 중요한 수학적 기여의 하나가 삼각법을 천문학의 도구가 아니라 그 자체로 독립된 분야로 만든 것이라는 것, 『사변형론』이 평면 · 구면 삼각법 체계 전체를 펼친 남아 있는 첫 서술이라는 것, 그것이 「역사상 처음으로 삼각법을 순수수학의 독립 분야로 다룬 책」이라는 나스르의 평, 그 책에 평면 삼각형의 사인법칙이 있다는 것",
+     "URL": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Tusi_Nasir/",
+     "유형": "2차"
+    }
+   ],
+   "path": "notes/concept-trigonometry/note.md",
+   "세기전체": [
+    -2,
+    2,
+    6,
+    10,
+    13,
+    15,
+    16,
+    17,
+    18
+   ],
+   "자수": 8530,
+   "시각화": 7
+  },
+  {
    "유형": "인물",
    "제목": "히파르코스",
    "슬러그": "person-hipparchus",
@@ -1134,7 +1324,7 @@
    "세기전체": [
     -2
    ],
-   "자수": 8845,
+   "자수": 8849,
    "시각화": 5
   },
   {
@@ -1247,7 +1437,7 @@
     1,
     2
    ],
-   "자수": 7026,
+   "자수": 7034,
    "시각화": 8
   },
   {
@@ -1747,7 +1937,7 @@
    "세기전체": [
     2
    ],
-   "자수": 13559,
+   "자수": 13563,
    "시각화": 7
   },
   {
@@ -3460,7 +3650,7 @@
    "세기전체": [
     13
    ],
-   "자수": 6393,
+   "자수": 6397,
    "시각화": 7
   },
   {
@@ -4771,7 +4961,7 @@
    "세기전체": [
     15
    ],
-   "자수": 7753,
+   "자수": 7757,
    "시각화": 7
   },
   {
@@ -17621,6 +17811,7 @@
    ],
    "-2": [
     "century-bc2",
+    "concept-trigonometry",
     "person-apollonius",
     "person-hipparchus"
    ],
@@ -17631,6 +17822,7 @@
    ],
    "2": [
     "century-2c",
+    "concept-trigonometry",
     "person-menelaus",
     "person-nicomachus",
     "person-ptolemy",
@@ -17650,13 +17842,20 @@
    "5": [
     "person-zu-chongzhi"
    ],
+   "6": [
+    "concept-trigonometry"
+   ],
    "9": [
     "century-9c",
     "concept-algebra-notation",
     "person-al-khwarizmi"
    ],
+   "10": [
+    "concept-trigonometry"
+   ],
    "13": [
     "century-13c",
+    "concept-trigonometry",
     "person-al-tusi",
     "person-fibonacci"
    ],
@@ -17669,6 +17868,7 @@
    ],
    "15": [
     "century-15c",
+    "concept-trigonometry",
     "person-al-kashi",
     "person-copernicus",
     "person-madhava",
@@ -17681,6 +17881,7 @@
     "concept-complex-number",
     "concept-logarithm",
     "concept-probability",
+    "concept-trigonometry",
     "person-briggs",
     "person-burgi",
     "person-cardano",
@@ -17714,6 +17915,7 @@
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
+    "concept-trigonometry",
     "episode-descartes-fly",
     "episode-huygens-anagram",
     "episode-newton-apple",
@@ -17758,6 +17960,7 @@
     "concept-probability-advanced",
     "concept-series",
     "concept-series-advanced",
+    "concept-trigonometry",
     "episode-bernoulli-tomb",
     "episode-priority-dispute",
     "person-bayes",
@@ -17872,6 +18075,7 @@
     "century-2c",
     "century-9c",
     "century-bc2",
+    "concept-trigonometry",
     "person-al-kashi",
     "person-al-tusi",
     "person-briggs",
@@ -17890,6 +18094,7 @@
     "century-9c",
     "century-bc2",
     "century-bc3",
+    "concept-trigonometry",
     "episode-huygens-anagram",
     "person-al-kashi",
     "person-al-khwarizmi",
@@ -18041,6 +18246,7 @@
     "concept-algebra-notation-advanced",
     "concept-analytic-geometry",
     "concept-analytic-geometry-advanced",
+    "concept-trigonometry",
     "episode-bernoulli-tomb",
     "episode-descartes-fly",
     "person-apollonius",
@@ -18456,6 +18662,7 @@
    "대수": [
     "concept-logarithm",
     "concept-logarithm-advanced",
+    "concept-trigonometry",
     "person-fibonacci",
     "person-hipparchus",
     "person-legendre",
@@ -18547,7 +18754,8 @@
     "concept-probability",
     "concept-probability-advanced",
     "concept-series",
-    "concept-series-advanced"
+    "concept-series-advanced",
+    "concept-trigonometry"
    ],
    "일화": [
     "episode-bernoulli-tomb",
@@ -18681,6 +18889,7 @@
     "concept-probability-advanced",
     "concept-series",
     "concept-series-advanced",
+    "concept-trigonometry",
     "episode-bernoulli-tomb",
     "episode-cantor-letter-1877",
     "episode-dedekind-nov24",
@@ -18787,6 +18996,7 @@
    ],
    "투시": [
     "century-13c",
+    "concept-trigonometry",
     "person-al-tusi"
    ],
    "마라가": [
@@ -18889,6 +19099,7 @@
    ],
    "레기오몬타누스": [
     "century-15c",
+    "concept-trigonometry",
     "person-regiomontanus"
    ],
    "알카시": [
@@ -18898,6 +19109,7 @@
    "삼각법": [
     "century-15c",
     "century-16c",
+    "concept-trigonometry",
     "person-al-tusi",
     "person-copernicus",
     "person-hipparchus",
@@ -19084,6 +19296,7 @@
     "concept-logarithm-advanced",
     "concept-series",
     "concept-series-advanced",
+    "concept-trigonometry",
     "person-dalembert",
     "person-euler",
     "person-johann-bernoulli",
@@ -19256,6 +19469,7 @@
    ],
    "프톨레마이오스": [
     "century-2c",
+    "concept-trigonometry",
     "person-menelaus",
     "person-ptolemy",
     "person-theon"
@@ -19390,6 +19604,7 @@
    ],
    "히파르코스": [
     "century-bc2",
+    "concept-trigonometry",
     "person-hipparchus",
     "person-ptolemy"
    ],
@@ -19885,6 +20100,36 @@
    "해석적정수론": [
     "concept-series-advanced",
     "person-dirichlet"
+   ],
+   "사인": [
+    "concept-trigonometry"
+   ],
+   "코사인": [
+    "concept-trigonometry"
+   ],
+   "탄젠트": [
+    "concept-trigonometry"
+   ],
+   "현의 표": [
+    "concept-trigonometry",
+    "person-hipparchus",
+    "person-ptolemy"
+   ],
+   "반현": [
+    "concept-trigonometry"
+   ],
+   "jyā": [
+    "concept-trigonometry"
+   ],
+   "sinus": [
+    "concept-trigonometry"
+   ],
+   "아리아바타": [
+    "concept-trigonometry"
+   ],
+   "피티스쿠스": [
+    "concept-trigonometry",
+    "person-stevin"
    ],
    "로그나선": [
     "episode-bernoulli-tomb"
@@ -20426,10 +20671,6 @@
    "23문제": [
     "person-hilbert"
    ],
-   "현의 표": [
-    "person-hipparchus",
-    "person-ptolemy"
-   ],
    "세차": [
     "person-hipparchus"
    ],
@@ -20835,9 +21076,6 @@
    "데 티엔더": [
     "person-stevin"
    ],
-   "피티스쿠스": [
-    "person-stevin"
-   ],
    "비안키니": [
     "person-stevin"
    ],
@@ -21143,6 +21381,7 @@
     "concept-logarithm-advanced",
     "concept-series",
     "concept-series-advanced",
+    "concept-trigonometry",
     "person-jakob-bernoulli",
     "person-lagrange"
    ],
@@ -21392,6 +21631,24 @@
    "person-abel": [
     "concept-series-advanced"
    ],
+   "person-al-tusi": [
+    "concept-trigonometry"
+   ],
+   "person-hipparchus": [
+    "concept-trigonometry"
+   ],
+   "person-ptolemy": [
+    "concept-trigonometry"
+   ],
+   "person-regiomontanus": [
+    "concept-trigonometry"
+   ],
+   "아리아바타": [
+    "concept-trigonometry"
+   ],
+   "피티스쿠스": [
+    "concept-trigonometry"
+   ],
    "person-godel": [
     "episode-koenigsberg-1930",
     "person-frege",
@@ -21422,6 +21679,12 @@
     {
      "슬러그": "concept-algebra-notation",
      "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
      "유형": "개념",
      "경로": "본문"
     },
@@ -21500,6 +21763,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "person-al-kashi",
      "제목": "잠시드 알카시",
      "유형": "인물",
@@ -21552,6 +21821,12 @@
     {
      "슬러그": "concept-algebra-notation",
      "제목": "대수 기호법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
      "유형": "개념",
      "경로": "본문"
     },
@@ -21772,6 +22047,12 @@
      "제목": "13세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "person-al-kashi",
@@ -21998,6 +22279,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
      "슬러그": "person-al-kashi",
      "제목": "잠시드 알카시",
      "유형": "인물",
@@ -22106,6 +22393,12 @@
      "제목": "무한급수 확장편",
      "유형": "개념",
      "경로": "선행개념"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "후속개념"
     },
     {
      "슬러그": "person-euler",
@@ -22478,6 +22771,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-al-tusi",
      "제목": "나시르 알딘 알투시",
      "유형": "인물",
@@ -22640,6 +22939,12 @@
     {
      "슬러그": "concept-series",
      "제목": "무한급수",
+     "유형": "개념",
+     "경로": "후속개념"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
      "유형": "개념",
      "경로": "후속개념"
     },
@@ -23900,6 +24205,12 @@
     {
      "슬러그": "concept-series-advanced",
      "제목": "무한급수 확장편",
+     "유형": "개념",
+     "경로": "기여인물"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
      "유형": "개념",
      "경로": "기여인물"
     },
@@ -26382,6 +26693,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-al-tusi",
      "제목": "나시르 알딘 알투시",
      "유형": "인물",
@@ -26594,6 +26911,12 @@
      "경로": "본문"
     },
     {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "본문"
+    },
+    {
      "슬러그": "person-al-kashi",
      "제목": "잠시드 알카시",
      "유형": "인물",
@@ -26630,6 +26953,12 @@
      "제목": "기원전 2세기",
      "유형": "세기",
      "경로": "본문"
+    },
+    {
+     "슬러그": "concept-trigonometry",
+     "제목": "삼각법",
+     "유형": "개념",
+     "경로": "기여인물"
     },
     {
      "슬러그": "person-halley",
@@ -28276,6 +28605,38 @@
      "경로": "본문"
     }
    ],
+   "concept-trigonometry": [
+    {
+     "슬러그": "person-al-tusi",
+     "제목": "나시르 알딘 알투시",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-hipparchus",
+     "제목": "히파르코스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-menelaus",
+     "제목": "알렉산드리아의 메넬라오스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-ptolemy",
+     "제목": "클라우디오스 프톨레마이오스",
+     "유형": "인물",
+     "경로": "본문"
+    },
+    {
+     "슬러그": "person-regiomontanus",
+     "제목": "레기오몬타누스",
+     "유형": "인물",
+     "경로": "본문"
+    }
+   ],
    "person-kepler": [
     {
      "슬러그": "person-apollonius",
@@ -28766,6 +29127,17 @@
   "발산급수": "concept-series-advanced",
   "오일러 곱셈공식": "concept-series-advanced",
   "총합법": "concept-series-advanced",
+  "concept-trigonometry": "concept-trigonometry",
+  "sine": "concept-trigonometry",
+  "trigonometry": "concept-trigonometry",
+  "개념_삼각법": "concept-trigonometry",
+  "반현": "concept-trigonometry",
+  "사인의 어원": "concept-trigonometry",
+  "삼각법": "concept-trigonometry",
+  "삼각법 이해편": "concept-trigonometry",
+  "삼각법이해편": "concept-trigonometry",
+  "삼각함수의 역사": "concept-trigonometry",
+  "현의 표": "concept-trigonometry",
   "Eadem mutata resurgo": "episode-bernoulli-tomb",
   "episode-bernoulli-tomb": "episode-bernoulli-tomb",
   "spira mirabilis": "episode-bernoulli-tomb",
