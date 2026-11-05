@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-05",
- "scanned": 417,
- "resolved": 2818,
+ "scanned": 418,
+ "resolved": 2834,
  "pending": 568,
  "counts": {
   "new": 261,
@@ -4588,7 +4588,7 @@
    "name": "...",
    "count": 1,
    "kind": "gap",
-   "target": "劉徽",
+   "target": "張衡",
    "base": null,
    "refs": [
     {
