@@ -211,18 +211,18 @@ p.vsub{color:var(--ink2);margin:0 0 22px;font-size:15px}
 @media print{.article img[src*="/illustrations/"]{width:170px}}
 
 /* ── 매거진형 편집 (T-20261104-01). 노트 원문은 그대로, 렌더만 바꾼다. 강조색은 --accent 하나, 그림자·그라데이션 없음 ── */
-.article .tldr{background:var(--card2);border-top:3px solid var(--accent);padding:14px 20px 4px;margin:6px 0 30px;border-radius:2px}
+.article .tldr{background:var(--card2);border-top:3px solid var(--accent);padding:16px 20px 4px;margin:8px 0 32px;border-radius:2px}
 .article .tldr>h2{border:0;margin:0 0 8px;padding:0;font-size:13px;letter-spacing:.14em;color:var(--accent);font-weight:700}
 .article .tldr ul{padding-left:18px}
-.article .tldr li{margin-bottom:9px}
+.article .tldr li{margin-bottom:8px}
 .article h2 .secno{display:inline-block;min-width:1.6em;color:var(--accent);font-weight:700}
-.article p.warn{background:var(--card2);border-left:3px solid var(--accent);padding:10px 14px;font-size:15.5px;line-height:1.75;color:var(--ink2);border-radius:0 2px 2px 0}
-.article .reading{color:var(--ink2);font-size:.92em;white-space:nowrap}
+.article p.warn{background:var(--card2);border-left:3px solid var(--accent);padding:12px 16px;font-size:16px;line-height:1.75;color:var(--ink2);border-radius:0 2px 2px 0}
+.article .reading{color:var(--ink2);font-size:.92em}
 .article .tablewrap table tr:nth-child(even) td{background:color-mix(in srgb,var(--card2) 55%,transparent)}
 .article .tablewrap th{border-bottom:2px solid var(--rule)}
 .article blockquote{background:var(--card);border-left-color:var(--accent);padding:12px 18px;border-radius:0 2px 2px 0}
 .article blockquote p:last-child{margin-bottom:0}
-@media(max-width:560px){.article .tldr{padding:12px 14px 2px;margin-left:-4px;margin-right:-4px}}
+@media(max-width:560px){.article .tldr{padding:12px 16px 4px;margin-left:-4px;margin-right:-4px}}
 @media print{.article .tldr,.article p.warn,.article blockquote{background:none}.article .tldr{border:1px solid var(--ink3)}}
 
 .article table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 20px}
@@ -535,7 +535,7 @@ function sourcesHTML(note){
 function magazinize(art){
   const hs=[...art.querySelectorAll(':scope > h2')];
   for(const h of hs){ const m=h.textContent.match(/^(\d+)\.\s*/); if(m&&!h.querySelector('.secno')){ const tw=document.createTreeWalker(h,NodeFilter.SHOW_TEXT); const t=tw.nextNode(); if(t&&t.nodeValue.startsWith(m[0])){ t.nodeValue=t.nodeValue.slice(m[0].length); const s=document.createElement('span'); s.className='secno'; s.textContent=m[1]+'. '; h.insertBefore(s,h.firstChild);} } }
-  const td=hs.find(h=>/^TL;?DR$/i.test(h.textContent.trim()));
+  const td=hs.find(h=>/^TL;?DR$/i.test(h.textContent.trim()))||(hs[0]&&/^(한눈 요약|핵심 요약|세 줄 요약|요약)$/.test(hs[0].textContent.trim())?hs[0]:null);
   if(td){ const box=document.createElement('section'); box.className='tldr'; td.before(box); let n=td; const take=[]; while(n){ take.push(n); n=n.nextElementSibling; if(!n||n.tagName==='HR'||n.tagName==='H2') break; } take.forEach(x=>box.appendChild(x)); if(n&&n.tagName==='HR') n.remove(); }
   art.querySelectorAll(':scope > p').forEach(p=>{ if(/^\s*⚠/.test(p.textContent)) p.classList.add('warn'); });
   const tw=document.createTreeWalker(art,NodeFilter.SHOW_TEXT,{acceptNode:n=>/\([^()]*이 노트의 (읽기|셈)\)/.test(n.nodeValue)&&!n.parentElement.closest('pre,code,.reading')?1:3});
