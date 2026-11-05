@@ -1,6 +1,26 @@
 {
- "count": 22,
+ "count": 23,
  "notes": [
+  {
+   "slug": "peter-principle",
+   "title": "피터의 원리(Peter Principle) — 이해편(입문·딥)",
+   "date": "2026-11-05",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "조직관리",
+    "승진",
+    "인사평가",
+    "평균회귀",
+    "리더십",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 9편 · 잘하던 사람이 승진하면 왜 헤매나",
+   "chars": 15786,
+   "pic": null,
+   "path": "concept/notes/peter-principle.md"
+  },
   {
    "slug": "amdahls-law",
    "title": "암달의 법칙(Amdahl's Law) — 이해편(입문·딥)",
