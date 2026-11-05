@@ -1,10 +1,10 @@
 {
  "generated": "2026-11-05",
- "scanned": 416,
- "resolved": 2803,
- "pending": 569,
+ "scanned": 417,
+ "resolved": 2818,
+ "pending": 568,
  "counts": {
-  "new": 262,
+  "new": 261,
   "companion": 5,
   "gap": 1
  },
@@ -4670,21 +4670,6 @@
      "t": "심슨의 역설(Simpson's Paradox) — 이해편(입문·딥)",
      "u": "concept/#n=simpsons-paradox",
      "s": "concept",
-     "n": 1
-    }
-   ]
-  },
-  {
-   "name": "게라사의 니코마코스",
-   "count": 1,
-   "kind": "new",
-   "target": null,
-   "base": null,
-   "refs": [
-    {
-     "t": "2세기",
-     "u": "math/#n=century-2c",
-     "s": "math",
      "n": 1
     }
    ]
