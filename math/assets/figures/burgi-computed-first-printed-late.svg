@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「먼저 셈하고 늦게 찍다 요스트 뷔르기」라는 표제가 있고 그 아래에 갈색은 뷔르기, 푸른색은 네이피어와 케플러, 빈 점은 자료마다 해가 다른 자리라고 적혀 있다. 가로축에 1580부터 1630까지 10년마다 눈금이 있다. 줄이 셋 있다. 첫 줄 로그를 언제 셈했나에는 빈 갈색 점이 둘 있다. 1588 무렵 (MacTutor)와 1600 무렵 (위키백과)이다. 1600 점에서 아래 줄의 1620 점까지 갈색 점선이 비스듬히 내려간다. 둘째 줄 찍힌 해에는 1614 네이피어 『기술』 푸른 점, 1620 프라하, 뷔르기의 표 갈색 점, 1627 케플러 「게으르고 몹시 말이 없는」 푸른 점이 있다. 셋째 줄 사인표에는 1586 사인을 원하는 정밀도로와 1592 『천문학의 기초』를 황제에게라는 갈색 점이 있고, 오른쪽에 『사인 표』 자체는 사라졌다, 그 아래에 → 2015 폴케르츠, 그 셈법이 수렴함을 증명이라고 적혀 있다. 축 위 오른쪽 끝에 1632 죽음, 축 오른쪽 끝 너머라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 1588 은 MacTutor 가 「대부분의 역사가」의 생각으로, 1600 은 위키백과가 「아마」로 적는다. 둘째, 위키백과는 1588 무렵의 셈법을 표가 아니라 삼각함수 곱셈법(프로스타파이레시스)으로 보고 점선은 1600 에서 1620 까지다. 셋째, 2015 는 축 밖이라 글자로만 두었고 『사인 표』가 다시 발견된 것은 아니다">
+  <title>먼저 셈하고 늦게 찍다 — 요스트 뷔르기</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;}
+    .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.4;}
+    .gap{stroke:#9C5A2C;stroke-width:1;stroke-dasharray:4 3;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">먼저 셈하고 늦게 찍다 — 요스트 뷔르기</text>
+  <text x="30" y="50" font-size="11" class="dim">갈색은 뷔르기, 푸른색은 네이피어와 케플러다. 빈 점은 자료마다 해가 다른 자리다.</text>
+
+  <text x="30" y="100" font-size="11">로그를 언제 셈했나</text>
+  <line x1="60" y1="140" x2="650" y2="140" class="row"/>
+  <circle cx="154.4" cy="140" r="5" class="ring"/><text x="154.4" y="128" font-size="10" class="sien" text-anchor="end">1588 무렵 (MacTutor)</text>
+  <circle cx="296" cy="140" r="5" class="ring"/><text x="304" y="128" font-size="10" class="sien" text-anchor="start">1600 무렵 (위키백과)</text>
+
+  <text x="30" y="200" font-size="11">찍힌 해</text>
+  <line x1="60" y1="240" x2="650" y2="240" class="row"/>
+  <circle cx="461.2" cy="240" r="4.5" class="bd"/><text x="461.2" y="228" font-size="10" class="blue" text-anchor="end">1614 네이피어 『기술』</text>
+  <circle cx="532" cy="240" r="4.5" class="sd"/><text x="524" y="262" font-size="10" class="sien" text-anchor="end">1620 프라하, 뷔르기의 표</text>
+  <line x1="296" y1="148" x2="532" y2="232" class="gap"/>
+  <circle cx="614.6" cy="240" r="4.5" class="bd"/><text x="614.6" y="280" font-size="10" class="blue" text-anchor="end">1627 케플러 「게으르고 몹시 말이 없는」</text>
+
+  <text x="30" y="300" font-size="11">사인표</text>
+  <line x1="60" y1="340" x2="650" y2="340" class="row"/>
+  <circle cx="130.8" cy="340" r="4.5" class="sd"/><text x="130.8" y="328" font-size="10" class="sien" text-anchor="start">1586 사인을 원하는 정밀도로</text>
+  <circle cx="201.6" cy="340" r="4.5" class="sd"/><text x="201.6" y="362" font-size="10" class="sien" text-anchor="start">1592 『천문학의 기초』를 황제에게</text>
+  <text x="650" y="328" font-size="10" class="dim" text-anchor="end">『사인 표』 자체는 사라졌다</text>
+  <text x="650" y="384" font-size="10" class="blue" text-anchor="end">→ 2015 폴케르츠, 그 셈법이 수렴함을 증명</text>
+
+  <text x="650" y="406" font-size="10" class="dim" text-anchor="end">1632 죽음 — 축 오른쪽 끝 너머</text>
+
+  <line x1="60" y1="420" x2="650" y2="420" class="axis"/>
+  <line x1="60" y1="416" x2="60" y2="424" class="tick"/><text x="60" y="437" font-size="10" class="ax" text-anchor="middle">1580</text>
+  <line x1="178" y1="416" x2="178" y2="424" class="tick"/><text x="178" y="437" font-size="10" class="ax" text-anchor="middle">1590</text>
+  <line x1="296" y1="416" x2="296" y2="424" class="tick"/><text x="296" y="437" font-size="10" class="ax" text-anchor="middle">1600</text>
+  <line x1="414" y1="416" x2="414" y2="424" class="tick"/><text x="414" y="437" font-size="10" class="ax" text-anchor="middle">1610</text>
+  <line x1="532" y1="416" x2="532" y2="424" class="tick"/><text x="532" y="437" font-size="10" class="ax" text-anchor="middle">1620</text>
+  <line x1="650" y1="416" x2="650" y2="424" class="tick"/><text x="650" y="437" font-size="10" class="ax" text-anchor="middle">1630</text>
+
+  <text x="30" y="468" font-size="10" class="ax">⚠ 1588 은 MacTutor 가 「대부분의 역사가」의 생각으로, 1600 은 위키백과가 「아마」로 적는다.</text>
+  <text x="30" y="484" font-size="10" class="ax">⚠ 위키백과는 1588 무렵의 셈법을 표가 아니라 삼각함수 곱셈법(프로스타파이레시스)으로 본다. 점선은 1600 에서 1620 까지다.</text>
+  <text x="30" y="500" font-size="10" class="ax">⚠ 2015 는 축 밖이라 글자로만 두었다. 『사인 표』가 다시 발견된 것은 아니다.</text>
+</svg>
