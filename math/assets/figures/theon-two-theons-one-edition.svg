@@ -19,7 +19,7 @@
   <rect x="480.38" y="174" width="103.25" height="12" class="life"/>
   <text x="480.38" y="202" font-size="10" class="sien" text-anchor="start">335 무렵</text><text x="583.63" y="202" font-size="10" class="sien" text-anchor="end">405 무렵</text>
   <circle cx="523.15" cy="180" r="4.5" class="sd"/><text x="523.15" y="168" font-size="10" class="sien" text-anchor="end">364 두 번의 식</text>
-  <circle cx="598.38" cy="180" r="4.5" class="bd"/><text x="602.8" y="168" font-size="10" class="blue" text-anchor="start">415 히파티아 죽음</text>
+  <circle cx="598.38" cy="180" r="4.5" class="bd"/><text x="668" y="168" font-size="10" class="blue" text-anchor="end">415 히파티아 죽음</text>
   <line x1="60" y1="235" x2="650" y2="235" class="axis"/>
   <line x1="133.75" y1="231" x2="133.75" y2="239" class="tick"/><text x="133.75" y="252" font-size="10" class="ax" text-anchor="middle">100</text>
   <line x1="281.25" y1="231" x2="281.25" y2="239" class="tick"/><text x="281.25" y="252" font-size="10" class="ax" text-anchor="middle">200</text>
