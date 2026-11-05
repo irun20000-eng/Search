@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="그림 위쪽에 「현 하나, 반현 하나 같은 원의 두 표」라는 표제가 있고 그 아래에 반지름 1 인 원에서 중심각 2α 의 현 AB 와 그 절반 AM, 갈색은 그리스의 현, 푸른색은 인도의 반현이라고 적혀 있다. 왼쪽에 중심 O 인 원이 있고 O 에서 원 위의 두 점 A 와 B 로 반지름이 그어져 있으며 두 반지름 사이의 각에 2α 라고 적혀 있다. A 와 B 를 잇는 세로 현은 갈색 굵은 선이고 AB 라고 적혀 있다. 그 현의 위쪽 절반, A 에서 현의 가운데 점 M 까지는 푸른 굵은 선으로 따로 그어져 있고 AM 이라고 적혀 있다. O 에서 M 까지는 점선이다. 오른쪽에 네 덩이의 글이 있다. 그리스 현 AB 를 표로 아래에 히파르코스 (기원전 140 무렵), 메넬라오스 · 프톨레마이오스, 인도 반현 AM 을 표로 아래에 아리아바타 (500 무렵) · jyā, 오늘 sin α = AM ÷ OA 아래에 반지름이 1 이면 AB = 2 sin α, 교실 직각삼각형 OAM 의 비 아래에 ∠AMO 가 직각, 피타고라스 정리라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, α 는 35° 로 그렸고 프톨레마이오스는 현을 썼고 사인은 쓰지 않았으며(MacTutor) 「AB = 2 sin α」는 오늘의 기호로 옮긴 것이다. 둘째, 첫 현의 표를 MacTutor 는 히파르코스로, 수학백과 「삼각함수표」는 프톨레마이오스로 적는다(본문 §2). 셋째, 반현이 왜 편한가는 수학산책을 따랐고 원 크기와 글자 자리는 이 노트가 골랐다">
+  <title>현 하나, 반현 하나 — 같은 원의 두 표</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .box{fill:#FFFDF7;stroke:#9C5A2C;stroke-width:1.2;} .boxb{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.2;}
+    .arr{stroke:#5B5245;stroke-width:1;fill:none;} .row{stroke:#C9BBA6;stroke-width:1;}
+  </style>
+  <rect width="720" height="520" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">현 하나, 반현 하나 — 같은 원의 두 표</text>
+  <text x="30" y="50" font-size="11" class="dim">반지름 1 인 원에서 중심각 2α 의 현 AB 와 그 절반 AM. 갈색은 그리스의 현, 푸른색은 인도의 반현이다.</text>
+  <circle cx="200" cy="230" r="130" fill="none" stroke="#8A7F6E" stroke-width="1"/>
+  <line x1="200" y1="230" x2="306.5" y2="155.4" stroke="#5B5245" stroke-width="1"/>
+  <line x1="200" y1="230" x2="306.5" y2="304.6" stroke="#5B5245" stroke-width="1"/>
+  <line x1="200" y1="230" x2="306.5" y2="230" stroke="#8A7F6E" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="306.5" y1="155.4" x2="306.5" y2="304.6" stroke="#9C5A2C" stroke-width="2.2"/>
+  <line x1="312.5" y1="155.4" x2="312.5" y2="230" stroke="#3A5C77" stroke-width="2.2"/>
+  <path d="M224.6,212.8 A30,30 0 0 1 224.6,247.2" fill="none" stroke="#5B5245" stroke-width="1"/>
+  <circle cx="200" cy="230" r="2.5" fill="#221E18"/>
+  <text x="184" y="234" font-size="12">O</text>
+  <text x="242" y="222" font-size="11">2α</text>
+  <text x="322.5" y="153.4" font-size="12">A</text>
+  <text x="322.5" y="316.6" font-size="12">B</text>
+  <text x="342" y="250" font-size="12">M</text>
+  <text x="342" y="197" font-size="10.5" class="blue">AM</text>
+  <text x="294" y="272" font-size="10.5" class="sien" text-anchor="end">AB</text>
+  <text x="380" y="110" font-size="12" class="sien">그리스 — 현 AB 를 표로</text>
+  <text x="380" y="130" font-size="10.5" class="dim">히파르코스 (기원전 140 무렵)</text>
+  <text x="380" y="146" font-size="10.5" class="dim">메넬라오스 · 프톨레마이오스</text>
+  <text x="380" y="186" font-size="12" class="blue">인도 — 반현 AM 을 표로</text>
+  <text x="380" y="206" font-size="10.5" class="dim">아리아바타 (500 무렵) · jyā</text>
+  <text x="380" y="246" font-size="12">오늘 — sin α = AM ÷ OA</text>
+  <text x="380" y="266" font-size="10.5" class="dim">반지름이 1 이면 AB = 2 sin α</text>
+  <text x="380" y="306" font-size="12">교실 — 직각삼각형 OAM 의 비</text>
+  <text x="380" y="326" font-size="10.5" class="dim">∠AMO 가 직각 — 피타고라스 정리</text>
+  <text x="30" y="420" font-size="10" class="ax">⚠ α 는 35° 로 그렸다. 프톨레마이오스는 현을 썼고 사인은 쓰지 않았다(MacTutor).</text>
+  <text x="30" y="434" font-size="10" class="ax">   「AB = 2 sin α」는 오늘의 기호로 옮긴 것이다.</text>
+  <text x="30" y="452" font-size="10" class="ax">⚠ 첫 현의 표를 MacTutor 는 히파르코스로,</text>
+  <text x="30" y="466" font-size="10" class="ax">   수학백과 「삼각함수표」는 프톨레마이오스로 적는다(본문 §2).</text>
+  <text x="30" y="484" font-size="10" class="ax">⚠ 반현이 왜 편한가는 수학산책을 따랐다. 원 크기와 글자 자리는 이 노트가 골랐다.</text>
+</svg>
+
