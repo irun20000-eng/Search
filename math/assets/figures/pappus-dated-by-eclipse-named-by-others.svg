@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="그림 위쪽에 「날짜는 일식이, 이름은 남이 알렉산드리아의 파푸스」라는 표제가 있고 그 아래 두 줄에 위는 그가 언제 살았나를 두고 자료가 가리키는 자리, 아래는 그의 정리에 남의 이름이 붙은 자리이며 갈색 점은 그 자신의 글에서 나온 날짜, 푸른 띠와 빈 점은 남이 적은 날짜라고 적혀 있다. 위 판의 가로축은 250부터 400까지 50년마다 눈금이 있다. 첫 줄 언제 살았나에는 284~305 테온 연표 사본의 여백과 379~395 『수다』라는 옅은 푸른 띠 둘이 있고, 그 사이 320 자리에 큰 갈색 점과 320.10.18 일식, 『알마게스트』 주석이 적혀 있다. 둘째 줄 『수학 집성』을 쓴 때에는 325까지 (일부 역사가)와 340 무렵이라는 빈 푸른 점 둘이 있다. 가운데 판 회전체 정리, 『집성』 7권에는 1580부터 1660까지 20년마다 눈금이 있는 축 위에 1588 코만디노 라틴어판, 1615 케플러, 1640 굴딘 「굴딘의 정리」 푸른 점과 1659 파푸스의 진술 첫 인쇄 갈색 점이 있다. 맨 아래 줄 국내 교실의 「파푸스의 정리」에는 해 없이 중선정리 AB² + AC² = 2(AM² + BM²), 영어권 이름은 「아폴로니오스의 정리」라고 적혀 있다. 맨 아래에 단서가 셋 있다. 첫째, 두 축은 눈금이 다르고(위 250~400, 가운데 1580~1660) 띠는 황제의 재위 기간이며 맨 아래 줄은 해가 없다. 둘째, 1659 「첫 인쇄」는 위키백과, 1588 판은 위키백과의 다른 항목이 적고 둘의 관계는 이 그림이 정하지 않는다. 셋째, 국내 수학백과는 육각형 정리의 발견을 「3세기경」으로 적고 이 그림의 320 과 맞추지 않았다">
+  <title>날짜는 일식이, 이름은 남이 — 알렉산드리아의 파푸스</title>
+  <style>
+    text{font-family:EB Garamond, Georgia, 'Noto Serif KR', 'Noto Serif CJK KR', NanumMyeongjo, Batang, AppleMyungjo, serif;fill:#221E18;}
+    .dim{fill:#5B5245;} .sien{fill:#9C5A2C;} .ax{fill:#8A7F6E;} .blue{fill:#3A5C77;}
+    .axis{stroke:#8A7F6E;stroke-width:1;} .tick{stroke:#8A7F6E;stroke-width:1;} .row{stroke:#C9BBA6;stroke-width:1;fill:none;}
+    .sd{fill:#9C5A2C;} .bd{fill:#3A5C77;} .ring{fill:#FFFDF7;stroke:#3A5C77;stroke-width:1.4;}
+    .band{fill:#3A5C77;opacity:0.18;}
+  </style>
+  <rect width="720" height="540" fill="#FFFDF7"/>
+  <text x="30" y="30" font-size="16">날짜는 일식이, 이름은 남이 — 알렉산드리아의 파푸스</text>
+  <text x="30" y="50" font-size="11" class="dim">위는 그가 언제 살았나를 두고 자료가 가리키는 자리, 아래는 그의 정리에 남의 이름이 붙은 자리다.</text>
+  <text x="30" y="66" font-size="11" class="dim">갈색 점은 그 자신의 글에서 나온 날짜, 푸른 띠와 빈 점은 남이 적은 날짜다.</text>
+
+  <text x="30" y="92" font-size="11">언제 살았나</text>
+  <line x1="60" y1="120" x2="650" y2="120" class="row"/>
+  <rect x="114.4" y="114" width="33.60" height="12" class="band"/>
+  <text x="131.2" y="108" font-size="10" class="blue" text-anchor="middle">284~305 테온 연표 사본의 여백</text>
+  <rect x="266.4" y="114" width="25.60" height="12" class="band"/>
+  <text x="279.2" y="108" font-size="10" class="blue" text-anchor="middle">379~395 『수다』</text>
+  <circle cx="172" cy="120" r="6" class="sd"/>
+  <text x="172" y="144" font-size="10" class="sien" text-anchor="middle">320.10.18 일식 — 『알마게스트』 주석</text>
+
+  <text x="30" y="172" font-size="11">『수학 집성』을 쓴 때</text>
+  <line x1="60" y1="200" x2="650" y2="200" class="row"/>
+  <circle cx="180" cy="200" r="5" class="ring"/><text x="180" y="222" font-size="10" class="blue" text-anchor="end">325까지 (일부 역사가)</text>
+  <circle cx="204" cy="200" r="5" class="ring"/><text x="204" y="188" font-size="10" class="blue" text-anchor="start">340 무렵</text>
+
+  <line x1="60" y1="250" x2="650" y2="250" class="axis"/>
+  <line x1="60" y1="246" x2="60" y2="254" class="tick"/><text x="60" y="267" font-size="10" class="ax" text-anchor="middle">250</text><line x1="140" y1="246" x2="140" y2="254" class="tick"/><text x="140" y="267" font-size="10" class="ax" text-anchor="middle">300</text><line x1="220" y1="246" x2="220" y2="254" class="tick"/><text x="220" y="267" font-size="10" class="ax" text-anchor="middle">350</text><line x1="300" y1="246" x2="300" y2="254" class="tick"/><text x="300" y="267" font-size="10" class="ax" text-anchor="middle">400</text>
+
+  <text x="30" y="296" font-size="11">회전체 정리 — 『집성』 7권</text>
+  <line x1="60" y1="330" x2="650" y2="330" class="row"/>
+  <circle cx="109.6" cy="330" r="5" class="bd"/><text x="109.6" y="318" font-size="10" class="blue" text-anchor="start">1588 코만디노 라틴어판</text>
+  <circle cx="277" cy="330" r="5" class="bd"/><text x="277" y="352" font-size="10" class="blue" text-anchor="middle">1615 케플러</text>
+  <circle cx="432" cy="330" r="5" class="bd"/><text x="432" y="318" font-size="10" class="blue" text-anchor="middle">1640 굴딘 — 「굴딘의 정리」</text>
+  <circle cx="549.8" cy="330" r="5" class="sd"/><text x="549.8" y="352" font-size="10" class="sien" text-anchor="end">1659 파푸스의 진술 첫 인쇄</text>
+
+  <line x1="60" y1="374" x2="650" y2="374" class="axis"/>
+  <line x1="60" y1="370" x2="60" y2="378" class="tick"/><text x="60" y="391" font-size="10" class="ax" text-anchor="middle">1580</text><line x1="184" y1="370" x2="184" y2="378" class="tick"/><text x="184" y="391" font-size="10" class="ax" text-anchor="middle">1600</text><line x1="308" y1="370" x2="308" y2="378" class="tick"/><text x="308" y="391" font-size="10" class="ax" text-anchor="middle">1620</text><line x1="432" y1="370" x2="432" y2="378" class="tick"/><text x="432" y="391" font-size="10" class="ax" text-anchor="middle">1640</text><line x1="556" y1="370" x2="556" y2="378" class="tick"/><text x="556" y="391" font-size="10" class="ax" text-anchor="middle">1660</text>
+
+  <text x="30" y="426" font-size="11">국내 교실의 「파푸스의 정리」</text>
+  <text x="60" y="450" font-size="10.5" class="dim">중선정리 AB² + AC² = 2(AM² + BM²) — 영어권 이름은 「아폴로니오스의 정리」</text>
+
+
+
+  <text x="30" y="490" font-size="10" class="ax">⚠ 두 축은 눈금이 다르다(위 250~400, 가운데 1580~1660). 띠는 황제의 재위 기간이다. 맨 아래 줄은 해가 없다.</text>
+  <text x="30" y="506" font-size="10" class="ax">⚠ 1659 「첫 인쇄」는 위키백과, 1588 판은 위키백과의 다른 항목이 적는다. 둘의 관계는 이 그림이 정하지 않는다.</text>
+  <text x="30" y="522" font-size="10" class="ax">⚠ 국내 수학백과는 육각형 정리의 발견을 「3세기경」으로 적는다. 이 그림의 320 과 맞추지 않았다.</text>
+</svg>
