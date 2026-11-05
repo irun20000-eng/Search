@@ -45,10 +45,12 @@ SHELVES = [
      lambda v: "videos/" + v["path"], lambda v: "videos/#post-" + v["id"]),
     ("concept", "concept/manifest.json", "notes", "title", "slug",
      lambda n: n["path"], lambda n: "concept/#n=" + n["slug"]),
+    ("picks", "picks/manifest.json", "notes", "title", "slug",
+     lambda n: n["path"], lambda n: "picks/#n=" + n["slug"]),
 ]
 
 LABEL = {"research": "리서치", "videos": "영상노트", "guides": "가이드", "math": "수학사",
-         "blog": "블로그", "cardnews": "카드뉴스", "concept": "개념노트"}
+         "blog": "블로그", "cardnews": "카드뉴스", "concept": "개념노트", "picks": "골라봄"}
 
 
 def loose(s: str) -> str:

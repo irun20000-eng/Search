@@ -223,8 +223,22 @@ def plan_concept():
     return out
 
 
+def plan_picks():
+    # 골라봄 — 하루 한 테마. 「오늘.」 내 서재(irun-hub)가 이 폴더를 읽는다.
+    out = []
+    for n in load("picks/manifest.json").get("notes", []):
+        src = ROOT / n["path"]
+        if not src.exists():
+            continue
+        name = "%s_골라봄_%s.md" % (n.get("date", "").replace("-", ""), safe(n["title"]).replace(" ", "_"))
+        out.append((src, VAULT / "012-골라봄" / name,
+                    gallery_note("picks/#n=" + n["slug"], "골라봄"),
+                    "#n=" + n["slug"]))
+    return out
+
+
 PLANS = {"reports": plan_reports, "videos": plan_videos,
-         "guides": plan_guides, "concept": plan_concept}
+         "guides": plan_guides, "concept": plan_concept, "picks": plan_picks}
 
 
 # ── 어긋남 대조 (--check) ───────────────────────────────────────
