@@ -52,11 +52,16 @@ def main() -> int:
             "axis": fm.get("축", ""),
             "field": fm.get("분야", ""),
             "videos": vids,
+            "lengths": ([fm["길이"]] if isinstance(fm.get("길이"), str) else (fm.get("길이") or [])),
             "tags": fm.get("태그") or [],
             "chars": len(re.sub(r"\s+", "", body)),
             "path": "picks/notes/%s.md" % slug,
         })
     items.sort(key=lambda x: (x["date"], x["slug"]), reverse=True)
+    if bad:  # 막음이면 manifest 를 쓰지 않는다 (검수 R8-④)
+        for slug, why in bad:
+            print("  막음 %s — %s" % (slug, why), file=sys.stderr)
+        return 1
     M.dump_json(OUT, {"count": len(items), "notes": items})
     print("[OK] picks/ %d편 · 영상 %d편" % (len(items), sum(len(i["videos"]) for i in items)))
     for slug, why in bad:
