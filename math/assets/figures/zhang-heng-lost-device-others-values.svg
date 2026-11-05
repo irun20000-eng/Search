@@ -13,9 +13,9 @@
 
   <text x="30" y="110" font-size="11">지진계</text>
   <line x1="60" y1="150" x2="650" y2="150" class="row"/>
-  <circle cx="69.9" cy="150" r="5" class="sd"/><text x="69.9" y="123" font-size="10" class="sien" text-anchor="start">132 만들다</text>
+  <circle cx="69.9" cy="150" r="5" class="sd"/><text x="69.9" y="116" font-size="10" class="sien" text-anchor="start">132 만들다</text>
   <circle cx="71.8" cy="150" r="3" class="sd"/><text x="71.8" y="172" font-size="10" class="sien" text-anchor="start">138 서쪽 지진을 알리다</text>
-  <circle cx="162.5" cy="150" r="5" class="bd"/><text x="162.5" y="136" font-size="10" class="blue" text-anchor="middle">5세기 『후한서』의 기록</text>
+  <circle cx="162.5" cy="150" r="5" class="bd"/><text x="190" y="136" font-size="10" class="blue" text-anchor="start">5세기 『후한서』의 기록</text>
   <circle cx="429.5" cy="150" r="5" class="bd"/><text x="429.5" y="136" font-size="10" class="blue" text-anchor="middle">1290 무렵 저우미: 남지 않았다</text>
   <circle cx="631" cy="150" r="5" class="ring"/><text x="631" y="172" font-size="10" class="blue" text-anchor="end">1939 이마무라 복원</text>
   <circle cx="636" cy="150" r="5" class="ring"/><text x="636" y="136" font-size="10" class="blue" text-anchor="end">1950년대 복원 모형</text>
@@ -25,11 +25,11 @@
   <text x="30" y="304" font-size="11">원주율 — 누가 무엇을 그의 값으로 적나</text>
   <line x1="60" y1="360" x2="650" y2="360" class="axis"/>
   <line x1="60" y1="356" x2="60" y2="364" class="axis"/><text x="60" y="378" font-size="10" class="ax" text-anchor="middle">3.10</text><line x1="178" y1="356" x2="178" y2="364" class="axis"/><text x="178" y="378" font-size="10" class="ax" text-anchor="middle">3.12</text><line x1="296" y1="356" x2="296" y2="364" class="axis"/><text x="296" y="378" font-size="10" class="ax" text-anchor="middle">3.14</text><line x1="414" y1="356" x2="414" y2="364" class="axis"/><text x="414" y="378" font-size="10" class="ax" text-anchor="middle">3.16</text><line x1="532" y1="356" x2="532" y2="364" class="axis"/><text x="532" y="378" font-size="10" class="ax" text-anchor="middle">3.18</text><line x1="650" y1="356" x2="650" y2="364" class="axis"/><text x="650" y="378" font-size="10" class="ax" text-anchor="middle">3.20</text>
-  <line x1="305.4" y1="320" x2="305.4" y2="360" class="pi"/><text x="305.4" y="316" font-size="10" class="dim" text-anchor="end">π (유휘 3.14159)</text>
+  <line x1="305.4" y1="320" x2="305.4" y2="360" class="pi"/><text x="296" y="316" font-size="10" class="dim" text-anchor="end">π (유휘 3.14159)</text>
   <circle cx="334.9" cy="360" r="5" class="sd"/><text x="334.9" y="398" font-size="10" class="sien" text-anchor="end">730/232 ≈ 3.1466</text>
   <circle cx="427.6" cy="360" r="5" class="sd"/><text x="427.6" y="346" font-size="10" class="sien" text-anchor="middle">√10 ≈ 3.1623</text>
   <circle cx="487.2" cy="360" r="5" class="sd"/><text x="487.2" y="398" font-size="10" class="sien" text-anchor="start">736/232 ≈ 3.1724</text>
-  <circle cx="378.6" cy="360" r="4" class="bd"/><text x="378.6" y="330" font-size="10" class="blue" text-anchor="start">유흠 3.154 (그보다 앞)</text>
+  <circle cx="378.6" cy="360" r="4" class="bd"/><text x="378.6" y="326" font-size="10" class="blue" text-anchor="start">유흠 3.154 (그보다 앞)</text>
 
   <text x="30" y="456" font-size="10" class="ax">⚠ √10 은 MacTutor · 위키백과, 736/232 는 위키백과(130 무렵), 730/232 는 국내 「세상의 모든 지식」(『산망론』)이 적는다.</text>
   <text x="30" y="472" font-size="10" class="ax">   세 값의 소수는 이 노트의 셈이고, 유휘의 3.14159 는 위키백과를 따랐다.</text>
