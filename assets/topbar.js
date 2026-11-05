@@ -26,6 +26,7 @@
     { key: "home",     label: "홈",       href: "" },
     { key: "research", label: "리서치",   href: "research/" },
     { key: "videos",   label: "영상노트", href: "videos/" },
+    { key: "picks",    label: "골라봄",   href: "picks/" },
     { key: "guides",   label: "가이드",   href: "guides/" },
     { key: "math",     label: "수학사",   href: "math/" },
     { key: "blog",     label: "블로그",   href: "blog/" },

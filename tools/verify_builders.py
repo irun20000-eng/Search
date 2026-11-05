@@ -101,6 +101,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # 다음 사람이 순서를 잘못 판단한다.
 BUILDERS = (
     'tools/build_concept_manifest.py',   # concept/manifest.json
+    'tools/build_picks_manifest.py',     # picks/manifest.json (골라봄)
     'tools/build_manifest.py',           # videos/manifest.json  (이름이 서가를 안 밝힌다 — videos 다)
     'tools/build_reports_meta.py',       # reports/manifest.json 의 cat·pair 만 (아래 ⚠)
     'tools/build_math_manifest.py',
@@ -109,6 +110,7 @@ BUILDERS = (
 )
 OUTPUTS = (
     'concept/manifest.json',
+    'picks/manifest.json',
     'videos/manifest.json',
     'reports/manifest.json',
     'math/manifest.json',

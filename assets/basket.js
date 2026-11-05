@@ -21,7 +21,7 @@
   var MAX = 60;                    // 인쇄 한 장에 담을 만한 상한
   var LABEL = {
     research: "리서치", videos: "영상노트", guides: "가이드", math: "수학사",
-    blog: "블로그", cardnews: "카드뉴스", concept: "개념노트"
+    blog: "블로그", cardnews: "카드뉴스", concept: "개념노트", picks: "골라봄"
   };
 
   var cfg = { section: "", root: "./" };

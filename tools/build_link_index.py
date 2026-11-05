@@ -19,6 +19,7 @@
   blog      blog/#b=<slug>
   cardnews  cardnews/#c=<folder>
   concept   concept/#n=<slug>
+  picks     picks/#n=<slug>
 
 ■ 허브도 이 파일을 쓴다
   루트 index.html(허브)의 통합 검색과 '최근' 목록이 entries 를 그대로 읽는다.
@@ -127,6 +128,12 @@ def build():
     # 카드뉴스 '생존자 편향'(그림 10장)과 개념노트 '생존자 편향'(이해편 5,800자)이
     # 같은 이름을 갖는데, 글 속의 [[생존자 편향]] 은 설명이 있는 쪽을 가리켜야 한다.
     # 카드뉴스는 폴더명 별칭(숫자노트_02_생존자편향)으로 그대로 닿는다.
+    # ── picks (골라봄) ──
+    for n in load("picks/manifest.json").get("notes", []):
+        entries.append(dict(제목=n["title"], 섹션="picks", 유형=None,
+                            슬러그=n["slug"], 날짜=n.get("date", ""),
+                            검색어=hay(n.get("tags"), n.get("field"), n.get("sub")),
+                            url="picks/#n=" + n["slug"]))
     # ── concept (개념노트) ──
     for n in load("concept/manifest.json").get("notes", []):
         entries.append(dict(제목=n["title"], 섹션="concept", 유형=None,
