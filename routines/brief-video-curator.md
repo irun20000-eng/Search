@@ -102,6 +102,10 @@
     `create_file(title="<YYYYMMDD>_<제목>.md", parentId="1eCkQ7HySXci0UOL_dZwM0yTnS1NioUlk",
     contentMimeType="text/markdown", disableConversionToGoogleType=true, textContent=<노트>)` →
     `get_file_metadata(id)` 로 `parentId`·`fileSize` 검증. **`base64Content` 금지.**
+    **이어서 반드시 볼트 장부에 등재한다**(2026-11-06 — 이 단계가 빠져 주간 「볼트 동기화」가 같은 노트를 또 올렸다:
+    10-29 `0dJUPoeSd1I`·`3729clHFDjU` → 볼트에 `(1)` 사본, 11-03 `3Eou-uRhOGY` 도 장부 누락).
+    `.obsidian-synced.json` 의 `videos` 에 `"youtu.be/<id>": "<볼트에 만든 파일명>"` 을 추가하고 `.obsidian-synced.json` 하나만
+    커밋 → PR(`chore(vault): 옵시디언 장부 — 영상 노트 N편`) → 게이트 → rebase 머지까지가 이 단계다. 장부 머지가 안 되면 보고에 「장부 미등재」로 남긴다.
 13. **보고 + 알림**: 아래 형식으로 정리하고 **PushNotification** 1줄. 발행 0건이고 이상도 없으면 알림 생략
     (3번에서 적체가 잡힌 경우만 예외).
 
