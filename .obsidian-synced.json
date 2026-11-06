@@ -20,7 +20,9 @@
   "#n=conways-law": "[2026-10-15] 콘웨이의 법칙 — 이해편.md",
   "#n=monty-hall": "[2026-10-20] 몬티 홀 문제 — 이해편.md",
   "#n=birthday-problem": "[2026-10-22] 생일 문제 — 이해편.md",
-  "#n=rule-of-72": "[2026-10-27] 72의 법칙 — 이해편.md"
+  "#n=rule-of-72": "[2026-10-27] 72의 법칙 — 이해편.md",
+  "#n=peter-principle": "[2026-11-05] 피터의 원리 — 이해편.md",
+  "#n=amdahls-law": "[2026-11-03] 암달의 법칙 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
