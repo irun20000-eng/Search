@@ -487,7 +487,7 @@
     "work07_09.webp",
     "work07_10.webp"
    ],
-   "study": null
+   "study": "conways-law"
   },
   {
    "folder": "일머리노트_06_브룩스법칙",
@@ -509,7 +509,7 @@
     "work06_09.webp",
     "work06_10.webp"
    ],
-   "study": null
+   "study": "brooks-law"
   },
   {
    "folder": "일머리노트_05_파킨슨법칙",
@@ -531,7 +531,7 @@
     "work05_09.webp",
     "work05_10.webp"
    ],
-   "study": null
+   "study": "parkinsons-law"
   },
   {
    "folder": "일머리노트_04_동시에벌이면",
@@ -553,7 +553,7 @@
     "work04_09.webp",
     "work04_10.webp"
    ],
-   "study": null
+   "study": "littles-law"
   },
   {
    "folder": "일머리노트_03_집중력",
@@ -663,7 +663,7 @@
     "number07_09.webp",
     "number07_10.webp"
    ],
-   "study": null
+   "study": "margin-of-error"
   },
   {
    "folder": "숫자노트_06_퍼센트포인트",
@@ -685,7 +685,7 @@
     "number06_09.webp",
     "number06_10.webp"
    ],
-   "study": null
+   "study": "percentage-point"
   },
   {
    "folder": "숫자노트_05_평균회귀",
@@ -707,7 +707,7 @@
     "number05_09.webp",
     "number05_10.webp"
    ],
-   "study": null
+   "study": "regression-to-the-mean"
   },
   {
    "folder": "숫자노트_04_기저율",
@@ -729,7 +729,7 @@
     "number04_09.webp",
     "number04_10.webp"
    ],
-   "study": null
+   "study": "base-rate-fallacy"
   },
   {
    "folder": "숫자노트_03_심슨의역설",
@@ -751,7 +751,7 @@
     "number03_09.webp",
     "number03_10.webp"
    ],
-   "study": null
+   "study": "simpsons-paradox"
   },
   {
    "folder": "숫자노트_02_생존자편향",
@@ -773,7 +773,7 @@
     "number02_09.webp",
     "number02_10.webp"
    ],
-   "study": null
+   "study": "survivorship-bias"
   },
   {
    "folder": "숫자노트_01_평균착시",
@@ -795,7 +795,7 @@
     "number01_09.webp",
     "number01_10.webp"
    ],
-   "study": null
+   "study": "size-bias"
   },
   {
    "folder": "발견노트_08_생일문제",
@@ -861,7 +861,7 @@
     "discovery06_09.webp",
     "discovery06_10.webp"
    ],
-   "study": null
+   "study": "seven-bridges"
   },
   {
    "folder": "발견노트_05_지프법칙",
@@ -883,7 +883,7 @@
     "discovery05_09.webp",
     "discovery05_10.webp"
    ],
-   "study": null
+   "study": "zipfs-law"
   },
   {
    "folder": "발견노트_04_벤포드법칙",
@@ -905,7 +905,7 @@
     "discovery04_09.webp",
     "discovery04_10.webp"
    ],
-   "study": null
+   "study": "benfords-law"
   },
   {
    "folder": "발견노트_03_브라에스역설",
@@ -927,7 +927,7 @@
     "discovery03_09.webp",
     "discovery03_10.webp"
    ],
-   "study": null
+   "study": "braess-paradox"
   },
   {
    "folder": "발견노트_02_최적정지",
@@ -949,7 +949,7 @@
     "discovery02_09.webp",
     "discovery02_10.webp"
    ],
-   "study": null
+   "study": "optimal-stopping"
   },
   {
    "folder": "발견노트_01_스퀘어큐브",
@@ -971,7 +971,7 @@
     "discovery01_09.webp",
     "discovery01_10.webp"
    ],
-   "study": null
+   "study": "square-cube-law"
   }
  ]
 }
