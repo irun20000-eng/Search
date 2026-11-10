@@ -53,6 +53,10 @@ production:
       - {주제: "아침 준비 실랑이", 앵글: "재촉은 속도를 만들지 않는다", 상태: 완료}   # 2026-09-29 EP15
       - {주제: "잠자리 실랑이", 앵글: "잠은 명령으로 오지 않는다", 상태: 완료}   # 2026-10-13 EP16
       - {주제: "용돈 정하기", 앵글: "금액보다 규칙이 먼저다", 상태: 완료}   # 2026-10-29 EP17
+      # ── 2026-11-10 보충 — 부모 노트는 경험 기반이라 개념노트를 만들지 않는다(studio/CLAUDE.md).
+      #    그래서 웹 검증 대상이 아니고, 겹치지 않는 장면만 고른다.
+      - {주제: "시험 성적표를 받은 날", 앵글: "점수보다 다음 한 걸음"}
+      - {주제: "아이가 「몰라」라고 할 때", 앵글: "모른다는 말은 닫는 말이 아니다"}
       # ⚠ 2026-10-29 회차에 고른 근거 — 네 시리즈 어디에도 상태가 「다음」인 항목이 없었다
       #    (10-27 숫자노트 EP8 도 같은 상태였고 후속 지정을 남기지 않았다). 금지는
       #    「보류·검증필요」뿐이므로 「대기」를 차례를 기다리는 후보로 읽고, 시리즈 순서
@@ -97,6 +101,18 @@ production:
       #   유명한 문장은 Hoskin(1996) → Strathern(1997 European Review 5(3) 305~321) 경유 ·
       #   Campbell 문장과 날짜(1976 본문 / 1979 학술지 / Rodamar 는 1969 까지 소급) 어긋남은 병기 ·
       #   네 갈래(회귀·극단·인과·적대)는 Manheim·Garrabrant arXiv:1803.04585v4 전문에서 읽었다
+      # ── 2026-11-10 보충 — 이 회차에 네 시리즈의 후보가 전부 비어서 채운다.
+      #    웹으로 확인한 것만 올리고, 쓰는 세션이 더 열어야 할 것을 각 줄에 적었다. 상태는 대기다
+      #    (「다음」으로 바꾸는 것은 사람의 손잡이다 — 2026-10-01 주석과 같은 운용).
+      - {주제: "호프스태터의 법칙", 앵글: "예상에 예상을 더해도 늘 더 걸린다", 개념노트: hofstadters-law, 상태: 대기}
+      #   확인: 문장("It always takes longer than you expect, even when you take into account
+      #   Hofstadter's law")과 출처(Douglas Hofstadter, 『Gödel, Escher, Bach』 1979) — 영문 위키백과
+      #   「List of laws named after people」. ⚠ 원서 쪽수와 맥락(재귀 자체가 소재)은 못 열었다.
+      - {주제: "파레토 원리(80/20)", 앵글: "이름은 파레토인데 붙인 사람은 주란이다", 개념노트: pareto-principle, 상태: 대기}
+      #   확인: "named after Pareto, but framed by Joseph M. Juran" — 같은 위키백과 목록.
+      #   귀속이 소재라는 점에서 굿하트와 짝이다. ⚠ 파레토의 원 자료(토지 분포)와 80/20 이
+      #   언제 그 형태로 굳었는지는 못 열었다 — 쓰는 세션이 1차 출처를 열 것.
+
     number:
       - {주제: "퍼센트와 퍼센트포인트", 앵글: "5%에서 6%로 오르면 몇 퍼센트 오른 것인가", 개념노트: percentage-point, 상태: 완료}   # 2026-09-22 EP6
       - {주제: "단순화한 평균의 함정 (심슨 이후)", 앵글: "가중치가 다르면 평균끼리 못 더한다", 상태: 검증필요}
@@ -114,6 +130,17 @@ production:
       #    ⚠ 이 줄 아래로 number 에 남은 후보는 「검증필요」 하나뿐이다 — 보충이 필요하다.
       #   확인: 72/r 과 ln2/ln(1+r) 대조 — r=8%에서 9.00 대 9.01년, r=20%에서 3.60 대 3.80년
       #   (직접 계산) · 최초 기록은 파촐리 『Summa de arithmetica』(베네치아 1494)
+      # ── 2026-11-10 보충 (사유는 work 쪽 주석 참조) ──
+      - {주제: "상대위험과 절대위험", 앵글: "50% 줄었다는 말이 몇 명을 뜻하나", 개념노트: relative-absolute-risk, 상태: 대기}
+      #   확인: Institute for Work & Health 「Absolute and relative risk」(2006, 2017 개정) 본문을
+      #   열어 읽었다 — 20%→8% 면 절대감소 12%p·상대감소 60% · 위험 1/1000 에 "800% 증가"면
+      #   8/1000 이라는 예까지. NNT(=1/절대감소)도 여러 자료가 같은 식으로 적는다.
+      #   산술 핵이 분명하고 직접 검산된다. ⚠ 국내 보도 사례는 쓰는 세션이 찾을 것.
+      - {주제: "수익률의 평균은 산술평균이 아니다", 앵글: "+50% 뒤 −50% 는 본전이 아니다", 개념노트: geometric-mean-returns, 상태: 대기}
+      #   확인: 검산만으로 선다 — 1.5 × 0.5 = 0.75 (−25%) 이고 산술평균은 0% 다.
+      #   72의 법칙(숫자 8편)과 평균으로의 회귀(5편)의 사이 자리. ⚠ 기하평균의 정식 서술과
+      #   국내 수익률 표기 관행(연평균 수익률 고지)은 쓰는 세션이 1차 자료로 열 것.
+
     discovery:
       - {주제: "지프의 법칙", 앵글: "가장 흔한 말이 두 번째보다 두 배 흔하다", 개념노트: zipfs-law, 상태: 완료}   # 2026-09-24 EP5
       - {주제: "쾨니히스베르크의 다리", 앵글: "한 번씩만 건널 수 있는가", 개념노트: seven-bridges, 상태: 완료}   # 2026-10-06 EP6
@@ -127,6 +154,16 @@ production:
       #   확인: 23명 50.73% · 30명 70.6% · 57명 99.0% (직접 계산, 1 − 365!/((365−n)!·365^n))
       #   Wikipedia "Birthday problem" — 50%에 23명·99.9%에 70명, 데이븐포트에게 돌리나
       #   최초 간행은 폰 미제스(1939)
+      # ── 2026-11-10 보충 (사유는 work 쪽 주석 참조) ──
+      - {주제: "뷔퐁의 바늘", 앵글: "바늘을 떨어뜨려 원주율을 잰다", 개념노트: buffons-needle, 상태: 대기}
+      #   확인: 영문 위키백과 「Buffon's needle problem」 — 바늘 길이 ℓ ≤ 간격 t 일 때
+      #   p = (2/π)(ℓ/t) 이고 거꾸로 π = 2ℓ/(tP). 던진 횟수로 π 를 어림하는 예까지 적혀 있다.
+      #   ⚠ 1777년 『Essai d'arithmétique morale』 서지와 뷔퐁이 처음 낸 형태는 못 열었다.
+      - {주제: "비둘기집 원리", 앵글: "서울에 머리카락 수가 같은 두 사람이 있다", 개념노트: pigeonhole-principle, 상태: 대기}
+      #   ⚠ **원리 자체는 검산되지만 귀속은 확인하지 못했다** — 디리클레(1834,
+      #   Schubfachprinzip) 귀속을 오늘 웹에서 열어 보지 못했다. 쓰는 세션이 그 자리를 먼저
+      #   열고, 못 열면 귀속 없이 원리와 예(머리카락 수·생일)만으로 쓸 것.
+      #   생일 문제(발견 8편)와 짝이 되는 자리다 — 「반드시 겹친다」와 「반반이다」의 차이.
 
 episodes:
   - folder: 부모노트_01_초6훈육
@@ -209,6 +246,7 @@ episodes:
   - folder: 일머리노트_07_콘웨이법칙
     date: 2026-10-15
     series: work
+    study: conways-law
     title: "콘웨이의 법칙"
     angle: "조직도가 곧 설계도가 된다"
     layout: A
@@ -217,6 +255,7 @@ episodes:
 
   - folder: 숫자노트_01_평균착시
     series: number
+    study: size-bias
     title: "평균이라는 착시"
     angle: "평균은 대표값이 아니다"
     layout: A
@@ -224,6 +263,7 @@ episodes:
     caption: "평균 연봉도 평균 자산도 늘 내 얘기 같지 않습니다.\n\n내가 이상한 게 아니라 평균이 그렇습니다.\n한쪽 끝의 큰 값 하나가 전체를 끌어올리기 때문입니다.\n\n저장해두고 '평균'이라는 말을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #통계 #평균 #중앙값 #데이터리터러시"
   - folder: 숫자노트_02_생존자편향
     series: number
+    study: survivorship-bias
     title: "생존자 편향"
     angle: "남은 것만 보면 틀린다"
     layout: B
@@ -231,6 +271,7 @@ episodes:
     caption: "성공담은 왜 늘 비슷할까요.\n\n같은 말을 하고 사라진 사람도 많기 때문입니다.\n기록은 남은 쪽이 쓰고, 사라진 쪽은 말이 없습니다.\n\n저장해두고 성공담을 만날 때 다시 꺼내 보세요.\n\n#숫자노트 #생존자편향 #통계 #비판적사고 #데이터리터러시"
   - folder: 발견노트_01_스퀘어큐브
     series: discovery
+    study: square-cube-law
     title: "스퀘어-큐브 법칙"
     angle: "왜 거인은 존재할 수 없나"
     layout: A
@@ -254,6 +295,7 @@ episodes:
   - folder: 숫자노트_03_심슨의역설
     date: 2026-08-11
     series: number
+    study: simpsons-paradox
     title: "심슨의 역설"
     angle: "쪼개면 이기는데 합치면 진다"
     layout: C
@@ -262,6 +304,7 @@ episodes:
   - folder: 발견노트_02_최적정지
     date: 2026-08-13
     series: discovery
+    study: optimal-stopping
     title: "최적 정지 (37% 법칙)"
     angle: "언제까지 둘러보고 언제 정할까"
     layout: B
@@ -288,6 +331,7 @@ episodes:
   - folder: 숫자노트_04_기저율
     date: 2026-08-25
     series: number
+    study: base-rate-fallacy
     title: "기저율의 함정"
     angle: "99% 정확한 검사도 대부분 틀릴 수 있다"
     layout: A
@@ -297,6 +341,7 @@ episodes:
   - folder: 발견노트_03_브라에스역설
     date: 2026-08-27
     series: discovery
+    study: braess-paradox
     title: "브라에스의 역설"
     angle: "길을 늘렸는데 더 막힌다"
     layout: C
@@ -315,6 +360,7 @@ episodes:
   - folder: 일머리노트_04_동시에벌이면
     date: 2026-09-03
     series: work
+    study: littles-law
     title: "동시에 벌이면 늦어진다"
     angle: "벌여 놓은 개수가 곧 기다림의 길이다"
     layout: A
@@ -324,6 +370,7 @@ episodes:
   - folder: 숫자노트_05_평균회귀
     date: 2026-09-08
     series: number
+    study: regression-to-the-mean
     title: "평균으로의 회귀"
     angle: "잘한 다음에 떨어지는 건 정상이다"
     layout: B
@@ -333,6 +380,7 @@ episodes:
   - folder: 발견노트_04_벤포드법칙
     date: 2026-09-10
     series: discovery
+    study: benfords-law
     title: "벤포드의 법칙"
     angle: "숫자는 1로 시작하기를 좋아한다"
     layout: A
@@ -378,6 +426,7 @@ episodes:
   - folder: 일머리노트_05_파킨슨법칙
     date: 2026-09-17
     series: work
+    study: parkinsons-law
     title: "파킨슨의 법칙"
     angle: "시간을 주면 그만큼 늘어난다"
     layout: B
@@ -387,6 +436,7 @@ episodes:
   - folder: 일머리노트_06_브룩스법칙
     date: 2026-10-01
     series: work
+    study: brooks-law
     title: "브룩스의 법칙"
     angle: "늦은 프로젝트에 사람을 더하면 더 늦어진다"
     layout: C
@@ -396,6 +446,7 @@ episodes:
   - folder: 숫자노트_06_퍼센트포인트
     date: 2026-09-22
     series: number
+    study: percentage-point
     title: "퍼센트와 퍼센트포인트"
     angle: "5%에서 6%로 오르면 20% 오른 것이다"
     layout: C
@@ -404,6 +455,7 @@ episodes:
   - folder: 발견노트_05_지프법칙
     date: 2026-09-24
     series: discovery
+    study: zipfs-law
     title: "지프의 법칙"
     angle: "가장 흔한 말이 두 번째보다 두 배 흔하다"
     layout: B
@@ -413,6 +465,7 @@ episodes:
   - folder: 발견노트_06_쾨니히스베르크
     date: 2026-10-06
     series: discovery
+    study: seven-bridges
     title: "쾨니히스베르크의 다리"
     angle: "한 번씩만 건널 수 있는가"
     layout: C
@@ -422,6 +475,7 @@ episodes:
   - folder: 숫자노트_07_오차범위
     date: 2026-10-08
     series: number
+    study: margin-of-error
     title: "여론조사의 오차범위"
     angle: "오차범위 안이면 1위가 아니다"
     layout: A
