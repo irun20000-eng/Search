@@ -1,6 +1,26 @@
 {
- "count": 23,
+ "count": 24,
  "notes": [
+  {
+   "slug": "goodharts-law",
+   "title": "굿하트의 법칙(Goodhart's Law) — 이해편(입문·딥)",
+   "date": "2026-11-10",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "조직관리",
+    "성과지표",
+    "KPI",
+    "평가설계",
+    "측정",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 10편 · 지표가 목표가 되면 지표가 망가진다",
+   "chars": 16984,
+   "pic": "goodharts-law.png",
+   "path": "concept/notes/goodharts-law.md"
+  },
   {
    "slug": "peter-principle",
    "title": "피터의 원리(Peter Principle) — 이해편(입문·딥)",
