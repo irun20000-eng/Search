@@ -43,6 +43,8 @@ NOTES = ROOT / "picks" / "notes"
 URL = re.compile(r"https://www\.youtube\.com/watch\?v=([A-Za-z0-9_-]{11})")
 QUOTE = re.compile(r'"([^"\n]{2,80})"[^\n\[]{0,40}?\[(\d{1,2}(?::\d{2}){1,2})\]')
 TS = re.compile(r"^\[(\d{1,2}(?::\d{2}){1,2}) - ")
+MAX_QUOTES = 3      # 영상당 인용 상한 (PICKS.md 고정 규칙, 2026-11-12 기계화)
+LONG_QUOTE = 30     # 건당 약 30자 — 넘으면 참고만(막지 않음)
 RAW = re.compile(r"<\s*(script|iframe|object|embed)|\son\w+\s*=", re.I)
 
 
@@ -61,8 +63,9 @@ def sections(body: str):
         yield (m.group(1) if m else None), chunk
 
 
-def check(path: Path, evidence: Path | None):
+def check(path: Path, evidence: Path | None, warns: list | None = None):
     bad = []
+    warns = [] if warns is None else warns
     fm, body = parse_fm(path.read_text(encoding="utf-8"))
     vids = fm.get("영상") or []
     vids = [vids] if isinstance(vids, str) else vids
@@ -87,6 +90,13 @@ def check(path: Path, evidence: Path | None):
                 bad.append("%s — 「확인함」「확인 못 함」 라벨 없음" % vid)
         elif not (("확인함" in chunk and "확인 못 함" in chunk) or ("✅" in chunk and "⬜" in chunk)):
             bad.append("%s — 검증 고지 없음" % vid)
+        # 인용 수 상한 — 사람이 세던 규칙을 기계로 (2026-11-10 노트 2번 영상이 4건으로 공개됨)
+        qs = QUOTE.findall(chunk)
+        if new_fmt and len(qs) > MAX_QUOTES:   # 11-05 견본은 규칙 이전 공개분 — 정정은 대표 승인 사항
+            bad.append("%s — 인용 %d건 (영상당 %d건 이하)" % (vid, len(qs), MAX_QUOTES))
+        for q, _ in qs:
+            if len(q) > LONG_QUOTE:
+                warns.append('%s — 인용 %d자 (약 %d자 권장): "%s"' % (vid, len(q), LONG_QUOTE, q))
         if evidence:
             ts = evidence / ("%s_ts.txt" % vid)
             if not ts.exists():
@@ -125,11 +135,14 @@ def main() -> int:
     files = [Path(p) for p in a.notes] or sorted(NOTES.glob("*.md"))
     n_bad = 0
     for f in files:
-        b = check(f, ev)
+        wn = []
+        b = check(f, ev, wn)
         n_bad += len(b)
         print(("❌ " if b else "✅ ") + f.name + ("" if not b else ""))
         for x in b:
             print("   막음 " + x)
+        for x in wn:
+            print("   참고 " + x)
     print("[%s] picks %d편 · 막음 %d%s" % ("X" if n_bad else "OK", len(files), n_bad,
                                          "" if ev else " (인용 구간 검사는 --evidence 가 있을 때만)"))
     return 1 if n_bad else 0
