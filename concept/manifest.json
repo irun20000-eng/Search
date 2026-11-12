@@ -1,6 +1,28 @@
 {
- "count": 24,
+ "count": 25,
  "notes": [
+  {
+   "slug": "buffons-needle",
+   "title": "뷔퐁의 바늘(Buffon's needle problem) — 이해편(입문·딥)",
+   "date": "2026-11-12",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "확률",
+    "기하학적확률",
+    "적분",
+    "원주율",
+    "몬테카를로",
+    "뷔퐁의바늘",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 9편 · 바늘을 떨어뜨려 원주율을 잰다",
+   "chars": 13228,
+   "pic": "buffons-needle.png",
+   "path": "concept/notes/buffons-needle.md"
+  },
   {
    "slug": "goodharts-law",
    "title": "굿하트의 법칙(Goodhart's Law) — 이해편(입문·딥)",
