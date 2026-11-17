@@ -1,6 +1,30 @@
 {
- "count": 25,
+ "count": 26,
  "notes": [
+  {
+   "slug": "relative-absolute-risk",
+   "title": "상대위험과 절대위험(Relative vs Absolute Risk) — 이해편(입문·딥)",
+   "date": "2026-11-17",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "통계",
+    "위험도",
+    "상대위험",
+    "절대위험",
+    "위험차",
+    "NNT",
+    "역학",
+    "보건통계",
+    "통계읽기",
+    "숫자노트",
+    "이해편"
+   ],
+   "cardnews": "숫자 노트 9편 · 50% 줄었다는 말이 몇 명을 뜻하나",
+   "chars": 12181,
+   "pic": null,
+   "path": "concept/notes/relative-absolute-risk.md"
+  },
   {
    "slug": "buffons-needle",
    "title": "뷔퐁의 바늘(Buffon's needle problem) — 이해편(입문·딥)",
