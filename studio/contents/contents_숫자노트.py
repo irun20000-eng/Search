@@ -401,7 +401,7 @@ EP8 = {
 EP9 = {
  "series": SERIES,
  "s1": {"kick":"도입",
-        "head":'50% 줄었다는<br>말이 <span class="ac">몇 명</span>을<br>뜻하나',
+        "head":'50% 줄었다는<br>말은<br><span class="ac">몇 명</span>인가',
         "sub":"상대위험과 절대위험"},
  "s2": {"kick":"궁금증",
         "head":"두 배로<br>늘었다는<br>경고",
