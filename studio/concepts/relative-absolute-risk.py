@@ -17,9 +17,9 @@ NNT 10)는 국내 가정의학회지 문헌의 수치다.
 본문·출처·검증 메모는 concept/notes/relative-absolute-risk.md 에 있다.
 ⚠ 첫 렌더에서 `card sumL +13` 으로 넘쳤다. 원인은 세 줄 정리(points)의 셋째 칸이
 113자였던 것 — 기존 23종의 관측 최대는 92자(brooks-law)이고 셋의 합은 248자
-(conways-law)였다. 87자로 줄여 합 229자로 맞췄다. concept_sheet.py check 의
-COPY_MAX 는 take·foot 만 재므로 **points 길이는 아직 자동으로 안 걸린다** —
-새 스펙을 쓸 때 기존 스펙의 points 를 재 보고 그 안에 들 것.
+(conways-law)였다. 87자로 줄여 합 229자로 맞췄다. 그때는 concept_sheet.py check 의
+COPY_MAX 가 take·foot 만 재서 로컬이 조용히 통과했는데, 같은 회차에 POINTS_MAX
+(칸당 92자 · 합 248자)를 더해 이제 check 가 먼저 잡는다.
 """
 BLU, ORG, GRN, RED = "#2F6BE0", "#E0871F", "#2E9E6B", "#D6452C"
 

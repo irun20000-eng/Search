@@ -57,6 +57,16 @@ COPY_MAX = {
     ("foot",): 264,         # benfords-law
 }
 
+# 세 줄 정리(points)의 칸당·합계 글자수(태그 제외) 관측 최대.
+# COPY_MAX 와 같은 방식으로 2026-11-17 에 기존 23종을 실측했다 — 칸당 최대는
+# brooks-law 의 92자, 셋의 합 최대는 conways-law 의 248자다.
+# 왜 따로 두나: points 는 COPY_MAX 의 "경로 하나에 문자열 하나" 꼴이 아니라
+# 3칸 리스트라 그 표에 담기지 않는다. 그래서 2026-11-17 까지 **아무도 재지 않았고**,
+# relative-absolute-risk 첫 스펙이 셋째 칸 113자로 러너에서 `card sumL +13` 넘침을
+# 냈는데 로컬 check 는 조용히 통과했다 — 러너 왕복 한 번을 거기에 썼다.
+# COPY_MAX 와 마찬가지로 **경고만 한다**(진짜 제약은 픽셀이고 글자수는 근사다).
+POINTS_MAX = {"each": 92, "sum": 248}
+
 # 스펙이 반드시 갖춰야 하는 것. 빠지면 렌더 도중이 아니라 여기서 멈춘다.
 REQUIRED = ["title", "en", "tag", "hook", "hooksub", "data", "steps",
             "points", "flow", "take", "foot", "file_key"]
@@ -116,6 +126,16 @@ def copy_warnings(s):
         if n > cap:
             out.append("%s %d자 > 관측 최대 %d자 — 넘칠 수 있다. 줄이고 다시 잴 것"
                        % (".".join(path), n, cap))
+
+    # 세 줄 정리 — 넘치면 sumL 이 터진다(POINTS_MAX 머리말)
+    lens = [len(_plain(b)) for *_rest, b in s.get("points", [])]
+    for i, n in enumerate(lens, 1):
+        if n > POINTS_MAX["each"]:
+            out.append("points[%d] %d자 > 관측 최대 %d자 — sumL 이 넘칠 수 있다. "
+                       "줄이고 다시 잴 것" % (i, n, POINTS_MAX["each"]))
+    if lens and sum(lens) > POINTS_MAX["sum"]:
+        out.append("points 합 %d자 > 관측 최대 %d자 — sumL 이 넘칠 수 있다. "
+                   "줄이고 다시 잴 것" % (sum(lens), POINTS_MAX["sum"]))
     return out
 
 
