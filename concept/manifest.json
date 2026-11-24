@@ -1,6 +1,25 @@
 {
- "count": 26,
+ "count": 27,
  "notes": [
+  {
+   "slug": "hofstadters-law",
+   "title": "호프스태터의 법칙(Hofstadter's Law) — 이해편(입문·딥)",
+   "date": "2026-11-24",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "일정관리",
+    "추정",
+    "계획오류",
+    "프로젝트관리",
+    "일머리",
+    "이해편"
+   ],
+   "cardnews": "일머리 노트 11편 · 예상에 예상을 더해도 늘 더 걸린다",
+   "chars": 13079,
+   "pic": null,
+   "path": "concept/notes/hofstadters-law.md"
+  },
   {
    "slug": "relative-absolute-risk",
    "title": "상대위험과 절대위험(Relative vs Absolute Risk) — 이해편(입문·딥)",
