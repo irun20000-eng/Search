@@ -1,6 +1,29 @@
 {
- "count": 27,
+ "count": 28,
  "notes": [
+  {
+   "slug": "pigeonhole-principle",
+   "title": "비둘기집 원리(Pigeonhole principle) — 이해편(입문·딥)",
+   "date": "2026-11-26",
+   "depth": "deep",
+   "level": "이해편(입문·딥)",
+   "tags": [
+    "수학",
+    "조합론",
+    "비둘기집원리",
+    "디리클레",
+    "존재증명",
+    "귀류법",
+    "해시충돌",
+    "무손실압축",
+    "발견노트",
+    "이해편"
+   ],
+   "cardnews": "발견 노트 10편 · 서울에 머리카락 수가 같은 두 사람이 있다",
+   "chars": 13507,
+   "pic": null,
+   "path": "concept/notes/pigeonhole-principle.md"
+  },
   {
    "slug": "hofstadters-law",
    "title": "호프스태터의 법칙(Hofstadter's Law) — 이해편(입문·딥)",
