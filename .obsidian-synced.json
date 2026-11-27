@@ -25,7 +25,9 @@
   "#n=amdahls-law": "[2026-11-03] 암달의 법칙 — 이해편.md",
   "#n=buffons-needle": "[2026-11-12] 뷔퐁의 바늘 — 이해편.md",
   "#n=goodharts-law": "[2026-11-10] 굿하트의 법칙 — 이해편.md",
-  "#n=relative-absolute-risk": "[2026-11-17] 상대위험과 절대위험 — 이해편.md"
+  "#n=relative-absolute-risk": "[2026-11-17] 상대위험과 절대위험 — 이해편.md",
+  "#n=pigeonhole-principle": "[2026-11-26] 비둘기집 원리 — 이해편.md",
+  "#n=hofstadters-law": "[2026-11-24] 호프스태터의 법칙 — 이해편.md"
  },
  "guides": {
   "#g=openrouter-api-start": "20260808_OpenRouter_API로_AI_활용하기_—_키_하나로_GPT·클로드·제미나이_다_쓰기.md",
