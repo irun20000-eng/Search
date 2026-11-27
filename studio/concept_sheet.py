@@ -67,6 +67,14 @@ COPY_MAX = {
 # COPY_MAX 와 마찬가지로 **경고만 한다**(진짜 제약은 픽셀이고 글자수는 근사다).
 POINTS_MAX = {"each": 92, "sum": 248}
 
+# 위 두 행(h_r1 + h_r2)의 높이 합 상한(px). 지면은 1024px 고정이고 .r3(세 줄 정리 ·
+# 한 줄 정리)은 flex:1 이라 **남은 높이를 받는다** — 위 행을 키운 만큼 r3 가 줄어
+# sumL·sumR 이 같은 px 로 함께 잘린다. 2026-11-26 pigeonhole-principle 첫 스펙이
+# h_r2 352(합 602)로 `card sumL +11 · sumR +11` 을 냈고, 통과본 26종은 전부 250 + 336 = 586 이다.
+# 글자수와 달리 이것은 근사가 아니라 레이아웃 산수라 **경고가 아니라 실패**로 막는다.
+# 한 행을 키우려면 다른 행에서 같은 만큼 빼서 합을 지킬 것(LESSONS 2026-11-26).
+ROWS_SUM_MAX = 586
+
 # 스펙이 반드시 갖춰야 하는 것. 빠지면 렌더 도중이 아니라 여기서 멈춘다.
 REQUIRED = ["title", "en", "tag", "hook", "hooksub", "data", "steps",
             "points", "flow", "take", "foot", "file_key"]
@@ -103,6 +111,11 @@ def check(s, slug):
     for r in s["data"]["rows"]:
         if len(r) != len(head):
             raise SystemExit("[%s] 표의 칸 수가 머리글과 다르다: %s" % (slug, r))
+    h1, h2 = s.get("h_r1", 250), s.get("h_r2", 330)
+    if h1 + h2 > ROWS_SUM_MAX:
+        raise SystemExit("[%s] 위 두 행 높이 합 %d px (h_r1 %d + h_r2 %d) > %d — 아래 r3 가 "
+                         "%d px 줄어 sumL·sumR 이 같이 잘린다. 다른 행에서 빼서 합을 맞출 것"
+                         % (slug, h1 + h2, h1, h2, ROWS_SUM_MAX, h1 + h2 - ROWS_SUM_MAX))
     print("[%s] 스키마 통과 - 단계 4 · 정리 3 · 흐름 4 · 표 %d행"
           % (slug, len(s["data"]["rows"])))
     for msg in copy_warnings(s):
